@@ -1,0 +1,126 @@
+{
+  "tool": "built-in image_gen",
+  "size": "1024x1024",
+  "images": [
+    {
+      "word": "culture",
+      "meaning": "문화",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-3e760ead-17ea-46e4-b4ad-ae55844a1a1c.png",
+      "prompt": "Create a single vocabulary illustration for \"culture\" (문화): Two simple people in different traditional clothing greeting beside a small traditional pavilion. Output exactly 1024x1024 pixels. Match the user's attached example aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny eyes, no shading or colors, abundant negative space in the upper third, scene in the middle and lower part with generous margins. No text, letters, labels, borders or watermarks. Use case: illustration-story."
+    },
+    {
+      "word": "experience",
+      "meaning": "경험",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-fd6253eb-b4eb-415f-8eff-703165791add.png",
+      "prompt": "Create a single vocabulary illustration for \"experience\" (경험): A simple young person tries pottery at a pottery wheel, shaping a clay bowl with hands. Output exactly 1024x1024 pixels. Match the user's attached example aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny eyes, no shading or colors, abundant negative space in the upper third, scene in the middle and lower part with generous margins. No text, letters, labels, borders or watermarks. Use case: illustration-story."
+    },
+    {
+      "word": "education",
+      "meaning": "교육",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-63c21b2e-7c8f-47b8-923b-0f20192b1df5.png",
+      "prompt": "Create a single vocabulary illustration for \"education\" (교육): A simple teacher pointing to an open book while two students sit and learn. Output exactly 1024x1024 pixels. Match the user's attached example aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny eyes, no shading or colors, abundant negative space in the upper third, scene in the middle and lower part with generous margins. No text, letters, labels, borders or watermarks. Use case: illustration-story."
+    },
+    {
+      "word": "symbol",
+      "meaning": "상징",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-c7b1fe03-8ec9-4cd9-9c84-4054949e50e1.png",
+      "prompt": "Create a single vocabulary illustration for \"symbol\" (상징): A simple person holding a large flag displaying a clear outlined heart emblem. Output exactly 1024x1024 pixels. Match the user's attached example aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny eyes, no shading or colors, abundant negative space in the upper third, scene in the middle and lower part with generous margins. No text, letters, labels, borders or watermarks. Use case: illustration-story."
+    },
+    {
+      "word": "effect",
+      "meaning": "결과, 영향, 효과",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-028a7f35-7e68-4992-a65d-c8ade909abc7.png",
+      "prompt": "Create a single vocabulary illustration for \"effect\" (결과, 영향, 효과): A simple person tips the first domino in a short line, with successive dominoes falling to show cause and effect. Output exactly 1024x1024 pixels. Match the user's attached example aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny eyes, no shading or colors, abundant negative space in the upper third, scene in the middle and lower part with generous margins. No text, letters, labels, borders or watermarks. Use case: illustration-story."
+    },
+    {
+      "word": "liberty",
+      "meaning": "자유",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-bd226a01-1fa3-4bb2-a3e8-5e541fe50720.png",
+      "prompt": "Create a single vocabulary illustration for \"liberty\" (자유): A simple person opens a birdcage and a bird flies freely upward. Output exactly 1024x1024 pixels. Match the user's attached example aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny eyes, no shading or colors, abundant negative space in the upper third, scene in the middle and lower part with generous margins. No text, letters, labels, borders or watermarks. Use case: illustration-story."
+    },
+    {
+      "word": "affair",
+      "meaning": "사건, 일",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-7ca74fe5-70cc-4cd9-a0b5-afb2f6ef7f24.png",
+      "prompt": "Create a single vocabulary illustration for \"affair\" (사건, 일): Two simple people investigating an overturned bicycle and spilled basket on the ground, a small everyday incident. Output exactly 1024x1024 pixels. Match the user's attached example aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny eyes, no shading or colors, abundant negative space in the upper third, scene in the middle and lower part with generous margins. No text, letters, labels, borders or watermarks. Use case: illustration-story."
+    },
+    {
+      "word": "comfort",
+      "meaning": "안락, 위안",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-f8c3e0a0-058b-4b8d-be7b-ff32ccce627d.png",
+      "prompt": "Create a single vocabulary illustration for \"comfort\" (안락, 위안): A simple person resting comfortably in a soft armchair with a blanket and a steaming cup. Output exactly 1024x1024 pixels. Match the user's attached example aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny eyes, no shading or colors, abundant negative space in the upper third, scene in the middle and lower part with generous margins. No text, letters, labels, borders or watermarks. Use case: illustration-story."
+    },
+    {
+      "word": "tradition",
+      "meaning": "전통, 전설",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-1be9c5e3-72eb-4565-b666-fdfb36cd8622.png",
+      "prompt": "Create a single vocabulary illustration for \"tradition\" (전통, 전설): An elderly person in simple Korean hanbok teaches a child to bow for a traditional holiday. Output exactly 1024x1024 pixels. Match the user's attached example aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny eyes, no shading or colors, abundant negative space in the upper third, scene in the middle and lower part with generous margins. No text, letters, labels, borders or watermarks. Use case: illustration-story."
+    },
+    {
+      "word": "subject",
+      "meaning": "학과, 주제, 주어",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-405e895a-f060-416f-8c3d-3b130dd0e4c7.png",
+      "prompt": "Create a single vocabulary illustration for \"subject\" (학과, 주제, 주어): A simple student studying an open book with a globe, ruler and small science flask representing school subjects. Output exactly 1024x1024 pixels. Match the user's attached example aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny eyes, no shading or colors, abundant negative space in the upper third, scene in the middle and lower part with generous margins. No text, letters, labels, borders or watermarks. Use case: illustration-story."
+    },
+    {
+      "word": "object",
+      "meaning": "사물, 목적, 반대하다",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-de505e22-d95a-46fe-84f1-e7d983092b5a.png",
+      "prompt": "Create a single vocabulary illustration for \"object\" (사물, 목적, 반대하다): A simple person examining three everyday objects arranged on a table: a cup, a ball, and a small cube. Output exactly 1024x1024 pixels. Match the user's attached example aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny eyes, no shading or colors, abundant negative space in the upper third, scene in the middle and lower part with generous margins. No text, letters, labels, borders or watermarks. Use case: illustration-story."
+    },
+    {
+      "word": "source",
+      "meaning": "출처, 근원",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-9779986d-2f70-44dd-8695-9416c85916ca.png",
+      "prompt": "Create a single vocabulary illustration for \"source\" (출처, 근원): A small spring emerges from rocks high on a hill and becomes a winding stream, a simple person points to its origin. Output exactly 1024x1024 pixels. Match the user's attached example aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny eyes, no shading or colors, abundant negative space in the upper third, scene in the middle and lower part with generous margins. No text, letters, labels, borders or watermarks. Use case: illustration-story."
+    },
+    {
+      "word": "revolution",
+      "meaning": "혁명",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-49f4f268-3112-4b69-936d-f24879293e26.png",
+      "prompt": "Create a single vocabulary illustration for \"revolution\" (혁명): A small group of simple people raising a plain flag together beside a toppled empty throne, peaceful symbolic change. Output exactly 1024x1024 pixels. Match the user's attached example aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny eyes, no shading or colors, abundant negative space in the upper third, scene in the middle and lower part with generous margins. No text, letters, labels, borders or watermarks. Use case: illustration-story."
+    },
+    {
+      "word": "pollution",
+      "meaning": "오염",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-38cd4fe7-e83a-4aaf-938c-605d5cb4584c.png",
+      "prompt": "Create a single vocabulary illustration for \"pollution\" (오염): A simple person looking sadly at a stream with discarded bottles and a factory emitting smoke in the background. Output exactly 1024x1024 pixels. Match the user's attached example aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny eyes, no shading or colors, abundant negative space in the upper third, scene in the middle and lower part with generous margins. No text, letters, labels, borders or watermarks. Use case: illustration-story."
+    },
+    {
+      "word": "system",
+      "meaning": "조직, 체계, 제도",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-ad3b469b-5507-41e7-b04f-e1b54a5d47ab.png",
+      "prompt": "Create a single vocabulary illustration for \"system\" (조직, 체계, 제도): A simple person turning a crank connected to three interlocking large gears, showing a coordinated system. Output exactly 1024x1024 pixels. Match the user's attached example aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny eyes, no shading or colors, abundant negative space in the upper third, scene in the middle and lower part with generous margins. No text, letters, labels, borders or watermarks. Use case: illustration-story."
+    },
+    {
+      "word": "triumph",
+      "meaning": "승리",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-18553149-01da-46bb-a2d9-805ccdc2e4e2.png",
+      "prompt": "Create a single vocabulary illustration for \"triumph\" (승리): A simple person standing atop a winners podium raising a trophy with both hands. Output exactly 1024x1024 pixels. Match the user's attached example aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny eyes, no shading or colors, abundant negative space in the upper third, scene in the middle and lower part with generous margins. No text, letters, labels, borders or watermarks. Use case: illustration-story."
+    },
+    {
+      "word": "respect",
+      "meaning": "존경",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-2d755909-dff1-4560-a8a9-266bde83dfa7.png",
+      "prompt": "Create a single vocabulary illustration for \"respect\" (존경): A young simple person bowing respectfully to an elderly person, both with gentle expressions. Output exactly 1024x1024 pixels. Match the user's attached example aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny eyes, no shading or colors, abundant negative space in the upper third, scene in the middle and lower part with generous margins. No text, letters, labels, borders or watermarks. Use case: illustration-story."
+    },
+    {
+      "word": "communication",
+      "meaning": "전달, 교통",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-4e289d8b-2049-4809-98a3-ad2dde155c57.png",
+      "prompt": "Create a single vocabulary illustration for \"communication\" (전달, 교통): Two simple people facing each other talking, with empty speech bubbles flowing between them. Output exactly 1024x1024 pixels. Match the user's attached example aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny eyes, no shading or colors, abundant negative space in the upper third, scene in the middle and lower part with generous margins. No text, letters, labels, borders or watermarks. Use case: illustration-story."
+    },
+    {
+      "word": "mass-communication",
+      "meaning": "매스컴",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-665a3505-ac0d-4f11-88b3-7e765f983baf.png",
+      "prompt": "Create a single vocabulary illustration for \"mass-communication\" (매스컴): A simple news presenter on a large television screen, with three simple people watching together, antenna signal arcs above. Output exactly 1024x1024 pixels. Match the user's attached example aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny eyes, no shading or colors, abundant negative space in the upper third, scene in the middle and lower part with generous margins. No text, letters, labels, borders or watermarks. Use case: illustration-story."
+    },
+    {
+      "word": "foundation",
+      "meaning": "기초",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-7c5a892b-b585-4064-a257-1b599989ccc0.png",
+      "prompt": "Create a single vocabulary illustration for \"foundation\" (기초): A simple builder placing a brick on a sturdy wide foundation underneath the outline of a small house. Output exactly 1024x1024 pixels. Match the user's attached example aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny eyes, no shading or colors, abundant negative space in the upper third, scene in the middle and lower part with generous margins. No text, letters, labels, borders or watermarks. Use case: illustration-story."
+    }
+  ]
+}

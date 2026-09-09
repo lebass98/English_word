@@ -156,12 +156,15 @@ function StudyCard({
   const localImage = WORD_IMAGES[word.id] || WORD_IMAGES[word.word];
 
   // 단어가 길어도 두 줄로 넘기지 않고 글자 크기를 줄여 한 줄에 담는다.
-  // 화면 좌우 여백(48) + 카드 안쪽 여백(48) + 스피커 버튼(44) + 버튼과의 간격(12)
-  const wordAreaWidth = Math.max(120, screenWidth - 152);
+  // 단어는 이미지 패널 위에 얹히므로 그 안쪽 폭을 기준으로 계산한다.
+  // 화면 좌우 여백(48) + 카드 안쪽 여백(48) + 겹침 영역 좌우 여백(32)
+  //   + 스피커 버튼(44) + 버튼과의 간격(12)
+  const wordAreaWidth = Math.max(110, screenWidth - 184);
   // 굵은 글씨는 한 글자가 글자 크기의 약 0.58배 너비를 차지한다
+  // 최대 크기는 24px (이미지 위에 얹히므로 기존 34px에서 약 30% 줄였다)
   const wordFontSize = Math.max(
-    12,
-    Math.min(34, Math.floor(wordAreaWidth / (word.word.length * 0.58))),
+    10,
+    Math.min(24, Math.floor(wordAreaWidth / (word.word.length * 0.58))),
   );
 
   const timerPct = Math.min(100, (elapsed / (AUTO_ADVANCE_SEC * 1000)) * 100);
@@ -248,39 +251,6 @@ function StudyCard({
           showsVerticalScrollIndicator={false}
         >
           <View className="rounded-[32px] bg-surface p-6 shadow-neu-card">
-            {/* 단어 + 발음 듣기 */}
-            <View className="mb-5 mt-1 flex-row items-center justify-between">
-              <View className="flex-1 pr-3">
-                <Text
-                  numberOfLines={1}
-                  adjustsFontSizeToFit
-                  style={{
-                    fontSize: wordFontSize,
-                    lineHeight: Math.round(wordFontSize * 1.15),
-                  }}
-                  className="font-black tracking-tight text-slate-900"
-                >
-                  {word.word}
-                </Text>
-                {word.phonetic && (
-                  <Text className="mt-1 text-[13px] tracking-wide text-slate-400">
-                    {word.phonetic}
-                  </Text>
-                )}
-              </View>
-              <Pressable
-                accessibilityLabel={`${word.word} 발음 듣기`}
-                onPress={handleSpeak}
-                className={`h-11 w-11 items-center justify-center rounded-full active:scale-95 ${
-                  speaking
-                    ? "bg-canvas shadow-neu-inset"
-                    : "bg-surface shadow-neu-sm"
-                }`}
-              >
-                <SpeakerIcon color={speaking ? "#0eb582" : "#334155"} />
-              </Pressable>
-            </View>
-
             {/* 연상 이미지 + 좌우 이동 버튼.
                 바깥 View는 잘라내지 않아야 화살표가 패널 밖으로 걸쳐 보인다.
                 이미지가 1024x1024 정사각형이라 패널도 정사각형으로 꽉 채운다 */}
@@ -300,6 +270,39 @@ function StudyCard({
                     </Text>
                   </View>
                 )}
+
+                {/* 단어 · 발음기호 · 발음 듣기: 이미지 위쪽에 겹쳐서 표시한다 */}
+                <View className="absolute inset-x-0 top-0 flex-row items-start justify-between px-4 pb-3 pt-4">
+                  <View className="flex-1 pr-3">
+                    <Text
+                      numberOfLines={1}
+                      adjustsFontSizeToFit
+                      style={{
+                        fontSize: wordFontSize,
+                        lineHeight: Math.round(wordFontSize * 1.15),
+                      }}
+                      className="font-black tracking-tight text-slate-900"
+                    >
+                      {word.word}
+                    </Text>
+                    {word.phonetic && (
+                      <Text className="mt-1 text-[13px] tracking-wide text-slate-500">
+                        {word.phonetic}
+                      </Text>
+                    )}
+                  </View>
+                  <Pressable
+                    accessibilityLabel={`${word.word} 발음 듣기`}
+                    onPress={handleSpeak}
+                    className={`h-11 w-11 items-center justify-center rounded-full active:scale-95 ${
+                      speaking
+                        ? "bg-canvas shadow-neu-inset"
+                        : "bg-surface shadow-neu-sm"
+                    }`}
+                  >
+                    <SpeakerIcon color={speaking ? "#0eb582" : "#334155"} />
+                  </Pressable>
+                </View>
 
                 {/* 자동 넘김 초시계: 이미지 카드 안쪽 하단에 겹쳐서 표시한다 */}
                 <View className="absolute inset-x-0 bottom-0 h-1.5 bg-slate-200">

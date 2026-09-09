@@ -2,7 +2,7 @@ import { useLocalSearchParams, useRouter } from "expo-router";
 import { FlatList, Pressable, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { GRADES } from "../../src/constants/grades";
-import { UNIT_SIZE, unitsOf } from "../../src/constants/words";
+import { unitsOf } from "../../src/constants/words";
 
 export default function GradeScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();

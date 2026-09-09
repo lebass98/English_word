@@ -39,3 +39,6 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# macOS AppleDouble (exFAT 외장하드에서 생성됨)
+._*

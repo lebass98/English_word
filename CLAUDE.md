@@ -24,3 +24,13 @@
   ```
 - 원격 저장소가 설정되지 않은 경우 커밋까지만 완료하고 사용자에게 알린다.
 - `pull --rebase` 중 충돌이 발생하면 임의로 해결하지 말고 즉시 중단 후 사용자에게 알린다.
+
+## `._*` 파일 처리 규칙 (필수)
+
+- 이 프로젝트는 exFAT 외장하드에 있어 macOS가 `._파일명` 형태의 AppleDouble 메타데이터 파일을 자동 생성한다.
+- `._*` 파일은 expo-router 라우트 스캔, git 팩 인덱스 등을 깨뜨리므로 **발견 즉시 전부 삭제**한다.
+- `.claude/settings.json`의 SessionStart / UserPromptSubmit / PostToolUse 훅이 자동으로 삭제한다. 훅이 놓친 경우 아래 명령으로 수동 정리한다:
+  ```bash
+  find . .. -name '._*' -type f -delete
+  ```
+- `._*` 파일은 절대 커밋하지 않는다 (`.gitignore`에 등록됨).

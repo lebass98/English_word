@@ -1,5 +1,43 @@
 {
   "enabledPlugins": {
     "expo@claude-plugins-official": true
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ \"$(uname)\" = Darwin ] && find \"$CLAUDE_PROJECT_DIR\" \"$CLAUDE_PROJECT_DIR/..\" -name '._*' -type f -delete 2>/dev/null; true",
+            "timeout": 30,
+            "statusMessage": "._ 파일 정리 중"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ \"$(uname)\" = Darwin ] && find \"$CLAUDE_PROJECT_DIR\" \"$CLAUDE_PROJECT_DIR/..\" -name '._*' -type f -delete 2>/dev/null; true",
+            "timeout": 30,
+            "async": true
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ \"$(uname)\" = Darwin ] && find \"$CLAUDE_PROJECT_DIR\" \"$CLAUDE_PROJECT_DIR/..\" -name '._*' -type f -delete 2>/dev/null; true",
+            "timeout": 30,
+            "async": true
+          }
+        ]
+      }
+    ]
   }
 }

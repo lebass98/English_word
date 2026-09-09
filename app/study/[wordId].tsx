@@ -36,7 +36,7 @@ export default function StudyScreen() {
   const unitNo = Math.floor(index / UNIT_SIZE) + 1;
   const posInUnit = (index % UNIT_SIZE) + 1;
   const unitLen = Math.min(UNIT_SIZE, words.length - (unitNo - 1) * UNIT_SIZE);
-  const localImage = WORD_IMAGES[word.id];
+  const localImage = WORD_IMAGES[word.id] || WORD_IMAGES[word.word];
 
   const goTo = (i: number) => {
     if (i >= 0 && i < words.length) {

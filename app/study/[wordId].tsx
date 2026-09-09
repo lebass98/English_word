@@ -110,7 +110,8 @@ function StudyCard({
 
   const { width: screenWidth } = useWindowDimensions();
 
-  const [showMeaning, setShowMeaning] = useState(true);
+  /** 영어 예문을 보여줄지 여부. 끄면 한글은 남고 영어만 가려진다 */
+  const [showEnglish, setShowEnglish] = useState(true);
   const [speaking, setSpeaking] = useState(false);
   /** 자동 넘김 진행도 0 → 1. 애니메이션 값이라 매 프레임 부드럽게 움직인다.
       한 번만 만들어 두고 계속 같은 값을 쓴다 */
@@ -352,38 +353,32 @@ function StudyCard({
 
             {/* 한국어 뜻풀이 */}
             <View className="mt-4 rounded-2xl bg-surface p-4 shadow-neu-sm">
-              <View className="flex-row items-center justify-between">
-                <View className="flex-row items-center gap-1.5">
-                  <View className="h-2 w-2 rounded-full bg-emerald-500" />
-                  <Text className="text-[13px] font-bold text-slate-700">
-                    한국어 뜻풀이
-                  </Text>
-                </View>
+              {/* 한글 뜻과 가리기 버튼을 한 줄에 둔다 (제목 없이) */}
+              <View className="flex-row items-center justify-between gap-3">
+                <Text className="flex-1 text-[20px] font-black tracking-tight text-slate-950">
+                  {word.meaning}
+                </Text>
                 <Pressable
-                  onPress={() => setShowMeaning((v) => !v)}
+                  onPress={() => setShowEnglish((v) => !v)}
                   className="flex-row items-center gap-1 active:opacity-70"
                 >
                   <Text className="text-[12px] font-bold text-emerald-500">
-                    {showMeaning ? "가리기" : "뜻 보기"}
+                    {showEnglish ? "가리기" : "보기"}
                   </Text>
-                  {showMeaning ? <ChevronUpIcon /> : <ChevronDownIcon />}
+                  {showEnglish ? <ChevronUpIcon /> : <ChevronDownIcon />}
                 </Pressable>
               </View>
 
-              <Text
-                className={`mt-2.5 text-[20px] font-black tracking-tight ${
-                  showMeaning ? "text-slate-950" : "text-slate-300"
-                }`}
-              >
-                {showMeaning ? word.meaning : "• • • • • •"}
-              </Text>
-
-              {/* 예문 (뜻을 가리면 함께 감춘다) */}
-              {showMeaning && word.example && (
+              {/* 예문: 가리기를 누르면 영어 문장만 감추고 한글 해석은 남긴다 */}
+              {word.example && (
                 <View className="mt-3 gap-1 border-t border-slate-200 pt-3">
-                  <Text className="text-[13px] font-semibold leading-snug text-slate-800">
+                  <Text
+                    className={`text-[13px] font-semibold leading-snug ${
+                      showEnglish ? "text-slate-800" : "text-slate-300"
+                    }`}
+                  >
                     <Text className="font-bold text-emerald-600">예문 </Text>
-                    {word.example}
+                    {showEnglish ? word.example : "• • • • • • • • • •"}
                   </Text>
                   {word.exampleKo && (
                     <Text className="text-[12px] font-medium leading-snug text-slate-500">

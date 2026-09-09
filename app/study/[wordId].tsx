@@ -154,7 +154,8 @@ function StudyCard({
     return stopSpeaking;
   }, [word.word]);
 
-  const gradeLabel = GRADES.find((g) => g.id === gradeId)?.label ?? "";
+  // 헤더는 자리가 좁으므로 짧은 이름을 쓴다 (중학 2학년 → 중2)
+  const gradeLabel = GRADES.find((g) => g.id === gradeId)?.short ?? "";
   const unitNo = Math.floor(index / UNIT_SIZE) + 1;
   const posInUnit = (index % UNIT_SIZE) + 1;
   // 마지막 유닛은 20개보다 적을 수 있다.

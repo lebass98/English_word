@@ -210,9 +210,16 @@ function StudyCard({
           <View className="rounded-[32px] bg-surface p-6 shadow-neu-card">
             {/* 단어 + 발음 듣기 */}
             <View className="mb-5 mt-1 flex-row items-center justify-between">
-              <Text className="text-[34px] font-black leading-tight tracking-tight text-slate-900">
-                {word.word}
-              </Text>
+              <View className="flex-1 pr-3">
+                <Text className="text-[34px] font-black leading-tight tracking-tight text-slate-900">
+                  {word.word}
+                </Text>
+                {word.phonetic && (
+                  <Text className="mt-1 text-[13px] tracking-wide text-slate-400">
+                    {word.phonetic}
+                  </Text>
+                )}
+              </View>
               <Pressable
                 accessibilityLabel={`${word.word} 발음 듣기`}
                 onPress={handleSpeak}
@@ -272,6 +279,21 @@ function StudyCard({
               >
                 {showMeaning ? word.meaning : "• • • • • •"}
               </Text>
+
+              {/* 예문 (뜻을 가리면 함께 감춘다) */}
+              {showMeaning && word.example && (
+                <View className="mt-3 gap-1 border-t border-slate-200 pt-3">
+                  <Text className="text-[13px] font-semibold leading-snug text-slate-800">
+                    <Text className="font-bold text-emerald-600">예문 </Text>
+                    {word.example}
+                  </Text>
+                  {word.exampleKo && (
+                    <Text className="text-[12px] font-medium leading-snug text-slate-500">
+                      {word.exampleKo}
+                    </Text>
+                  )}
+                </View>
+              )}
             </View>
           </View>
         </ScrollView>

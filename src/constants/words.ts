@@ -1,5 +1,6 @@
 import middle1Raw from "../data/middle1.json";
 import middle2Raw from "../data/middle2.json";
+import wordDetailsRaw from "../data/wordDetails.json";
 
 export interface Word {
   id: string;
@@ -16,18 +17,25 @@ export interface Word {
 
 export const UNIT_SIZE = 20;
 
+/**
+ * 발음기호·예문 등 추가 정보. 단어 철자를 키로 쓰며,
+ * 준비된 단어만 채워 넣으면 화면에 자동으로 나타난다.
+ */
+type WordDetail = Pick<Word, "phonetic" | "pos" | "example" | "exampleKo">;
+const WORD_DETAILS = wordDetailsRaw as Record<string, WordDetail>;
+
+const toWords = (raw: unknown, prefix: string): Word[] =>
+  (raw as [string, string][]).map(([word, meaning], i) => ({
+    id: `${prefix}-${i + 1}`,
+    word,
+    meaning,
+    ...WORD_DETAILS[word],
+  }));
+
 /** 학년 id → 단어 목록 */
 export const WORDS_BY_GRADE: Record<string, Word[]> = {
-  "middle-1": (middle1Raw as [string, string][]).map(([word, meaning], i) => ({
-    id: `m1-${i + 1}`,
-    word,
-    meaning,
-  })),
-  "middle-2": (middle2Raw as [string, string][]).map(([word, meaning], i) => ({
-    id: `m2-${i + 1}`,
-    word,
-    meaning,
-  })),
+  "middle-1": toWords(middle1Raw, "m1"),
+  "middle-2": toWords(middle2Raw, "m2"),
 };
 
 /** 단어 id로 (학년, 목록, 인덱스) 찾기 */

@@ -1,0 +1,102 @@
+{
+  "beyond": {
+    "phonetic": "[bɪˈjɑːnd]",
+    "example": "The mountains lie beyond the river.",
+    "exampleKo": "그 산들은 강 너머에 있다."
+  },
+  "either": {
+    "phonetic": "[ˈiːðər]",
+    "example": "You can take either road to the station.",
+    "exampleKo": "역까지는 어느 쪽 길로 가도 된다."
+  },
+  "neither": {
+    "phonetic": "[ˈniːðər]",
+    "example": "Neither answer was correct.",
+    "exampleKo": "어느 쪽 답도 맞지 않았다."
+  },
+  "behind": {
+    "phonetic": "[bɪˈhaɪnd]",
+    "example": "The cat is hiding behind the door.",
+    "exampleKo": "고양이가 문 뒤에 숨어 있다."
+  },
+  "bound": {
+    "phonetic": "[baʊnd]",
+    "example": "This train is bound for Busan.",
+    "exampleKo": "이 기차는 부산으로 향한다."
+  },
+  "below": {
+    "phonetic": "[bɪˈloʊ]",
+    "example": "The temperature fell below zero last night.",
+    "exampleKo": "어젯밤 기온이 영하로 떨어졌다."
+  },
+  "without": {
+    "phonetic": "[wɪˈðaʊt]",
+    "example": "I cannot read the small letters without my glasses.",
+    "exampleKo": "나는 안경 없이는 작은 글자를 읽을 수 없다."
+  },
+  "belong": {
+    "phonetic": "[bɪˈlɔːŋ]",
+    "example": "These books belong to the school library.",
+    "exampleKo": "이 책들은 학교 도서관에 속한 것이다."
+  },
+  "replace": {
+    "phonetic": "[rɪˈpleɪs]",
+    "example": "We need to replace the broken window.",
+    "exampleKo": "우리는 깨진 창문을 교체해야 한다."
+  },
+  "along": {
+    "phonetic": "[əˈlɔːŋ]",
+    "example": "We walked along the beach at sunset.",
+    "exampleKo": "우리는 해질 무렵 해변을 따라 걸었다."
+  },
+  "except": {
+    "phonetic": "[ɪkˈsept]",
+    "example": "Everyone came to the party except Tom.",
+    "exampleKo": "톰을 제외하고 모두 파티에 왔다."
+  },
+  "become": {
+    "phonetic": "[bɪˈkʌm]",
+    "example": "She wants to become a doctor someday.",
+    "exampleKo": "그녀는 언젠가 의사가 되고 싶어 한다."
+  },
+  "since": {
+    "phonetic": "[sɪns]",
+    "example": "I have lived in this town since 2020.",
+    "exampleKo": "나는 2020년부터 이 마을에 살고 있다."
+  },
+  "pretend": {
+    "phonetic": "[prɪˈtend]",
+    "example": "Don't pretend that you didn't hear me.",
+    "exampleKo": "내 말을 못 들은 척하지 마라."
+  },
+  "whether": {
+    "phonetic": "[ˈweðər]",
+    "example": "I don't know whether he will come or not.",
+    "exampleKo": "나는 그가 올지 안 올지 모르겠다."
+  },
+  "toward": {
+    "phonetic": "[təˈwɔːrd]",
+    "example": "She slowly walked toward the door.",
+    "exampleKo": "그녀는 문 쪽으로 천천히 걸어갔다."
+  },
+  "while": {
+    "phonetic": "[waɪl]",
+    "example": "He called me while I was sleeping.",
+    "exampleKo": "내가 자는 동안 그가 나에게 전화했다."
+  },
+  "unless": {
+    "phonetic": "[ənˈles]",
+    "example": "We will go on a picnic unless it rains.",
+    "exampleKo": "비가 오지 않는 한 우리는 소풍을 갈 것이다."
+  },
+  "deserve": {
+    "phonetic": "[dɪˈzɜːrv]",
+    "example": "You deserve a rest after all that hard work.",
+    "exampleKo": "그렇게 열심히 일했으니 너는 쉴 자격이 있다."
+  },
+  "teenager": {
+    "phonetic": "[ˈtiːneɪdʒər]",
+    "example": "He is an active teenager who loves skateboarding.",
+    "exampleKo": "그는 스케이트보드를 좋아하는 활동적인 10대이다."
+  }
+}

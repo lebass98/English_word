@@ -216,8 +216,8 @@ function StudyCard({
               </Text>
             </View>
 
-            {/* 유닛 진행률: 알약 안쪽 하단에 겹쳐서 표시한다 */}
-            <View className="absolute inset-x-0 bottom-0 h-1.5 bg-slate-200">
+            {/* 유닛 진행률: 알약 안쪽 하단에 겹쳐서 표시한다 (높이 3px) */}
+            <View className="absolute inset-x-0 bottom-0 h-[3px] bg-slate-200">
               <View
                 className="h-full bg-emerald-500"
                 style={{ width: `${(posInUnit / unitLen) * 100}%` }}
@@ -310,11 +310,12 @@ function StudyCard({
 
                 {/* 자동 넘김 초시계: 이미지 카드 안쪽 하단에 겹쳐서 표시한다 */}
                 <View className="absolute inset-x-0 bottom-0 h-1.5 bg-slate-200">
+                  {/* Animated.View 에는 className 이 적용되지 않아
+                      높이와 색을 인라인 스타일로 지정한다 */}
                   <Animated.View
-                    className={`h-full ${
-                      autoAdvance ? "bg-emerald-500" : "bg-slate-300"
-                    }`}
                     style={{
+                      height: "100%",
+                      backgroundColor: autoAdvance ? "#10b981" : "#cbd5e1",
                       width: progress.interpolate({
                         inputRange: [0, 1],
                         outputRange: ["0%", "100%"],

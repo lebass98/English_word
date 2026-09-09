@@ -129,8 +129,16 @@ function StudyCard({
     return () => clearInterval(timer);
   }, [autoAdvance, advance]);
 
-  // 화면을 벗어나거나 단어가 바뀌면 재생 중인 음성을 멈춘다.
-  useEffect(() => stopSpeaking, []);
+  // 단어가 바뀌면 발음을 자동으로 한 번 들려준다.
+  // (단어마다 key로 새로 마운트되므로 단어당 정확히 한 번 실행된다)
+  // 화면을 벗어날 때는 재생 중인 음성을 멈춘다.
+  useEffect(() => {
+    speakWord(word.word, {
+      onStart: () => setSpeaking(true),
+      onDone: () => setSpeaking(false),
+    });
+    return stopSpeaking;
+  }, [word.word]);
 
   const gradeLabel = GRADES.find((g) => g.id === gradeId)?.label ?? "";
   const unitNo = Math.floor(index / UNIT_SIZE) + 1;
@@ -143,8 +151,10 @@ function StudyCard({
   const timerPct = Math.min(100, (elapsed / (AUTO_ADVANCE_SEC * 1000)) * 100);
 
   const handleSpeak = () => {
-    setSpeaking(true);
-    speakWord(word.word, () => setSpeaking(false));
+    speakWord(word.word, {
+      onStart: () => setSpeaking(true),
+      onDone: () => setSpeaking(false),
+    });
   };
 
   const decide = (next: WordStatus) => {

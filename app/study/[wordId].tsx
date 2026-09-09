@@ -192,7 +192,7 @@ function StudyCard({
           </Pressable>
 
           {/* 유닛과 진행 개수를 하나의 알약에 담는다 */}
-          <View className="mx-2 h-11 flex-1 flex-row items-center justify-center gap-2 rounded-full bg-surface px-4 shadow-neu-sm">
+          <View className="relative mx-2 h-11 flex-1 flex-row items-center justify-center gap-2 overflow-hidden rounded-full bg-surface px-4 shadow-neu-sm">
             <Text
               numberOfLines={1}
               className="text-[14px] font-bold leading-[15px] tracking-tight text-slate-700"
@@ -207,6 +207,14 @@ function StudyCard({
               <Text className="text-[13px] font-medium leading-[15px] text-slate-400">
                 /{unitLen}
               </Text>
+            </View>
+
+            {/* 유닛 진행률: 알약 안쪽 하단에 겹쳐서 표시한다 */}
+            <View className="absolute inset-x-0 bottom-0 h-1.5 bg-slate-200">
+              <View
+                className="h-full bg-emerald-500"
+                style={{ width: `${(posInUnit / unitLen) * 100}%` }}
+              />
             </View>
           </View>
 
@@ -231,16 +239,6 @@ function StudyCard({
               </Text>
             </View>
           </Pressable>
-        </View>
-
-        {/* 유닛 진행률 */}
-        <View className="mt-4 px-7">
-          <View className="h-1.5 w-full overflow-hidden rounded-full bg-slate-200">
-            <View
-              className="h-full rounded-full bg-emerald-500"
-              style={{ width: `${(posInUnit / unitLen) * 100}%` }}
-            />
-          </View>
         </View>
 
         {/* ── 메인 플래시카드 ──────────────────────────────── */}
@@ -302,6 +300,16 @@ function StudyCard({
                     </Text>
                   </View>
                 )}
+
+                {/* 자동 넘김 초시계: 이미지 카드 안쪽 하단에 겹쳐서 표시한다 */}
+                <View className="absolute inset-x-0 bottom-0 h-1.5 bg-slate-200">
+                  <View
+                    className={`h-full ${
+                      autoAdvance ? "bg-emerald-500" : "bg-slate-300"
+                    }`}
+                    style={{ width: `${autoAdvance ? timerPct : 0}%` }}
+                  />
+                </View>
               </View>
 
               {/* 이전 단어 (버튼 높이 36px의 절반만큼 올려 세로 중앙에 둔다) */}
@@ -331,18 +339,8 @@ function StudyCard({
               </Pressable>
             </View>
 
-            {/* 자동 넘김 진행 바 (이미지 바로 아래) */}
-            <View className="mt-3.5 h-2 w-full overflow-hidden rounded-full bg-canvas p-0.5 shadow-neu-inset">
-              <View
-                className={`h-full rounded-full ${
-                  autoAdvance ? "bg-emerald-500" : "bg-slate-300"
-                }`}
-                style={{ width: `${autoAdvance ? timerPct : 0}%` }}
-              />
-            </View>
-
             {/* 한국어 뜻풀이 */}
-            <View className="mt-3 rounded-2xl bg-surface p-4 shadow-neu-sm">
+            <View className="mt-4 rounded-2xl bg-surface p-4 shadow-neu-sm">
               <View className="flex-row items-center justify-between">
                 <View className="flex-row items-center gap-1.5">
                   <View className="h-2 w-2 rounded-full bg-emerald-500" />

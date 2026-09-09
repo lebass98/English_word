@@ -16,13 +16,13 @@ npm run lint     # ESLint
 - `app/` — expo-router 라우트 (메인 / 학년별 유닛 / 단어 학습)
 - `src/components/` — 공용 컴포넌트 (PillButton, GradeCard, StatCard)
 - `src/constants/` — 학년·단어 데이터 로더, 단어 이미지 레지스트리
-- `src/data/` — 단어 데이터 (중1 994단어)
+- `src/data/` — 단어 데이터 (중1 994단어, 중2 1003단어)
 - `assets/words/` — 단어별 연상 이미지 (`<단어id>.png`)
 
 ## 디자인 규칙
 
 - 전체 UI는 **뉴모피즘** 유지 (버튼 포함). 토큰: `bg-canvas`/`bg-surface`, `shadow-neu`/`shadow-neu-sm`/`shadow-neu-inset`/`shadow-neu-pressed`
-- 최소 폰트 16px(`text-base`), 여백 넉넉하게
+- 폰트 크기: 테마 레벨에서 기본 크기를 약 30% 축소하여 컴팩트하고 쾌적한 가독성 확보
 
 ## 작업 내역
 
@@ -33,4 +33,8 @@ npm run lint     # ESLint
 - 뉴모피즘 디자인 시스템 확립 (카드·칩·버튼·inset 토큰화), 필 버튼 공용 컴포넌트
 - 단어 학습 화면: 플래시카드(뜻 가리기/북마크/거꾸로 학습 토글), 유닛 진행률
 - 중학 1학년 단어 994개 데이터 입력(50유닛), 이미지 자리는 placeholder로 비움
-- 규칙 추가: 작업 완료 시 커밋→푸시→풀 + README 날짜별 작업 내역 기록
+- 중학 1학년 1단원 20개 단어 연상 암기 이미지 생성 및 등록
+- 학습 학년을 중1~3, 고1~3으로 변경 및 ._ 파일 자동 삭제 훅 추가
+- 중학 2학년 단어 1003개 데이터 추가(DAY 01~34, 51개 유닛 분할)
+- 중1 1단원 20개 연상 이미지 상단 텍스트(단어, 노란 박스, 별점, 뜻) 제거 및 순수 일러스트 클린업
+- 전체 UI 글씨 크기 30% 축소 적용 (tailwind theme.extend.fontSize 및 화면별 위계 정리)

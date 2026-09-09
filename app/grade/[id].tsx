@@ -24,7 +24,7 @@ export default function GradeScreen() {
             <Text className="text-2xl font-bold text-ink">
               {grade?.label ?? "학년"}
             </Text>
-            <Text className="mt-1 text-base text-slate-500">
+            <Text className="mt-1 text-sm text-slate-500">
               전체 {grade?.totalWords ?? 0}개 단어 · {units.length}개 유닛
             </Text>
           </View>
@@ -32,7 +32,7 @@ export default function GradeScreen() {
 
         {units.length === 0 ? (
           <View className="flex-1 items-center justify-center">
-            <Text className="text-base text-slate-400">
+            <Text className="text-sm text-slate-400">
               단어 데이터 준비 중입니다
             </Text>
           </View>
@@ -48,11 +48,11 @@ export default function GradeScreen() {
                 onPress={() => router.push(`/study/${item.words[0].id}`)}
                 className="flex-1 rounded-3xl bg-surface p-6 shadow-neu active:shadow-neu-pressed"
               >
-                <Text className="text-base font-bold text-mint">UNIT</Text>
+                <Text className="text-xs font-bold text-mint">UNIT</Text>
                 <Text className="mt-1 text-3xl font-bold text-ink">
                   {item.unitNo}
                 </Text>
-                <Text className="mt-3 text-base text-slate-500">
+                <Text className="mt-3 text-sm text-slate-500">
                   0 / {item.words.length}
                 </Text>
               </Pressable>

@@ -1,4 +1,5 @@
 import middle1Raw from "../data/middle1.json";
+import middle2Raw from "../data/middle2.json";
 
 export interface Word {
   id: string;
@@ -19,6 +20,11 @@ export const UNIT_SIZE = 20;
 export const WORDS_BY_GRADE: Record<string, Word[]> = {
   "middle-1": (middle1Raw as [string, string][]).map(([word, meaning], i) => ({
     id: `m1-${i + 1}`,
+    word,
+    meaning,
+  })),
+  "middle-2": (middle2Raw as [string, string][]).map(([word, meaning], i) => ({
+    id: `m2-${i + 1}`,
     word,
     meaning,
   })),

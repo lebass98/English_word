@@ -38,10 +38,10 @@ export default function HomeScreen() {
           </View>
           <View className="flex-1">
             <Text className="text-xl font-bold text-ink">우리 학습자 ⌄</Text>
-            <Text className="mt-1 text-base text-slate-500">2026.09.09</Text>
+            <Text className="mt-1 text-sm text-slate-500">2026.09.09</Text>
           </View>
-          <View className="rounded-full bg-[#dcf2ea] px-4 py-2 shadow-neu-sm">
-            <Text className="text-base font-bold text-mint-dark">
+          <View className="rounded-full bg-[#dcf2ea] px-3.5 py-1.5 shadow-neu-sm">
+            <Text className="text-sm font-bold text-mint-dark">
               출석 완료
             </Text>
           </View>
@@ -75,7 +75,7 @@ export default function HomeScreen() {
         <Text className="mt-8 text-xl font-bold text-ink">
           오늘의 학습 내용
         </Text>
-        <Text className="mt-2 text-base text-slate-500">
+        <Text className="mt-1.5 text-sm text-slate-500">
           학년을 선택하고 학습을 시작하세요
         </Text>
         <View className="mt-4 gap-8 md:flex-row md:flex-wrap">

@@ -22,7 +22,7 @@ export function GradeCard({
       className="rounded-3xl bg-surface p-6 shadow-neu active:shadow-neu-pressed"
     >
       <Text
-        className={`text-base font-semibold ${started ? "text-emerald-500" : "text-sky-500"}`}
+        className={`text-sm font-semibold ${started ? "text-emerald-500" : "text-sky-500"}`}
       >
         {started ? "학습중" : "미학습"}
       </Text>
@@ -39,7 +39,7 @@ export function GradeCard({
             style={{ width: `${Math.round(progress * 100)}%` }}
           />
         </View>
-        <Text className="text-base text-gray-500">
+        <Text className="text-sm text-gray-500">
           학습률: {learnedWords} / {totalWords}
         </Text>
       </View>

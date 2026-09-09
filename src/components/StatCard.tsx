@@ -14,12 +14,12 @@ export function StatCard({ value, unit, label, emoji }: StatCardProps) {
         <View className="flex-row items-baseline gap-1">
           <Text className="text-2xl font-bold text-ink">{value}</Text>
           {unit && (
-            <Text className="text-base font-semibold text-slate-500">
+            <Text className="text-sm font-semibold text-slate-500">
               {unit}
             </Text>
           )}
         </View>
-        <Text className="mt-1 text-base text-slate-500">{label}</Text>
+        <Text className="mt-1 text-sm text-slate-500">{label}</Text>
       </View>
       <Text className="text-3xl">{emoji}</Text>
     </View>

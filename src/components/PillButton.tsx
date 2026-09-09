@@ -40,11 +40,10 @@ const VARIANT = {
   },
 };
 
-// 최소 폰트 16px(text-base) 유지
 const SIZE = {
-  sm: { pad: "px-5 py-2.5", text: "text-base" },
-  md: { pad: "px-6 py-3", text: "text-base" },
-  lg: { pad: "px-7 py-4", text: "text-lg" },
+  sm: { pad: "px-4 py-2", text: "text-sm" },
+  md: { pad: "px-5 py-2.5", text: "text-base" },
+  lg: { pad: "px-6 py-3", text: "text-lg" },
 };
 
 export function PillButton({

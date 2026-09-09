@@ -61,15 +61,15 @@ export default function StudyScreen() {
             >
               <Text className="text-xl text-slate-700">‹</Text>
             </Pressable>
-            <View className="rounded-full bg-surface px-5 py-2 shadow-neu-sm">
-              <Text className="text-base font-semibold text-slate-700">
+            <View className="rounded-full bg-surface px-4 py-1.5 shadow-neu-sm">
+              <Text className="text-sm font-semibold text-slate-700">
                 {gradeLabel} UNIT {unitNo}
               </Text>
             </View>
           </View>
-          <View className="flex-row items-center gap-1 rounded-full bg-surface px-5 py-2 shadow-neu-sm">
-            <Text className="text-base font-bold text-mint">{posInUnit}</Text>
-            <Text className="text-base text-slate-400">/ {unitLen}</Text>
+          <View className="flex-row items-center gap-1 rounded-full bg-surface px-4 py-1.5 shadow-neu-sm">
+            <Text className="text-sm font-bold text-mint">{posInUnit}</Text>
+            <Text className="text-sm text-slate-400">/ {unitLen}</Text>
           </View>
         </View>
 
@@ -87,14 +87,14 @@ export default function StudyScreen() {
           <View className="flex-row items-center justify-between">
             <View className="flex-row items-center gap-3">
               {word.pos && (
-                <View className="rounded-full bg-[#e9e6f8] px-4 py-1 shadow-neu-sm">
-                  <Text className="text-base font-bold text-indigo-700">
+                <View className="rounded-full bg-[#e9e6f8] px-3 py-1 shadow-neu-sm">
+                  <Text className="text-xs font-bold text-indigo-700">
                     {word.pos}
                   </Text>
                 </View>
               )}
               {word.phonetic && (
-                <Text className="text-base font-medium text-slate-500">
+                <Text className="text-sm font-medium text-slate-500">
                   {word.phonetic}
                 </Text>
               )}
@@ -148,12 +148,12 @@ export default function StudyScreen() {
             <View className="flex-row items-center justify-between">
               <View className="flex-row items-center gap-2">
                 <View className="h-2 w-2 rounded-full bg-mint" />
-                <Text className="text-base font-semibold text-slate-600">
+                <Text className="text-sm font-semibold text-slate-600">
                   한국어 뜻풀이
                 </Text>
               </View>
               <Pressable onPress={() => setShowMeaning((v) => !v)}>
-                <Text className="text-base font-bold text-mint">
+                <Text className="text-sm font-bold text-mint">
                   {showMeaning ? "가리기 ⌃" : "뜻 보기 ⌄"}
                 </Text>
               </Pressable>

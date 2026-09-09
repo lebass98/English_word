@@ -94,6 +94,36 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   "m2-19": require("../../assets/words/mass-communication.png"),
   "m2-20": require("../../assets/words/foundation.png"),
 
+  // 중학교 2학년 4Unit (m2-61 ~ m2-73 완료분)
+  ruin: require("../../assets/words/ruin.png"),
+  monument: require("../../assets/words/monument.png"),
+  information: require("../../assets/words/information.png"),
+  appetite: require("../../assets/words/appetite.png"),
+  stethoscope: require("../../assets/words/stethoscope.png"),
+  mystery: require("../../assets/words/mystery.png"),
+  thermometer: require("../../assets/words/thermometer.png"),
+  burden: require("../../assets/words/burden.png"),
+  series: require("../../assets/words/series.png"),
+  oath: require("../../assets/words/oath.png"),
+  appointment: require("../../assets/words/appointment.png"),
+  clue: require("../../assets/words/clue.png"),
+  debt: require("../../assets/words/debt.png"),
+
+  // 단어 ID 매핑 (m2-61 ~ m2-73)
+  "m2-61": require("../../assets/words/ruin.png"),
+  "m2-62": require("../../assets/words/monument.png"),
+  "m2-63": require("../../assets/words/information.png"),
+  "m2-64": require("../../assets/words/appetite.png"),
+  "m2-65": require("../../assets/words/stethoscope.png"),
+  "m2-66": require("../../assets/words/mystery.png"),
+  "m2-67": require("../../assets/words/thermometer.png"),
+  "m2-68": require("../../assets/words/burden.png"),
+  "m2-69": require("../../assets/words/series.png"),
+  "m2-70": require("../../assets/words/oath.png"),
+  "m2-71": require("../../assets/words/appointment.png"),
+  "m2-72": require("../../assets/words/clue.png"),
+  "m2-73": require("../../assets/words/debt.png"),
+
   // 기타 단어
   innocent: require("../../assets/words/innocent.png"),
 };

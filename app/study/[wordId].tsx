@@ -110,8 +110,8 @@ function StudyCard({
 
   const { width: screenWidth } = useWindowDimensions();
 
-  /** 영어 예문을 보여줄지 여부. 끄면 한글은 남고 영어만 가려진다 */
-  const [showEnglish, setShowEnglish] = useState(true);
+  /** 예문을 보여줄지 여부. 끄면 뜻만 남고 예문은 통째로 가려진다 */
+  const [showExample, setShowExample] = useState(true);
   const [speaking, setSpeaking] = useState(false);
   /** 자동 넘김 진행도 0 → 1. 애니메이션 값이라 매 프레임 부드럽게 움직인다.
       한 번만 만들어 두고 계속 같은 값을 쓴다 */
@@ -360,26 +360,23 @@ function StudyCard({
                   {word.meaning}
                 </Text>
                 <Pressable
-                  onPress={() => setShowEnglish((v) => !v)}
+                  onPress={() => setShowExample((v) => !v)}
                   className="flex-row items-center gap-1 active:opacity-70"
                 >
                   <Text className="text-[12px] font-bold text-emerald-500">
-                    {showEnglish ? "가리기" : "보기"}
+                    {showExample ? "가리기" : "보기"}
                   </Text>
-                  {showEnglish ? <ChevronUpIcon /> : <ChevronDownIcon />}
+                  {showExample ? <ChevronUpIcon /> : <ChevronDownIcon />}
                 </Pressable>
               </View>
 
-              {/* 예문: 가리기를 누르면 영어 문장만 감추고 한글 해석은 남긴다 */}
-              {word.example && (
+              {/* 예문: 가리기를 누르면 영어와 한글 해석을 통째로 감춘다.
+                  뜻만 남아서 스스로 확인해 보기 좋다 */}
+              {showExample && word.example && (
                 <View className="mt-3 gap-1 border-t border-slate-200 pt-3">
-                  <Text
-                    className={`text-[13px] font-semibold leading-snug ${
-                      showEnglish ? "text-slate-800" : "text-slate-300"
-                    }`}
-                  >
+                  <Text className="text-[13px] font-semibold leading-snug text-slate-800">
                     <Text className="font-bold text-emerald-600">예문 </Text>
-                    {showEnglish ? word.example : "• • • • • • • • • •"}
+                    {word.example}
                   </Text>
                   {word.exampleKo && (
                     <Text className="text-[12px] font-medium leading-snug text-slate-500">

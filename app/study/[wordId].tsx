@@ -226,27 +226,23 @@ function StudyCard({
               </Pressable>
             </View>
 
-            {/* 연상 이미지 패널 */}
-            <View
-              className="w-full rounded-2xl bg-canvas p-4 shadow-neu-inset"
-              style={{ minHeight: 270 }}
-            >
-              <View className="w-full flex-1 items-center justify-center py-2">
-                {localImage ? (
-                  <Image
-                    source={localImage}
-                    resizeMode="contain"
-                    style={{ width: "100%", height: 190 }}
-                  />
-                ) : (
-                  <View className="items-center gap-3">
-                    <Text className="text-[40px]">🖼️</Text>
-                    <Text className="text-[13px] text-slate-400">
-                      연상 이미지 준비 중
-                    </Text>
-                  </View>
-                )}
-              </View>
+            {/* 연상 이미지 패널: 이미지가 1024x1024 정사각형이라
+                패널도 정사각형으로 두고 여백 없이 꽉 채운다 */}
+            <View className="aspect-square w-full overflow-hidden rounded-2xl bg-canvas shadow-neu-inset">
+              {localImage ? (
+                <Image
+                  source={localImage}
+                  resizeMode="cover"
+                  style={{ width: "100%", height: "100%" }}
+                />
+              ) : (
+                <View className="flex-1 items-center justify-center gap-3">
+                  <Text className="text-[40px]">🖼️</Text>
+                  <Text className="text-[13px] text-slate-400">
+                    연상 이미지 준비 중
+                  </Text>
+                </View>
+              )}
             </View>
 
             {/* 한국어 뜻풀이 */}

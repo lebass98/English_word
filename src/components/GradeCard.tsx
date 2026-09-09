@@ -19,7 +19,7 @@ export function GradeCard({
   return (
     <Pressable
       onPress={onPress}
-      className="rounded-3xl bg-surface p-6 shadow-neu active:shadow-neu-pressed"
+      className="rounded-3xl bg-surface p-6 shadow-neu-card active:shadow-neu-pressed"
     >
       <Text
         className={`text-sm font-semibold ${started ? "text-emerald-500" : "text-sky-500"}`}

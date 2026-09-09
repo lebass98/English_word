@@ -32,7 +32,7 @@ export default function HomeScreen() {
         </View>
 
         {/* 프로필 카드 */}
-        <View className="mt-6 flex-row items-center gap-4 rounded-3xl bg-surface p-6 shadow-neu">
+        <View className="mt-6 flex-row items-center gap-4 rounded-3xl bg-surface p-6 shadow-neu-card">
           <View className="h-16 w-16 items-center justify-center rounded-full bg-canvas shadow-neu-inset">
             <Text className="text-3xl">🧑‍🎓</Text>
           </View>
@@ -97,7 +97,7 @@ export default function HomeScreen() {
 
       {/* 하단 네비게이션 */}
       <View className="absolute inset-x-0 bottom-0 bg-canvas px-6 pb-6 pt-2">
-        <View className="flex-row items-center justify-around rounded-full bg-surface px-4 py-3 shadow-neu">
+        <View className="flex-row items-center justify-around rounded-full bg-surface px-4 py-3 shadow-neu-card">
           <Pressable className="items-center rounded-full bg-canvas px-6 py-2 shadow-neu-inset">
             <Text className="text-lg">🏠</Text>
             <Text className="text-base font-bold text-mint-dark">홈</Text>

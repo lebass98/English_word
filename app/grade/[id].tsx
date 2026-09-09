@@ -12,8 +12,8 @@ export default function GradeScreen() {
 
   return (
     <SafeAreaView className="flex-1 bg-canvas">
-      <View className="w-full flex-1 px-6 lg:mx-auto lg:max-w-3xl">
-        <View className="flex-row items-center gap-4 py-5">
+      <View className="w-full flex-1 lg:mx-auto lg:max-w-3xl">
+        <View className="flex-row items-center gap-4 px-6 py-5">
           <Pressable
             onPress={() => router.back()}
             className="h-12 w-12 items-center justify-center rounded-full bg-surface shadow-neu-sm active:shadow-neu-pressed"
@@ -31,7 +31,7 @@ export default function GradeScreen() {
         </View>
 
         {units.length === 0 ? (
-          <View className="flex-1 items-center justify-center">
+          <View className="flex-1 items-center justify-center px-6">
             <Text className="text-sm text-slate-400">
               단어 데이터 준비 중입니다
             </Text>
@@ -42,11 +42,11 @@ export default function GradeScreen() {
             keyExtractor={(u) => String(u.unitNo)}
             numColumns={2}
             columnWrapperClassName="gap-6"
-            contentContainerClassName="gap-6 pb-10 pt-2"
+            contentContainerClassName="gap-6 px-6 pb-10 pt-6"
             renderItem={({ item }) => (
               <Pressable
                 onPress={() => router.push(`/study/${item.words[0].id}`)}
-                className="flex-1 rounded-3xl bg-surface p-6 shadow-neu active:shadow-neu-pressed"
+                className="flex-1 rounded-3xl bg-surface p-6 shadow-neu-card active:shadow-neu-pressed"
               >
                 <Text className="text-xs font-bold text-mint">UNIT</Text>
                 <Text className="mt-1 text-3xl font-bold text-ink">

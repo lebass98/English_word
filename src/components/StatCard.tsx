@@ -9,7 +9,7 @@ interface StatCardProps {
 
 export function StatCard({ value, unit, label, emoji }: StatCardProps) {
   return (
-    <View className="min-w-[45%] flex-1 flex-row items-center justify-between rounded-3xl bg-surface p-6 shadow-neu">
+    <View className="min-w-[45%] flex-1 flex-row items-center justify-between rounded-3xl bg-surface p-6 shadow-neu-card">
       <View>
         <View className="flex-row items-baseline gap-1">
           <Text className="text-2xl font-bold text-ink">{value}</Text>

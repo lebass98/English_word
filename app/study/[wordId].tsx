@@ -1,6 +1,8 @@
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { useCallback, useEffect, useState } from "react";
 import {
+  Animated,
+  Easing,
   Image,
   Pressable,
   ScrollView,
@@ -29,8 +31,6 @@ import { useAppStore, type WordStatus } from "../../src/stores/useAppStore";
 
 /** 자동 넘김 간격 (초) */
 const AUTO_ADVANCE_SEC = 15;
-/** 타이머 갱신 주기 (ms) — 진행 바를 부드럽게 채우기 위한 값 */
-const TICK_MS = 200;
 
 export default function StudyScreen() {
   const { wordId } = useLocalSearchParams<{ wordId: string }>();
@@ -112,29 +112,33 @@ function StudyCard({
 
   const [showMeaning, setShowMeaning] = useState(true);
   const [speaking, setSpeaking] = useState(false);
-  /** 현재 단어를 본 지 경과한 시간 (ms) */
-  const [elapsed, setElapsed] = useState(0);
+  /** 자동 넘김 진행도 0 → 1. 애니메이션 값이라 매 프레임 부드럽게 움직인다.
+      한 번만 만들어 두고 계속 같은 값을 쓴다 */
+  const [progress] = useState(() => new Animated.Value(0));
 
   const advance = useCallback(() => onNavigate(nextId), [onNavigate, nextId]);
 
-  // 자동 넘김 타이머: 켜져 있는 동안만 돌고, 다 채우면 다음 단어로 넘어간다.
+  // 자동 넘김 타이머.
+  // 예전에는 200ms마다 상태를 바꿔 바를 다시 그렸는데, 그 간격만큼 계단처럼 끊겨 보였다.
+  // 지금은 15초 동안 0에서 1까지 일정한 속도로 흐르는 애니메이션 하나로 처리해
+  // 왼쪽에서 오른쪽으로 끊김 없이 채워진다.
   useEffect(() => {
+    progress.setValue(0);
     if (!autoAdvance) return;
 
-    const startedAt = Date.now();
-    const timer = setInterval(() => {
-      const ms = Date.now() - startedAt;
-      if (ms >= AUTO_ADVANCE_SEC * 1000) {
-        clearInterval(timer);
-        setElapsed(AUTO_ADVANCE_SEC * 1000);
-        advance();
-      } else {
-        setElapsed(ms);
-      }
-    }, TICK_MS);
+    const animation = Animated.timing(progress, {
+      toValue: 1,
+      duration: AUTO_ADVANCE_SEC * 1000,
+      easing: Easing.linear,
+      // 너비는 레이아웃 속성이라 네이티브 드라이버를 쓸 수 없다
+      useNativeDriver: false,
+    });
+    animation.start(({ finished }) => {
+      if (finished) advance();
+    });
 
-    return () => clearInterval(timer);
-  }, [autoAdvance, advance]);
+    return () => animation.stop();
+  }, [autoAdvance, advance, progress]);
 
   // 단어가 바뀌면 발음을 자동으로 한 번 들려준다.
   // (단어마다 key로 새로 마운트되므로 단어당 정확히 한 번 실행된다)
@@ -167,7 +171,6 @@ function StudyCard({
     Math.min(24, Math.floor(wordAreaWidth / (word.word.length * 0.58))),
   );
 
-  const timerPct = Math.min(100, (elapsed / (AUTO_ADVANCE_SEC * 1000)) * 100);
 
   const handleSpeak = () => {
     speakWord(word.word, {
@@ -306,11 +309,16 @@ function StudyCard({
 
                 {/* 자동 넘김 초시계: 이미지 카드 안쪽 하단에 겹쳐서 표시한다 */}
                 <View className="absolute inset-x-0 bottom-0 h-1.5 bg-slate-200">
-                  <View
+                  <Animated.View
                     className={`h-full ${
                       autoAdvance ? "bg-emerald-500" : "bg-slate-300"
                     }`}
-                    style={{ width: `${autoAdvance ? timerPct : 0}%` }}
+                    style={{
+                      width: progress.interpolate({
+                        inputRange: [0, 1],
+                        outputRange: ["0%", "100%"],
+                      }),
+                    }}
                   />
                 </View>
               </View>

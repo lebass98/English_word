@@ -212,6 +212,12 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   "m2-59": require("../../assets/words/feast.png"),
   "m2-60": require("../../assets/words/resources.png"),
 
+  // 중학교 2학년 13~15Unit 중 기존 이미지 보유 단어 (4종)
+  "m2-254": require("../../assets/words/deserve.png"),
+  "m2-261": require("../../assets/words/pretend.png"),
+  "m2-289": require("../../assets/words/except.png"),
+  "m2-296": require("../../assets/words/replace.png"),
+
   // 기타 단어
   innocent: require("../../assets/words/innocent.png"),
 };

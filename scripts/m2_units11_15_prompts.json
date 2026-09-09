@@ -1,0 +1,802 @@
+[
+  {
+    "id": "m2-201",
+    "unit": 11,
+    "word": "base",
+    "meaning": "기초, 기초를 두다",
+    "scene": "a sturdy square stone base foundation of a tall column with a builder standing beside",
+    "prompt": "Create a single vocabulary illustration for \"base\" (기초, 기초를 두다): a sturdy square stone base foundation of a tall column with a builder standing beside. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-202",
+    "unit": 11,
+    "word": "basement",
+    "meaning": "지하실",
+    "scene": "a person walking down clean stairs with handrail into a cozy lit basement room",
+    "prompt": "Create a single vocabulary illustration for \"basement\" (지하실): a person walking down clean stairs with handrail into a cozy lit basement room. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-203",
+    "unit": 11,
+    "word": "evil",
+    "meaning": "악, 나쁜",
+    "scene": "a mischievous shadowed figure casting a long cartoonish horn shadow on a wall",
+    "prompt": "Create a single vocabulary illustration for \"evil\" (악, 나쁜): a mischievous shadowed figure casting a long cartoonish horn shadow on a wall. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-204",
+    "unit": 11,
+    "word": "atom",
+    "meaning": "원자",
+    "scene": "a classic scientific atom model with protons in the nucleus and swirling electrons",
+    "prompt": "Create a single vocabulary illustration for \"atom\" (원자): a classic scientific atom model with protons in the nucleus and swirling electrons. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-205",
+    "unit": 11,
+    "word": "poet",
+    "meaning": "시인",
+    "scene": "a thoughtful poet sitting by an open window writing verses with a quill pen and paper",
+    "prompt": "Create a single vocabulary illustration for \"poet\" (시인): a thoughtful poet sitting by an open window writing verses with a quill pen and paper. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-206",
+    "unit": 11,
+    "word": "petal",
+    "meaning": "꽃잎",
+    "scene": "a gentle hand catching a single soft flower petal falling gracefully from a blossom",
+    "prompt": "Create a single vocabulary illustration for \"petal\" (꽃잎): a gentle hand catching a single soft flower petal falling gracefully from a blossom. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-207",
+    "unit": 11,
+    "word": "chance",
+    "meaning": "기회, 가능성",
+    "scene": "two people rolling a pair of six-sided dice showing lucky dots on a table",
+    "prompt": "Create a single vocabulary illustration for \"chance\" (기회, 가능성): two people rolling a pair of six-sided dice showing lucky dots on a table. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-208",
+    "unit": 11,
+    "word": "mind",
+    "meaning": "마음",
+    "scene": "a profile silhouette of a human head with a glowing lightbulb brain thought bubble",
+    "prompt": "Create a single vocabulary illustration for \"mind\" (마음): a profile silhouette of a human head with a glowing lightbulb brain thought bubble. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-209",
+    "unit": 11,
+    "word": "climate",
+    "meaning": "기후, 풍토",
+    "scene": "a globe divided cleanly into four sections showing sun, rain, snow, and wind symbols",
+    "prompt": "Create a single vocabulary illustration for \"climate\" (기후, 풍토): a globe divided cleanly into four sections showing sun, rain, snow, and wind symbols. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-210",
+    "unit": 11,
+    "word": "suburb",
+    "meaning": "교외",
+    "scene": "a peaceful row of neat suburban houses with small gardens and white picket fences",
+    "prompt": "Create a single vocabulary illustration for \"suburb\" (교외): a peaceful row of neat suburban houses with small gardens and white picket fences. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-211",
+    "unit": 11,
+    "word": "throat",
+    "meaning": "목구멍",
+    "scene": "a doctor gently shining a small penlight to examine a smiling patient throat",
+    "prompt": "Create a single vocabulary illustration for \"throat\" (목구멍): a doctor gently shining a small penlight to examine a smiling patient throat. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-212",
+    "unit": 11,
+    "word": "voice",
+    "meaning": "목소리",
+    "scene": "a singer person standing before a microphone with gentle undulating sound wave rings",
+    "prompt": "Create a single vocabulary illustration for \"voice\" (목소리): a singer person standing before a microphone with gentle undulating sound wave rings. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-213",
+    "unit": 11,
+    "word": "valley",
+    "meaning": "골짜기, 계곡",
+    "scene": "a picturesque green valley nestled between two steep rising mountain slopes",
+    "prompt": "Create a single vocabulary illustration for \"valley\" (골짜기, 계곡): a picturesque green valley nestled between two steep rising mountain slopes. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-214",
+    "unit": 11,
+    "word": "puritan",
+    "meaning": "청교도",
+    "scene": "a historic puritan figure in a tall buckle hat and collar coat walking with a bible",
+    "prompt": "Create a single vocabulary illustration for \"puritan\" (청교도): a historic puritan figure in a tall buckle hat and collar coat walking with a bible. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-215",
+    "unit": 11,
+    "word": "feather",
+    "meaning": "깃털",
+    "scene": "a single elegant bird feather floating gently in the air with soft wisps",
+    "prompt": "Create a single vocabulary illustration for \"feather\" (깃털): a single elegant bird feather floating gently in the air with soft wisps. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-216",
+    "unit": 11,
+    "word": "amateur",
+    "meaning": "아마추어",
+    "scene": "a beginner painter proudly smiling at a simple canvas painting on a tabletop easel",
+    "prompt": "Create a single vocabulary illustration for \"amateur\" (아마추어): a beginner painter proudly smiling at a simple canvas painting on a tabletop easel. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-217",
+    "unit": 11,
+    "word": "nation",
+    "meaning": "국가",
+    "scene": "a world map globe surrounded by diverse small national flag outlines",
+    "prompt": "Create a single vocabulary illustration for \"nation\" (국가): a world map globe surrounded by diverse small national flag outlines. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-218",
+    "unit": 11,
+    "word": "puzzle",
+    "meaning": "수수께끼",
+    "scene": "two hands fitting the final jigsaw puzzle piece into an almost complete puzzle",
+    "prompt": "Create a single vocabulary illustration for \"puzzle\" (수수께끼): two hands fitting the final jigsaw puzzle piece into an almost complete puzzle. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-219",
+    "unit": 11,
+    "word": "riddle",
+    "meaning": "수수께끼",
+    "scene": "a person looking curiously at an ancient scroll marked with a big decorative question mark",
+    "prompt": "Create a single vocabulary illustration for \"riddle\" (수수께끼): a person looking curiously at an ancient scroll marked with a big decorative question mark. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-220",
+    "unit": 11,
+    "word": "rear",
+    "meaning": "뒤쪽",
+    "scene": "a person standing at the rear back tailgate of a parked pickup truck loading a box",
+    "prompt": "Create a single vocabulary illustration for \"rear\" (뒤쪽): a person standing at the rear back tailgate of a parked pickup truck loading a box. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-221",
+    "unit": 12,
+    "word": "battle",
+    "meaning": "전투, 싸움",
+    "scene": "two medieval shields crossed together with toy flags on an ancient fortress wall",
+    "prompt": "Create a single vocabulary illustration for \"battle\" (전투, 싸움): two medieval shields crossed together with toy flags on an ancient fortress wall. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-222",
+    "unit": 12,
+    "word": "laundry",
+    "meaning": "세탁소",
+    "scene": "a modern laundry room with a front-load washing machine and a basket of folded towels",
+    "prompt": "Create a single vocabulary illustration for \"laundry\" (세탁소): a modern laundry room with a front-load washing machine and a basket of folded towels. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-223",
+    "unit": 12,
+    "word": "shower",
+    "meaning": "소나기, 샤워",
+    "scene": "a person holding an umbrella as a sudden brief rain shower falls from a single cloud",
+    "prompt": "Create a single vocabulary illustration for \"shower\" (소나기, 샤워): a person holding an umbrella as a sudden brief rain shower falls from a single cloud. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-224",
+    "unit": 12,
+    "word": "navy",
+    "meaning": "해군",
+    "scene": "a naval officer in dress uniform looking through a telescope on a ship bridge",
+    "prompt": "Create a single vocabulary illustration for \"navy\" (해군): a naval officer in dress uniform looking through a telescope on a ship bridge. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-225",
+    "unit": 12,
+    "word": "mars",
+    "meaning": "화성",
+    "scene": "the red planet Mars with its cratered surface and two tiny orbiting moons in space",
+    "prompt": "Create a single vocabulary illustration for \"mars\" (화성): the red planet Mars with its cratered surface and two tiny orbiting moons in space. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-226",
+    "unit": 12,
+    "word": "gallery",
+    "meaning": "화랑",
+    "scene": "an art gallery hall with framed canvas artworks and visitors quietly admiring them",
+    "prompt": "Create a single vocabulary illustration for \"gallery\" (화랑): an art gallery hall with framed canvas artworks and visitors quietly admiring them. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-227",
+    "unit": 12,
+    "word": "guest",
+    "meaning": "손님(visitor)",
+    "scene": "a homeowner warmly opening the front door and gesturing welcome to an arriving guest",
+    "prompt": "Create a single vocabulary illustration for \"guest\" (손님(visitor)): a homeowner warmly opening the front door and gesturing welcome to an arriving guest. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-228",
+    "unit": 12,
+    "word": "folk",
+    "meaning": "사람들",
+    "scene": "a cheerful group of community village people dancing in a circle holding hands",
+    "prompt": "Create a single vocabulary illustration for \"folk\" (사람들): a cheerful group of community village people dancing in a circle holding hands. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-229",
+    "unit": 12,
+    "word": "problem",
+    "meaning": "문제",
+    "scene": "a student scratching head at a chalkboard with an algebra puzzle problem",
+    "prompt": "Create a single vocabulary illustration for \"problem\" (문제): a student scratching head at a chalkboard with an algebra puzzle problem. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-230",
+    "unit": 12,
+    "word": "jewel",
+    "meaning": "보석",
+    "scene": "a sparkling faceted diamond jewel resting on a soft velvet cushion",
+    "prompt": "Create a single vocabulary illustration for \"jewel\" (보석): a sparkling faceted diamond jewel resting on a soft velvet cushion. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-231",
+    "unit": 12,
+    "word": "garage",
+    "meaning": "차고",
+    "scene": "a residential garage with the roll-up door open showing a car parked inside",
+    "prompt": "Create a single vocabulary illustration for \"garage\" (차고): a residential garage with the roll-up door open showing a car parked inside. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-232",
+    "unit": 12,
+    "word": "fault",
+    "meaning": "결점, 잘못",
+    "scene": "a cracked ceramic plate on a table with a person pointing at the hairline flaw",
+    "prompt": "Create a single vocabulary illustration for \"fault\" (결점, 잘못): a cracked ceramic plate on a table with a person pointing at the hairline flaw. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-233",
+    "unit": 12,
+    "word": "lantern",
+    "meaning": "랜턴",
+    "scene": "a camper holding a lit vintage kerosene lantern illuminating a dark path",
+    "prompt": "Create a single vocabulary illustration for \"lantern\" (랜턴): a camper holding a lit vintage kerosene lantern illuminating a dark path. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-234",
+    "unit": 12,
+    "word": "import",
+    "meaning": "수입(품)",
+    "scene": "a cargo cargo ship arriving at port unloading shipping containers with a crane",
+    "prompt": "Create a single vocabulary illustration for \"import\" (수입(품)): a cargo cargo ship arriving at port unloading shipping containers with a crane. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-235",
+    "unit": 12,
+    "word": "angle",
+    "meaning": "각도",
+    "scene": "a large geometric set square measuring an acute angle drawn on drafting paper",
+    "prompt": "Create a single vocabulary illustration for \"angle\" (각도): a large geometric set square measuring an acute angle drawn on drafting paper. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-236",
+    "unit": 12,
+    "word": "match",
+    "meaning": "시합",
+    "scene": "two soccer players contesting for a soccer ball on a grass pitch during a match",
+    "prompt": "Create a single vocabulary illustration for \"match\" (시합): two soccer players contesting for a soccer ball on a grass pitch during a match. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-237",
+    "unit": 12,
+    "word": "stripe",
+    "meaning": "줄무늬",
+    "scene": "a zebra or striped patterned fabric showing crisp bold black and white parallel stripes",
+    "prompt": "Create a single vocabulary illustration for \"stripe\" (줄무늬): a zebra or striped patterned fabric showing crisp bold black and white parallel stripes. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-238",
+    "unit": 12,
+    "word": "pulse",
+    "meaning": "맥박",
+    "scene": "a nurse gently placing two fingers on a patient wrist checking a steady pulse rhythm",
+    "prompt": "Create a single vocabulary illustration for \"pulse\" (맥박): a nurse gently placing two fingers on a patient wrist checking a steady pulse rhythm. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-239",
+    "unit": 12,
+    "word": "powder",
+    "meaning": "가루, 화약",
+    "scene": "a chef sifting fine white flour powder through a mesh sieve into a mixing bowl",
+    "prompt": "Create a single vocabulary illustration for \"powder\" (가루, 화약): a chef sifting fine white flour powder through a mesh sieve into a mixing bowl. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-240",
+    "unit": 12,
+    "word": "flood",
+    "meaning": "홍수",
+    "scene": "a swollen river overflowing its banks with sandbags placed along the sidewalk edge",
+    "prompt": "Create a single vocabulary illustration for \"flood\" (홍수): a swollen river overflowing its banks with sandbags placed along the sidewalk edge. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-241",
+    "unit": 13,
+    "word": "bush",
+    "meaning": "수풀, 덤불",
+    "scene": "a round lush green garden bush trimmed neatly beside a stone pathway",
+    "prompt": "Create a single vocabulary illustration for \"bush\" (수풀, 덤불): a round lush green garden bush trimmed neatly beside a stone pathway. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-242",
+    "unit": 13,
+    "word": "branch",
+    "meaning": "가지",
+    "scene": "a sturdy tree branch extending outward with three little birds perched in a row",
+    "prompt": "Create a single vocabulary illustration for \"branch\" (가지): a sturdy tree branch extending outward with three little birds perched in a row. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-243",
+    "unit": 13,
+    "word": "hero",
+    "meaning": "영웅, (복수형)heroes",
+    "scene": "a caped heroic figure standing tall atop a building looking out over the peaceful city",
+    "prompt": "Create a single vocabulary illustration for \"hero\" (영웅, (복수형)heroes): a caped heroic figure standing tall atop a building looking out over the peaceful city. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-244",
+    "unit": 13,
+    "word": "heaven",
+    "meaning": "하늘",
+    "scene": "soft white clouds illuminated by gentle warm sunbeams radiating from above",
+    "prompt": "Create a single vocabulary illustration for \"heaven\" (하늘): soft white clouds illuminated by gentle warm sunbeams radiating from above. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-245",
+    "unit": 13,
+    "word": "exit",
+    "meaning": "출구",
+    "scene": "a person walking through an open doorway marked with a running person exit sign",
+    "prompt": "Create a single vocabulary illustration for \"exit\" (출구): a person walking through an open doorway marked with a running person exit sign. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-246",
+    "unit": 13,
+    "word": "beast",
+    "meaning": "짐승, (=animal)",
+    "scene": "a friendly wild lion resting majestically on a savanna rock outcrop",
+    "prompt": "Create a single vocabulary illustration for \"beast\" (짐승, (=animal)): a friendly wild lion resting majestically on a savanna rock outcrop. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-247",
+    "unit": 13,
+    "word": "century",
+    "meaning": "세기, 100년",
+    "scene": "a timeline ribbon stretching from year 1900 to 2000 showing 100 years span",
+    "prompt": "Create a single vocabulary illustration for \"century\" (세기, 100년): a timeline ribbon stretching from year 1900 to 2000 showing 100 years span. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-248",
+    "unit": 13,
+    "word": "coeducation",
+    "meaning": "남녀공학",
+    "scene": "male and female students sitting together in a modern bright school classroom",
+    "prompt": "Create a single vocabulary illustration for \"coeducation\" (남녀공학): male and female students sitting together in a modern bright school classroom. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-249",
+    "unit": 13,
+    "word": "twin",
+    "meaning": "쌍둥이의 한 사람",
+    "scene": "two identical smiling twin children wearing matching striped shirts standing together",
+    "prompt": "Create a single vocabulary illustration for \"twin\" (쌍둥이의 한 사람): two identical smiling twin children wearing matching striped shirts standing together. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-250",
+    "unit": 13,
+    "word": "wound",
+    "meaning": "상처, 부상",
+    "scene": "a medic gently placing a clean sterile bandage over a scraped knee",
+    "prompt": "Create a single vocabulary illustration for \"wound\" (상처, 부상): a medic gently placing a clean sterile bandage over a scraped knee. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-251",
+    "unit": 13,
+    "word": "metal",
+    "meaning": "금속",
+    "scene": "a blacksmith hammering a glowing heated iron ingot on a heavy steel anvil",
+    "prompt": "Create a single vocabulary illustration for \"metal\" (금속): a blacksmith hammering a glowing heated iron ingot on a heavy steel anvil. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-252",
+    "unit": 13,
+    "word": "insect",
+    "meaning": "곤충",
+    "scene": "a curious child with a magnifying glass observing a ladybug walking on a leaf",
+    "prompt": "Create a single vocabulary illustration for \"insect\" (곤충): a curious child with a magnifying glass observing a ladybug walking on a leaf. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-253",
+    "unit": 13,
+    "word": "track",
+    "meaning": "지나간 자국, 선로",
+    "scene": "parallel railway tracks curving gently off toward the distant horizon",
+    "prompt": "Create a single vocabulary illustration for \"track\" (지나간 자국, 선로): parallel railway tracks curving gently off toward the distant horizon. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-254",
+    "unit": 13,
+    "word": "deserve",
+    "meaning": "받을 가치가 있다, ~할 만하다",
+    "scene": "a triumphant student receiving a shiny first place medal on a victory podium",
+    "prompt": "Create a single vocabulary illustration for \"deserve\" (받을 가치가 있다, ~할 만하다): a triumphant student receiving a shiny first place medal on a victory podium. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-255",
+    "unit": 13,
+    "word": "survive",
+    "meaning": "~보다 오래 살다, ~에서 살아남다",
+    "scene": "a sturdy green sprout growing resiliently through a crack in a paved stone walkway",
+    "prompt": "Create a single vocabulary illustration for \"survive\" (~보다 오래 살다, ~에서 살아남다): a sturdy green sprout growing resiliently through a crack in a paved stone walkway. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-256",
+    "unit": 13,
+    "word": "create",
+    "meaning": "창조하다",
+    "scene": "a sculptor hands shaping soft clay into a beautiful vase on a spinning pottery wheel",
+    "prompt": "Create a single vocabulary illustration for \"create\" (창조하다): a sculptor hands shaping soft clay into a beautiful vase on a spinning pottery wheel. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-257",
+    "unit": 13,
+    "word": "describe",
+    "meaning": "묘사하다",
+    "scene": "a person pointing at a detailed picture of a landscape explaining its features",
+    "prompt": "Create a single vocabulary illustration for \"describe\" (묘사하다): a person pointing at a detailed picture of a landscape explaining its features. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-258",
+    "unit": 13,
+    "word": "select",
+    "meaning": "고르다, 선발한",
+    "scene": "a hand carefully picking out the ripest red apple from a fruit display crate",
+    "prompt": "Create a single vocabulary illustration for \"select\" (고르다, 선발한): a hand carefully picking out the ripest red apple from a fruit display crate. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-259",
+    "unit": 13,
+    "word": "hesitate",
+    "meaning": "주저하다, 망설이다",
+    "scene": "a person standing at a fork in the road pausing with a thoughtful pondering posture",
+    "prompt": "Create a single vocabulary illustration for \"hesitate\" (주저하다, 망설이다): a person standing at a fork in the road pausing with a thoughtful pondering posture. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-260",
+    "unit": 13,
+    "word": "declare",
+    "meaning": "선언하다",
+    "scene": "a town herald holding up a rolled parchment royal scroll making a formal announcement",
+    "prompt": "Create a single vocabulary illustration for \"declare\" (선언하다): a town herald holding up a rolled parchment royal scroll making a formal announcement. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-261",
+    "unit": 14,
+    "word": "pretend",
+    "meaning": "~인 체하다",
+    "scene": "a playful child wearing a towel cape pretending to be a flying superhero",
+    "prompt": "Create a single vocabulary illustration for \"pretend\" (~인 체하다): a playful child wearing a towel cape pretending to be a flying superhero. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-262",
+    "unit": 14,
+    "word": "struggle",
+    "meaning": "분투하다, 노력하다, 싸우다",
+    "scene": "a hiker pulling themselves up a steep rocky ledge with effort and determination",
+    "prompt": "Create a single vocabulary illustration for \"struggle\" (분투하다, 노력하다, 싸우다): a hiker pulling themselves up a steep rocky ledge with effort and determination. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-263",
+    "unit": 14,
+    "word": "explore",
+    "meaning": "탐험하다",
+    "scene": "an explorer with a backpack and map walking into an uncharted forest trail",
+    "prompt": "Create a single vocabulary illustration for \"explore\" (탐험하다): an explorer with a backpack and map walking into an uncharted forest trail. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-264",
+    "unit": 14,
+    "word": "astonish",
+    "meaning": "놀라게 하다",
+    "scene": "a person with eyes wide and mouth open in astonishment looking at a surprising sight",
+    "prompt": "Create a single vocabulary illustration for \"astonish\" (놀라게 하다): a person with eyes wide and mouth open in astonishment looking at a surprising sight. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-265",
+    "unit": 14,
+    "word": "disappoint",
+    "meaning": "실망시키다",
+    "scene": "a person looking down with drooped shoulders seeing an empty dropped ice cream cone",
+    "prompt": "Create a single vocabulary illustration for \"disappoint\" (실망시키다): a person looking down with drooped shoulders seeing an empty dropped ice cream cone. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-266",
+    "unit": 14,
+    "word": "attract",
+    "meaning": "끌다",
+    "scene": "a horseshoe magnet pulling several steel paperclips cleanly toward its magnetic poles",
+    "prompt": "Create a single vocabulary illustration for \"attract\" (끌다): a horseshoe magnet pulling several steel paperclips cleanly toward its magnetic poles. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-267",
+    "unit": 14,
+    "word": "celebrate",
+    "meaning": "축하하다",
+    "scene": "three friends cheering with party poppers, confetti, and party hats in the air",
+    "prompt": "Create a single vocabulary illustration for \"celebrate\" (축하하다): three friends cheering with party poppers, confetti, and party hats in the air. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-268",
+    "unit": 14,
+    "word": "explode",
+    "meaning": "폭발시키다",
+    "scene": "a festive colorful fireworks rocket bursting into bright sparks high in the night sky",
+    "prompt": "Create a single vocabulary illustration for \"explode\" (폭발시키다): a festive colorful fireworks rocket bursting into bright sparks high in the night sky. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-269",
+    "unit": 14,
+    "word": "include",
+    "meaning": "포함하다",
+    "scene": "a checklist with four items all checked inside a circle indicating everything is included",
+    "prompt": "Create a single vocabulary illustration for \"include\" (포함하다): a checklist with four items all checked inside a circle indicating everything is included. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-270",
+    "unit": 14,
+    "word": "protect",
+    "meaning": "보호하다",
+    "scene": "an umbrella held over a small delicate flower shielding it from heavy rain drops",
+    "prompt": "Create a single vocabulary illustration for \"protect\" (보호하다): an umbrella held over a small delicate flower shielding it from heavy rain drops. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-271",
+    "unit": 14,
+    "word": "introduce",
+    "meaning": "소개하다, 도입하다",
+    "scene": "one friend introducing two other people to each other with friendly outstretched hand",
+    "prompt": "Create a single vocabulary illustration for \"introduce\" (소개하다, 도입하다): one friend introducing two other people to each other with friendly outstretched hand. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-272",
+    "unit": 14,
+    "word": "produce",
+    "meaning": "생산하다",
+    "scene": "a factory conveyor belt carrying freshly packaged finished goods into shipping boxes",
+    "prompt": "Create a single vocabulary illustration for \"produce\" (생산하다): a factory conveyor belt carrying freshly packaged finished goods into shipping boxes. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-273",
+    "unit": 14,
+    "word": "chase",
+    "meaning": "쫓다, 추적",
+    "scene": "a playful dog chasing a thrown flying disc across an open sunny lawn",
+    "prompt": "Create a single vocabulary illustration for \"chase\" (쫓다, 추적): a playful dog chasing a thrown flying disc across an open sunny lawn. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-274",
+    "unit": 14,
+    "word": "scratch",
+    "meaning": "할퀴다, 긁다",
+    "scene": "a cat playfully stretching its front paws scratching a wooden scratching post",
+    "prompt": "Create a single vocabulary illustration for \"scratch\" (할퀴다, 긁다): a cat playfully stretching its front paws scratching a wooden scratching post. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-275",
+    "unit": 14,
+    "word": "crash",
+    "meaning": "충돌(추락), 충돌하다, 와르르 무너지다",
+    "scene": "two bumper cars colliding gently with cartoon impact star lines and laughing drivers",
+    "prompt": "Create a single vocabulary illustration for \"crash\" (충돌(추락), 충돌하다, 와르르 무너지다): two bumper cars colliding gently with cartoon impact star lines and laughing drivers. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-276",
+    "unit": 14,
+    "word": "stare",
+    "meaning": "응시하다",
+    "scene": "a person leaning forward peering intently with wide unblinking eyes at an object",
+    "prompt": "Create a single vocabulary illustration for \"stare\" (응시하다): a person leaning forward peering intently with wide unblinking eyes at an object. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-277",
+    "unit": 14,
+    "word": "gaze",
+    "meaning": "응시하다, 바라보다",
+    "scene": "a person sitting peacefully under a night sky gazing upward at shining stars",
+    "prompt": "Create a single vocabulary illustration for \"gaze\" (응시하다, 바라보다): a person sitting peacefully under a night sky gazing upward at shining stars. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-278",
+    "unit": 14,
+    "word": "scare",
+    "meaning": "놀라게 하다, 놀라다",
+    "scene": "a friend jumping out playfully from behind a door startling another person",
+    "prompt": "Create a single vocabulary illustration for \"scare\" (놀라게 하다, 놀라다): a friend jumping out playfully from behind a door startling another person. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-279",
+    "unit": 14,
+    "word": "grab",
+    "meaning": "움켜잡다",
+    "scene": "a hand quickly reaching out and grabbing the strap of a falling backpack",
+    "prompt": "Create a single vocabulary illustration for \"grab\" (움켜잡다): a hand quickly reaching out and grabbing the strap of a falling backpack. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-280",
+    "unit": 14,
+    "word": "guard",
+    "meaning": "지키다, 경계, 위병",
+    "scene": "a royal palace guard standing at strict attention with a ceremonial staff by an arch",
+    "prompt": "Create a single vocabulary illustration for \"guard\" (지키다, 경계, 위병): a royal palace guard standing at strict attention with a ceremonial staff by an arch. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-281",
+    "unit": 15,
+    "word": "discuss",
+    "meaning": "토론하다",
+    "scene": "four colleagues seated around a round table exchanging ideas with speech bubbles",
+    "prompt": "Create a single vocabulary illustration for \"discuss\" (토론하다): four colleagues seated around a round table exchanging ideas with speech bubbles. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-282",
+    "unit": 15,
+    "word": "shrug",
+    "meaning": "어깨를 으쓱하다",
+    "scene": "a person with hands turned upward and shoulders raised high in a nonchalant shrug",
+    "prompt": "Create a single vocabulary illustration for \"shrug\" (어깨를 으쓱하다): a person with hands turned upward and shoulders raised high in a nonchalant shrug. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-283",
+    "unit": 15,
+    "word": "sniff",
+    "meaning": "냄새 맡다",
+    "scene": "a person holding a fragrant cup of herbal tea close to nose sniffing the warm aroma",
+    "prompt": "Create a single vocabulary illustration for \"sniff\" (냄새 맡다): a person holding a fragrant cup of herbal tea close to nose sniffing the warm aroma. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-284",
+    "unit": 15,
+    "word": "scream",
+    "meaning": "날카롭게 소리치다",
+    "scene": "a person riding an exciting roller coaster drop with mouth open shouting thrilled scream",
+    "prompt": "Create a single vocabulary illustration for \"scream\" (날카롭게 소리치다): a person riding an exciting roller coaster drop with mouth open shouting thrilled scream. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-285",
+    "unit": 15,
+    "word": "rid",
+    "meaning": "제거하다",
+    "scene": "a person sweeping dust and fallen leaves off a porch using a straw broom into a dustpan",
+    "prompt": "Create a single vocabulary illustration for \"rid\" (제거하다): a person sweeping dust and fallen leaves off a porch using a straw broom into a dustpan. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-286",
+    "unit": 15,
+    "word": "surround",
+    "meaning": "둘러싸다",
+    "scene": "four friendly friends standing in a full protective circle around a central mascot",
+    "prompt": "Create a single vocabulary illustration for \"surround\" (둘러싸다): four friendly friends standing in a full protective circle around a central mascot. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-287",
+    "unit": 15,
+    "word": "cleave",
+    "meaning": "쪼개다, 찢다",
+    "scene": "a sturdy woodcutter axe splitting a round wooden log cleanly in half on a chopping block",
+    "prompt": "Create a single vocabulary illustration for \"cleave\" (쪼개다, 찢다): a sturdy woodcutter axe splitting a round wooden log cleanly in half on a chopping block. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-288",
+    "unit": 15,
+    "word": "carve",
+    "meaning": "새기다, 조각하다",
+    "scene": "a woodworker using a small chisel gouge to carve decorative relief flowers into timber",
+    "prompt": "Create a single vocabulary illustration for \"carve\" (새기다, 조각하다): a woodworker using a small chisel gouge to carve decorative relief flowers into timber. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-289",
+    "unit": 15,
+    "word": "except",
+    "meaning": "제외하다",
+    "scene": "a row of four round apples with one pointed star shape highlighted as the exception",
+    "prompt": "Create a single vocabulary illustration for \"except\" (제외하다): a row of four round apples with one pointed star shape highlighted as the exception. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-290",
+    "unit": 15,
+    "word": "invent",
+    "meaning": "발명하다",
+    "scene": "an eccentric inventor working on an intricate contraption of cogs, levers, and bells",
+    "prompt": "Create a single vocabulary illustration for \"invent\" (발명하다): an eccentric inventor working on an intricate contraption of cogs, levers, and bells. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-291",
+    "unit": 15,
+    "word": "search",
+    "meaning": "찾다",
+    "scene": "a detective person on knees looking through a magnifying glass tracking clues on floor",
+    "prompt": "Create a single vocabulary illustration for \"search\" (찾다): a detective person on knees looking through a magnifying glass tracking clues on floor. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-292",
+    "unit": 15,
+    "word": "abuse",
+    "meaning": "남용하다, 학대하다",
+    "scene": "an alert person stepping in with hand held up to stop harsh mistreatment of a stray pet",
+    "prompt": "Create a single vocabulary illustration for \"abuse\" (남용하다, 학대하다): an alert person stepping in with hand held up to stop harsh mistreatment of a stray pet. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-293",
+    "unit": 15,
+    "word": "owe",
+    "meaning": "힘입다, 빚(의무)이 있다",
+    "scene": "a person handing a coin to a friend with a courteous polite nod acknowledging a debt",
+    "prompt": "Create a single vocabulary illustration for \"owe\" (힘입다, 빚(의무)이 있다): a person handing a coin to a friend with a courteous polite nod acknowledging a debt. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-294",
+    "unit": 15,
+    "word": "bless",
+    "meaning": "축복하다",
+    "scene": "an elder placing a gentle comforting hand atop the head of a kneeling young person",
+    "prompt": "Create a single vocabulary illustration for \"bless\" (축복하다): an elder placing a gentle comforting hand atop the head of a kneeling young person. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-295",
+    "unit": 15,
+    "word": "graduate",
+    "meaning": "졸업하다",
+    "scene": "a proud student in graduation cap and gown holding a tied diploma scroll",
+    "prompt": "Create a single vocabulary illustration for \"graduate\" (졸업하다): a proud student in graduation cap and gown holding a tied diploma scroll. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-296",
+    "unit": 15,
+    "word": "replace",
+    "meaning": "~을 대신하다, 제자리에 놓다",
+    "scene": "a person removing a burnt-out dead lightbulb and screwing in a fresh glowing bulb",
+    "prompt": "Create a single vocabulary illustration for \"replace\" (~을 대신하다, 제자리에 놓다): a person removing a burnt-out dead lightbulb and screwing in a fresh glowing bulb. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-297",
+    "unit": 15,
+    "word": "collect",
+    "meaning": "모으다, 수집하다",
+    "scene": "a collector carefully placing a rare postage stamp into a philately stamp album",
+    "prompt": "Create a single vocabulary illustration for \"collect\" (모으다, 수집하다): a collector carefully placing a rare postage stamp into a philately stamp album. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-298",
+    "unit": 15,
+    "word": "upset",
+    "meaning": "뒤엎다, 당황하게 하다",
+    "scene": "a person knocking over a cup of water accidentally on a desk looking flustered",
+    "prompt": "Create a single vocabulary illustration for \"upset\" (뒤엎다, 당황하게 하다): a person knocking over a cup of water accidentally on a desk looking flustered. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-299",
+    "unit": 15,
+    "word": "arrest",
+    "meaning": "체포하다, 체포",
+    "scene": "a police officer placing handcuffs on a captured cartoon bandit suspect",
+    "prompt": "Create a single vocabulary illustration for \"arrest\" (체포하다, 체포): a police officer placing handcuffs on a captured cartoon bandit suspect. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  },
+  {
+    "id": "m2-300",
+    "unit": 15,
+    "word": "prove",
+    "meaning": "증명하다",
+    "scene": "a mathematician triumphantly writing Q.E.D. at the end of a neat chalkboard proof",
+    "prompt": "Create a single vocabulary illustration for \"prove\" (증명하다): a mathematician triumphantly writing Q.E.D. at the end of a neat chalkboard proof. Match aesthetically: very pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, adorable simple stick figure people with circular heads and dot eyes, no fills except tiny dot eyes, no shading or colors, abundant negative space in the upper third, scene placed in the center and lower part with generous margins. No text, no letters, no labels, no borders or watermarks."
+  }
+]

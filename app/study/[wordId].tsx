@@ -164,9 +164,9 @@ function StudyCard({
 
   return (
     <SafeAreaView className="flex-1 bg-canvas">
-      <View className="mx-auto w-full max-w-[430px] flex-1 px-4">
+      <View className="mx-auto w-full max-w-[430px] flex-1">
         {/* ── 상단 바: 뒤로 · 유닛 · 진행 카운터 ───────────────── */}
-        <View className="flex-row items-center justify-between pt-2">
+        <View className="flex-row items-center justify-between px-6 pt-2">
           <Pressable
             onPress={onBack}
             accessibilityLabel="뒤로 가기"
@@ -192,7 +192,7 @@ function StudyCard({
         </View>
 
         {/* 유닛 진행률 */}
-        <View className="mt-4 px-1">
+        <View className="mt-4 px-7">
           <View className="h-1.5 w-full overflow-hidden rounded-full bg-slate-200">
             <View
               className="h-full rounded-full bg-emerald-500"
@@ -204,10 +204,10 @@ function StudyCard({
         {/* ── 메인 플래시카드 ──────────────────────────────── */}
         <ScrollView
           className="flex-1"
-          contentContainerClassName="py-4"
+          contentContainerClassName="px-6 pb-10 pt-8"
           showsVerticalScrollIndicator={false}
         >
-          <View className="rounded-[32px] bg-surface p-6 shadow-neu">
+          <View className="rounded-[32px] bg-surface p-6 shadow-neu-card">
             {/* 단어 + 발음 듣기 */}
             <View className="mb-5 mt-1 flex-row items-center justify-between">
               <Text className="text-[34px] font-black leading-tight tracking-tight text-slate-900">
@@ -277,7 +277,7 @@ function StudyCard({
         </ScrollView>
 
         {/* ── 자동 넘김 타이머 ─────────────────────────────── */}
-        <View className="mb-2.5 gap-1.5 rounded-2xl bg-surface px-3.5 py-2.5 shadow-neu-sm">
+        <View className="mx-6 mb-2.5 gap-1.5 rounded-2xl bg-surface px-3.5 py-2.5 shadow-neu-sm">
           <View className="flex-row items-center justify-between px-0.5">
             <ClockIcon color={autoAdvance ? "#10b981" : "#94a3b8"} />
             <View className="flex-row items-baseline">
@@ -304,7 +304,7 @@ function StudyCard({
         </View>
 
         {/* ── 이전 · 자동 넘김 토글 · 다음 ──────────────────── */}
-        <View className="my-1 flex-row items-center justify-between gap-2.5 px-1">
+        <View className="mx-6 my-1 flex-row items-center justify-between gap-2.5 px-1">
           <Pressable
             onPress={() => onNavigate(prevId)}
             style={{ flex: 1 }}
@@ -347,7 +347,7 @@ function StudyCard({
         </View>
 
         {/* ── 학습 평가 버튼 ───────────────────────────────── */}
-        <View className="flex-row items-stretch gap-3 px-1 pb-4 pt-3">
+        <View className="mx-6 flex-row items-stretch gap-3 px-1 pb-4 pt-3">
           <Pressable
             onPress={() => decide("unsure")}
             style={{ flex: 1 }}

@@ -17,6 +17,11 @@ module.exports = {
       boxShadow: {
         // 뉴모피즘: 우하단 어두운 그림자 + 좌상단 흰 하이라이트 (배경 #ecedf1 기준)
         neu: "14px 14px 28px rgba(174, 174, 192, 0.45), -10px -10px 24px #ffffff",
+        // 스크롤 영역 안의 큰 카드용. 그림자가 퍼지는 최대 거리를 24px로 맞춰
+        // 스크롤 컨테이너(좌우 여백 24px)에서 잘리지 않게 한다.
+        // 오른쪽/아래 8+16=24px, 왼쪽/위 6+14=20px
+        "neu-card":
+          "8px 8px 16px rgba(174, 174, 192, 0.45), -6px -6px 14px #ffffff",
         "neu-pressed":
           "6px 6px 12px rgba(174, 174, 192, 0.4), -4px -4px 10px #ffffff",
         // 작은 요소(칩·버튼)용 뉴모피즘

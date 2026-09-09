@@ -37,6 +37,8 @@ jobs:
         run: npm run typecheck
 
       - name: Expo Web 정적 사이트 빌드
+        env:
+          BASE_URL: /${{ github.event.repository.name }}
         run: npm run build:web
 
       - name: GitHub Pages 호환성 설정 (.nojekyll 및 404 리다이렉트)

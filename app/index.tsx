@@ -19,7 +19,7 @@ export default function HomeScreen() {
     <SafeAreaView className="flex-1 bg-canvas">
       <ScrollView
         className="flex-1"
-        contentContainerClassName="w-full px-6 pb-28 lg:mx-auto lg:max-w-3xl"
+        contentContainerClassName="w-full px-6 pb-28"
       >
         {/* 헤더: 브랜드 + 알림 */}
         <View className="flex-row items-center justify-between pt-4">

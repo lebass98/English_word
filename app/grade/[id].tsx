@@ -12,10 +12,14 @@ export default function GradeScreen() {
 
   return (
     <SafeAreaView className="flex-1 bg-canvas">
-      <View className="w-full flex-1 lg:mx-auto lg:max-w-3xl">
+      <View className="w-full flex-1">
         <View className="flex-row items-center gap-4 px-6 py-5">
           <Pressable
-            onPress={() => router.back()}
+            onPress={() => {
+              // 되돌아갈 기록이 없으면 홈으로 보낸다
+              if (router.canGoBack()) router.back();
+              else router.replace("/");
+            }}
             className="h-12 w-12 items-center justify-center rounded-full bg-surface shadow-neu-sm active:shadow-neu-pressed"
           >
             <Text className="text-xl text-slate-700">‹</Text>

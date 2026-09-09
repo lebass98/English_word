@@ -1,6 +1,13 @@
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { useCallback, useEffect, useState } from "react";
-import { Image, Pressable, ScrollView, Text, View } from "react-native";
+import {
+  Image,
+  Pressable,
+  ScrollView,
+  Text,
+  useWindowDimensions,
+  View,
+} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import {
   AgainIcon,
@@ -73,7 +80,12 @@ export default function StudyScreen() {
       prevId={words[index - 1]?.id}
       nextId={words[index + 1]?.id}
       onNavigate={goTo}
-      onBack={() => router.back()}
+      onBack={() => {
+        // 주소로 바로 들어오거나 새로고침한 경우엔 되돌아갈 기록이 없다.
+        // 그때는 해당 학년의 유닛 목록으로 보낸다.
+        if (router.canGoBack()) router.back();
+        else router.replace(`/grade/${gradeId}`);
+      }}
     />
   );
 }
@@ -102,6 +114,8 @@ function StudyCard({
   const autoAdvance = useAppStore((s) => s.autoAdvance);
   const setAutoAdvance = useAppStore((s) => s.setAutoAdvance);
   const setWordStatus = useAppStore((s) => s.setWordStatus);
+
+  const { width: screenWidth } = useWindowDimensions();
 
   const [showMeaning, setShowMeaning] = useState(true);
   const [speaking, setSpeaking] = useState(false);
@@ -147,6 +161,15 @@ function StudyCard({
   const unitLen = Math.min(UNIT_SIZE, total - (unitNo - 1) * UNIT_SIZE);
   const localImage = WORD_IMAGES[word.id] || WORD_IMAGES[word.word];
 
+  // 단어가 길어도 두 줄로 넘기지 않고 글자 크기를 줄여 한 줄에 담는다.
+  // 화면 좌우 여백(48) + 카드 안쪽 여백(48) + 스피커 버튼(44) + 버튼과의 간격(12)
+  const wordAreaWidth = Math.max(120, screenWidth - 152);
+  // 굵은 글씨는 한 글자가 글자 크기의 약 0.58배 너비를 차지한다
+  const wordFontSize = Math.max(
+    12,
+    Math.min(34, Math.floor(wordAreaWidth / (word.word.length * 0.58))),
+  );
+
   const elapsedSec = Math.min(AUTO_ADVANCE_SEC, Math.floor(elapsed / 1000));
   const timerPct = Math.min(100, (elapsed / (AUTO_ADVANCE_SEC * 1000)) * 100);
 
@@ -164,7 +187,7 @@ function StudyCard({
 
   return (
     <SafeAreaView className="flex-1 bg-canvas">
-      <View className="mx-auto w-full max-w-[430px] flex-1">
+      <View className="w-full flex-1">
         {/* ── 상단 바: 뒤로 · 유닛 · 진행 카운터 ───────────────── */}
         <View className="flex-row items-center justify-between px-6 pt-2">
           <Pressable
@@ -175,17 +198,17 @@ function StudyCard({
             <ChevronLeftIcon />
           </Pressable>
 
-          <View className="rounded-full bg-surface px-5 py-2 shadow-neu-sm">
-            <Text className="text-[14px] font-bold tracking-tight text-slate-700">
+          <View className="h-11 items-center justify-center rounded-full bg-surface px-5 shadow-neu-sm">
+            <Text className="text-[14px] font-bold leading-[14px] tracking-tight text-slate-700">
               {gradeLabel} UNIT {unitNo}
             </Text>
           </View>
 
-          <View className="flex-row items-center gap-1 rounded-full bg-surface px-4 py-2 shadow-neu-sm">
-            <Text className="text-[15px] font-extrabold text-emerald-500">
+          <View className="h-11 flex-row items-center justify-center gap-1 rounded-full bg-surface px-4 shadow-neu-sm">
+            <Text className="text-[15px] font-extrabold leading-[15px] text-emerald-500">
               {posInUnit}
             </Text>
-            <Text className="text-[14px] font-medium text-slate-400">
+            <Text className="text-[14px] font-medium leading-[15px] text-slate-400">
               / {unitLen}
             </Text>
           </View>
@@ -211,7 +234,15 @@ function StudyCard({
             {/* 단어 + 발음 듣기 */}
             <View className="mb-5 mt-1 flex-row items-center justify-between">
               <View className="flex-1 pr-3">
-                <Text className="text-[34px] font-black leading-tight tracking-tight text-slate-900">
+                <Text
+                  numberOfLines={1}
+                  adjustsFontSizeToFit
+                  style={{
+                    fontSize: wordFontSize,
+                    lineHeight: Math.round(wordFontSize * 1.15),
+                  }}
+                  className="font-black tracking-tight text-slate-900"
+                >
                   {word.word}
                 </Text>
                 {word.phonetic && (

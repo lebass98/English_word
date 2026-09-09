@@ -1,0 +1,286 @@
+{
+  "tool": "built-in image_gen",
+  "size": "1024x1024",
+  "images": [
+    {
+      "id": "m2-21",
+      "word": "glory",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: A person receiving a laurel wreath beneath radiant celebratory rays while two people applaud.",
+      "file": "assets/words/glory.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-d66c1756-4244-4ce4-a099-c4c0b5e38c2c.png"
+    },
+    {
+      "id": "m2-22",
+      "word": "situation",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: A person stands beside a broken umbrella in falling rain and a puddle, surveying their current circumstances.",
+      "file": "assets/words/situation.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-2ab7f0c0-a610-4c9e-860d-68405ebaa780.png"
+    },
+    {
+      "id": "m2-23",
+      "word": "competition",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: Two runners racing side by side toward a finish ribbon.",
+      "file": "assets/words/competition.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-b4e57c8e-502e-45c7-8946-03a85ef20d00.png"
+    },
+    {
+      "id": "m2-24",
+      "word": "prairie",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: A tiny traveler standing in a vast open rolling grassland with scattered grass tufts and a distant low horizon.",
+      "file": "assets/words/prairie.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-f30400ef-a45d-455d-9d2a-c14419ae9a51.png"
+    },
+    {
+      "id": "m2-25",
+      "word": "effort",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: A determined person pushing a large round boulder up a gentle slope with sweat droplets.",
+      "file": "assets/words/effort.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-047375f2-c59a-458f-be5e-f296dff57198.png"
+    },
+    {
+      "id": "m2-26",
+      "word": "section",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: A person pointing to one clearly outlined section of a garden divided into four plots.",
+      "file": "assets/words/section.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-30b791f3-bd3b-4b5c-b0cc-7f5c7a6861be.png"
+    },
+    {
+      "id": "m2-27",
+      "word": "no smoking section",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: A seating area with a large clear no-smoking pictogram: cigarette enclosed by circle and diagonal slash, beside two seated people.",
+      "file": "assets/words/no-smoking-section.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-666485e3-b110-4111-8129-e8548d6bd6dd.png"
+    },
+    {
+      "id": "m2-28",
+      "word": "rein",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: A person gently holding the clearly visible reins connected to a horse bridle, standing beside the calm horse.",
+      "file": "assets/words/rein.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-d2564807-d723-4cee-becc-0ce3c2ff7dea.png"
+    },
+    {
+      "id": "m2-29",
+      "word": "solution",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: A smiling person fitting the final matching piece into a nearly complete simple jigsaw puzzle.",
+      "file": "assets/words/solution.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-94d06d6f-aabd-4bc2-a287-489e21a41a30.png"
+    },
+    {
+      "id": "m2-30",
+      "word": "honor",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: A person respectfully receiving a medal from another person during a small ceremony.",
+      "file": "assets/words/honor.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-b0b4aae7-337f-4047-8ed9-51684d952096.png"
+    },
+    {
+      "id": "m2-31",
+      "word": "unity",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: Four simple people linking hands in a close circle around a central joined puzzle shape.",
+      "file": "assets/words/unity.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-3dc5c54f-06a1-453c-ab62-b0da9b99c306.png"
+    },
+    {
+      "id": "m2-32",
+      "word": "population",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: A small neighborhood of three houses with a diverse crowd of simple people standing in front, representing residents.",
+      "file": "assets/words/population.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-412324a3-9a7e-4d23-9a50-4604a494f60d.png"
+    },
+    {
+      "id": "m2-33",
+      "word": "direction",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: A traveler at a fork in a path pointing toward a large blank arrow-shaped signpost.",
+      "file": "assets/words/direction.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-bd075fa1-4ec6-44b3-87ed-9431c84cb021.png"
+    },
+    {
+      "id": "m2-34",
+      "word": "dialogue",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: Two people seated facing each other, alternating empty speech bubbles.",
+      "file": "assets/words/dialogue.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-7dc4ba98-fc8f-412d-aad3-c0f608e2cfa7.png"
+    },
+    {
+      "id": "m2-35",
+      "word": "dialogue between north and south",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: Two neutral delegates sitting across a round negotiation table and shaking hands; behind them a simple outline map of the Korean peninsula with a single horizontal dividing line. No flags, no text.",
+      "file": "assets/words/dialogue-between-north-and-south.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-73bac12b-042f-43d6-a07c-cce2504f2355.png"
+    },
+    {
+      "id": "m2-36",
+      "word": "republic",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: Three citizens placing ballot papers into a ballot box together, with a simple civic building behind.",
+      "file": "assets/words/republic.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-7192b141-916b-47e2-92cb-fad2d94b2ab9.png"
+    },
+    {
+      "id": "m2-37",
+      "word": "method",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: A person folding paper into a paper boat, beside three sequential shapes showing flat paper, folded paper, and a finished boat.",
+      "file": "assets/words/method.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-1fb9f758-addf-4a35-a78b-a0a6a87d4024.png"
+    },
+    {
+      "id": "m2-38",
+      "word": "increase",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: A person looking at three progressively taller stacks of coins with a rising outlined arrow above.",
+      "file": "assets/words/increase.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-ddca7872-ce4c-43e3-b2fe-d2d95bbf5f0b.png"
+    },
+    {
+      "id": "m2-39",
+      "word": "decrease",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: A person looking at three progressively shorter stacks of coins with a descending outlined arrow above.",
+      "file": "assets/words/decrease.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-9fefb05e-d022-416f-916c-33303b6bdccc.png"
+    },
+    {
+      "id": "m2-40",
+      "word": "amount",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: A person measuring a quantity of water by pouring a jug into a large measuring cup with tick marks and no numbers.",
+      "file": "assets/words/amount.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-4c23534e-e95e-4b13-8781-5eeae8a42a59.png"
+    },
+    {
+      "id": "m2-41",
+      "word": "ancestor",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: A child looking up at a family tree with portrait medallions of grandparents and earlier generations on upper branches.",
+      "file": "assets/words/ancestor.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-ba95f891-06df-4315-ab1b-e7f7ccf94dbd.png"
+    },
+    {
+      "id": "m2-42",
+      "word": "voyage",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: A small sailing ship crossing gentle ocean waves with a person aboard looking toward the horizon.",
+      "file": "assets/words/voyage.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-eb5a363a-2974-43eb-af0f-41e7c69af07f.png"
+    },
+    {
+      "id": "m2-43",
+      "word": "sculpture",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: A sculptor with chisel standing beside a sculpted bust on a pedestal.",
+      "file": "assets/words/sculpture.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-72a80c8b-e0ec-4df1-a168-89e6a2ae1147.png"
+    },
+    {
+      "id": "m2-44",
+      "word": "instrument",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: A person selecting a hammer, wrench and screwdriver neatly arranged on a workbench.",
+      "file": "assets/words/instrument.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-c6b0fcce-3d84-4055-a35b-c66d94019254.png"
+    },
+    {
+      "id": "m2-45",
+      "word": "figure",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: A person holding an abacus beside three large clear numeral shapes 1 2 3. Numerals are the only text permitted.",
+      "file": "assets/words/figure.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-d18a2deb-19b5-4132-8ed9-7f3ece42c7df.png"
+    },
+    {
+      "id": "m2-46",
+      "word": "activity",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: Three people actively jumping rope, stretching and tossing a ball in a simple park scene.",
+      "file": "assets/words/activity.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-683f53c0-9fde-4d40-a671-a6d6b68c6c23.png"
+    },
+    {
+      "id": "m2-47",
+      "word": "cause",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: A tipped watering can spills water onto a floor, and a person points from the can to the puddle, revealing the cause.",
+      "file": "assets/words/cause.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-7144714e-fbee-4872-9985-fb5200541285.png"
+    },
+    {
+      "id": "m2-48",
+      "word": "worth",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: A person carefully balancing a treasured small handmade vase against several coins on a simple balance scale.",
+      "file": "assets/words/worth.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-09906f6b-9e72-4414-bbd2-fdbd42aecaa4.png"
+    },
+    {
+      "id": "m2-49",
+      "word": "accident",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: Two bicycles gently collided, lying beside two surprised uninjured people, with a few impact lines. No injuries.",
+      "file": "assets/words/accident.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-e9ad6f62-b367-4471-816d-6fd1cc035830.png"
+    },
+    {
+      "id": "m2-50",
+      "word": "adventure",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: A young explorer wearing a backpack and carrying a map approaching a mountain cave across a small rope bridge.",
+      "file": "assets/words/adventure.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-25b17e89-c530-4bf0-a4e9-4091cd5ef9f4.png"
+    },
+    {
+      "id": "m2-51",
+      "word": "view",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: A person standing at a lookout admiring distant mountains, a lake and a small sun.",
+      "file": "assets/words/view.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-d1336cdd-302a-4d2e-b52e-5bd0c891c177.png"
+    },
+    {
+      "id": "m2-52",
+      "word": "relative",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: An extended family of six simple people of different ages gathered around a family photo album.",
+      "file": "assets/words/relative.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-f1f99937-bc85-452e-b9e7-55dbca085e9b.png"
+    },
+    {
+      "id": "m2-53",
+      "word": "superstition",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: A person hesitating nervously as a black outlined cat crosses their path beside a ladder, with small surprise marks. Cat stays unfilled.",
+      "file": "assets/words/superstition.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-9a204fd8-b92a-4cf0-9949-e5be76cb5bb6.png"
+    },
+    {
+      "id": "m2-54",
+      "word": "habit",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: A person brushing their teeth at a sink, with a small calendar behind showing repeated checkmarks on several days.",
+      "file": "assets/words/habit.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-16ccbc08-ba82-4d95-8330-6d778d973948.png"
+    },
+    {
+      "id": "m2-55",
+      "word": "wealth",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: A person standing beside several large stacks of coins, a money bag and a house, representing possessions.",
+      "file": "assets/words/wealth.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-d8857270-42f7-4f4d-962c-49cb45deecd8.png"
+    },
+    {
+      "id": "m2-56",
+      "word": "treasure",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: A surprised explorer opening an old treasure chest containing coins and a few large jewels.",
+      "file": "assets/words/treasure.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-37ecf735-9dd1-4f2b-b077-58ff6622d8e5.png"
+    },
+    {
+      "id": "m2-57",
+      "word": "universe",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: A small astronaut floating among a ringed planet, a crescent moon, scattered stars and a spiral galaxy.",
+      "file": "assets/words/universe.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-a68708f8-0b85-4eef-be25-ad1641e2e26b.png"
+    },
+    {
+      "id": "m2-58",
+      "word": "adult",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: A grown-up person carrying a work bag standing next to a small child, clearly showing the height and life-stage contrast.",
+      "file": "assets/words/adult.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-aac91993-aa34-429f-bf00-06169e81a119.png"
+    },
+    {
+      "id": "m2-59",
+      "word": "feast",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: Several happy people gathered around a long table full of dishes for a celebratory meal.",
+      "file": "assets/words/feast.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-8dd4d87c-0989-44b8-b661-c032407669fb.png"
+    },
+    {
+      "id": "m2-60",
+      "word": "resources",
+      "prompt": "Use case: illustration-story. Create one standalone English vocabulary illustration. Output exactly 1024x1024 pixels. Match the earlier vocabulary series: pale cool gray nearly white background, minimal black hand-drawn rounded medium-weight outlines, simple cute people with circular heads and dot eyes, no shading, no color or filled areas except tiny eyes. Abundant negative space in upper third, scene in middle and lower portion with generous margins. No text, letters, labels, borders or watermark unless subject explicitly requires numerals. Subject: A person surveying a compact landscape containing trees, a river and a pile of mineral rocks, representing natural resources.",
+      "file": "assets/words/resources.png",
+      "source": "/Users/kmac4_home/.codex/generated_images/01a08656-2336-73c0-8ee4-dd9f0830921e/exec-ed2c44c9-fee7-47ad-9e3b-5ae20cb6460d.png"
+    }
+  ]
+}

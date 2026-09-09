@@ -25,6 +25,25 @@ export function ChevronLeftIcon({
   );
 }
 
+/** › 다음 (이미지 좌우 이동 버튼용) */
+export function ChevronRightIcon({
+  size = 16,
+  color = "#475569",
+  strokeWidth = 2.5,
+}: IconProps) {
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Path
+        d="M9 5l7 7-7 7"
+        stroke={color}
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </Svg>
+  );
+}
+
 /** ⌃ 접기 */
 export function ChevronUpIcon({
   size = 14,

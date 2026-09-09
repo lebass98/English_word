@@ -11,13 +11,11 @@ import {
 import { SafeAreaView } from "react-native-safe-area-context";
 import {
   AgainIcon,
-  ArrowLeftIcon,
-  ArrowRightIcon,
   CheckIcon,
   ChevronDownIcon,
   ChevronLeftIcon,
+  ChevronRightIcon,
   ChevronUpIcon,
-  ClockIcon,
   PauseIcon,
   PlayIcon,
   SpeakerIcon,
@@ -33,11 +31,6 @@ import { useAppStore, type WordStatus } from "../../src/stores/useAppStore";
 const AUTO_ADVANCE_SEC = 15;
 /** 타이머 갱신 주기 (ms) — 진행 바를 부드럽게 채우기 위한 값 */
 const TICK_MS = 200;
-
-const mmss = (sec: number) =>
-  `${String(Math.floor(sec / 60)).padStart(2, "0")}:${String(
-    Math.floor(sec % 60),
-  ).padStart(2, "0")}`;
 
 export default function StudyScreen() {
   const { wordId } = useLocalSearchParams<{ wordId: string }>();
@@ -171,7 +164,6 @@ function StudyCard({
     Math.min(34, Math.floor(wordAreaWidth / (word.word.length * 0.58))),
   );
 
-  const elapsedSec = Math.min(AUTO_ADVANCE_SEC, Math.floor(elapsed / 1000));
   const timerPct = Math.min(100, (elapsed / (AUTO_ADVANCE_SEC * 1000)) * 100);
 
   const handleSpeak = () => {
@@ -189,7 +181,7 @@ function StudyCard({
   return (
     <SafeAreaView className="flex-1 bg-canvas">
       <View className="w-full flex-1">
-        {/* ── 상단 바: 뒤로 · 유닛 · 진행 카운터 ───────────────── */}
+        {/* ── 상단 바: 뒤로 · 유닛/진행 · 자동 넘김 ──────────── */}
         <View className="flex-row items-center justify-between px-6 pt-2">
           <Pressable
             onPress={onBack}
@@ -199,20 +191,46 @@ function StudyCard({
             <ChevronLeftIcon />
           </Pressable>
 
-          <View className="h-11 items-center justify-center rounded-full bg-surface px-5 shadow-neu-sm">
-            <Text className="text-[14px] font-bold leading-[14px] tracking-tight text-slate-700">
+          {/* 유닛과 진행 개수를 하나의 알약에 담는다 */}
+          <View className="mx-2 h-11 flex-1 flex-row items-center justify-center gap-2 rounded-full bg-surface px-4 shadow-neu-sm">
+            <Text
+              numberOfLines={1}
+              className="text-[14px] font-bold leading-[15px] tracking-tight text-slate-700"
+            >
               {gradeLabel} UNIT {unitNo}
             </Text>
+            <Text className="text-[14px] leading-[15px] text-slate-300">·</Text>
+            <View className="flex-row items-center">
+              <Text className="text-[13px] font-extrabold leading-[15px] text-emerald-500">
+                {posInUnit}
+              </Text>
+              <Text className="text-[13px] font-medium leading-[15px] text-slate-400">
+                /{unitLen}
+              </Text>
+            </View>
           </View>
 
-          <View className="h-11 flex-row items-center justify-center gap-1 rounded-full bg-surface px-4 shadow-neu-sm">
-            <Text className="text-[15px] font-extrabold leading-[15px] text-emerald-500">
-              {posInUnit}
-            </Text>
-            <Text className="text-[14px] font-medium leading-[15px] text-slate-400">
-              / {unitLen}
-            </Text>
-          </View>
+          {/* 자동 넘김 켜기/끄기 (중간 버튼 줄에서 헤더로 옮김) */}
+          <Pressable
+            accessibilityLabel="자동 넘김 켜기 끄기"
+            onPress={() => setAutoAdvance(!autoAdvance)}
+            className={`h-11 flex-row items-center justify-center gap-1 rounded-full px-3.5 active:scale-95 ${
+              autoAdvance
+                ? "bg-surface shadow-neu-sm"
+                : "bg-canvas shadow-neu-inset"
+            }`}
+          >
+            {autoAdvance ? <PlayIcon size={14} /> : <PauseIcon size={14} />}
+            <View
+              className={`ml-0.5 rounded-full px-1.5 py-0.5 ${
+                autoAdvance ? "bg-emerald-500" : "bg-slate-400"
+              }`}
+            >
+              <Text className="text-[11px] font-black text-white">
+                {autoAdvance ? "ON" : "OFF"}
+              </Text>
+            </View>
+          </Pressable>
         </View>
 
         {/* 유닛 진행률 */}
@@ -265,27 +283,66 @@ function StudyCard({
               </Pressable>
             </View>
 
-            {/* 연상 이미지 패널: 이미지가 1024x1024 정사각형이라
-                패널도 정사각형으로 두고 여백 없이 꽉 채운다 */}
-            <View className="aspect-square w-full overflow-hidden rounded-2xl bg-canvas shadow-neu-inset">
-              {localImage ? (
-                <Image
-                  source={localImage}
-                  resizeMode="cover"
-                  style={{ width: "100%", height: "100%" }}
-                />
-              ) : (
-                <View className="flex-1 items-center justify-center gap-3">
-                  <Text className="text-[40px]">🖼️</Text>
-                  <Text className="text-[13px] text-slate-400">
-                    연상 이미지 준비 중
-                  </Text>
-                </View>
-              )}
+            {/* 연상 이미지 + 좌우 이동 버튼.
+                바깥 View는 잘라내지 않아야 화살표가 패널 밖으로 걸쳐 보인다.
+                이미지가 1024x1024 정사각형이라 패널도 정사각형으로 꽉 채운다 */}
+            <View className="relative w-full">
+              <View className="aspect-square w-full overflow-hidden rounded-2xl bg-canvas shadow-neu-inset">
+                {localImage ? (
+                  <Image
+                    source={localImage}
+                    resizeMode="cover"
+                    style={{ width: "100%", height: "100%" }}
+                  />
+                ) : (
+                  <View className="flex-1 items-center justify-center gap-3">
+                    <Text className="text-[40px]">🖼️</Text>
+                    <Text className="text-[13px] text-slate-400">
+                      연상 이미지 준비 중
+                    </Text>
+                  </View>
+                )}
+              </View>
+
+              {/* 이전 단어 (버튼 높이 36px의 절반만큼 올려 세로 중앙에 둔다) */}
+              <Pressable
+                accessibilityLabel="이전 단어"
+                disabled={!prevId}
+                onPress={() => onNavigate(prevId)}
+                style={{ top: "50%", marginTop: -18, left: -16 }}
+                className={`absolute h-9 w-9 items-center justify-center rounded-full bg-surface shadow-neu-sm active:scale-95 active:shadow-neu-pressed ${
+                  prevId ? "" : "opacity-40"
+                }`}
+              >
+                <ChevronLeftIcon size={14} />
+              </Pressable>
+
+              {/* 다음 단어 */}
+              <Pressable
+                accessibilityLabel="다음 단어"
+                disabled={!nextId}
+                onPress={() => onNavigate(nextId)}
+                style={{ top: "50%", marginTop: -18, right: -16 }}
+                className={`absolute h-9 w-9 items-center justify-center rounded-full bg-surface shadow-neu-sm active:scale-95 active:shadow-neu-pressed ${
+                  nextId ? "" : "opacity-40"
+                }`}
+              >
+                <ChevronRightIcon size={14} />
+              </Pressable>
+            </View>
+
+            {/* 자동 넘김 진행 바 (이미지 바로 아래) */}
+            <View className="mt-3.5 h-2 w-full overflow-hidden rounded-full bg-canvas p-0.5 shadow-neu-inset">
+              <View
+                className={`h-full rounded-full ${
+                  autoAdvance ? "bg-emerald-500" : "bg-slate-300"
+                }`}
+                style={{ width: `${autoAdvance ? timerPct : 0}%` }}
+              />
             </View>
 
             {/* 한국어 뜻풀이 */}
-            <View className="mt-4 rounded-2xl bg-surface p-4 shadow-neu-sm">
+            <View className="mt-3 rounded-2xl bg-surface p-4 shadow-neu-sm">
               <View className="flex-row items-center justify-between">
                 <View className="flex-row items-center gap-1.5">
                   <View className="h-2 w-2 rounded-full bg-emerald-500" />
@@ -329,76 +386,6 @@ function StudyCard({
             </View>
           </View>
         </ScrollView>
-
-        {/* ── 자동 넘김 타이머 ─────────────────────────────── */}
-        <View className="mx-6 mb-2.5 gap-1.5 rounded-2xl bg-surface px-3.5 py-2.5 shadow-neu-sm">
-          <View className="flex-row items-center justify-between px-0.5">
-            <ClockIcon color={autoAdvance ? "#10b981" : "#94a3b8"} />
-            <View className="flex-row items-baseline">
-              <Text
-                className={`text-[12px] font-extrabold tracking-tight ${
-                  autoAdvance ? "text-emerald-600" : "text-slate-400"
-                }`}
-              >
-                {mmss(elapsedSec)}
-              </Text>
-              <Text className="text-[12px] font-medium text-slate-400">
-                {` / ${mmss(AUTO_ADVANCE_SEC)}`}
-              </Text>
-            </View>
-          </View>
-          <View className="h-2 w-full overflow-hidden rounded-full bg-canvas p-0.5 shadow-neu-inset">
-            <View
-              className={`h-full rounded-full ${
-                autoAdvance ? "bg-emerald-500" : "bg-slate-300"
-              }`}
-              style={{ width: `${autoAdvance ? timerPct : 0}%` }}
-            />
-          </View>
-        </View>
-
-        {/* ── 이전 · 자동 넘김 토글 · 다음 ──────────────────── */}
-        <View className="mx-6 my-1 flex-row items-center justify-between gap-2.5 px-1">
-          <Pressable
-            onPress={() => onNavigate(prevId)}
-            style={{ flex: 1 }}
-            className="flex-row items-center justify-center gap-1.5 rounded-full bg-surface px-4 py-3 shadow-neu-sm active:scale-95 active:shadow-neu-pressed"
-          >
-            <ArrowLeftIcon />
-            <Text className="text-[14px] font-bold text-slate-700">이전</Text>
-          </Pressable>
-
-          <Pressable
-            accessibilityLabel="자동 넘김 켜기 끄기"
-            onPress={() => setAutoAdvance(!autoAdvance)}
-            style={{ flex: 1.4 }}
-            className={`flex-row items-center justify-center gap-1.5 rounded-full px-3 py-3 active:scale-95 ${
-              autoAdvance
-                ? "bg-surface shadow-neu-sm"
-                : "bg-canvas shadow-neu-inset"
-            }`}
-          >
-            {autoAdvance ? <PlayIcon /> : <PauseIcon />}
-            <View
-              className={`ml-0.5 rounded-full px-1.5 py-0.5 ${
-                autoAdvance ? "bg-emerald-500" : "bg-slate-400"
-              }`}
-            >
-              <Text className="text-[11px] font-black text-white">
-                {autoAdvance ? "ON" : "OFF"}
-              </Text>
-            </View>
-          </Pressable>
-
-          <Pressable
-            onPress={() => onNavigate(nextId)}
-            style={{ flex: 1 }}
-            className="flex-row items-center justify-center gap-1.5 rounded-full bg-surface px-4 py-3 shadow-neu-sm active:scale-95 active:shadow-neu-pressed"
-          >
-            <Text className="text-[14px] font-bold text-slate-700">다음</Text>
-            <ArrowRightIcon />
-          </Pressable>
-        </View>
 
         {/* ── 학습 평가 버튼 ───────────────────────────────── */}
         <View className="mx-6 flex-row items-stretch gap-3 px-1 pb-4 pt-3">

@@ -14,18 +14,13 @@ import {
   PauseIcon,
   PlayIcon,
   SpeakerIcon,
-  StarIcon,
 } from "../../src/components/icons";
 import { PillButton } from "../../src/components/PillButton";
 import { GRADES } from "../../src/constants/grades";
 import { UNIT_SIZE, findWord, type Word } from "../../src/constants/words";
 import { WORD_IMAGES } from "../../src/constants/wordImages";
 import { speakWord, stopSpeaking } from "../../src/lib/speech";
-import {
-  STARS_BY_STATUS,
-  useAppStore,
-  type WordStatus,
-} from "../../src/stores/useAppStore";
+import { useAppStore, type WordStatus } from "../../src/stores/useAppStore";
 
 /** 자동 넘김 간격 (초) */
 const AUTO_ADVANCE_SEC = 15;
@@ -106,7 +101,6 @@ function StudyCard({
 }: StudyCardProps) {
   const autoAdvance = useAppStore((s) => s.autoAdvance);
   const setAutoAdvance = useAppStore((s) => s.setAutoAdvance);
-  const status = useAppStore((s) => s.wordStatus[word.id] ?? "unseen");
   const setWordStatus = useAppStore((s) => s.setWordStatus);
 
   const [showMeaning, setShowMeaning] = useState(true);
@@ -144,10 +138,6 @@ function StudyCard({
   // 마지막 유닛은 20개보다 적을 수 있다.
   const unitLen = Math.min(UNIT_SIZE, total - (unitNo - 1) * UNIT_SIZE);
   const localImage = WORD_IMAGES[word.id] || WORD_IMAGES[word.word];
-
-  const filledStars = STARS_BY_STATUS[status];
-  /** 이미지 위 힌트는 앞의 물결표를 뺀 짧은 형태로 보여준다 */
-  const shortMeaning = word.meaning.replace(/^~\s*/, "");
 
   const elapsedSec = Math.min(AUTO_ADVANCE_SEC, Math.floor(elapsed / 1000));
   const timerPct = Math.min(100, (elapsed / (AUTO_ADVANCE_SEC * 1000)) * 100);
@@ -231,30 +221,6 @@ function StudyCard({
               className="w-full rounded-2xl bg-canvas p-4 shadow-neu-inset"
               style={{ minHeight: 270 }}
             >
-              <View className="flex-row items-start justify-between">
-                <View className="items-start gap-1">
-                  <View className="flex-row items-center gap-0.5 px-0.5">
-                    {[0, 1, 2].map((i) => (
-                      <StarIcon
-                        key={i}
-                        color={i < filledStars ? "#fbbf24" : "#cbd5e1"}
-                      />
-                    ))}
-                  </View>
-                  <View className="rounded bg-amber-400 px-1.5 py-0.5">
-                    <Text className="text-[14px] font-black tracking-tight text-slate-950">
-                      {word.word}
-                    </Text>
-                  </View>
-                </View>
-
-                {showMeaning && (
-                  <Text className="max-w-[45%] text-right text-[13px] font-medium tracking-tight text-slate-600">
-                    {shortMeaning}
-                  </Text>
-                )}
-              </View>
-
               <View className="w-full flex-1 items-center justify-center py-2">
                 {localImage ? (
                   <Image
@@ -353,9 +319,6 @@ function StudyCard({
             }`}
           >
             {autoAdvance ? <PlayIcon /> : <PauseIcon />}
-            <Text className="text-[14px] font-bold text-slate-800">
-              자동 넘김
-            </Text>
             <View
               className={`ml-0.5 rounded-full px-1.5 py-0.5 ${
                 autoAdvance ? "bg-emerald-500" : "bg-slate-400"

@@ -1,0 +1,764 @@
+[
+  {
+    "id": "m2-74",
+    "unit": 4,
+    "word": "hydrogen",
+    "meaning": "수소"
+  },
+  {
+    "id": "m2-75",
+    "unit": 4,
+    "word": "control",
+    "meaning": "통제, 지배, (동)통제하다, 지배하다"
+  },
+  {
+    "id": "m2-76",
+    "unit": 4,
+    "word": "uniform",
+    "meaning": "제복, 한 모양의"
+  },
+  {
+    "id": "m2-77",
+    "unit": 4,
+    "word": "design",
+    "meaning": "계획, 설계, 계획하다, 디자인하다"
+  },
+  {
+    "id": "m2-78",
+    "unit": 4,
+    "word": "damage",
+    "meaning": "손해, 손상"
+  },
+  {
+    "id": "m2-79",
+    "unit": 4,
+    "word": "custom",
+    "meaning": "습관, 풍습"
+  },
+  {
+    "id": "m2-80",
+    "unit": 4,
+    "word": "traffic",
+    "meaning": "교통"
+  },
+  {
+    "id": "m2-81",
+    "unit": 5,
+    "word": "sophomore",
+    "meaning": "2학년생"
+  },
+  {
+    "id": "m2-82",
+    "unit": 5,
+    "word": "temperature",
+    "meaning": "온도, 체온"
+  },
+  {
+    "id": "m2-83",
+    "unit": 5,
+    "word": "limit",
+    "meaning": "제한하다, 한계, 제한"
+  },
+  {
+    "id": "m2-84",
+    "unit": 5,
+    "word": "statue",
+    "meaning": "조각상"
+  },
+  {
+    "id": "m2-85",
+    "unit": 5,
+    "word": "furniture",
+    "meaning": "가구"
+  },
+  {
+    "id": "m2-86",
+    "unit": 5,
+    "word": "parade",
+    "meaning": "행렬"
+  },
+  {
+    "id": "m2-87",
+    "unit": 5,
+    "word": "public",
+    "meaning": "공중(사회), 공공의, 공중의"
+  },
+  {
+    "id": "m2-88",
+    "unit": 5,
+    "word": "pilgrim",
+    "meaning": "순례자"
+  },
+  {
+    "id": "m2-89",
+    "unit": 5,
+    "word": "greeting",
+    "meaning": "인사, 축하"
+  },
+  {
+    "id": "m2-90",
+    "unit": 5,
+    "word": "language",
+    "meaning": "언어"
+  },
+  {
+    "id": "m2-91",
+    "unit": 5,
+    "word": "opinion",
+    "meaning": "의견"
+  },
+  {
+    "id": "m2-92",
+    "unit": 5,
+    "word": "athlete",
+    "meaning": "운동선수"
+  },
+  {
+    "id": "m2-93",
+    "unit": 5,
+    "word": "supply",
+    "meaning": "공급, 공급하다"
+  },
+  {
+    "id": "m2-94",
+    "unit": 5,
+    "word": "surface",
+    "meaning": "표면"
+  },
+  {
+    "id": "m2-95",
+    "unit": 5,
+    "word": "electricity",
+    "meaning": "전기"
+  },
+  {
+    "id": "m2-96",
+    "unit": 5,
+    "word": "order",
+    "meaning": "순서, 명령"
+  },
+  {
+    "id": "m2-97",
+    "unit": 5,
+    "word": "spirit",
+    "meaning": "정신"
+  },
+  {
+    "id": "m2-98",
+    "unit": 5,
+    "word": "purpose",
+    "meaning": "목적"
+  },
+  {
+    "id": "m2-99",
+    "unit": 5,
+    "word": "promise",
+    "meaning": "가망, 전망, 약속"
+  },
+  {
+    "id": "m2-100",
+    "unit": 5,
+    "word": "project",
+    "meaning": "계획, 계획하다"
+  },
+  {
+    "id": "m2-101",
+    "unit": 6,
+    "word": "government",
+    "meaning": "정부, 정치의"
+  },
+  {
+    "id": "m2-102",
+    "unit": 6,
+    "word": "exercise",
+    "meaning": "운동, 연습하다"
+  },
+  {
+    "id": "m2-103",
+    "unit": 6,
+    "word": "comparison",
+    "meaning": "비교"
+  },
+  {
+    "id": "m2-104",
+    "unit": 6,
+    "word": "interest",
+    "meaning": "이익, 흥미"
+  },
+  {
+    "id": "m2-105",
+    "unit": 6,
+    "word": "funeral",
+    "meaning": "장례식"
+  },
+  {
+    "id": "m2-106",
+    "unit": 6,
+    "word": "senior",
+    "meaning": "선배, 손위에"
+  },
+  {
+    "id": "m2-107",
+    "unit": 6,
+    "word": "junior",
+    "meaning": "후배, 손아래에"
+  },
+  {
+    "id": "m2-108",
+    "unit": 6,
+    "word": "democracy",
+    "meaning": "민주주의, 민주정치"
+  },
+  {
+    "id": "m2-109",
+    "unit": 6,
+    "word": "general",
+    "meaning": "육군장군"
+  },
+  {
+    "id": "m2-110",
+    "unit": 6,
+    "word": "admiral",
+    "meaning": "해군대장"
+  },
+  {
+    "id": "m2-111",
+    "unit": 6,
+    "word": "edge",
+    "meaning": "날, 가장자리"
+  },
+  {
+    "id": "m2-112",
+    "unit": 6,
+    "word": "biology",
+    "meaning": "생물학"
+  },
+  {
+    "id": "m2-113",
+    "unit": 6,
+    "word": "danger",
+    "meaning": "위험"
+  },
+  {
+    "id": "m2-114",
+    "unit": 6,
+    "word": "advice",
+    "meaning": "충고"
+  },
+  {
+    "id": "m2-115",
+    "unit": 6,
+    "word": "practice",
+    "meaning": "연습하다"
+  },
+  {
+    "id": "m2-116",
+    "unit": 6,
+    "word": "mammal",
+    "meaning": "포유동물"
+  },
+  {
+    "id": "m2-117",
+    "unit": 6,
+    "word": "grade",
+    "meaning": "학년"
+  },
+  {
+    "id": "m2-118",
+    "unit": 6,
+    "word": "score",
+    "meaning": "점수"
+  },
+  {
+    "id": "m2-119",
+    "unit": 6,
+    "word": "pause",
+    "meaning": "중지, 멈추다"
+  },
+  {
+    "id": "m2-120",
+    "unit": 6,
+    "word": "pronunciation",
+    "meaning": "발음"
+  },
+  {
+    "id": "m2-121",
+    "unit": 7,
+    "word": "stress",
+    "meaning": "압박, 강조하다"
+  },
+  {
+    "id": "m2-122",
+    "unit": 7,
+    "word": "contest",
+    "meaning": "경쟁"
+  },
+  {
+    "id": "m2-123",
+    "unit": 7,
+    "word": "horizon",
+    "meaning": "수평선의"
+  },
+  {
+    "id": "m2-124",
+    "unit": 7,
+    "word": "principal",
+    "meaning": "주요한"
+  },
+  {
+    "id": "m2-125",
+    "unit": 7,
+    "word": "might",
+    "meaning": "힘"
+  },
+  {
+    "id": "m2-126",
+    "unit": 7,
+    "word": "trouble",
+    "meaning": "고생, 걱정하다"
+  },
+  {
+    "id": "m2-127",
+    "unit": 7,
+    "word": "scar",
+    "meaning": "상처"
+  },
+  {
+    "id": "m2-128",
+    "unit": 7,
+    "word": "balance",
+    "meaning": "균형"
+  },
+  {
+    "id": "m2-129",
+    "unit": 7,
+    "word": "proverb",
+    "meaning": "속담"
+  },
+  {
+    "id": "m2-130",
+    "unit": 7,
+    "word": "semester",
+    "meaning": "학기"
+  },
+  {
+    "id": "m2-131",
+    "unit": 7,
+    "word": "election",
+    "meaning": "선거"
+  },
+  {
+    "id": "m2-132",
+    "unit": 7,
+    "word": "inning",
+    "meaning": "회"
+  },
+  {
+    "id": "m2-133",
+    "unit": 7,
+    "word": "hollow",
+    "meaning": "구멍, 우묵한 곳"
+  },
+  {
+    "id": "m2-134",
+    "unit": 7,
+    "word": "degree",
+    "meaning": "도, 정도"
+  },
+  {
+    "id": "m2-135",
+    "unit": 7,
+    "word": "cemetery",
+    "meaning": "묘지"
+  },
+  {
+    "id": "m2-136",
+    "unit": 7,
+    "word": "relay",
+    "meaning": "교대자, 교대하다"
+  },
+  {
+    "id": "m2-137",
+    "unit": 7,
+    "word": "spot",
+    "meaning": "지점"
+  },
+  {
+    "id": "m2-138",
+    "unit": 7,
+    "word": "exchange",
+    "meaning": "교환하다"
+  },
+  {
+    "id": "m2-139",
+    "unit": 7,
+    "word": "merchant",
+    "meaning": "상인"
+  },
+  {
+    "id": "m2-140",
+    "unit": 7,
+    "word": "saying",
+    "meaning": "격언"
+  },
+  {
+    "id": "m2-141",
+    "unit": 8,
+    "word": "refrigerator",
+    "meaning": "냉장고"
+  },
+  {
+    "id": "m2-142",
+    "unit": 8,
+    "word": "crack",
+    "meaning": "갈라진 틈"
+  },
+  {
+    "id": "m2-143",
+    "unit": 8,
+    "word": "judge",
+    "meaning": "재판관"
+  },
+  {
+    "id": "m2-144",
+    "unit": 8,
+    "word": "slave",
+    "meaning": "노예"
+  },
+  {
+    "id": "m2-145",
+    "unit": 8,
+    "word": "settler",
+    "meaning": "이주민"
+  },
+  {
+    "id": "m2-146",
+    "unit": 8,
+    "word": "fare",
+    "meaning": "요금"
+  },
+  {
+    "id": "m2-147",
+    "unit": 8,
+    "word": "gesture",
+    "meaning": "몸짓"
+  },
+  {
+    "id": "m2-148",
+    "unit": 8,
+    "word": "planet",
+    "meaning": "행성"
+  },
+  {
+    "id": "m2-149",
+    "unit": 8,
+    "word": "type",
+    "meaning": "유형"
+  },
+  {
+    "id": "m2-150",
+    "unit": 8,
+    "word": "secretary",
+    "meaning": "비서"
+  },
+  {
+    "id": "m2-151",
+    "unit": 8,
+    "word": "devil",
+    "meaning": "악마"
+  },
+  {
+    "id": "m2-152",
+    "unit": 8,
+    "word": "scholar",
+    "meaning": "학자"
+  },
+  {
+    "id": "m2-153",
+    "unit": 8,
+    "word": "pardon",
+    "meaning": "용서"
+  },
+  {
+    "id": "m2-154",
+    "unit": 8,
+    "word": "kindergarten",
+    "meaning": "유치원"
+  },
+  {
+    "id": "m2-155",
+    "unit": 8,
+    "word": "detective",
+    "meaning": "탐정"
+  },
+  {
+    "id": "m2-156",
+    "unit": 8,
+    "word": "license",
+    "meaning": "면허"
+  },
+  {
+    "id": "m2-157",
+    "unit": 8,
+    "word": "palace",
+    "meaning": "궁전"
+  },
+  {
+    "id": "m2-158",
+    "unit": 8,
+    "word": "spade",
+    "meaning": "삽"
+  },
+  {
+    "id": "m2-159",
+    "unit": 8,
+    "word": "square",
+    "meaning": "정사각형"
+  },
+  {
+    "id": "m2-160",
+    "unit": 8,
+    "word": "fountain-pen",
+    "meaning": "만년필"
+  },
+  {
+    "id": "m2-161",
+    "unit": 9,
+    "word": "harvest",
+    "meaning": "수확"
+  },
+  {
+    "id": "m2-162",
+    "unit": 9,
+    "word": "tool",
+    "meaning": "도구"
+  },
+  {
+    "id": "m2-163",
+    "unit": 9,
+    "word": "sword",
+    "meaning": "칼"
+  },
+  {
+    "id": "m2-164",
+    "unit": 9,
+    "word": "magazine",
+    "meaning": "잡지"
+  },
+  {
+    "id": "m2-165",
+    "unit": 9,
+    "word": "stadium",
+    "meaning": "경기장"
+  },
+  {
+    "id": "m2-166",
+    "unit": 9,
+    "word": "care",
+    "meaning": "걱정"
+  },
+  {
+    "id": "m2-167",
+    "unit": 9,
+    "word": "beauty",
+    "meaning": "아름다움"
+  },
+  {
+    "id": "m2-168",
+    "unit": 9,
+    "word": "museum",
+    "meaning": "박물관"
+  },
+  {
+    "id": "m2-169",
+    "unit": 9,
+    "word": "sentence",
+    "meaning": "문장"
+  },
+  {
+    "id": "m2-170",
+    "unit": 9,
+    "word": "memory",
+    "meaning": "기억"
+  },
+  {
+    "id": "m2-171",
+    "unit": 9,
+    "word": "delight",
+    "meaning": "기쁨"
+  },
+  {
+    "id": "m2-172",
+    "unit": 9,
+    "word": "passenger",
+    "meaning": "승객"
+  },
+  {
+    "id": "m2-173",
+    "unit": 9,
+    "word": "skill",
+    "meaning": "숙련"
+  },
+  {
+    "id": "m2-174",
+    "unit": 9,
+    "word": "journey",
+    "meaning": "여행"
+  },
+  {
+    "id": "m2-175",
+    "unit": 9,
+    "word": "ceremony",
+    "meaning": "의식"
+  },
+  {
+    "id": "m2-176",
+    "unit": 9,
+    "word": "hobby",
+    "meaning": "취미"
+  },
+  {
+    "id": "m2-177",
+    "unit": 9,
+    "word": "president",
+    "meaning": "대통령"
+  },
+  {
+    "id": "m2-178",
+    "unit": 9,
+    "word": "address",
+    "meaning": "주소"
+  },
+  {
+    "id": "m2-179",
+    "unit": 9,
+    "word": "continent",
+    "meaning": "대륙"
+  },
+  {
+    "id": "m2-180",
+    "unit": 9,
+    "word": "mankind",
+    "meaning": "인간"
+  },
+  {
+    "id": "m2-181",
+    "unit": 10,
+    "word": "patient",
+    "meaning": "환자"
+  },
+  {
+    "id": "m2-182",
+    "unit": 10,
+    "word": "site",
+    "meaning": "부지"
+  },
+  {
+    "id": "m2-183",
+    "unit": 10,
+    "word": "marble",
+    "meaning": "대리석"
+  },
+  {
+    "id": "m2-184",
+    "unit": 10,
+    "word": "stem",
+    "meaning": "줄기"
+  },
+  {
+    "id": "m2-185",
+    "unit": 10,
+    "word": "slip",
+    "meaning": "미끄러짐"
+  },
+  {
+    "id": "m2-186",
+    "unit": 10,
+    "word": "torch",
+    "meaning": "횃불"
+  },
+  {
+    "id": "m2-187",
+    "unit": 10,
+    "word": "composer",
+    "meaning": "작곡가"
+  },
+  {
+    "id": "m2-188",
+    "unit": 10,
+    "word": "invader",
+    "meaning": "침입자"
+  },
+  {
+    "id": "m2-189",
+    "unit": 10,
+    "word": "trick",
+    "meaning": "계략"
+  },
+  {
+    "id": "m2-190",
+    "unit": 10,
+    "word": "flight",
+    "meaning": "비행"
+  },
+  {
+    "id": "m2-191",
+    "unit": 10,
+    "word": "castle",
+    "meaning": "성"
+  },
+  {
+    "id": "m2-192",
+    "unit": 10,
+    "word": "envelope",
+    "meaning": "봉투"
+  },
+  {
+    "id": "m2-193",
+    "unit": 10,
+    "word": "pal",
+    "meaning": "친구"
+  },
+  {
+    "id": "m2-194",
+    "unit": 10,
+    "word": "vacation",
+    "meaning": "휴가"
+  },
+  {
+    "id": "m2-195",
+    "unit": 10,
+    "word": "desert",
+    "meaning": "사막"
+  },
+  {
+    "id": "m2-196",
+    "unit": 10,
+    "word": "event",
+    "meaning": "사건"
+  },
+  {
+    "id": "m2-197",
+    "unit": 10,
+    "word": "theater",
+    "meaning": "극장"
+  },
+  {
+    "id": "m2-198",
+    "unit": 10,
+    "word": "stage",
+    "meaning": "무대"
+  },
+  {
+    "id": "m2-199",
+    "unit": 10,
+    "word": "error",
+    "meaning": "잘못"
+  },
+  {
+    "id": "m2-200",
+    "unit": 10,
+    "word": "area",
+    "meaning": "면적, 지역"
+  }
+]

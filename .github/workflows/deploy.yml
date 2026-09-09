@@ -39,6 +39,11 @@ jobs:
       - name: Expo Web 정적 사이트 빌드
         run: npm run build:web
 
+      - name: GitHub Pages 호환성 설정 (.nojekyll 및 404 리다이렉트)
+        run: |
+          touch dist/.nojekyll
+          cp dist/index.html dist/404.html
+
       - name: GitHub Pages 환경 설정
         uses: actions/configure-pages@v5
 

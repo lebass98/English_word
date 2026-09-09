@@ -22,6 +22,7 @@ import {
   PlayIcon,
   SpeakerIcon,
 } from "../../src/components/icons";
+import { BackButton } from "../../src/components/BackButton";
 import { PillButton } from "../../src/components/PillButton";
 import { GRADES } from "../../src/constants/grades";
 import { UNIT_SIZE, findWord, type Word } from "../../src/constants/words";
@@ -189,17 +190,11 @@ function StudyCard({
     <SafeAreaView className="flex-1 bg-canvas">
       <View className="w-full flex-1">
         {/* ── 상단 바: 뒤로 · 유닛/진행 · 자동 넘김 ──────────── */}
-        <View className="flex-row items-center justify-between px-6 pt-2">
-          <Pressable
-            onPress={onBack}
-            accessibilityLabel="뒤로 가기"
-            className="h-11 w-11 items-center justify-center rounded-full bg-surface shadow-neu-sm active:scale-95 active:shadow-neu-pressed"
-          >
-            <ChevronLeftIcon />
-          </Pressable>
+        <View className="flex-row items-center justify-between px-6 pt-8 pb-3">
+          <BackButton onPress={onBack} />
 
           {/* 유닛과 진행 개수를 하나의 알약에 담는다 */}
-          <View className="relative mx-2 h-11 flex-1 flex-row items-center justify-center gap-2 overflow-hidden rounded-full bg-surface px-4 shadow-neu-sm">
+          <View className="relative mx-2 h-12 flex-1 flex-row items-center justify-center gap-2 overflow-hidden rounded-full bg-surface px-4 shadow-neu-sm">
             <Text
               numberOfLines={1}
               className="text-[14px] font-bold leading-[15px] tracking-tight text-slate-700"
@@ -229,7 +224,7 @@ function StudyCard({
           <Pressable
             accessibilityLabel="자동 넘김 켜기 끄기"
             onPress={() => setAutoAdvance(!autoAdvance)}
-            className={`h-11 flex-row items-center justify-center gap-1 rounded-full px-3.5 active:scale-95 ${
+            className={`h-12 flex-row items-center justify-center gap-1 rounded-full px-3.5 active:scale-95 ${
               autoAdvance
                 ? "bg-surface shadow-neu-sm"
                 : "bg-canvas shadow-neu-inset"

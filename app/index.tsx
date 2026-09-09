@@ -22,7 +22,7 @@ export default function HomeScreen() {
         contentContainerClassName="w-full px-6 pb-28"
       >
         {/* 헤더: 브랜드 + 알림 */}
-        <View className="flex-row items-center justify-between pt-4">
+        <View className="flex-row items-center justify-between pt-8 pb-2">
           <Text className="text-2xl font-bold tracking-tight text-ink">
             Word<Text className="text-mint">Pic</Text>
           </Text>

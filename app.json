@@ -18,8 +18,14 @@
       },
       "predictiveBackGestureEnabled": false
     },
+    "scheme": "englishword",
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/favicon.png",
+      "output": "static",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }

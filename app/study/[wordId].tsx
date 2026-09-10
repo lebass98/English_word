@@ -9,7 +9,9 @@ import {
   Text,
   useWindowDimensions,
   View,
+  Platform,
 } from "react-native";
+import { BlurView } from "expo-blur";
 import { SafeAreaView } from "react-native-safe-area-context";
 import {
   AgainIcon,
@@ -270,37 +272,70 @@ function StudyCard({
                   </View>
                 )}
 
-                {/* 단어 · 발음기호 · 발음 듣기: 이미지 위쪽에 겹쳐서 표시한다 */}
-                <View className="absolute inset-x-0 top-0 flex-row items-start justify-between px-4 pb-3 pt-4">
-                  <View className="flex-1 pr-3">
-                    <Text
-                      numberOfLines={1}
-                      adjustsFontSizeToFit
-                      style={{
-                        fontSize: wordFontSize,
-                        lineHeight: Math.round(wordFontSize * 1.15),
-                      }}
-                      className="font-black tracking-tight text-slate-900"
-                    >
-                      {word.word}
-                    </Text>
-                    {word.phonetic && (
-                      <Text className="mt-1 text-[13px] tracking-wide text-slate-500">
-                        {word.phonetic}
-                      </Text>
-                    )}
-                  </View>
-                  <Pressable
-                    accessibilityLabel={`${word.word} 발음 듣기`}
-                    onPress={handleSpeak}
-                    className={`h-11 w-11 items-center justify-center rounded-full active:scale-95 ${
-                      speaking
-                        ? "bg-canvas shadow-neu-inset"
-                        : "bg-surface shadow-neu-sm"
-                    }`}
+                {/* 단어 · 발음기호 · 발음 듣기: 이미지 위쪽에 반투명 블러(Glassmorphism) 배경으로 표시 */}
+                <View
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    borderTopLeftRadius: 16,
+                    borderTopRightRadius: 16,
+                    overflow: "hidden",
+                    borderBottomWidth: 1,
+                    borderBottomColor: "rgba(255, 255, 255, 0.45)",
+                  }}
+                >
+                  <BlurView
+                    intensity={65}
+                    tint="light"
+                    style={{
+                      width: "100%",
+                      ...(Platform.OS === "web"
+                        ? {
+                            backdropFilter: "saturate(180%) blur(16px)",
+                            WebkitBackdropFilter: "saturate(180%) blur(16px)",
+                          }
+                        : {}),
+                    }}
                   >
-                    <SpeakerIcon color={speaking ? "#0eb582" : "#334155"} />
-                  </Pressable>
+                    <View
+                      style={{
+                        backgroundColor: "rgba(241, 242, 246, 0.35)",
+                      }}
+                      className="flex-row items-start justify-between px-4 pb-3 pt-4"
+                    >
+                      <View className="flex-1 pr-3">
+                        <Text
+                          numberOfLines={1}
+                          adjustsFontSizeToFit
+                          style={{
+                            fontSize: wordFontSize,
+                            lineHeight: Math.round(wordFontSize * 1.15),
+                          }}
+                          className="font-black tracking-tight text-slate-900"
+                        >
+                          {word.word}
+                        </Text>
+                        {word.phonetic && (
+                          <Text className="mt-1 text-[13px] tracking-wide text-slate-500">
+                            {word.phonetic}
+                          </Text>
+                        )}
+                      </View>
+                      <Pressable
+                        accessibilityLabel={`${word.word} 발음 듣기`}
+                        onPress={handleSpeak}
+                        className={`h-11 w-11 items-center justify-center rounded-full active:scale-95 ${
+                          speaking
+                            ? "bg-canvas shadow-neu-inset"
+                            : "bg-surface shadow-neu-sm"
+                        }`}
+                      >
+                        <SpeakerIcon color={speaking ? "#0eb582" : "#334155"} />
+                      </Pressable>
+                    </View>
+                  </BlurView>
                 </View>
 
                 {/* 자동 넘김 초시계: 이미지 카드 안쪽 하단에 겹쳐서 표시한다 */}

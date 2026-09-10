@@ -1,9 +1,10 @@
 import { useLocalSearchParams, useRouter } from "expo-router";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import {
   Animated,
   Easing,
   Image,
+  PanResponder,
   Pressable,
   ScrollView,
   Text,
@@ -73,8 +74,8 @@ export default function StudyScreen() {
       gradeId={gradeId}
       index={index}
       total={words.length}
-      prevId={words[index - 1]?.id}
-      nextId={words[index + 1]?.id}
+      prev={words[index - 1]}
+      next={words[index + 1]}
       onNavigate={goTo}
       onBack={() => {
         // 주소로 바로 들어오거나 새로고침한 경우엔 되돌아갈 기록이 없다.
@@ -86,13 +87,48 @@ export default function StudyScreen() {
   );
 }
 
+/**
+ * 이미지 패널 한 칸. offset 만큼 좌우로 떨어뜨려 두면
+ * 스와이프할 때 옆 그림이 자연스럽게 따라 들어온다.
+ */
+function WordImage({ word, offset = 0 }: { word: Word; offset?: number }) {
+  const source = WORD_IMAGES[word.id] || WORD_IMAGES[word.word];
+  return (
+    <View
+      style={{
+        position: "absolute",
+        top: 0,
+        bottom: 0,
+        left: offset,
+        right: -offset,
+      }}
+    >
+      {source ? (
+        <Image
+          source={source}
+          resizeMode="cover"
+          style={{ width: "100%", height: "100%" }}
+        />
+      ) : (
+        <View className="flex-1 items-center justify-center gap-3 bg-canvas">
+          <Text className="text-[40px]">🖼️</Text>
+          <Text className="text-[13px] text-slate-400">
+            연상 이미지 준비 중
+          </Text>
+        </View>
+      )}
+    </View>
+  );
+}
+
 interface StudyCardProps {
   word: Word;
   gradeId: string;
   index: number;
   total: number;
-  prevId?: string;
-  nextId?: string;
+  /** 앞·뒤 단어. 스와이프할 때 옆 그림을 미리 보여주는 데 쓴다 */
+  prev?: Word;
+  next?: Word;
   onNavigate: (id?: string) => void;
   onBack: () => void;
 }
@@ -102,11 +138,13 @@ function StudyCard({
   gradeId,
   index,
   total,
-  prevId,
-  nextId,
+  prev,
+  next,
   onNavigate,
   onBack,
 }: StudyCardProps) {
+  const prevId = prev?.id;
+  const nextId = next?.id;
   const autoAdvance = useAppStore((s) => s.autoAdvance);
   const setAutoAdvance = useAppStore((s) => s.setAutoAdvance);
   const setWordStatus = useAppStore((s) => s.setWordStatus);
@@ -121,6 +159,52 @@ function StudyCard({
   const [progress] = useState(() => new Animated.Value(0));
 
   const advance = useCallback(() => onNavigate(nextId), [onNavigate, nextId]);
+
+  /** 이미지를 좌우로 밀어서 단어를 넘기는 스와이프.
+      그림만 손가락을 따라 흐르고, 충분히 밀면 옆 그림이 자리를 넘겨받으며 단어가 바뀐다 */
+  const [panelW, setPanelW] = useState(0);
+  const [dragX] = useState(() => new Animated.Value(0));
+  const swipe = useMemo(() => {
+    // 웹에서는 네이티브 드라이버를 쓸 수 없다
+    const useNativeDriver = Platform.OS !== "web";
+    const springBack = () =>
+      Animated.spring(dragX, {
+        toValue: 0,
+        bounciness: 6,
+        useNativeDriver,
+      }).start();
+
+    return PanResponder.create({
+      // 세로 스크롤을 방해하지 않도록 가로로 확실히 움직였을 때만 잡는다
+      onMoveShouldSetPanResponder: (_, g) =>
+        Math.abs(g.dx) > 12 && Math.abs(g.dx) > Math.abs(g.dy) * 1.5,
+      onPanResponderMove: (_, g) => {
+        // 첫 단어/마지막 단어 쪽으로는 조금만 끌리게 해 더 갈 곳이 없음을 알린다
+        const blocked = (g.dx > 0 && !prevId) || (g.dx < 0 && !nextId);
+        dragX.setValue(blocked ? g.dx * 0.18 : g.dx);
+      },
+      onPanResponderRelease: (_, g) => {
+        // 패널 너비의 4분의 1쯤 밀었거나 빠르게 튕겼으면 넘긴다
+        const enough =
+          Math.abs(g.dx) > (panelW || 200) * 0.26 || Math.abs(g.vx) > 0.35;
+        const target = g.dx < 0 ? nextId : prevId;
+        if (!enough || !target) return springBack();
+
+        // 옆 그림이 자리를 다 채운 다음에 단어를 바꾼다.
+        // 카드가 새로 마운트되면서 위치는 저절로 초기화된다
+        Animated.timing(dragX, {
+          toValue: g.dx < 0 ? -panelW : panelW,
+          duration: 180,
+          easing: Easing.out(Easing.quad),
+          useNativeDriver,
+        }).start(({ finished }) => {
+          if (finished) onNavigate(target);
+          else springBack();
+        });
+      },
+      onPanResponderTerminate: springBack,
+    });
+  }, [dragX, panelW, prevId, nextId, onNavigate]);
 
   // 자동 넘김 타이머.
   // 예전에는 200ms마다 상태를 바꿔 바를 다시 그렸는데, 그 간격만큼 계단처럼 끊겨 보였다.
@@ -161,7 +245,6 @@ function StudyCard({
   const posInUnit = (index % UNIT_SIZE) + 1;
   // 마지막 유닛은 20개보다 적을 수 있다.
   const unitLen = Math.min(UNIT_SIZE, total - (unitNo - 1) * UNIT_SIZE);
-  const localImage = WORD_IMAGES[word.id] || WORD_IMAGES[word.word];
 
   // 단어가 길어도 두 줄로 넘기지 않고 글자 크기를 줄여 한 줄에 담는다.
   // 단어는 이미지 패널 위에 얹히므로 그 안쪽 폭을 기준으로 계산한다.
@@ -255,22 +338,31 @@ function StudyCard({
             {/* 연상 이미지 + 좌우 이동 버튼.
                 바깥 View는 잘라내지 않아야 화살표가 패널 밖으로 걸쳐 보인다.
                 이미지가 1024x1024 정사각형이라 패널도 정사각형으로 꽉 채운다 */}
-            <View className="relative w-full">
-              <View className="aspect-square w-full overflow-hidden rounded-2xl bg-canvas shadow-neu-inset">
-                {localImage ? (
-                  <Image
-                    source={localImage}
-                    resizeMode="cover"
-                    style={{ width: "100%", height: "100%" }}
-                  />
-                ) : (
-                  <View className="flex-1 items-center justify-center gap-3">
-                    <Text className="text-[40px]">🖼️</Text>
-                    <Text className="text-[13px] text-slate-400">
-                      연상 이미지 준비 중
-                    </Text>
-                  </View>
-                )}
+            <View className="relative w-full" {...swipe.panHandlers}>
+              <View
+                onLayout={(e) => setPanelW(e.nativeEvent.layout.width)}
+                className="aspect-square w-full overflow-hidden rounded-2xl bg-canvas shadow-neu-inset"
+              >
+                {/* 그림만 손가락을 따라 흐른다. 위에 얹힌 단어·발음 영역은 제자리에 둔다.
+                    앞·뒤 그림을 양옆에 붙여 놓아 밀면 옆 그림이 따라 들어온다 */}
+                <Animated.View
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    transform: [{ translateX: dragX }],
+                  }}
+                >
+                  <WordImage word={word} />
+                  {panelW > 0 && prev && (
+                    <WordImage word={prev} offset={-panelW} />
+                  )}
+                  {panelW > 0 && next && (
+                    <WordImage word={next} offset={panelW} />
+                  )}
+                </Animated.View>
 
                 {/* 단어 · 발음기호 · 발음 듣기: 이미지 위쪽에 반투명 블러(Glassmorphism) 배경으로 표시 */}
                 <View

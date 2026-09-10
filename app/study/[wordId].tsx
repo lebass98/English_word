@@ -293,15 +293,15 @@ function StudyCard({
                       width: "100%",
                       ...(Platform.OS === "web"
                         ? {
-                            backdropFilter: "saturate(180%) blur(16px)",
-                            WebkitBackdropFilter: "saturate(180%) blur(16px)",
+                            backdropFilter: "saturate(180%) blur(7px)",
+                            WebkitBackdropFilter: "saturate(180%) blur(7px)",
                           }
                         : {}),
                     }}
                   >
                     <View
                       style={{
-                        backgroundColor: "rgba(241, 242, 246, 0.35)",
+                        backgroundColor: "rgba(241, 242, 246, 0.05)",
                       }}
                       className="flex-row items-start justify-between px-4 pb-3 pt-4"
                     >

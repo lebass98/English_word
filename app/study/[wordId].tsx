@@ -113,8 +113,8 @@ function StudyCard({
 
   const { width: screenWidth } = useWindowDimensions();
 
-  /** 예문을 보여줄지 여부. 끄면 뜻만 남고 예문은 통째로 가려진다 */
-  const [showExample, setShowExample] = useState(true);
+  /** 정답(뜻·예문)을 보여줄지 여부. 끄면 뜻까지 통째로 가려진다 */
+  const [showAnswer, setShowAnswer] = useState(true);
   const [speaking, setSpeaking] = useState(false);
   /** 자동 넘김 진행도 0 → 1. 애니메이션 값이라 매 프레임 부드럽게 움직인다.
       한 번만 만들어 두고 계속 같은 값을 쓴다 */
@@ -386,23 +386,34 @@ function StudyCard({
             <View className="mt-4 rounded-2xl bg-surface p-4 shadow-neu-sm">
               {/* 한글 뜻과 가리기 버튼을 한 줄에 둔다 (제목 없이) */}
               <View className="flex-row items-center justify-between gap-3">
-                <Text className="flex-1 text-[20px] font-black tracking-tight text-slate-950">
-                  {word.meaning}
-                </Text>
+                {showAnswer ? (
+                  <Text className="flex-1 text-[20px] font-black tracking-tight text-slate-950">
+                    {word.meaning}
+                  </Text>
+                ) : (
+                  /* 가려진 자리. 눌러도 바로 뜻이 나오게 해 둔다 */
+                  <Pressable
+                    onPress={() => setShowAnswer(true)}
+                    className="h-[26px] flex-1 items-center justify-center rounded-xl bg-canvas shadow-neu-inset active:opacity-70"
+                  >
+                    <Text className="text-[13px] font-bold tracking-[3px] text-slate-400">
+                      ● ● ● ●
+                    </Text>
+                  </Pressable>
+                )}
                 <Pressable
-                  onPress={() => setShowExample((v) => !v)}
+                  onPress={() => setShowAnswer((v) => !v)}
                   className="flex-row items-center gap-1 active:opacity-70"
                 >
                   <Text className="text-[12px] font-bold text-emerald-500">
-                    {showExample ? "가리기" : "보기"}
+                    {showAnswer ? "가리기" : "보기"}
                   </Text>
-                  {showExample ? <ChevronUpIcon /> : <ChevronDownIcon />}
+                  {showAnswer ? <ChevronUpIcon /> : <ChevronDownIcon />}
                 </Pressable>
               </View>
 
-              {/* 예문: 가리기를 누르면 영어와 한글 해석을 통째로 감춘다.
-                  뜻만 남아서 스스로 확인해 보기 좋다 */}
-              {showExample && word.example && (
+              {/* 예문도 뜻과 함께 가려진다. 단어만 보고 스스로 떠올려 보기 좋다 */}
+              {showAnswer && word.example && (
                 <View className="mt-3 gap-1 border-t border-slate-200 pt-3">
                   <Text className="text-[15px] font-semibold leading-snug text-slate-800">
                     <Text className="font-bold text-emerald-600">예문 </Text>

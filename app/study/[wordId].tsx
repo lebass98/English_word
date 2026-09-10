@@ -313,7 +313,7 @@ function StudyCard({
                             fontSize: wordFontSize,
                             lineHeight: Math.round(wordFontSize * 1.15),
                           }}
-                          className="font-black tracking-tight text-slate-900"
+                          className="font-black tracking-wider text-slate-900"
                         >
                           {word.word}
                         </Text>
@@ -404,12 +404,12 @@ function StudyCard({
                   뜻만 남아서 스스로 확인해 보기 좋다 */}
               {showExample && word.example && (
                 <View className="mt-3 gap-1 border-t border-slate-200 pt-3">
-                  <Text className="text-[13px] font-semibold leading-snug text-slate-800">
+                  <Text className="text-[15px] font-semibold leading-snug text-slate-800">
                     <Text className="font-bold text-emerald-600">예문 </Text>
                     {word.example}
                   </Text>
                   {word.exampleKo && (
-                    <Text className="text-[12px] font-medium leading-snug text-slate-500">
+                    <Text className="text-[15px] font-medium leading-snug text-slate-500">
                       {word.exampleKo}
                     </Text>
                   )}

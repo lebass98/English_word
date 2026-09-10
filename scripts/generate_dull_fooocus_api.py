@@ -12,6 +12,7 @@ import shutil
 FOOOCUS_URL = "http://127.0.0.1:7865"
 PROJECT_ROOT = "/Users/ijaegwang/wordncode/App/English_word"
 ASSETS_DIR = "/Users/ijaegwang/wordncode/App/English_word/assets/words"
+ARTIFACT_DIR = "/Users/ijaegwang/.gemini/antigravity-ide/brain/0188bbd9-5001-41c3-b74f-b1dc07110b40"
 
 def generate_word():
     # 1. config 로드
@@ -29,7 +30,7 @@ def generate_word():
         data.append(val)
 
     prompt = (
-        "(minimalist black and white cartoon line art:1.4), (cute round bald doodle stick figure:1.4), "
+        "(Coloring Book, ColoringBookAF:1.2), (minimalist black and white cartoon line art:1.4), (cute round bald doodle stick figure:1.4), "
         "one cute round bald head stick figure character in middle looking comically confused and dull, "
         "holding a completely blunt rounded wooden pencil with thick blunt tip, "
         "another round-headed cartoon stick figure friend next to him scratching his head in disbelief, "
@@ -49,11 +50,17 @@ def generate_word():
     # Index 4: selected_styles
     # Index 5: performance
     # Index 7: image_number
+    # Index 16: enable LoRA 1
+    # Index 17: LoRA 1 model
+    # Index 18: LoRA 1 weight
     data[2] = prompt
     data[3] = negative_prompt
-    data[4] = ["Fooocus Line Art", "Line Art"] if "Line Art" in str(data[4]) else ["Fooocus V2", "Fooocus Enhance", "Fooocus Sharp"]
+    data[4] = ["SAI Line Art"]
     data[5] = "Speed"
     data[7] = 1 # image number 1장
+    data[16] = True
+    data[17] = "coloringbook_sdxl.safetensors"
+    data[18] = 0.85
 
     print("Fooocus Task 준비 중...")
     # 1) get_task 호출 (fn_index 67)
@@ -83,8 +90,10 @@ def generate_word():
 
         target_path = os.path.join(ASSETS_DIR, "dull.png")
         shutil.copy(name, target_path)
-        shutil.copy(name, "/Users/ijaegwang/.gemini/antigravity-ide/brain/a965b718-7061-4420-ae74-3d9bec6a9f15/word_dull_fooocus.png")
-        print(f"assets에 복사 완료 -> {target_path}")
+        os.makedirs(ARTIFACT_DIR, exist_ok=True)
+        raw_artifact = os.path.join(ARTIFACT_DIR, "word_dull_fooocus.png")
+        shutil.copy(name, raw_artifact)
+        print(f"assets 및 artifact 복사 완료 -> {target_path}")
 
         # 투명화 처리
         try:
@@ -121,7 +130,8 @@ def generate_word():
             rgba = np.dstack((arr, alpha))
             out = Image.fromarray(rgba, "RGBA")
             out.save(target_path)
-            out.save("/Users/ijaegwang/.gemini/antigravity-ide/brain/a965b718-7061-4420-ae74-3d9bec6a9f15/word_dull_fooocus_cutout.png")
+            cutout_artifact = os.path.join(ARTIFACT_DIR, "word_dull_fooocus_cutout.png")
+            out.save(cutout_artifact)
             print("투명화 적용 성공!")
         except Exception as e:
             print(f"투명화 실패: {e}")

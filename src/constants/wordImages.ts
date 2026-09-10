@@ -300,6 +300,18 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   "m2-179": require("../../assets/words/continent.png"),
   "m2-180": require("../../assets/words/mankind.png"),
 
+  // 중학교 2학년 10Unit (20개 단어)
+  patient: require("../../assets/words/patient.png"), site: require("../../assets/words/site.png"), marble: require("../../assets/words/marble.png"), stem: require("../../assets/words/stem.png"), slip: require("../../assets/words/slip.png"), torch: require("../../assets/words/torch.png"), composer: require("../../assets/words/composer.png"), invader: require("../../assets/words/invader.png"), trick: require("../../assets/words/trick.png"), flight: require("../../assets/words/flight.png"), castle: require("../../assets/words/castle.png"), envelope: require("../../assets/words/envelope.png"), pal: require("../../assets/words/pal.png"), vacation: require("../../assets/words/vacation.png"), desert: require("../../assets/words/desert.png"), event: require("../../assets/words/event.png"), theater: require("../../assets/words/theater.png"), stage: require("../../assets/words/stage.png"), error: require("../../assets/words/error.png"), area: require("../../assets/words/area.png"),
+  "m2-181": require("../../assets/words/patient.png"), "m2-182": require("../../assets/words/site.png"), "m2-183": require("../../assets/words/marble.png"), "m2-184": require("../../assets/words/stem.png"), "m2-185": require("../../assets/words/slip.png"), "m2-186": require("../../assets/words/torch.png"), "m2-187": require("../../assets/words/composer.png"), "m2-188": require("../../assets/words/invader.png"), "m2-189": require("../../assets/words/trick.png"), "m2-190": require("../../assets/words/flight.png"), "m2-191": require("../../assets/words/castle.png"), "m2-192": require("../../assets/words/envelope.png"), "m2-193": require("../../assets/words/pal.png"), "m2-194": require("../../assets/words/vacation.png"), "m2-195": require("../../assets/words/desert.png"), "m2-196": require("../../assets/words/event.png"), "m2-197": require("../../assets/words/theater.png"), "m2-198": require("../../assets/words/stage.png"), "m2-199": require("../../assets/words/error.png"), "m2-200": require("../../assets/words/area.png"),
+
+  // 중학교 2학년 11Unit (20개 단어)
+  base: require("../../assets/words/base.png"), basement: require("../../assets/words/basement.png"), evil: require("../../assets/words/evil.png"), atom: require("../../assets/words/atom.png"), poet: require("../../assets/words/poet.png"), petal: require("../../assets/words/petal.png"), chance: require("../../assets/words/chance.png"), mind: require("../../assets/words/mind.png"), climate: require("../../assets/words/climate.png"), suburb: require("../../assets/words/suburb.png"), throat: require("../../assets/words/throat.png"), voice: require("../../assets/words/voice.png"), valley: require("../../assets/words/valley.png"), puritan: require("../../assets/words/puritan.png"), feather: require("../../assets/words/feather.png"), amateur: require("../../assets/words/amateur.png"), nation: require("../../assets/words/nation.png"), puzzle: require("../../assets/words/puzzle.png"), riddle: require("../../assets/words/riddle.png"), rear: require("../../assets/words/rear.png"),
+  "m2-201": require("../../assets/words/base.png"), "m2-202": require("../../assets/words/basement.png"), "m2-203": require("../../assets/words/evil.png"), "m2-204": require("../../assets/words/atom.png"), "m2-205": require("../../assets/words/poet.png"), "m2-206": require("../../assets/words/petal.png"), "m2-207": require("../../assets/words/chance.png"), "m2-208": require("../../assets/words/mind.png"), "m2-209": require("../../assets/words/climate.png"), "m2-210": require("../../assets/words/suburb.png"), "m2-211": require("../../assets/words/throat.png"), "m2-212": require("../../assets/words/voice.png"), "m2-213": require("../../assets/words/valley.png"), "m2-214": require("../../assets/words/puritan.png"), "m2-215": require("../../assets/words/feather.png"), "m2-216": require("../../assets/words/amateur.png"), "m2-217": require("../../assets/words/nation.png"), "m2-218": require("../../assets/words/puzzle.png"), "m2-219": require("../../assets/words/riddle.png"), "m2-220": require("../../assets/words/rear.png"),
+
+  // 중학교 2학년 12Unit (20개 단어)
+  battle: require("../../assets/words/battle.png"), laundry: require("../../assets/words/laundry.png"), shower: require("../../assets/words/shower.png"), navy: require("../../assets/words/navy.png"), mars: require("../../assets/words/mars.png"), gallery: require("../../assets/words/gallery.png"), guest: require("../../assets/words/guest.png"), folk: require("../../assets/words/folk.png"), problem: require("../../assets/words/problem.png"), jewel: require("../../assets/words/jewel.png"), garage: require("../../assets/words/garage.png"), fault: require("../../assets/words/fault.png"), lantern: require("../../assets/words/lantern.png"), import: require("../../assets/words/import.png"), angle: require("../../assets/words/angle.png"), match: require("../../assets/words/match.png"), stripe: require("../../assets/words/stripe.png"), pulse: require("../../assets/words/pulse.png"), powder: require("../../assets/words/powder.png"), flood: require("../../assets/words/flood.png"),
+  "m2-221": require("../../assets/words/battle.png"), "m2-222": require("../../assets/words/laundry.png"), "m2-223": require("../../assets/words/shower.png"), "m2-224": require("../../assets/words/navy.png"), "m2-225": require("../../assets/words/mars.png"), "m2-226": require("../../assets/words/gallery.png"), "m2-227": require("../../assets/words/guest.png"), "m2-228": require("../../assets/words/folk.png"), "m2-229": require("../../assets/words/problem.png"), "m2-230": require("../../assets/words/jewel.png"), "m2-231": require("../../assets/words/garage.png"), "m2-232": require("../../assets/words/fault.png"), "m2-233": require("../../assets/words/lantern.png"), "m2-234": require("../../assets/words/import.png"), "m2-235": require("../../assets/words/angle.png"), "m2-236": require("../../assets/words/match.png"), "m2-237": require("../../assets/words/stripe.png"), "m2-238": require("../../assets/words/pulse.png"), "m2-239": require("../../assets/words/powder.png"), "m2-240": require("../../assets/words/flood.png"),
+
   // 중학교 2학년 2Unit (20개 단어)
   "glory": require("../../assets/words/glory.png"),
   "situation": require("../../assets/words/situation.png"),
@@ -390,7 +402,9 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
 
   // 중학교 2학년 13~15Unit 중 기존 이미지 보유 단어 (4종)
   "m2-254": require("../../assets/words/deserve.png"),
+  "m2-241": require("../../assets/words/bush.png"), "m2-242": require("../../assets/words/branch.png"), "m2-243": require("../../assets/words/hero.png"), "m2-244": require("../../assets/words/heaven.png"), "m2-245": require("../../assets/words/exit.png"), "m2-246": require("../../assets/words/beast.png"), "m2-247": require("../../assets/words/century.png"), "m2-248": require("../../assets/words/coeducation.png"), "m2-249": require("../../assets/words/twin.png"), "m2-250": require("../../assets/words/wound.png"), "m2-251": require("../../assets/words/metal.png"), "m2-252": require("../../assets/words/insect.png"), "m2-253": require("../../assets/words/track.png"), "m2-255": require("../../assets/words/survive.png"), "m2-256": require("../../assets/words/create.png"), "m2-257": require("../../assets/words/describe.png"), "m2-258": require("../../assets/words/select.png"), "m2-259": require("../../assets/words/hesitate.png"), "m2-260": require("../../assets/words/declare.png"),
   "m2-261": require("../../assets/words/pretend.png"),
+  "m2-262": require("../../assets/words/struggle.png"), "m2-263": require("../../assets/words/explore.png"), "m2-264": require("../../assets/words/astonish.png"), "m2-265": require("../../assets/words/disappoint.png"), "m2-266": require("../../assets/words/attract.png"), "m2-267": require("../../assets/words/celebrate.png"), "m2-268": require("../../assets/words/explode.png"), "m2-269": require("../../assets/words/include.png"), "m2-270": require("../../assets/words/protect.png"), "m2-271": require("../../assets/words/introduce.png"), "m2-272": require("../../assets/words/produce.png"), "m2-273": require("../../assets/words/chase.png"), "m2-274": require("../../assets/words/scratch.png"), "m2-275": require("../../assets/words/crash.png"), "m2-276": require("../../assets/words/stare.png"), "m2-277": require("../../assets/words/gaze.png"), "m2-278": require("../../assets/words/scare.png"), "m2-279": require("../../assets/words/grab.png"), "m2-280": require("../../assets/words/guard.png"),
   "m2-289": require("../../assets/words/except.png"),
   "m2-296": require("../../assets/words/replace.png"),
 
@@ -441,7 +455,99 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   "m2-959": require("../../assets/words/properly.png"),
   "m2-960": require("../../assets/words/haste.png"),
 
-  // 중학교 2학년 8Unit
+  // 중학교 2학년 8Unit (20개 단어)
   refrigerator: require("../../assets/words/refrigerator.png"),
+  crack: require("../../assets/words/crack.png"),
+  judge: require("../../assets/words/judge.png"),
+  slave: require("../../assets/words/slave.png"),
+  settler: require("../../assets/words/settler.png"),
+  fare: require("../../assets/words/fare.png"),
+  gesture: require("../../assets/words/gesture.png"),
+  planet: require("../../assets/words/planet.png"),
+  type: require("../../assets/words/type.png"),
+  secretary: require("../../assets/words/secretary.png"),
+  devil: require("../../assets/words/devil.png"),
+  scholar: require("../../assets/words/scholar.png"),
+  pardon: require("../../assets/words/pardon.png"),
+  kindergarten: require("../../assets/words/kindergarten.png"),
+  detective: require("../../assets/words/detective.png"),
+  license: require("../../assets/words/license.png"),
+  palace: require("../../assets/words/palace.png"),
+  spade: require("../../assets/words/spade.png"),
+  square: require("../../assets/words/square.png"),
+  "fountain-pen": require("../../assets/words/fountain-pen.png"),
+
+  // 중학교 2학년 8Unit ID 매핑 (m2-141 ~ m2-160)
   "m2-141": require("../../assets/words/refrigerator.png"),
+  "m2-142": require("../../assets/words/crack.png"),
+  "m2-143": require("../../assets/words/judge.png"),
+  "m2-144": require("../../assets/words/slave.png"),
+  "m2-145": require("../../assets/words/settler.png"),
+  "m2-146": require("../../assets/words/fare.png"),
+  "m2-147": require("../../assets/words/gesture.png"),
+  "m2-148": require("../../assets/words/planet.png"),
+  "m2-149": require("../../assets/words/type.png"),
+  "m2-150": require("../../assets/words/secretary.png"),
+  "m2-151": require("../../assets/words/devil.png"),
+  "m2-152": require("../../assets/words/scholar.png"),
+  "m2-153": require("../../assets/words/pardon.png"),
+  "m2-154": require("../../assets/words/kindergarten.png"),
+  "m2-155": require("../../assets/words/detective.png"),
+  "m2-156": require("../../assets/words/license.png"),
+  "m2-157": require("../../assets/words/palace.png"),
+  "m2-158": require("../../assets/words/spade.png"),
+  "m2-159": require("../../assets/words/square.png"),
+  "m2-160": require("../../assets/words/fountain-pen.png"),
+
+  // 중학교 1학년 11Unit 공통 매핑
+  "m1-208": require("../../assets/words/refrigerator.png"),
+
+  // 중학교 2학년 50Unit (20개 단어)
+  neither: require("../../assets/words/neither.png"),
+  besides: require("../../assets/words/besides.png"),
+  anyway: require("../../assets/words/anyway.png"),
+  sometime: require("../../assets/words/sometime.png"),
+  forward: require("../../assets/words/forward.png"),
+  since: require("../../assets/words/since.png"),
+  once: require("../../assets/words/once.png"),
+  twice: require("../../assets/words/twice.png"),
+  indeed: require("../../assets/words/indeed.png"),
+  seldom: require("../../assets/words/seldom.png"),
+  "upside-down": require("../../assets/words/upside-down.png"),
+  whether: require("../../assets/words/whether.png"),
+  unless: require("../../assets/words/unless.png"),
+  though: require("../../assets/words/though.png"),
+  while: require("../../assets/words/while.png"),
+  usually: require("../../assets/words/usually.png"),
+  safely: require("../../assets/words/safely.png"),
+  along: require("../../assets/words/along.png"),
+  without: require("../../assets/words/without.png"),
+  behind: require("../../assets/words/behind.png"),
+
+  // 중학교 2학년 50Unit ID 매핑 (m2-981 ~ m2-1000)
+  "m2-981": require("../../assets/words/neither.png"),
+  "m2-982": require("../../assets/words/besides.png"),
+  "m2-983": require("../../assets/words/anyway.png"),
+  "m2-984": require("../../assets/words/sometime.png"),
+  "m2-985": require("../../assets/words/forward.png"),
+  "m2-986": require("../../assets/words/since.png"),
+  "m2-987": require("../../assets/words/once.png"),
+  "m2-988": require("../../assets/words/twice.png"),
+  "m2-989": require("../../assets/words/indeed.png"),
+  "m2-990": require("../../assets/words/seldom.png"),
+  "m2-991": require("../../assets/words/upside-down.png"),
+  "m2-992": require("../../assets/words/whether.png"),
+  "m2-993": require("../../assets/words/unless.png"),
+  "m2-994": require("../../assets/words/though.png"),
+  "m2-995": require("../../assets/words/while.png"),
+  "m2-996": require("../../assets/words/usually.png"),
+  "m2-997": require("../../assets/words/safely.png"),
+  "m2-998": require("../../assets/words/along.png"),
+  "m2-999": require("../../assets/words/without.png"),
+  "m2-1000": require("../../assets/words/behind.png"),
+
+  // 중학교 2학년 51Unit 잔여 단어 ID 매핑 (m2-1001 ~ m2-1003)
+  "m2-1001": require("../../assets/words/beyond.png"),
+  "m2-1002": require("../../assets/words/below.png"),
+  "m2-1003": require("../../assets/words/toward.png"),
 };

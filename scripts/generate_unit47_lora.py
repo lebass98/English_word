@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
 ComfyUI SDXL + ColoringBook LoRA 자동 생성 스크립트: 중학 2학년 47유닛 (20단어)
-- ComfyUI API(http://127.0.0.1:8188)를 통해 순차적으로 이미지를 생성합니다.
-- 생성 완료 시 assets/words/<단어>.png 로 자동 복사합니다.
+- 스타일: 초미니멀 귀여운 둥근 머리 두들 스틱맨 (가는 선 한 줄 팔다리, 위트 있는 행동 연출)
+- 순수 흑백 라인아트 (Monochrome pure line art)
+- 스마트 배경 누끼 투명화 (Transparent PNG)
 """
 
 import argparse
@@ -23,138 +24,140 @@ UNIT_47_WORDS = [
         "id": "m2-921",
         "word": "excited",
         "meaning": "흥분한",
-        "scene": "a cute adorable happy chibi cartoon boy jumping high in the air with arms wide open, huge excited smile with sparkling anime eyes, stars floating around him",
+        "scene": "one cute stick figure person jumping high in the air with arms spread wide, huge cheerful open mouth smile with dot eyes, celebratory curved action burst lines around him",
     },
     {
         "id": "m2-922",
         "word": "alive",
         "meaning": "살아있는",
-        "scene": "a cute tiny chibi sprout character with big round shining eyes stretching its little leafy arms happily towards a cheerful smiling sun, vibrant with life",
+        "scene": "a cute happy stick figure person joyfully watering a tiny smiling plant sprout with a watering can, tiny cute hearts and life sparkles floating",
     },
     {
         "id": "m2-923",
         "word": "brown",
         "meaning": "갈색의, 갈색",
-        "scene": "a cute fluffy chibi cartoon teddy bear sitting down happily hugging a big honey pot with sweet cheerful expression",
+        "scene": "a cute stick figure person happily holding up a giant chocolate donut with a bite taken out, smiling playfully",
     },
     {
         "id": "m2-924",
         "word": "different",
         "meaning": "다른",
-        "scene": "three identical cute little round ducklings standing in a row, but one cheerful middle duckling is wearing a funny detective hat and glasses looking proud",
+        "scene": "three stick figure people standing in a row, two are standing straight and plain, while the middle stick figure is wearing funny oversized sunglasses and striking a goofy funny dance pose",
     },
     {
         "id": "m2-925",
         "word": "difficult",
         "meaning": "어려운",
-        "scene": "a cute chibi cartoon boy scratching his head in confusion at a giant complex jigsaw puzzle piece taller than him, funny tiny question marks floating",
+        "scene": "a confused stick figure person scratching head, looking comically puzzled at a giant single jigsaw puzzle piece taller than himself with a tiny question mark over his head",
     },
     {
         "id": "m2-926",
         "word": "interesting",
         "meaning": "재미있는",
-        "scene": "a curious cute chibi cartoon girl with big fascinated eyes reading a magical pop-up storybook with tiny cute flying dragons popping out of the pages",
+        "scene": "a curious stick figure person holding a giant magnifying glass inspecting a tiny cute snail, sparkling wide fascinated eyes",
     },
     {
         "id": "m2-927",
         "word": "unlike",
         "meaning": "같지 않은",
-        "scene": "a cute chibi cat and a cute puppy sitting side by side, the cat looking cool and composed while the puppy is wagging its tail with hilarious energetic excitement",
+        "scene": "two stick figures side by side, one is calm and sleeping peacefully, while the other is bouncing wildly with energetic motion zigzag lines",
     },
     {
         "id": "m2-928",
         "word": "least",
         "meaning": "가장 적은, 최소한의",
-        "scene": "a funny cute chibi cartoon squirrel looking comically sad holding just one tiny acorn seed, standing next to a mountain of acorns",
+        "scene": "a funny sad stick figure person holding only one tiny coin in an open empty wallet, standing beside a giant tall stack of coins",
     },
     {
         "id": "m2-929",
         "word": "afraid",
         "meaning": "무서워하여",
-        "scene": "a cute chibi cartoon boy hiding under a cozy blanket shivering comically with funny big startled wide eyes seeing a harmless tiny moth shadow",
+        "scene": "a frightened stick figure person with hands raised in shock and trembling knees, startled by a dark cave opening or tiny shadow, panic action lines",
     },
     {
         "id": "m2-930",
         "word": "cool",
         "meaning": "서늘한, 냉정한",
-        "scene": "an ultra stylish cute chibi cartoon penguin wearing black sunglasses sitting in front of a blowing electric fan, looking delightfully relaxed and cool",
+        "scene": "a very chill stick figure person wearing black shades relaxing comfortably right in front of a blowing electric fan, wind breeze lines",
     },
     {
         "id": "m2-931",
         "word": "pretty",
         "meaning": "예쁜, 상당히",
-        "scene": "a charming cute chibi cartoon girl wearing a lovely floral flower crown looking into a hand mirror with sweet blushing cheeks and twinkling smile",
+        "scene": "a charming sweet stick figure character wearing a simple flower in hair, admiring reflection in a small handheld mirror with cute blushing cheek dots",
     },
     {
         "id": "m2-932",
         "word": "kind",
         "meaning": "친절한, 종류",
-        "scene": "a warm-hearted cute chibi cartoon boy kindly offering his umbrella to a shivering tiny soaked kitten in the rain with gentle sweet smile",
+        "scene": "a gentle kind stick figure person generously holding an umbrella over a tiny shivering soaked bird in the rain with a sweet warm smile",
     },
     {
         "id": "m2-933",
         "word": "sick",
         "meaning": "병든, 싫증난",
-        "scene": "a cute chibi cartoon boy lying in bed with a cooling ice pack on his head and a thermometer in his mouth, sleepy gentle eyes, looking pitifully cute",
+        "scene": "a sick stick figure person tucked under a blanket with a thermometer in mouth and an ice pack on head, droopy sad eyes",
     },
     {
         "id": "m2-934",
         "word": "useless",
         "meaning": "쓸모없는",
-        "scene": "a comically perplexed cute chibi cartoon boy holding an umbrella that is full of big holes while rain pours right through it onto his head, funny sweat drops",
+        "scene": "a comically disappointed stick figure person holding an umbrella full of big holes while rain pours right through onto head, funny sweat drops",
     },
     {
         "id": "m2-935",
         "word": "busy",
         "meaning": "바쁜",
-        "scene": "a cute chibi cartoon kid with multiple funny motion blur arms holding a ringing phone, typing on a laptop, and checking a watch all at once with dizzy eyes",
+        "scene": "a frantic busy stick figure person with multiple funny comic motion blur arms holding a ringing telephone, typing on a laptop, and checking a watch",
     },
     {
         "id": "m2-936",
         "word": "early",
         "meaning": "일찍이",
-        "scene": "a bright energetic cute chibi cartoon rooster crowing on a fence at dawn, wearing running shoes and stretching early in the morning",
+        "scene": "a bright energetic stick figure person in running sneakers stretching early in the morning with a cute rising sun yawning in the background",
     },
     {
         "id": "m2-937",
         "word": "past",
         "meaning": "과거의, ~을 지나서",
-        "scene": "a cute chibi cartoon boy happily stepping through an open magical doorway leading out of an antique grandfather clock towards the future",
+        "scene": "a stick figure person walking forward cheerfully through a door frame with arrow signs pointing forward, waving goodbye to an old calendar behind",
     },
     {
         "id": "m2-938",
         "word": "dark",
         "meaning": "어두운",
-        "scene": "a brave cute chibi cartoon explorer holding a glowing bright lantern in a mysterious night cave, illuminating a funny cute little bat hanging upside down",
+        "scene": "a brave stick figure person holding a glowing flashlight beam into an inky dark opening, illuminating a tiny friendly smiling ghost or bat",
     },
     {
         "id": "m2-939",
         "word": "cloudy",
         "meaning": "구름이 낀",
-        "scene": "a funny cute chibi cloud character floating above with chubby cheeks, blowing puffy soft white clouds across the sky",
+        "scene": "a cute stick figure person looking up at a giant fluffy cartoon cloud that is gently covering the sun, simple sky doodle",
     },
     {
         "id": "m2-940",
         "word": "short",
         "meaning": "짧은, 키가 작은",
-        "scene": "a super cute tiny chibi cartoon hamster standing next to a giant tall sunflower, looking way up high on tiptoes with funny awe-inspired wide eyes",
+        "scene": "a very short tiny cute stick figure kid standing on tiptoes next to an absurdly tall sunflower or ladder, looking way up high with round eyes",
     },
 ]
 
 
 def build_workflow(item, seed):
     positive_prompt = (
-        f"Coloring Book, ColoringBookAF, minimalist black and white coloring book page, "
+        "(ultra minimalist cute doodle line art:1.4), (simple cute round head stick figure character:1.4), "
         f"{item['scene']}, "
-        f"thick bold clean black outlines, smooth line art, simple doodle drawing, "
-        f"pure solid clean white background, completely empty background, sharp clean vector lines, "
-        f"strictly no color, no colors, no shading, no gradient, no gray fill, "
-        f"strictly no text, no words, no letters, no watermark."
+        "cute round ball head with tiny simple hair flick, cute two dot eyes and simple curved smile, "
+        "simple tubular torso, single thin curved stick line arms, single thin stick legs with tiny oval feet, "
+        "(clean thick smooth uniform marker outlines, hand drawn doodle illustration:1.3), "
+        "pure solid white background, completely empty background, "
+        "(strictly black and white line art only, strictly no color, no colors, no shading, no gray fill, no texture:1.5), "
+        "isolated subject, strictly no text, no words, no watermark"
     )
 
     negative_prompt = (
-        "color, colors, colored, red, blue, yellow, green, grayscale shading, shadow, shadows, realistic, photo, 3d, render, "
-        "messy lines, sketchy, dirty, blurry, low quality, bad anatomy, text, words, watermark, logo, frame, border"
+        "color, colors, colored, red, blue, yellow, green, shading, grayscale, shadow, 3d, realistic, "
+        "complex clothes, detailed anatomy, realistic fingers, realistic muscles, hairy, messy sketch, dirty lines, text, words, watermark"
     )
 
     return {
@@ -168,8 +171,8 @@ def build_workflow(item, seed):
             "class_type": "LoraLoader",
             "inputs": {
                 "lora_name": "coloringbook_sdxl.safetensors",
-                "strength_model": 1.0,
-                "strength_clip": 1.0,
+                "strength_model": 0.85,
+                "strength_clip": 0.85,
                 "model": ["1", 0],
                 "clip": ["1", 1],
             },
@@ -205,7 +208,7 @@ def build_workflow(item, seed):
                 "latent_image": ["5", 0],
                 "seed": seed,
                 "steps": 25,
-                "cfg": 6.0,
+                "cfg": 7.0,
                 "sampler_name": "euler",
                 "scheduler": "normal",
                 "denoise": 1.0,
@@ -221,11 +224,57 @@ def build_workflow(item, seed):
         "8": {
             "class_type": "SaveImage",
             "inputs": {
-                "filename_prefix": f"unit47_{item['word']}",
+                "filename_prefix": f"unit47_doodle_{item['word']}",
                 "images": ["7", 0],
             },
         },
     }
+
+
+def make_transparent(src_path, dest_path):
+    """
+    모서리와 연결된 외부 흰색 배경을 투명(0)으로 날리고
+    검은색 굵은 마커 라인과 캐릭터 본체는 선명하게 보존
+    """
+    try:
+        from PIL import Image
+        import numpy as np
+        from scipy import ndimage
+
+        img = Image.open(src_path).convert("RGB")
+        arr = np.array(img)
+        gray = np.mean(arr, axis=2)
+
+        white_mask = gray > 230
+        labeled, _ = ndimage.label(white_mask)
+
+        border_labels = set()
+        border_labels.update(labeled[0, :])
+        border_labels.update(labeled[-1, :])
+        border_labels.update(labeled[:, 0])
+        border_labels.update(labeled[:, -1])
+        border_labels.discard(0)
+
+        outer_bg = np.isin(labeled, list(border_labels))
+
+        alpha = np.full((img.height, img.width), 255, dtype=np.uint8)
+        alpha[outer_bg] = 0
+
+        dilated = ndimage.binary_dilation(outer_bg, iterations=2)
+        edge_zone = dilated & ~outer_bg
+
+        for y, x in zip(*np.where(edge_zone)):
+            v = 255 - gray[y, x]
+            alpha[y, x] = int(min(255, v * 1.8))
+
+        rgba = np.dstack((arr, alpha))
+        out = Image.fromarray(rgba, "RGBA")
+        out.save(dest_path)
+        return True
+    except Exception as e:
+        print(f" 투명화 변환 오류 ({e}), 일반 복사 수행")
+        shutil.copy(src_path, dest_path)
+        return False
 
 
 def queue_prompt(workflow):
@@ -258,53 +307,8 @@ def wait_for_prompt(prompt_id, timeout_sec=900):
     return None
 
 
-def make_transparent(src_path, dest_path):
-    """
-    모서리와 연결된 외부 흰색 배경만 투명화하고 캐릭터 내부 및 굵은 선은 깔끔하게 유지합니다.
-    """
-    try:
-        from PIL import Image
-        import numpy as np
-        from scipy import ndimage
-
-        img = Image.open(src_path).convert('RGB')
-        arr = np.array(img)
-        gray = np.mean(arr, axis=2)
-
-        white_mask = gray > 230
-        labeled, _ = ndimage.label(white_mask)
-
-        border_labels = set()
-        border_labels.update(labeled[0, :])
-        border_labels.update(labeled[-1, :])
-        border_labels.update(labeled[:, 0])
-        border_labels.update(labeled[:, -1])
-        border_labels.discard(0)
-
-        outer_bg = np.isin(labeled, list(border_labels))
-
-        alpha = np.full((img.height, img.width), 255, dtype=np.uint8)
-        alpha[outer_bg] = 0
-
-        dilated = ndimage.binary_dilation(outer_bg, iterations=2)
-        edge_zone = dilated & ~outer_bg
-
-        for y, x in zip(*np.where(edge_zone)):
-            v = 255 - gray[y, x]
-            alpha[y, x] = int(min(255, v * 1.8))
-
-        rgba = np.dstack((arr, alpha))
-        out = Image.fromarray(rgba, 'RGBA')
-        out.save(dest_path)
-        return True
-    except Exception as e:
-        print(f" 투명화 변환 오류 ({e}), 일반 복사 수행")
-        shutil.copy(src_path, dest_path)
-        return False
-
-
 def main():
-    parser = argparse.ArgumentParser(description="SDXL + ColoringBook LoRA 중2 47유닛 자동 생성")
+    parser = argparse.ArgumentParser(description="SDXL + ColoringBook LoRA 두들 스틱맨 47유닛 자동 생성")
     parser.add_argument("--force", action="store_true", help="기존 파일이 있어도 덮어쓰기")
     parser.add_argument("--words", nargs="*", help="특정 단어 지정 (예: --words excited alive)")
     args = parser.parse_args()
@@ -318,24 +322,19 @@ def main():
 
     total = len(words_to_process)
     print(f"==========================================================")
-    print(f" SDXL + ColoringBook LoRA (25스텝, 투명배경) 47유닛 (총 {total}단어)")
+    print(f" 두들 스틱맨 (25스텝, 흑백라인, 투명배경) 중2 47유닛 생성 (총 {total}단어)")
     print(f"==========================================================")
 
     for i, item in enumerate(words_to_process, 1):
         word = item["word"]
         target_path = os.path.join(ASSETS_WORDS_DIR, f"{word}.png")
 
-        # 1번째 excited는 이미 생성되어 투명화 적용 완료
-        if word == "excited":
-            print(f"[{i}/{total}] {word} ({item['meaning']}) - 투명 배경 적용 완료! -> {target_path}")
-            continue
-
         if not args.force and os.path.exists(target_path) and os.path.getsize(target_path) > 10000:
-            print(f"[{i}/{total}] {word} ({item['id']}) - 이미 존재함 (건너뜀)")
-            continue
+            # 이전에 다른 스타일로 임시 저장된 파일이 있으면 덮어쓰도록 force 옵션 권장
+            pass
 
         print(f"[{i}/{total}] {word} ({item['meaning']}) 생성 요청 중...", end="", flush=True)
-        seed = 2026 + i * 47
+        seed = 7777 + i * 53
         workflow = build_workflow(item, seed)
 
         prompt_id = queue_prompt(workflow)
@@ -343,7 +342,7 @@ def main():
             print(" [요청 실패]")
             continue
 
-        print(f" [큐 등록: {prompt_id[:8]}] -> 생성 중...", end="", flush=True)
+        print(f" [큐: {prompt_id[:8]}] -> 생성 중...", end="", flush=True)
         start_t = time.time()
         img_info = wait_for_prompt(prompt_id)
 

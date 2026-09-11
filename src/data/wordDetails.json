@@ -4767,7 +4767,13 @@
   "sincerely": {
     "phonetic": "[sɪnˈsɪrli]",
     "example": "She sincerely apologized to her classmate for breaking the promise.",
-    "exampleKo": "그녀는 약속을 어긴 것에 대해 반 친구에게 진심으로 사과했다."
+    "exampleKo": "그녀는 약속을 어긴 것에 대해 반 친구에게 진심으로 사과했다.",
+    "synonyms": [
+      "honestly",
+      "genuinely",
+      "truly"
+    ],
+    "etymology": "라틴어 'sincerus'(순수한, 섞이지 않은)에서 온 말로, 꾸밈없이 진심을 다한다는 뜻이 되었습니다."
   },
   "fortunately": {
     "phonetic": "[ˈfɔːrtʃənətli]",

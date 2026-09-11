@@ -29,7 +29,8 @@ MAX_FAST_FAILS=5     # 즉시 실패가 이만큼 연속되면 무한 재시작�
 
 echo ""
 echo -e "${CYAN}====================================================${NC}"
-echo -e "${BOLD}  영어 단어 학습 앱 (English_word) 로컬 개발 서버${NC}"
+echo -e "${BOLD}  영어 단어 학습 앱 (English_word)${NC}"
+echo -e "${BOLD}  [자동 새로고침 로컬 개발 서버 실행기]${NC}"
 echo -e "${CYAN}====================================================${NC}"
 echo ""
 
@@ -110,7 +111,8 @@ trap 'cleanup' EXIT
 echo ""
 echo "----------------------------------------------------"
 echo -e "  ${BOLD}웹 브라우저 주소 :${NC}  ${GREEN}http://localhost:${PORT}${NC}"
-echo -e "  ${BOLD}자동 새로고침   :${NC}  코드 수정 저장 시 실시간 반영 (Fast Refresh)"
+echo -e "  ${BOLD}브라우저 자동 열림:${NC}  서버 구동 시 기본 브라우저 자동 오픈"
+echo -e "  ${BOLD}자동 새로고침   :${NC}  코드 수정 저장 시 브라우저 실시간 반영 (Fast Refresh)"
 echo -e "  ${BOLD}자동 재시작     :${NC}  서버가 꺼지면 ${RESTART_DELAY}초 뒤 다시 실행"
 echo ""
 echo -e "  ${BOLD}[단축키 안내]${NC}"
@@ -138,7 +140,16 @@ while true; do
   if [ "$attempt" -gt 1 ]; then
     info "개발 서버를 다시 시작합니다 (${attempt}번째 실행)"
   else
-    info "Expo 로컬 웹 서버를 시작합니다... (옵션: $ARGS)"
+    info "자동 새로고침 Expo 로컬 웹 서버를 시작합니다... (옵션: $ARGS)"
+    info "3초 후 기본 웹 브라우저가 자동으로 실행됩니다..."
+    (
+      sleep 3
+      if command -v open >/dev/null 2>&1; then
+        open "http://localhost:${PORT}" 2>/dev/null || true
+      elif command -v xdg-open >/dev/null 2>&1; then
+        xdg-open "http://localhost:${PORT}" 2>/dev/null || true
+      fi
+    ) &
   fi
 
   started_at=$(date +%s)

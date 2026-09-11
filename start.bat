@@ -1,5 +1,6 @@
 @echo off
 chcp 65001 > nul
+title English Word - 자동 새로고침 로컬 개발 서버
 setlocal enabledelayedexpansion
 cd /d "%~dp0"
 
@@ -11,7 +12,8 @@ set FAST_FAILS=0
 
 echo.
 echo ====================================================
-echo   영어 단어 학습 앱 (English_word) 로컬 개발 서버
+echo   영어 단어 학습 앱 (English_word)
+echo   [자동 새로고침 로컬 웹 서버 실행기]
 echo ====================================================
 echo.
 
@@ -53,7 +55,8 @@ REM 3) 안내 메시지 출력
 echo.
 echo ----------------------------------------------------
 echo   웹 브라우저 주소 :  http://localhost:%PORT%
-echo   자동 새로고침   :  코드 수정 저장 시 실시간 반영 (Fast Refresh)
+echo   브라우저 자동 열림:  서버 구동 시 기본 브라우저 자동 오픈
+echo   자동 새로고침   :  코드 수정 저장 시 브라우저 실시간 반영 (Fast Refresh)
 echo   자동 재시작     :  서버가 꺼지면 %RESTART_DELAY%초 뒤 다시 실행
 echo.
 echo   [단축키 안내]
@@ -62,7 +65,7 @@ echo    - r : 앱 다시 불러오기 (Reload)
 echo    - a : Android 기기/에뮬레이터 연결
 echo    - i : iOS 시뮬레이터 열기
 echo    - c : 콘솔 화면 지우기
-echo    - 완전 종료 : 이 창을 닫거나 Ctrl + C 후 N
+echo    - 완전 종료 : Ctrl + C 후 Y 또는 이 창 닫기
 echo ----------------------------------------------------
 echo.
 
@@ -78,7 +81,9 @@ call :KILL_PORT
 if !ATTEMPT! GTR 1 (
   echo [정보] 개발 서버를 다시 시작합니다 ^(!ATTEMPT!번째 실행^)
 ) else (
-  echo [정보] Expo 로컬 웹 서버를 시작합니다... ^(옵션: %ARGS%^)
+  echo [정보] 자동 새로고침 Expo 로컬 웹 서버를 시작합니다... ^(옵션: %ARGS%^)
+  echo [정보] 3초 후 기본 웹 브라우저가 자동으로 실행됩니다...
+  start /b cmd /c "timeout /t 3 /nobreak > nul & start \"\" \"http://localhost:%PORT%\""
 )
 
 REM 시작 시각 기록 (즉시 실패 판별용)
@@ -91,8 +96,13 @@ for /f "delims=" %%t in ('powershell -NoProfile -Command "[int][double]::Parse((
 set /a RAN_FOR=!END_TS!-!START_TS!
 
 if !EXIT_CODE! EQU 0 (
-  echo [정보] 서버가 정상 종료되었습니다.
-  goto :FINISH
+  echo.
+  echo [정보] 개발 서버가 정상 종료되었습니다.
+  echo.
+  set /p RESTART_CHOICE="서버를 다시 시작하시겠습니까? (Y/N, 기본값: Y): "
+  if /i "!RESTART_CHOICE!"=="N" goto :FINISH
+  set ATTEMPT=0
+  goto :RUN_SERVER
 )
 
 REM 시작하자마자 반복해서 죽으면 무한 재시작을 멈춘다
@@ -124,4 +134,7 @@ echo.
 echo [정보] 서버를 종료합니다...
 call :KILL_PORT
 echo [완료] 정상적으로 종료되었습니다.
+echo.
+echo 아무 키나 누르면 창을 닫습니다...
+pause > nul
 endlocal

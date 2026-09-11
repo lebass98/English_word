@@ -502,27 +502,20 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   // 중학교 1학년 11Unit 공통 매핑
   "m1-208": require("../../assets/words/refrigerator.png"),
 
-  // 중학교 2학년 50Unit (20개 단어)
-  neither: require("../../assets/words/neither.png"),
+  // 중학교 2학년 50Unit (20개 단어 중 신규 단어)
   besides: require("../../assets/words/besides.png"),
   anyway: require("../../assets/words/anyway.png"),
   sometime: require("../../assets/words/sometime.png"),
   forward: require("../../assets/words/forward.png"),
-  since: require("../../assets/words/since.png"),
   once: require("../../assets/words/once.png"),
   twice: require("../../assets/words/twice.png"),
   indeed: require("../../assets/words/indeed.png"),
   seldom: require("../../assets/words/seldom.png"),
   "upside-down": require("../../assets/words/upside-down.png"),
-  whether: require("../../assets/words/whether.png"),
-  unless: require("../../assets/words/unless.png"),
   though: require("../../assets/words/though.png"),
-  while: require("../../assets/words/while.png"),
   usually: require("../../assets/words/usually.png"),
   safely: require("../../assets/words/safely.png"),
-  along: require("../../assets/words/along.png"),
-  without: require("../../assets/words/without.png"),
-  behind: require("../../assets/words/behind.png"),
+
 
   // 중학교 2학년 50Unit ID 매핑 (m2-981 ~ m2-1000)
   "m2-981": require("../../assets/words/neither.png"),

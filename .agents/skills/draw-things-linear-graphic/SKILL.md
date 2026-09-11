@@ -14,19 +14,24 @@ description: >-
 
 ---
 
-## 🎨 선형그래픽 5대 핵심 원칙
+## 🎨 선형그래픽 6대 핵심 원칙
 
 1. **초극세 바늘선 (0.05mm Hairline)**:
    - 512px 업스케일 방식을 쓰지 않고, **1024×1024 네이티브 해상도**로 직접 생성하여 선 굵기를 초기부터 가장 얇게 렌더링합니다.
    - 프롬프트 키워드: `thinnest possible 0.05mm ultra-delicate needle-thin hairline ink stroke`, `extremely fine crisp outlines`.
-2. **배경 색상코드 `#f5f6f8`**:
+2. **목 없는(No-Neck) 머리-몸통 직접 연결 캐릭터**:
+   - 사람/스틱맨 캐릭터는 **목을 절대 생성하지 않고, 동그란 머리가 몸통에 바로 부착**되도록 구성합니다.
+   - 긍정 프롬프트: `neckless cute doodle stickman, perfectly round circle head attached directly to torso with completely no neck, neckless stick figure`.
+   - 부정 프롬프트: `neck, long neck, throat, collar, neck line, detailed neck anatomy`.
+3. **배경 색상코드 `#f5f6f8`**:
    - 뉴모피즘 캔버스 테마와 완벽히 일치하는 소프트 라이트그레이 톤 (`flat smooth light gray canvas background color #f5f6f8`).
-3. **선 색상코드 `#030203`**:
+4. **선 색상코드 `#030203`**:
    - 순수 칠흑색에 가까운 딥 차콜 블랙 잉크 (`dark charcoal ink color #030203`).
-4. **풍성한 씬 (Rich Scene Content)**:
+5. **풍성한 씬 (Rich Scene Content)**:
    - 인물 1명만 덩그러니 있는 것이 아니라, 배경 가구, 벽면 장식(시계, 책장, 조명), 바닥선, 소품, 2~4명의 귀여운 원형 머리 스틱맨 동료들의 상호작용을 풍성하게 묘사합니다.
-5. **추후 수정 및 효과 일체 배제 (Zero Post-Processing)**:
+6. **추후 수정 및 효과 일체 배제 (Zero Post-Processing)**:
    - 생성 후 임계값(Threshold), 색상 왜곡, 필터 효과를 인위적으로 주지 않고, 모델 본연의 부드러운 안티에일리어싱을 보존한 **순수 렌더링 원본 파일**을 그대로 저장합니다.
+
 
 ---
 

@@ -29,12 +29,13 @@ async function generateLinearImage({
     "thinnest possible 0.05mm ultra-delicate needle-thin hairline ink stroke",
     "extremely fine crisp outlines drawn in dark charcoal ink color #030203",
     "flat smooth light gray canvas background color #f5f6f8",
-    "cute slender doodle stickman stick figure characters with small round bald circle heads and tiny smiling dot faces",
+    "neckless cute slender doodle stickman characters with round bald circle heads attached directly to torso with completely no neck, tiny smiling dot faces",
     "abundant rich background details, furniture, wall decor, floor line, ambient props",
     "strictly flat 2d linear graphic, no shading, no gradients, no solid black fills, empty clean background"
   ].join(", ");
 
   const negativePrompt = [
+    "neck, long neck, throat, collar, neck line, detailed neck anatomy",
     "thick lines, bold outlines, heavy brush strokes, chunky lines, fat strokes",
     "pure white #ffffff background, dark background, black background, 3d, realistic, shadow, shading",
     "color, gradients, photo, blur, watermark, text, signature"

@@ -34,16 +34,18 @@ def generate_linear_image(
         f"thinnest possible 0.05mm ultra-delicate needle-thin hairline ink stroke, "
         f"extremely fine crisp outlines drawn in dark charcoal ink color #030203, "
         f"flat smooth light gray canvas background color #f5f6f8, "
-        f"cute slender doodle stickman stick figure characters with small round bald circle heads and tiny smiling dot faces, "
+        f"neckless cute slender doodle stickman characters with round bald circle heads attached directly to torso with completely no neck, tiny smiling dot faces, "
         f"abundant rich background details, furniture, wall decor, floor line, ambient props, "
         f"strictly flat 2d linear graphic, no shading, no gradients, no solid black fills, empty clean background"
     )
 
     negative_prompt = (
+        "neck, long neck, throat, collar, neck line, detailed neck anatomy, "
         "thick lines, bold outlines, heavy brush strokes, chunky lines, fat strokes, "
         "pure white #ffffff background, dark background, black background, 3d, realistic, shadow, shading, "
         "color, gradients, photo, blur, watermark, text, signature"
     )
+
 
     payload = {
         "prompt": prompt,

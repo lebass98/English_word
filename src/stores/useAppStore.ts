@@ -1,4 +1,6 @@
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import { create } from "zustand";
+import { createJSONStorage, persist } from "zustand/middleware";
 
 /** 단어별 학습 상태: 미학습 / 헷갈림 / 외움 */
 export type WordStatus = "unseen" | "unsure" | "known";
@@ -24,14 +26,27 @@ interface AppState {
   setWordStatus: (wordId: string, status: WordStatus) => void;
 }
 
-export const useAppStore = create<AppState>((set) => ({
-  activeGradeId: null,
-  setActiveGradeId: (id) => set({ activeGradeId: id }),
+export const useAppStore = create<AppState>()(
+  persist(
+    (set) => ({
+      activeGradeId: null,
+      setActiveGradeId: (id) => set({ activeGradeId: id }),
 
-  autoAdvance: true,
-  setAutoAdvance: (on) => set({ autoAdvance: on }),
+      autoAdvance: true,
+      setAutoAdvance: (on) => set({ autoAdvance: on }),
 
-  wordStatus: {},
-  setWordStatus: (wordId, status) =>
-    set((s) => ({ wordStatus: { ...s.wordStatus, [wordId]: status } })),
-}));
+      wordStatus: {},
+      setWordStatus: (wordId, status) =>
+        set((s) => ({ wordStatus: { ...s.wordStatus, [wordId]: status } })),
+    }),
+    {
+      name: "wordpic-settings",
+      // 네이티브는 디스크, 웹은 localStorage — 화면 이동·뒤로가기·앱 재시작에도 유지된다
+      storage: createJSONStorage(() => AsyncStorage),
+      // 설정값만 저장한다.
+      // wordStatus는 단어 id 체계 개편(언어 접두사 도입) 전까지 저장하지 않는다 —
+      // 지금 저장하면 나중에 id가 바뀔 때 기록 마이그레이션이 필요해진다.
+      partialize: (s) => ({ autoAdvance: s.autoAdvance }),
+    },
+  ),
+);

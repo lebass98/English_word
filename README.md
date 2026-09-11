@@ -66,3 +66,4 @@ npm run lint     # ESLint
 - 중학교 1학년 Unit 1 (20개 단어 전원: beyond~teenager) 선형그래픽 스킬 규격(0.05mm 초극세선, 1024x1024, 배경 #f5f6f8, 선색 #030203, 노넥 스틱맨, 풍성한 씬)으로 전면 재생성 및 교체 적용
 - 배치 파일(start.bat / start.sh)에 자동 새로고침(Fast Refresh) 로컬 웹 서버 실행 및 브라우저 자동 오픈 연동
 - package.json 내 npm run dev 개발 서버 스크립트 추가 및 서버 종료 시 비정상 튕김 방지 안내 처리
+- 자동 넘김(재생/멈춤) 설정을 zustand persist(AsyncStorage)로 영구 저장 — 단어 이동·뒤로가기·앱 재시작에도 유지

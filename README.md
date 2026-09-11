@@ -74,3 +74,6 @@ npm run lint     # ESLint
 - 유닛 목록의 "0 / 20"을 실제 외운 개수로 교체하고 유닛별 진행바·완료 표시 추가
 - findWord O(1) 색인화 및 unitsOf 캐시로 목록 성능 개선
 - SSR(Node) 환경에서 AsyncStorage가 window를 참조해 개발 서버가 죽던 문제 수정(persistStorage 어댑터)
+- Draw Things 선형그래픽 스킬 업데이트: 한글 텍스트 전면 배제 및 영문 우선 표기 원칙(원칙 7) 공식화, 100% 영문 프롬프트 구성 및 네거티브 프롬프트 한글 차단 반영
+- 중학교 1학년 Unit 2 (20개 단어 전원: sophomore~brown) 선형그래픽 스킬 규격(0.05mm 초극세선, 1024x1024, 배경 #f5f6f8, 선색 #030203, 노넥 스틱맨, 영문 연출)으로 일괄 생성 및 wordImages.ts 매핑 등록
+- 중학교 1학년 Unit 3 (20개 단어 전원: decrease~nearly) 선형그래픽 스킬 규격으로 일괄 생성 및 wordImages.ts 매핑 등록, TS1117 중복 키 방지 및 타입체크/웹 빌드 검증 완료

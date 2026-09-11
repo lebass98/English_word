@@ -185,11 +185,15 @@ def generate_unit2_linear():
         scene = item["scene"]
         out_path = os.path.join(ASSETS_DIR, f"{word}.png")
 
-        print(f"\n[{idx}/{total}] '{word}' ({word_id}: {meaning}) 생성 중...")
-        print(f"Scene: {scene}")
+        if os.path.exists(out_path) and os.path.getsize(out_path) > 10000:
+            print(f"[{idx}/{total}] '{word}' ({word_id}) 이미 존재하여 건너뜁니다. -> {out_path}", flush=True)
+            continue
+
+        print(f"\n[{idx}/{total}] '{word}' ({word_id}: {meaning}) 생성 중...", flush=True)
+        print(f"Scene: {scene}", flush=True)
 
         prompt = (
-            f"linear graphic illustration, complete richly detailed scene of {word} ({meaning}), "
+            f"linear graphic illustration, complete richly detailed scene of {word}, "
             f"thinnest possible 0.05mm ultra-delicate needle-thin hairline ink stroke, "
             f"extremely fine crisp outlines drawn in dark charcoal ink color #030203, "
             f"flat smooth light gray canvas background color #f5f6f8, "
@@ -201,6 +205,7 @@ def generate_unit2_linear():
 
         negative_prompt = (
             "neck, long neck, throat, collar, neck line, detailed neck anatomy, "
+            "Korean text, Hangul, Korean letters, non-English text, broken characters, foreign characters, "
             "thick lines, bold outlines, heavy brush strokes, chunky lines, fat strokes, "
             "pure white #ffffff background, dark background, black background, 3d, realistic, shadow, shading, "
             "color, gradients, photo, blur, watermark, text, signature"
@@ -235,18 +240,18 @@ def generate_unit2_linear():
                     f.write(raw_bytes)
 
                 elapsed = time.time() - t0
-                print(f"[{word}] 생성 및 저장 완료 ({elapsed:.1f}초) -> {out_path}")
+                print(f"[{word}] 생성 및 저장 완료 ({elapsed:.1f}초) -> {out_path}", flush=True)
                 success = True
                 break
             except Exception as e:
-                print(f"[{word}] 시도 {attempt} 실패: {e}")
+                print(f"[{word}] 시도 {attempt} 실패: {e}", flush=True)
                 time.sleep(3)
 
         if not success:
-            print(f"[오류] '{word}' 생성 실패!")
+            print(f"[오류] '{word}' 생성 실패!", flush=True)
 
-    print("\n==================================================")
-    print("중1 유닛 2 선형그래픽 20종 생성 작업 완료!")
+    print("\n==================================================", flush=True)
+    print("중1 유닛 2 선형그래픽 20종 생성 작업 완료!", flush=True)
 
 if __name__ == "__main__":
     generate_unit2_linear()

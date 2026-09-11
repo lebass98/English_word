@@ -31,6 +31,10 @@ description: >-
    - 인물 1명만 덩그러니 있는 것이 아니라, 배경 가구, 벽면 장식(시계, 책장, 조명), 바닥선, 소품, 2~4명의 귀여운 원형 머리 스틱맨 동료들의 상호작용을 풍성하게 묘사합니다.
 6. **추후 수정 및 효과 일체 배제 (Zero Post-Processing)**:
    - 생성 후 임계값(Threshold), 색상 왜곡, 필터 효과를 인위적으로 주지 않고, 모델 본연의 부드러운 안티에일리어싱을 보존한 **순수 렌더링 원본 파일**을 그대로 저장합니다.
+7. **한글 텍스트 전면 배제 및 영문 우선 표기 (English Only / No Korean Text)**:
+   - 씬 내부의 간판, 표지판, 칠판, 배너, 서류, 책 표지 등 글자가 들어가는 모든 요소에 **한글은 절대 넣지 않고, 반드시 간결하고 명확한 영문(English text, 예: 'STORE', 'SALE', 'LIBRARY', 'POST', 'BOUND FOR SEOUL')** 만을 사용합니다.
+   - 프롬프트 작성 시에도 한글 단어 뜻(예: `(가슴)`, `(가루)`)을 직접 전달하지 않고, **100% 순수 영문 씬 묘사(English prompt only)** 로 작성하여 언어 혼선으로 인한 렌더링 아티팩트와 글자 깨짐을 원천 방지합니다.
+   - 부정(Negative) 프롬프트 필수: `Korean text, Hangul, Korean letters, non-English text, broken characters, foreign characters`.
 
 
 ---

@@ -41,6 +41,7 @@ def generate_linear_image(
 
     negative_prompt = (
         "neck, long neck, throat, collar, neck line, detailed neck anatomy, "
+        "Korean text, Hangul, Korean letters, non-English text, broken characters, foreign characters, "
         "thick lines, bold outlines, heavy brush strokes, chunky lines, fat strokes, "
         "pure white #ffffff background, dark background, black background, 3d, realistic, shadow, shading, "
         "color, gradients, photo, blur, watermark, text, signature"

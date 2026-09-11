@@ -78,4 +78,5 @@ npm run lint     # ESLint
 - 중학교 1학년 Unit 2 (20개 단어 전원: sophomore~brown) 선형그래픽 스킬 규격(0.05mm 초극세선, 1024x1024, 배경 #f5f6f8, 선색 #030203, 노넥 스틱맨, 영문 연출)으로 일괄 생성 및 wordImages.ts 매핑 등록
 - 중학교 1학년 Unit 3 (20개 단어 전원: decrease~nearly) 선형그래픽 스킬 규격으로 일괄 생성 및 wordImages.ts 매핑 등록, TS1117 중복 키 방지 및 타입체크/웹 빌드 검증 완료
 - Draw Things 선형그래픽 스킬 업데이트: 다중 이미지 일괄 생성 시 실시간 진행 상황판(Dashboard Table) 안내 규칙 공식화
+- 중학교 1학년 Unit 3 단어 이미지 선형그래픽 생성 작업 중간 반영 (1~12번 12종: decrease~unlike 1024x1024 선형그래픽 생성 완료 및 적용, 잔여 단어 재개 CLI 옵션 추가)
 

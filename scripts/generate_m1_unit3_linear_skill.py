@@ -169,9 +169,10 @@ WORDS = [
     }
 ]
 
-def generate_unit3_linear():
+def generate_unit3_linear(start_index=1, skip_existing=False):
     print("==================================================")
-    print("중1 유닛 3 '선형그래픽' 20개 단어 일괄 생성 시작 (m1-41 ~ m1-60)")
+    print("중1 유닛 3 '선형그래픽' 20개 단어 생성 시작 (m1-41 ~ m1-60)")
+    print(f"시작 인덱스: {start_index}, 기존 파일 스킵: {skip_existing}")
     print("규격: 1024x1024, 0.05mm 초극세선, 노넥(No-Neck), 배경 #f5f6f8, 선색 #030203, 후처리 없음")
     print("==================================================")
 
@@ -179,6 +180,8 @@ def generate_unit3_linear():
     total = len(WORDS)
 
     for idx, item in enumerate(WORDS, 1):
+        if idx < start_index:
+            continue
         word = item["word"]
         word_id = item["id"]
         meaning = item["meaning"]
@@ -186,8 +189,8 @@ def generate_unit3_linear():
         file_name = word.replace(" ", "-")
         out_path = os.path.join(ASSETS_DIR, f"{file_name}.png")
 
-        if os.path.exists(out_path) and os.path.getsize(out_path) > 10000:
-            print(f"[{idx}/{total}] '{word}' ({word_id}) 이미 존재하여 건너뜁니다. -> {out_path}", flush=True)
+        if skip_existing and os.path.exists(out_path):
+            print(f"\n[{idx}/{total}] '{word}' 이미 존재하여 건너뜀 -> {out_path}", flush=True)
             continue
 
         print(f"\n[{idx}/{total}] '{word}' ({word_id}: {meaning}) 생성 중...", flush=True)
@@ -252,7 +255,13 @@ def generate_unit3_linear():
             print(f"[오류] '{word}' 생성 실패!", flush=True)
 
     print("\n==================================================", flush=True)
-    print("중1 유닛 3 선형그래픽 20종 생성 작업 완료!", flush=True)
+    print("중1 유닛 3 선형그래픽 생성 작업 완료!", flush=True)
 
 if __name__ == "__main__":
-    generate_unit3_linear()
+    import argparse
+    parser = argparse.ArgumentParser(description="중1 유닛 3 선형그래픽 단어 이미지 생성")
+    parser.add_argument("--start-index", type=int, default=1, help="시작할 단어 번호 (1-indexed, 기본값: 1)")
+    parser.add_argument("--skip-existing", action="store_true", help="이미 존재하는 파일 건너뛰기")
+    args = parser.parse_args()
+
+    generate_unit3_linear(start_index=args.start_index, skip_existing=args.skip_existing)

@@ -48,4 +48,6 @@ npm run lint     # ESLint
 - 휴가 신청 UI용 SVG 벡터 아이콘 4종 추가 (assets/icons/)
 - Draw Things + potrace 연동 AI 생성 기반 초경량 SVG 벡터 변환 파이프라인 구축 (generate_svg_with_drawthings.py)
 - 작업 완료 시 README 일별 작업 내역 자동 갱신 및 한글 커밋/푸시/풀 규칙 확립
+- 중학교 2학년 Unit 15 (20개 단어: discuss, shrug, sniff 등) Draw Things 기반 연상 이미지 18종 생성 및 wordImages.ts 매핑 등록
+
 

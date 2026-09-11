@@ -631,6 +631,20 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   "drag": require("../../assets/words/drag.png"),
   "m2-320": require("../../assets/words/drag.png"),
 
+  // 중학교 2학년 47Unit ID 매핑
+  "m2-921": require("../../assets/words/excited.png"), "m2-922": require("../../assets/words/alive.png"), "m2-923": require("../../assets/words/brown.png"), "m2-924": require("../../assets/words/different.png"),
+  "m2-925": require("../../assets/words/difficult.png"), "m2-926": require("../../assets/words/interesting.png"), "m2-927": require("../../assets/words/unlike.png"), "m2-928": require("../../assets/words/least.png"),
+  "m2-929": require("../../assets/words/afraid.png"), "m2-930": require("../../assets/words/cool.png"), "m2-931": require("../../assets/words/pretty.png"), "m2-932": require("../../assets/words/kind.png"),
+  "m2-933": require("../../assets/words/sick.png"), "m2-934": require("../../assets/words/useless.png"), "m2-935": require("../../assets/words/busy.png"), "m2-936": require("../../assets/words/early.png"),
+  "m2-937": require("../../assets/words/past.png"), "m2-938": require("../../assets/words/dark.png"), "m2-939": require("../../assets/words/cloudy.png"), "m2-940": require("../../assets/words/short.png"),
+
+  // 중학교 2학년 49Unit ID 매핑
+  "m2-961": require("../../assets/words/rather.png"), "m2-962": require("../../assets/words/together.png"), "m2-963": require("../../assets/words/altogether.png"), "m2-964": require("../../assets/words/suddenly.png"),
+  "m2-965": require("../../assets/words/mostly.png"), "m2-966": require("../../assets/words/correctly.png"), "m2-967": require("../../assets/words/ahead.png"), "m2-968": require("../../assets/words/instead.png"),
+  "m2-969": require("../../assets/words/quite.png"), "m2-970": require("../../assets/words/nearly.png"), "m2-971": require("../../assets/words/badly.png"), "m2-972": require("../../assets/words/almost.png"),
+  "m2-973": require("../../assets/words/exactly.png"), "m2-974": require("../../assets/words/apart.png"), "m2-975": require("../../assets/words/afterward.png"), "m2-976": require("../../assets/words/later.png"),
+  "m2-977": require("../../assets/words/maybe.png"), "m2-978": require("../../assets/words/perhaps.png"), "m2-979": require("../../assets/words/probably.png"), "m2-980": require("../../assets/words/either.png"),
+
   // 중학교 2학년 17Unit 매핑
   "m2-321": require("../../assets/words/overhear.png"), "m2-322": require("../../assets/words/slide.png"), "m2-323": require("../../assets/words/suck.png"), "m2-324": require("../../assets/words/bother.png"),
   "m2-325": require("../../assets/words/deal.png"), "m2-326": require("../../assets/words/treat.png"), "m2-327": require("../../assets/words/destroy.png"), "m2-328": require("../../assets/words/accept.png"),

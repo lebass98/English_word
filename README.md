@@ -77,6 +77,10 @@ npm run lint     # ESLint
 - Draw Things 선형그래픽 스킬 업데이트: 한글 텍스트 전면 배제 및 영문 우선 표기 원칙(원칙 7) 공식화, 100% 영문 프롬프트 구성 및 네거티브 프롬프트 한글 차단 반영
 - 중학교 1학년 Unit 2 (20개 단어 전원: sophomore~brown) 선형그래픽 스킬 규격(0.05mm 초극세선, 1024x1024, 배경 #f5f6f8, 선색 #030203, 노넥 스틱맨, 영문 연출)으로 일괄 생성 및 wordImages.ts 매핑 등록
 - 중학교 1학년 Unit 3 (20개 단어 전원: decrease~nearly) 선형그래픽 스킬 규격으로 일괄 생성 및 wordImages.ts 매핑 등록, TS1117 중복 키 방지 및 타입체크/웹 빌드 검증 완료
-- Draw Things 선형그래픽 스킬 업데이트: 다중 이미지 일괄 생성 시 실시간 진행 상황판(Dashboard Table) 안내 규칙 공식화
-- 중학교 1학년 Unit 3 단어 이미지 선형그래픽 생성 작업 중간 반영 (1~12번 12종: decrease~unlike 1024x1024 선형그래픽 생성 완료 및 적용, 잔여 단어 재개 CLI 옵션 추가)
+- Draw Things 선형그래픽 스킬 업데이트: 다중 이미지 일괄 생성 시 실시간 진행 상황판(Dashboard Table) 안내 및 2분 주기 갱신 규칙 명문화
+- 중학교 1학년 Unit 2 (least, favorite, branch, worth, angle, crack, brown) 및 Unit 3 (decrease, suddenly, unlike, upside down, deal, nearly) 총 13개 단어 최신 선형그래픽 규격(1024x1024, No-Neck, 영문 전용)으로 전면 재생성 및 교체 완료
+- 중학교 1학년 Unit 3 단어 이미지 선형그래픽 추가 생성 반영 (cheap, deck, equal, expensive, hide, potato, price, prison, robber 등 1024x1024 선형그래픽 적용, 잔여 단어 재개 CLI 옵션 지원)
+- 단어 학습 카드에 유의어·어원 섹션 추가, 예문까지 알약 라벨 형태로 통일(LabeledSection) 및 좌측 정렬
+- 전체 고유 단어 1,011개의 유의어·어원 데이터 생성 및 wordDetails.json 병합(어원 1,011 / 유의어 873, 기능어 138개는 유의어 없음)
+- 유의어에 문맥에 맞는 한글 뜻 병기(2,571개 생성) — Word.synonyms를 {word, meaning} 구조로 변경, SynonymList 컴포넌트 분리
 

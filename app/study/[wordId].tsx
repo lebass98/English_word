@@ -26,7 +26,9 @@ import {
   SpeakerIcon,
 } from "../../src/components/icons";
 import { BackButton } from "../../src/components/BackButton";
+import { LabeledSection } from "../../src/components/LabeledSection";
 import { PillButton } from "../../src/components/PillButton";
+import { SynonymList } from "../../src/components/SynonymList";
 import { GRADES } from "../../src/constants/grades";
 import { UNIT_SIZE, findWord, type Word } from "../../src/constants/words";
 import { WORD_IMAGES } from "../../src/constants/wordImages";
@@ -252,6 +254,7 @@ function StudyCard({
   const posInUnit = (index % UNIT_SIZE) + 1;
   // 마지막 유닛은 20개보다 적을 수 있다.
   const unitLen = Math.min(UNIT_SIZE, total - (unitNo - 1) * UNIT_SIZE);
+  const hasSynonyms = (word.synonyms?.length ?? 0) > 0;
 
   // 단어가 길어도 두 줄로 넘기지 않고 글자 크기를 줄여 한 줄에 담는다.
   // 단어는 이미지 패널 위에 얹히므로 그 안쪽 폭을 기준으로 계산한다.
@@ -511,17 +514,35 @@ function StudyCard({
                 </Pressable>
               </View>
 
-              {/* 예문도 뜻과 함께 가려진다. 단어만 보고 스스로 떠올려 보기 좋다 */}
-              {showAnswer && word.example && (
-                <View className="mt-3 gap-1 border-t border-slate-200 pt-3">
-                  <Text className="text-[15px] font-semibold leading-snug text-slate-800">
-                    <Text className="font-bold text-emerald-600">예문 </Text>
-                    {word.example}
-                  </Text>
-                  {word.exampleKo && (
-                    <Text className="text-[15px] font-medium leading-snug text-slate-500">
-                      {word.exampleKo}
-                    </Text>
+              {/* 예문·유의어·어원. 뜻과 함께 가려진다 —
+                  단어만 보고 스스로 떠올려 보기 좋다 */}
+              {showAnswer && (word.example || hasSynonyms || word.etymology) && (
+                <View className="mt-4 gap-5 border-t border-slate-200 pt-4">
+                  {word.example && (
+                    <LabeledSection label="예문">
+                      <Text className="text-[15px] font-semibold leading-snug text-slate-800">
+                        {word.example}
+                      </Text>
+                      {word.exampleKo && (
+                        <Text className="mt-1 text-[14px] font-medium leading-snug text-slate-500">
+                          {word.exampleKo}
+                        </Text>
+                      )}
+                    </LabeledSection>
+                  )}
+
+                  {hasSynonyms && (
+                    <LabeledSection label="유의어">
+                      <SynonymList items={word.synonyms!} />
+                    </LabeledSection>
+                  )}
+
+                  {word.etymology && (
+                    <LabeledSection label="어원">
+                      <Text className="text-[14px] leading-relaxed text-slate-600">
+                        {word.etymology}
+                      </Text>
+                    </LabeledSection>
                   )}
                 </View>
               )}

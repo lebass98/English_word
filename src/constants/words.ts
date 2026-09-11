@@ -2,6 +2,12 @@ import middle1Raw from "../data/middle1.json";
 import middle2Raw from "../data/middle2.json";
 import wordDetailsRaw from "../data/wordDetails.json";
 
+/** 유의어 하나. 뜻은 표제어의 뜻과 통하는 쪽으로 골라 둔다 */
+export interface Synonym {
+  word: string;
+  meaning: string;
+}
+
 export interface Word {
   id: string;
   word: string;
@@ -11,6 +17,10 @@ export interface Word {
   pos?: string;
   example?: string;
   exampleKo?: string;
+  /** 비슷한 뜻의 영어 단어와 그 한글 뜻 */
+  synonyms?: Synonym[];
+  /** 말의 유래 (한국어 한두 문장) */
+  etymology?: string;
   mnemonic?: string;
   imageTag?: string;
 }
@@ -21,7 +31,10 @@ export const UNIT_SIZE = 20;
  * 발음기호·예문 등 추가 정보. 단어 철자를 키로 쓰며,
  * 준비된 단어만 채워 넣으면 화면에 자동으로 나타난다.
  */
-type WordDetail = Pick<Word, "phonetic" | "pos" | "example" | "exampleKo">;
+type WordDetail = Pick<
+  Word,
+  "phonetic" | "pos" | "example" | "exampleKo" | "synonyms" | "etymology"
+>;
 const WORD_DETAILS = wordDetailsRaw as Record<string, WordDetail>;
 
 const toWords = (raw: unknown, prefix: string): Word[] =>

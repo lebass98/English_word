@@ -28,6 +28,7 @@ import {
 import { BackButton } from "../../src/components/BackButton";
 import { LabeledSection } from "../../src/components/LabeledSection";
 import { PillButton } from "../../src/components/PillButton";
+import { SynonymList } from "../../src/components/SynonymList";
 import { GRADES } from "../../src/constants/grades";
 import { UNIT_SIZE, findWord, type Word } from "../../src/constants/words";
 import { WORD_IMAGES } from "../../src/constants/wordImages";
@@ -532,9 +533,7 @@ function StudyCard({
 
                   {hasSynonyms && (
                     <LabeledSection label="유의어">
-                      <Text className="text-[15px] font-semibold leading-snug text-lavender">
-                        {word.synonyms!.join(", ")}
-                      </Text>
+                      <SynonymList items={word.synonyms!} />
                     </LabeledSection>
                   )}
 

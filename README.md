@@ -56,6 +56,8 @@ npm run lint     # ESLint
 - 선형그래픽 표준 셋팅 확립: 초기 초극세선 셋팅, 배경 #f5f6f8, 선색 #030203, 풍성한 씬 구성 및 후처리 효과 없는 순수 출력 적용 (discuss 반영)
 - Draw Things 선형그래픽 전용 에이전트 스킬(draw-things-linear-graphic) 구축 및 저장소 내장 (어느 컴퓨터에서든 git clone/pull 시 즉시 로드)
 - 중학교 2학년 Unit 15 (2번~20번 단어 19종: shrug~prove) 선형그래픽 스킬 규격(0.05mm 초극세선, 1024x1024, 배경 #f5f6f8, 선색 #030203, 풍성한 씬)으로 전면 재생성 및 교체 적용
+- GitHub Actions CI/Deploy 실패 수정: wordImages.ts 내 8개 단어 중복 프로퍼티 키 제거로 TS1117 타입 에러 해결 및 빌드 검증
+
 
 
 

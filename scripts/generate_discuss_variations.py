@@ -41,41 +41,33 @@ def clean_and_upscale_fine_lines(src_img: Image.Image, canvas_size=1254) -> Imag
     upscaled = refined.resize((canvas_size, canvas_size), Image.Resampling.LANCZOS)
     return upscaled.convert("RGB")
 
-def generate_discuss_candidate(seed=555, suffix=""):
+def generate_discuss_candidate(seed=999, suffix=""):
     prompt = (
-        "storybook minimalist black and white line art vector doodle, "
-        "extremely slender stickman stick figure people with simple thin single-stroke line limbs and thin line stick torso, "
-        "small perfect round circle bald heads, tiny cute dot eyes and little smile, "
-        "complete vibrant office meeting room scene, "
-        "three slender stickman colleagues enthusiastically discussing, "
-        "one slender stick figure pointing with a slender stick arm at an idea flow chart on a clean white easel presentation board, "
-        "second slender stick figure sitting attentively on a stool listening with arms crossed, "
-        "third slender stick figure standing beside holding a tiny coffee mug, "
-        "detailed background with floor line, bookshelf with books, hanging wall clock, small desk lamp, "
-        "hairline stroke, ultra-fine 0.1mm technical pen line art, delicate crisp black contours on pure white background, "
-        "completely empty pure white background, strictly hollow white objects with black outlines only, strictly no black solid fills, strictly no color, no gray, no shading, 2d flat vector doodle"
+        "linear graphic illustration, complete meeting room scene of discuss, "
+        "thinnest possible 0.05mm ultra-delicate needle-thin hairline ink stroke, "
+        "extremely fine crisp outlines drawn in dark charcoal ink color #030203, "
+        "flat smooth light gray canvas background color #f5f6f8, "
+        "four cute slender doodle stickman stick figure colleagues with small round bald circle heads and tiny smiling dot faces, "
+        "abundant rich background details: large easel presentation whiteboard with idea flow charts, one stickman standing pointing at board explaining, second stickman sitting on stool listening, other stickmen holding coffee mugs conversing, wall clock, tidy bookshelf with books, floor line, "
+        "strictly flat 2d linear graphic, no shading, no gradients, no solid black fills, empty background"
     )
 
     negative_prompt = (
-        "solid black fill, black background, black board, filled shape, dark shading, "
-        "chubby, fat body, thick torso, bulbous body, puffy, outline body, wide limbs, "
-        "thick heavy bold strokes, chunky outlines, marker pen, "
-        "color, colors, colored, shading, gray, grayscale, shadow, 3d, realistic, photorealistic, "
-        "crosshatch, texture, pattern, watermark, text, signature, blurry, dirty background"
+        "thick lines, bold outlines, heavy brush strokes, chunky lines, fat strokes, "
+        "pure white #ffffff background, dark background, black background, 3d, realistic, shadow, shading, "
+        "color, gradients, photo, blur, watermark, text, signature"
     )
-
-
 
     payload = {
         "prompt": prompt,
         "negative_prompt": negative_prompt,
         "steps": 8,
-        "width": 512,
-        "height": 512,
+        "width": 1024,
+        "height": 1024,
         "seed": seed
     }
 
-    print(f"Draw Things 요청 중 (seed={seed})...", flush=True)
+    print(f"Draw Things 선형그래픽 요청 중 (seed={seed})...", flush=True)
     t0 = time.time()
     req = urllib.request.Request(
         API_URL,
@@ -90,21 +82,20 @@ def generate_discuss_candidate(seed=555, suffix=""):
             raise RuntimeError("No image returned from Draw Things")
         raw_bytes = base64.b64decode(images[0])
 
+    # 후처리 효과나 필터 수정 없이 Draw Things 네이티브 1024x1024 원본 그대로 저장
     raw_img = Image.open(io.BytesIO(raw_bytes))
-    final_img = clean_and_upscale_fine_lines(raw_img, canvas_size=1254)
 
-    # 1. 아티팩트 디렉토리에 저장
     os.makedirs(ARTIFACT_DIR, exist_ok=True)
-    artifact_path = os.path.join(ARTIFACT_DIR, f"discuss_candidate_{seed}{suffix}.png")
-    final_img.save(artifact_path, quality=98)
+    artifact_path = os.path.join(ARTIFACT_DIR, f"discuss_linear_pure_{seed}{suffix}.png")
+    raw_img.save(artifact_path, quality=98)
     print(f"아티팩트 저장 완료: {artifact_path} ({time.time() - t0:.1f}초)")
 
-    # 2. assets/words/discuss.png에 적용
     out_path = os.path.join(ASSETS_DIR, "discuss.png")
-    final_img.save(out_path, quality=98)
-    print(f"assets/words/discuss.png 적용 완료!")
+    raw_img.save(out_path, quality=98)
+    print(f"assets/words/discuss.png 순수 원본 적용 완료!")
     return artifact_path, out_path
 
 if __name__ == "__main__":
-    seed = int(sys.argv[1]) if len(sys.argv) > 1 else 702
+    seed = int(sys.argv[1]) if len(sys.argv) > 1 else 999
     generate_discuss_candidate(seed=seed)
+

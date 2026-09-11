@@ -82,4 +82,5 @@ npm run lint     # ESLint
 - 전체 고유 단어 1,011개의 유의어·어원 데이터 생성 및 wordDetails.json 병합(어원 1,011 / 유의어 873, 기능어 138개는 유의어 없음)
 - 유의어에 문맥에 맞는 한글 뜻 병기(2,571개 생성) — Word.synonyms를 {word, meaning} 구조로 변경, SynonymList 컴포넌트 분리
 - 중학교 1학년 Unit 3 (20개 단어 전원: decrease~nearly) 선형그래픽 스킬 규격(1024x1024, 0.05mm 초극세선, 노넥 캐릭터, 배경 #f5f6f8, 선색 #030203, 영문 연출)으로 전원 신규 생성 및 교체 완료
+- 중학교 1학년 Unit 4 단어 이미지 선형그래픽 스킬 기반 14종(almost~sample) 1024x1024 신규 생성 완료 및 wordImages.ts 매핑 등록 (잔여 6종 재개 CLI 옵션 지원)
 

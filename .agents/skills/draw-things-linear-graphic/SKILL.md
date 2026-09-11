@@ -44,10 +44,16 @@ description: >-
 
 ## 🚀 사용 방법 (실행 명령어)
 
-추가 의존성 설치 없이 기본 `python3`로 스크립트를 바로 호출합니다.
+추가 의존성 설치 없이 환경에 따라 `node` 또는 `python3`로 스크립트를 바로 호출합니다.
 
 ```bash
-# 기본 사용법 (단어 또는 씬 영문 설명과 저장 경로 지정)
+# Node.js 사용 시 (권장, 추가 도구 설치 불필요)
+node .agents/skills/draw-things-linear-graphic/scripts/generate_linear_graphic.js \
+  "meeting room with colleagues discussing charts on whiteboard" \
+  --output assets/words/discuss.png \
+  --seed 999
+
+# Python3 사용 시 (Xcode Command Line Tools 등 파이썬 설치 환경)
 python3 .agents/skills/draw-things-linear-graphic/scripts/generate_linear_graphic.py \
   "meeting room with colleagues discussing charts on whiteboard" \
   --output assets/words/discuss.png \

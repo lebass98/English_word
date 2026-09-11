@@ -55,5 +55,6 @@ npm run lint     # ESLint
 - 중2 Unit 15 discuss(토론하다) 연상 이미지 초극세 펜선 및 회의실 씬으로 고도화 재생성
 - 선형그래픽 표준 셋팅 확립: 초기 초극세선 셋팅, 배경 #f5f6f8, 선색 #030203, 풍성한 씬 구성 및 후처리 효과 없는 순수 출력 적용 (discuss 반영)
 - Draw Things 선형그래픽 전용 에이전트 스킬(draw-things-linear-graphic) 구축 및 저장소 내장 (어느 컴퓨터에서든 git clone/pull 시 즉시 로드)
+- Draw Things 로컬 API 연결 검증 및 Node.js 기반 선형그래픽 생성 엔진(generate_linear_graphic.js) 추가, 테스트 이미지(connect.png) 생성 완료
 
 

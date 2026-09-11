@@ -757,4 +757,13 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   "m1-72": require("../../assets/words/hang.png"),
   "m1-73": require("../../assets/words/besides.png"),
   "m1-74": require("../../assets/words/sample.png"),
+  "m1-75": require("../../assets/words/effect.png"),
+  "absent": require("../../assets/words/absent.png"),
+  "m1-76": require("../../assets/words/absent.png"),
+  "wedding": require("../../assets/words/wedding.png"),
+  "m1-77": require("../../assets/words/wedding.png"),
+  "marry": require("../../assets/words/marry.png"),
+  "m1-78": require("../../assets/words/marry.png"),
+  "m1-79": require("../../assets/words/warn.png"),
+  "m1-80": require("../../assets/words/stadium.png"),
 };

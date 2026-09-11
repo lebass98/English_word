@@ -46,6 +46,31 @@ API_URL = "http://127.0.0.1:7860/sdapi/v1/txt2img"
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
 ASSETS_DIR = os.path.join(PROJECT_ROOT, "assets", "words")
+WORD_IMAGES_TS = os.path.join(PROJECT_ROOT, "src", "constants", "wordImages.ts")
+
+def update_word_images_ts(word: str, word_id: str):
+    if not os.path.exists(WORD_IMAGES_TS):
+        return
+    with open(WORD_IMAGES_TS, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    new_entries = []
+    file_name = word.replace(" ", "-")
+    if f'"{word}": require(' not in content and f'{word}: require(' not in content:
+        new_entries.append(f'  "{word}": require("../../assets/words/{file_name}.png"),')
+    if word_id and f'"{word_id}": require(' not in content:
+        new_entries.append(f'  "{word_id}": require("../../assets/words/{file_name}.png"),')
+
+    if not new_entries:
+        return
+
+    target = "};\n"
+    if target in content:
+        idx = content.rfind(target)
+        updated = content[:idx] + "\n".join(new_entries) + "\n" + content[idx:]
+        with open(WORD_IMAGES_TS, "w", encoding="utf-8") as f:
+            f.write(updated)
+        print(f"[{word}] wordImages.ts 등록 완료: {word_id} -> {file_name}.png", flush=True)
 
 WORDS = [
     {
@@ -246,6 +271,7 @@ def generate_unit4_linear(start_index=1, skip_existing=False):
 
                 elapsed = time.time() - t0
                 print(f"[{word}] 생성 및 저장 완료 ({elapsed:.1f}초) -> {out_path}", flush=True)
+                update_word_images_ts(word, word_id)
                 success = True
                 break
             except Exception as e:

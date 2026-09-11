@@ -147,7 +147,8 @@ function StudyCard({
   const nextId = next?.id;
   const autoAdvance = useAppStore((s) => s.autoAdvance);
   const setAutoAdvance = useAppStore((s) => s.setAutoAdvance);
-  const setWordStatus = useAppStore((s) => s.setWordStatus);
+  const recordStudy = useAppStore((s) => s.recordStudy);
+  const markSeen = useAppStore((s) => s.markSeen);
 
   const { width: screenWidth } = useWindowDimensions();
 
@@ -239,6 +240,12 @@ function StudyCard({
     return stopSpeaking;
   }, [word.word]);
 
+  // 이어하기 지점과 "오늘 본 단어"는 화면에 뜬 시점에 기록한다.
+  // 판정 버튼에서 기록하면 보다 만 단어와 자동 넘김으로 지나간 단어가 빠진다.
+  useEffect(() => {
+    markSeen(word.id, gradeId);
+  }, [word.id, gradeId, markSeen]);
+
   // 헤더는 자리가 좁으므로 짧은 이름을 쓴다 (중학 2학년 → 중2)
   const gradeLabel = GRADES.find((g) => g.id === gradeId)?.short ?? "";
   const unitNo = Math.floor(index / UNIT_SIZE) + 1;
@@ -267,7 +274,7 @@ function StudyCard({
   };
 
   const decide = (next: WordStatus) => {
-    setWordStatus(word.id, next);
+    recordStudy(word.id, next);
     onNavigate(nextId);
   };
 

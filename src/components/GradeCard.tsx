@@ -1,4 +1,5 @@
 import { Pressable, Text, View } from "react-native";
+import { ChevronRightIcon } from "./icons";
 
 interface GradeCardProps {
   label: string;
@@ -19,28 +20,37 @@ export function GradeCard({
   return (
     <Pressable
       onPress={onPress}
+      accessibilityRole="button"
+      accessibilityLabel={
+        started
+          ? `${label} 학습중, ${totalWords}개 중 ${learnedWords}개 외움`
+          : `${label} 아직 학습 전`
+      }
       className="rounded-3xl bg-surface p-6 shadow-neu-card active:shadow-neu-pressed"
     >
       <Text
-        className={`text-sm font-semibold ${started ? "text-emerald-500" : "text-sky-500"}`}
+        className={`text-[12px] font-bold ${
+          started ? "text-mint" : "text-slate-400"
+        }`}
       >
-        {started ? "학습중" : "미학습"}
+        {started ? "학습중" : "학습 전"}
       </Text>
 
       <View className="mt-2 flex-row items-center justify-between">
-        <Text className="text-2xl font-bold text-gray-800">{label}</Text>
-        <Text className="text-xl text-gray-400">›</Text>
+        <Text className="text-[20px] font-bold text-ink">{label}</Text>
+        <ChevronRightIcon size={18} color="#94a3b8" strokeWidth={2.5} />
       </View>
 
       <View className="mt-4 flex-row items-center gap-3">
-        <View className="h-2.5 flex-1 overflow-hidden rounded-full border border-sky-300 bg-white">
+        <View className="h-2 flex-1 overflow-hidden rounded-full bg-canvas shadow-neu-inset">
           <View
-            className="h-full rounded-full bg-sky-400"
+            className="h-full rounded-full bg-mint"
             style={{ width: `${Math.round(progress * 100)}%` }}
           />
         </View>
-        <Text className="text-sm text-gray-500">
-          학습률: {learnedWords} / {totalWords}
+        {/* 아직 한 개도 못 외운 학년은 "0 / 700" 대신 전체 개수만 알려준다 */}
+        <Text className="text-[13px] font-bold text-slate-500">
+          {started ? `${learnedWords} / ${totalWords}` : `${totalWords}개 단어`}
         </Text>
       </View>
     </Pressable>

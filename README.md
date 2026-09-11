@@ -67,3 +67,10 @@ npm run lint     # ESLint
 - 배치 파일(start.bat / start.sh)에 자동 새로고침(Fast Refresh) 로컬 웹 서버 실행 및 브라우저 자동 오픈 연동
 - package.json 내 npm run dev 개발 서버 스크립트 추가 및 서버 종료 시 비정상 튕김 방지 안내 처리
 - 자동 넘김(재생/멈춤) 설정을 zustand persist(AsyncStorage)로 영구 저장 — 단어 이동·뒤로가기·앱 재시작에도 유지
+- 메인 화면을 실데이터 기반 "이어하기 홈"으로 전면 재작성 — 가짜 성취기록·프로필·출석뱃지·동작 안 하던 탭/벨 제거
+- 학습 기록 영구 저장(zustand persist): entries·lastStudied·dailyLog·nickname, 일별 기록 60일 보관
+- 홈 구성: 스트릭 칩 · 이어하기 히어로 카드 · 헷갈리는 단어 복습 · 오늘의 기록 3종 · 내 코스(학습률 실값)
+- 단어장(app/wordbook.tsx)·설정(app/settings.tsx) 화면 신설, 하단 네비 3탭 실동작(usePathname 기반)
+- 유닛 목록의 "0 / 20"을 실제 외운 개수로 교체하고 유닛별 진행바·완료 표시 추가
+- findWord O(1) 색인화 및 unitsOf 캐시로 목록 성능 개선
+- SSR(Node) 환경에서 AsyncStorage가 window를 참조해 개발 서버가 죽던 문제 수정(persistStorage 어댑터)

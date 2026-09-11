@@ -79,4 +79,5 @@ npm run lint     # ESLint
 - 중학교 1학년 Unit 3 (20개 단어 전원: decrease~nearly) 선형그래픽 스킬 규격으로 일괄 생성 및 wordImages.ts 매핑 등록, TS1117 중복 키 방지 및 타입체크/웹 빌드 검증 완료
 - Draw Things 선형그래픽 스킬 업데이트: 다중 이미지 일괄 생성 시 실시간 진행 상황판(Dashboard Table) 안내 규칙 공식화
 - 중학교 1학년 Unit 2 (least, favorite, branch, worth, angle, crack, brown) 및 Unit 3 (decrease, suddenly, unlike, upside down, deal, nearly) 총 13개 단어 최신 선형그래픽 규격(1024x1024, No-Neck, 영문 전용)으로 전면 재생성 및 교체 완료
+- Draw Things 선형그래픽 스킬 업데이트: 이미지 제작 시작 즉시 진행 현황판 1차 시행 및 2분 주기 실시간 갱신 규칙 명문화
 

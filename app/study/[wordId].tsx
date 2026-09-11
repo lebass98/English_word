@@ -519,11 +519,11 @@ function StudyCard({
                 <View className="mt-4 gap-5 border-t border-slate-200 pt-4">
                   {word.example && (
                     <LabeledSection label="예문">
-                      <Text className="text-center text-[15px] font-semibold leading-snug text-slate-800">
+                      <Text className="text-[15px] font-semibold leading-snug text-slate-800">
                         {word.example}
                       </Text>
                       {word.exampleKo && (
-                        <Text className="mt-1 text-center text-[14px] font-medium leading-snug text-slate-500">
+                        <Text className="mt-1 text-[14px] font-medium leading-snug text-slate-500">
                           {word.exampleKo}
                         </Text>
                       )}
@@ -532,7 +532,7 @@ function StudyCard({
 
                   {hasSynonyms && (
                     <LabeledSection label="유의어">
-                      <Text className="text-center text-[15px] font-semibold leading-snug text-lavender">
+                      <Text className="text-[15px] font-semibold leading-snug text-lavender">
                         {word.synonyms!.join(", ")}
                       </Text>
                     </LabeledSection>
@@ -540,7 +540,7 @@ function StudyCard({
 
                   {word.etymology && (
                     <LabeledSection label="어원">
-                      <Text className="text-center text-[14px] leading-relaxed text-slate-600">
+                      <Text className="text-[14px] leading-relaxed text-slate-600">
                         {word.etymology}
                       </Text>
                     </LabeledSection>

@@ -44,10 +44,10 @@ npm run lint     # ESLint
 - 이미지 좌우 스와이프로 앞뒤 단어 이동 추가 (그림만 캐러셀처럼 흐르고 단어·발음 영역은 고정)
 
 ### 2026-09-11
+- 중학교 2학년 Unit 16 동사 20개(yell~drag) 연상 이미지 생성 및 학습 카드 매핑 등록
 - Draw Things 로컬 API(127.0.0.1:7860) 연결 및 단어 이미지 자동 생성/매핑 스크립트 개선
 - 휴가 신청 UI용 SVG 벡터 아이콘 4종 추가 (assets/icons/)
 - Draw Things + potrace 연동 AI 생성 기반 초경량 SVG 벡터 변환 파이프라인 구축 (generate_svg_with_drawthings.py)
 - 작업 완료 시 README 일별 작업 내역 자동 갱신 및 한글 커밋/푸시/풀 규칙 확립
 - 중학교 2학년 Unit 15 (20개 단어: discuss, shrug, sniff 등) Draw Things 기반 연상 이미지 18종 생성 및 wordImages.ts 매핑 등록
-
 

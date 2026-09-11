@@ -83,6 +83,21 @@ python3 .agents/skills/draw-things-linear-graphic/scripts/generate_linear_graphi
 
 ---
 
+## 📊 실시간 진행 상황판(Dashboard) 안내 규칙 (필수)
+
+Draw Things를 이용한 다중 단어/이미지 일괄 생성 작업 진행 시, 사용자에게 **현재 진행 상태를 한눈에 파악할 수 있는 실시간 상황판 표(Dashboard Table)**를 반드시 제공해야 합니다.
+
+1. **상황판 필수 표기 항목**:
+   - 총 단어 수 대비 현재 진행률 (예: `[15/20] 75%`)
+   - 각 단어별 진행 상태: `✅ 완료 (완료 시각, 용량, 소요 시간)` / `⏳ 렌더링 중` / `🕒 대기 중`
+   - 현재 렌더링 중인 단어의 영문 씬 묘사(Scene) 및 단어 뜻
+   - 예상 잔여 시간 안내
+2. **보고 원칙**:
+   - 사용자가 진행 상태나 속도를 문의할 때 즉시 최신 상태의 상황판 표를 렌더링하여 보고합니다.
+   - 작업 완료 시 최종 요약 상황판과 함께 단어 매핑 등록 및 커밋/푸시를 수행합니다.
+
+---
+
 ## 🌐 다른 컴퓨터에서 전역(Global) 스킬로 등록하는 법
 
 저장소 프로젝트 외의 다른 폴더나 시스템 전역에서도 이 스킬을 호출하고 싶다면, 아래 한 줄을 실행하여 전역 스킬 디렉토리에 링크/복사할 수 있습니다:
@@ -91,3 +106,4 @@ python3 .agents/skills/draw-things-linear-graphic/scripts/generate_linear_graphi
 mkdir -p ~/.gemini/config/skills/
 cp -r .agents/skills/draw-things-linear-graphic ~/.gemini/config/skills/
 ```
+

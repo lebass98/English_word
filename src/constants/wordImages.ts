@@ -630,4 +630,18 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   "m2-319": require("../../assets/words/float.png"),
   "drag": require("../../assets/words/drag.png"),
   "m2-320": require("../../assets/words/drag.png"),
+
+  // 중학교 2학년 17Unit 매핑
+  "m2-321": require("../../assets/words/overhear.png"), "m2-322": require("../../assets/words/slide.png"), "m2-323": require("../../assets/words/suck.png"), "m2-324": require("../../assets/words/bother.png"),
+  "m2-325": require("../../assets/words/deal.png"), "m2-326": require("../../assets/words/treat.png"), "m2-327": require("../../assets/words/destroy.png"), "m2-328": require("../../assets/words/accept.png"),
+  "m2-329": require("../../assets/words/depend.png"), "m2-330": require("../../assets/words/nod.png"), "m2-331": require("../../assets/words/remove.png"), "m2-332": require("../../assets/words/beat.png"),
+  "m2-333": require("../../assets/words/clap.png"), "m2-334": require("../../assets/words/feed.png"), "m2-335": require("../../assets/words/obtain.png"), "m2-336": require("../../assets/words/drown.png"),
+  "m2-337": require("../../assets/words/remind.png"), "m2-338": require("../../assets/words/occur.png"), "m2-339": require("../../assets/words/ache.png"), "m2-340": require("../../assets/words/repeat.png"),
+
+  // 중학교 2학년 18Unit 매핑
+  "m2-341": require("../../assets/words/attend.png"), "m2-342": require("../../assets/words/sigh.png"), "m2-343": require("../../assets/words/pray.png"), "m2-344": require("../../assets/words/press.png"),
+  "m2-345": require("../../assets/words/bear.png"), "m2-346": require("../../assets/words/follow.png"), "m2-347": require("../../assets/words/hate.png"), "m2-348": require("../../assets/words/frighten.png"),
+  "m2-349": require("../../assets/words/shout.png"), "m2-350": require("../../assets/words/mention.png"), "m2-351": require("../../assets/words/waste.png"), "m2-352": require("../../assets/words/borrow.png"),
+  "m2-353": require("../../assets/words/complete.png"), "m2-354": require("../../assets/words/excellent.png"), "m2-355": require("../../assets/words/competent.png"), "m2-356": require("../../assets/words/religious.png"),
+  "m2-357": require("../../assets/words/favorite.png"), "m2-358": require("../../assets/words/entire.png"), "m2-359": require("../../assets/words/primary.png"), "m2-360": require("../../assets/words/similar.png"),
 };

@@ -1339,6 +1339,170 @@ UNIT_DATA = {
             "id": "m1-420", "word": "flashlight", "meaning": "불빛, 손전등",
             "scene": "dark mysterious mountain trail cavern, adventurous brave cute slender stickman holding a bright LED flashlight beam illuminating path and stalactites in dark stone cavern"
         }
+    ]    ,
+    22: [
+        {
+            "id": "m1-421", "word": "complain", "meaning": "불평하다",
+            "scene": "indoor swimming pool deck, cute slender stickman swimmer standing wrapped in towel shivering humorously gesturing with hands complaining politely about cold water to friendly pool lifeguard"
+        },
+        {
+            "id": "m1-422", "word": "crowded", "meaning": "붐비는",
+            "scene": "morning commuter subway train platform, cheerful cute slender stickman standing patiently among a lively bustling crowd of commuters waiting for arriving train, station platform clock"
+        },
+        {
+            "id": "m1-423", "word": "hold", "meaning": "붙잡다",
+            "scene": "colorful bustling city street market, sweet little cute slender stickman child holding mother stickman hand tightly and lovingly while walking past vibrant fruit and flower market stalls"
+        },
+        {
+            "id": "m1-424", "word": "comparison", "meaning": "비교",
+            "scene": "electronics technology store display desk, analytical cute slender stickman holding two sleek smartphone devices side by side comparing screen sizes and features with thoughtful expression"
+        },
+        {
+            "id": "m1-425", "word": "silk", "meaning": "비단",
+            "scene": "luxury fabric boutique workshop, gentle cute slender stickman tailor gently caressing a roll of flowing smooth lustrous white silk fabric draped elegantly over wooden workbench"
+        },
+        {
+            "id": "m1-426", "word": "pigeon", "meaning": "비둘기",
+            "scene": "sunny cobblestone park plaza bench, cute slender stickman sitting smiling warmly tossing bread crumbs to a friendly plump gray pigeon pecking happily on pavement, park fountain"
+        },
+        {
+            "id": "m1-427", "word": "though", "meaning": "비록 ~일지라도",
+            "scene": "snowy winter park meadow, energetic joyful cute slender stickman bundled in scarf and mittens playing cheerfully building a snowman even though it is chilly and snowing softly"
+        },
+        {
+            "id": "m1-428", "word": "secretary", "meaning": "비서",
+            "scene": "modern corporate reception office, organized professional cute slender stickman secretary wearing telephone headset smiling politely while jotting important memo notes in ledger notebook"
+        },
+        {
+            "id": "m1-429", "word": "similar", "meaning": "비슷한",
+            "scene": "art studio display table, curious cute slender stickman comparing two very similar hand-crafted ceramic mugs side by side admiring their almost identical painted spiral patterns"
+        },
+        {
+            "id": "m1-430", "word": "hollow", "meaning": "비어 있는",
+            "scene": "ancient woodland forest trail, cute slender stickman smiling discovering a round hollow knothole cavity inside an old oak tree trunk where a curious little forest owl peeks out"
+        },
+        {
+            "id": "m1-431", "word": "cost", "meaning": "비용",
+            "scene": "shoe boutique checkout counter, thoughtful cute slender stickman checking price tag cost on a stylish pair of leather boots with friendly sales clerk stickman smiling behind counter"
+        },
+        {
+            "id": "m1-432", "word": "rate", "meaning": "비율",
+            "scene": "business analytics conference room whiteboard, smart cute slender stickman presenting an upward rising growth rate percentage bar chart with presentation pointer to boardroom team"
+        },
+        {
+            "id": "m1-433", "word": "flight", "meaning": "비행",
+            "scene": "modern international airport departure lounge window, excited cute slender stickman traveler looking through panoramic glass at a jetliner airplane taking off into the bright blue sky"
+        },
+        {
+            "id": "m1-434", "word": "plane", "meaning": "비행기",
+            "scene": "airport tarmac runway, sleek modern passenger airliner plane parked at boarding jet bridge gate while cute slender stickman pilot in uniform waves cheerfully from cockpit steps"
+        },
+        {
+            "id": "m1-435", "word": "empty", "meaning": "빈",
+            "scene": "spacious city commuter bus interior, happy cute slender stickman walking down aisle gladly finding a clean comfortable empty seat next to sunlit bus window, route map on ceiling"
+        },
+        {
+            "id": "m1-436", "word": "lend", "meaning": "빌려주다",
+            "scene": "school classroom study desk, generous kind cute slender stickman student smiling warmly and lending a spare sharpened yellow pencil to grateful classmate stickman sitting nearby"
+        },
+        {
+            "id": "m1-437", "word": "borrow", "meaning": "빌리다",
+            "scene": "rainy school entrance lobby, appreciative cute slender stickman bowing politely borrowing a large bright umbrella from friendly smiling school friend to walk home safely in rain"
+        },
+        {
+            "id": "m1-438", "word": "comb", "meaning": "빗",
+            "scene": "bedroom dressing vanity mirror, neat grooming cute slender stickman holding a classic tortoise-shell comb neatly combing hair before round mirror, hairbrush on wooden vanity tray"
+        },
+        {
+            "id": "m1-439", "word": "iceberg", "meaning": "빙산",
+            "scene": "polar arctic ocean expedition ship, awe-struck cute slender stickman standing on ship bow railing viewing a colossal majestic blue-white floating iceberg in cold polar sea waters"
+        },
+        {
+            "id": "m1-440", "word": "debt", "meaning": "빚, 은혜",
+            "scene": "cozy family living room sofa, loving grateful cute slender stickman child gently hugging elderly parents presenting a heartfelt thank-you card honoring lifelong debt of gratitude"
+        }
+    ]    ,
+    23: [
+        {
+            "id": "m1-441", "word": "owe", "meaning": "빚지다, 덕분이다",
+            "scene": "graduation ceremony hall stage, proud cute slender stickman graduate in cap and gown bowing respectfully handing floral bouquet to parents thanking them for all success owed to them"
+        },
+        {
+            "id": "m1-442", "word": "shine", "meaning": "빛나다",
+            "scene": "scenic mountain hill under clear night sky, peaceful cute slender stickman sitting on grassy knoll gazing upward as countless brilliant stars and glowing crescent moon shine brightly"
+        },
+        {
+            "id": "m1-443", "word": "suck", "meaning": "빨다, 마시다",
+            "scene": "sunny summer ice cream parlor patio, cheerful cute slender stickman drinking a refreshing cold fruit smoothie through a striped bendy straw with cheeks gently drawn, cafe table"
+        },
+        {
+            "id": "m1-444", "word": "loaf", "meaning": "빵 덩어리",
+            "scene": "artisanal rustic village bakery counter, delighted cute slender stickman baker holding up a freshly baked steaming golden brown whole bread loaf with flour dusted wooden cutting board"
+        },
+        {
+            "id": "m1-445", "word": "bone", "meaning": "뼈",
+            "scene": "sunny backyard lawn flowerbed, playful adorable pet dog wagging tail happily digging in grass holding a wholesome marrow dog bone while smiling cute slender stickman watches"
+        },
+        {
+            "id": "m1-446", "word": "event", "meaning": "사건, 행사",
+            "scene": "grand municipal civic square, excited cute slender stickman attending a magnificent annual community cultural festival event with festival bunting streamers and festive stage"
+        },
+        {
+            "id": "m1-447", "word": "affair", "meaning": "사건, 일",
+            "scene": "cozy library study room fireplace, inquisitive cute slender stickman detective reading a mystery novel article in newspaper about a curious puzzling historic affair on desk"
+        },
+        {
+            "id": "m1-448", "word": "accident", "meaning": "사고",
+            "scene": "crossroads safety crossing, responsible cute slender stickman traffic police officer directing cars safely around a harmless minor fender tap accident placing orange cones"
+        },
+        {
+            "id": "m1-449", "word": "fierce", "meaning": "사나운",
+            "scene": "historic castle stone gatehouse, protective sturdy guard dog barking with fierce loyal courage protecting ancient gate behind wrought iron fence, medieval cobblestone floor"
+        },
+        {
+            "id": "m1-450", "word": "hunter", "meaning": "사냥꾼",
+            "scene": "winter pine woodland trail, experienced respectful cute slender stickman hunter tracking wildlife footsteps in crisp white snow alongside faithful loyal hunting hound dog"
+        },
+        {
+            "id": "m1-451", "word": "desert", "meaning": "사막",
+            "scene": "vast golden sand dune desert horizon, adventurous cute slender stickman explorer walking across undulating desert sand ridges with walking staff under warm desert sun, palm oasis far off"
+        },
+        {
+            "id": "m1-452", "word": "office", "meaning": "사무실",
+            "scene": "bright modern office workstation, productive cute slender stickman working at desk with dual computer monitors and neat stationery organizer, potted green plant on file cabinet"
+        },
+        {
+            "id": "m1-453", "word": "object", "meaning": "사물, 물체",
+            "scene": "science museum curiosity exhibition table, inquisitive cute slender stickman student examining an unusual geometric polished metallic puzzle object resting on pedestal"
+        },
+        {
+            "id": "m1-454", "word": "chain", "meaning": "사슬",
+            "scene": "harbor sea wall promenade, strong heavy-duty nautical iron link chain barrier stretching between stone bollards protecting pedestrians along water edge, cute stickman leaning"
+        },
+        {
+            "id": "m1-455", "word": "deer", "meaning": "사슴",
+            "scene": "sunlit morning forest clearing, gentle graceful wild deer with velvet antlers standing peacefully among ferns looking with calm eyes at admiring cute slender stickman hiker"
+        },
+        {
+            "id": "m1-456", "word": "fact", "meaning": "사실",
+            "scene": "school science laboratory greenhouse, wise cute slender stickman teacher holding potted seedling demonstrating fundamental scientific fact that water and sunlight nurture living plants"
+        },
+        {
+            "id": "m1-457", "word": "business", "meaning": "사업",
+            "scene": "charming sunny bakery shopfront, proud cute slender stickman small business owner smiling standing proudly in doorway under shop canopy awning holding Open welcome sign"
+        },
+        {
+            "id": "m1-458", "word": "dictionary", "meaning": "사전",
+            "scene": "library study desk, studious cute slender stickman looking up an advanced vocabulary word pointing index finger inside a large leather-bound comprehensive English dictionary"
+        },
+        {
+            "id": "m1-459", "word": "photographer", "meaning": "사진사",
+            "scene": "outdoor scenic botanical park garden, creative professional cute slender stickman photographer looking through DSLR camera lens taking portrait photo of smiling friend stickman"
+        },
+        {
+            "id": "m1-460", "word": "cousin", "meaning": "사촌",
+            "scene": "sunny airport arrival terminal gate, overjoyed cute slender stickman running forward with open arms embracing visiting beloved cousin stickman arriving for summer vacation"
+        }
     ]
 }
 

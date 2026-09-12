@@ -472,16 +472,32 @@ function StudyCard({
                           </View>
                         )}
                       </View>
+                      {/* 설정에서 음소거해 두면 눌러도 소리가 안 난다.
+                          왜 조용한지 알 수 있게 버튼을 흐리게 보여 준다 */}
                       <Pressable
-                        accessibilityLabel={t("study.speak", { word: word.word })}
+                        accessibilityLabel={
+                          speechVolume === 0
+                            ? t("settings.speechMuted")
+                            : t("study.speak", { word: word.word })
+                        }
                         onPress={handleSpeak}
                         className={`h-11 w-11 items-center justify-center rounded-full active:scale-95 ${
-                          speaking
-                            ? "bg-canvas shadow-neu-inset"
-                            : "bg-surface shadow-neu-sm"
+                          speechVolume === 0
+                            ? "bg-surface opacity-40 shadow-neu-sm"
+                            : speaking
+                              ? "bg-canvas shadow-neu-inset"
+                              : "bg-surface shadow-neu-sm"
                         }`}
                       >
-                        <SpeakerIcon color={speaking ? "#0eb582" : "#334155"} />
+                        <SpeakerIcon
+                          color={
+                            speechVolume === 0
+                              ? "#94a3b8"
+                              : speaking
+                                ? "#0eb582"
+                                : "#334155"
+                          }
+                        />
                       </Pressable>
                     </View>
                   </BlurView>

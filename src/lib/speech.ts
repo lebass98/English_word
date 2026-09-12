@@ -11,6 +11,33 @@ interface SpeakCallbacks {
   onDone?: () => void;
 }
 
+/** 개발 중에만 콘솔에 남긴다. 왜 소리가 안 나는지 추적할 단서가 된다 */
+function debug(...args: unknown[]) {
+  if (__DEV__) console.warn("[speech]", ...args);
+}
+
+/**
+ * 음성 엔진이 쓸 수 있는 상태인지 한 번만 확인해 콘솔에 남긴다.
+ * 웹은 페이지가 뜬 직후 목소리 목록이 비어 있을 수 있고, 목소리가 하나도
+ * 없으면 speak() 를 불러도 아무 일이 일어나지 않는다.
+ */
+let checked = false;
+function checkOnce(lang: string) {
+  if (checked || !__DEV__) return;
+  checked = true;
+  Speech.getAvailableVoicesAsync()
+    .then((voices) => {
+      const head = lang.split("-")[0];
+      const same = voices.filter((v) => v.language?.startsWith(head));
+      debug(
+        `목소리 ${voices.length}개, 그중 ${lang} 계열 ${same.length}개`,
+        same.slice(0, 3).map((v) => `${v.name}(${v.language})`),
+      );
+      if (voices.length === 0) debug("목소리가 하나도 없어 소리가 나지 않는다");
+    })
+    .catch((e) => debug("목소리 목록을 못 읽었다", e));
+}
+
 /**
  * 영어 단어 발음 재생 (TTS).
  * - 네이티브: expo-speech가 OS 음성 엔진 사용
@@ -20,6 +47,8 @@ interface SpeakCallbacks {
  *
  * 참고: 웹 브라우저는 사용자가 페이지를 한 번이라도 클릭하기 전에는
  * 자동 재생을 막는다. 첫 화면의 자동 발음이 안 나올 수 있는 이유다.
+ * 또 iOS 사파리는 사용자가 누른 바로 그 순간에 speak() 가 불려야 하므로,
+ * stop() 과 speak() 사이에 타이머나 await 를 끼워 넣지 않는다.
  */
 export function speakWord(word: string, cb: SpeakCallbacks = {}) {
   if (!word) return;
@@ -28,27 +57,26 @@ export function speakWord(word: string, cb: SpeakCallbacks = {}) {
     cb.onDone?.();
     return;
   }
+  const lang = cb.lang ?? "en-US";
+  checkOnce(lang);
   try {
     Speech.stop();
-    // 웹(크롬)은 speechSynthesis.cancel() 직후 같은 틱에 speak() 를 부르면
-    // 새 발화가 조용히 사라진다. 한 틱 뒤로 미뤄 이 문제를 피한다.
-    setTimeout(() => {
-      try {
-        Speech.speak(word, {
-          language: cb.lang ?? "en-US",
-          rate: 0.85,
-          pitch: 1.0,
-          volume: cb.volume ?? 1,
-          onStart: cb.onStart,
-          onDone: cb.onDone,
-          onStopped: cb.onDone,
-          onError: cb.onDone,
-        });
-      } catch {
+    Speech.speak(word, {
+      language: lang,
+      rate: 0.85,
+      pitch: 1.0,
+      volume: cb.volume ?? 1,
+      onStart: cb.onStart,
+      onDone: cb.onDone,
+      onStopped: cb.onDone,
+      // 오류를 조용히 삼키면 왜 안 나는지 알 길이 없다
+      onError: (e) => {
+        debug(`"${word}" 재생 실패`, e);
         cb.onDone?.();
-      }
-    }, 0);
-  } catch {
+      },
+    });
+  } catch (e) {
+    debug(`"${word}" 호출 자체가 실패`, e);
     cb.onDone?.();
   }
 }

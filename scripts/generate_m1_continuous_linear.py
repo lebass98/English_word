@@ -1011,6 +1011,170 @@ UNIT_DATA = {
             "id": "m1-340", "word": "loud", "meaning": "목소리가 큰, 시끄러운",
             "scene": "school sports festival cheering stand, energetic cute slender stickman cheerleader shouting through red plastic megaphone with extra loud voice cheering school team forward, waving banners"
         }
+    ]    ,
+    18: [
+        {
+            "id": "m1-341", "word": "purpose", "meaning": "목적",
+            "scene": "school student council conference room, purposeful cute slender stickman student president writing clear event objectives under header PURPOSE on whiteboard, student committee listening attentively"
+        },
+        {
+            "id": "m1-342", "word": "goal", "meaning": "목표",
+            "scene": "cozy personal study room desk, motivated cute slender stickman student pointing index finger at a handwritten yearly reading goals checklist chart pinned to bulletin board beside stack of books"
+        },
+        {
+            "id": "m1-343", "word": "engage", "meaning": "몰두하다, 약혼하다",
+            "scene": "romantic cobblestone gazebo park terrace, smiling cute slender stickman presenting an elegant open velvet ring box engaging beloved partner stickman with mutual joyous smiles, floral arch"
+        },
+        {
+            "id": "m1-344", "word": "body", "meaning": "몸, 신체",
+            "scene": "bright fitness studio mirror, athletic energetic cute slender stickman doing healthy full-body aerobic stretching poses with arms and legs extended in good health and posture, yoga mat on floor"
+        },
+        {
+            "id": "m1-345", "word": "gesture", "meaning": "몸짓",
+            "scene": "warm cafe entrance doorway, welcoming cute slender stickman making an open graceful sweep gesture with welcoming hand and smiling warmly inviting friend to come inside and sit at table"
+        },
+        {
+            "id": "m1-346", "word": "tiny", "meaning": "몹시 작은",
+            "scene": "study room wooden desk, curious cute slender stickman student looking through a magnifying glass at a tiny delicate ladybug crawling gently across page corner of open notebook"
+        },
+        {
+            "id": "m1-347", "word": "describe", "meaning": "묘사하다",
+            "scene": "art studio easel workbench, expressive cute slender stickman holding charcoal pencil describing and sketching the contours of a stone classical bust sculpture onto paper canvas"
+        },
+        {
+            "id": "m1-348", "word": "cemetery", "meaning": "묘지",
+            "scene": "peaceful quiet grassy memorial park cemetery, respectful cute slender stickman gently placing a bouquet of white lilies beside an upright carved stone memorial marker under willow tree"
+        },
+        {
+            "id": "m1-349", "word": "heavy", "meaning": "무거운",
+            "scene": "moving day front hallway, strong determined cute slender stickman bracing knees and arms lifting a visibly heavy wooden storage crate filled with books, moving boxes and tape"
+        },
+        {
+            "id": "m1-350", "word": "weight", "meaning": "무게",
+            "scene": "gym weightlifting platform, athletic cute slender stickman standing focused before a balanced barbell with round iron weight plates resting on platform rack, chalk dust in air"
+        },
+        {
+            "id": "m1-351", "word": "stage", "meaning": "무대",
+            "scene": "grand performing arts theater auditorium, confident cute slender stickman actor bowing gracefully under theater spotlight at center of wooden stage before red velvet curtains"
+        },
+        {
+            "id": "m1-352", "word": "tomb", "meaning": "무덤",
+            "scene": "historic ancient hillside tomb monument, respectful cute slender stickman explorer quietly observing carved ancient stone facade entrance to historic historical tomb, cypress trees"
+        },
+        {
+            "id": "m1-353", "word": "rudely", "meaning": "무례하게",
+            "scene": "orderly bakery queue line, impatient stickman rudely pushing ahead elbows out while well-mannered cute slender stickman standing in neat line gestures politely to wait turns"
+        },
+        {
+            "id": "m1-354", "word": "knee", "meaning": "무릎",
+            "scene": "soccer field sideline bench, caring cute slender stickman sports medic gently applying ice compress bandage to the scraped knee of an athletic soccer player stickman, soccer ball"
+        },
+        {
+            "id": "m1-355", "word": "scare", "meaning": "무섭게 하다",
+            "scene": "halloween pumpkin front porch, playful cute slender stickman friend leaping playfully from behind wooden fence wearing a friendly ghost sheet yelling boo to scare friend in good fun"
+        },
+        {
+            "id": "m1-356", "word": "frighten", "meaning": "무섭게 하다, 깜짝 놀라게 하다",
+            "scene": "living room sofa, startled cute slender stickman jumping slightly with hands up as sudden loud thunderstorm thunder rumbles outside window, cat peeking from behind chair"
+        },
+        {
+            "id": "m1-357", "word": "grammar", "meaning": "문법",
+            "scene": "English language classroom blackboard, studious cute slender stickman student underlining sentence subject and verb diagram arrows on grammar structure chart with chalk"
+        },
+        {
+            "id": "m1-358", "word": "sentence", "meaning": "문장",
+            "scene": "classroom desk notebook, diligent cute slender stickman writing a complete neat grammatical English sentence with capital letter and punctuation period using ink pen, open book"
+        },
+        {
+            "id": "m1-359", "word": "problem", "meaning": "문제",
+            "scene": "science math laboratory blackboard, contemplative cute slender stickman scratching chin studying a complex math logic problem formula written on board looking for solution"
+        },
+        {
+            "id": "m1-360", "word": "matter", "meaning": "문제, 중요하다",
+            "scene": "cozy consultation office desk, wise cute slender stickman counselor leaning forward listening with full empathy and understanding discussing a matter of great personal importance with friend"
+        }
+    ]    ,
+    19: [
+        {
+            "id": "m1-361", "word": "rub", "meaning": "문지르다",
+            "scene": "morning bedroom waking up, cute slender stickman sitting on edge of bed rubbing sleepy eyes with closed fists gently waking up to bright morning sunlight streaming in window"
+        },
+        {
+            "id": "m1-362", "word": "culture", "meaning": "문화, 교양",
+            "scene": "traditional world cultural heritage museum pavilion, smiling cute slender stickman admiring a display of traditional folk festival lanterns, musical instruments and costumes"
+        },
+        {
+            "id": "m1-363", "word": "bury", "meaning": "묻다",
+            "scene": "sunny backyard garden lawn beneath oak tree, cheerful playful puppy stickman digging with front paws burying a treasure bone in soft earth while smiling stickman looks on with trowel"
+        },
+        {
+            "id": "m1-364", "word": "bite", "meaning": "물다",
+            "scene": "picnic garden blanket, delighted cute slender stickman taking a big crisp crunchy bite out of a fresh juicy red apple smiling with joy, picnic wicker basket"
+        },
+        {
+            "id": "m1-365", "word": "slip", "meaning": "미끄러지다",
+            "scene": "winter frozen ice skating pond rink, cute slender stickman skater wobbling comically losing balance with arms waving in gentle harmless slip on slippery clear ice, snowy pine trees"
+        },
+        {
+            "id": "m1-366", "word": "slide", "meaning": "미끄러지다, 미끄럼틀",
+            "scene": "sunny playground park, joyous cute slender stickman sliding happily down a smooth spiral playground slide with raised hands in pure fun, grassy lawn and play swings"
+        },
+        {
+            "id": "m1-367", "word": "superstition", "meaning": "미신",
+            "scene": "curiosity antique shop corner, cute slender stickman looking with amused curiosity at a four-leaf clover lucky charm horseshoe and black cat folklore display on shelf"
+        },
+        {
+            "id": "m1-368", "word": "hate", "meaning": "미워하다, 싫어하다",
+            "scene": "kitchen dinner table, funny cute slender stickman child scrunching nose making humorous reluctant face looking down at a bowl of bitter green boiled spinach, fork on napkin"
+        },
+        {
+            "id": "m1-369", "word": "crazy", "meaning": "미친, 별난",
+            "scene": "amusement park roller coaster ride, thrilling adventurous cute slender stickman screaming with exhilaration and laughter as roller coaster car plunges down a crazy steep loop track"
+        },
+        {
+            "id": "m1-370", "word": "democracy", "meaning": "민주주의, 민주정치",
+            "scene": "civic voting election booth, responsible proud cute slender stickman citizen casting a marked official paper ballot into transparent secure ballot box, national flag banner"
+        },
+        {
+            "id": "m1-371", "word": "believe", "meaning": "믿다",
+            "scene": "sunlit classroom podium, encouraging cute slender stickman teacher placing hand on shoulder of student stickman expressing sincere warm heartfelt belief in student potential, smiling faces"
+        },
+        {
+            "id": "m1-372", "word": "future", "meaning": "미래",
+            "scene": "futuristic city observatory deck, visionary cute slender stickman looking forward toward horizon at a gleaming eco-friendly modern future city with aerodynamic high-speed trains and clean energy towers"
+        },
+        {
+            "id": "m1-373", "word": "push", "meaning": "밀다",
+            "scene": "supermarket grocery checkout aisle, industrious cute slender stickman pushing a full metal wheeled grocery cart smoothly forward toward cash register counter, shelf displays"
+        },
+        {
+            "id": "m1-374", "word": "bottom", "meaning": "밑, 바닥",
+            "scene": "cozy library study desk, cute slender stickman searching reaching hand all the way down to the very bottom of backpack finding missing brass house key, notebooks on desk"
+        },
+        {
+            "id": "m1-375", "word": "turtle", "meaning": "바다거북",
+            "scene": "tropical coral reef ocean water, majestic graceful sea turtle swimming smoothly alongside curious snorkeling cute slender stickman observing beautiful coral formations and sea fish"
+        },
+        {
+            "id": "m1-376", "word": "busy", "meaning": "바쁜",
+            "scene": "busy office desk workplace, active diligent cute slender stickman multitasking rapidly typing on keyboard answering phone and organizing file folders with organized energy, desk clock"
+        },
+        {
+            "id": "m1-377", "word": "trousers", "meaning": "바지",
+            "scene": "clothing tailor shop mirror, stylish cute slender stickman trying on a pair of smart tailored dress trousers while tailor stickman measures hemline with measuring tape, cloth bolts"
+        },
+        {
+            "id": "m1-378", "word": "museum", "meaning": "박물관",
+            "scene": "grand natural history museum exhibition hall, amazed cute slender stickman standing before a towering reconstructed prehistoric dinosaur skeleton exhibit holding informational guidebook"
+        },
+        {
+            "id": "m1-379", "word": "clap", "meaning": "박수치다",
+            "scene": "school concert performance hall, enthusiastic cute slender stickman in audience standing and clapping hands vigorously with great beaming smile applauding musician on stage"
+        },
+        {
+            "id": "m1-380", "word": "contrary", "meaning": "반대의",
+            "scene": "crossroads directional trail post, cute slender stickman pointing left along sunny meadow path while signpost points contrary opposite way to rocky mountain ridge, thinking pose"
+        }
     ]
 }
 

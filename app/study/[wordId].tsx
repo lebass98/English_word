@@ -316,18 +316,8 @@ function StudyCard({
   return (
     <SafeAreaView className="flex-1 bg-canvas">
       <View className="w-full flex-1">
-        {/* ── 상단 바: 홈 · 뒤로 · 유닛/진행 · 자동 넘김 ────── */}
+        {/* ── 상단 바: 뒤로 · 유닛/진행 · 자동 넘김 ──────────── */}
         <View className="flex-row items-center justify-between gap-2 px-6 pt-8 pb-3">
-          {/* 유닛을 거쳐 들어온 화면이라 뒤로가기만으로는 홈까지 여러 번 눌러야 한다 */}
-          <Pressable
-            onPress={() => router.replace("/")}
-            accessibilityRole="button"
-            accessibilityLabel={t("nav.home")}
-            className="h-12 w-12 items-center justify-center rounded-full bg-surface shadow-neu-sm active:shadow-neu-pressed"
-          >
-            <HomeIcon />
-          </Pressable>
-
           <BackButton onPress={onBack} />
 
           {/* 유닛과 진행 개수를 하나의 알약에 담는다 */}
@@ -609,14 +599,25 @@ function StudyCard({
 
         {/* ── 학습 평가 버튼 (가운데는 단어장에 담기) ────────── */}
         <View className="mx-6 flex-row items-stretch gap-1.5 px-1 pb-4 pt-3">
-          {/* 세 버튼을 똑같이 flex-1 로 나눠 가진다. 폭도 좌우 여백도 셋이 같아야
-              가지런해 보인다 (한쪽만 글씨에 맞추면 그 버튼만 좁아 보인다) */}
+          {/* 홈으로. 유닛을 거쳐 들어온 화면이라 뒤로가기만으로는 여러 번 눌러야
+              한다. 글자 없이 아이콘만 두어 옆 세 버튼의 자리를 덜 뺏는다 */}
+          <Pressable
+            onPress={() => router.replace("/")}
+            accessibilityRole="button"
+            accessibilityLabel={t("nav.home")}
+            className="w-11 shrink-0 items-center justify-center rounded-[28px] bg-surface shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
+          >
+            <HomeIcon size={20} color="#64748b" />
+          </Pressable>
+
+          {/* 나머지 셋은 똑같이 flex-1 로 나눠 가진다. 폭도 좌우 여백도 같아야
+              가지런해 보인다 */}
           <Pressable
             onPress={() => decide("unsure")}
             style={{ flex: 1 }}
-            className="flex-row items-center justify-center gap-1.5 rounded-[28px] bg-surface px-1 py-4 shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
+            className="flex-row items-center justify-center gap-1 rounded-[28px] bg-surface px-1 py-4 shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
           >
-            <View className="h-6 w-6 items-center justify-center rounded-lg bg-slate-300">
+            <View className="h-5 w-5 items-center justify-center rounded-lg bg-slate-300">
               <AgainIcon />
             </View>
             <Text
@@ -635,7 +636,7 @@ function StudyCard({
             accessibilityState={{ selected: isSaved }}
             style={{ flex: 1 }}
             accessibilityLabel={t("study.saveToggle")}
-            className={`flex-row items-center justify-center gap-1.5 rounded-[28px] px-1 active:scale-[0.98] ${
+            className={`flex-row items-center justify-center gap-1 rounded-[28px] px-1 active:scale-[0.98] ${
               isSaved
                 ? "bg-canvas shadow-neu-inset"
                 : "bg-surface shadow-neu-sm active:shadow-neu-pressed"
@@ -659,9 +660,9 @@ function StudyCard({
           <Pressable
             onPress={() => decide("known")}
             style={{ flex: 1 }}
-            className="flex-row items-center justify-center gap-1.5 rounded-[28px] bg-[#dff5ea] px-1 py-4 shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
+            className="flex-row items-center justify-center gap-1 rounded-[28px] bg-[#dff5ea] px-1 py-4 shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
           >
-            <View className="h-6 w-6 items-center justify-center rounded-md bg-emerald-500">
+            <View className="h-5 w-5 items-center justify-center rounded-md bg-emerald-500">
               <CheckIcon />
             </View>
             <Text

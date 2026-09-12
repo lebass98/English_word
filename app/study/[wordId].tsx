@@ -282,10 +282,10 @@ function StudyCard({
   //   + 스피커 버튼(44) + 버튼과의 간격(12)
   const wordAreaWidth = Math.max(110, screenWidth - 184);
   // 굵은 글씨는 한 글자가 글자 크기의 약 0.58배 너비를 차지한다
-  // 최대 크기는 24px (이미지 위에 얹히므로 기존 34px에서 약 30% 줄였다)
+  // 최대 크기는 31px (24px 이 너무 작아 30% 키웠다)
   const wordFontSize = Math.max(
     10,
-    Math.min(24, Math.floor(wordAreaWidth / (word.word.length * 0.58))),
+    Math.min(31, Math.floor(wordAreaWidth / (word.word.length * 0.58))),
   );
 
 

@@ -63,6 +63,18 @@
       "internationally"
     ]
   },
+  "absence": {
+    "phonetic": "[ˈæbsəns]",
+    "conceptId": "absence",
+    "pos": [
+      "noun"
+    ],
+    "example": "In the absence of rain, the crops slowly died.",
+    "synonyms": [
+      "lack",
+      "deficiency"
+    ]
+  },
   "absent": {
     "phonetic": "[ˈæbsənt]",
     "example": "Jisu was absent from school because she had a bad cold.",
@@ -74,6 +86,19 @@
     "conceptId": "absent",
     "pos": [
       "adj"
+    ]
+  },
+  "absolute": {
+    "phonetic": "[ˈæbsəluːt]",
+    "conceptId": "absolute",
+    "pos": [
+      "adj"
+    ],
+    "example": "The young king demanded absolute power over the country.",
+    "synonyms": [
+      "complete",
+      "total",
+      "unlimited"
     ]
   },
   "absorb": {
@@ -296,6 +321,32 @@
       "reach"
     ]
   },
+  "acid": {
+    "phonetic": "[ˈæsəd]",
+    "conceptId": "acid",
+    "pos": [
+      "noun",
+      "adj"
+    ],
+    "example": "The strong acid burned a small hole in the cloth.",
+    "synonyms": [
+      "chemical",
+      "corrosive"
+    ]
+  },
+  "acknowledge": {
+    "phonetic": "[ækˈnɑːlɪdʒ]",
+    "conceptId": "acknowledge",
+    "pos": [
+      "verb"
+    ],
+    "example": "He was brave enough to acknowledge his own serious mistake.",
+    "synonyms": [
+      "admit",
+      "confess",
+      "recognize"
+    ]
+  },
   "acquire": {
     "conceptId": "acquire",
     "phonetic": "[əˈkwaɪər]",
@@ -347,6 +398,19 @@
     "conceptId": "actually",
     "pos": [
       "adv"
+    ]
+  },
+  "adapt": {
+    "phonetic": "[əˈdæpt]",
+    "conceptId": "adapt",
+    "pos": [
+      "verb"
+    ],
+    "example": "New students often need time to adapt to school life.",
+    "synonyms": [
+      "adjust",
+      "accommodate",
+      "conform"
     ]
   },
   "add": {
@@ -412,6 +476,19 @@
       "noun"
     ]
   },
+  "admire": {
+    "phonetic": "[ædˈmaɪr]",
+    "conceptId": "admire",
+    "pos": [
+      "verb"
+    ],
+    "example": "Visitors often stop to admire the beautiful old garden.",
+    "synonyms": [
+      "appreciate",
+      "praise",
+      "respect"
+    ]
+  },
   "admit": {
     "conceptId": "admit",
     "phonetic": "[ədˈmɪt]",
@@ -423,6 +500,19 @@
       "confess",
       "accept",
       "allow"
+    ]
+  },
+  "adopt": {
+    "phonetic": "[əˈdɑːpt]",
+    "conceptId": "adopt",
+    "pos": [
+      "verb"
+    ],
+    "example": "The class decided to adopt a simpler set of rules.",
+    "synonyms": [
+      "embrace",
+      "take up",
+      "choose"
     ]
   },
   "adult": {
@@ -604,6 +694,19 @@
       "organization"
     ]
   },
+  "agent": {
+    "phonetic": "[ˈeɪdʒənt]",
+    "conceptId": "agent",
+    "pos": [
+      "noun"
+    ],
+    "example": "Our travel agent found us cheap tickets last month.",
+    "synonyms": [
+      "representative",
+      "broker",
+      "dealer"
+    ]
+  },
   "aggressive": {
     "conceptId": "aggressive",
     "phonetic": "[əˈɡresɪv]",
@@ -652,6 +755,20 @@
     "conceptId": "ahead",
     "pos": [
       "adv"
+    ]
+  },
+  "aid": {
+    "phonetic": "[eɪd]",
+    "conceptId": "aid",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "Volunteers came to aid the families after the flood.",
+    "synonyms": [
+      "help",
+      "assist",
+      "support"
     ]
   },
   "aim": {
@@ -703,6 +820,34 @@
     "conceptId": "alarm",
     "pos": [
       "noun"
+    ]
+  },
+  "alarming": {
+    "phonetic": "[əˈlɑːrmɪŋ]",
+    "conceptId": "alarming",
+    "pos": [
+      "adj"
+    ],
+    "example": "The number of missing bees is truly alarming to farmers.",
+    "synonyms": [
+      "worrying",
+      "disturbing",
+      "startling"
+    ]
+  },
+  "alert": {
+    "phonetic": "[əˈlɜːrt]",
+    "conceptId": "alert",
+    "pos": [
+      "adj",
+      "noun",
+      "verb"
+    ],
+    "example": "The guard stayed alert during the long night shift.",
+    "synonyms": [
+      "watchful",
+      "attentive",
+      "vigilant"
     ]
   },
   "alike": {
@@ -871,6 +1016,19 @@
       "noun"
     ]
   },
+  "amazed": {
+    "phonetic": "[əˈmeɪzd]",
+    "conceptId": "amazed",
+    "pos": [
+      "adj"
+    ],
+    "example": "We were amazed by the singer's powerful voice tonight.",
+    "synonyms": [
+      "astonished",
+      "stunned",
+      "surprised"
+    ]
+  },
   "amazing": {
     "phonetic": "[əˈmeɪzɪŋ]",
     "example": "The magician showed an amazing trick with three silver coins.",
@@ -989,6 +1147,18 @@
       "adj"
     ]
   },
+  "ankle": {
+    "phonetic": "[ˈæŋkəl]",
+    "conceptId": "ankle",
+    "pos": [
+      "noun"
+    ],
+    "example": "She twisted her ankle while running down the steep hill.",
+    "synonyms": [
+      "joint",
+      "heel"
+    ]
+  },
   "anniversary": {
     "conceptId": "anniversary",
     "phonetic": "[ænəˈvɜːrsəri]",
@@ -1051,6 +1221,19 @@
     "pos": [
       "noun",
       "verb"
+    ]
+  },
+  "antibiotic": {
+    "phonetic": "[æntɪbaɪˈɑːtɪk]",
+    "conceptId": "antibiotic",
+    "pos": [
+      "noun",
+      "adj"
+    ],
+    "example": "The doctor gave her an antibiotic for the infection.",
+    "synonyms": [
+      "medicine",
+      "drug"
     ]
   },
   "anticipate": {
@@ -1127,6 +1310,19 @@
     "synonyms": [
       "say sorry",
       "ask for forgiveness"
+    ]
+  },
+  "apparent": {
+    "phonetic": "[əˈperənt]",
+    "conceptId": "apparent",
+    "pos": [
+      "adj"
+    ],
+    "example": "His apparent calm hid the worry he truly felt.",
+    "synonyms": [
+      "seeming",
+      "outward",
+      "ostensible"
     ]
   },
   "appeal": {
@@ -1259,6 +1455,33 @@
       "value"
     ]
   },
+  "approach": {
+    "phonetic": "[əˈproʊtʃ]",
+    "conceptId": "approach",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "Do not approach the wild animals in this park.",
+    "synonyms": [
+      "near",
+      "advance",
+      "reach"
+    ]
+  },
+  "appropriate": {
+    "phonetic": "[əˈproʊprɪət]",
+    "conceptId": "appropriate",
+    "pos": [
+      "adj"
+    ],
+    "example": "Please wear appropriate clothes for the school ceremony.",
+    "synonyms": [
+      "suitable",
+      "proper",
+      "fitting"
+    ]
+  },
   "approve": {
     "conceptId": "approve",
     "phonetic": "[əˈpruːv]",
@@ -1270,6 +1493,30 @@
       "accept",
       "allow",
       "support"
+    ]
+  },
+  "aquarium": {
+    "phonetic": "[əˈkwerɪəm]",
+    "conceptId": "aquarium",
+    "pos": [
+      "noun"
+    ],
+    "example": "We saw colorful fish and a huge shark at the aquarium.",
+    "synonyms": [
+      "fish tank",
+      "oceanarium"
+    ]
+  },
+  "architect": {
+    "phonetic": "[ˈɑːrkətekt]",
+    "conceptId": "architect",
+    "pos": [
+      "noun"
+    ],
+    "example": "The architect designed a beautiful library for our town.",
+    "synonyms": [
+      "designer",
+      "planner"
     ]
   },
   "arctic": {
@@ -1455,6 +1702,18 @@
       "fake"
     ]
   },
+  "artwork": {
+    "phonetic": "[ˈɑːrtwɜːrk]",
+    "conceptId": "artwork",
+    "pos": [
+      "noun"
+    ],
+    "example": "The museum displays artwork from many different countries.",
+    "synonyms": [
+      "art",
+      "piece"
+    ]
+  },
   "as long as": {
     "conceptId": "as long as",
     "phonetic": "[æz lɔːŋ æz]",
@@ -1554,6 +1813,32 @@
       "allocate",
       "appoint",
       "give"
+    ]
+  },
+  "assignment": {
+    "phonetic": "[əˈsaɪnmənt]",
+    "conceptId": "assignment",
+    "pos": [
+      "noun"
+    ],
+    "example": "Our history assignment is due at the end of class.",
+    "synonyms": [
+      "task",
+      "homework",
+      "duty"
+    ]
+  },
+  "assist": {
+    "phonetic": "[əˈsɪst]",
+    "conceptId": "assist",
+    "pos": [
+      "verb"
+    ],
+    "example": "Two teachers will assist the students during the trip.",
+    "synonyms": [
+      "help",
+      "aid",
+      "support"
     ]
   },
   "associate": {
@@ -1713,6 +1998,19 @@
       "care"
     ]
   },
+  "attitude": {
+    "phonetic": "[ˈætətuːd]",
+    "conceptId": "attitude",
+    "pos": [
+      "noun"
+    ],
+    "example": "A positive attitude helps you solve difficult problems calmly.",
+    "synonyms": [
+      "mindset",
+      "stance",
+      "outlook"
+    ]
+  },
   "attract": {
     "phonetic": "[əˈtrækt]",
     "example": "Bright flowers attract bees and butterflies during the warm spring.",
@@ -1738,6 +2036,19 @@
       "charming",
       "appealing",
       "lovely"
+    ]
+  },
+  "attribute": {
+    "phonetic": "[ˈætrəbjuːt]",
+    "conceptId": "attribute",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "Many scientists attribute the warming to human activity.",
+    "synonyms": [
+      "ascribe",
+      "credit"
     ]
   },
   "auction": {
@@ -1841,6 +2152,20 @@
       "boulevard"
     ]
   },
+  "average": {
+    "phonetic": "[ˈævərɪdʒ]",
+    "conceptId": "average",
+    "pos": [
+      "adj",
+      "noun"
+    ],
+    "example": "The average student in our class studies about two hours daily.",
+    "synonyms": [
+      "typical",
+      "ordinary",
+      "normal"
+    ]
+  },
   "avoid": {
     "conceptId": "avoid",
     "phonetic": "[əˈvɔɪd]",
@@ -1867,6 +2192,19 @@
       "get up"
     ]
   },
+  "award": {
+    "phonetic": "[əˈwɔːrd]",
+    "conceptId": "award",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "She received an award for her brave rescue work.",
+    "synonyms": [
+      "prize",
+      "honor"
+    ]
+  },
   "aware": {
     "conceptId": "aware",
     "phonetic": "[əˈwer]",
@@ -1877,6 +2215,19 @@
     "synonyms": [
       "conscious",
       "informed"
+    ]
+  },
+  "awkward": {
+    "phonetic": "[ˈɑːkwərd]",
+    "conceptId": "awkward",
+    "pos": [
+      "adj"
+    ],
+    "example": "There was an awkward silence after his strange question.",
+    "synonyms": [
+      "uncomfortable",
+      "embarrassing",
+      "clumsy"
     ]
   },
   "B as well as A": {
@@ -1968,6 +2319,20 @@
       "bubble"
     ]
   },
+  "ban": {
+    "phonetic": "[bæn]",
+    "conceptId": "ban",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "The city placed a ban on smoking in public parks.",
+    "synonyms": [
+      "prohibition",
+      "restriction",
+      "embargo"
+    ]
+  },
   "bar": {
     "phonetic": "[bɑːr]",
     "example": "He used an iron bar to lift the heavy stone slowly.",
@@ -1979,6 +2344,18 @@
     "conceptId": "bar",
     "pos": [
       "noun"
+    ]
+  },
+  "barely": {
+    "phonetic": "[ˈberli]",
+    "conceptId": "barely",
+    "pos": [
+      "adv"
+    ],
+    "example": "He barely finished the exam before the bell rang.",
+    "synonyms": [
+      "hardly",
+      "scarcely"
     ]
   },
   "bargain": {
@@ -1993,6 +2370,19 @@
       "good deal",
       "discount",
       "deal"
+    ]
+  },
+  "bark": {
+    "phonetic": "[bɑːrk]",
+    "conceptId": "bark",
+    "pos": [
+      "verb"
+    ],
+    "example": "The small dog began to bark at the passing car.",
+    "synonyms": [
+      "yelp",
+      "howl",
+      "growl"
     ]
   },
   "barrier": {
@@ -2542,6 +2932,18 @@
       "across"
     ]
   },
+  "bias": {
+    "phonetic": "[ˈbaɪəs]",
+    "conceptId": "bias",
+    "pos": [
+      "noun"
+    ],
+    "example": "The judge must decide without any bias toward either side.",
+    "synonyms": [
+      "prejudice",
+      "partiality"
+    ]
+  },
   "bike": {
     "phonetic": "[baɪk]",
     "example": "Jisu rides her bike to school every morning before eight.",
@@ -2631,6 +3033,32 @@
       "verb"
     ]
   },
+  "bitter": {
+    "phonetic": "[ˈbɪtər]",
+    "conceptId": "bitter",
+    "pos": [
+      "adj"
+    ],
+    "example": "This black coffee tastes too bitter without any sugar.",
+    "synonyms": [
+      "acrid",
+      "sharp"
+    ]
+  },
+  "blame": {
+    "phonetic": "[bleɪm]",
+    "conceptId": "blame",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "We should not blame her for the broken window.",
+    "synonyms": [
+      "criticize",
+      "accuse",
+      "condemn"
+    ]
+  },
   "blanket": {
     "phonetic": "[ˈblæŋkət]",
     "example": "She pulled the thick blanket over her cold feet.",
@@ -2642,6 +3070,18 @@
     "conceptId": "blanket",
     "pos": [
       "noun"
+    ]
+  },
+  "bleed": {
+    "phonetic": "[bliːd]",
+    "conceptId": "bleed",
+    "pos": [
+      "verb"
+    ],
+    "example": "His nose began to bleed during the soccer match.",
+    "synonyms": [
+      "hemorrhage",
+      "flow"
     ]
   },
   "bless": {
@@ -2666,6 +3106,32 @@
     "conceptId": "blind",
     "pos": [
       "adj"
+    ]
+  },
+  "blink": {
+    "phonetic": "[blɪŋk]",
+    "conceptId": "blink",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "He blinked several times when the bright light appeared.",
+    "synonyms": [
+      "wink",
+      "flutter"
+    ]
+  },
+  "block": {
+    "phonetic": "[blɑːk]",
+    "conceptId": "block",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "The children built a tall tower with wooden blocks.",
+    "synonyms": [
+      "chunk",
+      "lump"
     ]
   },
   "blood": {
@@ -2718,6 +3184,19 @@
       "noun"
     ]
   },
+  "bold": {
+    "phonetic": "[boʊld]",
+    "conceptId": "bold",
+    "pos": [
+      "adj"
+    ],
+    "example": "It was a bold decision to quit and travel alone.",
+    "synonyms": [
+      "brave",
+      "daring",
+      "fearless"
+    ]
+  },
   "bomb": {
     "conceptId": "bomb",
     "phonetic": "[bɑːm]",
@@ -2732,6 +3211,20 @@
       "missile"
     ]
   },
+  "bond": {
+    "phonetic": "[bɑːnd]",
+    "conceptId": "bond",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "A strong bond grew between the two young sisters.",
+    "synonyms": [
+      "tie",
+      "link",
+      "connection"
+    ]
+  },
   "bone": {
     "phonetic": "[boʊn]",
     "example": "The dog buried a large bone in the garden yesterday.",
@@ -2744,6 +3237,20 @@
       "backbone"
     ]
   },
+  "book": {
+    "phonetic": "[bʊk]",
+    "conceptId": "book",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "I want to book two seats for tomorrow evening's concert.",
+    "synonyms": [
+      "reserve",
+      "arrange",
+      "schedule"
+    ]
+  },
   "bookstore": {
     "phonetic": "[ˈbʊkstɔːr]",
     "example": "There is a small bookstore between the bakery and the bank.",
@@ -2753,6 +3260,19 @@
     "conceptId": "bookstore",
     "pos": [
       "noun"
+    ]
+  },
+  "boost": {
+    "phonetic": "[buːst]",
+    "conceptId": "boost",
+    "pos": [
+      "verb"
+    ],
+    "example": "A short walk can boost your mood and your energy.",
+    "synonyms": [
+      "increase",
+      "raise",
+      "improve"
     ]
   },
   "booth": {
@@ -2856,6 +3376,19 @@
     "conceptId": "bound",
     "pos": [
       "adj"
+    ]
+  },
+  "boundary": {
+    "phonetic": "[ˈbaʊndəri]",
+    "conceptId": "boundary",
+    "pos": [
+      "noun"
+    ],
+    "example": "A low stone wall marks the boundary between our farms.",
+    "synonyms": [
+      "border",
+      "limit",
+      "edge"
     ]
   },
   "bow": {
@@ -3257,6 +3790,19 @@
       "collide"
     ]
   },
+  "bunch": {
+    "phonetic": "[bʌntʃ]",
+    "conceptId": "bunch",
+    "pos": [
+      "noun"
+    ],
+    "example": "A bunch of students waited outside the music room.",
+    "synonyms": [
+      "group",
+      "cluster",
+      "bundle"
+    ]
+  },
   "burden": {
     "phonetic": "[ˈbɜːrdən]",
     "example": "The tired donkey carried a heavy burden up the steep hill.",
@@ -3281,6 +3827,20 @@
     "conceptId": "burn",
     "pos": [
       "verb"
+    ]
+  },
+  "burst": {
+    "phonetic": "[bɜːrst]",
+    "conceptId": "burst",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "Do not burst the balloon in front of the baby.",
+    "synonyms": [
+      "pop",
+      "explode",
+      "puncture"
     ]
   },
   "bury": {
@@ -3448,6 +4008,20 @@
       "noun"
     ]
   },
+  "cancel": {
+    "phonetic": "[ˈkænsəl]",
+    "conceptId": "cancel",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "They had to cancel the picnic because of heavy rain.",
+    "synonyms": [
+      "call off",
+      "revoke",
+      "drop"
+    ]
+  },
   "candidate": {
     "conceptId": "candidate",
     "phonetic": "[ˈkændədeɪt]",
@@ -3498,6 +4072,19 @@
       "up to"
     ]
   },
+  "capacity": {
+    "phonetic": "[kəˈpæsəti]",
+    "conceptId": "capacity",
+    "pos": [
+      "noun"
+    ],
+    "example": "She has a great capacity for solving difficult problems.",
+    "synonyms": [
+      "ability",
+      "capability",
+      "aptitude"
+    ]
+  },
   "capital": {
     "phonetic": "[ˈkæpətəl]",
     "example": "Seoul is the capital of Korea and also its largest city.",
@@ -3523,6 +4110,20 @@
     "conceptId": "captain",
     "pos": [
       "noun"
+    ]
+  },
+  "capture": {
+    "phonetic": "[ˈkæptʃər]",
+    "conceptId": "capture",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "The police managed to capture the thief last night.",
+    "synonyms": [
+      "seize",
+      "catch",
+      "arrest"
     ]
   },
   "care": {
@@ -3749,6 +4350,32 @@
       "verb"
     ]
   },
+  "caution": {
+    "phonetic": "[ˈkɑːʃən]",
+    "conceptId": "caution",
+    "pos": [
+      "noun"
+    ],
+    "example": "Drivers must use caution on these narrow mountain roads.",
+    "synonyms": [
+      "care",
+      "wariness",
+      "prudence"
+    ]
+  },
+  "cease": {
+    "phonetic": "[siːs]",
+    "conceptId": "cease",
+    "pos": [
+      "verb"
+    ],
+    "example": "The heavy rain did not cease until late at night.",
+    "synonyms": [
+      "stop",
+      "halt",
+      "quit"
+    ]
+  },
   "ceiling": {
     "phonetic": "[ˈsiːlɪŋ]",
     "example": "Someone painted tiny silver stars on my bedroom ceiling.",
@@ -3772,6 +4399,19 @@
     "conceptId": "celebrate",
     "pos": [
       "verb"
+    ]
+  },
+  "celebrity": {
+    "phonetic": "[səˈlebrɪti]",
+    "conceptId": "celebrity",
+    "pos": [
+      "noun"
+    ],
+    "example": "A famous celebrity visited our school to give advice.",
+    "synonyms": [
+      "star",
+      "icon",
+      "idol"
     ]
   },
   "cell": {
@@ -3865,6 +4505,20 @@
       "noun"
     ]
   },
+  "challenge": {
+    "phonetic": "[ˈtʃæləndʒ]",
+    "conceptId": "challenge",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "Learning a new language is a real challenge for everyone.",
+    "synonyms": [
+      "difficulty",
+      "task",
+      "test"
+    ]
+  },
   "chance": {
     "phonetic": "[tʃæns]",
     "example": "This is your last chance to join the school band.",
@@ -3905,6 +4559,19 @@
       "canal"
     ]
   },
+  "character": {
+    "phonetic": "[ˈkerɪktər]",
+    "conceptId": "character",
+    "pos": [
+      "noun"
+    ],
+    "example": "Hard times often reveal a person's true character.",
+    "synonyms": [
+      "personality",
+      "nature",
+      "temperament"
+    ]
+  },
   "charge": {
     "phonetic": "[tʃɑːrdʒ]",
     "example": "The repair shop charged me twenty dollars for fixing my bike.",
@@ -3916,6 +4583,19 @@
     "conceptId": "charge",
     "pos": [
       "verb"
+    ]
+  },
+  "charity": {
+    "phonetic": "[ˈtʃerɪti]",
+    "conceptId": "charity",
+    "pos": [
+      "noun"
+    ],
+    "example": "They raised money for charity by running a long race.",
+    "synonyms": [
+      "generosity",
+      "donation",
+      "aid"
     ]
   },
   "charming": {
@@ -3986,6 +4666,19 @@
       "adj"
     ]
   },
+  "cheat": {
+    "phonetic": "[tʃiːt]",
+    "conceptId": "cheat",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "Some students try to cheat on difficult exams.",
+    "synonyms": [
+      "deceive",
+      "trick"
+    ]
+  },
   "check": {
     "phonetic": "[tʃek]",
     "example": "The thick trees checked the cold wind from the north.",
@@ -4038,6 +4731,19 @@
       "lively"
     ]
   },
+  "chemical": {
+    "phonetic": "[ˈkeməkəl]",
+    "conceptId": "chemical",
+    "pos": [
+      "adj",
+      "noun"
+    ],
+    "example": "The factory uses a chemical process to clean the water.",
+    "synonyms": [
+      "synthetic",
+      "artificial"
+    ]
+  },
   "chemistry": {
     "conceptId": "chemistry",
     "phonetic": "[ˈkeməstri]",
@@ -4048,6 +4754,19 @@
     "synonyms": [
       "science",
       "biochemistry"
+    ]
+  },
+  "cherish": {
+    "phonetic": "[ˈtʃerɪʃ]",
+    "conceptId": "cherish",
+    "pos": [
+      "verb"
+    ],
+    "example": "I cherish the letters my grandfather wrote to me.",
+    "synonyms": [
+      "treasure",
+      "value",
+      "prize"
     ]
   },
   "chest": {
@@ -4140,6 +4859,19 @@
       "ensemble"
     ]
   },
+  "chronic": {
+    "phonetic": "[ˈkrɑːnɪk]",
+    "conceptId": "chronic",
+    "pos": [
+      "adj"
+    ],
+    "example": "My uncle suffers from chronic pain in both knees.",
+    "synonyms": [
+      "persistent",
+      "constant",
+      "long-lasting"
+    ]
+  },
   "circle": {
     "phonetic": "[ˈsɜːrkəl]",
     "example": "Draw a big circle on the paper with your new compass.",
@@ -4216,6 +4948,18 @@
     "conceptId": "clap",
     "pos": [
       "verb"
+    ]
+  },
+  "clarify": {
+    "phonetic": "[ˈklerəfaɪ]",
+    "conceptId": "clarify",
+    "pos": [
+      "verb"
+    ],
+    "example": "Please clarify the last point of your explanation again.",
+    "synonyms": [
+      "explain",
+      "define"
     ]
   },
   "classic": {
@@ -4470,6 +5214,18 @@
       "coed education"
     ]
   },
+  "cognitive": {
+    "phonetic": "[ˈkɑːɡnɪtɪv]",
+    "conceptId": "cognitive",
+    "pos": [
+      "adj"
+    ],
+    "example": "Reading aloud helps young children develop cognitive skills.",
+    "synonyms": [
+      "mental",
+      "intellectual"
+    ]
+  },
   "coil": {
     "phonetic": "[kɔɪl]",
     "example": "A thick coil of copper wire lay on the workshop table.",
@@ -4496,6 +5252,32 @@
       "noun"
     ]
   },
+  "collaborate": {
+    "phonetic": "[kəˈlæbəreɪt]",
+    "conceptId": "collaborate",
+    "pos": [
+      "verb"
+    ],
+    "example": "Two schools collaborated to build a small village library.",
+    "synonyms": [
+      "cooperate",
+      "partner"
+    ]
+  },
+  "collapse": {
+    "phonetic": "[kəˈlæps]",
+    "conceptId": "collapse",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "The old bridge could collapse during a heavy storm.",
+    "synonyms": [
+      "fall",
+      "crumble",
+      "fail"
+    ]
+  },
   "collar": {
     "conceptId": "collar",
     "phonetic": "[ˈkɑːlər]",
@@ -4506,6 +5288,19 @@
     "synonyms": [
       "neckband",
       "neckline"
+    ]
+  },
+  "colleague": {
+    "phonetic": "[ˈkɑːlɪɡ]",
+    "conceptId": "colleague",
+    "pos": [
+      "noun"
+    ],
+    "example": "My colleague helped me finish the report before the meeting.",
+    "synonyms": [
+      "coworker",
+      "associate",
+      "partner"
     ]
   },
   "collect": {
@@ -4571,6 +5366,20 @@
     "synonyms": [
       "brush",
       "hairbrush"
+    ]
+  },
+  "combat": {
+    "phonetic": "[ˈkɑːmbæt]",
+    "conceptId": "combat",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "Many soldiers were wounded during the long combat.",
+    "synonyms": [
+      "battle",
+      "fighting",
+      "warfare"
     ]
   },
   "combination": {
@@ -4704,6 +5513,20 @@
       "dealing"
     ]
   },
+  "commercial": {
+    "phonetic": "[kəˈmɜːrʃəl]",
+    "conceptId": "commercial",
+    "pos": [
+      "adj",
+      "noun"
+    ],
+    "example": "The old building is used only for commercial purposes now.",
+    "synonyms": [
+      "business",
+      "mercantile",
+      "trading"
+    ]
+  },
   "commit": {
     "conceptId": "commit",
     "phonetic": "[kəˈmɪt]",
@@ -4715,6 +5538,18 @@
       "perform",
       "entrust",
       "carry out"
+    ]
+  },
+  "commitment": {
+    "phonetic": "[kəˈmɪtmənt]",
+    "conceptId": "commitment",
+    "pos": [
+      "noun"
+    ],
+    "example": "He made a firm commitment to finish the project.",
+    "synonyms": [
+      "promise",
+      "pledge"
     ]
   },
   "committee": {
@@ -4783,6 +5618,32 @@
       "public"
     ]
   },
+  "commute": {
+    "phonetic": "[kəˈmjuːt]",
+    "conceptId": "commute",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "Many workers commute by subway to save time and money.",
+    "synonyms": [
+      "travel to work",
+      "journey"
+    ]
+  },
+  "companion": {
+    "phonetic": "[kəmˈpænjən]",
+    "conceptId": "companion",
+    "pos": [
+      "noun"
+    ],
+    "example": "My dog has been a loyal companion for years.",
+    "synonyms": [
+      "friend",
+      "partner",
+      "comrade"
+    ]
+  },
   "company": {
     "phonetic": "[ˈkʌmpəni]",
     "example": "I brought my dog along for company on the long walk.",
@@ -4796,6 +5657,18 @@
       "noun"
     ]
   },
+  "compare": {
+    "phonetic": "[kəmˈper]",
+    "conceptId": "compare",
+    "pos": [
+      "verb"
+    ],
+    "example": "Please compare the two plans before you decide.",
+    "synonyms": [
+      "contrast",
+      "liken"
+    ]
+  },
   "comparison": {
     "phonetic": "[kəmˈperəsən]",
     "example": "A comparison between the two phones showed almost no real difference.",
@@ -4806,6 +5679,19 @@
     "conceptId": "comparison",
     "pos": [
       "noun"
+    ]
+  },
+  "compel": {
+    "phonetic": "[kəmˈpel]",
+    "conceptId": "compel",
+    "pos": [
+      "verb"
+    ],
+    "example": "Heavy rain compelled us to cancel the outdoor concert.",
+    "synonyms": [
+      "force",
+      "oblige",
+      "pressure"
     ]
   },
   "compete": {
@@ -4901,6 +5787,19 @@
       "confusing"
     ]
   },
+  "component": {
+    "phonetic": "[kəmˈpoʊnənt]",
+    "conceptId": "component",
+    "pos": [
+      "noun"
+    ],
+    "example": "Each component of the engine must be checked carefully.",
+    "synonyms": [
+      "part",
+      "element",
+      "ingredient"
+    ]
+  },
   "compose": {
     "conceptId": "compose",
     "phonetic": "[kəmˈpoʊz]",
@@ -4927,6 +5826,20 @@
       "noun"
     ]
   },
+  "compromise": {
+    "phonetic": "[ˈkɑːmprəmaɪz]",
+    "conceptId": "compromise",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "Both sides compromised and finally signed the new agreement.",
+    "synonyms": [
+      "negotiate",
+      "settle",
+      "agree"
+    ]
+  },
   "compulsory": {
     "phonetic": "[kəmˈpʌlsəri]",
     "example": "Wearing a helmet is compulsory when you ride a bike here.",
@@ -4938,6 +5851,18 @@
     "conceptId": "compulsory",
     "pos": [
       "adj"
+    ]
+  },
+  "conceal": {
+    "phonetic": "[kənˈsiːl]",
+    "conceptId": "conceal",
+    "pos": [
+      "verb"
+    ],
+    "example": "He tried to conceal his fear behind a smile.",
+    "synonyms": [
+      "hide",
+      "disguise"
     ]
   },
   "concentrate": {
@@ -5045,6 +5970,19 @@
       "direct"
     ]
   },
+  "conference": {
+    "phonetic": "[ˈkɑːnfərəns]",
+    "conceptId": "conference",
+    "pos": [
+      "noun"
+    ],
+    "example": "Scientists from many countries attended the conference last week.",
+    "synonyms": [
+      "meeting",
+      "convention",
+      "summit"
+    ]
+  },
   "confess": {
     "conceptId": "confess",
     "phonetic": "[kənˈfes]",
@@ -5098,6 +6036,32 @@
       "struggle"
     ]
   },
+  "confront": {
+    "phonetic": "[kənˈfrʌnt]",
+    "conceptId": "confront",
+    "pos": [
+      "verb"
+    ],
+    "example": "We must confront this problem instead of ignoring it.",
+    "synonyms": [
+      "face",
+      "tackle",
+      "challenge"
+    ]
+  },
+  "confuse": {
+    "phonetic": "[kənˈfjuːz]",
+    "conceptId": "confuse",
+    "pos": [
+      "verb"
+    ],
+    "example": "Bright lights and loud noises can easily confuse young children.",
+    "synonyms": [
+      "puzzle",
+      "bewilder",
+      "baffle"
+    ]
+  },
   "congratulation": {
     "conceptId": "congratulation",
     "phonetic": "[kənɡrætʃəˈleɪʃən]",
@@ -5135,6 +6099,32 @@
       "defeat",
       "overcome",
       "beat"
+    ]
+  },
+  "conscious": {
+    "phonetic": "[ˈkɑːnʃəs]",
+    "conceptId": "conscious",
+    "pos": [
+      "adj"
+    ],
+    "example": "She was conscious of everyone watching her on the stage.",
+    "synonyms": [
+      "aware",
+      "mindful",
+      "alert"
+    ]
+  },
+  "consequence": {
+    "phonetic": "[ˈkɑːnsəkwəns]",
+    "conceptId": "consequence",
+    "pos": [
+      "noun"
+    ],
+    "example": "Every choice you make has a consequence you must accept.",
+    "synonyms": [
+      "result",
+      "outcome",
+      "effect"
     ]
   },
   "conservative": {
@@ -5177,6 +6167,19 @@
       "ponder"
     ]
   },
+  "considerable": {
+    "phonetic": "[kənˈsɪdərəbəl]",
+    "conceptId": "considerable",
+    "pos": [
+      "adj"
+    ],
+    "example": "They spent a considerable amount of money on repairs.",
+    "synonyms": [
+      "substantial",
+      "significant",
+      "sizable"
+    ]
+  },
   "consist": {
     "conceptId": "consist",
     "phonetic": "[kənˈsɪst]",
@@ -5188,6 +6191,18 @@
       "comprise",
       "contain",
       "exist"
+    ]
+  },
+  "consistent": {
+    "phonetic": "[kənˈsɪstənt]",
+    "conceptId": "consistent",
+    "pos": [
+      "adj"
+    ],
+    "example": "His answer was consistent with the story she told.",
+    "synonyms": [
+      "compatible",
+      "matching"
     ]
   },
   "constant": {
@@ -5214,6 +6229,45 @@
       "build",
       "erect",
       "form"
+    ]
+  },
+  "construction": {
+    "phonetic": "[kənsˈtrʌkʃən]",
+    "conceptId": "construction",
+    "pos": [
+      "noun"
+    ],
+    "example": "The construction of the new bridge will take two years.",
+    "synonyms": [
+      "building",
+      "assembly",
+      "development"
+    ]
+  },
+  "consult": {
+    "phonetic": "[kənˈsʌlt]",
+    "conceptId": "consult",
+    "pos": [
+      "verb"
+    ],
+    "example": "You should consult a doctor about that painful cough.",
+    "synonyms": [
+      "confer",
+      "discuss",
+      "ask"
+    ]
+  },
+  "consume": {
+    "phonetic": "[kənˈsuːm]",
+    "conceptId": "consume",
+    "pos": [
+      "verb"
+    ],
+    "example": "Athletes consume plenty of water before a long race.",
+    "synonyms": [
+      "eat",
+      "ingest",
+      "devour"
     ]
   },
   "consumer": {
@@ -5254,6 +6308,19 @@
       "include",
       "hold",
       "comprise"
+    ]
+  },
+  "contemporary": {
+    "phonetic": "[kənˈtempəreri]",
+    "conceptId": "contemporary",
+    "pos": [
+      "adj"
+    ],
+    "example": "This museum shows contemporary art from many young painters.",
+    "synonyms": [
+      "modern",
+      "current",
+      "present-day"
     ]
   },
   "content": {
@@ -5320,6 +6387,46 @@
       "verb"
     ]
   },
+  "continuous": {
+    "phonetic": "[kənˈtɪnjuəs]",
+    "conceptId": "continuous",
+    "pos": [
+      "adj"
+    ],
+    "example": "The continuous noise from the street kept me awake.",
+    "synonyms": [
+      "constant",
+      "ceaseless",
+      "endless"
+    ]
+  },
+  "contract": {
+    "phonetic": "[ˈkɑːntrækt]",
+    "conceptId": "contract",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "They signed a two-year contract with the new company.",
+    "synonyms": [
+      "agreement",
+      "deal",
+      "pact"
+    ]
+  },
+  "contradict": {
+    "phonetic": "[kɑːntrəˈdɪkt]",
+    "conceptId": "contradict",
+    "pos": [
+      "verb"
+    ],
+    "example": "His later story seemed to contradict everything he said before.",
+    "synonyms": [
+      "oppose",
+      "deny",
+      "dispute"
+    ]
+  },
   "contrary": {
     "phonetic": "[ˈkɑːntreri]",
     "example": "His opinion was contrary to everything the other members said.",
@@ -5331,6 +6438,20 @@
     "conceptId": "contrary",
     "pos": [
       "adj"
+    ]
+  },
+  "contrast": {
+    "phonetic": "[ˈkɑːntræst]",
+    "conceptId": "contrast",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "There is a sharp contrast between the two paintings.",
+    "synonyms": [
+      "difference",
+      "distinction",
+      "comparison"
     ]
   },
   "contribute": {
@@ -5373,6 +6494,19 @@
       "easy"
     ]
   },
+  "conventional": {
+    "phonetic": "[kənˈvenʃənəl]",
+    "conceptId": "conventional",
+    "pos": [
+      "adj"
+    ],
+    "example": "My grandparents prefer a conventional wedding in a small church.",
+    "synonyms": [
+      "traditional",
+      "customary",
+      "standard"
+    ]
+  },
   "conversation": {
     "conceptId": "conversation",
     "phonetic": "[kɑːnvərˈseɪʃən]",
@@ -5384,6 +6518,32 @@
       "talk",
       "dialogue",
       "discussion"
+    ]
+  },
+  "convert": {
+    "phonetic": "[ˈkɑːnvərt]",
+    "conceptId": "convert",
+    "pos": [
+      "verb"
+    ],
+    "example": "They converted the old factory into a public library.",
+    "synonyms": [
+      "transform",
+      "change",
+      "turn"
+    ]
+  },
+  "convey": {
+    "phonetic": "[kənˈveɪ]",
+    "conceptId": "convey",
+    "pos": [
+      "verb"
+    ],
+    "example": "Her painting conveys a deep sense of peace and hope.",
+    "synonyms": [
+      "communicate",
+      "express",
+      "deliver"
     ]
   },
   "convince": {
@@ -5436,6 +6596,19 @@
       "unite"
     ]
   },
+  "cooperation": {
+    "phonetic": "[koʊɑːpərˈeɪʃən]",
+    "conceptId": "cooperation",
+    "pos": [
+      "noun"
+    ],
+    "example": "Thank you for your cooperation during the long safety check.",
+    "synonyms": [
+      "collaboration",
+      "teamwork",
+      "assistance"
+    ]
+  },
   "copyright": {
     "conceptId": "copyright",
     "phonetic": "[ˈkɑːpɪraɪt]",
@@ -5450,6 +6623,20 @@
       "license"
     ]
   },
+  "core": {
+    "phonetic": "[kɔːr]",
+    "conceptId": "core",
+    "pos": [
+      "noun",
+      "adj"
+    ],
+    "example": "The core of the problem is a lack of trust.",
+    "synonyms": [
+      "center",
+      "heart",
+      "essence"
+    ]
+  },
   "corn": {
     "phonetic": "[kɔːrn]",
     "example": "Farmers in this village grow corn and other grains every summer.",
@@ -5460,6 +6647,20 @@
     "conceptId": "corn",
     "pos": [
       "noun"
+    ]
+  },
+  "correct": {
+    "phonetic": "[kərˈekt]",
+    "conceptId": "correct",
+    "pos": [
+      "adj",
+      "verb"
+    ],
+    "example": "Only one of these four answers is completely correct.",
+    "synonyms": [
+      "accurate",
+      "right",
+      "exact"
     ]
   },
   "correctly": {
@@ -5473,6 +6674,19 @@
     "conceptId": "correctly",
     "pos": [
       "adv"
+    ]
+  },
+  "correspond": {
+    "phonetic": "[kɔːrəˈspɑːnd]",
+    "conceptId": "correspond",
+    "pos": [
+      "verb"
+    ],
+    "example": "Your answers correspond exactly with the numbers in the table.",
+    "synonyms": [
+      "match",
+      "agree",
+      "fit"
     ]
   },
   "cost": {
@@ -5499,6 +6713,19 @@
       "outfit",
       "dress",
       "clothing"
+    ]
+  },
+  "cottage": {
+    "phonetic": "[ˈkɑːtədʒ]",
+    "conceptId": "cottage",
+    "pos": [
+      "noun"
+    ],
+    "example": "They spent the summer in a small cottage near the lake.",
+    "synonyms": [
+      "hut",
+      "cabin",
+      "shack"
     ]
   },
   "cotton": {
@@ -5631,6 +6858,19 @@
       "adj"
     ]
   },
+  "craft": {
+    "phonetic": "[kræft]",
+    "conceptId": "craft",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "Village women still practice the ancient craft of weaving.",
+    "synonyms": [
+      "handicraft",
+      "skill"
+    ]
+  },
   "crane": {
     "conceptId": "crane",
     "phonetic": "[kreɪn]",
@@ -5655,6 +6895,19 @@
     "pos": [
       "noun",
       "verb"
+    ]
+  },
+  "crawl": {
+    "phonetic": "[krɔːl]",
+    "conceptId": "crawl",
+    "pos": [
+      "verb"
+    ],
+    "example": "The baby learned to crawl across the living room floor.",
+    "synonyms": [
+      "creep",
+      "slither",
+      "inch"
     ]
   },
   "crazy": {
@@ -5695,6 +6948,19 @@
       "original",
       "imaginative",
       "inventive"
+    ]
+  },
+  "creature": {
+    "phonetic": "[ˈkriːtʃər]",
+    "conceptId": "creature",
+    "pos": [
+      "noun"
+    ],
+    "example": "Every creature in the forest needs clean water daily.",
+    "synonyms": [
+      "being",
+      "organism",
+      "animal"
     ]
   },
   "credit": {
@@ -5748,6 +7014,20 @@
       "sport"
     ]
   },
+  "criminal": {
+    "phonetic": "[ˈkrɪmənəl]",
+    "conceptId": "criminal",
+    "pos": [
+      "noun",
+      "adj"
+    ],
+    "example": "The police finally caught the criminal near the train station.",
+    "synonyms": [
+      "offender",
+      "lawbreaker",
+      "crook"
+    ]
+  },
   "crisis": {
     "conceptId": "crisis",
     "phonetic": "[ˈkraɪsəs]",
@@ -5759,6 +7039,19 @@
       "emergency",
       "danger",
       "trouble"
+    ]
+  },
+  "critic": {
+    "phonetic": "[ˈkrɪtɪk]",
+    "conceptId": "critic",
+    "pos": [
+      "noun"
+    ],
+    "example": "One famous critic praised the young writer's first novel.",
+    "synonyms": [
+      "reviewer",
+      "commentator",
+      "judge"
     ]
   },
   "criticize": {
@@ -5851,6 +7144,19 @@
       "noun"
     ]
   },
+  "crucial": {
+    "phonetic": "[ˈkruːʃəl]",
+    "conceptId": "crucial",
+    "pos": [
+      "adj"
+    ],
+    "example": "Sleep is crucial for both health and clear thinking.",
+    "synonyms": [
+      "essential",
+      "vital",
+      "critical"
+    ]
+  },
   "cruel": {
     "conceptId": "cruel",
     "phonetic": "[ˈkruːəl]",
@@ -5916,6 +7222,20 @@
       "noun"
     ]
   },
+  "cure": {
+    "phonetic": "[kjʊr]",
+    "conceptId": "cure",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "Doctors hope to cure the disease with new medicine.",
+    "synonyms": [
+      "heal",
+      "treat",
+      "remedy"
+    ]
+  },
   "curious": {
     "phonetic": "[ˈkjʊrɪəs]",
     "example": "My little brother is curious about how machines work inside.",
@@ -5968,6 +7288,19 @@
       "bend",
       "turn",
       "arch"
+    ]
+  },
+  "curved": {
+    "phonetic": "[kɜːrvd]",
+    "conceptId": "curved",
+    "pos": [
+      "adj"
+    ],
+    "example": "The road becomes narrow and curved near the hill.",
+    "synonyms": [
+      "bent",
+      "rounded",
+      "arched"
     ]
   },
   "custom": {
@@ -6051,6 +7384,18 @@
       "noun"
     ]
   },
+  "dare": {
+    "phonetic": "[der]",
+    "conceptId": "dare",
+    "pos": [
+      "verb"
+    ],
+    "example": "Nobody dared to speak during the long tense silence.",
+    "synonyms": [
+      "venture",
+      "risk"
+    ]
+  },
   "dark": {
     "phonetic": "[dɑːrk]",
     "example": "The room became dark as soon as the lights went off.",
@@ -6124,6 +7469,32 @@
       "constantly",
       "always",
       "around the clock"
+    ]
+  },
+  "deadline": {
+    "phonetic": "[ˈdedlaɪn]",
+    "conceptId": "deadline",
+    "pos": [
+      "noun"
+    ],
+    "example": "Our team missed the deadline for the science report.",
+    "synonyms": [
+      "due date",
+      "time limit",
+      "cutoff"
+    ]
+  },
+  "deadly": {
+    "phonetic": "[ˈdedli]",
+    "conceptId": "deadly",
+    "pos": [
+      "adj"
+    ],
+    "example": "The bite of this snake can be deadly without treatment.",
+    "synonyms": [
+      "fatal",
+      "lethal",
+      "mortal"
     ]
   },
   "deal": {
@@ -6320,6 +7691,19 @@
       "noun"
     ]
   },
+  "dedicate": {
+    "phonetic": "[ˈdedəkeɪt]",
+    "conceptId": "dedicate",
+    "pos": [
+      "verb"
+    ],
+    "example": "She decided to dedicate her life to helping sick children.",
+    "synonyms": [
+      "devote",
+      "commit",
+      "give"
+    ]
+  },
   "deed": {
     "conceptId": "deed",
     "phonetic": "[diːd]",
@@ -6355,6 +7739,33 @@
     "synonyms": [
       "stag",
       "fawn"
+    ]
+  },
+  "defeat": {
+    "phonetic": "[dɪˈfiːt]",
+    "conceptId": "defeat",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "Our team hopes to defeat the champions this Saturday.",
+    "synonyms": [
+      "beat",
+      "conquer",
+      "overcome"
+    ]
+  },
+  "defend": {
+    "phonetic": "[dɪˈfend]",
+    "conceptId": "defend",
+    "pos": [
+      "verb"
+    ],
+    "example": "Soldiers fought bravely to defend their small border town.",
+    "synonyms": [
+      "protect",
+      "guard",
+      "shield"
     ]
   },
   "define": {
@@ -6398,6 +7809,19 @@
       "hold up"
     ]
   },
+  "delicate": {
+    "phonetic": "[ˈdeləkət]",
+    "conceptId": "delicate",
+    "pos": [
+      "adj"
+    ],
+    "example": "The artist painted a delicate pattern on the small cup.",
+    "synonyms": [
+      "fine",
+      "subtle",
+      "exquisite"
+    ]
+  },
   "delicious": {
     "phonetic": "[dɪˈlɪʃəs]",
     "example": "The soup my mother made was warm and delicious.",
@@ -6422,6 +7846,19 @@
     "conceptId": "delight",
     "pos": [
       "noun"
+    ]
+  },
+  "delighted": {
+    "phonetic": "[dɪˈlaɪtəd]",
+    "conceptId": "delighted",
+    "pos": [
+      "adj"
+    ],
+    "example": "We were delighted to hear about your exam results.",
+    "synonyms": [
+      "pleased",
+      "glad",
+      "thrilled"
     ]
   },
   "deliver": {
@@ -6500,6 +7937,19 @@
       "oral"
     ]
   },
+  "deny": {
+    "phonetic": "[dɪˈnaɪ]",
+    "conceptId": "deny",
+    "pos": [
+      "verb"
+    ],
+    "example": "He continued to deny that he had broken the window.",
+    "synonyms": [
+      "refute",
+      "contradict",
+      "reject"
+    ]
+  },
   "depart": {
     "conceptId": "depart",
     "phonetic": "[dɪˈpɑːrt]",
@@ -6540,6 +7990,32 @@
       "verb"
     ]
   },
+  "deposit": {
+    "phonetic": "[dəˈpɑːzɪt]",
+    "conceptId": "deposit",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "The river deposits fine sand along the bank each spring.",
+    "synonyms": [
+      "lay down",
+      "accumulate"
+    ]
+  },
+  "depress": {
+    "phonetic": "[dɪˈpres]",
+    "conceptId": "depress",
+    "pos": [
+      "verb"
+    ],
+    "example": "Cloudy days often depress people who live alone.",
+    "synonyms": [
+      "sadden",
+      "discourage",
+      "dishearten"
+    ]
+  },
   "depressed": {
     "conceptId": "depressed",
     "phonetic": "[dɪˈprest]",
@@ -6553,6 +8029,19 @@
       "down"
     ]
   },
+  "deprived": {
+    "phonetic": "[dɪˈpraɪvd]",
+    "conceptId": "deprived",
+    "pos": [
+      "adj"
+    ],
+    "example": "The charity builds schools for deprived children in poor areas.",
+    "synonyms": [
+      "disadvantaged",
+      "needy",
+      "underprivileged"
+    ]
+  },
   "depth": {
     "conceptId": "depth",
     "phonetic": "[depθ]",
@@ -6563,6 +8052,19 @@
     "synonyms": [
       "deepness",
       "thickness"
+    ]
+  },
+  "derive": {
+    "phonetic": "[dərˈaɪv]",
+    "conceptId": "derive",
+    "pos": [
+      "verb"
+    ],
+    "example": "Many students derive great pleasure from reading long novels.",
+    "synonyms": [
+      "obtain",
+      "gain",
+      "draw"
     ]
   },
   "describe": {
@@ -6614,6 +8116,19 @@
     "conceptId": "design",
     "pos": [
       "noun"
+    ]
+  },
+  "desirable": {
+    "phonetic": "[dɪˈzaɪrəbəl]",
+    "conceptId": "desirable",
+    "pos": [
+      "adj"
+    ],
+    "example": "Honesty is a desirable quality in any good leader.",
+    "synonyms": [
+      "preferable",
+      "advisable",
+      "ideal"
     ]
   },
   "desire": {
@@ -6681,6 +8196,19 @@
       "particular",
       "point",
       "fact"
+    ]
+  },
+  "detect": {
+    "phonetic": "[dɪˈtekt]",
+    "conceptId": "detect",
+    "pos": [
+      "verb"
+    ],
+    "example": "This machine can detect smoke in the whole building.",
+    "synonyms": [
+      "discover",
+      "notice",
+      "sense"
     ]
   },
   "detective": {
@@ -6797,6 +8325,18 @@
       "North-South talks"
     ]
   },
+  "diameter": {
+    "phonetic": "[daɪˈæmətər]",
+    "conceptId": "diameter",
+    "pos": [
+      "noun"
+    ],
+    "example": "The circle has a diameter of about ten centimeters.",
+    "synonyms": [
+      "width",
+      "breadth"
+    ]
+  },
   "diary": {
     "phonetic": "[ˈdaɪəri]",
     "example": "Jisu writes in her diary every night before going to bed.",
@@ -6910,6 +8450,19 @@
     "conceptId": "diligent",
     "pos": [
       "adj"
+    ]
+  },
+  "diminish": {
+    "phonetic": "[dɪˈmɪnɪʃ]",
+    "conceptId": "diminish",
+    "pos": [
+      "verb"
+    ],
+    "example": "The noise slowly diminished as the crowd walked away.",
+    "synonyms": [
+      "decrease",
+      "decline",
+      "shrink"
     ]
   },
   "dining room": {
@@ -7041,6 +8594,19 @@
       "verb"
     ]
   },
+  "disappointed": {
+    "phonetic": "[dɪsəˈpɔɪntɪd]",
+    "conceptId": "disappointed",
+    "pos": [
+      "adj"
+    ],
+    "example": "He looked disappointed when the concert was suddenly canceled.",
+    "synonyms": [
+      "discouraged",
+      "dissatisfied",
+      "upset"
+    ]
+  },
   "disaster": {
     "conceptId": "disaster",
     "phonetic": "[dɪˈzæstər]",
@@ -7065,6 +8631,33 @@
       "throw away",
       "dump",
       "abandon"
+    ]
+  },
+  "discipline": {
+    "phonetic": "[ˈdɪsəplən]",
+    "conceptId": "discipline",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "Good discipline at home helped the children study well.",
+    "synonyms": [
+      "training",
+      "self-control",
+      "upbringing"
+    ]
+  },
+  "discouraged": {
+    "phonetic": "[dɪˈskɜːrədʒd]",
+    "conceptId": "discouraged",
+    "pos": [
+      "adj"
+    ],
+    "example": "She felt discouraged after failing the test three times.",
+    "synonyms": [
+      "disheartened",
+      "depressed",
+      "hopeless"
     ]
   },
   "discuss": {
@@ -7131,6 +8724,19 @@
       "reject",
       "fire",
       "ignore"
+    ]
+  },
+  "disorder": {
+    "phonetic": "[dɪˈsɔːrdər]",
+    "conceptId": "disorder",
+    "pos": [
+      "noun"
+    ],
+    "example": "Her doctor treated a rare sleep disorder last year.",
+    "synonyms": [
+      "illness",
+      "ailment",
+      "condition"
     ]
   },
   "display": {
@@ -7212,6 +8818,19 @@
       "differentiate"
     ]
   },
+  "distract": {
+    "phonetic": "[dɪsˈtrækt]",
+    "conceptId": "distract",
+    "pos": [
+      "verb"
+    ],
+    "example": "Loud music can distract drivers from the road ahead.",
+    "synonyms": [
+      "divert",
+      "disturb",
+      "sidetrack"
+    ]
+  },
   "distribute": {
     "conceptId": "distribute",
     "phonetic": "[dɪsˈtrɪbjut]",
@@ -7238,6 +8857,19 @@
       "zone"
     ]
   },
+  "disturb": {
+    "phonetic": "[dɪˈstɜːrb]",
+    "conceptId": "disturb",
+    "pos": [
+      "verb"
+    ],
+    "example": "Please do not disturb your brother while he studies.",
+    "synonyms": [
+      "bother",
+      "interrupt",
+      "trouble"
+    ]
+  },
   "ditch": {
     "phonetic": "[dɪtʃ]",
     "example": "Rain water ran quickly along the ditch beside the country road.",
@@ -7262,6 +8894,19 @@
     "conceptId": "dive",
     "pos": [
       "verb"
+    ]
+  },
+  "diverse": {
+    "phonetic": "[daɪˈvɜːrs]",
+    "conceptId": "diverse",
+    "pos": [
+      "adj"
+    ],
+    "example": "Our school has students from diverse cultural backgrounds.",
+    "synonyms": [
+      "various",
+      "varied",
+      "different"
     ]
   },
   "divide": {
@@ -7355,6 +9000,18 @@
       "lead"
     ]
   },
+  "donate": {
+    "phonetic": "[ˈdoʊneɪt]",
+    "conceptId": "donate",
+    "pos": [
+      "verb"
+    ],
+    "example": "Many people donate warm clothes to shelters every winter.",
+    "synonyms": [
+      "contribute",
+      "give"
+    ]
+  },
   "dormitory": {
     "conceptId": "dormitory",
     "phonetic": "[ˈdɔːrmətɔːri]",
@@ -7417,6 +9074,19 @@
     "conceptId": "drag",
     "pos": [
       "verb"
+    ]
+  },
+  "dramatic": {
+    "phonetic": "[drəˈmætɪk]",
+    "conceptId": "dramatic",
+    "pos": [
+      "adj"
+    ],
+    "example": "The team made a dramatic comeback in the final minute.",
+    "synonyms": [
+      "striking",
+      "spectacular",
+      "thrilling"
     ]
   },
   "draw": {
@@ -7485,6 +9155,18 @@
       "leave"
     ]
   },
+  "drought": {
+    "phonetic": "[draʊt]",
+    "conceptId": "drought",
+    "pos": [
+      "noun"
+    ],
+    "example": "The long drought destroyed most of the farmers' crops.",
+    "synonyms": [
+      "dry spell",
+      "water shortage"
+    ]
+  },
   "drown": {
     "phonetic": "[draʊn]",
     "example": "A big wave almost drowned two swimmers near the rocks.",
@@ -7533,6 +9215,18 @@
       "adj"
     ]
   },
+  "due": {
+    "phonetic": "[duː]",
+    "conceptId": "due",
+    "pos": [
+      "adj"
+    ],
+    "example": "The long delay was due to heavy rain yesterday.",
+    "synonyms": [
+      "owing",
+      "attributable"
+    ]
+  },
   "dull": {
     "phonetic": "[dʌl]",
     "example": "A good teacher never calls any student dull or slow.",
@@ -7573,6 +9267,19 @@
       "discard",
       "throw away",
       "dispose of"
+    ]
+  },
+  "duty": {
+    "phonetic": "[ˈduːti]",
+    "conceptId": "duty",
+    "pos": [
+      "noun"
+    ],
+    "example": "It is our duty to protect the rights of children.",
+    "synonyms": [
+      "obligation",
+      "responsibility",
+      "task"
     ]
   },
   "dye": {
@@ -7666,6 +9373,18 @@
       "noun"
     ]
   },
+  "earthquake": {
+    "phonetic": "[ˈɜːrθkweɪk]",
+    "conceptId": "earthquake",
+    "pos": [
+      "noun"
+    ],
+    "example": "A strong earthquake shook the whole city early this morning.",
+    "synonyms": [
+      "quake",
+      "tremor"
+    ]
+  },
   "ease": {
     "conceptId": "ease",
     "phonetic": "[iːz]",
@@ -7692,6 +9411,19 @@
       "oriental"
     ]
   },
+  "eco-friendly": {
+    "phonetic": "[iːkoʊˈfrendli]",
+    "conceptId": "eco-friendly",
+    "pos": [
+      "adj"
+    ],
+    "example": "This shop sells eco-friendly bags made from old cloth.",
+    "synonyms": [
+      "green",
+      "environmentally friendly",
+      "sustainable"
+    ]
+  },
   "economic": {
     "conceptId": "economic",
     "phonetic": "[ekəˈnɑːmɪk]",
@@ -7703,6 +9435,18 @@
       "financial",
       "commercial",
       "monetary"
+    ]
+  },
+  "ecosystem": {
+    "phonetic": "[ˈiːkoʊsɪstəm]",
+    "conceptId": "ecosystem",
+    "pos": [
+      "noun"
+    ],
+    "example": "Pollution can damage a whole forest ecosystem very quickly.",
+    "synonyms": [
+      "habitat",
+      "environment"
     ]
   },
   "edge": {
@@ -7785,6 +9529,19 @@
       "performance"
     ]
   },
+  "efficient": {
+    "phonetic": "[ɪˈfɪʃənt]",
+    "conceptId": "efficient",
+    "pos": [
+      "adj"
+    ],
+    "example": "This new machine is far more efficient than the old one.",
+    "synonyms": [
+      "effective",
+      "productive",
+      "capable"
+    ]
+  },
   "effort": {
     "phonetic": "[ˈefərt]",
     "example": "Mina passed the difficult exam through months of hard effort.",
@@ -7808,6 +9565,20 @@
     "synonyms": [
       "too",
       "also"
+    ]
+  },
+  "elaborate": {
+    "phonetic": "[ɪˈlæbrət]",
+    "conceptId": "elaborate",
+    "pos": [
+      "adj",
+      "verb"
+    ],
+    "example": "She drew an elaborate map of the whole town.",
+    "synonyms": [
+      "detailed",
+      "intricate",
+      "complex"
     ]
   },
   "elder": {
@@ -7898,6 +9669,19 @@
       "adj"
     ]
   },
+  "eliminate": {
+    "phonetic": "[ɪˈlɪməneɪt]",
+    "conceptId": "eliminate",
+    "pos": [
+      "verb"
+    ],
+    "example": "We must eliminate waste to protect our local environment.",
+    "synonyms": [
+      "remove",
+      "eradicate",
+      "abolish"
+    ]
+  },
   "else": {
     "phonetic": "[els]",
     "example": "Does anyone else want to join our science club this year?",
@@ -7908,6 +9692,32 @@
     "synonyms": [
       "besides",
       "otherwise"
+    ]
+  },
+  "embarrassed": {
+    "phonetic": "[ɪmˈberəst]",
+    "conceptId": "embarrassed",
+    "pos": [
+      "adj"
+    ],
+    "example": "She felt embarrassed when she forgot his name.",
+    "synonyms": [
+      "ashamed",
+      "awkward",
+      "self-conscious"
+    ]
+  },
+  "emerge": {
+    "phonetic": "[ɪˈmɜːrdʒ]",
+    "conceptId": "emerge",
+    "pos": [
+      "verb"
+    ],
+    "example": "A young singer emerged as the star of the show.",
+    "synonyms": [
+      "appear",
+      "surface",
+      "arise"
     ]
   },
   "emergency": {
@@ -7946,6 +9756,19 @@
       "feeling",
       "sentiment",
       "passion"
+    ]
+  },
+  "empathy": {
+    "phonetic": "[ˈempəθi]",
+    "conceptId": "empathy",
+    "pos": [
+      "noun"
+    ],
+    "example": "Her empathy helped the new student feel welcome at school.",
+    "synonyms": [
+      "compassion",
+      "sympathy",
+      "understanding"
     ]
   },
   "emphasize": {
@@ -8012,6 +9835,20 @@
       "permit"
     ]
   },
+  "encounter": {
+    "phonetic": "[ɪnˈkaʊntər]",
+    "conceptId": "encounter",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "Travelers often encounter problems they did not expect.",
+    "synonyms": [
+      "meet",
+      "face",
+      "confront"
+    ]
+  },
   "encourage": {
     "conceptId": "encourage",
     "phonetic": "[enˈkɜːrɪdʒ]",
@@ -8035,6 +9872,19 @@
     "synonyms": [
       "turn out",
       "finish up"
+    ]
+  },
+  "endure": {
+    "phonetic": "[endˈjʊr]",
+    "conceptId": "endure",
+    "pos": [
+      "verb"
+    ],
+    "example": "The soldiers had to endure freezing cold for many weeks.",
+    "synonyms": [
+      "bear",
+      "withstand",
+      "tolerate"
     ]
   },
   "enemy": {
@@ -8086,6 +9936,19 @@
     "conceptId": "engineer",
     "pos": [
       "noun"
+    ]
+  },
+  "enhance": {
+    "phonetic": "[enˈhæns]",
+    "conceptId": "enhance",
+    "pos": [
+      "verb"
+    ],
+    "example": "Regular exercise can enhance both memory and mood.",
+    "synonyms": [
+      "improve",
+      "boost",
+      "strengthen"
     ]
   },
   "enjoy": {
@@ -8140,6 +10003,19 @@
       "adj"
     ]
   },
+  "ensure": {
+    "phonetic": "[enˈʃʊr]",
+    "conceptId": "ensure",
+    "pos": [
+      "verb"
+    ],
+    "example": "Please ensure that all the windows are locked before leaving.",
+    "synonyms": [
+      "guarantee",
+      "secure",
+      "confirm"
+    ]
+  },
   "entertain": {
     "conceptId": "entertain",
     "phonetic": "[entərˈteɪn]",
@@ -8151,6 +10027,19 @@
       "amuse",
       "please",
       "host"
+    ]
+  },
+  "enthusiasm": {
+    "phonetic": "[ɪnˈθuːzɪæzəm]",
+    "conceptId": "enthusiasm",
+    "pos": [
+      "noun"
+    ],
+    "example": "The students showed great enthusiasm for the science project.",
+    "synonyms": [
+      "eagerness",
+      "passion",
+      "zeal"
     ]
   },
   "entire": {
@@ -8180,6 +10069,19 @@
       "gate"
     ]
   },
+  "entry": {
+    "phonetic": "[ˈentri]",
+    "conceptId": "entry",
+    "pos": [
+      "noun"
+    ],
+    "example": "His entry into the competition surprised everyone at school.",
+    "synonyms": [
+      "admission",
+      "participation",
+      "access"
+    ]
+  },
   "envelope": {
     "phonetic": "[ˈenvəloʊp]",
     "example": "She sealed the letter inside a thin white envelope.",
@@ -8190,6 +10092,18 @@
     "conceptId": "envelope",
     "pos": [
       "noun"
+    ]
+  },
+  "envious": {
+    "phonetic": "[ˈenvɪəs]",
+    "conceptId": "envious",
+    "pos": [
+      "adj"
+    ],
+    "example": "She felt envious of her friend's long summer holiday.",
+    "synonyms": [
+      "jealous",
+      "covetous"
     ]
   },
   "environment": {
@@ -8244,6 +10158,19 @@
       "supplies"
     ]
   },
+  "erase": {
+    "phonetic": "[ɪˈreɪs]",
+    "conceptId": "erase",
+    "pos": [
+      "verb"
+    ],
+    "example": "Please erase the wrong answer and write it again.",
+    "synonyms": [
+      "delete",
+      "remove",
+      "wipe"
+    ]
+  },
   "eraser": {
     "phonetic": "[ɪˈreɪsər]",
     "example": "Can I borrow your eraser? I made a mistake here.",
@@ -8283,6 +10210,20 @@
       "blow up"
     ]
   },
+  "escape": {
+    "phonetic": "[ɪˈskeɪp]",
+    "conceptId": "escape",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "The prisoners tried to escape through a narrow window.",
+    "synonyms": [
+      "flee",
+      "run away",
+      "break out"
+    ]
+  },
   "especially": {
     "phonetic": "[əˈspeʃli]",
     "example": "I love fruit, especially watermelon on a hot summer day.",
@@ -8307,6 +10248,19 @@
       "composition",
       "article",
       "paper"
+    ]
+  },
+  "essential": {
+    "phonetic": "[eˈsenʃəl]",
+    "conceptId": "essential",
+    "pos": [
+      "adj"
+    ],
+    "example": "Clean water is essential for every living thing.",
+    "synonyms": [
+      "necessary",
+      "vital",
+      "crucial"
     ]
   },
   "establish": {
@@ -8336,6 +10290,19 @@
       "quote"
     ]
   },
+  "eternal": {
+    "phonetic": "[ɪˈtɜːrnəl]",
+    "conceptId": "eternal",
+    "pos": [
+      "adj"
+    ],
+    "example": "They promised eternal friendship on the night before graduation.",
+    "synonyms": [
+      "everlasting",
+      "endless",
+      "timeless"
+    ]
+  },
   "ethic": {
     "conceptId": "ethic",
     "phonetic": "[ˈeθɪk]",
@@ -8347,6 +10314,19 @@
       "morals",
       "principle",
       "values"
+    ]
+  },
+  "ethical": {
+    "phonetic": "[ˈeθɪkəl]",
+    "conceptId": "ethical",
+    "pos": [
+      "adj"
+    ],
+    "example": "Every company should follow ethical rules when treating workers.",
+    "synonyms": [
+      "moral",
+      "principled",
+      "honorable"
     ]
   },
   "ethnic": {
@@ -8412,6 +10392,19 @@
     "conceptId": "evil",
     "pos": [
       "noun"
+    ]
+  },
+  "evolve": {
+    "phonetic": "[ɪˈvɑːlv]",
+    "conceptId": "evolve",
+    "pos": [
+      "verb"
+    ],
+    "example": "Living things evolve slowly over many thousands of years.",
+    "synonyms": [
+      "develop",
+      "progress",
+      "grow"
     ]
   },
   "exact": {
@@ -8481,6 +10474,19 @@
       "noun"
     ]
   },
+  "exceed": {
+    "phonetic": "[ɪkˈsiːd]",
+    "conceptId": "exceed",
+    "pos": [
+      "verb"
+    ],
+    "example": "The cost may exceed our budget by several thousand dollars.",
+    "synonyms": [
+      "surpass",
+      "go beyond",
+      "outdo"
+    ]
+  },
   "excellent": {
     "phonetic": "[ˈeksələnt]",
     "example": "Her speech was excellent, so everyone clapped for a long time.",
@@ -8505,6 +10511,20 @@
     "conceptId": "except",
     "pos": [
       "prep"
+    ]
+  },
+  "excess": {
+    "phonetic": "[ˈekses]",
+    "conceptId": "excess",
+    "pos": [
+      "adj",
+      "noun"
+    ],
+    "example": "Passengers must pay extra for excess baggage on this flight.",
+    "synonyms": [
+      "extra",
+      "surplus",
+      "spare"
     ]
   },
   "exchange": {
@@ -8588,6 +10608,19 @@
       "verb"
     ]
   },
+  "exhibit": {
+    "phonetic": "[ɪɡˈzɪbɪt]",
+    "conceptId": "exhibit",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "The museum opened a new exhibit about ancient farming tools.",
+    "synonyms": [
+      "display",
+      "show"
+    ]
+  },
   "exhibition": {
     "conceptId": "exhibition",
     "phonetic": "[eksəˈbɪʃən]",
@@ -8601,6 +10634,19 @@
       "fair"
     ]
   },
+  "exist": {
+    "phonetic": "[ɪɡˈzɪst]",
+    "conceptId": "exist",
+    "pos": [
+      "verb"
+    ],
+    "example": "Scientists wonder whether life can exist on other cold planets.",
+    "synonyms": [
+      "live",
+      "survive",
+      "remain"
+    ]
+  },
   "exit": {
     "phonetic": "[ˈeɡzɪt]",
     "example": "When the movie ended, everyone walked toward the nearest exit.",
@@ -8612,6 +10658,19 @@
     "conceptId": "exit",
     "pos": [
       "noun"
+    ]
+  },
+  "expand": {
+    "phonetic": "[ɪkˈspænd]",
+    "conceptId": "expand",
+    "pos": [
+      "verb"
+    ],
+    "example": "The company plans to expand its business into Asia.",
+    "synonyms": [
+      "enlarge",
+      "extend",
+      "broaden"
     ]
   },
   "expect": {
@@ -8692,6 +10751,32 @@
     "conceptId": "explain",
     "pos": [
       "verb"
+    ]
+  },
+  "explanation": {
+    "phonetic": "[ekspləˈneɪʃən]",
+    "conceptId": "explanation",
+    "pos": [
+      "noun"
+    ],
+    "example": "The teacher gave a clear explanation of the difficult rule.",
+    "synonyms": [
+      "description",
+      "account",
+      "clarification"
+    ]
+  },
+  "explicit": {
+    "phonetic": "[ɪksˈplɪsət]",
+    "conceptId": "explicit",
+    "pos": [
+      "adj"
+    ],
+    "example": "The teacher gave explicit instructions about the final report.",
+    "synonyms": [
+      "clear",
+      "definite",
+      "specific"
     ]
   },
   "explode": {
@@ -8787,6 +10872,32 @@
       "stretch"
     ]
   },
+  "extensive": {
+    "phonetic": "[ɪkˈstensɪv]",
+    "conceptId": "extensive",
+    "pos": [
+      "adj"
+    ],
+    "example": "The scientist did extensive research on ocean plastic waste.",
+    "synonyms": [
+      "broad",
+      "wide-ranging",
+      "comprehensive"
+    ]
+  },
+  "extent": {
+    "phonetic": "[ɪkˈstent]",
+    "conceptId": "extent",
+    "pos": [
+      "noun"
+    ],
+    "example": "Scientists measured the extent of the damage after the storm.",
+    "synonyms": [
+      "range",
+      "scope",
+      "degree"
+    ]
+  },
   "external": {
     "conceptId": "external",
     "phonetic": "[ɪkˈstɜːrnəl]",
@@ -8810,6 +10921,31 @@
     "synonyms": [
       "dead",
       "vanished"
+    ]
+  },
+  "extinction": {
+    "phonetic": "[ɪkˈstɪŋkʃən]",
+    "conceptId": "extinction",
+    "pos": [
+      "noun"
+    ],
+    "example": "Many wild animals now face the danger of extinction.",
+    "synonyms": [
+      "disappearance",
+      "dying out"
+    ]
+  },
+  "extraordinary": {
+    "phonetic": "[ekstrəˈɔːrdəneri]",
+    "conceptId": "extraordinary",
+    "pos": [
+      "adj"
+    ],
+    "example": "Her memory for names and faces is truly extraordinary.",
+    "synonyms": [
+      "remarkable",
+      "exceptional",
+      "amazing"
     ]
   },
   "extreme": {
@@ -8836,6 +10972,19 @@
       "tale",
       "story",
       "legend"
+    ]
+  },
+  "fabric": {
+    "phonetic": "[ˈfæbrɪk]",
+    "conceptId": "fabric",
+    "pos": [
+      "noun"
+    ],
+    "example": "This soft fabric feels perfect for a summer shirt.",
+    "synonyms": [
+      "cloth",
+      "textile",
+      "material"
     ]
   },
   "facial": {
@@ -9019,6 +11168,32 @@
       "incorrect"
     ]
   },
+  "fame": {
+    "phonetic": "[feɪm]",
+    "conceptId": "fame",
+    "pos": [
+      "noun"
+    ],
+    "example": "His fame spread quickly after the film became popular.",
+    "synonyms": [
+      "renown",
+      "reputation",
+      "celebrity"
+    ]
+  },
+  "familiar": {
+    "phonetic": "[fəˈmɪljər]",
+    "conceptId": "familiar",
+    "pos": [
+      "adj"
+    ],
+    "example": "Her voice sounded familiar, but I forgot her name.",
+    "synonyms": [
+      "well-known",
+      "common",
+      "recognizable"
+    ]
+  },
   "famine": {
     "conceptId": "famine",
     "phonetic": "[ˈfæmən]",
@@ -9046,6 +11221,19 @@
       "adj"
     ]
   },
+  "fancy": {
+    "phonetic": "[ˈfænsi]",
+    "conceptId": "fancy",
+    "pos": [
+      "adj"
+    ],
+    "example": "They ate dinner at a fancy restaurant near the river.",
+    "synonyms": [
+      "elegant",
+      "luxurious",
+      "expensive"
+    ]
+  },
   "fantastic": {
     "conceptId": "fantastic",
     "phonetic": "[fænˈtæstɪk]",
@@ -9071,6 +11259,32 @@
     "conceptId": "fare",
     "pos": [
       "noun"
+    ]
+  },
+  "farewell": {
+    "phonetic": "[ferˈwel]",
+    "conceptId": "farewell",
+    "pos": [
+      "noun"
+    ],
+    "example": "We held a simple farewell for our favorite teacher.",
+    "synonyms": [
+      "goodbye",
+      "send-off",
+      "parting"
+    ]
+  },
+  "fascinate": {
+    "phonetic": "[ˈfæsəneɪt]",
+    "conceptId": "fascinate",
+    "pos": [
+      "verb"
+    ],
+    "example": "Stories about deep ocean creatures fascinate almost every young student.",
+    "synonyms": [
+      "captivate",
+      "enchant",
+      "charm"
     ]
   },
   "fashion": {
@@ -9125,6 +11339,19 @@
       "adj"
     ]
   },
+  "fatal": {
+    "phonetic": "[ˈfeɪtəl]",
+    "conceptId": "fatal",
+    "pos": [
+      "adj"
+    ],
+    "example": "The driver made one fatal mistake on the icy road.",
+    "synonyms": [
+      "deadly",
+      "lethal",
+      "mortal"
+    ]
+  },
   "fate": {
     "conceptId": "fate",
     "phonetic": "[feɪt]",
@@ -9136,6 +11363,19 @@
       "destiny",
       "fortune",
       "luck"
+    ]
+  },
+  "fatigue": {
+    "phonetic": "[fəˈtiːɡ]",
+    "conceptId": "fatigue",
+    "pos": [
+      "noun"
+    ],
+    "example": "After the long hike, fatigue made her legs tremble.",
+    "synonyms": [
+      "tiredness",
+      "exhaustion",
+      "weariness"
     ]
   },
   "faucet": {
@@ -9230,6 +11470,18 @@
       "quality"
     ]
   },
+  "fee": {
+    "phonetic": "[fiː]",
+    "conceptId": "fee",
+    "pos": [
+      "noun"
+    ],
+    "example": "The museum charges a small fee for each visitor.",
+    "synonyms": [
+      "charge",
+      "payment"
+    ]
+  },
   "feed": {
     "phonetic": "[fiːd]",
     "example": "I feed my dog twice a day, morning and evening.",
@@ -9266,6 +11518,18 @@
     "conceptId": "fever",
     "pos": [
       "noun"
+    ]
+  },
+  "fiber": {
+    "phonetic": "[ˈfaɪbər]",
+    "conceptId": "fiber",
+    "pos": [
+      "noun"
+    ],
+    "example": "Beans and apples contain a lot of useful fiber.",
+    "synonyms": [
+      "thread",
+      "strand"
     ]
   },
   "fiction": {
@@ -9400,6 +11664,19 @@
       "funding"
     ]
   },
+  "fine": {
+    "phonetic": "[faɪn]",
+    "conceptId": "fine",
+    "pos": [
+      "adj",
+      "noun"
+    ],
+    "example": "We had a fine day at the beach yesterday.",
+    "synonyms": [
+      "excellent",
+      "splendid"
+    ]
+  },
   "firm": {
     "phonetic": "[fɜːrm]",
     "example": "She had a firm belief that her son would come back.",
@@ -9413,6 +11690,32 @@
     "pos": [
       "adj",
       "noun"
+    ]
+  },
+  "fit": {
+    "phonetic": "[fɪt]",
+    "conceptId": "fit",
+    "pos": [
+      "verb",
+      "adj"
+    ],
+    "example": "These shoes fit my feet perfectly and feel comfortable.",
+    "synonyms": [
+      "suit",
+      "match"
+    ]
+  },
+  "fix": {
+    "phonetic": "[fɪks]",
+    "conceptId": "fix",
+    "pos": [
+      "verb"
+    ],
+    "example": "My uncle can fix almost any broken bicycle quickly.",
+    "synonyms": [
+      "repair",
+      "mend",
+      "restore"
     ]
   },
   "flag": {
@@ -9438,6 +11741,19 @@
     "conceptId": "flame",
     "pos": [
       "noun"
+    ]
+  },
+  "flash": {
+    "phonetic": "[flæʃ]",
+    "conceptId": "flash",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "A sudden flash of lightning lit up the dark sky.",
+    "synonyms": [
+      "flare",
+      "gleam"
     ]
   },
   "flashlight": {
@@ -9553,6 +11869,19 @@
       "smooth",
       "eloquent",
       "articulate"
+    ]
+  },
+  "fluid": {
+    "phonetic": "[ˈfluːəd]",
+    "conceptId": "fluid",
+    "pos": [
+      "noun",
+      "adj"
+    ],
+    "example": "The nurse told him to drink more fluid every day.",
+    "synonyms": [
+      "liquid",
+      "solution"
     ]
   },
   "flute": {
@@ -9801,6 +12130,19 @@
       "proper"
     ]
   },
+  "former": {
+    "phonetic": "[ˈfɔːrmər]",
+    "conceptId": "former",
+    "pos": [
+      "adj"
+    ],
+    "example": "Our former teacher still sends us letters every winter.",
+    "synonyms": [
+      "previous",
+      "past",
+      "earlier"
+    ]
+  },
   "fortunately": {
     "phonetic": "[ˈfɔːrtʃənətli]",
     "example": "Fortunately, nobody was hurt when the old tree fell down.",
@@ -9840,6 +12182,31 @@
       "adv"
     ]
   },
+  "fossil": {
+    "phonetic": "[ˈfɑːsəl]",
+    "conceptId": "fossil",
+    "pos": [
+      "noun"
+    ],
+    "example": "Students found a small fish fossil near the river.",
+    "synonyms": [
+      "remains",
+      "relic"
+    ]
+  },
+  "foster": {
+    "phonetic": "[ˈfɑːstər]",
+    "conceptId": "foster",
+    "pos": [
+      "verb"
+    ],
+    "example": "Good teachers foster curiosity in every young student.",
+    "synonyms": [
+      "nurture",
+      "encourage",
+      "promote"
+    ]
+  },
   "foul": {
     "conceptId": "foul",
     "phonetic": "[faʊl]",
@@ -9852,6 +12219,19 @@
       "violation",
       "offense",
       "infraction"
+    ]
+  },
+  "found": {
+    "phonetic": "[faʊnd]",
+    "conceptId": "found",
+    "pos": [
+      "verb"
+    ],
+    "example": "They plan to found a small school in the village.",
+    "synonyms": [
+      "establish",
+      "create",
+      "start"
     ]
   },
   "foundation": {
@@ -9942,6 +12322,19 @@
       "Parisian"
     ]
   },
+  "frequent": {
+    "phonetic": "[ˈfriːkwənt]",
+    "conceptId": "frequent",
+    "pos": [
+      "adj"
+    ],
+    "example": "Frequent storms damaged the small village last summer.",
+    "synonyms": [
+      "common",
+      "repeated",
+      "regular"
+    ]
+  },
   "frequently": {
     "conceptId": "frequently",
     "phonetic": "[ˈfriːkwəntli]",
@@ -10029,6 +12422,19 @@
       "berry"
     ]
   },
+  "frustrated": {
+    "phonetic": "[ˈfrʌstreɪtəd]",
+    "conceptId": "frustrated",
+    "pos": [
+      "adj"
+    ],
+    "example": "He felt frustrated after failing the test three times.",
+    "synonyms": [
+      "discouraged",
+      "disappointed",
+      "upset"
+    ]
+  },
   "fuel": {
     "conceptId": "fuel",
     "phonetic": "[ˈfjuːəl]",
@@ -10041,6 +12447,19 @@
       "gas",
       "oil",
       "energy"
+    ]
+  },
+  "fulfill": {
+    "phonetic": "[fʊlˈfɪl]",
+    "conceptId": "fulfill",
+    "pos": [
+      "verb"
+    ],
+    "example": "She worked hard to fulfill her dream of becoming a doctor.",
+    "synonyms": [
+      "achieve",
+      "accomplish",
+      "realize"
     ]
   },
   "fun": {
@@ -10124,6 +12543,19 @@
       "noun"
     ]
   },
+  "furious": {
+    "phonetic": "[ˈfjʊrɪəs]",
+    "conceptId": "furious",
+    "pos": [
+      "adj"
+    ],
+    "example": "My father was furious when he saw the broken window.",
+    "synonyms": [
+      "angry",
+      "enraged",
+      "outraged"
+    ]
+  },
   "furniture": {
     "phonetic": "[ˈfɜːrnɪtʃər]",
     "example": "We bought new furniture for the living room last weekend.",
@@ -10148,6 +12580,19 @@
     "conceptId": "further",
     "pos": [
       "adv"
+    ]
+  },
+  "furthermore": {
+    "phonetic": "[ˈfɜːrðərmɔːr]",
+    "conceptId": "furthermore",
+    "pos": [
+      "adv"
+    ],
+    "example": "The plan is expensive; furthermore, it may not work.",
+    "synonyms": [
+      "moreover",
+      "besides",
+      "additionally"
     ]
   },
   "future": {
@@ -10263,6 +12708,43 @@
       "verb"
     ]
   },
+  "gear": {
+    "phonetic": "[ɡɪr]",
+    "conceptId": "gear",
+    "pos": [
+      "noun"
+    ],
+    "example": "Climbers must check their gear before starting the steep hike.",
+    "synonyms": [
+      "equipment",
+      "kit",
+      "outfit"
+    ]
+  },
+  "gender": {
+    "phonetic": "[ˈdʒendər]",
+    "conceptId": "gender",
+    "pos": [
+      "noun"
+    ],
+    "example": "The school treats every student equally regardless of gender.",
+    "synonyms": [
+      "sex",
+      "identity"
+    ]
+  },
+  "gene": {
+    "phonetic": "[dʒiːn]",
+    "conceptId": "gene",
+    "pos": [
+      "noun"
+    ],
+    "example": "A single gene can change the color of flowers.",
+    "synonyms": [
+      "factor",
+      "DNA"
+    ]
+  },
   "general": {
     "phonetic": "[ˈdʒenərəl]",
     "example": "The general ordered his soldiers to move before sunrise.",
@@ -10273,6 +12755,18 @@
     "conceptId": "general",
     "pos": [
       "noun"
+    ]
+  },
+  "generate": {
+    "phonetic": "[ˈdʒenəreɪt]",
+    "conceptId": "generate",
+    "pos": [
+      "verb"
+    ],
+    "example": "These panels generate enough power for the whole building.",
+    "synonyms": [
+      "produce",
+      "create"
     ]
   },
   "generation": {
@@ -10324,6 +12818,19 @@
       "talent",
       "gift",
       "brilliance"
+    ]
+  },
+  "genre": {
+    "phonetic": "[ˈʒɑːnrə]",
+    "conceptId": "genre",
+    "pos": [
+      "noun"
+    ],
+    "example": "Science fiction is my favorite genre of film.",
+    "synonyms": [
+      "category",
+      "type",
+      "style"
     ]
   },
   "geography": {
@@ -10489,6 +12996,20 @@
       "surrender"
     ]
   },
+  "glance": {
+    "phonetic": "[ɡlæns]",
+    "conceptId": "glance",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "She likes to glance at the news every morning.",
+    "synonyms": [
+      "peek",
+      "glimpse",
+      "peep"
+    ]
+  },
   "glory": {
     "phonetic": "[ˈɡlɔːri]",
     "example": "The old soldier still remembers the glory of that famous victory.",
@@ -10565,6 +13086,19 @@
     "conceptId": "god",
     "pos": [
       "noun"
+    ]
+  },
+  "govern": {
+    "phonetic": "[ˈɡʌvərn]",
+    "conceptId": "govern",
+    "pos": [
+      "verb"
+    ],
+    "example": "Elected leaders govern the country for five whole years.",
+    "synonyms": [
+      "rule",
+      "control",
+      "administer"
     ]
   },
   "government": {
@@ -10672,6 +13206,34 @@
       "adj"
     ]
   },
+  "grant": {
+    "phonetic": "[ɡrænt]",
+    "conceptId": "grant",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "The school granted her extra time for the test.",
+    "synonyms": [
+      "give",
+      "award",
+      "allow"
+    ]
+  },
+  "grasp": {
+    "phonetic": "[ɡræsp]",
+    "conceptId": "grasp",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "Young children cannot easily grasp such a difficult idea.",
+    "synonyms": [
+      "comprehend",
+      "understand",
+      "follow"
+    ]
+  },
   "grass": {
     "phonetic": "[ɡræs]",
     "example": "Cows eat grass in the wide green field all day.",
@@ -10696,6 +13258,18 @@
       "thankful",
       "appreciative",
       "obliged"
+    ]
+  },
+  "gratitude": {
+    "phonetic": "[ˈɡrætətuːd]",
+    "conceptId": "gratitude",
+    "pos": [
+      "noun"
+    ],
+    "example": "She expressed deep gratitude to everyone who helped her.",
+    "synonyms": [
+      "thankfulness",
+      "appreciation"
     ]
   },
   "grave": {
@@ -10787,6 +13361,20 @@
     "conceptId": "greeting",
     "pos": [
       "noun"
+    ]
+  },
+  "grip": {
+    "phonetic": "[ɡrɪp]",
+    "conceptId": "grip",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "He kept a firm grip on the rope while climbing.",
+    "synonyms": [
+      "hold",
+      "grasp",
+      "clutch"
     ]
   },
   "grocery": {
@@ -10937,6 +13525,31 @@
       "noun"
     ]
   },
+  "habitat": {
+    "phonetic": "[ˈhæbətæt]",
+    "conceptId": "habitat",
+    "pos": [
+      "noun"
+    ],
+    "example": "Cutting down trees destroys the natural habitat of many birds.",
+    "synonyms": [
+      "environment",
+      "home",
+      "territory"
+    ]
+  },
+  "half": {
+    "phonetic": "[hæf]",
+    "conceptId": "half",
+    "pos": [
+      "noun"
+    ],
+    "example": "Half of the class finished the test before lunch.",
+    "synonyms": [
+      "fifty percent",
+      "one half"
+    ]
+  },
   "halt": {
     "phonetic": "[hɔːlt]",
     "example": "The bus halted suddenly when a child ran into the street.",
@@ -11066,6 +13679,19 @@
       "adv"
     ]
   },
+  "hardship": {
+    "phonetic": "[ˈhɑːrdʃɪp]",
+    "conceptId": "hardship",
+    "pos": [
+      "noun"
+    ],
+    "example": "Many families faced great hardship during the long war.",
+    "synonyms": [
+      "suffering",
+      "adversity",
+      "difficulty"
+    ]
+  },
   "harm": {
     "conceptId": "harm",
     "phonetic": "[hɑːrm]",
@@ -11092,6 +13718,19 @@
     "conceptId": "harmful",
     "pos": [
       "adj"
+    ]
+  },
+  "harsh": {
+    "phonetic": "[hɑːrʃ]",
+    "conceptId": "harsh",
+    "pos": [
+      "adj"
+    ],
+    "example": "The harsh winter wind made our faces red and sore.",
+    "synonyms": [
+      "severe",
+      "brutal",
+      "bitter"
     ]
   },
   "harvest": {
@@ -11131,6 +13770,18 @@
     ],
     "phonetic": "[ˈheɪstəli]",
     "example": "He hastily packed his bag and ran to the station."
+  },
+  "hatch": {
+    "phonetic": "[hætʃ]",
+    "conceptId": "hatch",
+    "pos": [
+      "verb"
+    ],
+    "example": "The baby birds hatched early on a warm morning.",
+    "synonyms": [
+      "emerge",
+      "incubate"
+    ]
   },
   "hate": {
     "phonetic": "[heɪt]",
@@ -11372,6 +14023,18 @@
       "employ",
       "recruit",
       "take on"
+    ]
+  },
+  "historical": {
+    "phonetic": "[hɪˈstɔːrɪkəl]",
+    "conceptId": "historical",
+    "pos": [
+      "adj"
+    ],
+    "example": "The museum keeps many historical records from the last century.",
+    "synonyms": [
+      "historic",
+      "past"
     ]
   },
   "history": {
@@ -11619,6 +14282,32 @@
       "noun"
     ]
   },
+  "hospitality": {
+    "phonetic": "[hɑːspəˈtæləti]",
+    "conceptId": "hospitality",
+    "pos": [
+      "noun"
+    ],
+    "example": "We will never forget the warm hospitality of our hosts.",
+    "synonyms": [
+      "welcome",
+      "warmth"
+    ]
+  },
+  "host": {
+    "phonetic": "[hoʊst]",
+    "conceptId": "host",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "Our city will host an international music festival next spring.",
+    "synonyms": [
+      "hold",
+      "organize",
+      "stage"
+    ]
+  },
   "household": {
     "conceptId": "household",
     "phonetic": "[ˈhaʊshoʊld]",
@@ -11696,6 +14385,18 @@
       "modest",
       "unassuming",
       "meek"
+    ]
+  },
+  "humor": {
+    "phonetic": "[ˈhjuːmər]",
+    "conceptId": "humor",
+    "pos": [
+      "noun"
+    ],
+    "example": "Her sense of humor made the whole class laugh.",
+    "synonyms": [
+      "wit",
+      "comedy"
     ]
   },
   "hunger": {
@@ -11825,6 +14526,20 @@
       "noun"
     ]
   },
+  "ideal": {
+    "phonetic": "[aɪˈdiːl]",
+    "conceptId": "ideal",
+    "pos": [
+      "adj",
+      "noun"
+    ],
+    "example": "This quiet beach is an ideal place for a picnic.",
+    "synonyms": [
+      "perfect",
+      "excellent",
+      "suitable"
+    ]
+  },
   "identical": {
     "conceptId": "identical",
     "phonetic": "[aɪˈdentɪkəl]",
@@ -11903,6 +14618,19 @@
       "ailment"
     ]
   },
+  "illusion": {
+    "phonetic": "[ɪˈluːʒən]",
+    "conceptId": "illusion",
+    "pos": [
+      "noun"
+    ],
+    "example": "The calm surface of the lake creates an illusion of safety.",
+    "synonyms": [
+      "delusion",
+      "fantasy",
+      "hallucination"
+    ]
+  },
   "illustrate": {
     "conceptId": "illustrate",
     "phonetic": "[ˈɪləstreɪt]",
@@ -11940,6 +14668,18 @@
       "copy",
       "mimic",
       "mirror"
+    ]
+  },
+  "immediate": {
+    "phonetic": "[ɪˈmiːdɪət]",
+    "conceptId": "immediate",
+    "pos": [
+      "adj"
+    ],
+    "example": "The medicine had an immediate effect on his pain.",
+    "synonyms": [
+      "instant",
+      "prompt"
     ]
   },
   "immediately": {
@@ -11994,6 +14734,19 @@
       "effect",
       "influence",
       "shock"
+    ]
+  },
+  "imply": {
+    "phonetic": "[ɪmˈplaɪ]",
+    "conceptId": "imply",
+    "pos": [
+      "verb"
+    ],
+    "example": "His silence seemed to imply that he disagreed with us.",
+    "synonyms": [
+      "suggest",
+      "hint",
+      "indicate"
     ]
   },
   "import": {
@@ -12059,6 +14812,19 @@
       "amaze",
       "move",
       "touch"
+    ]
+  },
+  "impressed": {
+    "phonetic": "[ɪmˈprest]",
+    "conceptId": "impressed",
+    "pos": [
+      "adj"
+    ],
+    "example": "The teacher was deeply impressed by his honest and careful answer.",
+    "synonyms": [
+      "amazed",
+      "moved",
+      "astonished"
     ]
   },
   "impression": {
@@ -12177,6 +14943,19 @@
       "following"
     ]
   },
+  "incentive": {
+    "phonetic": "[ɪnˈsentɪv]",
+    "conceptId": "incentive",
+    "pos": [
+      "noun"
+    ],
+    "example": "The company offered a small incentive to workers who arrived early.",
+    "synonyms": [
+      "reward",
+      "bonus",
+      "motivation"
+    ]
+  },
   "incident": {
     "conceptId": "incident",
     "phonetic": "[ˈɪnsədənt]",
@@ -12203,6 +14982,19 @@
       "verb"
     ]
   },
+  "income": {
+    "phonetic": "[ˈɪnkʌm]",
+    "conceptId": "income",
+    "pos": [
+      "noun"
+    ],
+    "example": "His monthly income barely covers rent and food costs.",
+    "synonyms": [
+      "earnings",
+      "revenue",
+      "salary"
+    ]
+  },
   "increase": {
     "phonetic": "[ɪnˈkriːs]",
     "example": "There was a big increase in the number of club members.",
@@ -12215,6 +15007,19 @@
     "conceptId": "increase",
     "pos": [
       "verb"
+    ]
+  },
+  "incredible": {
+    "phonetic": "[ɪnˈkredəbəl]",
+    "conceptId": "incredible",
+    "pos": [
+      "adj"
+    ],
+    "example": "She showed incredible courage while helping the injured driver.",
+    "synonyms": [
+      "amazing",
+      "unbelievable",
+      "extraordinary"
     ]
   },
   "indeed": {
@@ -12335,6 +15140,19 @@
       "virus"
     ]
   },
+  "inferior": {
+    "phonetic": "[ɪnˈfɪrɪər]",
+    "conceptId": "inferior",
+    "pos": [
+      "adj"
+    ],
+    "example": "These cheap tools are clearly inferior to the older ones.",
+    "synonyms": [
+      "lower",
+      "poorer",
+      "worse"
+    ]
+  },
   "influence": {
     "conceptId": "influence",
     "phonetic": "[ˈɪnfluəns]",
@@ -12389,6 +15207,20 @@
       "element"
     ]
   },
+  "initial": {
+    "phonetic": "[ɪˈnɪʃəl]",
+    "conceptId": "initial",
+    "pos": [
+      "adj",
+      "noun"
+    ],
+    "example": "Our initial plan changed after we heard her advice.",
+    "synonyms": [
+      "first",
+      "early",
+      "original"
+    ]
+  },
   "injure": {
     "conceptId": "injure",
     "phonetic": "[ˈɪndʒər]",
@@ -12441,6 +15273,19 @@
       "naive"
     ]
   },
+  "innovation": {
+    "phonetic": "[ɪnəˈveɪʃən]",
+    "conceptId": "innovation",
+    "pos": [
+      "noun"
+    ],
+    "example": "This innovation changed how people share news online.",
+    "synonyms": [
+      "invention",
+      "breakthrough",
+      "novelty"
+    ]
+  },
   "inquire": {
     "conceptId": "inquire",
     "phonetic": "[ɪnˈkwaɪr]",
@@ -12491,6 +15336,32 @@
       "demand"
     ]
   },
+  "inspire": {
+    "phonetic": "[ɪnˈspaɪr]",
+    "conceptId": "inspire",
+    "pos": [
+      "verb"
+    ],
+    "example": "Great teachers inspire students to follow their own dreams.",
+    "synonyms": [
+      "motivate",
+      "encourage",
+      "stimulate"
+    ]
+  },
+  "install": {
+    "phonetic": "[ɪnˈstɔːl]",
+    "conceptId": "install",
+    "pos": [
+      "verb"
+    ],
+    "example": "Workers will install the new machine on Monday morning.",
+    "synonyms": [
+      "set up",
+      "fit",
+      "place"
+    ]
+  },
   "instance": {
     "conceptId": "instance",
     "phonetic": "[ˈɪnstəns]",
@@ -12518,6 +15389,18 @@
       "quick"
     ]
   },
+  "instantly": {
+    "phonetic": "[ˈɪnstəntli]",
+    "conceptId": "instantly",
+    "pos": [
+      "adv"
+    ],
+    "example": "The dog recognized its owner instantly and ran over.",
+    "synonyms": [
+      "immediately",
+      "promptly"
+    ]
+  },
   "instead": {
     "phonetic": "[ɪnˈsted]",
     "example": "The shop had no orange juice, so I bought milk instead.",
@@ -12540,6 +15423,19 @@
     "synonyms": [
       "in place of",
       "rather than"
+    ]
+  },
+  "instinct": {
+    "phonetic": "[ˈɪnstɪŋkt]",
+    "conceptId": "instinct",
+    "pos": [
+      "noun"
+    ],
+    "example": "Birds build nests by instinct, not by careful learning.",
+    "synonyms": [
+      "intuition",
+      "impulse",
+      "urge"
     ]
   },
   "institution": {
@@ -12568,6 +15464,19 @@
       "order"
     ]
   },
+  "instruction": {
+    "phonetic": "[ɪnsˈtrʌkʃən]",
+    "conceptId": "instruction",
+    "pos": [
+      "noun"
+    ],
+    "example": "Follow the instruction on the box to build the shelf.",
+    "synonyms": [
+      "direction",
+      "guideline",
+      "manual"
+    ]
+  },
   "instrument": {
     "phonetic": "[ˈɪnstrəmənt]",
     "example": "The scientist used a special instrument to measure the tiny insect.",
@@ -12579,6 +15488,44 @@
     "conceptId": "instrument",
     "pos": [
       "noun"
+    ]
+  },
+  "insult": {
+    "phonetic": "[ɪnˈsʌlt]",
+    "conceptId": "insult",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "Never insult someone just because you disagree with them.",
+    "synonyms": [
+      "offend",
+      "humiliate",
+      "mock"
+    ]
+  },
+  "insurance": {
+    "phonetic": "[ɪnˈʃʊrəns]",
+    "conceptId": "insurance",
+    "pos": [
+      "noun"
+    ],
+    "example": "My father pays for car insurance every single month.",
+    "synonyms": [
+      "coverage",
+      "assurance"
+    ]
+  },
+  "intake": {
+    "phonetic": "[ˈɪnteɪk]",
+    "conceptId": "intake",
+    "pos": [
+      "noun"
+    ],
+    "example": "Doctors advise a lower salt intake for better health.",
+    "synonyms": [
+      "consumption",
+      "uptake"
     ]
   },
   "intellectual": {
@@ -12608,6 +15555,19 @@
       "cleverness"
     ]
   },
+  "intelligent": {
+    "phonetic": "[ɪnˈtelədʒənt]",
+    "conceptId": "intelligent",
+    "pos": [
+      "adj"
+    ],
+    "example": "Dolphins are intelligent animals that solve problems quickly.",
+    "synonyms": [
+      "smart",
+      "clever",
+      "bright"
+    ]
+  },
   "intend": {
     "conceptId": "intend",
     "phonetic": "[ɪnˈtend]",
@@ -12619,6 +15579,45 @@
       "mean",
       "plan",
       "aim"
+    ]
+  },
+  "intense": {
+    "phonetic": "[ɪnˈtens]",
+    "conceptId": "intense",
+    "pos": [
+      "adj"
+    ],
+    "example": "The intense heat made it hard to breathe outside.",
+    "synonyms": [
+      "extreme",
+      "severe",
+      "fierce"
+    ]
+  },
+  "intention": {
+    "phonetic": "[ɪnˈtentʃən]",
+    "conceptId": "intention",
+    "pos": [
+      "noun"
+    ],
+    "example": "Her intention was to help, not to hurt anyone.",
+    "synonyms": [
+      "purpose",
+      "aim",
+      "intent"
+    ]
+  },
+  "interact": {
+    "phonetic": "[ɪntərˈækt]",
+    "conceptId": "interact",
+    "pos": [
+      "verb"
+    ],
+    "example": "Children learn new words when they interact with adults.",
+    "synonyms": [
+      "communicate",
+      "mingle",
+      "engage"
     ]
   },
   "interest": {
@@ -12648,6 +15647,19 @@
       "adj"
     ]
   },
+  "interfere": {
+    "phonetic": "[ɪntərˈfɪr]",
+    "conceptId": "interfere",
+    "pos": [
+      "verb"
+    ],
+    "example": "Loud noise can interfere with your ability to study well.",
+    "synonyms": [
+      "disturb",
+      "hinder",
+      "meddle"
+    ]
+  },
   "interior": {
     "conceptId": "interior",
     "phonetic": "[ɪnˈtɪrɪər]",
@@ -12659,6 +15671,19 @@
     "synonyms": [
       "inner",
       "internal",
+      "inside"
+    ]
+  },
+  "internal": {
+    "phonetic": "[ɪnˈtɜːrnəl]",
+    "conceptId": "internal",
+    "pos": [
+      "adj"
+    ],
+    "example": "The building suffered serious internal damage from the fire.",
+    "synonyms": [
+      "inner",
+      "interior",
       "inside"
     ]
   },
@@ -12740,6 +15765,31 @@
       "verb"
     ]
   },
+  "introduction": {
+    "phonetic": "[ɪntrəˈdʌkʃən]",
+    "conceptId": "introduction",
+    "pos": [
+      "noun"
+    ],
+    "example": "The introduction of new rules changed our daily routine.",
+    "synonyms": [
+      "launch",
+      "adoption",
+      "presentation"
+    ]
+  },
+  "invade": {
+    "phonetic": "[ɪnˈveɪd]",
+    "conceptId": "invade",
+    "pos": [
+      "verb"
+    ],
+    "example": "The enemy army tried to invade the small country.",
+    "synonyms": [
+      "attack",
+      "raid"
+    ]
+  },
   "invader": {
     "phonetic": "[ɪnˈveɪdər]",
     "example": "The villagers hid in the forest when the invaders arrived.",
@@ -12766,6 +15816,19 @@
       "verb"
     ]
   },
+  "invention": {
+    "phonetic": "[ɪnˈvenʃən]",
+    "conceptId": "invention",
+    "pos": [
+      "noun"
+    ],
+    "example": "The invention of the printing press changed the whole world.",
+    "synonyms": [
+      "creation",
+      "discovery",
+      "innovation"
+    ]
+  },
   "invest": {
     "conceptId": "invest",
     "phonetic": "[ɪnˈvest]",
@@ -12777,6 +15840,32 @@
       "fund",
       "finance",
       "spend"
+    ]
+  },
+  "investigate": {
+    "phonetic": "[ɪnˈvestəɡeɪt]",
+    "conceptId": "investigate",
+    "pos": [
+      "verb"
+    ],
+    "example": "Police will investigate the cause of the sudden fire.",
+    "synonyms": [
+      "examine",
+      "explore",
+      "probe"
+    ]
+  },
+  "invisible": {
+    "phonetic": "[ɪnˈvɪzəbəl]",
+    "conceptId": "invisible",
+    "pos": [
+      "adj"
+    ],
+    "example": "Air is invisible, but we cannot live without it.",
+    "synonyms": [
+      "unseen",
+      "hidden",
+      "transparent"
     ]
   },
   "invitation": {
@@ -12854,6 +15943,18 @@
       "separate",
       "divide",
       "cut off"
+    ]
+  },
+  "isolated": {
+    "phonetic": "[ˈaɪsəleɪtəd]",
+    "conceptId": "isolated",
+    "pos": [
+      "adj"
+    ],
+    "example": "The village stayed isolated for weeks after the heavy snow.",
+    "synonyms": [
+      "remote",
+      "secluded"
     ]
   },
   "issue": {
@@ -12985,6 +16086,18 @@
       "noun"
     ]
   },
+  "journal": {
+    "phonetic": "[ˈdʒɜːrnəl]",
+    "conceptId": "journal",
+    "pos": [
+      "noun"
+    ],
+    "example": "He writes in his journal every night before sleeping.",
+    "synonyms": [
+      "diary",
+      "log"
+    ]
+  },
   "journalism": {
     "conceptId": "journalism",
     "phonetic": "[ˈdʒɜːrnəlɪzəm]",
@@ -13060,6 +16173,20 @@
       "panel",
       "judges",
       "jurors"
+    ]
+  },
+  "just": {
+    "phonetic": "[dʒʌst]",
+    "conceptId": "just",
+    "pos": [
+      "adj",
+      "adv"
+    ],
+    "example": "A just judge listens carefully to both sides.",
+    "synonyms": [
+      "fair",
+      "righteous",
+      "impartial"
     ]
   },
   "keep in mind": {
@@ -13280,6 +16407,19 @@
       "adv"
     ]
   },
+  "launch": {
+    "phonetic": "[lɔːntʃ]",
+    "conceptId": "launch",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "The company will launch a new phone next spring.",
+    "synonyms": [
+      "release",
+      "introduce"
+    ]
+  },
   "laundry": {
     "phonetic": "[ˈlɔːndri]",
     "example": "I took my father's coat to the laundry near the station.",
@@ -13450,6 +16590,19 @@
       "scraps"
     ]
   },
+  "legal": {
+    "phonetic": "[ˈliːɡəl]",
+    "conceptId": "legal",
+    "pos": [
+      "adj"
+    ],
+    "example": "You need legal advice before signing that long contract.",
+    "synonyms": [
+      "lawful",
+      "legitimate",
+      "judicial"
+    ]
+  },
   "legend": {
     "conceptId": "legend",
     "phonetic": "[ˈledʒənd]",
@@ -13513,6 +16666,20 @@
       "noun"
     ]
   },
+  "level": {
+    "phonetic": "[ˈlevəl]",
+    "conceptId": "level",
+    "pos": [
+      "noun",
+      "adj"
+    ],
+    "example": "His English is at a very high level now.",
+    "synonyms": [
+      "standard",
+      "degree",
+      "rank"
+    ]
+  },
   "liberty": {
     "phonetic": "[ˈlɪbərti]",
     "example": "The people fought bravely to win their liberty from the cruel king.",
@@ -13548,6 +16715,19 @@
     "conceptId": "license",
     "pos": [
       "noun"
+    ]
+  },
+  "lie": {
+    "phonetic": "[laɪ]",
+    "conceptId": "lie",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "I like to lie on the warm grass.",
+    "synonyms": [
+      "recline",
+      "rest"
     ]
   },
   "life": {
@@ -13598,6 +16778,19 @@
       "probable",
       "expected",
       "possible"
+    ]
+  },
+  "likewise": {
+    "phonetic": "[ˈlaɪkwaɪz]",
+    "conceptId": "likewise",
+    "pos": [
+      "adv"
+    ],
+    "example": "He bowed politely, and his younger brother did likewise.",
+    "synonyms": [
+      "similarly",
+      "equally",
+      "also"
     ]
   },
   "limit": {
@@ -13785,6 +16978,19 @@
       "sense"
     ]
   },
+  "logical": {
+    "phonetic": "[ˈlɑːdʒɪkəl]",
+    "conceptId": "logical",
+    "pos": [
+      "adj"
+    ],
+    "example": "She gave a logical explanation for the strange test results.",
+    "synonyms": [
+      "reasonable",
+      "rational",
+      "sensible"
+    ]
+  },
   "lonely": {
     "phonetic": "[ˈloʊnli]",
     "example": "He felt lonely in the new city without any friends.",
@@ -13940,6 +17146,19 @@
       "adj"
     ]
   },
+  "loyal": {
+    "phonetic": "[ˈlɔɪəl]",
+    "conceptId": "loyal",
+    "pos": [
+      "adj"
+    ],
+    "example": "A loyal friend stays beside you in hard times.",
+    "synonyms": [
+      "faithful",
+      "devoted",
+      "dedicated"
+    ]
+  },
   "luck": {
     "phonetic": "[lʌk]",
     "example": "Good luck helped him find his lost wallet on the bus.",
@@ -14055,6 +17274,20 @@
       "claim"
     ]
   },
+  "major": {
+    "phonetic": "[ˈmeɪdʒər]",
+    "conceptId": "major",
+    "pos": [
+      "adj",
+      "noun"
+    ],
+    "example": "Traffic is a major problem in most large cities today.",
+    "synonyms": [
+      "main",
+      "principal",
+      "chief"
+    ]
+  },
   "make a decision": {
     "conceptId": "make a decision",
     "phonetic": "[meɪk ə dɪˈsɪʒən]",
@@ -14092,6 +17325,19 @@
       "compensate for",
       "cover",
       "offset"
+    ]
+  },
+  "male": {
+    "phonetic": "[meɪl]",
+    "conceptId": "male",
+    "pos": [
+      "adj",
+      "noun"
+    ],
+    "example": "The male lion protects his family from other animals.",
+    "synonyms": [
+      "masculine",
+      "manly"
     ]
   },
   "mammal": {
@@ -14199,6 +17445,19 @@
     "pos": [
       "noun",
       "verb"
+    ]
+  },
+  "marine": {
+    "phonetic": "[mərˈiːn]",
+    "conceptId": "marine",
+    "pos": [
+      "adj"
+    ],
+    "example": "Marine animals such as whales need clean ocean water.",
+    "synonyms": [
+      "oceanic",
+      "maritime",
+      "nautical"
     ]
   },
   "marry": {
@@ -14317,6 +17576,18 @@
       "noun"
     ]
   },
+  "mathematics": {
+    "phonetic": "[mæθəˈmætɪks]",
+    "conceptId": "mathematics",
+    "pos": [
+      "noun"
+    ],
+    "example": "Mathematics helps us understand patterns hidden in nature.",
+    "synonyms": [
+      "math",
+      "arithmetic"
+    ]
+  },
   "matter": {
     "phonetic": "[ˈmætər]",
     "example": "Let's talk about this matter again after the class ends.",
@@ -14344,6 +17615,20 @@
       "ripe"
     ]
   },
+  "maximum": {
+    "phonetic": "[ˈmæksəməm]",
+    "conceptId": "maximum",
+    "pos": [
+      "adj",
+      "noun"
+    ],
+    "example": "The maximum speed on this road is sixty kilometers per hour.",
+    "synonyms": [
+      "greatest",
+      "highest",
+      "top"
+    ]
+  },
   "maybe": {
     "phonetic": "[ˈmeɪbi]",
     "example": "Maybe we should take an umbrella; the sky looks gray.",
@@ -14369,6 +17654,21 @@
       "noun"
     ]
   },
+  "mean": {
+    "phonetic": "[miːn]",
+    "conceptId": "mean",
+    "pos": [
+      "verb",
+      "noun",
+      "adj"
+    ],
+    "example": "These red signs mean that the road is closed.",
+    "synonyms": [
+      "signify",
+      "indicate",
+      "denote"
+    ]
+  },
   "meaning": {
     "conceptId": "meaning",
     "phonetic": "[ˈmiːnɪŋ]",
@@ -14380,6 +17680,18 @@
       "sense",
       "significance",
       "message"
+    ]
+  },
+  "meanwhile": {
+    "phonetic": "[ˈmiːnwaɪl]",
+    "conceptId": "meanwhile",
+    "pos": [
+      "adv"
+    ],
+    "example": "I cooked dinner; meanwhile, my brother washed the dishes.",
+    "synonyms": [
+      "meantime",
+      "simultaneously"
     ]
   },
   "measure": {
@@ -14405,6 +17717,18 @@
     "conceptId": "meat",
     "pos": [
       "noun"
+    ]
+  },
+  "mechanic": {
+    "phonetic": "[məˈkænɪk]",
+    "conceptId": "mechanic",
+    "pos": [
+      "noun"
+    ],
+    "example": "The mechanic fixed our car engine in two hours.",
+    "synonyms": [
+      "repairman",
+      "technician"
     ]
   },
   "mechanical": {
@@ -14590,6 +17914,19 @@
       "alloy"
     ]
   },
+  "metaphor": {
+    "phonetic": "[ˈmetəfɔr]",
+    "conceptId": "metaphor",
+    "pos": [
+      "noun"
+    ],
+    "example": "The poet used a metaphor to describe her lonely heart.",
+    "synonyms": [
+      "analogy",
+      "comparison",
+      "symbol"
+    ]
+  },
   "method": {
     "phonetic": "[ˈmeθəd]",
     "example": "My teacher showed us an easy method for memorizing English words.",
@@ -14627,6 +17964,19 @@
     "conceptId": "might",
     "pos": [
       "noun"
+    ]
+  },
+  "migrate": {
+    "phonetic": "[ˈmaɪɡreɪt]",
+    "conceptId": "migrate",
+    "pos": [
+      "verb"
+    ],
+    "example": "Many birds migrate south before the cold winter arrives.",
+    "synonyms": [
+      "relocate",
+      "move",
+      "travel"
     ]
   },
   "mild": {
@@ -14719,6 +18069,19 @@
       "rock"
     ]
   },
+  "minimum": {
+    "phonetic": "[ˈmɪnəməm]",
+    "conceptId": "minimum",
+    "pos": [
+      "noun",
+      "adj"
+    ],
+    "example": "Visitors should keep noise to a minimum inside the library.",
+    "synonyms": [
+      "least",
+      "lowest level"
+    ]
+  },
   "minister": {
     "conceptId": "minister",
     "phonetic": "[ˈmɪnəstər]",
@@ -14744,6 +18107,19 @@
       "small group"
     ]
   },
+  "minute": {
+    "phonetic": "[ˈmɪnət]",
+    "conceptId": "minute",
+    "pos": [
+      "noun",
+      "adj"
+    ],
+    "example": "The bus will arrive in about ten minutes.",
+    "synonyms": [
+      "moment",
+      "instant"
+    ]
+  },
   "miracle": {
     "conceptId": "miracle",
     "phonetic": "[ˈmɪrəkəl]",
@@ -14755,6 +18131,19 @@
       "wonder",
       "marvel",
       "magic"
+    ]
+  },
+  "miserable": {
+    "phonetic": "[ˈmɪzərəbəl]",
+    "conceptId": "miserable",
+    "pos": [
+      "adj"
+    ],
+    "example": "He felt miserable after losing the match last night.",
+    "synonyms": [
+      "wretched",
+      "unhappy",
+      "gloomy"
     ]
   },
   "miss": {
@@ -14797,6 +18186,19 @@
       "noun"
     ]
   },
+  "misunderstanding": {
+    "phonetic": "[mɪsəndərˈstændɪŋ]",
+    "conceptId": "misunderstanding",
+    "pos": [
+      "noun"
+    ],
+    "example": "A small misunderstanding grew into a serious argument between them.",
+    "synonyms": [
+      "misconception",
+      "confusion",
+      "mistake"
+    ]
+  },
   "mixture": {
     "conceptId": "mixture",
     "phonetic": "[ˈmɪkstʃər]",
@@ -14808,6 +18210,19 @@
       "blend",
       "mix",
       "combination"
+    ]
+  },
+  "mobile": {
+    "phonetic": "[ˈmoʊbəl]",
+    "conceptId": "mobile",
+    "pos": [
+      "adj",
+      "noun"
+    ],
+    "example": "This mobile clinic visits small villages every single week.",
+    "synonyms": [
+      "movable",
+      "portable"
     ]
   },
   "moderate": {
@@ -14835,6 +18250,32 @@
     "conceptId": "modern",
     "pos": [
       "adj"
+    ]
+  },
+  "modest": {
+    "phonetic": "[ˈmɑːdəst]",
+    "conceptId": "modest",
+    "pos": [
+      "adj"
+    ],
+    "example": "They live comfortably on a modest monthly income.",
+    "synonyms": [
+      "moderate",
+      "reasonable",
+      "limited"
+    ]
+  },
+  "modify": {
+    "phonetic": "[ˈmɑːdəfaɪ]",
+    "conceptId": "modify",
+    "pos": [
+      "verb"
+    ],
+    "example": "We modified the plan to fit our smaller budget.",
+    "synonyms": [
+      "change",
+      "alter",
+      "adjust"
     ]
   },
   "moisture": {
@@ -14992,6 +18433,20 @@
       "drive"
     ]
   },
+  "mount": {
+    "phonetic": "[maʊnt]",
+    "conceptId": "mount",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "The rider will mount her horse and ride away.",
+    "synonyms": [
+      "climb",
+      "ascend",
+      "get on"
+    ]
+  },
   "mouse": {
     "phonetic": "[maʊs]",
     "example": "A little mouse ate the cheese we left in the kitchen.",
@@ -15015,6 +18470,32 @@
       "go on",
       "proceed",
       "continue"
+    ]
+  },
+  "movement": {
+    "phonetic": "[ˈmuːvmənt]",
+    "conceptId": "movement",
+    "pos": [
+      "noun"
+    ],
+    "example": "The movement for cleaner air is growing in many cities.",
+    "synonyms": [
+      "campaign",
+      "drive",
+      "crusade"
+    ]
+  },
+  "multiple": {
+    "phonetic": "[ˈmʌltəpəl]",
+    "conceptId": "multiple",
+    "pos": [
+      "adj"
+    ],
+    "example": "The teacher gave multiple examples to explain the rule.",
+    "synonyms": [
+      "numerous",
+      "several",
+      "various"
     ]
   },
   "murder": {
@@ -15200,6 +18681,19 @@
       "noun"
     ]
   },
+  "navigate": {
+    "phonetic": "[ˈnævəɡeɪt]",
+    "conceptId": "navigate",
+    "pos": [
+      "verb"
+    ],
+    "example": "He used a paper map to navigate the unfamiliar city.",
+    "synonyms": [
+      "steer",
+      "find the way",
+      "pilot"
+    ]
+  },
   "navy": {
     "phonetic": "[ˈneɪvi]",
     "example": "His older brother joined the navy and now sails the ocean.",
@@ -15301,6 +18795,19 @@
       "unfavorable"
     ]
   },
+  "neglect": {
+    "phonetic": "[nəˈɡlekt]",
+    "conceptId": "neglect",
+    "pos": [
+      "verb"
+    ],
+    "example": "Do not neglect your health while preparing for exams.",
+    "synonyms": [
+      "ignore",
+      "overlook",
+      "disregard"
+    ]
+  },
   "neighbor": {
     "phonetic": "[ˈneɪbər]",
     "example": "Our new neighbor gave us fresh apples from her own garden.",
@@ -15335,6 +18842,71 @@
     "synonyms": [
       "brother's son",
       "sister's son"
+    ]
+  },
+  "nervous": {
+    "phonetic": "[ˈnɜːrvəs]",
+    "conceptId": "nervous",
+    "pos": [
+      "adj"
+    ],
+    "example": "She felt nervous before her first speech in class.",
+    "synonyms": [
+      "anxious",
+      "tense",
+      "uneasy"
+    ]
+  },
+  "nest": {
+    "phonetic": "[nest]",
+    "conceptId": "nest",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "Two small birds built a nest in our tree.",
+    "synonyms": [
+      "den",
+      "roost"
+    ]
+  },
+  "net": {
+    "phonetic": "[net]",
+    "conceptId": "net",
+    "pos": [
+      "noun",
+      "adj"
+    ],
+    "example": "The fisherman pulled his heavy net onto the boat.",
+    "synonyms": [
+      "mesh",
+      "web"
+    ]
+  },
+  "neutral": {
+    "phonetic": "[ˈnuːtrəl]",
+    "conceptId": "neutral",
+    "pos": [
+      "adj"
+    ],
+    "example": "A good judge must stay neutral during the whole trial.",
+    "synonyms": [
+      "impartial",
+      "unbiased",
+      "fair"
+    ]
+  },
+  "nevertheless": {
+    "phonetic": "[nevərðəˈles]",
+    "conceptId": "nevertheless",
+    "pos": [
+      "adv"
+    ],
+    "example": "The weather was cold; nevertheless, we walked to the park.",
+    "synonyms": [
+      "nonetheless",
+      "however",
+      "still"
     ]
   },
   "nickname": {
@@ -15436,6 +19008,19 @@
       "no one"
     ]
   },
+  "norm": {
+    "phonetic": "[nɔːrm]",
+    "conceptId": "norm",
+    "pos": [
+      "noun"
+    ],
+    "example": "Working from home has become the norm at this company.",
+    "synonyms": [
+      "standard",
+      "rule",
+      "convention"
+    ]
+  },
   "normal": {
     "phonetic": "[ˈnɔːrməl]",
     "example": "It is normal to feel nervous before a big test.",
@@ -15475,6 +19060,19 @@
       "observe"
     ]
   },
+  "notion": {
+    "phonetic": "[ˈnoʊʃən]",
+    "conceptId": "notion",
+    "pos": [
+      "noun"
+    ],
+    "example": "She rejected the old notion that girls cannot lead.",
+    "synonyms": [
+      "idea",
+      "concept",
+      "belief"
+    ]
+  },
   "novel": {
     "conceptId": "novel",
     "phonetic": "[ˈnɑːvəl]",
@@ -15511,6 +19109,19 @@
     "conceptId": "nuclear",
     "pos": [
       "adj"
+    ]
+  },
+  "numerous": {
+    "phonetic": "[ˈnuːmərəs]",
+    "conceptId": "numerous",
+    "pos": [
+      "adj"
+    ],
+    "example": "The city offers numerous ways to spend a weekend.",
+    "synonyms": [
+      "many",
+      "countless",
+      "plentiful"
     ]
   },
   "nurse": {
@@ -15653,6 +19264,18 @@
       "event",
       "time",
       "case"
+    ]
+  },
+  "occupation": {
+    "phonetic": "[ɑːkjəˈpeɪʃən]",
+    "conceptId": "occupation",
+    "pos": [
+      "noun"
+    ],
+    "example": "The occupation of the city lasted almost three years.",
+    "synonyms": [
+      "seizure",
+      "conquest"
     ]
   },
   "occur": {
@@ -15885,6 +19508,19 @@
       "reverse"
     ]
   },
+  "optimistic": {
+    "phonetic": "[ɑːptəˈmɪstɪk]",
+    "conceptId": "optimistic",
+    "pos": [
+      "adj"
+    ],
+    "example": "He stayed optimistic even when the team kept losing games.",
+    "synonyms": [
+      "hopeful",
+      "positive",
+      "cheerful"
+    ]
+  },
   "oral": {
     "conceptId": "oral",
     "phonetic": "[ˈɔːrəl]",
@@ -15923,6 +19559,43 @@
     "pos": [
       "noun",
       "verb"
+    ]
+  },
+  "ordinary": {
+    "phonetic": "[ˈɔːrdəneri]",
+    "conceptId": "ordinary",
+    "pos": [
+      "adj"
+    ],
+    "example": "It was just an ordinary day at the office.",
+    "synonyms": [
+      "common",
+      "normal",
+      "usual"
+    ]
+  },
+  "organ": {
+    "phonetic": "[ˈɔːrɡən]",
+    "conceptId": "organ",
+    "pos": [
+      "noun"
+    ],
+    "example": "The liver is an important organ in the human body.",
+    "synonyms": [
+      "body part",
+      "gland"
+    ]
+  },
+  "organic": {
+    "phonetic": "[ɔrˈɡænɪk]",
+    "conceptId": "organic",
+    "pos": [
+      "adj"
+    ],
+    "example": "This farm sells fresh organic vegetables every weekend.",
+    "synonyms": [
+      "natural",
+      "chemical-free"
     ]
   },
   "organization": {
@@ -15964,6 +19637,19 @@
       "root"
     ]
   },
+  "orphan": {
+    "phonetic": "[ˈɔːrfən]",
+    "conceptId": "orphan",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "The kind woman raised three orphans in her home.",
+    "synonyms": [
+      "foundling",
+      "waif"
+    ]
+  },
   "ostrich": {
     "phonetic": "[ˈɔːstrɪtʃ]",
     "example": "An ostrich cannot fly, but it runs faster than a horse.",
@@ -15986,6 +19672,19 @@
     "synonyms": [
       "or else",
       "if not"
+    ]
+  },
+  "outcome": {
+    "phonetic": "[ˈaʊtkʌm]",
+    "conceptId": "outcome",
+    "pos": [
+      "noun"
+    ],
+    "example": "Nobody could predict the outcome of the close election.",
+    "synonyms": [
+      "result",
+      "consequence",
+      "conclusion"
     ]
   },
   "outfit": {
@@ -16052,6 +19751,20 @@
       "repeatedly"
     ]
   },
+  "overall": {
+    "phonetic": "[ˈoʊvərɔːl]",
+    "conceptId": "overall",
+    "pos": [
+      "adj",
+      "adv"
+    ],
+    "example": "The overall cost of the trip was lower than expected.",
+    "synonyms": [
+      "general",
+      "total",
+      "broad"
+    ]
+  },
   "overcome": {
     "conceptId": "overcome",
     "phonetic": "[ˈoʊvərkʌm]",
@@ -16076,6 +19789,19 @@
     "conceptId": "overhear",
     "pos": [
       "verb"
+    ]
+  },
+  "overlook": {
+    "phonetic": "[ˈoʊvərlʊk]",
+    "conceptId": "overlook",
+    "pos": [
+      "verb"
+    ],
+    "example": "Careful readers never overlook small mistakes in a report.",
+    "synonyms": [
+      "miss",
+      "ignore",
+      "neglect"
     ]
   },
   "overseas": {
@@ -16138,6 +19864,19 @@
     "synonyms": [
       "air",
       "gas"
+    ]
+  },
+  "pace": {
+    "phonetic": "[peɪs]",
+    "conceptId": "pace",
+    "pos": [
+      "noun"
+    ],
+    "example": "She walked at a steady pace along the river path.",
+    "synonyms": [
+      "speed",
+      "rate",
+      "tempo"
     ]
   },
   "Pacific": {
@@ -16220,6 +19959,30 @@
       "noun"
     ]
   },
+  "pale": {
+    "phonetic": "[peɪl]",
+    "conceptId": "pale",
+    "pos": [
+      "adj"
+    ],
+    "example": "Her face turned pale after hearing the bad news.",
+    "synonyms": [
+      "pallid",
+      "ashen"
+    ]
+  },
+  "palm": {
+    "phonetic": "[pɑːm]",
+    "conceptId": "palm",
+    "pos": [
+      "noun"
+    ],
+    "example": "She held the small coin tightly in her palm.",
+    "synonyms": [
+      "hand",
+      "fist"
+    ]
+  },
   "panic": {
     "conceptId": "panic",
     "phonetic": "[ˈpænɪk]",
@@ -16273,6 +20036,19 @@
       "attend"
     ]
   },
+  "particle": {
+    "phonetic": "[ˈpɑːrtəkəl]",
+    "conceptId": "particle",
+    "pos": [
+      "noun"
+    ],
+    "example": "Tiny particles of dust floated in the morning sunlight.",
+    "synonyms": [
+      "speck",
+      "fragment",
+      "grain"
+    ]
+  },
   "particular": {
     "conceptId": "particular",
     "phonetic": "[pərˈtɪkjələr]",
@@ -16324,6 +20100,19 @@
       "experience"
     ]
   },
+  "passage": {
+    "phonetic": "[ˈpæsədʒ]",
+    "conceptId": "passage",
+    "pos": [
+      "noun"
+    ],
+    "example": "The passage of the new law took several months.",
+    "synonyms": [
+      "passing",
+      "transit",
+      "crossing"
+    ]
+  },
   "passenger": {
     "phonetic": "[ˈpæsəndʒər]",
     "example": "The last passenger got off the train around midnight.",
@@ -16335,6 +20124,19 @@
     "conceptId": "passenger",
     "pos": [
       "noun"
+    ]
+  },
+  "passion": {
+    "phonetic": "[ˈpæʃən]",
+    "conceptId": "passion",
+    "pos": [
+      "noun"
+    ],
+    "example": "She speaks about music with real passion and energy.",
+    "synonyms": [
+      "enthusiasm",
+      "zeal",
+      "eagerness"
     ]
   },
   "passive": {
@@ -16492,6 +20294,19 @@
       "height"
     ]
   },
+  "peasant": {
+    "phonetic": "[ˈpezənt]",
+    "conceptId": "peasant",
+    "pos": [
+      "noun"
+    ],
+    "example": "In the old story, a poor peasant farmed a tiny field.",
+    "synonyms": [
+      "farmer",
+      "serf",
+      "villager"
+    ]
+  },
   "pedestrian": {
     "conceptId": "pedestrian",
     "phonetic": "[pəˈdestrɪən]",
@@ -16553,6 +20368,19 @@
       "seasoning"
     ]
   },
+  "perceive": {
+    "phonetic": "[pərˈsiːv]",
+    "conceptId": "perceive",
+    "pos": [
+      "verb"
+    ],
+    "example": "Children often perceive danger more slowly than adults do.",
+    "synonyms": [
+      "notice",
+      "recognize",
+      "sense"
+    ]
+  },
   "perform": {
     "conceptId": "perform",
     "phonetic": "[pərˈfɔːrm]",
@@ -16579,6 +20407,31 @@
       "adv"
     ]
   },
+  "period": {
+    "phonetic": "[ˈpɪrɪəd]",
+    "conceptId": "period",
+    "pos": [
+      "noun"
+    ],
+    "example": "The artist lived during a difficult period of war.",
+    "synonyms": [
+      "era",
+      "phase",
+      "span"
+    ]
+  },
+  "permanent": {
+    "phonetic": "[ˈpɜːrmənənt]",
+    "conceptId": "permanent",
+    "pos": [
+      "adj"
+    ],
+    "example": "She finally found a permanent job near her home.",
+    "synonyms": [
+      "lasting",
+      "eternal"
+    ]
+  },
   "permit": {
     "conceptId": "permit",
     "phonetic": "[pərˈmɪt]",
@@ -16590,6 +20443,19 @@
       "allow",
       "let",
       "approve"
+    ]
+  },
+  "persist": {
+    "phonetic": "[pərˈsɪst]",
+    "conceptId": "persist",
+    "pos": [
+      "verb"
+    ],
+    "example": "If the pain persists, you should visit a doctor soon.",
+    "synonyms": [
+      "continue",
+      "remain",
+      "last"
     ]
   },
   "personal": {
@@ -16616,6 +20482,32 @@
       "nature"
     ]
   },
+  "personnel": {
+    "phonetic": "[pɜːrsəˈnel]",
+    "conceptId": "personnel",
+    "pos": [
+      "noun"
+    ],
+    "example": "All new personnel must attend the safety training this week.",
+    "synonyms": [
+      "staff",
+      "workforce",
+      "employees"
+    ]
+  },
+  "perspective": {
+    "phonetic": "[pərˈspektɪv]",
+    "conceptId": "perspective",
+    "pos": [
+      "noun"
+    ],
+    "example": "Try to see the problem from your friend's perspective.",
+    "synonyms": [
+      "viewpoint",
+      "standpoint",
+      "outlook"
+    ]
+  },
   "persuade": {
     "conceptId": "persuade",
     "phonetic": "[pərˈsweɪd]",
@@ -16626,6 +20518,18 @@
     "synonyms": [
       "convince",
       "urge"
+    ]
+  },
+  "pesticide": {
+    "phonetic": "[ˈpestəsaɪd]",
+    "conceptId": "pesticide",
+    "pos": [
+      "noun"
+    ],
+    "example": "Farmers spray pesticide to protect their crops from insects.",
+    "synonyms": [
+      "insecticide",
+      "bug spray"
     ]
   },
   "pet": {
@@ -16665,6 +20569,19 @@
       "period"
     ]
   },
+  "phenomenon": {
+    "phonetic": "[fəˈnɑːmənɑːn]",
+    "conceptId": "phenomenon",
+    "pos": [
+      "noun"
+    ],
+    "example": "Scientists still cannot fully explain this strange natural phenomenon.",
+    "synonyms": [
+      "occurrence",
+      "event",
+      "happening"
+    ]
+  },
   "philosophy": {
     "conceptId": "philosophy",
     "phonetic": "[fəˈlɑːsəfi]",
@@ -16675,6 +20592,20 @@
     "synonyms": [
       "thought",
       "belief"
+    ]
+  },
+  "photograph": {
+    "phonetic": "[ˈfoʊtəɡræf]",
+    "conceptId": "photograph",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "An old photograph of my grandmother hangs above the piano.",
+    "synonyms": [
+      "picture",
+      "photo",
+      "snapshot"
     ]
   },
   "photographer": {
@@ -16712,6 +20643,18 @@
     "synonyms": [
       "bodily",
       "material"
+    ]
+  },
+  "physician": {
+    "phonetic": "[fəˈzɪʃən]",
+    "conceptId": "physician",
+    "pos": [
+      "noun"
+    ],
+    "example": "The physician examined my throat and wrote a prescription.",
+    "synonyms": [
+      "doctor",
+      "practitioner"
     ]
   },
   "pick": {
@@ -16752,6 +20695,20 @@
       "noun"
     ]
   },
+  "pile": {
+    "phonetic": "[paɪl]",
+    "conceptId": "pile",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "They piled dry wood beside the tent before sunset.",
+    "synonyms": [
+      "stack",
+      "heap",
+      "load"
+    ]
+  },
   "pilgrim": {
     "phonetic": "[ˈpɪlɡrəm]",
     "example": "A tired pilgrim walked for weeks to reach the holy temple.",
@@ -16787,6 +20744,20 @@
     "conceptId": "pilot",
     "pos": [
       "noun"
+    ]
+  },
+  "pioneer": {
+    "phonetic": "[paɪəˈnɪr]",
+    "conceptId": "pioneer",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "She was a pioneer in the study of ocean life.",
+    "synonyms": [
+      "trailblazer",
+      "founder",
+      "innovator"
     ]
   },
   "pitch": {
@@ -16917,6 +20888,19 @@
       "satisfied"
     ]
   },
+  "pleasure": {
+    "phonetic": "[ˈpleʒər]",
+    "conceptId": "pleasure",
+    "pos": [
+      "noun"
+    ],
+    "example": "Reading old letters gives my grandmother great pleasure every evening.",
+    "synonyms": [
+      "delight",
+      "joy",
+      "enjoyment"
+    ]
+  },
   "plenty": {
     "phonetic": "[ˈplenti]",
     "example": "There is plenty of rice in the kitchen for everyone.",
@@ -16930,6 +20914,20 @@
       "noun"
     ]
   },
+  "plot": {
+    "phonetic": "[plɑːt]",
+    "conceptId": "plot",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "The plot of the movie was simple but very moving.",
+    "synonyms": [
+      "storyline",
+      "narrative",
+      "story"
+    ]
+  },
   "poet": {
     "phonetic": "[ˈpoʊət]",
     "example": "The young poet read her new poem in front of everyone.",
@@ -16940,6 +20938,18 @@
     "conceptId": "poet",
     "pos": [
       "noun"
+    ]
+  },
+  "poetry": {
+    "phonetic": "[ˈpoʊətri]",
+    "conceptId": "poetry",
+    "pos": [
+      "noun"
+    ],
+    "example": "He reads modern poetry every night before going to bed.",
+    "synonyms": [
+      "verse",
+      "poems"
     ]
   },
   "poison": {
@@ -17004,6 +21014,18 @@
     "conceptId": "politely",
     "pos": [
       "adv"
+    ]
+  },
+  "politics": {
+    "phonetic": "[ˈpɑːlətɪks]",
+    "conceptId": "politics",
+    "pos": [
+      "noun"
+    ],
+    "example": "Many young people have become interested in politics lately.",
+    "synonyms": [
+      "government",
+      "public affairs"
     ]
   },
   "poll": {
@@ -17084,6 +21106,58 @@
       "noun"
     ]
   },
+  "portable": {
+    "phonetic": "[ˈpɔːrtəbəl]",
+    "conceptId": "portable",
+    "pos": [
+      "adj"
+    ],
+    "example": "He bought a portable speaker for the camping trip.",
+    "synonyms": [
+      "movable",
+      "handy",
+      "lightweight"
+    ]
+  },
+  "portion": {
+    "phonetic": "[ˈpɔːrʃən]",
+    "conceptId": "portion",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "A large portion of the cake was left uneaten.",
+    "synonyms": [
+      "part",
+      "share",
+      "section"
+    ]
+  },
+  "portrait": {
+    "phonetic": "[ˈpɔːrtrət]",
+    "conceptId": "portrait",
+    "pos": [
+      "noun"
+    ],
+    "example": "A large portrait of the queen hangs above the fireplace.",
+    "synonyms": [
+      "likeness",
+      "picture"
+    ]
+  },
+  "position": {
+    "phonetic": "[pəˈzɪʃən]",
+    "conceptId": "position",
+    "pos": [
+      "noun"
+    ],
+    "example": "She applied for a teaching position at our school.",
+    "synonyms": [
+      "post",
+      "job",
+      "role"
+    ]
+  },
   "positive": {
     "conceptId": "positive",
     "phonetic": "[ˈpɑːzətɪv]",
@@ -17147,6 +21221,19 @@
       "put off"
     ]
   },
+  "pot": {
+    "phonetic": "[pɑːt]",
+    "conceptId": "pot",
+    "pos": [
+      "noun"
+    ],
+    "example": "He put the vegetables into the pot of boiling water.",
+    "synonyms": [
+      "pan",
+      "kettle",
+      "cauldron"
+    ]
+  },
   "potato": {
     "phonetic": "[pəˈteɪtoʊ]",
     "example": "Wash the potato well before you put it in the pot.",
@@ -17170,6 +21257,18 @@
     "synonyms": [
       "possible",
       "likely"
+    ]
+  },
+  "pour": {
+    "phonetic": "[pɔːr]",
+    "conceptId": "pour",
+    "pos": [
+      "verb"
+    ],
+    "example": "Please pour the warm milk into this large cup.",
+    "synonyms": [
+      "tip",
+      "spill"
     ]
   },
   "poverty": {
@@ -17224,6 +21323,20 @@
       "noun"
     ]
   },
+  "praise": {
+    "phonetic": "[preɪz]",
+    "conceptId": "praise",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "The young writer received high praise for her novel.",
+    "synonyms": [
+      "compliment",
+      "applause",
+      "admiration"
+    ]
+  },
   "pray": {
     "phonetic": "[preɪ]",
     "example": "Grandmother prayed for our family's health every single morning.",
@@ -17235,6 +21348,18 @@
     "conceptId": "pray",
     "pos": [
       "verb"
+    ]
+  },
+  "precede": {
+    "phonetic": "[prɪˈsiːd]",
+    "conceptId": "precede",
+    "pos": [
+      "verb"
+    ],
+    "example": "A short speech will precede the award ceremony tonight.",
+    "synonyms": [
+      "predate",
+      "lead"
     ]
   },
   "precious": {
@@ -17261,6 +21386,19 @@
       "exact",
       "accurate",
       "correct"
+    ]
+  },
+  "predator": {
+    "phonetic": "[ˈpredətər]",
+    "conceptId": "predator",
+    "pos": [
+      "noun"
+    ],
+    "example": "The lion is the strongest predator on these wide grasslands.",
+    "synonyms": [
+      "hunter",
+      "carnivore",
+      "attacker"
     ]
   },
   "predict": {
@@ -17350,6 +21488,19 @@
     "conceptId": "present",
     "pos": [
       "noun"
+    ]
+  },
+  "presentation": {
+    "phonetic": "[prezənˈteɪʃən]",
+    "conceptId": "presentation",
+    "pos": [
+      "noun"
+    ],
+    "example": "Her presentation about ocean pollution impressed the whole class.",
+    "synonyms": [
+      "talk",
+      "speech",
+      "lecture"
     ]
   },
   "preserve": {
@@ -17457,6 +21608,18 @@
       "prior"
     ]
   },
+  "prey": {
+    "phonetic": "[preɪ]",
+    "conceptId": "prey",
+    "pos": [
+      "noun"
+    ],
+    "example": "The hungry lion searched for prey near the river.",
+    "synonyms": [
+      "quarry",
+      "victim"
+    ]
+  },
   "price": {
     "phonetic": "[praɪs]",
     "example": "The price of these shoes dropped by half during the sale.",
@@ -17519,6 +21682,19 @@
     "conceptId": "primary",
     "pos": [
       "adj"
+    ]
+  },
+  "primitive": {
+    "phonetic": "[ˈprɪmətɪv]",
+    "conceptId": "primitive",
+    "pos": [
+      "adj"
+    ],
+    "example": "Primitive people used simple stone tools to hunt animals.",
+    "synonyms": [
+      "ancient",
+      "early",
+      "undeveloped"
     ]
   },
   "prince": {
@@ -17638,6 +21814,33 @@
       "noun"
     ]
   },
+  "proceed": {
+    "phonetic": "[prəˈsiːd]",
+    "conceptId": "proceed",
+    "pos": [
+      "verb"
+    ],
+    "example": "We will proceed with the plan despite the bad weather.",
+    "synonyms": [
+      "continue",
+      "advance",
+      "progress"
+    ]
+  },
+  "process": {
+    "phonetic": "[ˈprɑːses]",
+    "conceptId": "process",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "Learning a language is a slow but rewarding process.",
+    "synonyms": [
+      "procedure",
+      "course",
+      "method"
+    ]
+  },
   "produce": {
     "phonetic": "[prəˈduːs]",
     "example": "That factory produces more than a thousand bicycles every month.",
@@ -17664,6 +21867,19 @@
       "career"
     ]
   },
+  "professor": {
+    "phonetic": "[prəˈfesər]",
+    "conceptId": "professor",
+    "pos": [
+      "noun"
+    ],
+    "example": "The professor explained the difficult theory very clearly today.",
+    "synonyms": [
+      "lecturer",
+      "instructor",
+      "scholar"
+    ]
+  },
   "profile": {
     "conceptId": "profile",
     "phonetic": "[ˈproʊfaɪl]",
@@ -17675,6 +21891,32 @@
       "side view",
       "outline",
       "summary"
+    ]
+  },
+  "profit": {
+    "phonetic": "[ˈprɑːfət]",
+    "conceptId": "profit",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "The small bakery made a large profit last winter.",
+    "synonyms": [
+      "gain",
+      "earnings",
+      "return"
+    ]
+  },
+  "profound": {
+    "phonetic": "[proʊˈfaʊnd]",
+    "conceptId": "profound",
+    "pos": [
+      "adj"
+    ],
+    "example": "His speech had a profound effect on young people.",
+    "synonyms": [
+      "deep",
+      "intense"
     ]
   },
   "progress": {
@@ -17689,6 +21931,18 @@
       "advance",
       "development",
       "improvement"
+    ]
+  },
+  "prohibit": {
+    "phonetic": "[proʊˈhɪbət]",
+    "conceptId": "prohibit",
+    "pos": [
+      "verb"
+    ],
+    "example": "The school prohibits students from using phones in class.",
+    "synonyms": [
+      "ban",
+      "forbid"
     ]
   },
   "project": {
@@ -17716,6 +21970,19 @@
     "conceptId": "promise",
     "pos": [
       "noun"
+    ]
+  },
+  "promote": {
+    "phonetic": "[prəˈmoʊt]",
+    "conceptId": "promote",
+    "pos": [
+      "verb"
+    ],
+    "example": "The company spent a lot of money to promote its new phone.",
+    "synonyms": [
+      "advertise",
+      "publicize",
+      "market"
     ]
   },
   "pronounce": {
@@ -17820,6 +22087,32 @@
       "verb"
     ]
   },
+  "protein": {
+    "phonetic": "[ˈproʊtɪn]",
+    "conceptId": "protein",
+    "pos": [
+      "noun"
+    ],
+    "example": "Beans and eggs are cheap sources of good protein.",
+    "synonyms": [
+      "nutrient",
+      "amino acid"
+    ]
+  },
+  "protest": {
+    "phonetic": "[ˈproʊtest]",
+    "conceptId": "protest",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "Thousands of citizens gathered to protest against the new tax law.",
+    "synonyms": [
+      "object",
+      "complain",
+      "demonstrate"
+    ]
+  },
   "proud": {
     "phonetic": "[praʊd]",
     "example": "My parents were proud of me after the piano contest.",
@@ -17872,6 +22165,18 @@
       "supply",
       "give",
       "offer"
+    ]
+  },
+  "psychology": {
+    "phonetic": "[saɪˈkɑːlədʒi]",
+    "conceptId": "psychology",
+    "pos": [
+      "noun"
+    ],
+    "example": "She studies psychology to understand how people think.",
+    "synonyms": [
+      "behavioral science",
+      "mental science"
     ]
   },
   "public": {
@@ -17938,6 +22243,18 @@
     "conceptId": "pumpkin",
     "pos": [
       "noun"
+    ]
+  },
+  "punish": {
+    "phonetic": "[ˈpʌnɪʃ]",
+    "conceptId": "punish",
+    "pos": [
+      "verb"
+    ],
+    "example": "Teachers should not punish students for asking hard questions.",
+    "synonyms": [
+      "penalize",
+      "discipline"
     ]
   },
   "pupil": {
@@ -18185,6 +22502,19 @@
       "adj"
     ]
   },
+  "quit": {
+    "phonetic": "[kwɪt]",
+    "conceptId": "quit",
+    "pos": [
+      "verb"
+    ],
+    "example": "He decided to quit his job and study abroad.",
+    "synonyms": [
+      "resign",
+      "stop",
+      "abandon"
+    ]
+  },
   "quite": {
     "phonetic": "[kwaɪt]",
     "example": "Her voice was quite loud, so everyone in the hall heard her.",
@@ -18223,6 +22553,20 @@
       "tribal"
     ]
   },
+  "rage": {
+    "phonetic": "[reɪdʒ]",
+    "conceptId": "rage",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "His face turned red with rage when he heard that.",
+    "synonyms": [
+      "fury",
+      "wrath",
+      "anger"
+    ]
+  },
   "raise": {
     "phonetic": "[reɪz]",
     "example": "Raise your hand if you know the answer to this question.",
@@ -18235,6 +22579,19 @@
     "conceptId": "raise",
     "pos": [
       "verb"
+    ]
+  },
+  "random": {
+    "phonetic": "[ˈrændəm]",
+    "conceptId": "random",
+    "pos": [
+      "adj"
+    ],
+    "example": "The teacher asked a random student to read aloud.",
+    "synonyms": [
+      "arbitrary",
+      "haphazard",
+      "chance"
     ]
   },
   "range": {
@@ -18290,6 +22647,19 @@
       "adv"
     ]
   },
+  "rare": {
+    "phonetic": "[rer]",
+    "conceptId": "rare",
+    "pos": [
+      "adj"
+    ],
+    "example": "This rare bird appears only in high mountain forests.",
+    "synonyms": [
+      "uncommon",
+      "scarce",
+      "unusual"
+    ]
+  },
   "rat": {
     "phonetic": "[ræt]",
     "example": "A gray rat ran across the floor of the old warehouse.",
@@ -18328,6 +22698,32 @@
       "adv"
     ]
   },
+  "rational": {
+    "phonetic": "[ˈræʃənəl]",
+    "conceptId": "rational",
+    "pos": [
+      "adj"
+    ],
+    "example": "She made a rational choice after studying all the facts.",
+    "synonyms": [
+      "reasonable",
+      "logical",
+      "sensible"
+    ]
+  },
+  "raw": {
+    "phonetic": "[rɑː]",
+    "conceptId": "raw",
+    "pos": [
+      "adj"
+    ],
+    "example": "She never eats raw fish because of its strong smell.",
+    "synonyms": [
+      "uncooked",
+      "unprocessed",
+      "fresh"
+    ]
+  },
   "reach": {
     "phonetic": "[riːtʃ]",
     "example": "The tired hikers reached the mountain top before the sun set.",
@@ -18352,6 +22748,19 @@
     "synonyms": [
       "respond",
       "reply"
+    ]
+  },
+  "real": {
+    "phonetic": "[riːl]",
+    "conceptId": "real",
+    "pos": [
+      "adj"
+    ],
+    "example": "The diamond in her old ring turned out to be real.",
+    "synonyms": [
+      "genuine",
+      "authentic",
+      "actual"
     ]
   },
   "realistic": {
@@ -18482,6 +22891,18 @@
       "adv"
     ]
   },
+  "recipe": {
+    "phonetic": "[ˈresəpi]",
+    "conceptId": "recipe",
+    "pos": [
+      "noun"
+    ],
+    "example": "My grandmother gave me her secret cookie recipe.",
+    "synonyms": [
+      "formula",
+      "instructions"
+    ]
+  },
   "recognize": {
     "conceptId": "recognize",
     "phonetic": "[ˈrekəɡnaɪz]",
@@ -18607,6 +23028,19 @@
       "show"
     ]
   },
+  "refreshing": {
+    "phonetic": "[rɪˈfreʃɪŋ]",
+    "conceptId": "refreshing",
+    "pos": [
+      "adj"
+    ],
+    "example": "A cold drink is refreshing after a long walk.",
+    "synonyms": [
+      "cooling",
+      "invigorating",
+      "reviving"
+    ]
+  },
   "refrigerator": {
     "phonetic": "[rəˈfrɪdʒəreɪtər]",
     "example": "Please put the milk back in the refrigerator before it spoils.",
@@ -18671,6 +23105,32 @@
       "in spite of"
     ]
   },
+  "region": {
+    "phonetic": "[ˈriːdʒən]",
+    "conceptId": "region",
+    "pos": [
+      "noun"
+    ],
+    "example": "This region is famous for its apples and grapes.",
+    "synonyms": [
+      "area",
+      "district",
+      "zone"
+    ]
+  },
+  "register": {
+    "phonetic": "[ˈredʒɪstər]",
+    "conceptId": "register",
+    "pos": [
+      "verb"
+    ],
+    "example": "You must register for the contest before next Friday.",
+    "synonyms": [
+      "enroll",
+      "record",
+      "enlist"
+    ]
+  },
   "regret": {
     "conceptId": "regret",
     "phonetic": "[rəˈɡret]",
@@ -18722,6 +23182,32 @@
       "harness"
     ]
   },
+  "reinforce": {
+    "phonetic": "[rɪɪnˈfɔːrs]",
+    "conceptId": "reinforce",
+    "pos": [
+      "verb"
+    ],
+    "example": "Workers reinforced the old bridge with thick steel bars.",
+    "synonyms": [
+      "strengthen",
+      "bolster",
+      "support"
+    ]
+  },
+  "reject": {
+    "phonetic": "[rɪˈdʒekt]",
+    "conceptId": "reject",
+    "pos": [
+      "verb"
+    ],
+    "example": "The company decided to reject his offer without much discussion.",
+    "synonyms": [
+      "refuse",
+      "decline",
+      "dismiss"
+    ]
+  },
   "relate": {
     "conceptId": "relate",
     "phonetic": "[rɪˈleɪt]",
@@ -18733,6 +23219,19 @@
       "connect",
       "link",
       "associate"
+    ]
+  },
+  "related": {
+    "phonetic": "[rɪˈleɪtɪd]",
+    "conceptId": "related",
+    "pos": [
+      "adj"
+    ],
+    "example": "These two subjects are closely related to each other.",
+    "synonyms": [
+      "connected",
+      "linked",
+      "associated"
     ]
   },
   "relation": {
@@ -18772,6 +23271,19 @@
       "noun"
     ]
   },
+  "relax": {
+    "phonetic": "[rɪˈlæks]",
+    "conceptId": "relax",
+    "pos": [
+      "verb"
+    ],
+    "example": "After the test, we sat by the river to relax.",
+    "synonyms": [
+      "unwind",
+      "rest",
+      "calm down"
+    ]
+  },
   "relay": {
     "phonetic": "[ˈriːleɪ]",
     "example": "Four students ran in the relay and finished in first place.",
@@ -18796,6 +23308,19 @@
       "free",
       "publish",
       "announce"
+    ]
+  },
+  "relevant": {
+    "phonetic": "[ˈreləvənt]",
+    "conceptId": "relevant",
+    "pos": [
+      "adj"
+    ],
+    "example": "Please include only the facts that are relevant to our case.",
+    "synonyms": [
+      "related",
+      "applicable",
+      "pertinent"
     ]
   },
   "relieve": {
@@ -18836,6 +23361,19 @@
       "adj"
     ]
   },
+  "rely": {
+    "phonetic": "[rɪˈlaɪ]",
+    "conceptId": "rely",
+    "pos": [
+      "verb"
+    ],
+    "example": "You can rely on your friends during difficult times.",
+    "synonyms": [
+      "depend",
+      "trust",
+      "lean"
+    ]
+  },
   "remain": {
     "phonetic": "[rɪˈmeɪn]",
     "example": "Only a few cookies remained on the plate after lunch.",
@@ -18860,6 +23398,20 @@
     "synonyms": [
       "ruins",
       "rest"
+    ]
+  },
+  "remark": {
+    "phonetic": "[rɪˈmɑːrk]",
+    "conceptId": "remark",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "His rude remark surprised everyone at the dinner table.",
+    "synonyms": [
+      "comment",
+      "statement",
+      "observation"
     ]
   },
   "remember": {
@@ -18912,6 +23464,18 @@
       "verb"
     ]
   },
+  "renewable": {
+    "phonetic": "[rɪˈnuːəbəl]",
+    "conceptId": "renewable",
+    "pos": [
+      "adj"
+    ],
+    "example": "Wind and sunlight are clean renewable sources of energy.",
+    "synonyms": [
+      "sustainable",
+      "reusable"
+    ]
+  },
   "rent": {
     "conceptId": "rent",
     "phonetic": "[rent]",
@@ -18923,6 +23487,19 @@
     "synonyms": [
       "lease",
       "fee"
+    ]
+  },
+  "repair": {
+    "phonetic": "[rɪˈper]",
+    "conceptId": "repair",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "The old wooden bridge is badly in need of repair.",
+    "synonyms": [
+      "mending",
+      "restoration"
     ]
   },
   "repeat": {
@@ -19027,6 +23604,20 @@
       "name"
     ]
   },
+  "request": {
+    "phonetic": "[rɪˈkwest]",
+    "conceptId": "request",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "The teacher agreed to my request for extra time.",
+    "synonyms": [
+      "appeal",
+      "demand",
+      "plea"
+    ]
+  },
   "require": {
     "conceptId": "require",
     "phonetic": "[rɪˈkwaɪər]",
@@ -19116,6 +23707,19 @@
       "fight"
     ]
   },
+  "resolve": {
+    "phonetic": "[rɪˈzɑːlv]",
+    "conceptId": "resolve",
+    "pos": [
+      "verb"
+    ],
+    "example": "The two countries tried to resolve their border problem peacefully.",
+    "synonyms": [
+      "settle",
+      "solve",
+      "sort out"
+    ]
+  },
   "resource": {
     "synonyms": [
       "supply",
@@ -19156,6 +23760,19 @@
     "pos": [
       "noun",
       "verb"
+    ]
+  },
+  "respond": {
+    "phonetic": "[rɪˈspɑːnd]",
+    "conceptId": "respond",
+    "pos": [
+      "verb"
+    ],
+    "example": "Plants respond quickly to changes in light and water.",
+    "synonyms": [
+      "react",
+      "reply",
+      "answer"
     ]
   },
   "response": {
@@ -19210,6 +23827,19 @@
       "noun"
     ]
   },
+  "restore": {
+    "phonetic": "[rɪˈstɔːr]",
+    "conceptId": "restore",
+    "pos": [
+      "verb"
+    ],
+    "example": "Workers will restore the old church to its original beauty.",
+    "synonyms": [
+      "renew",
+      "repair",
+      "rebuild"
+    ]
+  },
   "restrict": {
     "conceptId": "restrict",
     "phonetic": "[rɪsˈtrɪkt]",
@@ -19220,6 +23850,33 @@
     "synonyms": [
       "limit",
       "control"
+    ]
+  },
+  "restriction": {
+    "phonetic": "[rɪsˈtrɪkʃən]",
+    "conceptId": "restriction",
+    "pos": [
+      "noun"
+    ],
+    "example": "The school placed a strict restriction on mobile phones.",
+    "synonyms": [
+      "limitation",
+      "constraint",
+      "control"
+    ]
+  },
+  "result": {
+    "phonetic": "[rɪˈzʌlt]",
+    "conceptId": "result",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "The result of the experiment surprised the whole class.",
+    "synonyms": [
+      "outcome",
+      "consequence",
+      "effect"
     ]
   },
   "result in": {
@@ -19301,6 +23958,20 @@
       "uncover"
     ]
   },
+  "reverse": {
+    "phonetic": "[rɪˈvɜːrs]",
+    "conceptId": "reverse",
+    "pos": [
+      "verb",
+      "adj"
+    ],
+    "example": "The judge decided to reverse the earlier decision today.",
+    "synonyms": [
+      "overturn",
+      "undo",
+      "invert"
+    ]
+  },
   "review": {
     "phonetic": "[rɪˈvjuː]",
     "example": "I review today's English words before I go to bed.",
@@ -19338,6 +24009,20 @@
     "conceptId": "revolution",
     "pos": [
       "noun"
+    ]
+  },
+  "reward": {
+    "phonetic": "[rɪˈwɔːrd]",
+    "conceptId": "reward",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "The police offered a reward for information about the thief.",
+    "synonyms": [
+      "prize",
+      "bonus",
+      "payment"
     ]
   },
   "rid": {
@@ -19379,6 +24064,18 @@
       "verb"
     ]
   },
+  "ripe": {
+    "phonetic": "[raɪp]",
+    "conceptId": "ripe",
+    "pos": [
+      "adj"
+    ],
+    "example": "These peaches are ripe enough to eat right now.",
+    "synonyms": [
+      "mature",
+      "mellow"
+    ]
+  },
   "risk": {
     "conceptId": "risk",
     "phonetic": "[rɪsk]",
@@ -19390,6 +24087,20 @@
     "synonyms": [
       "danger",
       "hazard"
+    ]
+  },
+  "ritual": {
+    "phonetic": "[ˈrɪtʃuəl]",
+    "conceptId": "ritual",
+    "pos": [
+      "noun",
+      "adj"
+    ],
+    "example": "The tea ceremony is an ancient ritual in many cultures.",
+    "synonyms": [
+      "ceremony",
+      "rite",
+      "custom"
     ]
   },
   "roar": {
@@ -19442,6 +24153,19 @@
       "theft",
       "burglary",
       "holdup"
+    ]
+  },
+  "role": {
+    "phonetic": "[roʊl]",
+    "conceptId": "role",
+    "pos": [
+      "noun"
+    ],
+    "example": "Teachers play an important role in shaping young minds.",
+    "synonyms": [
+      "part",
+      "function",
+      "position"
     ]
   },
   "roll": {
@@ -19511,6 +24235,20 @@
       "noun"
     ]
   },
+  "routine": {
+    "phonetic": "[ruˈtiːn]",
+    "conceptId": "routine",
+    "pos": [
+      "noun",
+      "adj"
+    ],
+    "example": "My morning routine includes a short walk and breakfast.",
+    "synonyms": [
+      "habit",
+      "practice",
+      "schedule"
+    ]
+  },
   "row": {
     "phonetic": "[roʊ]",
     "example": "We sat in the front row and saw the singer clearly.",
@@ -19522,6 +24260,20 @@
     "conceptId": "row",
     "pos": [
       "noun"
+    ]
+  },
+  "royal": {
+    "phonetic": "[ˈrɔɪəl]",
+    "conceptId": "royal",
+    "pos": [
+      "adj",
+      "noun"
+    ],
+    "example": "The royal family waved to the crowd from the balcony.",
+    "synonyms": [
+      "regal",
+      "noble",
+      "imperial"
     ]
   },
   "rub": {
@@ -19612,6 +24364,32 @@
     "synonyms": [
       "use up",
       "be short of"
+    ]
+  },
+  "rural": {
+    "phonetic": "[ˈrʊrəl]",
+    "conceptId": "rural",
+    "pos": [
+      "adj"
+    ],
+    "example": "Life in rural areas is usually quiet and slow.",
+    "synonyms": [
+      "country",
+      "rustic"
+    ]
+  },
+  "rush": {
+    "phonetic": "[rʌʃ]",
+    "conceptId": "rush",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "The fans rush toward the stage when the singer appears.",
+    "synonyms": [
+      "dash",
+      "charge",
+      "hurry"
     ]
   },
   "sacred": {
@@ -19829,6 +24607,19 @@
       "balance"
     ]
   },
+  "scan": {
+    "phonetic": "[skæn]",
+    "conceptId": "scan",
+    "pos": [
+      "verb"
+    ],
+    "example": "He scanned the crowd carefully, looking for his sister.",
+    "synonyms": [
+      "examine",
+      "inspect",
+      "survey"
+    ]
+  },
   "scar": {
     "phonetic": "[skɑːr]",
     "example": "A small scar still remains on his left knee.",
@@ -19852,6 +24643,19 @@
     "conceptId": "scare",
     "pos": [
       "verb"
+    ]
+  },
+  "scatter": {
+    "phonetic": "[ˈskætər]",
+    "conceptId": "scatter",
+    "pos": [
+      "verb"
+    ],
+    "example": "The loud noise scattered the birds across the field.",
+    "synonyms": [
+      "disperse",
+      "drive away",
+      "spread"
     ]
   },
   "scene": {
@@ -19986,6 +24790,19 @@
       "verb"
     ]
   },
+  "screen": {
+    "phonetic": "[skriːn]",
+    "conceptId": "screen",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "Please look at the screen and copy these sentences.",
+    "synonyms": [
+      "display",
+      "monitor"
+    ]
+  },
   "script": {
     "conceptId": "script",
     "phonetic": "[skrɪpt]",
@@ -20009,6 +24826,20 @@
     "conceptId": "sculpture",
     "pos": [
       "noun"
+    ]
+  },
+  "seal": {
+    "phonetic": "[siːl]",
+    "conceptId": "seal",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "Seal the box with strong tape before you mail it.",
+    "synonyms": [
+      "close",
+      "fasten",
+      "shut"
     ]
   },
   "search": {
@@ -20155,6 +24986,19 @@
       "verb"
     ]
   },
+  "selfish": {
+    "phonetic": "[ˈselfɪʃ]",
+    "conceptId": "selfish",
+    "pos": [
+      "adj"
+    ],
+    "example": "It was selfish of him to take the last seat.",
+    "synonyms": [
+      "greedy",
+      "self-centered",
+      "inconsiderate"
+    ]
+  },
   "semester": {
     "phonetic": "[səˈmestər]",
     "example": "We have three big exams during the second semester this year.",
@@ -20176,6 +25020,33 @@
     "conceptId": "senior",
     "pos": [
       "noun"
+    ]
+  },
+  "sensation": {
+    "phonetic": "[senˈseɪʃən]",
+    "conceptId": "sensation",
+    "pos": [
+      "noun"
+    ],
+    "example": "She felt a strange sensation in her left hand.",
+    "synonyms": [
+      "feeling",
+      "perception",
+      "impression"
+    ]
+  },
+  "sense": {
+    "phonetic": "[sens]",
+    "conceptId": "sense",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "She has a good sense of direction in strange cities.",
+    "synonyms": [
+      "feeling",
+      "perception",
+      "instinct"
     ]
   },
   "sensitive": {
@@ -20214,6 +25085,19 @@
       "divide",
       "split",
       "part"
+    ]
+  },
+  "sequence": {
+    "phonetic": "[ˈsiːkwəns]",
+    "conceptId": "sequence",
+    "pos": [
+      "noun"
+    ],
+    "example": "The events happened in a strange sequence that night.",
+    "synonyms": [
+      "order",
+      "series",
+      "succession"
     ]
   },
   "series": {
@@ -20409,6 +25293,18 @@
       "verb"
     ]
   },
+  "shallow": {
+    "phonetic": "[ˈʃæloʊ]",
+    "conceptId": "shallow",
+    "pos": [
+      "adj"
+    ],
+    "example": "Children can play safely in the shallow part of the pool.",
+    "synonyms": [
+      "superficial",
+      "skin-deep"
+    ]
+  },
   "shape": {
     "phonetic": "[ʃeɪp]",
     "example": "The cloud above us slowly changed its shape into a rabbit.",
@@ -20420,6 +25316,20 @@
     "conceptId": "shape",
     "pos": [
       "noun"
+    ]
+  },
+  "share": {
+    "phonetic": "[ʃer]",
+    "conceptId": "share",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "Students often share their notes before an important history exam.",
+    "synonyms": [
+      "divide",
+      "distribute",
+      "split"
     ]
   },
   "sharp": {
@@ -20481,6 +25391,34 @@
     "conceptId": "shell",
     "pos": [
       "noun"
+    ]
+  },
+  "shelter": {
+    "phonetic": "[ˈʃeltər]",
+    "conceptId": "shelter",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "The dog waited quietly at the animal shelter.",
+    "synonyms": [
+      "refuge",
+      "haven",
+      "sanctuary"
+    ]
+  },
+  "shift": {
+    "phonetic": "[ʃɪft]",
+    "conceptId": "shift",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "Public opinion can shift quickly after a big news story.",
+    "synonyms": [
+      "change",
+      "move",
+      "alter"
     ]
   },
   "shine": {
@@ -20546,6 +25484,19 @@
     "conceptId": "short",
     "pos": [
       "adj"
+    ]
+  },
+  "shortage": {
+    "phonetic": "[ˈʃɔːrtədʒ]",
+    "conceptId": "shortage",
+    "pos": [
+      "noun"
+    ],
+    "example": "A water shortage forced the city to limit daily use.",
+    "synonyms": [
+      "lack",
+      "deficiency",
+      "scarcity"
     ]
   },
   "shoulder": {
@@ -20795,6 +25746,18 @@
       "adj"
     ]
   },
+  "simplify": {
+    "phonetic": "[ˈsɪmpləfaɪ]",
+    "conceptId": "simplify",
+    "pos": [
+      "verb"
+    ],
+    "example": "The teacher tried to simplify the rules for beginners.",
+    "synonyms": [
+      "streamline",
+      "clarify"
+    ]
+  },
   "since": {
     "phonetic": "[sɪns]",
     "example": "I have lived in this town since 2020.",
@@ -20963,6 +25926,20 @@
       "verb"
     ]
   },
+  "slice": {
+    "phonetic": "[slaɪs]",
+    "conceptId": "slice",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "She ate a thin slice of cheese with her bread.",
+    "synonyms": [
+      "piece",
+      "portion",
+      "segment"
+    ]
+  },
   "slide": {
     "phonetic": "[slaɪd]",
     "example": "The children slid down the snowy hill on plastic boards.",
@@ -20975,6 +25952,19 @@
     "pos": [
       "verb",
       "noun"
+    ]
+  },
+  "slightly": {
+    "phonetic": "[ˈslaɪtli]",
+    "conceptId": "slightly",
+    "pos": [
+      "adv"
+    ],
+    "example": "The soup tastes slightly sweeter than it did yesterday.",
+    "synonyms": [
+      "a little",
+      "somewhat",
+      "a bit"
     ]
   },
   "slip": {
@@ -21089,6 +26079,19 @@
     "conceptId": "sniff",
     "pos": [
       "verb"
+    ]
+  },
+  "soak": {
+    "phonetic": "[soʊk]",
+    "conceptId": "soak",
+    "pos": [
+      "verb"
+    ],
+    "example": "Soak the dried beans in water for several hours.",
+    "synonyms": [
+      "drench",
+      "immerse",
+      "steep"
     ]
   },
   "social": {
@@ -21216,6 +26219,20 @@
       "adj"
     ]
   },
+  "sort": {
+    "phonetic": "[sɔːrt]",
+    "conceptId": "sort",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "That sort of music always makes me feel calm.",
+    "synonyms": [
+      "kind",
+      "type",
+      "category"
+    ]
+  },
   "sound": {
     "phonetic": "[saʊnd]",
     "example": "A deep bell sounds every hour from the old tower.",
@@ -21304,6 +26321,20 @@
       "noun"
     ]
   },
+  "spare": {
+    "phonetic": "[sper]",
+    "conceptId": "spare",
+    "pos": [
+      "adj",
+      "verb"
+    ],
+    "example": "I read novels in my spare time after dinner.",
+    "synonyms": [
+      "extra",
+      "free",
+      "leftover"
+    ]
+  },
   "special": {
     "phonetic": "[ˈspeʃəl]",
     "example": "Mina cooked a special dinner for her father's fiftieth birthday.",
@@ -21315,6 +26346,19 @@
     "conceptId": "special",
     "pos": [
       "adj"
+    ]
+  },
+  "species": {
+    "phonetic": "[ˈspiːʃɪz]",
+    "conceptId": "species",
+    "pos": [
+      "noun"
+    ],
+    "example": "This rare species of bird lives only on that island.",
+    "synonyms": [
+      "kind",
+      "type",
+      "variety"
     ]
   },
   "specific": {
@@ -21381,6 +26425,20 @@
       "overflow"
     ]
   },
+  "spin": {
+    "phonetic": "[spɪn]",
+    "conceptId": "spin",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "The dancer ended her show with a fast spin.",
+    "synonyms": [
+      "rotation",
+      "turn",
+      "whirl"
+    ]
+  },
   "spine": {
     "conceptId": "spine",
     "phonetic": "[spaɪn]",
@@ -21406,6 +26464,33 @@
       "noun"
     ]
   },
+  "split": {
+    "phonetic": "[splɪt]",
+    "conceptId": "split",
+    "pos": [
+      "verb",
+      "adj"
+    ],
+    "example": "Let's split the last piece of cake between us.",
+    "synonyms": [
+      "divide",
+      "separate",
+      "crack"
+    ]
+  },
+  "spoil": {
+    "phonetic": "[spɔɪl]",
+    "conceptId": "spoil",
+    "pos": [
+      "verb"
+    ],
+    "example": "Milk will spoil quickly if you leave it outside.",
+    "synonyms": [
+      "rot",
+      "decay",
+      "sour"
+    ]
+  },
   "spot": {
     "phonetic": "[spɑːt]",
     "example": "This quiet spot near the river is perfect for lunch.",
@@ -21418,6 +26503,18 @@
     "conceptId": "spot",
     "pos": [
       "noun"
+    ]
+  },
+  "spouse": {
+    "phonetic": "[spaʊs]",
+    "conceptId": "spouse",
+    "pos": [
+      "noun"
+    ],
+    "example": "You may bring your spouse to the company dinner.",
+    "synonyms": [
+      "partner",
+      "mate"
     ]
   },
   "spread": {
@@ -21470,6 +26567,33 @@
       "rodent"
     ]
   },
+  "stable": {
+    "phonetic": "[ˈsteɪbəl]",
+    "conceptId": "stable",
+    "pos": [
+      "adj",
+      "noun"
+    ],
+    "example": "The patient's condition is stable after the long operation.",
+    "synonyms": [
+      "steady",
+      "firm",
+      "secure"
+    ]
+  },
+  "stack": {
+    "phonetic": "[stæk]",
+    "conceptId": "stack",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "Please stack the chairs against the wall after class.",
+    "synonyms": [
+      "pile",
+      "heap"
+    ]
+  },
   "stadium": {
     "phonetic": "[ˈsteɪdɪəm]",
     "example": "Thousands of fans filled the stadium before the game started.",
@@ -21519,6 +26643,20 @@
     "conceptId": "stair",
     "pos": [
       "noun"
+    ]
+  },
+  "stamp": {
+    "phonetic": "[stæmp]",
+    "conceptId": "stamp",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "The officer will stamp your passport at the border.",
+    "synonyms": [
+      "imprint",
+      "mark",
+      "seal"
     ]
   },
   "stand for": {
@@ -21596,6 +26734,32 @@
     "conceptId": "state",
     "pos": [
       "noun"
+    ]
+  },
+  "station": {
+    "phonetic": "[ˈsteɪʃən]",
+    "conceptId": "station",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "We waited at the station for the last evening train.",
+    "synonyms": [
+      "stop",
+      "terminal",
+      "depot"
+    ]
+  },
+  "stationery": {
+    "phonetic": "[ˈsteɪʃəneri]",
+    "conceptId": "stationery",
+    "pos": [
+      "noun"
+    ],
+    "example": "She bought pens and paper at the stationery shop.",
+    "synonyms": [
+      "writing materials",
+      "office supplies"
     ]
   },
   "statistics": {
@@ -21728,6 +26892,20 @@
       "listening device"
     ]
   },
+  "stick": {
+    "phonetic": "[stɪk]",
+    "conceptId": "stick",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "He picked up a long stick and drew in the sand.",
+    "synonyms": [
+      "branch",
+      "rod",
+      "twig"
+    ]
+  },
   "stick to": {
     "conceptId": "stick to",
     "phonetic": "[stɪk tuː]",
@@ -21741,6 +26919,19 @@
       "stay with"
     ]
   },
+  "stimulate": {
+    "phonetic": "[ˈstɪmjəleɪt]",
+    "conceptId": "stimulate",
+    "pos": [
+      "verb"
+    ],
+    "example": "Good questions stimulate students to think more deeply.",
+    "synonyms": [
+      "encourage",
+      "spur",
+      "excite"
+    ]
+  },
   "stir": {
     "conceptId": "stir",
     "phonetic": "[stɜːr]",
@@ -21752,6 +26943,19 @@
       "mix",
       "blend",
       "whisk"
+    ]
+  },
+  "stock": {
+    "phonetic": "[stɑːk]",
+    "conceptId": "stock",
+    "pos": [
+      "noun"
+    ],
+    "example": "The shop has no more stock of that warm jacket.",
+    "synonyms": [
+      "supply",
+      "inventory",
+      "goods"
     ]
   },
   "stomach": {
@@ -21792,6 +26996,19 @@
     "pos": [
       "noun",
       "verb"
+    ]
+  },
+  "storm": {
+    "phonetic": "[stɔːrm]",
+    "conceptId": "storm",
+    "pos": [
+      "noun"
+    ],
+    "example": "A sudden storm knocked down several trees last night.",
+    "synonyms": [
+      "tempest",
+      "gale",
+      "hurricane"
     ]
   },
   "stormy": {
@@ -21874,6 +27091,19 @@
       "noun"
     ]
   },
+  "strengthen": {
+    "phonetic": "[ˈstreŋθən]",
+    "conceptId": "strengthen",
+    "pos": [
+      "verb"
+    ],
+    "example": "Regular exercise will strengthen your heart and your legs.",
+    "synonyms": [
+      "reinforce",
+      "toughen",
+      "build up"
+    ]
+  },
   "stress": {
     "phonetic": "[stres]",
     "example": "The stress of the final match made his hands shake.",
@@ -21886,6 +27116,19 @@
     "pos": [
       "noun",
       "verb"
+    ]
+  },
+  "stretch": {
+    "phonetic": "[stretʃ]",
+    "conceptId": "stretch",
+    "pos": [
+      "verb"
+    ],
+    "example": "I always stretch my legs before I start running.",
+    "synonyms": [
+      "extend",
+      "lengthen",
+      "expand"
     ]
   },
   "strict": {
@@ -21901,6 +27144,34 @@
       "firm"
     ]
   },
+  "strike": {
+    "phonetic": "[straɪk]",
+    "conceptId": "strike",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "He watched the huge waves strike the rocks below.",
+    "synonyms": [
+      "hit",
+      "beat",
+      "knock"
+    ]
+  },
+  "string": {
+    "phonetic": "[strɪŋ]",
+    "conceptId": "string",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "She tied the heavy box with a piece of string.",
+    "synonyms": [
+      "cord",
+      "rope",
+      "thread"
+    ]
+  },
   "stripe": {
     "phonetic": "[straɪp]",
     "example": "His shirt had a wide blue stripe across the front.",
@@ -21912,6 +27183,19 @@
     "conceptId": "stripe",
     "pos": [
       "noun"
+    ]
+  },
+  "striped": {
+    "phonetic": "[straɪpt]",
+    "conceptId": "striped",
+    "pos": [
+      "adj"
+    ],
+    "example": "He wore a striped shirt with plain black cotton pants.",
+    "synonyms": [
+      "banded",
+      "streaked",
+      "lined"
     ]
   },
   "structure": {
@@ -21939,6 +27223,19 @@
     "conceptId": "struggle",
     "pos": [
       "verb"
+    ]
+  },
+  "stuff": {
+    "phonetic": "[stʌf]",
+    "conceptId": "stuff",
+    "pos": [
+      "noun"
+    ],
+    "example": "Please move your stuff off the kitchen table now.",
+    "synonyms": [
+      "things",
+      "belongings",
+      "material"
     ]
   },
   "stupid": {
@@ -21980,6 +27277,19 @@
       "noun"
     ]
   },
+  "submit": {
+    "phonetic": "[səbˈmɪt]",
+    "conceptId": "submit",
+    "pos": [
+      "verb"
+    ],
+    "example": "Please submit your report before Friday afternoon this week.",
+    "synonyms": [
+      "hand in",
+      "present",
+      "turn in"
+    ]
+  },
   "substance": {
     "conceptId": "substance",
     "phonetic": "[ˈsʌbstəns]",
@@ -21991,6 +27301,20 @@
       "material",
       "matter",
       "stuff"
+    ]
+  },
+  "substitute": {
+    "phonetic": "[ˈsʌbstətuːt]",
+    "conceptId": "substitute",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "Honey can be a good substitute for sugar in tea.",
+    "synonyms": [
+      "replacement",
+      "alternative",
+      "stand-in"
     ]
   },
   "suburb": {
@@ -22118,6 +27442,19 @@
       "verb"
     ]
   },
+  "sufficient": {
+    "phonetic": "[səˈfɪʃənt]",
+    "conceptId": "sufficient",
+    "pos": [
+      "adj"
+    ],
+    "example": "We have sufficient food and water for the whole trip.",
+    "synonyms": [
+      "enough",
+      "adequate",
+      "ample"
+    ]
+  },
   "sugar": {
     "phonetic": "[ˈʃʊɡər]",
     "example": "Add a little sugar if the lemon tea tastes too sour.",
@@ -22128,6 +27465,19 @@
     "synonyms": [
       "sweetener",
       "syrup"
+    ]
+  },
+  "suggest": {
+    "phonetic": "[səˈdʒest]",
+    "conceptId": "suggest",
+    "pos": [
+      "verb"
+    ],
+    "example": "I suggest we meet at the library after class.",
+    "synonyms": [
+      "propose",
+      "recommend",
+      "advise"
     ]
   },
   "suit": {
@@ -22232,6 +27582,20 @@
       "noun"
     ]
   },
+  "supplement": {
+    "phonetic": "[ˈsʌpləmənt]",
+    "conceptId": "supplement",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "Many athletes take a vitamin supplement with every morning meal.",
+    "synonyms": [
+      "addition",
+      "extra",
+      "complement"
+    ]
+  },
   "supply": {
     "phonetic": "[səˈplaɪ]",
     "example": "The city cut off the water supply for two hours yesterday.",
@@ -22286,6 +27650,18 @@
       "noun"
     ]
   },
+  "surgery": {
+    "phonetic": "[ˈsɜːrdʒəri]",
+    "conceptId": "surgery",
+    "pos": [
+      "noun"
+    ],
+    "example": "The doctor said she needs surgery on her right knee.",
+    "synonyms": [
+      "operation",
+      "procedure"
+    ]
+  },
   "surprise": {
     "phonetic": "[sərˈpraɪz]",
     "example": "The children were surprised by the huge cake on the table.",
@@ -22301,6 +27677,19 @@
       "noun"
     ]
   },
+  "surprised": {
+    "phonetic": "[sərˈpraɪzd]",
+    "conceptId": "surprised",
+    "pos": [
+      "adj"
+    ],
+    "example": "She looked surprised when I told her the good news.",
+    "synonyms": [
+      "astonished",
+      "amazed",
+      "startled"
+    ]
+  },
   "surround": {
     "phonetic": "[sərˈaʊnd]",
     "example": "Tall trees surround the little house on all four sides.",
@@ -22312,6 +27701,20 @@
     "conceptId": "surround",
     "pos": [
       "verb"
+    ]
+  },
+  "survey": {
+    "phonetic": "[sərˈveɪ]",
+    "conceptId": "survey",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "The survey showed that most students enjoy group work.",
+    "synonyms": [
+      "poll",
+      "questionnaire",
+      "study"
     ]
   },
   "survive": {
@@ -22432,6 +27835,19 @@
       "noun"
     ]
   },
+  "sympathy": {
+    "phonetic": "[ˈsɪmpəθi]",
+    "conceptId": "sympathy",
+    "pos": [
+      "noun"
+    ],
+    "example": "She felt deep sympathy for the families who lost homes.",
+    "synonyms": [
+      "compassion",
+      "pity",
+      "empathy"
+    ]
+  },
   "symptom": {
     "conceptId": "symptom",
     "phonetic": "[ˈsɪmptəm]",
@@ -22508,6 +27924,19 @@
       "expect"
     ]
   },
+  "tale": {
+    "phonetic": "[teɪl]",
+    "conceptId": "tale",
+    "pos": [
+      "noun"
+    ],
+    "example": "My grandmother told us a strange tale about ghosts.",
+    "synonyms": [
+      "story",
+      "legend",
+      "narrative"
+    ]
+  },
   "talent": {
     "conceptId": "talent",
     "phonetic": "[ˈtælənt]",
@@ -22521,6 +27950,20 @@
       "skill"
     ]
   },
+  "tap": {
+    "phonetic": "[tæp]",
+    "conceptId": "tap",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "She tapped my shoulder gently to wake me up.",
+    "synonyms": [
+      "pat",
+      "knock",
+      "rap"
+    ]
+  },
   "target": {
     "conceptId": "target",
     "phonetic": "[ˈtɑːrɡət]",
@@ -22532,6 +27975,19 @@
       "goal",
       "aim",
       "objective"
+    ]
+  },
+  "task": {
+    "phonetic": "[tæsk]",
+    "conceptId": "task",
+    "pos": [
+      "noun"
+    ],
+    "example": "Washing the dishes is my daily task at home.",
+    "synonyms": [
+      "job",
+      "duty",
+      "chore"
     ]
   },
   "taste": {
@@ -22624,6 +28080,19 @@
       "noun"
     ]
   },
+  "temper": {
+    "phonetic": "[ˈtempər]",
+    "conceptId": "temper",
+    "pos": [
+      "noun"
+    ],
+    "example": "He lost his temper when the meeting started late.",
+    "synonyms": [
+      "temperament",
+      "disposition",
+      "mood"
+    ]
+  },
   "temperature": {
     "phonetic": "[ˈtemprətʃər]",
     "example": "The temperature in the classroom was too high to study comfortably.",
@@ -22662,6 +28131,19 @@
       "passing"
     ]
   },
+  "tempt": {
+    "phonetic": "[tempt]",
+    "conceptId": "tempt",
+    "pos": [
+      "verb"
+    ],
+    "example": "The smell of fresh bread can tempt anyone easily.",
+    "synonyms": [
+      "lure",
+      "entice",
+      "attract"
+    ]
+  },
   "tend": {
     "conceptId": "tend",
     "phonetic": "[tend]",
@@ -22672,6 +28154,19 @@
     "synonyms": [
       "incline",
       "lean"
+    ]
+  },
+  "tender": {
+    "phonetic": "[ˈtendər]",
+    "conceptId": "tender",
+    "pos": [
+      "adj"
+    ],
+    "example": "This chicken is soft and tender after slow cooking.",
+    "synonyms": [
+      "soft",
+      "gentle",
+      "delicate"
     ]
   },
   "tension": {
@@ -22711,6 +28206,32 @@
     "conceptId": "terrible",
     "pos": [
       "adj"
+    ]
+  },
+  "terrific": {
+    "phonetic": "[tərˈɪfɪk]",
+    "conceptId": "terrific",
+    "pos": [
+      "adj"
+    ],
+    "example": "You did a terrific job on your science project.",
+    "synonyms": [
+      "wonderful",
+      "excellent",
+      "fantastic"
+    ]
+  },
+  "terrifying": {
+    "phonetic": "[ˈterəfaɪɪŋ]",
+    "conceptId": "terrifying",
+    "pos": [
+      "adj"
+    ],
+    "example": "The storm made a terrifying noise all through the night.",
+    "synonyms": [
+      "frightening",
+      "scary",
+      "horrifying"
     ]
   },
   "territory": {
@@ -22761,6 +28282,19 @@
       "idea",
       "hypothesis",
       "principle"
+    ]
+  },
+  "therapy": {
+    "phonetic": "[ˈθerəpi]",
+    "conceptId": "therapy",
+    "pos": [
+      "noun"
+    ],
+    "example": "She started speech therapy to improve her pronunciation after surgery.",
+    "synonyms": [
+      "treatment",
+      "healing",
+      "rehabilitation"
     ]
   },
   "thermometer": {
@@ -22863,6 +28397,31 @@
       "warning"
     ]
   },
+  "thrill": {
+    "phonetic": "[θrɪl]",
+    "conceptId": "thrill",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "The magician's final trick will thrill the whole audience.",
+    "synonyms": [
+      "excite",
+      "electrify"
+    ]
+  },
+  "thrive": {
+    "phonetic": "[θraɪv]",
+    "conceptId": "thrive",
+    "pos": [
+      "verb"
+    ],
+    "example": "Small shops can thrive when neighbors support them daily.",
+    "synonyms": [
+      "flourish",
+      "prosper"
+    ]
+  },
   "throat": {
     "phonetic": "[θroʊt]",
     "example": "After shouting for an hour, my throat hurt and felt dry.",
@@ -22901,6 +28460,19 @@
       "digit"
     ]
   },
+  "thus": {
+    "phonetic": "[ðʌs]",
+    "conceptId": "thus",
+    "pos": [
+      "adv"
+    ],
+    "example": "He missed the train and thus arrived an hour late.",
+    "synonyms": [
+      "therefore",
+      "hence",
+      "consequently"
+    ]
+  },
   "ticket": {
     "phonetic": "[ˈtɪkət]",
     "example": "I bought two tickets for the baseball game this Saturday.",
@@ -22912,6 +28484,18 @@
     "conceptId": "ticket",
     "pos": [
       "noun"
+    ]
+  },
+  "tide": {
+    "phonetic": "[taɪd]",
+    "conceptId": "tide",
+    "pos": [
+      "noun"
+    ],
+    "example": "The rising tide slowly covered the rocks near shore.",
+    "synonyms": [
+      "current",
+      "flow"
     ]
   },
   "tidy": {
@@ -22979,6 +28563,18 @@
       "advice",
       "hint",
       "end"
+    ]
+  },
+  "tissue": {
+    "phonetic": "[ˈtɪsjuː]",
+    "conceptId": "tissue",
+    "pos": [
+      "noun"
+    ],
+    "example": "Muscle tissue in the body repairs itself after exercise.",
+    "synonyms": [
+      "membrane",
+      "flesh"
     ]
   },
   "title": {
@@ -23185,6 +28781,32 @@
       "noun"
     ]
   },
+  "toxic": {
+    "phonetic": "[ˈtɑːksɪk]",
+    "conceptId": "toxic",
+    "pos": [
+      "adj"
+    ],
+    "example": "The factory released toxic waste into the nearby river.",
+    "synonyms": [
+      "poisonous",
+      "harmful"
+    ]
+  },
+  "trace": {
+    "phonetic": "[treɪs]",
+    "conceptId": "trace",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "The thief left no trace in the empty room.",
+    "synonyms": [
+      "sign",
+      "mark",
+      "track"
+    ]
+  },
   "track": {
     "phonetic": "[træk]",
     "example": "We found the track of a wild animal in the snow.",
@@ -23247,6 +28869,32 @@
     "synonyms": [
       "disaster",
       "misfortune"
+    ]
+  },
+  "trail": {
+    "phonetic": "[treɪl]",
+    "conceptId": "trail",
+    "pos": [
+      "noun"
+    ],
+    "example": "We followed a narrow trail through the quiet forest.",
+    "synonyms": [
+      "path",
+      "track",
+      "route"
+    ]
+  },
+  "trait": {
+    "phonetic": "[treɪt]",
+    "conceptId": "trait",
+    "pos": [
+      "noun"
+    ],
+    "example": "Kindness is the trait I admire most in friends.",
+    "synonyms": [
+      "characteristic",
+      "feature",
+      "quality"
     ]
   },
   "transfer": {
@@ -23326,6 +28974,19 @@
       "traffic"
     ]
   },
+  "trap": {
+    "phonetic": "[træp]",
+    "conceptId": "trap",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "The hunter set a trap near the narrow forest path.",
+    "synonyms": [
+      "snare",
+      "pitfall"
+    ]
+  },
   "travel": {
     "phonetic": "[ˈtrævəl]",
     "example": "Someday I want to travel around Europe with my closest friends.",
@@ -23392,6 +29053,32 @@
       "care"
     ]
   },
+  "tremble": {
+    "phonetic": "[ˈtrembəl]",
+    "conceptId": "tremble",
+    "pos": [
+      "verb"
+    ],
+    "example": "His hands began to tremble as he opened the letter.",
+    "synonyms": [
+      "shake",
+      "shiver",
+      "quiver"
+    ]
+  },
+  "tremendous": {
+    "phonetic": "[trəˈmendəs]",
+    "conceptId": "tremendous",
+    "pos": [
+      "adj"
+    ],
+    "example": "The team made tremendous progress in just one month.",
+    "synonyms": [
+      "enormous",
+      "immense",
+      "huge"
+    ]
+  },
   "trend": {
     "conceptId": "trend",
     "phonetic": "[trend]",
@@ -23418,6 +29105,18 @@
       "hearing"
     ]
   },
+  "tribe": {
+    "phonetic": "[traɪb]",
+    "conceptId": "tribe",
+    "pos": [
+      "noun"
+    ],
+    "example": "The tribe has lived beside this river for centuries.",
+    "synonyms": [
+      "clan",
+      "ethnic group"
+    ]
+  },
   "trick": {
     "phonetic": "[trɪk]",
     "example": "The fox used a clever trick to get the cheese.",
@@ -23429,6 +29128,20 @@
     "conceptId": "trick",
     "pos": [
       "noun"
+    ]
+  },
+  "trigger": {
+    "phonetic": "[ˈtrɪɡər]",
+    "conceptId": "trigger",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "Loud noises can trigger a headache in some people.",
+    "synonyms": [
+      "cause",
+      "prompt",
+      "spark"
     ]
   },
   "trim": {
@@ -23545,6 +29258,19 @@
     "conceptId": "trust",
     "pos": [
       "noun"
+    ]
+  },
+  "truth": {
+    "phonetic": "[truːθ]",
+    "conceptId": "truth",
+    "pos": [
+      "noun"
+    ],
+    "example": "He finally told his parents the truth about the accident.",
+    "synonyms": [
+      "fact",
+      "reality",
+      "honesty"
     ]
   },
   "tune": {
@@ -23725,6 +29451,32 @@
       "noun"
     ]
   },
+  "uncover": {
+    "phonetic": "[ənˈkʌvər]",
+    "conceptId": "uncover",
+    "pos": [
+      "verb"
+    ],
+    "example": "Reporters uncovered the truth about the company's secret deal.",
+    "synonyms": [
+      "reveal",
+      "expose",
+      "disclose"
+    ]
+  },
+  "undergo": {
+    "phonetic": "[ʌndərˈɡoʊ]",
+    "conceptId": "undergo",
+    "pos": [
+      "verb"
+    ],
+    "example": "Many students undergo a lot of stress before final exams.",
+    "synonyms": [
+      "experience",
+      "endure",
+      "suffer"
+    ]
+  },
   "underground": {
     "conceptId": "underground",
     "phonetic": "[ˈʌndərɡraʊnd]",
@@ -23802,7 +29554,7 @@
     "pos": [
       "noun"
     ],
-    "phonetic": "[ˌjuːnəfəˈkeɪʃən]",
+    "phonetic": "[juːnəfəˈkeɪʃən]",
     "example": "Many people hope for the unification of the two Koreas."
   },
   "uniform": {
@@ -23841,6 +29593,19 @@
       "alliance",
       "association",
       "league"
+    ]
+  },
+  "unique": {
+    "phonetic": "[juˈniːk]",
+    "conceptId": "unique",
+    "pos": [
+      "adj"
+    ],
+    "example": "Every snowflake has a unique shape and delicate pattern.",
+    "synonyms": [
+      "special",
+      "distinctive",
+      "one-of-a-kind"
     ]
   },
   "unite": {
@@ -23893,6 +29658,19 @@
     "conceptId": "universe",
     "pos": [
       "noun"
+    ]
+  },
+  "university": {
+    "phonetic": "[juːnəˈvɜːrsəti]",
+    "conceptId": "university",
+    "pos": [
+      "noun"
+    ],
+    "example": "My sister studies history at a famous university abroad.",
+    "synonyms": [
+      "college",
+      "academy",
+      "institute"
     ]
   },
   "unknown": {
@@ -23983,6 +29761,33 @@
       "the wrong way up"
     ]
   },
+  "urban": {
+    "phonetic": "[ˈɜːrbən]",
+    "conceptId": "urban",
+    "pos": [
+      "adj"
+    ],
+    "example": "Many young people move to urban areas to find work.",
+    "synonyms": [
+      "metropolitan",
+      "city",
+      "municipal"
+    ]
+  },
+  "urge": {
+    "phonetic": "[ɜːrdʒ]",
+    "conceptId": "urge",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "She felt a sudden urge to call her old friend.",
+    "synonyms": [
+      "impulse",
+      "desire",
+      "longing"
+    ]
+  },
   "urgent": {
     "conceptId": "urgent",
     "phonetic": "[ˈɜːrdʒənt]",
@@ -24009,6 +29814,19 @@
       "adj"
     ]
   },
+  "usual": {
+    "phonetic": "[ˈjuːʒəwəl]",
+    "conceptId": "usual",
+    "pos": [
+      "adj"
+    ],
+    "example": "He took his usual seat by the window this morning.",
+    "synonyms": [
+      "normal",
+      "ordinary",
+      "customary"
+    ]
+  },
   "usually": {
     "phonetic": "[ˈjuːʒəwəli]",
     "example": "We usually eat breakfast at seven before leaving for school.",
@@ -24022,6 +29840,19 @@
       "adv"
     ]
   },
+  "utilize": {
+    "phonetic": "[ˈjuːtəlaɪz]",
+    "conceptId": "utilize",
+    "pos": [
+      "verb"
+    ],
+    "example": "Farmers utilize rain water to grow their summer crops.",
+    "synonyms": [
+      "use",
+      "employ",
+      "apply"
+    ]
+  },
   "vacation": {
     "phonetic": "[veɪˈkeɪʃən]",
     "example": "During summer vacation, we stayed at my aunt's country house.",
@@ -24033,6 +29864,19 @@
     "conceptId": "vacation",
     "pos": [
       "noun"
+    ]
+  },
+  "vacuum": {
+    "phonetic": "[ˈvækjum]",
+    "conceptId": "vacuum",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "The vacuum is too loud for the sleeping baby.",
+    "synonyms": [
+      "cleaner",
+      "hoover"
     ]
   },
   "vain": {
@@ -24102,6 +29946,19 @@
       "merit"
     ]
   },
+  "vapor": {
+    "phonetic": "[ˈveɪpər]",
+    "conceptId": "vapor",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "Water vapor rises from the hot spring every cold morning.",
+    "synonyms": [
+      "steam",
+      "mist"
+    ]
+  },
   "various": {
     "phonetic": "[ˈverɪəs]",
     "example": "The store sells various kinds of snacks at low prices.",
@@ -24113,6 +29970,32 @@
     "conceptId": "various",
     "pos": [
       "adj"
+    ]
+  },
+  "vary": {
+    "phonetic": "[ˈveri]",
+    "conceptId": "vary",
+    "pos": [
+      "verb"
+    ],
+    "example": "Prices vary depending on the season and the store.",
+    "synonyms": [
+      "differ",
+      "change",
+      "fluctuate"
+    ]
+  },
+  "vast": {
+    "phonetic": "[væst]",
+    "conceptId": "vast",
+    "pos": [
+      "adj"
+    ],
+    "example": "A vast desert stretched beyond the small village.",
+    "synonyms": [
+      "immense",
+      "enormous",
+      "extensive"
     ]
   },
   "vegetable": {
@@ -24140,6 +30023,19 @@
       "transport"
     ]
   },
+  "verbal": {
+    "phonetic": "[ˈvɜːrbəl]",
+    "conceptId": "verbal",
+    "pos": [
+      "adj"
+    ],
+    "example": "They made a verbal agreement without signing any paper.",
+    "synonyms": [
+      "spoken",
+      "oral",
+      "linguistic"
+    ]
+  },
   "version": {
     "conceptId": "version",
     "phonetic": "[ˈvɜːrʒən]",
@@ -24151,6 +30047,20 @@
       "edition",
       "form",
       "model"
+    ]
+  },
+  "vice": {
+    "phonetic": "[vaɪs]",
+    "conceptId": "vice",
+    "pos": [
+      "adj",
+      "noun"
+    ],
+    "example": "The vice president will speak at the morning meeting.",
+    "synonyms": [
+      "deputy",
+      "assistant",
+      "associate"
     ]
   },
   "victim": {
@@ -24232,6 +30142,18 @@
       "rough"
     ]
   },
+  "virtual": {
+    "phonetic": "[ˈvɜːrtʃuəl]",
+    "conceptId": "virtual",
+    "pos": [
+      "adj"
+    ],
+    "example": "We took a virtual tour of the ancient city.",
+    "synonyms": [
+      "simulated",
+      "digital"
+    ]
+  },
   "virtue": {
     "conceptId": "virtue",
     "phonetic": "[ˈvɜːrtʃu]",
@@ -24294,6 +30216,18 @@
       "bright",
       "clear",
       "lively"
+    ]
+  },
+  "vocation": {
+    "phonetic": "[voʊˈkeɪʃən]",
+    "conceptId": "vocation",
+    "pos": [
+      "noun"
+    ],
+    "example": "Teaching became her true vocation after many quiet years.",
+    "synonyms": [
+      "calling",
+      "profession"
     ]
   },
   "voice": {
@@ -24374,6 +30308,19 @@
       "noun"
     ]
   },
+  "wage": {
+    "phonetic": "[weɪdʒ]",
+    "conceptId": "wage",
+    "pos": [
+      "noun"
+    ],
+    "example": "Workers asked for a higher wage and shorter hours.",
+    "synonyms": [
+      "salary",
+      "pay",
+      "earnings"
+    ]
+  },
   "wagon": {
     "phonetic": "[ˈwæɡən]",
     "example": "Two horses pulled the heavy wagon full of wood uphill.",
@@ -24422,6 +30369,18 @@
     "synonyms": [
       "purse",
       "billfold"
+    ]
+  },
+  "wander": {
+    "phonetic": "[ˈwɑːndər]",
+    "conceptId": "wander",
+    "pos": [
+      "verb"
+    ],
+    "example": "We wandered through the old town for several hours.",
+    "synonyms": [
+      "roam",
+      "stroll"
     ]
   },
   "war": {
@@ -24540,6 +30499,18 @@
       "noun"
     ]
   },
+  "weapon": {
+    "phonetic": "[ˈwepən]",
+    "conceptId": "weapon",
+    "pos": [
+      "noun"
+    ],
+    "example": "The police found a dangerous weapon inside the empty car.",
+    "synonyms": [
+      "arm",
+      "weaponry"
+    ]
+  },
   "wear": {
     "phonetic": "[wer]",
     "example": "You should wear a warm coat because it is freezing outside.",
@@ -24576,6 +30547,31 @@
       "noun"
     ]
   },
+  "weed": {
+    "phonetic": "[wiːd]",
+    "conceptId": "weed",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "example": "A single weed can spread across the whole garden.",
+    "synonyms": [
+      "wild grass",
+      "unwanted plant"
+    ]
+  },
+  "weigh": {
+    "phonetic": "[weɪ]",
+    "conceptId": "weigh",
+    "pos": [
+      "verb"
+    ],
+    "example": "These apples weigh about two kilograms in total.",
+    "synonyms": [
+      "measure",
+      "balance"
+    ]
+  },
   "weight": {
     "phonetic": "[weɪt]",
     "example": "The doctor checked my height and weight during the health test.",
@@ -24587,6 +30583,31 @@
     "conceptId": "weight",
     "pos": [
       "noun"
+    ]
+  },
+  "weird": {
+    "phonetic": "[wɪrd]",
+    "conceptId": "weird",
+    "pos": [
+      "adj"
+    ],
+    "example": "A weird sound came from the empty old house.",
+    "synonyms": [
+      "strange",
+      "odd",
+      "bizarre"
+    ]
+  },
+  "welfare": {
+    "phonetic": "[ˈwelfer]",
+    "conceptId": "welfare",
+    "pos": [
+      "noun"
+    ],
+    "example": "The company cares about the welfare of its workers.",
+    "synonyms": [
+      "well-being",
+      "prosperity"
     ]
   },
   "wet": {
@@ -24702,6 +30723,19 @@
       "adj"
     ]
   },
+  "widespread": {
+    "phonetic": "[ˈwaɪdsˈpred]",
+    "conceptId": "widespread",
+    "pos": [
+      "adj"
+    ],
+    "example": "The new disease caused widespread fear across the whole country.",
+    "synonyms": [
+      "common",
+      "extensive",
+      "prevalent"
+    ]
+  },
   "wild": {
     "phonetic": "[waɪld]",
     "example": "Wild animals live deep in the forest, far from human houses.",
@@ -24776,6 +30810,19 @@
       "clean",
       "rub",
       "mop"
+    ]
+  },
+  "wireless": {
+    "phonetic": "[ˈwaɪrlɪs]",
+    "conceptId": "wireless",
+    "pos": [
+      "noun",
+      "adj"
+    ],
+    "example": "Most hotels now offer free wireless for their guests.",
+    "synonyms": [
+      "Wi-Fi",
+      "radio"
     ]
   },
   "wisdom": {
@@ -24855,6 +30902,19 @@
     "synonyms": [
       "coyote",
       "beast"
+    ]
+  },
+  "wonder": {
+    "phonetic": "[ˈwʌndər]",
+    "conceptId": "wonder",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "I wonder why she left the party so early.",
+    "synonyms": [
+      "ponder",
+      "speculate"
     ]
   },
   "wonderful": {
@@ -25066,6 +31126,19 @@
       "lawn"
     ]
   },
+  "yawn": {
+    "phonetic": "[jɔːn]",
+    "conceptId": "yawn",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "He yawned loudly during the last minutes of class.",
+    "synonyms": [
+      "gape",
+      "stretch"
+    ]
+  },
   "yell": {
     "phonetic": "[jel]",
     "example": "The coach yelled at the players to run much faster.",
@@ -25078,6 +31151,19 @@
     "conceptId": "yell",
     "pos": [
       "verb"
+    ]
+  },
+  "yield": {
+    "phonetic": "[jiːld]",
+    "conceptId": "yield",
+    "pos": [
+      "verb",
+      "noun"
+    ],
+    "example": "He refused to yield to the pressure from others.",
+    "synonyms": [
+      "surrender",
+      "submit"
     ]
   }
 }

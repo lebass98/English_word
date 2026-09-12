@@ -10,6 +10,7 @@ import type { UiLangId } from "../i18n/strings";
 import enLevelMiddle1 from "../data/en/levels/middle-1.json";
 import enLevelMiddle2 from "../data/en/levels/middle-2.json";
 import enLevelMiddle3 from "../data/en/levels/middle-3.json";
+import enLevelHigh1 from "../data/en/levels/high-1.json";
 import enTrJa from "../data/en/tr/ja.json";
 import enTrKo from "../data/en/tr/ko.json";
 import enWords from "../data/en/words.json";
@@ -99,6 +100,7 @@ const DATA: Record<StudyLangId, LanguageData> = {
       "middle-1": enLevelMiddle1 as string[],
       "middle-2": enLevelMiddle2 as string[],
       "middle-3": enLevelMiddle3 as string[],
+      "high-1": enLevelHigh1 as string[],
     },
     words: enWords as Record<string, NeutralEntry>,
     tr: {

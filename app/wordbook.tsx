@@ -104,7 +104,7 @@ export default function WordbookScreen() {
               <PillButton
                 key={f.key}
                 label={t(f.labelKey)}
-                size="sm"
+                size="lg"
                 variant={filter === f.key ? "inset" : "default"}
                 onPress={() => setFilter(f.key)}
               />

@@ -591,27 +591,32 @@ function StudyCard({
         </ScrollView>
 
         {/* ── 학습 평가 버튼 (가운데는 단어장에 담기) ────────── */}
-        <View className="mx-6 flex-row items-stretch gap-2 px-1 pb-4 pt-3">
+        <View className="mx-6 flex-row items-stretch gap-1.5 px-1 pb-4 pt-3">
+          {/* 가운데 버튼이 들어오면서 좁아져, 양옆 버튼은 좌우 여백을 줄였다 */}
           <Pressable
             onPress={() => decide("unsure")}
             style={{ flex: 1 }}
-            className="flex-row items-center justify-center gap-2 rounded-[28px] bg-surface px-3 py-4 shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
+            className="flex-row items-center justify-center gap-1.5 rounded-[28px] bg-surface px-1.5 py-4 shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
           >
-            <View className="h-7 w-7 items-center justify-center rounded-lg bg-slate-300">
+            <View className="h-6 w-6 items-center justify-center rounded-lg bg-slate-300">
               <AgainIcon />
             </View>
-            <Text className="text-[14px] font-extrabold tracking-tight text-slate-800">
+            <Text
+              numberOfLines={1}
+              className="text-[14px] font-extrabold tracking-tight text-slate-800"
+            >
               {t("study.unsure")}
             </Text>
           </Pressable>
 
-          {/* 가운데 저장 버튼. 글자를 아이콘 아래에 세로로 놓아 폭을 아낀다 */}
+          {/* 가운데 저장 버튼. 담김 여부에 따라 글자가 바뀌어도 폭이 흔들리지
+              않도록 긴 쪽(저장됨/保存済)에 맞춰 너비를 고정한다 */}
           <Pressable
             onPress={() => toggleSaved(word.id)}
             accessibilityRole="button"
             accessibilityState={{ selected: isSaved }}
             accessibilityLabel={t("study.saveToggle")}
-            className={`w-14 items-center justify-center gap-0.5 rounded-[28px] px-1 active:scale-[0.98] ${
+            className={`w-20 flex-row items-center justify-center gap-1.5 rounded-[28px] px-1 active:scale-[0.98] ${
               isSaved
                 ? "bg-canvas shadow-neu-inset"
                 : "bg-surface shadow-neu-sm active:shadow-neu-pressed"
@@ -624,7 +629,7 @@ function StudyCard({
             />
             <Text
               numberOfLines={1}
-              className={`text-[10px] font-extrabold tracking-tight ${
+              className={`text-[14px] font-extrabold tracking-tight ${
                 isSaved ? "text-mint-dark" : "text-slate-500"
               }`}
             >
@@ -635,12 +640,15 @@ function StudyCard({
           <Pressable
             onPress={() => decide("known")}
             style={{ flex: 1 }}
-            className="flex-row items-center justify-center gap-2 rounded-[28px] bg-[#dff5ea] px-3 py-4 shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
+            className="flex-row items-center justify-center gap-1.5 rounded-[28px] bg-[#dff5ea] px-1.5 py-4 shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
           >
             <View className="h-6 w-6 items-center justify-center rounded-md bg-emerald-500">
               <CheckIcon />
             </View>
-            <Text className="text-[15px] font-black tracking-tight text-emerald-800">
+            <Text
+              numberOfLines={1}
+              className="text-[15px] font-black tracking-tight text-emerald-800"
+            >
               {t("study.known")}
             </Text>
           </Pressable>

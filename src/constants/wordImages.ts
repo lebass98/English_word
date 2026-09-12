@@ -257,6 +257,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   further: require("../../assets/words/further.png"),
   gallery: require("../../assets/words/gallery.png"),
   garage: require("../../assets/words/garage.png"),
+  gather: require("../../assets/words/gather.png"),
   gay: require("../../assets/words/gay.png"),
   gaze: require("../../assets/words/gaze.png"),
   general: require("../../assets/words/general.png"),

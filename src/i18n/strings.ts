@@ -213,7 +213,7 @@ const ja: Partial<Record<StringKey, string>> = {
   "study.autoAdvanceToggle": "自動送りのオン・オフ",
   "study.speak": "{word} の発音を聞く",
   "study.save": "保存",
-  "study.saved": "保存済み",
+  "study.saved": "保存済",
   "study.saveToggle": "単語帳に入れる・外す",
   "study.unsure": "あいまい",
   "study.known": "覚えた",

@@ -609,14 +609,15 @@ function StudyCard({
             </Text>
           </Pressable>
 
-          {/* 가운데 저장 버튼. 담김 여부에 따라 글자가 바뀌어도 폭이 흔들리지
-              않도록 긴 쪽(저장됨/保存済)에 맞춰 너비를 고정한다 */}
+          {/* 가운데 저장 버튼. 담기면 글자가 한 자 늘어나므로(저장 → 저장됨,
+              保存 → 保存済) 긴 쪽에 맞춰 너비를 잡는다. shrink-0 이 없으면
+              flex 행에서 자리가 모자랄 때 이 너비가 그냥 줄어들어 글자가 잘린다 */}
           <Pressable
             onPress={() => toggleSaved(word.id)}
             accessibilityRole="button"
             accessibilityState={{ selected: isSaved }}
             accessibilityLabel={t("study.saveToggle")}
-            className={`w-20 flex-row items-center justify-center gap-1.5 rounded-[28px] px-1 active:scale-[0.98] ${
+            className={`w-[84px] shrink-0 flex-row items-center justify-center gap-1.5 rounded-[28px] px-1 active:scale-[0.98] ${
               isSaved
                 ? "bg-canvas shadow-neu-inset"
                 : "bg-surface shadow-neu-sm active:shadow-neu-pressed"

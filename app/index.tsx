@@ -237,9 +237,10 @@ export default function HomeScreen() {
         <Text className="mt-8 text-[17px] font-bold text-ink">
           {t("home.myCourse")}
         </Text>
-        <View className="mt-4 gap-6 md:flex-row md:flex-wrap">
+        {/* 한 줄에 두 개씩. 폭을 47%로 잡아 좁은 화면에서도 두 칸이 확실히 들어간다 */}
+        <View className="mt-4 flex-row flex-wrap gap-4">
           {knownByGrade.map(({ grade, known }) => (
-            <View key={grade.id} className="md:w-[48%]">
+            <View key={grade.id} className="w-[47%]">
               <GradeCard
                 label={grade.label}
                 learnedWords={known}

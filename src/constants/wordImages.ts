@@ -349,6 +349,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   "living room": require("../../assets/words/living-room.png"),
   locate: require("../../assets/words/locate.png"),
   lonely: require("../../assets/words/lonely.png"),
+  loud: require("../../assets/words/loud.png"),
   low: require("../../assets/words/low.png"),
   machine: require("../../assets/words/machine.png"),
   magazine: require("../../assets/words/magazine.png"),
@@ -652,6 +653,4 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   wound: require("../../assets/words/wound.png"),
   wrap: require("../../assets/words/wrap.png"),
   yell: require("../../assets/words/yell.png"),
-  "loud": require("../../assets/words/loud.png"),
-  "m1-340": require("../../assets/words/loud.png"),
 };

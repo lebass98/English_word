@@ -605,23 +605,31 @@ function StudyCard({
             </Text>
           </Pressable>
 
-          {/* 가운데 저장 버튼. 양옆 판정 버튼의 자리를 뺏지 않게 글자 없이 둔다 */}
+          {/* 가운데 저장 버튼. 글자를 아이콘 아래에 세로로 놓아 폭을 아낀다 */}
           <Pressable
             onPress={() => toggleSaved(word.id)}
             accessibilityRole="button"
             accessibilityState={{ selected: isSaved }}
             accessibilityLabel={t("study.saveToggle")}
-            className={`w-12 items-center justify-center rounded-[28px] active:scale-[0.98] ${
+            className={`w-14 items-center justify-center gap-0.5 rounded-[28px] px-1 active:scale-[0.98] ${
               isSaved
                 ? "bg-canvas shadow-neu-inset"
                 : "bg-surface shadow-neu-sm active:shadow-neu-pressed"
             }`}
           >
             <BookmarkIcon
-              size={18}
+              size={16}
               filled={isSaved}
               color={isSaved ? "#0eb582" : "#94a3b8"}
             />
+            <Text
+              numberOfLines={1}
+              className={`text-[10px] font-extrabold tracking-tight ${
+                isSaved ? "text-mint-dark" : "text-slate-500"
+              }`}
+            >
+              {t(isSaved ? "study.saved" : "study.save")}
+            </Text>
           </Pressable>
 
           <Pressable

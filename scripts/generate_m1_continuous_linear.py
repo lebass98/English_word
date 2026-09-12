@@ -1667,6 +1667,170 @@ UNIT_DATA = {
             "id": "m1-500", "word": "sugar", "meaning": "설탕",
             "scene": "cozy kitchen dining counter, gentle cute slender stickman using porcelain spoon scooping white sweet granulated sugar from ceramic sugar bowl into warm steaming herbal tea"
         }
+    ]    ,
+    26: [
+        {
+            "id": "m1-501", "word": "castle", "meaning": "성",
+            "scene": "picturesque green mountain crag, magnificent medieval stone fortress castle standing proudly on hill with tall stone turrets and arched gateway, cute slender stickman traveler looking up in awe"
+        },
+        {
+            "id": "m1-502", "word": "successful", "meaning": "성공한",
+            "scene": "book signing event hall, happy celebrated cute slender stickman bestselling author signing copies of novel at desk with smiling readers lining up to congratulate, banners and books"
+        },
+        {
+            "id": "m1-503", "word": "tax", "meaning": "세금",
+            "scene": "orderly civic tax service office, conscientious cute slender stickman citizen filing annual municipal revenue tax return forms with helpful government clerk stickman at counter"
+        },
+        {
+            "id": "m1-504", "word": "century", "meaning": "세기, 100년",
+            "scene": "history museum timeline hall, thoughtful cute slender stickman student walking past an expansive historic timeline exhibit spanning the 19th and 20th centuries with vintage photographs"
+        },
+        {
+            "id": "m1-505", "word": "count", "meaning": "세다",
+            "scene": "bright preschool nursery classroom, cheerful cute slender stickman teacher pointing at numbered colorful wooden counting blocks on table counting numbers one to ten with happy student"
+        },
+        {
+            "id": "m1-506", "word": "laundry", "meaning": "세탁물, 빨래",
+            "scene": "modern laundromat parlor, diligent cute slender stickman folding warm freshly dried white towels neatly from front-loading washing machine, laundry basket on bench"
+        },
+        {
+            "id": "m1-507", "word": "introduce", "meaning": "소개하다",
+            "scene": "friendly school courtyard garden, enthusiastic cute slender stickman student introducing a smiling new transfer student friend stickman to classmate stickmen with open warm gestures"
+        },
+        {
+            "id": "m1-508", "word": "salt", "meaning": "소금",
+            "scene": "cozy kitchen dining table, attentive cute slender stickman cook sprinkling a pinch of fine white salt from a ceramic salt shaker over a steaming bowl of vegetable soup, spice rack on wall"
+        },
+        {
+            "id": "m1-509", "word": "sound", "meaning": "소리",
+            "scene": "historic village square clock tower, cute slender stickman standing on cobblestone street pausing happily listening to the rich resonant sound tones of the bell chimes ringing from tower"
+        },
+        {
+            "id": "m1-510", "word": "scream", "meaning": "소리 지르다",
+            "scene": "fun spooky haunted house carnival ride, cute slender stickman screaming with humorous theatrical fright and raised hands as a harmless cartoon cardboard spider pops out from door frame"
+        },
+        {
+            "id": "m1-511", "word": "wish", "meaning": "소원, 소원하다",
+            "scene": "cozy birthday party table, happy cute slender stickman with closed eyes clasping hands tightly making a heartfelt silent birthday wish before blowing out candles on decorated cake"
+        },
+        {
+            "id": "m1-512", "word": "noise", "meaning": "소음",
+            "scene": "bedroom window at busy city street, cute slender stickman sitting up in bed covering ears gently with hands due to late-night car horn traffic noise outside window, alarm clock on nightstand"
+        },
+        {
+            "id": "m1-513", "word": "proverb", "meaning": "속담",
+            "scene": "traditional wooden study library, wise cute slender stickman elder pointing finger at an open calligraphy scroll inscribed with ancient time-honored wisdom proverbs, desk lamp"
+        },
+        {
+            "id": "m1-514", "word": "saying", "meaning": "속담, 격언",
+            "scene": "classroom inspirational bulletin board, studious cute slender stickman pinning up an engraved wooden plaque featuring the famous saying Time is Gold, student notebooks"
+        },
+        {
+            "id": "m1-515", "word": "whisper", "meaning": "속삭이다",
+            "scene": "quiet library study table, two cute slender stickman friends leaning close together with hand cupped around ear whispering a quiet secret so as not to disturb other readers"
+        },
+        {
+            "id": "m1-516", "word": "hand", "meaning": "손, 건네주다",
+            "scene": "sunny front doorway porch, considerate cute slender stickman student handing an important sealed envelope letter respectfully with both hands to father stickman smiling warmly"
+        },
+        {
+            "id": "m1-517", "word": "guest", "meaning": "손님",
+            "scene": "warm welcoming home dining room, gracious cute slender stickman host welcoming an arriving guest stickman at front doorway taking coat and gesturing warmly toward dining table"
+        },
+        {
+            "id": "m1-518", "word": "handle", "meaning": "손잡이, 다루다",
+            "scene": "kitchen stove cooking counter, careful cute slender stickman using an insulated thick fabric pot holder to grip the hot metal handle of a boiling soup pot safely, cooking utensils"
+        },
+        {
+            "id": "m1-519", "word": "nail", "meaning": "손톱, 못",
+            "scene": "neat home vanity grooming desk, tidy cute slender stickman using small metal nail clippers carefully trimming fingernails neatly over tissue paper, mirror and towel"
+        },
+        {
+            "id": "m1-520", "word": "frankly", "meaning": "솔직히",
+            "scene": "cafe conversational corner, sincere cute slender stickman speaking with open heartfelt hand on chest expressing honest thoughts frankly and kindly to listening friend stickman"
+        }
+    ]    ,
+    27: [
+        {
+            "id": "m1-521", "word": "cotton", "meaning": "솜, 면화",
+            "scene": "sunlit cotton farm field, delighted cute slender stickman holding a soft fluffy white cotton boll freshly plucked from ripe cotton plant shrub, wicker harvest basket on ground"
+        },
+        {
+            "id": "m1-522", "word": "beef", "meaning": "쇠고기",
+            "scene": "home kitchen cooking hearth, caring cute slender stickman preparing a warm nutritious beef stew with vegetables stirring steaming pot on stove with wooden spoon"
+        },
+        {
+            "id": "m1-523", "word": "towel", "meaning": "수건",
+            "scene": "clean bright bathroom rack, cute slender stickman reaching out to pull a fluffy clean folded white cotton bath towel from polished metal bathroom wall rack, mirror and soap dish"
+        },
+        {
+            "id": "m1-524", "word": "capital", "meaning": "수도, 자금",
+            "scene": "national capital landmark plaza, proud cute slender stickman tourist taking photo before grand classical government parliament dome in the bustling historic capital city"
+        },
+        {
+            "id": "m1-525", "word": "hydrogen", "meaning": "수소",
+            "scene": "chemistry science laboratory, curious cute slender stickman student pointing at atomic molecular model showing two hydrogen atoms bonded with oxygen forming water H2O"
+        },
+        {
+            "id": "m1-526", "word": "puzzle", "meaning": "수수께끼, 퍼즐",
+            "scene": "living room rug coffee table, engrossed cute slender stickman carefully fitting the final interlocking jigsaw puzzle piece into a completed scenic landscape puzzle picture"
+        },
+        {
+            "id": "m1-527", "word": "riddle", "meaning": "수수께끼",
+            "scene": "school courtyard bench, playful cute slender stickman posing a clever humorous riddle to friend stickman who scratches head with amusing puzzled grin, book in hand"
+        },
+        {
+            "id": "m1-528", "word": "lesson", "meaning": "수업, 교훈",
+            "scene": "bright classroom desk, diligent cute slender stickman student listening attentively to teacher lesson lecture taking organized notes in ruled English exercise notebook"
+        },
+        {
+            "id": "m1-529", "word": "earnings", "meaning": "수입, 소득",
+            "scene": "small business accounting desk, prudent cute slender stickman entrepreneur reviewing monthly business ledger earnings and financial records with calculator and ledger book"
+        },
+        {
+            "id": "m1-530", "word": "import", "meaning": "수입하다",
+            "scene": "commercial seaport cargo shipping terminal, cute slender stickman logistics officer checking manifest clipboard as large cargo vessel unloads imported shipping containers with crane"
+        },
+        {
+            "id": "m1-531", "word": "collect", "meaning": "수집하다",
+            "scene": "study room hobby workbench, dedicated cute slender stickman collector using tweezers placing vintage international postage stamps neatly into velvet stamp collection album"
+        },
+        {
+            "id": "m1-532", "word": "horizon", "meaning": "수평선",
+            "scene": "seaside cliff overlook at sunset, peaceful cute slender stickman gazing out across calm shimmering ocean as giant golden sun sinks gracefully below distant sea horizon line"
+        },
+        {
+            "id": "m1-533", "word": "bush", "meaning": "수풀, 덤불",
+            "scene": "nature trail meadow edge, observant cute slender stickman smiling softly watching a timid wild rabbit peeking head out from behind a lush green flowering blackberry bush"
+        },
+        {
+            "id": "m1-534", "word": "math", "meaning": "수학",
+            "scene": "geometry classroom blackboard, focused cute slender stickman student solving an elegant mathematical geometry triangle equation using wooden compass and chalk on board"
+        },
+        {
+            "id": "m1-535", "word": "harvest", "meaning": "수확",
+            "scene": "golden autumn rural farmland, joyful cute slender stickman farmer carrying a heavy sheaf of golden ripe wheat stalks across field during bountiful autumn harvest season"
+        },
+        {
+            "id": "m1-536", "word": "moment", "meaning": "순간",
+            "scene": "scenic mountain summit, breathless cute slender stickman standing still in awe capturing a magical serene sunset moment with arms open embracing nature beauty"
+        },
+        {
+            "id": "m1-537", "word": "pilgrim", "meaning": "순례자",
+            "scene": "historic mountain stone pathway, determined humble cute slender stickman pilgrim with traveler staff and shoulder pack walking toward ancient hillside temple sanctuary in distance"
+        },
+        {
+            "id": "m1-538", "word": "breathe", "meaning": "숨쉬다",
+            "scene": "fresh pine forest clearing, relaxed peaceful cute slender stickman standing with eyes closed taking a deep wholesome breath of crisp fresh morning mountain air, arms outstretched"
+        },
+        {
+            "id": "m1-539", "word": "figure", "meaning": "숫자, 수치, 모양",
+            "scene": "financial audit office desk, meticulous cute slender stickman analyst checking statistical numeric figures on printed spreadsheet with ruler and pen verifying accurate data"
+        },
+        {
+            "id": "m1-540", "word": "forest", "meaning": "숲",
+            "scene": "lush dense pine forest nature reserve, happy cute slender stickman hiking on winding footpath beneath towering evergreen trees and ferns with dappled sunlight filtering through"
+        }
     ]
 }
 

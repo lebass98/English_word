@@ -1831,6 +1831,170 @@ UNIT_DATA = {
             "id": "m1-540", "word": "forest", "meaning": "숲",
             "scene": "lush dense pine forest nature reserve, happy cute slender stickman hiking on winding footpath beneath towering evergreen trees and ferns with dappled sunlight filtering through"
         }
+    ]    ,
+    28: [
+        {
+            "id": "m1-541", "word": "schedule", "meaning": "스케줄, 일정",
+            "scene": "study desk wall calendar, organized cute slender stickman checking off daily task checklist boxes on a structured weekly activity schedule chart with pen, alarm clock"
+        },
+        {
+            "id": "m1-542", "word": "sad", "meaning": "슬픈",
+            "scene": "rainy bedroom window sill, gentle cute slender stickman looking out at raindrops trickling down glass, wiping a soft sympathetic tear with handkerchief after emotional film"
+        },
+        {
+            "id": "m1-543", "word": "habit", "meaning": "습관",
+            "scene": "cozy bedtime bedside table, serene cute slender stickman reading a chapter of a book under soft reading lamp practicing a wholesome daily evening reading habit before sleep"
+        },
+        {
+            "id": "m1-544", "word": "custom", "meaning": "습관, 관습",
+            "scene": "sunny morning park path, diligent cute slender stickman walking an eager friendly pet dog on leash practicing routine morning custom walk, park trees in morning breeze"
+        },
+        {
+            "id": "m1-545", "word": "passenger", "meaning": "승객",
+            "scene": "subway train passenger carriage, well-mannered cute slender stickman passenger sitting comfortably holding book by train window while train glides toward city station"
+        },
+        {
+            "id": "m1-546", "word": "monk", "meaning": "승려",
+            "scene": "peaceful mountain temple courtyard, serene humble cute slender stickman Buddhist monk in flowing robes gently sweeping stone pathway with bamboo broom beside stone pagoda"
+        },
+        {
+            "id": "m1-547", "word": "triumph", "meaning": "승리",
+            "scene": "sports tournament podium stage, triumphant cute slender stickman raising champion trophy cup high in air cheering with arms raised in victory, celebratory confetti falling"
+        },
+        {
+            "id": "m1-548", "word": "crew", "meaning": "승무원",
+            "scene": "airplane cabin galley entryway, polite cheerful cute slender stickman flight attendant crew member smiling warmly greeting boarding travelers with welcoming hand gesture"
+        },
+        {
+            "id": "m1-549", "word": "creek", "meaning": "시냇물",
+            "scene": "shady woodland forest creek, playful cute slender stickman stepping across stepping stones watching clear shallow bubbling creek water flow gently over smooth pebbles"
+        },
+        {
+            "id": "m1-550", "word": "stream", "meaning": "시냇물, 개울",
+            "scene": "green countryside valley meadow, fresh sparkling stream river winding gracefully through wildflowers with cute slender stickman kneeling to float a tiny paper boat on current"
+        },
+        {
+            "id": "m1-551", "word": "cool", "meaning": "시원한, 멋진",
+            "scene": "summer veranda porch, relaxed cute slender stickman enjoying a cool refreshing evening breeze blowing through window curtains holding an iced citrus glass drink with straw"
+        },
+        {
+            "id": "m1-552", "word": "poet", "meaning": "시인",
+            "scene": "quaint cafe literary corner, thoughtful expressive cute slender stickman poet standing beside microphone passionately reading lyrical verses from a handwritten poetry notebook"
+        },
+        {
+            "id": "m1-553", "word": "mayor", "meaning": "시장",
+            "scene": "city hall press auditorium, dignified cute slender stickman city mayor standing at civic podium presenting architectural blueprint plan for a new municipal public library"
+        },
+        {
+            "id": "m1-554", "word": "match", "meaning": "시합",
+            "scene": "athletic stadium soccer pitch, dynamic cute slender stickman soccer player kicking soccer ball into goal net during exciting championship sports match, cheering stadium fans"
+        },
+        {
+            "id": "m1-555", "word": "examination", "meaning": "시험, 조사",
+            "scene": "quiet school examination hall, studious focused cute slender stickman student carefully writing answers on exam paper sheet at neat wooden desk, clock on wall"
+        },
+        {
+            "id": "m1-556", "word": "restaurant", "meaning": "식당",
+            "scene": "cozy Italian bistro dining room, delighted cute slender stickman customer enjoying hot pasta meal at restaurant table with checkered tablecloth and candle, waiter in background"
+        },
+        {
+            "id": "m1-557", "word": "dining room", "meaning": "식당방, 식당",
+            "scene": "warm family dining room, happy cute slender stickman family gathered around long dining table enjoying warm wholesome home-cooked dinner together, pendant chandelier above"
+        },
+        {
+            "id": "m1-558", "word": "plant", "meaning": "식물, 심다",
+            "scene": "sunny backyard garden plot, gentle caring cute slender stickman planting a young green flowering plant seedling carefully into fresh dark garden soil, watering can nearby"
+        },
+        {
+            "id": "m1-559", "word": "appetite", "meaning": "식욕",
+            "scene": "bakery dining table, cheerful hungry cute slender stickman smiling broadly rubbing tummy with hearty appetite as delicious warm breakfast pancakes and fruit are served"
+        },
+        {
+            "id": "m1-560", "word": "god", "meaning": "신",
+            "scene": "ancient mountaintop temple altar under majestic starry sky, respectful cute slender stickman gazing up in peaceful awe at grand classical stone temple columns among clouds"
+        }
+    ]    ,
+    29: [
+        {
+            "id": "m1-561", "word": "excited", "meaning": "신나는, 흥분한",
+            "scene": "amusement park entrance gate, joyful exuberant cute slender stickman jumping with raised arms in pure excitement seeing colorful carousel rides and roller coaster peaks"
+        },
+        {
+            "id": "m1-562", "word": "mystery", "meaning": "신비",
+            "scene": "deep sea research submarine viewport, amazed cute slender stickman scientist shining spotlight into deep dark ocean trenches illuminating glowing mysterious deep-sea creatures"
+        },
+        {
+            "id": "m1-563", "word": "trust", "meaning": "신용, 신뢰",
+            "scene": "community neighborhood shop counter, warm honest cute slender stickman storekeeper shaking hands with smiling loyal customer building mutual trust and goodwill"
+        },
+        {
+            "id": "m1-564", "word": "sign", "meaning": "신호, 표지판",
+            "scene": "pedestrian zebra crosswalk, vigilant cute slender stickman crossing guard holding up a bright red Stop sign allowing school children stickmen to cross road safely"
+        },
+        {
+            "id": "m1-565", "word": "excuse", "meaning": "실례하다, 용서하다",
+            "scene": "school hallway corridor, polite cute slender stickman bowing head gently with hand over heart asking excuse and pardon after accidentally bumping into classmate stickman"
+        },
+        {
+            "id": "m1-566", "word": "clue", "meaning": "실마리, 단서",
+            "scene": "detective study room floor, sharp observant cute slender stickman detective holding magnifying glass inspecting a crucial footprint clue on rug, notebook and desk lamp"
+        },
+        {
+            "id": "m1-567", "word": "disappoint", "meaning": "실망시키다",
+            "scene": "study room desk, remorseful determined cute slender stickman looking at graded quiz paper vowing earnestly to study harder to avoid disappointing supportive parents"
+        },
+        {
+            "id": "m1-568", "word": "actually", "meaning": "실제로",
+            "scene": "science experiment classroom bench, surprised happy cute slender stickman student discovering that a complex puzzle experiment actually works smoothly in real demonstration"
+        },
+        {
+            "id": "m1-569", "word": "fail", "meaning": "실패하다, 다시 도전하다",
+            "scene": "outdoor skateboarding practice ramp, persevering brave cute slender stickman picking up skateboard with resilient smile brushing dust off knee ready to try trick again after a fall"
+        },
+        {
+            "id": "m1-570", "word": "heart", "meaning": "심장",
+            "scene": "running stadium finish track, athletic cute slender stickman athlete resting hand over chest feeling rapid strong heartbeat pulse after energetic sprint workout, sports water bottle"
+        },
+        {
+            "id": "m1-571", "word": "wrap", "meaning": "싸다, 포장하다",
+            "scene": "holiday craft wrapping desk, creative cute slender stickman carefully folding colorful gift wrapping paper and tying a neat satin ribbon bow around birthday gift box"
+        },
+        {
+            "id": "m1-572", "word": "fight", "meaning": "싸움, 맞서 싸우다",
+            "scene": "dojo martial arts mat, disciplined athletic cute slender stickman practicing karate sparring stance with focused eyes and raised hands in honorable martial arts match"
+        },
+        {
+            "id": "m1-573", "word": "twin", "meaning": "쌍둥이",
+            "scene": "sunny garden lawn, two identical cheerful cute slender stickman twin siblings wearing matching striped shirts standing side by side smiling happily with arms linked"
+        },
+        {
+            "id": "m1-574", "word": "shoot", "meaning": "쏘다",
+            "scene": "archery target range field, focused cute slender stickman archer drawing back bowstring aiming steady arrow toward round circular bullseye archery target board"
+        },
+        {
+            "id": "m1-575", "word": "spend", "meaning": "쓰다, 소비하다",
+            "scene": "cozy bookstore cashier, thoughtful cute slender stickman student paying coins from wallet spending allowance wisely to purchase a cherished inspirational paperback novel"
+        },
+        {
+            "id": "m1-576", "word": "useless", "meaning": "쓸모 없는",
+            "scene": "tool shed workbench, honest cute slender stickman inspecting a completely broken rusty bent key shaking head realizing it is useless, tossing it into scrap metal bin"
+        },
+        {
+            "id": "m1-577", "word": "sow", "meaning": "씨를 뿌리다",
+            "scene": "fertile freshly tilled garden furrow plot, diligent cute slender stickman farmer scattering handfuls of tiny seeds gently across the rich dark earth bed under early spring sun"
+        },
+        {
+            "id": "m1-578", "word": "seed", "meaning": "씨앗",
+            "scene": "gardening potting bench, gentle cute slender stickman holding open palm admiring a collection of diverse flowering seeds before pressing them gently into terra-cotta soil pot"
+        },
+        {
+            "id": "m1-579", "word": "beauty", "meaning": "아름다움",
+            "scene": "scenic autumn mountain summit ridge, spellbound cute slender stickman admiring breathtaking natural beauty of golden red foliage valleys and shimmering lake below"
+        },
+        {
+            "id": "m1-580", "word": "probably", "meaning": "아마",
+            "scene": "sunny front porch walkway, thoughtful cute slender stickman looking up at clearing blue sky seeing sun peek out from clouds noting it will probably be a lovely sunny day"
+        }
     ]
 }
 

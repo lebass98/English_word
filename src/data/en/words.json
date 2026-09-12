@@ -12407,7 +12407,8 @@
 "pos": [
 "noun"
 ],
-"phonetic": "[ˈriːsɔrs]"
+"phonetic": "[ˈriːsɔrs]",
+"example": "Water is a precious resource, so we should never waste even a single drop."
 },
 "unification": {
 "synonyms": [
@@ -12425,7 +12426,8 @@
 "phonetic": "[trænzˈleɪʃən]",
 "pos": [
 "noun"
-]
+],
+"example": "My sister is working on a translation of this Korean poem into simple English."
 },
 "underground": {
 "conceptId": "underground",
@@ -12434,7 +12436,8 @@
 "adj",
 "adv",
 "noun"
-]
+],
+"example": "The workers found an underground river while they were digging near the old station."
 },
 "rent": {
 "conceptId": "rent",
@@ -12442,35 +12445,40 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "My uncle pays the rent for his small apartment on the first day of every month."
 },
 "union": {
 "conceptId": "union",
 "phonetic": "[ˈjuːnjən]",
 "pos": [
 "noun"
-]
+],
+"example": "The two small countries formed a union to protect themselves from stronger neighbors."
 },
 "exact": {
 "conceptId": "exact",
 "phonetic": "[ɪɡˈzækt]",
 "pos": [
 "adj"
-]
+],
+"example": "Can you tell me the exact time when the train leaves for Busan tomorrow?"
 },
 "personal": {
 "conceptId": "personal",
 "phonetic": "[ˈpɜːrsɪnəl]",
 "pos": [
 "adj"
-]
+],
+"example": "He never shares his personal problems with people he has just met at work."
 },
 "disappear": {
 "conceptId": "disappear",
 "phonetic": "[dɪsəˈpɪr]",
 "pos": [
 "verb"
-]
+],
+"example": "The moon slowly disappeared behind the thick clouds, and the whole field grew dark."
 },
 "laboratory": {
 "conceptId": "laboratory",
@@ -12478,70 +12486,80 @@
 "pos": [
 "noun",
 "adj"
-]
+],
+"example": "Our science teacher told us to wear safety glasses inside the laboratory at all times."
 },
 "league": {
 "conceptId": "league",
 "phonetic": "[liːɡ]",
 "pos": [
 "noun"
-]
+],
+"example": "Our school soccer team finished second in the city league this year."
 },
 "succeed": {
 "conceptId": "succeed",
 "phonetic": "[səkˈsiːd]",
 "pos": [
 "verb"
-]
+],
+"example": "If you keep practicing every day, you will surely succeed in playing the guitar."
 },
 "avoid": {
 "conceptId": "avoid",
 "phonetic": "[əˈvɔɪd]",
 "pos": [
 "verb"
-]
+],
+"example": "Wash your hands often to avoid catching a cold during the cold winter season."
 },
 "no longer": {
 "conceptId": "no longer",
 "phonetic": "[noʊ ˈlɔːŋɡər]",
 "pos": [
 "adv"
-]
+],
+"example": "My old bike no longer works, so I usually walk to school these days."
 },
 "narrow": {
 "conceptId": "narrow",
 "phonetic": "[ˈneroʊ]",
 "pos": [
 "adj"
-]
+],
+"example": "The road to the village was so narrow that two cars could not pass."
 },
 "adjust": {
 "conceptId": "adjust",
 "phonetic": "[əˈdʒʌst]",
 "pos": [
 "verb"
-]
+],
+"example": "You should adjust the seat and the mirror before you start riding this bicycle."
 },
 "trial": {
 "conceptId": "trial",
 "phonetic": "[ˈtraɪəl]",
 "pos": [
 "noun"
-]
+],
+"example": "The trial lasted three days, and finally the judge decided that the man was innocent."
 },
 "foreigner": {
 "conceptId": "foreigner",
 "phonetic": "[ˈfɔːrənər]",
 "pos": [
 "noun"
-]
+],
+"example": "A foreigner asked me for directions to the subway station, and I helped him."
 },
 "dispose": {
 "conceptId": "dispose",
 "phonetic": "[dɪˈspoʊz]",
 "pos": [
 "verb"
-]
+],
+"example": "We must dispose of these plastic bottles properly instead of throwing them on the street."
 },
 "referee": {
 "conceptId": "referee",
@@ -12549,21 +12567,24 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "The referee blew his whistle and stopped the game for a few minutes."
 },
 "care about": {
 "conceptId": "care about",
 "phonetic": "[ker əˈbaʊt]",
 "pos": [
 "verb"
-]
+],
+"example": "My parents really care about my health, so they always prepare healthy meals for me."
 },
 "concern": {
 "conceptId": "concern",
 "phonetic": "[kənˈsɜːrn]",
 "pos": [
 "noun"
-]
+],
+"example": "Air pollution has become a serious concern for people living in big cities."
 },
 "iron": {
 "conceptId": "iron",
@@ -12571,35 +12592,40 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "This old bridge is made of iron, so it is very strong and heavy."
 },
 "come to mind": {
 "conceptId": "come to mind",
 "phonetic": "[kʌm tuː maɪnd]",
 "pos": [
 "verb"
-]
+],
+"example": "When I hear the word summer, cold watermelon and the blue sea come to mind."
 },
 "insight": {
 "conceptId": "insight",
 "phonetic": "[ˈɪnsaɪt]",
 "pos": [
 "noun"
-]
+],
+"example": "Her book gave me a deep insight into how young people think about friendship."
 },
 "resist": {
 "conceptId": "resist",
 "phonetic": "[rɪˈzɪst]",
 "pos": [
 "verb"
-]
+],
+"example": "The villagers resisted the plan to build a huge factory near their small town."
 },
 "tension": {
 "conceptId": "tension",
 "phonetic": "[ˈtenʃən]",
 "pos": [
 "noun"
-]
+],
+"example": "There was great tension in the classroom before the final exam results were announced."
 },
 "purchase": {
 "conceptId": "purchase",
@@ -12607,28 +12633,32 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "Please keep your receipt for a month after the purchase of any electronic product."
 },
 "layer": {
 "conceptId": "layer",
 "phonetic": "[ˈleɪər]",
 "pos": [
 "noun"
-]
+],
+"example": "A thick layer of dust covered all the books on the top shelf."
 },
 "capable": {
 "conceptId": "capable",
 "phonetic": "[ˈkeɪpəbəl]",
 "pos": [
 "adj"
-]
+],
+"example": "She is a capable leader who can solve difficult problems without anyone's help."
 },
 "decorate": {
 "conceptId": "decorate",
 "phonetic": "[ˈdekəreɪt]",
 "pos": [
 "verb"
-]
+],
+"example": "We decorated the classroom with balloons and colorful paper for the graduation party."
 },
 "native": {
 "conceptId": "native",
@@ -12636,203 +12666,232 @@
 "pos": [
 "adj",
 "noun"
-]
+],
+"example": "His native language is Spanish, but he speaks English and Korean very well too."
 },
 "drop out": {
 "conceptId": "drop out",
 "phonetic": "[drɑːp aʊt]",
 "pos": [
 "verb"
-]
+],
+"example": "He dropped out of high school, but later he studied hard and became a chef."
 },
 "appearance": {
 "conceptId": "appearance",
 "phonetic": "[əˈpɪrəns]",
 "pos": [
 "noun"
-]
+],
+"example": "People should not judge others only by their appearance or the clothes they wear."
 },
 "guilty": {
 "conceptId": "guilty",
 "phonetic": "[ˈɡɪlti]",
 "pos": [
 "adj"
-]
+],
+"example": "The court found the man guilty and sent him to prison for five years."
 },
 "civilization": {
 "conceptId": "civilization",
 "phonetic": "[sɪvəlɪˈzeɪʃən]",
 "pos": [
 "noun"
-]
+],
+"example": "An ancient civilization grew up along this wide river thousands of years ago."
 },
 "thorn": {
 "conceptId": "thorn",
 "phonetic": "[θɔːrn]",
 "pos": [
 "noun"
-]
+],
+"example": "Be careful with those roses because their sharp thorns can hurt your fingers."
 },
 "immune": {
 "conceptId": "immune",
 "phonetic": "[ɪˈmjuːn]",
 "pos": [
 "adj"
-]
+],
+"example": "Once you have had this disease, your body becomes immune to it for life."
 },
 "automatic": {
 "conceptId": "automatic",
 "phonetic": "[ɔːtəˈmætɪk]",
 "pos": [
 "adj"
-]
+],
+"example": "The front door is automatic, so it opens as soon as you walk toward it."
 },
 "publish": {
 "conceptId": "publish",
 "phonetic": "[ˈpʌblɪʃ]",
 "pos": [
 "verb"
-]
+],
+"example": "The writer published her first novel when she was only twenty years old."
 },
 "domestic": {
 "conceptId": "domestic",
 "phonetic": "[dəˈmestɪk]",
 "pos": [
 "adj"
-]
+],
+"example": "Domestic flights to Jeju Island are usually cheaper than flights to other countries."
 },
 "myth": {
 "conceptId": "myth",
 "phonetic": "[mɪθ]",
 "pos": [
 "noun"
-]
+],
+"example": "This ancient myth explains how the sun and the moon were first born."
 },
 "dynasty": {
 "conceptId": "dynasty",
 "phonetic": "[ˈdaɪnəsti]",
 "pos": [
 "noun"
-]
+],
+"example": "The dynasty ruled the country for almost five hundred years before it finally fell."
 },
 "imitate": {
 "conceptId": "imitate",
 "phonetic": "[ˈɪməteɪt]",
 "pos": [
 "verb"
-]
+],
+"example": "The little boy imitated his father's voice, and everyone in the room laughed."
 },
 "crane": {
 "conceptId": "crane",
 "phonetic": "[kreɪn]",
 "pos": [
 "noun"
-]
+],
+"example": "A huge crane lifted the heavy steel beams to the top of the building."
 },
 "injure": {
 "conceptId": "injure",
 "phonetic": "[ˈɪndʒər]",
 "pos": [
 "verb"
-]
+],
+"example": "He injured his knee during the basketball game and could not walk properly."
 },
 "substance": {
 "conceptId": "substance",
 "phonetic": "[ˈsʌbstəns]",
 "pos": [
 "noun"
-]
+],
+"example": "Scientists discovered a strange substance in the water near the old paper factory."
 },
 "ingredient": {
 "conceptId": "ingredient",
 "phonetic": "[ɪnˈɡriːdɪənt]",
 "pos": [
 "noun"
-]
+],
+"example": "The main ingredient of this warm soup is potato, and it also has onions."
 },
 "react": {
 "conceptId": "react",
 "phonetic": "[rɪˈækt]",
 "pos": [
 "verb"
-]
+],
+"example": "How did your mother react when she heard about your English test score?"
 },
 "ethic": {
 "conceptId": "ethic",
 "phonetic": "[ˈeθɪk]",
 "pos": [
 "noun"
-]
+],
+"example": "Our teacher often talks about work ethic and the importance of keeping promises."
 },
 "accurate": {
 "conceptId": "accurate",
 "phonetic": "[ˈækjərət]",
 "pos": [
 "adj"
-]
+],
+"example": "The weather report was not accurate, so we all got wet on our way home."
 },
 "mineral": {
 "conceptId": "mineral",
 "phonetic": "[ˈmɪnərəl]",
 "pos": [
 "noun"
-]
+],
+"example": "Milk and green vegetables contain many minerals that help our bones grow strong."
 },
 "be likely to": {
 "conceptId": "be likely to",
 "phonetic": "[biː ˈlaɪkli tuː]",
 "pos": [
 "aux"
-]
+],
+"example": "She is likely to arrive late because the traffic is very heavy this evening."
 },
 "make a decision": {
 "conceptId": "make a decision",
 "phonetic": "[meɪk ə dɪˈsɪʒən]",
 "pos": [
 "verb"
-]
+],
+"example": "You should make a decision about your future career before you finish high school."
 },
 "turn in": {
 "conceptId": "turn in",
 "phonetic": "[tɜːrn ɪn]",
 "pos": [
 "verb"
-]
+],
+"example": "Please turn in your history homework to the teacher before Friday afternoon."
 },
 "browse": {
 "conceptId": "browse",
 "phonetic": "[braʊz]",
 "pos": [
 "verb"
-]
+],
+"example": "We browsed through the small bookstore for an hour but did not buy anything."
 },
 "bring back": {
 "conceptId": "bring back",
 "phonetic": "[brɪŋ bæk]",
 "pos": [
 "verb"
-]
+],
+"example": "This old song brings back happy memories of my elementary school days."
 },
 "improve": {
 "conceptId": "improve",
 "phonetic": "[ɪmˈpruːv]",
 "pos": [
 "verb"
-]
+],
+"example": "Reading English newspapers every day will improve your vocabulary and your writing skills."
 },
 "catch up": {
 "conceptId": "catch up",
 "phonetic": "[kætʃ ʌp]",
 "pos": [
 "verb"
-]
+],
+"example": "Jisu ran faster and finally caught up with her friends near the bus stop."
 },
 "careless": {
 "conceptId": "careless",
 "phonetic": "[ˈkerləs]",
 "pos": [
 "adj"
-]
+],
+"example": "One careless mistake on the last question lowered my math score by ten points."
 },
 "murder": {
 "conceptId": "murder",
@@ -12840,77 +12899,88 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "The police are investigating the murder that happened in the quiet village last month."
 },
 "island": {
 "conceptId": "island",
 "phonetic": "[ˈaɪlənd]",
 "pos": [
 "noun"
-]
+],
+"example": "We took a small boat to the island and swam in the clear sea."
 },
 "pay attention": {
 "conceptId": "pay attention",
 "phonetic": "[peɪ əˈtenʃən]",
 "pos": [
 "verb"
-]
+],
+"example": "Please pay attention to the safety rules before you enter the swimming pool."
 },
 "affect": {
 "conceptId": "affect",
 "phonetic": "[əˈfekt]",
 "pos": [
 "verb"
-]
+],
+"example": "Too much smartphone use can affect your sleep and your grades at school."
 },
 "pass away": {
 "conceptId": "pass away",
 "phonetic": "[pæs əˈweɪ]",
 "pos": [
 "verb"
-]
+],
+"example": "My grandmother passed away last spring, and our whole family still misses her."
 },
 "accelerate": {
 "conceptId": "accelerate",
 "phonetic": "[ækˈseləreɪt]",
 "pos": [
 "verb"
-]
+],
+"example": "The driver accelerated on the empty highway, and the car soon went very fast."
 },
 "advantage": {
 "conceptId": "advantage",
 "phonetic": "[ædˈvæntɪdʒ]",
 "pos": [
 "noun"
-]
+],
+"example": "One big advantage of living in the countryside is the fresh air and quiet."
 },
 "regardless of": {
 "conceptId": "regardless of",
 "phonetic": "[rəˈɡɑːrdləs ʌv]",
 "pos": [
 "prep"
-]
+],
+"example": "Anyone can join our music club regardless of age, gender, or musical experience."
 },
 "set up": {
 "conceptId": "set up",
 "phonetic": "[set ʌp]",
 "pos": [
 "verb"
-]
+],
+"example": "The workers set up a large white tent in the park before the festival."
 },
 "tend": {
 "conceptId": "tend",
 "phonetic": "[tend]",
 "pos": [
 "verb"
-]
+],
+"example": "Students tend to feel sleepy right after lunch, especially on warm spring days."
 },
 "gap": {
 "conceptId": "gap",
 "phonetic": "[ɡæp]",
 "pos": [
 "noun"
-]
+],
+"example": "The gap between rich and poor families is growing wider in many countries."
 },
 "official": {
 "conceptId": "official",
@@ -12918,14 +12988,16 @@
 "pos": [
 "noun",
 "adj"
-]
+],
+"example": "A government official visited our school to explain the new traffic safety rules."
 },
 "chart": {
 "conceptId": "chart",
 "phonetic": "[tʃɑːrt]",
 "pos": [
 "noun"
-]
+],
+"example": "The chart on the wall shows how much water each family used last month."
 },
 "account": {
 "conceptId": "account",
@@ -12933,7 +13005,8 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "I opened a bank account last week to save money for my school trip."
 },
 "alike": {
 "conceptId": "alike",
@@ -12941,35 +13014,40 @@
 "pos": [
 "adj",
 "adv"
-]
+],
+"example": "The twin sisters look so alike that even their teachers often confuse them."
 },
 "journalism": {
 "conceptId": "journalism",
 "phonetic": "[ˈdʒɜːrnəlɪzəm]",
 "pos": [
 "noun"
-]
+],
+"example": "My cousin studies journalism because she wants to write honest news stories."
 },
 "wavy": {
 "conceptId": "wavy",
 "phonetic": "[ˈweɪvi]",
 "pos": [
 "adj"
-]
+],
+"example": "Her long wavy hair looked beautiful in the soft afternoon sunlight yesterday."
 },
 "most of all": {
 "conceptId": "most of all",
 "phonetic": "[moʊst ʌv ɔːl]",
 "pos": [
 "adv"
-]
+],
+"example": "I like many subjects, but most of all I enjoy learning world history."
 },
 "article": {
 "conceptId": "article",
 "phonetic": "[ˈɑːrtəkəl]",
 "pos": [
 "noun"
-]
+],
+"example": "Jiho read an interesting article about climate change in the school newspaper."
 },
 "feature": {
 "conceptId": "feature",
@@ -12977,35 +13055,40 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "The most special feature of this old library is its beautiful glass ceiling."
 },
 "run out of": {
 "conceptId": "run out of",
 "phonetic": "[rʌn aʊt ʌv]",
 "pos": [
 "verb"
-]
+],
+"example": "We ran out of milk this morning, so Dad went to the store."
 },
 "mature": {
 "conceptId": "mature",
 "phonetic": "[məˈtʃʊr]",
 "pos": [
 "adj"
-]
+],
+"example": "For his age, Minsu is very mature and always thinks about other people."
 },
 "sensitive": {
 "conceptId": "sensitive",
 "phonetic": "[ˈsensətɪv]",
 "pos": [
 "adj"
-]
+],
+"example": "My little sister is sensitive to loud noises, so she covers her ears."
 },
 "complicated": {
 "conceptId": "complicated",
 "phonetic": "[ˈkɑːmpləkeɪtəd]",
 "pos": [
 "adj"
-]
+],
+"example": "The rules of this board game are too complicated for young children to follow."
 },
 "online": {
 "conceptId": "online",
@@ -13013,35 +13096,40 @@
 "pos": [
 "adj",
 "adv"
-]
+],
+"example": "Our teacher posted the online homework, so check the class website tonight."
 },
 "impression": {
 "conceptId": "impression",
 "phonetic": "[ɪmˈpreʃən]",
 "pos": [
 "noun"
-]
+],
+"example": "Sora made a good impression on her new classmates with her warm smile."
 },
 "for a while": {
 "conceptId": "for a while",
 "phonetic": "[fɔːr ə waɪl]",
 "pos": [
 "adv"
-]
+],
+"example": "Let's sit under this tree for a while and rest before climbing again."
 },
 "exclude": {
 "conceptId": "exclude",
 "phonetic": "[ɪksˈkluːd]",
 "pos": [
 "verb"
-]
+],
+"example": "The club decided not to exclude anyone who really wanted to join them."
 },
 "origin": {
 "conceptId": "origin",
 "phonetic": "[ˈɔːrədʒən]",
 "pos": [
 "noun"
-]
+],
+"example": "Nobody knows the exact origin of this strange word in the English language."
 },
 "casual": {
 "conceptId": "casual",
@@ -13049,35 +13137,40 @@
 "pos": [
 "adj",
 "noun"
-]
+],
+"example": "Wear casual clothes to the picnic because we will play games on the grass."
 },
 "mixture": {
 "conceptId": "mixture",
 "phonetic": "[ˈmɪkstʃər]",
 "pos": [
 "noun"
-]
+],
+"example": "This drink is a mixture of orange juice, cold water, and a little honey."
 },
 "commerce": {
 "conceptId": "commerce",
 "phonetic": "[ˈkɑːmərs]",
 "pos": [
 "noun"
-]
+],
+"example": "Online commerce has grown quickly since more people started shopping with their phones."
 },
 "poll": {
 "conceptId": "poll",
 "phonetic": "[poʊl]",
 "pos": [
 "noun"
-]
+],
+"example": "A recent poll showed that most students want a longer lunch break."
 },
 "industry": {
 "conceptId": "industry",
 "phonetic": "[ˈɪndəstri]",
 "pos": [
 "noun"
-]
+],
+"example": "The car industry in our city gives jobs to thousands of local workers."
 },
 "document": {
 "conceptId": "document",
@@ -13085,91 +13178,104 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "Please sign this document before you send your application to the university office."
 },
 "smooth": {
 "conceptId": "smooth",
 "phonetic": "[smuːð]",
 "pos": [
 "adj"
-]
+],
+"example": "The stone by the river felt smooth and cool in my small hand."
 },
 "dominate": {
 "conceptId": "dominate",
 "phonetic": "[ˈdɑːməneɪt]",
 "pos": [
 "verb"
-]
+],
+"example": "That team dominated the game and scored five goals in the first half."
 },
 "sooner or later": {
 "conceptId": "sooner or later",
 "phonetic": "[ˈsuːnər ɔːr ˈleɪtər]",
 "pos": [
 "adv"
-]
+],
+"example": "If you keep telling lies, sooner or later your friends will stop trusting you."
 },
 "facial": {
 "conceptId": "facial",
 "phonetic": "[ˈfeɪʃəl]",
 "pos": [
 "adj"
-]
+],
+"example": "The actor changed his facial expression quickly to show anger and then sadness."
 },
 "deceive": {
 "conceptId": "deceive",
 "phonetic": "[dɪˈsiːv]",
 "pos": [
 "verb"
-]
+],
+"example": "He tried to deceive his parents about his grades, but they soon knew."
 },
 "minority": {
 "conceptId": "minority",
 "phonetic": "[maɪˈnɔːrəti]",
 "pos": [
 "noun"
-]
+],
+"example": "Only a small minority of the students voted against the new school rule."
 },
 "virtue": {
 "conceptId": "virtue",
 "phonetic": "[ˈvɜːrtʃu]",
 "pos": [
 "noun"
-]
+],
+"example": "Helping your neighbors quietly is a virtue that many people admire and respect."
 },
 "predict": {
 "conceptId": "predict",
 "phonetic": "[prɪˈdɪkt]",
 "pos": [
 "verb"
-]
+],
+"example": "Scientists cannot predict exactly when a big earthquake will hit this area."
 },
 "victim": {
 "conceptId": "victim",
 "phonetic": "[ˈvɪktəm]",
 "pos": [
 "noun"
-]
+],
+"example": "The victim of the traffic accident is getting better at the city hospital."
 },
 "depressed": {
 "conceptId": "depressed",
 "phonetic": "[dɪˈprest]",
 "pos": [
 "adj"
-]
+],
+"example": "Yuna felt depressed after the contest, but her friends cheered her up warmly."
 },
 "violate": {
 "conceptId": "violate",
 "phonetic": "[ˈvaɪəleɪt]",
 "pos": [
 "verb"
-]
+],
+"example": "Drivers who violate traffic laws must pay a fine and attend a class."
 },
 "channel": {
 "conceptId": "channel",
 "phonetic": "[ˈtʃænəl]",
 "pos": [
 "noun"
-]
+],
+"example": "My grandfather changed the channel because he wanted to watch the baseball game."
 },
 "function": {
 "conceptId": "function",
@@ -13177,28 +13283,32 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "The main function of the heart is to send blood through our body."
 },
 "relation": {
 "conceptId": "relation",
 "phonetic": "[rɪˈleɪʃən]",
 "pos": [
 "noun"
-]
+],
+"example": "The relation between exercise and good health has been studied for many years."
 },
 "combination": {
 "conceptId": "combination",
 "phonetic": "[kɑːmbəˈneɪʃən]",
 "pos": [
 "noun"
-]
+],
+"example": "This dish is a perfect combination of sweet fruit and slightly salty cheese."
 },
 "abandon": {
 "conceptId": "abandon",
 "phonetic": "[əˈbændən]",
 "pos": [
 "verb"
-]
+],
+"example": "People should never abandon their pets when moving to a new house."
 },
 "conduct": {
 "conceptId": "conduct",
@@ -13206,7 +13316,8 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "A famous musician will conduct our school orchestra at the concert next Friday."
 },
 "separate": {
 "conceptId": "separate",
@@ -13214,35 +13325,40 @@
 "pos": [
 "verb",
 "adj"
-]
+],
+"example": "Please separate the plastic bottles from the paper before you take out trash."
 },
 "obvious": {
 "conceptId": "obvious",
 "phonetic": "[ˈɑːbvɪəs]",
 "pos": [
 "adj"
-]
+],
+"example": "It was obvious that Junho had practiced the song many times before today."
 },
 "cattle": {
 "conceptId": "cattle",
 "phonetic": "[ˈkætəl]",
 "pos": [
 "noun"
-]
+],
+"example": "The farmer keeps about thirty cattle on the wide green hills behind his house."
 },
 "technology": {
 "conceptId": "technology",
 "phonetic": "[tekˈnɑːlədʒi]",
 "pos": [
 "noun"
-]
+],
+"example": "New technology helps doctors find diseases much earlier than they could before."
 },
 "mental": {
 "conceptId": "mental",
 "phonetic": "[ˈmentəl]",
 "pos": [
 "adj"
-]
+],
+"example": "Enough sleep and exercise are important for your mental health during exam season."
 },
 "aboard": {
 "conceptId": "aboard",
@@ -13250,7 +13366,8 @@
 "pos": [
 "prep",
 "adv"
-]
+],
+"example": "All the students went aboard the ship and waved to their parents happily."
 },
 "crowd": {
 "conceptId": "crowd",
@@ -13258,14 +13375,16 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "A huge crowd gathered in the square to watch the fireworks that night."
 },
 "immigrate": {
 "conceptId": "immigrate",
 "phonetic": "[ˈɪməɡreɪt]",
 "pos": [
 "verb"
-]
+],
+"example": "Her family immigrated to Korea ten years ago and now runs a small bakery."
 },
 "steep": {
 "conceptId": "steep",
@@ -13273,21 +13392,24 @@
 "pos": [
 "adj",
 "noun"
-]
+],
+"example": "The path to the temple was so steep that we stopped to rest twice."
 },
 "remote": {
 "conceptId": "remote",
 "phonetic": "[rɪˈmoʊt]",
 "pos": [
 "adj"
-]
+],
+"example": "My uncle lives in a remote village far from the nearest train station."
 },
 "announce": {
 "conceptId": "announce",
 "phonetic": "[əˈnaʊns]",
 "pos": [
 "verb"
-]
+],
+"example": "The principal will announce the winners of the writing contest this Friday morning."
 },
 "claim": {
 "conceptId": "claim",
@@ -13295,28 +13417,32 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "Many customers claimed that the company should give them their money back."
 },
 "technique": {
 "conceptId": "technique",
 "phonetic": "[tekˈniːk]",
 "pos": [
 "noun"
-]
+],
+"example": "Coach Park taught us a new technique for throwing the ball more accurately."
 },
 "behavior": {
 "conceptId": "behavior",
 "phonetic": "[bɪˈheɪvjər]",
 "pos": [
 "noun"
-]
+],
+"example": "His kind behavior toward the new student surprised everyone in our class today."
 },
 "illegal": {
 "conceptId": "illegal",
 "phonetic": "[ɪˈliːɡəl]",
 "pos": [
 "adj"
-]
+],
+"example": "It is illegal to download movies without paying for them on the internet."
 },
 "export": {
 "conceptId": "export",
@@ -13324,7 +13450,8 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "Korea exports cars and smartphones to many countries around the world every year."
 },
 "attempt": {
 "conceptId": "attempt",
@@ -13332,14 +13459,16 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "Her first attempt at baking bread failed, but the second one tasted wonderful."
 },
 "die of": {
 "conceptId": "die of",
 "phonetic": "[daɪ ʌv]",
 "pos": [
 "verb"
-]
+],
+"example": "Many wild animals die of hunger when the winter lasts much too long."
 },
 "copyright": {
 "conceptId": "copyright",
@@ -13347,14 +13476,16 @@
 "pos": [
 "noun",
 "adj"
-]
+],
+"example": "You must ask the artist first because the song is protected by copyright."
 },
 "before long": {
 "conceptId": "before long",
 "phonetic": "[bɪˈfɔːr lɔːŋ]",
 "pos": [
 "conj"
-]
+],
+"example": "Keep practicing every day, and before long you will play the guitar well."
 },
 "ease": {
 "conceptId": "ease",
@@ -13362,14 +13493,16 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "Warm tea and a short nap eased my headache before the afternoon class."
 },
 "essay": {
 "conceptId": "essay",
 "phonetic": "[eˈseɪ]",
 "pos": [
 "noun"
-]
+],
+"example": "I wrote a short essay about my summer trip to the east coast."
 },
 "regret": {
 "conceptId": "regret",
@@ -13377,7 +13510,8 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "Sumin regrets not saying goodbye to her best friend before she moved away."
 },
 "harm": {
 "conceptId": "harm",
@@ -13385,35 +13519,40 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "Too much plastic in the ocean harms fish, birds, and many other animals."
 },
 "abroad": {
 "conceptId": "abroad",
 "phonetic": "[əˈbrɔːd]",
 "pos": [
 "adv"
-]
+],
+"example": "My older brother is studying abroad and calls our family every Sunday evening."
 },
 "pursue": {
 "conceptId": "pursue",
 "phonetic": "[pərˈsuː]",
 "pos": [
 "verb"
-]
+],
+"example": "She decided to pursue her dream of becoming a pilot after high school."
 },
 "achieve": {
 "conceptId": "achieve",
 "phonetic": "[əˈtʃiːv]",
 "pos": [
 "verb"
-]
+],
+"example": "Taeho achieved his goal of running ten kilometers without stopping even once."
 },
 "target": {
 "conceptId": "target",
 "phonetic": "[ˈtɑːrɡət]",
 "pos": [
 "noun"
-]
+],
+"example": "Our target this month is collecting five hundred books for the village library."
 },
 "wrinkle": {
 "conceptId": "wrinkle",
@@ -13421,35 +13560,40 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "Grandmother has soft wrinkles around her eyes whenever she smiles at us."
 },
 "heritage": {
 "conceptId": "heritage",
 "phonetic": "[ˈherətədʒ]",
 "pos": [
 "noun"
-]
+],
+"example": "This old palace is an important part of our country's cultural heritage."
 },
 "overcome": {
 "conceptId": "overcome",
 "phonetic": "[ˈoʊvərkʌm]",
 "pos": [
 "verb"
-]
+],
+"example": "He overcame his fear of water and swam across the pool last week."
 },
 "principle": {
 "conceptId": "principle",
 "phonetic": "[ˈprɪnsəpəl]",
 "pos": [
 "noun"
-]
+],
+"example": "Honesty is a simple principle that guides my father in his daily business."
 },
 "racial": {
 "conceptId": "racial",
 "phonetic": "[ˈreɪʃəl]",
 "pos": [
 "adj"
-]
+],
+"example": "Our teacher told us that racial discrimination is wrong and must disappear."
 },
 "broadcast": {
 "conceptId": "broadcast",
@@ -13457,49 +13601,56 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "The station will broadcast the final soccer game live at eight tonight."
 },
 "incident": {
 "conceptId": "incident",
 "phonetic": "[ˈɪnsədənt]",
 "pos": [
 "noun"
-]
+],
+"example": "A strange incident happened in our neighborhood, but nobody was hurt at all."
 },
 "legend": {
 "conceptId": "legend",
 "phonetic": "[ˈledʒənd]",
 "pos": [
 "noun"
-]
+],
+"example": "An old legend says a dragon once lived deep inside that quiet lake."
 },
 "faucet": {
 "conceptId": "faucet",
 "phonetic": "[ˈfɔːsət]",
 "pos": [
 "noun"
-]
+],
+"example": "Turn off the faucet while brushing your teeth to save clean water."
 },
 "fate": {
 "conceptId": "fate",
 "phonetic": "[feɪt]",
 "pos": [
 "noun"
-]
+],
+"example": "The two friends believed that fate brought them together on that rainy day."
 },
 "theory": {
 "conceptId": "theory",
 "phonetic": "[ˈθɪri]",
 "pos": [
 "noun"
-]
+],
+"example": "Einstein's theory changed the way scientists understand time, space, and light."
 },
 "contribute": {
 "conceptId": "contribute",
 "phonetic": "[kənˈtrɪbjut]",
 "pos": [
 "verb"
-]
+],
+"example": "Every member contributed good ideas, and our group project finally became much better."
 },
 "fund": {
 "conceptId": "fund",
@@ -13507,70 +13658,80 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "The city set up a fund to repair the old public library."
 },
 "be worthy of": {
 "conceptId": "be worthy of",
 "phonetic": "[biː ˈwɜːrði ʌv]",
 "pos": [
 "verb"
-]
+],
+"example": "His brave action during the fire was worthy of a special award."
 },
 "trend": {
 "conceptId": "trend",
 "phonetic": "[trend]",
 "pos": [
 "noun"
-]
+],
+"example": "Wearing wide pants is a popular trend among students at our school now."
 },
 "resemble": {
 "conceptId": "resemble",
 "phonetic": "[rɪˈzembəl]",
 "pos": [
 "verb"
-]
+],
+"example": "Sujin closely resembles her mother, especially when she laughs at funny jokes."
 },
 "stir": {
 "conceptId": "stir",
 "phonetic": "[stɜːr]",
 "pos": [
 "verb"
-]
+],
+"example": "Stir the soup slowly with a wooden spoon so it does not burn."
 },
 "sue": {
 "conceptId": "sue",
 "phonetic": "[suː]",
 "pos": [
 "verb"
-]
+],
+"example": "The famous singer decided to sue the magazine for printing false stories about her."
 },
 "severe": {
 "conceptId": "severe",
 "phonetic": "[səˈvɪr]",
 "pos": [
 "adj"
-]
+],
+"example": "The doctor said his knee injury was severe, so he cannot play soccer."
 },
 "for oneself": {
 "conceptId": "for oneself",
 "phonetic": "[fɔːr wʌnˈself]",
 "pos": [
 "adv"
-]
+],
+"example": "My grandmother built this small wooden house for herself when she was young."
 },
 "candidate": {
 "conceptId": "candidate",
 "phonetic": "[ˈkændədeɪt]",
 "pos": [
 "noun"
-]
+],
+"example": "Every candidate for class president gave a short speech in front of us."
 },
 "result in": {
 "conceptId": "result in",
 "phonetic": "[rɪˈzʌlt ɪn]",
 "pos": [
 "verb"
-]
+],
+"example": "Driving too fast in the rain can result in a terrible traffic accident."
 },
 "local": {
 "conceptId": "local",
@@ -13578,56 +13739,64 @@
 "pos": [
 "adj",
 "noun"
-]
+],
+"example": "We ate lunch at a local restaurant that many people in the town love."
 },
 "sign up (for)": {
 "conceptId": "sign up (for)",
 "phonetic": "[saɪn ʌp fɔːr]",
 "pos": [
 "verb"
-]
+],
+"example": "Jiho and I want to sign up for the school dance club next week."
 },
 "literature": {
 "conceptId": "literature",
 "phonetic": "[ˈlɪtərətʃər]",
 "pos": [
 "noun"
-]
+],
+"example": "My sister studies English literature and reads at least two novels every month."
 },
 "moisture": {
 "conceptId": "moisture",
 "phonetic": "[ˈmɔɪstʃər]",
 "pos": [
 "noun"
-]
+],
+"example": "Plants in the desert store moisture in their thick leaves to survive long droughts."
 },
 "spill": {
 "conceptId": "spill",
 "phonetic": "[spɪl]",
 "pos": [
 "verb"
-]
+],
+"example": "Be careful not to spill the hot soup on the clean white tablecloth."
 },
 "arrogant": {
 "conceptId": "arrogant",
 "phonetic": "[ˈerəɡənt]",
 "pos": [
 "adj"
-]
+],
+"example": "Nobody likes him because he is arrogant and never listens to other people's opinions."
 },
 "look forward to": {
 "conceptId": "look forward to",
 "phonetic": "[lʊk ˈfɔːrwərd tuː]",
 "pos": [
 "verb"
-]
+],
+"example": "All the students look forward to the summer vacation that starts next Friday."
 },
 "geography": {
 "conceptId": "geography",
 "phonetic": "[dʒɪˈɑːɡrəfi]",
 "pos": [
 "noun"
-]
+],
+"example": "In geography class we learned why rivers usually flow from mountains to the sea."
 },
 "following": {
 "conceptId": "following",
@@ -13635,77 +13804,88 @@
 "pos": [
 "adj",
 "noun"
-]
+],
+"example": "We missed the train, so we took the following one thirty minutes later."
 },
 "fable": {
 "conceptId": "fable",
 "phonetic": "[ˈfeɪbəl]",
 "pos": [
 "noun"
-]
+],
+"example": "My favorite fable teaches that a slow turtle can beat a proud rabbit."
 },
 "treatment": {
 "conceptId": "treatment",
 "phonetic": "[ˈtriːtmənt]",
 "pos": [
 "noun"
-]
+],
+"example": "After three months of treatment at the hospital, my uncle finally got better."
 },
 "category": {
 "conceptId": "category",
 "phonetic": "[ˈkætəɡɔːri]",
 "pos": [
 "noun"
-]
+],
+"example": "Please put these books into the right category before you return them to the shelf."
 },
 "turn out": {
 "conceptId": "turn out",
 "phonetic": "[tɜːrn aʊt]",
 "pos": [
 "verb"
-]
+],
+"example": "The strange man on the bus turned out to be my father's old friend."
 },
 "council": {
 "conceptId": "council",
 "phonetic": "[ˈkaʊnsəl]",
 "pos": [
 "noun"
-]
+],
+"example": "The city council decided to build a new library near the middle school."
 },
 "finance": {
 "conceptId": "finance",
 "phonetic": "[fəˈnæns]",
 "pos": [
 "noun"
-]
+],
+"example": "My aunt works in finance and helps small companies manage their money wisely."
 },
 "according to": {
 "conceptId": "according to",
 "phonetic": "[əˈkɔːrdɪŋ tuː]",
 "pos": [
 "prep"
-]
+],
+"example": "According to the weather report, heavy rain will fall all day tomorrow."
 },
 "law": {
 "conceptId": "law",
 "phonetic": "[lɔː]",
 "pos": [
 "noun"
-]
+],
+"example": "In our country, the law says children must wear seat belts in cars."
 },
 "apply": {
 "conceptId": "apply",
 "phonetic": "[əˈplaɪ]",
 "pos": [
 "verb"
-]
+],
+"example": "Minji plans to apply for a part-time job at the bookstore this winter."
 },
 "put effort (into)": {
 "conceptId": "put effort (into)",
 "phonetic": "[pʊt ˈefərt ˈɪntu]",
 "pos": [
 "verb"
-]
+],
+"example": "If you put effort into your writing every day, your English will improve quickly."
 },
 "satellite": {
 "conceptId": "satellite",
@@ -13713,21 +13893,24 @@
 "pos": [
 "noun",
 "adj"
-]
+],
+"example": "Scientists launched a small satellite to take pictures of the earth from space."
 },
 "reveal": {
 "conceptId": "reveal",
 "phonetic": "[rɪˈviːl]",
 "pos": [
 "verb"
-]
+],
+"example": "The magician refused to reveal the secret behind his most famous card trick."
 },
 "intersection": {
 "conceptId": "intersection",
 "phonetic": "[ɪntərˈsekʃən]",
 "pos": [
 "noun"
-]
+],
+"example": "Look both ways carefully before you cross the busy intersection near the school."
 },
 "experiment": {
 "conceptId": "experiment",
@@ -13735,105 +13918,120 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "Our science teacher showed us an interesting experiment with water and colored ink."
 },
 "vital": {
 "conceptId": "vital",
 "phonetic": "[ˈvaɪtəl]",
 "pos": [
 "adj"
-]
+],
+"example": "Clean water and fresh air are vital for every living thing on earth."
 },
 "convince": {
 "conceptId": "convince",
 "phonetic": "[kənˈvɪns]",
 "pos": [
 "verb"
-]
+],
+"example": "It took me an hour to convince my mother to buy a puppy."
 },
 "profession": {
 "conceptId": "profession",
 "phonetic": "[prəˈfeʃən]",
 "pos": [
 "noun"
-]
+],
+"example": "Teaching is a profession that requires patience, knowledge, and a warm heart."
 },
 "again and again": {
 "conceptId": "again and again",
 "phonetic": "[əˈɡen ənd əˈɡen]",
 "pos": [
 "prep"
-]
+],
+"example": "She practiced the difficult song again and again until she could play it perfectly."
 },
 "along with": {
 "conceptId": "along with",
 "phonetic": "[əˈlɔːŋ wɪð]",
 "pos": [
 "prep"
-]
+],
+"example": "Along with his homework, Junho brought a small gift for his English teacher."
 },
 "develop": {
 "conceptId": "develop",
 "phonetic": "[dɪˈveləp]",
 "pos": [
 "verb"
-]
+],
+"example": "The company is trying to develop a cheaper battery for electric cars."
 },
 "crisis": {
 "conceptId": "crisis",
 "phonetic": "[ˈkraɪsəs]",
 "pos": [
 "noun"
-]
+],
+"example": "The small country faced a serious water crisis after two years without rain."
 },
 "spell": {
 "conceptId": "spell",
 "phonetic": "[spel]",
 "pos": [
 "verb"
-]
+],
+"example": "Can you spell your last name slowly so that I can write it down?"
 },
 "active": {
 "conceptId": "active",
 "phonetic": "[ˈæktɪv]",
 "pos": [
 "adj"
-]
+],
+"example": "My grandfather is eighty years old, but he is still active and walks daily."
 },
 "vehicle": {
 "conceptId": "vehicle",
 "phonetic": "[ˈviːhɪkəl]",
 "pos": [
 "noun"
-]
+],
+"example": "No vehicle is allowed to enter this narrow street between eight and ten."
 },
 "magnet": {
 "conceptId": "magnet",
 "phonetic": "[ˈmæɡnət]",
 "pos": [
 "noun"
-]
+],
+"example": "The teacher used a small magnet to pick up the iron pins quickly."
 },
 "poverty": {
 "conceptId": "poverty",
 "phonetic": "[ˈpɑːvərti]",
 "pos": [
 "noun"
-]
+],
+"example": "Many families around the world still live in poverty without enough food."
 },
 "release": {
 "conceptId": "release",
 "phonetic": "[rɪˈliːs]",
 "pos": [
 "verb"
-]
+],
+"example": "The band will release their new album online early next Monday morning."
 },
 "transportation": {
 "conceptId": "transportation",
 "phonetic": "[trænspərˈteɪʃən]",
 "pos": [
 "noun"
-]
+],
+"example": "Public transportation in this city is cheap, fast, and very easy to use."
 },
 "classic": {
 "conceptId": "classic",
@@ -13841,147 +14039,168 @@
 "pos": [
 "noun",
 "adj"
-]
+],
+"example": "This novel is a classic that people have enjoyed reading for a hundred years."
 },
 "complex": {
 "conceptId": "complex",
 "phonetic": "[ˈkɑːmpleks]",
 "pos": [
 "adj"
-]
+],
+"example": "The rules of this card game are too complex for young children to understand."
 },
 "pass through": {
 "conceptId": "pass through",
 "phonetic": "[pæs θruː]",
 "pos": [
 "verb"
-]
+],
+"example": "The train will pass through three long tunnels before it reaches the coast."
 },
 "take ~ for granted": {
 "conceptId": "take ~ for granted",
 "phonetic": "[teɪk fɔːr ˈɡræntəd]",
 "pos": [
 "verb"
-]
+],
+"example": "We often take clean water for granted until the tap suddenly stops running."
 },
 "cultivate": {
 "conceptId": "cultivate",
 "phonetic": "[ˈkʌltəveɪt]",
 "pos": [
 "verb"
-]
+],
+"example": "The farmers here cultivate rice and beans on the wide fields near the river."
 },
 "go out with": {
 "conceptId": "go out with",
 "phonetic": "[ɡoʊ aʊt wɪð]",
 "pos": [
 "verb"
-]
+],
+"example": "Sujin has been going out with her classmate since the school festival last fall."
 },
 "broad": {
 "conceptId": "broad",
 "phonetic": "[brɔːd]",
 "pos": [
 "adj"
-]
+],
+"example": "A broad river runs through the center of the city and divides it."
 },
 "electric": {
 "conceptId": "electric",
 "phonetic": "[ɪˈlektrɪk]",
 "pos": [
 "adj"
-]
+],
+"example": "My father charges his electric car in the parking lot every Sunday evening."
 },
 "civil": {
 "conceptId": "civil",
 "phonetic": "[ˈsɪvəl]",
 "pos": [
 "adj"
-]
+],
+"example": "Voting is both a civil right and an important duty for every adult."
 },
 "authority": {
 "conceptId": "authority",
 "phonetic": "[əˈθɔːrəti]",
 "pos": [
 "noun"
-]
+],
+"example": "A club leader does not have the authority to change the school rules."
 },
 "resident": {
 "conceptId": "resident",
 "phonetic": "[ˈrezɪdənt]",
 "pos": [
 "noun"
-]
+],
+"example": "Every resident of this apartment building must recycle plastic bottles and paper."
 },
 "territory": {
 "conceptId": "territory",
 "phonetic": "[ˈterɪtɔːri]",
 "pos": [
 "noun"
-]
+],
+"example": "The two countries argued for many years about the small island territory."
 },
 "have ~ in common": {
 "conceptId": "have ~ in common",
 "phonetic": "[hæv ɪn ˈkɑːmən]",
 "pos": [
 "verb"
-]
+],
+"example": "Sora and I have a lot in common because we both love old movies."
 },
 "slope": {
 "conceptId": "slope",
 "phonetic": "[sloʊp]",
 "pos": [
 "noun"
-]
+],
+"example": "Several small houses stand on the grassy slope behind our village school."
 },
 "opportunity": {
 "conceptId": "opportunity",
 "phonetic": "[ɑːpərˈtuːnəti]",
 "pos": [
 "noun"
-]
+],
+"example": "Studying abroad gave my cousin a great opportunity to meet people from everywhere."
 },
 "victory": {
 "conceptId": "victory",
 "phonetic": "[ˈvɪktəri]",
 "pos": [
 "noun"
-]
+],
+"example": "Our basketball team celebrated their first victory of the season with a party."
 },
 "creative": {
 "conceptId": "creative",
 "phonetic": "[krɪˈeɪtɪv]",
 "pos": [
 "adj"
-]
+],
+"example": "Dohyun is a creative student who always finds new ways to solve problems."
 },
 "jury": {
 "conceptId": "jury",
 "phonetic": "[ˈdʒʊri]",
 "pos": [
 "noun"
-]
+],
+"example": "The jury listened to both sides carefully before deciding that the man was innocent."
 },
 "calculate": {
 "conceptId": "calculate",
 "phonetic": "[ˈkælkjəleɪt]",
 "pos": [
 "verb"
-]
+],
+"example": "Let me calculate how much money we need for the class trip tomorrow."
 },
 "digest": {
 "conceptId": "digest",
 "phonetic": "[daɪˈdʒest]",
 "pos": [
 "verb"
-]
+],
+"example": "It takes your body several hours to digest a heavy meal like this."
 },
 "perform": {
 "conceptId": "perform",
 "phonetic": "[pərˈfɔːrm]",
 "pos": [
 "verb"
-]
+],
+"example": "The robot can perform simple tasks such as cleaning floors and carrying boxes."
 },
 "security": {
 "conceptId": "security",
@@ -13989,28 +14208,32 @@
 "pos": [
 "noun",
 "adj"
-]
+],
+"example": "Airport security checked every bag before the passengers walked toward the gate."
 },
 "swallow": {
 "conceptId": "swallow",
 "phonetic": "[ˈswɑːloʊ]",
 "pos": [
 "verb"
-]
+],
+"example": "My throat hurt so much that I could hardly swallow the warm soup."
 },
 "false": {
 "conceptId": "false",
 "phonetic": "[fɔːls]",
 "pos": [
 "adj"
-]
+],
+"example": "Mark each sentence true or false after you read the short passage carefully."
 },
 "unfair": {
 "conceptId": "unfair",
 "phonetic": "[ənˈfer]",
 "pos": [
 "adj"
-]
+],
+"example": "The students thought the new rule about hair length was completely unfair."
 },
 "retail": {
 "conceptId": "retail",
@@ -14018,119 +14241,136 @@
 "pos": [
 "noun",
 "adj"
-]
+],
+"example": "The retail price of this jacket is much higher than the factory price."
 },
 "take advantage of": {
 "conceptId": "take advantage of",
 "phonetic": "[teɪk ædˈvæntɪdʒ ʌv]",
 "pos": [
 "verb"
-]
+],
+"example": "You should take advantage of the free classes the library offers this summer."
 },
 "sanitary": {
 "conceptId": "sanitary",
 "phonetic": "[ˈsænɪteri]",
 "pos": [
 "adj"
-]
+],
+"example": "The restaurant kitchen keeps sanitary conditions so that customers never get sick."
 },
 "freeze": {
 "conceptId": "freeze",
 "phonetic": "[friːz]",
 "pos": [
 "verb"
-]
+],
+"example": "The small pond behind our house freezes every January when the wind gets colder."
 },
 "construct": {
 "conceptId": "construct",
 "phonetic": "[kənsˈtrʌkt]",
 "pos": [
 "verb"
-]
+],
+"example": "Workers will construct a new bridge across the river within two short years."
 },
 "electronic": {
 "conceptId": "electronic",
 "phonetic": "[ɪlekˈtrɑːnɪk]",
 "pos": [
 "adj"
-]
+],
+"example": "Please turn off all electronic devices before the concert begins in the hall."
 },
 "refine": {
 "conceptId": "refine",
 "phonetic": "[rəˈfaɪn]",
 "pos": [
 "verb"
-]
+],
+"example": "Factories refine crude oil to make gasoline for cars, buses, and trucks."
 },
 "inform": {
 "conceptId": "inform",
 "phonetic": "[ɪnˈfɔːrm]",
 "pos": [
 "verb"
-]
+],
+"example": "Please inform the students about the schedule change before the meeting starts tomorrow."
 },
 "B as well as A": {
 "conceptId": "B as well as A",
 "phonetic": "[biː æz wel æz ə]",
 "pos": [
 "conj"
-]
+],
+"example": "Minji speaks Chinese as well as English, so she helps many foreign visitors."
 },
 "academic": {
 "conceptId": "academic",
 "phonetic": "[ækəˈdemɪk]",
 "pos": [
 "adj"
-]
+],
+"example": "My brother won a prize for his academic achievement in science last year."
 },
 "empire": {
 "conceptId": "empire",
 "phonetic": "[ˈempaɪər]",
 "pos": [
 "noun"
-]
+],
+"example": "The ancient empire ruled many lands for more than three hundred years."
 },
 "look up": {
 "conceptId": "look up",
 "phonetic": "[lʊk ʌp]",
 "pos": [
 "verb"
-]
+],
+"example": "If you don't know the word, look it up in your dictionary now."
 },
 "cheerful": {
 "conceptId": "cheerful",
 "phonetic": "[ˈtʃɪrfəl]",
 "pos": [
 "adj"
-]
+],
+"example": "Our new teacher has a cheerful voice that makes every morning class fun."
 },
 "assemble": {
 "conceptId": "assemble",
 "phonetic": "[əˈsembəl]",
 "pos": [
 "verb"
-]
+],
+"example": "Hundreds of students assembled in the playground to watch the special performance."
 },
 "cabin": {
 "conceptId": "cabin",
 "phonetic": "[ˈkæbən]",
 "pos": [
 "noun"
-]
+],
+"example": "The flight attendant walked through the cabin and checked everyone's seat belt."
 },
 "kill": {
 "conceptId": "kill",
 "phonetic": "[kɪl]",
 "pos": [
 "verb"
-]
+],
+"example": "A strong typhoon killed many fish in the small lake last summer."
 },
 "reflect": {
 "conceptId": "reflect",
 "phonetic": "[rɪˈflekt]",
 "pos": [
 "verb"
-]
+],
+"example": "The calm lake reflected the mountains and the blue sky like a mirror."
 },
 "dump": {
 "conceptId": "dump",
@@ -14138,49 +14378,56 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "Never dump your trash into the river because it harms many living things."
 },
 "personality": {
 "conceptId": "personality",
 "phonetic": "[pɜːrsəˈnælɪti]",
 "pos": [
 "noun"
-]
+],
+"example": "Her warm personality makes everyone in our class feel comfortable and welcome."
 },
 "intelligence": {
 "conceptId": "intelligence",
 "phonetic": "[ɪnˈtelədʒəns]",
 "pos": [
 "noun"
-]
+],
+"example": "Scientists say dolphins show surprising intelligence when they solve difficult problems together."
 },
 "colony": {
 "conceptId": "colony",
 "phonetic": "[ˈkɑːləni]",
 "pos": [
 "noun"
-]
+],
+"example": "That island was once a colony, but it became independent in 1960."
 },
 "preserve": {
 "conceptId": "preserve",
 "phonetic": "[prəˈzɜːrv]",
 "pos": [
 "verb"
-]
+],
+"example": "We must preserve these old buildings so future generations can learn from them."
 },
 "crosswalk": {
 "conceptId": "crosswalk",
 "phonetic": "[ˈkrɑːswɑːk]",
 "pos": [
 "noun"
-]
+],
+"example": "Always look both ways before you step onto the crosswalk near the school."
 },
 "purify": {
 "conceptId": "purify",
 "phonetic": "[ˈpjʊrəfaɪ]",
 "pos": [
 "verb"
-]
+],
+"example": "This machine purifies dirty water so villagers can drink it without worry."
 },
 "sightseeing": {
 "conceptId": "sightseeing",
@@ -14188,105 +14435,120 @@
 "pos": [
 "noun",
 "adj"
-]
+],
+"example": "We spent the whole afternoon sightseeing around the old palace in the city."
 },
 "transform": {
 "conceptId": "transform",
 "phonetic": "[trænˈsfɔːrm]",
 "pos": [
 "verb"
-]
+],
+"example": "The volunteers transformed the empty lot into a beautiful garden in three weeks."
 },
 "minister": {
 "conceptId": "minister",
 "phonetic": "[ˈmɪnəstər]",
 "pos": [
 "noun"
-]
+],
+"example": "The minister of education announced a new plan for middle school classes."
 },
 "audience": {
 "conceptId": "audience",
 "phonetic": "[ˈɑːdɪəns]",
 "pos": [
 "noun"
-]
+],
+"example": "The audience clapped for five minutes after the singer finished her last song."
 },
 "conquer": {
 "conceptId": "conquer",
 "phonetic": "[ˈkɑːŋkər]",
 "pos": [
 "verb"
-]
+],
+"example": "The general conquered the city without losing a single soldier in battle."
 },
 "advertise": {
 "conceptId": "advertise",
 "phonetic": "[ˈædvərtaɪz]",
 "pos": [
 "verb"
-]
+],
+"example": "The company advertised its new phone on television during the popular evening show."
 },
 "be used to": {
 "conceptId": "be used to",
 "phonetic": "[biː juːzd tuː]",
 "pos": [
 "aux"
-]
+],
+"example": "Jiho is used to waking up early because he practices soccer every morning."
 },
 "prefer": {
 "conceptId": "prefer",
 "phonetic": "[prəˈfɜːr]",
 "pos": [
 "verb"
-]
+],
+"example": "I prefer walking to school rather than taking a crowded bus every morning."
 },
 "distance": {
 "conceptId": "distance",
 "phonetic": "[ˈdɪstəns]",
 "pos": [
 "noun"
-]
+],
+"example": "The distance between my house and the library is about two kilometers."
 },
 "insist": {
 "conceptId": "insist",
 "phonetic": "[ɪnˈsɪst]",
 "pos": [
 "verb"
-]
+],
+"example": "My mother insisted that I finish my homework before playing any computer games."
 },
 "microscope": {
 "conceptId": "microscope",
 "phonetic": "[ˈmaɪkrəskoʊp]",
 "pos": [
 "noun"
-]
+],
+"example": "We looked at onion cells through a microscope during our science class yesterday."
 },
 "deal with": {
 "conceptId": "deal with",
 "phonetic": "[diːl wɪð]",
 "pos": [
 "verb"
-]
+],
+"example": "Our teacher knows how to deal with students who argue during group work."
 },
 "decline": {
 "conceptId": "decline",
 "phonetic": "[dɪˈklaɪn]",
 "pos": [
 "verb"
-]
+],
+"example": "The number of students in our village school has declined since last year."
 },
 "detergent": {
 "conceptId": "detergent",
 "phonetic": "[dɪˈtɜːrdʒənt]",
 "pos": [
 "noun"
-]
+],
+"example": "Add a small amount of detergent, or the clothes will smell too strong."
 },
 "buckle": {
 "conceptId": "buckle",
 "phonetic": "[ˈbʌkəl]",
 "pos": [
 "noun"
-]
+],
+"example": "My bag's buckle broke this morning, so I had to use a string."
 },
 "forecast": {
 "conceptId": "forecast",
@@ -14294,7 +14556,8 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "Experts forecast that more people will use electric cars within ten years."
 },
 "transport": {
 "conceptId": "transport",
@@ -14302,56 +14565,64 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "Large trucks transport fresh vegetables from the farm to the city every night."
 },
 "astronaut": {
 "conceptId": "astronaut",
 "phonetic": "[ˈæstrənɑːt]",
 "pos": [
 "noun"
-]
+],
+"example": "The astronaut floated inside the space station and waved at the camera."
 },
 "thread": {
 "conceptId": "thread",
 "phonetic": "[θred]",
 "pos": [
 "noun"
-]
+],
+"example": "My grandmother used a red thread to fix the button on my coat."
 },
 "vision": {
 "conceptId": "vision",
 "phonetic": "[ˈvɪʒən]",
 "pos": [
 "noun"
-]
+],
+"example": "My vision became blurry, so my mother took me to an eye doctor."
 },
 "gravity": {
 "conceptId": "gravity",
 "phonetic": "[ˈɡrævəti]",
 "pos": [
 "noun"
-]
+],
+"example": "Because of gravity, everything you throw into the air comes back down."
 },
 "aware": {
 "conceptId": "aware",
 "phonetic": "[əˈwer]",
 "pos": [
 "adj"
-]
+],
+"example": "Are you aware that the library closes an hour earlier on Saturdays?"
 },
 "approve": {
 "conceptId": "approve",
 "phonetic": "[əˈpruːv]",
 "pos": [
 "verb"
-]
+],
+"example": "The principal finally approved our plan to hold a concert in the gym."
 },
 "medical": {
 "conceptId": "medical",
 "phonetic": "[ˈmedəkəl]",
 "pos": [
 "adj"
-]
+],
+"example": "She wants to study medical science and become a doctor in a village."
 },
 "bruise": {
 "conceptId": "bruise",
@@ -14359,35 +14630,40 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "He bruised his knee badly when he fell off his bike yesterday."
 },
 "circumstance": {
 "conceptId": "circumstance",
 "phonetic": "[ˈsɜːrkəmstæns]",
 "pos": [
 "noun"
-]
+],
+"example": "Under these difficult circumstances, the team still finished the project on time."
 },
 "currency": {
 "conceptId": "currency",
 "phonetic": "[ˈkɜːrənsi]",
 "pos": [
 "noun"
-]
+],
+"example": "Before the trip, my father changed some money into Japanese currency."
 },
 "beverage": {
 "conceptId": "beverage",
 "phonetic": "[ˈbevərɪdʒ]",
 "pos": [
 "noun"
-]
+],
+"example": "The restaurant offers a free beverage with every lunch set until five o'clock."
 },
 "check out": {
 "conceptId": "check out",
 "phonetic": "[tʃek aʊt]",
 "pos": [
 "verb"
-]
+],
+"example": "We have to check out of the hotel before eleven tomorrow morning."
 },
 "filter": {
 "conceptId": "filter",
@@ -14395,21 +14671,24 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "You should change the air filter in this machine every three months."
 },
 "dismiss": {
 "conceptId": "dismiss",
 "phonetic": "[dɪˈsmɪs]",
 "pos": [
 "verb"
-]
+],
+"example": "The manager dismissed my idea quickly without even listening to the whole explanation."
 },
 "brochure": {
 "conceptId": "brochure",
 "phonetic": "[broʊˈʃʊr]",
 "pos": [
 "noun"
-]
+],
+"example": "I picked up a colorful brochure about the museum at the train station."
 },
 "pack": {
 "conceptId": "pack",
@@ -14417,56 +14696,64 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "Sora packed warm clothes and a thick blanket for the winter camping trip."
 },
 "fluent": {
 "conceptId": "fluent",
 "phonetic": "[ˈfluːənt]",
 "pos": [
 "adj"
-]
+],
+"example": "After living in Canada for years, she became fluent in both languages."
 },
 "fashion": {
 "conceptId": "fashion",
 "phonetic": "[ˈfæʃən]",
 "pos": [
 "noun"
-]
+],
+"example": "Wide pants were in fashion when my mother was a middle school student."
 },
 "cut off": {
 "conceptId": "cut off",
 "phonetic": "[kʌt ɔːf]",
 "pos": [
 "verb"
-]
+],
+"example": "The gardener cut off the dead branches so the tree could grow better."
 },
 "realistic": {
 "conceptId": "realistic",
 "phonetic": "[rɪəˈlɪstɪk]",
 "pos": [
 "adj"
-]
+],
+"example": "Studying twelve hours a day is not a realistic plan for most students."
 },
 "satisfy": {
 "conceptId": "satisfy",
 "phonetic": "[ˈsætəsfaɪ]",
 "pos": [
 "verb"
-]
+],
+"example": "A small bowl of noodles did not satisfy the hungry boys after practice."
 },
 "innocent": {
 "conceptId": "innocent",
 "phonetic": "[ˈɪnəsənt]",
 "pos": [
 "adj"
-]
+],
+"example": "The judge decided the young man was innocent and let him go home."
 },
 "prevent": {
 "conceptId": "prevent",
 "phonetic": "[prɪˈvent]",
 "pos": [
 "verb"
-]
+],
+"example": "Washing your hands often can prevent many kinds of colds in winter."
 },
 "bargain": {
 "conceptId": "bargain",
@@ -14474,77 +14761,88 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "This jacket was a real bargain because I bought it at half price."
 },
 "extend": {
 "conceptId": "extend",
 "phonetic": "[ɪkˈstend]",
 "pos": [
 "verb"
-]
+],
+"example": "The city plans to extend the subway line to our town next year."
 },
 "structure": {
 "conceptId": "structure",
 "phonetic": "[ˈstrʌktʃər]",
 "pos": [
 "noun"
-]
+],
+"example": "The structure of this old temple has not changed for four hundred years."
 },
 "district": {
 "conceptId": "district",
 "phonetic": "[ˈdɪstrɪkt]",
 "pos": [
 "noun"
-]
+],
+"example": "My uncle runs a small bakery in the busiest shopping district of Seoul."
 },
 "memorize": {
 "conceptId": "memorize",
 "phonetic": "[ˈmeməraɪz]",
 "pos": [
 "verb"
-]
+],
+"example": "I had to memorize thirty new English words before the test on Monday."
 },
 "give off": {
 "conceptId": "give off",
 "phonetic": "[ɡɪv ɔːf]",
 "pos": [
 "verb"
-]
+],
+"example": "These old lamps give off a soft yellow light in the evening."
 },
 "recent": {
 "conceptId": "recent",
 "phonetic": "[ˈriːsənt]",
 "pos": [
 "adj"
-]
+],
+"example": "A recent study shows that teenagers need more than eight hours of sleep."
 },
 "institution": {
 "conceptId": "institution",
 "phonetic": "[ɪnstɪˈtuːʃən]",
 "pos": [
 "noun"
-]
+],
+"example": "This research institution has studied ocean animals for more than fifty years."
 },
 "make sure": {
 "conceptId": "make sure",
 "phonetic": "[meɪk ʃʊr]",
 "pos": [
 "verb"
-]
+],
+"example": "Make sure you lock the classroom door before you leave this afternoon."
 },
 "quick": {
 "conceptId": "quick",
 "phonetic": "[kwɪk]",
 "pos": [
 "adj"
-]
+],
+"example": "Her quick answer surprised the teacher and made the whole class laugh."
 },
 "show off": {
 "conceptId": "show off",
 "phonetic": "[ʃoʊ ɔːf]",
 "pos": [
 "verb"
-]
+],
+"example": "He likes to show off his new sneakers to everyone at school."
 },
 "associate": {
 "conceptId": "associate",
@@ -14552,70 +14850,80 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "My father invited a business associate to our house for dinner last night."
 },
 "pupil": {
 "conceptId": "pupil",
 "phonetic": "[ˈpjuːpəl]",
 "pos": [
 "noun"
-]
+],
+"example": "Every pupil in that small country school knows the teacher's name well."
 },
 "up close": {
 "conceptId": "up close",
 "phonetic": "[ʌp kloʊs]",
 "pos": [
 "adv"
-]
+],
+"example": "The painting looks completely different when you see it up close."
 },
 "constant": {
 "conceptId": "constant",
 "phonetic": "[ˈkɑːnstənt]",
 "pos": [
 "adj"
-]
+],
+"example": "The constant noise from the construction site made it hard to study."
 },
 "warmth": {
 "conceptId": "warmth",
 "phonetic": "[wɔːrmθ]",
 "pos": [
 "noun"
-]
+],
+"example": "The warmth in her voice made the nervous new student feel welcome."
 },
 "aspect": {
 "conceptId": "aspect",
 "phonetic": "[ˈæspekt]",
 "pos": [
 "noun"
-]
+],
+"example": "Teamwork is the most important aspect of playing soccer with your classmates."
 },
 "combine": {
 "conceptId": "combine",
 "phonetic": "[ˈkɑːmbaɪn]",
 "pos": [
 "verb"
-]
+],
+"example": "If you combine blue paint with yellow paint, you will get green."
 },
 "reduce": {
 "conceptId": "reduce",
 "phonetic": "[rəˈduːs]",
 "pos": [
 "verb"
-]
+],
+"example": "Our school is trying to reduce the amount of plastic waste every year."
 },
 "fantastic": {
 "conceptId": "fantastic",
 "phonetic": "[fænˈtæstɪk]",
 "pos": [
 "adj"
-]
+],
+"example": "The view from the top of the mountain was absolutely fantastic that morning."
 },
 "wrist": {
 "conceptId": "wrist",
 "phonetic": "[rɪst]",
 "pos": [
 "noun"
-]
+],
+"example": "Jiho hurt his wrist while playing basketball, so he cannot write today."
 },
 "lecture": {
 "conceptId": "lecture",
@@ -14623,21 +14931,24 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "The scientist gave an interesting lecture about climate change at our school."
 },
 "grocery": {
 "conceptId": "grocery",
 "phonetic": "[ˈɡroʊsəri]",
 "pos": [
 "noun"
-]
+],
+"example": "My mother asked me to carry the heavy grocery bags into the kitchen."
 },
 "in place": {
 "conceptId": "in place",
 "phonetic": "[ɪn pleɪs]",
 "pos": [
 "adv"
-]
+],
+"example": "Please put every book back in place before you leave the library."
 },
 "value": {
 "conceptId": "value",
@@ -14645,98 +14956,112 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "The real value of this old watch comes from my grandfather's memories."
 },
 "look for": {
 "conceptId": "look for",
 "phonetic": "[lʊk fɔːr]",
 "pos": [
 "verb"
-]
+],
+"example": "I spent an hour looking for my missing house key under the sofa."
 },
 "recreation": {
 "conceptId": "recreation",
 "phonetic": "[rekrɪˈeɪʃən]",
 "pos": [
 "noun"
-]
+],
+"example": "Hiking on weekends is my father's favorite form of recreation these days."
 },
 "connect": {
 "conceptId": "connect",
 "phonetic": "[kəˈnekt]",
 "pos": [
 "verb"
-]
+],
+"example": "This bridge connects the small island to the busy city on the coast."
 },
 "spine": {
 "conceptId": "spine",
 "phonetic": "[spaɪn]",
 "pos": [
 "noun"
-]
+],
+"example": "Sitting straight in your chair is very good for your growing spine."
 },
 "valid": {
 "conceptId": "valid",
 "phonetic": "[ˈvælɪd]",
 "pos": [
 "adj"
-]
+],
+"example": "Your student card is still valid until the end of next March."
 },
 "reputation": {
 "conceptId": "reputation",
 "phonetic": "[repjəˈteɪʃən]",
 "pos": [
 "noun"
-]
+],
+"example": "That small bakery has a great reputation for its fresh morning bread."
 },
 "emergency": {
 "conceptId": "emergency",
 "phonetic": "[ɪˈmɜːrdʒənsi]",
 "pos": [
 "noun"
-]
+],
+"example": "In an emergency, call 119 immediately and tell them your exact address."
 },
 "receipt": {
 "conceptId": "receipt",
 "phonetic": "[rɪˈsiːt]",
 "pos": [
 "noun"
-]
+],
+"example": "Keep the receipt carefully in case you want to return these shoes."
 },
 "tournament": {
 "conceptId": "tournament",
 "phonetic": "[ˈtʊrnəmənt]",
 "pos": [
 "noun"
-]
+],
+"example": "Our badminton team won three matches and reached the tournament final yesterday."
 },
 "inquire": {
 "conceptId": "inquire",
 "phonetic": "[ɪnˈkwaɪr]",
 "pos": [
 "verb"
-]
+],
+"example": "She called the museum to inquire about the opening hours on Sunday."
 },
 "pressure": {
 "conceptId": "pressure",
 "phonetic": "[ˈpreʃər]",
 "pos": [
 "noun"
-]
+],
+"example": "Many students feel great pressure before the important exam in December."
 },
 "stove": {
 "conceptId": "stove",
 "phonetic": "[stoʊv]",
 "pos": [
 "noun"
-]
+],
+"example": "Turn off the stove after the soup starts boiling in the pot."
 },
 "end up": {
 "conceptId": "end up",
 "phonetic": "[end ʌp]",
 "pos": [
 "verb"
-]
+],
+"example": "We talked so long that we ended up missing the last subway train."
 },
 "underwater": {
 "conceptId": "underwater",
@@ -14744,14 +15069,16 @@
 "pos": [
 "adj",
 "adv"
-]
+],
+"example": "The diver took amazing underwater photos of colorful fish near the coral."
 },
 "kettle": {
 "conceptId": "kettle",
 "phonetic": "[ˈketəl]",
 "pos": [
 "noun"
-]
+],
+"example": "Grandmother filled the old kettle with water and made us warm tea."
 },
 "aim": {
 "conceptId": "aim",
@@ -14759,35 +15086,40 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "Our club aims to plant one hundred young trees before next spring."
 },
 "highway": {
 "conceptId": "highway",
 "phonetic": "[ˈhaɪweɪ]",
 "pos": [
 "noun"
-]
+],
+"example": "The highway to Busan was crowded with cars during the holiday weekend."
 },
 "consumer": {
 "conceptId": "consumer",
 "phonetic": "[kənˈsuːmər]",
 "pos": [
 "noun"
-]
+],
+"example": "A smart consumer compares prices carefully before buying an expensive phone."
 },
 "permit": {
 "conceptId": "permit",
 "phonetic": "[pərˈmɪt]",
 "pos": [
 "verb"
-]
+],
+"example": "Our teacher does not permit students to use phones during the class."
 },
 "holy": {
 "conceptId": "holy",
 "phonetic": "[ˈhoʊli]",
 "pos": [
 "adj"
-]
+],
+"example": "Many travelers visit this holy temple high in the quiet mountains."
 },
 "curve": {
 "conceptId": "curve",
@@ -14795,7 +15127,8 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "The narrow road curves gently around the hill before reaching the village."
 },
 "overseas": {
 "conceptId": "overseas",
@@ -14803,70 +15136,80 @@
 "pos": [
 "adj",
 "adv"
-]
+],
+"example": "My cousin found an overseas job and moved to Canada last month."
 },
 "brief": {
 "conceptId": "brief",
 "phonetic": "[briːf]",
 "pos": [
 "adj"
-]
+],
+"example": "After a brief break, the players ran back onto the soccer field."
 },
 "commit": {
 "conceptId": "commit",
 "phonetic": "[kəˈmɪt]",
 "pos": [
 "verb"
-]
+],
+"example": "The man admitted that he had committed a serious crime last winter."
 },
 "fasten": {
 "conceptId": "fasten",
 "phonetic": "[ˈfæsən]",
 "pos": [
 "verb"
-]
+],
+"example": "Please fasten your seat belt before the airplane starts moving down the runway."
 },
 "ask for": {
 "conceptId": "ask for",
 "phonetic": "[æsk fɔːr]",
 "pos": [
 "verb"
-]
+],
+"example": "If the box is too heavy, ask for help from your classmates."
 },
 "genius": {
 "conceptId": "genius",
 "phonetic": "[ˈdʒiːnjəs]",
 "pos": [
 "noun"
-]
+],
+"example": "Everyone calls Minji a genius because she solves math problems so quickly."
 },
 "deliver": {
 "conceptId": "deliver",
 "phonetic": "[dɪˈlɪvər]",
 "pos": [
 "verb"
-]
+],
+"example": "The man delivered our package to the wrong apartment on the fifth floor."
 },
 "volume": {
 "conceptId": "volume",
 "phonetic": "[ˈvɑːljum]",
 "pos": [
 "noun"
-]
+],
+"example": "The first volume of this long history book is missing from the shelf."
 },
 "sudden": {
 "conceptId": "sudden",
 "phonetic": "[ˈsʌdən]",
 "pos": [
 "adj"
-]
+],
+"example": "A sudden rain shower ruined our picnic in the park on Saturday."
 },
 "community": {
 "conceptId": "community",
 "phonetic": "[kəˈmjuːnəti]",
 "pos": [
 "noun"
-]
+],
+"example": "Our whole community joined together to clean the river last Sunday morning."
 },
 "intellectual": {
 "conceptId": "intellectual",
@@ -14874,49 +15217,56 @@
 "pos": [
 "adj",
 "noun"
-]
+],
+"example": "Reading difficult books is good intellectual exercise for a growing young mind."
 },
 "communicate": {
 "conceptId": "communicate",
 "phonetic": "[kəˈmjuːnəkeɪt]",
 "pos": [
 "verb"
-]
+],
+"example": "Even without a common language, we communicated easily using gestures and drawings."
 },
 "condition": {
 "conceptId": "condition",
 "phonetic": "[kənˈdɪʃən]",
 "pos": [
 "noun"
-]
+],
+"example": "The used bicycle was cheap, but its condition was surprisingly good."
 },
 "fashionable": {
 "conceptId": "fashionable",
 "phonetic": "[ˈfæʃənəbəl]",
 "pos": [
 "adj"
-]
+],
+"example": "Wide pants became fashionable among students at our school this year."
 },
 "determine": {
 "conceptId": "determine",
 "phonetic": "[dəˈtɜːrmən]",
 "pos": [
 "verb"
-]
+],
+"example": "The last test score will determine who joins the national science camp."
 },
 "landscape": {
 "conceptId": "landscape",
 "phonetic": "[ˈlændskeɪp]",
 "pos": [
 "noun"
-]
+],
+"example": "The winter landscape outside the train window was covered with white snow."
 },
 "in detail": {
 "conceptId": "in detail",
 "phonetic": "[ɪn dɪˈteɪl]",
 "pos": [
 "adv"
-]
+],
+"example": "Our teacher explained the experiment in detail so nobody would make mistakes."
 },
 "interior": {
 "conceptId": "interior",
@@ -14924,35 +15274,40 @@
 "pos": [
 "adj",
 "noun"
-]
+],
+"example": "The interior walls of the old house were painted a soft yellow."
 },
 "jealous": {
 "conceptId": "jealous",
 "phonetic": "[ˈdʒeləs]",
 "pos": [
 "adj"
-]
+],
+"example": "Sumin felt jealous when her best friend won the writing contest."
 },
 "translate": {
 "conceptId": "translate",
 "phonetic": "[trænzˈleɪt]",
 "pos": [
 "verb"
-]
+],
+"example": "Could you translate this English letter into Korean for my grandmother?"
 },
 "in balance": {
 "conceptId": "in balance",
 "phonetic": "[ɪn ˈbæləns]",
 "pos": [
 "adv"
-]
+],
+"example": "A healthy life keeps work, rest, and exercise in balance every week."
 },
 "labor": {
 "conceptId": "labor",
 "phonetic": "[ˈleɪbər]",
 "pos": [
 "noun"
-]
+],
+"example": "Building the stone wall took many months of hard labor by hand."
 },
 "display": {
 "conceptId": "display",
@@ -14960,49 +15315,56 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "The art club displayed their best paintings in the school hallway today."
 },
 "opposite": {
 "conceptId": "opposite",
 "phonetic": "[ˈɑːpəzət]",
 "pos": [
 "adj"
-]
+],
+"example": "The post office stands on the opposite side of this busy street."
 },
 "seek": {
 "conceptId": "seek",
 "phonetic": "[siːk]",
 "pos": [
 "verb"
-]
+],
+"example": "Many young people come to this big city to seek better jobs."
 },
 "enormous": {
 "conceptId": "enormous",
 "phonetic": "[ɪˈnɔːrməs]",
 "pos": [
 "adj"
-]
+],
+"example": "An enormous whale appeared beside our boat and everyone shouted with excitement."
 },
 "generation": {
 "conceptId": "generation",
 "phonetic": "[dʒenərˈeɪʃən]",
 "pos": [
 "noun"
-]
+],
+"example": "My grandmother's generation lived through a very difficult time after the war."
 },
 "keep in mind": {
 "conceptId": "keep in mind",
 "phonetic": "[kiːp ɪn maɪnd]",
 "pos": [
 "adv"
-]
+],
+"example": "Keep in mind that the museum closes early on the last Monday."
 },
 "loss": {
 "conceptId": "loss",
 "phonetic": "[lɔːs]",
 "pos": [
 "noun"
-]
+],
+"example": "The small shop suffered a big loss after the flood last August."
 },
 "standard": {
 "conceptId": "standard",
@@ -15010,77 +15372,88 @@
 "pos": [
 "noun",
 "adj"
-]
+],
+"example": "This factory sets a high standard for the safety of its workers."
 },
 "location": {
 "conceptId": "location",
 "phonetic": "[loʊˈkeɪʃən]",
 "pos": [
 "noun"
-]
+],
+"example": "The new cafe has a perfect location right next to the subway station."
 },
 "arise": {
 "conceptId": "arise",
 "phonetic": "[ərˈaɪz]",
 "pos": [
 "verb"
-]
+],
+"example": "If any problem arises during the trip, please call your homeroom teacher."
 },
 "prospect": {
 "conceptId": "prospect",
 "phonetic": "[ˈprɑːspekt]",
 "pos": [
 "noun"
-]
+],
+"example": "The prospect of studying abroad next year makes Jiwon very happy."
 },
 "allowance": {
 "conceptId": "allowance",
 "phonetic": "[əˈlaʊəns]",
 "pos": [
 "noun"
-]
+],
+"example": "Yuna saves half of her monthly allowance to buy a new guitar."
 },
 "missionary": {
 "conceptId": "missionary",
 "phonetic": "[ˈmɪʃəneri]",
 "pos": [
 "noun"
-]
+],
+"example": "The missionary lived in that village for ten years and built a school."
 },
 "a variety of": {
 "conceptId": "a variety of",
 "phonetic": "[ə vərˈaɪəti ʌv]",
 "pos": [
 "adj"
-]
+],
+"example": "The school festival offered a variety of games for students and their families."
 },
 "moral": {
 "conceptId": "moral",
 "phonetic": "[ˈmɔːrəl]",
 "pos": [
 "adj"
-]
+],
+"example": "Telling the truth was a difficult moral choice for the young boy."
 },
 "status": {
 "conceptId": "status",
 "phonetic": "[ˈstætəs]",
 "pos": [
 "noun"
-]
+],
+"example": "In the past, only people of high status could learn to read."
 },
 "priceless": {
 "conceptId": "priceless",
 "phonetic": "[ˈpraɪsləs]",
 "pos": [
 "adj"
-]
+],
+"example": "The photos of my childhood are priceless to my mother and father."
 },
 "willing": {
 "conceptId": "willing",
 "phonetic": "[ˈwɪlɪŋ]",
 "pos": [
 "adj"
-]
+],
+"example": "Several classmates were willing to stay late and decorate the classroom."
 },
 "desire": {
 "conceptId": "desire",
@@ -15088,21 +15461,24 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "Many students desire a longer vacation and a shorter school day."
 },
 "miracle": {
 "conceptId": "miracle",
 "phonetic": "[ˈmɪrəkəl]",
 "pos": [
 "noun"
-]
+],
+"example": "It was a miracle that everyone escaped the burning building without injuries."
 },
 "narrator": {
 "conceptId": "narrator",
 "phonetic": "[ˈnereɪtər]",
 "pos": [
 "noun"
-]
+],
+"example": "The narrator of this novel is a lonely boy living near the sea."
 },
 "quality": {
 "conceptId": "quality",
@@ -15110,7 +15486,8 @@
 "pos": [
 "noun",
 "adj"
-]
+],
+"example": "The quality of this cheap bag is much better than I expected."
 },
 "liquid": {
 "conceptId": "liquid",
@@ -15118,7 +15495,8 @@
 "pos": [
 "noun",
 "adj"
-]
+],
+"example": "Pour the warm liquid slowly into the glass bottle without spilling it."
 },
 "instant": {
 "conceptId": "instant",
@@ -15126,42 +15504,48 @@
 "pos": [
 "adj",
 "noun"
-]
+],
+"example": "Her funny answer got an instant laugh from the whole classroom."
 },
 "jewelry": {
 "conceptId": "jewelry",
 "phonetic": "[ˈdʒuːəlri]",
 "pos": [
 "noun"
-]
+],
+"example": "My aunt keeps her expensive jewelry in a small box under the bed."
 },
 "pride": {
 "conceptId": "pride",
 "phonetic": "[praɪd]",
 "pos": [
 "noun"
-]
+],
+"example": "My father looked at my report card with obvious pride in his eyes."
 },
 "barrier": {
 "conceptId": "barrier",
 "phonetic": "[ˈbærɪər]",
 "pos": [
 "noun"
-]
+],
+"example": "Language can be a barrier when you first live in a foreign country."
 },
 "entrance": {
 "conceptId": "entrance",
 "phonetic": "[ˈentrəns]",
 "pos": [
 "noun"
-]
+],
+"example": "We waited for our teacher near the main entrance of the museum."
 },
 "rude": {
 "conceptId": "rude",
 "phonetic": "[ruːd]",
 "pos": [
 "adj"
-]
+],
+"example": "It is rude to interrupt someone while they are still speaking."
 },
 "novel": {
 "conceptId": "novel",
@@ -15169,28 +15553,32 @@
 "pos": [
 "noun",
 "adj"
-]
+],
+"example": "Hana finished reading the whole mystery novel in a single rainy afternoon."
 },
 "reproduce": {
 "conceptId": "reproduce",
 "phonetic": "[rɪprəˈduːs]",
 "pos": [
 "verb"
-]
+],
+"example": "Many fish reproduce by laying thousands of eggs in warm and shallow water."
 },
 "work out": {
 "conceptId": "work out",
 "phonetic": "[wɜːrk aʊt]",
 "pos": [
 "verb"
-]
+],
+"example": "It took us an hour to work out the answer to that hard puzzle."
 },
 "masterpiece": {
 "conceptId": "masterpiece",
 "phonetic": "[ˈmæstərpɪs]",
 "pos": [
 "noun"
-]
+],
+"example": "This painting is considered a masterpiece of Korean art from the last century."
 },
 "bomb": {
 "conceptId": "bomb",
@@ -15198,21 +15586,24 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "The old bomb was found near the river and safely removed by soldiers."
 },
 "policy": {
 "conceptId": "policy",
 "phonetic": "[ˈpɑːləsi]",
 "pos": [
 "noun"
-]
+],
+"example": "Our school has a strict policy about using smartphones during class hours."
 },
 "deed": {
 "conceptId": "deed",
 "phonetic": "[diːd]",
 "pos": [
 "noun"
-]
+],
+"example": "People still remember the brave deeds of the doctors during that difficult year."
 },
 "demand": {
 "conceptId": "demand",
@@ -15220,14 +15611,16 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "The demand for electric cars has grown quickly over the past few years."
 },
 "skin": {
 "conceptId": "skin",
 "phonetic": "[skɪn]",
 "pos": [
 "noun"
-]
+],
+"example": "You should put sunscreen on your skin before you play outside in summer."
 },
 "sum": {
 "conceptId": "sum",
@@ -15235,112 +15628,128 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "She paid a large sum of money for the old piano in that shop."
 },
 "rotten": {
 "conceptId": "rotten",
 "phonetic": "[ˈrɑːtən]",
 "pos": [
 "adj"
-]
+],
+"example": "Don't eat that apple because it looks rotten and smells really terrible."
 },
 "congratulation": {
 "conceptId": "congratulation",
 "phonetic": "[kənɡrætʃəˈleɪʃən]",
 "pos": [
 "noun"
-]
+],
+"example": "My uncle sent a card with warm congratulations on my graduation last week."
 },
 "absorb": {
 "conceptId": "absorb",
 "phonetic": "[əbˈzɔːrb]",
 "pos": [
 "verb"
-]
+],
+"example": "Plant roots absorb water and minerals from the soil under the ground."
 },
 "sweep": {
 "conceptId": "sweep",
 "phonetic": "[swiːp]",
 "pos": [
 "verb"
-]
+],
+"example": "Every morning my grandfather sweeps the leaves from the front of his house."
 },
 "chorus": {
 "conceptId": "chorus",
 "phonetic": "[ˈkɔːrəs]",
 "pos": [
 "noun"
-]
+],
+"example": "The school chorus sang three beautiful songs at the winter concert yesterday."
 },
 "invitation": {
 "conceptId": "invitation",
 "phonetic": "[ɪnvɪˈteɪʃən]",
 "pos": [
 "noun"
-]
+],
+"example": "I received an invitation to Jiho's birthday party by email this morning."
 },
 "little by little": {
 "conceptId": "little by little",
 "phonetic": "[ˈlɪtəl baɪ ˈlɪtəl]",
 "pos": [
 "adv"
-]
+],
+"example": "Little by little, my English speaking is getting better than it was before."
 },
 "flexible": {
 "conceptId": "flexible",
 "phonetic": "[ˈfleksəbəl]",
 "pos": [
 "adj"
-]
+],
+"example": "Dancers need flexible bodies, so they stretch carefully before every practice."
 },
 "reality": {
 "conceptId": "reality",
 "phonetic": "[rɪˈæləti]",
 "pos": [
 "noun"
-]
+],
+"example": "In movies heroes always win, but reality is much harder than that."
 },
 "back and forth": {
 "conceptId": "back and forth",
 "phonetic": "[bæk ənd fɔːrθ]",
 "pos": [
 "adv"
-]
+],
+"example": "The nervous teacher walked back and forth in front of the quiet students."
 },
 "put away": {
 "conceptId": "put away",
 "phonetic": "[pʊt əˈweɪ]",
 "pos": [
 "verb"
-]
+],
+"example": "Please put away your books and pencils before you leave the classroom."
 },
 "carry out": {
 "conceptId": "carry out",
 "phonetic": "[ˈkæri aʊt]",
 "pos": [
 "verb"
-]
+],
+"example": "The students carried out a simple experiment to test how plants grow."
 },
 "scientific": {
 "conceptId": "scientific",
 "phonetic": "[saɪənˈtɪfɪk]",
 "pos": [
 "adj"
-]
+],
+"example": "His idea sounded strange, but scientific evidence finally proved that he was right."
 },
 "fiction": {
 "conceptId": "fiction",
 "phonetic": "[ˈfɪkʃən]",
 "pos": [
 "noun"
-]
+],
+"example": "My sister reads science fiction every night before she goes to bed."
 },
 "economic": {
 "conceptId": "economic",
 "phonetic": "[ekəˈnɑːmɪk]",
 "pos": [
 "adj"
-]
+],
+"example": "The country's economic growth slowed down because fewer people bought new products."
 },
 "worse": {
 "conceptId": "worse",
@@ -15348,42 +15757,48 @@
 "pos": [
 "adj",
 "adv"
-]
+],
+"example": "My cold got worse after I walked home in the cold rain."
 },
 "recommend": {
 "conceptId": "recommend",
 "phonetic": "[rekəˈmend]",
 "pos": [
 "verb"
-]
+],
+"example": "The doctor recommended that I drink more water and sleep eight hours."
 },
 "meaning": {
 "conceptId": "meaning",
 "phonetic": "[ˈmiːnɪŋ]",
 "pos": [
 "noun"
-]
+],
+"example": "I looked up the meaning of that difficult word in my dictionary."
 },
 "contain": {
 "conceptId": "contain",
 "phonetic": "[kənˈteɪn]",
 "pos": [
 "verb"
-]
+],
+"example": "This drink contains too much sugar, so children should not drink it often."
 },
 "isolate": {
 "conceptId": "isolate",
 "phonetic": "[ˈaɪsəleɪt]",
 "pos": [
 "verb"
-]
+],
+"example": "The hospital isolated the sick patients to stop the disease from spreading."
 },
 "manage": {
 "conceptId": "manage",
 "phonetic": "[ˈmænədʒ]",
 "pos": [
 "verb"
-]
+],
+"example": "My aunt manages a small bakery near the subway station in our town."
 },
 "panic": {
 "conceptId": "panic",
@@ -15391,28 +15806,32 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "When the lights went out, panic spread quickly through the crowded hall."
 },
 "restrict": {
 "conceptId": "restrict",
 "phonetic": "[rɪsˈtrɪkt]",
 "pos": [
 "verb"
-]
+],
+"example": "The city restricts car traffic near schools during busy morning hours."
 },
 "proportion": {
 "conceptId": "proportion",
 "phonetic": "[prəˈpɔːrʃən]",
 "pos": [
 "noun"
-]
+],
+"example": "A large proportion of our class wants to join the school music festival."
 },
 "ultimate": {
 "conceptId": "ultimate",
 "phonetic": "[ˈʌltəmət]",
 "pos": [
 "adj"
-]
+],
+"example": "Her ultimate goal is to become a doctor and help sick children."
 },
 "suspect": {
 "conceptId": "suspect",
@@ -15420,42 +15839,48 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "I suspect that my brother ate the last piece of chocolate cake."
 },
 "factor": {
 "conceptId": "factor",
 "phonetic": "[ˈfæktər]",
 "pos": [
 "noun"
-]
+],
+"example": "Sleep is an important factor in how well students do on tests."
 },
 "come to an end": {
 "conceptId": "come to an end",
 "phonetic": "[kʌm tuː æn end]",
 "pos": [
 "verb"
-]
+],
+"example": "Our summer vacation came to an end much faster than we expected."
 },
 "greenhouse": {
 "conceptId": "greenhouse",
 "phonetic": "[ˈɡriːnhaʊs]",
 "pos": [
 "noun"
-]
+],
+"example": "Farmers grow tomatoes in a warm greenhouse even during the cold winter."
 },
 "moderate": {
 "conceptId": "moderate",
 "phonetic": "[ˈmɑːdərət]",
 "pos": [
 "adj"
-]
+],
+"example": "Doctors say moderate exercise every day is better than hard training once weekly."
 },
 "property": {
 "conceptId": "property",
 "phonetic": "[ˈprɑːpərti]",
 "pos": [
 "noun"
-]
+],
+"example": "After the fire, the family lost almost all of their property."
 },
 "tune": {
 "conceptId": "tune",
@@ -15463,7 +15888,8 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "I cannot remember the song's title, but I still hum its tune."
 },
 "expert": {
 "conceptId": "expert",
@@ -15471,70 +15897,80 @@
 "pos": [
 "noun",
 "adj"
-]
+],
+"example": "An expert on sea animals gave a talk at our school library."
 },
 "tragedy": {
 "conceptId": "tragedy",
 "phonetic": "[ˈtrædʒədi]",
 "pos": [
 "noun"
-]
+],
+"example": "We read a famous tragedy in class, and the sad ending surprised everyone."
 },
 "conclude": {
 "conceptId": "conclude",
 "phonetic": "[kənˈkluːd]",
 "pos": [
 "verb"
-]
+],
+"example": "After many tests, the scientists concluded that the water was safe to drink."
 },
 "volcano": {
 "conceptId": "volcano",
 "phonetic": "[vɑlˈkeɪnoʊ]",
 "pos": [
 "noun"
-]
+],
+"example": "That volcano has been quiet for hundreds of years, but people still worry."
 },
 "careful": {
 "conceptId": "careful",
 "phonetic": "[ˈkerfəl]",
 "pos": [
 "adj"
-]
+],
+"example": "Be careful with that hot pot because the handle burns your hand easily."
 },
 "conversation": {
 "conceptId": "conversation",
 "phonetic": "[kɑːnvərˈseɪʃən]",
 "pos": [
 "noun"
-]
+],
+"example": "I had a long conversation with my father about choosing a high school."
 },
 "spread": {
 "conceptId": "spread",
 "phonetic": "[spred]",
 "pos": [
 "verb"
-]
+],
+"example": "She spread a clean blanket on the grass before we ate our lunch."
 },
 "harbor": {
 "conceptId": "harbor",
 "phonetic": "[ˈhɑːrbər]",
 "pos": [
 "noun"
-]
+],
+"example": "Dozens of fishing boats returned to the harbor before the storm arrived."
 },
 "rough": {
 "conceptId": "rough",
 "phonetic": "[rʌf]",
 "pos": [
 "adj"
-]
+],
+"example": "The wall felt rough, so the workers smoothed it with special paper."
 },
 "decade": {
 "conceptId": "decade",
 "phonetic": "[deˈkeɪd]",
 "pos": [
 "noun"
-]
+],
+"example": "My parents have lived in this quiet town for almost three decades."
 },
 "volunteer": {
 "conceptId": "volunteer",
@@ -15543,14 +15979,16 @@
 "noun",
 "verb",
 "adj"
-]
+],
+"example": "Every Saturday a young volunteer teaches free math lessons at our community center."
 },
 "author": {
 "conceptId": "author",
 "phonetic": "[ˈɔːθər]",
 "pos": [
 "noun"
-]
+],
+"example": "The author of this novel visited our school and answered our questions."
 },
 "title": {
 "conceptId": "title",
@@ -15558,14 +15996,16 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "I forgot the title of the movie, but I remember its main character."
 },
 "southern": {
 "conceptId": "southern",
 "phonetic": "[ˈsʌðərn]",
 "pos": [
 "adj"
-]
+],
+"example": "Winters in the southern part of the country are warm and quite short."
 },
 "issue": {
 "conceptId": "issue",
@@ -15573,70 +16013,80 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "Air pollution is a serious issue that our city must solve soon."
 },
 "emotion": {
 "conceptId": "emotion",
 "phonetic": "[ɪˈmoʊʃən]",
 "pos": [
 "noun"
-]
+],
+"example": "Music helps me express emotions that I cannot explain with simple words."
 },
 "forgive": {
 "conceptId": "forgive",
 "phonetic": "[fərˈɡɪv]",
 "pos": [
 "verb"
-]
+],
+"example": "I forgave my friend quickly because he said sorry with honest eyes."
 },
 "pasture": {
 "conceptId": "pasture",
 "phonetic": "[ˈpæstʃər]",
 "pos": [
 "noun"
-]
+],
+"example": "Cows walked slowly across the wide green pasture behind the old farmhouse."
 },
 "cultural": {
 "conceptId": "cultural",
 "phonetic": "[ˈkʌltʃərəl]",
 "pos": [
 "adj"
-]
+],
+"example": "Our club plans cultural events so foreign students can learn Korean traditions."
 },
 "enable": {
 "conceptId": "enable",
 "phonetic": "[eˈneɪbəl]",
 "pos": [
 "verb"
-]
+],
+"example": "This new app enables students to study English anywhere with their phones."
 },
 "opponent": {
 "conceptId": "opponent",
 "phonetic": "[əˈpoʊnənt]",
 "pos": [
 "noun"
-]
+],
+"example": "Our opponent in the final match was taller and faster than us."
 },
 "flavor": {
 "conceptId": "flavor",
 "phonetic": "[ˈfleɪvər]",
 "pos": [
 "noun"
-]
+],
+"example": "This ice cream has a strong flavor of fresh strawberries and sweet cream."
 },
 "as long as": {
 "conceptId": "as long as",
 "phonetic": "[æz lɔːŋ æz]",
 "pos": [
 "conj"
-]
+],
+"example": "You can borrow my bike as long as you return it before dinner."
 },
 "pronounce": {
 "conceptId": "pronounce",
 "phonetic": "[prəˈnaʊns]",
 "pos": [
 "verb"
-]
+],
+"example": "My teacher showed me how to pronounce this long word more clearly."
 },
 "mop": {
 "conceptId": "mop",
@@ -15644,7 +16094,8 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "Take the mop from the corner and clean the wet kitchen floor."
 },
 "focus": {
 "conceptId": "focus",
@@ -15652,42 +16103,48 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "It is hard to focus on homework when the television is so loud."
 },
 "make up for": {
 "conceptId": "make up for",
 "phonetic": "[meɪk ʌp fɔːr]",
 "pos": [
 "verb"
-]
+],
+"example": "He studied all weekend to make up for the classes he had missed."
 },
 "in order to": {
 "conceptId": "in order to",
 "phonetic": "[ɪn ˈɔːrdər tuː]",
 "pos": [
 "adv"
-]
+],
+"example": "Sora wakes up at six in order to catch the first school bus."
 },
 "humble": {
 "conceptId": "humble",
 "phonetic": "[ˈhʌmbəl]",
 "pos": [
 "adj"
-]
+],
+"example": "Even after winning the prize, the young singer stayed kind and humble."
 },
 "efficiency": {
 "conceptId": "efficiency",
 "phonetic": "[ɪˈfɪʃənsi]",
 "pos": [
 "noun"
-]
+],
+"example": "New machines improved the factory's efficiency and saved a lot of electricity."
 },
 "phrase": {
 "conceptId": "phrase",
 "phonetic": "[freɪz]",
 "pos": [
 "noun"
-]
+],
+"example": "Try to learn this useful phrase and use it in real conversations."
 },
 "monitor": {
 "conceptId": "monitor",
@@ -15695,28 +16152,32 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "Scientists monitor the mountain every day to watch for dangerous changes."
 },
 "call on": {
 "conceptId": "call on",
 "phonetic": "[kɔːl ɑːn]",
 "pos": [
 "verb"
-]
+],
+"example": "The principal called on students to keep the school hallways clean."
 },
 "prescribe": {
 "conceptId": "prescribe",
 "phonetic": "[prəsˈkraɪb]",
 "pos": [
 "verb"
-]
+],
+"example": "The doctor prescribed some medicine and told me to rest for three days."
 },
 "erupt": {
 "conceptId": "erupt",
 "phonetic": "[ɪˈrʌpt]",
 "pos": [
 "verb"
-]
+],
+"example": "The volcano erupted suddenly, and thick gray ash covered the nearby villages."
 },
 "faint": {
 "conceptId": "faint",
@@ -15724,7 +16185,8 @@
 "pos": [
 "adj",
 "verb"
-]
+],
+"example": "I heard a faint sound of music coming from the empty classroom."
 },
 "comment": {
 "conceptId": "comment",
@@ -15732,28 +16194,32 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "Her comment about my drawing made me feel proud of my work."
 },
 "occasion": {
 "conceptId": "occasion",
 "phonetic": "[əˈkeɪʒən]",
 "pos": [
 "noun"
-]
+],
+"example": "On that special occasion, our whole family took a photo together."
 },
 "figure out": {
 "conceptId": "figure out",
 "phonetic": "[ˈfɪɡjər aʊt]",
 "pos": [
 "verb"
-]
+],
+"example": "We finally figured out the total cost of the trip for twenty students."
 },
 "regulate": {
 "conceptId": "regulate",
 "phonetic": "[ˈreɡjəleɪt]",
 "pos": [
 "verb"
-]
+],
+"example": "The government regulates how much salt companies can put in instant noodles."
 },
 "notice": {
 "conceptId": "notice",
@@ -15761,7 +16227,8 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "Did you notice the small bird sitting on the window this morning?"
 },
 "progress": {
 "conceptId": "progress",
@@ -15769,21 +16236,24 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "Our team made great progress on the science project during the last two weeks."
 },
 "bring about": {
 "conceptId": "bring about",
 "phonetic": "[brɪŋ əˈbaʊt]",
 "pos": [
 "verb"
-]
+],
+"example": "New technology can bring about huge changes in the way people work."
 },
 "infection": {
 "conceptId": "infection",
 "phonetic": "[ɪnˈfekʃən]",
 "pos": [
 "noun"
-]
+],
+"example": "Washing your hands often is the easiest way to prevent an infection."
 },
 "concrete": {
 "conceptId": "concrete",
@@ -15791,35 +16261,40 @@
 "pos": [
 "noun",
 "adj"
-]
+],
+"example": "Workers poured wet concrete into the frame to build the new bridge."
 },
 "outline": {
 "conceptId": "outline",
 "phonetic": "[ˈaʊtlaɪn]",
 "pos": [
 "noun"
-]
+],
+"example": "Before writing my essay, I always make a simple outline of my ideas."
 },
 "accomplish": {
 "conceptId": "accomplish",
 "phonetic": "[əˈkɑːmplɪʃ]",
 "pos": [
 "verb"
-]
+],
+"example": "She worked hard every night and finally accomplished her goal of winning."
 },
 "interpret": {
 "conceptId": "interpret",
 "phonetic": "[ɪnˈtɜːrprət]",
 "pos": [
 "verb"
-]
+],
+"example": "Two readers may interpret the same poem in completely different ways."
 },
 "ignorant": {
 "conceptId": "ignorant",
 "phonetic": "[ˈɪɡnərənt]",
 "pos": [
 "adj"
-]
+],
+"example": "I felt ignorant because I knew nothing about the history of my own town."
 },
 "delay": {
 "conceptId": "delay",
@@ -15827,14 +16302,16 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "Heavy snow delayed our school bus by more than thirty minutes this morning."
 },
 "go over": {
 "conceptId": "go over",
 "phonetic": "[ɡoʊ ˈoʊvər]",
 "pos": [
 "verb"
-]
+],
+"example": "Let's go over the math problems once more before tomorrow's final test."
 },
 "secure": {
 "conceptId": "secure",
@@ -15842,35 +16319,40 @@
 "pos": [
 "adj",
 "verb"
-]
+],
+"example": "Keep your passport in a secure place while you are traveling abroad."
 },
 "appoint": {
 "conceptId": "appoint",
 "phonetic": "[əˈpɔɪnt]",
 "pos": [
 "verb"
-]
+],
+"example": "The principal appointed Mr. Kim as the new coach of our soccer team."
 },
 "universal": {
 "conceptId": "universal",
 "phonetic": "[juːnəˈvɜːrsəl]",
 "pos": [
 "adj"
-]
+],
+"example": "Music is often called a universal language that everyone can understand."
 },
 "peak": {
 "conceptId": "peak",
 "phonetic": "[piːk]",
 "pos": [
 "noun"
-]
+],
+"example": "After climbing for six hours, we finally reached the snowy peak of the mountain."
 },
 "cruel": {
 "conceptId": "cruel",
 "phonetic": "[ˈkruːəl]",
 "pos": [
 "adj"
-]
+],
+"example": "It is cruel to leave a small dog alone outside in cold weather."
 },
 "total": {
 "conceptId": "total",
@@ -15878,105 +16360,120 @@
 "pos": [
 "adj",
 "noun"
-]
+],
+"example": "The total cost of the trip was much lower than we first expected."
 },
 "establish": {
 "conceptId": "establish",
 "phonetic": "[ɪˈstæblɪʃ]",
 "pos": [
 "verb"
-]
+],
+"example": "My grandfather established this small bookstore more than fifty years ago."
 },
 "session": {
 "conceptId": "session",
 "phonetic": "[ˈseʃən]",
 "pos": [
 "noun"
-]
+],
+"example": "Our morning session starts at nine and ends just before lunch time."
 },
 "refer": {
 "conceptId": "refer",
 "phonetic": "[rəˈfɜːr]",
 "pos": [
 "verb"
-]
+],
+"example": "You may refer to your dictionary while you are writing the English report."
 },
 "lighthouse": {
 "conceptId": "lighthouse",
 "phonetic": "[ˈlaɪthaʊs]",
 "pos": [
 "noun"
-]
+],
+"example": "The old lighthouse on the cliff guides fishing boats safely into the harbor."
 },
 "educate": {
 "conceptId": "educate",
 "phonetic": "[ˈedʒəkeɪt]",
 "pos": [
 "verb"
-]
+],
+"example": "Good teachers educate students not only in math but also in kindness."
 },
 "device": {
 "conceptId": "device",
 "phonetic": "[dɪˈvaɪs]",
 "pos": [
 "noun"
-]
+],
+"example": "This small device can measure the temperature of the room in one second."
 },
 "remains": {
 "conceptId": "remains",
 "phonetic": "[rɪˈmeɪnz]",
 "pos": [
 "noun"
-]
+],
+"example": "Tourists visit the remains of the ancient castle on top of the hill."
 },
 "turn over": {
 "conceptId": "turn over",
 "phonetic": "[tɜːrn ˈoʊvər]",
 "pos": [
 "verb"
-]
+],
+"example": "Please turn over the pancake before the bottom side gets too dark."
 },
 "compose": {
 "conceptId": "compose",
 "phonetic": "[kəmˈpoʊz]",
 "pos": [
 "verb"
-]
+],
+"example": "Mozart composed beautiful music when he was still a very young boy."
 },
 "director": {
 "conceptId": "director",
 "phonetic": "[dərˈektər]",
 "pos": [
 "noun"
-]
+],
+"example": "The movie director asked the actors to try the same scene again."
 },
 "household": {
 "conceptId": "household",
 "phonetic": "[ˈhaʊshoʊld]",
 "pos": [
 "noun"
-]
+],
+"example": "Almost every household in our village now has a computer and internet."
 },
 "mutual": {
 "conceptId": "mutual",
 "phonetic": "[ˈmjuːtʃuəl]",
 "pos": [
 "adj"
-]
+],
+"example": "A good friendship should be built on mutual trust and honest talk."
 },
 "oppose": {
 "conceptId": "oppose",
 "phonetic": "[əˈpoʊz]",
 "pos": [
 "verb"
-]
+],
+"example": "Many villagers opposed the plan to build a factory near the river."
 },
 "be based on": {
 "conceptId": "be based on",
 "phonetic": "[biː beɪst ɑːn]",
 "pos": [
 "verb"
-]
+],
+"example": "This exciting movie is based on a true story from the 1950s."
 },
 "tidy": {
 "conceptId": "tidy",
@@ -15984,77 +16481,88 @@
 "pos": [
 "adj",
 "verb"
-]
+],
+"example": "Her desk always looks tidy, even during the busiest exam week."
 },
 "strict": {
 "conceptId": "strict",
 "phonetic": "[strɪkt]",
 "pos": [
 "adj"
-]
+],
+"example": "My father is strict about bedtime, so I must sleep before eleven."
 },
 "leisure": {
 "conceptId": "leisure",
 "phonetic": "[ˈleʒər]",
 "pos": [
 "noun"
-]
+],
+"example": "In his leisure time, my uncle enjoys fishing at the quiet lake."
 },
 "natural": {
 "conceptId": "natural",
 "phonetic": "[ˈnætʃərəl]",
 "pos": [
 "adj"
-]
+],
+"example": "This island is famous for its natural beauty and clean ocean water."
 },
 "lead to": {
 "conceptId": "lead to",
 "phonetic": "[led tuː]",
 "pos": [
 "verb"
-]
+],
+"example": "Eating too much fast food can lead to serious health problems later."
 },
 "identify": {
 "conceptId": "identify",
 "phonetic": "[aɪˈdentəfaɪ]",
 "pos": [
 "verb"
-]
+],
+"example": "Scientists used photographs to identify the rare bird found in the forest."
 },
 "precise": {
 "conceptId": "precise",
 "phonetic": "[prɪˈsaɪs]",
 "pos": [
 "adj"
-]
+],
+"example": "A doctor needs precise measurements before giving medicine to a small child."
 },
 "reasonable": {
 "conceptId": "reasonable",
 "phonetic": "[ˈriːzənəbəl]",
 "pos": [
 "adj"
-]
+],
+"example": "The restaurant serves delicious noodles at a very reasonable price."
 },
 "cooperate": {
 "conceptId": "cooperate",
 "phonetic": "[koʊˈɑːpəreɪt]",
 "pos": [
 "verb"
-]
+],
+"example": "If we all cooperate, we can clean the whole classroom in ten minutes."
 },
 "height": {
 "conceptId": "height",
 "phonetic": "[haɪt]",
 "pos": [
 "noun"
-]
+],
+"example": "The nurse measured my height and weight at the school check-up today."
 },
 "observe": {
 "conceptId": "observe",
 "phonetic": "[əbˈzɜːrv]",
 "pos": [
 "verb"
-]
+],
+"example": "We observed the tiny insects through a microscope during science class."
 },
 "risk": {
 "conceptId": "risk",
@@ -16062,112 +16570,128 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "There is always a risk of injury when you skate without a helmet."
 },
 "wallet": {
 "conceptId": "wallet",
 "phonetic": "[ˈwɔːlət]",
 "pos": [
 "noun"
-]
+],
+"example": "He lost his brown wallet on the bus and reported it to the driver."
 },
 "chop": {
 "conceptId": "chop",
 "phonetic": "[tʃɑːp]",
 "pos": [
 "verb"
-]
+],
+"example": "My mother chopped the onions and carrots before putting them in the soup."
 },
 "logic": {
 "conceptId": "logic",
 "phonetic": "[ˈlɑːdʒɪk]",
 "pos": [
 "noun"
-]
+],
+"example": "There is no logic in studying all night and then sleeping through class."
 },
 "exhibition": {
 "conceptId": "exhibition",
 "phonetic": "[eksəˈbɪʃən]",
 "pos": [
 "noun"
-]
+],
+"example": "Our art club held a small exhibition of student paintings in the hall."
 },
 "penalty": {
 "conceptId": "penalty",
 "phonetic": "[ˈpenəlti]",
 "pos": [
 "noun"
-]
+],
+"example": "The player received a penalty for pushing an opponent during the match."
 },
 "theme": {
 "conceptId": "theme",
 "phonetic": "[θiːm]",
 "pos": [
 "noun"
-]
+],
+"example": "The theme of this novel is friendship between two very different boys."
 },
 "muscle": {
 "conceptId": "muscle",
 "phonetic": "[ˈmʌsəl]",
 "pos": [
 "noun"
-]
+],
+"example": "Swimming every morning helped me build stronger muscles in my arms."
 },
 "needle": {
 "conceptId": "needle",
 "phonetic": "[ˈniːdəl]",
 "pos": [
 "noun"
-]
+],
+"example": "My grandmother put a thin thread through the needle to fix my shirt."
 },
 "philosophy": {
 "conceptId": "philosophy",
 "phonetic": "[fəˈlɑːsəfi]",
 "pos": [
 "noun"
-]
+],
+"example": "In college my sister studied philosophy and learned to ask difficult questions."
 },
 "outlet": {
 "conceptId": "outlet",
 "phonetic": "[ˈaʊtlet]",
 "pos": [
 "noun"
-]
+],
+"example": "Please plug the lamp into the outlet behind the wooden bookshelf."
 },
 "annual": {
 "conceptId": "annual",
 "phonetic": "[ˈænjuəl]",
 "pos": [
 "adj"
-]
+],
+"example": "Our school holds an annual sports day on the first Friday of May."
 },
 "vivid": {
 "conceptId": "vivid",
 "phonetic": "[ˈvɪvəd]",
 "pos": [
 "adj"
-]
+],
+"example": "The artist painted the autumn leaves in vivid red and orange colors."
 },
 "criticize": {
 "conceptId": "criticize",
 "phonetic": "[ˈkrɪtɪsaɪz]",
 "pos": [
 "verb"
-]
+],
+"example": "Instead of criticizing your classmates, try to help them improve."
 },
 "version": {
 "conceptId": "version",
 "phonetic": "[ˈvɜːrʒən]",
 "pos": [
 "noun"
-]
+],
+"example": "The new version of this game has better graphics and fewer errors."
 },
 "differ": {
 "conceptId": "differ",
 "phonetic": "[ˈdɪfər]",
 "pos": [
 "verb"
-]
+],
+"example": "My opinion differs from yours, but I still respect what you said."
 },
 "command": {
 "conceptId": "command",
@@ -16175,7 +16699,8 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "The dog sat down immediately when it heard its owner's command."
 },
 "cross": {
 "conceptId": "cross",
@@ -16183,7 +16708,8 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "Always look both ways before you cross this busy street."
 },
 "chat": {
 "conceptId": "chat",
@@ -16191,35 +16717,40 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "We chatted about our favorite dramas while waiting for the late bus."
 },
 "manner": {
 "conceptId": "manner",
 "phonetic": "[ˈmænər]",
 "pos": [
 "noun"
-]
+],
+"example": "The waiter greeted every guest in a polite and friendly manner."
 },
 "access": {
 "conceptId": "access",
 "phonetic": "[ˈækses]",
 "pos": [
 "noun"
-]
+],
+"example": "Visitors have access to the garden only between ten and five o'clock."
 },
 "faith": {
 "conceptId": "faith",
 "phonetic": "[feɪθ]",
 "pos": [
 "noun"
-]
+],
+"example": "My coach never lost faith in me, even after I failed twice."
 },
 "conserve": {
 "conceptId": "conserve",
 "phonetic": "[kənˈsɜːrv]",
 "pos": [
 "verb"
-]
+],
+"example": "We must conserve water during the dry season to help our town."
 },
 "homeless": {
 "conceptId": "homeless",
@@ -16227,14 +16758,16 @@
 "pos": [
 "adj",
 "noun"
-]
+],
+"example": "The flood left hundreds of families homeless in that small village."
 },
 "atmosphere": {
 "conceptId": "atmosphere",
 "phonetic": "[ˈætməsfɪr]",
 "pos": [
 "noun"
-]
+],
+"example": "The earth's atmosphere protects living things from dangerous rays of the sun."
 },
 "worship": {
 "conceptId": "worship",
@@ -16242,42 +16775,48 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "People gather at this old temple to worship early every Sunday morning."
 },
 "external": {
 "conceptId": "external",
 "phonetic": "[ɪkˈstɜːrnəl]",
 "pos": [
 "adj"
-]
+],
+"example": "The external walls of the building were painted a soft gray color."
 },
 "break out": {
 "conceptId": "break out",
 "phonetic": "[breɪk aʊt]",
 "pos": [
 "verb"
-]
+],
+"example": "A terrible war broke out in that region almost ten years ago."
 },
 "set off": {
 "conceptId": "set off",
 "phonetic": "[set ɔːf]",
 "pos": [
 "verb"
-]
+],
+"example": "We set off for the mountain at five in the morning to avoid traffic."
 },
 "pregnant": {
 "conceptId": "pregnant",
 "phonetic": "[ˈpreɡnənt]",
 "pos": [
 "adj"
-]
+],
+"example": "My aunt is pregnant, so we are getting ready to welcome a baby."
 },
 "style": {
 "conceptId": "style",
 "phonetic": "[staɪl]",
 "pos": [
 "noun"
-]
+],
+"example": "Every writer develops a personal style after years of steady practice."
 },
 "Pacific": {
 "conceptId": "Pacific",
@@ -16285,14 +16824,16 @@
 "pos": [
 "adj",
 "noun"
-]
+],
+"example": "The Pacific Ocean is the largest and deepest ocean on our planet."
 },
 "necessity": {
 "conceptId": "necessity",
 "phonetic": "[nəˈsesəti]",
 "pos": [
 "noun"
-]
+],
+"example": "Volunteers sent food, blankets, and other necessities to the flooded town."
 },
 "antique": {
 "conceptId": "antique",
@@ -16300,7 +16841,8 @@
 "pos": [
 "adj",
 "noun"
-]
+],
+"example": "My grandfather keeps an antique clock that still works perfectly after ninety years."
 },
 "guarantee": {
 "conceptId": "guarantee",
@@ -16308,14 +16850,16 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "The store guarantees that this laptop will work well for at least three years."
 },
 "persuade": {
 "conceptId": "persuade",
 "phonetic": "[pərˈsweɪd]",
 "pos": [
 "verb"
-]
+],
+"example": "Jiho persuaded his parents to let him join the school baseball team."
 },
 "lack": {
 "conceptId": "lack",
@@ -16323,14 +16867,16 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "A lack of sleep made it hard for me to focus in class."
 },
 "as ~ as possible": {
 "conceptId": "as ~ as possible",
 "phonetic": "[æz æz ˈpɑːsəbəl]",
 "pos": [
 "adv"
-]
+],
+"example": "Please finish your report as quickly as possible because the deadline is tomorrow."
 },
 "alternative": {
 "conceptId": "alternative",
@@ -16338,21 +16884,24 @@
 "pos": [
 "adj",
 "noun"
-]
+],
+"example": "Solar power is an alternative energy source that does not pollute the air."
 },
 "fortune": {
 "conceptId": "fortune",
 "phonetic": "[ˈfɔːrtʃən]",
 "pos": [
 "noun"
-]
+],
+"example": "Her grandfather built a large fortune by selling fresh vegetables for forty years."
 },
 "sacred": {
 "conceptId": "sacred",
 "phonetic": "[ˈseɪkrəd]",
 "pos": [
 "adj"
-]
+],
+"example": "Many people believe that this old mountain is a sacred place for prayer."
 },
 "direct": {
 "conceptId": "direct",
@@ -16360,49 +16909,56 @@
 "pos": [
 "verb",
 "adj"
-]
+],
+"example": "A famous teacher directed our school musical and taught us how to move."
 },
 "ignore": {
 "conceptId": "ignore",
 "phonetic": "[ɪɡˈnɔːr]",
 "pos": [
 "verb"
-]
+],
+"example": "Don't ignore the warning signs near the river when the water rises quickly."
 },
 "wipe": {
 "conceptId": "wipe",
 "phonetic": "[waɪp]",
 "pos": [
 "verb"
-]
+],
+"example": "Minji wiped the dusty window until she could see the garden clearly."
 },
 "analyze": {
 "conceptId": "analyze",
 "phonetic": "[ˈænəlaɪz]",
 "pos": [
 "verb"
-]
+],
+"example": "The students analyzed the survey results and made a colorful graph together."
 },
 "unify": {
 "conceptId": "unify",
 "phonetic": "[ˈjuːnəfaɪ]",
 "pos": [
 "verb"
-]
+],
+"example": "The new leader tried to unify the two groups into one strong team."
 },
 "recognize": {
 "conceptId": "recognize",
 "phonetic": "[ˈrekəɡnaɪz]",
 "pos": [
 "verb"
-]
+],
+"example": "The principal recognized our hard work and gave our club a special award."
 },
 "discard": {
 "conceptId": "discard",
 "phonetic": "[dɪˈskɑːrd]",
 "pos": [
 "verb"
-]
+],
+"example": "Please do not discard plastic bottles here; put them in the recycling bin."
 },
 "regard": {
 "conceptId": "regard",
@@ -16410,7 +16966,8 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "Many students regard her as the kindest teacher in our whole school."
 },
 "military": {
 "conceptId": "military",
@@ -16418,119 +16975,136 @@
 "pos": [
 "adj",
 "noun"
-]
+],
+"example": "My uncle wears a military uniform and works at a base near the coast."
 },
 "knowledge": {
 "conceptId": "knowledge",
 "phonetic": "[ˈnɑːlədʒ]",
 "pos": [
 "noun"
-]
+],
+"example": "Reading many different books gave Suji deep knowledge about world history."
 },
 "loose": {
 "conceptId": "loose",
 "phonetic": "[luːs]",
 "pos": [
 "adj"
-]
+],
+"example": "These pants are too loose, so I need a belt to wear them."
 },
 "be supposed to": {
 "conceptId": "be supposed to",
 "phonetic": "[biː səˈpoʊzd tuː]",
 "pos": [
 "aux"
-]
+],
+"example": "We are supposed to meet in front of the library at nine tomorrow morning."
 },
 "element": {
 "conceptId": "element",
 "phonetic": "[ˈeləmənt]",
 "pos": [
 "noun"
-]
+],
+"example": "Trust is the most important element of a long and happy friendship."
 },
 "by oneself": {
 "conceptId": "by oneself",
 "phonetic": "[baɪ wʌnˈself]",
 "pos": [
 "adv"
-]
+],
+"example": "My little sister finished the whole puzzle by herself in one afternoon."
 },
 "organize": {
 "conceptId": "organize",
 "phonetic": "[ˈɔːrɡənaɪz]",
 "pos": [
 "verb"
-]
+],
+"example": "Our club organized a charity concert to help children in the neighborhood."
 },
 "give up": {
 "conceptId": "give up",
 "phonetic": "[ɡɪv ʌp]",
 "pos": [
 "verb"
-]
+],
+"example": "Even after failing twice, Junho refused to give up on his science project."
 },
 "seem": {
 "conceptId": "seem",
 "phonetic": "[siːm]",
 "pos": [
 "verb"
-]
+],
+"example": "Your new classmate seems shy, but she talks a lot with close friends."
 },
 "capable of": {
 "conceptId": "capable of",
 "phonetic": "[ˈkeɪpəbəl ʌv]",
 "pos": [
 "adj"
-]
+],
+"example": "A well-trained dog is capable of finding people under fallen buildings."
 },
 "tip": {
 "conceptId": "tip",
 "phonetic": "[tɪp]",
 "pos": [
 "noun"
-]
+],
+"example": "In that country, people usually leave a small tip for the waiter."
 },
 "profile": {
 "conceptId": "profile",
 "phonetic": "[ˈproʊfaɪl]",
 "pos": [
 "noun"
-]
+],
+"example": "The artist drew my profile, showing only the left side of my face."
 },
 "cell": {
 "conceptId": "cell",
 "phonetic": "[sel]",
 "pos": [
 "noun"
-]
+],
+"example": "Under the microscope, we could clearly see the shape of a plant cell."
 },
 "now that": {
 "conceptId": "now that",
 "phonetic": "[naʊ ðæt]",
 "pos": [
 "conj"
-]
+],
+"example": "Now that the rain has stopped, we can finally play soccer outside."
 },
 "cuisine": {
 "conceptId": "cuisine",
 "phonetic": "[kwɪˈziːn]",
 "pos": [
 "noun"
-]
+],
+"example": "Italian cuisine is popular in Korea because many people love pasta and pizza."
 },
 "day and night": {
 "conceptId": "day and night",
 "phonetic": "[deɪ ənd naɪt]",
 "pos": [
 "adv"
-]
+],
+"example": "The nurses worked day and night to take care of the sick patients."
 },
 "response": {
 "conceptId": "response",
 "phonetic": "[rɪˈspɑːns]",
 "pos": [
 "noun"
-]
+],
+"example": "I sent an email last week, but I have not received any response yet."
 },
 "quarrel": {
 "conceptId": "quarrel",
@@ -16538,7 +17112,8 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "The two brothers had a loud quarrel about who should wash the dishes."
 },
 "rank": {
 "conceptId": "rank",
@@ -16546,28 +17121,32 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "Our school team ranked second in the national basketball tournament this year."
 },
 "by chance": {
 "conceptId": "by chance",
 "phonetic": "[baɪ tʃæns]",
 "pos": [
 "adv"
-]
+],
+"example": "I met my old elementary school teacher by chance at the train station."
 },
 "divide": {
 "conceptId": "divide",
 "phonetic": "[dɪˈvaɪd]",
 "pos": [
 "verb"
-]
+],
+"example": "Our teacher divided the class into four groups for the science experiment."
 },
 "anticipate": {
 "conceptId": "anticipate",
 "phonetic": "[ænˈtɪsəpeɪt]",
 "pos": [
 "verb"
-]
+],
+"example": "Everyone anticipated a close game, but our team won by twenty points."
 },
 "fundamental": {
 "conceptId": "fundamental",
@@ -16575,49 +17154,56 @@
 "pos": [
 "adj",
 "noun"
-]
+],
+"example": "Reading and writing are fundamental skills that every student must learn well."
 },
 "polish": {
 "conceptId": "polish",
 "phonetic": "[ˈpɑːlɪʃ]",
 "pos": [
 "verb"
-]
+],
+"example": "Grandfather polished his old shoes until they shone like new ones."
 },
 "obstacle": {
 "conceptId": "obstacle",
 "phonetic": "[ˈɑːbstəkəl]",
 "pos": [
 "noun"
-]
+],
+"example": "Fear of speaking English was the biggest obstacle in her language learning."
 },
 "emphasize": {
 "conceptId": "emphasize",
 "phonetic": "[ˈemfəsaɪz]",
 "pos": [
 "verb"
-]
+],
+"example": "The coach emphasized teamwork more than winning during every practice session."
 },
 "stick to": {
 "conceptId": "stick to",
 "phonetic": "[stɪk tuː]",
 "pos": [
 "verb"
-]
+],
+"example": "If you stick to your study plan, your grades will improve this semester."
 },
 "organization": {
 "conceptId": "organization",
 "phonetic": "[ɔːrɡənəˈzeɪʃən]",
 "pos": [
 "noun"
-]
+],
+"example": "She works for an international organization that helps children in poor countries."
 },
 "violent": {
 "conceptId": "violent",
 "phonetic": "[ˈvaɪələnt]",
 "pos": [
 "adj"
-]
+],
+"example": "My parents do not let me watch violent movies late at night."
 },
 "abstract": {
 "conceptId": "abstract",
@@ -16625,14 +17211,16 @@
 "pos": [
 "noun",
 "adj"
-]
+],
+"example": "The museum showed a famous abstract painting made only of lines and circles."
 },
 "eastern": {
 "conceptId": "eastern",
 "phonetic": "[ˈiːstərn]",
 "pos": [
 "adj"
-]
+],
+"example": "Eastern medicine often uses herbs that have been studied for many centuries."
 },
 "double": {
 "conceptId": "double",
@@ -16640,21 +17228,24 @@
 "pos": [
 "verb",
 "adj"
-]
+],
+"example": "The price of the concert tickets doubled after the band became famous."
 },
 "importance": {
 "conceptId": "importance",
 "phonetic": "[ɪmˈpɔːrtəns]",
 "pos": [
 "noun"
-]
+],
+"example": "Our teacher often talks about the importance of asking honest questions."
 },
 "greet": {
 "conceptId": "greet",
 "phonetic": "[ɡriːt]",
 "pos": [
 "verb"
-]
+],
+"example": "The shop owner greeted every customer with a warm smile each morning."
 },
 "solid": {
 "conceptId": "solid",
@@ -16662,7 +17253,8 @@
 "pos": [
 "noun",
 "adj"
-]
+],
+"example": "When water becomes a solid, we call it ice and it floats."
 },
 "rumor": {
 "conceptId": "rumor",
@@ -16670,7 +17262,8 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "A silly rumor about our new teacher spread through the school very fast."
 },
 "addict": {
 "conceptId": "addict",
@@ -16678,21 +17271,24 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "My cousin is a game addict who plays online for six hours daily."
 },
 "carnival": {
 "conceptId": "carnival",
 "phonetic": "[ˈkɑːrnəvəl]",
 "pos": [
 "noun"
-]
+],
+"example": "During the summer carnival, people danced in the street wearing bright clothes."
 },
 "desperate": {
 "conceptId": "desperate",
 "phonetic": "[ˈdesprɪt]",
 "pos": [
 "adj"
-]
+],
+"example": "The lost hikers made a desperate effort to reach the road before dark."
 },
 "impact": {
 "conceptId": "impact",
@@ -16700,21 +17296,24 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "Smartphones have had a huge impact on how teenagers talk to each other."
 },
 "in advance": {
 "conceptId": "in advance",
 "phonetic": "[ɪn ədˈvæns]",
 "pos": [
 "adv"
-]
+],
+"example": "You should book the movie tickets in advance because weekends are always busy."
 },
 "put out": {
 "conceptId": "put out",
 "phonetic": "[pʊt aʊt]",
 "pos": [
 "verb"
-]
+],
+"example": "Firefighters put out the kitchen fire before it reached the second floor."
 },
 "coach": {
 "conceptId": "coach",
@@ -16722,14 +17321,16 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "Our soccer coach told us to practice passing for thirty more minutes."
 },
 "heal": {
 "conceptId": "heal",
 "phonetic": "[hiːl]",
 "pos": [
 "verb"
-]
+],
+"example": "Warm soup and long sleep helped heal my sore throat in two days."
 },
 "current": {
 "conceptId": "current",
@@ -16737,7 +17338,8 @@
 "pos": [
 "noun",
 "adj"
-]
+],
+"example": "The swimmer was pulled away by a strong current near the rocks."
 },
 "border": {
 "conceptId": "border",
@@ -16745,56 +17347,64 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "The train slowly crossed the border between the two countries at midnight."
 },
 "stand for": {
 "conceptId": "stand for",
 "phonetic": "[stænd fɔːr]",
 "pos": [
 "verb"
-]
+],
+"example": "In this science book, the letter H stands for the element hydrogen."
 },
 "chore": {
 "conceptId": "chore",
 "phonetic": "[tʃɔːr]",
 "pos": [
 "noun"
-]
+],
+"example": "Washing the dishes is the household chore that I dislike the most."
 },
 "identical": {
 "conceptId": "identical",
 "phonetic": "[aɪˈdentɪkəl]",
 "pos": [
 "adj"
-]
+],
+"example": "The twins wore identical jackets, so the teacher often confused their names."
 },
 "possess": {
 "conceptId": "possess",
 "phonetic": "[pəˈzes]",
 "pos": [
 "verb"
-]
+],
+"example": "That old farmer possesses more land than anyone else in the village."
 },
 "mercy": {
 "conceptId": "mercy",
 "phonetic": "[ˈmɜːrsi]",
 "pos": [
 "noun"
-]
+],
+"example": "The prisoner begged for mercy, and the judge gave him a lighter punishment."
 },
 "fall off": {
 "conceptId": "fall off",
 "phonetic": "[fɔːl ɔːf]",
 "pos": [
 "verb"
-]
+],
+"example": "Be careful, or the cup will fall off the edge of the table."
 },
 "dormitory": {
 "conceptId": "dormitory",
 "phonetic": "[ˈdɔːrmətɔːri]",
 "pos": [
 "noun"
-]
+],
+"example": "Sena lives in a school dormitory and shares a room with two friends."
 },
 "hike": {
 "conceptId": "hike",
@@ -16802,7 +17412,8 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "We hiked through the forest for three hours and reached a beautiful waterfall."
 },
 "foul": {
 "conceptId": "foul",
@@ -16810,42 +17421,48 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "The referee called a foul when the player pushed his opponent hard."
 },
 "acquire": {
 "conceptId": "acquire",
 "phonetic": "[əˈkwaɪər]",
 "pos": [
 "verb"
-]
+],
+"example": "Living in Canada helped my brother acquire excellent English speaking skills quickly."
 },
 "intend": {
 "conceptId": "intend",
 "phonetic": "[ɪnˈtend]",
 "pos": [
 "verb"
-]
+],
+"example": "I intend to join the school orchestra as soon as the new semester starts."
 },
 "dental": {
 "conceptId": "dental",
 "phonetic": "[ˈdentəl]",
 "pos": [
 "adj"
-]
+],
+"example": "My mother made a dental appointment for me after I complained about toothache."
 },
 "annoy": {
 "conceptId": "annoy",
 "phonetic": "[əˈnɔɪ]",
 "pos": [
 "verb"
-]
+],
+"example": "The loud noise from the construction site annoyed everyone in the apartment building."
 },
 "tray": {
 "conceptId": "tray",
 "phonetic": "[treɪ]",
 "pos": [
 "noun"
-]
+],
+"example": "Hyunwoo carried a tray of hot soup carefully to the corner table."
 },
 "merchandise": {
 "conceptId": "merchandise",
@@ -16853,35 +17470,40 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "The band sold T-shirts and other merchandise after the concert ended."
 },
 "costume": {
 "conceptId": "costume",
 "phonetic": "[kɑˈstuːm]",
 "pos": [
 "noun"
-]
+],
+"example": "Yuna wore a rabbit costume for the school festival and won first prize."
 },
 "unknown": {
 "conceptId": "unknown",
 "phonetic": "[ənˈnoʊn]",
 "pos": [
 "adj"
-]
+],
+"example": "The cause of the sudden power failure is still unknown to the engineers."
 },
 "put up with": {
 "conceptId": "put up with",
 "phonetic": "[pʊt ʌp wɪð]",
 "pos": [
 "verb"
-]
+],
+"example": "I cannot put up with his rude jokes about my new haircut anymore."
 },
 "disease": {
 "conceptId": "disease",
 "phonetic": "[dɪˈziːz]",
 "pos": [
 "noun"
-]
+],
+"example": "Washing your hands often can prevent many common diseases during the winter."
 },
 "credit": {
 "conceptId": "credit",
@@ -16889,126 +17511,144 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "The young farmer had no credit, so the bank refused to lend money."
 },
 "admit": {
 "conceptId": "admit",
 "phonetic": "[ədˈmɪt]",
 "pos": [
 "verb"
-]
+],
+"example": "Jiho finally admitted that he had broken the kitchen window last night."
 },
 "available": {
 "conceptId": "available",
 "phonetic": "[əˈveɪləbəl]",
 "pos": [
 "adj"
-]
+],
+"example": "Free Wi-Fi is available in every classroom and also in the school library."
 },
 "instance": {
 "conceptId": "instance",
 "phonetic": "[ˈɪnstəns]",
 "pos": [
 "noun"
-]
+],
+"example": "Our teacher gave a clear instance of how kindness can change someone's day."
 },
 "assign": {
 "conceptId": "assign",
 "phonetic": "[əˈsaɪn]",
 "pos": [
 "verb"
-]
+],
+"example": "The coach assigned each new player to a different position on the field."
 },
 "decision": {
 "conceptId": "decision",
 "phonetic": "[dɪˈsɪʒən]",
 "pos": [
 "noun"
-]
+],
+"example": "Choosing a high school was the hardest decision I have ever made alone."
 },
 "paste": {
 "conceptId": "paste",
 "phonetic": "[peɪst]",
 "pos": [
 "noun"
-]
+],
+"example": "Mix the flour with warm water until it becomes a smooth, thick paste."
 },
 "ghost": {
 "conceptId": "ghost",
 "phonetic": "[ɡoʊst]",
 "pos": [
 "noun"
-]
+],
+"example": "My little brother believes a friendly ghost lives inside our old wooden closet."
 },
 "recover": {
 "conceptId": "recover",
 "phonetic": "[rɪˈkʌvər]",
 "pos": [
 "verb"
-]
+],
+"example": "My grandmother recovered from her illness after resting at home for two weeks."
 },
 "range": {
 "conceptId": "range",
 "phonetic": "[reɪndʒ]",
 "pos": [
 "noun"
-]
+],
+"example": "This bookstore offers a wide range of novels for middle school students."
 },
 "career": {
 "conceptId": "career",
 "phonetic": "[kərˈɪr]",
 "pos": [
 "noun"
-]
+],
+"example": "She wants a career in medicine because she enjoys helping sick people."
 },
 "swamp": {
 "conceptId": "swamp",
 "phonetic": "[swɑːmp]",
 "pos": [
 "noun"
-]
+],
+"example": "Many strange birds and frogs live in the wide swamp behind the village."
 },
 "temporary": {
 "conceptId": "temporary",
 "phonetic": "[ˈtempəreri]",
 "pos": [
 "adj"
-]
+],
+"example": "This job is only temporary, so I will look for another one soon."
 },
 "facility": {
 "conceptId": "facility",
 "phonetic": "[fəˈsɪlɪti]",
 "pos": [
 "noun"
-]
+],
+"example": "Our new sports facility has a swimming pool and an indoor running track."
 },
 "convenient": {
 "conceptId": "convenient",
 "phonetic": "[kənˈviːnjənt]",
 "pos": [
 "adj"
-]
+],
+"example": "Living near the subway station is very convenient for students like us."
 },
 "ashamed": {
 "conceptId": "ashamed",
 "phonetic": "[əˈʃeɪmd]",
 "pos": [
 "adj"
-]
+],
+"example": "Taemin felt ashamed of shouting at his mother during dinner last night."
 },
 "moreover": {
 "conceptId": "moreover",
 "phonetic": "[mɔˈroʊvər]",
 "pos": [
 "adv"
-]
+],
+"example": "The hotel was cheap; moreover, the staff treated every guest very kindly."
 },
 "skeleton": {
 "conceptId": "skeleton",
 "phonetic": "[ˈskelətən]",
 "pos": [
 "noun"
-]
+],
+"example": "The museum displays the huge skeleton of a dinosaur near the main entrance."
 },
 "influence": {
 "conceptId": "influence",
@@ -17016,21 +17656,24 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "My older sister strongly influenced my decision to study music in college."
 },
 "term": {
 "conceptId": "term",
 "phonetic": "[tɜːrm]",
 "pos": [
 "noun"
-]
+],
+"example": "We will study world history during the second term of this school year."
 },
 "famine": {
 "conceptId": "famine",
 "phonetic": "[ˈfæmən]",
 "pos": [
 "noun"
-]
+],
+"example": "A terrible famine spread across the country after two years without rain."
 },
 "contact": {
 "conceptId": "contact",
@@ -17038,7 +17681,8 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "I have kept in contact with my elementary school friends for six years."
 },
 "witness": {
 "conceptId": "witness",
@@ -17046,21 +17690,24 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "The police asked the only witness to describe the accident in detail."
 },
 "evidence": {
 "conceptId": "evidence",
 "phonetic": "[ˈevədəns]",
 "pos": [
 "noun"
-]
+],
+"example": "The scientists found clear evidence that water once existed on that planet."
 },
 "relate": {
 "conceptId": "relate",
 "phonetic": "[rɪˈleɪt]",
 "pos": [
 "verb"
-]
+],
+"example": "Many students cannot relate their homework to real life outside the classroom."
 },
 "manufacture": {
 "conceptId": "manufacture",
@@ -17068,42 +17715,48 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "This factory manufactures bicycle parts and sends them to twenty different countries."
 },
 "oxygen": {
 "conceptId": "oxygen",
 "phonetic": "[ˈɑːksədʒən]",
 "pos": [
 "noun"
-]
+],
+"example": "Trees produce the oxygen that people and animals need to stay alive."
 },
 "souvenir": {
 "conceptId": "souvenir",
 "phonetic": "[suːvəˈnɪr]",
 "pos": [
 "noun"
-]
+],
+"example": "I bought a small wooden doll as a souvenir from my Jeju trip."
 },
 "assume": {
 "conceptId": "assume",
 "phonetic": "[əˈsuːm]",
 "pos": [
 "verb"
-]
+],
+"example": "I assumed the library was closed because all the lights were turned off."
 },
 "involve": {
 "conceptId": "involve",
 "phonetic": "[ɪnˈvɑːlv]",
 "pos": [
 "verb"
-]
+],
+"example": "This part-time job involves cleaning tables and washing dishes every single evening."
 },
 "broom": {
 "conceptId": "broom",
 "phonetic": "[bruːm]",
 "pos": [
 "noun"
-]
+],
+"example": "Sujin swept the dusty classroom floor with an old broom after lunch."
 },
 "conservative": {
 "conceptId": "conservative",
@@ -17111,35 +17764,40 @@
 "pos": [
 "adj",
 "noun"
-]
+],
+"example": "My grandfather has quite conservative opinions about music, fashion, and modern technology."
 },
 "aggressive": {
 "conceptId": "aggressive",
 "phonetic": "[əˈɡresɪv]",
 "pos": [
 "adj"
-]
+],
+"example": "The dog became aggressive when a stranger walked too close to it."
 },
 "herd": {
 "conceptId": "herd",
 "phonetic": "[hɜːrd]",
 "pos": [
 "noun"
-]
+],
+"example": "A large herd of cows moved slowly across the green grassy field."
 },
 "pleased": {
 "conceptId": "pleased",
 "phonetic": "[pliːzd]",
 "pos": [
 "adj"
-]
+],
+"example": "My parents were very pleased with my grades on the final exam."
 },
 "safety": {
 "conceptId": "safety",
 "phonetic": "[ˈseɪfti]",
 "pos": [
 "noun"
-]
+],
+"example": "For your own safety, always wear a helmet while riding a bicycle."
 },
 "benefit": {
 "conceptId": "benefit",
@@ -17147,77 +17805,88 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "One big benefit of reading daily is a much larger English vocabulary."
 },
 "wisdom": {
 "conceptId": "wisdom",
 "phonetic": "[ˈwɪzdəm]",
 "pos": [
 "noun"
-]
+],
+"example": "My grandmother shares her wisdom whenever I face a difficult problem alone."
 },
 "concept": {
 "conceptId": "concept",
 "phonetic": "[ˈkɑːnsept]",
 "pos": [
 "noun"
-]
+],
+"example": "Our math teacher explained the concept of probability with simple card games."
 },
 "require": {
 "conceptId": "require",
 "phonetic": "[rɪˈkwaɪər]",
 "pos": [
 "verb"
-]
+],
+"example": "This recipe requires three eggs, a cup of milk, and some sugar."
 },
 "stand out": {
 "conceptId": "stand out",
 "phonetic": "[stænd aʊt]",
 "pos": [
 "verb"
-]
+],
+"example": "Her bright yellow jacket made her stand out in the crowded market."
 },
 "appliance": {
 "conceptId": "appliance",
 "phonetic": "[əˈplaɪəns]",
 "pos": [
 "noun"
-]
+],
+"example": "My mother bought a new kitchen appliance that makes bread every morning."
 },
 "reserve": {
 "conceptId": "reserve",
 "phonetic": "[rɪˈzɜːrv]",
 "pos": [
 "verb"
-]
+],
+"example": "Dad reserved a table for six people at the restaurant near the river."
 },
 "disabled": {
 "conceptId": "disabled",
 "phonetic": "[dɪˈseɪbəld]",
 "pos": [
 "adj"
-]
+],
+"example": "The new library has wide doors for disabled visitors who use wheelchairs."
 },
 "go by": {
 "conceptId": "go by",
 "phonetic": "[ɡoʊ baɪ]",
 "pos": [
 "verb"
-]
+],
+"example": "As the years went by, the small village slowly became a busy city."
 },
 "applaud": {
 "conceptId": "applaud",
 "phonetic": "[əˈplɔːd]",
 "pos": [
 "verb"
-]
+],
+"example": "The whole audience applauded loudly when the young pianist finished her song."
 },
 "play a role in": {
 "conceptId": "play a role in",
 "phonetic": "[pleɪ ə roʊl ɪn]",
 "pos": [
 "verb"
-]
+],
+"example": "Good sleep plays an important role in keeping your brain healthy and active."
 },
 "manual": {
 "conceptId": "manual",
@@ -17225,7 +17894,8 @@
 "pos": [
 "noun",
 "adj"
-]
+],
+"example": "Read the manual carefully before you turn on the new washing machine."
 },
 "suit": {
 "conceptId": "suit",
@@ -17233,42 +17903,48 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "My brother wore a black suit to his best friend's wedding ceremony."
 },
 "get together": {
 "conceptId": "get together",
 "phonetic": "[ɡet təˈɡeðər]",
 "pos": [
 "verb"
-]
+],
+"example": "Our whole family gets together every New Year to share food and stories."
 },
 "operate": {
 "conceptId": "operate",
 "phonetic": "[ˈɑːpəreɪt]",
 "pos": [
 "verb"
-]
+],
+"example": "This bakery operates from seven in the morning until nine at night."
 },
 "attach": {
 "conceptId": "attach",
 "phonetic": "[əˈtætʃ]",
 "pos": [
 "verb"
-]
+],
+"example": "Don't forget to attach your photograph to the application form before sending it."
 },
 "phase": {
 "conceptId": "phase",
 "phonetic": "[feɪz]",
 "pos": [
 "noun"
-]
+],
+"example": "The building project entered its final phase at the beginning of March."
 },
 "fade": {
 "conceptId": "fade",
 "phonetic": "[feɪd]",
 "pos": [
 "verb"
-]
+],
+"example": "My favorite blue jeans faded after I washed them many, many times."
 },
 "sacrifice": {
 "conceptId": "sacrifice",
@@ -17276,42 +17952,48 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "Long ago, people offered animals as a sacrifice to the gods for rain."
 },
 "when it comes to": {
 "conceptId": "when it comes to",
 "phonetic": "[wen ɪt kʌmz tuː]",
 "pos": [
 "prep"
-]
+],
+"example": "When it comes to cooking, my father is much better than my mother."
 },
 "come up with": {
 "conceptId": "come up with",
 "phonetic": "[kʌm ʌp wɪð]",
 "pos": [
 "verb"
-]
+],
+"example": "Our group came up with a great idea for the science fair project."
 },
 "robbery": {
 "conceptId": "robbery",
 "phonetic": "[ˈrɑːbəri]",
 "pos": [
 "noun"
-]
+],
+"example": "A bank robbery happened downtown, but nobody was hurt during the incident."
 },
 "interrupt": {
 "conceptId": "interrupt",
 "phonetic": "[ɪntərˈʌpt]",
 "pos": [
 "verb"
-]
+],
+"example": "A loud noise interrupted our class in the middle of the math test."
 },
 "unexpected": {
 "conceptId": "unexpected",
 "phonetic": "[ʌnɪkˈspektɪd]",
 "pos": [
 "adj"
-]
+],
+"example": "An unexpected visitor arrived at our house just before dinner last night."
 },
 "awake": {
 "conceptId": "awake",
@@ -17319,42 +18001,48 @@
 "pos": [
 "verb",
 "adj"
-]
+],
+"example": "I awoke suddenly when loud thunder shook our whole apartment building last night."
 },
 "be known as": {
 "conceptId": "be known as",
 "phonetic": "[biː noʊn æz]",
 "pos": [
 "verb"
-]
+],
+"example": "This small town is known as the birthplace of a famous Korean painter."
 },
 "plain": {
 "conceptId": "plain",
 "phonetic": "[pleɪn]",
 "pos": [
 "adj"
-]
+],
+"example": "She chose a plain white shirt instead of the one with flowers."
 },
 "impress": {
 "conceptId": "impress",
 "phonetic": "[ɪmˈpres]",
 "pos": [
 "verb"
-]
+],
+"example": "The young singer impressed all the judges with her powerful, beautiful voice."
 },
 "superior": {
 "conceptId": "superior",
 "phonetic": "[suˈpɪrɪər]",
 "pos": [
 "adj"
-]
+],
+"example": "This camera is clearly superior to the cheaper model we saw yesterday."
 },
 "previous": {
 "conceptId": "previous",
 "phonetic": "[ˈpriːvɪəs]",
 "pos": [
 "adj"
-]
+],
+"example": "In my previous school, we had no cafeteria, so everyone brought lunch boxes."
 },
 "nurture": {
 "conceptId": "nurture",
@@ -17362,35 +18050,40 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "Good parents nurture their children with patience, love, and plenty of honest conversation."
 },
 "in response to": {
 "conceptId": "in response to",
 "phonetic": "[ɪn rɪˈspɑːns tuː]",
 "pos": [
 "prep"
-]
+],
+"example": "In response to the students' complaints, the school added more chairs to the library."
 },
 "neat": {
 "conceptId": "neat",
 "phonetic": "[niːt]",
 "pos": [
 "adj"
-]
+],
+"example": "Your desk looks very neat compared to the messy one beside it."
 },
 "support": {
 "conceptId": "support",
 "phonetic": "[səˈpɔːrt]",
 "pos": [
 "verb"
-]
+],
+"example": "My friends supported my plan to start a small school newspaper club."
 },
 "disaster": {
 "conceptId": "disaster",
 "phonetic": "[dɪˈzæstər]",
 "pos": [
 "noun"
-]
+],
+"example": "The earthquake was a terrible disaster that destroyed thousands of homes in one night."
 },
 "arm": {
 "conceptId": "arm",
@@ -17398,70 +18091,80 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "The government decided to arm the soldiers with better weapons before the battle."
 },
 "yard": {
 "conceptId": "yard",
 "phonetic": "[jɑːrd]",
 "pos": [
 "noun"
-]
+],
+"example": "Children were running and shouting happily in the school yard after lunch."
 },
 "sunglasses": {
 "conceptId": "sunglasses",
 "phonetic": "[ˈsʌnɡlæsɪz]",
 "pos": [
 "noun"
-]
+],
+"example": "My father always wears dark sunglasses when he drives on sunny summer afternoons."
 },
 "strategy": {
 "conceptId": "strategy",
 "phonetic": "[ˈstrætədʒi]",
 "pos": [
 "noun"
-]
+],
+"example": "Our coach explained a new strategy for winning the final game next Saturday."
 },
 "chemistry": {
 "conceptId": "chemistry",
 "phonetic": "[ˈkeməstri]",
 "pos": [
 "noun"
-]
+],
+"example": "Jiho loves chemistry because he enjoys mixing safe liquids in the science lab."
 },
 "agriculture": {
 "conceptId": "agriculture",
 "phonetic": "[ˈæɡrɪkʌltʃər]",
 "pos": [
 "noun"
-]
+],
+"example": "Agriculture is still very important in this country, and rice is the main crop."
 },
 "baggage": {
 "conceptId": "baggage",
 "phonetic": "[ˈbæɡədʒ]",
 "pos": [
 "noun"
-]
+],
+"example": "We waited twenty minutes for our baggage to appear at the airport."
 },
 "committee": {
 "conceptId": "committee",
 "phonetic": "[kəˈmɪti]",
 "pos": [
 "noun"
-]
+],
+"example": "The school committee met yesterday to discuss changes to the lunch menu."
 },
 "shelf": {
 "conceptId": "shelf",
 "phonetic": "[ʃelf]",
 "pos": [
 "noun"
-]
+],
+"example": "Please put the dictionary back on the top shelf when you finish reading."
 },
 "made up of": {
 "conceptId": "made up of",
 "phonetic": "[meɪd ʌp ʌv]",
 "pos": [
 "verb"
-]
+],
+"example": "Our class is made up of twenty girls and fifteen very energetic boys."
 },
 "orbit": {
 "conceptId": "orbit",
@@ -17469,7 +18172,8 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "The satellite follows a wide orbit around the earth once every ninety minutes."
 },
 "dislike": {
 "conceptId": "dislike",
@@ -17477,49 +18181,56 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "Many students dislike tests, but they know studying helps them learn new things."
 },
 "biography": {
 "conceptId": "biography",
 "phonetic": "[baɪˈɑːɡrəfi]",
 "pos": [
 "noun"
-]
+],
+"example": "I borrowed a biography of a famous scientist and finished it in three days."
 },
 "peer": {
 "conceptId": "peer",
 "phonetic": "[pɪr]",
 "pos": [
 "noun"
-]
+],
+"example": "Teenagers often care more about their peers' opinions than their parents' advice."
 },
 "expose": {
 "conceptId": "expose",
 "phonetic": "[ɪkˈspoʊz]",
 "pos": [
 "verb"
-]
+],
+"example": "Travel can expose young people to different cultures and new ways of thinking."
 },
 "hug": {
 "conceptId": "hug",
 "phonetic": "[hʌɡ]",
 "pos": [
 "verb"
-]
+],
+"example": "My grandmother hugged me tightly at the station before the train left."
 },
 "brilliant": {
 "conceptId": "brilliant",
 "phonetic": "[ˈbrɪljənt]",
 "pos": [
 "adj"
-]
+],
+"example": "Minji gave a brilliant speech, and everyone in the hall clapped loudly."
 },
 "medium": {
 "conceptId": "medium",
 "phonetic": "[ˈmiːdɪəm]",
 "pos": [
 "adj"
-]
+],
+"example": "I usually wear a medium size shirt because large ones look too big."
 },
 "individual": {
 "conceptId": "individual",
@@ -17527,56 +18238,64 @@
 "pos": [
 "adj",
 "noun"
-]
+],
+"example": "Every student has individual needs, so our teacher explains things in different ways."
 },
 "avenue": {
 "conceptId": "avenue",
 "phonetic": "[ˈævənuː]",
 "pos": [
 "noun"
-]
+],
+"example": "Their new bookstore stands on a busy avenue near the city hall."
 },
 "priest": {
 "conceptId": "priest",
 "phonetic": "[priːst]",
 "pos": [
 "noun"
-]
+],
+"example": "The old priest welcomed the visitors and showed them around the quiet church."
 },
 "scale": {
 "conceptId": "scale",
 "phonetic": "[skeɪl]",
 "pos": [
 "noun"
-]
+],
+"example": "The company started a project on a huge scale across several Asian countries."
 },
 "forbid": {
 "conceptId": "forbid",
 "phonetic": "[fərˈbɪd]",
 "pos": [
 "verb"
-]
+],
+"example": "Our school rules forbid students from using phones during morning classes."
 },
 "rapid": {
 "conceptId": "rapid",
 "phonetic": "[ˈræpəd]",
 "pos": [
 "adj"
-]
+],
+"example": "The rapid growth of the city surprised people who had moved away."
 },
 "passive": {
 "conceptId": "passive",
 "phonetic": "[ˈpæsɪv]",
 "pos": [
 "adj"
-]
+],
+"example": "Sumin used to be passive in class, but now she asks many questions."
 },
 "devote": {
 "conceptId": "devote",
 "phonetic": "[dɪˈvoʊt]",
 "pos": [
 "verb"
-]
+],
+"example": "The doctor devoted his whole life to helping sick children in poor villages."
 },
 "fuel": {
 "conceptId": "fuel",
@@ -17584,7 +18303,8 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "This small car uses less fuel than the old truck my uncle drives."
 },
 "twist": {
 "conceptId": "twist",
@@ -17592,63 +18312,72 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "She twisted the wet towel hard to squeeze the water out."
 },
 "free from": {
 "conceptId": "free from",
 "phonetic": "[friː frʌm]",
 "pos": [
 "verb"
-]
+],
+"example": "This snack is free from sugar, so my little brother can eat it safely."
 },
 "basis": {
 "conceptId": "basis",
 "phonetic": "[ˈbeɪsəs]",
 "pos": [
 "noun"
-]
+],
+"example": "Trust is the basis of every strong friendship between two people."
 },
 "independence": {
 "conceptId": "independence",
 "phonetic": "[ɪndɪˈpendəns]",
 "pos": [
 "noun"
-]
+],
+"example": "Korea celebrates its independence every year with flags hanging on many buildings."
 },
 "cleanse": {
 "conceptId": "cleanse",
 "phonetic": "[klenz]",
 "pos": [
 "verb"
-]
+],
+"example": "Nurses cleanse the wound carefully before they cover it with a bandage."
 },
 "slow down": {
 "conceptId": "slow down",
 "phonetic": "[sloʊ daʊn]",
 "pos": [
 "verb"
-]
+],
+"example": "Please slow down when you pass the school, because children cross here."
 },
 "instruct": {
 "conceptId": "instruct",
 "phonetic": "[ɪnsˈtrʌkt]",
 "pos": [
 "verb"
-]
+],
+"example": "Mr. Park instructs beginners how to swim safely in the deep pool."
 },
 "delivery": {
 "conceptId": "delivery",
 "phonetic": "[dɪˈlɪvəri]",
 "pos": [
 "noun"
-]
+],
+"example": "My delivery arrived late last night because of the heavy snow."
 },
 "genetic": {
 "conceptId": "genetic",
 "phonetic": "[dʒəˈnetɪk]",
 "pos": [
 "adj"
-]
+],
+"example": "Scientists study genetic information to understand why some diseases run in families."
 },
 "advance": {
 "conceptId": "advance",
@@ -17656,7 +18385,8 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "Recent advances in medicine have saved millions of lives around the world."
 },
 "trade": {
 "conceptId": "trade",
@@ -17664,35 +18394,40 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "Long ago, people traded salt and silk along the roads between distant countries."
 },
 "offend": {
 "conceptId": "offend",
 "phonetic": "[əˈfend]",
 "pos": [
 "verb"
-]
+],
+"example": "I did not mean to offend you when I laughed at your hat."
 },
 "define": {
 "conceptId": "define",
 "phonetic": "[dɪˈfaɪn]",
 "pos": [
 "verb"
-]
+],
+"example": "Can you define this word clearly without looking at your dictionary?"
 },
 "squeeze": {
 "conceptId": "squeeze",
 "phonetic": "[skwiːz]",
 "pos": [
 "verb"
-]
+],
+"example": "Dad squeezed three oranges to make a fresh glass of juice for me."
 },
 "threat": {
 "conceptId": "threat",
 "phonetic": "[θret]",
 "pos": [
 "noun"
-]
+],
+"example": "Climate change is a serious threat to animals living near the sea."
 },
 "breed": {
 "conceptId": "breed",
@@ -17700,91 +18435,104 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "These birds breed near the lake every spring and raise their young there."
 },
 "pay off": {
 "conceptId": "pay off",
 "phonetic": "[peɪ ɔːf]",
 "pos": [
 "verb"
-]
+],
+"example": "It took my aunt ten years to pay off her student loans."
 },
 "distribute": {
 "conceptId": "distribute",
 "phonetic": "[dɪsˈtrɪbjut]",
 "pos": [
 "verb"
-]
+],
+"example": "Volunteers distributed warm blankets to families who had lost their houses."
 },
 "accent": {
 "conceptId": "accent",
 "phonetic": "[əkˈsent]",
 "pos": [
 "noun"
-]
+],
+"example": "Our new English teacher speaks with a lovely Australian accent."
 },
 "dairy": {
 "conceptId": "dairy",
 "phonetic": "[ˈderi]",
 "pos": [
 "adj"
-]
+],
+"example": "Some people cannot eat dairy products such as cheese, milk, and butter."
 },
 "artificial": {
 "conceptId": "artificial",
 "phonetic": "[ɑːrtəˈfɪʃəl]",
 "pos": [
 "adj"
-]
+],
+"example": "The artificial flowers on the table looked real until I touched them."
 },
 "be afraid of": {
 "conceptId": "be afraid of",
 "phonetic": "[biː əˈfreɪd ʌv]",
 "pos": [
 "verb"
-]
+],
+"example": "My cousin is afraid of large dogs, so she crosses the street quickly."
 },
 "significant": {
 "conceptId": "significant",
 "phonetic": "[səɡˈnɪfɪkənt]",
 "pos": [
 "adj"
-]
+],
+"example": "The new library made a significant difference to students in our small town."
 },
 "prior": {
 "conceptId": "prior",
 "phonetic": "[ˈpraɪər]",
 "pos": [
 "adj"
-]
+],
+"example": "Prior experience is not necessary, but you should enjoy working with children."
 },
 "represent": {
 "conceptId": "represent",
 "phonetic": "[reprɪˈzent]",
 "pos": [
 "verb"
-]
+],
+"example": "Two students will represent our school at the national speech contest."
 },
 "eager": {
 "conceptId": "eager",
 "phonetic": "[ˈiːɡər]",
 "pos": [
 "adj"
-]
+],
+"example": "The little boy was eager to open his birthday presents right away."
 },
 "on one’s feet": {
 "conceptId": "on one’s feet",
 "phonetic": "[ɑːn wʌn es fiːt]",
 "pos": [
 "adv"
-]
+],
+"example": "The audience was on their feet, clapping loudly after the wonderful performance."
 },
 "extreme": {
 "conceptId": "extreme",
 "phonetic": "[eksˈtriːm]",
 "pos": [
 "adj"
-]
+],
+"example": "Climbers face extreme cold and strong winds near the top of the mountain."
 },
 "balloon": {
 "conceptId": "balloon",
@@ -17792,70 +18540,80 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "The children released a red balloon and watched it fly into the sky."
 },
 "retire": {
 "conceptId": "retire",
 "phonetic": "[rɪˈtaɪr]",
 "pos": [
 "verb"
-]
+],
+"example": "My grandfather retired last year and now grows vegetables in his garden."
 },
 "particular": {
 "conceptId": "particular",
 "phonetic": "[pərˈtɪkjələr]",
 "pos": [
 "adj"
-]
+],
+"example": "Is there a particular reason why you chose this old bicycle?"
 },
 "budget": {
 "conceptId": "budget",
 "phonetic": "[ˈbʌdʒɪt]",
 "pos": [
 "noun"
-]
+],
+"example": "Our club has a small budget, so we cannot buy new uniforms yet."
 },
 "wreck": {
 "conceptId": "wreck",
 "phonetic": "[rek]",
 "pos": [
 "verb"
-]
+],
+"example": "The strong storm wrecked several small boats near the fishing village."
 },
 "northern": {
 "conceptId": "northern",
 "phonetic": "[ˈnɔːrðərn]",
 "pos": [
 "adj"
-]
+],
+"example": "Winters in the northern part of the country are long and very cold."
 },
 "urgent": {
 "conceptId": "urgent",
 "phonetic": "[ˈɜːrdʒənt]",
 "pos": [
 "adj"
-]
+],
+"example": "She received an urgent message and left the meeting without saying goodbye."
 },
 "proper": {
 "conceptId": "proper",
 "phonetic": "[ˈprɑːpər]",
 "pos": [
 "adj"
-]
+],
+"example": "Wearing proper shoes is important when you hike on a rocky mountain."
 },
 "distinguish": {
 "conceptId": "distinguish",
 "phonetic": "[dɪˈstɪŋɡwɪʃ]",
 "pos": [
 "verb"
-]
+],
+"example": "Can you distinguish between these two twins by looking at their eyes?"
 },
 "illustrate": {
 "conceptId": "illustrate",
 "phonetic": "[ˈɪləstreɪt]",
 "pos": [
 "verb"
-]
+],
+"example": "The teacher used a simple drawing to illustrate how a volcano erupts."
 },
 "detail": {
 "conceptId": "detail",
@@ -17863,7 +18621,8 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "Please read the details on the second page before you sign the form."
 },
 "potential": {
 "conceptId": "potential",
@@ -17871,21 +18630,24 @@
 "pos": [
 "adj",
 "noun"
-]
+],
+"example": "Heavy rain is a potential danger for villages built beside the river."
 },
 "relieve": {
 "conceptId": "relieve",
 "phonetic": "[rɪˈliːv]",
 "pos": [
 "verb"
-]
+],
+"example": "A warm bath helped relieve the pain in my shoulders after practice."
 },
 "compete": {
 "conceptId": "compete",
 "phonetic": "[kəmˈpiːt]",
 "pos": [
 "verb"
-]
+],
+"example": "Eight schools will compete in the science quiz next month."
 },
 "appeal": {
 "conceptId": "appeal",
@@ -17893,28 +18655,32 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "The family appealed to their neighbors for help after losing everything."
 },
 "talent": {
 "conceptId": "talent",
 "phonetic": "[ˈtælənt]",
 "pos": [
 "noun"
-]
+],
+"example": "Yuna has a real talent for drawing animals with only a pencil."
 },
 "cut down": {
 "conceptId": "cut down",
 "phonetic": "[kʌt daʊn]",
 "pos": [
 "verb"
-]
+],
+"example": "The doctor told my father to cut down on salt and sugar."
 },
 "waterproof": {
 "conceptId": "waterproof",
 "phonetic": "[ˈwɔːtərpruːf]",
 "pos": [
 "adj"
-]
+],
+"example": "I wore a waterproof jacket, so I stayed dry during the heavy rain."
 },
 "conflict": {
 "conceptId": "conflict",
@@ -17922,224 +18688,256 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "There was a small conflict between the two groups about the class trip."
 },
 "look back on": {
 "conceptId": "look back on",
 "phonetic": "[lʊk bæk ɑːn]",
 "pos": [
 "verb"
-]
+],
+"example": "When I look back on my first year here, I feel quite proud."
 },
 "auditorium": {
 "conceptId": "auditorium",
 "phonetic": "[ɔːdəˈtɔːrɪəm]",
 "pos": [
 "noun"
-]
+],
+"example": "The school auditorium was full of parents waiting for the concert to start."
 },
 "ash": {
 "conceptId": "ash",
 "phonetic": "[æʃ]",
 "pos": [
 "noun"
-]
+],
+"example": "Thick ash from the volcano covered the roofs of the nearby town."
 },
 "accompany": {
 "conceptId": "accompany",
 "phonetic": "[əˈkʌmpəni]",
 "pos": [
 "verb"
-]
+],
+"example": "My older brother accompanied me to the hospital because I felt nervous."
 },
 "quantity": {
 "conceptId": "quantity",
 "phonetic": "[ˈkwɑːntəti]",
 "pos": [
 "noun"
-]
+],
+"example": "A large quantity of rain fell last week, and the river rose quickly."
 },
 "script": {
 "conceptId": "script",
 "phonetic": "[skrɪpt]",
 "pos": [
 "noun"
-]
+],
+"example": "The actors practiced their lines until they remembered the whole script perfectly."
 },
 "concentrate": {
 "conceptId": "concentrate",
 "phonetic": "[ˈkɑːnsəntreɪt]",
 "pos": [
 "verb"
-]
+],
+"example": "It is hard to concentrate on my homework when the television is so loud."
 },
 "look after": {
 "conceptId": "look after",
 "phonetic": "[lʊk ˈæftər]",
 "pos": [
 "verb"
-]
+],
+"example": "My sister will look after our little brother while our parents are away."
 },
 "fill out": {
 "conceptId": "fill out",
 "phonetic": "[fɪl aʊt]",
 "pos": [
 "verb"
-]
+],
+"example": "Please fill out this form with your name and phone number before the interview."
 },
 "invest": {
 "conceptId": "invest",
 "phonetic": "[ɪnˈvest]",
 "pos": [
 "verb"
-]
+],
+"example": "My uncle decided to invest most of his savings in a small coffee shop."
 },
 "consider": {
 "conceptId": "consider",
 "phonetic": "[kənˈsɪdər]",
 "pos": [
 "verb"
-]
+],
+"example": "Many students consider Mr. Park the kindest teacher in our whole school."
 },
 "depth": {
 "conceptId": "depth",
 "phonetic": "[depθ]",
 "pos": [
 "noun"
-]
+],
+"example": "The scientists measured the depth of the lake and found it surprisingly deep."
 },
 "appreciate": {
 "conceptId": "appreciate",
 "phonetic": "[əˈpriːʃɪeɪt]",
 "pos": [
 "verb"
-]
+],
+"example": "I really appreciate your help with moving all these heavy boxes this morning."
 },
 "indifferent": {
 "conceptId": "indifferent",
 "phonetic": "[ɪnˈdɪfrənt]",
 "pos": [
 "adj"
-]
+],
+"example": "He seemed completely indifferent to the news, and he did not say anything."
 },
 "arrange": {
 "conceptId": "arrange",
 "phonetic": "[ərˈeɪndʒ]",
 "pos": [
 "verb"
-]
+],
+"example": "Our teacher will arrange a special trip to the science museum next month."
 },
 "environment": {
 "conceptId": "environment",
 "phonetic": "[ɪnˈvaɪrənmənt]",
 "pos": [
 "noun"
-]
+],
+"example": "We must protect the environment by using less plastic and riding our bicycles."
 },
 "illness": {
 "conceptId": "illness",
 "phonetic": "[ˈɪlnəs]",
 "pos": [
 "noun"
-]
+],
+"example": "A serious illness kept my grandmother in the hospital for almost three weeks."
 },
 "be about to": {
 "conceptId": "be about to",
 "phonetic": "[biː əˈbaʊt tuː]",
 "pos": [
 "aux"
-]
+],
+"example": "I was about to leave the house when the heavy rain suddenly started."
 },
 "sew": {
 "conceptId": "sew",
 "phonetic": "[soʊ]",
 "pos": [
 "verb"
-]
+],
+"example": "My grandmother taught me how to sew a button onto my school uniform."
 },
 "examine": {
 "conceptId": "examine",
 "phonetic": "[ɪɡˈzæmɪn]",
 "pos": [
 "verb"
-]
+],
+"example": "The doctor examined the sick child carefully before writing down a simple prescription."
 },
 "poison": {
 "conceptId": "poison",
 "phonetic": "[ˈpɔɪzən]",
 "pos": [
 "noun"
-]
+],
+"example": "Some mushrooms in the forest contain poison, so never eat them without checking."
 },
 "odd": {
 "conceptId": "odd",
 "phonetic": "[ɑːd]",
 "pos": [
 "adj"
-]
+],
+"example": "There was an odd smell in the kitchen, so we opened all the windows."
 },
 "pure": {
 "conceptId": "pure",
 "phonetic": "[pjʊr]",
 "pos": [
 "adj"
-]
+],
+"example": "The water from that mountain spring is pure enough to drink safely."
 },
 "trim": {
 "conceptId": "trim",
 "phonetic": "[trɪm]",
 "pos": [
 "verb"
-]
+],
+"example": "The gardener trimmed the bushes in front of the library this morning."
 },
 "confirm": {
 "conceptId": "confirm",
 "phonetic": "[kənˈfɜːrm]",
 "pos": [
 "verb"
-]
+],
+"example": "Please confirm your hotel reservation by email before you travel to Jeju Island."
 },
 "religion": {
 "conceptId": "religion",
 "phonetic": "[rɪˈlɪdʒən]",
 "pos": [
 "noun"
-]
+],
+"example": "People of every religion gathered in the square to pray for world peace."
 },
 "move on": {
 "conceptId": "move on",
 "phonetic": "[muːv ɑːn]",
 "pos": [
 "verb"
-]
+],
+"example": "Let's move on to the next question because this one is taking too long."
 },
 "after all": {
 "conceptId": "after all",
 "phonetic": "[ˈæftər ɔːl]",
 "pos": [
 "adv"
-]
+],
+"example": "It rained all morning, but our picnic was not canceled after all."
 },
 "take part in": {
 "conceptId": "take part in",
 "phonetic": "[teɪk pɑːrt ɪn]",
 "pos": [
 "verb"
-]
+],
+"example": "I want to take part in the English speech contest held next month."
 },
 "grateful": {
 "conceptId": "grateful",
 "phonetic": "[ˈɡreɪtfəl]",
 "pos": [
 "adj"
-]
+],
+"example": "We are grateful to the firefighters who saved our neighbors from the fire."
 },
 "attractive": {
 "conceptId": "attractive",
 "phonetic": "[əˈtræktɪv]",
 "pos": [
 "adj"
-]
+],
+"example": "The new park with its wide green lawn looks very attractive to visitors."
 },
 "envy": {
 "conceptId": "envy",
@@ -18147,35 +18945,40 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "Many classmates envy Minji because she can speak three languages very well."
 },
 "maintain": {
 "conceptId": "maintain",
 "phonetic": "[meɪnˈteɪn]",
 "pos": [
 "verb"
-]
+],
+"example": "Athletes must exercise every single day to maintain their strength and good health."
 },
 "look into": {
 "conceptId": "look into",
 "phonetic": "[lʊk ˈɪntu]",
 "pos": [
 "verb"
-]
+],
+"example": "The police promised to look into the strange noises from the empty building."
 },
 "in fact": {
 "conceptId": "in fact",
 "phonetic": "[ɪn fækt]",
 "pos": [
 "adv"
-]
+],
+"example": "He looks quite young, but in fact he is almost fifty years old."
 },
 "generous": {
 "conceptId": "generous",
 "phonetic": "[ˈdʒenərəs]",
 "pos": [
 "adj"
-]
+],
+"example": "Our neighbor is so generous that she always shares fresh fruit with everyone."
 },
 "rescue": {
 "conceptId": "rescue",
@@ -18183,49 +18986,56 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "Firefighters rescued a small cat that was stuck on the tall apartment roof."
 },
 "likely": {
 "conceptId": "likely",
 "phonetic": "[ˈlaɪkli]",
 "pos": [
 "adj"
-]
+],
+"example": "It is likely to snow tonight, so please wear your warm winter coat."
 },
 "equipment": {
 "conceptId": "equipment",
 "phonetic": "[ɪˈkwɪpmənt]",
 "pos": [
 "noun"
-]
+],
+"example": "The climbers checked all their equipment carefully before starting up the steep mountain."
 },
 "focus on": {
 "conceptId": "focus on",
 "phonetic": "[ˈfoʊkəs ɑːn]",
 "pos": [
 "verb"
-]
+],
+"example": "This year our school will focus on teaching students how to write well."
 },
 "distant": {
 "conceptId": "distant",
 "phonetic": "[ˈdɪstənt]",
 "pos": [
 "adj"
-]
+],
+"example": "From the top of the hill, we could see the distant blue sea."
 },
 "arrow": {
 "conceptId": "arrow",
 "phonetic": "[ˈæroʊ]",
 "pos": [
 "noun"
-]
+],
+"example": "The hunter pulled an arrow from his bag and aimed at the target."
 },
 "symptom": {
 "conceptId": "symptom",
 "phonetic": "[ˈsɪmptəm]",
 "pos": [
 "noun"
-]
+],
+"example": "A high fever is a common symptom of the flu in cold weather."
 },
 "measure": {
 "conceptId": "measure",
@@ -18233,35 +19043,40 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "The nurse measured my height and weight at the start of the school year."
 },
 "tropical": {
 "conceptId": "tropical",
 "phonetic": "[ˈtrɑːpɪkəl]",
 "pos": [
 "adj"
-]
+],
+"example": "Bananas and mangoes grow well in hot tropical countries near the equator."
 },
 "outstanding": {
 "conceptId": "outstanding",
 "phonetic": "[aʊtˈstændɪŋ]",
 "pos": [
 "adj"
-]
+],
+"example": "Her outstanding performance at the science fair surprised all the teachers and judges."
 },
 "sincere": {
 "conceptId": "sincere",
 "phonetic": "[sɪnˈsɪr]",
 "pos": [
 "adj"
-]
+],
+"example": "Please accept my sincere apology for breaking your favorite coffee cup yesterday."
 },
 "context": {
 "conceptId": "context",
 "phonetic": "[ˈkɑːntekst]",
 "pos": [
 "noun"
-]
+],
+"example": "You can guess a new word's meaning from the context of the sentence."
 },
 "debate": {
 "conceptId": "debate",
@@ -18269,21 +19084,24 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "Our class held a lively debate about whether students should wear school uniforms."
 },
 "destination": {
 "conceptId": "destination",
 "phonetic": "[destəˈneɪʃən]",
 "pos": [
 "noun"
-]
+],
+"example": "Our final destination was a quiet fishing village on the southern coast."
 },
 "transfer": {
 "conceptId": "transfer",
 "phonetic": "[trænˈsfɜːr]",
 "pos": [
 "verb"
-]
+],
+"example": "You have to transfer to the blue line at the next subway station."
 },
 "mass": {
 "conceptId": "mass",
@@ -18291,42 +19109,48 @@
 "pos": [
 "noun",
 "adj"
-]
+],
+"example": "A mass of dark clouds covered the sky just before the storm arrived."
 },
 "employ": {
 "conceptId": "employ",
 "phonetic": "[emˈplɔɪ]",
 "pos": [
 "verb"
-]
+],
+"example": "The new factory will employ more than two hundred workers from our town."
 },
 "impossible": {
 "conceptId": "impossible",
 "phonetic": "[ɪmˈpɑːsəbəl]",
 "pos": [
 "adj"
-]
+],
+"example": "It is impossible to finish this huge project in only one single night."
 },
 "frequently": {
 "conceptId": "frequently",
 "phonetic": "[ˈfriːkwəntli]",
 "pos": [
 "adv"
-]
+],
+"example": "My grandfather frequently walks along the river to keep himself healthy and strong."
 },
 "alter": {
 "conceptId": "alter",
 "phonetic": "[ˈɔːltər]",
 "pos": [
 "verb"
-]
+],
+"example": "The tailor altered my jacket because the sleeves were much too long."
 },
 "participate": {
 "conceptId": "participate",
 "phonetic": "[pɑrˈtɪsəpeɪt]",
 "pos": [
 "verb"
-]
+],
+"example": "All students must participate in the sports day events held next Friday morning."
 },
 "stain": {
 "conceptId": "stain",
@@ -18334,189 +19158,216 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "There is a dark coffee stain on the front of my white shirt."
 },
 "positive": {
 "conceptId": "positive",
 "phonetic": "[ˈpɑːzətɪv]",
 "pos": [
 "adj"
-]
+],
+"example": "I am positive that I saw him at the library yesterday afternoon."
 },
 "motivate": {
 "conceptId": "motivate",
 "phonetic": "[ˈmoʊtəveɪt]",
 "pos": [
 "verb"
-]
+],
+"example": "A good coach can motivate players to train harder and never give up."
 },
 "over and over": {
 "conceptId": "over and over",
 "phonetic": "[ˈoʊvər ənd ˈoʊvər]",
 "pos": [
 "adv"
-]
+],
+"example": "She practiced the difficult piano piece over and over until it sounded perfect."
 },
 "ethnic": {
 "conceptId": "ethnic",
 "phonetic": "[ˈeθnɪk]",
 "pos": [
 "adj"
-]
+],
+"example": "Our city holds a festival that celebrates the food of many ethnic groups."
 },
 "typical": {
 "conceptId": "typical",
 "phonetic": "[ˈtɪpəkəl]",
 "pos": [
 "adj"
-]
+],
+"example": "A typical Korean breakfast includes rice, soup, and several small side dishes."
 },
 "auction": {
 "conceptId": "auction",
 "phonetic": "[ˈɑːkʃən]",
 "pos": [
 "noun"
-]
+],
+"example": "The old painting was sold at an auction for a surprisingly high price."
 },
 "fairy": {
 "conceptId": "fairy",
 "phonetic": "[ˈferi]",
 "pos": [
 "noun"
-]
+],
+"example": "In the old story, a kind fairy helped the poor girl find happiness."
 },
 "confident": {
 "conceptId": "confident",
 "phonetic": "[ˈkɑːnfədənt]",
 "pos": [
 "adj"
-]
+],
+"example": "Jimin felt confident about the math test because she had studied every night."
 },
 "belief": {
 "conceptId": "belief",
 "phonetic": "[bɪˈliːf]",
 "pos": [
 "noun"
-]
+],
+"example": "His belief in hard work helped him become a successful young doctor."
 },
 "entertain": {
 "conceptId": "entertain",
 "phonetic": "[entərˈteɪn]",
 "pos": [
 "verb"
-]
+],
+"example": "The clown entertained the children with funny songs and colorful balloon animals."
 },
 "belong to": {
 "conceptId": "belong to",
 "phonetic": "[bɪˈlɔːŋ tuː]",
 "pos": [
 "verb"
-]
+],
+"example": "These old photographs belong to my mother, so please handle them very carefully."
 },
 "waist": {
 "conceptId": "waist",
 "phonetic": "[weɪst]",
 "pos": [
 "noun"
-]
+],
+"example": "The belt felt too tight around my waist after the big holiday dinner."
 },
 "melt": {
 "conceptId": "melt",
 "phonetic": "[melt]",
 "pos": [
 "verb"
-]
+],
+"example": "The snow on the playground melted quickly under the warm spring sunshine."
 },
 "edible": {
 "conceptId": "edible",
 "phonetic": "[ˈedəbəl]",
 "pos": [
 "adj"
-]
+],
+"example": "Not every wild plant is edible, so ask an expert before tasting one."
 },
 "formal": {
 "conceptId": "formal",
 "phonetic": "[ˈfɔːrməl]",
 "pos": [
 "adj"
-]
+],
+"example": "You should wear formal clothes to your cousin's wedding this coming Saturday."
 },
 "unite": {
 "conceptId": "unite",
 "phonetic": "[ˈjuːnaɪt]",
 "pos": [
 "verb"
-]
+],
+"example": "The two small clubs united to form one larger group last year."
 },
 "settle": {
 "conceptId": "settle",
 "phonetic": "[ˈsetəl]",
 "pos": [
 "verb"
-]
+],
+"example": "My grandparents settled in this small town more than fifty years ago."
 },
 "content": {
 "conceptId": "content",
 "phonetic": "[ˈkɑːntent]",
 "pos": [
 "noun"
-]
+],
+"example": "The content of the book was difficult, but the pictures helped me understand."
 },
 "oral": {
 "conceptId": "oral",
 "phonetic": "[ˈɔːrəl]",
 "pos": [
 "adj"
-]
+],
+"example": "Our English teacher gave us an oral test instead of a written one."
 },
 "indicate": {
 "conceptId": "indicate",
 "phonetic": "[ˈɪndəkeɪt]",
 "pos": [
 "verb"
-]
+],
+"example": "The dark clouds indicate that a heavy rain will fall this evening."
 },
 "silence": {
 "conceptId": "silence",
 "phonetic": "[ˈsaɪləns]",
 "pos": [
 "noun"
-]
+],
+"example": "A long silence followed the teacher's question because nobody knew the answer."
 },
 "peninsula": {
 "conceptId": "peninsula",
 "phonetic": "[pəˈnɪnsələ]",
 "pos": [
 "noun"
-]
+],
+"example": "Korea is a peninsula surrounded by water on three different sides."
 },
 "earn": {
 "conceptId": "earn",
 "phonetic": "[ɜːrn]",
 "pos": [
 "verb"
-]
+],
+"example": "He earns extra money by delivering newspapers early every Saturday morning."
 },
 "cliff": {
 "conceptId": "cliff",
 "phonetic": "[klɪf]",
 "pos": [
 "noun"
-]
+],
+"example": "We stood on top of the cliff and watched the waves far below."
 },
 "hang out": {
 "conceptId": "hang out",
 "phonetic": "[hæŋ aʊt]",
 "pos": [
 "verb"
-]
+],
+"example": "My friends and I often hang out at the park after finishing our homework."
 },
 "scold": {
 "conceptId": "scold",
 "phonetic": "[skoʊld]",
 "pos": [
 "verb"
-]
+],
+"example": "My father scolded me for coming home so late without calling him first."
 },
 "mine": {
 "conceptId": "mine",
@@ -18524,56 +19375,64 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "Many years ago, workers dug coal out of a deep mine near here."
 },
 "medicine": {
 "conceptId": "medicine",
 "phonetic": "[ˈmedəsən]",
 "pos": [
 "noun"
-]
+],
+"example": "Take this medicine three times a day, and your cough will soon disappear."
 },
 "depart": {
 "conceptId": "depart",
 "phonetic": "[dɪˈpɑːrt]",
 "pos": [
 "verb"
-]
+],
+"example": "Our train will depart from platform three in exactly fifteen minutes."
 },
 "directly": {
 "conceptId": "directly",
 "phonetic": "[dərˈektli]",
 "pos": [
 "adv"
-]
+],
+"example": "After school, Sujin went directly home because she had to finish her project."
 },
 "physical": {
 "conceptId": "physical",
 "phonetic": "[ˈfɪzɪkəl]",
 "pos": [
 "adj"
-]
+],
+"example": "Scientists study the physical world, such as light, heat, and moving objects."
 },
 "evaluate": {
 "conceptId": "evaluate",
 "phonetic": "[ɪˈvæljueɪt]",
 "pos": [
 "verb"
-]
+],
+"example": "Our teachers evaluate every student's speech using five clear and fair standards."
 },
 "bullet": {
 "conceptId": "bullet",
 "phonetic": "[ˈbʊlət]",
 "pos": [
 "noun"
-]
+],
+"example": "The police officer found a single bullet on the floor of the empty house."
 },
 "hire": {
 "conceptId": "hire",
 "phonetic": "[ˈhaɪər]",
 "pos": [
 "verb"
-]
+],
+"example": "The new bakery will hire three part-time workers before the holiday season starts."
 },
 "refund": {
 "conceptId": "refund",
@@ -18581,98 +19440,112 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "The shop will refund your money if the shoes do not fit well."
 },
 "unusual": {
 "conceptId": "unusual",
 "phonetic": "[əˈnjuːʒuːəl]",
 "pos": [
 "adj"
-]
+],
+"example": "Snow in April is quite unusual in this warm southern city."
 },
 "outfit": {
 "conceptId": "outfit",
 "phonetic": "[ˈaʊtfɪt]",
 "pos": [
 "noun"
-]
+],
+"example": "Jenny wore a bright yellow outfit to the school festival last Friday."
 },
 "apologize": {
 "conceptId": "apologize",
 "phonetic": "[əˈpɑːlədʒaɪz]",
 "pos": [
 "verb"
-]
+],
+"example": "You should apologize to your sister for breaking her favorite coffee cup."
 },
 "break down": {
 "conceptId": "break down",
 "phonetic": "[breɪk daʊn]",
 "pos": [
 "verb"
-]
+],
+"example": "Our school bus broke down on the highway, so we arrived two hours late."
 },
 "roast": {
 "conceptId": "roast",
 "phonetic": "[roʊst]",
 "pos": [
 "verb"
-]
+],
+"example": "My grandmother will roast a whole chicken in the oven for dinner tonight."
 },
 "nutrition": {
 "conceptId": "nutrition",
 "phonetic": "[nuˈtrɪʃən]",
 "pos": [
 "noun"
-]
+],
+"example": "Good nutrition helps growing teenagers stay healthy and focus better in class."
 },
 "recall": {
 "conceptId": "recall",
 "phonetic": "[ˈriːkɔːl]",
 "pos": [
 "verb"
-]
+],
+"example": "I cannot recall the name of the hotel where we stayed last summer."
 },
 "agency": {
 "conceptId": "agency",
 "phonetic": "[ˈeɪdʒənsi]",
 "pos": [
 "noun"
-]
+],
+"example": "My aunt works at a travel agency that plans trips to Southeast Asia."
 },
 "extinct": {
 "conceptId": "extinct",
 "phonetic": "[ɪkˈstɪŋkt]",
 "pos": [
 "adj"
-]
+],
+"example": "Many animals became extinct because humans destroyed their forests and rivers."
 },
 "cast": {
 "conceptId": "cast",
 "phonetic": "[kæst]",
 "pos": [
 "verb"
-]
+],
+"example": "The angry giant cast a huge stone into the deep blue sea."
 },
 "statistics": {
 "conceptId": "statistics",
 "phonetic": "[stəˈtɪstɪks]",
 "pos": [
 "noun"
-]
+],
+"example": "Recent statistics show that fewer students walk to school these days."
 },
 "attention": {
 "conceptId": "attention",
 "phonetic": "[əˈtenʃən]",
 "pos": [
 "noun"
-]
+],
+"example": "Please pay attention to the safety rules before you enter the science lab."
 },
 "starve": {
 "conceptId": "starve",
 "phonetic": "[stɑːrv]",
 "pos": [
 "verb"
-]
+],
+"example": "Without rain for months, thousands of farm animals began to starve."
 },
 "doubt": {
 "conceptId": "doubt",
@@ -18680,56 +19553,64 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "There is no doubt that our team practiced harder than anyone else."
 },
 "wing": {
 "conceptId": "wing",
 "phonetic": "[wɪŋ]",
 "pos": [
 "noun"
-]
+],
+"example": "The little bird hurt its left wing and could not fly home."
 },
 "pole": {
 "conceptId": "pole",
 "phonetic": "[poʊl]",
 "pos": [
 "noun"
-]
+],
+"example": "Ice at the North Pole is melting faster than scientists expected."
 },
 "consist": {
 "conceptId": "consist",
 "phonetic": "[kənˈsɪst]",
 "pos": [
 "verb"
-]
+],
+"example": "Our school band consists of twenty students from three different grades."
 },
 "postpone": {
 "conceptId": "postpone",
 "phonetic": "[poʊstˈpoʊn]",
 "pos": [
 "verb"
-]
+],
+"example": "Heavy rain forced the principal to postpone our sports day until next week."
 },
 "anniversary": {
 "conceptId": "anniversary",
 "phonetic": "[ænəˈvɜːrsəri]",
 "pos": [
 "noun"
-]
+],
+"example": "My parents celebrated their twentieth wedding anniversary at a small Italian restaurant."
 },
 "luxury": {
 "conceptId": "luxury",
 "phonetic": "[ˈlʌɡʒəri]",
 "pos": [
 "noun"
-]
+],
+"example": "For my grandmother, a warm cup of tea was a rare luxury."
 },
 "mechanical": {
 "conceptId": "mechanical",
 "phonetic": "[məˈkænɪkəl]",
 "pos": [
 "adj"
-]
+],
+"example": "A mechanical problem stopped the elevator between the third and fourth floors."
 },
 "counsel": {
 "conceptId": "counsel",
@@ -18737,14 +19618,16 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "My uncle gave me wise counsel about choosing the right high school."
 },
 "aisle": {
 "conceptId": "aisle",
 "phonetic": "[aɪl]",
 "pos": [
 "noun"
-]
+],
+"example": "Please do not leave your bag in the aisle of the airplane."
 },
 "leftover": {
 "conceptId": "leftover",
@@ -18752,84 +19635,96 @@
 "pos": [
 "noun",
 "adj"
-]
+],
+"example": "We packed the leftovers from dinner and ate them for lunch today."
 },
 "at last": {
 "conceptId": "at last",
 "phonetic": "[æt læst]",
 "pos": [
 "adv"
-]
+],
+"example": "After three hours of hard climbing, we reached the mountain top at last."
 },
 "platform": {
 "conceptId": "platform",
 "phonetic": "[ˈplætfɔːrm]",
 "pos": [
 "noun"
-]
+],
+"example": "Hurry up, because our train is already waiting on platform number four."
 },
 "visual": {
 "conceptId": "visual",
 "phonetic": "[ˈvɪʒəwəl]",
 "pos": [
 "adj"
-]
+],
+"example": "Colorful pictures and charts make the visual part of her presentation strong."
 },
 "distinct": {
 "conceptId": "distinct",
 "phonetic": "[dɪˈstɪŋkt]",
 "pos": [
 "adj"
-]
+],
+"example": "There is a distinct difference between these two paintings if you look closely."
 },
 "skip": {
 "conceptId": "skip",
 "phonetic": "[skɪp]",
 "pos": [
 "verb"
-]
+],
+"example": "Never skip breakfast, even when you wake up late for school."
 },
 "monotonous": {
 "conceptId": "monotonous",
 "phonetic": "[məˈnɑːtənəs]",
 "pos": [
 "adj"
-]
+],
+"example": "His monotonous voice made the long history lesson feel even longer."
 },
 "argue": {
 "conceptId": "argue",
 "phonetic": "[ˈɑːrɡju]",
 "pos": [
 "verb"
-]
+],
+"example": "The twins often argue about which television program to watch after dinner."
 },
 "solve": {
 "conceptId": "solve",
 "phonetic": "[sɑːlv]",
 "pos": [
 "verb"
-]
+],
+"example": "Minji solved the difficult math problem in less than five minutes."
 },
 "responsible": {
 "conceptId": "responsible",
 "phonetic": "[rɪˈspɑːnsəbəl]",
 "pos": [
 "adj"
-]
+],
+"example": "Each student is responsible for cleaning his or her own desk."
 },
 "afford": {
 "conceptId": "afford",
 "phonetic": "[əˈfɔːrd]",
 "pos": [
 "verb"
-]
+],
+"example": "We cannot afford a new car this year, so we will fix ours."
 },
 "path": {
 "conceptId": "path",
 "phonetic": "[pæθ]",
 "pos": [
 "noun"
-]
+],
+"example": "A narrow path led us through the woods to a quiet lake."
 },
 "divorce": {
 "conceptId": "divorce",
@@ -18837,42 +19732,48 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "After the divorce, the children spent every weekend with their father."
 },
 "demonstrate": {
 "conceptId": "demonstrate",
 "phonetic": "[ˈdemənstreɪt]",
 "pos": [
 "verb"
-]
+],
+"example": "The chef demonstrated how to cut vegetables safely with a sharp knife."
 },
 "get used to": {
 "conceptId": "get used to",
 "phonetic": "[ɡet juːzd tuː]",
 "pos": [
 "aux"
-]
+],
+"example": "It took me a month to get used to wearing a school uniform."
 },
 "keep in touch": {
 "conceptId": "keep in touch",
 "phonetic": "[kiːp ɪn tʌtʃ]",
 "pos": [
 "verb"
-]
+],
+"example": "Let's keep in touch by email even after you move to another city."
 },
 "get along": {
 "conceptId": "get along",
 "phonetic": "[ɡet əˈlɔːŋ]",
 "pos": [
 "verb"
-]
+],
+"example": "My new classmates and I get along very well already."
 },
 "accuse": {
 "conceptId": "accuse",
 "phonetic": "[əˈkjuːz]",
 "pos": [
 "verb"
-]
+],
+"example": "They accused the man of stealing money from the small village bank."
 },
 "flag": {
 "conceptId": "flag",
@@ -18880,49 +19781,56 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "A red flag was waving on top of the lighthouse this morning."
 },
 "lean": {
 "conceptId": "lean",
 "phonetic": "[liːn]",
 "pos": [
 "verb"
-]
+],
+"example": "Don't lean out of the window while the bus is moving."
 },
 "specific": {
 "conceptId": "specific",
 "phonetic": "[spəˈsɪfɪk]",
 "pos": [
 "adj"
-]
+],
+"example": "Please give me a specific date and time for the group meeting."
 },
 "exclaim": {
 "conceptId": "exclaim",
 "phonetic": "[ɪksˈkleɪm]",
 "pos": [
 "verb"
-]
+],
+"example": "\"We won the game!\" exclaimed Jiho as he ran across the field."
 },
 "driver": {
 "conceptId": "driver",
 "phonetic": "[ˈdraɪvər]",
 "pos": [
 "noun"
-]
+],
+"example": "The bus driver kindly waited for the old woman to sit down."
 },
 "bump": {
 "conceptId": "bump",
 "phonetic": "[bʌmp]",
 "pos": [
 "verb"
-]
+],
+"example": "I bumped into the door because I was reading my phone."
 },
 "encourage": {
 "conceptId": "encourage",
 "phonetic": "[enˈkɜːrɪdʒ]",
 "pos": [
 "verb"
-]
+],
+"example": "My coach encouraged me to try again after I lost the first match."
 },
 "scent": {
 "conceptId": "scent",
@@ -18930,28 +19838,32 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "The sweet scent of fresh bread filled the whole kitchen this morning."
 },
 "serve": {
 "conceptId": "serve",
 "phonetic": "[sɜːrv]",
 "pos": [
 "verb"
-]
+],
+"example": "Two waiters served more than fifty guests at the busy hotel restaurant."
 },
 "galaxy": {
 "conceptId": "galaxy",
 "phonetic": "[ˈɡæləksi]",
 "pos": [
 "noun"
-]
+],
+"example": "Our solar system is only a tiny part of a huge galaxy."
 },
 "emigrate": {
 "conceptId": "emigrate",
 "phonetic": "[ˈeməɡreɪt]",
 "pos": [
 "verb"
-]
+],
+"example": "Her grandparents emigrated to Canada more than fifty years ago."
 },
 "fake": {
 "conceptId": "fake",
@@ -18959,35 +19871,40 @@
 "pos": [
 "adj",
 "noun"
-]
+],
+"example": "The man sold fake watches that looked exactly like expensive brand ones."
 },
 "from time to time": {
 "conceptId": "from time to time",
 "phonetic": "[frʌm taɪm tuː taɪm]",
 "pos": [
 "adv"
-]
+],
+"example": "From time to time, my old teacher sends me a short letter."
 },
 "ambitious": {
 "conceptId": "ambitious",
 "phonetic": "[æmˈbɪʃəs]",
 "pos": [
 "adj"
-]
+],
+"example": "She is an ambitious young woman who wants to become a scientist."
 },
 "forehead": {
 "conceptId": "forehead",
 "phonetic": "[ˈfɔːrhed]",
 "pos": [
 "noun"
-]
+],
+"example": "My mother touched my forehead to check whether I had a fever."
 },
 "gradual": {
 "conceptId": "gradual",
 "phonetic": "[ˈɡrædʒuəl]",
 "pos": [
 "adj"
-]
+],
+"example": "There has been a gradual increase in the number of library visitors."
 },
 "research": {
 "conceptId": "research",
@@ -18995,14 +19912,16 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "His research on ocean plastic surprised many scientists around the world."
 },
 "relationship": {
 "conceptId": "relationship",
 "phonetic": "[rɪˈleɪʃənʃɪp]",
 "pos": [
 "noun"
-]
+],
+"example": "A good relationship between parents and children grows through honest conversation."
 },
 "retreat": {
 "conceptId": "retreat",
@@ -19010,14 +19929,16 @@
 "pos": [
 "verb",
 "noun"
-]
+],
+"example": "The soldiers had to retreat quickly when the enemy crossed the river."
 },
 "negative": {
 "conceptId": "negative",
 "phonetic": "[ˈneɡətɪv]",
 "pos": [
 "adj"
-]
+],
+"example": "Too much time on your phone can have a negative effect on sleep."
 },
 "estimate": {
 "conceptId": "estimate",
@@ -19025,49 +19946,56 @@
 "pos": [
 "noun",
 "verb"
-]
+],
+"example": "The builder gave us an estimate of three thousand dollars for the roof."
 },
 "instead of": {
 "conceptId": "instead of",
 "phonetic": "[ɪnˈsted ʌv]",
 "pos": [
 "prep"
-]
+],
+"example": "Instead of taking the bus, we walked to the museum together."
 },
 "enjoyable": {
 "conceptId": "enjoyable",
 "phonetic": "[enˈdʒɔɪəbəl]",
 "pos": [
 "adj"
-]
+],
+"example": "Camping by the river was the most enjoyable part of our trip."
 },
 "provide": {
 "conceptId": "provide",
 "phonetic": "[prəˈvaɪd]",
 "pos": [
 "verb"
-]
+],
+"example": "The school provides free milk for every student on cold winter mornings."
 },
 "confess": {
 "conceptId": "confess",
 "phonetic": "[kənˈfes]",
 "pos": [
 "verb"
-]
+],
+"example": "The boy finally confessed that he had broken the classroom window."
 },
 "prejudice": {
 "conceptId": "prejudice",
 "phonetic": "[ˈpredʒədɪs]",
 "pos": [
 "noun"
-]
+],
+"example": "We should judge people by their actions, not by prejudice about them."
 },
 "hold on (to)": {
 "conceptId": "hold on (to)",
 "phonetic": "[hoʊld ɑːn tuː]",
 "pos": [
 "verb"
-]
+],
+"example": "Hold on to the rope tightly until the rescue team pulls you up."
 },
 "material": {
 "conceptId": "material",
@@ -19075,7 +20003,8 @@
 "pos": [
 "noun",
 "adj"
-]
+],
+"example": "Wood is a warm material that many Korean houses used long ago."
 },
 "express": {
 "conceptId": "express",
@@ -19083,7 +20012,8 @@
 "pos": [
 "verb",
 "adj"
-]
+],
+"example": "Some people express their feelings more easily through music than through words."
 },
 "arctic": {
 "conceptId": "arctic",
@@ -19091,20 +20021,23 @@
 "pos": [
 "adj",
 "noun"
-]
+],
+"example": "Polar bears hunt seals on the frozen arctic sea every winter."
 },
 "pedestrian": {
 "conceptId": "pedestrian",
 "phonetic": "[pəˈdestrɪən]",
 "pos": [
 "noun"
-]
+],
+"example": "Drivers must stop when a pedestrian is crossing the street."
 },
 "collar": {
 "conceptId": "collar",
 "phonetic": "[ˈkɑːlər]",
 "pos": [
 "noun"
-]
+],
+"example": "He turned up the collar of his coat against the cold wind."
 }
 }

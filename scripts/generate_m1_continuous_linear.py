@@ -518,6 +518,88 @@ UNIT_DATA = {
             "id": "m1-220", "word": "press", "meaning": "누르다, 언론",
             "scene": "newspaper printing press facility, cute slender stickman technician pressing a prominent round control button activating a mechanical printing press machine printing news sheets"
         }
+    ],
+    12: [
+        {
+            "id": "m1-221", "word": "wink", "meaning": "눈을 깜빡거리다",
+            "scene": "cheerful cozy cafe counter, playful cute slender stickman barista wearing apron smiling warmly and giving a friendly playful wink with one eye, coffee machine and mugs"
+        },
+        {
+            "id": "m1-222", "word": "blind", "meaning": "눈이 먼, 블라인드",
+            "scene": "sunny apartment living room window, cute slender stickman gently pulling the beaded cord adjusting horizontal window blinds slats to filter bright afternoon sunlight, potted fern plant"
+        },
+        {
+            "id": "m1-223", "word": "lay", "meaning": "놓다, 눕히다, 알을 낳다",
+            "scene": "warm chicken coop barn nest, cute slender stickman farmer gently smiling as a mother hen sits snugly in straw nest having laid smooth round eggs, wooden coop wall"
+        },
+        {
+            "id": "m1-224", "word": "wolf", "meaning": "늑대",
+            "scene": "misty snowy pine forest ridge under full moon, majestic wild wolf standing proudly on rocky ledge howling softly toward starry night sky, snow dusted evergreen pine trees"
+        },
+        {
+            "id": "m1-225", "word": "altogether", "meaning": "다 같이, 완전히",
+            "scene": "warm community festival square, joyous group of cute slender stickman neighbors singing and clapping together in unison with linked arms around a decorative village gazebo"
+        },
+        {
+            "id": "m1-226", "word": "squirrel", "meaning": "다람쥐",
+            "scene": "autumn leafy oak park tree branch, cute slender stickman standing on path smiling watching an adorable bushy-tailed squirrel nibbling happily on an acorn, colorful fallen leaves"
+        },
+        {
+            "id": "m1-227", "word": "treat", "meaning": "다루다, 대접하다, 치료하다",
+            "scene": "sunny bakery cafe table, generous cute slender stickman smiling happily treating a dear friend stickman to a delicious tiered cake and tea cups, sweet dessert display"
+        },
+        {
+            "id": "m1-228", "word": "different", "meaning": "다른, 차이가 나는",
+            "scene": "art studio display table, cute slender stickman artist comparing two distinctly different ceramic pottery vases side by side noting unique shapes and contours, craft workbench"
+        },
+        {
+            "id": "m1-229", "word": "bridge", "meaning": "다리",
+            "scene": "picturesque river valley landscape, cute slender stickman standing on an elegant stone arched bridge looking down at sparkling flowing river waters below, willow trees on riverbanks"
+        },
+        {
+            "id": "m1-230", "word": "dive", "meaning": "다이빙하다, 뛰어들다",
+            "scene": "olympic swimming pool diving platform, athletic cute slender stickman gracefully diving mid-air headfirst with straight body form toward clear sparkling pool water, lane markers"
+        },
+        {
+            "id": "m1-231", "word": "colorful", "meaning": "다채로운, 화려한",
+            "scene": "festive carnival street parade, cute slender stickman looking up in delight at a dazzling array of colorful airborne festival balloons and rainbow parade streamers"
+        },
+        {
+            "id": "m1-232", "word": "hurt", "meaning": "다치게 하다, 아프다",
+            "scene": "medical clinic treatment room, caring cute slender stickman doctor gently applying a soothing adhesive bandage to the scraped elbow of a brave patient stickman, medical cabinet"
+        },
+        {
+            "id": "m1-233", "word": "college", "meaning": "단과대학, 대학교",
+            "scene": "historic ivy-covered university college quadrangle courtyard, cheerful cute slender stickman university students in college blazers carrying books walking past classical brick campus hall"
+        },
+        {
+            "id": "m1-234", "word": "tightly", "meaning": "단단히, 꽉",
+            "scene": "sailor sailboat dock pier, strong cute slender stickman pulling with both hands tying a thick nautical rope tightly around a sturdy wooden harbor bollard to secure ship"
+        },
+        {
+            "id": "m1-235", "word": "word", "meaning": "단어, 말",
+            "scene": "study room wooden desk, studious cute slender stickman pointing index finger attentively at a specific vocabulary word highlighted in a large open leather-bound dictionary book"
+        },
+        {
+            "id": "m1-236", "word": "shut", "meaning": "닫다",
+            "scene": "vintage wooden cottage front door entryway, cute slender stickman firmly pushing shut a heavy wooden door to block out cold windy evening weather, warm glow from room window"
+        },
+        {
+            "id": "m1-237", "word": "close", "meaning": "닫다, 가까운",
+            "scene": "sunny front porch, two warm cute slender stickman best friends standing close together smiling happily with arms around shoulders celebrating true close friendship, flower pots"
+        },
+        {
+            "id": "m1-238", "word": "dollar", "meaning": "달러",
+            "scene": "bank teller cashier counter, cute slender stickman teller neatly counting crisp green paper dollar currency bills onto polished counter desk, brass balance scale and safe vault"
+        },
+        {
+            "id": "m1-239", "word": "sweet", "meaning": "달콤한, 상냥한",
+            "scene": "quaint confectionery candy sweet shop, delighted cute slender stickman holding a colorful spiral rainbow lollipop smiling happily before glass jars brimming with sweet treats"
+        },
+        {
+            "id": "m1-240", "word": "smoke", "meaning": "담배를 피우다, 연기",
+            "scene": "cozy mountain cabin fireplace hearth in winter, cute slender stickman sitting on rocking chair watching gentle gray smoke wisps rising up brick chimney from crackling wood fire log"
+        }
     ]
 }
 

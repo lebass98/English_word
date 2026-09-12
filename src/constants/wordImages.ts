@@ -652,4 +652,6 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   wound: require("../../assets/words/wound.png"),
   wrap: require("../../assets/words/wrap.png"),
   yell: require("../../assets/words/yell.png"),
+  "loud": require("../../assets/words/loud.png"),
+  "m1-340": require("../../assets/words/loud.png"),
 };

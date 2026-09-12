@@ -1,0 +1,8339 @@
+{
+"beyond": {
+"phonetic": "[bɪˈjɑːnd]",
+"example": "The mountains lie beyond the river."
+},
+"either": {
+"phonetic": "[ˈiːðər]",
+"example": "You can take either road to the station."
+},
+"neither": {
+"phonetic": "[ˈniːðər]",
+"example": "Neither answer was correct."
+},
+"behind": {
+"phonetic": "[bɪˈhaɪnd]",
+"example": "The cat is hiding behind the door.",
+"synonyms": [
+"after",
+"following"
+]
+},
+"bound": {
+"phonetic": "[baʊnd]",
+"example": "This train is bound for Busan.",
+"synonyms": [
+"headed",
+"destined"
+]
+},
+"below": {
+"phonetic": "[bɪˈloʊ]",
+"example": "The temperature fell below zero last night.",
+"synonyms": [
+"under",
+"beneath",
+"underneath"
+]
+},
+"without": {
+"phonetic": "[wɪˈðaʊt]",
+"example": "I cannot read the small letters without my glasses."
+},
+"belong": {
+"phonetic": "[bɪˈlɔːŋ]",
+"example": "These books belong to the school library.",
+"synonyms": [
+"fit",
+"pertain"
+]
+},
+"replace": {
+"phonetic": "[rɪˈpleɪs]",
+"example": "We need to replace the broken window.",
+"synonyms": [
+"substitute",
+"swap",
+"change"
+]
+},
+"along": {
+"phonetic": "[əˈlɔːŋ]",
+"example": "We walked along the beach at sunset."
+},
+"except": {
+"phonetic": "[ɪkˈsept]",
+"example": "Everyone came to the party except Tom.",
+"synonyms": [
+"excluding",
+"besides",
+"but"
+]
+},
+"become": {
+"phonetic": "[bɪˈkʌm]",
+"example": "She wants to become a doctor someday.",
+"synonyms": [
+"turn",
+"grow",
+"get"
+]
+},
+"since": {
+"phonetic": "[sɪns]",
+"example": "I have lived in this town since 2020."
+},
+"pretend": {
+"phonetic": "[prɪˈtend]",
+"example": "Don't pretend that you didn't hear me.",
+"synonyms": [
+"fake",
+"act",
+"feign"
+]
+},
+"whether": {
+"phonetic": "[ˈweðər]",
+"example": "I don't know whether he will come or not."
+},
+"toward": {
+"phonetic": "[təˈwɔːrd]",
+"example": "She slowly walked toward the door."
+},
+"while": {
+"phonetic": "[waɪl]",
+"example": "He called me while I was sleeping."
+},
+"unless": {
+"phonetic": "[ənˈles]",
+"example": "We will go on a picnic unless it rains."
+},
+"deserve": {
+"phonetic": "[dɪˈzɜːrv]",
+"example": "You deserve a rest after all that hard work.",
+"synonyms": [
+"earn",
+"merit"
+]
+},
+"teenager": {
+"phonetic": "[ˈtiːneɪdʒər]",
+"example": "He is an active teenager who loves skateboarding.",
+"synonyms": [
+"adolescent",
+"youth"
+]
+},
+"culture": {
+"phonetic": "[ˈkʌltʃər]",
+"example": "Korean culture has many beautiful holidays that families celebrate together.",
+"synonyms": [
+"civilization",
+"tradition",
+"customs"
+]
+},
+"experience": {
+"phonetic": "[ɪkˈspɪrɪəns]",
+"example": "Living in another country was a wonderful experience for my sister.",
+"synonyms": [
+"knowledge",
+"practice",
+"background"
+]
+},
+"education": {
+"phonetic": "[edʒəˈkeɪʃən]",
+"example": "Good education helps children build a better future for themselves.",
+"synonyms": [
+"teaching",
+"instruction",
+"schooling",
+"training"
+]
+},
+"symbol": {
+"phonetic": "[ˈsɪmbəl]",
+"example": "A white dove is a well-known symbol of peace around the world.",
+"synonyms": [
+"sign",
+"mark",
+"emblem"
+]
+},
+"effect": {
+"phonetic": "[ɪˈfekt]",
+"example": "Staying up late every night had a bad effect on his grades.",
+"synonyms": [
+"result",
+"outcome",
+"consequence",
+"influence"
+]
+},
+"liberty": {
+"phonetic": "[ˈlɪbərti]",
+"example": "The people fought bravely to win their liberty from the cruel king.",
+"synonyms": [
+"freedom",
+"independence"
+]
+},
+"affair": {
+"phonetic": "[əˈfer]",
+"example": "The strange affair at the old library was reported in the newspapers.",
+"synonyms": [
+"matter",
+"event",
+"business"
+]
+},
+"comfort": {
+"phonetic": "[ˈkʌmfərt]",
+"example": "This soft old sofa gives me great comfort after a long day.",
+"synonyms": [
+"ease",
+"consolation",
+"relief"
+]
+},
+"tradition": {
+"phonetic": "[trəˈdɪʃən]",
+"example": "Making rice cake on New Year's Day is our family tradition.",
+"synonyms": [
+"custom",
+"convention",
+"heritage"
+]
+},
+"subject": {
+"phonetic": "[səbˈdʒekt]",
+"example": "Math is the subject I study hardest every single evening.",
+"synonyms": [
+"topic",
+"theme",
+"course"
+]
+},
+"object": {
+"phonetic": "[ˈɑːbdʒekt]",
+"example": "A strange round object was floating slowly in the night sky.",
+"synonyms": [
+"thing",
+"item",
+"article"
+]
+},
+"source": {
+"phonetic": "[sɔːrs]",
+"example": "The reporter checked the source of the news before writing the article.",
+"synonyms": [
+"origin",
+"root",
+"beginning"
+]
+},
+"revolution": {
+"phonetic": "[revəˈluːʃən]",
+"example": "The revolution changed the country's government in only a few months.",
+"synonyms": [
+"uprising",
+"rebellion",
+"revolt"
+]
+},
+"pollution": {
+"phonetic": "[pəˈluːʃən]",
+"example": "Air pollution in big cities makes many people cough and sneeze.",
+"synonyms": [
+"contamination",
+"dirt",
+"smog"
+]
+},
+"system": {
+"phonetic": "[ˈsɪstəm]",
+"example": "Our school introduced a new system for borrowing library books.",
+"synonyms": [
+"structure",
+"organization",
+"network",
+"method"
+]
+},
+"triumph": {
+"phonetic": "[ˈtraɪəmf]",
+"example": "Winning the final game was a great triumph for our small team.",
+"synonyms": [
+"victory",
+"win",
+"success"
+]
+},
+"respect": {
+"phonetic": "[rɪˈspekt]",
+"example": "Students show respect to teachers by listening carefully during class.",
+"synonyms": [
+"admiration",
+"honor",
+"esteem",
+"regard"
+]
+},
+"communication": {
+"phonetic": "[kəmjuːnəˈkeɪʃən]",
+"example": "Honest communication between friends can solve most small problems quickly.",
+"synonyms": [
+"contact",
+"exchange",
+"message"
+]
+},
+"mass communication": {
+"phonetic": "[mæs kəmjuːnəˈkeɪʃən]",
+"example": "Television and newspapers are still powerful tools of mass communication today.",
+"synonyms": [
+"mass media",
+"media"
+]
+},
+"foundation": {
+"phonetic": "[faʊnˈdeɪʃən]",
+"example": "Workers must lay a strong foundation before building a tall tower.",
+"synonyms": [
+"base",
+"basis",
+"groundwork"
+]
+},
+"glory": {
+"phonetic": "[ˈɡlɔːri]",
+"example": "The old soldier still remembers the glory of that famous victory.",
+"synonyms": [
+"honor",
+"fame",
+"praise",
+"splendor"
+]
+},
+"situation": {
+"phonetic": "[sɪtʃuˈeɪʃən]",
+"example": "Our house has a lovely situation on a hill above the river.",
+"synonyms": [
+"condition",
+"circumstances",
+"state"
+]
+},
+"competition": {
+"phonetic": "[kɑːmpəˈtɪʃən]",
+"example": "There is strong competition between the two bakeries on our street.",
+"synonyms": [
+"contest",
+"rivalry",
+"race"
+]
+},
+"prairie": {
+"phonetic": "[ˈpreri]",
+"example": "Wild horses ran freely across the wide prairie under the burning sun.",
+"synonyms": [
+"grassland",
+"plain",
+"meadow"
+]
+},
+"effort": {
+"phonetic": "[ˈefərt]",
+"example": "Mina passed the difficult exam through months of hard effort.",
+"synonyms": [
+"attempt",
+"try",
+"endeavor"
+]
+},
+"section": {
+"phonetic": "[ˈsekʃən]",
+"example": "The library keeps comic books in the section near the window.",
+"synonyms": [
+"part",
+"portion",
+"division"
+]
+},
+"no smoking section": {
+"phonetic": "[noʊ ˈsmoʊkɪŋ ˈsekʃən]",
+"example": "My family asked for a table in the no smoking section.",
+"synonyms": [
+"nonsmoking area",
+"smoke-free zone"
+]
+},
+"rein": {
+"phonetic": "[reɪn]",
+"example": "The rider pulled the rein gently and stopped his brown horse."
+},
+"solution": {
+"phonetic": "[səˈluːʃən]",
+"example": "Nobody in our class could find a solution to that puzzle.",
+"synonyms": [
+"answer",
+"fix",
+"remedy"
+]
+},
+"honor": {
+"phonetic": "[ˈɑːnər]",
+"example": "He lost his honor by telling lies to his closest friends.",
+"synonyms": [
+"respect",
+"glory",
+"dignity"
+]
+},
+"unity": {
+"phonetic": "[ˈjuːnəti]",
+"example": "Many Koreans still hope for the unity of the two Koreas.",
+"synonyms": [
+"union",
+"oneness",
+"harmony"
+]
+},
+"population": {
+"phonetic": "[pɑːpjəˈleɪʃən]",
+"example": "The population of our quiet town grows a little every spring.",
+"synonyms": [
+"inhabitants",
+"residents",
+"people"
+]
+},
+"direction": {
+"phonetic": "[dərˈekʃən]",
+"example": "The wind changed direction and blew our kite toward the trees.",
+"synonyms": [
+"way",
+"course",
+"instruction"
+]
+},
+"dialogue": {
+"phonetic": "[ˈdaɪəlɔːɡ]",
+"example": "The two students had a long dialogue about their future dreams.",
+"synonyms": [
+"conversation",
+"talk",
+"discussion"
+]
+},
+"dialogue between north and south": {
+"phonetic": "[ˈdaɪəlɔːɡ bɪˈtwiːn nɔːrθ ənd saʊθ]",
+"example": "Many people hope the dialogue between north and south will bring peace."
+},
+"republic": {
+"phonetic": "[rɪˈpʌblək]",
+"example": "France became a republic after its people removed the king.",
+"synonyms": [
+"commonwealth"
+]
+},
+"method": {
+"phonetic": "[ˈmeθəd]",
+"example": "My teacher showed us an easy method for memorizing English words.",
+"synonyms": [
+"way",
+"means",
+"approach"
+]
+},
+"increase": {
+"phonetic": "[ɪnˈkriːs]",
+"example": "There was a big increase in the number of club members.",
+"synonyms": [
+"grow",
+"rise",
+"expand",
+"raise"
+]
+},
+"decrease": {
+"phonetic": "[dɪˈkriːs]",
+"example": "The doctor noticed a slow decrease in the little boy's fever.",
+"synonyms": [
+"reduce",
+"drop",
+"decline",
+"lessen"
+]
+},
+"amount": {
+"phonetic": "[əˈmaʊnt]",
+"example": "A huge amount of snow fell on the mountain last night.",
+"synonyms": [
+"quantity",
+"sum",
+"total"
+]
+},
+"ancestor": {
+"phonetic": "[ˈænsestər]",
+"example": "Our ancestors lived in this village more than three hundred years ago.",
+"synonyms": [
+"forefather",
+"forebear",
+"predecessor"
+]
+},
+"voyage": {
+"phonetic": "[ˈvɔɪədʒ]",
+"example": "The long voyage across the ocean took the sailors two months.",
+"synonyms": [
+"journey",
+"trip",
+"cruise"
+]
+},
+"sculpture": {
+"phonetic": "[ˈskʌlptʃər]",
+"example": "A beautiful sculpture of a horse stands in front of the museum.",
+"synonyms": [
+"carving",
+"statue"
+]
+},
+"instrument": {
+"phonetic": "[ˈɪnstrəmənt]",
+"example": "The scientist used a special instrument to measure the tiny insect.",
+"synonyms": [
+"tool",
+"device",
+"implement"
+]
+},
+"figure": {
+"phonetic": "[ˈfɪɡjər]",
+"example": "She checked every figure in the report twice before printing it.",
+"synonyms": [
+"number",
+"digit",
+"numeral"
+]
+},
+"activity": {
+"phonetic": "[ækˈtɪvəti]",
+"example": "Swimming is my favorite activity during the hot summer vacation.",
+"synonyms": [
+"action",
+"movement",
+"exercise"
+]
+},
+"cause": {
+"phonetic": "[kɑːz]",
+"example": "The police searched all day for the cause of the fire.",
+"synonyms": [
+"reason",
+"source",
+"origin",
+"trigger"
+]
+},
+"worth": {
+"phonetic": "[wɜːrθ]",
+"example": "This old watch has little worth, but I still love it.",
+"synonyms": [
+"value",
+"merit",
+"price"
+]
+},
+"accident": {
+"phonetic": "[ˈæksədənt]",
+"example": "A car accident blocked the road in front of our school.",
+"synonyms": [
+"crash",
+"mishap",
+"incident"
+]
+},
+"adventure": {
+"phonetic": "[ædˈventʃər]",
+"example": "Camping alone in the deep forest was a real adventure for Jisu.",
+"synonyms": [
+"quest",
+"exploit",
+"journey"
+]
+},
+"view": {
+"phonetic": "[vjuː]",
+"example": "The view from the mountain top was better than any photograph.",
+"synonyms": [
+"opinion",
+"scene",
+"sight",
+"perspective"
+]
+},
+"relative": {
+"phonetic": "[ˈrelətɪv]",
+"example": "Every relative in our family came to grandmother's eightieth birthday party.",
+"synonyms": [
+"relation",
+"kin"
+]
+},
+"superstition": {
+"phonetic": "[suːpərˈstɪʃən]",
+"example": "Some people believe the superstition that the number four brings misfortune.",
+"synonyms": [
+"myth",
+"folk belief"
+]
+},
+"habit": {
+"phonetic": "[ˈhæbət]",
+"example": "Reading before bed is a good habit I started last year.",
+"synonyms": [
+"custom",
+"practice",
+"routine"
+]
+},
+"wealth": {
+"phonetic": "[welθ]",
+"example": "The kind old man shared his wealth with poor children nearby.",
+"synonyms": [
+"riches",
+"fortune",
+"property"
+]
+},
+"treasure": {
+"phonetic": "[ˈtreʒər]",
+"example": "The pirates buried their treasure on a small quiet island.",
+"synonyms": [
+"riches",
+"wealth",
+"valuables"
+]
+},
+"universe": {
+"phonetic": "[ˈjuːnəvɜːrs]",
+"example": "Scientists say the universe is far bigger than we can imagine.",
+"synonyms": [
+"cosmos",
+"space",
+"world"
+]
+},
+"adult": {
+"phonetic": "[əˈdʌlt]",
+"example": "You must be an adult to drive a car in Korea.",
+"synonyms": [
+"grown-up"
+]
+},
+"feast": {
+"phonetic": "[fiːst]",
+"example": "The village held a great feast after the autumn harvest ended.",
+"synonyms": [
+"banquet",
+"party",
+"celebration"
+]
+},
+"resources": {
+"phonetic": "[ˈriːsɔrsɪz]",
+"example": "Our country has few natural resources, so we buy oil abroad.",
+"synonyms": [
+"assets",
+"supplies",
+"materials"
+]
+},
+"ruin": {
+"phonetic": "[ˈruːən]",
+"example": "Gambling brought ruin to the once rich man and his family.",
+"synonyms": [
+"destroy",
+"wreck",
+"spoil",
+"damage"
+]
+},
+"monument": {
+"phonetic": "[ˈmɑːnjumənt]",
+"example": "A tall monument in the park honors the soldiers who died.",
+"synonyms": [
+"memorial",
+"landmark"
+]
+},
+"information": {
+"phonetic": "[ɪnfərˈmeɪʃən]",
+"example": "I found useful information about dolphins on the internet yesterday.",
+"synonyms": [
+"news",
+"data",
+"knowledge",
+"facts"
+]
+},
+"appetite": {
+"phonetic": "[ˈæpətaɪt]",
+"example": "Jisu had no appetite because she felt sick all morning.",
+"synonyms": [
+"hunger",
+"craving",
+"desire"
+]
+},
+"stethoscope": {
+"phonetic": "[ˈsteθəskoʊp]",
+"example": "The doctor listened to my heart with a cold silver stethoscope."
+},
+"mystery": {
+"phonetic": "[ˈmɪstəri]",
+"example": "The bottom of the deep sea is still a mystery to scientists.",
+"synonyms": [
+"puzzle",
+"riddle",
+"secret",
+"enigma"
+]
+},
+"thermometer": {
+"phonetic": "[θərˈmɑːmətər]",
+"example": "The thermometer showed minus ten degrees on that cold morning."
+},
+"burden": {
+"phonetic": "[ˈbɜːrdən]",
+"example": "The tired donkey carried a heavy burden up the steep hill.",
+"synonyms": [
+"load",
+"weight",
+"responsibility"
+]
+},
+"series": {
+"phonetic": "[ˈsɪrɪz]",
+"example": "A series of strange noises woke me up during the night.",
+"synonyms": [
+"sequence",
+"succession",
+"chain",
+"set"
+]
+},
+"oath": {
+"phonetic": "[oʊθ]",
+"example": "The new president took an oath to serve his country honestly.",
+"synonyms": [
+"vow",
+"pledge",
+"promise"
+]
+},
+"appointment": {
+"phonetic": "[əˈpɔɪntmənt]",
+"example": "Everyone cheered his appointment as the new captain of the team.",
+"synonyms": [
+"engagement",
+"meeting",
+"date"
+]
+},
+"clue": {
+"phonetic": "[kluː]",
+"example": "The detective found one small clue under the broken window.",
+"synonyms": [
+"hint",
+"sign",
+"lead",
+"trace"
+]
+},
+"debt": {
+"phonetic": "[det]",
+"example": "I owe a great debt to my parents for their endless love.",
+"synonyms": [
+"loan",
+"obligation"
+]
+},
+"hydrogen": {
+"phonetic": "[ˈhaɪdrədʒən]",
+"example": "Water is made of hydrogen and oxygen, as we learned today."
+},
+"control": {
+"phonetic": "[kənˈtroʊl]",
+"example": "The teacher kept control of the noisy class with one calm look.",
+"synonyms": [
+"manage",
+"regulate",
+"command",
+"govern"
+]
+},
+"uniform": {
+"phonetic": "[ˈjuːnəfɔːrm]",
+"example": "Our school uniform is dark blue with a plain white shirt.",
+"synonyms": [
+"outfit",
+"costume"
+]
+},
+"design": {
+"phonetic": "[dɪˈzaɪn]",
+"example": "The design of the new bridge took engineers almost three years.",
+"synonyms": [
+"plan",
+"pattern",
+"layout",
+"plot"
+]
+},
+"damage": {
+"phonetic": "[ˈdæmədʒ]",
+"example": "Last night's storm caused serious damage to our old roof.",
+"synonyms": [
+"harm",
+"injury",
+"hurt",
+"ruin"
+]
+},
+"custom": {
+"phonetic": "[ˈkʌstəm]",
+"example": "It is his custom to walk the dog before eating breakfast.",
+"synonyms": [
+"tradition",
+"habit",
+"practice",
+"convention"
+]
+},
+"traffic": {
+"phonetic": "[ˈtræfɪk]",
+"example": "Heavy traffic made us late for the concert last Friday evening.",
+"synonyms": [
+"transportation"
+]
+},
+"sophomore": {
+"phonetic": "[ˈsɑːfmɔːr]",
+"example": "My brother is a sophomore and takes six classes this year."
+},
+"temperature": {
+"phonetic": "[ˈtemprətʃər]",
+"example": "The temperature in the classroom was too high to study comfortably.",
+"synonyms": [
+"heat",
+"warmth"
+]
+},
+"limit": {
+"phonetic": "[ˈlɪmət]",
+"example": "My mother limits my computer time to one hour each day.",
+"synonyms": [
+"restrict",
+"confine",
+"restrain"
+]
+},
+"statue": {
+"phonetic": "[ˈstætʃuː]",
+"example": "A large stone statue of a lion guards the temple gate.",
+"synonyms": [
+"sculpture",
+"figure",
+"monument"
+]
+},
+"furniture": {
+"phonetic": "[ˈfɜːrnɪtʃər]",
+"example": "We bought new furniture for the living room last weekend.",
+"synonyms": [
+"furnishings",
+"fittings"
+]
+},
+"parade": {
+"phonetic": "[pərˈeɪd]",
+"example": "Children waved small flags as the long parade passed by.",
+"synonyms": [
+"procession",
+"march",
+"pageant"
+]
+},
+"public": {
+"phonetic": "[ˈpʌblɪk]",
+"example": "The beautiful new park opened to the public last Saturday morning.",
+"synonyms": [
+"common",
+"general",
+"open",
+"communal"
+]
+},
+"pilgrim": {
+"phonetic": "[ˈpɪlɡrəm]",
+"example": "A tired pilgrim walked for weeks to reach the holy temple."
+},
+"greeting": {
+"phonetic": "[ˈɡriːtɪŋ]",
+"example": "She raised her hand in a friendly greeting to her neighbor.",
+"synonyms": [
+"welcome",
+"salutation",
+"regards"
+]
+},
+"language": {
+"phonetic": "[ˈlæŋɡwədʒ]",
+"example": "Learning a new language takes time, patience, and daily practice.",
+"synonyms": [
+"speech",
+"tongue"
+]
+},
+"opinion": {
+"phonetic": "[əˈpɪnjən]",
+"example": "In my opinion, our school should start classes one hour later.",
+"synonyms": [
+"view",
+"belief",
+"thought",
+"idea"
+]
+},
+"athlete": {
+"phonetic": "[ˈæθlɪt]",
+"example": "The young athlete trains six hours every day for the Olympics.",
+"synonyms": [
+"player",
+"sportsman",
+"competitor"
+]
+},
+"supply": {
+"phonetic": "[səˈplaɪ]",
+"example": "The city cut off the water supply for two hours yesterday.",
+"synonyms": [
+"provide",
+"furnish",
+"give",
+"deliver"
+]
+},
+"surface": {
+"phonetic": "[ˈsɜːrfəs]",
+"example": "The surface of the quiet lake was as smooth as glass.",
+"synonyms": [
+"top",
+"outside",
+"exterior"
+]
+},
+"electricity": {
+"phonetic": "[ɪlekˈtrɪsəti]",
+"example": "The strong storm cut off our electricity for almost five hours.",
+"synonyms": [
+"power",
+"current"
+]
+},
+"order": {
+"phonetic": "[ˈɔːrdər]",
+"example": "Please line up in order of height before entering the gym.",
+"synonyms": [
+"request",
+"command",
+"sequence",
+"instruction"
+]
+},
+"spirit": {
+"phonetic": "[ˈspɪrət]",
+"example": "Her fighting spirit helped her finish the race despite the pain.",
+"synonyms": [
+"soul",
+"mind",
+"heart"
+]
+},
+"purpose": {
+"phonetic": "[ˈpɜːrpəs]",
+"example": "The purpose of this meeting is to plan our school festival.",
+"synonyms": [
+"aim",
+"intention",
+"objective"
+]
+},
+"promise": {
+"phonetic": "[ˈprɑːməs]",
+"example": "The young pianist shows great promise for a wonderful future.",
+"synonyms": [
+"pledge",
+"vow",
+"oath"
+]
+},
+"project": {
+"phonetic": "[ˈprɑːdʒekt]",
+"example": "Our science project about recycling won first prize at school.",
+"synonyms": [
+"plan",
+"scheme",
+"undertaking",
+"design"
+]
+},
+"government": {
+"phonetic": "[ˈɡʌvərmənt]",
+"example": "The government built a new hospital in our small town.",
+"synonyms": [
+"administration",
+"authorities",
+"regime"
+]
+},
+"exercise": {
+"phonetic": "[ˈeksərsaɪz]",
+"example": "My grandmother does light exercise in the park every single morning.",
+"synonyms": [
+"workout",
+"training",
+"practice",
+"drill"
+]
+},
+"comparison": {
+"phonetic": "[kəmˈperəsən]",
+"example": "A comparison between the two phones showed almost no real difference.",
+"synonyms": [
+"contrast",
+"analogy"
+]
+},
+"interest": {
+"phonetic": "[ˈɪntrəst]",
+"example": "The two countries acted in their own interest during the talks.",
+"synonyms": [
+"profit",
+"benefit",
+"gain",
+"advantage"
+]
+},
+"funeral": {
+"phonetic": "[ˈfjuːnərəl]",
+"example": "Many neighbors came to the funeral to say goodbye to him.",
+"synonyms": [
+"burial",
+"memorial service"
+]
+},
+"senior": {
+"phonetic": "[ˈsiːnjər]",
+"example": "A senior on the soccer team taught me how to pass.",
+"synonyms": [
+"elder",
+"superior"
+]
+},
+"junior": {
+"phonetic": "[ˈdʒuːnjər]",
+"example": "I helped a junior carry heavy books to the classroom.",
+"synonyms": [
+"younger",
+"lower"
+]
+},
+"democracy": {
+"phonetic": "[dɪˈmɑːkrəsi]",
+"example": "In a democracy, people choose their leaders by voting freely.",
+"synonyms": [
+"self-government"
+]
+},
+"general": {
+"phonetic": "[ˈdʒenərəl]",
+"example": "The general ordered his soldiers to move before sunrise.",
+"synonyms": [
+"commander",
+"chief"
+]
+},
+"admiral": {
+"phonetic": "[ˈædmərəl]",
+"example": "The admiral stood on the deck and watched the ships.",
+"synonyms": [
+"commander"
+]
+},
+"edge": {
+"phonetic": "[edʒ]",
+"example": "Be careful, because the edge of this knife is very sharp.",
+"synonyms": [
+"border",
+"rim",
+"margin",
+"side"
+]
+},
+"biology": {
+"phonetic": "[baɪˈɑːlədʒi]",
+"example": "Our biology teacher showed us plant cells under a microscope."
+},
+"danger": {
+"phonetic": "[ˈdeɪndʒər]",
+"example": "The old bridge is in danger of falling down soon.",
+"synonyms": [
+"risk",
+"peril",
+"hazard",
+"threat"
+]
+},
+"advice": {
+"phonetic": "[ædˈvaɪs]",
+"example": "My brother gave me useful advice before the big test.",
+"synonyms": [
+"counsel",
+"suggestion",
+"guidance",
+"tip"
+]
+},
+"practice": {
+"phonetic": "[ˈpræktəs]",
+"example": "Mina practices the piano for an hour after dinner.",
+"synonyms": [
+"train",
+"rehearse",
+"drill",
+"exercise"
+]
+},
+"mammal": {
+"phonetic": "[ˈmæməl]",
+"example": "A whale is a mammal, not a fish, our teacher explained."
+},
+"grade": {
+"phonetic": "[ɡreɪd]",
+"example": "Tom moved up to the third grade this spring.",
+"synonyms": [
+"level",
+"rank",
+"year",
+"score"
+]
+},
+"score": {
+"phonetic": "[skɔːr]",
+"example": "Her math score was higher than she had expected.",
+"synonyms": [
+"point",
+"mark",
+"grade",
+"result"
+]
+},
+"pause": {
+"phonetic": "[pɔːz]",
+"example": "There was a short pause before the music started again.",
+"synonyms": [
+"stop",
+"break",
+"halt",
+"hesitate"
+]
+},
+"pronunciation": {
+"phonetic": "[proʊnʌnsɪˈeɪʃən]",
+"example": "His English pronunciation improved after listening to the radio daily.",
+"synonyms": [
+"accent"
+]
+},
+"stress": {
+"phonetic": "[stres]",
+"example": "The stress of the final match made his hands shake.",
+"synonyms": [
+"pressure",
+"strain",
+"tension"
+]
+},
+"contest": {
+"phonetic": "[ˈkɑːntest]",
+"example": "The contest between the two teams lasted until the last minute.",
+"synonyms": [
+"competition",
+"match",
+"tournament"
+]
+},
+"horizon": {
+"phonetic": "[hərˈaɪzən]",
+"example": "We watched the sun sink slowly below the horizon."
+},
+"principal": {
+"phonetic": "[ˈprɪnsəpəl]",
+"example": "Rice is the principal food in many Asian countries.",
+"synonyms": [
+"main",
+"chief",
+"leading",
+"primary"
+]
+},
+"might": {
+"phonetic": "[maɪt]",
+"example": "He pushed the heavy door open with all his might.",
+"synonyms": [
+"power",
+"strength",
+"force"
+]
+},
+"trouble": {
+"phonetic": "[ˈtrʌbəl]",
+"example": "My parents went through much trouble to raise five children.",
+"synonyms": [
+"problem",
+"worry",
+"difficulty"
+]
+},
+"scar": {
+"phonetic": "[skɑːr]",
+"example": "A small scar still remains on his left knee.",
+"synonyms": [
+"mark",
+"blemish"
+]
+},
+"balance": {
+"phonetic": "[ˈbæləns]",
+"example": "The cat walked along the fence without losing its balance.",
+"synonyms": [
+"stability",
+"harmony",
+"steadiness"
+]
+},
+"proverb": {
+"phonetic": "[ˈprɑːvərb]",
+"example": "My grandfather often repeats an old proverb about hard work.",
+"synonyms": [
+"saying",
+"maxim",
+"adage"
+]
+},
+"semester": {
+"phonetic": "[səˈmestər]",
+"example": "We have three big exams during the second semester this year.",
+"synonyms": [
+"term"
+]
+},
+"election": {
+"phonetic": "[ɪˈlekʃən]",
+"example": "Students voted for a new class leader in the election.",
+"synonyms": [
+"vote",
+"poll",
+"ballot"
+]
+},
+"inning": {
+"phonetic": "[ˈɪnɪŋ]",
+"example": "Our team scored two runs in the ninth inning."
+},
+"hollow": {
+"phonetic": "[ˈhɑːloʊ]",
+"example": "A squirrel hid its nuts inside the hollow of a tree.",
+"synonyms": [
+"empty",
+"vacant"
+]
+},
+"degree": {
+"phonetic": "[dɪˈɡriː]",
+"example": "Water freezes at zero degrees on the Celsius scale.",
+"synonyms": [
+"level",
+"extent",
+"grade",
+"stage"
+]
+},
+"cemetery": {
+"phonetic": "[ˈseməteri]",
+"example": "We placed white flowers on his grave at the cemetery.",
+"synonyms": [
+"graveyard",
+"burial ground"
+]
+},
+"relay": {
+"phonetic": "[ˈriːleɪ]",
+"example": "Four students ran in the relay and finished in first place."
+},
+"spot": {
+"phonetic": "[spɑːt]",
+"example": "This quiet spot near the river is perfect for lunch.",
+"synonyms": [
+"place",
+"point",
+"location",
+"site"
+]
+},
+"exchange": {
+"phonetic": "[ɪksˈtʃeɪndʒ]",
+"example": "The two students exchanged letters every month for a year.",
+"synonyms": [
+"swap",
+"trade",
+"switch",
+"replace"
+]
+},
+"merchant": {
+"phonetic": "[ˈmɜːrtʃənt]",
+"example": "A rich merchant sold silk and spices in the market.",
+"synonyms": [
+"trader",
+"dealer",
+"seller"
+]
+},
+"saying": {
+"phonetic": "[ˈseɪɪŋ]",
+"example": "An old saying tells us that time is more valuable than gold.",
+"synonyms": [
+"proverb",
+"maxim",
+"adage"
+]
+},
+"refrigerator": {
+"phonetic": "[rəˈfrɪdʒəreɪtər]",
+"example": "Please put the milk back in the refrigerator before it spoils.",
+"synonyms": [
+"fridge",
+"icebox"
+]
+},
+"crack": {
+"phonetic": "[kræk]",
+"example": "A thin crack appeared in the wall after the earthquake.",
+"synonyms": [
+"split",
+"gap",
+"break"
+]
+},
+"judge": {
+"phonetic": "[dʒʌdʒ]",
+"example": "The judge listened carefully to both sides before deciding.",
+"synonyms": [
+"justice",
+"magistrate"
+]
+},
+"slave": {
+"phonetic": "[sleɪv]",
+"example": "Long ago, many people were forced to live as slaves."
+},
+"settler": {
+"phonetic": "[ˈsetələr]",
+"example": "The first settlers built small wooden houses near the river.",
+"synonyms": [
+"colonist",
+"pioneer",
+"immigrant"
+]
+},
+"fare": {
+"phonetic": "[fer]",
+"example": "The bus fare went up by two hundred won yesterday.",
+"synonyms": [
+"charge",
+"fee",
+"cost",
+"price"
+]
+},
+"gesture": {
+"phonetic": "[ˈdʒestʃər]",
+"example": "She made a small gesture to tell us to sit down.",
+"synonyms": [
+"motion",
+"sign",
+"signal"
+]
+},
+"planet": {
+"phonetic": "[ˈplænət]",
+"example": "Mars is the planet closest to Earth after Venus."
+},
+"type": {
+"phonetic": "[taɪp]",
+"example": "What type of music do you usually listen to after school?",
+"synonyms": [
+"kind",
+"sort",
+"category",
+"class"
+]
+},
+"secretary": {
+"phonetic": "[ˈsekrəteri]",
+"example": "The secretary answered the phone and wrote down the message.",
+"synonyms": [
+"assistant",
+"aide",
+"clerk"
+]
+},
+"devil": {
+"phonetic": "[ˈdevəl]",
+"example": "In old stories, the devil often appears as a clever stranger.",
+"synonyms": [
+"demon",
+"fiend"
+]
+},
+"scholar": {
+"phonetic": "[ˈskɑːlər]",
+"example": "The famous scholar spent forty years studying ancient books.",
+"synonyms": [
+"academic",
+"researcher",
+"student"
+]
+},
+"pardon": {
+"phonetic": "[ˈpɑːrdən]",
+"example": "The king granted a pardon to the young thief.",
+"synonyms": [
+"forgiveness",
+"mercy",
+"excuse"
+]
+},
+"kindergarten": {
+"phonetic": "[ˈkɪndərɡɑːrtən]",
+"example": "My little sister goes to kindergarten near our apartment.",
+"synonyms": [
+"preschool",
+"nursery school"
+]
+},
+"detective": {
+"phonetic": "[dɪˈtektɪv]",
+"example": "The detective found a footprint under the broken window.",
+"synonyms": [
+"investigator",
+"sleuth"
+]
+},
+"license": {
+"phonetic": "[ˈlaɪsəns]",
+"example": "You need a license before you can drive a car.",
+"synonyms": [
+"permit",
+"certificate",
+"permission"
+]
+},
+"palace": {
+"phonetic": "[ˈpæləs]",
+"example": "Tourists take photos in front of the old palace gate.",
+"synonyms": [
+"castle",
+"mansion"
+]
+},
+"spade": {
+"phonetic": "[speɪd]",
+"example": "He dug a deep hole with a spade in the garden.",
+"synonyms": [
+"shovel"
+]
+},
+"square": {
+"phonetic": "[skwer]",
+"example": "Draw a square and then color each side a different color.",
+"synonyms": [
+"quadrilateral",
+"block"
+]
+},
+"fountain-pen": {
+"phonetic": "[ˈfaʊntən pen]",
+"example": "My uncle still writes long letters with an old fountain-pen."
+},
+"harvest": {
+"phonetic": "[ˈhɑːrvəst]",
+"example": "Farmers were busy with the rice harvest all last week.",
+"synonyms": [
+"crop",
+"yield",
+"reaping"
+]
+},
+"tool": {
+"phonetic": "[tuːl]",
+"example": "A hammer is the right tool for this small job.",
+"synonyms": [
+"instrument",
+"device",
+"implement",
+"utensil"
+]
+},
+"sword": {
+"phonetic": "[sɔːrd]",
+"example": "The knight in the picture holds a long silver sword.",
+"synonyms": [
+"blade",
+"saber"
+]
+},
+"magazine": {
+"phonetic": "[ˈmæɡəzɪn]",
+"example": "She reads a science magazine on the subway every morning.",
+"synonyms": [
+"journal",
+"periodical"
+]
+},
+"stadium": {
+"phonetic": "[ˈsteɪdɪəm]",
+"example": "Thousands of fans filled the stadium before the game started.",
+"synonyms": [
+"arena",
+"field",
+"ground"
+]
+},
+"care": {
+"phonetic": "[ker]",
+"example": "She left home without a care about the cold weather.",
+"synonyms": [
+"concern",
+"attention",
+"caution",
+"worry"
+]
+},
+"beauty": {
+"phonetic": "[ˈbjuːti]",
+"example": "The beauty of the mountain in autumn surprised every visitor.",
+"synonyms": [
+"loveliness",
+"charm",
+"grace"
+]
+},
+"museum": {
+"phonetic": "[mjuˈziːəm]",
+"example": "Our class visited a history museum during the field trip.",
+"synonyms": [
+"gallery"
+]
+},
+"sentence": {
+"phonetic": "[ˈsentəns]",
+"example": "Write one sentence about your favorite season in English.",
+"synonyms": [
+"statement",
+"phrase"
+]
+},
+"memory": {
+"phonetic": "[ˈmeməri]",
+"example": "I still have a clear memory of my first bicycle.",
+"synonyms": [
+"recollection",
+"remembrance"
+]
+},
+"delight": {
+"phonetic": "[dɪˈlaɪt]",
+"example": "The children shouted with delight when the snow began falling.",
+"synonyms": [
+"joy",
+"pleasure",
+"happiness"
+]
+},
+"passenger": {
+"phonetic": "[ˈpæsəndʒər]",
+"example": "The last passenger got off the train around midnight.",
+"synonyms": [
+"traveler",
+"rider",
+"commuter"
+]
+},
+"skill": {
+"phonetic": "[skɪl]",
+"example": "Cooking well takes skill that only comes with long training.",
+"synonyms": [
+"ability",
+"technique",
+"talent"
+]
+},
+"journey": {
+"phonetic": "[ˈdʒɜːrni]",
+"example": "Their journey to the mountain village took almost eight hours.",
+"synonyms": [
+"trip",
+"travel",
+"voyage"
+]
+},
+"ceremony": {
+"phonetic": "[ˈserəmoʊni]",
+"example": "The opening ceremony began with a song by the students.",
+"synonyms": [
+"ritual",
+"rite",
+"service"
+]
+},
+"hobby": {
+"phonetic": "[ˈhɑːbi]",
+"example": "Collecting old coins has been my hobby since elementary school.",
+"synonyms": [
+"pastime",
+"pursuit",
+"interest"
+]
+},
+"president": {
+"phonetic": "[ˈprezədent]",
+"example": "The president spoke to the nation on television last night.",
+"synonyms": [
+"leader",
+"head of state",
+"chairman"
+]
+},
+"address": {
+"phonetic": "[ˈædres]",
+"example": "Write your name and address clearly on this form.",
+"synonyms": [
+"location",
+"residence"
+]
+},
+"continent": {
+"phonetic": "[ˈkɑːntənənt]",
+"example": "Africa is a continent with many different languages and cultures.",
+"synonyms": [
+"landmass",
+"mainland"
+]
+},
+"mankind": {
+"phonetic": "[ˈmænˈkaɪnd]",
+"example": "Fire changed the way mankind lived thousands of years ago.",
+"synonyms": [
+"humanity",
+"humankind",
+"humans",
+"people"
+]
+},
+"patient": {
+"phonetic": "[ˈpeɪʃənt]",
+"example": "The nurse asked the patient to rest for two days."
+},
+"site": {
+"phonetic": "[saɪt]",
+"example": "They chose a flat site near the road for the school.",
+"synonyms": [
+"location",
+"place",
+"spot",
+"ground"
+]
+},
+"marble": {
+"phonetic": "[ˈmɑːrbəl]",
+"example": "The floor of the hall was made of cold white marble."
+},
+"stem": {
+"phonetic": "[stem]",
+"example": "Someone cut the flower's stem too short for the vase.",
+"synonyms": [
+"stalk",
+"trunk"
+]
+},
+"slip": {
+"phonetic": "[slɪp]",
+"example": "One slip on the icy stairs can hurt you badly.",
+"synonyms": [
+"slide",
+"glide",
+"skid"
+]
+},
+"torch": {
+"phonetic": "[tɔːrtʃ]",
+"example": "He held a burning torch to light the dark cave.",
+"synonyms": [
+"lantern",
+"flare"
+]
+},
+"composer": {
+"phonetic": "[kəmˈpoʊzər]",
+"example": "That composer wrote beautiful music before he turned twenty.",
+"synonyms": [
+"songwriter",
+"musician",
+"writer"
+]
+},
+"invader": {
+"phonetic": "[ɪnˈveɪdər]",
+"example": "The villagers hid in the forest when the invaders arrived.",
+"synonyms": [
+"intruder",
+"attacker",
+"raider"
+]
+},
+"trick": {
+"phonetic": "[trɪk]",
+"example": "The fox used a clever trick to get the cheese.",
+"synonyms": [
+"scheme",
+"plot",
+"trap"
+]
+},
+"flight": {
+"phonetic": "[flaɪt]",
+"example": "The flight from Seoul to the island takes about one hour.",
+"synonyms": [
+"flying",
+"trip"
+]
+},
+"castle": {
+"phonetic": "[ˈkæsəl]",
+"example": "An old stone castle stands on top of the hill.",
+"synonyms": [
+"fortress",
+"stronghold"
+]
+},
+"envelope": {
+"phonetic": "[ˈenvəloʊp]",
+"example": "She sealed the letter inside a thin white envelope.",
+"synonyms": [
+"cover",
+"wrapper"
+]
+},
+"pal": {
+"phonetic": "[pæl]",
+"example": "Tom has been my closest pal since we were seven.",
+"synonyms": [
+"friend",
+"buddy",
+"mate",
+"companion"
+]
+},
+"vacation": {
+"phonetic": "[veɪˈkeɪʃən]",
+"example": "During summer vacation, we stayed at my aunt's country house.",
+"synonyms": [
+"holiday",
+"break",
+"leave"
+]
+},
+"desert": {
+"phonetic": "[ˈdezərt]",
+"example": "Very few plants can live in such a dry desert.",
+"synonyms": [
+"wasteland",
+"wilderness"
+]
+},
+"event": {
+"phonetic": "[ɪˈvent]",
+"example": "The big fire was the biggest event in our small town.",
+"synonyms": [
+"incident",
+"happening",
+"occasion"
+]
+},
+"theater": {
+"phonetic": "[ˈθiːətər]",
+"example": "We watched a funny play at the theater downtown.",
+"synonyms": [
+"cinema",
+"playhouse"
+]
+},
+"stage": {
+"phonetic": "[steɪdʒ]",
+"example": "The singer walked onto the stage and bowed politely.",
+"synonyms": [
+"platform",
+"podium"
+]
+},
+"error": {
+"phonetic": "[ˈerər]",
+"example": "A small error in the address delayed the package.",
+"synonyms": [
+"mistake",
+"fault",
+"slip",
+"blunder"
+]
+},
+"area": {
+"phonetic": "[ˈerɪə]",
+"example": "The area of this classroom is about sixty square meters.",
+"synonyms": [
+"region",
+"zone",
+"district",
+"space"
+]
+},
+"base": {
+"phonetic": "[beɪs]",
+"example": "A strong base is needed before you build the walls.",
+"synonyms": [
+"foundation",
+"bottom",
+"basis"
+]
+},
+"basement": {
+"phonetic": "[ˈbeɪsmənt]",
+"example": "They keep old bikes and boxes down in the basement.",
+"synonyms": [
+"cellar"
+]
+},
+"evil": {
+"phonetic": "[ˈiːvəl]",
+"example": "In many old stories, good always wins over evil.",
+"synonyms": [
+"wicked",
+"bad",
+"wrong"
+]
+},
+"atom": {
+"phonetic": "[ˈætəm]",
+"example": "Everything around us is made of tiny things called atoms."
+},
+"poet": {
+"phonetic": "[ˈpoʊət]",
+"example": "The young poet read her new poem in front of everyone.",
+"synonyms": [
+"writer",
+"versifier"
+]
+},
+"petal": {
+"phonetic": "[ˈpetəl]",
+"example": "A soft pink petal fell from the flower onto my hand."
+},
+"chance": {
+"phonetic": "[tʃæns]",
+"example": "This is your last chance to join the school band.",
+"synonyms": [
+"opportunity",
+"possibility",
+"luck"
+]
+},
+"mind": {
+"phonetic": "[maɪnd]",
+"example": "Nobody knows what is going on in his mind right now.",
+"synonyms": [
+"heart",
+"spirit",
+"thought"
+]
+},
+"climate": {
+"phonetic": "[ˈklaɪmət]",
+"example": "The climate in that country is warm and rainy all year.",
+"synonyms": [
+"weather"
+]
+},
+"suburb": {
+"phonetic": "[ˈsʌbərb]",
+"example": "My uncle moved to a quiet suburb outside the big city.",
+"synonyms": [
+"outskirts"
+]
+},
+"throat": {
+"phonetic": "[θroʊt]",
+"example": "After shouting for an hour, my throat hurt and felt dry."
+},
+"voice": {
+"phonetic": "[vɔɪs]",
+"example": "Mina has a beautiful voice, so everyone wants her to sing.",
+"synonyms": [
+"sound",
+"tone",
+"speech"
+]
+},
+"valley": {
+"phonetic": "[ˈvæli]",
+"example": "A small river runs through the green valley between two mountains.",
+"synonyms": [
+"gorge",
+"canyon",
+"dale"
+]
+},
+"puritan": {
+"phonetic": "[ˈpjʊrətən]",
+"example": "The puritan family prayed together every morning before eating breakfast."
+},
+"feather": {
+"phonetic": "[ˈfeðər]",
+"example": "A white feather from the bird floated down to the ground."
+},
+"amateur": {
+"phonetic": "[ˈæmətɜːr]",
+"example": "He is only an amateur, but he plays the guitar wonderfully.",
+"synonyms": [
+"beginner",
+"nonprofessional",
+"novice"
+]
+},
+"nation": {
+"phonetic": "[ˈneɪʃən]",
+"example": "Every nation has its own flag, language, and special holidays.",
+"synonyms": [
+"country",
+"state",
+"land"
+]
+},
+"puzzle": {
+"phonetic": "[ˈpʌzəl]",
+"example": "Nobody could answer the strange puzzle the old man asked.",
+"synonyms": [
+"riddle",
+"mystery",
+"brainteaser"
+]
+},
+"riddle": {
+"phonetic": "[ˈrɪdəl]",
+"example": "Jisu solved the riddle in less than one minute.",
+"synonyms": [
+"puzzle",
+"mystery",
+"brainteaser"
+]
+},
+"rear": {
+"phonetic": "[rɪr]",
+"example": "The bathroom is at the rear of this old building.",
+"synonyms": [
+"back",
+"hind",
+"raise"
+]
+},
+"battle": {
+"phonetic": "[ˈbætəl]",
+"example": "Many brave soldiers died in that long battle near the river.",
+"synonyms": [
+"fight",
+"combat",
+"war",
+"clash"
+]
+},
+"laundry": {
+"phonetic": "[ˈlɔːndri]",
+"example": "I took my father's coat to the laundry near the station.",
+"synonyms": [
+"washing",
+"wash"
+]
+},
+"shower": {
+"phonetic": "[ˈʃaʊər]",
+"example": "A sudden shower made all the students run inside the building.",
+"synonyms": [
+"wash",
+"bathe"
+]
+},
+"navy": {
+"phonetic": "[ˈneɪvi]",
+"example": "His older brother joined the navy and now sails the ocean.",
+"synonyms": [
+"fleet"
+]
+},
+"mars": {
+"phonetic": "[mɑːrz]",
+"example": "Scientists hope to send people to Mars in the near future."
+},
+"gallery": {
+"phonetic": "[ˈɡæləri]",
+"example": "We saw many famous paintings at the gallery last Sunday.",
+"synonyms": [
+"museum",
+"showroom"
+]
+},
+"guest": {
+"phonetic": "[ɡest]",
+"example": "My mother cooked a special dinner for our guest from Busan.",
+"synonyms": [
+"visitor",
+"caller"
+]
+},
+"folk": {
+"phonetic": "[foʊk]",
+"example": "The folk in that small village are friendly and very kind.",
+"synonyms": [
+"people",
+"family"
+]
+},
+"problem": {
+"phonetic": "[ˈprɑːbləm]",
+"example": "Tom could not solve the math problem without his teacher's help.",
+"synonyms": [
+"trouble",
+"issue",
+"difficulty"
+]
+},
+"jewel": {
+"phonetic": "[ˈdʒuːəl]",
+"example": "The queen wore a bright jewel around her thin neck.",
+"synonyms": [
+"gem",
+"gemstone"
+]
+},
+"garage": {
+"phonetic": "[ɡərˈɑːʒ]",
+"example": "Dad parks our car in the garage every single night."
+},
+"fault": {
+"phonetic": "[fɔːlt]",
+"example": "Being a little shy is not a serious fault at all.",
+"synonyms": [
+"mistake",
+"error",
+"flaw",
+"defect"
+]
+},
+"lantern": {
+"phonetic": "[ˈlæntərn]",
+"example": "We carried a small lantern along the dark mountain path.",
+"synonyms": [
+"lamp",
+"light"
+]
+},
+"import": {
+"phonetic": "[ɪmˈpɔːrt]",
+"example": "Most of the oil we use is an import from abroad."
+},
+"angle": {
+"phonetic": "[ˈæŋɡəl]",
+"example": "The math teacher asked us to measure the angle of each corner.",
+"synonyms": [
+"corner",
+"bend",
+"slant"
+]
+},
+"match": {
+"phonetic": "[mætʃ]",
+"example": "Our class won the soccer match by two goals yesterday.",
+"synonyms": [
+"game",
+"contest",
+"competition",
+"bout"
+]
+},
+"stripe": {
+"phonetic": "[straɪp]",
+"example": "His shirt had a wide blue stripe across the front.",
+"synonyms": [
+"band",
+"streak",
+"line"
+]
+},
+"pulse": {
+"phonetic": "[pʌls]",
+"example": "The nurse checked my pulse and said it was normal.",
+"synonyms": [
+"heartbeat",
+"throb",
+"beat"
+]
+},
+"powder": {
+"phonetic": "[ˈpaʊdər]",
+"example": "Mix the white powder with warm water and drink it slowly.",
+"synonyms": [
+"dust",
+"granules"
+]
+},
+"flood": {
+"phonetic": "[flʌd]",
+"example": "The heavy rain caused a flood that covered the whole town.",
+"synonyms": [
+"deluge",
+"overflow",
+"downpour"
+]
+},
+"bush": {
+"phonetic": "[bʊʃ]",
+"example": "A rabbit hid behind the thick bush next to our house.",
+"synonyms": [
+"shrub",
+"thicket"
+]
+},
+"branch": {
+"phonetic": "[bræntʃ]",
+"example": "A bird built its nest on the highest branch of the tree.",
+"synonyms": [
+"limb",
+"twig",
+"bough"
+]
+},
+"hero": {
+"phonetic": "[ˈhɪroʊ]",
+"example": "The firefighter became a hero after saving three young children.",
+"synonyms": [
+"champion",
+"idol"
+]
+},
+"heaven": {
+"phonetic": "[ˈhevən]",
+"example": "Bright stars filled the heaven above the quiet countryside.",
+"synonyms": [
+"sky",
+"paradise"
+]
+},
+"exit": {
+"phonetic": "[ˈeɡzɪt]",
+"example": "When the movie ended, everyone walked toward the nearest exit.",
+"synonyms": [
+"outlet",
+"doorway",
+"gateway"
+]
+},
+"beast": {
+"phonetic": "[biːst]",
+"example": "A huge beast lived deep inside the dark forest.",
+"synonyms": [
+"animal",
+"creature",
+"brute"
+]
+},
+"century": {
+"phonetic": "[ˈsentʃəri]",
+"example": "People traveled by horse more than a century ago."
+},
+"coeducation": {
+"phonetic": "[koʊedʒəˈkeɪʃən]",
+"example": "Our school changed to coeducation, so boys and girls study together."
+},
+"twin": {
+"phonetic": "[twɪn]",
+"example": "Jisu is my twin, but we look completely different.",
+"synonyms": [
+"double",
+"counterpart"
+]
+},
+"wound": {
+"phonetic": "[waʊnd]",
+"example": "The doctor washed the wound on his knee very carefully.",
+"synonyms": [
+"injury",
+"cut",
+"hurt"
+]
+},
+"metal": {
+"phonetic": "[ˈmetəl]",
+"example": "This box is made of metal, so it feels cold and heavy."
+},
+"insect": {
+"phonetic": "[ˈɪnsekt]",
+"example": "Ants are the most common insect in our school garden.",
+"synonyms": [
+"bug"
+]
+},
+"track": {
+"phonetic": "[træk]",
+"example": "We found the track of a wild animal in the snow.",
+"synonyms": [
+"trail",
+"path",
+"trace",
+"footprint"
+]
+},
+"survive": {
+"phonetic": "[sərˈvaɪv]",
+"example": "My grandmother survived her husband by almost twenty years.",
+"synonyms": [
+"endure",
+"outlive",
+"last"
+]
+},
+"create": {
+"phonetic": "[krɪˈeɪt]",
+"example": "The artist created a beautiful world inside her small painting.",
+"synonyms": [
+"make",
+"produce",
+"invent",
+"form"
+]
+},
+"describe": {
+"phonetic": "[dɪsˈkraɪb]",
+"example": "Can you describe the man you saw near the school gate?",
+"synonyms": [
+"depict",
+"portray",
+"explain"
+]
+},
+"select": {
+"phonetic": "[səˈlekt]",
+"example": "The teacher selected five students for the English speaking contest.",
+"synonyms": [
+"choose",
+"pick",
+"single out"
+]
+},
+"hesitate": {
+"phonetic": "[ˈhezəteɪt]",
+"example": "Don't hesitate to ask questions when you don't understand something.",
+"synonyms": [
+"pause",
+"waver",
+"falter"
+]
+},
+"declare": {
+"phonetic": "[dɪˈkler]",
+"example": "The principal declared that next Monday would be a school holiday.",
+"synonyms": [
+"announce",
+"proclaim",
+"state"
+]
+},
+"struggle": {
+"phonetic": "[ˈstrʌɡəl]",
+"example": "She struggled for years to become a professional dancer.",
+"synonyms": [
+"strive",
+"fight",
+"battle",
+"wrestle"
+]
+},
+"explore": {
+"phonetic": "[ɪksˈplɔːr]",
+"example": "Someday I want to explore the deep forests of South America.",
+"synonyms": [
+"investigate",
+"search",
+"examine"
+]
+},
+"astonish": {
+"phonetic": "[əˈstɑːnɪʃ]",
+"example": "His perfect score on the test astonished the whole class.",
+"synonyms": [
+"amaze",
+"surprise",
+"shock",
+"startle"
+]
+},
+"disappoint": {
+"phonetic": "[dɪsəˈpɔɪnt]",
+"example": "I don't want to disappoint my parents again this semester.",
+"synonyms": [
+"let down",
+"dissatisfy",
+"fail"
+]
+},
+"attract": {
+"phonetic": "[əˈtrækt]",
+"example": "Bright flowers attract bees and butterflies during the warm spring.",
+"synonyms": [
+"draw",
+"charm",
+"appeal to",
+"lure"
+]
+},
+"celebrate": {
+"phonetic": "[ˈseləbreɪt]",
+"example": "We celebrated my sister's birthday with a big chocolate cake.",
+"synonyms": [
+"commemorate",
+"honor",
+"praise"
+]
+},
+"explode": {
+"phonetic": "[ɪksˈploʊd]",
+"example": "The workers exploded the huge rock to build a new road.",
+"synonyms": [
+"burst",
+"blow up",
+"blast"
+]
+},
+"include": {
+"phonetic": "[ɪnˈkluːd]",
+"example": "The ticket price includes lunch and a free guide book.",
+"synonyms": [
+"contain",
+"involve",
+"cover"
+]
+},
+"protect": {
+"phonetic": "[prəˈtekt]",
+"example": "Wear this helmet to protect your head while riding a bike.",
+"synonyms": [
+"guard",
+"defend",
+"shield"
+]
+},
+"introduce": {
+"phonetic": "[ɪntrəˈduːs]",
+"example": "Let me introduce my new friend from Canada to you.",
+"synonyms": [
+"present",
+"bring in",
+"acquaint"
+]
+},
+"produce": {
+"phonetic": "[prəˈduːs]",
+"example": "That factory produces more than a thousand bicycles every month.",
+"synonyms": [
+"make",
+"create",
+"manufacture"
+]
+},
+"chase": {
+"phonetic": "[tʃeɪs]",
+"example": "Our dog chased the cat around the yard for ten minutes.",
+"synonyms": [
+"pursue",
+"follow",
+"run after",
+"hunt"
+]
+},
+"scratch": {
+"phonetic": "[skrætʃ]",
+"example": "The angry cat scratched my arm when I picked it up.",
+"synonyms": [
+"scrape",
+"claw",
+"scrabble"
+]
+},
+"crash": {
+"phonetic": "[kræʃ]",
+"example": "The loud crash of two cars woke everyone in the neighborhood.",
+"synonyms": [
+"collision",
+"smash",
+"wreck"
+]
+},
+"stare": {
+"phonetic": "[ster]",
+"example": "The little boy stared at the toy in the shop window.",
+"synonyms": [
+"gaze",
+"glare",
+"gape"
+]
+},
+"gaze": {
+"phonetic": "[ɡeɪz]",
+"example": "They gazed at the stars quietly from the school rooftop.",
+"synonyms": [
+"stare",
+"look",
+"gape"
+]
+},
+"scare": {
+"phonetic": "[sker]",
+"example": "The sudden thunder scared my little sister very badly.",
+"synonyms": [
+"frighten",
+"terrify",
+"startle"
+]
+},
+"grab": {
+"phonetic": "[ɡræb]",
+"example": "He grabbed my hand and pulled me away from the road.",
+"synonyms": [
+"seize",
+"grasp",
+"snatch",
+"clutch"
+]
+},
+"guard": {
+"phonetic": "[ɡɑːrd]",
+"example": "Two large dogs guard the farm during the long night.",
+"synonyms": [
+"protect",
+"defend",
+"watch over"
+]
+},
+"discuss": {
+"phonetic": "[dɪˈskʌs]",
+"example": "We discussed the school festival plan for almost two hours.",
+"synonyms": [
+"debate",
+"argue",
+"consider"
+]
+},
+"shrug": {
+"phonetic": "[ʃrʌɡ]",
+"example": "When I asked about it, he just shrugged and said nothing."
+},
+"sniff": {
+"phonetic": "[snɪf]",
+"example": "The puppy sniffed the box before slowly walking closer.",
+"synonyms": [
+"smell",
+"inhale",
+"snuff"
+]
+},
+"scream": {
+"phonetic": "[skriːm]",
+"example": "She screamed loudly when a spider landed on her shoulder.",
+"synonyms": [
+"shriek",
+"yell",
+"shout"
+]
+},
+"rid": {
+"phonetic": "[rɪd]",
+"example": "Cleaning every week will rid your room of dust and smells.",
+"synonyms": [
+"clear",
+"free",
+"remove"
+]
+},
+"surround": {
+"phonetic": "[sərˈaʊnd]",
+"example": "Tall trees surround the little house on all four sides.",
+"synonyms": [
+"encircle",
+"enclose",
+"ring"
+]
+},
+"cleave": {
+"phonetic": "[kliːv]",
+"example": "The woodcutter cleaved the log into two equal pieces.",
+"synonyms": [
+"split",
+"stick",
+"cling",
+"chop"
+]
+},
+"carve": {
+"phonetic": "[kɑːrv]",
+"example": "Grandfather carved my name into a small piece of wood.",
+"synonyms": [
+"engrave",
+"cut",
+"sculpt"
+]
+},
+"invent": {
+"phonetic": "[ɪnˈvent]",
+"example": "A young engineer invented a machine that cleans dirty river water.",
+"synonyms": [
+"create",
+"devise",
+"design"
+]
+},
+"search": {
+"phonetic": "[sɜːrtʃ]",
+"example": "The police searched the whole park for the missing boy.",
+"synonyms": [
+"look for",
+"seek",
+"hunt",
+"explore"
+]
+},
+"abuse": {
+"phonetic": "[əˈbjuːs]",
+"example": "Some people abuse their power and hurt others around them.",
+"synonyms": [
+"misuse",
+"overuse",
+"mistreat"
+]
+},
+"owe": {
+"phonetic": "[oʊ]",
+"example": "I owe my success to my parents and my kind teachers."
+},
+"bless": {
+"phonetic": "[bles]",
+"example": "The old woman blessed the children before they left home.",
+"synonyms": [
+"praise",
+"consecrate"
+]
+},
+"graduate": {
+"phonetic": "[ˈɡrædʒəwət]",
+"example": "My cousin graduated from middle school last February.",
+"synonyms": [
+"finish",
+"complete"
+]
+},
+"collect": {
+"phonetic": "[kəˈlekt]",
+"example": "My brother collects old coins from many different countries.",
+"synonyms": [
+"gather",
+"assemble",
+"accumulate"
+]
+},
+"upset": {
+"phonetic": "[əpˈset]",
+"example": "The playful cat upset a glass of milk on the table.",
+"synonyms": [
+"angry",
+"annoyed",
+"unhappy",
+"disturbed"
+]
+},
+"arrest": {
+"phonetic": "[ərˈest]",
+"example": "The police arrested the thief near the subway station.",
+"synonyms": [
+"capture",
+"catch",
+"detain",
+"seize"
+]
+},
+"prove": {
+"phonetic": "[pruːv]",
+"example": "He proved his answer was right by showing every step.",
+"synonyms": [
+"demonstrate",
+"show",
+"confirm",
+"verify"
+]
+},
+"yell": {
+"phonetic": "[jel]",
+"example": "The coach yelled at the players to run much faster.",
+"synonyms": [
+"shout",
+"scream",
+"cry",
+"holler"
+]
+},
+"howl": {
+"phonetic": "[haʊl]",
+"example": "The dogs howled all night, so nobody could sleep well.",
+"synonyms": [
+"wail",
+"cry",
+"yell",
+"bay"
+]
+},
+"halt": {
+"phonetic": "[hɔːlt]",
+"example": "The bus halted suddenly when a child ran into the street.",
+"synonyms": [
+"stop",
+"cease",
+"pause"
+]
+},
+"leak": {
+"phonetic": "[liːk]",
+"example": "Water is leaking from the pipe under the kitchen sink.",
+"synonyms": [
+"drip",
+"seep"
+]
+},
+"behave": {
+"phonetic": "[bɪˈheɪv]",
+"example": "Please behave politely when you meet your new teacher tomorrow.",
+"synonyms": [
+"act",
+"conduct",
+"perform"
+]
+},
+"wrap": {
+"phonetic": "[ræp]",
+"example": "Mina wrapped the birthday gift in shiny red paper.",
+"synonyms": [
+"cover",
+"fold",
+"bundle",
+"pack"
+]
+},
+"locate": {
+"phonetic": "[ˈloʊkeɪt]",
+"example": "Our school is located between a park and a small library.",
+"synonyms": [
+"place",
+"situate",
+"find",
+"position"
+]
+},
+"charge": {
+"phonetic": "[tʃɑːrdʒ]",
+"example": "The repair shop charged me twenty dollars for fixing my bike.",
+"synonyms": [
+"bill",
+"demand",
+"ask"
+]
+},
+"review": {
+"phonetic": "[rɪˈvjuː]",
+"example": "I review today's English words before I go to bed.",
+"synonyms": [
+"revise",
+"examine",
+"study"
+]
+},
+"refuse": {
+"phonetic": "[rəˈfjuːz]",
+"example": "He refused my invitation because he had to study math.",
+"synonyms": [
+"reject",
+"decline",
+"turn down"
+]
+},
+"complain": {
+"phonetic": "[kəmˈpleɪn]",
+"example": "The students complained about the cold water in the swimming pool.",
+"synonyms": [
+"grumble",
+"protest",
+"object"
+]
+},
+"remain": {
+"phonetic": "[rɪˈmeɪn]",
+"example": "Only a few cookies remained on the plate after lunch.",
+"synonyms": [
+"stay",
+"be left",
+"last",
+"continue"
+]
+},
+"warn": {
+"phonetic": "[wɔːrn]",
+"example": "The teacher warned us not to run down the stairs.",
+"synonyms": [
+"caution",
+"alert",
+"advise"
+]
+},
+"bend": {
+"phonetic": "[bend]",
+"example": "Bend your knees slowly before you jump over the rope.",
+"synonyms": [
+"curve",
+"bow",
+"twist",
+"fold"
+]
+},
+"suffer": {
+"phonetic": "[ˈsʌfər]",
+"example": "Many farmers suffered great damage from the storm last summer.",
+"synonyms": [
+"endure",
+"undergo",
+"bear",
+"experience"
+]
+},
+"whisper": {
+"phonetic": "[ˈwɪspər]",
+"example": "She whispered the answer into my ear during the quiz.",
+"synonyms": [
+"murmur",
+"mutter"
+]
+},
+"prepare": {
+"phonetic": "[prɪˈper]",
+"example": "We prepared sandwiches and juice for the school picnic.",
+"synonyms": [
+"get ready",
+"arrange",
+"organize",
+"set up"
+]
+},
+"roar": {
+"phonetic": "[rɔːr]",
+"example": "The lion roared loudly and the visitors stepped back quickly.",
+"synonyms": [
+"growl",
+"bellow",
+"howl",
+"thunder"
+]
+},
+"float": {
+"phonetic": "[floʊt]",
+"example": "A wooden boat floated slowly down the wide river.",
+"synonyms": [
+"drift",
+"sail",
+"hover"
+]
+},
+"drag": {
+"phonetic": "[dræɡ]",
+"example": "Tom dragged the heavy box across the classroom floor.",
+"synonyms": [
+"pull",
+"haul",
+"tow",
+"tug"
+]
+},
+"overhear": {
+"phonetic": "[ˈoʊvərˈhiːr]",
+"example": "I overheard my parents planning a surprise trip to Jeju.",
+"synonyms": [
+"eavesdrop",
+"catch",
+"listen in"
+]
+},
+"slide": {
+"phonetic": "[slaɪd]",
+"example": "The children slid down the snowy hill on plastic boards.",
+"synonyms": [
+"slip",
+"glide",
+"skid"
+]
+},
+"suck": {
+"phonetic": "[sʌk]",
+"example": "The baby sucked milk from the bottle and soon fell asleep.",
+"synonyms": [
+"sip",
+"absorb"
+]
+},
+"bother": {
+"phonetic": "[ˈbɑːðər]",
+"example": "Stop bothering your sister while she is doing her homework.",
+"synonyms": [
+"annoy",
+"disturb",
+"trouble",
+"upset"
+]
+},
+"deal": {
+"phonetic": "[diːl]",
+"example": "He dealt five cards to each player around the table.",
+"synonyms": [
+"trade",
+"handle",
+"distribute"
+]
+},
+"treat": {
+"phonetic": "[triːt]",
+"example": "You should treat these old photos carefully because they tear easily.",
+"synonyms": [
+"handle",
+"deal with",
+"manage"
+]
+},
+"destroy": {
+"phonetic": "[dɪsˈtrɔɪ]",
+"example": "The strong typhoon destroyed many houses near the coast.",
+"synonyms": [
+"ruin",
+"wreck",
+"demolish",
+"damage"
+]
+},
+"accept": {
+"phonetic": "[ækˈsept]",
+"example": "She accepted my apology and smiled at me again.",
+"synonyms": [
+"receive",
+"take",
+"admit"
+]
+},
+"depend": {
+"phonetic": "[dɪˈpend]",
+"example": "Baby birds depend on their parents for food and warmth.",
+"synonyms": [
+"rely",
+"count",
+"lean",
+"trust"
+]
+},
+"nod": {
+"phonetic": "[nɑːd]",
+"example": "Jisu nodded quietly when the teacher asked about her homework."
+},
+"remove": {
+"phonetic": "[rɪˈmuːv]",
+"example": "Please remove those chairs to the back of the room.",
+"synonyms": [
+"take away",
+"eliminate",
+"delete",
+"withdraw"
+]
+},
+"beat": {
+"phonetic": "[biːt]",
+"example": "The angry man beat the door with his big fist.",
+"synonyms": [
+"hit",
+"strike",
+"pound"
+]
+},
+"clap": {
+"phonetic": "[klæp]",
+"example": "The teacher clapped her hands twice to get our attention.",
+"synonyms": [
+"applaud",
+"slap"
+]
+},
+"feed": {
+"phonetic": "[fiːd]",
+"example": "I feed my dog twice a day, morning and evening.",
+"synonyms": [
+"nourish",
+"nurture"
+]
+},
+"obtain": {
+"phonetic": "[əbˈteɪn]",
+"example": "She obtained a free concert ticket from her older brother.",
+"synonyms": [
+"get",
+"gain",
+"acquire"
+]
+},
+"drown": {
+"phonetic": "[draʊn]",
+"example": "A big wave almost drowned two swimmers near the rocks.",
+"synonyms": [
+"sink",
+"submerge"
+]
+},
+"remind": {
+"phonetic": "[rɪˈmaɪnd]",
+"example": "This old song reminds me of my elementary school days.",
+"synonyms": [
+"prompt"
+]
+},
+"occur": {
+"phonetic": "[əˈkɜːr]",
+"example": "The accident occurred early in the morning near the bridge.",
+"synonyms": [
+"happen",
+"arise",
+"appear"
+]
+},
+"ache": {
+"phonetic": "[eɪk]",
+"example": "My legs ached badly after climbing the mountain all day.",
+"synonyms": [
+"hurt",
+"throb",
+"sting"
+]
+},
+"repeat": {
+"phonetic": "[rɪˈpiːt]",
+"example": "Could you repeat the question? I didn't hear it clearly.",
+"synonyms": [
+"say again",
+"restate",
+"redo"
+]
+},
+"attend": {
+"phonetic": "[əˈtend]",
+"example": "My father attended my graduation ceremony last Friday morning.",
+"synonyms": [
+"go to",
+"join",
+"be present at"
+]
+},
+"sigh": {
+"phonetic": "[saɪ]",
+"example": "She sighed deeply when she saw her low test score.",
+"synonyms": [
+"groan",
+"breathe out"
+]
+},
+"pray": {
+"phonetic": "[preɪ]",
+"example": "Grandmother prayed for our family's health every single morning.",
+"synonyms": [
+"beg",
+"plead",
+"wish"
+]
+},
+"press": {
+"phonetic": "[pres]",
+"example": "Press this red button if the elevator suddenly stops moving.",
+"synonyms": [
+"push",
+"squeeze",
+"compress"
+]
+},
+"bear": {
+"phonetic": "[ber]",
+"example": "My grandmother bore six children in a small country village."
+},
+"follow": {
+"phonetic": "[ˈfɑːloʊ]",
+"example": "The little puppy followed me all the way home.",
+"synonyms": [
+"chase",
+"pursue",
+"obey"
+]
+},
+"hate": {
+"phonetic": "[heɪt]",
+"example": "I don't hate him, but I still cannot forgive him.",
+"synonyms": [
+"dislike",
+"detest",
+"despise"
+]
+},
+"frighten": {
+"phonetic": "[ˈfraɪtən]",
+"example": "The sudden thunder frightened the children playing in the yard.",
+"synonyms": [
+"scare",
+"terrify",
+"alarm"
+]
+},
+"shout": {
+"phonetic": "[ʃaʊt]",
+"example": "Someone shouted my name from the other side of the street.",
+"synonyms": [
+"yell",
+"cry",
+"scream",
+"call out"
+]
+},
+"mention": {
+"phonetic": "[ˈmenʃən]",
+"example": "He mentioned your name during yesterday's class meeting.",
+"synonyms": [
+"say",
+"refer to",
+"state"
+]
+},
+"waste": {
+"phonetic": "[weɪst]",
+"example": "Don't waste your time playing games right before the exam.",
+"synonyms": [
+"squander",
+"misuse",
+"throw away"
+]
+},
+"borrow": {
+"phonetic": "[ˈbɑːroʊ]",
+"example": "May I borrow your umbrella until tomorrow morning?",
+"synonyms": [
+"rent"
+]
+},
+"complete": {
+"phonetic": "[kəmˈpliːt]",
+"example": "The students completed the wall painting in only three days.",
+"synonyms": [
+"finish",
+"accomplish",
+"fulfill",
+"end"
+]
+},
+"excellent": {
+"phonetic": "[ˈeksələnt]",
+"example": "Her speech was excellent, so everyone clapped for a long time.",
+"synonyms": [
+"outstanding",
+"great",
+"superb"
+]
+},
+"competent": {
+"phonetic": "[ˈkɑːmpətɪnt]",
+"example": "We need a competent leader to run the school festival.",
+"synonyms": [
+"capable",
+"able",
+"skilled",
+"qualified"
+]
+},
+"religious": {
+"phonetic": "[rɪˈlɪdʒəs]",
+"example": "That old building is used for religious meetings every Sunday.",
+"synonyms": [
+"spiritual",
+"devout",
+"holy"
+]
+},
+"favorite": {
+"phonetic": "[ˈfeɪvərɪt]",
+"example": "Pizza is my favorite food, and I could eat it daily.",
+"synonyms": [
+"preferred",
+"beloved"
+]
+},
+"entire": {
+"phonetic": "[ɪnˈtaɪər]",
+"example": "The entire class went to the museum by subway.",
+"synonyms": [
+"whole",
+"complete",
+"full",
+"total"
+]
+},
+"primary": {
+"phonetic": "[ˈpraɪmeri]",
+"example": "The primary meaning of this word is quite different today.",
+"synonyms": [
+"original",
+"first",
+"basic"
+]
+},
+"similar": {
+"phonetic": "[ˈsɪmələr]",
+"example": "Your bag looks similar to mine, but the color is different.",
+"synonyms": [
+"alike",
+"like",
+"comparable"
+]
+},
+"precious": {
+"phonetic": "[ˈpreʃəs]",
+"example": "This watch is precious to me because my father gave it.",
+"synonyms": [
+"valuable",
+"priceless",
+"treasured"
+]
+},
+"normal": {
+"phonetic": "[ˈnɔːrməl]",
+"example": "It is normal to feel nervous before a big test.",
+"synonyms": [
+"usual",
+"ordinary",
+"typical"
+]
+},
+"popular": {
+"phonetic": "[ˈpɑːpjələr]",
+"example": "That singer became very popular among middle school students.",
+"synonyms": [
+"well-liked",
+"favorite",
+"common",
+"famous"
+]
+},
+"compulsory": {
+"phonetic": "[kəmˈpʌlsəri]",
+"example": "Wearing a helmet is compulsory when you ride a bike here.",
+"synonyms": [
+"required",
+"mandatory",
+"obligatory"
+]
+},
+"curious": {
+"phonetic": "[ˈkjʊrɪəs]",
+"example": "My little brother is curious about how machines work inside.",
+"synonyms": [
+"interested",
+"inquisitive",
+"questioning"
+]
+},
+"independent": {
+"phonetic": "[ɪndɪˈpendənt]",
+"example": "The country became independent after many years of hard struggle.",
+"synonyms": [
+"self-reliant",
+"free",
+"autonomous"
+]
+},
+"intimate": {
+"phonetic": "[ˈɪntəmət]",
+"example": "Jisu and I have been intimate friends since first grade.",
+"synonyms": [
+"close",
+"familiar",
+"friendly"
+]
+},
+"delicious": {
+"phonetic": "[dɪˈlɪʃəs]",
+"example": "The soup my mother made was warm and delicious.",
+"synonyms": [
+"tasty",
+"yummy",
+"savory"
+]
+},
+"valuable": {
+"phonetic": "[ˈvæljəbəl]",
+"example": "The museum keeps many valuable paintings on the second floor.",
+"synonyms": [
+"precious",
+"priceless",
+"costly"
+]
+},
+"grave": {
+"phonetic": "[ɡreɪv]",
+"example": "The doctor told us about a grave problem with his heart.",
+"synonyms": [
+"serious",
+"severe",
+"critical"
+]
+},
+"elementary": {
+"phonetic": "[eləˈmentri]",
+"example": "This book explains elementary grammar for beginners in simple English.",
+"synonyms": [
+"basic",
+"simple",
+"primary",
+"easy"
+]
+},
+"crazy": {
+"phonetic": "[ˈkreɪzi]",
+"example": "You must be crazy to swim in that cold river.",
+"synonyms": [
+"mad",
+"insane",
+"wild"
+]
+},
+"contrary": {
+"phonetic": "[ˈkɑːntreri]",
+"example": "His opinion was contrary to everything the other members said.",
+"synonyms": [
+"opposite",
+"opposing",
+"reverse"
+]
+},
+"regular": {
+"phonetic": "[ˈreɡjələr]",
+"example": "Regular exercise makes your body stronger and your mind clearer.",
+"synonyms": [
+"normal",
+"usual",
+"steady",
+"routine"
+]
+},
+"social": {
+"phonetic": "[ˈsoʊʃəl]",
+"example": "We studied several social problems in our history class today.",
+"synonyms": [
+"communal",
+"public"
+]
+},
+"straight": {
+"phonetic": "[streɪt]",
+"example": "Draw a straight line from this corner to that one.",
+"synonyms": [
+"direct",
+"level",
+"even"
+]
+},
+"noble": {
+"phonetic": "[ˈnoʊbəl]",
+"example": "Saving a stranger's life is a truly noble action.",
+"synonyms": [
+"honorable",
+"dignified",
+"grand",
+"lofty"
+]
+},
+"anxious": {
+"phonetic": "[ˈæŋkʃəs]",
+"example": "I was anxious about my speech until the very last minute.",
+"synonyms": [
+"worried",
+"nervous",
+"uneasy"
+]
+},
+"international": {
+"phonetic": "[ɪntərˈnæʃənəl]",
+"example": "Our school held an international food festival last weekend.",
+"synonyms": [
+"global",
+"worldwide",
+"multinational"
+]
+},
+"greedy": {
+"phonetic": "[ˈɡriːdi]",
+"example": "The greedy man wanted all the gold for himself.",
+"synonyms": [
+"selfish",
+"grasping",
+"hungry"
+]
+},
+"stupid": {
+"phonetic": "[ˈstuːpəd]",
+"example": "Lying to your parents was a really stupid decision.",
+"synonyms": [
+"foolish",
+"silly",
+"dumb"
+]
+},
+"silly": {
+"phonetic": "[ˈsɪli]",
+"example": "Asking such a silly question made everybody laugh out loud.",
+"synonyms": [
+"foolish",
+"stupid",
+"dumb"
+]
+},
+"lonely": {
+"phonetic": "[ˈloʊnli]",
+"example": "He felt lonely in the new city without any friends.",
+"synonyms": [
+"alone",
+"lonesome",
+"solitary",
+"isolated"
+]
+},
+"dirty": {
+"phonetic": "[ˈdɜːrti]",
+"example": "Wash your dirty hands before you touch the bread.",
+"synonyms": [
+"filthy",
+"messy",
+"unclean",
+"muddy"
+]
+},
+"various": {
+"phonetic": "[ˈverɪəs]",
+"example": "The store sells various kinds of snacks at low prices.",
+"synonyms": [
+"different",
+"diverse",
+"varied"
+]
+},
+"private": {
+"phonetic": "[ˈpraɪvət]",
+"example": "Please don't read my diary because it is a private notebook.",
+"synonyms": [
+"personal",
+"individual",
+"secret"
+]
+},
+"vain": {
+"phonetic": "[veɪn]",
+"example": "All our efforts to save the old tree were vain.",
+"synonyms": [
+"useless",
+"pointless",
+"fruitless",
+"empty"
+]
+},
+"sore": {
+"phonetic": "[sɔːr]",
+"example": "My throat is sore, so I can hardly speak today.",
+"synonyms": [
+"painful",
+"aching",
+"tender"
+]
+},
+"fierce": {
+"phonetic": "[fɪrs]",
+"example": "A fierce dog guarded the gate of the old house.",
+"synonyms": [
+"violent",
+"wild",
+"savage"
+]
+},
+"firm": {
+"phonetic": "[fɜːrm]",
+"example": "She had a firm belief that her son would come back.",
+"synonyms": [
+"solid",
+"hard",
+"steady",
+"stable"
+]
+},
+"solar": {
+"phonetic": "[ˈsoʊlər]",
+"example": "Solar energy can heat the water in our house even in winter."
+},
+"smart": {
+"phonetic": "[smɑːrt]",
+"example": "He looked smart in his new blue school uniform.",
+"synonyms": [
+"clever",
+"bright",
+"intelligent",
+"neat"
+]
+},
+"single": {
+"phonetic": "[ˈsɪŋɡəl]",
+"example": "My uncle is still single and lives alone downtown.",
+"synonyms": [
+"unmarried",
+"unwed"
+]
+},
+"diligent": {
+"phonetic": "[ˈdɪlɪdʒənt]",
+"example": "A diligent student reviews her notes every single evening.",
+"synonyms": [
+"hardworking",
+"industrious"
+]
+},
+"serious": {
+"phonetic": "[ˈsɪrɪəs]",
+"example": "His face turned serious when we talked about the accident.",
+"synonyms": [
+"earnest",
+"grave",
+"solemn"
+]
+},
+"fresh": {
+"phonetic": "[freʃ]",
+"example": "We need fresh ideas to make our club more exciting.",
+"synonyms": [
+"new",
+"recent"
+]
+},
+"empty": {
+"phonetic": "[ˈempti]",
+"example": "She found an empty seat at the back of the bus.",
+"synonyms": [
+"vacant",
+"hollow",
+"bare"
+]
+},
+"mild": {
+"phonetic": "[maɪld]",
+"example": "The weather was mild, so we ate lunch outside together.",
+"synonyms": [
+"gentle",
+"soft",
+"moderate",
+"calm"
+]
+},
+"amazing": {
+"phonetic": "[əˈmeɪzɪŋ]",
+"example": "The magician showed an amazing trick with three silver coins.",
+"synonyms": [
+"surprising",
+"astonishing",
+"incredible",
+"wonderful"
+]
+},
+"charming": {
+"phonetic": "[ˈtʃɑːrmɪŋ]",
+"example": "Her charming smile made everyone in the room feel comfortable.",
+"synonyms": [
+"attractive",
+"lovely",
+"delightful",
+"appealing"
+]
+},
+"boring": {
+"phonetic": "[ˈbɔːrɪŋ]",
+"example": "The movie was so boring that I fell asleep quickly.",
+"synonyms": [
+"dull",
+"tedious",
+"tiresome",
+"uninteresting"
+]
+},
+"giant": {
+"phonetic": "[ˈdʒaɪənt]",
+"example": "A giant tree stands in the middle of our village.",
+"synonyms": [
+"huge",
+"enormous",
+"gigantic"
+]
+},
+"huge": {
+"phonetic": "[hjuːdʒ]",
+"example": "They built a huge stadium near the train station.",
+"synonyms": [
+"enormous",
+"giant",
+"massive"
+]
+},
+"tiny": {
+"phonetic": "[ˈtaɪni]",
+"example": "A tiny insect was walking across my math textbook.",
+"synonyms": [
+"small",
+"little",
+"minute"
+]
+},
+"fair": {
+"phonetic": "[fer]",
+"example": "Our teacher is always fair when she chooses the team leaders.",
+"synonyms": [
+"just",
+"impartial",
+"honest"
+]
+},
+"tough": {
+"phonetic": "[tʌf]",
+"example": "The box is made of tough plastic, so it never breaks.",
+"synonyms": [
+"rough",
+"hard",
+"harsh"
+]
+},
+"foreign": {
+"phonetic": "[ˈfɔːrən]",
+"example": "Many foreign visitors come to our city to see the palace.",
+"synonyms": [
+"overseas",
+"alien",
+"external"
+]
+},
+"modern": {
+"phonetic": "[ˈmɑːdərn]",
+"example": "This modern building looks very different from the old ones nearby.",
+"synonyms": [
+"contemporary",
+"current",
+"up-to-date",
+"new"
+]
+},
+"expensive": {
+"phonetic": "[ɪkˈspensɪv]",
+"example": "I could not buy the jacket because it was too expensive.",
+"synonyms": [
+"costly",
+"pricey",
+"dear"
+]
+},
+"harmful": {
+"phonetic": "[ˈhɑːrmfəl]",
+"example": "Too much sugar is harmful to your teeth and your health.",
+"synonyms": [
+"damaging",
+"dangerous",
+"unhealthy",
+"destructive"
+]
+},
+"calm": {
+"phonetic": "[kɑːm]",
+"example": "The sea was calm, so the small boats went out fishing.",
+"synonyms": [
+"peaceful",
+"quiet",
+"still",
+"relaxed"
+]
+},
+"special": {
+"phonetic": "[ˈspeʃəl]",
+"example": "Mina cooked a special dinner for her father's fiftieth birthday.",
+"synonyms": [
+"particular",
+"unique",
+"unusual"
+]
+},
+"steady": {
+"phonetic": "[ˈstedi]",
+"example": "He kept a steady grip on the rope and climbed up.",
+"synonyms": [
+"firm",
+"stable",
+"constant",
+"solid"
+]
+},
+"hay": {
+"phonetic": "[heɪ]",
+"example": "The farmer stored dry hay in the barn for the winter."
+},
+"revival": {
+"phonetic": "[rɪˈvaɪvəl]",
+"example": "The old song enjoyed a sudden revival among young people.",
+"synonyms": [
+"rebirth",
+"renewal",
+"comeback"
+]
+},
+"million": {
+"phonetic": "[ˈmɪljən]",
+"example": "More than a million people live in this busy port city."
+},
+"crop": {
+"phonetic": "[krɑːp]",
+"example": "Heavy rain destroyed the rice crop in our village last summer.",
+"synonyms": [
+"harvest",
+"produce"
+]
+},
+"shade": {
+"phonetic": "[ʃeɪd]",
+"example": "We ate lunch in the cool shade of a big tree.",
+"synonyms": [
+"shadow",
+"darkness"
+]
+},
+"company": {
+"phonetic": "[ˈkʌmpəni]",
+"example": "I brought my dog along for company on the long walk.",
+"synonyms": [
+"firm",
+"business",
+"corporation"
+]
+},
+"canal": {
+"phonetic": "[kəˈnæl]",
+"example": "Small boats slowly moved along the narrow canal through the town.",
+"synonyms": [
+"waterway",
+"channel",
+"ditch"
+]
+},
+"wagon": {
+"phonetic": "[ˈwæɡən]",
+"example": "Two horses pulled the heavy wagon full of wood uphill.",
+"synonyms": [
+"cart",
+"carriage"
+]
+},
+"fact": {
+"phonetic": "[fækt]",
+"example": "It is a simple fact that plants need water to grow.",
+"synonyms": [
+"truth",
+"reality"
+]
+},
+"joy": {
+"phonetic": "[dʒɔɪ]",
+"example": "Her eyes filled with joy when she opened the birthday present.",
+"synonyms": [
+"delight",
+"happiness",
+"pleasure"
+]
+},
+"concert": {
+"phonetic": "[ˈkɑːnsərt]",
+"example": "We went to a piano concert at the school hall yesterday.",
+"synonyms": [
+"performance",
+"recital",
+"show"
+]
+},
+"rule": {
+"phonetic": "[ruːl]",
+"example": "The teacher ruled that no one could use phones during class.",
+"synonyms": [
+"regulation",
+"law",
+"principle"
+]
+},
+"suitcase": {
+"phonetic": "[ˈsuːtkeɪs]",
+"example": "Jisu packed her suitcase the night before the school trip.",
+"synonyms": [
+"bag",
+"trunk",
+"baggage",
+"luggage"
+]
+},
+"weight": {
+"phonetic": "[weɪt]",
+"example": "The doctor checked my height and weight during the health test.",
+"synonyms": [
+"mass",
+"heaviness",
+"load"
+]
+},
+"hurray": {
+"phonetic": "[həˈreɪ]",
+"example": "The children shouted hurray when the summer vacation finally began.",
+"synonyms": [
+"hooray",
+"cheers"
+]
+},
+"mail": {
+"phonetic": "[meɪl]",
+"example": "The postman brings mail to our house every morning at ten.",
+"synonyms": [
+"post",
+"letters",
+"correspondence"
+]
+},
+"log": {
+"phonetic": "[lɔːɡ]",
+"example": "Father cut a thick log into pieces for the winter fire.",
+"synonyms": [
+"timber",
+"trunk"
+]
+},
+"hut": {
+"phonetic": "[hʌt]",
+"example": "An old man lives alone in a small wooden hut.",
+"synonyms": [
+"cabin",
+"shack",
+"shed",
+"cottage"
+]
+},
+"tax": {
+"phonetic": "[tæks]",
+"example": "Every worker in this country must pay tax on their income.",
+"synonyms": [
+"duty",
+"levy"
+]
+},
+"dye": {
+"phonetic": "[daɪ]",
+"example": "She used a blue dye to color the white cotton shirt.",
+"synonyms": [
+"color",
+"stain",
+"tint"
+]
+},
+"earnings": {
+"phonetic": "[ˈɜːrnɪŋz]",
+"example": "His monthly earnings are not enough to support the whole family.",
+"synonyms": [
+"income",
+"wages",
+"pay"
+]
+},
+"flame": {
+"phonetic": "[fleɪm]",
+"example": "A small flame appeared when Tom lit the candle carefully.",
+"synonyms": [
+"fire",
+"blaze"
+]
+},
+"shape": {
+"phonetic": "[ʃeɪp]",
+"example": "The cloud above us slowly changed its shape into a rabbit.",
+"synonyms": [
+"form",
+"figure",
+"outline"
+]
+},
+"chest": {
+"phonetic": "[tʃest]",
+"example": "He felt a sharp pain in his chest after running.",
+"synonyms": [
+"breast",
+"bosom"
+]
+},
+"chain": {
+"phonetic": "[tʃeɪn]",
+"example": "A heavy chain kept the gate of the factory locked.",
+"synonyms": [
+"link",
+"shackle"
+]
+},
+"cost": {
+"phonetic": "[kɑːst]",
+"example": "The cost of these shoes was higher than I had expected.",
+"synonyms": [
+"price",
+"expense",
+"charge"
+]
+},
+"coast": {
+"phonetic": "[koʊst]",
+"example": "Many families visit the west coast to watch the sunset.",
+"synonyms": [
+"shore",
+"beach",
+"seaside"
+]
+},
+"circle": {
+"phonetic": "[ˈsɜːrkəl]",
+"example": "Draw a big circle on the paper with your new compass.",
+"synonyms": [
+"ring",
+"loop",
+"hoop"
+]
+},
+"heart": {
+"phonetic": "[hɑːrt]",
+"example": "After the race my heart was beating very fast.",
+"synonyms": [
+"core",
+"soul",
+"center"
+]
+},
+"nature": {
+"phonetic": "[ˈneɪtʃər]",
+"example": "Walking in nature always makes me feel relaxed and happy.",
+"synonyms": [
+"environment",
+"wildlife",
+"creation"
+]
+},
+"fever": {
+"phonetic": "[ˈfiːvər]",
+"example": "Mina stayed home because she had a high fever yesterday.",
+"synonyms": [
+"temperature",
+"heat"
+]
+},
+"tongue": {
+"phonetic": "[tʌŋ]",
+"example": "I burned my tongue on the hot soup at dinner."
+},
+"trust": {
+"phonetic": "[trʌst]",
+"example": "A good shop must build trust with its regular customers.",
+"synonyms": [
+"faith",
+"confidence",
+"belief",
+"credit"
+]
+},
+"whisker": {
+"phonetic": "[ˈwɪskər]",
+"example": "The old sailor had a thick whisker on each cheek."
+},
+"prison": {
+"phonetic": "[ˈprɪzən]",
+"example": "The thief spent three years in prison for his crime.",
+"synonyms": [
+"jail",
+"cell"
+]
+},
+"blood": {
+"phonetic": "[blʌd]",
+"example": "A little blood came out when I cut my finger."
+},
+"loaf": {
+"phonetic": "[loʊf]",
+"example": "Mother bought a warm loaf of bread from the corner bakery."
+},
+"list": {
+"phonetic": "[lɪst]",
+"example": "The teacher read the list of names before the class started.",
+"synonyms": [
+"catalog",
+"roll",
+"register"
+]
+},
+"fence": {
+"phonetic": "[fens]",
+"example": "Our dog jumped over the low fence and ran away.",
+"synonyms": [
+"barrier",
+"wall",
+"railing",
+"hedge"
+]
+},
+"enemy": {
+"phonetic": "[ˈenəmi]",
+"example": "The two countries were enemies for many years before the peace.",
+"synonyms": [
+"foe",
+"opponent",
+"rival"
+]
+},
+"thief": {
+"phonetic": "[θiːf]",
+"example": "A thief broke into the store and took all the money.",
+"synonyms": [
+"robber",
+"burglar",
+"crook"
+]
+},
+"data": {
+"phonetic": "[ˈdeɪtə]",
+"example": "The students collected data about the weather for two whole weeks.",
+"synonyms": [
+"information",
+"facts",
+"statistics"
+]
+},
+"soldier": {
+"phonetic": "[ˈsoʊldʒər]",
+"example": "The young soldier sent a letter to his family every week.",
+"synonyms": [
+"warrior",
+"fighter",
+"trooper"
+]
+},
+"musician": {
+"phonetic": "[mjuˈzɪʃən]",
+"example": "My uncle is a musician who plays the violin in concerts.",
+"synonyms": [
+"performer",
+"player",
+"artist"
+]
+},
+"capital": {
+"phonetic": "[ˈkæpətəl]",
+"example": "Seoul is the capital of Korea and also its largest city."
+},
+"course": {
+"phonetic": "[kɔːrs]",
+"example": "She changed her course of study after talking with her teacher.",
+"synonyms": [
+"route",
+"path",
+"direction"
+]
+},
+"diary": {
+"phonetic": "[ˈdaɪəri]",
+"example": "Jisu writes in her diary every night before going to bed.",
+"synonyms": [
+"journal",
+"log",
+"record"
+]
+},
+"squirrel": {
+"phonetic": "[ˈskwɜːrəl]",
+"example": "A little squirrel carried a nut up the tall pine tree."
+},
+"dawn": {
+"phonetic": "[dɔːn]",
+"example": "The farmers get up at dawn to work in the fields.",
+"synonyms": [
+"daybreak",
+"sunrise"
+]
+},
+"shadow": {
+"phonetic": "[ˈʃædoʊ]",
+"example": "My shadow looked very long in the late afternoon sunlight.",
+"synonyms": [
+"shade",
+"silhouette"
+]
+},
+"ditch": {
+"phonetic": "[dɪtʃ]",
+"example": "Rain water ran quickly along the ditch beside the country road.",
+"synonyms": [
+"trench",
+"channel",
+"gutter"
+]
+},
+"crew": {
+"phonetic": "[kruː]",
+"example": "The airplane crew welcomed us with a warm and friendly smile.",
+"synonyms": [
+"staff",
+"team",
+"gang"
+]
+},
+"stomach": {
+"phonetic": "[ˈstʌmək]",
+"example": "My stomach hurts because I ate too much ice cream.",
+"synonyms": [
+"belly",
+"tummy",
+"gut"
+]
+},
+"neighbor": {
+"phonetic": "[ˈneɪbər]",
+"example": "Our new neighbor gave us fresh apples from her own garden."
+},
+"servant": {
+"phonetic": "[ˈsɜːrvənt]",
+"example": "In the old story, a servant helped the poor young girl.",
+"synonyms": [
+"helper",
+"maid",
+"attendant"
+]
+},
+"hunger": {
+"phonetic": "[ˈhʌŋɡər]",
+"example": "Many children in the world still suffer from hunger every day.",
+"synonyms": [
+"starvation",
+"famine",
+"appetite"
+]
+},
+"tomb": {
+"phonetic": "[tuːm]",
+"example": "Visitors stay quiet inside the ancient tomb under the green hill.",
+"synonyms": [
+"grave",
+"vault",
+"burial chamber"
+]
+},
+"taste": {
+"phonetic": "[teɪst]",
+"example": "This soup has a sweet taste because of the fresh onions.",
+"synonyms": [
+"flavor",
+"savor",
+"sample"
+]
+},
+"sign": {
+"phonetic": "[saɪn]",
+"example": "The police officer gave us a sign to cross the street.",
+"synonyms": [
+"signal",
+"mark",
+"symbol",
+"gesture"
+]
+},
+"stair": {
+"phonetic": "[ster]",
+"example": "She sat on the bottom stair and waited for her mother.",
+"synonyms": [
+"step",
+"staircase"
+]
+},
+"trip": {
+"phonetic": "[trɪp]",
+"example": "Our class is planning a three-day trip to the countryside.",
+"synonyms": [
+"journey",
+"tour",
+"travel"
+]
+},
+"brain": {
+"phonetic": "[breɪn]",
+"example": "Reading books every day is very good for your brain.",
+"synonyms": [
+"mind",
+"head"
+]
+},
+"trumpet": {
+"phonetic": "[ˈtrʌmpət]",
+"example": "Tom played the trumpet loudly at the school sports festival.",
+"synonyms": [
+"horn",
+"bugle"
+]
+},
+"speech": {
+"phonetic": "[spiːtʃ]",
+"example": "His speech was so soft that nobody could hear him clearly.",
+"synonyms": [
+"talk",
+"address",
+"language"
+]
+},
+"thumb": {
+"phonetic": "[θʌm]",
+"example": "He hurt his thumb while closing the heavy classroom door."
+},
+"horn": {
+"phonetic": "[hɔːrn]",
+"example": "The young goat has one short horn on its head."
+},
+"chief": {
+"phonetic": "[tʃiːf]",
+"example": "The village chief welcomed the visitors with a big warm smile.",
+"synonyms": [
+"leader",
+"head",
+"main",
+"principal"
+]
+},
+"trousers": {
+"phonetic": "[ˈtraʊzərz]",
+"example": "These trousers are too long, so I will make them shorter.",
+"synonyms": [
+"pants",
+"slacks"
+]
+},
+"prince": {
+"phonetic": "[prɪns]",
+"example": "In the story, the young prince saves his father's kingdom.",
+"synonyms": [
+"royal",
+"heir"
+]
+},
+"force": {
+"phonetic": "[fɔːrs]",
+"example": "The strong wind hit the window with great force last night.",
+"synonyms": [
+"power",
+"strength",
+"energy"
+]
+},
+"sight": {
+"phonetic": "[saɪt]",
+"example": "The sight of the snowy mountain took our breath away.",
+"synonyms": [
+"view",
+"scene",
+"spectacle",
+"vision"
+]
+},
+"space": {
+"phonetic": "[speɪs]",
+"example": "There is not enough space in my room for another desk.",
+"synonyms": [
+"room",
+"gap",
+"area"
+]
+},
+"wool": {
+"phonetic": "[wʊl]",
+"example": "This warm sweater is made of soft wool from sheep.",
+"synonyms": [
+"fleece",
+"yarn"
+]
+},
+"expressway": {
+"phonetic": "[ɪksˈpresweɪ]",
+"example": "We drove along the expressway for two hours without stopping.",
+"synonyms": [
+"highway",
+"freeway",
+"motorway"
+]
+},
+"science": {
+"phonetic": "[ˈsaɪəns]",
+"example": "My favorite subject is science because I love doing experiments."
+},
+"examination": {
+"phonetic": "[ɪɡzæməˈneɪʃən]",
+"example": "Students look nervous before the final examination in the big hall.",
+"synonyms": [
+"test",
+"exam",
+"inspection",
+"check"
+]
+},
+"jar": {
+"phonetic": "[dʒɑːr]",
+"example": "Grandmother keeps her homemade jam in a large glass jar.",
+"synonyms": [
+"pot",
+"container",
+"vessel"
+]
+},
+"salt": {
+"phonetic": "[sɔːlt]",
+"example": "Please add a little salt to the soup before serving it."
+},
+"death": {
+"phonetic": "[deθ]",
+"example": "The old dog's death made the whole family very sad.",
+"synonyms": [
+"passing",
+"demise",
+"end"
+]
+},
+"saw": {
+"phonetic": "[sɔː]",
+"example": "My father cut the thick branch with a small saw."
+},
+"swing": {
+"phonetic": "[swɪŋ]",
+"example": "Children were laughing on the swing in the park.",
+"synonyms": [
+"sway",
+"rock",
+"wave"
+]
+},
+"wish": {
+"phonetic": "[wɪʃ]",
+"example": "Make a wish before you blow out the birthday candles.",
+"synonyms": [
+"desire",
+"hope",
+"want"
+]
+},
+"grain": {
+"phonetic": "[ɡreɪn]",
+"example": "Farmers store their grain in a dry place after the harvest.",
+"synonyms": [
+"kernel",
+"seed",
+"cereal"
+]
+},
+"eraser": {
+"phonetic": "[ɪˈreɪsər]",
+"example": "Can I borrow your eraser? I made a mistake here."
+},
+"alphabet": {
+"phonetic": "[ˈælfəbet]",
+"example": "The English alphabet has twenty-six letters from A to Z."
+},
+"shoulder": {
+"phonetic": "[ˈʃoʊldər]",
+"example": "The heavy bag hurt my shoulder during the long walk home."
+},
+"nephew": {
+"phonetic": "[ˈnefju]",
+"example": "My nephew is only five, but he already reads short books."
+},
+"niece": {
+"phonetic": "[niːs]",
+"example": "I bought a doll for my niece on her seventh birthday."
+},
+"library": {
+"phonetic": "[ˈlaɪbreri]",
+"example": "The school library is quiet, so I study there after lunch."
+},
+"factory": {
+"phonetic": "[ˈfæktəri]",
+"example": "Her mother works at a shoe factory near the train station.",
+"synonyms": [
+"plant",
+"mill",
+"workshop"
+]
+},
+"giraffe": {
+"phonetic": "[dʒərˈæf]",
+"example": "The giraffe stretched its long neck to reach the green leaves."
+},
+"hawk": {
+"phonetic": "[hɔːk]",
+"example": "A hawk flew high above the field, looking for small animals.",
+"synonyms": [
+"falcon"
+]
+},
+"pigeon": {
+"phonetic": "[ˈpɪdʒən]",
+"example": "A gray pigeon landed on the bench and looked for bread crumbs.",
+"synonyms": [
+"dove"
+]
+},
+"bowl": {
+"phonetic": "[boʊl]",
+"example": "My grandmother filled a large bowl with hot soup for me.",
+"synonyms": [
+"dish",
+"basin"
+]
+},
+"scene": {
+"phonetic": "[siːn]",
+"example": "The last scene of the movie made everyone in the theater cry.",
+"synonyms": [
+"view",
+"sight",
+"setting",
+"spot"
+]
+},
+"life": {
+"phonetic": "[laɪf]",
+"example": "Doctors worked all night to save the young boy's life.",
+"synonyms": [
+"existence",
+"living"
+]
+},
+"earth": {
+"phonetic": "[ɜːrθ]",
+"example": "The earth travels around the sun once every year.",
+"synonyms": [
+"world",
+"globe",
+"ground",
+"soil"
+]
+},
+"pill": {
+"phonetic": "[pɪl]",
+"example": "Take this small pill with water after you finish your dinner.",
+"synonyms": [
+"tablet",
+"capsule"
+]
+},
+"math": {
+"phonetic": "[mæθ]",
+"example": "Jisu solved every math problem on the test without any mistakes.",
+"synonyms": [
+"mathematics",
+"arithmetic"
+]
+},
+"ocean": {
+"phonetic": "[ˈoʊʃən]",
+"example": "Whales swim thousands of kilometers across the wide ocean every year.",
+"synonyms": [
+"sea"
+]
+},
+"price": {
+"phonetic": "[praɪs]",
+"example": "The price of these shoes dropped by half during the sale.",
+"synonyms": [
+"cost",
+"charge",
+"fee",
+"value"
+]
+},
+"row": {
+"phonetic": "[roʊ]",
+"example": "We sat in the front row and saw the singer clearly.",
+"synonyms": [
+"line",
+"rank",
+"file"
+]
+},
+"schedule": {
+"phonetic": "[ˈskedʒʊl]",
+"example": "Please check the schedule before you plan our club meeting.",
+"synonyms": [
+"timetable",
+"plan",
+"agenda",
+"program"
+]
+},
+"machine": {
+"phonetic": "[məˈʃiːn]",
+"example": "This machine washes and dries all the clothes in one hour.",
+"synonyms": [
+"device",
+"engine",
+"apparatus"
+]
+},
+"route": {
+"phonetic": "[ruːt]",
+"example": "The driver took a shorter route to avoid the heavy traffic.",
+"synonyms": [
+"path",
+"way",
+"course",
+"road"
+]
+},
+"ivy": {
+"phonetic": "[ˈaɪvi]",
+"example": "Thick ivy covers the old brick walls of our school library."
+},
+"gift": {
+"phonetic": "[ɡɪft]",
+"example": "Mina wrapped the gift in blue paper for her father's birthday.",
+"synonyms": [
+"present",
+"donation"
+]
+},
+"candle": {
+"phonetic": "[ˈkændəl]",
+"example": "We lit one candle when the electricity suddenly went out."
+},
+"joke": {
+"phonetic": "[dʒoʊk]",
+"example": "His silly joke made the whole class laugh out loud.",
+"synonyms": [
+"gag",
+"jest",
+"prank"
+]
+},
+"art": {
+"phonetic": "[ɑːrt]",
+"example": "She studies art because she loves painting quiet country villages.",
+"synonyms": [
+"craft",
+"artwork",
+"skill"
+]
+},
+"corn": {
+"phonetic": "[kɔːrn]",
+"example": "Farmers in this village grow corn and other grains every summer.",
+"synonyms": [
+"maize",
+"grain"
+]
+},
+"pet": {
+"phonetic": "[pet]",
+"example": "My little brother wants a pet, but our apartment does not allow animals."
+},
+"robber": {
+"phonetic": "[ˈrɑːbər]",
+"example": "The robber ran out of the bank with a black bag.",
+"synonyms": [
+"thief",
+"burglar",
+"bandit"
+]
+},
+"cheek": {
+"phonetic": "[tʃiːk]",
+"example": "Tears rolled down her cheek while she read the letter."
+},
+"clerk": {
+"phonetic": "[klɜːrk]",
+"example": "The clerk at the store kindly wrapped my books in paper.",
+"synonyms": [
+"salesperson",
+"secretary",
+"assistant"
+]
+},
+"cookie": {
+"phonetic": "[ˈkʊki]",
+"example": "Tom baked a chocolate cookie for every student in his class.",
+"synonyms": [
+"biscuit"
+]
+},
+"army": {
+"phonetic": "[ˈɑːrmi]",
+"example": "His uncle joined the army right after he finished high school.",
+"synonyms": [
+"troops",
+"forces",
+"military"
+]
+},
+"nurse": {
+"phonetic": "[nɜːrs]",
+"example": "A kind nurse checked my temperature and gave me some medicine.",
+"synonyms": [
+"caregiver",
+"caretaker"
+]
+},
+"master": {
+"phonetic": "[ˈmæstər]",
+"example": "The dog waited by the door for its master to return.",
+"synonyms": [
+"owner",
+"lord",
+"boss",
+"expert"
+]
+},
+"lock": {
+"phonetic": "[lɑːk]",
+"example": "I put a strong lock on my bicycle before leaving it.",
+"synonyms": [
+"bolt",
+"latch",
+"fasten",
+"secure"
+]
+},
+"moment": {
+"phonetic": "[ˈmoʊmənt]",
+"example": "For a moment, nobody in the room said a single word.",
+"synonyms": [
+"instant",
+"second"
+]
+},
+"sheet": {
+"phonetic": "[ʃiːt]",
+"example": "Mom changed the sheet on my bed because it smelled bad.",
+"synonyms": [
+"bedsheet",
+"linen"
+]
+},
+"monk": {
+"phonetic": "[mʌŋk]",
+"example": "The old monk lives quietly in a small mountain temple.",
+"synonyms": [
+"friar",
+"priest"
+]
+},
+"closet": {
+"phonetic": "[ˈklɑːzət]",
+"example": "Hang your winter coat in the closet next to the door.",
+"synonyms": [
+"wardrobe",
+"cupboard",
+"cabinet"
+]
+},
+"handle": {
+"phonetic": "[ˈhændəl]",
+"example": "The handle of this old pot became too hot to touch.",
+"synonyms": [
+"grip",
+"knob"
+]
+},
+"guide": {
+"phonetic": "[ɡaɪd]",
+"example": "Our guide explained the history of the palace in simple English.",
+"synonyms": [
+"lead",
+"direct",
+"show"
+]
+},
+"bar": {
+"phonetic": "[bɑːr]",
+"example": "He used an iron bar to lift the heavy stone slowly.",
+"synonyms": [
+"rod",
+"stick",
+"pole"
+]
+},
+"ostrich": {
+"phonetic": "[ˈɔːstrɪtʃ]",
+"example": "An ostrich cannot fly, but it runs faster than a horse."
+},
+"knee": {
+"phonetic": "[niː]",
+"example": "Jinsu hurt his knee while playing soccer on the wet field."
+},
+"cricket": {
+"phonetic": "[ˈkrɪkət]",
+"example": "Many students in India play cricket after school every afternoon."
+},
+"deck": {
+"phonetic": "[dek]",
+"example": "Passengers stood on the deck and watched the island come closer."
+},
+"bit": {
+"phonetic": "[bɪt]",
+"example": "Only a bit of cheese was left on the wooden plate.",
+"synonyms": [
+"piece",
+"little",
+"bite",
+"scrap"
+]
+},
+"silk": {
+"phonetic": "[sɪlk]",
+"example": "Her wedding dress was made of soft white silk."
+},
+"jean": {
+"phonetic": "[dʒiːn]",
+"example": "Minho wore blue jeans and a white shirt to the concert."
+},
+"cotton": {
+"phonetic": "[ˈkɑːtən]",
+"example": "These socks are made of cotton, so they feel very soft."
+},
+"drum": {
+"phonetic": "[drʌm]",
+"example": "My cousin plays the drum in the school marching band."
+},
+"sand": {
+"phonetic": "[sænd]",
+"example": "The children built a tall castle with wet sand near the water."
+},
+"shock": {
+"phonetic": "[ʃɑːk]",
+"example": "The sudden news gave my parents a great shock last night.",
+"synonyms": [
+"impact",
+"blow",
+"jolt"
+]
+},
+"march": {
+"phonetic": "[mɑːrtʃ]",
+"example": "The students' march through the town lasted about two hours.",
+"synonyms": [
+"parade",
+"walk",
+"procession"
+]
+},
+"cage": {
+"phonetic": "[keɪdʒ]",
+"example": "The parrot sang loudly inside its bamboo cage every morning.",
+"synonyms": [
+"coop",
+"pen",
+"enclosure"
+]
+},
+"whole": {
+"phonetic": "[hoʊl]",
+"example": "He finished the whole pizza by himself in twenty minutes.",
+"synonyms": [
+"entire",
+"complete",
+"full",
+"total"
+]
+},
+"change": {
+"phonetic": "[tʃeɪndʒ]",
+"example": "A big change happened in our town after the new bridge opened.",
+"synonyms": [
+"shift",
+"switch",
+"alteration"
+]
+},
+"department": {
+"phonetic": "[dɪˈpɑːrtmənt]",
+"example": "She works in the sales department of a small computer company.",
+"synonyms": [
+"division",
+"branch",
+"office"
+]
+},
+"office": {
+"phonetic": "[ˈɔːfɪs]",
+"example": "My father leaves the office at seven o'clock every evening.",
+"synonyms": [
+"workplace",
+"bureau"
+]
+},
+"ticket": {
+"phonetic": "[ˈtɪkət]",
+"example": "I bought two tickets for the baseball game this Saturday.",
+"synonyms": [
+"pass",
+"coupon",
+"voucher"
+]
+},
+"energy": {
+"phonetic": "[ˈenərdʒi]",
+"example": "Children have so much energy that they never seem tired.",
+"synonyms": [
+"power",
+"force",
+"vigor"
+]
+},
+"idea": {
+"phonetic": "[aɪˈdiːə]",
+"example": "Your idea about cleaning the park is really wonderful.",
+"synonyms": [
+"thought",
+"notion",
+"concept"
+]
+},
+"hospital": {
+"phonetic": "[ˈhɑːspɪtəl]",
+"example": "Grandfather stayed in the hospital for a week after his operation.",
+"synonyms": [
+"clinic",
+"medical center"
+]
+},
+"noise": {
+"phonetic": "[nɔɪz]",
+"example": "The noise from the street kept me awake most of the night.",
+"synonyms": [
+"sound",
+"racket",
+"din"
+]
+},
+"sample": {
+"phonetic": "[ˈsæmpəl]",
+"example": "The shop gave us a free sample of their new juice.",
+"synonyms": [
+"example",
+"specimen",
+"model"
+]
+},
+"example": {
+"phonetic": "[ɪɡˈzæmpəl]",
+"example": "The teacher wrote an easy example on the board for us.",
+"synonyms": [
+"instance",
+"sample",
+"case",
+"model"
+]
+},
+"lesson": {
+"phonetic": "[ˈlesən]",
+"example": "Today's English lesson was about writing short and clear letters.",
+"synonyms": [
+"class",
+"course"
+]
+},
+"plenty": {
+"phonetic": "[ˈplenti]",
+"example": "There is plenty of rice in the kitchen for everyone.",
+"synonyms": [
+"abundance",
+"lots",
+"loads"
+]
+},
+"luck": {
+"phonetic": "[lʌk]",
+"example": "Good luck helped him find his lost wallet on the bus.",
+"synonyms": [
+"fortune",
+"chance",
+"blessing"
+]
+},
+"comedy": {
+"phonetic": "[ˈkɑːmədi]",
+"example": "We watched a funny comedy and laughed from beginning to end.",
+"synonyms": [
+"humor",
+"farce"
+]
+},
+"health": {
+"phonetic": "[helθ]",
+"example": "Walking every morning is very good for your health.",
+"synonyms": [
+"wellness",
+"fitness",
+"well-being"
+]
+},
+"history": {
+"phonetic": "[ˈhɪstəri]",
+"example": "Our teacher makes Korean history sound like an exciting story.",
+"synonyms": [
+"past",
+"record",
+"chronicle"
+]
+},
+"forest": {
+"phonetic": "[ˈfɔːrəst]",
+"example": "Tall pine trees fill the forest behind my grandparents' house.",
+"synonyms": [
+"woods",
+"woodland",
+"jungle"
+]
+},
+"stream": {
+"phonetic": "[striːm]",
+"example": "A clear stream flows down the hill beside our village.",
+"synonyms": [
+"brook",
+"creek",
+"current",
+"flow"
+]
+},
+"future": {
+"phonetic": "[ˈfjuːtʃər]",
+"example": "In the future, most cars may drive without any driver.",
+"synonyms": [
+"tomorrow",
+"prospect"
+]
+},
+"state": {
+"phonetic": "[steɪt]",
+"example": "The old house was in a terrible state after the storm.",
+"synonyms": [
+"condition",
+"status",
+"situation"
+]
+},
+"temple": {
+"phonetic": "[ˈtempəl]",
+"example": "We climbed many stairs to reach the temple on the mountain.",
+"synonyms": [
+"shrine",
+"sanctuary",
+"church"
+]
+},
+"dictionary": {
+"phonetic": "[ˈdɪkʃəneri]",
+"example": "Look up the difficult word in your dictionary right now.",
+"synonyms": [
+"lexicon",
+"glossary"
+]
+},
+"grammar": {
+"phonetic": "[ˈɡræmər]",
+"example": "English grammar becomes easier when you practice a little daily."
+},
+"college": {
+"phonetic": "[ˈkɑːlɪdʒ]",
+"example": "My sister will enter a college of music next spring.",
+"synonyms": [
+"university",
+"academy",
+"school"
+]
+},
+"husband": {
+"phonetic": "[ˈhʌzbənd]",
+"example": "Her husband cooks dinner whenever she comes home late.",
+"synonyms": [
+"spouse",
+"partner"
+]
+},
+"daughter": {
+"phonetic": "[ˈdɔːtər]",
+"example": "Their daughter won first prize in the school speech contest."
+},
+"captain": {
+"phonetic": "[ˈkæptən]",
+"example": "The captain of our team encouraged us before the final match.",
+"synonyms": [
+"leader",
+"commander",
+"chief",
+"skipper"
+]
+},
+"booth": {
+"phonetic": "[buːθ]",
+"example": "A small wooden booth stood alone at the edge of the field.",
+"synonyms": [
+"stall",
+"stand",
+"cabin"
+]
+},
+"iceberg": {
+"phonetic": "[ˈaɪsbərɡ]",
+"example": "A huge iceberg floated slowly in the cold northern sea."
+},
+"bubble": {
+"phonetic": "[ˈbʌbəl]",
+"example": "One soap bubble floated up and broke against the window.",
+"synonyms": [
+"foam",
+"froth"
+]
+},
+"bottom": {
+"phonetic": "[ˈbɑːtəm]",
+"example": "My keys were lying at the bottom of my school bag.",
+"synonyms": [
+"base",
+"foot",
+"underside"
+]
+},
+"prize": {
+"phonetic": "[praɪz]",
+"example": "Mina received a prize for her beautiful drawing of the sea.",
+"synonyms": [
+"award",
+"reward",
+"trophy"
+]
+},
+"bean": {
+"phonetic": "[biːn]",
+"example": "Mother soaked the beans in water before making the soup."
+},
+"race": {
+"phonetic": "[reɪs]",
+"example": "Tom won the hundred-meter race at our sports day.",
+"synonyms": [
+"contest",
+"competition"
+]
+},
+"engineer": {
+"phonetic": "[ˈendʒəˈnɪr]",
+"example": "An engineer came to fix the broken elevator this morning.",
+"synonyms": [
+"technician",
+"mechanic"
+]
+},
+"photographer": {
+"phonetic": "[fəˈtɑːɡrəfər]",
+"example": "The photographer asked us to smile and stand a little closer.",
+"synonyms": [
+"cameraman",
+"photojournalist"
+]
+},
+"reason": {
+"phonetic": "[ˈriːzən]",
+"example": "Please tell me the reason you were late for class.",
+"synonyms": [
+"cause",
+"motive",
+"explanation",
+"ground"
+]
+},
+"subway": {
+"phonetic": "[ˈsʌbweɪ]",
+"example": "Cross the road through the subway under the busy street.",
+"synonyms": [
+"metro",
+"underground",
+"tube"
+]
+},
+"fog": {
+"phonetic": "[fɑːɡ]",
+"example": "Thick fog covered the mountain road, so we drove slowly.",
+"synonyms": [
+"mist",
+"haze"
+]
+},
+"answer": {
+"phonetic": "[ˈænsər]",
+"example": "Her answer to the difficult question surprised the whole class.",
+"synonyms": [
+"reply",
+"response",
+"respond"
+]
+},
+"dinning room": {
+"phonetic": "[ˈdaɪnɪŋ ruːm]",
+"example": "We eat breakfast together in the dining room every morning.",
+"synonyms": [
+"dining hall",
+"cafeteria"
+]
+},
+"step": {
+"phonetic": "[step]",
+"example": "He took one careful step onto the thin ice.",
+"synonyms": [
+"stair",
+"pace",
+"stride"
+]
+},
+"heat": {
+"phonetic": "[hiːt]",
+"example": "The heat from the stove warmed the small kitchen quickly.",
+"synonyms": [
+"warmth",
+"hotness",
+"temperature"
+]
+},
+"bone": {
+"phonetic": "[boʊn]",
+"example": "The dog buried a large bone in the garden yesterday."
+},
+"plant": {
+"phonetic": "[plænt]",
+"example": "This plant needs sunlight and water three times a week.",
+"synonyms": [
+"vegetation",
+"greenery",
+"sow"
+]
+},
+"lamb": {
+"phonetic": "[læm]",
+"example": "A little lamb followed its mother across the green field."
+},
+"rate": {
+"phonetic": "[reɪt]",
+"example": "The rate of students who ride bicycles is rising quickly.",
+"synonyms": [
+"ratio",
+"percentage",
+"proportion"
+]
+},
+"report": {
+"phonetic": "[rɪˈpɔːrt]",
+"example": "The scientist wrote a long report about the polluted river.",
+"synonyms": [
+"account",
+"statement",
+"record"
+]
+},
+"turtle": {
+"phonetic": "[ˈtɜːrtəl]",
+"example": "A sea turtle swam past our boat near the coral reef.",
+"synonyms": [
+"tortoise"
+]
+},
+"bay": {
+"phonetic": "[beɪ]",
+"example": "Small fishing boats rest quietly in the calm bay at sunset.",
+"synonyms": [
+"gulf",
+"cove",
+"inlet"
+]
+},
+"holiday": {
+"phonetic": "[ˈhɑːlədeɪ]",
+"example": "Next Monday is a holiday, so school will be closed.",
+"synonyms": [
+"vacation",
+"break",
+"day off"
+]
+},
+"center": {
+"phonetic": "[ˈsentər]",
+"example": "A tall clock tower stands in the center of our small town.",
+"synonyms": [
+"middle",
+"core",
+"heart",
+"hub"
+]
+},
+"cash": {
+"phonetic": "[kæʃ]",
+"example": "I did not have enough cash, so I paid by card.",
+"synonyms": [
+"money",
+"currency",
+"funds"
+]
+},
+"wolf": {
+"phonetic": "[wʊlf]",
+"example": "A hungry wolf howled somewhere deep inside the dark winter forest."
+},
+"operator": {
+"phonetic": "[ˈɑːpəreɪtər]",
+"example": "Long ago, an operator connected every phone call by hand."
+},
+"fur": {
+"phonetic": "[fɜːr]",
+"example": "My cat's soft fur feels warm when she sleeps on my lap.",
+"synonyms": [
+"hair",
+"coat",
+"pelt"
+]
+},
+"shore": {
+"phonetic": "[ʃɔːr]",
+"example": "We walked along the shore and collected pretty stones together.",
+"synonyms": [
+"beach",
+"coast",
+"seaside"
+]
+},
+"owl": {
+"phonetic": "[aʊl]",
+"example": "An owl sat quietly on the branch and watched us pass."
+},
+"hunter": {
+"phonetic": "[ˈhʌntər]",
+"example": "The hunter walked slowly through the snow with his old dog."
+},
+"pumpkin": {
+"phonetic": "[ˈpʌmpkɪn]",
+"example": "Grandmother grew a huge pumpkin in her garden this autumn.",
+"synonyms": [
+"squash",
+"gourd"
+]
+},
+"handshake": {
+"phonetic": "[ˈhændʃeɪk]",
+"example": "The two leaders ended their meeting with a friendly handshake."
+},
+"bike": {
+"phonetic": "[baɪk]",
+"example": "Jisu rides her bike to school every morning before eight.",
+"synonyms": [
+"bicycle",
+"cycle"
+]
+},
+"beach": {
+"phonetic": "[biːtʃ]",
+"example": "Our family spent the whole afternoon playing on the sunny beach.",
+"synonyms": [
+"shore",
+"coast",
+"seaside",
+"sands"
+]
+},
+"god": {
+"phonetic": "[ɡɑːd]",
+"example": "Long ago, people believed a god lived on top of the mountain.",
+"synonyms": [
+"deity",
+"creator"
+]
+},
+"cough": {
+"phonetic": "[kɑːf]",
+"example": "My little brother has a bad cough because of the cold air."
+},
+"shell": {
+"phonetic": "[ʃel]",
+"example": "Mina found a beautiful shell buried in the wet sand.",
+"synonyms": [
+"husk",
+"case"
+]
+},
+"business": {
+"phonetic": "[ˈbɪznəs]",
+"example": "My uncle started a small business selling homemade bread.",
+"synonyms": [
+"trade",
+"commerce",
+"company"
+]
+},
+"restaurant": {
+"phonetic": "[ˈrestərɑːnt]",
+"example": "We ate dinner at a Chinese restaurant near the train station.",
+"synonyms": [
+"diner",
+"eatery",
+"cafe"
+]
+},
+"sheep": {
+"phonetic": "[ʃiːp]",
+"example": "Hundreds of sheep were eating grass on the wide green hill."
+},
+"officer": {
+"phonetic": "[ˈɔːfəsər]",
+"example": "A kind officer at city hall helped my mother fill out forms.",
+"synonyms": [
+"official",
+"policeman"
+]
+},
+"hometown": {
+"phonetic": "[ˈhoʊmtaʊn]",
+"example": "Whenever I hear that song, I think of my quiet hometown.",
+"synonyms": [
+"birthplace"
+]
+},
+"coil": {
+"phonetic": "[kɔɪl]",
+"example": "A thick coil of copper wire lay on the workshop table.",
+"synonyms": [
+"spiral",
+"loop",
+"roll",
+"winding"
+]
+},
+"ceiling": {
+"phonetic": "[ˈsiːlɪŋ]",
+"example": "Someone painted tiny silver stars on my bedroom ceiling."
+},
+"turkey": {
+"phonetic": "[ˈtɜːrki]",
+"example": "The whole family shared a roasted turkey at the holiday dinner."
+},
+"towel": {
+"phonetic": "[ˈtaʊəl]",
+"example": "Please bring me a clean towel before you take a shower."
+},
+"matter": {
+"phonetic": "[ˈmætər]",
+"example": "Let's talk about this matter again after the class ends.",
+"synonyms": [
+"issue",
+"affair",
+"subject"
+]
+},
+"chopstick": {
+"phonetic": "[ˈtʃɑːpstɪk]",
+"example": "One chopstick fell under the table while I was eating noodles."
+},
+"seat": {
+"phonetic": "[siːt]",
+"example": "An old man was looking for an empty seat on the bus.",
+"synonyms": [
+"chair",
+"bench",
+"place"
+]
+},
+"board": {
+"phonetic": "[bɔːrd]",
+"example": "Father cut a long board to build a shelf for books.",
+"synonyms": [
+"plank",
+"panel",
+"committee"
+]
+},
+"goal": {
+"phonetic": "[ɡoʊl]",
+"example": "My goal this year is to read fifty English books.",
+"synonyms": [
+"aim",
+"target",
+"objective"
+]
+},
+"drugstore": {
+"phonetic": "[ˈdrʌɡstɔːr]",
+"example": "She ran to the drugstore to buy medicine for her headache.",
+"synonyms": [
+"pharmacy",
+"chemist"
+]
+},
+"rat": {
+"phonetic": "[ræt]",
+"example": "A gray rat ran across the floor of the old warehouse."
+},
+"butterfly": {
+"phonetic": "[ˈbʌtərflaɪ]",
+"example": "A yellow butterfly landed softly on the flower beside me."
+},
+"flute": {
+"phonetic": "[fluːt]",
+"example": "Tom plays the flute beautifully in the school orchestra."
+},
+"couple": {
+"phonetic": "[ˈkʌpəl]",
+"example": "A young couple was taking wedding photos in the park.",
+"synonyms": [
+"pair",
+"two",
+"duo"
+]
+},
+"beer": {
+"phonetic": "[bɪr]",
+"example": "Adults may drink beer, but children must never touch it.",
+"synonyms": [
+"ale",
+"lager"
+]
+},
+"background": {
+"phonetic": "[ˈbækɡraʊnd]",
+"example": "In the photo, blue mountains rise softly in the background.",
+"synonyms": [
+"setting",
+"backdrop",
+"history"
+]
+},
+"bottle": {
+"phonetic": "[ˈbɑːtəl]",
+"example": "Don't throw that plastic bottle away; we can recycle it.",
+"synonyms": [
+"flask",
+"jar"
+]
+},
+"body": {
+"phonetic": "[ˈbɑːdi]",
+"example": "Swimming every day keeps your whole body strong and healthy.",
+"synonyms": [
+"figure",
+"frame",
+"physique"
+]
+},
+"group": {
+"phonetic": "[ɡruːp]",
+"example": "Our teacher divided the class into a group of five students.",
+"synonyms": [
+"team",
+"crowd",
+"set",
+"cluster"
+]
+},
+"village": {
+"phonetic": "[ˈvɪlədʒ]",
+"example": "Only twenty families still live in that quiet mountain village.",
+"synonyms": [
+"town",
+"settlement",
+"hamlet"
+]
+},
+"beef": {
+"phonetic": "[biːf]",
+"example": "Mother cooked beef soup for us on a cold winter evening."
+},
+"load": {
+"phonetic": "[loʊd]",
+"example": "The little donkey carried a heavy load up the steep hill.",
+"synonyms": [
+"burden",
+"cargo",
+"freight"
+]
+},
+"coin": {
+"phonetic": "[kɔɪn]",
+"example": "I dropped a coin and it rolled under the vending machine.",
+"synonyms": [
+"money",
+"change"
+]
+},
+"bookstore": {
+"phonetic": "[ˈbʊkstɔːr]",
+"example": "There is a small bookstore between the bakery and the bank.",
+"synonyms": [
+"bookshop"
+]
+},
+"label": {
+"phonetic": "[ˈleɪbəl]",
+"example": "Read the label carefully before you wash this wool sweater.",
+"synonyms": [
+"tag",
+"sticker",
+"mark"
+]
+},
+"port": {
+"phonetic": "[pɔːrt]",
+"example": "Huge ships from many countries arrive at this busy port daily.",
+"synonyms": [
+"harbor",
+"dock",
+"haven"
+]
+},
+"quarter": {
+"phonetic": "[ˈkwɔːrtər]",
+"example": "Cut the apple into four pieces and give me one quarter.",
+"synonyms": [
+"fourth",
+"one-fourth"
+]
+},
+"sunrise": {
+"phonetic": "[ˈsʌnraɪz]",
+"example": "We climbed the hill early to watch the beautiful sunrise together.",
+"synonyms": [
+"dawn",
+"daybreak"
+]
+},
+"sunshine": {
+"phonetic": "[ˈsʌnʃaɪn]",
+"example": "Warm sunshine came through the window and filled the whole room.",
+"synonyms": [
+"sunlight",
+"daylight"
+]
+},
+"wedding": {
+"phonetic": "[ˈwedɪŋ]",
+"example": "My aunt's wedding will be held in a small country church.",
+"synonyms": [
+"marriage"
+]
+},
+"crown": {
+"phonetic": "[kraʊn]",
+"example": "The young queen wore a golden crown covered with bright jewels.",
+"synonyms": [
+"tiara",
+"coronet",
+"diadem"
+]
+},
+"seed": {
+"phonetic": "[siːd]",
+"example": "Plant this tiny seed and water it every single morning.",
+"synonyms": [
+"grain",
+"kernel",
+"sow"
+]
+},
+"coal": {
+"phonetic": "[koʊl]",
+"example": "People once burned coal to heat their houses in winter."
+},
+"comb": {
+"phonetic": "[koʊm]",
+"example": "She lost her comb, so she fixed her hair with fingers."
+},
+"dream": {
+"phonetic": "[driːm]",
+"example": "Last night I had a strange dream about flying over the sea.",
+"synonyms": [
+"vision",
+"fantasy",
+"hope"
+]
+},
+"sugar": {
+"phonetic": "[ˈʃʊɡər]",
+"example": "Add a little sugar if the lemon tea tastes too sour."
+},
+"mile": {
+"phonetic": "[maɪl]",
+"example": "The nearest hospital is about one mile from our house."
+},
+"flashlight": {
+"phonetic": "[ˈflæʃlaɪt]",
+"example": "Take a flashlight with you; the cave is completely dark inside.",
+"synonyms": [
+"torch",
+"lamp"
+]
+},
+"vegetable": {
+"phonetic": "[ˈvedʒtəbəl]",
+"example": "Eat at least one green vegetable with every meal.",
+"synonyms": [
+"greens",
+"produce"
+]
+},
+"wood": {
+"phonetic": "[wʊd]",
+"example": "This old chair is made of wood from a cherry tree.",
+"synonyms": [
+"timber",
+"lumber",
+"forest"
+]
+},
+"belt": {
+"phonetic": "[belt]",
+"example": "His trousers are too big without a leather belt.",
+"synonyms": [
+"band",
+"strap"
+]
+},
+"tourist": {
+"phonetic": "[ˈtʊrəst]",
+"example": "A lost tourist asked me how to reach the palace.",
+"synonyms": [
+"traveler",
+"visitor",
+"sightseer"
+]
+},
+"airport": {
+"phonetic": "[ˈerpɔːrt]",
+"example": "We arrived at the airport two hours before our flight.",
+"synonyms": [
+"airfield"
+]
+},
+"passport": {
+"phonetic": "[ˈpæspɔːrt]",
+"example": "Don't forget your passport, or they won't let you board."
+},
+"plate": {
+"phonetic": "[pleɪt]",
+"example": "He put warm rice and fried eggs on a white plate.",
+"synonyms": [
+"dish",
+"platter",
+"tray"
+]
+},
+"stone": {
+"phonetic": "[stoʊn]",
+"example": "A heavy stone blocked the narrow path up the mountain.",
+"synonyms": [
+"rock",
+"pebble",
+"boulder"
+]
+},
+"downtown": {
+"phonetic": "[ˈdaʊnˈtaʊn]",
+"example": "On Saturday nights, downtown is crowded with young people.",
+"synonyms": [
+"city center"
+]
+},
+"cousin": {
+"phonetic": "[ˈkʌzən]",
+"example": "My cousin from Busan will stay at our house this summer."
+},
+"tooth": {
+"phonetic": "[tuːθ]",
+"example": "The dentist pulled out my bad tooth in ten minutes."
+},
+"potato": {
+"phonetic": "[pəˈteɪtoʊ]",
+"example": "Wash the potato well before you put it in the pot."
+},
+"blanket": {
+"phonetic": "[ˈblæŋkət]",
+"example": "She pulled the thick blanket over her cold feet.",
+"synonyms": [
+"quilt",
+"cover",
+"throw"
+]
+},
+"creek": {
+"phonetic": "[kriːk]",
+"example": "Children were catching small fish in the shallow creek.",
+"synonyms": [
+"brook",
+"stream"
+]
+},
+"nail": {
+"phonetic": "[neɪl]",
+"example": "Please cut your nails; they are getting really long."
+},
+"letter": {
+"phonetic": "[ˈletər]",
+"example": "Grandfather still writes a long letter to his old friend.",
+"synonyms": [
+"note",
+"message",
+"character"
+]
+},
+"date": {
+"phonetic": "[deɪt]",
+"example": "Please write today's date at the top of your paper."
+},
+"store": {
+"phonetic": "[stɔːr]",
+"example": "The corner store closes at eleven o'clock every night.",
+"synonyms": [
+"shop",
+"market",
+"stock"
+]
+},
+"beggar": {
+"phonetic": "[ˈbeɡər]",
+"example": "A thin beggar sat by the gate asking for food."
+},
+"bedside": {
+"phonetic": "[ˈbedsaɪd]",
+"example": "My glasses are always on the small bedside table."
+},
+"bill": {
+"phonetic": "[bɪl]",
+"example": "After lunch, my father asked the waiter for the bill.",
+"synonyms": [
+"check",
+"invoice",
+"note"
+]
+},
+"doll": {
+"phonetic": "[dɑːl]",
+"example": "My sister sleeps every night holding her favorite doll.",
+"synonyms": [
+"figure",
+"puppet",
+"toy"
+]
+},
+"snake": {
+"phonetic": "[sneɪk]",
+"example": "A long green snake slid quietly through the tall grass.",
+"synonyms": [
+"serpent"
+]
+},
+"mouse": {
+"phonetic": "[maʊs]",
+"example": "A little mouse ate the cheese we left in the kitchen."
+},
+"deer": {
+"phonetic": "[dɪr]",
+"example": "Two deer came out of the forest and looked at us."
+},
+"frog": {
+"phonetic": "[frɑːɡ]",
+"example": "A green frog jumped into the pond with a loud splash."
+},
+"pepper": {
+"phonetic": "[ˈpepər]",
+"example": "Add a little salt and pepper to make the soup tastier."
+},
+"rest": {
+"phonetic": "[rest]",
+"example": "You look tired, so take a short rest before studying again.",
+"synonyms": [
+"break",
+"relaxation",
+"pause"
+]
+},
+"tower": {
+"phonetic": "[ˈtaʊər]",
+"example": "From the top of the tower, we could see the whole city.",
+"synonyms": [
+"spire",
+"steeple"
+]
+},
+"bridge": {
+"phonetic": "[brɪdʒ]",
+"example": "A long bridge connects the island to the busy city."
+},
+"ground": {
+"phonetic": "[ɡraʊnd]",
+"example": "Heavy rain made the ground soft and muddy last night.",
+"synonyms": [
+"land",
+"earth",
+"soil",
+"field"
+]
+},
+"cloth": {
+"phonetic": "[klɔːθ]",
+"example": "She wiped the dusty window with a wet cloth.",
+"synonyms": [
+"fabric",
+"material",
+"textile"
+]
+},
+"post": {
+"phonetic": "[poʊst]",
+"example": "Your birthday card arrived by post this morning.",
+"synonyms": [
+"mail",
+"letters"
+]
+},
+"job": {
+"phonetic": "[dʒɑːb]",
+"example": "My sister found a new job at a design company.",
+"synonyms": [
+"work",
+"occupation",
+"task",
+"position"
+]
+},
+"town": {
+"phonetic": "[taʊn]",
+"example": "Everyone in this small town knows each other by name.",
+"synonyms": [
+"city",
+"village",
+"borough"
+]
+},
+"fun": {
+"phonetic": "[fʌn]",
+"example": "Building a snowman with my friends was great fun.",
+"synonyms": [
+"enjoyment",
+"amusement",
+"pleasure",
+"play"
+]
+},
+"bathroom": {
+"phonetic": "[ˈbæθruːm]",
+"example": "Someone is using the bathroom, so please wait a moment.",
+"synonyms": [
+"restroom",
+"washroom",
+"toilet"
+]
+},
+"tail": {
+"phonetic": "[teɪl]",
+"example": "The happy puppy wagged its tail as soon as I entered."
+},
+"mayor": {
+"phonetic": "[ˈmeɪər]",
+"example": "The mayor promised to build a new library downtown.",
+"synonyms": [
+"governor",
+"chief"
+]
+},
+"piece": {
+"phonetic": "[piːs]",
+"example": "May I have one more piece of your chocolate cake?",
+"synonyms": [
+"bit",
+"fragment",
+"part",
+"chunk"
+]
+},
+"fruit": {
+"phonetic": "[fruːt]",
+"example": "Fresh fruit tastes much better than sweet candy."
+},
+"british": {
+"phonetic": "[ˈbrɪtɪʃ]",
+"example": "A British student joined our class and quickly made friends."
+},
+"french": {
+"phonetic": "[frentʃ]",
+"example": "A French visitor asked for directions in very polite English."
+},
+"german": {
+"phonetic": "[ˈdʒɜːrmən]",
+"example": "My aunt married a German, and now they live in Berlin."
+},
+"sale": {
+"phonetic": "[seɪl]",
+"example": "The store had a big sale, so I bought two jackets.",
+"synonyms": [
+"selling",
+"deal",
+"bargain"
+]
+},
+"rope": {
+"phonetic": "[roʊp]",
+"example": "The sailors tied the boat to the dock with a thick rope.",
+"synonyms": [
+"cord",
+"line",
+"string"
+]
+},
+"umbrella": {
+"phonetic": "[əmˈbrelə]",
+"example": "Take an umbrella with you because it will rain this afternoon.",
+"synonyms": [
+"parasol",
+"sunshade"
+]
+},
+"dollar": {
+"phonetic": "[ˈdɑːlər]",
+"example": "This comic book costs only one dollar at the school festival."
+},
+"mistake": {
+"phonetic": "[mɪˈsteɪk]",
+"example": "I made a small mistake on the last math question.",
+"synonyms": [
+"error",
+"fault",
+"slip",
+"misunderstand"
+]
+},
+"birth": {
+"phonetic": "[bɜːrθ]",
+"example": "The date of my birth is written on my passport.",
+"synonyms": [
+"childbirth",
+"delivery",
+"nativity"
+]
+},
+"pilot": {
+"phonetic": "[ˈpaɪlət]",
+"example": "Her dream is to become a pilot and fly around the world.",
+"synonyms": [
+"aviator",
+"flyer",
+"navigator"
+]
+},
+"none": {
+"phonetic": "[nʌn]",
+"example": "None of my classmates knew the answer to that difficult question."
+},
+"front": {
+"phonetic": "[frʌnt]",
+"example": "The front of our school building was painted white last summer.",
+"synonyms": [
+"face",
+"forefront"
+]
+},
+"present": {
+"phonetic": "[ˈprezənt]",
+"example": "We should stop worrying and enjoy the present moment together.",
+"synonyms": [
+"current",
+"now"
+]
+},
+"nickname": {
+"phonetic": "[ˈnɪkneɪm]",
+"example": "My friends gave me the nickname Rabbit because I run fast.",
+"synonyms": [
+"pet name",
+"alias"
+]
+},
+"war": {
+"phonetic": "[wɔːr]",
+"example": "Many families lost their homes during the long and terrible war.",
+"synonyms": [
+"battle",
+"conflict",
+"fighting"
+]
+},
+"telephone": {
+"phonetic": "[ˈteləfoʊn]",
+"example": "The old telephone in the hallway rang loudly at midnight.",
+"synonyms": [
+"phone",
+"call",
+"ring"
+]
+},
+"pair": {
+"phonetic": "[per]",
+"example": "I bought a new pair of shoes for the school trip.",
+"synonyms": [
+"couple",
+"set",
+"duo"
+]
+},
+"weather": {
+"phonetic": "[ˈweðər]",
+"example": "The weather was so nice that we ate lunch outside."
+},
+"dish": {
+"phonetic": "[dɪʃ]",
+"example": "Please put the clean dish back on the top shelf.",
+"synonyms": [
+"plate",
+"bowl",
+"food",
+"course"
+]
+},
+"hole": {
+"phonetic": "[hoʊl]",
+"example": "There is a small hole in my sock near the toe.",
+"synonyms": [
+"opening",
+"gap",
+"cavity",
+"pit"
+]
+},
+"plane": {
+"phonetic": "[pleɪn]",
+"example": "Our plane landed safely after a five-hour flight.",
+"synonyms": [
+"airplane",
+"aircraft",
+"jet"
+]
+},
+"living room": {
+"phonetic": "[ˈlɪvɪŋ ruːm]",
+"example": "My family watches movies together in the living room every Friday.",
+"synonyms": [
+"lounge",
+"sitting room"
+]
+},
+"gun": {
+"phonetic": "[ɡʌn]",
+"example": "The police officer kept his gun inside a locked box.",
+"synonyms": [
+"pistol",
+"rifle",
+"firearm"
+]
+},
+"meat": {
+"phonetic": "[miːt]",
+"example": "My brother never eats meat because he really loves animals.",
+"synonyms": [
+"flesh"
+]
+},
+"cover": {
+"phonetic": "[ˈkʌvər]",
+"example": "Put a cover on the pot so the soup stays hot.",
+"synonyms": [
+"lid",
+"wrap",
+"conceal",
+"protect"
+]
+},
+"grass": {
+"phonetic": "[ɡræs]",
+"example": "Cows eat grass in the wide green field all day.",
+"synonyms": [
+"lawn",
+"turf",
+"weed"
+]
+},
+"watch": {
+"phonetic": "[wɑːtʃ]",
+"example": "My grandfather gave me a silver watch for my birthday.",
+"synonyms": [
+"observe",
+"view",
+"look at"
+]
+},
+"word": {
+"phonetic": "[wɜːrd]",
+"example": "I did not know the meaning of that long word.",
+"synonyms": [
+"term",
+"expression"
+]
+},
+"explain": {
+"phonetic": "[ɪksˈpleɪn]",
+"example": "Can you explain the rules of this game to me?",
+"synonyms": [
+"describe",
+"clarify",
+"tell"
+]
+},
+"wear": {
+"phonetic": "[wer]",
+"example": "You should wear a warm coat because it is freezing outside.",
+"synonyms": [
+"put on",
+"dress in",
+"have on"
+]
+},
+"amuse": {
+"phonetic": "[əˈmjuːz]",
+"example": "The clown's funny tricks amused the children at the party.",
+"synonyms": [
+"entertain",
+"delight",
+"please"
+]
+},
+"suppose": {
+"phonetic": "[səˈpoʊz]",
+"example": "I suppose she is still waiting for us at the station.",
+"synonyms": [
+"assume",
+"guess",
+"imagine"
+]
+},
+"leap": {
+"phonetic": "[liːp]",
+"example": "The cat leaped over the fence and disappeared into the garden.",
+"synonyms": [
+"jump",
+"spring",
+"bound"
+]
+},
+"bury": {
+"phonetic": "[ˈberi]",
+"example": "The dog likes to bury his bones under the big tree.",
+"synonyms": [
+"cover",
+"hide",
+"conceal"
+]
+},
+"engage": {
+"phonetic": "[enˈɡeɪdʒ]",
+"example": "The company engaged ten new workers before the busy season.",
+"synonyms": [
+"involve",
+"occupy",
+"absorb"
+]
+},
+"sow": {
+"phonetic": "[saʊ]",
+"example": "Farmers sow seeds in the field early every spring.",
+"synonyms": [
+"plant",
+"scatter",
+"seed"
+]
+},
+"lift": {
+"phonetic": "[lɪft]",
+"example": "He was strong enough to lift the heavy box alone.",
+"synonyms": [
+"raise",
+"pick up",
+"hoist"
+]
+},
+"bow": {
+"phonetic": "[baʊ]",
+"example": "Korean students bow to their teachers when they meet them.",
+"synonyms": [
+"bend",
+"nod",
+"stoop"
+]
+},
+"rub": {
+"phonetic": "[rʌb]",
+"example": "She rubbed her sleepy eyes and got out of bed.",
+"synonyms": [
+"scrub",
+"wipe",
+"stroke"
+]
+},
+"bite": {
+"phonetic": "[baɪt]",
+"example": "Be careful, because that little dog sometimes bites strangers.",
+"synonyms": [
+"chew",
+"nip",
+"snap"
+]
+},
+"vote": {
+"phonetic": "[voʊt]",
+"example": "We will vote for our class president next Monday morning.",
+"synonyms": [
+"elect",
+"poll",
+"choose"
+]
+},
+"hop": {
+"phonetic": "[hɑːp]",
+"example": "The boy hopped on one foot across the whole playground.",
+"synonyms": [
+"jump",
+"skip",
+"bounce"
+]
+},
+"imagine": {
+"phonetic": "[ɪˈmædʒən]",
+"example": "Close your eyes and imagine a beach with white sand.",
+"synonyms": [
+"picture",
+"suppose",
+"visualize"
+]
+},
+"allow": {
+"phonetic": "[əˈlaʊ]",
+"example": "My parents allow me to play games for one hour.",
+"synonyms": [
+"permit",
+"let",
+"approve"
+]
+},
+"offer": {
+"phonetic": "[ˈɔːfər]",
+"example": "The hotel offers free breakfast to all of its guests.",
+"synonyms": [
+"provide",
+"present",
+"give",
+"supply"
+]
+},
+"gain": {
+"phonetic": "[ɡeɪn]",
+"example": "You can gain a lot of knowledge by reading good books.",
+"synonyms": [
+"get",
+"obtain",
+"earn"
+]
+},
+"alarm": {
+"phonetic": "[əˈlɑːrm]",
+"example": "The loud noise from the kitchen alarmed everyone in the house.",
+"synonyms": [
+"warning",
+"alert",
+"signal"
+]
+},
+"obey": {
+"phonetic": "[oʊˈbeɪ]",
+"example": "Soldiers must obey the orders of their commanding officer.",
+"synonyms": [
+"follow",
+"comply",
+"submit"
+]
+},
+"steal": {
+"phonetic": "[stiːl]",
+"example": "Someone tried to steal my bicycle in front of the library.",
+"synonyms": [
+"rob",
+"snatch",
+"take"
+]
+},
+"dig": {
+"phonetic": "[dɪɡ]",
+"example": "They dug a deep hole to plant the young tree.",
+"synonyms": [
+"excavate",
+"shovel",
+"burrow"
+]
+},
+"choose": {
+"phonetic": "[tʃuːz]",
+"example": "You may choose one dessert from the menu tonight.",
+"synonyms": [
+"pick",
+"select",
+"opt for"
+]
+},
+"receive": {
+"phonetic": "[rəˈsiːv]",
+"example": "I received a long letter from my old friend yesterday.",
+"synonyms": [
+"get",
+"accept",
+"obtain"
+]
+},
+"bet": {
+"phonetic": "[bet]",
+"example": "He bet ten dollars on the fastest horse and lost.",
+"synonyms": [
+"wager",
+"gamble",
+"stake"
+]
+},
+"hurt": {
+"phonetic": "[hɜːrt]",
+"example": "Your unkind words really hurt my little sister's feelings.",
+"synonyms": [
+"injure",
+"harm",
+"wound",
+"ache"
+]
+},
+"burn": {
+"phonetic": "[bɜːrn]",
+"example": "The dry leaves burned quickly in the small campfire.",
+"synonyms": [
+"blaze",
+"scorch",
+"flame"
+]
+},
+"sink": {
+"phonetic": "[sɪŋk]",
+"example": "The paper boat began to sink slowly in the pond.",
+"synonyms": [
+"drop",
+"descend",
+"submerge"
+]
+},
+"decide": {
+"phonetic": "[dɪˈsaɪd]",
+"example": "We decided to meet in front of the movie theater.",
+"synonyms": [
+"determine",
+"choose",
+"settle"
+]
+},
+"beg": {
+"phonetic": "[beɡ]",
+"example": "An old man was begging for food near the train station.",
+"synonyms": [
+"plead",
+"implore",
+"ask",
+"request"
+]
+},
+"reply": {
+"phonetic": "[rɪˈplaɪ]",
+"example": "She did not reply to my message until late at night.",
+"synonyms": [
+"answer",
+"respond",
+"react"
+]
+},
+"tear": {
+"phonetic": "[ter]",
+"example": "Do not tear the pages of the library book.",
+"synonyms": [
+"rip",
+"split",
+"shred"
+]
+},
+"flow": {
+"phonetic": "[floʊ]",
+"example": "A clear river flows through the middle of our town.",
+"synonyms": [
+"stream",
+"run",
+"pour"
+]
+},
+"remember": {
+"phonetic": "[rɪˈmembər]",
+"example": "I still remember the day we first met in kindergarten.",
+"synonyms": [
+"recall",
+"recollect"
+]
+},
+"appear": {
+"phonetic": "[əˈpɪr]",
+"example": "A rainbow appeared in the sky after the heavy rain.",
+"synonyms": [
+"show up",
+"emerge",
+"seem",
+"look"
+]
+},
+"breathe": {
+"phonetic": "[briːð]",
+"example": "It is hard to breathe near the top of the mountain.",
+"synonyms": [
+"inhale",
+"respire"
+]
+},
+"whistle": {
+"phonetic": "[ˈwɪsəl]",
+"example": "My uncle whistles a cheerful tune while he washes the car."
+},
+"draw": {
+"phonetic": "[drɔː]",
+"example": "Two strong horses drew the heavy wagon up the hill.",
+"synonyms": [
+"pull",
+"drag",
+"sketch"
+]
+},
+"sound": {
+"phonetic": "[saʊnd]",
+"example": "A deep bell sounds every hour from the old tower.",
+"synonyms": [
+"noise",
+"tone"
+]
+},
+"save": {
+"phonetic": "[seɪv]",
+"example": "The brave firefighter saved a baby from the burning building.",
+"synonyms": [
+"rescue",
+"spare",
+"preserve"
+]
+},
+"continue": {
+"phonetic": "[kənˈtɪnju]",
+"example": "Let's continue our discussion after the lunch break.",
+"synonyms": [
+"go on",
+"keep on",
+"last"
+]
+},
+"check": {
+"phonetic": "[tʃek]",
+"example": "The thick trees checked the cold wind from the north.",
+"synonyms": [
+"examine",
+"inspect",
+"verify",
+"confirm"
+]
+},
+"sail": {
+"phonetic": "[seɪl]",
+"example": "They sailed across the wide ocean in a small boat.",
+"synonyms": [
+"cruise",
+"navigate",
+"voyage"
+]
+},
+"wake": {
+"phonetic": "[weɪk]",
+"example": "I usually wake at six thirty and wash my face.",
+"synonyms": [
+"awaken",
+"rouse",
+"get up",
+"arise"
+]
+},
+"agree": {
+"phonetic": "[əˈɡriː]",
+"example": "Everyone agreed with my plan to clean the classroom together.",
+"synonyms": [
+"consent",
+"accept",
+"approve"
+]
+},
+"hang": {
+"phonetic": "[hæŋ]",
+"example": "Please hang your wet towel on the hook outside.",
+"synonyms": [
+"suspend",
+"hook",
+"dangle"
+]
+},
+"record": {
+"phonetic": "[rəˈkɔːrd]",
+"example": "She broke the school record for the hundred-meter race.",
+"synonyms": [
+"document",
+"report",
+"log"
+]
+},
+"drop": {
+"phonetic": "[drɑːp]",
+"example": "The apple dropped from the branch onto the wet ground.",
+"synonyms": [
+"fall",
+"let fall",
+"lower"
+]
+},
+"climb": {
+"phonetic": "[klaɪm]",
+"example": "The little boy climbed up the ladder very carefully.",
+"synonyms": [
+"ascend",
+"scale",
+"go up",
+"mount"
+]
+},
+"add": {
+"phonetic": "[æd]",
+"example": "Add some sugar to the tea if it tastes bitter.",
+"synonyms": [
+"plus",
+"attach",
+"include",
+"combine"
+]
+},
+"shine": {
+"phonetic": "[ʃaɪn]",
+"example": "The stars shine brightly in the countryside sky at night.",
+"synonyms": [
+"glow",
+"sparkle",
+"beam"
+]
+},
+"invite": {
+"phonetic": "[ɪnˈvaɪt]",
+"example": "I want to invite ten friends to my birthday party.",
+"synonyms": [
+"ask",
+"call",
+"welcome"
+]
+},
+"join": {
+"phonetic": "[dʒɔɪn]",
+"example": "The workers joined the two pipes with a metal ring.",
+"synonyms": [
+"connect",
+"unite",
+"attach"
+]
+},
+"hide": {
+"phonetic": "[haɪd]",
+"example": "My sister hid the candy under her soft pillow.",
+"synonyms": [
+"conceal",
+"cover",
+"bury"
+]
+},
+"bring": {
+"phonetic": "[brɪŋ]",
+"example": "Please bring your dictionary to English class tomorrow morning.",
+"synonyms": [
+"carry",
+"fetch",
+"deliver"
+]
+},
+"wink": {
+"phonetic": "[wɪŋk]",
+"example": "He winked at me to show that he was joking.",
+"synonyms": [
+"blink"
+]
+},
+"shoot": {
+"phonetic": "[ʃuːt]",
+"example": "The hunter shot an arrow at the round wooden target.",
+"synonyms": [
+"fire",
+"launch",
+"blast"
+]
+},
+"roll": {
+"phonetic": "[roʊl]",
+"example": "The ball rolled down the stairs and hit the door.",
+"synonyms": [
+"turn",
+"spin",
+"tumble",
+"revolve"
+]
+},
+"pull": {
+"phonetic": "[pʊl]",
+"example": "The child pulled his mother's sleeve to get her attention.",
+"synonyms": [
+"drag",
+"draw",
+"tug",
+"haul"
+]
+},
+"push": {
+"phonetic": "[pʊʃ]",
+"example": "We had to push the broken car to the roadside.",
+"synonyms": [
+"press",
+"shove",
+"thrust"
+]
+},
+"guess": {
+"phonetic": "[ɡes]",
+"example": "Can you guess how old my grandmother is now?",
+"synonyms": [
+"suppose",
+"assume",
+"imagine",
+"estimate"
+]
+},
+"happen": {
+"phonetic": "[ˈhæpən]",
+"example": "A strange thing happened on my way home yesterday.",
+"synonyms": [
+"occur",
+"arise",
+"take place"
+]
+},
+"pick": {
+"phonetic": "[pɪk]",
+"example": "Pick any book you like from this tall shelf.",
+"synonyms": [
+"choose",
+"select",
+"gather"
+]
+},
+"shake": {
+"phonetic": "[ʃeɪk]",
+"example": "His hands shook because he was very nervous on stage.",
+"synonyms": [
+"tremble",
+"shiver",
+"wave"
+]
+},
+"fill": {
+"phonetic": "[fɪl]",
+"example": "She filled the glass with cold milk for her brother.",
+"synonyms": [
+"pack",
+"stuff",
+"load",
+"occupy"
+]
+},
+"fail": {
+"phonetic": "[feɪl]",
+"example": "He failed the driving test twice but never gave up.",
+"synonyms": [
+"lose",
+"flunk",
+"collapse"
+]
+},
+"fight": {
+"phonetic": "[faɪt]",
+"example": "The two brothers often fight about small, silly things.",
+"synonyms": [
+"battle",
+"struggle",
+"combat",
+"quarrel"
+]
+},
+"fear": {
+"phonetic": "[fɪr]",
+"example": "Many people fear speaking in front of a large crowd.",
+"synonyms": [
+"dread",
+"fright",
+"terror",
+"be afraid of"
+]
+},
+"carry": {
+"phonetic": "[ˈkæri]",
+"example": "The old man carried a heavy bag of rice home.",
+"synonyms": [
+"bring",
+"transport",
+"bear",
+"take"
+]
+},
+"dive": {
+"phonetic": "[daɪv]",
+"example": "She dived into the cold pool without any hesitation.",
+"synonyms": [
+"plunge",
+"submerge",
+"jump in"
+]
+},
+"win": {
+"phonetic": "[wɪn]",
+"example": "Our team won the soccer match by two goals.",
+"synonyms": [
+"beat",
+"triumph",
+"succeed",
+"gain"
+]
+},
+"ride": {
+"phonetic": "[raɪd]",
+"example": "I ride my bicycle to school every single morning.",
+"synonyms": [
+"mount",
+"board",
+"travel"
+]
+},
+"turn": {
+"phonetic": "[tɜːrn]",
+"example": "The wheels turn faster when you pedal a little harder.",
+"synonyms": [
+"rotate",
+"spin",
+"revolve",
+"change"
+]
+},
+"need": {
+"phonetic": "[niːd]",
+"example": "Plants need water and sunlight in order to grow well.",
+"synonyms": [
+"require",
+"want",
+"demand"
+]
+},
+"build": {
+"phonetic": "[bɪld]",
+"example": "My uncle wants to build a small wooden house near the river.",
+"synonyms": [
+"construct",
+"make",
+"erect"
+]
+},
+"hurry": {
+"phonetic": "[ˈhɜːri]",
+"example": "You should hurry, or you will miss the last bus home.",
+"synonyms": [
+"rush",
+"hasten"
+]
+},
+"return": {
+"phonetic": "[rɪˈtɜːrn]",
+"example": "My sister will return from her school trip on Friday evening.",
+"synonyms": [
+"come back",
+"go back",
+"give back"
+]
+},
+"believe": {
+"phonetic": "[bɪˈliːv]",
+"example": "I believe every word my best friend told me yesterday.",
+"synonyms": [
+"trust",
+"think",
+"accept"
+]
+},
+"surprise": {
+"phonetic": "[sərˈpraɪz]",
+"example": "The children were surprised by the huge cake on the table.",
+"synonyms": [
+"astonish",
+"amaze",
+"shock",
+"startle"
+]
+},
+"gather": {
+"phonetic": "[ˈɡæðər]",
+"example": "We gathered dry leaves in the yard to make a big pile.",
+"synonyms": [
+"collect",
+"assemble",
+"pick up"
+]
+},
+"throw": {
+"phonetic": "[θroʊ]",
+"example": "Please throw the ball to me across the wide playground.",
+"synonyms": [
+"toss",
+"hurl",
+"fling",
+"pitch"
+]
+},
+"raise": {
+"phonetic": "[reɪz]",
+"example": "Raise your hand if you know the answer to this question.",
+"synonyms": [
+"lift",
+"elevate",
+"put up",
+"increase"
+]
+},
+"count": {
+"phonetic": "[kaʊnt]",
+"example": "The little girl can already count from one to a hundred.",
+"synonyms": [
+"calculate",
+"add up",
+"number"
+]
+},
+"smell": {
+"phonetic": "[smel]",
+"example": "I smelled fresh bread as soon as I opened the door.",
+"synonyms": [
+"scent",
+"odor",
+"aroma"
+]
+},
+"spend": {
+"phonetic": "[spend]",
+"example": "My brother spends too much money on computer games every month.",
+"synonyms": [
+"use",
+"pay",
+"consume",
+"expend"
+]
+},
+"pitch": {
+"phonetic": "[pɪtʃ]",
+"example": "The young player pitched the ball fast and won the game.",
+"synonyms": [
+"throw",
+"toss",
+"hurl",
+"fling"
+]
+},
+"pop": {
+"phonetic": "[pɑːp]",
+"example": "The balloon popped loudly and scared everyone at the birthday party.",
+"synonyms": [
+"burst",
+"bang",
+"crack"
+]
+},
+"blow": {
+"phonetic": "[bloʊ]",
+"example": "A cold wind blew hard all night outside my bedroom window.",
+"synonyms": [
+"puff",
+"breathe"
+]
+},
+"miss": {
+"phonetic": "[mɪs]",
+"example": "Jisu missed the train because she woke up much too late.",
+"synonyms": [
+"overlook",
+"skip",
+"lose"
+]
+},
+"excuse": {
+"phonetic": "[ɪksˈkjuːs]",
+"example": "Please excuse my mistake; I will be more careful next time.",
+"synonyms": [
+"forgive",
+"pardon",
+"overlook"
+]
+},
+"hit": {
+"phonetic": "[hɪt]",
+"example": "He hit the drum with a stick and made a big sound.",
+"synonyms": [
+"strike",
+"beat",
+"knock",
+"punch"
+]
+},
+"tie": {
+"phonetic": "[taɪ]",
+"example": "Tie your shoelaces tightly before you start running in the race.",
+"synonyms": [
+"bind",
+"fasten",
+"knot",
+"attach"
+]
+},
+"touch": {
+"phonetic": "[tʌtʃ]",
+"example": "Her long hair touches the back of the chair when she sits.",
+"synonyms": [
+"feel",
+"contact",
+"move"
+]
+},
+"stay": {
+"phonetic": "[steɪ]",
+"example": "We stayed at a small hotel near the beach for three days.",
+"synonyms": [
+"remain",
+"wait",
+"linger"
+]
+},
+"enjoy": {
+"phonetic": "[enˈdʒɔɪ]",
+"example": "Everyone enjoyed the school festival much more than they had expected.",
+"synonyms": [
+"like",
+"love",
+"appreciate"
+]
+},
+"lose": {
+"phonetic": "[luːz]",
+"example": "Be careful not to lose your umbrella on the subway again.",
+"synonyms": [
+"misplace",
+"miss",
+"forfeit"
+]
+},
+"close": {
+"phonetic": "[kloʊs]",
+"example": "Could you close the window? The noise outside is really loud.",
+"synonyms": [
+"shut",
+"seal",
+"end",
+"finish"
+]
+},
+"arrive": {
+"phonetic": "[ərˈaɪv]",
+"example": "Our guests arrived at the house just before dinner was ready.",
+"synonyms": [
+"reach",
+"come",
+"get in",
+"land"
+]
+},
+"travel": {
+"phonetic": "[ˈtrævəl]",
+"example": "Someday I want to travel around Europe with my closest friends.",
+"synonyms": [
+"journey",
+"trip",
+"tour",
+"voyage"
+]
+},
+"reach": {
+"phonetic": "[riːtʃ]",
+"example": "The tired hikers reached the mountain top before the sun set.",
+"synonyms": [
+"arrive at",
+"get to",
+"attain",
+"extend"
+]
+},
+"hold": {
+"phonetic": "[hoʊld]",
+"example": "The child held his mother's hand tightly in the crowded market.",
+"synonyms": [
+"grip",
+"grasp",
+"keep"
+]
+},
+"worry": {
+"phonetic": "[ˈwɜːri]",
+"example": "Don't worry about the test; you studied hard for many weeks.",
+"synonyms": [
+"fret",
+"bother",
+"concern"
+]
+},
+"marry": {
+"phonetic": "[ˈmeri]",
+"example": "My aunt will marry her boyfriend in a small country church.",
+"synonyms": [
+"wed"
+]
+},
+"expect": {
+"phonetic": "[ɪkˈspekt]",
+"example": "We expect warm weather during the whole school vacation this year.",
+"synonyms": [
+"anticipate",
+"await",
+"suppose"
+]
+},
+"understand": {
+"phonetic": "[ʌndərˈstænd]",
+"example": "I finally understand why our teacher gave us so much homework.",
+"synonyms": [
+"comprehend",
+"grasp",
+"realize",
+"know"
+]
+},
+"break": {
+"phonetic": "[breɪk]",
+"example": "Tom broke the window with a baseball and looked very sorry.",
+"synonyms": [
+"smash",
+"crack",
+"shatter"
+]
+},
+"smoke": {
+"phonetic": "[smoʊk]",
+"example": "Students must never smoke inside or around the school building.",
+"synonyms": [
+"fume",
+"vapor",
+"puff"
+]
+},
+"lend": {
+"phonetic": "[lend]",
+"example": "Can you lend me your pencil until this class is over?",
+"synonyms": [
+"loan",
+"advance"
+]
+},
+"shut": {
+"phonetic": "[ʃʌt]",
+"example": "She shut the door quietly so the baby would keep sleeping.",
+"synonyms": [
+"close",
+"seal",
+"fasten"
+]
+},
+"sleep": {
+"phonetic": "[sliːp]",
+"example": "My dog sleeps on the sofa every afternoon after his walk.",
+"synonyms": [
+"doze",
+"nap",
+"slumber",
+"rest"
+]
+},
+"lay": {
+"phonetic": "[leɪ]",
+"example": "The nurse laid the sick boy gently on the white bed.",
+"synonyms": [
+"put",
+"place",
+"set"
+]
+},
+"paint": {
+"phonetic": "[peɪnt]",
+"example": "Our art class painted flowers and trees on a huge wall.",
+"synonyms": [
+"draw",
+"color",
+"coat"
+]
+},
+"lead": {
+"phonetic": "[led]",
+"example": "A kind guide led the visitors through the dark cave safely.",
+"synonyms": [
+"guide",
+"direct",
+"conduct",
+"head"
+]
+},
+"pass": {
+"phonetic": "[pæs]",
+"example": "We passed a beautiful lake on our way to the camp.",
+"synonyms": [
+"go by",
+"move past",
+"cross"
+]
+},
+"hand": {
+"phonetic": "[hænd]",
+"example": "Please hand this letter to your father when you get home."
+},
+"ancient": {
+"phonetic": "[ˈeɪntʃənt]",
+"example": "The museum keeps many ancient coins found under an old city.",
+"synonyms": [
+"old",
+"antique",
+"aged"
+]
+},
+"nuclear": {
+"phonetic": "[ˈnuːklɪər]",
+"example": "Many countries are still arguing about nuclear weapons and world peace.",
+"synonyms": [
+"atomic"
+]
+},
+"necessary": {
+"phonetic": "[ˈnesəseri]",
+"example": "Warm clothes are necessary if you climb the mountain in winter.",
+"synonyms": [
+"essential",
+"needed",
+"required"
+]
+},
+"common": {
+"phonetic": "[ˈkɑːmən]",
+"example": "Music is a common interest that brings the two friends together.",
+"synonyms": [
+"ordinary",
+"usual",
+"normal",
+"shared"
+]
+},
+"inner": {
+"phonetic": "[ˈɪnər]",
+"example": "She keeps her house key in the inner pocket of her bag.",
+"synonyms": [
+"internal",
+"interior",
+"inside"
+]
+},
+"thirsty": {
+"phonetic": "[ˈθɜːrsti]",
+"example": "After the long soccer game, all the players were very thirsty.",
+"synonyms": [
+"parched",
+"dry"
+]
+},
+"thin": {
+"phonetic": "[θɪn]",
+"example": "This paper is so thin that light passes right through it.",
+"synonyms": [
+"slim",
+"slender",
+"narrow"
+]
+},
+"gray": {
+"phonetic": "[ɡreɪ]",
+"example": "Thick gray clouds covered the sky before the heavy rain started."
+},
+"famous": {
+"phonetic": "[ˈfeɪməs]",
+"example": "This little town is famous for its sweet apples and honey.",
+"synonyms": [
+"well-known",
+"celebrated",
+"renowned",
+"noted"
+]
+},
+"industrial": {
+"phonetic": "[ɪnˈdʌstrɪəl]",
+"example": "The city grew quickly after several industrial areas were built there.",
+"synonyms": [
+"manufacturing",
+"commercial"
+]
+},
+"silent": {
+"phonetic": "[ˈsaɪlənt]",
+"example": "The classroom went silent when the principal walked through the door.",
+"synonyms": [
+"quiet",
+"soundless",
+"still",
+"mute"
+]
+},
+"absent": {
+"phonetic": "[ˈæbsənt]",
+"example": "Jisu was absent from school because she had a bad cold.",
+"synonyms": [
+"missing",
+"away",
+"gone"
+]
+},
+"flat": {
+"phonetic": "[flæt]",
+"example": "We looked for a flat place to put up our tent.",
+"synonyms": [
+"level",
+"even",
+"smooth"
+]
+},
+"main": {
+"phonetic": "[meɪn]",
+"example": "The main reason for his success was his daily practice.",
+"synonyms": [
+"chief",
+"principal",
+"major",
+"primary"
+]
+},
+"wild": {
+"phonetic": "[waɪld]",
+"example": "Wild animals live deep in the forest, far from human houses.",
+"synonyms": [
+"untamed",
+"savage",
+"fierce"
+]
+},
+"wet": {
+"phonetic": "[wet]",
+"example": "My socks got wet when I stepped into a deep puddle.",
+"synonyms": [
+"damp",
+"moist",
+"soaked"
+]
+},
+"blind": {
+"phonetic": "[blaɪnd]",
+"example": "The blind man crossed the street with help from his dog.",
+"synonyms": [
+"sightless",
+"unseeing"
+]
+},
+"dumb": {
+"phonetic": "[dʌm]",
+"example": "In the old story, the poor boy was dumb from birth.",
+"synonyms": [
+"mute",
+"speechless",
+"silent",
+"stupid"
+]
+},
+"sharp": {
+"phonetic": "[ʃɑːrp]",
+"example": "Be careful with that knife because its edge is very sharp.",
+"synonyms": [
+"keen",
+"pointed",
+"acute"
+]
+},
+"terrible": {
+"phonetic": "[ˈterəbəl]",
+"example": "The traffic accident on the bridge was truly a terrible sight.",
+"synonyms": [
+"awful",
+"horrible",
+"dreadful"
+]
+},
+"grand": {
+"phonetic": "[ɡrænd]",
+"example": "A grand palace with tall stone towers stood beside the river.",
+"synonyms": [
+"magnificent",
+"splendid",
+"majestic",
+"impressive"
+]
+},
+"homesick": {
+"phonetic": "[ˈhoʊmsɪk]",
+"example": "During the summer camp, Tom felt homesick and called his mother.",
+"synonyms": [
+"nostalgic",
+"longing"
+]
+},
+"fat": {
+"phonetic": "[fæt]",
+"example": "My cat became quite fat after eating snacks all winter long.",
+"synonyms": [
+"plump",
+"overweight",
+"chubby"
+]
+},
+"strange": {
+"phonetic": "[streɪndʒ]",
+"example": "I heard a strange noise coming from under the kitchen floor.",
+"synonyms": [
+"odd",
+"weird",
+"unusual",
+"peculiar"
+]
+},
+"pleasant": {
+"phonetic": "[ˈplezənt]",
+"example": "We spent a pleasant afternoon reading books in the quiet garden.",
+"synonyms": [
+"nice",
+"enjoyable",
+"agreeable"
+]
+},
+"handsome": {
+"phonetic": "[ˈhænsəm]",
+"example": "Everyone says her older brother is tall and very handsome.",
+"synonyms": [
+"good-looking",
+"attractive",
+"fine"
+]
+},
+"equal": {
+"phonetic": "[ˈiːkwəl]",
+"example": "Cut the cake into eight equal pieces for all the guests.",
+"synonyms": [
+"same",
+"identical",
+"even"
+]
+},
+"dear": {
+"phonetic": "[dɪr]",
+"example": "My dear friend sent me a birthday card from another country.",
+"synonyms": [
+"beloved",
+"precious",
+"darling"
+]
+},
+"sweet": {
+"phonetic": "[swiːt]",
+"example": "These strawberries taste sweet even without any sugar on them.",
+"synonyms": [
+"sugary",
+"honeyed",
+"pleasant"
+]
+},
+"dull": {
+"phonetic": "[dʌl]",
+"example": "A good teacher never calls any student dull or slow.",
+"synonyms": [
+"stupid",
+"slow",
+"blunt",
+"boring"
+]
+},
+"weak": {
+"phonetic": "[wiːk]",
+"example": "After the long illness, his legs were still very weak.",
+"synonyms": [
+"feeble",
+"frail",
+"powerless"
+]
+},
+"bright": {
+"phonetic": "[braɪt]",
+"example": "The kitchen becomes bright when morning sunlight comes through the window.",
+"synonyms": [
+"shiny",
+"brilliant",
+"clear"
+]
+},
+"honest": {
+"phonetic": "[ˈɑːnəst]",
+"example": "An honest student returned the lost wallet to the school office.",
+"synonyms": [
+"truthful",
+"sincere",
+"frank"
+]
+},
+"elder": {
+"phonetic": "[ˈeldər]",
+"example": "My elder sister teaches math at a middle school downtown.",
+"synonyms": [
+"older",
+"senior"
+]
+},
+"such": {
+"phonetic": "[sʌtʃ]",
+"example": "I have never seen such a beautiful sunset in my life."
+},
+"able": {
+"phonetic": "[ˈeɪbəl]",
+"example": "The team needs an able leader who can solve problems quickly.",
+"synonyms": [
+"capable",
+"skilled",
+"competent"
+]
+},
+"loud": {
+"phonetic": "[laʊd]",
+"example": "Her voice is so loud that everybody in the hall hears her.",
+"synonyms": [
+"noisy",
+"deafening"
+]
+},
+"simple": {
+"phonetic": "[ˈsɪmpəl]",
+"example": "This recipe is simple enough for a child to follow alone.",
+"synonyms": [
+"easy",
+"plain",
+"basic"
+]
+},
+"clever": {
+"phonetic": "[ˈklevər]",
+"example": "A clever monkey opened the box and took all the bananas.",
+"synonyms": [
+"smart",
+"bright",
+"intelligent",
+"sharp"
+]
+},
+"proud": {
+"phonetic": "[praʊd]",
+"example": "My parents were proud of me after the piano contest.",
+"synonyms": [
+"pleased",
+"satisfied",
+"arrogant",
+"haughty"
+]
+},
+"foolish": {
+"phonetic": "[ˈfuːlɪʃ]",
+"example": "It was foolish to go outside without an umbrella yesterday.",
+"synonyms": [
+"silly",
+"stupid",
+"unwise"
+]
+},
+"possible": {
+"phonetic": "[ˈpɑːsəbəl]",
+"example": "Is it possible to finish this project before Friday afternoon?",
+"synonyms": [
+"likely",
+"feasible",
+"workable"
+]
+},
+"enough": {
+"phonetic": "[ɪˈnʌf]",
+"example": "There is enough rice in the pot for six hungry people.",
+"synonyms": [
+"sufficient",
+"adequate",
+"ample"
+]
+},
+"wise": {
+"phonetic": "[waɪz]",
+"example": "A wise old farmer taught the village how to save water.",
+"synonyms": [
+"smart",
+"clever",
+"sensible",
+"intelligent"
+]
+},
+"wide": {
+"phonetic": "[waɪd]",
+"example": "A wide river runs slowly through the middle of our town.",
+"synonyms": [
+"broad",
+"spacious",
+"vast"
+]
+},
+"successful": {
+"phonetic": "[səkˈsesfəl]",
+"example": "She became a successful writer after her first novel came out.",
+"synonyms": [
+"prosperous",
+"thriving",
+"victorious"
+]
+},
+"clear": {
+"phonetic": "[klɪr]",
+"example": "The water in the mountain stream was clear and very cold.",
+"synonyms": [
+"clean",
+"plain",
+"obvious",
+"bright"
+]
+},
+"clean": {
+"phonetic": "[kliːn]",
+"example": "Put on a clean shirt before we visit your grandparents.",
+"synonyms": [
+"neat",
+"tidy",
+"spotless",
+"pure"
+]
+},
+"deep": {
+"phonetic": "[diːp]",
+"example": "Children should not swim in the deep part of the lake.",
+"synonyms": [
+"profound",
+"bottomless"
+]
+},
+"own": {
+"phonetic": "[oʊn]",
+"example": "Every student in this class has her own small locker.",
+"synonyms": [
+"possess",
+"have",
+"hold"
+]
+},
+"cheap": {
+"phonetic": "[tʃiːp]",
+"example": "We found a cheap but tasty restaurant near the bus station.",
+"synonyms": [
+"inexpensive",
+"low-priced",
+"affordable"
+]
+},
+"certain": {
+"phonetic": "[ˈsɜːrtən]",
+"example": "I am certain that I locked the front door this morning.",
+"synonyms": [
+"sure",
+"definite",
+"positive",
+"confident"
+]
+},
+"important": {
+"phonetic": "[ɪmˈpɔːrtənt]",
+"example": "Sleeping well is as important as eating good food every day.",
+"synonyms": [
+"significant",
+"essential",
+"major",
+"crucial"
+]
+},
+"stormy": {
+"phonetic": "[ˈstɔːrmi]",
+"example": "The fishermen stayed home during the stormy weather last weekend.",
+"synonyms": [
+"rough",
+"windy",
+"wild"
+]
+},
+"true": {
+"phonetic": "[truː]",
+"example": "His story about the lost dog turned out to be true.",
+"synonyms": [
+"real",
+"genuine",
+"correct",
+"accurate"
+]
+},
+"sad": {
+"phonetic": "[sæd]",
+"example": "The ending of the movie was so sad that people cried.",
+"synonyms": [
+"unhappy",
+"sorrowful",
+"gloomy",
+"depressed"
+]
+},
+"gay": {
+"phonetic": "[ɡeɪ]",
+"example": "The children sang a gay song while walking to the park.",
+"synonyms": [
+"cheerful",
+"merry",
+"lively"
+]
+},
+"merry": {
+"phonetic": "[ˈmeri]",
+"example": "A merry crowd danced together in the square all evening.",
+"synonyms": [
+"cheerful",
+"joyful",
+"happy",
+"jolly"
+]
+},
+"colorful": {
+"phonetic": "[ˈkʌlərfəl]",
+"example": "Mina drew a colorful picture of her family on the wall.",
+"synonyms": [
+"bright",
+"vivid",
+"vibrant",
+"multicolored"
+]
+},
+"wonderful": {
+"phonetic": "[ˈwʌndərfəl]",
+"example": "We had a wonderful time at the beach last summer vacation.",
+"synonyms": [
+"great",
+"marvelous",
+"fantastic",
+"amazing"
+]
+},
+"peaceful": {
+"phonetic": "[ˈpiːsfəl]",
+"example": "The small village by the lake feels peaceful early in the morning.",
+"synonyms": [
+"calm",
+"quiet",
+"tranquil"
+]
+},
+"angry": {
+"phonetic": "[ˈæŋɡri]",
+"example": "My father became angry when I broke his favorite coffee cup.",
+"synonyms": [
+"mad",
+"furious",
+"annoyed",
+"upset"
+]
+},
+"dry": {
+"phonetic": "[draɪ]",
+"example": "Hang the wet towels outside until they are completely dry.",
+"synonyms": [
+"arid",
+"parched"
+]
+},
+"wrong": {
+"phonetic": "[rɔːŋ]",
+"example": "It is wrong to tell lies to your close friends.",
+"synonyms": [
+"incorrect",
+"false",
+"mistaken"
+]
+},
+"heavy": {
+"phonetic": "[ˈhevi]",
+"example": "This box is too heavy for one student to lift.",
+"synonyms": [
+"weighty",
+"massive"
+]
+},
+"quiet": {
+"phonetic": "[ˈkwaɪət]",
+"example": "Please stay quiet while the other students are taking the test.",
+"synonyms": [
+"silent",
+"still",
+"calm",
+"hushed"
+]
+},
+"several": {
+"phonetic": "[ˈsevrəl]",
+"example": "Several birds landed on the roof of our school building.",
+"synonyms": [
+"some",
+"various",
+"a few"
+]
+},
+"alone": {
+"phonetic": "[əˈloʊn]",
+"example": "Jisu walked home alone because her friends had left early.",
+"synonyms": [
+"solitary",
+"lonely"
+]
+},
+"crowded": {
+"phonetic": "[ˈkraʊdəd]",
+"example": "The subway is very crowded every morning around eight o'clock.",
+"synonyms": [
+"packed",
+"busy",
+"jammed"
+]
+},
+"excited": {
+"phonetic": "[ɪkˈsaɪtəd]",
+"example": "The children were excited about the school trip to the zoo.",
+"synonyms": [
+"thrilled",
+"eager",
+"enthusiastic"
+]
+},
+"alive": {
+"phonetic": "[əˈlaɪv]",
+"example": "The tiny plant is still alive after two weeks without water.",
+"synonyms": [
+"living",
+"live"
+]
+},
+"brown": {
+"phonetic": "[braʊn]",
+"example": "Tom bought a brown leather bag for his first day at school.",
+"synonyms": [
+"tan",
+"bronze"
+]
+},
+"different": {
+"phonetic": "[ˈdɪfərənt]",
+"example": "My twin brother and I have completely different hobbies.",
+"synonyms": [
+"unlike",
+"dissimilar",
+"distinct",
+"various"
+]
+},
+"difficult": {
+"phonetic": "[ˈdɪfəkəlt]",
+"example": "The math homework was difficult, so I asked my teacher for help.",
+"synonyms": [
+"hard",
+"tough",
+"challenging"
+]
+},
+"interesting": {
+"phonetic": "[ˈɪntrəstɪŋ]",
+"example": "That movie about brave firefighters was really interesting to me.",
+"synonyms": [
+"exciting",
+"fascinating",
+"entertaining"
+]
+},
+"unlike": {
+"phonetic": "[ənˈlaɪk]",
+"example": "Unlike her sister, Mina never eats vegetables at dinner.",
+"synonyms": [
+"different",
+"dissimilar"
+]
+},
+"least": {
+"phonetic": "[liːst]",
+"example": "Of all the shops here, this one has the least space.",
+"synonyms": [
+"smallest",
+"slightest",
+"minimum"
+]
+},
+"afraid": {
+"phonetic": "[əˈfreɪd]",
+"example": "My little sister is afraid of big dogs in the park.",
+"synonyms": [
+"scared",
+"frightened",
+"fearful"
+]
+},
+"cool": {
+"phonetic": "[kuːl]",
+"example": "A cool wind blew through the window during the quiet evening.",
+"synonyms": [
+"chilly",
+"fresh",
+"brisk"
+]
+},
+"pretty": {
+"phonetic": "[ˈprɪti]",
+"example": "She wore a pretty yellow dress to her cousin's wedding.",
+"synonyms": [
+"lovely",
+"beautiful",
+"cute",
+"attractive"
+]
+},
+"kind": {
+"phonetic": "[kaɪnd]",
+"example": "Our new neighbor is kind and always helps us carry heavy boxes.",
+"synonyms": [
+"nice",
+"friendly",
+"generous",
+"gentle"
+]
+},
+"sick": {
+"phonetic": "[sɪk]",
+"example": "Jisu stayed home yesterday because she was sick with a cold.",
+"synonyms": [
+"ill",
+"unwell",
+"ailing"
+]
+},
+"useless": {
+"phonetic": "[ˈjuːsləs]",
+"example": "This old phone is useless because the battery no longer works.",
+"synonyms": [
+"worthless",
+"pointless",
+"futile"
+]
+},
+"busy": {
+"phonetic": "[ˈbɪzi]",
+"example": "My mother is always busy on weekdays, but she rests on Sunday.",
+"synonyms": [
+"occupied",
+"active"
+]
+},
+"early": {
+"phonetic": "[ˈɜːrli]",
+"example": "Tom woke up early to catch the first bus to school.",
+"synonyms": [
+"soon",
+"beforehand"
+]
+},
+"past": {
+"phonetic": "[pæst]",
+"example": "In past years, this river was much cleaner than it is now.",
+"synonyms": [
+"former",
+"previous",
+"bygone"
+]
+},
+"dark": {
+"phonetic": "[dɑːrk]",
+"example": "The room became dark as soon as the lights went off.",
+"synonyms": [
+"dim",
+"gloomy",
+"black"
+]
+},
+"cloudy": {
+"phonetic": "[ˈklaʊdi]",
+"example": "The sky was cloudy all day, so we canceled our picnic.",
+"synonyms": [
+"overcast",
+"gloomy",
+"dull"
+]
+},
+"short": {
+"phonetic": "[ʃɔːrt]",
+"example": "He is short, but he jumps higher than anyone on the team.",
+"synonyms": [
+"brief",
+"small"
+]
+},
+"low": {
+"phonetic": "[loʊ]",
+"example": "The ceiling in that old house is very low.",
+"synonyms": [
+"short",
+"shallow"
+]
+},
+"sincerely": {
+"phonetic": "[sɪnˈsɪrli]",
+"example": "She sincerely apologized to her classmate for breaking the promise.",
+"synonyms": [
+"truly",
+"honestly",
+"genuinely"
+]
+},
+"fortunately": {
+"phonetic": "[ˈfɔːrtʃənətli]",
+"example": "Fortunately, nobody was hurt when the old tree fell down.",
+"synonyms": [
+"luckily",
+"happily",
+"thankfully"
+]
+},
+"finally": {
+"phonetic": "[ˈfaɪnəli]",
+"example": "After three hours of work, we finally finished cleaning the classroom.",
+"synonyms": [
+"at last",
+"lastly",
+"eventually"
+]
+},
+"immediately": {
+"phonetic": "[ɪˈmiːdɪətli]",
+"example": "Call your parents immediately if you feel sick during the trip.",
+"synonyms": [
+"instantly",
+"at once",
+"right away",
+"promptly"
+]
+},
+"especially": {
+"phonetic": "[əˈspeʃli]",
+"example": "I love fruit, especially watermelon on a hot summer day.",
+"synonyms": [
+"particularly",
+"specially",
+"notably"
+]
+},
+"else": {
+"phonetic": "[els]",
+"example": "Does anyone else want to join our science club this year?"
+},
+"actually": {
+"phonetic": "[ˈæktʃuːəli]",
+"example": "The test looked hard, but it was actually easy for us.",
+"synonyms": [
+"really",
+"in fact",
+"truly",
+"indeed"
+]
+},
+"hardly": {
+"phonetic": "[ˈhɑːrdli]",
+"example": "I could hardly hear the teacher because the classroom was noisy.",
+"synonyms": [
+"barely",
+"scarcely",
+"seldom"
+]
+},
+"otherwise": {
+"phonetic": "[ˈʌðərwaɪz]",
+"example": "The door was locked, and we could not get inside otherwise."
+},
+"tightly": {
+"phonetic": "[ˈtaɪtli]",
+"example": "Hold the rope tightly so that you do not fall down.",
+"synonyms": [
+"firmly",
+"securely",
+"closely"
+]
+},
+"recently": {
+"phonetic": "[ˈriːsəntli]",
+"example": "Our school recently opened a new library on the second floor.",
+"synonyms": [
+"lately",
+"newly",
+"just now"
+]
+},
+"rapidly": {
+"phonetic": "[ˈræpədli]",
+"example": "The number of visitors grew rapidly after the festival began.",
+"synonyms": [
+"quickly",
+"fast",
+"swiftly"
+]
+},
+"however": {
+"phonetic": "[haʊˈevər]",
+"example": "However hard I tried, I could not open the heavy door."
+},
+"politely": {
+"phonetic": "[pəˈlaɪtli]",
+"example": "The boy politely asked the driver to stop at the corner.",
+"synonyms": [
+"courteously",
+"respectfully",
+"kindly"
+]
+},
+"rudely": {
+"phonetic": "[ˈruːdli]",
+"example": "He rudely pushed into the line without saying sorry to anyone.",
+"synonyms": [
+"impolitely",
+"roughly"
+]
+},
+"further": {
+"phonetic": "[ˈfɜːrðər]",
+"example": "Further, the museum gives free tickets to middle school students.",
+"synonyms": [
+"moreover",
+"besides",
+"farther",
+"additionally"
+]
+},
+"frankly": {
+"phonetic": "[ˈfræŋkli]",
+"example": "Frankly, I did not enjoy the food at that new restaurant.",
+"synonyms": [
+"honestly",
+"openly",
+"candidly"
+]
+},
+"properly": {
+"phonetic": "[ˈprɑːpərli]",
+"example": "Wash your hands properly before you touch the baby.",
+"synonyms": [
+"correctly",
+"rightly",
+"suitably"
+]
+},
+"haste": {
+"phonetic": "[heɪst]",
+"example": "In her haste, Mina left her umbrella on the school bus.",
+"synonyms": [
+"hurry",
+"rush",
+"speed"
+]
+},
+"rather": {
+"phonetic": "[ˈræðər]",
+"example": "The soup was not hot at all; it was rather cold.",
+"synonyms": [
+"quite",
+"fairly",
+"somewhat"
+]
+},
+"together": {
+"phonetic": "[təˈɡeðər]",
+"example": "The whole class sang the song together at the school festival.",
+"synonyms": [
+"jointly",
+"collectively"
+]
+},
+"altogether": {
+"phonetic": "[ɔːltəˈɡeðər]",
+"example": "The strange noise stopped altogether after Dad fixed the old machine.",
+"synonyms": [
+"completely",
+"entirely",
+"totally"
+]
+},
+"suddenly": {
+"phonetic": "[ˈsʌdənli]",
+"example": "Suddenly, a cat jumped out from under the parked car.",
+"synonyms": [
+"abruptly",
+"unexpectedly"
+]
+},
+"mostly": {
+"phonetic": "[ˈmoʊstli]",
+"example": "The students in this club are mostly interested in drawing.",
+"synonyms": [
+"mainly",
+"chiefly",
+"generally",
+"largely"
+]
+},
+"correctly": {
+"phonetic": "[kərˈektli]",
+"example": "Only two students answered the last question correctly.",
+"synonyms": [
+"accurately",
+"properly",
+"rightly"
+]
+},
+"ahead": {
+"phonetic": "[əˈhed]",
+"example": "Walk ahead, and I will follow you with the heavy bags.",
+"synonyms": [
+"forward",
+"onward"
+]
+},
+"instead": {
+"phonetic": "[ɪnˈsted]",
+"example": "The shop had no orange juice, so I bought milk instead.",
+"synonyms": [
+"rather",
+"alternatively"
+]
+},
+"quite": {
+"phonetic": "[kwaɪt]",
+"example": "Her voice was quite loud, so everyone in the hall heard her.",
+"synonyms": [
+"fairly",
+"rather",
+"pretty",
+"very"
+]
+},
+"nearly": {
+"phonetic": "[ˈnɪrli]",
+"example": "We waited nearly an hour before the concert finally started.",
+"synonyms": [
+"almost",
+"about",
+"practically"
+]
+},
+"badly": {
+"phonetic": "[ˈbædli]",
+"example": "Our team played badly and lost the game by ten points.",
+"synonyms": [
+"poorly",
+"seriously",
+"severely"
+]
+},
+"almost": {
+"phonetic": "[ˈɔːlmoʊst]",
+"example": "I almost forgot my science book at home this morning.",
+"synonyms": [
+"nearly",
+"about",
+"practically"
+]
+},
+"exactly": {
+"phonetic": "[ɪɡˈzæktli]",
+"example": "Tell me exactly what happened during the class yesterday.",
+"synonyms": [
+"precisely",
+"accurately",
+"correctly"
+]
+},
+"apart": {
+"phonetic": "[əˈpɑːrt]",
+"example": "The two houses stand about fifty meters apart on that hill.",
+"synonyms": [
+"separately",
+"aside"
+]
+},
+"afterward": {
+"phonetic": "[ˈæftərwərd]",
+"example": "We watched the movie and had dinner afterward at a small cafe.",
+"synonyms": [
+"later",
+"subsequently",
+"then"
+]
+},
+"later": {
+"phonetic": "[ˈleɪtər]",
+"example": "Send me the photos later, when you get home tonight.",
+"synonyms": [
+"afterward",
+"afterwards",
+"subsequently"
+]
+},
+"maybe": {
+"phonetic": "[ˈmeɪbi]",
+"example": "Maybe we should take an umbrella; the sky looks gray.",
+"synonyms": [
+"perhaps",
+"possibly",
+"probably"
+]
+},
+"perhaps": {
+"phonetic": "[pərˈhæps]",
+"example": "Perhaps your keys are still inside your gym locker.",
+"synonyms": [
+"maybe",
+"possibly",
+"probably"
+]
+},
+"probably": {
+"phonetic": "[ˈprɑːbəbli]",
+"example": "Jisu will probably arrive before us because she took a taxi.",
+"synonyms": [
+"likely",
+"presumably",
+"maybe"
+]
+},
+"besides": {
+"phonetic": "[bɪˈsaɪdz]",
+"example": "The room was very small, and besides, it had no windows.",
+"synonyms": [
+"also",
+"moreover",
+"furthermore"
+]
+},
+"anyway": {
+"phonetic": "[ˈenɪweɪ]",
+"example": "It started raining, but we went to the park anyway.",
+"synonyms": [
+"anyhow",
+"regardless"
+]
+},
+"sometime": {
+"phonetic": "[ˈsʌmtaɪm]",
+"example": "Let's visit your grandmother's farm sometime next spring.",
+"synonyms": [
+"someday"
+]
+},
+"forward": {
+"phonetic": "[ˈfɔːrwərd]",
+"example": "The driver moved the bus slowly forward through the narrow street.",
+"synonyms": [
+"ahead",
+"onward",
+"forth"
+]
+},
+"once": {
+"phonetic": "[wʌns]",
+"example": "I have visited that old temple only once in my life."
+},
+"twice": {
+"phonetic": "[twaɪs]",
+"example": "Our club meets twice a week in the music room."
+},
+"indeed": {
+"phonetic": "[ɪnˈdiːd]",
+"example": "The show was indeed as exciting as everyone had said.",
+"synonyms": [
+"really",
+"truly",
+"certainly",
+"actually"
+]
+},
+"seldom": {
+"phonetic": "[ˈseldəm]",
+"example": "My grandfather seldom uses his smartphone to send messages.",
+"synonyms": [
+"rarely",
+"hardly ever",
+"infrequently"
+]
+},
+"upside down": {
+"phonetic": "[ˈʌpˈsaɪd daʊn]",
+"example": "The little boy held the picture book upside down and laughed."
+},
+"though": {
+"phonetic": "[ðoʊ]",
+"example": "Though the weather was cold, the children played outside for hours."
+},
+"usually": {
+"phonetic": "[ˈjuːʒəwəli]",
+"example": "We usually eat breakfast at seven before leaving for school.",
+"synonyms": [
+"normally",
+"generally",
+"commonly"
+]
+},
+"safely": {
+"phonetic": "[ˈseɪfli]",
+"example": "The plane landed safely even though the wind was very strong.",
+"synonyms": [
+"securely",
+"soundly"
+]
+},
+"honour": {
+"synonyms": [
+"respect",
+"glory",
+"dignity"
+]
+},
+"hastily": {
+"synonyms": [
+"quickly",
+"hurriedly"
+]
+},
+"resource": {
+"synonyms": [
+"supply",
+"asset",
+"material",
+"reserve"
+]
+},
+"unification": {
+"synonyms": [
+"union",
+"integration",
+"merger"
+]
+}
+}

@@ -1,10 +1,5 @@
-import { GRADES } from "../constants/grades";
-import {
-  UNIT_SIZE,
-  WORDS_BY_GRADE,
-  findWord,
-  type Word,
-} from "../constants/words";
+import type { Grade } from "../constants/grades";
+import { UNIT_SIZE, type Vocab, type Word } from "../constants/words";
 import {
   dateKey,
   type DailyStat,
@@ -16,8 +11,12 @@ type Entries = Record<string, StudyEntry>;
 type DailyLog = Record<string, DailyStat>;
 
 /** 학년 하나에서 "외웠어요"로 판정한 단어 수 */
-export function knownCountByGrade(entries: Entries, gradeId: string): number {
-  const words = WORDS_BY_GRADE[gradeId] ?? [];
+export function knownCountByGrade(
+  entries: Entries,
+  vocab: Vocab,
+  gradeId: string,
+): number {
+  const words = vocab.byLevel[gradeId] ?? [];
   let n = 0;
   for (const w of words) if (entries[w.id]?.status === "known") n += 1;
   return n;
@@ -31,14 +30,18 @@ export function knownCountInWords(entries: Entries, words: Word[]): number {
 }
 
 /** "아직 헷갈려요"로 표시한 단어들. 최근에 표시한 것부터 */
-export function unsureWords(entries: Entries, limit?: number): Word[] {
+export function unsureWords(
+  entries: Entries,
+  vocab: Vocab,
+  limit?: number,
+): Word[] {
   const picked = Object.entries(entries)
     .filter(([, e]) => e.status === "unsure")
     .sort((a, b) => b[1].updatedAt.localeCompare(a[1].updatedAt));
 
   const out: Word[] = [];
   for (const [wordId] of picked) {
-    const found = findWord(wordId);
+    const found = vocab.find(wordId);
     if (found) out.push(found.word);
     if (limit && out.length >= limit) break;
   }
@@ -85,13 +88,17 @@ export interface ContinuePoint {
 }
 
 /** 이어하기 지점을 화면에 그릴 수 있는 형태로 풀어낸다 */
-export function continuePoint(last: LastStudied | null): ContinuePoint | null {
+export function continuePoint(
+  last: LastStudied | null,
+  vocab: Vocab,
+  grades: Grade[],
+): ContinuePoint | null {
   if (!last) return null;
-  const found = findWord(last.wordId);
+  const found = vocab.find(last.wordId);
   if (!found) return null;
 
-  const { gradeId, words, index, word } = found;
-  const grade = GRADES.find((g) => g.id === gradeId);
+  const { levelId: gradeId, words, index, word } = found;
+  const grade = grades.find((g) => g.id === gradeId);
   const unitNo = Math.floor(index / UNIT_SIZE) + 1;
   const unitWords = words.slice((unitNo - 1) * UNIT_SIZE, unitNo * UNIT_SIZE);
 
@@ -107,12 +114,12 @@ export function continuePoint(last: LastStudied | null): ContinuePoint | null {
   };
 }
 
-/** 아직 단어 데이터가 있는 학년만 */
-export function availableGrades() {
-  return GRADES.filter((g) => g.totalWords > 0);
+/** 아직 단어 데이터가 있는 단계만 */
+export function availableGrades(grades: Grade[]) {
+  return grades.filter((g) => g.totalWords > 0);
 }
 
-/** 데이터가 아직 없는 학년 (준비 중 안내용) */
-export function upcomingGrades() {
-  return GRADES.filter((g) => g.totalWords === 0);
+/** 데이터가 아직 없는 단계 (준비 중 안내용) */
+export function upcomingGrades(grades: Grade[]) {
+  return grades.filter((g) => g.totalWords === 0);
 }

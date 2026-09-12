@@ -1,5 +1,6 @@
 import { useRouter } from "expo-router";
 import { Pressable } from "react-native";
+import { useT } from "../i18n";
 import { ChevronLeftIcon } from "./icons";
 
 export interface BackButtonProps {
@@ -20,6 +21,7 @@ export function BackButton({
   iconSize = 24,
 }: BackButtonProps) {
   const router = useRouter();
+  const t = useT();
 
   const handlePress = () => {
     if (onPress) {
@@ -34,7 +36,7 @@ export function BackButton({
   return (
     <Pressable
       onPress={handlePress}
-      accessibilityLabel="뒤로 가기"
+      accessibilityLabel={t("common.back")}
       className={`h-12 w-12 items-center justify-center rounded-full bg-surface shadow-neu-sm active:shadow-neu-pressed ${className}`}
     >
       <ChevronLeftIcon size={iconSize} strokeWidth={2.8} color="#334155" />

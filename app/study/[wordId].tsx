@@ -29,8 +29,10 @@ import { BackButton } from "../../src/components/BackButton";
 import { LabeledSection } from "../../src/components/LabeledSection";
 import { PillButton } from "../../src/components/PillButton";
 import { SynonymList } from "../../src/components/SynonymList";
-import { GRADES } from "../../src/constants/grades";
-import { UNIT_SIZE, findWord, type Word } from "../../src/constants/words";
+import { useGrade } from "../../src/constants/grades";
+import { UNIT_SIZE, useVocab, type Word } from "../../src/constants/words";
+import { studyLanguageOf } from "../../src/constants/languages";
+import { useT } from "../../src/i18n";
 import { WORD_IMAGES } from "../../src/constants/wordImages";
 import { speakWord, stopSpeaking } from "../../src/lib/speech";
 import { useAppStore, type WordStatus } from "../../src/stores/useAppStore";
@@ -42,7 +44,9 @@ export default function StudyScreen() {
   const { wordId } = useLocalSearchParams<{ wordId: string }>();
   const router = useRouter();
 
-  const found = findWord(wordId ?? "");
+  const t = useT();
+  const vocab = useVocab();
+  const found = vocab.find(wordId ?? "");
 
   const goTo = useCallback(
     (id?: string) => {
@@ -55,18 +59,18 @@ export default function StudyScreen() {
     return (
       <SafeAreaView className="flex-1 items-center justify-center bg-canvas">
         <Text className="text-[14px] text-slate-500">
-          단어를 찾을 수 없습니다
+          {t("study.notFound")}
         </Text>
         <PillButton
           className="mt-6"
-          label="← 돌아가기"
+          label={t("common.backArrow")}
           onPress={() => router.back()}
         />
       </SafeAreaView>
     );
   }
 
-  const { gradeId, words, index, word } = found;
+  const { levelId: gradeId, words, index, word } = found;
 
   return (
     // key로 단어마다 새로 마운트해서 뜻 가리기·타이머 상태가 자동 초기화되게 한다.
@@ -94,6 +98,7 @@ export default function StudyScreen() {
  * 스와이프할 때 옆 그림이 자연스럽게 따라 들어온다.
  */
 function WordImage({ word, offset = 0 }: { word: Word; offset?: number }) {
+  const t = useT();
   const source = WORD_IMAGES[word.id] || WORD_IMAGES[word.word];
   return (
     <View
@@ -115,7 +120,7 @@ function WordImage({ word, offset = 0 }: { word: Word; offset?: number }) {
         <View className="flex-1 items-center justify-center gap-3 bg-canvas">
           <Text className="text-[40px]">🖼️</Text>
           <Text className="text-[13px] text-slate-400">
-            연상 이미지 준비 중
+            {t("study.imagePreparing")}
           </Text>
         </View>
       )}
@@ -151,6 +156,9 @@ function StudyCard({
   const setAutoAdvance = useAppStore((s) => s.setAutoAdvance);
   const recordStudy = useAppStore((s) => s.recordStudy);
   const markSeen = useAppStore((s) => s.markSeen);
+  const t = useT();
+  const studyLang = useAppStore((s) => s.studyLang);
+  const speechCode = studyLanguageOf(studyLang).speechCode;
 
   const { width: screenWidth } = useWindowDimensions();
 
@@ -236,11 +244,12 @@ function StudyCard({
   // 화면을 벗어날 때는 재생 중인 음성을 멈춘다.
   useEffect(() => {
     speakWord(word.word, {
+      lang: speechCode,
       onStart: () => setSpeaking(true),
       onDone: () => setSpeaking(false),
     });
     return stopSpeaking;
-  }, [word.word]);
+  }, [word.word, speechCode]);
 
   // 이어하기 지점과 "오늘 본 단어"는 화면에 뜬 시점에 기록한다.
   // 판정 버튼에서 기록하면 보다 만 단어와 자동 넘김으로 지나간 단어가 빠진다.
@@ -249,7 +258,7 @@ function StudyCard({
   }, [word.id, gradeId, markSeen]);
 
   // 헤더는 자리가 좁으므로 짧은 이름을 쓴다 (중학 2학년 → 중2)
-  const gradeLabel = GRADES.find((g) => g.id === gradeId)?.short ?? "";
+  const gradeLabel = useGrade(gradeId)?.short ?? "";
   const unitNo = Math.floor(index / UNIT_SIZE) + 1;
   const posInUnit = (index % UNIT_SIZE) + 1;
   // 마지막 유닛은 20개보다 적을 수 있다.
@@ -271,6 +280,7 @@ function StudyCard({
 
   const handleSpeak = () => {
     speakWord(word.word, {
+      lang: speechCode,
       onStart: () => setSpeaking(true),
       onDone: () => setSpeaking(false),
     });
@@ -317,7 +327,7 @@ function StudyCard({
 
           {/* 자동 넘김 켜기/끄기 (중간 버튼 줄에서 헤더로 옮김) */}
           <Pressable
-            accessibilityLabel="자동 넘김 켜기 끄기"
+            accessibilityLabel={t("study.autoAdvanceToggle")}
             onPress={() => setAutoAdvance(!autoAdvance)}
             className={`h-12 flex-row items-center justify-center gap-1 rounded-full px-3.5 active:scale-95 ${
               autoAdvance
@@ -426,7 +436,7 @@ function StudyCard({
                         )}
                       </View>
                       <Pressable
-                        accessibilityLabel={`${word.word} 발음 듣기`}
+                        accessibilityLabel={t("study.speak", { word: word.word })}
                         onPress={handleSpeak}
                         className={`h-11 w-11 items-center justify-center rounded-full active:scale-95 ${
                           speaking
@@ -459,7 +469,7 @@ function StudyCard({
 
               {/* 이전 단어 (버튼 높이 36px의 절반만큼 올려 세로 중앙에 둔다) */}
               <Pressable
-                accessibilityLabel="이전 단어"
+                accessibilityLabel={t("study.prevWord")}
                 disabled={!prevId}
                 onPress={() => onNavigate(prevId)}
                 style={{ top: "50%", marginTop: -18, left: -16 }}
@@ -472,7 +482,7 @@ function StudyCard({
 
               {/* 다음 단어 */}
               <Pressable
-                accessibilityLabel="다음 단어"
+                accessibilityLabel={t("study.nextWord")}
                 disabled={!nextId}
                 onPress={() => onNavigate(nextId)}
                 style={{ top: "50%", marginTop: -18, right: -16 }}
@@ -508,7 +518,7 @@ function StudyCard({
                   className="flex-row items-center gap-1 active:opacity-70"
                 >
                   <Text className="text-[12px] font-bold text-emerald-500">
-                    {showAnswer ? "가리기" : "보기"}
+                    {showAnswer ? t("study.hide") : t("study.show")}
                   </Text>
                   {showAnswer ? <ChevronUpIcon /> : <ChevronDownIcon />}
                 </Pressable>
@@ -519,26 +529,26 @@ function StudyCard({
               {showAnswer && (word.example || hasSynonyms || word.etymology) && (
                 <View className="mt-4 gap-5 border-t border-slate-200 pt-4">
                   {word.example && (
-                    <LabeledSection label="예문">
+                    <LabeledSection label={t("study.example")}>
                       <Text className="text-[15px] font-semibold leading-snug text-slate-800">
                         {word.example}
                       </Text>
-                      {word.exampleKo && (
+                      {word.exampleTr && (
                         <Text className="mt-1 text-[14px] font-medium leading-snug text-slate-500">
-                          {word.exampleKo}
+                          {word.exampleTr}
                         </Text>
                       )}
                     </LabeledSection>
                   )}
 
                   {hasSynonyms && (
-                    <LabeledSection label="유의어">
+                    <LabeledSection label={t("study.synonyms")}>
                       <SynonymList items={word.synonyms!} />
                     </LabeledSection>
                   )}
 
                   {word.etymology && (
-                    <LabeledSection label="어원">
+                    <LabeledSection label={t("study.etymology")}>
                       <Text className="text-[14px] leading-relaxed text-slate-600">
                         {word.etymology}
                       </Text>
@@ -561,7 +571,7 @@ function StudyCard({
               <AgainIcon />
             </View>
             <Text className="text-[14px] font-extrabold tracking-tight text-slate-800">
-              아직 헷갈려요
+              {t("study.unsure")}
             </Text>
           </Pressable>
 
@@ -574,7 +584,7 @@ function StudyCard({
               <CheckIcon />
             </View>
             <Text className="text-[15px] font-black tracking-tight text-emerald-800">
-              외웠어요!
+              {t("study.known")}
             </Text>
           </Pressable>
         </View>

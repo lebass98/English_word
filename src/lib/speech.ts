@@ -1,6 +1,8 @@
 import * as Speech from "expo-speech";
 
 interface SpeakCallbacks {
+  /** 읽어 줄 언어 코드 (예: en-US, ja-JP). 없으면 영어로 읽는다 */
+  lang?: string;
   /** 실제로 소리가 나기 시작할 때 (음성 엔진이 비동기로 호출) */
   onStart?: () => void;
   /** 재생이 끝났거나 중단·실패했을 때 */
@@ -22,7 +24,7 @@ export function speakWord(word: string, cb: SpeakCallbacks = {}) {
   try {
     Speech.stop();
     Speech.speak(word, {
-      language: "en-US",
+      language: cb.lang ?? "en-US",
       rate: 0.85,
       pitch: 1.0,
       onStart: cb.onStart,

@@ -2,7 +2,9 @@ import { useRouter } from "expo-router";
 import { ReactNode, useMemo } from "react";
 import { Image, Pressable, Text, View } from "react-native";
 import { PillButton } from "./PillButton";
-import { WORDS_BY_GRADE, unitsOf } from "../constants/words";
+import { useGrades } from "../constants/grades";
+import { useVocab } from "../constants/words";
+import { useT } from "../i18n";
 import { WORD_IMAGES } from "../constants/wordImages";
 import {
   availableGrades,
@@ -32,26 +34,33 @@ export function ContinueCard() {
   const lastStudied = useAppStore((s) => s.lastStudied);
   const entries = useAppStore((s) => s.entries);
   const setActiveGradeId = useAppStore((s) => s.setActiveGradeId);
+  const vocab = useVocab();
+  const grades = useGrades();
+  const t = useT();
 
   // 아래 계산들은 훅이라 hydrated 분기보다 먼저, 그리고 항상 실행되어야 한다.
 
   // 단어 색인 조회와 유닛 슬라이스를 렌더마다 돌리지 않는다
-  const point = useMemo(() => continuePoint(lastStudied), [lastStudied]);
+  const point = useMemo(
+    () => continuePoint(lastStudied, vocab, grades),
+    [lastStudied, vocab, grades],
+  );
 
   // 기록이 없을 때 보여줄 첫 단어. 상수에서 나오므로 한 번만 계산한다
   const startPoint = useMemo(() => {
-    const grade = availableGrades()[0];
-    const first = grade ? WORDS_BY_GRADE[grade.id]?.[0] : undefined;
+    const grade = availableGrades(grades)[0];
+    const first = grade ? vocab.byLevel[grade.id]?.[0] : undefined;
     return grade && first ? { grade, first } : null;
-  }, []);
+  }, [grades, vocab]);
 
   // selectors의 continuePoint는 unitKnown을 0으로 주므로 여기서 직접 센다
   const unitKnown = useMemo(() => {
     if (!point) return 0;
     const unitWords =
-      unitsOf(point.gradeId).find((u) => u.unitNo === point.unitNo)?.words ?? [];
+      vocab.unitsOf(point.gradeId).find((u) => u.unitNo === point.unitNo)
+        ?.words ?? [];
     return knownCountInWords(entries, unitWords);
-  }, [entries, point]);
+  }, [entries, point, vocab]);
 
   // 저장소를 읽기 전에 "시작" 카드를 잠깐 보여주면 이어하기 카드로 바뀌며 깜빡인다
   if (!hydrated) {
@@ -78,7 +87,7 @@ export function ContinueCard() {
         <Pressable
           onPress={start}
           accessibilityRole="button"
-          accessibilityLabel={`${grade.short} UNIT 1 학습 시작하기`}
+          accessibilityLabel={`${grade.short} UNIT 1 ${t("continue.start")}`}
           className="flex-row items-center gap-4 active:opacity-70"
         >
           <Thumb>
@@ -86,7 +95,7 @@ export function ContinueCard() {
           </Thumb>
           <View className="flex-1">
             <Text className="text-[12px] font-bold text-mint">
-              학습 시작하기
+              {t("continue.start")}
             </Text>
             <Text className="mt-1 text-[20px] font-bold text-ink">
               {grade.short} UNIT 1
@@ -99,7 +108,7 @@ export function ContinueCard() {
 
         <PillButton
           className="mt-6"
-          label="학습 시작하기"
+          label={t("continue.start")}
           variant="primary"
           size="lg"
           onPress={start}
@@ -123,7 +132,7 @@ export function ContinueCard() {
       <Pressable
         onPress={resume}
         accessibilityRole="button"
-        accessibilityLabel={`${point.gradeShort} UNIT ${point.unitNo}, ${point.word.word} 이어서 학습하기`}
+        accessibilityLabel={`${point.gradeShort} UNIT ${point.unitNo}, ${point.word.word} ${t("continue.resume")}`}
         className="flex-row items-center gap-4 active:opacity-70"
       >
         <Thumb>
@@ -139,7 +148,7 @@ export function ContinueCard() {
         </Thumb>
         <View className="flex-1">
           <Text className="text-[12px] font-bold text-mint">
-            이어서 학습하기
+            {t("continue.resume")}
           </Text>
           <Text className="mt-1 text-[20px] font-bold text-ink">
             {point.gradeShort} UNIT {point.unitNo}
@@ -164,7 +173,7 @@ export function ContinueCard() {
 
       <PillButton
         className="mt-5"
-        label="이어하기"
+        label={t("continue.title")}
         variant="primary"
         size="lg"
         onPress={resume}

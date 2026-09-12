@@ -1,4 +1,5 @@
 import { Pressable, Text, View } from "react-native";
+import { useT } from "../i18n";
 import { ChevronRightIcon } from "./icons";
 
 interface GradeCardProps {
@@ -14,6 +15,7 @@ export function GradeCard({
   totalWords,
   onPress,
 }: GradeCardProps) {
+  const t = useT();
   const progress = totalWords > 0 ? learnedWords / totalWords : 0;
   const started = learnedWords > 0;
 
@@ -23,8 +25,8 @@ export function GradeCard({
       accessibilityRole="button"
       accessibilityLabel={
         started
-          ? `${label} 학습중, ${totalWords}개 중 ${learnedWords}개 외움`
-          : `${label} 아직 학습 전`
+          ? t("a11y.courseProgress", { label, total: totalWords, known: learnedWords })
+          : t("a11y.courseNotStarted", { label })
       }
       className="rounded-3xl bg-surface p-6 shadow-neu-card active:shadow-neu-pressed"
     >
@@ -33,7 +35,7 @@ export function GradeCard({
           started ? "text-mint" : "text-slate-400"
         }`}
       >
-        {started ? "학습중" : "학습 전"}
+        {started ? t("course.studying") : t("course.notStarted")}
       </Text>
 
       <View className="mt-2 flex-row items-center justify-between">
@@ -50,7 +52,7 @@ export function GradeCard({
         </View>
         {/* 아직 한 개도 못 외운 학년은 "0 / 700" 대신 전체 개수만 알려준다 */}
         <Text className="text-[13px] font-bold text-slate-500">
-          {started ? `${learnedWords} / ${totalWords}` : `${totalWords}개 단어`}
+          {started ? `${learnedWords} / ${totalWords}` : t("course.wordCount", { count: totalWords })}
         </Text>
       </View>
     </Pressable>

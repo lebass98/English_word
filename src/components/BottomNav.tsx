@@ -1,16 +1,17 @@
 import { usePathname, useRouter } from "expo-router";
 import { Pressable, Text, View } from "react-native";
+import { useT, type StringKey } from "../i18n";
 
 interface Tab {
   href: string;
-  label: string;
+  labelKey: StringKey;
   emoji: string;
 }
 
 const TABS: Tab[] = [
-  { href: "/", label: "홈", emoji: "🏠" },
-  { href: "/wordbook", label: "단어장", emoji: "📋" },
-  { href: "/settings", label: "설정", emoji: "⚙️" },
+  { href: "/", labelKey: "nav.home", emoji: "🏠" },
+  { href: "/wordbook", labelKey: "nav.wordbook", emoji: "📋" },
+  { href: "/settings", labelKey: "nav.settings", emoji: "⚙️" },
 ];
 
 /**
@@ -20,6 +21,7 @@ const TABS: Tab[] = [
 export function BottomNav() {
   const pathname = usePathname();
   const router = useRouter();
+  const t = useT();
 
   return (
     <View className="absolute inset-x-0 bottom-0 bg-canvas px-6 pb-6 pt-2">
@@ -31,7 +33,7 @@ export function BottomNav() {
             <Pressable
               key={tab.href}
               accessibilityRole="button"
-              accessibilityLabel={tab.label}
+              accessibilityLabel={t(tab.labelKey)}
               accessibilityState={{ selected: active }}
               // 같은 탭을 다시 누르면 스택만 쌓이므로 아무것도 하지 않는다
               onPress={() => {
@@ -47,7 +49,7 @@ export function BottomNav() {
                   active ? "font-bold text-mint-dark" : "text-slate-400"
                 }`}
               >
-                {tab.label}
+                {t(tab.labelKey)}
               </Text>
             </Pressable>
           );

@@ -1,5 +1,6 @@
 import { useMemo } from "react";
 import { translate } from "../i18n";
+import type { UiLangId } from "../i18n/strings";
 import { useAppStore } from "../stores/useAppStore";
 import type { StudyLangId } from "./languages";
 import { getVocab } from "./words";
@@ -21,13 +22,13 @@ export interface Grade {
 }
 
 /** 지금 학습 언어의 단계 목록 */
-export function gradesOf(studyLang: StudyLangId): Grade[] {
-  const vocab = getVocab(studyLang);
+export function gradesOf(studyLang: StudyLangId, uiLang: UiLangId): Grade[] {
+  const vocab = getVocab(studyLang, uiLang);
   return vocab.levels.map((level) => ({
     id: level.id,
     // 아직 이름을 안 채운 단계는 키가 그대로 나오지 않도록 단계 id 를 쓴다
-    label: translate(`level.${level.id}.label` as never) || level.id,
-    short: translate(`level.${level.id}.short` as never) || level.id,
+    label: translate(uiLang, `level.${level.id}.label` as never) || level.id,
+    short: translate(uiLang, `level.${level.id}.short` as never) || level.id,
     totalWords: vocab.totalOf(level.id),
   }));
 }
@@ -35,7 +36,8 @@ export function gradesOf(studyLang: StudyLangId): Grade[] {
 /** 화면에서 쓰는 단계 목록. 학습 언어를 바꾸면 알아서 다시 그려진다 */
 export function useGrades(): Grade[] {
   const studyLang = useAppStore((s) => s.studyLang);
-  return useMemo(() => gradesOf(studyLang), [studyLang]);
+  const uiLang = useAppStore((s) => s.uiLang);
+  return useMemo(() => gradesOf(studyLang, uiLang), [studyLang, uiLang]);
 }
 
 /** 단계 하나만 필요할 때 */

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
 import {
   Alert,
   Platform,
@@ -12,12 +12,38 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { BackButton } from "../src/components/BackButton";
 import { BottomNav } from "../src/components/BottomNav";
 import { PillButton } from "../src/components/PillButton";
+import {
+  BookIcon,
+  ChartIcon,
+  GlobeIcon,
+  PersonIcon,
+  SlidersIcon,
+} from "../src/components/icons";
 import { STUDY_LANGS } from "../src/constants/languages";
 import { useT } from "../src/i18n";
+import { UI_LANGS, UI_LANG_NAMES } from "../src/i18n/strings";
 import { useAppStore } from "../src/stores/useAppStore";
 
 /** 웹 2단계 확인이 눌린 채로 남아 있지 않도록 되돌리는 시간 (ms) */
 const CONFIRM_TIMEOUT_MS = 4000;
+
+/** 설정 칸의 제목 줄. 왼쪽에 아이콘이 붙는다 */
+function SectionTitle({
+  icon,
+  label,
+}: {
+  icon: ReactNode;
+  label: string;
+}) {
+  return (
+    <View className="flex-row items-center gap-2.5">
+      <View className="h-9 w-9 items-center justify-center rounded-xl bg-canvas shadow-neu-inset">
+        {icon}
+      </View>
+      <Text className="text-[15px] font-bold text-ink">{label}</Text>
+    </View>
+  );
+}
 
 export default function SettingsScreen() {
   const nickname = useAppStore((s) => s.nickname);
@@ -26,6 +52,8 @@ export default function SettingsScreen() {
   const setAutoAdvance = useAppStore((s) => s.setAutoAdvance);
   const entries = useAppStore((s) => s.entries);
   const resetProgress = useAppStore((s) => s.resetProgress);
+  const uiLang = useAppStore((s) => s.uiLang);
+  const setUiLang = useAppStore((s) => s.setUiLang);
   const studyLang = useAppStore((s) => s.studyLang);
   const setStudyLang = useAppStore((s) => s.setStudyLang);
   const t = useT();
@@ -88,7 +116,7 @@ export default function SettingsScreen() {
           keyboardShouldPersistTaps="handled"
         >
           <View className="rounded-3xl bg-surface p-6 shadow-neu-card">
-            <Text className="text-[15px] font-bold text-ink">{t("settings.myName")}</Text>
+            <SectionTitle icon={<PersonIcon />} label={t("settings.myName")} />
             <TextInput
               value={nickname}
               onChangeText={setNickname}
@@ -101,9 +129,34 @@ export default function SettingsScreen() {
           </View>
 
           <View className="mt-6 rounded-3xl bg-surface p-6 shadow-neu-card">
-            <Text className="text-[15px] font-bold text-ink">
-              {t("settings.studyLang")}
+            <SectionTitle icon={<GlobeIcon />} label={t("settings.language")} />
+
+            {/* 앱 화면에 쓰는 말 */}
+            <Text className="mt-4 text-[15px] text-slate-700">
+              {t("settings.uiLang")}
             </Text>
+            <Text className="mt-1 text-[13px] text-slate-400">
+              {t("settings.uiLangDesc")}
+            </Text>
+            <View className="mt-3 flex-row flex-wrap gap-2">
+              {UI_LANGS.map((id) => (
+                <PillButton
+                  key={id}
+                  size="sm"
+                  label={UI_LANG_NAMES[id]}
+                  variant={uiLang === id ? "inset" : "default"}
+                  onPress={() => setUiLang(id)}
+                />
+              ))}
+            </View>
+
+            {/* 지금 배우는 말 */}
+            <View className="mt-6 flex-row items-center gap-2">
+              <BookIcon size={15} />
+              <Text className="text-[15px] text-slate-700">
+                {t("settings.studyLang")}
+              </Text>
+            </View>
             <Text className="mt-1 text-[13px] text-slate-400">
               {t("settings.studyLangDesc")}
             </Text>
@@ -121,9 +174,7 @@ export default function SettingsScreen() {
           </View>
 
           <View className="mt-6 rounded-3xl bg-surface p-6 shadow-neu-card">
-            <Text className="text-[15px] font-bold text-ink">
-              {t("settings.studySettings")}
-            </Text>
+<SectionTitle icon={<SlidersIcon />} label={t("settings.studySettings")} />
             <View className="mt-4 flex-row items-center justify-between gap-4">
               <View className="flex-1">
                 <Text className="text-[15px] text-slate-700">
@@ -156,9 +207,7 @@ export default function SettingsScreen() {
           </View>
 
           <View className="mt-6 rounded-3xl bg-surface p-6 shadow-neu-card">
-            <Text className="text-[15px] font-bold text-ink">
-              {t("settings.record")}
-            </Text>
+<SectionTitle icon={<ChartIcon />} label={t("settings.record")} />
             {/* 기록이 없으면 "0개 · 0개" 대신 안내를 보여주고, 지울 것도 없으니 버튼을 감춘다 */}
             {hasRecord ? (
               <>

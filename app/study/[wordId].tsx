@@ -32,7 +32,7 @@ import { SynonymList } from "../../src/components/SynonymList";
 import { gradesOf } from "../../src/constants/grades";
 import {
   UNIT_SIZE,
-  vocabForWordId,
+  useVocabForWordId,
   type Word,
 } from "../../src/constants/words";
 import {
@@ -53,7 +53,7 @@ export default function StudyScreen() {
 
   const t = useT();
   // 지금 설정이 아니라 단어 id 에 적힌 언어에서 찾는다
-  const vocab = vocabForWordId(wordId ?? "");
+  const vocab = useVocabForWordId(wordId ?? "");
   const found = vocab.find(wordId ?? "");
 
   const goTo = useCallback(
@@ -165,6 +165,7 @@ function StudyCard({
   const recordStudy = useAppStore((s) => s.recordStudy);
   const markSeen = useAppStore((s) => s.markSeen);
   const t = useT();
+  const uiLang = useAppStore((s) => s.uiLang);
   const speechCode = studyLanguageOf(studyLangOfWordId(word.id)).speechCode;
 
   const { width: screenWidth } = useWindowDimensions();
@@ -267,8 +268,8 @@ function StudyCard({
   // 헤더는 자리가 좁으므로 짧은 이름을 쓴다 (중학 2학년 → 중2)
   // 단계 이름도 지금 설정이 아니라 이 단어가 속한 언어에서 가져온다
   const gradeLabel =
-    gradesOf(studyLangOfWordId(word.id)).find((g) => g.id === gradeId)?.short ??
-    "";
+    gradesOf(studyLangOfWordId(word.id), uiLang).find((g) => g.id === gradeId)
+      ?.short ?? "";
   const unitNo = Math.floor(index / UNIT_SIZE) + 1;
   const posInUnit = (index % UNIT_SIZE) + 1;
   // 마지막 유닛은 20개보다 적을 수 있다.

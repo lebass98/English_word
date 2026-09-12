@@ -5,9 +5,11 @@ import {
   type Level,
   type StudyLangId,
 } from "./languages";
+import type { UiLangId } from "../i18n/strings";
 
 import enLevelMiddle1 from "../data/en/levels/middle-1.json";
 import enLevelMiddle2 from "../data/en/levels/middle-2.json";
+import enTrJa from "../data/en/tr/ja.json";
 import enTrKo from "../data/en/tr/ko.json";
 import enWords from "../data/en/words.json";
 import jaLevelN5 from "../data/ja/levels/jlpt-n5.json";
@@ -73,9 +75,11 @@ interface LanguageData {
   /** 단계 id → 낱말 목록 (순서가 곧 번호다) */
   levels: Record<string, string[]>;
   words: Record<string, NeutralEntry>;
-  /** 한국어 뜻·해석 */
-  ko: TranslationFile;
+  /** 표시 언어별 뜻·해석 */
+  tr: Partial<Record<UiLangId, TranslationFile>>;
 }
+
+const EMPTY_TR: TranslationFile = { meanings: {}, details: {} };
 
 /**
  * 학습 언어별 원본 데이터.
@@ -88,20 +92,25 @@ const DATA: Record<StudyLangId, LanguageData> = {
       "middle-2": enLevelMiddle2 as string[],
     },
     words: enWords as Record<string, NeutralEntry>,
-    ko: enTrKo as TranslationFile,
+    tr: {
+      ko: enTrKo as TranslationFile,
+      ja: enTrJa as TranslationFile,
+    },
   },
   ja: {
     levels: {
       "jlpt-n5": jaLevelN5 as string[],
     },
     words: jaWords as Record<string, NeutralEntry>,
-    ko: jaTrKo as TranslationFile,
+    // 일본어 단어는 한국인 학습자용이라 한국어 뜻만 있다
+    tr: { ko: jaTrKo as TranslationFile },
   },
 };
 
 /** 풀어낸 단어 모음 */
 export interface Vocab {
   studyLang: StudyLangId;
+  uiLang: UiLangId;
   levels: Level[];
   byLevel: Record<string, Word[]>;
   totalOf: (levelId: string) => number;
@@ -111,10 +120,22 @@ export interface Vocab {
   ) => { levelId: string; words: Word[]; index: number; word: Word } | null;
 }
 
-function buildVocab(studyLang: StudyLangId): Vocab {
+function buildVocab(studyLang: StudyLangId, uiLang: UiLangId): Vocab {
   const lang = studyLanguageOf(studyLang);
   const data = DATA[studyLang];
-  const tr = data.ko;
+  // 고른 표시 언어에 아직 번역이 없으면 한국어로 대신 보여준다
+  const tr = data.tr[uiLang] ?? data.tr.ko ?? EMPTY_TR;
+  const fallback = data.tr.ko ?? EMPTY_TR;
+
+  /**
+   * 상세 정보는 항목 단위가 아니라 칸 단위로 채운다.
+   * 예문 해석만 번역되고 어원은 아직인 단어가 있는데, 항목째로 갈아 끼우면
+   * 번역이 있는 칸 하나 때문에 나머지가 통째로 사라진다.
+   */
+  const mergeDetail = (spelling: string) => ({
+    ...fallback.details[spelling],
+    ...tr.details[spelling],
+  });
 
   const byLevel: Record<string, Word[]> = {};
   const location = new Map<string, { levelId: string; index: number }>();
@@ -124,7 +145,7 @@ function buildVocab(studyLang: StudyLangId): Vocab {
     const words = spellings.map((spelling, i) => {
       const localId = `${level.code}-${i + 1}`;
       const neutral = data.words[spelling] ?? {};
-      const detail = tr.details[spelling] ?? {};
+      const detail = mergeDetail(spelling);
       const synonymWords = neutral.synonyms ?? [];
       const synonymMeanings = detail.synonymMeanings ?? [];
 
@@ -135,7 +156,7 @@ function buildVocab(studyLang: StudyLangId): Vocab {
         conceptId: neutral.conceptId ?? spelling,
         phonetic: neutral.phonetic,
         example: neutral.example,
-        meaning: tr.meanings[localId] ?? spelling,
+        meaning: tr.meanings[localId] ?? fallback.meanings[localId] ?? spelling,
         exampleTr: detail.exampleTr,
         etymology: detail.etymology,
         synonyms: synonymWords.length
@@ -157,6 +178,7 @@ function buildVocab(studyLang: StudyLangId): Vocab {
 
   return {
     studyLang,
+    uiLang,
     levels: lang.levels,
     byLevel,
     totalOf: (levelId) => byLevel[levelId]?.length ?? 0,
@@ -192,20 +214,22 @@ function buildVocab(studyLang: StudyLangId): Vocab {
  * 학습 언어마다 한 번만 만들어 두고 다시 쓴다.
  * 단어가 2천 개라 화면을 그릴 때마다 새로 만들면 낭비다.
  */
-const VOCAB_CACHE = new Map<StudyLangId, Vocab>();
+const VOCAB_CACHE = new Map<string, Vocab>();
 
-export function getVocab(studyLang: StudyLangId): Vocab {
-  const cached = VOCAB_CACHE.get(studyLang);
+export function getVocab(studyLang: StudyLangId, uiLang: UiLangId): Vocab {
+  const key = `${studyLang}:${uiLang}`;
+  const cached = VOCAB_CACHE.get(key);
   if (cached) return cached;
-  const built = buildVocab(studyLang);
-  VOCAB_CACHE.set(studyLang, built);
+  const built = buildVocab(studyLang, uiLang);
+  VOCAB_CACHE.set(key, built);
   return built;
 }
 
-/** 화면에서 쓰는 단어 모음. 학습 언어를 바꾸면 알아서 다시 그려진다 */
+/** 화면에서 쓰는 단어 모음. 언어를 바꾸면 알아서 다시 그려진다 */
 export function useVocab(): Vocab {
   const studyLang = useAppStore((s) => s.studyLang);
-  return getVocab(studyLang);
+  const uiLang = useAppStore((s) => s.uiLang);
+  return getVocab(studyLang, uiLang);
 }
 
 /**
@@ -216,10 +240,17 @@ export function useVocab(): Vocab {
  * 단어장에서 다른 언어의 단어를 눌러도 화면이 제대로 뜬다.
  */
 export function vocabForWordId(wordId: string): Vocab {
-  return getVocab(studyLangOfWordId(wordId));
+  return getVocab(studyLangOfWordId(wordId), useAppStore.getState().uiLang);
+}
+
+/** 화면에서 단어 id 가 가리키는 언어의 단어 모음이 필요할 때 */
+export function useVocabForWordId(wordId: string): Vocab {
+  const uiLang = useAppStore((s) => s.uiLang);
+  return getVocab(studyLangOfWordId(wordId), uiLang);
 }
 
 /** 훅을 쓸 수 없는 곳에서 지금 학습 언어의 단어 모음이 필요할 때 */
 export function currentVocab(): Vocab {
-  return getVocab(useAppStore.getState().studyLang);
+  const { studyLang, uiLang } = useAppStore.getState();
+  return getVocab(studyLang, uiLang);
 }

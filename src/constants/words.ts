@@ -117,6 +117,16 @@ function buildVocab(studyLang: StudyLangId, uiLang: UiLangId): Vocab {
     backup: T | undefined,
   ): T | undefined => primary ?? backup;
 
+  /**
+   * 상세 정보는 항목 단위가 아니라 칸 단위로 채운다.
+   * 예문 해석만 일본어로 번역되고 어원은 아직 없는 단어가 있는데,
+   * 항목째로 갈아 끼우면 번역이 있는 칸 하나 때문에 나머지가 통째로 사라진다.
+   */
+  const mergeDetail = (spelling: string) => ({
+    ...fallback.details[spelling],
+    ...tr.details[spelling],
+  });
+
   const byLevel: Record<string, Word[]> = {};
   const location = new Map<string, { levelId: string; index: number }>();
 
@@ -125,7 +135,7 @@ function buildVocab(studyLang: StudyLangId, uiLang: UiLangId): Vocab {
     const words = spellings.map((spelling, i) => {
       const localId = `${level.code}-${i + 1}`;
       const neutral = data.words[spelling] ?? {};
-      const detail = pick(tr.details[spelling], fallback.details[spelling]);
+      const detail = mergeDetail(spelling);
       const synonymWords = neutral.synonyms ?? [];
       const synonymMeanings = detail?.synonymMeanings ?? [];
 

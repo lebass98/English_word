@@ -16,6 +16,7 @@ import base64
 import urllib.request
 import subprocess
 import argparse
+from dashboard_updater import update_dashboards
 
 API_URL = "http://127.0.0.1:7860/sdapi/v1/txt2img"
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -99,13 +100,13 @@ def generate_image(scene_desc: str, output_path: str, seed: int = 42) -> bool:
                     f.write(img_data)
                 elapsed = time.time() - start_time
                 print(f"생성 및 저장 완료 ({elapsed:.1f}초) -> {output_path}", flush=True)
-                return True
+                return True, elapsed
             else:
                 print(f"이미지 데이터 없음: {result.keys()}", flush=True)
-                return False
+                return False, 0.0
     except Exception as e:
         print(f"API 요청 실패: {e}", flush=True)
-        return False
+        return False, 0.0
 
 # 유닛별 20단어 데이터 딕셔너리
 UNIT_DATA = {
@@ -600,6 +601,88 @@ UNIT_DATA = {
             "id": "m1-240", "word": "smoke", "meaning": "담배를 피우다, 연기",
             "scene": "cozy mountain cabin fireplace hearth in winter, cute slender stickman sitting on rocking chair watching gentle gray smoke wisps rising up brick chimney from crackling wood fire log"
         }
+    ]    ,
+    13: [
+        {
+            "id": "m1-241", "word": "blanket", "meaning": "담요",
+            "scene": "cozy peaceful bedroom, cute slender stickman pulling a warm thick knitted blanket snugly up to chest while resting comfortably in bed, bedside nightstand lamp and wooden floor line"
+        },
+        {
+            "id": "m1-242", "word": "answer", "meaning": "대답, 대답하다",
+            "scene": "bright school classroom blackboard, confident cute slender stickman student raising hand high in air giving the correct answer to the teacher stickman smiling warmly, wooden desks"
+        },
+        {
+            "id": "m1-243", "word": "continent", "meaning": "대륙",
+            "scene": "grand geography study room, curious cute slender stickman gently spinning a large rotating globe highlighting vast continental landmasses, atlas reference books stacked on table"
+        },
+        {
+            "id": "m1-244", "word": "marble", "meaning": "대리석",
+            "scene": "classical grand museum gallery hall, cute slender stickman walking gracefully across polished gleaming white marble floor tiles with classical marble pillars and sunlit arches"
+        },
+        {
+            "id": "m1-245", "word": "mostly", "meaning": "대부분",
+            "scene": "art studio workshop table, cute slender stickman instructor observing a creative group of stickman art students who are mostly busy painting colorful landscape canvases on easels"
+        },
+        {
+            "id": "m1-246", "word": "instead", "meaning": "대신에",
+            "scene": "bright grocery market aisle, cute slender stickman shopper smiling thoughtfully putting a carton of fresh milk into shopping basket instead of a sugary beverage bottle, grocery shelves"
+        },
+        {
+            "id": "m1-247", "word": "ocean", "meaning": "대양",
+            "scene": "magnificent open blue ocean seascape, majestic whale leaping out of sparkling ocean waves while cute slender stickman watches excitedly from wooden ship deck railing, distant horizon"
+        },
+        {
+            "id": "m1-248", "word": "captain", "meaning": "대장",
+            "scene": "soccer championship stadium pitch, proud cute slender stickman team captain wearing yellow captain armband lifting a shining golden championship trophy high with cheering teammates"
+        },
+        {
+            "id": "m1-249", "word": "chief", "meaning": "대장, 우두머리",
+            "scene": "fire station equipment garage, authoritative brave cute slender stickman fire chief in distinguished white helmet pointing forward coordinating crew members before shiny fire engine"
+        },
+        {
+            "id": "m1-250", "word": "prairie", "meaning": "대초원",
+            "scene": "vast rolling wilderness prairie grassland under wide endless open sky, adventurous cute slender stickman standing atop a gentle grassy rise looking across endless waving grasses"
+        },
+        {
+            "id": "m1-251", "word": "president", "meaning": "대통령",
+            "scene": "formal presidential press briefing hall, dignified cute slender stickman president speaking at podium microphone with national flags standing tall behind, reporters and cameras"
+        },
+        {
+            "id": "m1-252", "word": "dialogue", "meaning": "대화",
+            "scene": "cozy library lounge coffee table, two cute slender stickman companions sitting comfortably in armchairs face to face having an engaging thoughtful dialogue sharing creative ideas"
+        },
+        {
+            "id": "m1-253", "word": "dirty", "meaning": "더러운",
+            "scene": "bright bathroom sink vanity, conscientious cute slender stickman washing muddy dirty hands thoroughly under running water tap with foaming soap bubbles, clean mirror and towel"
+        },
+        {
+            "id": "m1-254", "word": "further", "meaning": "더욱이",
+            "scene": "scenic mountain hiking ridge trail, adventurous cute slender stickman pointing enthusiastically ahead along the winding path eager to hike further into the mountain vista, trail marker"
+        },
+        {
+            "id": "m1-255", "word": "add", "meaning": "더하다",
+            "scene": "warm kitchen dining counter, cute slender stickman carefully adding a sweet cube of sugar with small tongs into a steaming porcelain tea cup, tea saucer and teapot on table"
+        },
+        {
+            "id": "m1-256", "word": "pitch", "meaning": "던지다",
+            "scene": "sunny baseball diamond mound, focused athletic cute slender stickman pitcher winding up arm mid-motion delivering a fast pitch toward catcher home plate, stadium backstop"
+        },
+        {
+            "id": "m1-257", "word": "throw", "meaning": "던지다",
+            "scene": "sunny open park grass lawn, energetic cute slender stickman leaning back throwing a colorful flying disc frisbee far across the lawn for a happy playful puppy to catch, park trees"
+        },
+        {
+            "id": "m1-258", "word": "cover", "meaning": "덮개, 덮다, 다루다",
+            "scene": "cozy home kitchen stove, attentive cute slender stickman placing a round glass pot lid cover securely on a simmering stew pot to keep aroma and heat inside, kitchen utensils"
+        },
+        {
+            "id": "m1-259", "word": "degree", "meaning": "도, 정도",
+            "scene": "science laboratory classroom wall, curious cute slender stickman checking a large wall Celsius thermometer measuring exact temperature degrees, lab glassware and test tubes"
+        },
+        {
+            "id": "m1-260", "word": "tool", "meaning": "도구",
+            "scene": "organized woodworking craft bench, skilled cute slender stickman holding a steel hammer assembling a wooden shelf with screwdrivers and hand tools hanging neatly on pegboard rack"
+        }
     ]
 }
 
@@ -646,6 +729,7 @@ def main():
         words = UNIT_DATA[unit_num]
         print(f"\n▶▶▶ [Unit {unit_num}] 20단어 렌더링 시작 ◀◀◀", flush=True)
 
+        elapsed_times = {}
         for idx, item in enumerate(words, start=1):
             w = item["word"]
             w_id = item["id"]
@@ -654,19 +738,27 @@ def main():
             file_name = w.replace(" ", "-")
             out_file = os.path.join(ASSETS_DIR, f"{file_name}.png")
 
+            # 대시보드 갱신 (렌더링 시작)
+            update_dashboards(unit_num, idx, item, elapsed_times, status_text=f"'{w}' 렌더링 중...")
+
             print(f"\n[Unit {unit_num} - {idx}/20] '{w}' ({w_id}: {meaning}) 생성 중...", flush=True)
             print(f"Scene: {scene}", flush=True)
 
             seed = 1000 + int(w_id.split("-")[1])
-            success = generate_image(scene, out_file, seed=seed)
+            success, elapsed = generate_image(scene, out_file, seed=seed)
             if success:
-                print(f"[{w}] 생성 완료 -> {out_file}", flush=True)
+                elapsed_times[w] = elapsed
+                print(f"[{w}] 생성 완료 ({elapsed:.1f}초) -> {out_file}", flush=True)
                 update_word_images_ts(w, w_id)
+                # 대시보드 갱신 (단어 완료)
+                update_dashboards(unit_num, idx, item, elapsed_times, status_text=f"'{w}' 완료 ({elapsed:.1f}초)")
             else:
                 print(f"[{w}] 생성 실패!", flush=True)
 
         # 1개 유닛(20단어) 완료 시 배포
+        update_dashboards(unit_num, 20, words[-1], elapsed_times, status_text="유닛 완료 및 Git 배포 중...")
         deploy_unit(unit_num)
+        update_dashboards(unit_num, 20, words[-1], elapsed_times, status_text="✅ 유닛 배포 완료")
         print(f"🎉 [Unit {unit_num}] 20단어 생성 및 등록 배포 전원 완료!\n", flush=True)
 
     print("모든 지정 유닛 생성 파이프라인이 성공적으로 완료되었습니다!", flush=True)

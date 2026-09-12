@@ -354,6 +354,88 @@ UNIT_DATA = {
             "id": "m1-180", "word": "clean", "meaning": "깨끗한",
             "scene": "sparkling bright kitchen living room, cheerful cute slender stickman with apron holding mop wiping floor until it shines brilliantly with sparkle glints, neat shelves and tidy flower vase"
         }
+    ],
+    10: [
+        {
+            "id": "m1-181", "word": "wake", "meaning": "깨우다, 일어나다",
+            "scene": "sunny cozy bedroom morning, cute slender stickman sitting up in bed stretching arms cheerfully as sunlight streams through window, round alarm clock on bedside table"
+        },
+        {
+            "id": "m1-182", "word": "tail", "meaning": "꼬리",
+            "scene": "sunny living room carpet, playful cute slender stickman smiling and gently watching a happy pet dog wagging its fluffy curled tail joyfully, dog toy bone on floor"
+        },
+        {
+            "id": "m1-183", "word": "petal", "meaning": "꽃잎",
+            "scene": "gentle spring flower garden, cute slender stickman kneeling gently holding a delicate fallen flower blossom admiring individual soft curved petals falling gracefully, blooming rose bush and watering can"
+        },
+        {
+            "id": "m1-184", "word": "dream", "meaning": "꿈",
+            "scene": "peaceful bedroom at night, cute slender stickman sleeping soundly on cozy pillow under warm quilt, with a whimsical swirling thought cloud above depicting floating starry celestial planets and flying friendly birds"
+        },
+        {
+            "id": "m1-185", "word": "nod", "meaning": "고개를 끄덕이다",
+            "scene": "classroom lecture room, attentive cute slender stickman student sitting at neat wooden desk nodding head in clear agreement and understanding while listening to teacher presentation, open notebook and pencil"
+        },
+        {
+            "id": "m1-186", "word": "attract", "meaning": "끌다, 유인하다",
+            "scene": "science physics laboratory bench, curious cute slender stickman holding a red and blue horseshoe magnet attracting and picking up a cluster of silver paperclips effortlessly, lab flasks and measuring ruler"
+        },
+        {
+            "id": "m1-187", "word": "terrible", "meaning": "끔찍한, 지독한",
+            "scene": "cozy kitchen cooking counter, cute slender stickman looking down with humorous shocked expression and hand over mouth at a completely burnt black smoking batch of cookies on baking tray, oven smoke wisps rising"
+        },
+        {
+            "id": "m1-188", "word": "carry", "meaning": "나르다, 운반하다",
+            "scene": "house moving hallway or warehouse, strong determined cute slender stickman carefully carrying a large cardboard moving box with both arms, packing tape and stacked storage boxes nearby"
+        },
+        {
+            "id": "m1-189", "word": "wood", "meaning": "나무, 목재, 숲",
+            "scene": "scenic tranquil pine forest woodland trail, cute slender stickman hiker walking beside towering straight wood tree trunks with deep bark textures and fallen timber logs, lush forest floor with wild ferns"
+        },
+        {
+            "id": "m1-190", "word": "butterfly", "meaning": "나비",
+            "scene": "bright outdoor botanical garden meadow, cute slender stickman crouching down admiring a graceful butterfly with delicate patterned wings perched gently atop a blooming sunflower petal, fluttering butterflies in air"
+        },
+        {
+            "id": "m1-191", "word": "badly", "meaning": "나쁘게, 심하게",
+            "scene": "paved neighborhood bicycle path, cute slender stickman sitting on pavement rubbing knee with a bandaged scrape after falling off bicycle, fallen bicycle on ground and first aid kit nearby"
+        },
+        {
+            "id": "m1-192", "word": "elder", "meaning": "나이가 더 많은, 손위의",
+            "scene": "sunny garden patio tea table, polite cute slender stickman respectfully pouring warm steaming tea from a teapot into the teacup of a wise elder grandparent stickman resting comfortably with walking cane"
+        },
+        {
+            "id": "m1-193", "word": "later", "meaning": "나중에",
+            "scene": "office desk calendar, cute slender stickman looking at wall clock showing time and pointing finger forward to a future date circled on monthly calendar planner, sticky note memo saying later"
+        },
+        {
+            "id": "m1-194", "word": "appear", "meaning": "나타나다",
+            "scene": "magic performance stage with velvet curtains, cute slender stickman magician wearing top hat waving magic wand over an empty table as an adorable white rabbit suddenly appears amidst sparkling magic dust"
+        },
+        {
+            "id": "m1-195", "word": "trumpet", "meaning": "나팔, 트럼펫",
+            "scene": "music band concert stage hall, talented cute slender stickman musician enthusiastically blowing into a gleaming brass trumpet with fingers pressing valves, music stand with sheet notes"
+        },
+        {
+            "id": "m1-196", "word": "edge", "meaning": "날, 가장자리",
+            "scene": "woodworking craft carpentry bench, cute slender stickman artisan carefully inspecting the sharp clean edge of a freshly cut wooden plank using a steel measurement square ruler, wood shavings on table"
+        },
+        {
+            "id": "m1-197", "word": "weather", "meaning": "날씨",
+            "scene": "meteorology weather broadcast station studio, cute slender stickman meteorologist holding pointer gesturing toward large weather radar screen displaying sunshine, rain clouds, and wind symbols"
+        },
+        {
+            "id": "m1-198", "word": "date", "meaning": "날짜, 데이트",
+            "scene": "romantic cozy cafe table with flowers in vase, two cute slender stickman having a sweet happy coffee date together holding warm ceramic mugs, heart steam rising softly"
+        },
+        {
+            "id": "m1-199", "word": "data", "meaning": "자료, 데이터",
+            "scene": "modern technology analytics research office, cute slender stickman data analyst standing before a large holographic digital monitor displaying colorful bar charts, line graphs, and statistical data metrics"
+        },
+        {
+            "id": "m1-200", "word": "sharp", "meaning": "날카로운",
+            "scene": "craft art studio table, cute slender stickman designer carefully testing the precise sharp point of a precision craft knife pencil cutting crisp geometric shapes on cutting mat"
+        }
     ]
 }
 

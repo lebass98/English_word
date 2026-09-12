@@ -122,7 +122,7 @@ interface AppState {
    */
   markSeen: (wordId: string, gradeId: string) => void;
 
-  /** "외웠어요 / 아직 헷갈려요" 판정. 기록과 일별 집계를 한 번에 갱신한다 */
+  /** "외웠어요 / 헷갈려요" 판정. 기록과 일별 집계를 한 번에 갱신한다 */
   recordStudy: (wordId: string, status: WordStatus) => void;
 
   /** 단어장에 담거나 뺀다 */

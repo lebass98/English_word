@@ -72,8 +72,8 @@ const ko = {
   "study.save": "저장",
   "study.saved": "저장됨",
   "study.saveToggle": "단어장에 담기 빼기",
-  "study.unsure": "아직 헷갈려요",
-  "study.known": "외웠어요!",
+  "study.unsure": "헷갈려요",
+  "study.known": "외웠어요",
 
   // 단어장
   "wordbook.title": "단어장",
@@ -215,8 +215,8 @@ const ja: Partial<Record<StringKey, string>> = {
   "study.save": "保存",
   "study.saved": "保存済み",
   "study.saveToggle": "単語帳に入れる・外す",
-  "study.unsure": "まだあいまい",
-  "study.known": "覚えた！",
+  "study.unsure": "あいまい",
+  "study.known": "覚えた",
 
   "wordbook.title": "単語帳",
   "wordbook.all": "すべて",

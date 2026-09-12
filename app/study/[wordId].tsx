@@ -590,8 +590,8 @@ function StudyCard({
           </View>
         </ScrollView>
 
-        {/* ── 학습 평가 버튼 ───────────────────────────────── */}
-        <View className="mx-6 flex-row items-stretch gap-3 px-1 pb-4 pt-3">
+        {/* ── 학습 평가 버튼 (가운데는 단어장에 담기) ────────── */}
+        <View className="mx-6 flex-row items-stretch gap-2 px-1 pb-4 pt-3">
           <Pressable
             onPress={() => decide("unsure")}
             style={{ flex: 1 }}
@@ -605,6 +605,25 @@ function StudyCard({
             </Text>
           </Pressable>
 
+          {/* 가운데 저장 버튼. 양옆 판정 버튼의 자리를 뺏지 않게 글자 없이 둔다 */}
+          <Pressable
+            onPress={() => toggleSaved(word.id)}
+            accessibilityRole="button"
+            accessibilityState={{ selected: isSaved }}
+            accessibilityLabel={t("study.saveToggle")}
+            className={`w-12 items-center justify-center rounded-[28px] active:scale-[0.98] ${
+              isSaved
+                ? "bg-canvas shadow-neu-inset"
+                : "bg-surface shadow-neu-sm active:shadow-neu-pressed"
+            }`}
+          >
+            <BookmarkIcon
+              size={18}
+              filled={isSaved}
+              color={isSaved ? "#0eb582" : "#94a3b8"}
+            />
+          </Pressable>
+
           <Pressable
             onPress={() => decide("known")}
             style={{ flex: 1 }}
@@ -615,34 +634,6 @@ function StudyCard({
             </View>
             <Text className="text-[15px] font-black tracking-tight text-emerald-800">
               {t("study.known")}
-            </Text>
-          </Pressable>
-        </View>
-
-        {/* ── 단어장에 담기 (하단 중앙) ─────────────────────── */}
-        <View className="items-center px-6 pb-4">
-          <Pressable
-            onPress={() => toggleSaved(word.id)}
-            accessibilityRole="button"
-            accessibilityState={{ selected: isSaved }}
-            accessibilityLabel={t("study.saveToggle")}
-            className={`flex-row items-center justify-center gap-2 rounded-full px-6 py-2.5 active:scale-[0.98] ${
-              isSaved
-                ? "bg-canvas shadow-neu-inset"
-                : "bg-surface shadow-neu-sm active:shadow-neu-pressed"
-            }`}
-          >
-            <BookmarkIcon
-              size={15}
-              filled={isSaved}
-              color={isSaved ? "#0eb582" : "#94a3b8"}
-            />
-            <Text
-              className={`text-[13px] font-extrabold tracking-tight ${
-                isSaved ? "text-mint-dark" : "text-slate-500"
-              }`}
-            >
-              {t(isSaved ? "study.saved" : "study.save")}
             </Text>
           </Pressable>
         </View>

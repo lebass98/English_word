@@ -206,7 +206,7 @@ export function CheckIcon({
   );
 }
 
-/** ↩ 아직 헷갈려요 (다시 보기) */
+/** ↩ 헷갈려요 (다시 보기) */
 export function AgainIcon({
   size = 14,
   color = "#475569",

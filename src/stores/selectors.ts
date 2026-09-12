@@ -29,7 +29,7 @@ export function knownCountInWords(entries: Entries, words: Word[]): number {
   return n;
 }
 
-/** "아직 헷갈려요"로 표시한 단어들. 최근에 표시한 것부터 */
+/** "헷갈려요"로 표시한 단어들. 최근에 표시한 것부터 */
 export function unsureWords(
   entries: Entries,
   vocab: Vocab,

@@ -17,13 +17,32 @@ import {
   GlobeIcon,
   PersonIcon,
   SlidersIcon,
+  SpeakerIcon,
 } from "../src/components/icons";
+import {
+  studyLanguageOf,
+  type StudyLangId,
+} from "../src/constants/languages";
+import { speakWord } from "../src/lib/speech";
 import { useT } from "../src/i18n";
 import { UI_LANGS, UI_LANG_NAMES } from "../src/i18n/strings";
 import { useAppStore } from "../src/stores/useAppStore";
 
 /** 웹 2단계 확인이 눌린 채로 남아 있지 않도록 되돌리는 시간 (ms) */
 const CONFIRM_TIMEOUT_MS = 4000;
+
+/**
+ * 발음 소리 크기 단계.
+ * 슬라이더 라이브러리를 새로 들이지 않고, 앱의 다른 칸과 같은 뉴모피즘
+ * 막대로 만든다. 맨 왼쪽은 음소거다.
+ */
+const VOLUME_STEPS = [0, 0.25, 0.5, 0.75, 1];
+
+/** 크기를 바꿀 때 바로 들려줄 짧은 견본. 학습 언어의 말로 읽어야 자연스럽다 */
+const VOLUME_SAMPLE: Record<StudyLangId, string> = {
+  en: "Hello",
+  ja: "こんにちは",
+};
 
 /** 설정 칸의 제목 줄. 왼쪽에 아이콘이 붙는다 */
 function SectionTitle({ icon, label }: { icon: ReactNode; label: string }) {
@@ -42,6 +61,9 @@ export default function SettingsScreen() {
   const setNickname = useAppStore((s) => s.setNickname);
   const autoAdvance = useAppStore((s) => s.autoAdvance);
   const setAutoAdvance = useAppStore((s) => s.setAutoAdvance);
+  const speechVolume = useAppStore((s) => s.speechVolume);
+  const setSpeechVolume = useAppStore((s) => s.setSpeechVolume);
+  const studyLang = useAppStore((s) => s.studyLang);
   const entries = useAppStore((s) => s.entries);
   const resetProgress = useAppStore((s) => s.resetProgress);
   const uiLang = useAppStore((s) => s.uiLang);
@@ -176,6 +198,74 @@ export default function SettingsScreen() {
                   {autoAdvance ? t("common.on") : t("common.off")}
                 </Text>
               </Pressable>
+            </View>
+
+            {/* ── 발음 소리 크기 ─────────────────────────────── */}
+            <View className="mt-5 border-t border-slate-200/70 pt-5">
+              <View className="flex-row items-center justify-between gap-4">
+                <View className="flex-1">
+                  <Text className="text-[15px] text-slate-700">
+                    {t("settings.speechVolume")}
+                  </Text>
+                  <Text className="mt-1 text-[13px] text-slate-400">
+                    {t("settings.speechVolumeDesc")}
+                  </Text>
+                </View>
+                <Text
+                  className={`text-[13px] font-bold ${
+                    speechVolume === 0 ? "text-slate-400" : "text-mint-dark"
+                  }`}
+                >
+                  {speechVolume === 0
+                    ? t("settings.speechMuted")
+                    : `${Math.round(speechVolume * 100)}%`}
+                </Text>
+              </View>
+
+              {/* 단계를 누르면 바뀐 크기로 바로 한 번 들려준다 */}
+              <View className="mt-3 flex-row items-end gap-2">
+                <View className="pb-2">
+                  <SpeakerIcon
+                    size={16}
+                    color={speechVolume === 0 ? "#94a3b8" : "#0eb582"}
+                  />
+                </View>
+                {VOLUME_STEPS.map((step, i) => {
+                  const on = speechVolume >= step && step > 0;
+                  return (
+                    <Pressable
+                      key={step}
+                      accessibilityRole="button"
+                      accessibilityState={{ selected: speechVolume === step }}
+                      accessibilityLabel={
+                        step === 0
+                          ? t("settings.speechMuted")
+                          : t("settings.speechVolumeLevel", {
+                              percent: Math.round(step * 100),
+                            })
+                      }
+                      onPress={() => {
+                        setSpeechVolume(step);
+                        if (step > 0) {
+                          speakWord(VOLUME_SAMPLE[studyLang], {
+                            lang: studyLanguageOf(studyLang).speechCode,
+                            volume: step,
+                          });
+                        }
+                      }}
+                      style={{ flex: 1, height: 16 + i * 8 }}
+                      className={`items-center justify-center rounded-lg active:opacity-70 ${
+                        on
+                          ? "bg-mint"
+                          : // 음소거를 고른 상태도 눌린 티가 나야 한다
+                            step === 0 && speechVolume === 0
+                            ? "bg-slate-300"
+                            : "bg-canvas shadow-neu-inset"
+                      }`}
+                    />
+                  );
+                })}
+              </View>
             </View>
           </View>
 

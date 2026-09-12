@@ -25,7 +25,7 @@ export function BottomNav() {
 
   return (
     <View className="absolute inset-x-0 bottom-0 bg-canvas px-6 pb-6 pt-2">
-      <View className="flex-row items-center justify-around rounded-full bg-surface px-4 py-3 shadow-neu-card">
+      <View className="flex-row items-center justify-around rounded-full bg-surface px-2 py-2 shadow-neu-card">
         {TABS.map((tab) => {
           const active = pathname === tab.href;
 
@@ -39,13 +39,16 @@ export function BottomNav() {
               onPress={() => {
                 if (!active) router.push(tab.href as any);
               }}
-              className={`items-center gap-0.5 rounded-full px-5 py-2 ${
+              // 아이콘을 왼쪽, 제목을 오른쪽에 두고 높이는 유닛 뷰 화면의
+              // 상단 버튼과 같은 48px(h-12) 로 맞춘다
+              className={`h-12 flex-row items-center justify-center gap-1.5 rounded-full px-4 ${
                 active ? "bg-canvas shadow-neu-inset" : "active:opacity-60"
               }`}
             >
               <Text className="text-[18px]">{tab.emoji}</Text>
               <Text
-                className={`text-[12px] ${
+                numberOfLines={1}
+                className={`text-[13px] ${
                   active ? "font-bold text-mint-dark" : "text-slate-400"
                 }`}
               >

@@ -100,6 +100,10 @@ interface AppState {
   autoAdvance: boolean;
   setAutoAdvance: (on: boolean) => void;
 
+  /** 발음 소리 크기 (0 = 음소거 … 1 = 최대). 학습 화면 스피커에 쓴다 */
+  speechVolume: number;
+  setSpeechVolume: (v: number) => void;
+
   /** 단어 id → 학습 기록 */
   entries: Record<string, StudyEntry>;
   /**
@@ -150,6 +154,11 @@ export const useAppStore = create<AppState>()(
 
       autoAdvance: true,
       setAutoAdvance: (on) => set({ autoAdvance: on }),
+
+      speechVolume: 1,
+      // 0~1 을 벗어난 값이 들어와도 저장소가 망가지지 않게 잘라 둔다
+      setSpeechVolume: (v) =>
+        set({ speechVolume: Math.min(1, Math.max(0, v)) }),
 
       entries: {},
       saved: {},
@@ -225,6 +234,7 @@ export const useAppStore = create<AppState>()(
         uiLang: s.uiLang,
         studyLang: s.studyLang,
         autoAdvance: s.autoAdvance,
+        speechVolume: s.speechVolume,
         activeGradeId: s.activeGradeId,
         entries: s.entries,
         saved: s.saved,

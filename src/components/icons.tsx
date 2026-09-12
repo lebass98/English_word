@@ -360,3 +360,22 @@ export function BookmarkIcon({
     </Svg>
   );
 }
+
+/** 🏠 홈으로 (학습 화면 상단 왼쪽) */
+export function HomeIcon({
+  size = 22,
+  color = "#334155",
+  strokeWidth = 2.4,
+}: IconProps) {
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Path
+        d="M3.5 10.5 12 4l8.5 6.5V19a1.5 1.5 0 0 1-1.5 1.5h-3.5V15h-3v5.5H5A1.5 1.5 0 0 1 3.5 19v-8.5Z"
+        stroke={color}
+        strokeWidth={strokeWidth}
+        strokeLinejoin="round"
+        strokeLinecap="round"
+      />
+    </Svg>
+  );
+}

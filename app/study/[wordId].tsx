@@ -18,6 +18,7 @@ import {
   AgainIcon,
   BookmarkIcon,
   CheckIcon,
+  HomeIcon,
   ChevronDownIcon,
   ChevronLeftIcon,
   ChevronRightIcon,
@@ -166,9 +167,11 @@ function StudyCard({
   const recordStudy = useAppStore((s) => s.recordStudy);
   const markSeen = useAppStore((s) => s.markSeen);
   const toggleSaved = useAppStore((s) => s.toggleSaved);
+  const speechVolume = useAppStore((s) => s.speechVolume);
   // 이 단어가 단어장에 담겨 있는지. saved 전체를 구독하면 다른 단어를 담을 때도 다시 그려진다
   const isSaved = useAppStore((s) => Boolean(s.saved[word.id]));
   const t = useT();
+  const router = useRouter();
   const uiLang = useAppStore((s) => s.uiLang);
   const speechCode = studyLanguageOf(studyLangOfWordId(word.id)).speechCode;
 
@@ -257,10 +260,13 @@ function StudyCard({
   useEffect(() => {
     speakWord(word.word, {
       lang: speechCode,
+      volume: speechVolume,
       onStart: () => setSpeaking(true),
       onDone: () => setSpeaking(false),
     });
     return stopSpeaking;
+    // 소리 크기를 바꿨다고 발음을 다시 들려줄 필요는 없어 의존성에서 뺀다
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [word.word, speechCode]);
 
   // 이어하기 지점과 "오늘 본 단어"는 화면에 뜬 시점에 기록한다.
@@ -296,6 +302,7 @@ function StudyCard({
   const handleSpeak = () => {
     speakWord(word.word, {
       lang: speechCode,
+      volume: speechVolume,
       onStart: () => setSpeaking(true),
       onDone: () => setSpeaking(false),
     });
@@ -309,12 +316,22 @@ function StudyCard({
   return (
     <SafeAreaView className="flex-1 bg-canvas">
       <View className="w-full flex-1">
-        {/* ── 상단 바: 뒤로 · 유닛/진행 · 자동 넘김 ──────────── */}
-        <View className="flex-row items-center justify-between px-6 pt-8 pb-3">
+        {/* ── 상단 바: 홈 · 뒤로 · 유닛/진행 · 자동 넘김 ────── */}
+        <View className="flex-row items-center justify-between gap-2 px-6 pt-8 pb-3">
+          {/* 유닛을 거쳐 들어온 화면이라 뒤로가기만으로는 홈까지 여러 번 눌러야 한다 */}
+          <Pressable
+            onPress={() => router.replace("/")}
+            accessibilityRole="button"
+            accessibilityLabel={t("nav.home")}
+            className="h-12 w-12 items-center justify-center rounded-full bg-surface shadow-neu-sm active:shadow-neu-pressed"
+          >
+            <HomeIcon />
+          </Pressable>
+
           <BackButton onPress={onBack} />
 
           {/* 유닛과 진행 개수를 하나의 알약에 담는다 */}
-          <View className="relative mx-2 h-12 flex-1 flex-row items-center justify-center gap-2 overflow-hidden rounded-full bg-surface px-4 shadow-neu-sm">
+          <View className="relative h-12 flex-1 flex-row items-center justify-center gap-1.5 overflow-hidden rounded-full bg-surface px-3 shadow-neu-sm">
             <Text
               numberOfLines={1}
               className="text-[14px] font-bold leading-[15px] tracking-tight text-slate-700"

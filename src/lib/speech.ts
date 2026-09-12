@@ -3,6 +3,8 @@ import * as Speech from "expo-speech";
 interface SpeakCallbacks {
   /** 읽어 줄 언어 코드 (예: en-US, ja-JP). 없으면 영어로 읽는다 */
   lang?: string;
+  /** 소리 크기 (0 = 음소거 … 1 = 최대). 없으면 최대로 읽는다 */
+  volume?: number;
   /** 실제로 소리가 나기 시작할 때 (음성 엔진이 비동기로 호출) */
   onStart?: () => void;
   /** 재생이 끝났거나 중단·실패했을 때 */
@@ -21,12 +23,18 @@ interface SpeakCallbacks {
  */
 export function speakWord(word: string, cb: SpeakCallbacks = {}) {
   if (!word) return;
+  // 음소거면 굳이 음성 엔진을 깨우지 않는다. 끝난 것으로 알려 버튼 상태를 되돌린다
+  if (cb.volume === 0) {
+    cb.onDone?.();
+    return;
+  }
   try {
     Speech.stop();
     Speech.speak(word, {
       language: cb.lang ?? "en-US",
       rate: 0.85,
       pitch: 1.0,
+      volume: cb.volume ?? 1,
       onStart: cb.onStart,
       onDone: cb.onDone,
       onStopped: cb.onDone,

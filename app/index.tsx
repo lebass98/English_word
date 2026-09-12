@@ -125,12 +125,13 @@ export default function HomeScreen() {
                 accessibilityState={{ selected: on }}
                 accessibilityLabel={t(`studyLang.${id}` as never)}
                 style={{ flex: 1 }}
-                className={`flex-row items-center gap-3 rounded-2xl px-4 py-3 active:scale-[0.98] ${
+                className={`flex-row items-center gap-2.5 rounded-2xl px-3 py-3 active:scale-[0.98] ${
                   on ? "bg-canvas shadow-neu-inset" : "bg-surface shadow-neu-sm"
                 }`}
               >
                 <LanguageFlag lang={id} size={26} />
                 <Text
+                  numberOfLines={1}
                   className={`text-[14px] font-bold ${
                     on ? "text-mint-dark" : "text-slate-500"
                   }`}

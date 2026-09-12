@@ -117,8 +117,8 @@ const ko = {
   "settings.uiLangDesc": "앱 화면에 쓰는 말이에요",
 
   // 학습 언어 이름
-  "studyLang.en": "영어",
-  "studyLang.ja": "일본어",
+  "studyLang.en": "영어 단어",
+  "studyLang.ja": "일본어 단어",
 
   // 품사 이름
   "pos.noun": "명사",
@@ -260,8 +260,8 @@ const ja: Partial<Record<StringKey, string>> = {
   "settings.studyLang": "学習言語",
   "settings.studyLangDesc": "何を学ぶか選んでください。絵はそのままで単語だけ変わります",
 
-  "studyLang.en": "英語",
-  "studyLang.ja": "日本語",
+  "studyLang.en": "英語の単語",
+  "studyLang.ja": "日本語の単語",
 
   "pos.noun": "名詞",
   "pos.verb": "動詞",

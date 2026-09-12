@@ -99,7 +99,7 @@ export default function StudyScreen() {
  */
 function WordImage({ word, offset = 0 }: { word: Word; offset?: number }) {
   const t = useT();
-  const source = WORD_IMAGES[word.id] || WORD_IMAGES[word.word];
+  const source = WORD_IMAGES[word.conceptId] ?? WORD_IMAGES[word.word];
   return (
     <View
       style={{

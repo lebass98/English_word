@@ -136,7 +136,7 @@ export default function HomeScreen() {
               contentContainerClassName="gap-3 pr-6"
             >
               {unsure.map((w) => {
-                const source = WORD_IMAGES[w.id] || WORD_IMAGES[w.word];
+                const source = WORD_IMAGES[w.conceptId] ?? WORD_IMAGES[w.word];
                 return (
                   <Pressable
                     key={w.id}

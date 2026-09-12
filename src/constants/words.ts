@@ -1,5 +1,4 @@
 import { useAppStore } from "../stores/useAppStore";
-import type { UiLangId } from "../i18n/strings";
 import {
   studyLanguageOf,
   type Level,
@@ -8,9 +7,8 @@ import {
 
 import enLevelMiddle1 from "../data/en/levels/middle-1.json";
 import enLevelMiddle2 from "../data/en/levels/middle-2.json";
-import enWords from "../data/en/words.json";
-import enTrJa from "../data/en/tr/ja.json";
 import enTrKo from "../data/en/tr/ko.json";
+import enWords from "../data/en/words.json";
 
 export const UNIT_SIZE = 20;
 
@@ -26,10 +24,17 @@ export interface Word {
   id: string;
   /** 학습 언어로 쓴 낱말 그 자체 */
   word: string;
-  /** 아래 둘은 학습 언어에 속한다. 표시 언어가 바뀌어도 그대로다 */
+  /**
+   * 이 낱말이 가리키는 뜻의 이름.
+   * 연상 이미지는 낱말이 아니라 이 뜻에 붙는다. 그래서 영어 beyond 와
+   * 일본어 越える 가 같은 개념을 가리키면 그림 한 장을 함께 쓴다.
+   */
+  conceptId: string;
+  /** 읽는 법. 영어는 발음기호, 일본어는 가나 */
   phonetic?: string;
+  /** 학습 언어로 쓴 예문 */
   example?: string;
-  /** 아래는 표시 언어로 된 것들 */
+  /** 아래는 한국어로 된 것들 */
   meaning: string;
   exampleTr?: string;
   etymology?: string;
@@ -41,18 +46,19 @@ export interface Unit {
   words: Word[];
 }
 
-/** 학습 언어 자체의 정보 (발음기호·예문·유의어 철자) */
+/** 학습 언어 자체의 정보. 한국어 뜻과 섞이지 않는 부분이다 */
 interface NeutralEntry {
+  conceptId?: string;
   phonetic?: string;
   example?: string;
   synonyms?: string[];
 }
 
-/** 표시 언어 하나의 번역 묶음 */
+/** 한국어 번역 묶음 */
 interface TranslationFile {
-  /** 단어 id 기준. 같은 철자라도 단계마다 뜻이 다를 수 있어서 id 로 묶는다 */
+  /** 단어 id 기준. 같은 낱말이라도 단계마다 뜻이 다를 수 있어서 id 로 묶는다 */
   meanings: Record<string, string>;
-  /** 단어 철자 기준. 예문 해석·어원·유의어 뜻은 낱말 자체의 속성이다 */
+  /** 낱말 기준. 예문 해석·어원·유의어 뜻은 낱말 자체의 속성이다 */
   details: Record<
     string,
     { exampleTr?: string; etymology?: string; synonymMeanings?: string[] }
@@ -63,7 +69,8 @@ interface LanguageData {
   /** 단계 id → 낱말 목록 (순서가 곧 번호다) */
   levels: Record<string, string[]>;
   words: Record<string, NeutralEntry>;
-  tr: Partial<Record<UiLangId, TranslationFile>>;
+  /** 한국어 뜻·해석 */
+  ko: TranslationFile;
 }
 
 const EMPTY_TR: TranslationFile = { meanings: {}, details: {} };
@@ -79,22 +86,19 @@ const DATA: Record<StudyLangId, LanguageData> = {
       "middle-2": enLevelMiddle2 as string[],
     },
     words: enWords as Record<string, NeutralEntry>,
-    tr: {
-      ko: enTrKo as TranslationFile,
-      ja: enTrJa as TranslationFile,
-    },
+    ko: enTrKo as TranslationFile,
   },
+  // 일본어는 아직 단어 데이터를 채우는 중이다. 자리만 열어 둔다
   ja: {
     levels: {},
     words: {},
-    tr: {},
+    ko: EMPTY_TR,
   },
 };
 
-/** 풀어낸 단어 모음. 표시 언어가 섞이지 않도록 언어 조합마다 따로 만든다 */
+/** 풀어낸 단어 모음 */
 export interface Vocab {
   studyLang: StudyLangId;
-  uiLang: UiLangId;
   levels: Level[];
   byLevel: Record<string, Word[]>;
   totalOf: (levelId: string) => number;
@@ -104,28 +108,10 @@ export interface Vocab {
   ) => { levelId: string; words: Word[]; index: number; word: Word } | null;
 }
 
-function buildVocab(studyLang: StudyLangId, uiLang: UiLangId): Vocab {
+function buildVocab(studyLang: StudyLangId): Vocab {
   const lang = studyLanguageOf(studyLang);
   const data = DATA[studyLang];
-  // 고른 표시 언어에 아직 번역이 없으면 한국어로 대신 보여준다.
-  // 덕분에 새 언어를 조금씩 채워 나가도 화면이 비지 않는다.
-  const tr = data.tr[uiLang] ?? data.tr.ko ?? EMPTY_TR;
-  const fallback = data.tr.ko ?? EMPTY_TR;
-
-  const pick = <T>(
-    primary: T | undefined,
-    backup: T | undefined,
-  ): T | undefined => primary ?? backup;
-
-  /**
-   * 상세 정보는 항목 단위가 아니라 칸 단위로 채운다.
-   * 예문 해석만 일본어로 번역되고 어원은 아직 없는 단어가 있는데,
-   * 항목째로 갈아 끼우면 번역이 있는 칸 하나 때문에 나머지가 통째로 사라진다.
-   */
-  const mergeDetail = (spelling: string) => ({
-    ...fallback.details[spelling],
-    ...tr.details[spelling],
-  });
+  const tr = data.ko;
 
   const byLevel: Record<string, Word[]> = {};
   const location = new Map<string, { levelId: string; index: number }>();
@@ -135,19 +121,20 @@ function buildVocab(studyLang: StudyLangId, uiLang: UiLangId): Vocab {
     const words = spellings.map((spelling, i) => {
       const localId = `${level.code}-${i + 1}`;
       const neutral = data.words[spelling] ?? {};
-      const detail = mergeDetail(spelling);
+      const detail = tr.details[spelling] ?? {};
       const synonymWords = neutral.synonyms ?? [];
-      const synonymMeanings = detail?.synonymMeanings ?? [];
+      const synonymMeanings = detail.synonymMeanings ?? [];
 
       return {
         id: `${studyLang}-${localId}`,
         word: spelling,
+        // 개념을 따로 안 적어 둔 낱말은 낱말 자신을 개념으로 본다
+        conceptId: neutral.conceptId ?? spelling,
         phonetic: neutral.phonetic,
         example: neutral.example,
-        meaning:
-          pick(tr.meanings[localId], fallback.meanings[localId]) ?? spelling,
-        exampleTr: detail?.exampleTr,
-        etymology: detail?.etymology,
+        meaning: tr.meanings[localId] ?? spelling,
+        exampleTr: detail.exampleTr,
+        etymology: detail.etymology,
         synonyms: synonymWords.length
           ? synonymWords.map((w, k) => ({
               word: w,
@@ -167,7 +154,6 @@ function buildVocab(studyLang: StudyLangId, uiLang: UiLangId): Vocab {
 
   return {
     studyLang,
-    uiLang,
     levels: lang.levels,
     byLevel,
     totalOf: (levelId) => byLevel[levelId]?.length ?? 0,
@@ -200,29 +186,26 @@ function buildVocab(studyLang: StudyLangId, uiLang: UiLangId): Vocab {
 }
 
 /**
- * 언어 조합마다 한 번만 만들어 두고 다시 쓴다.
+ * 학습 언어마다 한 번만 만들어 두고 다시 쓴다.
  * 단어가 2천 개라 화면을 그릴 때마다 새로 만들면 낭비다.
  */
-const VOCAB_CACHE = new Map<string, Vocab>();
+const VOCAB_CACHE = new Map<StudyLangId, Vocab>();
 
-export function getVocab(studyLang: StudyLangId, uiLang: UiLangId): Vocab {
-  const key = `${studyLang}:${uiLang}`;
-  const cached = VOCAB_CACHE.get(key);
+export function getVocab(studyLang: StudyLangId): Vocab {
+  const cached = VOCAB_CACHE.get(studyLang);
   if (cached) return cached;
-  const built = buildVocab(studyLang, uiLang);
-  VOCAB_CACHE.set(key, built);
+  const built = buildVocab(studyLang);
+  VOCAB_CACHE.set(studyLang, built);
   return built;
 }
 
-/** 화면에서 쓰는 단어 모음. 언어를 바꾸면 알아서 다시 그려진다 */
+/** 화면에서 쓰는 단어 모음. 학습 언어를 바꾸면 알아서 다시 그려진다 */
 export function useVocab(): Vocab {
   const studyLang = useAppStore((s) => s.studyLang);
-  const uiLang = useAppStore((s) => s.uiLang);
-  return getVocab(studyLang, uiLang);
+  return getVocab(studyLang);
 }
 
-/** 훅을 쓸 수 없는 곳에서 지금 언어의 단어 모음이 필요할 때 */
+/** 훅을 쓸 수 없는 곳에서 지금 학습 언어의 단어 모음이 필요할 때 */
 export function currentVocab(): Vocab {
-  const { studyLang, uiLang } = useAppStore.getState();
-  return getVocab(studyLang, uiLang);
+  return getVocab(useAppStore.getState().studyLang);
 }

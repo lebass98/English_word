@@ -1,22 +1,8 @@
-import { getLocales } from "expo-localization";
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 import type { StudyLangId } from "../constants/languages";
 import { STUDY_LANGS } from "../constants/languages";
-import { UI_LANGS, type UiLangId } from "../i18n/strings";
 import { persistStorage } from "../lib/storage";
-
-/** 기기 언어로 표시 언어를 정한다. 지원하지 않는 말이면 한국어로 시작한다 */
-function deviceUiLang(): UiLangId {
-  try {
-    const code = getLocales()[0]?.languageCode ?? "";
-    return (UI_LANGS as readonly string[]).includes(code)
-      ? (code as UiLangId)
-      : "ko";
-  } catch {
-    return "ko";
-  }
-}
 
 /** 예전 기록의 단어 id 에는 학습 언어가 없었다 (m1-1). 영어로 보고 앞에 붙인다 */
 function withLangPrefix(wordId: string): string {
@@ -84,11 +70,7 @@ interface AppState {
   /** 저장소에서 값을 다 읽어왔는지. 읽기 전에 빈 화면을 보여주지 않으려고 쓴다 */
   hydrated: boolean;
 
-  /** 앱 화면에 쓰는 말 */
-  uiLang: UiLangId;
-  setUiLang: (id: UiLangId) => void;
-
-  /** 지금 배우고 있는 말 */
+  /** 지금 배우고 있는 말 (화면의 말은 항상 한국어다) */
   studyLang: StudyLangId;
   setStudyLang: (id: StudyLangId) => void;
 
@@ -128,9 +110,6 @@ export const useAppStore = create<AppState>()(
   persist(
     (set) => ({
       hydrated: false,
-
-      uiLang: deviceUiLang(),
-      setUiLang: (id) => set({ uiLang: id }),
 
       studyLang: "en",
       // 학습 언어를 바꾸면 보고 있던 코스도 비운다. 단계 id 가 언어마다 다르다
@@ -204,7 +183,6 @@ export const useAppStore = create<AppState>()(
       storage: createJSONStorage(() => persistStorage),
       // hydrated는 저장하지 않는다. 매 실행마다 false에서 시작해야 한다
       partialize: (s) => ({
-        uiLang: s.uiLang,
         studyLang: s.studyLang,
         autoAdvance: s.autoAdvance,
         activeGradeId: s.activeGradeId,
@@ -232,7 +210,6 @@ export const useAppStore = create<AppState>()(
             wordId: withLangPrefix(state.lastStudied.wordId),
           };
         }
-        state.uiLang = state.uiLang ?? deviceUiLang();
         state.studyLang = state.studyLang ?? "en";
         return state;
       },

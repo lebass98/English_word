@@ -118,7 +118,8 @@ export function ContinueCard() {
   }
 
   const ratio = point.unitLen > 0 ? unitKnown / point.unitLen : 0;
-  const source = WORD_IMAGES[point.word.id] || WORD_IMAGES[point.word.word];
+  const source =
+    WORD_IMAGES[point.word.conceptId] ?? WORD_IMAGES[point.word.word];
 
   const resume = () => {
     setActiveGradeId(point.gradeId);

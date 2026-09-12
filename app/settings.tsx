@@ -14,7 +14,6 @@ import { BottomNav } from "../src/components/BottomNav";
 import { PillButton } from "../src/components/PillButton";
 import { STUDY_LANGS } from "../src/constants/languages";
 import { useT } from "../src/i18n";
-import { UI_LANGS, UI_LANG_NAMES } from "../src/i18n/strings";
 import { useAppStore } from "../src/stores/useAppStore";
 
 /** 웹 2단계 확인이 눌린 채로 남아 있지 않도록 되돌리는 시간 (ms) */
@@ -27,8 +26,6 @@ export default function SettingsScreen() {
   const setAutoAdvance = useAppStore((s) => s.setAutoAdvance);
   const entries = useAppStore((s) => s.entries);
   const resetProgress = useAppStore((s) => s.resetProgress);
-  const uiLang = useAppStore((s) => s.uiLang);
-  const setUiLang = useAppStore((s) => s.setUiLang);
   const studyLang = useAppStore((s) => s.studyLang);
   const setStudyLang = useAppStore((s) => s.setStudyLang);
   const t = useT();
@@ -105,30 +102,6 @@ export default function SettingsScreen() {
 
           <View className="mt-6 rounded-3xl bg-surface p-6 shadow-neu-card">
             <Text className="text-[15px] font-bold text-ink">
-              {t("settings.language")}
-            </Text>
-
-            {/* 앱 화면에 쓰는 말 */}
-            <Text className="mt-4 text-[15px] text-slate-700">
-              {t("settings.uiLang")}
-            </Text>
-            <Text className="mt-1 text-[13px] text-slate-400">
-              {t("settings.uiLangDesc")}
-            </Text>
-            <View className="mt-3 flex-row flex-wrap gap-2">
-              {UI_LANGS.map((id) => (
-                <PillButton
-                  key={id}
-                  size="sm"
-                  label={UI_LANG_NAMES[id]}
-                  variant={uiLang === id ? "inset" : "default"}
-                  onPress={() => setUiLang(id)}
-                />
-              ))}
-            </View>
-
-            {/* 지금 배우는 말 */}
-            <Text className="mt-6 text-[15px] text-slate-700">
               {t("settings.studyLang")}
             </Text>
             <Text className="mt-1 text-[13px] text-slate-400">

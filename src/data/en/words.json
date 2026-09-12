@@ -1,15 +1,18 @@
 {
 "beyond": {
 "phonetic": "[bɪˈjɑːnd]",
-"example": "The mountains lie beyond the river."
+"example": "The mountains lie beyond the river.",
+"conceptId": "beyond"
 },
 "either": {
 "phonetic": "[ˈiːðər]",
-"example": "You can take either road to the station."
+"example": "You can take either road to the station.",
+"conceptId": "either"
 },
 "neither": {
 "phonetic": "[ˈniːðər]",
-"example": "Neither answer was correct."
+"example": "Neither answer was correct.",
+"conceptId": "neither"
 },
 "behind": {
 "phonetic": "[bɪˈhaɪnd]",
@@ -17,7 +20,8 @@
 "synonyms": [
 "after",
 "following"
-]
+],
+"conceptId": "behind"
 },
 "bound": {
 "phonetic": "[baʊnd]",
@@ -25,7 +29,8 @@
 "synonyms": [
 "headed",
 "destined"
-]
+],
+"conceptId": "bound"
 },
 "below": {
 "phonetic": "[bɪˈloʊ]",
@@ -34,11 +39,13 @@
 "under",
 "beneath",
 "underneath"
-]
+],
+"conceptId": "below"
 },
 "without": {
 "phonetic": "[wɪˈðaʊt]",
-"example": "I cannot read the small letters without my glasses."
+"example": "I cannot read the small letters without my glasses.",
+"conceptId": "without"
 },
 "belong": {
 "phonetic": "[bɪˈlɔːŋ]",
@@ -46,7 +53,8 @@
 "synonyms": [
 "fit",
 "pertain"
-]
+],
+"conceptId": "belong"
 },
 "replace": {
 "phonetic": "[rɪˈpleɪs]",
@@ -55,11 +63,13 @@
 "substitute",
 "swap",
 "change"
-]
+],
+"conceptId": "replace"
 },
 "along": {
 "phonetic": "[əˈlɔːŋ]",
-"example": "We walked along the beach at sunset."
+"example": "We walked along the beach at sunset.",
+"conceptId": "along"
 },
 "except": {
 "phonetic": "[ɪkˈsept]",
@@ -68,7 +78,8 @@
 "excluding",
 "besides",
 "but"
-]
+],
+"conceptId": "except"
 },
 "become": {
 "phonetic": "[bɪˈkʌm]",
@@ -77,11 +88,13 @@
 "turn",
 "grow",
 "get"
-]
+],
+"conceptId": "become"
 },
 "since": {
 "phonetic": "[sɪns]",
-"example": "I have lived in this town since 2020."
+"example": "I have lived in this town since 2020.",
+"conceptId": "since"
 },
 "pretend": {
 "phonetic": "[prɪˈtend]",
@@ -90,23 +103,28 @@
 "fake",
 "act",
 "feign"
-]
+],
+"conceptId": "pretend"
 },
 "whether": {
 "phonetic": "[ˈweðər]",
-"example": "I don't know whether he will come or not."
+"example": "I don't know whether he will come or not.",
+"conceptId": "whether"
 },
 "toward": {
 "phonetic": "[təˈwɔːrd]",
-"example": "She slowly walked toward the door."
+"example": "She slowly walked toward the door.",
+"conceptId": "toward"
 },
 "while": {
 "phonetic": "[waɪl]",
-"example": "He called me while I was sleeping."
+"example": "He called me while I was sleeping.",
+"conceptId": "while"
 },
 "unless": {
 "phonetic": "[ənˈles]",
-"example": "We will go on a picnic unless it rains."
+"example": "We will go on a picnic unless it rains.",
+"conceptId": "unless"
 },
 "deserve": {
 "phonetic": "[dɪˈzɜːrv]",
@@ -114,7 +132,8 @@
 "synonyms": [
 "earn",
 "merit"
-]
+],
+"conceptId": "deserve"
 },
 "teenager": {
 "phonetic": "[ˈtiːneɪdʒər]",
@@ -122,7 +141,8 @@
 "synonyms": [
 "adolescent",
 "youth"
-]
+],
+"conceptId": "teenager"
 },
 "culture": {
 "phonetic": "[ˈkʌltʃər]",
@@ -131,7 +151,8 @@
 "civilization",
 "tradition",
 "customs"
-]
+],
+"conceptId": "culture"
 },
 "experience": {
 "phonetic": "[ɪkˈspɪrɪəns]",
@@ -140,7 +161,8 @@
 "knowledge",
 "practice",
 "background"
-]
+],
+"conceptId": "experience"
 },
 "education": {
 "phonetic": "[edʒəˈkeɪʃən]",
@@ -150,7 +172,8 @@
 "instruction",
 "schooling",
 "training"
-]
+],
+"conceptId": "education"
 },
 "symbol": {
 "phonetic": "[ˈsɪmbəl]",
@@ -159,7 +182,8 @@
 "sign",
 "mark",
 "emblem"
-]
+],
+"conceptId": "symbol"
 },
 "effect": {
 "phonetic": "[ɪˈfekt]",
@@ -169,7 +193,8 @@
 "outcome",
 "consequence",
 "influence"
-]
+],
+"conceptId": "effect"
 },
 "liberty": {
 "phonetic": "[ˈlɪbərti]",
@@ -177,7 +202,8 @@
 "synonyms": [
 "freedom",
 "independence"
-]
+],
+"conceptId": "liberty"
 },
 "affair": {
 "phonetic": "[əˈfer]",
@@ -186,7 +212,8 @@
 "matter",
 "event",
 "business"
-]
+],
+"conceptId": "affair"
 },
 "comfort": {
 "phonetic": "[ˈkʌmfərt]",
@@ -195,7 +222,8 @@
 "ease",
 "consolation",
 "relief"
-]
+],
+"conceptId": "comfort"
 },
 "tradition": {
 "phonetic": "[trəˈdɪʃən]",
@@ -204,7 +232,8 @@
 "custom",
 "convention",
 "heritage"
-]
+],
+"conceptId": "tradition"
 },
 "subject": {
 "phonetic": "[səbˈdʒekt]",
@@ -213,7 +242,8 @@
 "topic",
 "theme",
 "course"
-]
+],
+"conceptId": "subject"
 },
 "object": {
 "phonetic": "[ˈɑːbdʒekt]",
@@ -222,7 +252,8 @@
 "thing",
 "item",
 "article"
-]
+],
+"conceptId": "object"
 },
 "source": {
 "phonetic": "[sɔːrs]",
@@ -231,7 +262,8 @@
 "origin",
 "root",
 "beginning"
-]
+],
+"conceptId": "source"
 },
 "revolution": {
 "phonetic": "[revəˈluːʃən]",
@@ -240,7 +272,8 @@
 "uprising",
 "rebellion",
 "revolt"
-]
+],
+"conceptId": "revolution"
 },
 "pollution": {
 "phonetic": "[pəˈluːʃən]",
@@ -249,7 +282,8 @@
 "contamination",
 "dirt",
 "smog"
-]
+],
+"conceptId": "pollution"
 },
 "system": {
 "phonetic": "[ˈsɪstəm]",
@@ -259,7 +293,8 @@
 "organization",
 "network",
 "method"
-]
+],
+"conceptId": "system"
 },
 "triumph": {
 "phonetic": "[ˈtraɪəmf]",
@@ -268,7 +303,8 @@
 "victory",
 "win",
 "success"
-]
+],
+"conceptId": "triumph"
 },
 "respect": {
 "phonetic": "[rɪˈspekt]",
@@ -278,7 +314,8 @@
 "honor",
 "esteem",
 "regard"
-]
+],
+"conceptId": "respect"
 },
 "communication": {
 "phonetic": "[kəmjuːnəˈkeɪʃən]",
@@ -287,7 +324,8 @@
 "contact",
 "exchange",
 "message"
-]
+],
+"conceptId": "communication"
 },
 "mass communication": {
 "phonetic": "[mæs kəmjuːnəˈkeɪʃən]",
@@ -295,7 +333,8 @@
 "synonyms": [
 "mass media",
 "media"
-]
+],
+"conceptId": "mass communication"
 },
 "foundation": {
 "phonetic": "[faʊnˈdeɪʃən]",
@@ -304,7 +343,8 @@
 "base",
 "basis",
 "groundwork"
-]
+],
+"conceptId": "foundation"
 },
 "glory": {
 "phonetic": "[ˈɡlɔːri]",
@@ -314,7 +354,8 @@
 "fame",
 "praise",
 "splendor"
-]
+],
+"conceptId": "glory"
 },
 "situation": {
 "phonetic": "[sɪtʃuˈeɪʃən]",
@@ -323,7 +364,8 @@
 "condition",
 "circumstances",
 "state"
-]
+],
+"conceptId": "situation"
 },
 "competition": {
 "phonetic": "[kɑːmpəˈtɪʃən]",
@@ -332,7 +374,8 @@
 "contest",
 "rivalry",
 "race"
-]
+],
+"conceptId": "competition"
 },
 "prairie": {
 "phonetic": "[ˈpreri]",
@@ -341,7 +384,8 @@
 "grassland",
 "plain",
 "meadow"
-]
+],
+"conceptId": "prairie"
 },
 "effort": {
 "phonetic": "[ˈefərt]",
@@ -350,7 +394,8 @@
 "attempt",
 "try",
 "endeavor"
-]
+],
+"conceptId": "effort"
 },
 "section": {
 "phonetic": "[ˈsekʃən]",
@@ -359,7 +404,8 @@
 "part",
 "portion",
 "division"
-]
+],
+"conceptId": "section"
 },
 "no smoking section": {
 "phonetic": "[noʊ ˈsmoʊkɪŋ ˈsekʃən]",
@@ -367,11 +413,13 @@
 "synonyms": [
 "nonsmoking area",
 "smoke-free zone"
-]
+],
+"conceptId": "no smoking section"
 },
 "rein": {
 "phonetic": "[reɪn]",
-"example": "The rider pulled the rein gently and stopped his brown horse."
+"example": "The rider pulled the rein gently and stopped his brown horse.",
+"conceptId": "rein"
 },
 "solution": {
 "phonetic": "[səˈluːʃən]",
@@ -380,7 +428,8 @@
 "answer",
 "fix",
 "remedy"
-]
+],
+"conceptId": "solution"
 },
 "honor": {
 "phonetic": "[ˈɑːnər]",
@@ -389,7 +438,8 @@
 "respect",
 "glory",
 "dignity"
-]
+],
+"conceptId": "honor"
 },
 "unity": {
 "phonetic": "[ˈjuːnəti]",
@@ -398,7 +448,8 @@
 "union",
 "oneness",
 "harmony"
-]
+],
+"conceptId": "unity"
 },
 "population": {
 "phonetic": "[pɑːpjəˈleɪʃən]",
@@ -407,7 +458,8 @@
 "inhabitants",
 "residents",
 "people"
-]
+],
+"conceptId": "population"
 },
 "direction": {
 "phonetic": "[dərˈekʃən]",
@@ -416,7 +468,8 @@
 "way",
 "course",
 "instruction"
-]
+],
+"conceptId": "direction"
 },
 "dialogue": {
 "phonetic": "[ˈdaɪəlɔːɡ]",
@@ -425,18 +478,21 @@
 "conversation",
 "talk",
 "discussion"
-]
+],
+"conceptId": "dialogue"
 },
 "dialogue between north and south": {
 "phonetic": "[ˈdaɪəlɔːɡ bɪˈtwiːn nɔːrθ ənd saʊθ]",
-"example": "Many people hope the dialogue between north and south will bring peace."
+"example": "Many people hope the dialogue between north and south will bring peace.",
+"conceptId": "dialogue between north and south"
 },
 "republic": {
 "phonetic": "[rɪˈpʌblək]",
 "example": "France became a republic after its people removed the king.",
 "synonyms": [
 "commonwealth"
-]
+],
+"conceptId": "republic"
 },
 "method": {
 "phonetic": "[ˈmeθəd]",
@@ -445,7 +501,8 @@
 "way",
 "means",
 "approach"
-]
+],
+"conceptId": "method"
 },
 "increase": {
 "phonetic": "[ɪnˈkriːs]",
@@ -455,7 +512,8 @@
 "rise",
 "expand",
 "raise"
-]
+],
+"conceptId": "increase"
 },
 "decrease": {
 "phonetic": "[dɪˈkriːs]",
@@ -465,7 +523,8 @@
 "drop",
 "decline",
 "lessen"
-]
+],
+"conceptId": "decrease"
 },
 "amount": {
 "phonetic": "[əˈmaʊnt]",
@@ -474,7 +533,8 @@
 "quantity",
 "sum",
 "total"
-]
+],
+"conceptId": "amount"
 },
 "ancestor": {
 "phonetic": "[ˈænsestər]",
@@ -483,7 +543,8 @@
 "forefather",
 "forebear",
 "predecessor"
-]
+],
+"conceptId": "ancestor"
 },
 "voyage": {
 "phonetic": "[ˈvɔɪədʒ]",
@@ -492,7 +553,8 @@
 "journey",
 "trip",
 "cruise"
-]
+],
+"conceptId": "voyage"
 },
 "sculpture": {
 "phonetic": "[ˈskʌlptʃər]",
@@ -500,7 +562,8 @@
 "synonyms": [
 "carving",
 "statue"
-]
+],
+"conceptId": "sculpture"
 },
 "instrument": {
 "phonetic": "[ˈɪnstrəmənt]",
@@ -509,7 +572,8 @@
 "tool",
 "device",
 "implement"
-]
+],
+"conceptId": "instrument"
 },
 "figure": {
 "phonetic": "[ˈfɪɡjər]",
@@ -518,7 +582,8 @@
 "number",
 "digit",
 "numeral"
-]
+],
+"conceptId": "figure"
 },
 "activity": {
 "phonetic": "[ækˈtɪvəti]",
@@ -527,7 +592,8 @@
 "action",
 "movement",
 "exercise"
-]
+],
+"conceptId": "activity"
 },
 "cause": {
 "phonetic": "[kɑːz]",
@@ -537,7 +603,8 @@
 "source",
 "origin",
 "trigger"
-]
+],
+"conceptId": "cause"
 },
 "worth": {
 "phonetic": "[wɜːrθ]",
@@ -546,7 +613,8 @@
 "value",
 "merit",
 "price"
-]
+],
+"conceptId": "worth"
 },
 "accident": {
 "phonetic": "[ˈæksədənt]",
@@ -555,7 +623,8 @@
 "crash",
 "mishap",
 "incident"
-]
+],
+"conceptId": "accident"
 },
 "adventure": {
 "phonetic": "[ædˈventʃər]",
@@ -564,7 +633,8 @@
 "quest",
 "exploit",
 "journey"
-]
+],
+"conceptId": "adventure"
 },
 "view": {
 "phonetic": "[vjuː]",
@@ -574,7 +644,8 @@
 "scene",
 "sight",
 "perspective"
-]
+],
+"conceptId": "view"
 },
 "relative": {
 "phonetic": "[ˈrelətɪv]",
@@ -582,7 +653,8 @@
 "synonyms": [
 "relation",
 "kin"
-]
+],
+"conceptId": "relative"
 },
 "superstition": {
 "phonetic": "[suːpərˈstɪʃən]",
@@ -590,7 +662,8 @@
 "synonyms": [
 "myth",
 "folk belief"
-]
+],
+"conceptId": "superstition"
 },
 "habit": {
 "phonetic": "[ˈhæbət]",
@@ -599,7 +672,8 @@
 "custom",
 "practice",
 "routine"
-]
+],
+"conceptId": "habit"
 },
 "wealth": {
 "phonetic": "[welθ]",
@@ -608,7 +682,8 @@
 "riches",
 "fortune",
 "property"
-]
+],
+"conceptId": "wealth"
 },
 "treasure": {
 "phonetic": "[ˈtreʒər]",
@@ -617,7 +692,8 @@
 "riches",
 "wealth",
 "valuables"
-]
+],
+"conceptId": "treasure"
 },
 "universe": {
 "phonetic": "[ˈjuːnəvɜːrs]",
@@ -626,14 +702,16 @@
 "cosmos",
 "space",
 "world"
-]
+],
+"conceptId": "universe"
 },
 "adult": {
 "phonetic": "[əˈdʌlt]",
 "example": "You must be an adult to drive a car in Korea.",
 "synonyms": [
 "grown-up"
-]
+],
+"conceptId": "adult"
 },
 "feast": {
 "phonetic": "[fiːst]",
@@ -642,7 +720,8 @@
 "banquet",
 "party",
 "celebration"
-]
+],
+"conceptId": "feast"
 },
 "resources": {
 "phonetic": "[ˈriːsɔrsɪz]",
@@ -651,7 +730,8 @@
 "assets",
 "supplies",
 "materials"
-]
+],
+"conceptId": "resources"
 },
 "ruin": {
 "phonetic": "[ˈruːən]",
@@ -661,7 +741,8 @@
 "wreck",
 "spoil",
 "damage"
-]
+],
+"conceptId": "ruin"
 },
 "monument": {
 "phonetic": "[ˈmɑːnjumənt]",
@@ -669,7 +750,8 @@
 "synonyms": [
 "memorial",
 "landmark"
-]
+],
+"conceptId": "monument"
 },
 "information": {
 "phonetic": "[ɪnfərˈmeɪʃən]",
@@ -679,7 +761,8 @@
 "data",
 "knowledge",
 "facts"
-]
+],
+"conceptId": "information"
 },
 "appetite": {
 "phonetic": "[ˈæpətaɪt]",
@@ -688,11 +771,13 @@
 "hunger",
 "craving",
 "desire"
-]
+],
+"conceptId": "appetite"
 },
 "stethoscope": {
 "phonetic": "[ˈsteθəskoʊp]",
-"example": "The doctor listened to my heart with a cold silver stethoscope."
+"example": "The doctor listened to my heart with a cold silver stethoscope.",
+"conceptId": "stethoscope"
 },
 "mystery": {
 "phonetic": "[ˈmɪstəri]",
@@ -702,11 +787,13 @@
 "riddle",
 "secret",
 "enigma"
-]
+],
+"conceptId": "mystery"
 },
 "thermometer": {
 "phonetic": "[θərˈmɑːmətər]",
-"example": "The thermometer showed minus ten degrees on that cold morning."
+"example": "The thermometer showed minus ten degrees on that cold morning.",
+"conceptId": "thermometer"
 },
 "burden": {
 "phonetic": "[ˈbɜːrdən]",
@@ -715,7 +802,8 @@
 "load",
 "weight",
 "responsibility"
-]
+],
+"conceptId": "burden"
 },
 "series": {
 "phonetic": "[ˈsɪrɪz]",
@@ -725,7 +813,8 @@
 "succession",
 "chain",
 "set"
-]
+],
+"conceptId": "series"
 },
 "oath": {
 "phonetic": "[oʊθ]",
@@ -734,7 +823,8 @@
 "vow",
 "pledge",
 "promise"
-]
+],
+"conceptId": "oath"
 },
 "appointment": {
 "phonetic": "[əˈpɔɪntmənt]",
@@ -743,7 +833,8 @@
 "engagement",
 "meeting",
 "date"
-]
+],
+"conceptId": "appointment"
 },
 "clue": {
 "phonetic": "[kluː]",
@@ -753,7 +844,8 @@
 "sign",
 "lead",
 "trace"
-]
+],
+"conceptId": "clue"
 },
 "debt": {
 "phonetic": "[det]",
@@ -761,11 +853,13 @@
 "synonyms": [
 "loan",
 "obligation"
-]
+],
+"conceptId": "debt"
 },
 "hydrogen": {
 "phonetic": "[ˈhaɪdrədʒən]",
-"example": "Water is made of hydrogen and oxygen, as we learned today."
+"example": "Water is made of hydrogen and oxygen, as we learned today.",
+"conceptId": "hydrogen"
 },
 "control": {
 "phonetic": "[kənˈtroʊl]",
@@ -775,7 +869,8 @@
 "regulate",
 "command",
 "govern"
-]
+],
+"conceptId": "control"
 },
 "uniform": {
 "phonetic": "[ˈjuːnəfɔːrm]",
@@ -783,7 +878,8 @@
 "synonyms": [
 "outfit",
 "costume"
-]
+],
+"conceptId": "uniform"
 },
 "design": {
 "phonetic": "[dɪˈzaɪn]",
@@ -793,7 +889,8 @@
 "pattern",
 "layout",
 "plot"
-]
+],
+"conceptId": "design"
 },
 "damage": {
 "phonetic": "[ˈdæmədʒ]",
@@ -803,7 +900,8 @@
 "injury",
 "hurt",
 "ruin"
-]
+],
+"conceptId": "damage"
 },
 "custom": {
 "phonetic": "[ˈkʌstəm]",
@@ -813,18 +911,21 @@
 "habit",
 "practice",
 "convention"
-]
+],
+"conceptId": "custom"
 },
 "traffic": {
 "phonetic": "[ˈtræfɪk]",
 "example": "Heavy traffic made us late for the concert last Friday evening.",
 "synonyms": [
 "transportation"
-]
+],
+"conceptId": "traffic"
 },
 "sophomore": {
 "phonetic": "[ˈsɑːfmɔːr]",
-"example": "My brother is a sophomore and takes six classes this year."
+"example": "My brother is a sophomore and takes six classes this year.",
+"conceptId": "sophomore"
 },
 "temperature": {
 "phonetic": "[ˈtemprətʃər]",
@@ -832,7 +933,8 @@
 "synonyms": [
 "heat",
 "warmth"
-]
+],
+"conceptId": "temperature"
 },
 "limit": {
 "phonetic": "[ˈlɪmət]",
@@ -841,7 +943,8 @@
 "restrict",
 "confine",
 "restrain"
-]
+],
+"conceptId": "limit"
 },
 "statue": {
 "phonetic": "[ˈstætʃuː]",
@@ -850,7 +953,8 @@
 "sculpture",
 "figure",
 "monument"
-]
+],
+"conceptId": "statue"
 },
 "furniture": {
 "phonetic": "[ˈfɜːrnɪtʃər]",
@@ -858,7 +962,8 @@
 "synonyms": [
 "furnishings",
 "fittings"
-]
+],
+"conceptId": "furniture"
 },
 "parade": {
 "phonetic": "[pərˈeɪd]",
@@ -867,7 +972,8 @@
 "procession",
 "march",
 "pageant"
-]
+],
+"conceptId": "parade"
 },
 "public": {
 "phonetic": "[ˈpʌblɪk]",
@@ -877,11 +983,13 @@
 "general",
 "open",
 "communal"
-]
+],
+"conceptId": "public"
 },
 "pilgrim": {
 "phonetic": "[ˈpɪlɡrəm]",
-"example": "A tired pilgrim walked for weeks to reach the holy temple."
+"example": "A tired pilgrim walked for weeks to reach the holy temple.",
+"conceptId": "pilgrim"
 },
 "greeting": {
 "phonetic": "[ˈɡriːtɪŋ]",
@@ -890,7 +998,8 @@
 "welcome",
 "salutation",
 "regards"
-]
+],
+"conceptId": "greeting"
 },
 "language": {
 "phonetic": "[ˈlæŋɡwədʒ]",
@@ -898,7 +1007,8 @@
 "synonyms": [
 "speech",
 "tongue"
-]
+],
+"conceptId": "language"
 },
 "opinion": {
 "phonetic": "[əˈpɪnjən]",
@@ -908,7 +1018,8 @@
 "belief",
 "thought",
 "idea"
-]
+],
+"conceptId": "opinion"
 },
 "athlete": {
 "phonetic": "[ˈæθlɪt]",
@@ -917,7 +1028,8 @@
 "player",
 "sportsman",
 "competitor"
-]
+],
+"conceptId": "athlete"
 },
 "supply": {
 "phonetic": "[səˈplaɪ]",
@@ -927,7 +1039,8 @@
 "furnish",
 "give",
 "deliver"
-]
+],
+"conceptId": "supply"
 },
 "surface": {
 "phonetic": "[ˈsɜːrfəs]",
@@ -936,7 +1049,8 @@
 "top",
 "outside",
 "exterior"
-]
+],
+"conceptId": "surface"
 },
 "electricity": {
 "phonetic": "[ɪlekˈtrɪsəti]",
@@ -944,7 +1058,8 @@
 "synonyms": [
 "power",
 "current"
-]
+],
+"conceptId": "electricity"
 },
 "order": {
 "phonetic": "[ˈɔːrdər]",
@@ -954,7 +1069,8 @@
 "command",
 "sequence",
 "instruction"
-]
+],
+"conceptId": "order"
 },
 "spirit": {
 "phonetic": "[ˈspɪrət]",
@@ -963,7 +1079,8 @@
 "soul",
 "mind",
 "heart"
-]
+],
+"conceptId": "spirit"
 },
 "purpose": {
 "phonetic": "[ˈpɜːrpəs]",
@@ -972,7 +1089,8 @@
 "aim",
 "intention",
 "objective"
-]
+],
+"conceptId": "purpose"
 },
 "promise": {
 "phonetic": "[ˈprɑːməs]",
@@ -981,7 +1099,8 @@
 "pledge",
 "vow",
 "oath"
-]
+],
+"conceptId": "promise"
 },
 "project": {
 "phonetic": "[ˈprɑːdʒekt]",
@@ -991,7 +1110,8 @@
 "scheme",
 "undertaking",
 "design"
-]
+],
+"conceptId": "project"
 },
 "government": {
 "phonetic": "[ˈɡʌvərmənt]",
@@ -1000,7 +1120,8 @@
 "administration",
 "authorities",
 "regime"
-]
+],
+"conceptId": "government"
 },
 "exercise": {
 "phonetic": "[ˈeksərsaɪz]",
@@ -1010,7 +1131,8 @@
 "training",
 "practice",
 "drill"
-]
+],
+"conceptId": "exercise"
 },
 "comparison": {
 "phonetic": "[kəmˈperəsən]",
@@ -1018,7 +1140,8 @@
 "synonyms": [
 "contrast",
 "analogy"
-]
+],
+"conceptId": "comparison"
 },
 "interest": {
 "phonetic": "[ˈɪntrəst]",
@@ -1028,7 +1151,8 @@
 "benefit",
 "gain",
 "advantage"
-]
+],
+"conceptId": "interest"
 },
 "funeral": {
 "phonetic": "[ˈfjuːnərəl]",
@@ -1036,7 +1160,8 @@
 "synonyms": [
 "burial",
 "memorial service"
-]
+],
+"conceptId": "funeral"
 },
 "senior": {
 "phonetic": "[ˈsiːnjər]",
@@ -1044,7 +1169,8 @@
 "synonyms": [
 "elder",
 "superior"
-]
+],
+"conceptId": "senior"
 },
 "junior": {
 "phonetic": "[ˈdʒuːnjər]",
@@ -1052,14 +1178,16 @@
 "synonyms": [
 "younger",
 "lower"
-]
+],
+"conceptId": "junior"
 },
 "democracy": {
 "phonetic": "[dɪˈmɑːkrəsi]",
 "example": "In a democracy, people choose their leaders by voting freely.",
 "synonyms": [
 "self-government"
-]
+],
+"conceptId": "democracy"
 },
 "general": {
 "phonetic": "[ˈdʒenərəl]",
@@ -1067,14 +1195,16 @@
 "synonyms": [
 "commander",
 "chief"
-]
+],
+"conceptId": "general"
 },
 "admiral": {
 "phonetic": "[ˈædmərəl]",
 "example": "The admiral stood on the deck and watched the ships.",
 "synonyms": [
 "commander"
-]
+],
+"conceptId": "admiral"
 },
 "edge": {
 "phonetic": "[edʒ]",
@@ -1084,11 +1214,13 @@
 "rim",
 "margin",
 "side"
-]
+],
+"conceptId": "edge"
 },
 "biology": {
 "phonetic": "[baɪˈɑːlədʒi]",
-"example": "Our biology teacher showed us plant cells under a microscope."
+"example": "Our biology teacher showed us plant cells under a microscope.",
+"conceptId": "biology"
 },
 "danger": {
 "phonetic": "[ˈdeɪndʒər]",
@@ -1098,7 +1230,8 @@
 "peril",
 "hazard",
 "threat"
-]
+],
+"conceptId": "danger"
 },
 "advice": {
 "phonetic": "[ædˈvaɪs]",
@@ -1108,7 +1241,8 @@
 "suggestion",
 "guidance",
 "tip"
-]
+],
+"conceptId": "advice"
 },
 "practice": {
 "phonetic": "[ˈpræktəs]",
@@ -1118,11 +1252,13 @@
 "rehearse",
 "drill",
 "exercise"
-]
+],
+"conceptId": "practice"
 },
 "mammal": {
 "phonetic": "[ˈmæməl]",
-"example": "A whale is a mammal, not a fish, our teacher explained."
+"example": "A whale is a mammal, not a fish, our teacher explained.",
+"conceptId": "mammal"
 },
 "grade": {
 "phonetic": "[ɡreɪd]",
@@ -1132,7 +1268,8 @@
 "rank",
 "year",
 "score"
-]
+],
+"conceptId": "grade"
 },
 "score": {
 "phonetic": "[skɔːr]",
@@ -1142,7 +1279,8 @@
 "mark",
 "grade",
 "result"
-]
+],
+"conceptId": "score"
 },
 "pause": {
 "phonetic": "[pɔːz]",
@@ -1152,14 +1290,16 @@
 "break",
 "halt",
 "hesitate"
-]
+],
+"conceptId": "pause"
 },
 "pronunciation": {
 "phonetic": "[proʊnʌnsɪˈeɪʃən]",
 "example": "His English pronunciation improved after listening to the radio daily.",
 "synonyms": [
 "accent"
-]
+],
+"conceptId": "pronunciation"
 },
 "stress": {
 "phonetic": "[stres]",
@@ -1168,7 +1308,8 @@
 "pressure",
 "strain",
 "tension"
-]
+],
+"conceptId": "stress"
 },
 "contest": {
 "phonetic": "[ˈkɑːntest]",
@@ -1177,11 +1318,13 @@
 "competition",
 "match",
 "tournament"
-]
+],
+"conceptId": "contest"
 },
 "horizon": {
 "phonetic": "[hərˈaɪzən]",
-"example": "We watched the sun sink slowly below the horizon."
+"example": "We watched the sun sink slowly below the horizon.",
+"conceptId": "horizon"
 },
 "principal": {
 "phonetic": "[ˈprɪnsəpəl]",
@@ -1191,7 +1334,8 @@
 "chief",
 "leading",
 "primary"
-]
+],
+"conceptId": "principal"
 },
 "might": {
 "phonetic": "[maɪt]",
@@ -1200,7 +1344,8 @@
 "power",
 "strength",
 "force"
-]
+],
+"conceptId": "might"
 },
 "trouble": {
 "phonetic": "[ˈtrʌbəl]",
@@ -1209,7 +1354,8 @@
 "problem",
 "worry",
 "difficulty"
-]
+],
+"conceptId": "trouble"
 },
 "scar": {
 "phonetic": "[skɑːr]",
@@ -1217,7 +1363,8 @@
 "synonyms": [
 "mark",
 "blemish"
-]
+],
+"conceptId": "scar"
 },
 "balance": {
 "phonetic": "[ˈbæləns]",
@@ -1226,7 +1373,8 @@
 "stability",
 "harmony",
 "steadiness"
-]
+],
+"conceptId": "balance"
 },
 "proverb": {
 "phonetic": "[ˈprɑːvərb]",
@@ -1235,14 +1383,16 @@
 "saying",
 "maxim",
 "adage"
-]
+],
+"conceptId": "proverb"
 },
 "semester": {
 "phonetic": "[səˈmestər]",
 "example": "We have three big exams during the second semester this year.",
 "synonyms": [
 "term"
-]
+],
+"conceptId": "semester"
 },
 "election": {
 "phonetic": "[ɪˈlekʃən]",
@@ -1251,11 +1401,13 @@
 "vote",
 "poll",
 "ballot"
-]
+],
+"conceptId": "election"
 },
 "inning": {
 "phonetic": "[ˈɪnɪŋ]",
-"example": "Our team scored two runs in the ninth inning."
+"example": "Our team scored two runs in the ninth inning.",
+"conceptId": "inning"
 },
 "hollow": {
 "phonetic": "[ˈhɑːloʊ]",
@@ -1263,7 +1415,8 @@
 "synonyms": [
 "empty",
 "vacant"
-]
+],
+"conceptId": "hollow"
 },
 "degree": {
 "phonetic": "[dɪˈɡriː]",
@@ -1273,7 +1426,8 @@
 "extent",
 "grade",
 "stage"
-]
+],
+"conceptId": "degree"
 },
 "cemetery": {
 "phonetic": "[ˈseməteri]",
@@ -1281,11 +1435,13 @@
 "synonyms": [
 "graveyard",
 "burial ground"
-]
+],
+"conceptId": "cemetery"
 },
 "relay": {
 "phonetic": "[ˈriːleɪ]",
-"example": "Four students ran in the relay and finished in first place."
+"example": "Four students ran in the relay and finished in first place.",
+"conceptId": "relay"
 },
 "spot": {
 "phonetic": "[spɑːt]",
@@ -1295,7 +1451,8 @@
 "point",
 "location",
 "site"
-]
+],
+"conceptId": "spot"
 },
 "exchange": {
 "phonetic": "[ɪksˈtʃeɪndʒ]",
@@ -1305,7 +1462,8 @@
 "trade",
 "switch",
 "replace"
-]
+],
+"conceptId": "exchange"
 },
 "merchant": {
 "phonetic": "[ˈmɜːrtʃənt]",
@@ -1314,7 +1472,8 @@
 "trader",
 "dealer",
 "seller"
-]
+],
+"conceptId": "merchant"
 },
 "saying": {
 "phonetic": "[ˈseɪɪŋ]",
@@ -1323,7 +1482,8 @@
 "proverb",
 "maxim",
 "adage"
-]
+],
+"conceptId": "saying"
 },
 "refrigerator": {
 "phonetic": "[rəˈfrɪdʒəreɪtər]",
@@ -1331,7 +1491,8 @@
 "synonyms": [
 "fridge",
 "icebox"
-]
+],
+"conceptId": "refrigerator"
 },
 "crack": {
 "phonetic": "[kræk]",
@@ -1340,7 +1501,8 @@
 "split",
 "gap",
 "break"
-]
+],
+"conceptId": "crack"
 },
 "judge": {
 "phonetic": "[dʒʌdʒ]",
@@ -1348,11 +1510,13 @@
 "synonyms": [
 "justice",
 "magistrate"
-]
+],
+"conceptId": "judge"
 },
 "slave": {
 "phonetic": "[sleɪv]",
-"example": "Long ago, many people were forced to live as slaves."
+"example": "Long ago, many people were forced to live as slaves.",
+"conceptId": "slave"
 },
 "settler": {
 "phonetic": "[ˈsetələr]",
@@ -1361,7 +1525,8 @@
 "colonist",
 "pioneer",
 "immigrant"
-]
+],
+"conceptId": "settler"
 },
 "fare": {
 "phonetic": "[fer]",
@@ -1371,7 +1536,8 @@
 "fee",
 "cost",
 "price"
-]
+],
+"conceptId": "fare"
 },
 "gesture": {
 "phonetic": "[ˈdʒestʃər]",
@@ -1380,11 +1546,13 @@
 "motion",
 "sign",
 "signal"
-]
+],
+"conceptId": "gesture"
 },
 "planet": {
 "phonetic": "[ˈplænət]",
-"example": "Mars is the planet closest to Earth after Venus."
+"example": "Mars is the planet closest to Earth after Venus.",
+"conceptId": "planet"
 },
 "type": {
 "phonetic": "[taɪp]",
@@ -1394,7 +1562,8 @@
 "sort",
 "category",
 "class"
-]
+],
+"conceptId": "type"
 },
 "secretary": {
 "phonetic": "[ˈsekrəteri]",
@@ -1403,7 +1572,8 @@
 "assistant",
 "aide",
 "clerk"
-]
+],
+"conceptId": "secretary"
 },
 "devil": {
 "phonetic": "[ˈdevəl]",
@@ -1411,7 +1581,8 @@
 "synonyms": [
 "demon",
 "fiend"
-]
+],
+"conceptId": "devil"
 },
 "scholar": {
 "phonetic": "[ˈskɑːlər]",
@@ -1420,7 +1591,8 @@
 "academic",
 "researcher",
 "student"
-]
+],
+"conceptId": "scholar"
 },
 "pardon": {
 "phonetic": "[ˈpɑːrdən]",
@@ -1429,7 +1601,8 @@
 "forgiveness",
 "mercy",
 "excuse"
-]
+],
+"conceptId": "pardon"
 },
 "kindergarten": {
 "phonetic": "[ˈkɪndərɡɑːrtən]",
@@ -1437,7 +1610,8 @@
 "synonyms": [
 "preschool",
 "nursery school"
-]
+],
+"conceptId": "kindergarten"
 },
 "detective": {
 "phonetic": "[dɪˈtektɪv]",
@@ -1445,7 +1619,8 @@
 "synonyms": [
 "investigator",
 "sleuth"
-]
+],
+"conceptId": "detective"
 },
 "license": {
 "phonetic": "[ˈlaɪsəns]",
@@ -1454,7 +1629,8 @@
 "permit",
 "certificate",
 "permission"
-]
+],
+"conceptId": "license"
 },
 "palace": {
 "phonetic": "[ˈpæləs]",
@@ -1462,14 +1638,16 @@
 "synonyms": [
 "castle",
 "mansion"
-]
+],
+"conceptId": "palace"
 },
 "spade": {
 "phonetic": "[speɪd]",
 "example": "He dug a deep hole with a spade in the garden.",
 "synonyms": [
 "shovel"
-]
+],
+"conceptId": "spade"
 },
 "square": {
 "phonetic": "[skwer]",
@@ -1477,11 +1655,13 @@
 "synonyms": [
 "quadrilateral",
 "block"
-]
+],
+"conceptId": "square"
 },
 "fountain-pen": {
 "phonetic": "[ˈfaʊntən pen]",
-"example": "My uncle still writes long letters with an old fountain-pen."
+"example": "My uncle still writes long letters with an old fountain-pen.",
+"conceptId": "fountain-pen"
 },
 "harvest": {
 "phonetic": "[ˈhɑːrvəst]",
@@ -1490,7 +1670,8 @@
 "crop",
 "yield",
 "reaping"
-]
+],
+"conceptId": "harvest"
 },
 "tool": {
 "phonetic": "[tuːl]",
@@ -1500,7 +1681,8 @@
 "device",
 "implement",
 "utensil"
-]
+],
+"conceptId": "tool"
 },
 "sword": {
 "phonetic": "[sɔːrd]",
@@ -1508,7 +1690,8 @@
 "synonyms": [
 "blade",
 "saber"
-]
+],
+"conceptId": "sword"
 },
 "magazine": {
 "phonetic": "[ˈmæɡəzɪn]",
@@ -1516,7 +1699,8 @@
 "synonyms": [
 "journal",
 "periodical"
-]
+],
+"conceptId": "magazine"
 },
 "stadium": {
 "phonetic": "[ˈsteɪdɪəm]",
@@ -1525,7 +1709,8 @@
 "arena",
 "field",
 "ground"
-]
+],
+"conceptId": "stadium"
 },
 "care": {
 "phonetic": "[ker]",
@@ -1535,7 +1720,8 @@
 "attention",
 "caution",
 "worry"
-]
+],
+"conceptId": "care"
 },
 "beauty": {
 "phonetic": "[ˈbjuːti]",
@@ -1544,14 +1730,16 @@
 "loveliness",
 "charm",
 "grace"
-]
+],
+"conceptId": "beauty"
 },
 "museum": {
 "phonetic": "[mjuˈziːəm]",
 "example": "Our class visited a history museum during the field trip.",
 "synonyms": [
 "gallery"
-]
+],
+"conceptId": "museum"
 },
 "sentence": {
 "phonetic": "[ˈsentəns]",
@@ -1559,7 +1747,8 @@
 "synonyms": [
 "statement",
 "phrase"
-]
+],
+"conceptId": "sentence"
 },
 "memory": {
 "phonetic": "[ˈmeməri]",
@@ -1567,7 +1756,8 @@
 "synonyms": [
 "recollection",
 "remembrance"
-]
+],
+"conceptId": "memory"
 },
 "delight": {
 "phonetic": "[dɪˈlaɪt]",
@@ -1576,7 +1766,8 @@
 "joy",
 "pleasure",
 "happiness"
-]
+],
+"conceptId": "delight"
 },
 "passenger": {
 "phonetic": "[ˈpæsəndʒər]",
@@ -1585,7 +1776,8 @@
 "traveler",
 "rider",
 "commuter"
-]
+],
+"conceptId": "passenger"
 },
 "skill": {
 "phonetic": "[skɪl]",
@@ -1594,7 +1786,8 @@
 "ability",
 "technique",
 "talent"
-]
+],
+"conceptId": "skill"
 },
 "journey": {
 "phonetic": "[ˈdʒɜːrni]",
@@ -1603,7 +1796,8 @@
 "trip",
 "travel",
 "voyage"
-]
+],
+"conceptId": "journey"
 },
 "ceremony": {
 "phonetic": "[ˈserəmoʊni]",
@@ -1612,7 +1806,8 @@
 "ritual",
 "rite",
 "service"
-]
+],
+"conceptId": "ceremony"
 },
 "hobby": {
 "phonetic": "[ˈhɑːbi]",
@@ -1621,7 +1816,8 @@
 "pastime",
 "pursuit",
 "interest"
-]
+],
+"conceptId": "hobby"
 },
 "president": {
 "phonetic": "[ˈprezədent]",
@@ -1630,7 +1826,8 @@
 "leader",
 "head of state",
 "chairman"
-]
+],
+"conceptId": "president"
 },
 "address": {
 "phonetic": "[ˈædres]",
@@ -1638,7 +1835,8 @@
 "synonyms": [
 "location",
 "residence"
-]
+],
+"conceptId": "address"
 },
 "continent": {
 "phonetic": "[ˈkɑːntənənt]",
@@ -1646,7 +1844,8 @@
 "synonyms": [
 "landmass",
 "mainland"
-]
+],
+"conceptId": "continent"
 },
 "mankind": {
 "phonetic": "[ˈmænˈkaɪnd]",
@@ -1656,11 +1855,13 @@
 "humankind",
 "humans",
 "people"
-]
+],
+"conceptId": "mankind"
 },
 "patient": {
 "phonetic": "[ˈpeɪʃənt]",
-"example": "The nurse asked the patient to rest for two days."
+"example": "The nurse asked the patient to rest for two days.",
+"conceptId": "patient"
 },
 "site": {
 "phonetic": "[saɪt]",
@@ -1670,11 +1871,13 @@
 "place",
 "spot",
 "ground"
-]
+],
+"conceptId": "site"
 },
 "marble": {
 "phonetic": "[ˈmɑːrbəl]",
-"example": "The floor of the hall was made of cold white marble."
+"example": "The floor of the hall was made of cold white marble.",
+"conceptId": "marble"
 },
 "stem": {
 "phonetic": "[stem]",
@@ -1682,7 +1885,8 @@
 "synonyms": [
 "stalk",
 "trunk"
-]
+],
+"conceptId": "stem"
 },
 "slip": {
 "phonetic": "[slɪp]",
@@ -1691,7 +1895,8 @@
 "slide",
 "glide",
 "skid"
-]
+],
+"conceptId": "slip"
 },
 "torch": {
 "phonetic": "[tɔːrtʃ]",
@@ -1699,7 +1904,8 @@
 "synonyms": [
 "lantern",
 "flare"
-]
+],
+"conceptId": "torch"
 },
 "composer": {
 "phonetic": "[kəmˈpoʊzər]",
@@ -1708,7 +1914,8 @@
 "songwriter",
 "musician",
 "writer"
-]
+],
+"conceptId": "composer"
 },
 "invader": {
 "phonetic": "[ɪnˈveɪdər]",
@@ -1717,7 +1924,8 @@
 "intruder",
 "attacker",
 "raider"
-]
+],
+"conceptId": "invader"
 },
 "trick": {
 "phonetic": "[trɪk]",
@@ -1726,7 +1934,8 @@
 "scheme",
 "plot",
 "trap"
-]
+],
+"conceptId": "trick"
 },
 "flight": {
 "phonetic": "[flaɪt]",
@@ -1734,7 +1943,8 @@
 "synonyms": [
 "flying",
 "trip"
-]
+],
+"conceptId": "flight"
 },
 "castle": {
 "phonetic": "[ˈkæsəl]",
@@ -1742,7 +1952,8 @@
 "synonyms": [
 "fortress",
 "stronghold"
-]
+],
+"conceptId": "castle"
 },
 "envelope": {
 "phonetic": "[ˈenvəloʊp]",
@@ -1750,7 +1961,8 @@
 "synonyms": [
 "cover",
 "wrapper"
-]
+],
+"conceptId": "envelope"
 },
 "pal": {
 "phonetic": "[pæl]",
@@ -1760,7 +1972,8 @@
 "buddy",
 "mate",
 "companion"
-]
+],
+"conceptId": "pal"
 },
 "vacation": {
 "phonetic": "[veɪˈkeɪʃən]",
@@ -1769,7 +1982,8 @@
 "holiday",
 "break",
 "leave"
-]
+],
+"conceptId": "vacation"
 },
 "desert": {
 "phonetic": "[ˈdezərt]",
@@ -1777,7 +1991,8 @@
 "synonyms": [
 "wasteland",
 "wilderness"
-]
+],
+"conceptId": "desert"
 },
 "event": {
 "phonetic": "[ɪˈvent]",
@@ -1786,7 +2001,8 @@
 "incident",
 "happening",
 "occasion"
-]
+],
+"conceptId": "event"
 },
 "theater": {
 "phonetic": "[ˈθiːətər]",
@@ -1794,7 +2010,8 @@
 "synonyms": [
 "cinema",
 "playhouse"
-]
+],
+"conceptId": "theater"
 },
 "stage": {
 "phonetic": "[steɪdʒ]",
@@ -1802,7 +2019,8 @@
 "synonyms": [
 "platform",
 "podium"
-]
+],
+"conceptId": "stage"
 },
 "error": {
 "phonetic": "[ˈerər]",
@@ -1812,7 +2030,8 @@
 "fault",
 "slip",
 "blunder"
-]
+],
+"conceptId": "error"
 },
 "area": {
 "phonetic": "[ˈerɪə]",
@@ -1822,7 +2041,8 @@
 "zone",
 "district",
 "space"
-]
+],
+"conceptId": "area"
 },
 "base": {
 "phonetic": "[beɪs]",
@@ -1831,14 +2051,16 @@
 "foundation",
 "bottom",
 "basis"
-]
+],
+"conceptId": "base"
 },
 "basement": {
 "phonetic": "[ˈbeɪsmənt]",
 "example": "They keep old bikes and boxes down in the basement.",
 "synonyms": [
 "cellar"
-]
+],
+"conceptId": "basement"
 },
 "evil": {
 "phonetic": "[ˈiːvəl]",
@@ -1847,11 +2069,13 @@
 "wicked",
 "bad",
 "wrong"
-]
+],
+"conceptId": "evil"
 },
 "atom": {
 "phonetic": "[ˈætəm]",
-"example": "Everything around us is made of tiny things called atoms."
+"example": "Everything around us is made of tiny things called atoms.",
+"conceptId": "atom"
 },
 "poet": {
 "phonetic": "[ˈpoʊət]",
@@ -1859,11 +2083,13 @@
 "synonyms": [
 "writer",
 "versifier"
-]
+],
+"conceptId": "poet"
 },
 "petal": {
 "phonetic": "[ˈpetəl]",
-"example": "A soft pink petal fell from the flower onto my hand."
+"example": "A soft pink petal fell from the flower onto my hand.",
+"conceptId": "petal"
 },
 "chance": {
 "phonetic": "[tʃæns]",
@@ -1872,7 +2098,8 @@
 "opportunity",
 "possibility",
 "luck"
-]
+],
+"conceptId": "chance"
 },
 "mind": {
 "phonetic": "[maɪnd]",
@@ -1881,25 +2108,29 @@
 "heart",
 "spirit",
 "thought"
-]
+],
+"conceptId": "mind"
 },
 "climate": {
 "phonetic": "[ˈklaɪmət]",
 "example": "The climate in that country is warm and rainy all year.",
 "synonyms": [
 "weather"
-]
+],
+"conceptId": "climate"
 },
 "suburb": {
 "phonetic": "[ˈsʌbərb]",
 "example": "My uncle moved to a quiet suburb outside the big city.",
 "synonyms": [
 "outskirts"
-]
+],
+"conceptId": "suburb"
 },
 "throat": {
 "phonetic": "[θroʊt]",
-"example": "After shouting for an hour, my throat hurt and felt dry."
+"example": "After shouting for an hour, my throat hurt and felt dry.",
+"conceptId": "throat"
 },
 "voice": {
 "phonetic": "[vɔɪs]",
@@ -1908,7 +2139,8 @@
 "sound",
 "tone",
 "speech"
-]
+],
+"conceptId": "voice"
 },
 "valley": {
 "phonetic": "[ˈvæli]",
@@ -1917,15 +2149,18 @@
 "gorge",
 "canyon",
 "dale"
-]
+],
+"conceptId": "valley"
 },
 "puritan": {
 "phonetic": "[ˈpjʊrətən]",
-"example": "The puritan family prayed together every morning before eating breakfast."
+"example": "The puritan family prayed together every morning before eating breakfast.",
+"conceptId": "puritan"
 },
 "feather": {
 "phonetic": "[ˈfeðər]",
-"example": "A white feather from the bird floated down to the ground."
+"example": "A white feather from the bird floated down to the ground.",
+"conceptId": "feather"
 },
 "amateur": {
 "phonetic": "[ˈæmətɜːr]",
@@ -1934,7 +2169,8 @@
 "beginner",
 "nonprofessional",
 "novice"
-]
+],
+"conceptId": "amateur"
 },
 "nation": {
 "phonetic": "[ˈneɪʃən]",
@@ -1943,7 +2179,8 @@
 "country",
 "state",
 "land"
-]
+],
+"conceptId": "nation"
 },
 "puzzle": {
 "phonetic": "[ˈpʌzəl]",
@@ -1952,7 +2189,8 @@
 "riddle",
 "mystery",
 "brainteaser"
-]
+],
+"conceptId": "puzzle"
 },
 "riddle": {
 "phonetic": "[ˈrɪdəl]",
@@ -1961,7 +2199,8 @@
 "puzzle",
 "mystery",
 "brainteaser"
-]
+],
+"conceptId": "riddle"
 },
 "rear": {
 "phonetic": "[rɪr]",
@@ -1970,7 +2209,8 @@
 "back",
 "hind",
 "raise"
-]
+],
+"conceptId": "rear"
 },
 "battle": {
 "phonetic": "[ˈbætəl]",
@@ -1980,7 +2220,8 @@
 "combat",
 "war",
 "clash"
-]
+],
+"conceptId": "battle"
 },
 "laundry": {
 "phonetic": "[ˈlɔːndri]",
@@ -1988,7 +2229,8 @@
 "synonyms": [
 "washing",
 "wash"
-]
+],
+"conceptId": "laundry"
 },
 "shower": {
 "phonetic": "[ˈʃaʊər]",
@@ -1996,18 +2238,21 @@
 "synonyms": [
 "wash",
 "bathe"
-]
+],
+"conceptId": "shower"
 },
 "navy": {
 "phonetic": "[ˈneɪvi]",
 "example": "His older brother joined the navy and now sails the ocean.",
 "synonyms": [
 "fleet"
-]
+],
+"conceptId": "navy"
 },
 "mars": {
 "phonetic": "[mɑːrz]",
-"example": "Scientists hope to send people to Mars in the near future."
+"example": "Scientists hope to send people to Mars in the near future.",
+"conceptId": "mars"
 },
 "gallery": {
 "phonetic": "[ˈɡæləri]",
@@ -2015,7 +2260,8 @@
 "synonyms": [
 "museum",
 "showroom"
-]
+],
+"conceptId": "gallery"
 },
 "guest": {
 "phonetic": "[ɡest]",
@@ -2023,7 +2269,8 @@
 "synonyms": [
 "visitor",
 "caller"
-]
+],
+"conceptId": "guest"
 },
 "folk": {
 "phonetic": "[foʊk]",
@@ -2031,7 +2278,8 @@
 "synonyms": [
 "people",
 "family"
-]
+],
+"conceptId": "folk"
 },
 "problem": {
 "phonetic": "[ˈprɑːbləm]",
@@ -2040,7 +2288,8 @@
 "trouble",
 "issue",
 "difficulty"
-]
+],
+"conceptId": "problem"
 },
 "jewel": {
 "phonetic": "[ˈdʒuːəl]",
@@ -2048,11 +2297,13 @@
 "synonyms": [
 "gem",
 "gemstone"
-]
+],
+"conceptId": "jewel"
 },
 "garage": {
 "phonetic": "[ɡərˈɑːʒ]",
-"example": "Dad parks our car in the garage every single night."
+"example": "Dad parks our car in the garage every single night.",
+"conceptId": "garage"
 },
 "fault": {
 "phonetic": "[fɔːlt]",
@@ -2062,7 +2313,8 @@
 "error",
 "flaw",
 "defect"
-]
+],
+"conceptId": "fault"
 },
 "lantern": {
 "phonetic": "[ˈlæntərn]",
@@ -2070,11 +2322,13 @@
 "synonyms": [
 "lamp",
 "light"
-]
+],
+"conceptId": "lantern"
 },
 "import": {
 "phonetic": "[ɪmˈpɔːrt]",
-"example": "Most of the oil we use is an import from abroad."
+"example": "Most of the oil we use is an import from abroad.",
+"conceptId": "import"
 },
 "angle": {
 "phonetic": "[ˈæŋɡəl]",
@@ -2083,7 +2337,8 @@
 "corner",
 "bend",
 "slant"
-]
+],
+"conceptId": "angle"
 },
 "match": {
 "phonetic": "[mætʃ]",
@@ -2093,7 +2348,8 @@
 "contest",
 "competition",
 "bout"
-]
+],
+"conceptId": "match"
 },
 "stripe": {
 "phonetic": "[straɪp]",
@@ -2102,7 +2358,8 @@
 "band",
 "streak",
 "line"
-]
+],
+"conceptId": "stripe"
 },
 "pulse": {
 "phonetic": "[pʌls]",
@@ -2111,7 +2368,8 @@
 "heartbeat",
 "throb",
 "beat"
-]
+],
+"conceptId": "pulse"
 },
 "powder": {
 "phonetic": "[ˈpaʊdər]",
@@ -2119,7 +2377,8 @@
 "synonyms": [
 "dust",
 "granules"
-]
+],
+"conceptId": "powder"
 },
 "flood": {
 "phonetic": "[flʌd]",
@@ -2128,7 +2387,8 @@
 "deluge",
 "overflow",
 "downpour"
-]
+],
+"conceptId": "flood"
 },
 "bush": {
 "phonetic": "[bʊʃ]",
@@ -2136,7 +2396,8 @@
 "synonyms": [
 "shrub",
 "thicket"
-]
+],
+"conceptId": "bush"
 },
 "branch": {
 "phonetic": "[bræntʃ]",
@@ -2145,7 +2406,8 @@
 "limb",
 "twig",
 "bough"
-]
+],
+"conceptId": "branch"
 },
 "hero": {
 "phonetic": "[ˈhɪroʊ]",
@@ -2153,7 +2415,8 @@
 "synonyms": [
 "champion",
 "idol"
-]
+],
+"conceptId": "hero"
 },
 "heaven": {
 "phonetic": "[ˈhevən]",
@@ -2161,7 +2424,8 @@
 "synonyms": [
 "sky",
 "paradise"
-]
+],
+"conceptId": "heaven"
 },
 "exit": {
 "phonetic": "[ˈeɡzɪt]",
@@ -2170,7 +2434,8 @@
 "outlet",
 "doorway",
 "gateway"
-]
+],
+"conceptId": "exit"
 },
 "beast": {
 "phonetic": "[biːst]",
@@ -2179,15 +2444,18 @@
 "animal",
 "creature",
 "brute"
-]
+],
+"conceptId": "beast"
 },
 "century": {
 "phonetic": "[ˈsentʃəri]",
-"example": "People traveled by horse more than a century ago."
+"example": "People traveled by horse more than a century ago.",
+"conceptId": "century"
 },
 "coeducation": {
 "phonetic": "[koʊedʒəˈkeɪʃən]",
-"example": "Our school changed to coeducation, so boys and girls study together."
+"example": "Our school changed to coeducation, so boys and girls study together.",
+"conceptId": "coeducation"
 },
 "twin": {
 "phonetic": "[twɪn]",
@@ -2195,7 +2463,8 @@
 "synonyms": [
 "double",
 "counterpart"
-]
+],
+"conceptId": "twin"
 },
 "wound": {
 "phonetic": "[waʊnd]",
@@ -2204,18 +2473,21 @@
 "injury",
 "cut",
 "hurt"
-]
+],
+"conceptId": "wound"
 },
 "metal": {
 "phonetic": "[ˈmetəl]",
-"example": "This box is made of metal, so it feels cold and heavy."
+"example": "This box is made of metal, so it feels cold and heavy.",
+"conceptId": "metal"
 },
 "insect": {
 "phonetic": "[ˈɪnsekt]",
 "example": "Ants are the most common insect in our school garden.",
 "synonyms": [
 "bug"
-]
+],
+"conceptId": "insect"
 },
 "track": {
 "phonetic": "[træk]",
@@ -2225,7 +2497,8 @@
 "path",
 "trace",
 "footprint"
-]
+],
+"conceptId": "track"
 },
 "survive": {
 "phonetic": "[sərˈvaɪv]",
@@ -2234,7 +2507,8 @@
 "endure",
 "outlive",
 "last"
-]
+],
+"conceptId": "survive"
 },
 "create": {
 "phonetic": "[krɪˈeɪt]",
@@ -2244,7 +2518,8 @@
 "produce",
 "invent",
 "form"
-]
+],
+"conceptId": "create"
 },
 "describe": {
 "phonetic": "[dɪsˈkraɪb]",
@@ -2253,7 +2528,8 @@
 "depict",
 "portray",
 "explain"
-]
+],
+"conceptId": "describe"
 },
 "select": {
 "phonetic": "[səˈlekt]",
@@ -2262,7 +2538,8 @@
 "choose",
 "pick",
 "single out"
-]
+],
+"conceptId": "select"
 },
 "hesitate": {
 "phonetic": "[ˈhezəteɪt]",
@@ -2271,7 +2548,8 @@
 "pause",
 "waver",
 "falter"
-]
+],
+"conceptId": "hesitate"
 },
 "declare": {
 "phonetic": "[dɪˈkler]",
@@ -2280,7 +2558,8 @@
 "announce",
 "proclaim",
 "state"
-]
+],
+"conceptId": "declare"
 },
 "struggle": {
 "phonetic": "[ˈstrʌɡəl]",
@@ -2290,7 +2569,8 @@
 "fight",
 "battle",
 "wrestle"
-]
+],
+"conceptId": "struggle"
 },
 "explore": {
 "phonetic": "[ɪksˈplɔːr]",
@@ -2299,7 +2579,8 @@
 "investigate",
 "search",
 "examine"
-]
+],
+"conceptId": "explore"
 },
 "astonish": {
 "phonetic": "[əˈstɑːnɪʃ]",
@@ -2309,7 +2590,8 @@
 "surprise",
 "shock",
 "startle"
-]
+],
+"conceptId": "astonish"
 },
 "disappoint": {
 "phonetic": "[dɪsəˈpɔɪnt]",
@@ -2318,7 +2600,8 @@
 "let down",
 "dissatisfy",
 "fail"
-]
+],
+"conceptId": "disappoint"
 },
 "attract": {
 "phonetic": "[əˈtrækt]",
@@ -2328,7 +2611,8 @@
 "charm",
 "appeal to",
 "lure"
-]
+],
+"conceptId": "attract"
 },
 "celebrate": {
 "phonetic": "[ˈseləbreɪt]",
@@ -2337,7 +2621,8 @@
 "commemorate",
 "honor",
 "praise"
-]
+],
+"conceptId": "celebrate"
 },
 "explode": {
 "phonetic": "[ɪksˈploʊd]",
@@ -2346,7 +2631,8 @@
 "burst",
 "blow up",
 "blast"
-]
+],
+"conceptId": "explode"
 },
 "include": {
 "phonetic": "[ɪnˈkluːd]",
@@ -2355,7 +2641,8 @@
 "contain",
 "involve",
 "cover"
-]
+],
+"conceptId": "include"
 },
 "protect": {
 "phonetic": "[prəˈtekt]",
@@ -2364,7 +2651,8 @@
 "guard",
 "defend",
 "shield"
-]
+],
+"conceptId": "protect"
 },
 "introduce": {
 "phonetic": "[ɪntrəˈduːs]",
@@ -2373,7 +2661,8 @@
 "present",
 "bring in",
 "acquaint"
-]
+],
+"conceptId": "introduce"
 },
 "produce": {
 "phonetic": "[prəˈduːs]",
@@ -2382,7 +2671,8 @@
 "make",
 "create",
 "manufacture"
-]
+],
+"conceptId": "produce"
 },
 "chase": {
 "phonetic": "[tʃeɪs]",
@@ -2392,7 +2682,8 @@
 "follow",
 "run after",
 "hunt"
-]
+],
+"conceptId": "chase"
 },
 "scratch": {
 "phonetic": "[skrætʃ]",
@@ -2401,7 +2692,8 @@
 "scrape",
 "claw",
 "scrabble"
-]
+],
+"conceptId": "scratch"
 },
 "crash": {
 "phonetic": "[kræʃ]",
@@ -2410,7 +2702,8 @@
 "collision",
 "smash",
 "wreck"
-]
+],
+"conceptId": "crash"
 },
 "stare": {
 "phonetic": "[ster]",
@@ -2419,7 +2712,8 @@
 "gaze",
 "glare",
 "gape"
-]
+],
+"conceptId": "stare"
 },
 "gaze": {
 "phonetic": "[ɡeɪz]",
@@ -2428,7 +2722,8 @@
 "stare",
 "look",
 "gape"
-]
+],
+"conceptId": "gaze"
 },
 "scare": {
 "phonetic": "[sker]",
@@ -2437,7 +2732,8 @@
 "frighten",
 "terrify",
 "startle"
-]
+],
+"conceptId": "scare"
 },
 "grab": {
 "phonetic": "[ɡræb]",
@@ -2447,7 +2743,8 @@
 "grasp",
 "snatch",
 "clutch"
-]
+],
+"conceptId": "grab"
 },
 "guard": {
 "phonetic": "[ɡɑːrd]",
@@ -2456,7 +2753,8 @@
 "protect",
 "defend",
 "watch over"
-]
+],
+"conceptId": "guard"
 },
 "discuss": {
 "phonetic": "[dɪˈskʌs]",
@@ -2465,11 +2763,13 @@
 "debate",
 "argue",
 "consider"
-]
+],
+"conceptId": "discuss"
 },
 "shrug": {
 "phonetic": "[ʃrʌɡ]",
-"example": "When I asked about it, he just shrugged and said nothing."
+"example": "When I asked about it, he just shrugged and said nothing.",
+"conceptId": "shrug"
 },
 "sniff": {
 "phonetic": "[snɪf]",
@@ -2478,7 +2778,8 @@
 "smell",
 "inhale",
 "snuff"
-]
+],
+"conceptId": "sniff"
 },
 "scream": {
 "phonetic": "[skriːm]",
@@ -2487,7 +2788,8 @@
 "shriek",
 "yell",
 "shout"
-]
+],
+"conceptId": "scream"
 },
 "rid": {
 "phonetic": "[rɪd]",
@@ -2496,7 +2798,8 @@
 "clear",
 "free",
 "remove"
-]
+],
+"conceptId": "rid"
 },
 "surround": {
 "phonetic": "[sərˈaʊnd]",
@@ -2505,7 +2808,8 @@
 "encircle",
 "enclose",
 "ring"
-]
+],
+"conceptId": "surround"
 },
 "cleave": {
 "phonetic": "[kliːv]",
@@ -2515,7 +2819,8 @@
 "stick",
 "cling",
 "chop"
-]
+],
+"conceptId": "cleave"
 },
 "carve": {
 "phonetic": "[kɑːrv]",
@@ -2524,7 +2829,8 @@
 "engrave",
 "cut",
 "sculpt"
-]
+],
+"conceptId": "carve"
 },
 "invent": {
 "phonetic": "[ɪnˈvent]",
@@ -2533,7 +2839,8 @@
 "create",
 "devise",
 "design"
-]
+],
+"conceptId": "invent"
 },
 "search": {
 "phonetic": "[sɜːrtʃ]",
@@ -2543,7 +2850,8 @@
 "seek",
 "hunt",
 "explore"
-]
+],
+"conceptId": "search"
 },
 "abuse": {
 "phonetic": "[əˈbjuːs]",
@@ -2552,11 +2860,13 @@
 "misuse",
 "overuse",
 "mistreat"
-]
+],
+"conceptId": "abuse"
 },
 "owe": {
 "phonetic": "[oʊ]",
-"example": "I owe my success to my parents and my kind teachers."
+"example": "I owe my success to my parents and my kind teachers.",
+"conceptId": "owe"
 },
 "bless": {
 "phonetic": "[bles]",
@@ -2564,7 +2874,8 @@
 "synonyms": [
 "praise",
 "consecrate"
-]
+],
+"conceptId": "bless"
 },
 "graduate": {
 "phonetic": "[ˈɡrædʒəwət]",
@@ -2572,7 +2883,8 @@
 "synonyms": [
 "finish",
 "complete"
-]
+],
+"conceptId": "graduate"
 },
 "collect": {
 "phonetic": "[kəˈlekt]",
@@ -2581,7 +2893,8 @@
 "gather",
 "assemble",
 "accumulate"
-]
+],
+"conceptId": "collect"
 },
 "upset": {
 "phonetic": "[əpˈset]",
@@ -2591,7 +2904,8 @@
 "annoyed",
 "unhappy",
 "disturbed"
-]
+],
+"conceptId": "upset"
 },
 "arrest": {
 "phonetic": "[ərˈest]",
@@ -2601,7 +2915,8 @@
 "catch",
 "detain",
 "seize"
-]
+],
+"conceptId": "arrest"
 },
 "prove": {
 "phonetic": "[pruːv]",
@@ -2611,7 +2926,8 @@
 "show",
 "confirm",
 "verify"
-]
+],
+"conceptId": "prove"
 },
 "yell": {
 "phonetic": "[jel]",
@@ -2621,7 +2937,8 @@
 "scream",
 "cry",
 "holler"
-]
+],
+"conceptId": "yell"
 },
 "howl": {
 "phonetic": "[haʊl]",
@@ -2631,7 +2948,8 @@
 "cry",
 "yell",
 "bay"
-]
+],
+"conceptId": "howl"
 },
 "halt": {
 "phonetic": "[hɔːlt]",
@@ -2640,7 +2958,8 @@
 "stop",
 "cease",
 "pause"
-]
+],
+"conceptId": "halt"
 },
 "leak": {
 "phonetic": "[liːk]",
@@ -2648,7 +2967,8 @@
 "synonyms": [
 "drip",
 "seep"
-]
+],
+"conceptId": "leak"
 },
 "behave": {
 "phonetic": "[bɪˈheɪv]",
@@ -2657,7 +2977,8 @@
 "act",
 "conduct",
 "perform"
-]
+],
+"conceptId": "behave"
 },
 "wrap": {
 "phonetic": "[ræp]",
@@ -2667,7 +2988,8 @@
 "fold",
 "bundle",
 "pack"
-]
+],
+"conceptId": "wrap"
 },
 "locate": {
 "phonetic": "[ˈloʊkeɪt]",
@@ -2677,7 +2999,8 @@
 "situate",
 "find",
 "position"
-]
+],
+"conceptId": "locate"
 },
 "charge": {
 "phonetic": "[tʃɑːrdʒ]",
@@ -2686,7 +3009,8 @@
 "bill",
 "demand",
 "ask"
-]
+],
+"conceptId": "charge"
 },
 "review": {
 "phonetic": "[rɪˈvjuː]",
@@ -2695,7 +3019,8 @@
 "revise",
 "examine",
 "study"
-]
+],
+"conceptId": "review"
 },
 "refuse": {
 "phonetic": "[rəˈfjuːz]",
@@ -2704,7 +3029,8 @@
 "reject",
 "decline",
 "turn down"
-]
+],
+"conceptId": "refuse"
 },
 "complain": {
 "phonetic": "[kəmˈpleɪn]",
@@ -2713,7 +3039,8 @@
 "grumble",
 "protest",
 "object"
-]
+],
+"conceptId": "complain"
 },
 "remain": {
 "phonetic": "[rɪˈmeɪn]",
@@ -2723,7 +3050,8 @@
 "be left",
 "last",
 "continue"
-]
+],
+"conceptId": "remain"
 },
 "warn": {
 "phonetic": "[wɔːrn]",
@@ -2732,7 +3060,8 @@
 "caution",
 "alert",
 "advise"
-]
+],
+"conceptId": "warn"
 },
 "bend": {
 "phonetic": "[bend]",
@@ -2742,7 +3071,8 @@
 "bow",
 "twist",
 "fold"
-]
+],
+"conceptId": "bend"
 },
 "suffer": {
 "phonetic": "[ˈsʌfər]",
@@ -2752,7 +3082,8 @@
 "undergo",
 "bear",
 "experience"
-]
+],
+"conceptId": "suffer"
 },
 "whisper": {
 "phonetic": "[ˈwɪspər]",
@@ -2760,7 +3091,8 @@
 "synonyms": [
 "murmur",
 "mutter"
-]
+],
+"conceptId": "whisper"
 },
 "prepare": {
 "phonetic": "[prɪˈper]",
@@ -2770,7 +3102,8 @@
 "arrange",
 "organize",
 "set up"
-]
+],
+"conceptId": "prepare"
 },
 "roar": {
 "phonetic": "[rɔːr]",
@@ -2780,7 +3113,8 @@
 "bellow",
 "howl",
 "thunder"
-]
+],
+"conceptId": "roar"
 },
 "float": {
 "phonetic": "[floʊt]",
@@ -2789,7 +3123,8 @@
 "drift",
 "sail",
 "hover"
-]
+],
+"conceptId": "float"
 },
 "drag": {
 "phonetic": "[dræɡ]",
@@ -2799,7 +3134,8 @@
 "haul",
 "tow",
 "tug"
-]
+],
+"conceptId": "drag"
 },
 "overhear": {
 "phonetic": "[ˈoʊvərˈhiːr]",
@@ -2808,7 +3144,8 @@
 "eavesdrop",
 "catch",
 "listen in"
-]
+],
+"conceptId": "overhear"
 },
 "slide": {
 "phonetic": "[slaɪd]",
@@ -2817,7 +3154,8 @@
 "slip",
 "glide",
 "skid"
-]
+],
+"conceptId": "slide"
 },
 "suck": {
 "phonetic": "[sʌk]",
@@ -2825,7 +3163,8 @@
 "synonyms": [
 "sip",
 "absorb"
-]
+],
+"conceptId": "suck"
 },
 "bother": {
 "phonetic": "[ˈbɑːðər]",
@@ -2835,7 +3174,8 @@
 "disturb",
 "trouble",
 "upset"
-]
+],
+"conceptId": "bother"
 },
 "deal": {
 "phonetic": "[diːl]",
@@ -2844,7 +3184,8 @@
 "trade",
 "handle",
 "distribute"
-]
+],
+"conceptId": "deal"
 },
 "treat": {
 "phonetic": "[triːt]",
@@ -2853,7 +3194,8 @@
 "handle",
 "deal with",
 "manage"
-]
+],
+"conceptId": "treat"
 },
 "destroy": {
 "phonetic": "[dɪsˈtrɔɪ]",
@@ -2863,7 +3205,8 @@
 "wreck",
 "demolish",
 "damage"
-]
+],
+"conceptId": "destroy"
 },
 "accept": {
 "phonetic": "[ækˈsept]",
@@ -2872,7 +3215,8 @@
 "receive",
 "take",
 "admit"
-]
+],
+"conceptId": "accept"
 },
 "depend": {
 "phonetic": "[dɪˈpend]",
@@ -2882,11 +3226,13 @@
 "count",
 "lean",
 "trust"
-]
+],
+"conceptId": "depend"
 },
 "nod": {
 "phonetic": "[nɑːd]",
-"example": "Jisu nodded quietly when the teacher asked about her homework."
+"example": "Jisu nodded quietly when the teacher asked about her homework.",
+"conceptId": "nod"
 },
 "remove": {
 "phonetic": "[rɪˈmuːv]",
@@ -2896,7 +3242,8 @@
 "eliminate",
 "delete",
 "withdraw"
-]
+],
+"conceptId": "remove"
 },
 "beat": {
 "phonetic": "[biːt]",
@@ -2905,7 +3252,8 @@
 "hit",
 "strike",
 "pound"
-]
+],
+"conceptId": "beat"
 },
 "clap": {
 "phonetic": "[klæp]",
@@ -2913,7 +3261,8 @@
 "synonyms": [
 "applaud",
 "slap"
-]
+],
+"conceptId": "clap"
 },
 "feed": {
 "phonetic": "[fiːd]",
@@ -2921,7 +3270,8 @@
 "synonyms": [
 "nourish",
 "nurture"
-]
+],
+"conceptId": "feed"
 },
 "obtain": {
 "phonetic": "[əbˈteɪn]",
@@ -2930,7 +3280,8 @@
 "get",
 "gain",
 "acquire"
-]
+],
+"conceptId": "obtain"
 },
 "drown": {
 "phonetic": "[draʊn]",
@@ -2938,14 +3289,16 @@
 "synonyms": [
 "sink",
 "submerge"
-]
+],
+"conceptId": "drown"
 },
 "remind": {
 "phonetic": "[rɪˈmaɪnd]",
 "example": "This old song reminds me of my elementary school days.",
 "synonyms": [
 "prompt"
-]
+],
+"conceptId": "remind"
 },
 "occur": {
 "phonetic": "[əˈkɜːr]",
@@ -2954,7 +3307,8 @@
 "happen",
 "arise",
 "appear"
-]
+],
+"conceptId": "occur"
 },
 "ache": {
 "phonetic": "[eɪk]",
@@ -2963,7 +3317,8 @@
 "hurt",
 "throb",
 "sting"
-]
+],
+"conceptId": "ache"
 },
 "repeat": {
 "phonetic": "[rɪˈpiːt]",
@@ -2972,7 +3327,8 @@
 "say again",
 "restate",
 "redo"
-]
+],
+"conceptId": "repeat"
 },
 "attend": {
 "phonetic": "[əˈtend]",
@@ -2981,7 +3337,8 @@
 "go to",
 "join",
 "be present at"
-]
+],
+"conceptId": "attend"
 },
 "sigh": {
 "phonetic": "[saɪ]",
@@ -2989,7 +3346,8 @@
 "synonyms": [
 "groan",
 "breathe out"
-]
+],
+"conceptId": "sigh"
 },
 "pray": {
 "phonetic": "[preɪ]",
@@ -2998,7 +3356,8 @@
 "beg",
 "plead",
 "wish"
-]
+],
+"conceptId": "pray"
 },
 "press": {
 "phonetic": "[pres]",
@@ -3007,11 +3366,13 @@
 "push",
 "squeeze",
 "compress"
-]
+],
+"conceptId": "press"
 },
 "bear": {
 "phonetic": "[ber]",
-"example": "My grandmother bore six children in a small country village."
+"example": "My grandmother bore six children in a small country village.",
+"conceptId": "bear"
 },
 "follow": {
 "phonetic": "[ˈfɑːloʊ]",
@@ -3020,7 +3381,8 @@
 "chase",
 "pursue",
 "obey"
-]
+],
+"conceptId": "follow"
 },
 "hate": {
 "phonetic": "[heɪt]",
@@ -3029,7 +3391,8 @@
 "dislike",
 "detest",
 "despise"
-]
+],
+"conceptId": "hate"
 },
 "frighten": {
 "phonetic": "[ˈfraɪtən]",
@@ -3038,7 +3401,8 @@
 "scare",
 "terrify",
 "alarm"
-]
+],
+"conceptId": "frighten"
 },
 "shout": {
 "phonetic": "[ʃaʊt]",
@@ -3048,7 +3412,8 @@
 "cry",
 "scream",
 "call out"
-]
+],
+"conceptId": "shout"
 },
 "mention": {
 "phonetic": "[ˈmenʃən]",
@@ -3057,7 +3422,8 @@
 "say",
 "refer to",
 "state"
-]
+],
+"conceptId": "mention"
 },
 "waste": {
 "phonetic": "[weɪst]",
@@ -3066,14 +3432,16 @@
 "squander",
 "misuse",
 "throw away"
-]
+],
+"conceptId": "waste"
 },
 "borrow": {
 "phonetic": "[ˈbɑːroʊ]",
 "example": "May I borrow your umbrella until tomorrow morning?",
 "synonyms": [
 "rent"
-]
+],
+"conceptId": "borrow"
 },
 "complete": {
 "phonetic": "[kəmˈpliːt]",
@@ -3083,7 +3451,8 @@
 "accomplish",
 "fulfill",
 "end"
-]
+],
+"conceptId": "complete"
 },
 "excellent": {
 "phonetic": "[ˈeksələnt]",
@@ -3092,7 +3461,8 @@
 "outstanding",
 "great",
 "superb"
-]
+],
+"conceptId": "excellent"
 },
 "competent": {
 "phonetic": "[ˈkɑːmpətɪnt]",
@@ -3102,7 +3472,8 @@
 "able",
 "skilled",
 "qualified"
-]
+],
+"conceptId": "competent"
 },
 "religious": {
 "phonetic": "[rɪˈlɪdʒəs]",
@@ -3111,7 +3482,8 @@
 "spiritual",
 "devout",
 "holy"
-]
+],
+"conceptId": "religious"
 },
 "favorite": {
 "phonetic": "[ˈfeɪvərɪt]",
@@ -3119,7 +3491,8 @@
 "synonyms": [
 "preferred",
 "beloved"
-]
+],
+"conceptId": "favorite"
 },
 "entire": {
 "phonetic": "[ɪnˈtaɪər]",
@@ -3129,7 +3502,8 @@
 "complete",
 "full",
 "total"
-]
+],
+"conceptId": "entire"
 },
 "primary": {
 "phonetic": "[ˈpraɪmeri]",
@@ -3138,7 +3512,8 @@
 "original",
 "first",
 "basic"
-]
+],
+"conceptId": "primary"
 },
 "similar": {
 "phonetic": "[ˈsɪmələr]",
@@ -3147,7 +3522,8 @@
 "alike",
 "like",
 "comparable"
-]
+],
+"conceptId": "similar"
 },
 "precious": {
 "phonetic": "[ˈpreʃəs]",
@@ -3156,7 +3532,8 @@
 "valuable",
 "priceless",
 "treasured"
-]
+],
+"conceptId": "precious"
 },
 "normal": {
 "phonetic": "[ˈnɔːrməl]",
@@ -3165,7 +3542,8 @@
 "usual",
 "ordinary",
 "typical"
-]
+],
+"conceptId": "normal"
 },
 "popular": {
 "phonetic": "[ˈpɑːpjələr]",
@@ -3175,7 +3553,8 @@
 "favorite",
 "common",
 "famous"
-]
+],
+"conceptId": "popular"
 },
 "compulsory": {
 "phonetic": "[kəmˈpʌlsəri]",
@@ -3184,7 +3563,8 @@
 "required",
 "mandatory",
 "obligatory"
-]
+],
+"conceptId": "compulsory"
 },
 "curious": {
 "phonetic": "[ˈkjʊrɪəs]",
@@ -3193,7 +3573,8 @@
 "interested",
 "inquisitive",
 "questioning"
-]
+],
+"conceptId": "curious"
 },
 "independent": {
 "phonetic": "[ɪndɪˈpendənt]",
@@ -3202,7 +3583,8 @@
 "self-reliant",
 "free",
 "autonomous"
-]
+],
+"conceptId": "independent"
 },
 "intimate": {
 "phonetic": "[ˈɪntəmət]",
@@ -3211,7 +3593,8 @@
 "close",
 "familiar",
 "friendly"
-]
+],
+"conceptId": "intimate"
 },
 "delicious": {
 "phonetic": "[dɪˈlɪʃəs]",
@@ -3220,7 +3603,8 @@
 "tasty",
 "yummy",
 "savory"
-]
+],
+"conceptId": "delicious"
 },
 "valuable": {
 "phonetic": "[ˈvæljəbəl]",
@@ -3229,7 +3613,8 @@
 "precious",
 "priceless",
 "costly"
-]
+],
+"conceptId": "valuable"
 },
 "grave": {
 "phonetic": "[ɡreɪv]",
@@ -3238,7 +3623,8 @@
 "serious",
 "severe",
 "critical"
-]
+],
+"conceptId": "grave"
 },
 "elementary": {
 "phonetic": "[eləˈmentri]",
@@ -3248,7 +3634,8 @@
 "simple",
 "primary",
 "easy"
-]
+],
+"conceptId": "elementary"
 },
 "crazy": {
 "phonetic": "[ˈkreɪzi]",
@@ -3257,7 +3644,8 @@
 "mad",
 "insane",
 "wild"
-]
+],
+"conceptId": "crazy"
 },
 "contrary": {
 "phonetic": "[ˈkɑːntreri]",
@@ -3266,7 +3654,8 @@
 "opposite",
 "opposing",
 "reverse"
-]
+],
+"conceptId": "contrary"
 },
 "regular": {
 "phonetic": "[ˈreɡjələr]",
@@ -3276,7 +3665,8 @@
 "usual",
 "steady",
 "routine"
-]
+],
+"conceptId": "regular"
 },
 "social": {
 "phonetic": "[ˈsoʊʃəl]",
@@ -3284,7 +3674,8 @@
 "synonyms": [
 "communal",
 "public"
-]
+],
+"conceptId": "social"
 },
 "straight": {
 "phonetic": "[streɪt]",
@@ -3293,7 +3684,8 @@
 "direct",
 "level",
 "even"
-]
+],
+"conceptId": "straight"
 },
 "noble": {
 "phonetic": "[ˈnoʊbəl]",
@@ -3303,7 +3695,8 @@
 "dignified",
 "grand",
 "lofty"
-]
+],
+"conceptId": "noble"
 },
 "anxious": {
 "phonetic": "[ˈæŋkʃəs]",
@@ -3312,7 +3705,8 @@
 "worried",
 "nervous",
 "uneasy"
-]
+],
+"conceptId": "anxious"
 },
 "international": {
 "phonetic": "[ɪntərˈnæʃənəl]",
@@ -3321,7 +3715,8 @@
 "global",
 "worldwide",
 "multinational"
-]
+],
+"conceptId": "international"
 },
 "greedy": {
 "phonetic": "[ˈɡriːdi]",
@@ -3330,7 +3725,8 @@
 "selfish",
 "grasping",
 "hungry"
-]
+],
+"conceptId": "greedy"
 },
 "stupid": {
 "phonetic": "[ˈstuːpəd]",
@@ -3339,7 +3735,8 @@
 "foolish",
 "silly",
 "dumb"
-]
+],
+"conceptId": "stupid"
 },
 "silly": {
 "phonetic": "[ˈsɪli]",
@@ -3348,7 +3745,8 @@
 "foolish",
 "stupid",
 "dumb"
-]
+],
+"conceptId": "silly"
 },
 "lonely": {
 "phonetic": "[ˈloʊnli]",
@@ -3358,7 +3756,8 @@
 "lonesome",
 "solitary",
 "isolated"
-]
+],
+"conceptId": "lonely"
 },
 "dirty": {
 "phonetic": "[ˈdɜːrti]",
@@ -3368,7 +3767,8 @@
 "messy",
 "unclean",
 "muddy"
-]
+],
+"conceptId": "dirty"
 },
 "various": {
 "phonetic": "[ˈverɪəs]",
@@ -3377,7 +3777,8 @@
 "different",
 "diverse",
 "varied"
-]
+],
+"conceptId": "various"
 },
 "private": {
 "phonetic": "[ˈpraɪvət]",
@@ -3386,7 +3787,8 @@
 "personal",
 "individual",
 "secret"
-]
+],
+"conceptId": "private"
 },
 "vain": {
 "phonetic": "[veɪn]",
@@ -3396,7 +3798,8 @@
 "pointless",
 "fruitless",
 "empty"
-]
+],
+"conceptId": "vain"
 },
 "sore": {
 "phonetic": "[sɔːr]",
@@ -3405,7 +3808,8 @@
 "painful",
 "aching",
 "tender"
-]
+],
+"conceptId": "sore"
 },
 "fierce": {
 "phonetic": "[fɪrs]",
@@ -3414,7 +3818,8 @@
 "violent",
 "wild",
 "savage"
-]
+],
+"conceptId": "fierce"
 },
 "firm": {
 "phonetic": "[fɜːrm]",
@@ -3424,11 +3829,13 @@
 "hard",
 "steady",
 "stable"
-]
+],
+"conceptId": "firm"
 },
 "solar": {
 "phonetic": "[ˈsoʊlər]",
-"example": "Solar energy can heat the water in our house even in winter."
+"example": "Solar energy can heat the water in our house even in winter.",
+"conceptId": "solar"
 },
 "smart": {
 "phonetic": "[smɑːrt]",
@@ -3438,7 +3845,8 @@
 "bright",
 "intelligent",
 "neat"
-]
+],
+"conceptId": "smart"
 },
 "single": {
 "phonetic": "[ˈsɪŋɡəl]",
@@ -3446,7 +3854,8 @@
 "synonyms": [
 "unmarried",
 "unwed"
-]
+],
+"conceptId": "single"
 },
 "diligent": {
 "phonetic": "[ˈdɪlɪdʒənt]",
@@ -3454,7 +3863,8 @@
 "synonyms": [
 "hardworking",
 "industrious"
-]
+],
+"conceptId": "diligent"
 },
 "serious": {
 "phonetic": "[ˈsɪrɪəs]",
@@ -3463,7 +3873,8 @@
 "earnest",
 "grave",
 "solemn"
-]
+],
+"conceptId": "serious"
 },
 "fresh": {
 "phonetic": "[freʃ]",
@@ -3471,7 +3882,8 @@
 "synonyms": [
 "new",
 "recent"
-]
+],
+"conceptId": "fresh"
 },
 "empty": {
 "phonetic": "[ˈempti]",
@@ -3480,7 +3892,8 @@
 "vacant",
 "hollow",
 "bare"
-]
+],
+"conceptId": "empty"
 },
 "mild": {
 "phonetic": "[maɪld]",
@@ -3490,7 +3903,8 @@
 "soft",
 "moderate",
 "calm"
-]
+],
+"conceptId": "mild"
 },
 "amazing": {
 "phonetic": "[əˈmeɪzɪŋ]",
@@ -3500,7 +3914,8 @@
 "astonishing",
 "incredible",
 "wonderful"
-]
+],
+"conceptId": "amazing"
 },
 "charming": {
 "phonetic": "[ˈtʃɑːrmɪŋ]",
@@ -3510,7 +3925,8 @@
 "lovely",
 "delightful",
 "appealing"
-]
+],
+"conceptId": "charming"
 },
 "boring": {
 "phonetic": "[ˈbɔːrɪŋ]",
@@ -3520,7 +3936,8 @@
 "tedious",
 "tiresome",
 "uninteresting"
-]
+],
+"conceptId": "boring"
 },
 "giant": {
 "phonetic": "[ˈdʒaɪənt]",
@@ -3529,7 +3946,8 @@
 "huge",
 "enormous",
 "gigantic"
-]
+],
+"conceptId": "giant"
 },
 "huge": {
 "phonetic": "[hjuːdʒ]",
@@ -3538,7 +3956,8 @@
 "enormous",
 "giant",
 "massive"
-]
+],
+"conceptId": "huge"
 },
 "tiny": {
 "phonetic": "[ˈtaɪni]",
@@ -3547,7 +3966,8 @@
 "small",
 "little",
 "minute"
-]
+],
+"conceptId": "tiny"
 },
 "fair": {
 "phonetic": "[fer]",
@@ -3556,7 +3976,8 @@
 "just",
 "impartial",
 "honest"
-]
+],
+"conceptId": "fair"
 },
 "tough": {
 "phonetic": "[tʌf]",
@@ -3565,7 +3986,8 @@
 "rough",
 "hard",
 "harsh"
-]
+],
+"conceptId": "tough"
 },
 "foreign": {
 "phonetic": "[ˈfɔːrən]",
@@ -3574,7 +3996,8 @@
 "overseas",
 "alien",
 "external"
-]
+],
+"conceptId": "foreign"
 },
 "modern": {
 "phonetic": "[ˈmɑːdərn]",
@@ -3584,7 +4007,8 @@
 "current",
 "up-to-date",
 "new"
-]
+],
+"conceptId": "modern"
 },
 "expensive": {
 "phonetic": "[ɪkˈspensɪv]",
@@ -3593,7 +4017,8 @@
 "costly",
 "pricey",
 "dear"
-]
+],
+"conceptId": "expensive"
 },
 "harmful": {
 "phonetic": "[ˈhɑːrmfəl]",
@@ -3603,7 +4028,8 @@
 "dangerous",
 "unhealthy",
 "destructive"
-]
+],
+"conceptId": "harmful"
 },
 "calm": {
 "phonetic": "[kɑːm]",
@@ -3613,7 +4039,8 @@
 "quiet",
 "still",
 "relaxed"
-]
+],
+"conceptId": "calm"
 },
 "special": {
 "phonetic": "[ˈspeʃəl]",
@@ -3622,7 +4049,8 @@
 "particular",
 "unique",
 "unusual"
-]
+],
+"conceptId": "special"
 },
 "steady": {
 "phonetic": "[ˈstedi]",
@@ -3632,11 +4060,13 @@
 "stable",
 "constant",
 "solid"
-]
+],
+"conceptId": "steady"
 },
 "hay": {
 "phonetic": "[heɪ]",
-"example": "The farmer stored dry hay in the barn for the winter."
+"example": "The farmer stored dry hay in the barn for the winter.",
+"conceptId": "hay"
 },
 "revival": {
 "phonetic": "[rɪˈvaɪvəl]",
@@ -3645,11 +4075,13 @@
 "rebirth",
 "renewal",
 "comeback"
-]
+],
+"conceptId": "revival"
 },
 "million": {
 "phonetic": "[ˈmɪljən]",
-"example": "More than a million people live in this busy port city."
+"example": "More than a million people live in this busy port city.",
+"conceptId": "million"
 },
 "crop": {
 "phonetic": "[krɑːp]",
@@ -3657,7 +4089,8 @@
 "synonyms": [
 "harvest",
 "produce"
-]
+],
+"conceptId": "crop"
 },
 "shade": {
 "phonetic": "[ʃeɪd]",
@@ -3665,7 +4098,8 @@
 "synonyms": [
 "shadow",
 "darkness"
-]
+],
+"conceptId": "shade"
 },
 "company": {
 "phonetic": "[ˈkʌmpəni]",
@@ -3674,7 +4108,8 @@
 "firm",
 "business",
 "corporation"
-]
+],
+"conceptId": "company"
 },
 "canal": {
 "phonetic": "[kəˈnæl]",
@@ -3683,7 +4118,8 @@
 "waterway",
 "channel",
 "ditch"
-]
+],
+"conceptId": "canal"
 },
 "wagon": {
 "phonetic": "[ˈwæɡən]",
@@ -3691,7 +4127,8 @@
 "synonyms": [
 "cart",
 "carriage"
-]
+],
+"conceptId": "wagon"
 },
 "fact": {
 "phonetic": "[fækt]",
@@ -3699,7 +4136,8 @@
 "synonyms": [
 "truth",
 "reality"
-]
+],
+"conceptId": "fact"
 },
 "joy": {
 "phonetic": "[dʒɔɪ]",
@@ -3708,7 +4146,8 @@
 "delight",
 "happiness",
 "pleasure"
-]
+],
+"conceptId": "joy"
 },
 "concert": {
 "phonetic": "[ˈkɑːnsərt]",
@@ -3717,7 +4156,8 @@
 "performance",
 "recital",
 "show"
-]
+],
+"conceptId": "concert"
 },
 "rule": {
 "phonetic": "[ruːl]",
@@ -3726,7 +4166,8 @@
 "regulation",
 "law",
 "principle"
-]
+],
+"conceptId": "rule"
 },
 "suitcase": {
 "phonetic": "[ˈsuːtkeɪs]",
@@ -3736,7 +4177,8 @@
 "trunk",
 "baggage",
 "luggage"
-]
+],
+"conceptId": "suitcase"
 },
 "weight": {
 "phonetic": "[weɪt]",
@@ -3745,7 +4187,8 @@
 "mass",
 "heaviness",
 "load"
-]
+],
+"conceptId": "weight"
 },
 "hurray": {
 "phonetic": "[həˈreɪ]",
@@ -3753,7 +4196,8 @@
 "synonyms": [
 "hooray",
 "cheers"
-]
+],
+"conceptId": "hurray"
 },
 "mail": {
 "phonetic": "[meɪl]",
@@ -3762,7 +4206,8 @@
 "post",
 "letters",
 "correspondence"
-]
+],
+"conceptId": "mail"
 },
 "log": {
 "phonetic": "[lɔːɡ]",
@@ -3770,7 +4215,8 @@
 "synonyms": [
 "timber",
 "trunk"
-]
+],
+"conceptId": "log"
 },
 "hut": {
 "phonetic": "[hʌt]",
@@ -3780,7 +4226,8 @@
 "shack",
 "shed",
 "cottage"
-]
+],
+"conceptId": "hut"
 },
 "tax": {
 "phonetic": "[tæks]",
@@ -3788,7 +4235,8 @@
 "synonyms": [
 "duty",
 "levy"
-]
+],
+"conceptId": "tax"
 },
 "dye": {
 "phonetic": "[daɪ]",
@@ -3797,7 +4245,8 @@
 "color",
 "stain",
 "tint"
-]
+],
+"conceptId": "dye"
 },
 "earnings": {
 "phonetic": "[ˈɜːrnɪŋz]",
@@ -3806,7 +4255,8 @@
 "income",
 "wages",
 "pay"
-]
+],
+"conceptId": "earnings"
 },
 "flame": {
 "phonetic": "[fleɪm]",
@@ -3814,7 +4264,8 @@
 "synonyms": [
 "fire",
 "blaze"
-]
+],
+"conceptId": "flame"
 },
 "shape": {
 "phonetic": "[ʃeɪp]",
@@ -3823,7 +4274,8 @@
 "form",
 "figure",
 "outline"
-]
+],
+"conceptId": "shape"
 },
 "chest": {
 "phonetic": "[tʃest]",
@@ -3831,7 +4283,8 @@
 "synonyms": [
 "breast",
 "bosom"
-]
+],
+"conceptId": "chest"
 },
 "chain": {
 "phonetic": "[tʃeɪn]",
@@ -3839,7 +4292,8 @@
 "synonyms": [
 "link",
 "shackle"
-]
+],
+"conceptId": "chain"
 },
 "cost": {
 "phonetic": "[kɑːst]",
@@ -3848,7 +4302,8 @@
 "price",
 "expense",
 "charge"
-]
+],
+"conceptId": "cost"
 },
 "coast": {
 "phonetic": "[koʊst]",
@@ -3857,7 +4312,8 @@
 "shore",
 "beach",
 "seaside"
-]
+],
+"conceptId": "coast"
 },
 "circle": {
 "phonetic": "[ˈsɜːrkəl]",
@@ -3866,7 +4322,8 @@
 "ring",
 "loop",
 "hoop"
-]
+],
+"conceptId": "circle"
 },
 "heart": {
 "phonetic": "[hɑːrt]",
@@ -3875,7 +4332,8 @@
 "core",
 "soul",
 "center"
-]
+],
+"conceptId": "heart"
 },
 "nature": {
 "phonetic": "[ˈneɪtʃər]",
@@ -3884,7 +4342,8 @@
 "environment",
 "wildlife",
 "creation"
-]
+],
+"conceptId": "nature"
 },
 "fever": {
 "phonetic": "[ˈfiːvər]",
@@ -3892,11 +4351,13 @@
 "synonyms": [
 "temperature",
 "heat"
-]
+],
+"conceptId": "fever"
 },
 "tongue": {
 "phonetic": "[tʌŋ]",
-"example": "I burned my tongue on the hot soup at dinner."
+"example": "I burned my tongue on the hot soup at dinner.",
+"conceptId": "tongue"
 },
 "trust": {
 "phonetic": "[trʌst]",
@@ -3906,11 +4367,13 @@
 "confidence",
 "belief",
 "credit"
-]
+],
+"conceptId": "trust"
 },
 "whisker": {
 "phonetic": "[ˈwɪskər]",
-"example": "The old sailor had a thick whisker on each cheek."
+"example": "The old sailor had a thick whisker on each cheek.",
+"conceptId": "whisker"
 },
 "prison": {
 "phonetic": "[ˈprɪzən]",
@@ -3918,15 +4381,18 @@
 "synonyms": [
 "jail",
 "cell"
-]
+],
+"conceptId": "prison"
 },
 "blood": {
 "phonetic": "[blʌd]",
-"example": "A little blood came out when I cut my finger."
+"example": "A little blood came out when I cut my finger.",
+"conceptId": "blood"
 },
 "loaf": {
 "phonetic": "[loʊf]",
-"example": "Mother bought a warm loaf of bread from the corner bakery."
+"example": "Mother bought a warm loaf of bread from the corner bakery.",
+"conceptId": "loaf"
 },
 "list": {
 "phonetic": "[lɪst]",
@@ -3935,7 +4401,8 @@
 "catalog",
 "roll",
 "register"
-]
+],
+"conceptId": "list"
 },
 "fence": {
 "phonetic": "[fens]",
@@ -3945,7 +4412,8 @@
 "wall",
 "railing",
 "hedge"
-]
+],
+"conceptId": "fence"
 },
 "enemy": {
 "phonetic": "[ˈenəmi]",
@@ -3954,7 +4422,8 @@
 "foe",
 "opponent",
 "rival"
-]
+],
+"conceptId": "enemy"
 },
 "thief": {
 "phonetic": "[θiːf]",
@@ -3963,7 +4432,8 @@
 "robber",
 "burglar",
 "crook"
-]
+],
+"conceptId": "thief"
 },
 "data": {
 "phonetic": "[ˈdeɪtə]",
@@ -3972,7 +4442,8 @@
 "information",
 "facts",
 "statistics"
-]
+],
+"conceptId": "data"
 },
 "soldier": {
 "phonetic": "[ˈsoʊldʒər]",
@@ -3981,7 +4452,8 @@
 "warrior",
 "fighter",
 "trooper"
-]
+],
+"conceptId": "soldier"
 },
 "musician": {
 "phonetic": "[mjuˈzɪʃən]",
@@ -3990,11 +4462,13 @@
 "performer",
 "player",
 "artist"
-]
+],
+"conceptId": "musician"
 },
 "capital": {
 "phonetic": "[ˈkæpətəl]",
-"example": "Seoul is the capital of Korea and also its largest city."
+"example": "Seoul is the capital of Korea and also its largest city.",
+"conceptId": "capital"
 },
 "course": {
 "phonetic": "[kɔːrs]",
@@ -4003,7 +4477,8 @@
 "route",
 "path",
 "direction"
-]
+],
+"conceptId": "course"
 },
 "diary": {
 "phonetic": "[ˈdaɪəri]",
@@ -4012,11 +4487,13 @@
 "journal",
 "log",
 "record"
-]
+],
+"conceptId": "diary"
 },
 "squirrel": {
 "phonetic": "[ˈskwɜːrəl]",
-"example": "A little squirrel carried a nut up the tall pine tree."
+"example": "A little squirrel carried a nut up the tall pine tree.",
+"conceptId": "squirrel"
 },
 "dawn": {
 "phonetic": "[dɔːn]",
@@ -4024,7 +4501,8 @@
 "synonyms": [
 "daybreak",
 "sunrise"
-]
+],
+"conceptId": "dawn"
 },
 "shadow": {
 "phonetic": "[ˈʃædoʊ]",
@@ -4032,7 +4510,8 @@
 "synonyms": [
 "shade",
 "silhouette"
-]
+],
+"conceptId": "shadow"
 },
 "ditch": {
 "phonetic": "[dɪtʃ]",
@@ -4041,7 +4520,8 @@
 "trench",
 "channel",
 "gutter"
-]
+],
+"conceptId": "ditch"
 },
 "crew": {
 "phonetic": "[kruː]",
@@ -4050,7 +4530,8 @@
 "staff",
 "team",
 "gang"
-]
+],
+"conceptId": "crew"
 },
 "stomach": {
 "phonetic": "[ˈstʌmək]",
@@ -4059,11 +4540,13 @@
 "belly",
 "tummy",
 "gut"
-]
+],
+"conceptId": "stomach"
 },
 "neighbor": {
 "phonetic": "[ˈneɪbər]",
-"example": "Our new neighbor gave us fresh apples from her own garden."
+"example": "Our new neighbor gave us fresh apples from her own garden.",
+"conceptId": "neighbor"
 },
 "servant": {
 "phonetic": "[ˈsɜːrvənt]",
@@ -4072,7 +4555,8 @@
 "helper",
 "maid",
 "attendant"
-]
+],
+"conceptId": "servant"
 },
 "hunger": {
 "phonetic": "[ˈhʌŋɡər]",
@@ -4081,7 +4565,8 @@
 "starvation",
 "famine",
 "appetite"
-]
+],
+"conceptId": "hunger"
 },
 "tomb": {
 "phonetic": "[tuːm]",
@@ -4090,7 +4575,8 @@
 "grave",
 "vault",
 "burial chamber"
-]
+],
+"conceptId": "tomb"
 },
 "taste": {
 "phonetic": "[teɪst]",
@@ -4099,7 +4585,8 @@
 "flavor",
 "savor",
 "sample"
-]
+],
+"conceptId": "taste"
 },
 "sign": {
 "phonetic": "[saɪn]",
@@ -4109,7 +4596,8 @@
 "mark",
 "symbol",
 "gesture"
-]
+],
+"conceptId": "sign"
 },
 "stair": {
 "phonetic": "[ster]",
@@ -4117,7 +4605,8 @@
 "synonyms": [
 "step",
 "staircase"
-]
+],
+"conceptId": "stair"
 },
 "trip": {
 "phonetic": "[trɪp]",
@@ -4126,7 +4615,8 @@
 "journey",
 "tour",
 "travel"
-]
+],
+"conceptId": "trip"
 },
 "brain": {
 "phonetic": "[breɪn]",
@@ -4134,7 +4624,8 @@
 "synonyms": [
 "mind",
 "head"
-]
+],
+"conceptId": "brain"
 },
 "trumpet": {
 "phonetic": "[ˈtrʌmpət]",
@@ -4142,7 +4633,8 @@
 "synonyms": [
 "horn",
 "bugle"
-]
+],
+"conceptId": "trumpet"
 },
 "speech": {
 "phonetic": "[spiːtʃ]",
@@ -4151,15 +4643,18 @@
 "talk",
 "address",
 "language"
-]
+],
+"conceptId": "speech"
 },
 "thumb": {
 "phonetic": "[θʌm]",
-"example": "He hurt his thumb while closing the heavy classroom door."
+"example": "He hurt his thumb while closing the heavy classroom door.",
+"conceptId": "thumb"
 },
 "horn": {
 "phonetic": "[hɔːrn]",
-"example": "The young goat has one short horn on its head."
+"example": "The young goat has one short horn on its head.",
+"conceptId": "horn"
 },
 "chief": {
 "phonetic": "[tʃiːf]",
@@ -4169,7 +4664,8 @@
 "head",
 "main",
 "principal"
-]
+],
+"conceptId": "chief"
 },
 "trousers": {
 "phonetic": "[ˈtraʊzərz]",
@@ -4177,7 +4673,8 @@
 "synonyms": [
 "pants",
 "slacks"
-]
+],
+"conceptId": "trousers"
 },
 "prince": {
 "phonetic": "[prɪns]",
@@ -4185,7 +4682,8 @@
 "synonyms": [
 "royal",
 "heir"
-]
+],
+"conceptId": "prince"
 },
 "force": {
 "phonetic": "[fɔːrs]",
@@ -4194,7 +4692,8 @@
 "power",
 "strength",
 "energy"
-]
+],
+"conceptId": "force"
 },
 "sight": {
 "phonetic": "[saɪt]",
@@ -4204,7 +4703,8 @@
 "scene",
 "spectacle",
 "vision"
-]
+],
+"conceptId": "sight"
 },
 "space": {
 "phonetic": "[speɪs]",
@@ -4213,7 +4713,8 @@
 "room",
 "gap",
 "area"
-]
+],
+"conceptId": "space"
 },
 "wool": {
 "phonetic": "[wʊl]",
@@ -4221,7 +4722,8 @@
 "synonyms": [
 "fleece",
 "yarn"
-]
+],
+"conceptId": "wool"
 },
 "expressway": {
 "phonetic": "[ɪksˈpresweɪ]",
@@ -4230,11 +4732,13 @@
 "highway",
 "freeway",
 "motorway"
-]
+],
+"conceptId": "expressway"
 },
 "science": {
 "phonetic": "[ˈsaɪəns]",
-"example": "My favorite subject is science because I love doing experiments."
+"example": "My favorite subject is science because I love doing experiments.",
+"conceptId": "science"
 },
 "examination": {
 "phonetic": "[ɪɡzæməˈneɪʃən]",
@@ -4244,7 +4748,8 @@
 "exam",
 "inspection",
 "check"
-]
+],
+"conceptId": "examination"
 },
 "jar": {
 "phonetic": "[dʒɑːr]",
@@ -4253,11 +4758,13 @@
 "pot",
 "container",
 "vessel"
-]
+],
+"conceptId": "jar"
 },
 "salt": {
 "phonetic": "[sɔːlt]",
-"example": "Please add a little salt to the soup before serving it."
+"example": "Please add a little salt to the soup before serving it.",
+"conceptId": "salt"
 },
 "death": {
 "phonetic": "[deθ]",
@@ -4266,11 +4773,13 @@
 "passing",
 "demise",
 "end"
-]
+],
+"conceptId": "death"
 },
 "saw": {
 "phonetic": "[sɔː]",
-"example": "My father cut the thick branch with a small saw."
+"example": "My father cut the thick branch with a small saw.",
+"conceptId": "saw"
 },
 "swing": {
 "phonetic": "[swɪŋ]",
@@ -4279,7 +4788,8 @@
 "sway",
 "rock",
 "wave"
-]
+],
+"conceptId": "swing"
 },
 "wish": {
 "phonetic": "[wɪʃ]",
@@ -4288,7 +4798,8 @@
 "desire",
 "hope",
 "want"
-]
+],
+"conceptId": "wish"
 },
 "grain": {
 "phonetic": "[ɡreɪn]",
@@ -4297,31 +4808,38 @@
 "kernel",
 "seed",
 "cereal"
-]
+],
+"conceptId": "grain"
 },
 "eraser": {
 "phonetic": "[ɪˈreɪsər]",
-"example": "Can I borrow your eraser? I made a mistake here."
+"example": "Can I borrow your eraser? I made a mistake here.",
+"conceptId": "eraser"
 },
 "alphabet": {
 "phonetic": "[ˈælfəbet]",
-"example": "The English alphabet has twenty-six letters from A to Z."
+"example": "The English alphabet has twenty-six letters from A to Z.",
+"conceptId": "alphabet"
 },
 "shoulder": {
 "phonetic": "[ˈʃoʊldər]",
-"example": "The heavy bag hurt my shoulder during the long walk home."
+"example": "The heavy bag hurt my shoulder during the long walk home.",
+"conceptId": "shoulder"
 },
 "nephew": {
 "phonetic": "[ˈnefju]",
-"example": "My nephew is only five, but he already reads short books."
+"example": "My nephew is only five, but he already reads short books.",
+"conceptId": "nephew"
 },
 "niece": {
 "phonetic": "[niːs]",
-"example": "I bought a doll for my niece on her seventh birthday."
+"example": "I bought a doll for my niece on her seventh birthday.",
+"conceptId": "niece"
 },
 "library": {
 "phonetic": "[ˈlaɪbreri]",
-"example": "The school library is quiet, so I study there after lunch."
+"example": "The school library is quiet, so I study there after lunch.",
+"conceptId": "library"
 },
 "factory": {
 "phonetic": "[ˈfæktəri]",
@@ -4330,25 +4848,29 @@
 "plant",
 "mill",
 "workshop"
-]
+],
+"conceptId": "factory"
 },
 "giraffe": {
 "phonetic": "[dʒərˈæf]",
-"example": "The giraffe stretched its long neck to reach the green leaves."
+"example": "The giraffe stretched its long neck to reach the green leaves.",
+"conceptId": "giraffe"
 },
 "hawk": {
 "phonetic": "[hɔːk]",
 "example": "A hawk flew high above the field, looking for small animals.",
 "synonyms": [
 "falcon"
-]
+],
+"conceptId": "hawk"
 },
 "pigeon": {
 "phonetic": "[ˈpɪdʒən]",
 "example": "A gray pigeon landed on the bench and looked for bread crumbs.",
 "synonyms": [
 "dove"
-]
+],
+"conceptId": "pigeon"
 },
 "bowl": {
 "phonetic": "[boʊl]",
@@ -4356,7 +4878,8 @@
 "synonyms": [
 "dish",
 "basin"
-]
+],
+"conceptId": "bowl"
 },
 "scene": {
 "phonetic": "[siːn]",
@@ -4366,7 +4889,8 @@
 "sight",
 "setting",
 "spot"
-]
+],
+"conceptId": "scene"
 },
 "life": {
 "phonetic": "[laɪf]",
@@ -4374,7 +4898,8 @@
 "synonyms": [
 "existence",
 "living"
-]
+],
+"conceptId": "life"
 },
 "earth": {
 "phonetic": "[ɜːrθ]",
@@ -4384,7 +4909,8 @@
 "globe",
 "ground",
 "soil"
-]
+],
+"conceptId": "earth"
 },
 "pill": {
 "phonetic": "[pɪl]",
@@ -4392,7 +4918,8 @@
 "synonyms": [
 "tablet",
 "capsule"
-]
+],
+"conceptId": "pill"
 },
 "math": {
 "phonetic": "[mæθ]",
@@ -4400,14 +4927,16 @@
 "synonyms": [
 "mathematics",
 "arithmetic"
-]
+],
+"conceptId": "math"
 },
 "ocean": {
 "phonetic": "[ˈoʊʃən]",
 "example": "Whales swim thousands of kilometers across the wide ocean every year.",
 "synonyms": [
 "sea"
-]
+],
+"conceptId": "ocean"
 },
 "price": {
 "phonetic": "[praɪs]",
@@ -4417,7 +4946,8 @@
 "charge",
 "fee",
 "value"
-]
+],
+"conceptId": "price"
 },
 "row": {
 "phonetic": "[roʊ]",
@@ -4426,7 +4956,8 @@
 "line",
 "rank",
 "file"
-]
+],
+"conceptId": "row"
 },
 "schedule": {
 "phonetic": "[ˈskedʒʊl]",
@@ -4436,7 +4967,8 @@
 "plan",
 "agenda",
 "program"
-]
+],
+"conceptId": "schedule"
 },
 "machine": {
 "phonetic": "[məˈʃiːn]",
@@ -4445,7 +4977,8 @@
 "device",
 "engine",
 "apparatus"
-]
+],
+"conceptId": "machine"
 },
 "route": {
 "phonetic": "[ruːt]",
@@ -4455,11 +4988,13 @@
 "way",
 "course",
 "road"
-]
+],
+"conceptId": "route"
 },
 "ivy": {
 "phonetic": "[ˈaɪvi]",
-"example": "Thick ivy covers the old brick walls of our school library."
+"example": "Thick ivy covers the old brick walls of our school library.",
+"conceptId": "ivy"
 },
 "gift": {
 "phonetic": "[ɡɪft]",
@@ -4467,11 +5002,13 @@
 "synonyms": [
 "present",
 "donation"
-]
+],
+"conceptId": "gift"
 },
 "candle": {
 "phonetic": "[ˈkændəl]",
-"example": "We lit one candle when the electricity suddenly went out."
+"example": "We lit one candle when the electricity suddenly went out.",
+"conceptId": "candle"
 },
 "joke": {
 "phonetic": "[dʒoʊk]",
@@ -4480,7 +5017,8 @@
 "gag",
 "jest",
 "prank"
-]
+],
+"conceptId": "joke"
 },
 "art": {
 "phonetic": "[ɑːrt]",
@@ -4489,7 +5027,8 @@
 "craft",
 "artwork",
 "skill"
-]
+],
+"conceptId": "art"
 },
 "corn": {
 "phonetic": "[kɔːrn]",
@@ -4497,11 +5036,13 @@
 "synonyms": [
 "maize",
 "grain"
-]
+],
+"conceptId": "corn"
 },
 "pet": {
 "phonetic": "[pet]",
-"example": "My little brother wants a pet, but our apartment does not allow animals."
+"example": "My little brother wants a pet, but our apartment does not allow animals.",
+"conceptId": "pet"
 },
 "robber": {
 "phonetic": "[ˈrɑːbər]",
@@ -4510,11 +5051,13 @@
 "thief",
 "burglar",
 "bandit"
-]
+],
+"conceptId": "robber"
 },
 "cheek": {
 "phonetic": "[tʃiːk]",
-"example": "Tears rolled down her cheek while she read the letter."
+"example": "Tears rolled down her cheek while she read the letter.",
+"conceptId": "cheek"
 },
 "clerk": {
 "phonetic": "[klɜːrk]",
@@ -4523,14 +5066,16 @@
 "salesperson",
 "secretary",
 "assistant"
-]
+],
+"conceptId": "clerk"
 },
 "cookie": {
 "phonetic": "[ˈkʊki]",
 "example": "Tom baked a chocolate cookie for every student in his class.",
 "synonyms": [
 "biscuit"
-]
+],
+"conceptId": "cookie"
 },
 "army": {
 "phonetic": "[ˈɑːrmi]",
@@ -4539,7 +5084,8 @@
 "troops",
 "forces",
 "military"
-]
+],
+"conceptId": "army"
 },
 "nurse": {
 "phonetic": "[nɜːrs]",
@@ -4547,7 +5093,8 @@
 "synonyms": [
 "caregiver",
 "caretaker"
-]
+],
+"conceptId": "nurse"
 },
 "master": {
 "phonetic": "[ˈmæstər]",
@@ -4557,7 +5104,8 @@
 "lord",
 "boss",
 "expert"
-]
+],
+"conceptId": "master"
 },
 "lock": {
 "phonetic": "[lɑːk]",
@@ -4567,7 +5115,8 @@
 "latch",
 "fasten",
 "secure"
-]
+],
+"conceptId": "lock"
 },
 "moment": {
 "phonetic": "[ˈmoʊmənt]",
@@ -4575,7 +5124,8 @@
 "synonyms": [
 "instant",
 "second"
-]
+],
+"conceptId": "moment"
 },
 "sheet": {
 "phonetic": "[ʃiːt]",
@@ -4583,7 +5133,8 @@
 "synonyms": [
 "bedsheet",
 "linen"
-]
+],
+"conceptId": "sheet"
 },
 "monk": {
 "phonetic": "[mʌŋk]",
@@ -4591,7 +5142,8 @@
 "synonyms": [
 "friar",
 "priest"
-]
+],
+"conceptId": "monk"
 },
 "closet": {
 "phonetic": "[ˈklɑːzət]",
@@ -4600,7 +5152,8 @@
 "wardrobe",
 "cupboard",
 "cabinet"
-]
+],
+"conceptId": "closet"
 },
 "handle": {
 "phonetic": "[ˈhændəl]",
@@ -4608,7 +5161,8 @@
 "synonyms": [
 "grip",
 "knob"
-]
+],
+"conceptId": "handle"
 },
 "guide": {
 "phonetic": "[ɡaɪd]",
@@ -4617,7 +5171,8 @@
 "lead",
 "direct",
 "show"
-]
+],
+"conceptId": "guide"
 },
 "bar": {
 "phonetic": "[bɑːr]",
@@ -4626,23 +5181,28 @@
 "rod",
 "stick",
 "pole"
-]
+],
+"conceptId": "bar"
 },
 "ostrich": {
 "phonetic": "[ˈɔːstrɪtʃ]",
-"example": "An ostrich cannot fly, but it runs faster than a horse."
+"example": "An ostrich cannot fly, but it runs faster than a horse.",
+"conceptId": "ostrich"
 },
 "knee": {
 "phonetic": "[niː]",
-"example": "Jinsu hurt his knee while playing soccer on the wet field."
+"example": "Jinsu hurt his knee while playing soccer on the wet field.",
+"conceptId": "knee"
 },
 "cricket": {
 "phonetic": "[ˈkrɪkət]",
-"example": "Many students in India play cricket after school every afternoon."
+"example": "Many students in India play cricket after school every afternoon.",
+"conceptId": "cricket"
 },
 "deck": {
 "phonetic": "[dek]",
-"example": "Passengers stood on the deck and watched the island come closer."
+"example": "Passengers stood on the deck and watched the island come closer.",
+"conceptId": "deck"
 },
 "bit": {
 "phonetic": "[bɪt]",
@@ -4652,27 +5212,33 @@
 "little",
 "bite",
 "scrap"
-]
+],
+"conceptId": "bit"
 },
 "silk": {
 "phonetic": "[sɪlk]",
-"example": "Her wedding dress was made of soft white silk."
+"example": "Her wedding dress was made of soft white silk.",
+"conceptId": "silk"
 },
 "jean": {
 "phonetic": "[dʒiːn]",
-"example": "Minho wore blue jeans and a white shirt to the concert."
+"example": "Minho wore blue jeans and a white shirt to the concert.",
+"conceptId": "jean"
 },
 "cotton": {
 "phonetic": "[ˈkɑːtən]",
-"example": "These socks are made of cotton, so they feel very soft."
+"example": "These socks are made of cotton, so they feel very soft.",
+"conceptId": "cotton"
 },
 "drum": {
 "phonetic": "[drʌm]",
-"example": "My cousin plays the drum in the school marching band."
+"example": "My cousin plays the drum in the school marching band.",
+"conceptId": "drum"
 },
 "sand": {
 "phonetic": "[sænd]",
-"example": "The children built a tall castle with wet sand near the water."
+"example": "The children built a tall castle with wet sand near the water.",
+"conceptId": "sand"
 },
 "shock": {
 "phonetic": "[ʃɑːk]",
@@ -4681,7 +5247,8 @@
 "impact",
 "blow",
 "jolt"
-]
+],
+"conceptId": "shock"
 },
 "march": {
 "phonetic": "[mɑːrtʃ]",
@@ -4690,7 +5257,8 @@
 "parade",
 "walk",
 "procession"
-]
+],
+"conceptId": "march"
 },
 "cage": {
 "phonetic": "[keɪdʒ]",
@@ -4699,7 +5267,8 @@
 "coop",
 "pen",
 "enclosure"
-]
+],
+"conceptId": "cage"
 },
 "whole": {
 "phonetic": "[hoʊl]",
@@ -4709,7 +5278,8 @@
 "complete",
 "full",
 "total"
-]
+],
+"conceptId": "whole"
 },
 "change": {
 "phonetic": "[tʃeɪndʒ]",
@@ -4718,7 +5288,8 @@
 "shift",
 "switch",
 "alteration"
-]
+],
+"conceptId": "change"
 },
 "department": {
 "phonetic": "[dɪˈpɑːrtmənt]",
@@ -4727,7 +5298,8 @@
 "division",
 "branch",
 "office"
-]
+],
+"conceptId": "department"
 },
 "office": {
 "phonetic": "[ˈɔːfɪs]",
@@ -4735,7 +5307,8 @@
 "synonyms": [
 "workplace",
 "bureau"
-]
+],
+"conceptId": "office"
 },
 "ticket": {
 "phonetic": "[ˈtɪkət]",
@@ -4744,7 +5317,8 @@
 "pass",
 "coupon",
 "voucher"
-]
+],
+"conceptId": "ticket"
 },
 "energy": {
 "phonetic": "[ˈenərdʒi]",
@@ -4753,7 +5327,8 @@
 "power",
 "force",
 "vigor"
-]
+],
+"conceptId": "energy"
 },
 "idea": {
 "phonetic": "[aɪˈdiːə]",
@@ -4762,7 +5337,8 @@
 "thought",
 "notion",
 "concept"
-]
+],
+"conceptId": "idea"
 },
 "hospital": {
 "phonetic": "[ˈhɑːspɪtəl]",
@@ -4770,7 +5346,8 @@
 "synonyms": [
 "clinic",
 "medical center"
-]
+],
+"conceptId": "hospital"
 },
 "noise": {
 "phonetic": "[nɔɪz]",
@@ -4779,7 +5356,8 @@
 "sound",
 "racket",
 "din"
-]
+],
+"conceptId": "noise"
 },
 "sample": {
 "phonetic": "[ˈsæmpəl]",
@@ -4788,7 +5366,8 @@
 "example",
 "specimen",
 "model"
-]
+],
+"conceptId": "sample"
 },
 "example": {
 "phonetic": "[ɪɡˈzæmpəl]",
@@ -4798,7 +5377,8 @@
 "sample",
 "case",
 "model"
-]
+],
+"conceptId": "example"
 },
 "lesson": {
 "phonetic": "[ˈlesən]",
@@ -4806,7 +5386,8 @@
 "synonyms": [
 "class",
 "course"
-]
+],
+"conceptId": "lesson"
 },
 "plenty": {
 "phonetic": "[ˈplenti]",
@@ -4815,7 +5396,8 @@
 "abundance",
 "lots",
 "loads"
-]
+],
+"conceptId": "plenty"
 },
 "luck": {
 "phonetic": "[lʌk]",
@@ -4824,7 +5406,8 @@
 "fortune",
 "chance",
 "blessing"
-]
+],
+"conceptId": "luck"
 },
 "comedy": {
 "phonetic": "[ˈkɑːmədi]",
@@ -4832,7 +5415,8 @@
 "synonyms": [
 "humor",
 "farce"
-]
+],
+"conceptId": "comedy"
 },
 "health": {
 "phonetic": "[helθ]",
@@ -4841,7 +5425,8 @@
 "wellness",
 "fitness",
 "well-being"
-]
+],
+"conceptId": "health"
 },
 "history": {
 "phonetic": "[ˈhɪstəri]",
@@ -4850,7 +5435,8 @@
 "past",
 "record",
 "chronicle"
-]
+],
+"conceptId": "history"
 },
 "forest": {
 "phonetic": "[ˈfɔːrəst]",
@@ -4859,7 +5445,8 @@
 "woods",
 "woodland",
 "jungle"
-]
+],
+"conceptId": "forest"
 },
 "stream": {
 "phonetic": "[striːm]",
@@ -4869,7 +5456,8 @@
 "creek",
 "current",
 "flow"
-]
+],
+"conceptId": "stream"
 },
 "future": {
 "phonetic": "[ˈfjuːtʃər]",
@@ -4877,7 +5465,8 @@
 "synonyms": [
 "tomorrow",
 "prospect"
-]
+],
+"conceptId": "future"
 },
 "state": {
 "phonetic": "[steɪt]",
@@ -4886,7 +5475,8 @@
 "condition",
 "status",
 "situation"
-]
+],
+"conceptId": "state"
 },
 "temple": {
 "phonetic": "[ˈtempəl]",
@@ -4895,7 +5485,8 @@
 "shrine",
 "sanctuary",
 "church"
-]
+],
+"conceptId": "temple"
 },
 "dictionary": {
 "phonetic": "[ˈdɪkʃəneri]",
@@ -4903,11 +5494,13 @@
 "synonyms": [
 "lexicon",
 "glossary"
-]
+],
+"conceptId": "dictionary"
 },
 "grammar": {
 "phonetic": "[ˈɡræmər]",
-"example": "English grammar becomes easier when you practice a little daily."
+"example": "English grammar becomes easier when you practice a little daily.",
+"conceptId": "grammar"
 },
 "college": {
 "phonetic": "[ˈkɑːlɪdʒ]",
@@ -4916,7 +5509,8 @@
 "university",
 "academy",
 "school"
-]
+],
+"conceptId": "college"
 },
 "husband": {
 "phonetic": "[ˈhʌzbənd]",
@@ -4924,11 +5518,13 @@
 "synonyms": [
 "spouse",
 "partner"
-]
+],
+"conceptId": "husband"
 },
 "daughter": {
 "phonetic": "[ˈdɔːtər]",
-"example": "Their daughter won first prize in the school speech contest."
+"example": "Their daughter won first prize in the school speech contest.",
+"conceptId": "daughter"
 },
 "captain": {
 "phonetic": "[ˈkæptən]",
@@ -4938,7 +5534,8 @@
 "commander",
 "chief",
 "skipper"
-]
+],
+"conceptId": "captain"
 },
 "booth": {
 "phonetic": "[buːθ]",
@@ -4947,11 +5544,13 @@
 "stall",
 "stand",
 "cabin"
-]
+],
+"conceptId": "booth"
 },
 "iceberg": {
 "phonetic": "[ˈaɪsbərɡ]",
-"example": "A huge iceberg floated slowly in the cold northern sea."
+"example": "A huge iceberg floated slowly in the cold northern sea.",
+"conceptId": "iceberg"
 },
 "bubble": {
 "phonetic": "[ˈbʌbəl]",
@@ -4959,7 +5558,8 @@
 "synonyms": [
 "foam",
 "froth"
-]
+],
+"conceptId": "bubble"
 },
 "bottom": {
 "phonetic": "[ˈbɑːtəm]",
@@ -4968,7 +5568,8 @@
 "base",
 "foot",
 "underside"
-]
+],
+"conceptId": "bottom"
 },
 "prize": {
 "phonetic": "[praɪz]",
@@ -4977,11 +5578,13 @@
 "award",
 "reward",
 "trophy"
-]
+],
+"conceptId": "prize"
 },
 "bean": {
 "phonetic": "[biːn]",
-"example": "Mother soaked the beans in water before making the soup."
+"example": "Mother soaked the beans in water before making the soup.",
+"conceptId": "bean"
 },
 "race": {
 "phonetic": "[reɪs]",
@@ -4989,7 +5592,8 @@
 "synonyms": [
 "contest",
 "competition"
-]
+],
+"conceptId": "race"
 },
 "engineer": {
 "phonetic": "[ˈendʒəˈnɪr]",
@@ -4997,7 +5601,8 @@
 "synonyms": [
 "technician",
 "mechanic"
-]
+],
+"conceptId": "engineer"
 },
 "photographer": {
 "phonetic": "[fəˈtɑːɡrəfər]",
@@ -5005,7 +5610,8 @@
 "synonyms": [
 "cameraman",
 "photojournalist"
-]
+],
+"conceptId": "photographer"
 },
 "reason": {
 "phonetic": "[ˈriːzən]",
@@ -5015,7 +5621,8 @@
 "motive",
 "explanation",
 "ground"
-]
+],
+"conceptId": "reason"
 },
 "subway": {
 "phonetic": "[ˈsʌbweɪ]",
@@ -5024,7 +5631,8 @@
 "metro",
 "underground",
 "tube"
-]
+],
+"conceptId": "subway"
 },
 "fog": {
 "phonetic": "[fɑːɡ]",
@@ -5032,7 +5640,8 @@
 "synonyms": [
 "mist",
 "haze"
-]
+],
+"conceptId": "fog"
 },
 "answer": {
 "phonetic": "[ˈænsər]",
@@ -5041,7 +5650,8 @@
 "reply",
 "response",
 "respond"
-]
+],
+"conceptId": "answer"
 },
 "dinning room": {
 "phonetic": "[ˈdaɪnɪŋ ruːm]",
@@ -5049,7 +5659,8 @@
 "synonyms": [
 "dining hall",
 "cafeteria"
-]
+],
+"conceptId": "dinning room"
 },
 "step": {
 "phonetic": "[step]",
@@ -5058,7 +5669,8 @@
 "stair",
 "pace",
 "stride"
-]
+],
+"conceptId": "step"
 },
 "heat": {
 "phonetic": "[hiːt]",
@@ -5067,11 +5679,13 @@
 "warmth",
 "hotness",
 "temperature"
-]
+],
+"conceptId": "heat"
 },
 "bone": {
 "phonetic": "[boʊn]",
-"example": "The dog buried a large bone in the garden yesterday."
+"example": "The dog buried a large bone in the garden yesterday.",
+"conceptId": "bone"
 },
 "plant": {
 "phonetic": "[plænt]",
@@ -5080,11 +5694,13 @@
 "vegetation",
 "greenery",
 "sow"
-]
+],
+"conceptId": "plant"
 },
 "lamb": {
 "phonetic": "[læm]",
-"example": "A little lamb followed its mother across the green field."
+"example": "A little lamb followed its mother across the green field.",
+"conceptId": "lamb"
 },
 "rate": {
 "phonetic": "[reɪt]",
@@ -5093,7 +5709,8 @@
 "ratio",
 "percentage",
 "proportion"
-]
+],
+"conceptId": "rate"
 },
 "report": {
 "phonetic": "[rɪˈpɔːrt]",
@@ -5102,14 +5719,16 @@
 "account",
 "statement",
 "record"
-]
+],
+"conceptId": "report"
 },
 "turtle": {
 "phonetic": "[ˈtɜːrtəl]",
 "example": "A sea turtle swam past our boat near the coral reef.",
 "synonyms": [
 "tortoise"
-]
+],
+"conceptId": "turtle"
 },
 "bay": {
 "phonetic": "[beɪ]",
@@ -5118,7 +5737,8 @@
 "gulf",
 "cove",
 "inlet"
-]
+],
+"conceptId": "bay"
 },
 "holiday": {
 "phonetic": "[ˈhɑːlədeɪ]",
@@ -5127,7 +5747,8 @@
 "vacation",
 "break",
 "day off"
-]
+],
+"conceptId": "holiday"
 },
 "center": {
 "phonetic": "[ˈsentər]",
@@ -5137,7 +5758,8 @@
 "core",
 "heart",
 "hub"
-]
+],
+"conceptId": "center"
 },
 "cash": {
 "phonetic": "[kæʃ]",
@@ -5146,15 +5768,18 @@
 "money",
 "currency",
 "funds"
-]
+],
+"conceptId": "cash"
 },
 "wolf": {
 "phonetic": "[wʊlf]",
-"example": "A hungry wolf howled somewhere deep inside the dark winter forest."
+"example": "A hungry wolf howled somewhere deep inside the dark winter forest.",
+"conceptId": "wolf"
 },
 "operator": {
 "phonetic": "[ˈɑːpəreɪtər]",
-"example": "Long ago, an operator connected every phone call by hand."
+"example": "Long ago, an operator connected every phone call by hand.",
+"conceptId": "operator"
 },
 "fur": {
 "phonetic": "[fɜːr]",
@@ -5163,7 +5788,8 @@
 "hair",
 "coat",
 "pelt"
-]
+],
+"conceptId": "fur"
 },
 "shore": {
 "phonetic": "[ʃɔːr]",
@@ -5172,15 +5798,18 @@
 "beach",
 "coast",
 "seaside"
-]
+],
+"conceptId": "shore"
 },
 "owl": {
 "phonetic": "[aʊl]",
-"example": "An owl sat quietly on the branch and watched us pass."
+"example": "An owl sat quietly on the branch and watched us pass.",
+"conceptId": "owl"
 },
 "hunter": {
 "phonetic": "[ˈhʌntər]",
-"example": "The hunter walked slowly through the snow with his old dog."
+"example": "The hunter walked slowly through the snow with his old dog.",
+"conceptId": "hunter"
 },
 "pumpkin": {
 "phonetic": "[ˈpʌmpkɪn]",
@@ -5188,11 +5817,13 @@
 "synonyms": [
 "squash",
 "gourd"
-]
+],
+"conceptId": "pumpkin"
 },
 "handshake": {
 "phonetic": "[ˈhændʃeɪk]",
-"example": "The two leaders ended their meeting with a friendly handshake."
+"example": "The two leaders ended their meeting with a friendly handshake.",
+"conceptId": "handshake"
 },
 "bike": {
 "phonetic": "[baɪk]",
@@ -5200,7 +5831,8 @@
 "synonyms": [
 "bicycle",
 "cycle"
-]
+],
+"conceptId": "bike"
 },
 "beach": {
 "phonetic": "[biːtʃ]",
@@ -5210,7 +5842,8 @@
 "coast",
 "seaside",
 "sands"
-]
+],
+"conceptId": "beach"
 },
 "god": {
 "phonetic": "[ɡɑːd]",
@@ -5218,11 +5851,13 @@
 "synonyms": [
 "deity",
 "creator"
-]
+],
+"conceptId": "god"
 },
 "cough": {
 "phonetic": "[kɑːf]",
-"example": "My little brother has a bad cough because of the cold air."
+"example": "My little brother has a bad cough because of the cold air.",
+"conceptId": "cough"
 },
 "shell": {
 "phonetic": "[ʃel]",
@@ -5230,7 +5865,8 @@
 "synonyms": [
 "husk",
 "case"
-]
+],
+"conceptId": "shell"
 },
 "business": {
 "phonetic": "[ˈbɪznəs]",
@@ -5239,7 +5875,8 @@
 "trade",
 "commerce",
 "company"
-]
+],
+"conceptId": "business"
 },
 "restaurant": {
 "phonetic": "[ˈrestərɑːnt]",
@@ -5248,11 +5885,13 @@
 "diner",
 "eatery",
 "cafe"
-]
+],
+"conceptId": "restaurant"
 },
 "sheep": {
 "phonetic": "[ʃiːp]",
-"example": "Hundreds of sheep were eating grass on the wide green hill."
+"example": "Hundreds of sheep were eating grass on the wide green hill.",
+"conceptId": "sheep"
 },
 "officer": {
 "phonetic": "[ˈɔːfəsər]",
@@ -5260,14 +5899,16 @@
 "synonyms": [
 "official",
 "policeman"
-]
+],
+"conceptId": "officer"
 },
 "hometown": {
 "phonetic": "[ˈhoʊmtaʊn]",
 "example": "Whenever I hear that song, I think of my quiet hometown.",
 "synonyms": [
 "birthplace"
-]
+],
+"conceptId": "hometown"
 },
 "coil": {
 "phonetic": "[kɔɪl]",
@@ -5277,19 +5918,23 @@
 "loop",
 "roll",
 "winding"
-]
+],
+"conceptId": "coil"
 },
 "ceiling": {
 "phonetic": "[ˈsiːlɪŋ]",
-"example": "Someone painted tiny silver stars on my bedroom ceiling."
+"example": "Someone painted tiny silver stars on my bedroom ceiling.",
+"conceptId": "ceiling"
 },
 "turkey": {
 "phonetic": "[ˈtɜːrki]",
-"example": "The whole family shared a roasted turkey at the holiday dinner."
+"example": "The whole family shared a roasted turkey at the holiday dinner.",
+"conceptId": "turkey"
 },
 "towel": {
 "phonetic": "[ˈtaʊəl]",
-"example": "Please bring me a clean towel before you take a shower."
+"example": "Please bring me a clean towel before you take a shower.",
+"conceptId": "towel"
 },
 "matter": {
 "phonetic": "[ˈmætər]",
@@ -5298,11 +5943,13 @@
 "issue",
 "affair",
 "subject"
-]
+],
+"conceptId": "matter"
 },
 "chopstick": {
 "phonetic": "[ˈtʃɑːpstɪk]",
-"example": "One chopstick fell under the table while I was eating noodles."
+"example": "One chopstick fell under the table while I was eating noodles.",
+"conceptId": "chopstick"
 },
 "seat": {
 "phonetic": "[siːt]",
@@ -5311,7 +5958,8 @@
 "chair",
 "bench",
 "place"
-]
+],
+"conceptId": "seat"
 },
 "board": {
 "phonetic": "[bɔːrd]",
@@ -5320,7 +5968,8 @@
 "plank",
 "panel",
 "committee"
-]
+],
+"conceptId": "board"
 },
 "goal": {
 "phonetic": "[ɡoʊl]",
@@ -5329,7 +5978,8 @@
 "aim",
 "target",
 "objective"
-]
+],
+"conceptId": "goal"
 },
 "drugstore": {
 "phonetic": "[ˈdrʌɡstɔːr]",
@@ -5337,19 +5987,23 @@
 "synonyms": [
 "pharmacy",
 "chemist"
-]
+],
+"conceptId": "drugstore"
 },
 "rat": {
 "phonetic": "[ræt]",
-"example": "A gray rat ran across the floor of the old warehouse."
+"example": "A gray rat ran across the floor of the old warehouse.",
+"conceptId": "rat"
 },
 "butterfly": {
 "phonetic": "[ˈbʌtərflaɪ]",
-"example": "A yellow butterfly landed softly on the flower beside me."
+"example": "A yellow butterfly landed softly on the flower beside me.",
+"conceptId": "butterfly"
 },
 "flute": {
 "phonetic": "[fluːt]",
-"example": "Tom plays the flute beautifully in the school orchestra."
+"example": "Tom plays the flute beautifully in the school orchestra.",
+"conceptId": "flute"
 },
 "couple": {
 "phonetic": "[ˈkʌpəl]",
@@ -5358,7 +6012,8 @@
 "pair",
 "two",
 "duo"
-]
+],
+"conceptId": "couple"
 },
 "beer": {
 "phonetic": "[bɪr]",
@@ -5366,7 +6021,8 @@
 "synonyms": [
 "ale",
 "lager"
-]
+],
+"conceptId": "beer"
 },
 "background": {
 "phonetic": "[ˈbækɡraʊnd]",
@@ -5375,7 +6031,8 @@
 "setting",
 "backdrop",
 "history"
-]
+],
+"conceptId": "background"
 },
 "bottle": {
 "phonetic": "[ˈbɑːtəl]",
@@ -5383,7 +6040,8 @@
 "synonyms": [
 "flask",
 "jar"
-]
+],
+"conceptId": "bottle"
 },
 "body": {
 "phonetic": "[ˈbɑːdi]",
@@ -5392,7 +6050,8 @@
 "figure",
 "frame",
 "physique"
-]
+],
+"conceptId": "body"
 },
 "group": {
 "phonetic": "[ɡruːp]",
@@ -5402,7 +6061,8 @@
 "crowd",
 "set",
 "cluster"
-]
+],
+"conceptId": "group"
 },
 "village": {
 "phonetic": "[ˈvɪlədʒ]",
@@ -5411,11 +6071,13 @@
 "town",
 "settlement",
 "hamlet"
-]
+],
+"conceptId": "village"
 },
 "beef": {
 "phonetic": "[biːf]",
-"example": "Mother cooked beef soup for us on a cold winter evening."
+"example": "Mother cooked beef soup for us on a cold winter evening.",
+"conceptId": "beef"
 },
 "load": {
 "phonetic": "[loʊd]",
@@ -5424,7 +6086,8 @@
 "burden",
 "cargo",
 "freight"
-]
+],
+"conceptId": "load"
 },
 "coin": {
 "phonetic": "[kɔɪn]",
@@ -5432,14 +6095,16 @@
 "synonyms": [
 "money",
 "change"
-]
+],
+"conceptId": "coin"
 },
 "bookstore": {
 "phonetic": "[ˈbʊkstɔːr]",
 "example": "There is a small bookstore between the bakery and the bank.",
 "synonyms": [
 "bookshop"
-]
+],
+"conceptId": "bookstore"
 },
 "label": {
 "phonetic": "[ˈleɪbəl]",
@@ -5448,7 +6113,8 @@
 "tag",
 "sticker",
 "mark"
-]
+],
+"conceptId": "label"
 },
 "port": {
 "phonetic": "[pɔːrt]",
@@ -5457,7 +6123,8 @@
 "harbor",
 "dock",
 "haven"
-]
+],
+"conceptId": "port"
 },
 "quarter": {
 "phonetic": "[ˈkwɔːrtər]",
@@ -5465,7 +6132,8 @@
 "synonyms": [
 "fourth",
 "one-fourth"
-]
+],
+"conceptId": "quarter"
 },
 "sunrise": {
 "phonetic": "[ˈsʌnraɪz]",
@@ -5473,7 +6141,8 @@
 "synonyms": [
 "dawn",
 "daybreak"
-]
+],
+"conceptId": "sunrise"
 },
 "sunshine": {
 "phonetic": "[ˈsʌnʃaɪn]",
@@ -5481,14 +6150,16 @@
 "synonyms": [
 "sunlight",
 "daylight"
-]
+],
+"conceptId": "sunshine"
 },
 "wedding": {
 "phonetic": "[ˈwedɪŋ]",
 "example": "My aunt's wedding will be held in a small country church.",
 "synonyms": [
 "marriage"
-]
+],
+"conceptId": "wedding"
 },
 "crown": {
 "phonetic": "[kraʊn]",
@@ -5497,7 +6168,8 @@
 "tiara",
 "coronet",
 "diadem"
-]
+],
+"conceptId": "crown"
 },
 "seed": {
 "phonetic": "[siːd]",
@@ -5506,15 +6178,18 @@
 "grain",
 "kernel",
 "sow"
-]
+],
+"conceptId": "seed"
 },
 "coal": {
 "phonetic": "[koʊl]",
-"example": "People once burned coal to heat their houses in winter."
+"example": "People once burned coal to heat their houses in winter.",
+"conceptId": "coal"
 },
 "comb": {
 "phonetic": "[koʊm]",
-"example": "She lost her comb, so she fixed her hair with fingers."
+"example": "She lost her comb, so she fixed her hair with fingers.",
+"conceptId": "comb"
 },
 "dream": {
 "phonetic": "[driːm]",
@@ -5523,15 +6198,18 @@
 "vision",
 "fantasy",
 "hope"
-]
+],
+"conceptId": "dream"
 },
 "sugar": {
 "phonetic": "[ˈʃʊɡər]",
-"example": "Add a little sugar if the lemon tea tastes too sour."
+"example": "Add a little sugar if the lemon tea tastes too sour.",
+"conceptId": "sugar"
 },
 "mile": {
 "phonetic": "[maɪl]",
-"example": "The nearest hospital is about one mile from our house."
+"example": "The nearest hospital is about one mile from our house.",
+"conceptId": "mile"
 },
 "flashlight": {
 "phonetic": "[ˈflæʃlaɪt]",
@@ -5539,7 +6217,8 @@
 "synonyms": [
 "torch",
 "lamp"
-]
+],
+"conceptId": "flashlight"
 },
 "vegetable": {
 "phonetic": "[ˈvedʒtəbəl]",
@@ -5547,7 +6226,8 @@
 "synonyms": [
 "greens",
 "produce"
-]
+],
+"conceptId": "vegetable"
 },
 "wood": {
 "phonetic": "[wʊd]",
@@ -5556,7 +6236,8 @@
 "timber",
 "lumber",
 "forest"
-]
+],
+"conceptId": "wood"
 },
 "belt": {
 "phonetic": "[belt]",
@@ -5564,7 +6245,8 @@
 "synonyms": [
 "band",
 "strap"
-]
+],
+"conceptId": "belt"
 },
 "tourist": {
 "phonetic": "[ˈtʊrəst]",
@@ -5573,18 +6255,21 @@
 "traveler",
 "visitor",
 "sightseer"
-]
+],
+"conceptId": "tourist"
 },
 "airport": {
 "phonetic": "[ˈerpɔːrt]",
 "example": "We arrived at the airport two hours before our flight.",
 "synonyms": [
 "airfield"
-]
+],
+"conceptId": "airport"
 },
 "passport": {
 "phonetic": "[ˈpæspɔːrt]",
-"example": "Don't forget your passport, or they won't let you board."
+"example": "Don't forget your passport, or they won't let you board.",
+"conceptId": "passport"
 },
 "plate": {
 "phonetic": "[pleɪt]",
@@ -5593,7 +6278,8 @@
 "dish",
 "platter",
 "tray"
-]
+],
+"conceptId": "plate"
 },
 "stone": {
 "phonetic": "[stoʊn]",
@@ -5602,26 +6288,31 @@
 "rock",
 "pebble",
 "boulder"
-]
+],
+"conceptId": "stone"
 },
 "downtown": {
 "phonetic": "[ˈdaʊnˈtaʊn]",
 "example": "On Saturday nights, downtown is crowded with young people.",
 "synonyms": [
 "city center"
-]
+],
+"conceptId": "downtown"
 },
 "cousin": {
 "phonetic": "[ˈkʌzən]",
-"example": "My cousin from Busan will stay at our house this summer."
+"example": "My cousin from Busan will stay at our house this summer.",
+"conceptId": "cousin"
 },
 "tooth": {
 "phonetic": "[tuːθ]",
-"example": "The dentist pulled out my bad tooth in ten minutes."
+"example": "The dentist pulled out my bad tooth in ten minutes.",
+"conceptId": "tooth"
 },
 "potato": {
 "phonetic": "[pəˈteɪtoʊ]",
-"example": "Wash the potato well before you put it in the pot."
+"example": "Wash the potato well before you put it in the pot.",
+"conceptId": "potato"
 },
 "blanket": {
 "phonetic": "[ˈblæŋkət]",
@@ -5630,7 +6321,8 @@
 "quilt",
 "cover",
 "throw"
-]
+],
+"conceptId": "blanket"
 },
 "creek": {
 "phonetic": "[kriːk]",
@@ -5638,11 +6330,13 @@
 "synonyms": [
 "brook",
 "stream"
-]
+],
+"conceptId": "creek"
 },
 "nail": {
 "phonetic": "[neɪl]",
-"example": "Please cut your nails; they are getting really long."
+"example": "Please cut your nails; they are getting really long.",
+"conceptId": "nail"
 },
 "letter": {
 "phonetic": "[ˈletər]",
@@ -5651,11 +6345,13 @@
 "note",
 "message",
 "character"
-]
+],
+"conceptId": "letter"
 },
 "date": {
 "phonetic": "[deɪt]",
-"example": "Please write today's date at the top of your paper."
+"example": "Please write today's date at the top of your paper.",
+"conceptId": "date"
 },
 "store": {
 "phonetic": "[stɔːr]",
@@ -5664,15 +6360,18 @@
 "shop",
 "market",
 "stock"
-]
+],
+"conceptId": "store"
 },
 "beggar": {
 "phonetic": "[ˈbeɡər]",
-"example": "A thin beggar sat by the gate asking for food."
+"example": "A thin beggar sat by the gate asking for food.",
+"conceptId": "beggar"
 },
 "bedside": {
 "phonetic": "[ˈbedsaɪd]",
-"example": "My glasses are always on the small bedside table."
+"example": "My glasses are always on the small bedside table.",
+"conceptId": "bedside"
 },
 "bill": {
 "phonetic": "[bɪl]",
@@ -5681,7 +6380,8 @@
 "check",
 "invoice",
 "note"
-]
+],
+"conceptId": "bill"
 },
 "doll": {
 "phonetic": "[dɑːl]",
@@ -5690,30 +6390,36 @@
 "figure",
 "puppet",
 "toy"
-]
+],
+"conceptId": "doll"
 },
 "snake": {
 "phonetic": "[sneɪk]",
 "example": "A long green snake slid quietly through the tall grass.",
 "synonyms": [
 "serpent"
-]
+],
+"conceptId": "snake"
 },
 "mouse": {
 "phonetic": "[maʊs]",
-"example": "A little mouse ate the cheese we left in the kitchen."
+"example": "A little mouse ate the cheese we left in the kitchen.",
+"conceptId": "mouse"
 },
 "deer": {
 "phonetic": "[dɪr]",
-"example": "Two deer came out of the forest and looked at us."
+"example": "Two deer came out of the forest and looked at us.",
+"conceptId": "deer"
 },
 "frog": {
 "phonetic": "[frɑːɡ]",
-"example": "A green frog jumped into the pond with a loud splash."
+"example": "A green frog jumped into the pond with a loud splash.",
+"conceptId": "frog"
 },
 "pepper": {
 "phonetic": "[ˈpepər]",
-"example": "Add a little salt and pepper to make the soup tastier."
+"example": "Add a little salt and pepper to make the soup tastier.",
+"conceptId": "pepper"
 },
 "rest": {
 "phonetic": "[rest]",
@@ -5722,7 +6428,8 @@
 "break",
 "relaxation",
 "pause"
-]
+],
+"conceptId": "rest"
 },
 "tower": {
 "phonetic": "[ˈtaʊər]",
@@ -5730,11 +6437,13 @@
 "synonyms": [
 "spire",
 "steeple"
-]
+],
+"conceptId": "tower"
 },
 "bridge": {
 "phonetic": "[brɪdʒ]",
-"example": "A long bridge connects the island to the busy city."
+"example": "A long bridge connects the island to the busy city.",
+"conceptId": "bridge"
 },
 "ground": {
 "phonetic": "[ɡraʊnd]",
@@ -5744,7 +6453,8 @@
 "earth",
 "soil",
 "field"
-]
+],
+"conceptId": "ground"
 },
 "cloth": {
 "phonetic": "[klɔːθ]",
@@ -5753,7 +6463,8 @@
 "fabric",
 "material",
 "textile"
-]
+],
+"conceptId": "cloth"
 },
 "post": {
 "phonetic": "[poʊst]",
@@ -5761,7 +6472,8 @@
 "synonyms": [
 "mail",
 "letters"
-]
+],
+"conceptId": "post"
 },
 "job": {
 "phonetic": "[dʒɑːb]",
@@ -5771,7 +6483,8 @@
 "occupation",
 "task",
 "position"
-]
+],
+"conceptId": "job"
 },
 "town": {
 "phonetic": "[taʊn]",
@@ -5780,7 +6493,8 @@
 "city",
 "village",
 "borough"
-]
+],
+"conceptId": "town"
 },
 "fun": {
 "phonetic": "[fʌn]",
@@ -5790,7 +6504,8 @@
 "amusement",
 "pleasure",
 "play"
-]
+],
+"conceptId": "fun"
 },
 "bathroom": {
 "phonetic": "[ˈbæθruːm]",
@@ -5799,11 +6514,13 @@
 "restroom",
 "washroom",
 "toilet"
-]
+],
+"conceptId": "bathroom"
 },
 "tail": {
 "phonetic": "[teɪl]",
-"example": "The happy puppy wagged its tail as soon as I entered."
+"example": "The happy puppy wagged its tail as soon as I entered.",
+"conceptId": "tail"
 },
 "mayor": {
 "phonetic": "[ˈmeɪər]",
@@ -5811,7 +6528,8 @@
 "synonyms": [
 "governor",
 "chief"
-]
+],
+"conceptId": "mayor"
 },
 "piece": {
 "phonetic": "[piːs]",
@@ -5821,23 +6539,28 @@
 "fragment",
 "part",
 "chunk"
-]
+],
+"conceptId": "piece"
 },
 "fruit": {
 "phonetic": "[fruːt]",
-"example": "Fresh fruit tastes much better than sweet candy."
+"example": "Fresh fruit tastes much better than sweet candy.",
+"conceptId": "fruit"
 },
 "british": {
 "phonetic": "[ˈbrɪtɪʃ]",
-"example": "A British student joined our class and quickly made friends."
+"example": "A British student joined our class and quickly made friends.",
+"conceptId": "british"
 },
 "french": {
 "phonetic": "[frentʃ]",
-"example": "A French visitor asked for directions in very polite English."
+"example": "A French visitor asked for directions in very polite English.",
+"conceptId": "french"
 },
 "german": {
 "phonetic": "[ˈdʒɜːrmən]",
-"example": "My aunt married a German, and now they live in Berlin."
+"example": "My aunt married a German, and now they live in Berlin.",
+"conceptId": "german"
 },
 "sale": {
 "phonetic": "[seɪl]",
@@ -5846,7 +6569,8 @@
 "selling",
 "deal",
 "bargain"
-]
+],
+"conceptId": "sale"
 },
 "rope": {
 "phonetic": "[roʊp]",
@@ -5855,7 +6579,8 @@
 "cord",
 "line",
 "string"
-]
+],
+"conceptId": "rope"
 },
 "umbrella": {
 "phonetic": "[əmˈbrelə]",
@@ -5863,11 +6588,13 @@
 "synonyms": [
 "parasol",
 "sunshade"
-]
+],
+"conceptId": "umbrella"
 },
 "dollar": {
 "phonetic": "[ˈdɑːlər]",
-"example": "This comic book costs only one dollar at the school festival."
+"example": "This comic book costs only one dollar at the school festival.",
+"conceptId": "dollar"
 },
 "mistake": {
 "phonetic": "[mɪˈsteɪk]",
@@ -5877,7 +6604,8 @@
 "fault",
 "slip",
 "misunderstand"
-]
+],
+"conceptId": "mistake"
 },
 "birth": {
 "phonetic": "[bɜːrθ]",
@@ -5886,7 +6614,8 @@
 "childbirth",
 "delivery",
 "nativity"
-]
+],
+"conceptId": "birth"
 },
 "pilot": {
 "phonetic": "[ˈpaɪlət]",
@@ -5895,11 +6624,13 @@
 "aviator",
 "flyer",
 "navigator"
-]
+],
+"conceptId": "pilot"
 },
 "none": {
 "phonetic": "[nʌn]",
-"example": "None of my classmates knew the answer to that difficult question."
+"example": "None of my classmates knew the answer to that difficult question.",
+"conceptId": "none"
 },
 "front": {
 "phonetic": "[frʌnt]",
@@ -5907,7 +6638,8 @@
 "synonyms": [
 "face",
 "forefront"
-]
+],
+"conceptId": "front"
 },
 "present": {
 "phonetic": "[ˈprezənt]",
@@ -5915,7 +6647,8 @@
 "synonyms": [
 "current",
 "now"
-]
+],
+"conceptId": "present"
 },
 "nickname": {
 "phonetic": "[ˈnɪkneɪm]",
@@ -5923,7 +6656,8 @@
 "synonyms": [
 "pet name",
 "alias"
-]
+],
+"conceptId": "nickname"
 },
 "war": {
 "phonetic": "[wɔːr]",
@@ -5932,7 +6666,8 @@
 "battle",
 "conflict",
 "fighting"
-]
+],
+"conceptId": "war"
 },
 "telephone": {
 "phonetic": "[ˈteləfoʊn]",
@@ -5941,7 +6676,8 @@
 "phone",
 "call",
 "ring"
-]
+],
+"conceptId": "telephone"
 },
 "pair": {
 "phonetic": "[per]",
@@ -5950,11 +6686,13 @@
 "couple",
 "set",
 "duo"
-]
+],
+"conceptId": "pair"
 },
 "weather": {
 "phonetic": "[ˈweðər]",
-"example": "The weather was so nice that we ate lunch outside."
+"example": "The weather was so nice that we ate lunch outside.",
+"conceptId": "weather"
 },
 "dish": {
 "phonetic": "[dɪʃ]",
@@ -5964,7 +6702,8 @@
 "bowl",
 "food",
 "course"
-]
+],
+"conceptId": "dish"
 },
 "hole": {
 "phonetic": "[hoʊl]",
@@ -5974,7 +6713,8 @@
 "gap",
 "cavity",
 "pit"
-]
+],
+"conceptId": "hole"
 },
 "plane": {
 "phonetic": "[pleɪn]",
@@ -5983,7 +6723,8 @@
 "airplane",
 "aircraft",
 "jet"
-]
+],
+"conceptId": "plane"
 },
 "living room": {
 "phonetic": "[ˈlɪvɪŋ ruːm]",
@@ -5991,7 +6732,8 @@
 "synonyms": [
 "lounge",
 "sitting room"
-]
+],
+"conceptId": "living room"
 },
 "gun": {
 "phonetic": "[ɡʌn]",
@@ -6000,14 +6742,16 @@
 "pistol",
 "rifle",
 "firearm"
-]
+],
+"conceptId": "gun"
 },
 "meat": {
 "phonetic": "[miːt]",
 "example": "My brother never eats meat because he really loves animals.",
 "synonyms": [
 "flesh"
-]
+],
+"conceptId": "meat"
 },
 "cover": {
 "phonetic": "[ˈkʌvər]",
@@ -6017,7 +6761,8 @@
 "wrap",
 "conceal",
 "protect"
-]
+],
+"conceptId": "cover"
 },
 "grass": {
 "phonetic": "[ɡræs]",
@@ -6026,7 +6771,8 @@
 "lawn",
 "turf",
 "weed"
-]
+],
+"conceptId": "grass"
 },
 "watch": {
 "phonetic": "[wɑːtʃ]",
@@ -6035,7 +6781,8 @@
 "observe",
 "view",
 "look at"
-]
+],
+"conceptId": "watch"
 },
 "word": {
 "phonetic": "[wɜːrd]",
@@ -6043,7 +6790,8 @@
 "synonyms": [
 "term",
 "expression"
-]
+],
+"conceptId": "word"
 },
 "explain": {
 "phonetic": "[ɪksˈpleɪn]",
@@ -6052,7 +6800,8 @@
 "describe",
 "clarify",
 "tell"
-]
+],
+"conceptId": "explain"
 },
 "wear": {
 "phonetic": "[wer]",
@@ -6061,7 +6810,8 @@
 "put on",
 "dress in",
 "have on"
-]
+],
+"conceptId": "wear"
 },
 "amuse": {
 "phonetic": "[əˈmjuːz]",
@@ -6070,7 +6820,8 @@
 "entertain",
 "delight",
 "please"
-]
+],
+"conceptId": "amuse"
 },
 "suppose": {
 "phonetic": "[səˈpoʊz]",
@@ -6079,7 +6830,8 @@
 "assume",
 "guess",
 "imagine"
-]
+],
+"conceptId": "suppose"
 },
 "leap": {
 "phonetic": "[liːp]",
@@ -6088,7 +6840,8 @@
 "jump",
 "spring",
 "bound"
-]
+],
+"conceptId": "leap"
 },
 "bury": {
 "phonetic": "[ˈberi]",
@@ -6097,7 +6850,8 @@
 "cover",
 "hide",
 "conceal"
-]
+],
+"conceptId": "bury"
 },
 "engage": {
 "phonetic": "[enˈɡeɪdʒ]",
@@ -6106,7 +6860,8 @@
 "involve",
 "occupy",
 "absorb"
-]
+],
+"conceptId": "engage"
 },
 "sow": {
 "phonetic": "[saʊ]",
@@ -6115,7 +6870,8 @@
 "plant",
 "scatter",
 "seed"
-]
+],
+"conceptId": "sow"
 },
 "lift": {
 "phonetic": "[lɪft]",
@@ -6124,7 +6880,8 @@
 "raise",
 "pick up",
 "hoist"
-]
+],
+"conceptId": "lift"
 },
 "bow": {
 "phonetic": "[baʊ]",
@@ -6133,7 +6890,8 @@
 "bend",
 "nod",
 "stoop"
-]
+],
+"conceptId": "bow"
 },
 "rub": {
 "phonetic": "[rʌb]",
@@ -6142,7 +6900,8 @@
 "scrub",
 "wipe",
 "stroke"
-]
+],
+"conceptId": "rub"
 },
 "bite": {
 "phonetic": "[baɪt]",
@@ -6151,7 +6910,8 @@
 "chew",
 "nip",
 "snap"
-]
+],
+"conceptId": "bite"
 },
 "vote": {
 "phonetic": "[voʊt]",
@@ -6160,7 +6920,8 @@
 "elect",
 "poll",
 "choose"
-]
+],
+"conceptId": "vote"
 },
 "hop": {
 "phonetic": "[hɑːp]",
@@ -6169,7 +6930,8 @@
 "jump",
 "skip",
 "bounce"
-]
+],
+"conceptId": "hop"
 },
 "imagine": {
 "phonetic": "[ɪˈmædʒən]",
@@ -6178,7 +6940,8 @@
 "picture",
 "suppose",
 "visualize"
-]
+],
+"conceptId": "imagine"
 },
 "allow": {
 "phonetic": "[əˈlaʊ]",
@@ -6187,7 +6950,8 @@
 "permit",
 "let",
 "approve"
-]
+],
+"conceptId": "allow"
 },
 "offer": {
 "phonetic": "[ˈɔːfər]",
@@ -6197,7 +6961,8 @@
 "present",
 "give",
 "supply"
-]
+],
+"conceptId": "offer"
 },
 "gain": {
 "phonetic": "[ɡeɪn]",
@@ -6206,7 +6971,8 @@
 "get",
 "obtain",
 "earn"
-]
+],
+"conceptId": "gain"
 },
 "alarm": {
 "phonetic": "[əˈlɑːrm]",
@@ -6215,7 +6981,8 @@
 "warning",
 "alert",
 "signal"
-]
+],
+"conceptId": "alarm"
 },
 "obey": {
 "phonetic": "[oʊˈbeɪ]",
@@ -6224,7 +6991,8 @@
 "follow",
 "comply",
 "submit"
-]
+],
+"conceptId": "obey"
 },
 "steal": {
 "phonetic": "[stiːl]",
@@ -6233,7 +7001,8 @@
 "rob",
 "snatch",
 "take"
-]
+],
+"conceptId": "steal"
 },
 "dig": {
 "phonetic": "[dɪɡ]",
@@ -6242,7 +7011,8 @@
 "excavate",
 "shovel",
 "burrow"
-]
+],
+"conceptId": "dig"
 },
 "choose": {
 "phonetic": "[tʃuːz]",
@@ -6251,7 +7021,8 @@
 "pick",
 "select",
 "opt for"
-]
+],
+"conceptId": "choose"
 },
 "receive": {
 "phonetic": "[rəˈsiːv]",
@@ -6260,7 +7031,8 @@
 "get",
 "accept",
 "obtain"
-]
+],
+"conceptId": "receive"
 },
 "bet": {
 "phonetic": "[bet]",
@@ -6269,7 +7041,8 @@
 "wager",
 "gamble",
 "stake"
-]
+],
+"conceptId": "bet"
 },
 "hurt": {
 "phonetic": "[hɜːrt]",
@@ -6279,7 +7052,8 @@
 "harm",
 "wound",
 "ache"
-]
+],
+"conceptId": "hurt"
 },
 "burn": {
 "phonetic": "[bɜːrn]",
@@ -6288,7 +7062,8 @@
 "blaze",
 "scorch",
 "flame"
-]
+],
+"conceptId": "burn"
 },
 "sink": {
 "phonetic": "[sɪŋk]",
@@ -6297,7 +7072,8 @@
 "drop",
 "descend",
 "submerge"
-]
+],
+"conceptId": "sink"
 },
 "decide": {
 "phonetic": "[dɪˈsaɪd]",
@@ -6306,7 +7082,8 @@
 "determine",
 "choose",
 "settle"
-]
+],
+"conceptId": "decide"
 },
 "beg": {
 "phonetic": "[beɡ]",
@@ -6316,7 +7093,8 @@
 "implore",
 "ask",
 "request"
-]
+],
+"conceptId": "beg"
 },
 "reply": {
 "phonetic": "[rɪˈplaɪ]",
@@ -6325,7 +7103,8 @@
 "answer",
 "respond",
 "react"
-]
+],
+"conceptId": "reply"
 },
 "tear": {
 "phonetic": "[ter]",
@@ -6334,7 +7113,8 @@
 "rip",
 "split",
 "shred"
-]
+],
+"conceptId": "tear"
 },
 "flow": {
 "phonetic": "[floʊ]",
@@ -6343,7 +7123,8 @@
 "stream",
 "run",
 "pour"
-]
+],
+"conceptId": "flow"
 },
 "remember": {
 "phonetic": "[rɪˈmembər]",
@@ -6351,7 +7132,8 @@
 "synonyms": [
 "recall",
 "recollect"
-]
+],
+"conceptId": "remember"
 },
 "appear": {
 "phonetic": "[əˈpɪr]",
@@ -6361,7 +7143,8 @@
 "emerge",
 "seem",
 "look"
-]
+],
+"conceptId": "appear"
 },
 "breathe": {
 "phonetic": "[briːð]",
@@ -6369,11 +7152,13 @@
 "synonyms": [
 "inhale",
 "respire"
-]
+],
+"conceptId": "breathe"
 },
 "whistle": {
 "phonetic": "[ˈwɪsəl]",
-"example": "My uncle whistles a cheerful tune while he washes the car."
+"example": "My uncle whistles a cheerful tune while he washes the car.",
+"conceptId": "whistle"
 },
 "draw": {
 "phonetic": "[drɔː]",
@@ -6382,7 +7167,8 @@
 "pull",
 "drag",
 "sketch"
-]
+],
+"conceptId": "draw"
 },
 "sound": {
 "phonetic": "[saʊnd]",
@@ -6390,7 +7176,8 @@
 "synonyms": [
 "noise",
 "tone"
-]
+],
+"conceptId": "sound"
 },
 "save": {
 "phonetic": "[seɪv]",
@@ -6399,7 +7186,8 @@
 "rescue",
 "spare",
 "preserve"
-]
+],
+"conceptId": "save"
 },
 "continue": {
 "phonetic": "[kənˈtɪnju]",
@@ -6408,7 +7196,8 @@
 "go on",
 "keep on",
 "last"
-]
+],
+"conceptId": "continue"
 },
 "check": {
 "phonetic": "[tʃek]",
@@ -6418,7 +7207,8 @@
 "inspect",
 "verify",
 "confirm"
-]
+],
+"conceptId": "check"
 },
 "sail": {
 "phonetic": "[seɪl]",
@@ -6427,7 +7217,8 @@
 "cruise",
 "navigate",
 "voyage"
-]
+],
+"conceptId": "sail"
 },
 "wake": {
 "phonetic": "[weɪk]",
@@ -6437,7 +7228,8 @@
 "rouse",
 "get up",
 "arise"
-]
+],
+"conceptId": "wake"
 },
 "agree": {
 "phonetic": "[əˈɡriː]",
@@ -6446,7 +7238,8 @@
 "consent",
 "accept",
 "approve"
-]
+],
+"conceptId": "agree"
 },
 "hang": {
 "phonetic": "[hæŋ]",
@@ -6455,7 +7248,8 @@
 "suspend",
 "hook",
 "dangle"
-]
+],
+"conceptId": "hang"
 },
 "record": {
 "phonetic": "[rəˈkɔːrd]",
@@ -6464,7 +7258,8 @@
 "document",
 "report",
 "log"
-]
+],
+"conceptId": "record"
 },
 "drop": {
 "phonetic": "[drɑːp]",
@@ -6473,7 +7268,8 @@
 "fall",
 "let fall",
 "lower"
-]
+],
+"conceptId": "drop"
 },
 "climb": {
 "phonetic": "[klaɪm]",
@@ -6483,7 +7279,8 @@
 "scale",
 "go up",
 "mount"
-]
+],
+"conceptId": "climb"
 },
 "add": {
 "phonetic": "[æd]",
@@ -6493,7 +7290,8 @@
 "attach",
 "include",
 "combine"
-]
+],
+"conceptId": "add"
 },
 "shine": {
 "phonetic": "[ʃaɪn]",
@@ -6502,7 +7300,8 @@
 "glow",
 "sparkle",
 "beam"
-]
+],
+"conceptId": "shine"
 },
 "invite": {
 "phonetic": "[ɪnˈvaɪt]",
@@ -6511,7 +7310,8 @@
 "ask",
 "call",
 "welcome"
-]
+],
+"conceptId": "invite"
 },
 "join": {
 "phonetic": "[dʒɔɪn]",
@@ -6520,7 +7320,8 @@
 "connect",
 "unite",
 "attach"
-]
+],
+"conceptId": "join"
 },
 "hide": {
 "phonetic": "[haɪd]",
@@ -6529,7 +7330,8 @@
 "conceal",
 "cover",
 "bury"
-]
+],
+"conceptId": "hide"
 },
 "bring": {
 "phonetic": "[brɪŋ]",
@@ -6538,14 +7340,16 @@
 "carry",
 "fetch",
 "deliver"
-]
+],
+"conceptId": "bring"
 },
 "wink": {
 "phonetic": "[wɪŋk]",
 "example": "He winked at me to show that he was joking.",
 "synonyms": [
 "blink"
-]
+],
+"conceptId": "wink"
 },
 "shoot": {
 "phonetic": "[ʃuːt]",
@@ -6554,7 +7358,8 @@
 "fire",
 "launch",
 "blast"
-]
+],
+"conceptId": "shoot"
 },
 "roll": {
 "phonetic": "[roʊl]",
@@ -6564,7 +7369,8 @@
 "spin",
 "tumble",
 "revolve"
-]
+],
+"conceptId": "roll"
 },
 "pull": {
 "phonetic": "[pʊl]",
@@ -6574,7 +7380,8 @@
 "draw",
 "tug",
 "haul"
-]
+],
+"conceptId": "pull"
 },
 "push": {
 "phonetic": "[pʊʃ]",
@@ -6583,7 +7390,8 @@
 "press",
 "shove",
 "thrust"
-]
+],
+"conceptId": "push"
 },
 "guess": {
 "phonetic": "[ɡes]",
@@ -6593,7 +7401,8 @@
 "assume",
 "imagine",
 "estimate"
-]
+],
+"conceptId": "guess"
 },
 "happen": {
 "phonetic": "[ˈhæpən]",
@@ -6602,7 +7411,8 @@
 "occur",
 "arise",
 "take place"
-]
+],
+"conceptId": "happen"
 },
 "pick": {
 "phonetic": "[pɪk]",
@@ -6611,7 +7421,8 @@
 "choose",
 "select",
 "gather"
-]
+],
+"conceptId": "pick"
 },
 "shake": {
 "phonetic": "[ʃeɪk]",
@@ -6620,7 +7431,8 @@
 "tremble",
 "shiver",
 "wave"
-]
+],
+"conceptId": "shake"
 },
 "fill": {
 "phonetic": "[fɪl]",
@@ -6630,7 +7442,8 @@
 "stuff",
 "load",
 "occupy"
-]
+],
+"conceptId": "fill"
 },
 "fail": {
 "phonetic": "[feɪl]",
@@ -6639,7 +7452,8 @@
 "lose",
 "flunk",
 "collapse"
-]
+],
+"conceptId": "fail"
 },
 "fight": {
 "phonetic": "[faɪt]",
@@ -6649,7 +7463,8 @@
 "struggle",
 "combat",
 "quarrel"
-]
+],
+"conceptId": "fight"
 },
 "fear": {
 "phonetic": "[fɪr]",
@@ -6659,7 +7474,8 @@
 "fright",
 "terror",
 "be afraid of"
-]
+],
+"conceptId": "fear"
 },
 "carry": {
 "phonetic": "[ˈkæri]",
@@ -6669,7 +7485,8 @@
 "transport",
 "bear",
 "take"
-]
+],
+"conceptId": "carry"
 },
 "dive": {
 "phonetic": "[daɪv]",
@@ -6678,7 +7495,8 @@
 "plunge",
 "submerge",
 "jump in"
-]
+],
+"conceptId": "dive"
 },
 "win": {
 "phonetic": "[wɪn]",
@@ -6688,7 +7506,8 @@
 "triumph",
 "succeed",
 "gain"
-]
+],
+"conceptId": "win"
 },
 "ride": {
 "phonetic": "[raɪd]",
@@ -6697,7 +7516,8 @@
 "mount",
 "board",
 "travel"
-]
+],
+"conceptId": "ride"
 },
 "turn": {
 "phonetic": "[tɜːrn]",
@@ -6707,7 +7527,8 @@
 "spin",
 "revolve",
 "change"
-]
+],
+"conceptId": "turn"
 },
 "need": {
 "phonetic": "[niːd]",
@@ -6716,7 +7537,8 @@
 "require",
 "want",
 "demand"
-]
+],
+"conceptId": "need"
 },
 "build": {
 "phonetic": "[bɪld]",
@@ -6725,7 +7547,8 @@
 "construct",
 "make",
 "erect"
-]
+],
+"conceptId": "build"
 },
 "hurry": {
 "phonetic": "[ˈhɜːri]",
@@ -6733,7 +7556,8 @@
 "synonyms": [
 "rush",
 "hasten"
-]
+],
+"conceptId": "hurry"
 },
 "return": {
 "phonetic": "[rɪˈtɜːrn]",
@@ -6742,7 +7566,8 @@
 "come back",
 "go back",
 "give back"
-]
+],
+"conceptId": "return"
 },
 "believe": {
 "phonetic": "[bɪˈliːv]",
@@ -6751,7 +7576,8 @@
 "trust",
 "think",
 "accept"
-]
+],
+"conceptId": "believe"
 },
 "surprise": {
 "phonetic": "[sərˈpraɪz]",
@@ -6761,7 +7587,8 @@
 "amaze",
 "shock",
 "startle"
-]
+],
+"conceptId": "surprise"
 },
 "gather": {
 "phonetic": "[ˈɡæðər]",
@@ -6770,7 +7597,8 @@
 "collect",
 "assemble",
 "pick up"
-]
+],
+"conceptId": "gather"
 },
 "throw": {
 "phonetic": "[θroʊ]",
@@ -6780,7 +7608,8 @@
 "hurl",
 "fling",
 "pitch"
-]
+],
+"conceptId": "throw"
 },
 "raise": {
 "phonetic": "[reɪz]",
@@ -6790,7 +7619,8 @@
 "elevate",
 "put up",
 "increase"
-]
+],
+"conceptId": "raise"
 },
 "count": {
 "phonetic": "[kaʊnt]",
@@ -6799,7 +7629,8 @@
 "calculate",
 "add up",
 "number"
-]
+],
+"conceptId": "count"
 },
 "smell": {
 "phonetic": "[smel]",
@@ -6808,7 +7639,8 @@
 "scent",
 "odor",
 "aroma"
-]
+],
+"conceptId": "smell"
 },
 "spend": {
 "phonetic": "[spend]",
@@ -6818,7 +7650,8 @@
 "pay",
 "consume",
 "expend"
-]
+],
+"conceptId": "spend"
 },
 "pitch": {
 "phonetic": "[pɪtʃ]",
@@ -6828,7 +7661,8 @@
 "toss",
 "hurl",
 "fling"
-]
+],
+"conceptId": "pitch"
 },
 "pop": {
 "phonetic": "[pɑːp]",
@@ -6837,7 +7671,8 @@
 "burst",
 "bang",
 "crack"
-]
+],
+"conceptId": "pop"
 },
 "blow": {
 "phonetic": "[bloʊ]",
@@ -6845,7 +7680,8 @@
 "synonyms": [
 "puff",
 "breathe"
-]
+],
+"conceptId": "blow"
 },
 "miss": {
 "phonetic": "[mɪs]",
@@ -6854,7 +7690,8 @@
 "overlook",
 "skip",
 "lose"
-]
+],
+"conceptId": "miss"
 },
 "excuse": {
 "phonetic": "[ɪksˈkjuːs]",
@@ -6863,7 +7700,8 @@
 "forgive",
 "pardon",
 "overlook"
-]
+],
+"conceptId": "excuse"
 },
 "hit": {
 "phonetic": "[hɪt]",
@@ -6873,7 +7711,8 @@
 "beat",
 "knock",
 "punch"
-]
+],
+"conceptId": "hit"
 },
 "tie": {
 "phonetic": "[taɪ]",
@@ -6883,7 +7722,8 @@
 "fasten",
 "knot",
 "attach"
-]
+],
+"conceptId": "tie"
 },
 "touch": {
 "phonetic": "[tʌtʃ]",
@@ -6892,7 +7732,8 @@
 "feel",
 "contact",
 "move"
-]
+],
+"conceptId": "touch"
 },
 "stay": {
 "phonetic": "[steɪ]",
@@ -6901,7 +7742,8 @@
 "remain",
 "wait",
 "linger"
-]
+],
+"conceptId": "stay"
 },
 "enjoy": {
 "phonetic": "[enˈdʒɔɪ]",
@@ -6910,7 +7752,8 @@
 "like",
 "love",
 "appreciate"
-]
+],
+"conceptId": "enjoy"
 },
 "lose": {
 "phonetic": "[luːz]",
@@ -6919,7 +7762,8 @@
 "misplace",
 "miss",
 "forfeit"
-]
+],
+"conceptId": "lose"
 },
 "close": {
 "phonetic": "[kloʊs]",
@@ -6929,7 +7773,8 @@
 "seal",
 "end",
 "finish"
-]
+],
+"conceptId": "close"
 },
 "arrive": {
 "phonetic": "[ərˈaɪv]",
@@ -6939,7 +7784,8 @@
 "come",
 "get in",
 "land"
-]
+],
+"conceptId": "arrive"
 },
 "travel": {
 "phonetic": "[ˈtrævəl]",
@@ -6949,7 +7795,8 @@
 "trip",
 "tour",
 "voyage"
-]
+],
+"conceptId": "travel"
 },
 "reach": {
 "phonetic": "[riːtʃ]",
@@ -6959,7 +7806,8 @@
 "get to",
 "attain",
 "extend"
-]
+],
+"conceptId": "reach"
 },
 "hold": {
 "phonetic": "[hoʊld]",
@@ -6968,7 +7816,8 @@
 "grip",
 "grasp",
 "keep"
-]
+],
+"conceptId": "hold"
 },
 "worry": {
 "phonetic": "[ˈwɜːri]",
@@ -6977,14 +7826,16 @@
 "fret",
 "bother",
 "concern"
-]
+],
+"conceptId": "worry"
 },
 "marry": {
 "phonetic": "[ˈmeri]",
 "example": "My aunt will marry her boyfriend in a small country church.",
 "synonyms": [
 "wed"
-]
+],
+"conceptId": "marry"
 },
 "expect": {
 "phonetic": "[ɪkˈspekt]",
@@ -6993,7 +7844,8 @@
 "anticipate",
 "await",
 "suppose"
-]
+],
+"conceptId": "expect"
 },
 "understand": {
 "phonetic": "[ʌndərˈstænd]",
@@ -7003,7 +7855,8 @@
 "grasp",
 "realize",
 "know"
-]
+],
+"conceptId": "understand"
 },
 "break": {
 "phonetic": "[breɪk]",
@@ -7012,7 +7865,8 @@
 "smash",
 "crack",
 "shatter"
-]
+],
+"conceptId": "break"
 },
 "smoke": {
 "phonetic": "[smoʊk]",
@@ -7021,7 +7875,8 @@
 "fume",
 "vapor",
 "puff"
-]
+],
+"conceptId": "smoke"
 },
 "lend": {
 "phonetic": "[lend]",
@@ -7029,7 +7884,8 @@
 "synonyms": [
 "loan",
 "advance"
-]
+],
+"conceptId": "lend"
 },
 "shut": {
 "phonetic": "[ʃʌt]",
@@ -7038,7 +7894,8 @@
 "close",
 "seal",
 "fasten"
-]
+],
+"conceptId": "shut"
 },
 "sleep": {
 "phonetic": "[sliːp]",
@@ -7048,7 +7905,8 @@
 "nap",
 "slumber",
 "rest"
-]
+],
+"conceptId": "sleep"
 },
 "lay": {
 "phonetic": "[leɪ]",
@@ -7057,7 +7915,8 @@
 "put",
 "place",
 "set"
-]
+],
+"conceptId": "lay"
 },
 "paint": {
 "phonetic": "[peɪnt]",
@@ -7066,7 +7925,8 @@
 "draw",
 "color",
 "coat"
-]
+],
+"conceptId": "paint"
 },
 "lead": {
 "phonetic": "[led]",
@@ -7076,7 +7936,8 @@
 "direct",
 "conduct",
 "head"
-]
+],
+"conceptId": "lead"
 },
 "pass": {
 "phonetic": "[pæs]",
@@ -7085,11 +7946,13 @@
 "go by",
 "move past",
 "cross"
-]
+],
+"conceptId": "pass"
 },
 "hand": {
 "phonetic": "[hænd]",
-"example": "Please hand this letter to your father when you get home."
+"example": "Please hand this letter to your father when you get home.",
+"conceptId": "hand"
 },
 "ancient": {
 "phonetic": "[ˈeɪntʃənt]",
@@ -7098,14 +7961,16 @@
 "old",
 "antique",
 "aged"
-]
+],
+"conceptId": "ancient"
 },
 "nuclear": {
 "phonetic": "[ˈnuːklɪər]",
 "example": "Many countries are still arguing about nuclear weapons and world peace.",
 "synonyms": [
 "atomic"
-]
+],
+"conceptId": "nuclear"
 },
 "necessary": {
 "phonetic": "[ˈnesəseri]",
@@ -7114,7 +7979,8 @@
 "essential",
 "needed",
 "required"
-]
+],
+"conceptId": "necessary"
 },
 "common": {
 "phonetic": "[ˈkɑːmən]",
@@ -7124,7 +7990,8 @@
 "usual",
 "normal",
 "shared"
-]
+],
+"conceptId": "common"
 },
 "inner": {
 "phonetic": "[ˈɪnər]",
@@ -7133,7 +8000,8 @@
 "internal",
 "interior",
 "inside"
-]
+],
+"conceptId": "inner"
 },
 "thirsty": {
 "phonetic": "[ˈθɜːrsti]",
@@ -7141,7 +8009,8 @@
 "synonyms": [
 "parched",
 "dry"
-]
+],
+"conceptId": "thirsty"
 },
 "thin": {
 "phonetic": "[θɪn]",
@@ -7150,11 +8019,13 @@
 "slim",
 "slender",
 "narrow"
-]
+],
+"conceptId": "thin"
 },
 "gray": {
 "phonetic": "[ɡreɪ]",
-"example": "Thick gray clouds covered the sky before the heavy rain started."
+"example": "Thick gray clouds covered the sky before the heavy rain started.",
+"conceptId": "gray"
 },
 "famous": {
 "phonetic": "[ˈfeɪməs]",
@@ -7164,7 +8035,8 @@
 "celebrated",
 "renowned",
 "noted"
-]
+],
+"conceptId": "famous"
 },
 "industrial": {
 "phonetic": "[ɪnˈdʌstrɪəl]",
@@ -7172,7 +8044,8 @@
 "synonyms": [
 "manufacturing",
 "commercial"
-]
+],
+"conceptId": "industrial"
 },
 "silent": {
 "phonetic": "[ˈsaɪlənt]",
@@ -7182,7 +8055,8 @@
 "soundless",
 "still",
 "mute"
-]
+],
+"conceptId": "silent"
 },
 "absent": {
 "phonetic": "[ˈæbsənt]",
@@ -7191,7 +8065,8 @@
 "missing",
 "away",
 "gone"
-]
+],
+"conceptId": "absent"
 },
 "flat": {
 "phonetic": "[flæt]",
@@ -7200,7 +8075,8 @@
 "level",
 "even",
 "smooth"
-]
+],
+"conceptId": "flat"
 },
 "main": {
 "phonetic": "[meɪn]",
@@ -7210,7 +8086,8 @@
 "principal",
 "major",
 "primary"
-]
+],
+"conceptId": "main"
 },
 "wild": {
 "phonetic": "[waɪld]",
@@ -7219,7 +8096,8 @@
 "untamed",
 "savage",
 "fierce"
-]
+],
+"conceptId": "wild"
 },
 "wet": {
 "phonetic": "[wet]",
@@ -7228,7 +8106,8 @@
 "damp",
 "moist",
 "soaked"
-]
+],
+"conceptId": "wet"
 },
 "blind": {
 "phonetic": "[blaɪnd]",
@@ -7236,7 +8115,8 @@
 "synonyms": [
 "sightless",
 "unseeing"
-]
+],
+"conceptId": "blind"
 },
 "dumb": {
 "phonetic": "[dʌm]",
@@ -7246,7 +8126,8 @@
 "speechless",
 "silent",
 "stupid"
-]
+],
+"conceptId": "dumb"
 },
 "sharp": {
 "phonetic": "[ʃɑːrp]",
@@ -7255,7 +8136,8 @@
 "keen",
 "pointed",
 "acute"
-]
+],
+"conceptId": "sharp"
 },
 "terrible": {
 "phonetic": "[ˈterəbəl]",
@@ -7264,7 +8146,8 @@
 "awful",
 "horrible",
 "dreadful"
-]
+],
+"conceptId": "terrible"
 },
 "grand": {
 "phonetic": "[ɡrænd]",
@@ -7274,7 +8157,8 @@
 "splendid",
 "majestic",
 "impressive"
-]
+],
+"conceptId": "grand"
 },
 "homesick": {
 "phonetic": "[ˈhoʊmsɪk]",
@@ -7282,7 +8166,8 @@
 "synonyms": [
 "nostalgic",
 "longing"
-]
+],
+"conceptId": "homesick"
 },
 "fat": {
 "phonetic": "[fæt]",
@@ -7291,7 +8176,8 @@
 "plump",
 "overweight",
 "chubby"
-]
+],
+"conceptId": "fat"
 },
 "strange": {
 "phonetic": "[streɪndʒ]",
@@ -7301,7 +8187,8 @@
 "weird",
 "unusual",
 "peculiar"
-]
+],
+"conceptId": "strange"
 },
 "pleasant": {
 "phonetic": "[ˈplezənt]",
@@ -7310,7 +8197,8 @@
 "nice",
 "enjoyable",
 "agreeable"
-]
+],
+"conceptId": "pleasant"
 },
 "handsome": {
 "phonetic": "[ˈhænsəm]",
@@ -7319,7 +8207,8 @@
 "good-looking",
 "attractive",
 "fine"
-]
+],
+"conceptId": "handsome"
 },
 "equal": {
 "phonetic": "[ˈiːkwəl]",
@@ -7328,7 +8217,8 @@
 "same",
 "identical",
 "even"
-]
+],
+"conceptId": "equal"
 },
 "dear": {
 "phonetic": "[dɪr]",
@@ -7337,7 +8227,8 @@
 "beloved",
 "precious",
 "darling"
-]
+],
+"conceptId": "dear"
 },
 "sweet": {
 "phonetic": "[swiːt]",
@@ -7346,7 +8237,8 @@
 "sugary",
 "honeyed",
 "pleasant"
-]
+],
+"conceptId": "sweet"
 },
 "dull": {
 "phonetic": "[dʌl]",
@@ -7356,7 +8248,8 @@
 "slow",
 "blunt",
 "boring"
-]
+],
+"conceptId": "dull"
 },
 "weak": {
 "phonetic": "[wiːk]",
@@ -7365,7 +8258,8 @@
 "feeble",
 "frail",
 "powerless"
-]
+],
+"conceptId": "weak"
 },
 "bright": {
 "phonetic": "[braɪt]",
@@ -7374,7 +8268,8 @@
 "shiny",
 "brilliant",
 "clear"
-]
+],
+"conceptId": "bright"
 },
 "honest": {
 "phonetic": "[ˈɑːnəst]",
@@ -7383,7 +8278,8 @@
 "truthful",
 "sincere",
 "frank"
-]
+],
+"conceptId": "honest"
 },
 "elder": {
 "phonetic": "[ˈeldər]",
@@ -7391,11 +8287,13 @@
 "synonyms": [
 "older",
 "senior"
-]
+],
+"conceptId": "elder"
 },
 "such": {
 "phonetic": "[sʌtʃ]",
-"example": "I have never seen such a beautiful sunset in my life."
+"example": "I have never seen such a beautiful sunset in my life.",
+"conceptId": "such"
 },
 "able": {
 "phonetic": "[ˈeɪbəl]",
@@ -7404,7 +8302,8 @@
 "capable",
 "skilled",
 "competent"
-]
+],
+"conceptId": "able"
 },
 "loud": {
 "phonetic": "[laʊd]",
@@ -7412,7 +8311,8 @@
 "synonyms": [
 "noisy",
 "deafening"
-]
+],
+"conceptId": "loud"
 },
 "simple": {
 "phonetic": "[ˈsɪmpəl]",
@@ -7421,7 +8321,8 @@
 "easy",
 "plain",
 "basic"
-]
+],
+"conceptId": "simple"
 },
 "clever": {
 "phonetic": "[ˈklevər]",
@@ -7431,7 +8332,8 @@
 "bright",
 "intelligent",
 "sharp"
-]
+],
+"conceptId": "clever"
 },
 "proud": {
 "phonetic": "[praʊd]",
@@ -7441,7 +8343,8 @@
 "satisfied",
 "arrogant",
 "haughty"
-]
+],
+"conceptId": "proud"
 },
 "foolish": {
 "phonetic": "[ˈfuːlɪʃ]",
@@ -7450,7 +8353,8 @@
 "silly",
 "stupid",
 "unwise"
-]
+],
+"conceptId": "foolish"
 },
 "possible": {
 "phonetic": "[ˈpɑːsəbəl]",
@@ -7459,7 +8363,8 @@
 "likely",
 "feasible",
 "workable"
-]
+],
+"conceptId": "possible"
 },
 "enough": {
 "phonetic": "[ɪˈnʌf]",
@@ -7468,7 +8373,8 @@
 "sufficient",
 "adequate",
 "ample"
-]
+],
+"conceptId": "enough"
 },
 "wise": {
 "phonetic": "[waɪz]",
@@ -7478,7 +8384,8 @@
 "clever",
 "sensible",
 "intelligent"
-]
+],
+"conceptId": "wise"
 },
 "wide": {
 "phonetic": "[waɪd]",
@@ -7487,7 +8394,8 @@
 "broad",
 "spacious",
 "vast"
-]
+],
+"conceptId": "wide"
 },
 "successful": {
 "phonetic": "[səkˈsesfəl]",
@@ -7496,7 +8404,8 @@
 "prosperous",
 "thriving",
 "victorious"
-]
+],
+"conceptId": "successful"
 },
 "clear": {
 "phonetic": "[klɪr]",
@@ -7506,7 +8415,8 @@
 "plain",
 "obvious",
 "bright"
-]
+],
+"conceptId": "clear"
 },
 "clean": {
 "phonetic": "[kliːn]",
@@ -7516,7 +8426,8 @@
 "tidy",
 "spotless",
 "pure"
-]
+],
+"conceptId": "clean"
 },
 "deep": {
 "phonetic": "[diːp]",
@@ -7524,7 +8435,8 @@
 "synonyms": [
 "profound",
 "bottomless"
-]
+],
+"conceptId": "deep"
 },
 "own": {
 "phonetic": "[oʊn]",
@@ -7533,7 +8445,8 @@
 "possess",
 "have",
 "hold"
-]
+],
+"conceptId": "own"
 },
 "cheap": {
 "phonetic": "[tʃiːp]",
@@ -7542,7 +8455,8 @@
 "inexpensive",
 "low-priced",
 "affordable"
-]
+],
+"conceptId": "cheap"
 },
 "certain": {
 "phonetic": "[ˈsɜːrtən]",
@@ -7552,7 +8466,8 @@
 "definite",
 "positive",
 "confident"
-]
+],
+"conceptId": "certain"
 },
 "important": {
 "phonetic": "[ɪmˈpɔːrtənt]",
@@ -7562,7 +8477,8 @@
 "essential",
 "major",
 "crucial"
-]
+],
+"conceptId": "important"
 },
 "stormy": {
 "phonetic": "[ˈstɔːrmi]",
@@ -7571,7 +8487,8 @@
 "rough",
 "windy",
 "wild"
-]
+],
+"conceptId": "stormy"
 },
 "true": {
 "phonetic": "[truː]",
@@ -7581,7 +8498,8 @@
 "genuine",
 "correct",
 "accurate"
-]
+],
+"conceptId": "true"
 },
 "sad": {
 "phonetic": "[sæd]",
@@ -7591,7 +8509,8 @@
 "sorrowful",
 "gloomy",
 "depressed"
-]
+],
+"conceptId": "sad"
 },
 "gay": {
 "phonetic": "[ɡeɪ]",
@@ -7600,7 +8519,8 @@
 "cheerful",
 "merry",
 "lively"
-]
+],
+"conceptId": "gay"
 },
 "merry": {
 "phonetic": "[ˈmeri]",
@@ -7610,7 +8530,8 @@
 "joyful",
 "happy",
 "jolly"
-]
+],
+"conceptId": "merry"
 },
 "colorful": {
 "phonetic": "[ˈkʌlərfəl]",
@@ -7620,7 +8541,8 @@
 "vivid",
 "vibrant",
 "multicolored"
-]
+],
+"conceptId": "colorful"
 },
 "wonderful": {
 "phonetic": "[ˈwʌndərfəl]",
@@ -7630,7 +8552,8 @@
 "marvelous",
 "fantastic",
 "amazing"
-]
+],
+"conceptId": "wonderful"
 },
 "peaceful": {
 "phonetic": "[ˈpiːsfəl]",
@@ -7639,7 +8562,8 @@
 "calm",
 "quiet",
 "tranquil"
-]
+],
+"conceptId": "peaceful"
 },
 "angry": {
 "phonetic": "[ˈæŋɡri]",
@@ -7649,7 +8573,8 @@
 "furious",
 "annoyed",
 "upset"
-]
+],
+"conceptId": "angry"
 },
 "dry": {
 "phonetic": "[draɪ]",
@@ -7657,7 +8582,8 @@
 "synonyms": [
 "arid",
 "parched"
-]
+],
+"conceptId": "dry"
 },
 "wrong": {
 "phonetic": "[rɔːŋ]",
@@ -7666,7 +8592,8 @@
 "incorrect",
 "false",
 "mistaken"
-]
+],
+"conceptId": "wrong"
 },
 "heavy": {
 "phonetic": "[ˈhevi]",
@@ -7674,7 +8601,8 @@
 "synonyms": [
 "weighty",
 "massive"
-]
+],
+"conceptId": "heavy"
 },
 "quiet": {
 "phonetic": "[ˈkwaɪət]",
@@ -7684,7 +8612,8 @@
 "still",
 "calm",
 "hushed"
-]
+],
+"conceptId": "quiet"
 },
 "several": {
 "phonetic": "[ˈsevrəl]",
@@ -7693,7 +8622,8 @@
 "some",
 "various",
 "a few"
-]
+],
+"conceptId": "several"
 },
 "alone": {
 "phonetic": "[əˈloʊn]",
@@ -7701,7 +8631,8 @@
 "synonyms": [
 "solitary",
 "lonely"
-]
+],
+"conceptId": "alone"
 },
 "crowded": {
 "phonetic": "[ˈkraʊdəd]",
@@ -7710,7 +8641,8 @@
 "packed",
 "busy",
 "jammed"
-]
+],
+"conceptId": "crowded"
 },
 "excited": {
 "phonetic": "[ɪkˈsaɪtəd]",
@@ -7719,7 +8651,8 @@
 "thrilled",
 "eager",
 "enthusiastic"
-]
+],
+"conceptId": "excited"
 },
 "alive": {
 "phonetic": "[əˈlaɪv]",
@@ -7727,7 +8660,8 @@
 "synonyms": [
 "living",
 "live"
-]
+],
+"conceptId": "alive"
 },
 "brown": {
 "phonetic": "[braʊn]",
@@ -7735,7 +8669,8 @@
 "synonyms": [
 "tan",
 "bronze"
-]
+],
+"conceptId": "brown"
 },
 "different": {
 "phonetic": "[ˈdɪfərənt]",
@@ -7745,7 +8680,8 @@
 "dissimilar",
 "distinct",
 "various"
-]
+],
+"conceptId": "different"
 },
 "difficult": {
 "phonetic": "[ˈdɪfəkəlt]",
@@ -7754,7 +8690,8 @@
 "hard",
 "tough",
 "challenging"
-]
+],
+"conceptId": "difficult"
 },
 "interesting": {
 "phonetic": "[ˈɪntrəstɪŋ]",
@@ -7763,7 +8700,8 @@
 "exciting",
 "fascinating",
 "entertaining"
-]
+],
+"conceptId": "interesting"
 },
 "unlike": {
 "phonetic": "[ənˈlaɪk]",
@@ -7771,7 +8709,8 @@
 "synonyms": [
 "different",
 "dissimilar"
-]
+],
+"conceptId": "unlike"
 },
 "least": {
 "phonetic": "[liːst]",
@@ -7780,7 +8719,8 @@
 "smallest",
 "slightest",
 "minimum"
-]
+],
+"conceptId": "least"
 },
 "afraid": {
 "phonetic": "[əˈfreɪd]",
@@ -7789,7 +8729,8 @@
 "scared",
 "frightened",
 "fearful"
-]
+],
+"conceptId": "afraid"
 },
 "cool": {
 "phonetic": "[kuːl]",
@@ -7798,7 +8739,8 @@
 "chilly",
 "fresh",
 "brisk"
-]
+],
+"conceptId": "cool"
 },
 "pretty": {
 "phonetic": "[ˈprɪti]",
@@ -7808,7 +8750,8 @@
 "beautiful",
 "cute",
 "attractive"
-]
+],
+"conceptId": "pretty"
 },
 "kind": {
 "phonetic": "[kaɪnd]",
@@ -7818,7 +8761,8 @@
 "friendly",
 "generous",
 "gentle"
-]
+],
+"conceptId": "kind"
 },
 "sick": {
 "phonetic": "[sɪk]",
@@ -7827,7 +8771,8 @@
 "ill",
 "unwell",
 "ailing"
-]
+],
+"conceptId": "sick"
 },
 "useless": {
 "phonetic": "[ˈjuːsləs]",
@@ -7836,7 +8781,8 @@
 "worthless",
 "pointless",
 "futile"
-]
+],
+"conceptId": "useless"
 },
 "busy": {
 "phonetic": "[ˈbɪzi]",
@@ -7844,7 +8790,8 @@
 "synonyms": [
 "occupied",
 "active"
-]
+],
+"conceptId": "busy"
 },
 "early": {
 "phonetic": "[ˈɜːrli]",
@@ -7852,7 +8799,8 @@
 "synonyms": [
 "soon",
 "beforehand"
-]
+],
+"conceptId": "early"
 },
 "past": {
 "phonetic": "[pæst]",
@@ -7861,7 +8809,8 @@
 "former",
 "previous",
 "bygone"
-]
+],
+"conceptId": "past"
 },
 "dark": {
 "phonetic": "[dɑːrk]",
@@ -7870,7 +8819,8 @@
 "dim",
 "gloomy",
 "black"
-]
+],
+"conceptId": "dark"
 },
 "cloudy": {
 "phonetic": "[ˈklaʊdi]",
@@ -7879,7 +8829,8 @@
 "overcast",
 "gloomy",
 "dull"
-]
+],
+"conceptId": "cloudy"
 },
 "short": {
 "phonetic": "[ʃɔːrt]",
@@ -7887,7 +8838,8 @@
 "synonyms": [
 "brief",
 "small"
-]
+],
+"conceptId": "short"
 },
 "low": {
 "phonetic": "[loʊ]",
@@ -7895,7 +8847,8 @@
 "synonyms": [
 "short",
 "shallow"
-]
+],
+"conceptId": "low"
 },
 "sincerely": {
 "phonetic": "[sɪnˈsɪrli]",
@@ -7904,7 +8857,8 @@
 "truly",
 "honestly",
 "genuinely"
-]
+],
+"conceptId": "sincerely"
 },
 "fortunately": {
 "phonetic": "[ˈfɔːrtʃənətli]",
@@ -7913,7 +8867,8 @@
 "luckily",
 "happily",
 "thankfully"
-]
+],
+"conceptId": "fortunately"
 },
 "finally": {
 "phonetic": "[ˈfaɪnəli]",
@@ -7922,7 +8877,8 @@
 "at last",
 "lastly",
 "eventually"
-]
+],
+"conceptId": "finally"
 },
 "immediately": {
 "phonetic": "[ɪˈmiːdɪətli]",
@@ -7932,7 +8888,8 @@
 "at once",
 "right away",
 "promptly"
-]
+],
+"conceptId": "immediately"
 },
 "especially": {
 "phonetic": "[əˈspeʃli]",
@@ -7941,11 +8898,13 @@
 "particularly",
 "specially",
 "notably"
-]
+],
+"conceptId": "especially"
 },
 "else": {
 "phonetic": "[els]",
-"example": "Does anyone else want to join our science club this year?"
+"example": "Does anyone else want to join our science club this year?",
+"conceptId": "else"
 },
 "actually": {
 "phonetic": "[ˈæktʃuːəli]",
@@ -7955,7 +8914,8 @@
 "in fact",
 "truly",
 "indeed"
-]
+],
+"conceptId": "actually"
 },
 "hardly": {
 "phonetic": "[ˈhɑːrdli]",
@@ -7964,11 +8924,13 @@
 "barely",
 "scarcely",
 "seldom"
-]
+],
+"conceptId": "hardly"
 },
 "otherwise": {
 "phonetic": "[ˈʌðərwaɪz]",
-"example": "The door was locked, and we could not get inside otherwise."
+"example": "The door was locked, and we could not get inside otherwise.",
+"conceptId": "otherwise"
 },
 "tightly": {
 "phonetic": "[ˈtaɪtli]",
@@ -7977,7 +8939,8 @@
 "firmly",
 "securely",
 "closely"
-]
+],
+"conceptId": "tightly"
 },
 "recently": {
 "phonetic": "[ˈriːsəntli]",
@@ -7986,7 +8949,8 @@
 "lately",
 "newly",
 "just now"
-]
+],
+"conceptId": "recently"
 },
 "rapidly": {
 "phonetic": "[ˈræpədli]",
@@ -7995,11 +8959,13 @@
 "quickly",
 "fast",
 "swiftly"
-]
+],
+"conceptId": "rapidly"
 },
 "however": {
 "phonetic": "[haʊˈevər]",
-"example": "However hard I tried, I could not open the heavy door."
+"example": "However hard I tried, I could not open the heavy door.",
+"conceptId": "however"
 },
 "politely": {
 "phonetic": "[pəˈlaɪtli]",
@@ -8008,7 +8974,8 @@
 "courteously",
 "respectfully",
 "kindly"
-]
+],
+"conceptId": "politely"
 },
 "rudely": {
 "phonetic": "[ˈruːdli]",
@@ -8016,7 +8983,8 @@
 "synonyms": [
 "impolitely",
 "roughly"
-]
+],
+"conceptId": "rudely"
 },
 "further": {
 "phonetic": "[ˈfɜːrðər]",
@@ -8026,7 +8994,8 @@
 "besides",
 "farther",
 "additionally"
-]
+],
+"conceptId": "further"
 },
 "frankly": {
 "phonetic": "[ˈfræŋkli]",
@@ -8035,7 +9004,8 @@
 "honestly",
 "openly",
 "candidly"
-]
+],
+"conceptId": "frankly"
 },
 "properly": {
 "phonetic": "[ˈprɑːpərli]",
@@ -8044,7 +9014,8 @@
 "correctly",
 "rightly",
 "suitably"
-]
+],
+"conceptId": "properly"
 },
 "haste": {
 "phonetic": "[heɪst]",
@@ -8053,7 +9024,8 @@
 "hurry",
 "rush",
 "speed"
-]
+],
+"conceptId": "haste"
 },
 "rather": {
 "phonetic": "[ˈræðər]",
@@ -8062,7 +9034,8 @@
 "quite",
 "fairly",
 "somewhat"
-]
+],
+"conceptId": "rather"
 },
 "together": {
 "phonetic": "[təˈɡeðər]",
@@ -8070,7 +9043,8 @@
 "synonyms": [
 "jointly",
 "collectively"
-]
+],
+"conceptId": "together"
 },
 "altogether": {
 "phonetic": "[ɔːltəˈɡeðər]",
@@ -8079,7 +9053,8 @@
 "completely",
 "entirely",
 "totally"
-]
+],
+"conceptId": "altogether"
 },
 "suddenly": {
 "phonetic": "[ˈsʌdənli]",
@@ -8087,7 +9062,8 @@
 "synonyms": [
 "abruptly",
 "unexpectedly"
-]
+],
+"conceptId": "suddenly"
 },
 "mostly": {
 "phonetic": "[ˈmoʊstli]",
@@ -8097,7 +9073,8 @@
 "chiefly",
 "generally",
 "largely"
-]
+],
+"conceptId": "mostly"
 },
 "correctly": {
 "phonetic": "[kərˈektli]",
@@ -8106,7 +9083,8 @@
 "accurately",
 "properly",
 "rightly"
-]
+],
+"conceptId": "correctly"
 },
 "ahead": {
 "phonetic": "[əˈhed]",
@@ -8114,7 +9092,8 @@
 "synonyms": [
 "forward",
 "onward"
-]
+],
+"conceptId": "ahead"
 },
 "instead": {
 "phonetic": "[ɪnˈsted]",
@@ -8122,7 +9101,8 @@
 "synonyms": [
 "rather",
 "alternatively"
-]
+],
+"conceptId": "instead"
 },
 "quite": {
 "phonetic": "[kwaɪt]",
@@ -8132,7 +9112,8 @@
 "rather",
 "pretty",
 "very"
-]
+],
+"conceptId": "quite"
 },
 "nearly": {
 "phonetic": "[ˈnɪrli]",
@@ -8141,7 +9122,8 @@
 "almost",
 "about",
 "practically"
-]
+],
+"conceptId": "nearly"
 },
 "badly": {
 "phonetic": "[ˈbædli]",
@@ -8150,7 +9132,8 @@
 "poorly",
 "seriously",
 "severely"
-]
+],
+"conceptId": "badly"
 },
 "almost": {
 "phonetic": "[ˈɔːlmoʊst]",
@@ -8159,7 +9142,8 @@
 "nearly",
 "about",
 "practically"
-]
+],
+"conceptId": "almost"
 },
 "exactly": {
 "phonetic": "[ɪɡˈzæktli]",
@@ -8168,7 +9152,8 @@
 "precisely",
 "accurately",
 "correctly"
-]
+],
+"conceptId": "exactly"
 },
 "apart": {
 "phonetic": "[əˈpɑːrt]",
@@ -8176,7 +9161,8 @@
 "synonyms": [
 "separately",
 "aside"
-]
+],
+"conceptId": "apart"
 },
 "afterward": {
 "phonetic": "[ˈæftərwərd]",
@@ -8185,7 +9171,8 @@
 "later",
 "subsequently",
 "then"
-]
+],
+"conceptId": "afterward"
 },
 "later": {
 "phonetic": "[ˈleɪtər]",
@@ -8194,7 +9181,8 @@
 "afterward",
 "afterwards",
 "subsequently"
-]
+],
+"conceptId": "later"
 },
 "maybe": {
 "phonetic": "[ˈmeɪbi]",
@@ -8203,7 +9191,8 @@
 "perhaps",
 "possibly",
 "probably"
-]
+],
+"conceptId": "maybe"
 },
 "perhaps": {
 "phonetic": "[pərˈhæps]",
@@ -8212,7 +9201,8 @@
 "maybe",
 "possibly",
 "probably"
-]
+],
+"conceptId": "perhaps"
 },
 "probably": {
 "phonetic": "[ˈprɑːbəbli]",
@@ -8221,7 +9211,8 @@
 "likely",
 "presumably",
 "maybe"
-]
+],
+"conceptId": "probably"
 },
 "besides": {
 "phonetic": "[bɪˈsaɪdz]",
@@ -8230,7 +9221,8 @@
 "also",
 "moreover",
 "furthermore"
-]
+],
+"conceptId": "besides"
 },
 "anyway": {
 "phonetic": "[ˈenɪweɪ]",
@@ -8238,14 +9230,16 @@
 "synonyms": [
 "anyhow",
 "regardless"
-]
+],
+"conceptId": "anyway"
 },
 "sometime": {
 "phonetic": "[ˈsʌmtaɪm]",
 "example": "Let's visit your grandmother's farm sometime next spring.",
 "synonyms": [
 "someday"
-]
+],
+"conceptId": "sometime"
 },
 "forward": {
 "phonetic": "[ˈfɔːrwərd]",
@@ -8254,15 +9248,18 @@
 "ahead",
 "onward",
 "forth"
-]
+],
+"conceptId": "forward"
 },
 "once": {
 "phonetic": "[wʌns]",
-"example": "I have visited that old temple only once in my life."
+"example": "I have visited that old temple only once in my life.",
+"conceptId": "once"
 },
 "twice": {
 "phonetic": "[twaɪs]",
-"example": "Our club meets twice a week in the music room."
+"example": "Our club meets twice a week in the music room.",
+"conceptId": "twice"
 },
 "indeed": {
 "phonetic": "[ɪnˈdiːd]",
@@ -8272,7 +9269,8 @@
 "truly",
 "certainly",
 "actually"
-]
+],
+"conceptId": "indeed"
 },
 "seldom": {
 "phonetic": "[ˈseldəm]",
@@ -8281,15 +9279,18 @@
 "rarely",
 "hardly ever",
 "infrequently"
-]
+],
+"conceptId": "seldom"
 },
 "upside down": {
 "phonetic": "[ˈʌpˈsaɪd daʊn]",
-"example": "The little boy held the picture book upside down and laughed."
+"example": "The little boy held the picture book upside down and laughed.",
+"conceptId": "upside down"
 },
 "though": {
 "phonetic": "[ðoʊ]",
-"example": "Though the weather was cold, the children played outside for hours."
+"example": "Though the weather was cold, the children played outside for hours.",
+"conceptId": "though"
 },
 "usually": {
 "phonetic": "[ˈjuːʒəwəli]",
@@ -8298,7 +9299,8 @@
 "normally",
 "generally",
 "commonly"
-]
+],
+"conceptId": "usually"
 },
 "safely": {
 "phonetic": "[ˈseɪfli]",
@@ -8306,20 +9308,23 @@
 "synonyms": [
 "securely",
 "soundly"
-]
+],
+"conceptId": "safely"
 },
 "honour": {
 "synonyms": [
 "respect",
 "glory",
 "dignity"
-]
+],
+"conceptId": "honour"
 },
 "hastily": {
 "synonyms": [
 "quickly",
 "hurriedly"
-]
+],
+"conceptId": "hastily"
 },
 "resource": {
 "synonyms": [
@@ -8327,13 +9332,15 @@
 "asset",
 "material",
 "reserve"
-]
+],
+"conceptId": "resource"
 },
 "unification": {
 "synonyms": [
 "union",
 "integration",
 "merger"
-]
+],
+"conceptId": "unification"
 }
 }

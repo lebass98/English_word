@@ -683,6 +683,170 @@ UNIT_DATA = {
             "id": "m1-260", "word": "tool", "meaning": "도구",
             "scene": "organized woodworking craft bench, skilled cute slender stickman holding a steel hammer assembling a wooden shelf with screwdrivers and hand tools hanging neatly on pegboard rack"
         }
+    ]    ,
+    14: [
+        {
+            "id": "m1-261", "word": "reach", "meaning": "도달하다",
+            "scene": "scenic mountain summit peak, proud cute slender stickman hiker with backpack reaching the rocky mountaintop ridge just before sunset stretching arms high in victory, panoramic view"
+        },
+        {
+            "id": "m1-262", "word": "thief", "meaning": "도둑",
+            "scene": "quiet moonlit museum hall, mischievous cute slender stickman thief tiptoeing sneaking carefully across checkered floor trying to avoid floor lasers, display pedestal and spotlight"
+        },
+        {
+            "id": "m1-263", "word": "ditch", "meaning": "도랑",
+            "scene": "peaceful countryside gravel road, fresh rainwater streaming swiftly along a neat grassy ditch beside the road, cute slender stickman holding yellow umbrella watching water flow"
+        },
+        {
+            "id": "m1-264", "word": "library", "meaning": "도서관",
+            "scene": "grand quiet public library hall, cute slender stickman browsing towering wooden bookshelves reaching for a leather-bound book, reading study tables and green library lamp"
+        },
+        {
+            "id": "m1-265", "word": "arrive", "meaning": "도착하다",
+            "scene": "welcoming front porch entryway, joyful cute slender stickman traveler with rolling luggage suitcase arriving at cottage front door smiling as welcoming friend opens door"
+        },
+        {
+            "id": "m1-266", "word": "independent", "meaning": "독립의",
+            "scene": "cozy new apartment doorway, proud cute slender stickman unlocking front door holding first apartment keys high celebrating independent solo living, houseplant and moving boxes"
+        },
+        {
+            "id": "m1-267", "word": "German", "meaning": "독일 사람, 독일어",
+            "scene": "traditional European cobblestone town square, cheerful cute slender stickman wearing Alpine Bavarian hat waving warmly holding a pretzel before historic timbered German style house"
+        },
+        {
+            "id": "m1-268", "word": "bet", "meaning": "돈을 걸다",
+            "scene": "friendly board game competition table, excited cute slender stickman placing colorful wager tokens on board square placing a playful friendly bet with smiling opponent stickman"
+        },
+        {
+            "id": "m1-269", "word": "stone", "meaning": "돌",
+            "scene": "zen gravel garden terrace, mindful cute slender stickman carefully balancing smooth round stone pebbles into a serene vertical rock stack tower, bamboo water fountain"
+        },
+        {
+            "id": "m1-270", "word": "turn", "meaning": "돌다, 회전하다",
+            "scene": "outdoor playground carousel roundabout, energetic cute slender stickman riding merry-go-round roundabout spinning around with joy and arms outstretched, grassy playground"
+        },
+        {
+            "id": "m1-271", "word": "care", "meaning": "돌봄, 걱정",
+            "scene": "sunny balcony flower garden, gentle caring cute slender stickman tenderly watering delicate blossoming potted plants with green watering can showing loving tender care"
+        },
+        {
+            "id": "m1-272", "word": "return", "meaning": "돌아가다",
+            "scene": "busy airport arrivals gate, happy cute slender stickman traveler waving both hands excitedly returning home from study abroad running toward awaiting family stickman"
+        },
+        {
+            "id": "m1-273", "word": "agree", "meaning": "동의하다",
+            "scene": "bright boardroom meeting table, two professional cute slender stickman partners shaking hands firmly with warm smiles in complete mutual agreement over project blueprints"
+        },
+        {
+            "id": "m1-274", "word": "coin", "meaning": "동전",
+            "scene": "decorative stone wishing fountain in plaza, cute slender stickman closing eyes and flicking a shining round coin thumb-flip into clear fountain pool making a wish"
+        },
+        {
+            "id": "m1-275", "word": "repeat", "meaning": "되풀이하다",
+            "scene": "music studio sound recording room, cute slender stickman music teacher playing melody notes on upright piano while student stickman carefully repeats the melody notes on violin"
+        },
+        {
+            "id": "m1-276", "word": "afraid", "meaning": "두려워하는, 유감스러운",
+            "scene": "dark cozy bedroom at thunderstorm night, cute slender stickman peeking cautiously from under blanket looking nervously at stormy lightning flashes outside bedroom window"
+        },
+        {
+            "id": "m1-277", "word": "fear", "meaning": "두려워하다, 공포",
+            "scene": "wooden suspension footbridge over deep canyon gorge, courageous cute slender stickman facing fear taking a brave steady step forward onto the bridge holding handrail firmly"
+        },
+        {
+            "id": "m1-278", "word": "twice", "meaning": "두 번",
+            "scene": "school running track finish line, athletic cute slender stickman crossing finish tape raising two fingers signaling winning the race twice in a row, stopwatch and stadium fence"
+        },
+        {
+            "id": "m1-279", "word": "surround", "meaning": "둘러싸다",
+            "scene": "lush dense pine forest clearing, charming wooden cozy cottage completely surrounded in circle by tall towering pine trees and flowering shrubs under dappled sunlight"
+        },
+        {
+            "id": "m1-280", "word": "rear", "meaning": "뒤쪽의, 양육하다",
+            "scene": "sunny front driveway garage, cute slender stickman inspecting the rear bumper trunk of a modern hatchback car parked neatly in driveway, garage door and garden fence"
+        }
+    ]    ,
+    15: [
+        {
+            "id": "m1-281", "word": "cleave", "meaning": "들러붙다",
+            "scene": "peaceful forest woodcutting yard, strong cute slender stickman woodsman using sharp iron splitting wedge to cleave a dry hardwood log smoothly into two identical halves, wood chips and trees"
+        },
+        {
+            "id": "m1-282", "word": "lift", "meaning": "들어올리다",
+            "scene": "clean warehouse loading dock, athletic cute slender stickman worker bending knees lifting a heavy cardboard delivery box smoothly up onto wooden shelf, forklift in background"
+        },
+        {
+            "id": "m1-283", "word": "design", "meaning": "디자인",
+            "scene": "modern design studio drawing desk, creative cute slender stickman architect holding ruler sketching blueprint design of an innovative eco-friendly modern pavilion building, desk lamp and coffee mug"
+        },
+        {
+            "id": "m1-284", "word": "follow", "meaning": "따르다",
+            "scene": "sunny cobblestone park pathway, cute slender stickman walking cheerfully while an adorable fluffy puppy happily follows closely behind his footsteps, autumn flower border"
+        },
+        {
+            "id": "m1-285", "word": "daughter", "meaning": "딸",
+            "scene": "school speech contest podium stage, proud smiling cute slender stickman father applauding joyfully as his talented daughter stickman receives first-prize golden trophy ribbon"
+        },
+        {
+            "id": "m1-286", "word": "ground", "meaning": "땅, 운동장",
+            "scene": "outdoor school sports ground field, cute slender stickman coach kneeling inspecting the smooth chalk baseline on green grassy ground before track race, field bleachers"
+        },
+        {
+            "id": "m1-287", "word": "beat", "meaning": "때리다",
+            "scene": "music band rehearsal room, energetic cute slender stickman drummer holding drumsticks mid-air beating rhythmically on bronze snare drum and cymbal set, microphone stand"
+        },
+        {
+            "id": "m1-288", "word": "shake", "meaning": "떨다",
+            "scene": "bright orchard garden, cheerful cute slender stickman gently shaking ripe apple tree trunk causing sweet red apples to rain down into soft green grass and wooden basket"
+        },
+        {
+            "id": "m1-289", "word": "drop", "meaning": "떨어뜨리다",
+            "scene": "living room carpet rug, startled cute slender stickman accidentally dropping a shiny ripe red apple from hand watching it fall toward soft rug, cozy armchair and bookshelf"
+        },
+        {
+            "id": "m1-290", "word": "apart", "meaning": "떨어진",
+            "scene": "scenic rolling grassy hill ridge, two charming rustic cottages standing fifty meters apart on separate knolls with stone pathway connecting them, wildflowers in breeze"
+        },
+        {
+            "id": "m1-291", "word": "smart", "meaning": "똑똑한",
+            "scene": "bright sunny school hallway, sharp neat cute slender stickman student looking smart and confident in crisp school blazer carrying backpack walking with bright posture"
+        },
+        {
+            "id": "m1-292", "word": "straight", "meaning": "똑바른",
+            "scene": "geometry classroom whiteboard, studious cute slender stickman using long wooden ruler drawing a perfectly straight horizontal chalk line across the board, protractor on desk"
+        },
+        {
+            "id": "m1-293", "word": "fat", "meaning": "뚱뚱한",
+            "scene": "cozy sunny living room armchair cushion, round cute chubby plump pet cat curled up napping lazily while smiling cute slender stickman gently pets its soft round back"
+        },
+        {
+            "id": "m1-294", "word": "leap", "meaning": "뛰다",
+            "scene": "meadow stone garden fence, graceful agile cute slender stickman leaping mid-air high over a rustic stone boundary fence with arms extended, wildflower blossoms below"
+        },
+        {
+            "id": "m1-295", "word": "hop", "meaning": "뛰다, 점프하다",
+            "scene": "colorful chalk hopscotch playground court, playful cute slender stickman hopping on one foot happily landing squarely inside numbered chalk square grid, cheering friend"
+        },
+        {
+            "id": "m1-296", "word": "excellent", "meaning": "뛰어난",
+            "scene": "grand auditorium debate stage, eloquent cute slender stickman student finishing an excellent presentation bow as whole standing audience bursts into enthusiastic standing applause"
+        },
+        {
+            "id": "m1-297", "word": "float", "meaning": "뜨다",
+            "scene": "calm peaceful scenic river bend, cute slender stickman standing on riverbank watching an elegant folded origami paper boat floating serenely downstream on clear water surface"
+        },
+        {
+            "id": "m1-298", "word": "label", "meaning": "라벨, 꼬리표",
+            "scene": "clothing boutique display counter, attentive cute slender stickman shopper gently reading fabric care label tag sewn into soft woolen sweater garment, wooden garment rack"
+        },
+        {
+            "id": "m1-299", "word": "lantern", "meaning": "랜턴",
+            "scene": "misty evening forest hiking trail, adventurous cute slender stickman holding a glowing vintage camping kerosene lantern casting warm golden light onto mossy stone path"
+        },
+        {
+            "id": "m1-300", "word": "dry", "meaning": "마른",
+            "scene": "sunny breezy backyard garden lawn, diligent cute slender stickman hanging freshly washed towels and clothes on outdoor washing line blowing completely dry in warm sunny breeze"
+        }
     ]
 }
 

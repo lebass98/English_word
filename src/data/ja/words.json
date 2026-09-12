@@ -2,2781 +2,4486 @@
 "私": {
 "conceptId": "私",
 "phonetic": "わたし",
-"example": "私は学生です。"
+"example": "私は学生です。",
+"pos": [
+"pron"
+]
 },
 "あなた": {
 "conceptId": "あなた",
 "phonetic": "あなた",
-"example": "あなたは先生ですか。"
+"example": "あなたは先生ですか。",
+"pos": [
+"pron"
+]
 },
 "人": {
 "conceptId": "人",
 "phonetic": "ひと",
-"example": "店に人が多いです。"
+"example": "店に人が多いです。",
+"pos": [
+"noun"
+]
 },
 "男": {
 "conceptId": "男",
 "phonetic": "おとこ",
-"example": "あの男の人は父です。"
+"example": "あの男の人は父です。",
+"pos": [
+"noun"
+]
 },
 "女": {
 "conceptId": "女",
 "phonetic": "おんな",
-"example": "女の人が三人います。"
+"example": "女の人が三人います。",
+"pos": [
+"noun"
+]
 },
 "子供": {
 "conceptId": "子供",
 "phonetic": "こども",
-"example": "子供が公園で遊びます。"
+"example": "子供が公園で遊びます。",
+"pos": [
+"noun"
+]
 },
 "大人": {
 "conceptId": "adult",
 "phonetic": "おとな",
-"example": "大人はここに座ります。"
+"example": "大人はここに座ります。",
+"pos": [
+"noun"
+]
 },
 "家族": {
 "conceptId": "家族",
 "phonetic": "かぞく",
-"example": "家族と旅行します。"
+"example": "家族と旅行します。",
+"pos": [
+"noun"
+]
 },
 "父": {
 "conceptId": "父",
 "phonetic": "ちち",
-"example": "父は会社員です。"
+"example": "父は会社員です。",
+"pos": [
+"noun"
+]
 },
 "母": {
 "conceptId": "母",
 "phonetic": "はは",
-"example": "母は料理が上手です。"
+"example": "母は料理が上手です。",
+"pos": [
+"noun"
+]
 },
 "兄": {
 "conceptId": "兄",
 "phonetic": "あに",
-"example": "兄は大学生です。"
+"example": "兄は大学生です。",
+"pos": [
+"noun"
+]
 },
 "姉": {
 "conceptId": "姉",
 "phonetic": "あね",
-"example": "姉は東京にいます。"
+"example": "姉は東京にいます。",
+"pos": [
+"noun"
+]
 },
 "弟": {
 "conceptId": "弟",
 "phonetic": "おとうと",
-"example": "弟は背が高いです。"
+"example": "弟は背が高いです。",
+"pos": [
+"noun"
+]
 },
 "妹": {
 "conceptId": "妹",
 "phonetic": "いもうと",
-"example": "妹はまだ小さいです。"
+"example": "妹はまだ小さいです。",
+"pos": [
+"noun"
+]
 },
 "友達": {
 "conceptId": "pal",
 "phonetic": "ともだち",
-"example": "友達と映画を見ます。"
+"example": "友達と映画を見ます。",
+"pos": [
+"noun"
+]
 },
 "先生": {
 "conceptId": "先生",
 "phonetic": "せんせい",
-"example": "先生はやさしいです。"
+"example": "先生はやさしいです。",
+"pos": [
+"noun"
+]
 },
 "学生": {
 "conceptId": "学生",
 "phonetic": "がくせい",
-"example": "学生が教室にいます。"
+"example": "学生が教室にいます。",
+"pos": [
+"noun"
+]
 },
 "会社員": {
 "conceptId": "会社員",
 "phonetic": "かいしゃいん",
-"example": "姉は会社員です。"
+"example": "姉は会社員です。",
+"pos": [
+"noun"
+]
 },
 "医者": {
 "conceptId": "医者",
 "phonetic": "いしゃ",
-"example": "兄は医者です。"
+"example": "兄は医者です。",
+"pos": [
+"noun"
+]
 },
 "名前": {
 "conceptId": "名前",
 "phonetic": "なまえ",
-"example": "ここに名前を書きます。"
+"example": "ここに名前を書きます。",
+"pos": [
+"noun"
+]
 },
 "国": {
 "conceptId": "nation",
 "phonetic": "くに",
-"example": "あなたの国はどこですか。"
+"example": "あなたの国はどこですか。",
+"pos": [
+"noun"
+]
 },
 "今": {
 "conceptId": "今",
 "phonetic": "いま",
-"example": "今、何時ですか。"
+"example": "今、何時ですか。",
+"pos": [
+"noun"
+]
 },
 "今日": {
 "conceptId": "今日",
 "phonetic": "きょう",
-"example": "今日は寒いです。"
+"example": "今日は寒いです。",
+"pos": [
+"noun"
+]
 },
 "明日": {
 "conceptId": "明日",
 "phonetic": "あした",
-"example": "明日、学校へ行きます。"
+"example": "明日、学校へ行きます。",
+"pos": [
+"noun"
+]
 },
 "昨日": {
 "conceptId": "昨日",
 "phonetic": "きのう",
-"example": "昨日は雨でした。"
+"example": "昨日は雨でした。",
+"pos": [
+"noun"
+]
 },
 "毎日": {
 "conceptId": "毎日",
 "phonetic": "まいにち",
-"example": "毎日、日本語を勉強します。"
+"example": "毎日、日本語を勉強します。",
+"pos": [
+"noun"
+]
 },
 "朝": {
 "conceptId": "朝",
 "phonetic": "あさ",
-"example": "朝、パンを食べます。"
+"example": "朝、パンを食べます。",
+"pos": [
+"noun"
+]
 },
 "昼": {
 "conceptId": "昼",
 "phonetic": "ひる",
-"example": "昼にご飯を食べます。"
+"example": "昼にご飯を食べます。",
+"pos": [
+"noun"
+]
 },
 "夜": {
 "conceptId": "夜",
 "phonetic": "よる",
-"example": "夜は静かです。"
+"example": "夜は静かです。",
+"pos": [
+"noun"
+]
 },
 "午後": {
 "conceptId": "午後",
 "phonetic": "ごご",
-"example": "午後から雨です。"
+"example": "午後から雨です。",
+"pos": [
+"noun"
+]
 },
 "時間": {
 "conceptId": "時間",
 "phonetic": "じかん",
-"example": "時間がありません。"
+"example": "時間がありません。",
+"pos": [
+"noun"
+]
 },
 "来週": {
 "conceptId": "来週",
 "phonetic": "らいしゅう",
-"example": "来週、友達に会います。"
+"example": "来週、友達に会います。",
+"pos": [
+"noun"
+]
 },
 "来年": {
 "conceptId": "来年",
 "phonetic": "らいねん",
-"example": "来年、大学に入ります。"
+"example": "来年、大学に入ります。",
+"pos": [
+"noun"
+]
 },
 "春": {
 "conceptId": "春",
 "phonetic": "はる",
-"example": "春に花が咲きます。"
+"example": "春に花が咲きます。",
+"pos": [
+"noun"
+]
 },
 "夏": {
 "conceptId": "夏",
 "phonetic": "なつ",
-"example": "夏は海へ行きます。"
+"example": "夏は海へ行きます。",
+"pos": [
+"noun"
+]
 },
 "秋": {
 "conceptId": "秋",
 "phonetic": "あき",
-"example": "秋は涼しいです。"
+"example": "秋は涼しいです。",
+"pos": [
+"noun"
+]
 },
 "冬": {
 "conceptId": "冬",
 "phonetic": "ふゆ",
-"example": "冬は雪が降ります。"
+"example": "冬は雪が降ります。",
+"pos": [
+"noun"
+]
 },
 "誕生日": {
 "conceptId": "誕生日",
 "phonetic": "たんじょうび",
-"example": "明日は妹の誕生日です。"
+"example": "明日は妹の誕生日です。",
+"pos": [
+"noun"
+]
 },
 "休み": {
 "conceptId": "vacation",
 "phonetic": "やすみ",
-"example": "明日は休みです。"
+"example": "明日は休みです。",
+"pos": [
+"noun"
+]
 },
 "家": {
 "conceptId": "家",
 "phonetic": "いえ",
-"example": "家で本を読みます。"
+"example": "家で本を読みます。",
+"pos": [
+"noun"
+]
 },
 "学校": {
 "conceptId": "学校",
 "phonetic": "がっこう",
-"example": "学校まで歩きます。"
+"example": "学校まで歩きます。",
+"pos": [
+"noun"
+]
 },
 "教室": {
 "conceptId": "教室",
 "phonetic": "きょうしつ",
-"example": "教室は広いです。"
+"example": "教室は広いです。",
+"pos": [
+"noun"
+]
 },
 "部屋": {
 "conceptId": "部屋",
 "phonetic": "へや",
-"example": "部屋を掃除します。"
+"example": "部屋を掃除します。",
+"pos": [
+"noun"
+]
 },
 "店": {
 "conceptId": "store",
 "phonetic": "みせ",
-"example": "あの店は安いです。"
+"example": "あの店は安いです。",
+"pos": [
+"noun"
+]
 },
 "銀行": {
 "conceptId": "銀行",
 "phonetic": "ぎんこう",
-"example": "銀行は駅の前です。"
+"example": "銀行は駅の前です。",
+"pos": [
+"noun"
+]
 },
 "病院": {
 "conceptId": "病院",
 "phonetic": "びょういん",
-"example": "午後、病院へ行きます。"
+"example": "午後、病院へ行きます。",
+"pos": [
+"noun"
+]
 },
 "図書館": {
 "conceptId": "図書館",
 "phonetic": "としょかん",
-"example": "図書館で本を借ります。"
+"example": "図書館で本を借ります。",
+"pos": [
+"noun"
+]
 },
 "会社": {
 "conceptId": "会社",
 "phonetic": "かいしゃ",
-"example": "父は会社へ行きました。"
+"example": "父は会社へ行きました。",
+"pos": [
+"noun"
+]
 },
 "駅": {
 "conceptId": "駅",
 "phonetic": "えき",
-"example": "駅で友達を待ちます。"
+"example": "駅で友達を待ちます。",
+"pos": [
+"noun"
+]
 },
 "空港": {
 "conceptId": "airport",
 "phonetic": "くうこう",
-"example": "空港まで車で行きます。"
+"example": "空港まで車で行きます。",
+"pos": [
+"noun"
+]
 },
 "公園": {
 "conceptId": "公園",
 "phonetic": "こうえん",
-"example": "公園を散歩します。"
+"example": "公園を散歩します。",
+"pos": [
+"noun"
+]
 },
 "山": {
 "conceptId": "山",
 "phonetic": "やま",
-"example": "あの山は高いです。"
+"example": "あの山は高いです。",
+"pos": [
+"noun"
+]
 },
 "川": {
 "conceptId": "川",
 "phonetic": "かわ",
-"example": "川の水はきれいです。"
+"example": "川の水はきれいです。",
+"pos": [
+"noun"
+]
 },
 "海": {
 "conceptId": "海",
 "phonetic": "うみ",
-"example": "夏に海で泳ぎます。"
+"example": "夏に海で泳ぎます。",
+"pos": [
+"noun"
+]
 },
 "町": {
 "conceptId": "町",
 "phonetic": "まち",
-"example": "この町は静かです。"
+"example": "この町は静かです。",
+"pos": [
+"noun"
+]
 },
 "道": {
 "conceptId": "道",
 "phonetic": "みち",
-"example": "この道をまっすぐ行きます。"
+"example": "この道をまっすぐ行きます。",
+"pos": [
+"noun"
+]
 },
 "外": {
 "conceptId": "外",
 "phonetic": "そと",
-"example": "外は寒いです。"
+"example": "外は寒いです。",
+"pos": [
+"noun"
+]
 },
 "中": {
 "conceptId": "中",
 "phonetic": "なか",
-"example": "かばんの中に本があります。"
+"example": "かばんの中に本があります。",
+"pos": [
+"noun"
+]
 },
 "隣": {
 "conceptId": "隣",
 "phonetic": "となり",
-"example": "隣の部屋は静かです。"
+"example": "隣の部屋は静かです。",
+"pos": [
+"noun"
+]
 },
 "階段": {
 "conceptId": "stair",
 "phonetic": "かいだん",
-"example": "階段を上ります。"
+"example": "階段を上ります。",
+"pos": [
+"noun"
+]
 },
 "ご飯": {
 "conceptId": "ご飯",
 "phonetic": "ごはん",
-"example": "朝はご飯を食べます。"
+"example": "朝はご飯を食べます。",
+"pos": [
+"noun"
+]
 },
 "水": {
 "conceptId": "水",
 "phonetic": "みず",
-"example": "水を飲みます。"
+"example": "水を飲みます。",
+"pos": [
+"noun"
+]
 },
 "お茶": {
 "conceptId": "お茶",
 "phonetic": "おちゃ",
-"example": "お茶を入れます。"
+"example": "お茶を入れます。",
+"pos": [
+"noun"
+]
 },
 "牛乳": {
 "conceptId": "牛乳",
 "phonetic": "ぎゅうにゅう",
-"example": "毎朝、牛乳を飲みます。"
+"example": "毎朝、牛乳を飲みます。",
+"pos": [
+"noun"
+]
 },
 "パン": {
 "conceptId": "パン",
 "phonetic": "パン",
-"example": "店でパンを買いました。"
+"example": "店でパンを買いました。",
+"pos": [
+"noun"
+]
 },
 "肉": {
 "conceptId": "meat",
 "phonetic": "にく",
-"example": "弟は肉が好きです。"
+"example": "弟は肉が好きです。",
+"pos": [
+"noun"
+]
 },
 "魚": {
 "conceptId": "魚",
 "phonetic": "さかな",
-"example": "今日は魚を食べます。"
+"example": "今日は魚を食べます。",
+"pos": [
+"noun"
+]
 },
 "野菜": {
 "conceptId": "野菜",
 "phonetic": "やさい",
-"example": "野菜は体にいいです。"
+"example": "野菜は体にいいです。",
+"pos": [
+"noun"
+]
 },
 "果物": {
 "conceptId": "fruit",
 "phonetic": "くだもの",
-"example": "果物が好きです。"
+"example": "果物が好きです。",
+"pos": [
+"noun"
+]
 },
 "卵": {
 "conceptId": "卵",
 "phonetic": "たまご",
-"example": "卵を二つ買います。"
+"example": "卵を二つ買います。",
+"pos": [
+"noun"
+]
 },
 "塩": {
 "conceptId": "塩",
 "phonetic": "しお",
-"example": "塩を少し入れます。"
+"example": "塩を少し入れます。",
+"pos": [
+"noun"
+]
 },
 "料理": {
 "conceptId": "料理",
 "phonetic": "りょうり",
-"example": "母の料理はおいしいです。"
+"example": "母の料理はおいしいです。",
+"pos": [
+"noun",
+"verb"
+]
 },
 "お酒": {
 "conceptId": "お酒",
 "phonetic": "おさけ",
-"example": "父はお酒を飲みます。"
+"example": "父はお酒を飲みます。",
+"pos": [
+"noun"
+]
 },
 "コーヒー": {
 "conceptId": "コーヒー",
 "phonetic": "コーヒー",
-"example": "朝、コーヒーを飲みます。"
+"example": "朝、コーヒーを飲みます。",
+"pos": [
+"noun"
+]
 },
 "本": {
 "conceptId": "本",
 "phonetic": "ほん",
-"example": "本を読みます。"
+"example": "本を読みます。",
+"pos": [
+"noun"
+]
 },
 "雑誌": {
 "conceptId": "magazine",
 "phonetic": "ざっし",
-"example": "駅で雑誌を買いました。"
+"example": "駅で雑誌を買いました。",
+"pos": [
+"noun"
+]
 },
 "新聞": {
 "conceptId": "新聞",
 "phonetic": "しんぶん",
-"example": "毎朝、新聞を読みます。"
+"example": "毎朝、新聞を読みます。",
+"pos": [
+"noun"
+]
 },
 "辞書": {
 "conceptId": "辞書",
 "phonetic": "じしょ",
-"example": "辞書を使います。"
+"example": "辞書を使います。",
+"pos": [
+"noun"
+]
 },
 "紙": {
 "conceptId": "紙",
 "phonetic": "かみ",
-"example": "紙に名前を書きます。"
+"example": "紙に名前を書きます。",
+"pos": [
+"noun"
+]
 },
 "手紙": {
 "conceptId": "手紙",
 "phonetic": "てがみ",
-"example": "友達に手紙を書きます。"
+"example": "友達に手紙を書きます。",
+"pos": [
+"noun"
+]
 },
 "封筒": {
 "conceptId": "envelope",
 "phonetic": "ふうとう",
-"example": "封筒に手紙を入れます。"
+"example": "封筒に手紙を入れます。",
+"pos": [
+"noun"
+]
 },
 "鉛筆": {
 "conceptId": "鉛筆",
 "phonetic": "えんぴつ",
-"example": "鉛筆で書きます。"
+"example": "鉛筆で書きます。",
+"pos": [
+"noun"
+]
 },
 "机": {
 "conceptId": "机",
 "phonetic": "つくえ",
-"example": "机の上に本があります。"
+"example": "机の上に本があります。",
+"pos": [
+"noun"
+]
 },
 "椅子": {
 "conceptId": "椅子",
 "phonetic": "いす",
-"example": "椅子に座ります。"
+"example": "椅子に座ります。",
+"pos": [
+"noun"
+]
 },
 "窓": {
 "conceptId": "窓",
 "phonetic": "まど",
-"example": "窓を開けます。"
+"example": "窓を開けます。",
+"pos": [
+"noun"
+]
 },
 "電話": {
 "conceptId": "電話",
 "phonetic": "でんわ",
-"example": "友達に電話します。"
+"example": "友達に電話します。",
+"pos": [
+"noun",
+"verb"
+]
 },
 "電気": {
 "conceptId": "electricity",
 "phonetic": "でんき",
-"example": "電気を消します。"
+"example": "電気を消します。",
+"pos": [
+"noun"
+]
 },
 "時計": {
 "conceptId": "時計",
 "phonetic": "とけい",
-"example": "この時計は高いです。"
+"example": "この時計は高いです。",
+"pos": [
+"noun"
+]
 },
 "車": {
 "conceptId": "車",
 "phonetic": "くるま",
-"example": "車で会社へ行きます。"
+"example": "車で会社へ行きます。",
+"pos": [
+"noun"
+]
 },
 "自転車": {
 "conceptId": "自転車",
 "phonetic": "じてんしゃ",
-"example": "自転車に乗ります。"
+"example": "自転車に乗ります。",
+"pos": [
+"noun"
+]
 },
 "電車": {
 "conceptId": "電車",
 "phonetic": "でんしゃ",
-"example": "電車で学校へ行きます。"
+"example": "電車で学校へ行きます。",
+"pos": [
+"noun"
+]
 },
 "飛行機": {
 "conceptId": "飛行機",
 "phonetic": "ひこうき",
-"example": "飛行機は速いです。"
+"example": "飛行機は速いです。",
+"pos": [
+"noun"
+]
 },
 "服": {
 "conceptId": "服",
 "phonetic": "ふく",
-"example": "新しい服を買いました。"
+"example": "新しい服を買いました。",
+"pos": [
+"noun"
+]
 },
 "靴": {
 "conceptId": "靴",
 "phonetic": "くつ",
-"example": "靴を履きます。"
+"example": "靴を履きます。",
+"pos": [
+"noun"
+]
 },
 "帽子": {
 "conceptId": "帽子",
 "phonetic": "ぼうし",
-"example": "帽子をかぶります。"
+"example": "帽子をかぶります。",
+"pos": [
+"noun"
+]
 },
 "傘": {
 "conceptId": "傘",
 "phonetic": "かさ",
-"example": "雨なので傘を持ちます。"
+"example": "雨なので傘を持ちます。",
+"pos": [
+"noun"
+]
 },
 "かばん": {
 "conceptId": "かばん",
 "phonetic": "かばん",
-"example": "かばんが重いです。"
+"example": "かばんが重いです。",
+"pos": [
+"noun"
+]
 },
 "お金": {
 "conceptId": "お金",
 "phonetic": "おかね",
-"example": "今日はお金がありません。"
+"example": "今日はお金がありません。",
+"pos": [
+"noun"
+]
 },
 "写真": {
 "conceptId": "写真",
 "phonetic": "しゃしん",
-"example": "公園で写真を撮ります。"
+"example": "公園で写真を撮ります。",
+"pos": [
+"noun"
+]
 },
 "テレビ": {
 "conceptId": "テレビ",
 "phonetic": "テレビ",
-"example": "夜、テレビを見ます。"
+"example": "夜、テレビを見ます。",
+"pos": [
+"noun"
+]
 },
 "冷蔵庫": {
 "conceptId": "refrigerator",
 "phonetic": "れいぞうこ",
-"example": "冷蔵庫に卵があります。"
+"example": "冷蔵庫に卵があります。",
+"pos": [
+"noun"
+]
 },
 "洗濯": {
 "conceptId": "laundry",
 "phonetic": "せんたく",
-"example": "今日は洗濯をします。"
+"example": "今日は洗濯をします。",
+"pos": [
+"noun",
+"verb"
+]
 },
 "体": {
 "conceptId": "体",
 "phonetic": "からだ",
-"example": "体を大切にします。"
+"example": "体を大切にします。",
+"pos": [
+"noun"
+]
 },
 "頭": {
 "conceptId": "頭",
 "phonetic": "あたま",
-"example": "頭が痛いです。"
+"example": "頭が痛いです。",
+"pos": [
+"noun"
+]
 },
 "目": {
 "conceptId": "目",
 "phonetic": "め",
-"example": "妹は目が大きいです。"
+"example": "妹は目が大きいです。",
+"pos": [
+"noun"
+]
 },
 "耳": {
 "conceptId": "耳",
 "phonetic": "みみ",
-"example": "犬は耳がいいです。"
+"example": "犬は耳がいいです。",
+"pos": [
+"noun"
+]
 },
 "口": {
 "conceptId": "口",
 "phonetic": "くち",
-"example": "口を開けてください。"
+"example": "口を開けてください。",
+"pos": [
+"noun"
+]
 },
 "手": {
 "conceptId": "手",
 "phonetic": "て",
-"example": "手を洗います。"
+"example": "手を洗います。",
+"pos": [
+"noun"
+]
 },
 "足": {
 "conceptId": "足",
 "phonetic": "あし",
-"example": "足が疲れました。"
+"example": "足が疲れました。",
+"pos": [
+"noun"
+]
 },
 "声": {
 "conceptId": "voice",
 "phonetic": "こえ",
-"example": "先生の声は大きいです。"
+"example": "先生の声は大きいです。",
+"pos": [
+"noun"
+]
 },
 "病気": {
 "conceptId": "sick",
 "phonetic": "びょうき",
-"example": "病気で学校を休みます。"
+"example": "病気で学校を休みます。",
+"pos": [
+"noun"
+]
 },
 "薬": {
 "conceptId": "薬",
 "phonetic": "くすり",
-"example": "薬を飲みます。"
+"example": "薬を飲みます。",
+"pos": [
+"noun"
+]
 },
 "元気": {
 "conceptId": "health",
 "phonetic": "げんき",
-"example": "母はとても元気です。"
+"example": "母はとても元気です。",
+"pos": [
+"na-adj",
+"noun"
+]
 },
 "犬": {
 "conceptId": "犬",
 "phonetic": "いぬ",
-"example": "犬と散歩します。"
+"example": "犬と散歩します。",
+"pos": [
+"noun"
+]
 },
 "猫": {
 "conceptId": "猫",
 "phonetic": "ねこ",
-"example": "猫が寝ています。"
+"example": "猫が寝ています。",
+"pos": [
+"noun"
+]
 },
 "鳥": {
 "conceptId": "鳥",
 "phonetic": "とり",
-"example": "鳥が空を飛びます。"
+"example": "鳥が空を飛びます。",
+"pos": [
+"noun"
+]
 },
 "花": {
 "conceptId": "花",
 "phonetic": "はな",
-"example": "庭に花が咲きます。"
+"example": "庭に花が咲きます。",
+"pos": [
+"noun"
+]
 },
 "木": {
 "conceptId": "木",
 "phonetic": "き",
-"example": "大きい木があります。"
+"example": "大きい木があります。",
+"pos": [
+"noun"
+]
 },
 "天気": {
 "conceptId": "天気",
 "phonetic": "てんき",
-"example": "今日はいい天気です。"
+"example": "今日はいい天気です。",
+"pos": [
+"noun"
+]
 },
 "雨": {
 "conceptId": "雨",
 "phonetic": "あめ",
-"example": "朝から雨が降ります。"
+"example": "朝から雨が降ります。",
+"pos": [
+"noun"
+]
 },
 "雪": {
 "conceptId": "雪",
 "phonetic": "ゆき",
-"example": "雪が降っています。"
+"example": "雪が降っています。",
+"pos": [
+"noun"
+]
 },
 "風": {
 "conceptId": "風",
 "phonetic": "かぜ",
-"example": "今日は風が強いです。"
+"example": "今日は風が強いです。",
+"pos": [
+"noun"
+]
 },
 "空": {
 "conceptId": "空",
 "phonetic": "そら",
-"example": "空が青いです。"
+"example": "空が青いです。",
+"pos": [
+"noun"
+]
 },
 "音楽": {
 "conceptId": "音楽",
 "phonetic": "おんがく",
-"example": "音楽を聞きます。"
+"example": "音楽を聞きます。",
+"pos": [
+"noun"
+]
 },
 "映画": {
 "conceptId": "映画",
 "phonetic": "えいが",
-"example": "映画を見に行きます。"
+"example": "映画を見に行きます。",
+"pos": [
+"noun"
+]
 },
 "旅行": {
 "conceptId": "journey",
 "phonetic": "りょこう",
-"example": "来年、旅行します。"
+"example": "来年、旅行します。",
+"pos": [
+"noun",
+"verb"
+]
 },
 "趣味": {
 "conceptId": "hobby",
 "phonetic": "しゅみ",
-"example": "私の趣味は音楽です。"
+"example": "私の趣味は音楽です。",
+"pos": [
+"noun"
+]
 },
 "練習": {
 "conceptId": "practice",
 "phonetic": "れんしゅう",
-"example": "毎日、練習します。"
+"example": "毎日、練習します。",
+"pos": [
+"noun",
+"verb"
+]
 },
 "問題": {
 "conceptId": "problem",
 "phonetic": "もんだい",
-"example": "この問題は難しいです。"
+"example": "この問題は難しいです。",
+"pos": [
+"noun"
+]
 },
 "約束": {
 "conceptId": "promise",
 "phonetic": "やくそく",
-"example": "友達と約束があります。"
+"example": "友達と約束があります。",
+"pos": [
+"noun",
+"verb"
+]
 },
 "準備": {
 "conceptId": "prepare",
 "phonetic": "じゅんび",
-"example": "旅行の準備をします。"
+"example": "旅行の準備をします。",
+"pos": [
+"noun",
+"verb"
+]
 },
 "心配": {
 "conceptId": "worry",
 "phonetic": "しんぱい",
-"example": "心配しないでください。"
+"example": "心配しないでください。",
+"pos": [
+"noun",
+"verb",
+"na-adj"
+]
 },
 "結婚": {
 "conceptId": "marry",
 "phonetic": "けっこん",
-"example": "姉は来年結婚します。"
+"example": "姉は来年結婚します。",
+"pos": [
+"noun",
+"verb"
+]
 },
 "言葉": {
 "conceptId": "language",
 "phonetic": "ことば",
-"example": "新しい言葉を覚えます。"
+"example": "新しい言葉を覚えます。",
+"pos": [
+"noun"
+]
 },
 "仕事": {
 "conceptId": "仕事",
 "phonetic": "しごと",
-"example": "今日は仕事が多いです。"
+"example": "今日は仕事が多いです。",
+"pos": [
+"noun",
+"verb"
+]
 },
 "食べる": {
 "conceptId": "食べる",
 "phonetic": "たべる",
-"example": "ご飯を食べます。"
+"example": "ご飯を食べます。",
+"pos": [
+"verb"
+]
 },
 "飲む": {
 "conceptId": "飲む",
 "phonetic": "のむ",
-"example": "お茶を飲みます。"
+"example": "お茶を飲みます。",
+"pos": [
+"verb"
+]
 },
 "行く": {
 "conceptId": "行く",
 "phonetic": "いく",
-"example": "学校へ行きます。"
+"example": "学校へ行きます。",
+"pos": [
+"verb"
+]
 },
 "来る": {
 "conceptId": "来る",
 "phonetic": "くる",
-"example": "友達が家に来ます。"
+"example": "友達が家に来ます。",
+"pos": [
+"verb"
+]
 },
 "帰る": {
 "conceptId": "帰る",
 "phonetic": "かえる",
-"example": "六時に家へ帰ります。"
+"example": "六時に家へ帰ります。",
+"pos": [
+"verb"
+]
 },
 "見る": {
 "conceptId": "見る",
 "phonetic": "みる",
-"example": "映画を見ます。"
+"example": "映画を見ます。",
+"pos": [
+"verb"
+]
 },
 "聞く": {
 "conceptId": "聞く",
 "phonetic": "きく",
-"example": "先生に聞きます。"
+"example": "先生に聞きます。",
+"pos": [
+"verb"
+]
 },
 "話す": {
 "conceptId": "話す",
 "phonetic": "はなす",
-"example": "友達と話します。"
+"example": "友達と話します。",
+"pos": [
+"verb"
+]
 },
 "言う": {
 "conceptId": "mention",
 "phonetic": "いう",
-"example": "先生に名前を言います。"
+"example": "先生に名前を言います。",
+"pos": [
+"verb"
+]
 },
 "読む": {
 "conceptId": "読む",
 "phonetic": "よむ",
-"example": "新聞を読みます。"
+"example": "新聞を読みます。",
+"pos": [
+"verb"
+]
 },
 "書く": {
 "conceptId": "書く",
 "phonetic": "かく",
-"example": "手紙を書きます。"
+"example": "手紙を書きます。",
+"pos": [
+"verb"
+]
 },
 "買う": {
 "conceptId": "買う",
 "phonetic": "かう",
-"example": "店でパンを買います。"
+"example": "店でパンを買います。",
+"pos": [
+"verb"
+]
 },
 "売る": {
 "conceptId": "売る",
 "phonetic": "うる",
-"example": "あの店は野菜を売ります。"
+"example": "あの店は野菜を売ります。",
+"pos": [
+"verb"
+]
 },
 "作る": {
 "conceptId": "作る",
 "phonetic": "つくる",
-"example": "母が料理を作ります。"
+"example": "母が料理を作ります。",
+"pos": [
+"verb"
+]
 },
 "会う": {
 "conceptId": "会う",
 "phonetic": "あう",
-"example": "駅で友達に会います。"
+"example": "駅で友達に会います。",
+"pos": [
+"verb"
+]
 },
 "待つ": {
 "conceptId": "待つ",
 "phonetic": "まつ",
-"example": "ここで待ちます。"
+"example": "ここで待ちます。",
+"pos": [
+"verb"
+]
 },
 "使う": {
 "conceptId": "使う",
 "phonetic": "つかう",
-"example": "鉛筆を使います。"
+"example": "鉛筆を使います。",
+"pos": [
+"verb"
+]
 },
 "立つ": {
 "conceptId": "立つ",
 "phonetic": "たつ",
-"example": "みんな前に立ちます。"
+"example": "みんな前に立ちます。",
+"pos": [
+"verb"
+]
 },
 "座る": {
 "conceptId": "座る",
 "phonetic": "すわる",
-"example": "椅子に座ってください。"
+"example": "椅子に座ってください。",
+"pos": [
+"verb"
+]
 },
 "歩く": {
 "conceptId": "歩く",
 "phonetic": "あるく",
-"example": "駅まで歩きます。"
+"example": "駅まで歩きます。",
+"pos": [
+"verb"
+]
 },
 "走る": {
 "conceptId": "走る",
 "phonetic": "はしる",
-"example": "公園を走ります。"
+"example": "公園を走ります。",
+"pos": [
+"verb"
+]
 },
 "泳ぐ": {
 "conceptId": "泳ぐ",
 "phonetic": "およぐ",
-"example": "海で泳ぎます。"
+"example": "海で泳ぎます。",
+"pos": [
+"verb"
+]
 },
 "起きる": {
 "conceptId": "起きる",
 "phonetic": "おきる",
-"example": "毎朝、早く起きます。"
+"example": "毎朝、早く起きます。",
+"pos": [
+"verb"
+]
 },
 "寝る": {
 "conceptId": "寝る",
 "phonetic": "ねる",
-"example": "夜、早く寝ます。"
+"example": "夜、早く寝ます。",
+"pos": [
+"verb"
+]
 },
 "働く": {
 "conceptId": "働く",
 "phonetic": "はたらく",
-"example": "父は銀行で働きます。"
+"example": "父は銀行で働きます。",
+"pos": [
+"verb"
+]
 },
 "休む": {
 "conceptId": "休む",
 "phonetic": "やすむ",
-"example": "今日は家で休みます。"
+"example": "今日は家で休みます。",
+"pos": [
+"verb"
+]
 },
 "遊ぶ": {
 "conceptId": "遊ぶ",
 "phonetic": "あそぶ",
-"example": "公園で遊びます。"
+"example": "公園で遊びます。",
+"pos": [
+"verb"
+]
 },
 "歌う": {
 "conceptId": "歌う",
 "phonetic": "うたう",
-"example": "みんなで歌います。"
+"example": "みんなで歌います。",
+"pos": [
+"verb"
+]
 },
 "笑う": {
 "conceptId": "笑う",
 "phonetic": "わらう",
-"example": "子供が笑っています。"
+"example": "子供が笑っています。",
+"pos": [
+"verb"
+]
 },
 "泣く": {
 "conceptId": "泣く",
 "phonetic": "なく",
-"example": "妹が泣いています。"
+"example": "妹が泣いています。",
+"pos": [
+"verb"
+]
 },
 "教える": {
 "conceptId": "教える",
 "phonetic": "おしえる",
-"example": "日本語を教えます。"
+"example": "日本語を教えます。",
+"pos": [
+"verb"
+]
 },
 "習う": {
 "conceptId": "習う",
 "phonetic": "ならう",
-"example": "学校で英語を習います。"
+"example": "学校で英語を習います。",
+"pos": [
+"verb"
+]
 },
 "覚える": {
 "conceptId": "覚える",
 "phonetic": "おぼえる",
-"example": "言葉を覚えます。"
+"example": "言葉を覚えます。",
+"pos": [
+"verb"
+]
 },
 "忘れる": {
 "conceptId": "忘れる",
 "phonetic": "わすれる",
-"example": "約束を忘れました。"
+"example": "約束を忘れました。",
+"pos": [
+"verb"
+]
 },
 "分かる": {
 "conceptId": "分かる",
 "phonetic": "わかる",
-"example": "意味が分かりません。"
+"example": "意味が分かりません。",
+"pos": [
+"verb"
+]
 },
 "借りる": {
 "conceptId": "borrow",
 "phonetic": "かりる",
-"example": "図書館で本を借ります。"
+"example": "図書館で本を借ります。",
+"pos": [
+"verb"
+]
 },
 "探す": {
 "conceptId": "search",
 "phonetic": "さがす",
-"example": "かばんを探します。"
+"example": "かばんを探します。",
+"pos": [
+"verb"
+]
 },
 "押す": {
 "conceptId": "press",
 "phonetic": "おす",
-"example": "ボタンを押します。"
+"example": "ボタンを押します。",
+"pos": [
+"verb"
+]
 },
 "急ぐ": {
 "conceptId": "haste",
 "phonetic": "いそぐ",
-"example": "時間がないので急ぎます。"
+"example": "時間がないので急ぎます。",
+"pos": [
+"verb"
+]
 },
 "止まる": {
 "conceptId": "halt",
 "phonetic": "とまる",
-"example": "電車が駅に止まります。"
+"example": "電車が駅に止まります。",
+"pos": [
+"verb"
+]
 },
 "大きい": {
 "conceptId": "大きい",
 "phonetic": "おおきい",
-"example": "この犬は大きいです。"
+"example": "この犬は大きいです。",
+"pos": [
+"i-adj"
+]
 },
 "小さい": {
 "conceptId": "小さい",
 "phonetic": "ちいさい",
-"example": "部屋が小さいです。"
+"example": "部屋が小さいです。",
+"pos": [
+"i-adj"
+]
 },
 "新しい": {
 "conceptId": "新しい",
 "phonetic": "あたらしい",
-"example": "新しい靴を買いました。"
+"example": "新しい靴を買いました。",
+"pos": [
+"i-adj"
+]
 },
 "古い": {
 "conceptId": "古い",
 "phonetic": "ふるい",
-"example": "この時計は古いです。"
+"example": "この時計は古いです。",
+"pos": [
+"i-adj"
+]
 },
 "高い": {
 "conceptId": "高い",
 "phonetic": "たかい",
-"example": "この服は高いです。"
+"example": "この服は高いです。",
+"pos": [
+"i-adj"
+]
 },
 "安い": {
 "conceptId": "cheap",
 "phonetic": "やすい",
-"example": "この店は安いです。"
+"example": "この店は安いです。",
+"pos": [
+"i-adj"
+]
 },
 "長い": {
 "conceptId": "長い",
 "phonetic": "ながい",
-"example": "姉は髪が長いです。"
+"example": "姉は髪が長いです。",
+"pos": [
+"i-adj"
+]
 },
 "短い": {
 "conceptId": "short",
 "phonetic": "みじかい",
-"example": "この鉛筆は短いです。"
+"example": "この鉛筆は短いです。",
+"pos": [
+"i-adj"
+]
 },
 "暑い": {
 "conceptId": "暑い",
 "phonetic": "あつい",
-"example": "夏はとても暑いです。"
+"example": "夏はとても暑いです。",
+"pos": [
+"i-adj"
+]
 },
 "寒い": {
 "conceptId": "寒い",
 "phonetic": "さむい",
-"example": "冬は寒いです。"
+"example": "冬は寒いです。",
+"pos": [
+"i-adj"
+]
 },
 "涼しい": {
 "conceptId": "cool",
 "phonetic": "すずしい",
-"example": "今日は涼しいです。"
+"example": "今日は涼しいです。",
+"pos": [
+"i-adj"
+]
 },
 "面白い": {
 "conceptId": "interesting",
 "phonetic": "おもしろい",
-"example": "この本は面白いです。"
+"example": "この本は面白いです。",
+"pos": [
+"i-adj"
+]
 },
 "難しい": {
 "conceptId": "difficult",
 "phonetic": "むずかしい",
-"example": "日本語は難しいです。"
+"example": "日本語は難しいです。",
+"pos": [
+"i-adj"
+]
 },
 "簡単": {
 "conceptId": "simple",
 "phonetic": "かんたん",
-"example": "この問題は簡単です。"
+"example": "この問題は簡単です。",
+"pos": [
+"na-adj"
+]
 },
 "忙しい": {
 "conceptId": "busy",
 "phonetic": "いそがしい",
-"example": "父は毎日忙しいです。"
+"example": "父は毎日忙しいです。",
+"pos": [
+"i-adj"
+]
 },
 "暗い": {
 "conceptId": "dark",
 "phonetic": "くらい",
-"example": "部屋が暗いです。"
+"example": "部屋が暗いです。",
+"pos": [
+"i-adj"
+]
 },
 "嬉しい": {
 "conceptId": "delight",
 "phonetic": "うれしい",
-"example": "会えてとても嬉しいです。"
+"example": "会えてとても嬉しいです。",
+"pos": [
+"i-adj"
+]
 },
 "危ない": {
 "conceptId": "danger",
 "phonetic": "あぶない",
-"example": "この道は危ないです。"
+"example": "この道は危ないです。",
+"pos": [
+"i-adj"
+]
 },
 "きれい": {
 "conceptId": "pretty",
 "phonetic": "きれい",
-"example": "花がきれいです。"
+"example": "花がきれいです。",
+"pos": [
+"na-adj"
+]
 },
 "親切": {
 "conceptId": "kind",
 "phonetic": "しんせつ",
-"example": "先生は親切です。"
+"example": "先生は親切です。",
+"pos": [
+"na-adj",
+"noun"
+]
 },
 "同じ": {
 "conceptId": "equal",
 "phonetic": "おなじ",
-"example": "兄と同じ学校です。"
+"example": "兄と同じ学校です。",
+"pos": [
+"na-adj",
+"prenominal"
+]
 },
 "違う": {
 "conceptId": "different",
 "phonetic": "ちがう",
-"example": "答えが違います。"
+"example": "答えが違います。",
+"pos": [
+"verb"
+]
 },
 "低い": {
 "conceptId": "low",
 "phonetic": "ひくい",
-"example": "この机は低いです。"
+"example": "この机は低いです。",
+"pos": [
+"i-adj"
+]
 },
 "好き": {
 "conceptId": "好き",
 "phonetic": "すき",
-"example": "果物が好きです。"
+"example": "果物が好きです。",
+"pos": [
+"na-adj"
+]
 },
 "静か": {
 "conceptId": "静か",
 "phonetic": "しずか",
-"example": "図書館は静かです。"
+"example": "図書館は静かです。",
+"pos": [
+"na-adj"
+]
 },
 "多い": {
 "conceptId": "多い",
 "phonetic": "おおい",
-"example": "この町は人が多いです。"
+"example": "この町は人が多いです。",
+"pos": [
+"i-adj"
+]
 },
 "少ない": {
 "conceptId": "少ない",
 "phonetic": "すくない",
-"example": "今日は宿題が少ないです。"
+"example": "今日は宿題が少ないです。",
+"pos": [
+"i-adj"
+]
 },
 "重い": {
 "conceptId": "重い",
 "phonetic": "おもい",
-"example": "このかばんは重いです。"
+"example": "このかばんは重いです。",
+"pos": [
+"i-adj"
+]
 },
 "軽い": {
 "conceptId": "軽い",
 "phonetic": "かるい",
-"example": "このパソコンは軽いです。"
+"example": "このパソコンは軽いです。",
+"pos": [
+"i-adj"
+]
 },
 "強い": {
 "conceptId": "強い",
 "phonetic": "つよい",
-"example": "今日は風が強いです。"
+"example": "今日は風が強いです。",
+"pos": [
+"i-adj"
+]
 },
 "弱い": {
 "conceptId": "弱い",
 "phonetic": "よわい",
-"example": "私はお酒に弱いです。"
+"example": "私はお酒に弱いです。",
+"pos": [
+"i-adj"
+]
 },
 "速い": {
 "conceptId": "速い",
 "phonetic": "はやい",
-"example": "この電車はとても速いです。"
+"example": "この電車はとても速いです。",
+"pos": [
+"i-adj"
+]
 },
 "遅い": {
 "conceptId": "遅い",
 "phonetic": "おそい",
-"example": "もう遅いですから帰ります。"
+"example": "もう遅いですから帰ります。",
+"pos": [
+"i-adj"
+]
 },
 "早い": {
 "conceptId": "early",
 "phonetic": "はやい",
-"example": "今朝は早く起きました。"
+"example": "今朝は早く起きました。",
+"pos": [
+"i-adj"
+]
 },
 "近い": {
 "conceptId": "近い",
 "phonetic": "ちかい",
-"example": "駅は家から近いです。"
+"example": "駅は家から近いです。",
+"pos": [
+"i-adj"
+]
 },
 "遠い": {
 "conceptId": "遠い",
 "phonetic": "とおい",
-"example": "学校は少し遠いです。"
+"example": "学校は少し遠いです。",
+"pos": [
+"i-adj"
+]
 },
 "広い": {
 "conceptId": "広い",
 "phonetic": "ひろい",
-"example": "この公園は広いです。"
+"example": "この公園は広いです。",
+"pos": [
+"i-adj"
+]
 },
 "狭い": {
 "conceptId": "狭い",
 "phonetic": "せまい",
-"example": "私の部屋は狭いです。"
+"example": "私の部屋は狭いです。",
+"pos": [
+"i-adj"
+]
 },
 "太い": {
 "conceptId": "太い",
 "phonetic": "ふとい",
-"example": "太いペンで書きました。"
+"example": "太いペンで書きました。",
+"pos": [
+"i-adj"
+]
 },
 "細い": {
 "conceptId": "細い",
 "phonetic": "ほそい",
-"example": "細い道を歩きました。"
+"example": "細い道を歩きました。",
+"pos": [
+"i-adj"
+]
 },
 "明るい": {
 "conceptId": "明るい",
 "phonetic": "あかるい",
-"example": "この部屋は明るいです。"
+"example": "この部屋は明るいです。",
+"pos": [
+"i-adj"
+]
 },
 "熱い": {
 "conceptId": "熱い",
 "phonetic": "あつい",
-"example": "お茶が熱いです。"
+"example": "お茶が熱いです。",
+"pos": [
+"i-adj"
+]
 },
 "冷たい": {
 "conceptId": "冷たい",
 "phonetic": "つめたい",
-"example": "冷たい水を飲みました。"
+"example": "冷たい水を飲みました。",
+"pos": [
+"i-adj"
+]
 },
 "暖かい": {
 "conceptId": "暖かい",
 "phonetic": "あたたかい",
-"example": "春は暖かいです。"
+"example": "春は暖かいです。",
+"pos": [
+"i-adj"
+]
 },
 "甘い": {
 "conceptId": "甘い",
 "phonetic": "あまい",
-"example": "このケーキは甘いです。"
+"example": "このケーキは甘いです。",
+"pos": [
+"i-adj"
+]
 },
 "辛い": {
 "conceptId": "辛い",
 "phonetic": "からい",
-"example": "このカレーは辛いです。"
+"example": "このカレーは辛いです。",
+"pos": [
+"i-adj"
+]
 },
 "苦い": {
 "conceptId": "苦い",
 "phonetic": "にがい",
-"example": "この薬は苦いです。"
+"example": "この薬は苦いです。",
+"pos": [
+"i-adj"
+]
 },
 "楽しい": {
 "conceptId": "楽しい",
 "phonetic": "たのしい",
-"example": "旅行はとても楽しかったです。"
+"example": "旅行はとても楽しかったです。",
+"pos": [
+"i-adj"
+]
 },
 "悲しい": {
 "conceptId": "悲しい",
 "phonetic": "かなしい",
-"example": "その話は悲しいです。"
+"example": "その話は悲しいです。",
+"pos": [
+"i-adj"
+]
 },
 "つまらない": {
 "conceptId": "つまらない",
 "phonetic": "つまらない",
-"example": "この本はつまらないです。"
+"example": "この本はつまらないです。",
+"pos": [
+"i-adj"
+]
 },
 "易しい": {
 "conceptId": "易しい",
 "phonetic": "やさしい",
-"example": "今日の問題は易しいです。"
+"example": "今日の問題は易しいです。",
+"pos": [
+"i-adj"
+]
 },
 "汚い": {
 "conceptId": "汚い",
 "phonetic": "きたない",
-"example": "部屋が汚いですね。"
+"example": "部屋が汚いですね。",
+"pos": [
+"i-adj"
+]
 },
 "若い": {
 "conceptId": "若い",
 "phonetic": "わかい",
-"example": "あの先生はまだ若いです。"
+"example": "あの先生はまだ若いです。",
+"pos": [
+"i-adj"
+]
 },
 "眠い": {
 "conceptId": "眠い",
 "phonetic": "ねむい",
-"example": "朝はいつも眠いです。"
+"example": "朝はいつも眠いです。",
+"pos": [
+"i-adj"
+]
 },
 "痛い": {
 "conceptId": "ache",
 "phonetic": "いたい",
-"example": "頭がとても痛いです。"
+"example": "頭がとても痛いです。",
+"pos": [
+"i-adj"
+]
 },
 "欲しい": {
 "conceptId": "欲しい",
 "phonetic": "ほしい",
-"example": "新しい靴が欲しいです。"
+"example": "新しい靴が欲しいです。",
+"pos": [
+"i-adj"
+]
 },
 "怖い": {
 "conceptId": "afraid",
 "phonetic": "こわい",
-"example": "私は犬が怖いです。"
+"example": "私は犬が怖いです。",
+"pos": [
+"i-adj"
+]
 },
 "寂しい": {
 "conceptId": "lonely",
 "phonetic": "さびしい",
-"example": "一人で住んでいて寂しいです。"
+"example": "一人で住んでいて寂しいです。",
+"pos": [
+"i-adj"
+]
 },
 "丸い": {
 "conceptId": "丸い",
 "phonetic": "まるい",
-"example": "丸いテーブルを買いました。"
+"example": "丸いテーブルを買いました。",
+"pos": [
+"i-adj"
+]
 },
 "にぎやか": {
 "conceptId": "にぎやか",
 "phonetic": "にぎやか",
-"example": "この町はにぎやかです。"
+"example": "この町はにぎやかです。",
+"pos": [
+"na-adj"
+]
 },
 "有名": {
 "conceptId": "有名",
 "phonetic": "ゆうめい",
-"example": "この店はとても有名です。"
+"example": "この店はとても有名です。",
+"pos": [
+"na-adj"
+]
 },
 "便利": {
 "conceptId": "便利",
 "phonetic": "べんり",
-"example": "この道具はとても便利です。"
+"example": "この道具はとても便利です。",
+"pos": [
+"na-adj"
+]
 },
 "不便": {
 "conceptId": "不便",
 "phonetic": "ふべん",
-"example": "駅が遠くて不便です。"
+"example": "駅が遠くて不便です。",
+"pos": [
+"na-adj"
+]
 },
 "大丈夫": {
 "conceptId": "大丈夫",
 "phonetic": "だいじょうぶ",
-"example": "一人でも大丈夫です。"
+"example": "一人でも大丈夫です。",
+"pos": [
+"na-adj"
+]
 },
 "大切": {
 "conceptId": "大切",
 "phonetic": "たいせつ",
-"example": "家族はとても大切です。"
+"example": "家族はとても大切です。",
+"pos": [
+"na-adj"
+]
 },
 "嫌い": {
 "conceptId": "hate",
 "phonetic": "きらい",
-"example": "弟は野菜が嫌いです。"
+"example": "弟は野菜が嫌いです。",
+"pos": [
+"na-adj"
+]
 },
 "上手": {
 "conceptId": "上手",
 "phonetic": "じょうず",
-"example": "姉は料理が上手です。"
+"example": "姉は料理が上手です。",
+"pos": [
+"na-adj"
+]
 },
 "下手": {
 "conceptId": "下手",
 "phonetic": "へた",
-"example": "私は歌が下手です。"
+"example": "私は歌が下手です。",
+"pos": [
+"na-adj"
+]
 },
 "暇": {
 "conceptId": "暇",
 "phonetic": "ひま",
-"example": "今日の午後は暇です。"
+"example": "今日の午後は暇です。",
+"pos": [
+"na-adj",
+"noun"
+]
 },
 "開ける": {
 "conceptId": "開ける",
 "phonetic": "あける",
-"example": "窓を開けてください。"
+"example": "窓を開けてください。",
+"pos": [
+"verb"
+]
 },
 "閉める": {
 "conceptId": "閉める",
 "phonetic": "しめる",
-"example": "寒いのでドアを閉めました。"
+"example": "寒いのでドアを閉めました。",
+"pos": [
+"verb"
+]
 },
 "洗う": {
 "conceptId": "洗う",
 "phonetic": "あらう",
-"example": "ご飯の前に手を洗います。"
+"example": "ご飯の前に手を洗います。",
+"pos": [
+"verb"
+]
 },
 "持つ": {
 "conceptId": "持つ",
 "phonetic": "もつ",
-"example": "かばんを持ちましょうか。"
+"example": "かばんを持ちましょうか。",
+"pos": [
+"verb"
+]
 },
 "取る": {
 "conceptId": "取る",
 "phonetic": "とる",
-"example": "その本を取ってください。"
+"example": "その本を取ってください。",
+"pos": [
+"verb"
+]
 },
 "置く": {
 "conceptId": "置く",
 "phonetic": "おく",
-"example": "机の上に本を置きます。"
+"example": "机の上に本を置きます。",
+"pos": [
+"verb"
+]
 },
 "消す": {
 "conceptId": "消す",
 "phonetic": "けす",
-"example": "寝る前に電気を消します。"
+"example": "寝る前に電気を消します。",
+"pos": [
+"verb"
+]
 },
 "つける": {
 "conceptId": "つける",
 "phonetic": "つける",
-"example": "暑いのでエアコンをつけました。"
+"example": "暑いのでエアコンをつけました。",
+"pos": [
+"verb"
+]
 },
 "始める": {
 "conceptId": "始める",
 "phonetic": "はじめる",
-"example": "今日から日本語の勉強を始めます。"
+"example": "今日から日本語の勉強を始めます。",
+"pos": [
+"verb"
+]
 },
 "終わる": {
 "conceptId": "終わる",
 "phonetic": "おわる",
-"example": "仕事はもう終わりました。"
+"example": "仕事はもう終わりました。",
+"pos": [
+"verb"
+]
 },
 "入る": {
 "conceptId": "入る",
 "phonetic": "はいる",
-"example": "部屋に入ってもいいですか。"
+"example": "部屋に入ってもいいですか。",
+"pos": [
+"verb"
+]
 },
 "出る": {
 "conceptId": "出る",
 "phonetic": "でる",
-"example": "そろそろ家を出る時間です。"
+"example": "そろそろ家を出る時間です。",
+"pos": [
+"verb"
+]
 },
 "着る": {
 "conceptId": "着る",
 "phonetic": "きる",
-"example": "今日は白いシャツを着ます。"
+"example": "今日は白いシャツを着ます。",
+"pos": [
+"verb"
+]
 },
 "脱ぐ": {
 "conceptId": "脱ぐ",
 "phonetic": "ぬぐ",
-"example": "ここで靴を脱いでください。"
+"example": "ここで靴を脱いでください。",
+"pos": [
+"verb"
+]
 },
 "履く": {
 "conceptId": "履く",
 "phonetic": "はく",
-"example": "新しい靴を履きました。"
+"example": "新しい靴を履きました。",
+"pos": [
+"verb"
+]
 },
 "かぶる": {
 "conceptId": "かぶる",
 "phonetic": "かぶる",
-"example": "帽子をかぶって出かけます。"
+"example": "帽子をかぶって出かけます。",
+"pos": [
+"verb"
+]
 },
 "住む": {
 "conceptId": "住む",
 "phonetic": "すむ",
-"example": "私は東京に住んでいます。"
+"example": "私は東京に住んでいます。",
+"pos": [
+"verb"
+]
 },
 "踊る": {
 "conceptId": "踊る",
 "phonetic": "おどる",
-"example": "みんなで一緒に踊りましょう。"
+"example": "みんなで一緒に踊りましょう。",
+"pos": [
+"verb"
+]
 },
 "怒る": {
 "conceptId": "upset",
 "phonetic": "おこる",
-"example": "父が大きい声で怒りました。"
+"example": "父が大きい声で怒りました。",
+"pos": [
+"verb"
+]
 },
 "困る": {
 "conceptId": "困る",
 "phonetic": "こまる",
-"example": "お金がなくて困っています。"
+"example": "お金がなくて困っています。",
+"pos": [
+"verb"
+]
 },
 "渡る": {
 "conceptId": "渡る",
 "phonetic": "わたる",
-"example": "あの橋を渡ってください。"
+"example": "あの橋を渡ってください。",
+"pos": [
+"verb"
+]
 },
 "曲がる": {
 "conceptId": "bend",
 "phonetic": "まがる",
-"example": "次の角を右に曲がります。"
+"example": "次の角を右に曲がります。",
+"pos": [
+"verb"
+]
 },
 "乗る": {
 "conceptId": "乗る",
 "phonetic": "のる",
-"example": "毎朝バスに乗ります。"
+"example": "毎朝バスに乗ります。",
+"pos": [
+"verb"
+]
 },
 "降りる": {
 "conceptId": "降りる",
 "phonetic": "おりる",
-"example": "次の駅で降ります。"
+"example": "次の駅で降ります。",
+"pos": [
+"verb"
+]
 },
 "運ぶ": {
 "conceptId": "運ぶ",
 "phonetic": "はこぶ",
-"example": "この机を運んでください。"
+"example": "この机を運んでください。",
+"pos": [
+"verb"
+]
 },
 "送る": {
 "conceptId": "送る",
 "phonetic": "おくる",
-"example": "友達に手紙を送りました。"
+"example": "友達に手紙を送りました。",
+"pos": [
+"verb"
+]
 },
 "返す": {
 "conceptId": "返す",
 "phonetic": "かえす",
-"example": "本を図書館に返します。"
+"example": "本を図書館に返します。",
+"pos": [
+"verb"
+]
 },
 "貸す": {
 "conceptId": "貸す",
 "phonetic": "かす",
-"example": "ペンを貸してください。"
+"example": "ペンを貸してください。",
+"pos": [
+"verb"
+]
 },
 "払う": {
 "conceptId": "払う",
 "phonetic": "はらう",
-"example": "お金はここで払います。"
+"example": "お金はここで払います。",
+"pos": [
+"verb"
+]
 },
 "選ぶ": {
 "conceptId": "select",
 "phonetic": "えらぶ",
-"example": "好きな色を選んでください。"
+"example": "好きな色を選んでください。",
+"pos": [
+"verb"
+]
 },
 "集める": {
 "conceptId": "collect",
 "phonetic": "あつめる",
-"example": "私は切手を集めています。"
+"example": "私は切手を集めています。",
+"pos": [
+"verb"
+]
 },
 "呼ぶ": {
 "conceptId": "呼ぶ",
 "phonetic": "よぶ",
-"example": "タクシーを呼びましょうか。"
+"example": "タクシーを呼びましょうか。",
+"pos": [
+"verb"
+]
 },
 "引く": {
 "conceptId": "引く",
 "phonetic": "ひく",
-"example": "このドアは引いて開けます。"
+"example": "このドアは引いて開けます。",
+"pos": [
+"verb"
+]
 },
 "切る": {
 "conceptId": "切る",
 "phonetic": "きる",
-"example": "ナイフで野菜を切ります。"
+"example": "ナイフで野菜を切ります。",
+"pos": [
+"verb"
+]
 },
 "消える": {
 "conceptId": "消える",
 "phonetic": "きえる",
-"example": "部屋の電気が消えました。"
+"example": "部屋の電気が消えました。",
+"pos": [
+"verb"
+]
 },
 "落ちる": {
 "conceptId": "落ちる",
 "phonetic": "おちる",
-"example": "かばんが椅子から落ちました。"
+"example": "かばんが椅子から落ちました。",
+"pos": [
+"verb"
+]
 },
 "晴れる": {
 "conceptId": "晴れる",
 "phonetic": "はれる",
-"example": "明日は晴れるでしょう。"
+"example": "明日は晴れるでしょう。",
+"pos": [
+"verb"
+]
 },
 "曇る": {
 "conceptId": "cloudy",
 "phonetic": "くもる",
-"example": "午後から空が曇りました。"
+"example": "午後から空が曇りました。",
+"pos": [
+"verb"
+]
 },
 "降る": {
 "conceptId": "降る",
 "phonetic": "ふる",
-"example": "朝から雨が降っています。"
+"example": "朝から雨が降っています。",
+"pos": [
+"verb"
+]
 },
 "吹く": {
 "conceptId": "吹く",
 "phonetic": "ふく",
-"example": "今日は強い風が吹いています。"
+"example": "今日は強い風が吹いています。",
+"pos": [
+"verb"
+]
 },
 "咲く": {
 "conceptId": "咲く",
 "phonetic": "さく",
-"example": "庭に花が咲きました。"
+"example": "庭に花が咲きました。",
+"pos": [
+"verb"
+]
 },
 "並ぶ": {
 "conceptId": "並ぶ",
 "phonetic": "ならぶ",
-"example": "店の前に人が並んでいます。"
+"example": "店の前に人が並んでいます。",
+"pos": [
+"verb"
+]
 },
 "答える": {
 "conceptId": "答える",
 "phonetic": "こたえる",
-"example": "先生の質問に答えました。"
+"example": "先生の質問に答えました。",
+"pos": [
+"verb"
+]
 },
 "生まれる": {
 "conceptId": "生まれる",
 "phonetic": "うまれる",
-"example": "私は大阪で生まれました。"
+"example": "私は大阪で生まれました。",
+"pos": [
+"verb"
+]
 },
 "疲れる": {
 "conceptId": "疲れる",
 "phonetic": "つかれる",
-"example": "今日はとても疲れました。"
+"example": "今日はとても疲れました。",
+"pos": [
+"verb"
+]
 },
 "始まる": {
 "conceptId": "始まる",
 "phonetic": "はじまる",
-"example": "映画はもうすぐ始まります。"
+"example": "映画はもうすぐ始まります。",
+"pos": [
+"verb"
+]
 },
 "手伝う": {
 "conceptId": "手伝う",
 "phonetic": "てつだう",
-"example": "母の仕事を手伝います。"
+"example": "母の仕事を手伝います。",
+"pos": [
+"verb"
+]
 },
 "掃除": {
 "conceptId": "掃除",
 "phonetic": "そうじ",
-"example": "土曜日に部屋を掃除します。"
+"example": "土曜日に部屋を掃除します。",
+"pos": [
+"noun",
+"verb"
+]
 },
 "買い物": {
 "conceptId": "買い物",
 "phonetic": "かいもの",
-"example": "母とスーパーで買い物をします。"
+"example": "母とスーパーで買い物をします。",
+"pos": [
+"noun",
+"verb"
+]
 },
 "散歩": {
 "conceptId": "散歩",
 "phonetic": "さんぽ",
-"example": "毎朝公園を散歩します。"
+"example": "毎朝公園を散歩します。",
+"pos": [
+"noun",
+"verb"
+]
 },
 "卒業": {
 "conceptId": "graduate",
 "phonetic": "そつぎょう",
-"example": "兄は大学を卒業しました。"
+"example": "兄は大学を卒業しました。",
+"pos": [
+"noun",
+"verb"
+]
 },
 "紹介": {
 "conceptId": "introduce",
 "phonetic": "しょうかい",
-"example": "友達を紹介します。"
+"example": "友達を紹介します。",
+"pos": [
+"noun",
+"verb"
+]
 },
 "質問": {
 "conceptId": "質問",
 "phonetic": "しつもん",
-"example": "先生に質問をしました。"
+"example": "先生に質問をしました。",
+"pos": [
+"noun",
+"verb"
+]
 },
 "運動": {
 "conceptId": "exercise",
 "phonetic": "うんどう",
-"example": "毎朝公園で運動をします。"
+"example": "毎朝公園で運動をします。",
+"pos": [
+"noun",
+"verb"
+]
 },
 "宿題": {
 "conceptId": "宿題",
 "phonetic": "しゅくだい",
-"example": "宿題はもう終わりました。"
+"example": "宿題はもう終わりました。",
+"pos": [
+"noun"
+]
 },
 "試験": {
 "conceptId": "試験",
 "phonetic": "しけん",
-"example": "来週日本語の試験があります。"
+"example": "来週日本語の試験があります。",
+"pos": [
+"noun"
+]
 },
 "授業": {
 "conceptId": "授業",
 "phonetic": "じゅぎょう",
-"example": "授業は朝九時に始まります。"
+"example": "授業は朝九時に始まります。",
+"pos": [
+"noun"
+]
 },
 "博物館": {
 "conceptId": "museum",
 "phonetic": "はくぶつかん",
-"example": "日曜日に博物館へ行きました。"
+"example": "日曜日に博物館へ行きました。",
+"pos": [
+"noun"
+]
 },
 "住所": {
 "conceptId": "address",
 "phonetic": "じゅうしょ",
-"example": "ここに住所を書いてください。"
+"example": "ここに住所を書いてください。",
+"pos": [
+"noun"
+]
 },
 "出口": {
 "conceptId": "exit",
 "phonetic": "でぐち",
-"example": "出口はあちらです。"
+"example": "出口はあちらです。",
+"pos": [
+"noun"
+]
 },
 "入口": {
 "conceptId": "入口",
 "phonetic": "いりぐち",
-"example": "入口で靴を脱ぎます。"
+"example": "入口で靴を脱ぎます。",
+"pos": [
+"noun"
+]
 },
 "虫": {
 "conceptId": "insect",
 "phonetic": "むし",
-"example": "庭に虫がたくさんいます。"
+"example": "庭に虫がたくさんいます。",
+"pos": [
+"noun"
+]
 },
 "心": {
 "conceptId": "mind",
 "phonetic": "こころ",
-"example": "彼は心が優しい人です。"
+"example": "彼は心が優しい人です。",
+"pos": [
+"noun"
+]
 },
 "のど": {
 "conceptId": "throat",
 "phonetic": "のど",
-"example": "風邪でのどが痛いです。"
+"example": "風邪でのどが痛いです。",
+"pos": [
+"noun"
+]
 },
 "茶色": {
 "conceptId": "brown",
 "phonetic": "ちゃいろ",
-"example": "茶色のかばんを買いました。"
+"example": "茶色のかばんを買いました。",
+"pos": [
+"noun"
+]
 },
 "客": {
 "conceptId": "guest",
 "phonetic": "きゃく",
-"example": "今日は店に客が多いです。"
+"example": "今日は店に客が多いです。",
+"pos": [
+"noun"
+]
 },
 "警察": {
 "conceptId": "officer",
 "phonetic": "けいさつ",
-"example": "警察に道を聞きました。"
+"example": "警察に道を聞きました。",
+"pos": [
+"noun"
+]
 },
 "工場": {
 "conceptId": "factory",
 "phonetic": "こうじょう",
-"example": "叔父は工場で働いています。"
+"example": "叔父は工場で働いています。",
+"pos": [
+"noun"
+]
 },
 "荷物": {
 "conceptId": "burden",
 "phonetic": "にもつ",
-"example": "荷物がとても重いです。"
+"example": "荷物がとても重いです。",
+"pos": [
+"noun"
+]
 },
 "文化": {
 "conceptId": "culture",
 "phonetic": "ぶんか",
-"example": "日本の文化に興味があります。"
+"example": "日本の文化に興味があります。",
+"pos": [
+"noun"
+]
 },
 "事故": {
 "conceptId": "accident",
 "phonetic": "じこ",
-"example": "駅の前で事故がありました。"
+"example": "駅の前で事故がありました。",
+"pos": [
+"noun"
+]
 },
 "財布": {
 "conceptId": "財布",
 "phonetic": "さいふ",
-"example": "財布を家に忘れました。"
+"example": "財布を家に忘れました。",
+"pos": [
+"noun"
+]
 },
 "鍵": {
 "conceptId": "鍵",
 "phonetic": "かぎ",
-"example": "ドアの鍵をなくしました。"
+"example": "ドアの鍵をなくしました。",
+"pos": [
+"noun"
+]
 },
 "ほとんど": {
 "conceptId": "almost",
 "phonetic": "ほとんど",
-"example": "宿題はほとんど終わりました。"
+"example": "宿題はほとんど終わりました。",
+"pos": [
+"adv",
+"noun"
+]
 },
 "すぐに": {
 "conceptId": "immediately",
 "phonetic": "すぐに",
-"example": "授業が終わったらすぐに帰ります。"
+"example": "授業が終わったらすぐに帰ります。",
+"pos": [
+"adv"
+]
 },
 "一緒に": {
 "conceptId": "together",
 "phonetic": "いっしょに",
-"example": "友達と一緒に映画を見ました。"
+"example": "友達と一緒に映画を見ました。",
+"pos": [
+"adv"
+]
 },
 "たぶん": {
 "conceptId": "maybe",
 "phonetic": "たぶん",
-"example": "明日はたぶん雨です。"
+"example": "明日はたぶん雨です。",
+"pos": [
+"adv"
+]
 },
 "たいてい": {
 "conceptId": "usually",
 "phonetic": "たいてい",
-"example": "朝はたいていパンを食べます。"
+"example": "朝はたいていパンを食べます。",
+"pos": [
+"adv"
+]
 },
 "一度": {
 "conceptId": "once",
 "phonetic": "いちど",
-"example": "京都へは一度行きました。"
+"example": "京都へは一度行きました。",
+"pos": [
+"adv",
+"noun"
+]
 },
 "とても": {
 "conceptId": "quite",
 "phonetic": "とても",
-"example": "このカレーはとてもおいしいです。"
+"example": "このカレーはとてもおいしいです。",
+"pos": [
+"adv"
+]
 },
 "特に": {
 "conceptId": "especially",
 "phonetic": "とくに",
-"example": "果物の中で特にりんごが好きです。"
+"example": "果物の中で特にりんごが好きです。",
+"pos": [
+"adv"
+]
 },
 "しかし": {
 "conceptId": "however",
 "phonetic": "しかし",
-"example": "雨が降りました。しかし、出かけました。"
+"example": "雨が降りました。しかし、出かけました。",
+"pos": [
+"conj"
+]
 },
 "最近": {
 "conceptId": "recently",
 "phonetic": "さいきん",
-"example": "最近新しい仕事を始めました。"
+"example": "最近新しい仕事を始めました。",
+"pos": [
+"noun",
+"adv"
+]
 },
 "右": {
 "conceptId": "右",
 "phonetic": "みぎ",
-"example": "銀行は駅の右にあります。"
+"example": "銀行は駅の右にあります。",
+"pos": [
+"noun"
+]
 },
 "左": {
 "conceptId": "左",
 "phonetic": "ひだり",
-"example": "左の手を上げてください。"
+"example": "左の手を上げてください。",
+"pos": [
+"noun"
+]
 },
 "上": {
 "conceptId": "上",
 "phonetic": "うえ",
-"example": "机の上に猫がいます。"
+"example": "机の上に猫がいます。",
+"pos": [
+"noun"
+]
 },
 "下": {
 "conceptId": "below",
 "phonetic": "した",
-"example": "かばんは椅子の下にあります。"
+"example": "かばんは椅子の下にあります。",
+"pos": [
+"noun"
+]
 },
 "前": {
 "conceptId": "前",
 "phonetic": "まえ",
-"example": "家の前に車が止まっています。"
+"example": "家の前に車が止まっています。",
+"pos": [
+"noun"
+]
 },
 "後ろ": {
 "conceptId": "behind",
 "phonetic": "うしろ",
-"example": "学校の後ろに公園があります。"
+"example": "学校の後ろに公園があります。",
+"pos": [
+"noun"
+]
 },
 "顔": {
 "conceptId": "顔",
 "phonetic": "かお",
-"example": "朝起きて顔を洗います。"
+"example": "朝起きて顔を洗います。",
+"pos": [
+"noun"
+]
 },
 "鼻": {
 "conceptId": "鼻",
 "phonetic": "はな",
-"example": "象は鼻がとても長いです。"
+"example": "象は鼻がとても長いです。",
+"pos": [
+"noun"
+]
 },
 "歯": {
 "conceptId": "歯",
 "phonetic": "は",
-"example": "食事の後で歯をみがきます。"
+"example": "食事の後で歯をみがきます。",
+"pos": [
+"noun"
+]
 },
 "首": {
 "conceptId": "首",
 "phonetic": "くび",
-"example": "寒いので首にマフラーをします。"
+"example": "寒いので首にマフラーをします。",
+"pos": [
+"noun"
+]
 },
 "喉": {
 "conceptId": "throat",
 "phonetic": "のど",
-"example": "風邪で喉が痛いです。"
+"example": "風邪で喉が痛いです。",
+"pos": [
+"noun"
+]
 },
 "肩": {
 "conceptId": "肩",
 "phonetic": "かた",
-"example": "父の肩をたたきました。"
+"example": "父の肩をたたきました。",
+"pos": [
+"noun"
+]
 },
 "腕": {
 "conceptId": "腕",
 "phonetic": "うで",
-"example": "子供が私の腕を引っぱりました。"
+"example": "子供が私の腕を引っぱりました。",
+"pos": [
+"noun"
+]
 },
 "指": {
 "conceptId": "指",
 "phonetic": "ゆび",
-"example": "指で地図を指しました。"
+"example": "指で地図を指しました。",
+"pos": [
+"noun"
+]
 },
 "胸": {
 "conceptId": "chest",
 "phonetic": "むね",
-"example": "走った後で胸がどきどきします。"
+"example": "走った後で胸がどきどきします。",
+"pos": [
+"noun"
+]
 },
 "髪": {
 "conceptId": "髪",
 "phonetic": "かみ",
-"example": "妹は髪が長いです。"
+"example": "妹は髪が長いです。",
+"pos": [
+"noun"
+]
 },
 "怪我": {
 "conceptId": "wound",
 "phonetic": "けが",
-"example": "転んで足に怪我をしました。"
+"example": "転んで足に怪我をしました。",
+"pos": [
+"noun",
+"verb"
+]
 },
 "健康": {
 "conceptId": "health",
 "phonetic": "けんこう",
-"example": "野菜は健康にいいです。"
+"example": "野菜は健康にいいです。",
+"pos": [
+"noun",
+"na-adj"
+]
 },
 "看護師": {
 "conceptId": "nurse",
 "phonetic": "かんごし",
-"example": "看護師が薬を持ってきました。"
+"example": "看護師が薬を持ってきました。",
+"pos": [
+"noun"
+]
 },
 "お客さん": {
 "conceptId": "guest",
 "phonetic": "おきゃくさん",
-"example": "今日はお客さんが多いです。"
+"example": "今日はお客さんが多いです。",
+"pos": [
+"noun"
+]
 },
 "着物": {
 "conceptId": "着物",
 "phonetic": "きもの",
-"example": "姉は着物を着ています。"
+"example": "姉は着物を着ています。",
+"pos": [
+"noun"
+]
 },
 "シャツ": {
 "conceptId": "シャツ",
 "phonetic": "シャツ",
-"example": "白いシャツを着ます。"
+"example": "白いシャツを着ます。",
+"pos": [
+"noun"
+]
 },
 "コート": {
 "conceptId": "コート",
 "phonetic": "コート",
-"example": "寒いのでコートを着ました。"
+"example": "寒いのでコートを着ました。",
+"pos": [
+"noun"
+]
 },
 "セーター": {
 "conceptId": "セーター",
 "phonetic": "セーター",
-"example": "母がセーターを作りました。"
+"example": "母がセーターを作りました。",
+"pos": [
+"noun"
+]
 },
 "ズボン": {
 "conceptId": "ズボン",
 "phonetic": "ズボン",
-"example": "このズボンは少し長いです。"
+"example": "このズボンは少し長いです。",
+"pos": [
+"noun"
+]
 },
 "スカート": {
 "conceptId": "スカート",
 "phonetic": "スカート",
-"example": "赤いスカートがほしいです。"
+"example": "赤いスカートがほしいです。",
+"pos": [
+"noun"
+]
 },
 "靴下": {
 "conceptId": "靴下",
 "phonetic": "くつした",
-"example": "新しい靴下をはきました。"
+"example": "新しい靴下をはきました。",
+"pos": [
+"noun"
+]
 },
 "ネクタイ": {
 "conceptId": "ネクタイ",
 "phonetic": "ネクタイ",
-"example": "父は青いネクタイをしています。"
+"example": "父は青いネクタイをしています。",
+"pos": [
+"noun"
+]
 },
 "眼鏡": {
 "conceptId": "眼鏡",
 "phonetic": "めがね",
-"example": "本を読む時、眼鏡をかけます。"
+"example": "本を読む時、眼鏡をかけます。",
+"pos": [
+"noun"
+]
 },
 "色": {
 "conceptId": "色",
 "phonetic": "いろ",
-"example": "好きな色は青です。"
+"example": "好きな色は青です。",
+"pos": [
+"noun"
+]
 },
 "赤": {
 "conceptId": "赤",
 "phonetic": "あか",
-"example": "信号が赤に変わりました。"
+"example": "信号が赤に変わりました。",
+"pos": [
+"noun"
+]
 },
 "青": {
 "conceptId": "青",
 "phonetic": "あお",
-"example": "海の青がきれいです。"
+"example": "海の青がきれいです。",
+"pos": [
+"noun"
+]
 },
 "白": {
 "conceptId": "白",
 "phonetic": "しろ",
-"example": "白のシャツを選びました。"
+"example": "白のシャツを選びました。",
+"pos": [
+"noun"
+]
 },
 "黒": {
 "conceptId": "黒",
 "phonetic": "くろ",
-"example": "黒のかばんを使っています。"
+"example": "黒のかばんを使っています。",
+"pos": [
+"noun"
+]
 },
 "黄色": {
 "conceptId": "黄色",
 "phonetic": "きいろ",
-"example": "庭に黄色の花が咲きました。"
+"example": "庭に黄色の花が咲きました。",
+"pos": [
+"noun"
+]
 },
 "緑": {
 "conceptId": "緑",
 "phonetic": "みどり",
-"example": "春になって山が緑になります。"
+"example": "春になって山が緑になります。",
+"pos": [
+"noun"
+]
 },
 "動物": {
 "conceptId": "動物",
 "phonetic": "どうぶつ",
-"example": "動物園で動物を見ました。"
+"example": "動物園で動物を見ました。",
+"pos": [
+"noun"
+]
 },
 "馬": {
 "conceptId": "馬",
 "phonetic": "うま",
-"example": "馬が野原を走っています。"
+"example": "馬が野原を走っています。",
+"pos": [
+"noun"
+]
 },
 "牛": {
 "conceptId": "牛",
 "phonetic": "うし",
-"example": "牧場に牛が十頭います。"
+"example": "牧場に牛が十頭います。",
+"pos": [
+"noun"
+]
 },
 "豚": {
 "conceptId": "豚",
 "phonetic": "ぶた",
-"example": "豚の肉を買いました。"
+"example": "豚の肉を買いました。",
+"pos": [
+"noun"
+]
 },
 "池": {
 "conceptId": "池",
 "phonetic": "いけ",
-"example": "公園の池に魚がいます。"
+"example": "公園の池に魚がいます。",
+"pos": [
+"noun"
+]
 },
 "森": {
 "conceptId": "森",
 "phonetic": "もり",
-"example": "森の中はとても静かです。"
+"example": "森の中はとても静かです。",
+"pos": [
+"noun"
+]
 },
 "草": {
 "conceptId": "草",
 "phonetic": "くさ",
-"example": "牛が草を食べています。"
+"example": "牛が草を食べています。",
+"pos": [
+"noun"
+]
 },
 "石": {
 "conceptId": "石",
 "phonetic": "いし",
-"example": "川で丸い石を拾いました。"
+"example": "川で丸い石を拾いました。",
+"pos": [
+"noun"
+]
 },
 "島": {
 "conceptId": "島",
 "phonetic": "しま",
-"example": "船で小さい島へ行きます。"
+"example": "船で小さい島へ行きます。",
+"pos": [
+"noun"
+]
 },
 "星": {
 "conceptId": "星",
 "phonetic": "ほし",
-"example": "今夜は星がよく見えます。"
+"example": "今夜は星がよく見えます。",
+"pos": [
+"noun"
+]
 },
 "月": {
 "conceptId": "月",
 "phonetic": "つき",
-"example": "今日の月はとても明るいです。"
+"example": "今日の月はとても明るいです。",
+"pos": [
+"noun"
+]
 },
 "太陽": {
 "conceptId": "太陽",
 "phonetic": "たいよう",
-"example": "朝、太陽が出ました。"
+"example": "朝、太陽が出ました。",
+"pos": [
+"noun"
+]
 },
 "米": {
 "conceptId": "米",
 "phonetic": "こめ",
-"example": "日本人は米をよく食べます。"
+"example": "日本人は米をよく食べます。",
+"pos": [
+"noun"
+]
 },
 "砂糖": {
 "conceptId": "砂糖",
 "phonetic": "さとう",
-"example": "コーヒーに砂糖を入れません。"
+"example": "コーヒーに砂糖を入れません。",
+"pos": [
+"noun"
+]
 },
 "ケーキ": {
 "conceptId": "ケーキ",
 "phonetic": "ケーキ",
-"example": "誕生日にケーキを作りました。"
+"example": "誕生日にケーキを作りました。",
+"pos": [
+"noun"
+]
 },
 "アイスクリーム": {
 "conceptId": "アイスクリーム",
 "phonetic": "アイスクリーム",
-"example": "暑いのでアイスクリームを食べます。"
+"example": "暑いのでアイスクリームを食べます。",
+"pos": [
+"noun"
+]
 },
 "紅茶": {
 "conceptId": "紅茶",
 "phonetic": "こうちゃ",
-"example": "紅茶とケーキをください。"
+"example": "紅茶とケーキをください。",
+"pos": [
+"noun"
+]
 },
 "ビール": {
 "conceptId": "ビール",
 "phonetic": "ビール",
-"example": "父は夜ビールを飲みます。"
+"example": "父は夜ビールを飲みます。",
+"pos": [
+"noun"
+]
 },
 "家具": {
 "conceptId": "furniture",
 "phonetic": "かぐ",
-"example": "新しい家具を買いました。"
+"example": "新しい家具を買いました。",
+"pos": [
+"noun"
+]
 },
 "ベッド": {
 "conceptId": "ベッド",
 "phonetic": "ベッド",
-"example": "子供はもうベッドで寝ています。"
+"example": "子供はもうベッドで寝ています。",
+"pos": [
+"noun"
+]
 },
 "布団": {
 "conceptId": "布団",
 "phonetic": "ふとん",
-"example": "毎朝布団をたたみます。"
+"example": "毎朝布団をたたみます。",
+"pos": [
+"noun"
+]
 },
 "カーテン": {
 "conceptId": "カーテン",
 "phonetic": "カーテン",
-"example": "朝カーテンを開けます。"
+"example": "朝カーテンを開けます。",
+"pos": [
+"noun"
+]
 },
 "壁": {
 "conceptId": "壁",
 "phonetic": "かべ",
-"example": "壁に絵をかけました。"
+"example": "壁に絵をかけました。",
+"pos": [
+"noun"
+]
 },
 "台所": {
 "conceptId": "台所",
 "phonetic": "だいどころ",
-"example": "母は台所で料理をしています。"
+"example": "母は台所で料理をしています。",
+"pos": [
+"noun"
+]
 },
 "風呂": {
 "conceptId": "風呂",
 "phonetic": "ふろ",
-"example": "夜、風呂に入ります。"
+"example": "夜、風呂に入ります。",
+"pos": [
+"noun"
+]
 },
 "トイレ": {
 "conceptId": "トイレ",
 "phonetic": "トイレ",
-"example": "トイレはどこですか。"
+"example": "トイレはどこですか。",
+"pos": [
+"noun"
+]
 },
 "ラジオ": {
 "conceptId": "ラジオ",
 "phonetic": "ラジオ",
-"example": "車の中でラジオを聞きます。"
+"example": "車の中でラジオを聞きます。",
+"pos": [
+"noun"
+]
 },
 "鏡": {
 "conceptId": "鏡",
 "phonetic": "かがみ",
-"example": "鏡で顔を見ます。"
+"example": "鏡で顔を見ます。",
+"pos": [
+"noun"
+]
 },
 "石鹸": {
 "conceptId": "石鹸",
 "phonetic": "せっけん",
-"example": "石鹸で手を洗いましょう。"
+"example": "石鹸で手を洗いましょう。",
+"pos": [
+"noun"
+]
 },
 "皿": {
 "conceptId": "皿",
 "phonetic": "さら",
-"example": "皿を五枚ならべました。"
+"example": "皿を五枚ならべました。",
+"pos": [
+"noun"
+]
 },
 "コップ": {
 "conceptId": "コップ",
 "phonetic": "コップ",
-"example": "コップに水を入れます。"
+"example": "コップに水を入れます。",
+"pos": [
+"noun"
+]
 },
 "箸": {
 "conceptId": "箸",
 "phonetic": "はし",
-"example": "箸でご飯を食べます。"
+"example": "箸でご飯を食べます。",
+"pos": [
+"noun"
+]
 },
 "スプーン": {
 "conceptId": "スプーン",
 "phonetic": "スプーン",
-"example": "スプーンでスープを飲みます。"
+"example": "スプーンでスープを飲みます。",
+"pos": [
+"noun"
+]
 },
 "箱": {
 "conceptId": "箱",
 "phonetic": "はこ",
-"example": "この箱は重いです。"
+"example": "この箱は重いです。",
+"pos": [
+"noun"
+]
 },
 "切手": {
 "conceptId": "切手",
 "phonetic": "きって",
-"example": "郵便局で切手を買いました。"
+"example": "郵便局で切手を買いました。",
+"pos": [
+"noun"
+]
 },
 "葉書": {
 "conceptId": "葉書",
 "phonetic": "はがき",
-"example": "友達に葉書を出しました。"
+"example": "友達に葉書を出しました。",
+"pos": [
+"noun"
+]
 },
 "地図": {
 "conceptId": "地図",
 "phonetic": "ちず",
-"example": "地図を見て道を探します。"
+"example": "地図を見て道を探します。",
+"pos": [
+"noun"
+]
 },
 "八百屋": {
 "conceptId": "八百屋",
 "phonetic": "やおや",
-"example": "八百屋で野菜を買います。"
+"example": "八百屋で野菜を買います。",
+"pos": [
+"noun"
+]
 },
 "本屋": {
 "conceptId": "本屋",
 "phonetic": "ほんや",
-"example": "駅の前に本屋があります。"
+"example": "駅の前に本屋があります。",
+"pos": [
+"noun"
+]
 },
 "薬局": {
 "conceptId": "薬局",
 "phonetic": "やっきょく",
-"example": "薬局で薬をもらいました。"
+"example": "薬局で薬をもらいました。",
+"pos": [
+"noun"
+]
 },
 "郵便局": {
 "conceptId": "郵便局",
 "phonetic": "ゆうびんきょく",
-"example": "郵便局は銀行のとなりです。"
+"example": "郵便局は銀行のとなりです。",
+"pos": [
+"noun"
+]
 },
 "映画館": {
 "conceptId": "theater",
 "phonetic": "えいがかん",
-"example": "日曜日に映画館へ行きます。"
+"example": "日曜日に映画館へ行きます。",
+"pos": [
+"noun"
+]
 },
 "デパート": {
 "conceptId": "デパート",
 "phonetic": "デパート",
-"example": "デパートで買い物をします。"
+"example": "デパートで買い物をします。",
+"pos": [
+"noun"
+]
 },
 "シャワー": {
 "conceptId": "shower",
 "phonetic": "シャワー",
-"example": "運動の後でシャワーを浴びます。"
+"example": "運動の後でシャワーを浴びます。",
+"pos": [
+"noun"
+]
 },
 "プール": {
 "conceptId": "プール",
 "phonetic": "プール",
-"example": "夏休みにプールで泳ぎます。"
+"example": "夏休みにプールで泳ぎます。",
+"pos": [
+"noun"
+]
 },
 "スポーツ": {
 "conceptId": "スポーツ",
 "phonetic": "スポーツ",
-"example": "どんなスポーツが好きですか。"
+"example": "どんなスポーツが好きですか。",
+"pos": [
+"noun"
+]
 },
 "テニス": {
 "conceptId": "テニス",
 "phonetic": "テニス",
-"example": "土曜日に友達とテニスをします。"
+"example": "土曜日に友達とテニスをします。",
+"pos": [
+"noun"
+]
 },
 "ギター": {
 "conceptId": "ギター",
 "phonetic": "ギター",
-"example": "兄はギターが上手です。"
+"example": "兄はギターが上手です。",
+"pos": [
+"noun"
+]
 },
 "ピアノ": {
 "conceptId": "ピアノ",
 "phonetic": "ピアノ",
-"example": "毎日ピアノを練習します。"
+"example": "毎日ピアノを練習します。",
+"pos": [
+"noun"
+]
 },
 "カメラ": {
 "conceptId": "カメラ",
 "phonetic": "カメラ",
-"example": "新しいカメラがほしいです。"
+"example": "新しいカメラがほしいです。",
+"pos": [
+"noun"
+]
 },
 "ニュース": {
 "conceptId": "ニュース",
 "phonetic": "ニュース",
-"example": "七時のニュースを見ます。"
+"example": "七時のニュースを見ます。",
+"pos": [
+"noun"
+]
 },
 "力": {
 "conceptId": "might",
 "phonetic": "ちから",
-"example": "この箱は力がないと持てません。"
+"example": "この箱は力がないと持てません。",
+"pos": [
+"noun"
+]
 },
 "場所": {
 "conceptId": "site",
 "phonetic": "ばしょ",
-"example": "待ち合わせの場所を決めましょう。"
+"example": "待ち合わせの場所を決めましょう。",
+"pos": [
+"noun"
+]
 },
 "会話": {
 "conceptId": "dialogue",
 "phonetic": "かいわ",
-"example": "英語で会話をしました。"
+"example": "英語で会話をしました。",
+"pos": [
+"noun",
+"verb"
+]
 },
 "自由": {
 "conceptId": "liberty",
 "phonetic": "じゆう",
-"example": "午後は自由な時間です。"
+"example": "午後は自由な時間です。",
+"pos": [
+"noun",
+"na-adj"
+]
 },
 "値段": {
 "conceptId": "price",
 "phonetic": "ねだん",
-"example": "この店は値段が安いです。"
+"example": "この店は値段が安いです。",
+"pos": [
+"noun"
+]
 },
 "続ける": {
 "conceptId": "continue",
 "phonetic": "つづける",
-"example": "十年、日本語の勉強を続けています。"
+"example": "十年、日本語の勉強を続けています。",
+"pos": [
+"verb"
+]
 },
 "壊す": {
 "conceptId": "destroy",
 "phonetic": "こわす",
-"example": "弟が時計を壊しました。"
+"example": "弟が時計を壊しました。",
+"pos": [
+"verb"
+]
 },
 "捨てる": {
 "conceptId": "捨てる",
 "phonetic": "すてる",
-"example": "古い雑誌を捨てました。"
+"example": "古い雑誌を捨てました。",
+"pos": [
+"verb"
+]
 },
 "叫ぶ": {
 "conceptId": "shout",
 "phonetic": "さけぶ",
-"example": "男の人が大きな声で叫びました。"
+"example": "男の人が大きな声で叫びました。",
+"pos": [
+"verb"
+]
 },
 "急に": {
 "conceptId": "suddenly",
 "phonetic": "きゅうに",
-"example": "急に雨が降ってきました。"
+"example": "急に雨が降ってきました。",
+"pos": [
+"adv"
+]
 },
 "普通": {
 "conceptId": "usually",
 "phonetic": "ふつう",
-"example": "普通、朝七時に起きます。"
+"example": "普通、朝七時に起きます。",
+"pos": [
+"noun",
+"na-adj"
+]
 },
 "磨く": {
 "conceptId": "磨く",
 "phonetic": "みがく",
-"example": "毎晩歯を磨きます。"
+"example": "毎晩歯を磨きます。",
+"pos": [
+"verb"
+]
 },
 "片付ける": {
 "conceptId": "片付ける",
 "phonetic": "かたづける",
-"example": "部屋を片付けました。"
+"example": "部屋を片付けました。",
+"pos": [
+"verb"
+]
 },
 "直す": {
 "conceptId": "直す",
 "phonetic": "なおす",
-"example": "壊れた時計を直しました。"
+"example": "壊れた時計を直しました。",
+"pos": [
+"verb"
+]
 },
 "並べる": {
 "conceptId": "並べる",
 "phonetic": "ならべる",
-"example": "机の上に本を並べます。"
+"example": "机の上に本を並べます。",
+"pos": [
+"verb"
+]
 },
 "決める": {
 "conceptId": "決める",
 "phonetic": "きめる",
-"example": "旅行の日を決めました。"
+"example": "旅行の日を決めました。",
+"pos": [
+"verb"
+]
 },
 "比べる": {
 "conceptId": "comparison",
 "phonetic": "くらべる",
-"example": "二つの店の値段を比べました。"
+"example": "二つの店の値段を比べました。",
+"pos": [
+"verb"
+]
 },
 "落とす": {
 "conceptId": "落とす",
 "phonetic": "おとす",
-"example": "駅で切符を落としました。"
+"example": "駅で切符を落としました。",
+"pos": [
+"verb"
+]
 },
 "頼む": {
 "conceptId": "頼む",
 "phonetic": "たのむ",
-"example": "店員にコーヒーを頼みました。"
+"example": "店員にコーヒーを頼みました。",
+"pos": [
+"verb"
+]
 },
 "約束する": {
 "conceptId": "promise",
 "phonetic": "やくそくする",
-"example": "友達と会う時間を約束しました。"
+"example": "友達と会う時間を約束しました。",
+"pos": [
+"verb"
+]
 },
 "練習する": {
 "conceptId": "practice",
 "phonetic": "れんしゅうする",
-"example": "毎日ピアノを練習します。"
+"example": "毎日ピアノを練習します。",
+"pos": [
+"verb"
+]
 },
 "準備する": {
 "conceptId": "prepare",
 "phonetic": "じゅんびする",
-"example": "旅行の荷物を準備します。"
+"example": "旅行の荷物を準備します。",
+"pos": [
+"verb"
+]
 },
 "心配する": {
 "conceptId": "worry",
 "phonetic": "しんぱいする",
-"example": "母が私を心配しています。"
+"example": "母が私を心配しています。",
+"pos": [
+"verb"
+]
 },
 "出席する": {
 "conceptId": "attend",
 "phonetic": "しゅっせきする",
-"example": "明日の会議に出席します。"
+"example": "明日の会議に出席します。",
+"pos": [
+"verb"
+]
 },
 "欠席する": {
 "conceptId": "absent",
 "phonetic": "けっせきする",
-"example": "病気で学校を欠席しました。"
+"example": "病気で学校を欠席しました。",
+"pos": [
+"verb"
+]
 },
 "遅れる": {
 "conceptId": "遅れる",
 "phonetic": "おくれる",
-"example": "バスが十分遅れました。"
+"example": "バスが十分遅れました。",
+"pos": [
+"verb"
+]
 },
 "間に合う": {
 "conceptId": "間に合う",
 "phonetic": "まにあう",
-"example": "急げば電車に間に合います。"
+"example": "急げば電車に間に合います。",
+"pos": [
+"verb"
+]
 },
 "泊まる": {
 "conceptId": "泊まる",
 "phonetic": "とまる",
-"example": "友達の家に泊まりました。"
+"example": "友達の家に泊まりました。",
+"pos": [
+"verb"
+]
 },
 "込む": {
 "conceptId": "込む",
 "phonetic": "こむ",
-"example": "朝の電車はとても込みます。"
+"example": "朝の電車はとても込みます。",
+"pos": [
+"verb"
+]
 },
 "登る": {
 "conceptId": "登る",
 "phonetic": "のぼる",
-"example": "夏に山に登ります。"
+"example": "夏に山に登ります。",
+"pos": [
+"verb"
+]
 },
 "飛ぶ": {
 "conceptId": "飛ぶ",
 "phonetic": "とぶ",
-"example": "鳥が空を飛んでいます。"
+"example": "鳥が空を飛んでいます。",
+"pos": [
+"verb"
+]
 },
 "足りる": {
 "conceptId": "足りる",
 "phonetic": "たりる",
-"example": "お金が足りません。"
+"example": "お金が足りません。",
+"pos": [
+"verb"
+]
 },
 "掛ける": {
 "conceptId": "hang",
 "phonetic": "かける",
-"example": "壁に絵を掛けました。"
+"example": "壁に絵を掛けました。",
+"pos": [
+"verb"
+]
 },
 "卒業する": {
 "conceptId": "graduate",
 "phonetic": "そつぎょうする",
-"example": "去年大学を卒業しました。"
+"example": "去年大学を卒業しました。",
+"pos": [
+"verb"
+]
 },
 "旅行する": {
 "conceptId": "journey",
 "phonetic": "りょこうする",
-"example": "家族と日本を旅行しました。"
+"example": "家族と日本を旅行しました。",
+"pos": [
+"verb"
+]
 },
 "散歩する": {
 "conceptId": "散歩する",
 "phonetic": "さんぽする",
-"example": "毎朝公園を散歩します。"
+"example": "毎朝公園を散歩します。",
+"pos": [
+"verb"
+]
 },
 "運動する": {
 "conceptId": "exercise",
 "phonetic": "うんどうする",
-"example": "健康のために運動します。"
+"example": "健康のために運動します。",
+"pos": [
+"verb"
+]
 },
 "洗濯する": {
 "conceptId": "laundry",
 "phonetic": "せんたくする",
-"example": "日曜日に洗濯します。"
+"example": "日曜日に洗濯します。",
+"pos": [
+"verb"
+]
 },
 "掃除する": {
 "conceptId": "掃除する",
 "phonetic": "そうじする",
-"example": "部屋をきれいに掃除しました。"
+"example": "部屋をきれいに掃除しました。",
+"pos": [
+"verb"
+]
 },
 "結婚する": {
 "conceptId": "marry",
 "phonetic": "けっこんする",
-"example": "兄は去年結婚しました。"
+"example": "兄は去年結婚しました。",
+"pos": [
+"verb"
+]
 },
 "紹介する": {
 "conceptId": "introduce",
 "phonetic": "しょうかいする",
-"example": "友達を家族に紹介しました。"
+"example": "友達を家族に紹介しました。",
+"pos": [
+"verb"
+]
 },
 "着く": {
 "conceptId": "着く",
 "phonetic": "つく",
-"example": "駅に着いたら電話します。"
+"example": "駅に着いたら電話します。",
+"pos": [
+"verb"
+]
 },
 "注意する": {
 "conceptId": "注意する",
 "phonetic": "ちゅういする",
-"example": "道で車に注意してください。"
+"example": "道で車に注意してください。",
+"pos": [
+"verb"
+]
 },
 "役に立つ": {
 "conceptId": "役に立つ",
 "phonetic": "やくにたつ",
-"example": "この辞書はとても役に立ちます。"
+"example": "この辞書はとても役に立ちます。",
+"pos": [
+"verb",
+"phrase"
+]
 },
 "気を付ける": {
 "conceptId": "気を付ける",
 "phonetic": "きをつける",
-"example": "体に気を付けてください。"
+"example": "体に気を付けてください。",
+"pos": [
+"verb",
+"phrase"
+]
 },
 "深い": {
 "conceptId": "深い",
 "phonetic": "ふかい",
-"example": "この川は深いです。"
+"example": "この川は深いです。",
+"pos": [
+"i-adj"
+]
 },
 "柔らかい": {
 "conceptId": "柔らかい",
 "phonetic": "やわらかい",
-"example": "このパンは柔らかいです。"
+"example": "このパンは柔らかいです。",
+"pos": [
+"i-adj"
+]
 },
 "四角い": {
 "conceptId": "square",
 "phonetic": "しかくい",
-"example": "四角いテーブルを買いました。"
+"example": "四角いテーブルを買いました。",
+"pos": [
+"i-adj"
+]
 },
 "正しい": {
 "conceptId": "正しい",
 "phonetic": "ただしい",
-"example": "正しい答えを選んでください。"
+"example": "正しい答えを選んでください。",
+"pos": [
+"i-adj"
+]
 },
 "安全な": {
 "conceptId": "safely",
 "phonetic": "あんぜんな",
-"example": "この町はとても安全です。"
+"example": "この町はとても安全です。",
+"pos": [
+"na-adj"
+]
 },
 "簡単な": {
 "conceptId": "simple",
 "phonetic": "かんたんな",
-"example": "この問題は簡単です。"
+"example": "この問題は簡単です。",
+"pos": [
+"na-adj"
+]
 },
 "大切な": {
 "conceptId": "大切な",
 "phonetic": "たいせつな",
-"example": "家族は私の大切な人です。"
+"example": "家族は私の大切な人です。",
+"pos": [
+"na-adj"
+]
 },
 "大事な": {
 "conceptId": "大事な",
 "phonetic": "だいじな",
-"example": "大事な話があります。"
+"example": "大事な話があります。",
+"pos": [
+"na-adj"
+]
 },
 "必要な": {
 "conceptId": "必要な",
 "phonetic": "ひつような",
-"example": "旅行にはパスポートが必要です。"
+"example": "旅行にはパスポートが必要です。",
+"pos": [
+"na-adj"
+]
 },
 "便利な": {
 "conceptId": "便利な",
 "phonetic": "べんりな",
-"example": "このかばんはとても便利です。"
+"example": "このかばんはとても便利です。",
+"pos": [
+"na-adj"
+]
 },
 "不便な": {
 "conceptId": "不便な",
 "phonetic": "ふべんな",
-"example": "駅が遠くて不便です。"
+"example": "駅が遠くて不便です。",
+"pos": [
+"na-adj"
+]
 },
 "親切な": {
 "conceptId": "kind",
 "phonetic": "しんせつな",
-"example": "店の人はとても親切でした。"
+"example": "店の人はとても親切でした。",
+"pos": [
+"na-adj"
+]
 },
 "丁寧な": {
 "conceptId": "politely",
 "phonetic": "ていねいな",
-"example": "先生は丁寧に教えてくれます。"
+"example": "先生は丁寧に教えてくれます。",
+"pos": [
+"na-adj"
+]
 },
 "失礼な": {
 "conceptId": "rudely",
 "phonetic": "しつれいな",
-"example": "失礼なことを言ってすみません。"
+"example": "失礼なことを言ってすみません。",
+"pos": [
+"na-adj"
+]
 },
 "立派な": {
 "conceptId": "excellent",
 "phonetic": "りっぱな",
-"example": "立派な建物が見えます。"
+"example": "立派な建物が見えます。",
+"pos": [
+"na-adj"
+]
 },
 "賑やかな": {
 "conceptId": "賑やかな",
 "phonetic": "にぎやかな",
-"example": "この町はとても賑やかです。"
+"example": "この町はとても賑やかです。",
+"pos": [
+"na-adj"
+]
 },
 "暇な": {
 "conceptId": "暇な",
 "phonetic": "ひまな",
-"example": "日曜日は暇です。"
+"example": "日曜日は暇です。",
+"pos": [
+"na-adj"
+]
 },
 "色々な": {
 "conceptId": "色々な",
 "phonetic": "いろいろな",
-"example": "店に色々な物があります。"
+"example": "店に色々な物があります。",
+"pos": [
+"na-adj"
+]
 },
 "特別な": {
 "conceptId": "特別な",
 "phonetic": "とくべつな",
-"example": "今日は特別な日です。"
+"example": "今日は特別な日です。",
+"pos": [
+"na-adj"
+]
 },
 "大変な": {
 "conceptId": "tough",
 "phonetic": "たいへんな",
-"example": "引っ越しは大変でした。"
+"example": "引っ越しは大変でした。",
+"pos": [
+"na-adj"
+]
 },
 "必ず": {
 "conceptId": "必ず",
 "phonetic": "かならず",
-"example": "明日は必ず来てください。"
+"example": "明日は必ず来てください。",
+"pos": [
+"adv"
+]
 },
 "もちろん": {
 "conceptId": "もちろん",
 "phonetic": "もちろん",
-"example": "もちろん手伝います。"
+"example": "もちろん手伝います。",
+"pos": [
+"adv"
+]
 },
 "だいたい": {
 "conceptId": "mostly",
 "phonetic": "だいたい",
-"example": "意味はだいたい分かりました。"
+"example": "意味はだいたい分かりました。",
+"pos": [
+"adv"
+]
 },
 "全然": {
 "conceptId": "全然",
 "phonetic": "ぜんぜん",
-"example": "お酒は全然飲みません。"
+"example": "お酒は全然飲みません。",
+"pos": [
+"adv"
+]
 },
 "あまり": {
 "conceptId": "あまり",
 "phonetic": "あまり",
-"example": "この料理はあまり好きではありません。"
+"example": "この料理はあまり好きではありません。",
+"pos": [
+"adv"
+]
 },
 "いつか": {
 "conceptId": "sometime",
 "phonetic": "いつか",
-"example": "いつか日本へ行きたいです。"
+"example": "いつか日本へ行きたいです。",
+"pos": [
+"adv"
+]
 },
 "もうすぐ": {
 "conceptId": "もうすぐ",
 "phonetic": "もうすぐ",
-"example": "もうすぐ春になります。"
+"example": "もうすぐ春になります。",
+"pos": [
+"adv"
+]
 },
 "後で": {
 "conceptId": "later",
 "phonetic": "あとで",
-"example": "後で電話します。"
+"example": "後で電話します。",
+"pos": [
+"adv"
+]
 },
 "先に": {
 "conceptId": "ahead",
 "phonetic": "さきに",
-"example": "先に帰ってもいいですか。"
+"example": "先に帰ってもいいですか。",
+"pos": [
+"adv"
+]
 },
 "初めて": {
 "conceptId": "初めて",
 "phonetic": "はじめて",
-"example": "初めて日本の料理を食べました。"
+"example": "初めて日本の料理を食べました。",
+"pos": [
+"adv"
+]
 },
 "もう一度": {
 "conceptId": "もう一度",
 "phonetic": "もういちど",
-"example": "もう一度言ってください。"
+"example": "もう一度言ってください。",
+"pos": [
+"adv"
+]
 },
 "ずっと": {
 "conceptId": "ずっと",
 "phonetic": "ずっと",
-"example": "朝からずっと雨です。"
+"example": "朝からずっと雨です。",
+"pos": [
+"adv"
+]
 },
 "ゆっくり": {
 "conceptId": "ゆっくり",
 "phonetic": "ゆっくり",
-"example": "ゆっくり話してください。"
+"example": "ゆっくり話してください。",
+"pos": [
+"adv"
+]
 },
 "本当に": {
 "conceptId": "本当に",
 "phonetic": "ほんとうに",
-"example": "本当にありがとうございます。"
+"example": "本当にありがとうございます。",
+"pos": [
+"adv"
+]
 },
 "全部": {
 "conceptId": "entire",
 "phonetic": "ぜんぶ",
-"example": "料理を全部食べました。"
+"example": "料理を全部食べました。",
+"pos": [
+"noun",
+"adv"
+]
 },
 "一番": {
 "conceptId": "一番",
 "phonetic": "いちばん",
-"example": "冬が一番好きです。"
+"example": "冬が一番好きです。",
+"pos": [
+"adv",
+"noun"
+]
 },
 "もっと": {
 "conceptId": "もっと",
 "phonetic": "もっと",
-"example": "もっとゆっくり話してください。"
+"example": "もっとゆっくり話してください。",
+"pos": [
+"adv"
+]
 },
 "一生懸命": {
 "conceptId": "effort",
 "phonetic": "いっしょうけんめい",
-"example": "一生懸命勉強します。"
+"example": "一生懸命勉強します。",
+"pos": [
+"adv",
+"na-adj"
+]
 },
 "ちょうど": {
 "conceptId": "exactly",
 "phonetic": "ちょうど",
-"example": "ちょうど十時に着きました。"
+"example": "ちょうど十時に着きました。",
+"pos": [
+"adv"
+]
 },
 "一人で": {
 "conceptId": "一人で",
 "phonetic": "ひとりで",
-"example": "一人で旅行しました。"
+"example": "一人で旅行しました。",
+"pos": [
+"adv"
+]
 },
 "また": {
 "conceptId": "また",
 "phonetic": "また",
-"example": "また明日会いましょう。"
+"example": "また明日会いましょう。",
+"pos": [
+"adv"
+]
 },
 "お父さん": {
 "conceptId": "お父さん",
 "phonetic": "おとうさん",
-"example": "お父さんは会社員です。"
+"example": "お父さんは会社員です。",
+"pos": [
+"noun"
+]
 },
 "お母さん": {
 "conceptId": "お母さん",
 "phonetic": "おかあさん",
-"example": "お母さんは料理が上手です。"
+"example": "お母さんは料理が上手です。",
+"pos": [
+"noun"
+]
 },
 "お兄さん": {
 "conceptId": "お兄さん",
 "phonetic": "おにいさん",
-"example": "お兄さんは大学生ですか。"
+"example": "お兄さんは大学生ですか。",
+"pos": [
+"noun"
+]
 },
 "お姉さん": {
 "conceptId": "お姉さん",
 "phonetic": "おねえさん",
-"example": "お姉さんはピアノが上手です。"
+"example": "お姉さんはピアノが上手です。",
+"pos": [
+"noun"
+]
 },
 "両親": {
 "conceptId": "両親",
 "phonetic": "りょうしん",
-"example": "両親は田舎に住んでいます。"
+"example": "両親は田舎に住んでいます。",
+"pos": [
+"noun"
+]
 },
 "兄弟": {
 "conceptId": "兄弟",
 "phonetic": "きょうだい",
-"example": "兄弟が三人います。"
+"example": "兄弟が三人います。",
+"pos": [
+"noun"
+]
 },
 "息子": {
 "conceptId": "息子",
 "phonetic": "むすこ",
-"example": "息子は今年五歳です。"
+"example": "息子は今年五歳です。",
+"pos": [
+"noun"
+]
 },
 "娘": {
 "conceptId": "娘",
 "phonetic": "むすめ",
-"example": "娘は学校が好きです。"
+"example": "娘は学校が好きです。",
+"pos": [
+"noun"
+]
 },
 "おじいさん": {
 "conceptId": "おじいさん",
 "phonetic": "おじいさん",
-"example": "おじいさんは新聞を読んでいます。"
+"example": "おじいさんは新聞を読んでいます。",
+"pos": [
+"noun"
+]
 },
 "おばあさん": {
 "conceptId": "おばあさん",
 "phonetic": "おばあさん",
-"example": "おばあさんはとても元気です。"
+"example": "おばあさんはとても元気です。",
+"pos": [
+"noun"
+]
 },
 "おじさん": {
 "conceptId": "おじさん",
 "phonetic": "おじさん",
-"example": "おじさんの家に行きました。"
+"example": "おじさんの家に行きました。",
+"pos": [
+"noun"
+]
 },
 "おばさん": {
 "conceptId": "おばさん",
 "phonetic": "おばさん",
-"example": "おばさんがお菓子をくれました。"
+"example": "おばさんがお菓子をくれました。",
+"pos": [
+"noun"
+]
 },
 "親戚": {
 "conceptId": "relative",
 "phonetic": "しんせき",
-"example": "正月に親戚が集まります。"
+"example": "正月に親戚が集まります。",
+"pos": [
+"noun"
+]
 },
 "美術館": {
 "conceptId": "gallery",
 "phonetic": "びじゅつかん",
-"example": "日曜日に美術館へ行きました。"
+"example": "日曜日に美術館へ行きました。",
+"pos": [
+"noun"
+]
 },
 "建物": {
 "conceptId": "建物",
 "phonetic": "たてもの",
-"example": "あの白い建物は病院です。"
+"example": "あの白い建物は病院です。",
+"pos": [
+"noun"
+]
 },
 "交差点": {
 "conceptId": "交差点",
 "phonetic": "こうさてん",
-"example": "交差点を右に曲がってください。"
+"example": "交差点を右に曲がってください。",
+"pos": [
+"noun"
+]
 },
 "橋": {
 "conceptId": "橋",
 "phonetic": "はし",
-"example": "橋の上から川が見えます。"
+"example": "橋の上から川が見えます。",
+"pos": [
+"noun"
+]
 },
 "田舎": {
 "conceptId": "田舎",
 "phonetic": "いなか",
-"example": "夏休みに田舎へ帰ります。"
+"example": "夏休みに田舎へ帰ります。",
+"pos": [
+"noun"
+]
 },
 "玄関": {
 "conceptId": "玄関",
 "phonetic": "げんかん",
-"example": "玄関で靴を脱ぎます。"
+"example": "玄関で靴を脱ぎます。",
+"pos": [
+"noun"
+]
 },
 "地下": {
 "conceptId": "basement",
 "phonetic": "ちか",
-"example": "食べ物は地下で売っています。"
+"example": "食べ物は地下で売っています。",
+"pos": [
+"noun"
+]
 },
 "近所": {
 "conceptId": "近所",
 "phonetic": "きんじょ",
-"example": "近所に新しい店ができました。"
+"example": "近所に新しい店ができました。",
+"pos": [
+"noun"
+]
 },
 "昔": {
 "conceptId": "past",
 "phonetic": "むかし",
-"example": "昔ここに大きな木がありました。"
+"example": "昔ここに大きな木がありました。",
+"pos": [
+"noun"
+]
 },
 "今度": {
 "conceptId": "今度",
 "phonetic": "こんど",
-"example": "今度一緒に行きましょう。"
+"example": "今度一緒に行きましょう。",
+"pos": [
+"noun"
+]
 },
 "今夜": {
 "conceptId": "今夜",
 "phonetic": "こんや",
-"example": "今夜は早く寝ます。"
+"example": "今夜は早く寝ます。",
+"pos": [
+"noun"
+]
 },
 "明後日": {
 "conceptId": "明後日",
 "phonetic": "あさって",
-"example": "明後日試験があります。"
+"example": "明後日試験があります。",
+"pos": [
+"noun"
+]
 },
 "一昨日": {
 "conceptId": "一昨日",
 "phonetic": "おととい",
-"example": "一昨日友達に会いました。"
+"example": "一昨日友達に会いました。",
+"pos": [
+"noun"
+]
 },
 "週末": {
 "conceptId": "週末",
 "phonetic": "しゅうまつ",
-"example": "週末は家にいます。"
+"example": "週末は家にいます。",
+"pos": [
+"noun"
+]
 },
 "夏休み": {
 "conceptId": "vacation",
 "phonetic": "なつやすみ",
-"example": "夏休みに海へ行きます。"
+"example": "夏休みに海へ行きます。",
+"pos": [
+"noun"
+]
 },
 "最後": {
 "conceptId": "finally",
 "phonetic": "さいご",
-"example": "最後にもう一度説明します。"
+"example": "最後にもう一度説明します。",
+"pos": [
+"noun"
+]
 },
 "途中": {
 "conceptId": "途中",
 "phonetic": "とちゅう",
-"example": "学校へ行く途中で雨が降りました。"
+"example": "学校へ行く途中で雨が降りました。",
+"pos": [
+"noun"
+]
 },
 "気温": {
 "conceptId": "temperature",
 "phonetic": "きおん",
-"example": "今日は気温が高いです。"
+"example": "今日は気温が高いです。",
+"pos": [
+"noun"
+]
 },
 "意見": {
 "conceptId": "opinion",
 "phonetic": "いけん",
-"example": "みんなの意見を聞きます。"
+"example": "みんなの意見を聞きます。",
+"pos": [
+"noun"
+]
 },
 "理由": {
 "conceptId": "cause",
 "phonetic": "りゆう",
-"example": "遅れた理由を話してください。"
+"example": "遅れた理由を話してください。",
+"pos": [
+"noun"
+]
 },
 "方法": {
 "conceptId": "method",
 "phonetic": "ほうほう",
-"example": "いい方法を教えてください。"
+"example": "いい方法を教えてください。",
+"pos": [
+"noun"
+]
 },
 "経験": {
 "conceptId": "experience",
 "phonetic": "けいけん",
-"example": "いい経験になりました。"
+"example": "いい経験になりました。",
+"pos": [
+"noun",
+"verb"
+]
 },
 "興味": {
 "conceptId": "interest",
 "phonetic": "きょうみ",
-"example": "日本の文化に興味があります。"
+"example": "日本の文化に興味があります。",
+"pos": [
+"noun"
+]
 },
 "形": {
 "conceptId": "figure",
 "phonetic": "かたち",
-"example": "この石は面白い形です。"
+"example": "この石は面白い形です。",
+"pos": [
+"noun"
+]
 },
 "気持ち": {
 "conceptId": "気持ち",
 "phonetic": "きもち",
-"example": "今日は気持ちがいいです。"
+"example": "今日は気持ちがいいです。",
+"pos": [
+"noun"
+]
 },
 "先輩": {
 "conceptId": "senior",
 "phonetic": "せんぱい",
-"example": "先輩に仕事を習います。"
+"example": "先輩に仕事を習います。",
+"pos": [
+"noun"
+]
 },
 "後輩": {
 "conceptId": "junior",
 "phonetic": "こうはい",
-"example": "後輩と一緒に昼ご飯を食べました。"
+"example": "後輩と一緒に昼ご飯を食べました。",
+"pos": [
+"noun"
+]
 },
 "道具": {
 "conceptId": "tool",
 "phonetic": "どうぐ",
-"example": "料理の道具を買いました。"
+"example": "料理の道具を買いました。",
+"pos": [
+"noun"
+]
 },
 "発音": {
 "conceptId": "pronunciation",
 "phonetic": "はつおん",
-"example": "発音を練習しましょう。"
+"example": "発音を練習しましょう。",
+"pos": [
+"noun",
+"verb"
+]
 },
 "おはようございます": {
 "conceptId": "greeting",
 "phonetic": "おはようございます",
-"example": "先生、おはようございます。"
+"example": "先生、おはようございます。",
+"pos": [
+"phrase"
+]
 },
 "こんにちは": {
 "conceptId": "こんにちは",
 "phonetic": "こんにちは",
-"example": "こんにちは、いい天気ですね。"
+"example": "こんにちは、いい天気ですね。",
+"pos": [
+"phrase"
+]
 },
 "こんばんは": {
 "conceptId": "こんばんは",
 "phonetic": "こんばんは",
-"example": "こんばんは、今帰りました。"
+"example": "こんばんは、今帰りました。",
+"pos": [
+"phrase"
+]
 },
 "さようなら": {
 "conceptId": "さようなら",
 "phonetic": "さようなら",
-"example": "さようなら、また明日。"
+"example": "さようなら、また明日。",
+"pos": [
+"phrase"
+]
 },
 "ありがとうございます": {
 "conceptId": "ありがとうございます",
 "phonetic": "ありがとうございます",
-"example": "手伝ってくれてありがとうございます。"
+"example": "手伝ってくれてありがとうございます。",
+"pos": [
+"phrase"
+]
 },
 "すみません": {
 "conceptId": "pardon",
 "phonetic": "すみません",
-"example": "すみません、水をください。"
+"example": "すみません、水をください。",
+"pos": [
+"phrase"
+]
 },
 "いただきます": {
 "conceptId": "いただきます",
 "phonetic": "いただきます",
-"example": "では、いただきます。"
+"example": "では、いただきます。",
+"pos": [
+"phrase"
+]
 },
 "ごちそうさまでした": {
 "conceptId": "ごちそうさまでした",
 "phonetic": "ごちそうさまでした",
-"example": "ごちそうさまでした、おいしかったです。"
+"example": "ごちそうさまでした、おいしかったです。",
+"pos": [
+"phrase"
+]
 },
 "いってきます": {
 "conceptId": "いってきます",
 "phonetic": "いってきます",
-"example": "お母さん、いってきます。"
+"example": "お母さん、いってきます。",
+"pos": [
+"phrase"
+]
 },
 "ただいま": {
 "conceptId": "ただいま",
 "phonetic": "ただいま",
-"example": "ただいま、今帰りました。"
+"example": "ただいま、今帰りました。",
+"pos": [
+"phrase"
+]
 },
 "おやすみなさい": {
 "conceptId": "おやすみなさい",
 "phonetic": "おやすみなさい",
-"example": "もう遅いので、おやすみなさい。"
+"example": "もう遅いので、おやすみなさい。",
+"pos": [
+"phrase"
+]
 },
 "はじめまして": {
 "conceptId": "はじめまして",
 "phonetic": "はじめまして",
-"example": "はじめまして、キムです。"
+"example": "はじめまして、キムです。",
+"pos": [
+"phrase"
+]
 },
 "よろしくお願いします": {
 "conceptId": "よろしくお願いします",
 "phonetic": "よろしくおねがいします",
-"example": "これからよろしくお願いします。"
+"example": "これからよろしくお願いします。",
+"pos": [
+"phrase"
+]
 },
 "おめでとうございます": {
 "conceptId": "celebrate",
 "phonetic": "おめでとうございます",
-"example": "卒業おめでとうございます。"
+"example": "卒業おめでとうございます。",
+"pos": [
+"phrase"
+]
 }
 }

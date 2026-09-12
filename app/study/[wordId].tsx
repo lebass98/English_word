@@ -440,10 +440,25 @@ function StudyCard({
                         >
                           {word.word}
                         </Text>
-                        {word.phonetic && (
-                          <Text className="mt-1 text-[13px] tracking-wide text-slate-500">
-                            {word.phonetic}
-                          </Text>
+                        {(word.phonetic || word.pos?.length) && (
+                          <View className="mt-1 flex-row flex-wrap items-center gap-2">
+                            {word.phonetic && (
+                              <Text className="text-[13px] tracking-wide text-slate-500">
+                                {word.phonetic}
+                              </Text>
+                            )}
+                            {/* 품사 표시. 뜻이 여럿이면 여러 개가 붙는다 */}
+                            {word.pos?.map((code) => (
+                              <View
+                                key={code}
+                                className="rounded-md bg-canvas px-1.5 py-0.5 shadow-neu-sm"
+                              >
+                                <Text className="text-[11px] font-bold text-mint-dark">
+                                  {t(`pos.${code}` as never)}
+                                </Text>
+                              </View>
+                            ))}
+                          </View>
                         )}
                       </View>
                       <Pressable

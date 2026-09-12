@@ -38,6 +38,12 @@ export interface Word {
   conceptId: string;
   /** 읽는 법. 영어는 발음기호, 일본어는 가나 */
   phonetic?: string;
+  /**
+   * 품사 코드 (noun, verb, i-adj …). 뜻이 여러 개면 여럿이 온다.
+   * 화면에 보일 이름은 표시 언어에 따라 달라지므로 i18n 의
+   * `pos.<코드>` 에서 가져온다.
+   */
+  pos?: string[];
   /** 학습 언어로 쓴 예문 */
   example?: string;
   /** 아래는 한국어로 된 것들 */
@@ -56,6 +62,7 @@ export interface Unit {
 interface NeutralEntry {
   conceptId?: string;
   phonetic?: string;
+  pos?: string[];
   example?: string;
   synonyms?: string[];
 }
@@ -155,6 +162,7 @@ function buildVocab(studyLang: StudyLangId, uiLang: UiLangId): Vocab {
         // 개념을 따로 안 적어 둔 낱말은 낱말 자신을 개념으로 본다
         conceptId: neutral.conceptId ?? spelling,
         phonetic: neutral.phonetic,
+        pos: neutral.pos,
         example: neutral.example,
         meaning: tr.meanings[localId] ?? fallback.meanings[localId] ?? spelling,
         exampleTr: detail.exampleTr,

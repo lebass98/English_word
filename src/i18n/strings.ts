@@ -111,6 +111,21 @@ const ko = {
   "studyLang.en": "영어",
   "studyLang.ja": "일본어",
 
+  // 품사 이름
+  "pos.noun": "명사",
+  "pos.verb": "동사",
+  "pos.adj": "형용사",
+  "pos.adv": "부사",
+  "pos.prep": "전치사",
+  "pos.conj": "접속사",
+  "pos.pron": "대명사",
+  "pos.interj": "감탄사",
+  "pos.phrase": "구",
+  "pos.i-adj": "い형용사",
+  "pos.na-adj": "な형용사",
+  "pos.prenominal": "연체사",
+  "pos.counter": "조수사",
+
   // 읽어 주는 설명 (화면 낭독기용)
   "a11y.unitProgress": "UNIT {unit}, {total}개 중 {known}개 외움",
   "a11y.reviewWord": "{word} 복습하기",
@@ -228,6 +243,20 @@ const ja: Partial<Record<StringKey, string>> = {
 
   "studyLang.en": "英語",
   "studyLang.ja": "日本語",
+
+  "pos.noun": "名詞",
+  "pos.verb": "動詞",
+  "pos.adj": "形容詞",
+  "pos.adv": "副詞",
+  "pos.prep": "前置詞",
+  "pos.conj": "接続詞",
+  "pos.pron": "代名詞",
+  "pos.interj": "感動詞",
+  "pos.phrase": "句",
+  "pos.i-adj": "い形容詞",
+  "pos.na-adj": "な形容詞",
+  "pos.prenominal": "連体詞",
+  "pos.counter": "助数詞",
 
   "a11y.unitProgress": "UNIT {unit}、{total}個中{known}個を記憶",
   "a11y.reviewWord": "{word} を復習する",

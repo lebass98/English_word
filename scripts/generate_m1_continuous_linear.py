@@ -436,6 +436,88 @@ UNIT_DATA = {
             "id": "m1-200", "word": "sharp", "meaning": "날카로운",
             "scene": "craft art studio table, cute slender stickman designer carefully testing the precise sharp point of a precision craft knife pencil cutting crisp geometric shapes on cutting mat"
         }
+    ],
+    11: [
+        {
+            "id": "m1-201", "word": "coeducation", "meaning": "남녀공학",
+            "scene": "cheerful bright high school hallway corridor, cute slender boy and girl stickman students in school uniforms walking together chatting happily carrying backpacks and textbooks, classroom doors and lockers"
+        },
+        {
+            "id": "m1-202", "word": "remain", "meaning": "남다",
+            "scene": "warm family dinner dining table after meal, cute slender stickman looking at a single delicious strawberry cake slice remaining alone on a porcelain serving plate, empty tea cups and forks"
+        },
+        {
+            "id": "m1-203", "word": "abuse", "meaning": "남용, 학대",
+            "scene": "office desk with warning stop sign, conscientious cute slender stickman manager holding hand up firmly gesturing stop to prevent overuse and abuse of company office resources, recycling bins"
+        },
+        {
+            "id": "m1-204", "word": "husband", "meaning": "남편",
+            "scene": "cozy home kitchen, loving cute slender stickman husband wearing apron cheerfully cooking dinner on stove smiling warmly while handing a taste spoon to wife stickman, spice rack and potted plant"
+        },
+        {
+            "id": "m1-205", "word": "waste", "meaning": "낭비, 쓰레기",
+            "scene": "neighborhood recycling station, responsible cute slender stickman sorting waste carefully dropping aluminum cans and paper boxes into designated recycling bins instead of wasting, clean park pavement"
+        },
+        {
+            "id": "m1-206", "word": "low", "meaning": "낮은",
+            "scene": "peaceful scenic mountain valley meadow, cute slender stickman standing on a low grassy rolling knoll looking up at towering high alpine mountain peaks in distant horizon, wildflowers and river"
+        },
+        {
+            "id": "m1-207", "word": "smell", "meaning": "냄새, 냄새를 맡다",
+            "scene": "sunlit flower garden terrace, delighted cute slender stickman gently leaning close to smell the sweet fragrance of a blooming rose blossom with closed eyes and serene happy smile, garden fence"
+        },
+        {
+            "id": "m1-208", "word": "refrigerator", "meaning": "냉장고",
+            "scene": "modern bright kitchen, hungry cute slender stickman opening double-door stainless refrigerator glowing with internal light inspecting fresh fruits, milk pitcher, and vegetables neatly organized on shelves"
+        },
+        {
+            "id": "m1-209", "word": "wide", "meaning": "넓은",
+            "scene": "vast golden savanna prairie horizon, cute slender stickman standing with arms spread wide open feeling the immense wide expanse of open wilderness plains under huge endless sky with fluffy clouds"
+        },
+        {
+            "id": "m1-210", "word": "effort", "meaning": "노력",
+            "scene": "fitness gym training mat, determined cute slender stickman sweating with joyful exertion lifting a heavy barbell with concentrated effort and strength, workout mirrors and dumbbell racks"
+        },
+        {
+            "id": "m1-211", "word": "slave", "meaning": "노예",
+            "scene": "historic ancient ruins museum exhibit, thoughtful cute slender stickman viewing a historical display with broken metal chains symbolizing liberation and triumph over ancient slavery, informational plaque"
+        },
+        {
+            "id": "m1-212", "word": "astonish", "meaning": "놀라게 하다",
+            "scene": "birthday surprise party doorway, cute slender stickman walking into room completely astonished with wide open arms as friends jump out throwing colorful confetti poppers, party banners"
+        },
+        {
+            "id": "m1-213", "word": "surprise", "meaning": "놀라움",
+            "scene": "cozy living room armchair, cute slender stickman gasping with delightful surprise as a spring jack-in-the-box pop toy bounces out of an unwrapped colorful gift box, wrapping paper ribbons on rug"
+        },
+        {
+            "id": "m1-214", "word": "amazing", "meaning": "놀라운",
+            "scene": "grand planetarium observatory dome, cute slender stickman looking up through a giant optical telescope pointing with awe at an amazing glowing spiral galaxy projected across starry dome ceiling"
+        },
+        {
+            "id": "m1-215", "word": "wonderful", "meaning": "놀라운, 멋진",
+            "scene": "scenic mountain summit overlook at sunset, happy cute slender stickman cheering with raised hands celebrating a wonderful breathtaking panoramic view of sunset colored sky and winding rivers"
+        },
+        {
+            "id": "m1-216", "word": "joke", "meaning": "농담",
+            "scene": "cozy coffee shop table, cute slender stickman telling a hilarious funny joke while friend stickman bursts into uncontrollable joyous laughter wiping a happy tear, coffee cups and cafe counter"
+        },
+        {
+            "id": "m1-217", "word": "crop", "meaning": "농작물",
+            "scene": "sunlit fertile farm field outdoors, proud cute slender stickman farmer in straw hat holding a wooden basket overflowing with ripe harvested crops including corn ears, tomatoes, and wheat stalks"
+        },
+        {
+            "id": "m1-218", "word": "miss", "meaning": "놓치다, 그리워하다",
+            "scene": "train station platform, cute slender stickman running along platform with suitcase waving hand looking at passenger train just pulling away out of station, station clock and departure board"
+        },
+        {
+            "id": "m1-219", "word": "brain", "meaning": "뇌, 두뇌",
+            "scene": "science neurology lab classroom, curious cute slender stickman student observing a detailed 3D anatomical brain model resting on a display stand, neuroscience diagrams on wall chart"
+        },
+        {
+            "id": "m1-220", "word": "press", "meaning": "누르다, 언론",
+            "scene": "newspaper printing press facility, cute slender stickman technician pressing a prominent round control button activating a mechanical printing press machine printing news sheets"
+        }
     ]
 }
 

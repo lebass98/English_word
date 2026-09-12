@@ -13,7 +13,14 @@ import datetime
 PROJECT_ROOT = "/Volumes/외장하드/App/eng_word/English_word"
 WORKSPACE_ROOT = "/Volumes/외장하드/App/eng_word"
 DASHBOARD_HTML = os.path.join(WORKSPACE_ROOT, "dashboard.html")
-LOG_PATH = "/Users/kmac4_home/.gemini/antigravity-ide/brain/876c99e7-0792-48ed-a965-30555f31e1f4/.system_generated/tasks/task-815.log"
+LOG_DIR = "/Users/kmac4_home/.gemini/antigravity-ide/brain/876c99e7-0792-48ed-a965-30555f31e1f4/.system_generated/tasks"
+
+def get_latest_log():
+    candidate_logs = [f for f in glob.glob(os.path.join(LOG_DIR, "task-*.log")) if "task-" in f]
+    if candidate_logs:
+        # task log 중 크기가 큰 것 또는 가장 최근 수정된 것
+        return max(candidate_logs, key=os.path.getmtime)
+    return None
 
 def generate_dashboard():
     now_str = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -24,8 +31,9 @@ def generate_dashboard():
     completed_words = []
     current_word = {"word": "cough", "id": "m1-174", "meaning": "기침", "scene": ""}
     
-    if os.path.exists(LOG_PATH):
-        with open(LOG_PATH, "r", encoding="utf-8", errors="ignore") as f:
+    log_file = get_latest_log()
+    if log_file and os.path.exists(log_file):
+        with open(log_file, "r", encoding="utf-8", errors="ignore") as f:
             lines = f.readlines()
             
         for line in lines:

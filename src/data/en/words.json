@@ -12406,7 +12406,8 @@
 "conceptId": "resource",
 "pos": [
 "noun"
-]
+],
+"phonetic": "[ˈriːsɔrs]"
 },
 "unification": {
 "synonyms": [
@@ -12415,6 +12416,6693 @@
 "merger"
 ],
 "conceptId": "unification",
+"pos": [
+"noun"
+]
+},
+"translation": {
+"conceptId": "translation",
+"phonetic": "[trænzˈleɪʃən]",
+"pos": [
+"noun"
+]
+},
+"underground": {
+"conceptId": "underground",
+"phonetic": "[ˈʌndərɡraʊnd]",
+"pos": [
+"adj",
+"adv",
+"noun"
+]
+},
+"rent": {
+"conceptId": "rent",
+"phonetic": "[rent]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"union": {
+"conceptId": "union",
+"phonetic": "[ˈjuːnjən]",
+"pos": [
+"noun"
+]
+},
+"exact": {
+"conceptId": "exact",
+"phonetic": "[ɪɡˈzækt]",
+"pos": [
+"adj"
+]
+},
+"personal": {
+"conceptId": "personal",
+"phonetic": "[ˈpɜːrsɪnəl]",
+"pos": [
+"adj"
+]
+},
+"disappear": {
+"conceptId": "disappear",
+"phonetic": "[dɪsəˈpɪr]",
+"pos": [
+"verb"
+]
+},
+"laboratory": {
+"conceptId": "laboratory",
+"phonetic": "[ˈlæbrətɔːri]",
+"pos": [
+"noun",
+"adj"
+]
+},
+"league": {
+"conceptId": "league",
+"phonetic": "[liːɡ]",
+"pos": [
+"noun"
+]
+},
+"succeed": {
+"conceptId": "succeed",
+"phonetic": "[səkˈsiːd]",
+"pos": [
+"verb"
+]
+},
+"avoid": {
+"conceptId": "avoid",
+"phonetic": "[əˈvɔɪd]",
+"pos": [
+"verb"
+]
+},
+"no longer": {
+"conceptId": "no longer",
+"phonetic": "[noʊ ˈlɔːŋɡər]",
+"pos": [
+"adv"
+]
+},
+"narrow": {
+"conceptId": "narrow",
+"phonetic": "[ˈneroʊ]",
+"pos": [
+"adj"
+]
+},
+"adjust": {
+"conceptId": "adjust",
+"phonetic": "[əˈdʒʌst]",
+"pos": [
+"verb"
+]
+},
+"trial": {
+"conceptId": "trial",
+"phonetic": "[ˈtraɪəl]",
+"pos": [
+"noun"
+]
+},
+"foreigner": {
+"conceptId": "foreigner",
+"phonetic": "[ˈfɔːrənər]",
+"pos": [
+"noun"
+]
+},
+"dispose": {
+"conceptId": "dispose",
+"phonetic": "[dɪˈspoʊz]",
+"pos": [
+"verb"
+]
+},
+"referee": {
+"conceptId": "referee",
+"phonetic": "[refərˈiː]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"care about": {
+"conceptId": "care about",
+"phonetic": "[ker əˈbaʊt]",
+"pos": [
+"verb"
+]
+},
+"concern": {
+"conceptId": "concern",
+"phonetic": "[kənˈsɜːrn]",
+"pos": [
+"noun"
+]
+},
+"iron": {
+"conceptId": "iron",
+"phonetic": "[ˈaɪərn]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"come to mind": {
+"conceptId": "come to mind",
+"phonetic": "[kʌm tuː maɪnd]",
+"pos": [
+"verb"
+]
+},
+"insight": {
+"conceptId": "insight",
+"phonetic": "[ˈɪnsaɪt]",
+"pos": [
+"noun"
+]
+},
+"resist": {
+"conceptId": "resist",
+"phonetic": "[rɪˈzɪst]",
+"pos": [
+"verb"
+]
+},
+"tension": {
+"conceptId": "tension",
+"phonetic": "[ˈtenʃən]",
+"pos": [
+"noun"
+]
+},
+"purchase": {
+"conceptId": "purchase",
+"phonetic": "[ˈpɜːrtʃəs]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"layer": {
+"conceptId": "layer",
+"phonetic": "[ˈleɪər]",
+"pos": [
+"noun"
+]
+},
+"capable": {
+"conceptId": "capable",
+"phonetic": "[ˈkeɪpəbəl]",
+"pos": [
+"adj"
+]
+},
+"decorate": {
+"conceptId": "decorate",
+"phonetic": "[ˈdekəreɪt]",
+"pos": [
+"verb"
+]
+},
+"native": {
+"conceptId": "native",
+"phonetic": "[ˈneɪtɪv]",
+"pos": [
+"adj",
+"noun"
+]
+},
+"drop out": {
+"conceptId": "drop out",
+"phonetic": "[drɑːp aʊt]",
+"pos": [
+"verb"
+]
+},
+"appearance": {
+"conceptId": "appearance",
+"phonetic": "[əˈpɪrəns]",
+"pos": [
+"noun"
+]
+},
+"guilty": {
+"conceptId": "guilty",
+"phonetic": "[ˈɡɪlti]",
+"pos": [
+"adj"
+]
+},
+"civilization": {
+"conceptId": "civilization",
+"phonetic": "[sɪvəlɪˈzeɪʃən]",
+"pos": [
+"noun"
+]
+},
+"thorn": {
+"conceptId": "thorn",
+"phonetic": "[θɔːrn]",
+"pos": [
+"noun"
+]
+},
+"immune": {
+"conceptId": "immune",
+"phonetic": "[ɪˈmjuːn]",
+"pos": [
+"adj"
+]
+},
+"automatic": {
+"conceptId": "automatic",
+"phonetic": "[ɔːtəˈmætɪk]",
+"pos": [
+"adj"
+]
+},
+"publish": {
+"conceptId": "publish",
+"phonetic": "[ˈpʌblɪʃ]",
+"pos": [
+"verb"
+]
+},
+"domestic": {
+"conceptId": "domestic",
+"phonetic": "[dəˈmestɪk]",
+"pos": [
+"adj"
+]
+},
+"myth": {
+"conceptId": "myth",
+"phonetic": "[mɪθ]",
+"pos": [
+"noun"
+]
+},
+"dynasty": {
+"conceptId": "dynasty",
+"phonetic": "[ˈdaɪnəsti]",
+"pos": [
+"noun"
+]
+},
+"imitate": {
+"conceptId": "imitate",
+"phonetic": "[ˈɪməteɪt]",
+"pos": [
+"verb"
+]
+},
+"crane": {
+"conceptId": "crane",
+"phonetic": "[kreɪn]",
+"pos": [
+"noun"
+]
+},
+"injure": {
+"conceptId": "injure",
+"phonetic": "[ˈɪndʒər]",
+"pos": [
+"verb"
+]
+},
+"substance": {
+"conceptId": "substance",
+"phonetic": "[ˈsʌbstəns]",
+"pos": [
+"noun"
+]
+},
+"ingredient": {
+"conceptId": "ingredient",
+"phonetic": "[ɪnˈɡriːdɪənt]",
+"pos": [
+"noun"
+]
+},
+"react": {
+"conceptId": "react",
+"phonetic": "[rɪˈækt]",
+"pos": [
+"verb"
+]
+},
+"ethic": {
+"conceptId": "ethic",
+"phonetic": "[ˈeθɪk]",
+"pos": [
+"noun"
+]
+},
+"accurate": {
+"conceptId": "accurate",
+"phonetic": "[ˈækjərət]",
+"pos": [
+"adj"
+]
+},
+"mineral": {
+"conceptId": "mineral",
+"phonetic": "[ˈmɪnərəl]",
+"pos": [
+"noun"
+]
+},
+"be likely to": {
+"conceptId": "be likely to",
+"phonetic": "[biː ˈlaɪkli tuː]",
+"pos": [
+"aux"
+]
+},
+"make a decision": {
+"conceptId": "make a decision",
+"phonetic": "[meɪk ə dɪˈsɪʒən]",
+"pos": [
+"verb"
+]
+},
+"turn in": {
+"conceptId": "turn in",
+"phonetic": "[tɜːrn ɪn]",
+"pos": [
+"verb"
+]
+},
+"browse": {
+"conceptId": "browse",
+"phonetic": "[braʊz]",
+"pos": [
+"verb"
+]
+},
+"bring back": {
+"conceptId": "bring back",
+"phonetic": "[brɪŋ bæk]",
+"pos": [
+"verb"
+]
+},
+"improve": {
+"conceptId": "improve",
+"phonetic": "[ɪmˈpruːv]",
+"pos": [
+"verb"
+]
+},
+"catch up": {
+"conceptId": "catch up",
+"phonetic": "[kætʃ ʌp]",
+"pos": [
+"verb"
+]
+},
+"careless": {
+"conceptId": "careless",
+"phonetic": "[ˈkerləs]",
+"pos": [
+"adj"
+]
+},
+"murder": {
+"conceptId": "murder",
+"phonetic": "[ˈmɜːrdər]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"island": {
+"conceptId": "island",
+"phonetic": "[ˈaɪlənd]",
+"pos": [
+"noun"
+]
+},
+"pay attention": {
+"conceptId": "pay attention",
+"phonetic": "[peɪ əˈtenʃən]",
+"pos": [
+"verb"
+]
+},
+"affect": {
+"conceptId": "affect",
+"phonetic": "[əˈfekt]",
+"pos": [
+"verb"
+]
+},
+"pass away": {
+"conceptId": "pass away",
+"phonetic": "[pæs əˈweɪ]",
+"pos": [
+"verb"
+]
+},
+"accelerate": {
+"conceptId": "accelerate",
+"phonetic": "[ækˈseləreɪt]",
+"pos": [
+"verb"
+]
+},
+"advantage": {
+"conceptId": "advantage",
+"phonetic": "[ædˈvæntɪdʒ]",
+"pos": [
+"noun"
+]
+},
+"regardless of": {
+"conceptId": "regardless of",
+"phonetic": "[rəˈɡɑːrdləs ʌv]",
+"pos": [
+"prep"
+]
+},
+"set up": {
+"conceptId": "set up",
+"phonetic": "[set ʌp]",
+"pos": [
+"verb"
+]
+},
+"tend": {
+"conceptId": "tend",
+"phonetic": "[tend]",
+"pos": [
+"verb"
+]
+},
+"gap": {
+"conceptId": "gap",
+"phonetic": "[ɡæp]",
+"pos": [
+"noun"
+]
+},
+"official": {
+"conceptId": "official",
+"phonetic": "[əˈfɪʃəl]",
+"pos": [
+"noun",
+"adj"
+]
+},
+"chart": {
+"conceptId": "chart",
+"phonetic": "[tʃɑːrt]",
+"pos": [
+"noun"
+]
+},
+"account": {
+"conceptId": "account",
+"phonetic": "[əˈkaʊnt]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"alike": {
+"conceptId": "alike",
+"phonetic": "[əˈlaɪk]",
+"pos": [
+"adj",
+"adv"
+]
+},
+"journalism": {
+"conceptId": "journalism",
+"phonetic": "[ˈdʒɜːrnəlɪzəm]",
+"pos": [
+"noun"
+]
+},
+"wavy": {
+"conceptId": "wavy",
+"phonetic": "[ˈweɪvi]",
+"pos": [
+"adj"
+]
+},
+"most of all": {
+"conceptId": "most of all",
+"phonetic": "[moʊst ʌv ɔːl]",
+"pos": [
+"adv"
+]
+},
+"article": {
+"conceptId": "article",
+"phonetic": "[ˈɑːrtəkəl]",
+"pos": [
+"noun"
+]
+},
+"feature": {
+"conceptId": "feature",
+"phonetic": "[ˈfiːtʃər]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"run out of": {
+"conceptId": "run out of",
+"phonetic": "[rʌn aʊt ʌv]",
+"pos": [
+"verb"
+]
+},
+"mature": {
+"conceptId": "mature",
+"phonetic": "[məˈtʃʊr]",
+"pos": [
+"adj"
+]
+},
+"sensitive": {
+"conceptId": "sensitive",
+"phonetic": "[ˈsensətɪv]",
+"pos": [
+"adj"
+]
+},
+"complicated": {
+"conceptId": "complicated",
+"phonetic": "[ˈkɑːmpləkeɪtəd]",
+"pos": [
+"adj"
+]
+},
+"online": {
+"conceptId": "online",
+"phonetic": "[ˈɔːnlaɪn]",
+"pos": [
+"adj",
+"adv"
+]
+},
+"impression": {
+"conceptId": "impression",
+"phonetic": "[ɪmˈpreʃən]",
+"pos": [
+"noun"
+]
+},
+"for a while": {
+"conceptId": "for a while",
+"phonetic": "[fɔːr ə waɪl]",
+"pos": [
+"adv"
+]
+},
+"exclude": {
+"conceptId": "exclude",
+"phonetic": "[ɪksˈkluːd]",
+"pos": [
+"verb"
+]
+},
+"origin": {
+"conceptId": "origin",
+"phonetic": "[ˈɔːrədʒən]",
+"pos": [
+"noun"
+]
+},
+"casual": {
+"conceptId": "casual",
+"phonetic": "[ˈkæʒəwəl]",
+"pos": [
+"adj",
+"noun"
+]
+},
+"mixture": {
+"conceptId": "mixture",
+"phonetic": "[ˈmɪkstʃər]",
+"pos": [
+"noun"
+]
+},
+"commerce": {
+"conceptId": "commerce",
+"phonetic": "[ˈkɑːmərs]",
+"pos": [
+"noun"
+]
+},
+"poll": {
+"conceptId": "poll",
+"phonetic": "[poʊl]",
+"pos": [
+"noun"
+]
+},
+"industry": {
+"conceptId": "industry",
+"phonetic": "[ˈɪndəstri]",
+"pos": [
+"noun"
+]
+},
+"document": {
+"conceptId": "document",
+"phonetic": "[ˈdɑːkjəment]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"smooth": {
+"conceptId": "smooth",
+"phonetic": "[smuːð]",
+"pos": [
+"adj"
+]
+},
+"dominate": {
+"conceptId": "dominate",
+"phonetic": "[ˈdɑːməneɪt]",
+"pos": [
+"verb"
+]
+},
+"sooner or later": {
+"conceptId": "sooner or later",
+"phonetic": "[ˈsuːnər ɔːr ˈleɪtər]",
+"pos": [
+"adv"
+]
+},
+"facial": {
+"conceptId": "facial",
+"phonetic": "[ˈfeɪʃəl]",
+"pos": [
+"adj"
+]
+},
+"deceive": {
+"conceptId": "deceive",
+"phonetic": "[dɪˈsiːv]",
+"pos": [
+"verb"
+]
+},
+"minority": {
+"conceptId": "minority",
+"phonetic": "[maɪˈnɔːrəti]",
+"pos": [
+"noun"
+]
+},
+"virtue": {
+"conceptId": "virtue",
+"phonetic": "[ˈvɜːrtʃu]",
+"pos": [
+"noun"
+]
+},
+"predict": {
+"conceptId": "predict",
+"phonetic": "[prɪˈdɪkt]",
+"pos": [
+"verb"
+]
+},
+"victim": {
+"conceptId": "victim",
+"phonetic": "[ˈvɪktəm]",
+"pos": [
+"noun"
+]
+},
+"depressed": {
+"conceptId": "depressed",
+"phonetic": "[dɪˈprest]",
+"pos": [
+"adj"
+]
+},
+"violate": {
+"conceptId": "violate",
+"phonetic": "[ˈvaɪəleɪt]",
+"pos": [
+"verb"
+]
+},
+"channel": {
+"conceptId": "channel",
+"phonetic": "[ˈtʃænəl]",
+"pos": [
+"noun"
+]
+},
+"function": {
+"conceptId": "function",
+"phonetic": "[ˈfʌŋkʃən]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"relation": {
+"conceptId": "relation",
+"phonetic": "[rɪˈleɪʃən]",
+"pos": [
+"noun"
+]
+},
+"combination": {
+"conceptId": "combination",
+"phonetic": "[kɑːmbəˈneɪʃən]",
+"pos": [
+"noun"
+]
+},
+"abandon": {
+"conceptId": "abandon",
+"phonetic": "[əˈbændən]",
+"pos": [
+"verb"
+]
+},
+"conduct": {
+"conceptId": "conduct",
+"phonetic": "[ˈkɑːndəkt]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"separate": {
+"conceptId": "separate",
+"phonetic": "[ˈsepəreɪt]",
+"pos": [
+"verb",
+"adj"
+]
+},
+"obvious": {
+"conceptId": "obvious",
+"phonetic": "[ˈɑːbvɪəs]",
+"pos": [
+"adj"
+]
+},
+"cattle": {
+"conceptId": "cattle",
+"phonetic": "[ˈkætəl]",
+"pos": [
+"noun"
+]
+},
+"technology": {
+"conceptId": "technology",
+"phonetic": "[tekˈnɑːlədʒi]",
+"pos": [
+"noun"
+]
+},
+"mental": {
+"conceptId": "mental",
+"phonetic": "[ˈmentəl]",
+"pos": [
+"adj"
+]
+},
+"aboard": {
+"conceptId": "aboard",
+"phonetic": "[əˈbɔːrd]",
+"pos": [
+"prep",
+"adv"
+]
+},
+"crowd": {
+"conceptId": "crowd",
+"phonetic": "[kraʊd]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"immigrate": {
+"conceptId": "immigrate",
+"phonetic": "[ˈɪməɡreɪt]",
+"pos": [
+"verb"
+]
+},
+"steep": {
+"conceptId": "steep",
+"phonetic": "[stiːp]",
+"pos": [
+"adj",
+"noun"
+]
+},
+"remote": {
+"conceptId": "remote",
+"phonetic": "[rɪˈmoʊt]",
+"pos": [
+"adj"
+]
+},
+"announce": {
+"conceptId": "announce",
+"phonetic": "[əˈnaʊns]",
+"pos": [
+"verb"
+]
+},
+"claim": {
+"conceptId": "claim",
+"phonetic": "[kleɪm]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"technique": {
+"conceptId": "technique",
+"phonetic": "[tekˈniːk]",
+"pos": [
+"noun"
+]
+},
+"behavior": {
+"conceptId": "behavior",
+"phonetic": "[bɪˈheɪvjər]",
+"pos": [
+"noun"
+]
+},
+"illegal": {
+"conceptId": "illegal",
+"phonetic": "[ɪˈliːɡəl]",
+"pos": [
+"adj"
+]
+},
+"export": {
+"conceptId": "export",
+"phonetic": "[ˈekspɔrt]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"attempt": {
+"conceptId": "attempt",
+"phonetic": "[əˈtempt]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"die of": {
+"conceptId": "die of",
+"phonetic": "[daɪ ʌv]",
+"pos": [
+"verb"
+]
+},
+"copyright": {
+"conceptId": "copyright",
+"phonetic": "[ˈkɑːpɪraɪt]",
+"pos": [
+"noun",
+"adj"
+]
+},
+"before long": {
+"conceptId": "before long",
+"phonetic": "[bɪˈfɔːr lɔːŋ]",
+"pos": [
+"conj"
+]
+},
+"ease": {
+"conceptId": "ease",
+"phonetic": "[iːz]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"essay": {
+"conceptId": "essay",
+"phonetic": "[eˈseɪ]",
+"pos": [
+"noun"
+]
+},
+"regret": {
+"conceptId": "regret",
+"phonetic": "[rəˈɡret]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"harm": {
+"conceptId": "harm",
+"phonetic": "[hɑːrm]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"abroad": {
+"conceptId": "abroad",
+"phonetic": "[əˈbrɔːd]",
+"pos": [
+"adv"
+]
+},
+"pursue": {
+"conceptId": "pursue",
+"phonetic": "[pərˈsuː]",
+"pos": [
+"verb"
+]
+},
+"achieve": {
+"conceptId": "achieve",
+"phonetic": "[əˈtʃiːv]",
+"pos": [
+"verb"
+]
+},
+"target": {
+"conceptId": "target",
+"phonetic": "[ˈtɑːrɡət]",
+"pos": [
+"noun"
+]
+},
+"wrinkle": {
+"conceptId": "wrinkle",
+"phonetic": "[ˈrɪŋkəl]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"heritage": {
+"conceptId": "heritage",
+"phonetic": "[ˈherətədʒ]",
+"pos": [
+"noun"
+]
+},
+"overcome": {
+"conceptId": "overcome",
+"phonetic": "[ˈoʊvərkʌm]",
+"pos": [
+"verb"
+]
+},
+"principle": {
+"conceptId": "principle",
+"phonetic": "[ˈprɪnsəpəl]",
+"pos": [
+"noun"
+]
+},
+"racial": {
+"conceptId": "racial",
+"phonetic": "[ˈreɪʃəl]",
+"pos": [
+"adj"
+]
+},
+"broadcast": {
+"conceptId": "broadcast",
+"phonetic": "[ˈbrɔːdkæst]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"incident": {
+"conceptId": "incident",
+"phonetic": "[ˈɪnsədənt]",
+"pos": [
+"noun"
+]
+},
+"legend": {
+"conceptId": "legend",
+"phonetic": "[ˈledʒənd]",
+"pos": [
+"noun"
+]
+},
+"faucet": {
+"conceptId": "faucet",
+"phonetic": "[ˈfɔːsət]",
+"pos": [
+"noun"
+]
+},
+"fate": {
+"conceptId": "fate",
+"phonetic": "[feɪt]",
+"pos": [
+"noun"
+]
+},
+"theory": {
+"conceptId": "theory",
+"phonetic": "[ˈθɪri]",
+"pos": [
+"noun"
+]
+},
+"contribute": {
+"conceptId": "contribute",
+"phonetic": "[kənˈtrɪbjut]",
+"pos": [
+"verb"
+]
+},
+"fund": {
+"conceptId": "fund",
+"phonetic": "[fʌnd]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"be worthy of": {
+"conceptId": "be worthy of",
+"phonetic": "[biː ˈwɜːrði ʌv]",
+"pos": [
+"verb"
+]
+},
+"trend": {
+"conceptId": "trend",
+"phonetic": "[trend]",
+"pos": [
+"noun"
+]
+},
+"resemble": {
+"conceptId": "resemble",
+"phonetic": "[rɪˈzembəl]",
+"pos": [
+"verb"
+]
+},
+"stir": {
+"conceptId": "stir",
+"phonetic": "[stɜːr]",
+"pos": [
+"verb"
+]
+},
+"sue": {
+"conceptId": "sue",
+"phonetic": "[suː]",
+"pos": [
+"verb"
+]
+},
+"severe": {
+"conceptId": "severe",
+"phonetic": "[səˈvɪr]",
+"pos": [
+"adj"
+]
+},
+"for oneself": {
+"conceptId": "for oneself",
+"phonetic": "[fɔːr wʌnˈself]",
+"pos": [
+"adv"
+]
+},
+"candidate": {
+"conceptId": "candidate",
+"phonetic": "[ˈkændədeɪt]",
+"pos": [
+"noun"
+]
+},
+"result in": {
+"conceptId": "result in",
+"phonetic": "[rɪˈzʌlt ɪn]",
+"pos": [
+"verb"
+]
+},
+"local": {
+"conceptId": "local",
+"phonetic": "[ˈloʊkəl]",
+"pos": [
+"adj",
+"noun"
+]
+},
+"sign up (for)": {
+"conceptId": "sign up (for)",
+"phonetic": "[saɪn ʌp fɔːr]",
+"pos": [
+"verb"
+]
+},
+"literature": {
+"conceptId": "literature",
+"phonetic": "[ˈlɪtərətʃər]",
+"pos": [
+"noun"
+]
+},
+"moisture": {
+"conceptId": "moisture",
+"phonetic": "[ˈmɔɪstʃər]",
+"pos": [
+"noun"
+]
+},
+"spill": {
+"conceptId": "spill",
+"phonetic": "[spɪl]",
+"pos": [
+"verb"
+]
+},
+"arrogant": {
+"conceptId": "arrogant",
+"phonetic": "[ˈerəɡənt]",
+"pos": [
+"adj"
+]
+},
+"look forward to": {
+"conceptId": "look forward to",
+"phonetic": "[lʊk ˈfɔːrwərd tuː]",
+"pos": [
+"verb"
+]
+},
+"geography": {
+"conceptId": "geography",
+"phonetic": "[dʒɪˈɑːɡrəfi]",
+"pos": [
+"noun"
+]
+},
+"following": {
+"conceptId": "following",
+"phonetic": "[ˈfɑːloʊɪŋ]",
+"pos": [
+"adj",
+"noun"
+]
+},
+"fable": {
+"conceptId": "fable",
+"phonetic": "[ˈfeɪbəl]",
+"pos": [
+"noun"
+]
+},
+"treatment": {
+"conceptId": "treatment",
+"phonetic": "[ˈtriːtmənt]",
+"pos": [
+"noun"
+]
+},
+"category": {
+"conceptId": "category",
+"phonetic": "[ˈkætəɡɔːri]",
+"pos": [
+"noun"
+]
+},
+"turn out": {
+"conceptId": "turn out",
+"phonetic": "[tɜːrn aʊt]",
+"pos": [
+"verb"
+]
+},
+"council": {
+"conceptId": "council",
+"phonetic": "[ˈkaʊnsəl]",
+"pos": [
+"noun"
+]
+},
+"finance": {
+"conceptId": "finance",
+"phonetic": "[fəˈnæns]",
+"pos": [
+"noun"
+]
+},
+"according to": {
+"conceptId": "according to",
+"phonetic": "[əˈkɔːrdɪŋ tuː]",
+"pos": [
+"prep"
+]
+},
+"law": {
+"conceptId": "law",
+"phonetic": "[lɔː]",
+"pos": [
+"noun"
+]
+},
+"apply": {
+"conceptId": "apply",
+"phonetic": "[əˈplaɪ]",
+"pos": [
+"verb"
+]
+},
+"put effort (into)": {
+"conceptId": "put effort (into)",
+"phonetic": "[pʊt ˈefərt ˈɪntu]",
+"pos": [
+"verb"
+]
+},
+"satellite": {
+"conceptId": "satellite",
+"phonetic": "[ˈsætəlaɪt]",
+"pos": [
+"noun",
+"adj"
+]
+},
+"reveal": {
+"conceptId": "reveal",
+"phonetic": "[rɪˈviːl]",
+"pos": [
+"verb"
+]
+},
+"intersection": {
+"conceptId": "intersection",
+"phonetic": "[ɪntərˈsekʃən]",
+"pos": [
+"noun"
+]
+},
+"experiment": {
+"conceptId": "experiment",
+"phonetic": "[ɪkˈsperəmənt]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"vital": {
+"conceptId": "vital",
+"phonetic": "[ˈvaɪtəl]",
+"pos": [
+"adj"
+]
+},
+"convince": {
+"conceptId": "convince",
+"phonetic": "[kənˈvɪns]",
+"pos": [
+"verb"
+]
+},
+"profession": {
+"conceptId": "profession",
+"phonetic": "[prəˈfeʃən]",
+"pos": [
+"noun"
+]
+},
+"again and again": {
+"conceptId": "again and again",
+"phonetic": "[əˈɡen ənd əˈɡen]",
+"pos": [
+"prep"
+]
+},
+"along with": {
+"conceptId": "along with",
+"phonetic": "[əˈlɔːŋ wɪð]",
+"pos": [
+"prep"
+]
+},
+"develop": {
+"conceptId": "develop",
+"phonetic": "[dɪˈveləp]",
+"pos": [
+"verb"
+]
+},
+"crisis": {
+"conceptId": "crisis",
+"phonetic": "[ˈkraɪsəs]",
+"pos": [
+"noun"
+]
+},
+"spell": {
+"conceptId": "spell",
+"phonetic": "[spel]",
+"pos": [
+"verb"
+]
+},
+"active": {
+"conceptId": "active",
+"phonetic": "[ˈæktɪv]",
+"pos": [
+"adj"
+]
+},
+"vehicle": {
+"conceptId": "vehicle",
+"phonetic": "[ˈviːhɪkəl]",
+"pos": [
+"noun"
+]
+},
+"magnet": {
+"conceptId": "magnet",
+"phonetic": "[ˈmæɡnət]",
+"pos": [
+"noun"
+]
+},
+"poverty": {
+"conceptId": "poverty",
+"phonetic": "[ˈpɑːvərti]",
+"pos": [
+"noun"
+]
+},
+"release": {
+"conceptId": "release",
+"phonetic": "[rɪˈliːs]",
+"pos": [
+"verb"
+]
+},
+"transportation": {
+"conceptId": "transportation",
+"phonetic": "[trænspərˈteɪʃən]",
+"pos": [
+"noun"
+]
+},
+"classic": {
+"conceptId": "classic",
+"phonetic": "[ˈklæsɪk]",
+"pos": [
+"noun",
+"adj"
+]
+},
+"complex": {
+"conceptId": "complex",
+"phonetic": "[ˈkɑːmpleks]",
+"pos": [
+"adj"
+]
+},
+"pass through": {
+"conceptId": "pass through",
+"phonetic": "[pæs θruː]",
+"pos": [
+"verb"
+]
+},
+"take ~ for granted": {
+"conceptId": "take ~ for granted",
+"phonetic": "[teɪk fɔːr ˈɡræntəd]",
+"pos": [
+"verb"
+]
+},
+"cultivate": {
+"conceptId": "cultivate",
+"phonetic": "[ˈkʌltəveɪt]",
+"pos": [
+"verb"
+]
+},
+"go out with": {
+"conceptId": "go out with",
+"phonetic": "[ɡoʊ aʊt wɪð]",
+"pos": [
+"verb"
+]
+},
+"broad": {
+"conceptId": "broad",
+"phonetic": "[brɔːd]",
+"pos": [
+"adj"
+]
+},
+"electric": {
+"conceptId": "electric",
+"phonetic": "[ɪˈlektrɪk]",
+"pos": [
+"adj"
+]
+},
+"civil": {
+"conceptId": "civil",
+"phonetic": "[ˈsɪvəl]",
+"pos": [
+"adj"
+]
+},
+"authority": {
+"conceptId": "authority",
+"phonetic": "[əˈθɔːrəti]",
+"pos": [
+"noun"
+]
+},
+"resident": {
+"conceptId": "resident",
+"phonetic": "[ˈrezɪdənt]",
+"pos": [
+"noun"
+]
+},
+"territory": {
+"conceptId": "territory",
+"phonetic": "[ˈterɪtɔːri]",
+"pos": [
+"noun"
+]
+},
+"have ~ in common": {
+"conceptId": "have ~ in common",
+"phonetic": "[hæv ɪn ˈkɑːmən]",
+"pos": [
+"verb"
+]
+},
+"slope": {
+"conceptId": "slope",
+"phonetic": "[sloʊp]",
+"pos": [
+"noun"
+]
+},
+"opportunity": {
+"conceptId": "opportunity",
+"phonetic": "[ɑːpərˈtuːnəti]",
+"pos": [
+"noun"
+]
+},
+"victory": {
+"conceptId": "victory",
+"phonetic": "[ˈvɪktəri]",
+"pos": [
+"noun"
+]
+},
+"creative": {
+"conceptId": "creative",
+"phonetic": "[krɪˈeɪtɪv]",
+"pos": [
+"adj"
+]
+},
+"jury": {
+"conceptId": "jury",
+"phonetic": "[ˈdʒʊri]",
+"pos": [
+"noun"
+]
+},
+"calculate": {
+"conceptId": "calculate",
+"phonetic": "[ˈkælkjəleɪt]",
+"pos": [
+"verb"
+]
+},
+"digest": {
+"conceptId": "digest",
+"phonetic": "[daɪˈdʒest]",
+"pos": [
+"verb"
+]
+},
+"perform": {
+"conceptId": "perform",
+"phonetic": "[pərˈfɔːrm]",
+"pos": [
+"verb"
+]
+},
+"security": {
+"conceptId": "security",
+"phonetic": "[sɪˈkjʊrəti]",
+"pos": [
+"noun",
+"adj"
+]
+},
+"swallow": {
+"conceptId": "swallow",
+"phonetic": "[ˈswɑːloʊ]",
+"pos": [
+"verb"
+]
+},
+"false": {
+"conceptId": "false",
+"phonetic": "[fɔːls]",
+"pos": [
+"adj"
+]
+},
+"unfair": {
+"conceptId": "unfair",
+"phonetic": "[ənˈfer]",
+"pos": [
+"adj"
+]
+},
+"retail": {
+"conceptId": "retail",
+"phonetic": "[ˈriːteɪl]",
+"pos": [
+"noun",
+"adj"
+]
+},
+"take advantage of": {
+"conceptId": "take advantage of",
+"phonetic": "[teɪk ædˈvæntɪdʒ ʌv]",
+"pos": [
+"verb"
+]
+},
+"sanitary": {
+"conceptId": "sanitary",
+"phonetic": "[ˈsænɪteri]",
+"pos": [
+"adj"
+]
+},
+"freeze": {
+"conceptId": "freeze",
+"phonetic": "[friːz]",
+"pos": [
+"verb"
+]
+},
+"construct": {
+"conceptId": "construct",
+"phonetic": "[kənsˈtrʌkt]",
+"pos": [
+"verb"
+]
+},
+"electronic": {
+"conceptId": "electronic",
+"phonetic": "[ɪlekˈtrɑːnɪk]",
+"pos": [
+"adj"
+]
+},
+"refine": {
+"conceptId": "refine",
+"phonetic": "[rəˈfaɪn]",
+"pos": [
+"verb"
+]
+},
+"inform": {
+"conceptId": "inform",
+"phonetic": "[ɪnˈfɔːrm]",
+"pos": [
+"verb"
+]
+},
+"B as well as A": {
+"conceptId": "B as well as A",
+"phonetic": "[biː æz wel æz ə]",
+"pos": [
+"conj"
+]
+},
+"academic": {
+"conceptId": "academic",
+"phonetic": "[ækəˈdemɪk]",
+"pos": [
+"adj"
+]
+},
+"empire": {
+"conceptId": "empire",
+"phonetic": "[ˈempaɪər]",
+"pos": [
+"noun"
+]
+},
+"look up": {
+"conceptId": "look up",
+"phonetic": "[lʊk ʌp]",
+"pos": [
+"verb"
+]
+},
+"cheerful": {
+"conceptId": "cheerful",
+"phonetic": "[ˈtʃɪrfəl]",
+"pos": [
+"adj"
+]
+},
+"assemble": {
+"conceptId": "assemble",
+"phonetic": "[əˈsembəl]",
+"pos": [
+"verb"
+]
+},
+"cabin": {
+"conceptId": "cabin",
+"phonetic": "[ˈkæbən]",
+"pos": [
+"noun"
+]
+},
+"kill": {
+"conceptId": "kill",
+"phonetic": "[kɪl]",
+"pos": [
+"verb"
+]
+},
+"reflect": {
+"conceptId": "reflect",
+"phonetic": "[rɪˈflekt]",
+"pos": [
+"verb"
+]
+},
+"dump": {
+"conceptId": "dump",
+"phonetic": "[dʌmp]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"personality": {
+"conceptId": "personality",
+"phonetic": "[pɜːrsəˈnælɪti]",
+"pos": [
+"noun"
+]
+},
+"intelligence": {
+"conceptId": "intelligence",
+"phonetic": "[ɪnˈtelədʒəns]",
+"pos": [
+"noun"
+]
+},
+"colony": {
+"conceptId": "colony",
+"phonetic": "[ˈkɑːləni]",
+"pos": [
+"noun"
+]
+},
+"preserve": {
+"conceptId": "preserve",
+"phonetic": "[prəˈzɜːrv]",
+"pos": [
+"verb"
+]
+},
+"crosswalk": {
+"conceptId": "crosswalk",
+"phonetic": "[ˈkrɑːswɑːk]",
+"pos": [
+"noun"
+]
+},
+"purify": {
+"conceptId": "purify",
+"phonetic": "[ˈpjʊrəfaɪ]",
+"pos": [
+"verb"
+]
+},
+"sightseeing": {
+"conceptId": "sightseeing",
+"phonetic": "[ˈsaɪtˈsiːɪŋ]",
+"pos": [
+"noun",
+"adj"
+]
+},
+"transform": {
+"conceptId": "transform",
+"phonetic": "[trænˈsfɔːrm]",
+"pos": [
+"verb"
+]
+},
+"minister": {
+"conceptId": "minister",
+"phonetic": "[ˈmɪnəstər]",
+"pos": [
+"noun"
+]
+},
+"audience": {
+"conceptId": "audience",
+"phonetic": "[ˈɑːdɪəns]",
+"pos": [
+"noun"
+]
+},
+"conquer": {
+"conceptId": "conquer",
+"phonetic": "[ˈkɑːŋkər]",
+"pos": [
+"verb"
+]
+},
+"advertise": {
+"conceptId": "advertise",
+"phonetic": "[ˈædvərtaɪz]",
+"pos": [
+"verb"
+]
+},
+"be used to": {
+"conceptId": "be used to",
+"phonetic": "[biː juːzd tuː]",
+"pos": [
+"aux"
+]
+},
+"prefer": {
+"conceptId": "prefer",
+"phonetic": "[prəˈfɜːr]",
+"pos": [
+"verb"
+]
+},
+"distance": {
+"conceptId": "distance",
+"phonetic": "[ˈdɪstəns]",
+"pos": [
+"noun"
+]
+},
+"insist": {
+"conceptId": "insist",
+"phonetic": "[ɪnˈsɪst]",
+"pos": [
+"verb"
+]
+},
+"microscope": {
+"conceptId": "microscope",
+"phonetic": "[ˈmaɪkrəskoʊp]",
+"pos": [
+"noun"
+]
+},
+"deal with": {
+"conceptId": "deal with",
+"phonetic": "[diːl wɪð]",
+"pos": [
+"verb"
+]
+},
+"decline": {
+"conceptId": "decline",
+"phonetic": "[dɪˈklaɪn]",
+"pos": [
+"verb"
+]
+},
+"detergent": {
+"conceptId": "detergent",
+"phonetic": "[dɪˈtɜːrdʒənt]",
+"pos": [
+"noun"
+]
+},
+"buckle": {
+"conceptId": "buckle",
+"phonetic": "[ˈbʌkəl]",
+"pos": [
+"noun"
+]
+},
+"forecast": {
+"conceptId": "forecast",
+"phonetic": "[ˈfɔːrkæst]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"transport": {
+"conceptId": "transport",
+"phonetic": "[trænˈspɔːrt]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"astronaut": {
+"conceptId": "astronaut",
+"phonetic": "[ˈæstrənɑːt]",
+"pos": [
+"noun"
+]
+},
+"thread": {
+"conceptId": "thread",
+"phonetic": "[θred]",
+"pos": [
+"noun"
+]
+},
+"vision": {
+"conceptId": "vision",
+"phonetic": "[ˈvɪʒən]",
+"pos": [
+"noun"
+]
+},
+"gravity": {
+"conceptId": "gravity",
+"phonetic": "[ˈɡrævəti]",
+"pos": [
+"noun"
+]
+},
+"aware": {
+"conceptId": "aware",
+"phonetic": "[əˈwer]",
+"pos": [
+"adj"
+]
+},
+"approve": {
+"conceptId": "approve",
+"phonetic": "[əˈpruːv]",
+"pos": [
+"verb"
+]
+},
+"medical": {
+"conceptId": "medical",
+"phonetic": "[ˈmedəkəl]",
+"pos": [
+"adj"
+]
+},
+"bruise": {
+"conceptId": "bruise",
+"phonetic": "[bruːz]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"circumstance": {
+"conceptId": "circumstance",
+"phonetic": "[ˈsɜːrkəmstæns]",
+"pos": [
+"noun"
+]
+},
+"currency": {
+"conceptId": "currency",
+"phonetic": "[ˈkɜːrənsi]",
+"pos": [
+"noun"
+]
+},
+"beverage": {
+"conceptId": "beverage",
+"phonetic": "[ˈbevərɪdʒ]",
+"pos": [
+"noun"
+]
+},
+"check out": {
+"conceptId": "check out",
+"phonetic": "[tʃek aʊt]",
+"pos": [
+"verb"
+]
+},
+"filter": {
+"conceptId": "filter",
+"phonetic": "[ˈfɪltər]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"dismiss": {
+"conceptId": "dismiss",
+"phonetic": "[dɪˈsmɪs]",
+"pos": [
+"verb"
+]
+},
+"brochure": {
+"conceptId": "brochure",
+"phonetic": "[broʊˈʃʊr]",
+"pos": [
+"noun"
+]
+},
+"pack": {
+"conceptId": "pack",
+"phonetic": "[pæk]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"fluent": {
+"conceptId": "fluent",
+"phonetic": "[ˈfluːənt]",
+"pos": [
+"adj"
+]
+},
+"fashion": {
+"conceptId": "fashion",
+"phonetic": "[ˈfæʃən]",
+"pos": [
+"noun"
+]
+},
+"cut off": {
+"conceptId": "cut off",
+"phonetic": "[kʌt ɔːf]",
+"pos": [
+"verb"
+]
+},
+"realistic": {
+"conceptId": "realistic",
+"phonetic": "[rɪəˈlɪstɪk]",
+"pos": [
+"adj"
+]
+},
+"satisfy": {
+"conceptId": "satisfy",
+"phonetic": "[ˈsætəsfaɪ]",
+"pos": [
+"verb"
+]
+},
+"innocent": {
+"conceptId": "innocent",
+"phonetic": "[ˈɪnəsənt]",
+"pos": [
+"adj"
+]
+},
+"prevent": {
+"conceptId": "prevent",
+"phonetic": "[prɪˈvent]",
+"pos": [
+"verb"
+]
+},
+"bargain": {
+"conceptId": "bargain",
+"phonetic": "[ˈbɑːrɡən]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"extend": {
+"conceptId": "extend",
+"phonetic": "[ɪkˈstend]",
+"pos": [
+"verb"
+]
+},
+"structure": {
+"conceptId": "structure",
+"phonetic": "[ˈstrʌktʃər]",
+"pos": [
+"noun"
+]
+},
+"district": {
+"conceptId": "district",
+"phonetic": "[ˈdɪstrɪkt]",
+"pos": [
+"noun"
+]
+},
+"memorize": {
+"conceptId": "memorize",
+"phonetic": "[ˈmeməraɪz]",
+"pos": [
+"verb"
+]
+},
+"give off": {
+"conceptId": "give off",
+"phonetic": "[ɡɪv ɔːf]",
+"pos": [
+"verb"
+]
+},
+"recent": {
+"conceptId": "recent",
+"phonetic": "[ˈriːsənt]",
+"pos": [
+"adj"
+]
+},
+"institution": {
+"conceptId": "institution",
+"phonetic": "[ɪnstɪˈtuːʃən]",
+"pos": [
+"noun"
+]
+},
+"make sure": {
+"conceptId": "make sure",
+"phonetic": "[meɪk ʃʊr]",
+"pos": [
+"verb"
+]
+},
+"quick": {
+"conceptId": "quick",
+"phonetic": "[kwɪk]",
+"pos": [
+"adj"
+]
+},
+"show off": {
+"conceptId": "show off",
+"phonetic": "[ʃoʊ ɔːf]",
+"pos": [
+"verb"
+]
+},
+"associate": {
+"conceptId": "associate",
+"phonetic": "[əˈsoʊsɪət]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"pupil": {
+"conceptId": "pupil",
+"phonetic": "[ˈpjuːpəl]",
+"pos": [
+"noun"
+]
+},
+"up close": {
+"conceptId": "up close",
+"phonetic": "[ʌp kloʊs]",
+"pos": [
+"adv"
+]
+},
+"constant": {
+"conceptId": "constant",
+"phonetic": "[ˈkɑːnstənt]",
+"pos": [
+"adj"
+]
+},
+"warmth": {
+"conceptId": "warmth",
+"phonetic": "[wɔːrmθ]",
+"pos": [
+"noun"
+]
+},
+"aspect": {
+"conceptId": "aspect",
+"phonetic": "[ˈæspekt]",
+"pos": [
+"noun"
+]
+},
+"combine": {
+"conceptId": "combine",
+"phonetic": "[ˈkɑːmbaɪn]",
+"pos": [
+"verb"
+]
+},
+"reduce": {
+"conceptId": "reduce",
+"phonetic": "[rəˈduːs]",
+"pos": [
+"verb"
+]
+},
+"fantastic": {
+"conceptId": "fantastic",
+"phonetic": "[fænˈtæstɪk]",
+"pos": [
+"adj"
+]
+},
+"wrist": {
+"conceptId": "wrist",
+"phonetic": "[rɪst]",
+"pos": [
+"noun"
+]
+},
+"lecture": {
+"conceptId": "lecture",
+"phonetic": "[ˈlektʃər]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"grocery": {
+"conceptId": "grocery",
+"phonetic": "[ˈɡroʊsəri]",
+"pos": [
+"noun"
+]
+},
+"in place": {
+"conceptId": "in place",
+"phonetic": "[ɪn pleɪs]",
+"pos": [
+"adv"
+]
+},
+"value": {
+"conceptId": "value",
+"phonetic": "[ˈvælju]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"look for": {
+"conceptId": "look for",
+"phonetic": "[lʊk fɔːr]",
+"pos": [
+"verb"
+]
+},
+"recreation": {
+"conceptId": "recreation",
+"phonetic": "[rekrɪˈeɪʃən]",
+"pos": [
+"noun"
+]
+},
+"connect": {
+"conceptId": "connect",
+"phonetic": "[kəˈnekt]",
+"pos": [
+"verb"
+]
+},
+"spine": {
+"conceptId": "spine",
+"phonetic": "[spaɪn]",
+"pos": [
+"noun"
+]
+},
+"valid": {
+"conceptId": "valid",
+"phonetic": "[ˈvælɪd]",
+"pos": [
+"adj"
+]
+},
+"reputation": {
+"conceptId": "reputation",
+"phonetic": "[repjəˈteɪʃən]",
+"pos": [
+"noun"
+]
+},
+"emergency": {
+"conceptId": "emergency",
+"phonetic": "[ɪˈmɜːrdʒənsi]",
+"pos": [
+"noun"
+]
+},
+"receipt": {
+"conceptId": "receipt",
+"phonetic": "[rɪˈsiːt]",
+"pos": [
+"noun"
+]
+},
+"tournament": {
+"conceptId": "tournament",
+"phonetic": "[ˈtʊrnəmənt]",
+"pos": [
+"noun"
+]
+},
+"inquire": {
+"conceptId": "inquire",
+"phonetic": "[ɪnˈkwaɪr]",
+"pos": [
+"verb"
+]
+},
+"pressure": {
+"conceptId": "pressure",
+"phonetic": "[ˈpreʃər]",
+"pos": [
+"noun"
+]
+},
+"stove": {
+"conceptId": "stove",
+"phonetic": "[stoʊv]",
+"pos": [
+"noun"
+]
+},
+"end up": {
+"conceptId": "end up",
+"phonetic": "[end ʌp]",
+"pos": [
+"verb"
+]
+},
+"underwater": {
+"conceptId": "underwater",
+"phonetic": "[ˈʌndərwɔːtər]",
+"pos": [
+"adj",
+"adv"
+]
+},
+"kettle": {
+"conceptId": "kettle",
+"phonetic": "[ˈketəl]",
+"pos": [
+"noun"
+]
+},
+"aim": {
+"conceptId": "aim",
+"phonetic": "[eɪm]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"highway": {
+"conceptId": "highway",
+"phonetic": "[ˈhaɪweɪ]",
+"pos": [
+"noun"
+]
+},
+"consumer": {
+"conceptId": "consumer",
+"phonetic": "[kənˈsuːmər]",
+"pos": [
+"noun"
+]
+},
+"permit": {
+"conceptId": "permit",
+"phonetic": "[pərˈmɪt]",
+"pos": [
+"verb"
+]
+},
+"holy": {
+"conceptId": "holy",
+"phonetic": "[ˈhoʊli]",
+"pos": [
+"adj"
+]
+},
+"curve": {
+"conceptId": "curve",
+"phonetic": "[kɜːrv]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"overseas": {
+"conceptId": "overseas",
+"phonetic": "[ˈoʊvərˈsiːz]",
+"pos": [
+"adj",
+"adv"
+]
+},
+"brief": {
+"conceptId": "brief",
+"phonetic": "[briːf]",
+"pos": [
+"adj"
+]
+},
+"commit": {
+"conceptId": "commit",
+"phonetic": "[kəˈmɪt]",
+"pos": [
+"verb"
+]
+},
+"fasten": {
+"conceptId": "fasten",
+"phonetic": "[ˈfæsən]",
+"pos": [
+"verb"
+]
+},
+"ask for": {
+"conceptId": "ask for",
+"phonetic": "[æsk fɔːr]",
+"pos": [
+"verb"
+]
+},
+"genius": {
+"conceptId": "genius",
+"phonetic": "[ˈdʒiːnjəs]",
+"pos": [
+"noun"
+]
+},
+"deliver": {
+"conceptId": "deliver",
+"phonetic": "[dɪˈlɪvər]",
+"pos": [
+"verb"
+]
+},
+"volume": {
+"conceptId": "volume",
+"phonetic": "[ˈvɑːljum]",
+"pos": [
+"noun"
+]
+},
+"sudden": {
+"conceptId": "sudden",
+"phonetic": "[ˈsʌdən]",
+"pos": [
+"adj"
+]
+},
+"community": {
+"conceptId": "community",
+"phonetic": "[kəˈmjuːnəti]",
+"pos": [
+"noun"
+]
+},
+"intellectual": {
+"conceptId": "intellectual",
+"phonetic": "[ɪntəˈlektʃuəl]",
+"pos": [
+"adj",
+"noun"
+]
+},
+"communicate": {
+"conceptId": "communicate",
+"phonetic": "[kəˈmjuːnəkeɪt]",
+"pos": [
+"verb"
+]
+},
+"condition": {
+"conceptId": "condition",
+"phonetic": "[kənˈdɪʃən]",
+"pos": [
+"noun"
+]
+},
+"fashionable": {
+"conceptId": "fashionable",
+"phonetic": "[ˈfæʃənəbəl]",
+"pos": [
+"adj"
+]
+},
+"determine": {
+"conceptId": "determine",
+"phonetic": "[dəˈtɜːrmən]",
+"pos": [
+"verb"
+]
+},
+"landscape": {
+"conceptId": "landscape",
+"phonetic": "[ˈlændskeɪp]",
+"pos": [
+"noun"
+]
+},
+"in detail": {
+"conceptId": "in detail",
+"phonetic": "[ɪn dɪˈteɪl]",
+"pos": [
+"adv"
+]
+},
+"interior": {
+"conceptId": "interior",
+"phonetic": "[ɪnˈtɪrɪər]",
+"pos": [
+"adj",
+"noun"
+]
+},
+"jealous": {
+"conceptId": "jealous",
+"phonetic": "[ˈdʒeləs]",
+"pos": [
+"adj"
+]
+},
+"translate": {
+"conceptId": "translate",
+"phonetic": "[trænzˈleɪt]",
+"pos": [
+"verb"
+]
+},
+"in balance": {
+"conceptId": "in balance",
+"phonetic": "[ɪn ˈbæləns]",
+"pos": [
+"adv"
+]
+},
+"labor": {
+"conceptId": "labor",
+"phonetic": "[ˈleɪbər]",
+"pos": [
+"noun"
+]
+},
+"display": {
+"conceptId": "display",
+"phonetic": "[dɪsˈpleɪ]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"opposite": {
+"conceptId": "opposite",
+"phonetic": "[ˈɑːpəzət]",
+"pos": [
+"adj"
+]
+},
+"seek": {
+"conceptId": "seek",
+"phonetic": "[siːk]",
+"pos": [
+"verb"
+]
+},
+"enormous": {
+"conceptId": "enormous",
+"phonetic": "[ɪˈnɔːrməs]",
+"pos": [
+"adj"
+]
+},
+"generation": {
+"conceptId": "generation",
+"phonetic": "[dʒenərˈeɪʃən]",
+"pos": [
+"noun"
+]
+},
+"keep in mind": {
+"conceptId": "keep in mind",
+"phonetic": "[kiːp ɪn maɪnd]",
+"pos": [
+"adv"
+]
+},
+"loss": {
+"conceptId": "loss",
+"phonetic": "[lɔːs]",
+"pos": [
+"noun"
+]
+},
+"standard": {
+"conceptId": "standard",
+"phonetic": "[ˈstændərd]",
+"pos": [
+"noun",
+"adj"
+]
+},
+"location": {
+"conceptId": "location",
+"phonetic": "[loʊˈkeɪʃən]",
+"pos": [
+"noun"
+]
+},
+"arise": {
+"conceptId": "arise",
+"phonetic": "[ərˈaɪz]",
+"pos": [
+"verb"
+]
+},
+"prospect": {
+"conceptId": "prospect",
+"phonetic": "[ˈprɑːspekt]",
+"pos": [
+"noun"
+]
+},
+"allowance": {
+"conceptId": "allowance",
+"phonetic": "[əˈlaʊəns]",
+"pos": [
+"noun"
+]
+},
+"missionary": {
+"conceptId": "missionary",
+"phonetic": "[ˈmɪʃəneri]",
+"pos": [
+"noun"
+]
+},
+"a variety of": {
+"conceptId": "a variety of",
+"phonetic": "[ə vərˈaɪəti ʌv]",
+"pos": [
+"adj"
+]
+},
+"moral": {
+"conceptId": "moral",
+"phonetic": "[ˈmɔːrəl]",
+"pos": [
+"adj"
+]
+},
+"status": {
+"conceptId": "status",
+"phonetic": "[ˈstætəs]",
+"pos": [
+"noun"
+]
+},
+"priceless": {
+"conceptId": "priceless",
+"phonetic": "[ˈpraɪsləs]",
+"pos": [
+"adj"
+]
+},
+"willing": {
+"conceptId": "willing",
+"phonetic": "[ˈwɪlɪŋ]",
+"pos": [
+"adj"
+]
+},
+"desire": {
+"conceptId": "desire",
+"phonetic": "[dɪˈzaɪər]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"miracle": {
+"conceptId": "miracle",
+"phonetic": "[ˈmɪrəkəl]",
+"pos": [
+"noun"
+]
+},
+"narrator": {
+"conceptId": "narrator",
+"phonetic": "[ˈnereɪtər]",
+"pos": [
+"noun"
+]
+},
+"quality": {
+"conceptId": "quality",
+"phonetic": "[ˈkwɑːləti]",
+"pos": [
+"noun",
+"adj"
+]
+},
+"liquid": {
+"conceptId": "liquid",
+"phonetic": "[ˈlɪkwəd]",
+"pos": [
+"noun",
+"adj"
+]
+},
+"instant": {
+"conceptId": "instant",
+"phonetic": "[ˈɪnstənt]",
+"pos": [
+"adj",
+"noun"
+]
+},
+"jewelry": {
+"conceptId": "jewelry",
+"phonetic": "[ˈdʒuːəlri]",
+"pos": [
+"noun"
+]
+},
+"pride": {
+"conceptId": "pride",
+"phonetic": "[praɪd]",
+"pos": [
+"noun"
+]
+},
+"barrier": {
+"conceptId": "barrier",
+"phonetic": "[ˈbærɪər]",
+"pos": [
+"noun"
+]
+},
+"entrance": {
+"conceptId": "entrance",
+"phonetic": "[ˈentrəns]",
+"pos": [
+"noun"
+]
+},
+"rude": {
+"conceptId": "rude",
+"phonetic": "[ruːd]",
+"pos": [
+"adj"
+]
+},
+"novel": {
+"conceptId": "novel",
+"phonetic": "[ˈnɑːvəl]",
+"pos": [
+"noun",
+"adj"
+]
+},
+"reproduce": {
+"conceptId": "reproduce",
+"phonetic": "[rɪprəˈduːs]",
+"pos": [
+"verb"
+]
+},
+"work out": {
+"conceptId": "work out",
+"phonetic": "[wɜːrk aʊt]",
+"pos": [
+"verb"
+]
+},
+"masterpiece": {
+"conceptId": "masterpiece",
+"phonetic": "[ˈmæstərpɪs]",
+"pos": [
+"noun"
+]
+},
+"bomb": {
+"conceptId": "bomb",
+"phonetic": "[bɑːm]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"policy": {
+"conceptId": "policy",
+"phonetic": "[ˈpɑːləsi]",
+"pos": [
+"noun"
+]
+},
+"deed": {
+"conceptId": "deed",
+"phonetic": "[diːd]",
+"pos": [
+"noun"
+]
+},
+"demand": {
+"conceptId": "demand",
+"phonetic": "[dɪˈmænd]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"skin": {
+"conceptId": "skin",
+"phonetic": "[skɪn]",
+"pos": [
+"noun"
+]
+},
+"sum": {
+"conceptId": "sum",
+"phonetic": "[sʌm]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"rotten": {
+"conceptId": "rotten",
+"phonetic": "[ˈrɑːtən]",
+"pos": [
+"adj"
+]
+},
+"congratulation": {
+"conceptId": "congratulation",
+"phonetic": "[kənɡrætʃəˈleɪʃən]",
+"pos": [
+"noun"
+]
+},
+"absorb": {
+"conceptId": "absorb",
+"phonetic": "[əbˈzɔːrb]",
+"pos": [
+"verb"
+]
+},
+"sweep": {
+"conceptId": "sweep",
+"phonetic": "[swiːp]",
+"pos": [
+"verb"
+]
+},
+"chorus": {
+"conceptId": "chorus",
+"phonetic": "[ˈkɔːrəs]",
+"pos": [
+"noun"
+]
+},
+"invitation": {
+"conceptId": "invitation",
+"phonetic": "[ɪnvɪˈteɪʃən]",
+"pos": [
+"noun"
+]
+},
+"little by little": {
+"conceptId": "little by little",
+"phonetic": "[ˈlɪtəl baɪ ˈlɪtəl]",
+"pos": [
+"adv"
+]
+},
+"flexible": {
+"conceptId": "flexible",
+"phonetic": "[ˈfleksəbəl]",
+"pos": [
+"adj"
+]
+},
+"reality": {
+"conceptId": "reality",
+"phonetic": "[rɪˈæləti]",
+"pos": [
+"noun"
+]
+},
+"back and forth": {
+"conceptId": "back and forth",
+"phonetic": "[bæk ənd fɔːrθ]",
+"pos": [
+"adv"
+]
+},
+"put away": {
+"conceptId": "put away",
+"phonetic": "[pʊt əˈweɪ]",
+"pos": [
+"verb"
+]
+},
+"carry out": {
+"conceptId": "carry out",
+"phonetic": "[ˈkæri aʊt]",
+"pos": [
+"verb"
+]
+},
+"scientific": {
+"conceptId": "scientific",
+"phonetic": "[saɪənˈtɪfɪk]",
+"pos": [
+"adj"
+]
+},
+"fiction": {
+"conceptId": "fiction",
+"phonetic": "[ˈfɪkʃən]",
+"pos": [
+"noun"
+]
+},
+"economic": {
+"conceptId": "economic",
+"phonetic": "[ekəˈnɑːmɪk]",
+"pos": [
+"adj"
+]
+},
+"worse": {
+"conceptId": "worse",
+"phonetic": "[wɜːrs]",
+"pos": [
+"adj",
+"adv"
+]
+},
+"recommend": {
+"conceptId": "recommend",
+"phonetic": "[rekəˈmend]",
+"pos": [
+"verb"
+]
+},
+"meaning": {
+"conceptId": "meaning",
+"phonetic": "[ˈmiːnɪŋ]",
+"pos": [
+"noun"
+]
+},
+"contain": {
+"conceptId": "contain",
+"phonetic": "[kənˈteɪn]",
+"pos": [
+"verb"
+]
+},
+"isolate": {
+"conceptId": "isolate",
+"phonetic": "[ˈaɪsəleɪt]",
+"pos": [
+"verb"
+]
+},
+"manage": {
+"conceptId": "manage",
+"phonetic": "[ˈmænədʒ]",
+"pos": [
+"verb"
+]
+},
+"panic": {
+"conceptId": "panic",
+"phonetic": "[ˈpænɪk]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"restrict": {
+"conceptId": "restrict",
+"phonetic": "[rɪsˈtrɪkt]",
+"pos": [
+"verb"
+]
+},
+"proportion": {
+"conceptId": "proportion",
+"phonetic": "[prəˈpɔːrʃən]",
+"pos": [
+"noun"
+]
+},
+"ultimate": {
+"conceptId": "ultimate",
+"phonetic": "[ˈʌltəmət]",
+"pos": [
+"adj"
+]
+},
+"suspect": {
+"conceptId": "suspect",
+"phonetic": "[səˈspekt]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"factor": {
+"conceptId": "factor",
+"phonetic": "[ˈfæktər]",
+"pos": [
+"noun"
+]
+},
+"come to an end": {
+"conceptId": "come to an end",
+"phonetic": "[kʌm tuː æn end]",
+"pos": [
+"verb"
+]
+},
+"greenhouse": {
+"conceptId": "greenhouse",
+"phonetic": "[ˈɡriːnhaʊs]",
+"pos": [
+"noun"
+]
+},
+"moderate": {
+"conceptId": "moderate",
+"phonetic": "[ˈmɑːdərət]",
+"pos": [
+"adj"
+]
+},
+"property": {
+"conceptId": "property",
+"phonetic": "[ˈprɑːpərti]",
+"pos": [
+"noun"
+]
+},
+"tune": {
+"conceptId": "tune",
+"phonetic": "[tuːn]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"expert": {
+"conceptId": "expert",
+"phonetic": "[ˈekspərt]",
+"pos": [
+"noun",
+"adj"
+]
+},
+"tragedy": {
+"conceptId": "tragedy",
+"phonetic": "[ˈtrædʒədi]",
+"pos": [
+"noun"
+]
+},
+"conclude": {
+"conceptId": "conclude",
+"phonetic": "[kənˈkluːd]",
+"pos": [
+"verb"
+]
+},
+"volcano": {
+"conceptId": "volcano",
+"phonetic": "[vɑlˈkeɪnoʊ]",
+"pos": [
+"noun"
+]
+},
+"careful": {
+"conceptId": "careful",
+"phonetic": "[ˈkerfəl]",
+"pos": [
+"adj"
+]
+},
+"conversation": {
+"conceptId": "conversation",
+"phonetic": "[kɑːnvərˈseɪʃən]",
+"pos": [
+"noun"
+]
+},
+"spread": {
+"conceptId": "spread",
+"phonetic": "[spred]",
+"pos": [
+"verb"
+]
+},
+"harbor": {
+"conceptId": "harbor",
+"phonetic": "[ˈhɑːrbər]",
+"pos": [
+"noun"
+]
+},
+"rough": {
+"conceptId": "rough",
+"phonetic": "[rʌf]",
+"pos": [
+"adj"
+]
+},
+"decade": {
+"conceptId": "decade",
+"phonetic": "[deˈkeɪd]",
+"pos": [
+"noun"
+]
+},
+"volunteer": {
+"conceptId": "volunteer",
+"phonetic": "[vɑːlənˈtɪr]",
+"pos": [
+"noun",
+"verb",
+"adj"
+]
+},
+"author": {
+"conceptId": "author",
+"phonetic": "[ˈɔːθər]",
+"pos": [
+"noun"
+]
+},
+"title": {
+"conceptId": "title",
+"phonetic": "[ˈtaɪtəl]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"southern": {
+"conceptId": "southern",
+"phonetic": "[ˈsʌðərn]",
+"pos": [
+"adj"
+]
+},
+"issue": {
+"conceptId": "issue",
+"phonetic": "[ˈɪʃu]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"emotion": {
+"conceptId": "emotion",
+"phonetic": "[ɪˈmoʊʃən]",
+"pos": [
+"noun"
+]
+},
+"forgive": {
+"conceptId": "forgive",
+"phonetic": "[fərˈɡɪv]",
+"pos": [
+"verb"
+]
+},
+"pasture": {
+"conceptId": "pasture",
+"phonetic": "[ˈpæstʃər]",
+"pos": [
+"noun"
+]
+},
+"cultural": {
+"conceptId": "cultural",
+"phonetic": "[ˈkʌltʃərəl]",
+"pos": [
+"adj"
+]
+},
+"enable": {
+"conceptId": "enable",
+"phonetic": "[eˈneɪbəl]",
+"pos": [
+"verb"
+]
+},
+"opponent": {
+"conceptId": "opponent",
+"phonetic": "[əˈpoʊnənt]",
+"pos": [
+"noun"
+]
+},
+"flavor": {
+"conceptId": "flavor",
+"phonetic": "[ˈfleɪvər]",
+"pos": [
+"noun"
+]
+},
+"as long as": {
+"conceptId": "as long as",
+"phonetic": "[æz lɔːŋ æz]",
+"pos": [
+"conj"
+]
+},
+"pronounce": {
+"conceptId": "pronounce",
+"phonetic": "[prəˈnaʊns]",
+"pos": [
+"verb"
+]
+},
+"mop": {
+"conceptId": "mop",
+"phonetic": "[mɑːp]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"focus": {
+"conceptId": "focus",
+"phonetic": "[ˈfoʊkəs]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"make up for": {
+"conceptId": "make up for",
+"phonetic": "[meɪk ʌp fɔːr]",
+"pos": [
+"verb"
+]
+},
+"in order to": {
+"conceptId": "in order to",
+"phonetic": "[ɪn ˈɔːrdər tuː]",
+"pos": [
+"adv"
+]
+},
+"humble": {
+"conceptId": "humble",
+"phonetic": "[ˈhʌmbəl]",
+"pos": [
+"adj"
+]
+},
+"efficiency": {
+"conceptId": "efficiency",
+"phonetic": "[ɪˈfɪʃənsi]",
+"pos": [
+"noun"
+]
+},
+"phrase": {
+"conceptId": "phrase",
+"phonetic": "[freɪz]",
+"pos": [
+"noun"
+]
+},
+"monitor": {
+"conceptId": "monitor",
+"phonetic": "[ˈmɑːnətər]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"call on": {
+"conceptId": "call on",
+"phonetic": "[kɔːl ɑːn]",
+"pos": [
+"verb"
+]
+},
+"prescribe": {
+"conceptId": "prescribe",
+"phonetic": "[prəsˈkraɪb]",
+"pos": [
+"verb"
+]
+},
+"erupt": {
+"conceptId": "erupt",
+"phonetic": "[ɪˈrʌpt]",
+"pos": [
+"verb"
+]
+},
+"faint": {
+"conceptId": "faint",
+"phonetic": "[feɪnt]",
+"pos": [
+"adj",
+"verb"
+]
+},
+"comment": {
+"conceptId": "comment",
+"phonetic": "[ˈkɑːment]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"occasion": {
+"conceptId": "occasion",
+"phonetic": "[əˈkeɪʒən]",
+"pos": [
+"noun"
+]
+},
+"figure out": {
+"conceptId": "figure out",
+"phonetic": "[ˈfɪɡjər aʊt]",
+"pos": [
+"verb"
+]
+},
+"regulate": {
+"conceptId": "regulate",
+"phonetic": "[ˈreɡjəleɪt]",
+"pos": [
+"verb"
+]
+},
+"notice": {
+"conceptId": "notice",
+"phonetic": "[ˈnoʊtəs]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"progress": {
+"conceptId": "progress",
+"phonetic": "[ˈprɑːɡres]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"bring about": {
+"conceptId": "bring about",
+"phonetic": "[brɪŋ əˈbaʊt]",
+"pos": [
+"verb"
+]
+},
+"infection": {
+"conceptId": "infection",
+"phonetic": "[ɪnˈfekʃən]",
+"pos": [
+"noun"
+]
+},
+"concrete": {
+"conceptId": "concrete",
+"phonetic": "[kənˈkriːt]",
+"pos": [
+"noun",
+"adj"
+]
+},
+"outline": {
+"conceptId": "outline",
+"phonetic": "[ˈaʊtlaɪn]",
+"pos": [
+"noun"
+]
+},
+"accomplish": {
+"conceptId": "accomplish",
+"phonetic": "[əˈkɑːmplɪʃ]",
+"pos": [
+"verb"
+]
+},
+"interpret": {
+"conceptId": "interpret",
+"phonetic": "[ɪnˈtɜːrprət]",
+"pos": [
+"verb"
+]
+},
+"ignorant": {
+"conceptId": "ignorant",
+"phonetic": "[ˈɪɡnərənt]",
+"pos": [
+"adj"
+]
+},
+"delay": {
+"conceptId": "delay",
+"phonetic": "[dɪˈleɪ]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"go over": {
+"conceptId": "go over",
+"phonetic": "[ɡoʊ ˈoʊvər]",
+"pos": [
+"verb"
+]
+},
+"secure": {
+"conceptId": "secure",
+"phonetic": "[sɪˈkjʊr]",
+"pos": [
+"adj",
+"verb"
+]
+},
+"appoint": {
+"conceptId": "appoint",
+"phonetic": "[əˈpɔɪnt]",
+"pos": [
+"verb"
+]
+},
+"universal": {
+"conceptId": "universal",
+"phonetic": "[juːnəˈvɜːrsəl]",
+"pos": [
+"adj"
+]
+},
+"peak": {
+"conceptId": "peak",
+"phonetic": "[piːk]",
+"pos": [
+"noun"
+]
+},
+"cruel": {
+"conceptId": "cruel",
+"phonetic": "[ˈkruːəl]",
+"pos": [
+"adj"
+]
+},
+"total": {
+"conceptId": "total",
+"phonetic": "[ˈtoʊtəl]",
+"pos": [
+"adj",
+"noun"
+]
+},
+"establish": {
+"conceptId": "establish",
+"phonetic": "[ɪˈstæblɪʃ]",
+"pos": [
+"verb"
+]
+},
+"session": {
+"conceptId": "session",
+"phonetic": "[ˈseʃən]",
+"pos": [
+"noun"
+]
+},
+"refer": {
+"conceptId": "refer",
+"phonetic": "[rəˈfɜːr]",
+"pos": [
+"verb"
+]
+},
+"lighthouse": {
+"conceptId": "lighthouse",
+"phonetic": "[ˈlaɪthaʊs]",
+"pos": [
+"noun"
+]
+},
+"educate": {
+"conceptId": "educate",
+"phonetic": "[ˈedʒəkeɪt]",
+"pos": [
+"verb"
+]
+},
+"device": {
+"conceptId": "device",
+"phonetic": "[dɪˈvaɪs]",
+"pos": [
+"noun"
+]
+},
+"remains": {
+"conceptId": "remains",
+"phonetic": "[rɪˈmeɪnz]",
+"pos": [
+"noun"
+]
+},
+"turn over": {
+"conceptId": "turn over",
+"phonetic": "[tɜːrn ˈoʊvər]",
+"pos": [
+"verb"
+]
+},
+"compose": {
+"conceptId": "compose",
+"phonetic": "[kəmˈpoʊz]",
+"pos": [
+"verb"
+]
+},
+"director": {
+"conceptId": "director",
+"phonetic": "[dərˈektər]",
+"pos": [
+"noun"
+]
+},
+"household": {
+"conceptId": "household",
+"phonetic": "[ˈhaʊshoʊld]",
+"pos": [
+"noun"
+]
+},
+"mutual": {
+"conceptId": "mutual",
+"phonetic": "[ˈmjuːtʃuəl]",
+"pos": [
+"adj"
+]
+},
+"oppose": {
+"conceptId": "oppose",
+"phonetic": "[əˈpoʊz]",
+"pos": [
+"verb"
+]
+},
+"be based on": {
+"conceptId": "be based on",
+"phonetic": "[biː beɪst ɑːn]",
+"pos": [
+"verb"
+]
+},
+"tidy": {
+"conceptId": "tidy",
+"phonetic": "[ˈtaɪdi]",
+"pos": [
+"adj",
+"verb"
+]
+},
+"strict": {
+"conceptId": "strict",
+"phonetic": "[strɪkt]",
+"pos": [
+"adj"
+]
+},
+"leisure": {
+"conceptId": "leisure",
+"phonetic": "[ˈleʒər]",
+"pos": [
+"noun"
+]
+},
+"natural": {
+"conceptId": "natural",
+"phonetic": "[ˈnætʃərəl]",
+"pos": [
+"adj"
+]
+},
+"lead to": {
+"conceptId": "lead to",
+"phonetic": "[led tuː]",
+"pos": [
+"verb"
+]
+},
+"identify": {
+"conceptId": "identify",
+"phonetic": "[aɪˈdentəfaɪ]",
+"pos": [
+"verb"
+]
+},
+"precise": {
+"conceptId": "precise",
+"phonetic": "[prɪˈsaɪs]",
+"pos": [
+"adj"
+]
+},
+"reasonable": {
+"conceptId": "reasonable",
+"phonetic": "[ˈriːzənəbəl]",
+"pos": [
+"adj"
+]
+},
+"cooperate": {
+"conceptId": "cooperate",
+"phonetic": "[koʊˈɑːpəreɪt]",
+"pos": [
+"verb"
+]
+},
+"height": {
+"conceptId": "height",
+"phonetic": "[haɪt]",
+"pos": [
+"noun"
+]
+},
+"observe": {
+"conceptId": "observe",
+"phonetic": "[əbˈzɜːrv]",
+"pos": [
+"verb"
+]
+},
+"risk": {
+"conceptId": "risk",
+"phonetic": "[rɪsk]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"wallet": {
+"conceptId": "wallet",
+"phonetic": "[ˈwɔːlət]",
+"pos": [
+"noun"
+]
+},
+"chop": {
+"conceptId": "chop",
+"phonetic": "[tʃɑːp]",
+"pos": [
+"verb"
+]
+},
+"logic": {
+"conceptId": "logic",
+"phonetic": "[ˈlɑːdʒɪk]",
+"pos": [
+"noun"
+]
+},
+"exhibition": {
+"conceptId": "exhibition",
+"phonetic": "[eksəˈbɪʃən]",
+"pos": [
+"noun"
+]
+},
+"penalty": {
+"conceptId": "penalty",
+"phonetic": "[ˈpenəlti]",
+"pos": [
+"noun"
+]
+},
+"theme": {
+"conceptId": "theme",
+"phonetic": "[θiːm]",
+"pos": [
+"noun"
+]
+},
+"muscle": {
+"conceptId": "muscle",
+"phonetic": "[ˈmʌsəl]",
+"pos": [
+"noun"
+]
+},
+"needle": {
+"conceptId": "needle",
+"phonetic": "[ˈniːdəl]",
+"pos": [
+"noun"
+]
+},
+"philosophy": {
+"conceptId": "philosophy",
+"phonetic": "[fəˈlɑːsəfi]",
+"pos": [
+"noun"
+]
+},
+"outlet": {
+"conceptId": "outlet",
+"phonetic": "[ˈaʊtlet]",
+"pos": [
+"noun"
+]
+},
+"annual": {
+"conceptId": "annual",
+"phonetic": "[ˈænjuəl]",
+"pos": [
+"adj"
+]
+},
+"vivid": {
+"conceptId": "vivid",
+"phonetic": "[ˈvɪvəd]",
+"pos": [
+"adj"
+]
+},
+"criticize": {
+"conceptId": "criticize",
+"phonetic": "[ˈkrɪtɪsaɪz]",
+"pos": [
+"verb"
+]
+},
+"version": {
+"conceptId": "version",
+"phonetic": "[ˈvɜːrʒən]",
+"pos": [
+"noun"
+]
+},
+"differ": {
+"conceptId": "differ",
+"phonetic": "[ˈdɪfər]",
+"pos": [
+"verb"
+]
+},
+"command": {
+"conceptId": "command",
+"phonetic": "[kəˈmænd]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"cross": {
+"conceptId": "cross",
+"phonetic": "[krɔːs]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"chat": {
+"conceptId": "chat",
+"phonetic": "[tʃæt]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"manner": {
+"conceptId": "manner",
+"phonetic": "[ˈmænər]",
+"pos": [
+"noun"
+]
+},
+"access": {
+"conceptId": "access",
+"phonetic": "[ˈækses]",
+"pos": [
+"noun"
+]
+},
+"faith": {
+"conceptId": "faith",
+"phonetic": "[feɪθ]",
+"pos": [
+"noun"
+]
+},
+"conserve": {
+"conceptId": "conserve",
+"phonetic": "[kənˈsɜːrv]",
+"pos": [
+"verb"
+]
+},
+"homeless": {
+"conceptId": "homeless",
+"phonetic": "[ˈhoʊmləs]",
+"pos": [
+"adj",
+"noun"
+]
+},
+"atmosphere": {
+"conceptId": "atmosphere",
+"phonetic": "[ˈætməsfɪr]",
+"pos": [
+"noun"
+]
+},
+"worship": {
+"conceptId": "worship",
+"phonetic": "[ˈwɜːrʃəp]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"external": {
+"conceptId": "external",
+"phonetic": "[ɪkˈstɜːrnəl]",
+"pos": [
+"adj"
+]
+},
+"break out": {
+"conceptId": "break out",
+"phonetic": "[breɪk aʊt]",
+"pos": [
+"verb"
+]
+},
+"set off": {
+"conceptId": "set off",
+"phonetic": "[set ɔːf]",
+"pos": [
+"verb"
+]
+},
+"pregnant": {
+"conceptId": "pregnant",
+"phonetic": "[ˈpreɡnənt]",
+"pos": [
+"adj"
+]
+},
+"style": {
+"conceptId": "style",
+"phonetic": "[staɪl]",
+"pos": [
+"noun"
+]
+},
+"Pacific": {
+"conceptId": "Pacific",
+"phonetic": "[pəˈsɪfɪk]",
+"pos": [
+"adj",
+"noun"
+]
+},
+"necessity": {
+"conceptId": "necessity",
+"phonetic": "[nəˈsesəti]",
+"pos": [
+"noun"
+]
+},
+"antique": {
+"conceptId": "antique",
+"phonetic": "[ænˈtiːk]",
+"pos": [
+"adj",
+"noun"
+]
+},
+"guarantee": {
+"conceptId": "guarantee",
+"phonetic": "[ɡerənˈtiː]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"persuade": {
+"conceptId": "persuade",
+"phonetic": "[pərˈsweɪd]",
+"pos": [
+"verb"
+]
+},
+"lack": {
+"conceptId": "lack",
+"phonetic": "[læk]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"as ~ as possible": {
+"conceptId": "as ~ as possible",
+"phonetic": "[æz æz ˈpɑːsəbəl]",
+"pos": [
+"adv"
+]
+},
+"alternative": {
+"conceptId": "alternative",
+"phonetic": "[ɔlˈtɜːrnətɪv]",
+"pos": [
+"adj",
+"noun"
+]
+},
+"fortune": {
+"conceptId": "fortune",
+"phonetic": "[ˈfɔːrtʃən]",
+"pos": [
+"noun"
+]
+},
+"sacred": {
+"conceptId": "sacred",
+"phonetic": "[ˈseɪkrəd]",
+"pos": [
+"adj"
+]
+},
+"direct": {
+"conceptId": "direct",
+"phonetic": "[dərˈekt]",
+"pos": [
+"verb",
+"adj"
+]
+},
+"ignore": {
+"conceptId": "ignore",
+"phonetic": "[ɪɡˈnɔːr]",
+"pos": [
+"verb"
+]
+},
+"wipe": {
+"conceptId": "wipe",
+"phonetic": "[waɪp]",
+"pos": [
+"verb"
+]
+},
+"analyze": {
+"conceptId": "analyze",
+"phonetic": "[ˈænəlaɪz]",
+"pos": [
+"verb"
+]
+},
+"unify": {
+"conceptId": "unify",
+"phonetic": "[ˈjuːnəfaɪ]",
+"pos": [
+"verb"
+]
+},
+"recognize": {
+"conceptId": "recognize",
+"phonetic": "[ˈrekəɡnaɪz]",
+"pos": [
+"verb"
+]
+},
+"discard": {
+"conceptId": "discard",
+"phonetic": "[dɪˈskɑːrd]",
+"pos": [
+"verb"
+]
+},
+"regard": {
+"conceptId": "regard",
+"phonetic": "[rɪˈɡɑːrd]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"military": {
+"conceptId": "military",
+"phonetic": "[ˈmɪləteri]",
+"pos": [
+"adj",
+"noun"
+]
+},
+"knowledge": {
+"conceptId": "knowledge",
+"phonetic": "[ˈnɑːlədʒ]",
+"pos": [
+"noun"
+]
+},
+"loose": {
+"conceptId": "loose",
+"phonetic": "[luːs]",
+"pos": [
+"adj"
+]
+},
+"be supposed to": {
+"conceptId": "be supposed to",
+"phonetic": "[biː səˈpoʊzd tuː]",
+"pos": [
+"aux"
+]
+},
+"element": {
+"conceptId": "element",
+"phonetic": "[ˈeləmənt]",
+"pos": [
+"noun"
+]
+},
+"by oneself": {
+"conceptId": "by oneself",
+"phonetic": "[baɪ wʌnˈself]",
+"pos": [
+"adv"
+]
+},
+"organize": {
+"conceptId": "organize",
+"phonetic": "[ˈɔːrɡənaɪz]",
+"pos": [
+"verb"
+]
+},
+"give up": {
+"conceptId": "give up",
+"phonetic": "[ɡɪv ʌp]",
+"pos": [
+"verb"
+]
+},
+"seem": {
+"conceptId": "seem",
+"phonetic": "[siːm]",
+"pos": [
+"verb"
+]
+},
+"capable of": {
+"conceptId": "capable of",
+"phonetic": "[ˈkeɪpəbəl ʌv]",
+"pos": [
+"adj"
+]
+},
+"tip": {
+"conceptId": "tip",
+"phonetic": "[tɪp]",
+"pos": [
+"noun"
+]
+},
+"profile": {
+"conceptId": "profile",
+"phonetic": "[ˈproʊfaɪl]",
+"pos": [
+"noun"
+]
+},
+"cell": {
+"conceptId": "cell",
+"phonetic": "[sel]",
+"pos": [
+"noun"
+]
+},
+"now that": {
+"conceptId": "now that",
+"phonetic": "[naʊ ðæt]",
+"pos": [
+"conj"
+]
+},
+"cuisine": {
+"conceptId": "cuisine",
+"phonetic": "[kwɪˈziːn]",
+"pos": [
+"noun"
+]
+},
+"day and night": {
+"conceptId": "day and night",
+"phonetic": "[deɪ ənd naɪt]",
+"pos": [
+"adv"
+]
+},
+"response": {
+"conceptId": "response",
+"phonetic": "[rɪˈspɑːns]",
+"pos": [
+"noun"
+]
+},
+"quarrel": {
+"conceptId": "quarrel",
+"phonetic": "[ˈkwɔːrəl]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"rank": {
+"conceptId": "rank",
+"phonetic": "[ræŋk]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"by chance": {
+"conceptId": "by chance",
+"phonetic": "[baɪ tʃæns]",
+"pos": [
+"adv"
+]
+},
+"divide": {
+"conceptId": "divide",
+"phonetic": "[dɪˈvaɪd]",
+"pos": [
+"verb"
+]
+},
+"anticipate": {
+"conceptId": "anticipate",
+"phonetic": "[ænˈtɪsəpeɪt]",
+"pos": [
+"verb"
+]
+},
+"fundamental": {
+"conceptId": "fundamental",
+"phonetic": "[fʌndəˈmentəl]",
+"pos": [
+"adj",
+"noun"
+]
+},
+"polish": {
+"conceptId": "polish",
+"phonetic": "[ˈpɑːlɪʃ]",
+"pos": [
+"verb"
+]
+},
+"obstacle": {
+"conceptId": "obstacle",
+"phonetic": "[ˈɑːbstəkəl]",
+"pos": [
+"noun"
+]
+},
+"emphasize": {
+"conceptId": "emphasize",
+"phonetic": "[ˈemfəsaɪz]",
+"pos": [
+"verb"
+]
+},
+"stick to": {
+"conceptId": "stick to",
+"phonetic": "[stɪk tuː]",
+"pos": [
+"verb"
+]
+},
+"organization": {
+"conceptId": "organization",
+"phonetic": "[ɔːrɡənəˈzeɪʃən]",
+"pos": [
+"noun"
+]
+},
+"violent": {
+"conceptId": "violent",
+"phonetic": "[ˈvaɪələnt]",
+"pos": [
+"adj"
+]
+},
+"abstract": {
+"conceptId": "abstract",
+"phonetic": "[æbsˈtrækt]",
+"pos": [
+"noun",
+"adj"
+]
+},
+"eastern": {
+"conceptId": "eastern",
+"phonetic": "[ˈiːstərn]",
+"pos": [
+"adj"
+]
+},
+"double": {
+"conceptId": "double",
+"phonetic": "[ˈdʌbəl]",
+"pos": [
+"verb",
+"adj"
+]
+},
+"importance": {
+"conceptId": "importance",
+"phonetic": "[ɪmˈpɔːrtəns]",
+"pos": [
+"noun"
+]
+},
+"greet": {
+"conceptId": "greet",
+"phonetic": "[ɡriːt]",
+"pos": [
+"verb"
+]
+},
+"solid": {
+"conceptId": "solid",
+"phonetic": "[ˈsɑːləd]",
+"pos": [
+"noun",
+"adj"
+]
+},
+"rumor": {
+"conceptId": "rumor",
+"phonetic": "[ˈruːmər]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"addict": {
+"conceptId": "addict",
+"phonetic": "[əˈdɪkt]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"carnival": {
+"conceptId": "carnival",
+"phonetic": "[ˈkɑːrnəvəl]",
+"pos": [
+"noun"
+]
+},
+"desperate": {
+"conceptId": "desperate",
+"phonetic": "[ˈdesprɪt]",
+"pos": [
+"adj"
+]
+},
+"impact": {
+"conceptId": "impact",
+"phonetic": "[ɪmˈpækt]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"in advance": {
+"conceptId": "in advance",
+"phonetic": "[ɪn ədˈvæns]",
+"pos": [
+"adv"
+]
+},
+"put out": {
+"conceptId": "put out",
+"phonetic": "[pʊt aʊt]",
+"pos": [
+"verb"
+]
+},
+"coach": {
+"conceptId": "coach",
+"phonetic": "[koʊtʃ]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"heal": {
+"conceptId": "heal",
+"phonetic": "[hiːl]",
+"pos": [
+"verb"
+]
+},
+"current": {
+"conceptId": "current",
+"phonetic": "[ˈkɜːrənt]",
+"pos": [
+"noun",
+"adj"
+]
+},
+"border": {
+"conceptId": "border",
+"phonetic": "[ˈbɔːrdər]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"stand for": {
+"conceptId": "stand for",
+"phonetic": "[stænd fɔːr]",
+"pos": [
+"verb"
+]
+},
+"chore": {
+"conceptId": "chore",
+"phonetic": "[tʃɔːr]",
+"pos": [
+"noun"
+]
+},
+"identical": {
+"conceptId": "identical",
+"phonetic": "[aɪˈdentɪkəl]",
+"pos": [
+"adj"
+]
+},
+"possess": {
+"conceptId": "possess",
+"phonetic": "[pəˈzes]",
+"pos": [
+"verb"
+]
+},
+"mercy": {
+"conceptId": "mercy",
+"phonetic": "[ˈmɜːrsi]",
+"pos": [
+"noun"
+]
+},
+"fall off": {
+"conceptId": "fall off",
+"phonetic": "[fɔːl ɔːf]",
+"pos": [
+"verb"
+]
+},
+"dormitory": {
+"conceptId": "dormitory",
+"phonetic": "[ˈdɔːrmətɔːri]",
+"pos": [
+"noun"
+]
+},
+"hike": {
+"conceptId": "hike",
+"phonetic": "[haɪk]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"foul": {
+"conceptId": "foul",
+"phonetic": "[faʊl]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"acquire": {
+"conceptId": "acquire",
+"phonetic": "[əˈkwaɪər]",
+"pos": [
+"verb"
+]
+},
+"intend": {
+"conceptId": "intend",
+"phonetic": "[ɪnˈtend]",
+"pos": [
+"verb"
+]
+},
+"dental": {
+"conceptId": "dental",
+"phonetic": "[ˈdentəl]",
+"pos": [
+"adj"
+]
+},
+"annoy": {
+"conceptId": "annoy",
+"phonetic": "[əˈnɔɪ]",
+"pos": [
+"verb"
+]
+},
+"tray": {
+"conceptId": "tray",
+"phonetic": "[treɪ]",
+"pos": [
+"noun"
+]
+},
+"merchandise": {
+"conceptId": "merchandise",
+"phonetic": "[ˈmɜːrtʃəndaɪz]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"costume": {
+"conceptId": "costume",
+"phonetic": "[kɑˈstuːm]",
+"pos": [
+"noun"
+]
+},
+"unknown": {
+"conceptId": "unknown",
+"phonetic": "[ənˈnoʊn]",
+"pos": [
+"adj"
+]
+},
+"put up with": {
+"conceptId": "put up with",
+"phonetic": "[pʊt ʌp wɪð]",
+"pos": [
+"verb"
+]
+},
+"disease": {
+"conceptId": "disease",
+"phonetic": "[dɪˈziːz]",
+"pos": [
+"noun"
+]
+},
+"credit": {
+"conceptId": "credit",
+"phonetic": "[ˈkredət]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"admit": {
+"conceptId": "admit",
+"phonetic": "[ədˈmɪt]",
+"pos": [
+"verb"
+]
+},
+"available": {
+"conceptId": "available",
+"phonetic": "[əˈveɪləbəl]",
+"pos": [
+"adj"
+]
+},
+"instance": {
+"conceptId": "instance",
+"phonetic": "[ˈɪnstəns]",
+"pos": [
+"noun"
+]
+},
+"assign": {
+"conceptId": "assign",
+"phonetic": "[əˈsaɪn]",
+"pos": [
+"verb"
+]
+},
+"decision": {
+"conceptId": "decision",
+"phonetic": "[dɪˈsɪʒən]",
+"pos": [
+"noun"
+]
+},
+"paste": {
+"conceptId": "paste",
+"phonetic": "[peɪst]",
+"pos": [
+"noun"
+]
+},
+"ghost": {
+"conceptId": "ghost",
+"phonetic": "[ɡoʊst]",
+"pos": [
+"noun"
+]
+},
+"recover": {
+"conceptId": "recover",
+"phonetic": "[rɪˈkʌvər]",
+"pos": [
+"verb"
+]
+},
+"range": {
+"conceptId": "range",
+"phonetic": "[reɪndʒ]",
+"pos": [
+"noun"
+]
+},
+"career": {
+"conceptId": "career",
+"phonetic": "[kərˈɪr]",
+"pos": [
+"noun"
+]
+},
+"swamp": {
+"conceptId": "swamp",
+"phonetic": "[swɑːmp]",
+"pos": [
+"noun"
+]
+},
+"temporary": {
+"conceptId": "temporary",
+"phonetic": "[ˈtempəreri]",
+"pos": [
+"adj"
+]
+},
+"facility": {
+"conceptId": "facility",
+"phonetic": "[fəˈsɪlɪti]",
+"pos": [
+"noun"
+]
+},
+"convenient": {
+"conceptId": "convenient",
+"phonetic": "[kənˈviːnjənt]",
+"pos": [
+"adj"
+]
+},
+"ashamed": {
+"conceptId": "ashamed",
+"phonetic": "[əˈʃeɪmd]",
+"pos": [
+"adj"
+]
+},
+"moreover": {
+"conceptId": "moreover",
+"phonetic": "[mɔˈroʊvər]",
+"pos": [
+"adv"
+]
+},
+"skeleton": {
+"conceptId": "skeleton",
+"phonetic": "[ˈskelətən]",
+"pos": [
+"noun"
+]
+},
+"influence": {
+"conceptId": "influence",
+"phonetic": "[ˈɪnfluəns]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"term": {
+"conceptId": "term",
+"phonetic": "[tɜːrm]",
+"pos": [
+"noun"
+]
+},
+"famine": {
+"conceptId": "famine",
+"phonetic": "[ˈfæmən]",
+"pos": [
+"noun"
+]
+},
+"contact": {
+"conceptId": "contact",
+"phonetic": "[ˈkɑːntækt]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"witness": {
+"conceptId": "witness",
+"phonetic": "[ˈwɪtnəs]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"evidence": {
+"conceptId": "evidence",
+"phonetic": "[ˈevədəns]",
+"pos": [
+"noun"
+]
+},
+"relate": {
+"conceptId": "relate",
+"phonetic": "[rɪˈleɪt]",
+"pos": [
+"verb"
+]
+},
+"manufacture": {
+"conceptId": "manufacture",
+"phonetic": "[mænjəˈfæktʃər]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"oxygen": {
+"conceptId": "oxygen",
+"phonetic": "[ˈɑːksədʒən]",
+"pos": [
+"noun"
+]
+},
+"souvenir": {
+"conceptId": "souvenir",
+"phonetic": "[suːvəˈnɪr]",
+"pos": [
+"noun"
+]
+},
+"assume": {
+"conceptId": "assume",
+"phonetic": "[əˈsuːm]",
+"pos": [
+"verb"
+]
+},
+"involve": {
+"conceptId": "involve",
+"phonetic": "[ɪnˈvɑːlv]",
+"pos": [
+"verb"
+]
+},
+"broom": {
+"conceptId": "broom",
+"phonetic": "[bruːm]",
+"pos": [
+"noun"
+]
+},
+"conservative": {
+"conceptId": "conservative",
+"phonetic": "[kənˈsɜːrvətɪv]",
+"pos": [
+"adj",
+"noun"
+]
+},
+"aggressive": {
+"conceptId": "aggressive",
+"phonetic": "[əˈɡresɪv]",
+"pos": [
+"adj"
+]
+},
+"herd": {
+"conceptId": "herd",
+"phonetic": "[hɜːrd]",
+"pos": [
+"noun"
+]
+},
+"pleased": {
+"conceptId": "pleased",
+"phonetic": "[pliːzd]",
+"pos": [
+"adj"
+]
+},
+"safety": {
+"conceptId": "safety",
+"phonetic": "[ˈseɪfti]",
+"pos": [
+"noun"
+]
+},
+"benefit": {
+"conceptId": "benefit",
+"phonetic": "[ˈbenəfɪt]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"wisdom": {
+"conceptId": "wisdom",
+"phonetic": "[ˈwɪzdəm]",
+"pos": [
+"noun"
+]
+},
+"concept": {
+"conceptId": "concept",
+"phonetic": "[ˈkɑːnsept]",
+"pos": [
+"noun"
+]
+},
+"require": {
+"conceptId": "require",
+"phonetic": "[rɪˈkwaɪər]",
+"pos": [
+"verb"
+]
+},
+"stand out": {
+"conceptId": "stand out",
+"phonetic": "[stænd aʊt]",
+"pos": [
+"verb"
+]
+},
+"appliance": {
+"conceptId": "appliance",
+"phonetic": "[əˈplaɪəns]",
+"pos": [
+"noun"
+]
+},
+"reserve": {
+"conceptId": "reserve",
+"phonetic": "[rɪˈzɜːrv]",
+"pos": [
+"verb"
+]
+},
+"disabled": {
+"conceptId": "disabled",
+"phonetic": "[dɪˈseɪbəld]",
+"pos": [
+"adj"
+]
+},
+"go by": {
+"conceptId": "go by",
+"phonetic": "[ɡoʊ baɪ]",
+"pos": [
+"verb"
+]
+},
+"applaud": {
+"conceptId": "applaud",
+"phonetic": "[əˈplɔːd]",
+"pos": [
+"verb"
+]
+},
+"play a role in": {
+"conceptId": "play a role in",
+"phonetic": "[pleɪ ə roʊl ɪn]",
+"pos": [
+"verb"
+]
+},
+"manual": {
+"conceptId": "manual",
+"phonetic": "[ˈmænjuəl]",
+"pos": [
+"noun",
+"adj"
+]
+},
+"suit": {
+"conceptId": "suit",
+"phonetic": "[suːt]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"get together": {
+"conceptId": "get together",
+"phonetic": "[ɡet təˈɡeðər]",
+"pos": [
+"verb"
+]
+},
+"operate": {
+"conceptId": "operate",
+"phonetic": "[ˈɑːpəreɪt]",
+"pos": [
+"verb"
+]
+},
+"attach": {
+"conceptId": "attach",
+"phonetic": "[əˈtætʃ]",
+"pos": [
+"verb"
+]
+},
+"phase": {
+"conceptId": "phase",
+"phonetic": "[feɪz]",
+"pos": [
+"noun"
+]
+},
+"fade": {
+"conceptId": "fade",
+"phonetic": "[feɪd]",
+"pos": [
+"verb"
+]
+},
+"sacrifice": {
+"conceptId": "sacrifice",
+"phonetic": "[ˈsækrəfaɪs]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"when it comes to": {
+"conceptId": "when it comes to",
+"phonetic": "[wen ɪt kʌmz tuː]",
+"pos": [
+"prep"
+]
+},
+"come up with": {
+"conceptId": "come up with",
+"phonetic": "[kʌm ʌp wɪð]",
+"pos": [
+"verb"
+]
+},
+"robbery": {
+"conceptId": "robbery",
+"phonetic": "[ˈrɑːbəri]",
+"pos": [
+"noun"
+]
+},
+"interrupt": {
+"conceptId": "interrupt",
+"phonetic": "[ɪntərˈʌpt]",
+"pos": [
+"verb"
+]
+},
+"unexpected": {
+"conceptId": "unexpected",
+"phonetic": "[ʌnɪkˈspektɪd]",
+"pos": [
+"adj"
+]
+},
+"awake": {
+"conceptId": "awake",
+"phonetic": "[əˈweɪk]",
+"pos": [
+"verb",
+"adj"
+]
+},
+"be known as": {
+"conceptId": "be known as",
+"phonetic": "[biː noʊn æz]",
+"pos": [
+"verb"
+]
+},
+"plain": {
+"conceptId": "plain",
+"phonetic": "[pleɪn]",
+"pos": [
+"adj"
+]
+},
+"impress": {
+"conceptId": "impress",
+"phonetic": "[ɪmˈpres]",
+"pos": [
+"verb"
+]
+},
+"superior": {
+"conceptId": "superior",
+"phonetic": "[suˈpɪrɪər]",
+"pos": [
+"adj"
+]
+},
+"previous": {
+"conceptId": "previous",
+"phonetic": "[ˈpriːvɪəs]",
+"pos": [
+"adj"
+]
+},
+"nurture": {
+"conceptId": "nurture",
+"phonetic": "[ˈnɜːrtʃər]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"in response to": {
+"conceptId": "in response to",
+"phonetic": "[ɪn rɪˈspɑːns tuː]",
+"pos": [
+"prep"
+]
+},
+"neat": {
+"conceptId": "neat",
+"phonetic": "[niːt]",
+"pos": [
+"adj"
+]
+},
+"support": {
+"conceptId": "support",
+"phonetic": "[səˈpɔːrt]",
+"pos": [
+"verb"
+]
+},
+"disaster": {
+"conceptId": "disaster",
+"phonetic": "[dɪˈzæstər]",
+"pos": [
+"noun"
+]
+},
+"arm": {
+"conceptId": "arm",
+"phonetic": "[ɑːrm]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"yard": {
+"conceptId": "yard",
+"phonetic": "[jɑːrd]",
+"pos": [
+"noun"
+]
+},
+"sunglasses": {
+"conceptId": "sunglasses",
+"phonetic": "[ˈsʌnɡlæsɪz]",
+"pos": [
+"noun"
+]
+},
+"strategy": {
+"conceptId": "strategy",
+"phonetic": "[ˈstrætədʒi]",
+"pos": [
+"noun"
+]
+},
+"chemistry": {
+"conceptId": "chemistry",
+"phonetic": "[ˈkeməstri]",
+"pos": [
+"noun"
+]
+},
+"agriculture": {
+"conceptId": "agriculture",
+"phonetic": "[ˈæɡrɪkʌltʃər]",
+"pos": [
+"noun"
+]
+},
+"baggage": {
+"conceptId": "baggage",
+"phonetic": "[ˈbæɡədʒ]",
+"pos": [
+"noun"
+]
+},
+"committee": {
+"conceptId": "committee",
+"phonetic": "[kəˈmɪti]",
+"pos": [
+"noun"
+]
+},
+"shelf": {
+"conceptId": "shelf",
+"phonetic": "[ʃelf]",
+"pos": [
+"noun"
+]
+},
+"made up of": {
+"conceptId": "made up of",
+"phonetic": "[meɪd ʌp ʌv]",
+"pos": [
+"verb"
+]
+},
+"orbit": {
+"conceptId": "orbit",
+"phonetic": "[ˈɔːrbət]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"dislike": {
+"conceptId": "dislike",
+"phonetic": "[dɪˈslaɪk]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"biography": {
+"conceptId": "biography",
+"phonetic": "[baɪˈɑːɡrəfi]",
+"pos": [
+"noun"
+]
+},
+"peer": {
+"conceptId": "peer",
+"phonetic": "[pɪr]",
+"pos": [
+"noun"
+]
+},
+"expose": {
+"conceptId": "expose",
+"phonetic": "[ɪkˈspoʊz]",
+"pos": [
+"verb"
+]
+},
+"hug": {
+"conceptId": "hug",
+"phonetic": "[hʌɡ]",
+"pos": [
+"verb"
+]
+},
+"brilliant": {
+"conceptId": "brilliant",
+"phonetic": "[ˈbrɪljənt]",
+"pos": [
+"adj"
+]
+},
+"medium": {
+"conceptId": "medium",
+"phonetic": "[ˈmiːdɪəm]",
+"pos": [
+"adj"
+]
+},
+"individual": {
+"conceptId": "individual",
+"phonetic": "[ɪndəˈvɪdʒəwəl]",
+"pos": [
+"adj",
+"noun"
+]
+},
+"avenue": {
+"conceptId": "avenue",
+"phonetic": "[ˈævənuː]",
+"pos": [
+"noun"
+]
+},
+"priest": {
+"conceptId": "priest",
+"phonetic": "[priːst]",
+"pos": [
+"noun"
+]
+},
+"scale": {
+"conceptId": "scale",
+"phonetic": "[skeɪl]",
+"pos": [
+"noun"
+]
+},
+"forbid": {
+"conceptId": "forbid",
+"phonetic": "[fərˈbɪd]",
+"pos": [
+"verb"
+]
+},
+"rapid": {
+"conceptId": "rapid",
+"phonetic": "[ˈræpəd]",
+"pos": [
+"adj"
+]
+},
+"passive": {
+"conceptId": "passive",
+"phonetic": "[ˈpæsɪv]",
+"pos": [
+"adj"
+]
+},
+"devote": {
+"conceptId": "devote",
+"phonetic": "[dɪˈvoʊt]",
+"pos": [
+"verb"
+]
+},
+"fuel": {
+"conceptId": "fuel",
+"phonetic": "[ˈfjuːəl]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"twist": {
+"conceptId": "twist",
+"phonetic": "[twɪst]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"free from": {
+"conceptId": "free from",
+"phonetic": "[friː frʌm]",
+"pos": [
+"verb"
+]
+},
+"basis": {
+"conceptId": "basis",
+"phonetic": "[ˈbeɪsəs]",
+"pos": [
+"noun"
+]
+},
+"independence": {
+"conceptId": "independence",
+"phonetic": "[ɪndɪˈpendəns]",
+"pos": [
+"noun"
+]
+},
+"cleanse": {
+"conceptId": "cleanse",
+"phonetic": "[klenz]",
+"pos": [
+"verb"
+]
+},
+"slow down": {
+"conceptId": "slow down",
+"phonetic": "[sloʊ daʊn]",
+"pos": [
+"verb"
+]
+},
+"instruct": {
+"conceptId": "instruct",
+"phonetic": "[ɪnsˈtrʌkt]",
+"pos": [
+"verb"
+]
+},
+"delivery": {
+"conceptId": "delivery",
+"phonetic": "[dɪˈlɪvəri]",
+"pos": [
+"noun"
+]
+},
+"genetic": {
+"conceptId": "genetic",
+"phonetic": "[dʒəˈnetɪk]",
+"pos": [
+"adj"
+]
+},
+"advance": {
+"conceptId": "advance",
+"phonetic": "[ədˈvæns]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"trade": {
+"conceptId": "trade",
+"phonetic": "[treɪd]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"offend": {
+"conceptId": "offend",
+"phonetic": "[əˈfend]",
+"pos": [
+"verb"
+]
+},
+"define": {
+"conceptId": "define",
+"phonetic": "[dɪˈfaɪn]",
+"pos": [
+"verb"
+]
+},
+"squeeze": {
+"conceptId": "squeeze",
+"phonetic": "[skwiːz]",
+"pos": [
+"verb"
+]
+},
+"threat": {
+"conceptId": "threat",
+"phonetic": "[θret]",
+"pos": [
+"noun"
+]
+},
+"breed": {
+"conceptId": "breed",
+"phonetic": "[briːd]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"pay off": {
+"conceptId": "pay off",
+"phonetic": "[peɪ ɔːf]",
+"pos": [
+"verb"
+]
+},
+"distribute": {
+"conceptId": "distribute",
+"phonetic": "[dɪsˈtrɪbjut]",
+"pos": [
+"verb"
+]
+},
+"accent": {
+"conceptId": "accent",
+"phonetic": "[əkˈsent]",
+"pos": [
+"noun"
+]
+},
+"dairy": {
+"conceptId": "dairy",
+"phonetic": "[ˈderi]",
+"pos": [
+"adj"
+]
+},
+"artificial": {
+"conceptId": "artificial",
+"phonetic": "[ɑːrtəˈfɪʃəl]",
+"pos": [
+"adj"
+]
+},
+"be afraid of": {
+"conceptId": "be afraid of",
+"phonetic": "[biː əˈfreɪd ʌv]",
+"pos": [
+"verb"
+]
+},
+"significant": {
+"conceptId": "significant",
+"phonetic": "[səɡˈnɪfɪkənt]",
+"pos": [
+"adj"
+]
+},
+"prior": {
+"conceptId": "prior",
+"phonetic": "[ˈpraɪər]",
+"pos": [
+"adj"
+]
+},
+"represent": {
+"conceptId": "represent",
+"phonetic": "[reprɪˈzent]",
+"pos": [
+"verb"
+]
+},
+"eager": {
+"conceptId": "eager",
+"phonetic": "[ˈiːɡər]",
+"pos": [
+"adj"
+]
+},
+"on one’s feet": {
+"conceptId": "on one’s feet",
+"phonetic": "[ɑːn wʌn es fiːt]",
+"pos": [
+"adv"
+]
+},
+"extreme": {
+"conceptId": "extreme",
+"phonetic": "[eksˈtriːm]",
+"pos": [
+"adj"
+]
+},
+"balloon": {
+"conceptId": "balloon",
+"phonetic": "[bəˈluːn]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"retire": {
+"conceptId": "retire",
+"phonetic": "[rɪˈtaɪr]",
+"pos": [
+"verb"
+]
+},
+"particular": {
+"conceptId": "particular",
+"phonetic": "[pərˈtɪkjələr]",
+"pos": [
+"adj"
+]
+},
+"budget": {
+"conceptId": "budget",
+"phonetic": "[ˈbʌdʒɪt]",
+"pos": [
+"noun"
+]
+},
+"wreck": {
+"conceptId": "wreck",
+"phonetic": "[rek]",
+"pos": [
+"verb"
+]
+},
+"northern": {
+"conceptId": "northern",
+"phonetic": "[ˈnɔːrðərn]",
+"pos": [
+"adj"
+]
+},
+"urgent": {
+"conceptId": "urgent",
+"phonetic": "[ˈɜːrdʒənt]",
+"pos": [
+"adj"
+]
+},
+"proper": {
+"conceptId": "proper",
+"phonetic": "[ˈprɑːpər]",
+"pos": [
+"adj"
+]
+},
+"distinguish": {
+"conceptId": "distinguish",
+"phonetic": "[dɪˈstɪŋɡwɪʃ]",
+"pos": [
+"verb"
+]
+},
+"illustrate": {
+"conceptId": "illustrate",
+"phonetic": "[ˈɪləstreɪt]",
+"pos": [
+"verb"
+]
+},
+"detail": {
+"conceptId": "detail",
+"phonetic": "[dɪˈteɪl]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"potential": {
+"conceptId": "potential",
+"phonetic": "[pəˈtenʃəl]",
+"pos": [
+"adj",
+"noun"
+]
+},
+"relieve": {
+"conceptId": "relieve",
+"phonetic": "[rɪˈliːv]",
+"pos": [
+"verb"
+]
+},
+"compete": {
+"conceptId": "compete",
+"phonetic": "[kəmˈpiːt]",
+"pos": [
+"verb"
+]
+},
+"appeal": {
+"conceptId": "appeal",
+"phonetic": "[əˈpiːl]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"talent": {
+"conceptId": "talent",
+"phonetic": "[ˈtælənt]",
+"pos": [
+"noun"
+]
+},
+"cut down": {
+"conceptId": "cut down",
+"phonetic": "[kʌt daʊn]",
+"pos": [
+"verb"
+]
+},
+"waterproof": {
+"conceptId": "waterproof",
+"phonetic": "[ˈwɔːtərpruːf]",
+"pos": [
+"adj"
+]
+},
+"conflict": {
+"conceptId": "conflict",
+"phonetic": "[ˈkɑːnflɪkt]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"look back on": {
+"conceptId": "look back on",
+"phonetic": "[lʊk bæk ɑːn]",
+"pos": [
+"verb"
+]
+},
+"auditorium": {
+"conceptId": "auditorium",
+"phonetic": "[ɔːdəˈtɔːrɪəm]",
+"pos": [
+"noun"
+]
+},
+"ash": {
+"conceptId": "ash",
+"phonetic": "[æʃ]",
+"pos": [
+"noun"
+]
+},
+"accompany": {
+"conceptId": "accompany",
+"phonetic": "[əˈkʌmpəni]",
+"pos": [
+"verb"
+]
+},
+"quantity": {
+"conceptId": "quantity",
+"phonetic": "[ˈkwɑːntəti]",
+"pos": [
+"noun"
+]
+},
+"script": {
+"conceptId": "script",
+"phonetic": "[skrɪpt]",
+"pos": [
+"noun"
+]
+},
+"concentrate": {
+"conceptId": "concentrate",
+"phonetic": "[ˈkɑːnsəntreɪt]",
+"pos": [
+"verb"
+]
+},
+"look after": {
+"conceptId": "look after",
+"phonetic": "[lʊk ˈæftər]",
+"pos": [
+"verb"
+]
+},
+"fill out": {
+"conceptId": "fill out",
+"phonetic": "[fɪl aʊt]",
+"pos": [
+"verb"
+]
+},
+"invest": {
+"conceptId": "invest",
+"phonetic": "[ɪnˈvest]",
+"pos": [
+"verb"
+]
+},
+"consider": {
+"conceptId": "consider",
+"phonetic": "[kənˈsɪdər]",
+"pos": [
+"verb"
+]
+},
+"depth": {
+"conceptId": "depth",
+"phonetic": "[depθ]",
+"pos": [
+"noun"
+]
+},
+"appreciate": {
+"conceptId": "appreciate",
+"phonetic": "[əˈpriːʃɪeɪt]",
+"pos": [
+"verb"
+]
+},
+"indifferent": {
+"conceptId": "indifferent",
+"phonetic": "[ɪnˈdɪfrənt]",
+"pos": [
+"adj"
+]
+},
+"arrange": {
+"conceptId": "arrange",
+"phonetic": "[ərˈeɪndʒ]",
+"pos": [
+"verb"
+]
+},
+"environment": {
+"conceptId": "environment",
+"phonetic": "[ɪnˈvaɪrənmənt]",
+"pos": [
+"noun"
+]
+},
+"illness": {
+"conceptId": "illness",
+"phonetic": "[ˈɪlnəs]",
+"pos": [
+"noun"
+]
+},
+"be about to": {
+"conceptId": "be about to",
+"phonetic": "[biː əˈbaʊt tuː]",
+"pos": [
+"aux"
+]
+},
+"sew": {
+"conceptId": "sew",
+"phonetic": "[soʊ]",
+"pos": [
+"verb"
+]
+},
+"examine": {
+"conceptId": "examine",
+"phonetic": "[ɪɡˈzæmɪn]",
+"pos": [
+"verb"
+]
+},
+"poison": {
+"conceptId": "poison",
+"phonetic": "[ˈpɔɪzən]",
+"pos": [
+"noun"
+]
+},
+"odd": {
+"conceptId": "odd",
+"phonetic": "[ɑːd]",
+"pos": [
+"adj"
+]
+},
+"pure": {
+"conceptId": "pure",
+"phonetic": "[pjʊr]",
+"pos": [
+"adj"
+]
+},
+"trim": {
+"conceptId": "trim",
+"phonetic": "[trɪm]",
+"pos": [
+"verb"
+]
+},
+"confirm": {
+"conceptId": "confirm",
+"phonetic": "[kənˈfɜːrm]",
+"pos": [
+"verb"
+]
+},
+"religion": {
+"conceptId": "religion",
+"phonetic": "[rɪˈlɪdʒən]",
+"pos": [
+"noun"
+]
+},
+"move on": {
+"conceptId": "move on",
+"phonetic": "[muːv ɑːn]",
+"pos": [
+"verb"
+]
+},
+"after all": {
+"conceptId": "after all",
+"phonetic": "[ˈæftər ɔːl]",
+"pos": [
+"adv"
+]
+},
+"take part in": {
+"conceptId": "take part in",
+"phonetic": "[teɪk pɑːrt ɪn]",
+"pos": [
+"verb"
+]
+},
+"grateful": {
+"conceptId": "grateful",
+"phonetic": "[ˈɡreɪtfəl]",
+"pos": [
+"adj"
+]
+},
+"attractive": {
+"conceptId": "attractive",
+"phonetic": "[əˈtræktɪv]",
+"pos": [
+"adj"
+]
+},
+"envy": {
+"conceptId": "envy",
+"phonetic": "[ˈenvi]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"maintain": {
+"conceptId": "maintain",
+"phonetic": "[meɪnˈteɪn]",
+"pos": [
+"verb"
+]
+},
+"look into": {
+"conceptId": "look into",
+"phonetic": "[lʊk ˈɪntu]",
+"pos": [
+"verb"
+]
+},
+"in fact": {
+"conceptId": "in fact",
+"phonetic": "[ɪn fækt]",
+"pos": [
+"adv"
+]
+},
+"generous": {
+"conceptId": "generous",
+"phonetic": "[ˈdʒenərəs]",
+"pos": [
+"adj"
+]
+},
+"rescue": {
+"conceptId": "rescue",
+"phonetic": "[ˈreskju]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"likely": {
+"conceptId": "likely",
+"phonetic": "[ˈlaɪkli]",
+"pos": [
+"adj"
+]
+},
+"equipment": {
+"conceptId": "equipment",
+"phonetic": "[ɪˈkwɪpmənt]",
+"pos": [
+"noun"
+]
+},
+"focus on": {
+"conceptId": "focus on",
+"phonetic": "[ˈfoʊkəs ɑːn]",
+"pos": [
+"verb"
+]
+},
+"distant": {
+"conceptId": "distant",
+"phonetic": "[ˈdɪstənt]",
+"pos": [
+"adj"
+]
+},
+"arrow": {
+"conceptId": "arrow",
+"phonetic": "[ˈæroʊ]",
+"pos": [
+"noun"
+]
+},
+"symptom": {
+"conceptId": "symptom",
+"phonetic": "[ˈsɪmptəm]",
+"pos": [
+"noun"
+]
+},
+"measure": {
+"conceptId": "measure",
+"phonetic": "[ˈmeʒər]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"tropical": {
+"conceptId": "tropical",
+"phonetic": "[ˈtrɑːpɪkəl]",
+"pos": [
+"adj"
+]
+},
+"outstanding": {
+"conceptId": "outstanding",
+"phonetic": "[aʊtˈstændɪŋ]",
+"pos": [
+"adj"
+]
+},
+"sincere": {
+"conceptId": "sincere",
+"phonetic": "[sɪnˈsɪr]",
+"pos": [
+"adj"
+]
+},
+"context": {
+"conceptId": "context",
+"phonetic": "[ˈkɑːntekst]",
+"pos": [
+"noun"
+]
+},
+"debate": {
+"conceptId": "debate",
+"phonetic": "[dəˈbeɪt]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"destination": {
+"conceptId": "destination",
+"phonetic": "[destəˈneɪʃən]",
+"pos": [
+"noun"
+]
+},
+"transfer": {
+"conceptId": "transfer",
+"phonetic": "[trænˈsfɜːr]",
+"pos": [
+"verb"
+]
+},
+"mass": {
+"conceptId": "mass",
+"phonetic": "[mæs]",
+"pos": [
+"noun",
+"adj"
+]
+},
+"employ": {
+"conceptId": "employ",
+"phonetic": "[emˈplɔɪ]",
+"pos": [
+"verb"
+]
+},
+"impossible": {
+"conceptId": "impossible",
+"phonetic": "[ɪmˈpɑːsəbəl]",
+"pos": [
+"adj"
+]
+},
+"frequently": {
+"conceptId": "frequently",
+"phonetic": "[ˈfriːkwəntli]",
+"pos": [
+"adv"
+]
+},
+"alter": {
+"conceptId": "alter",
+"phonetic": "[ˈɔːltər]",
+"pos": [
+"verb"
+]
+},
+"participate": {
+"conceptId": "participate",
+"phonetic": "[pɑrˈtɪsəpeɪt]",
+"pos": [
+"verb"
+]
+},
+"stain": {
+"conceptId": "stain",
+"phonetic": "[steɪn]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"positive": {
+"conceptId": "positive",
+"phonetic": "[ˈpɑːzətɪv]",
+"pos": [
+"adj"
+]
+},
+"motivate": {
+"conceptId": "motivate",
+"phonetic": "[ˈmoʊtəveɪt]",
+"pos": [
+"verb"
+]
+},
+"over and over": {
+"conceptId": "over and over",
+"phonetic": "[ˈoʊvər ənd ˈoʊvər]",
+"pos": [
+"adv"
+]
+},
+"ethnic": {
+"conceptId": "ethnic",
+"phonetic": "[ˈeθnɪk]",
+"pos": [
+"adj"
+]
+},
+"typical": {
+"conceptId": "typical",
+"phonetic": "[ˈtɪpəkəl]",
+"pos": [
+"adj"
+]
+},
+"auction": {
+"conceptId": "auction",
+"phonetic": "[ˈɑːkʃən]",
+"pos": [
+"noun"
+]
+},
+"fairy": {
+"conceptId": "fairy",
+"phonetic": "[ˈferi]",
+"pos": [
+"noun"
+]
+},
+"confident": {
+"conceptId": "confident",
+"phonetic": "[ˈkɑːnfədənt]",
+"pos": [
+"adj"
+]
+},
+"belief": {
+"conceptId": "belief",
+"phonetic": "[bɪˈliːf]",
+"pos": [
+"noun"
+]
+},
+"entertain": {
+"conceptId": "entertain",
+"phonetic": "[entərˈteɪn]",
+"pos": [
+"verb"
+]
+},
+"belong to": {
+"conceptId": "belong to",
+"phonetic": "[bɪˈlɔːŋ tuː]",
+"pos": [
+"verb"
+]
+},
+"waist": {
+"conceptId": "waist",
+"phonetic": "[weɪst]",
+"pos": [
+"noun"
+]
+},
+"melt": {
+"conceptId": "melt",
+"phonetic": "[melt]",
+"pos": [
+"verb"
+]
+},
+"edible": {
+"conceptId": "edible",
+"phonetic": "[ˈedəbəl]",
+"pos": [
+"adj"
+]
+},
+"formal": {
+"conceptId": "formal",
+"phonetic": "[ˈfɔːrməl]",
+"pos": [
+"adj"
+]
+},
+"unite": {
+"conceptId": "unite",
+"phonetic": "[ˈjuːnaɪt]",
+"pos": [
+"verb"
+]
+},
+"settle": {
+"conceptId": "settle",
+"phonetic": "[ˈsetəl]",
+"pos": [
+"verb"
+]
+},
+"content": {
+"conceptId": "content",
+"phonetic": "[ˈkɑːntent]",
+"pos": [
+"noun"
+]
+},
+"oral": {
+"conceptId": "oral",
+"phonetic": "[ˈɔːrəl]",
+"pos": [
+"adj"
+]
+},
+"indicate": {
+"conceptId": "indicate",
+"phonetic": "[ˈɪndəkeɪt]",
+"pos": [
+"verb"
+]
+},
+"silence": {
+"conceptId": "silence",
+"phonetic": "[ˈsaɪləns]",
+"pos": [
+"noun"
+]
+},
+"peninsula": {
+"conceptId": "peninsula",
+"phonetic": "[pəˈnɪnsələ]",
+"pos": [
+"noun"
+]
+},
+"earn": {
+"conceptId": "earn",
+"phonetic": "[ɜːrn]",
+"pos": [
+"verb"
+]
+},
+"cliff": {
+"conceptId": "cliff",
+"phonetic": "[klɪf]",
+"pos": [
+"noun"
+]
+},
+"hang out": {
+"conceptId": "hang out",
+"phonetic": "[hæŋ aʊt]",
+"pos": [
+"verb"
+]
+},
+"scold": {
+"conceptId": "scold",
+"phonetic": "[skoʊld]",
+"pos": [
+"verb"
+]
+},
+"mine": {
+"conceptId": "mine",
+"phonetic": "[maɪn]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"medicine": {
+"conceptId": "medicine",
+"phonetic": "[ˈmedəsən]",
+"pos": [
+"noun"
+]
+},
+"depart": {
+"conceptId": "depart",
+"phonetic": "[dɪˈpɑːrt]",
+"pos": [
+"verb"
+]
+},
+"directly": {
+"conceptId": "directly",
+"phonetic": "[dərˈektli]",
+"pos": [
+"adv"
+]
+},
+"physical": {
+"conceptId": "physical",
+"phonetic": "[ˈfɪzɪkəl]",
+"pos": [
+"adj"
+]
+},
+"evaluate": {
+"conceptId": "evaluate",
+"phonetic": "[ɪˈvæljueɪt]",
+"pos": [
+"verb"
+]
+},
+"bullet": {
+"conceptId": "bullet",
+"phonetic": "[ˈbʊlət]",
+"pos": [
+"noun"
+]
+},
+"hire": {
+"conceptId": "hire",
+"phonetic": "[ˈhaɪər]",
+"pos": [
+"verb"
+]
+},
+"refund": {
+"conceptId": "refund",
+"phonetic": "[rɪˈfʌnd]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"unusual": {
+"conceptId": "unusual",
+"phonetic": "[əˈnjuːʒuːəl]",
+"pos": [
+"adj"
+]
+},
+"outfit": {
+"conceptId": "outfit",
+"phonetic": "[ˈaʊtfɪt]",
+"pos": [
+"noun"
+]
+},
+"apologize": {
+"conceptId": "apologize",
+"phonetic": "[əˈpɑːlədʒaɪz]",
+"pos": [
+"verb"
+]
+},
+"break down": {
+"conceptId": "break down",
+"phonetic": "[breɪk daʊn]",
+"pos": [
+"verb"
+]
+},
+"roast": {
+"conceptId": "roast",
+"phonetic": "[roʊst]",
+"pos": [
+"verb"
+]
+},
+"nutrition": {
+"conceptId": "nutrition",
+"phonetic": "[nuˈtrɪʃən]",
+"pos": [
+"noun"
+]
+},
+"recall": {
+"conceptId": "recall",
+"phonetic": "[ˈriːkɔːl]",
+"pos": [
+"verb"
+]
+},
+"agency": {
+"conceptId": "agency",
+"phonetic": "[ˈeɪdʒənsi]",
+"pos": [
+"noun"
+]
+},
+"extinct": {
+"conceptId": "extinct",
+"phonetic": "[ɪkˈstɪŋkt]",
+"pos": [
+"adj"
+]
+},
+"cast": {
+"conceptId": "cast",
+"phonetic": "[kæst]",
+"pos": [
+"verb"
+]
+},
+"statistics": {
+"conceptId": "statistics",
+"phonetic": "[stəˈtɪstɪks]",
+"pos": [
+"noun"
+]
+},
+"attention": {
+"conceptId": "attention",
+"phonetic": "[əˈtenʃən]",
+"pos": [
+"noun"
+]
+},
+"starve": {
+"conceptId": "starve",
+"phonetic": "[stɑːrv]",
+"pos": [
+"verb"
+]
+},
+"doubt": {
+"conceptId": "doubt",
+"phonetic": "[daʊt]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"wing": {
+"conceptId": "wing",
+"phonetic": "[wɪŋ]",
+"pos": [
+"noun"
+]
+},
+"pole": {
+"conceptId": "pole",
+"phonetic": "[poʊl]",
+"pos": [
+"noun"
+]
+},
+"consist": {
+"conceptId": "consist",
+"phonetic": "[kənˈsɪst]",
+"pos": [
+"verb"
+]
+},
+"postpone": {
+"conceptId": "postpone",
+"phonetic": "[poʊstˈpoʊn]",
+"pos": [
+"verb"
+]
+},
+"anniversary": {
+"conceptId": "anniversary",
+"phonetic": "[ænəˈvɜːrsəri]",
+"pos": [
+"noun"
+]
+},
+"luxury": {
+"conceptId": "luxury",
+"phonetic": "[ˈlʌɡʒəri]",
+"pos": [
+"noun"
+]
+},
+"mechanical": {
+"conceptId": "mechanical",
+"phonetic": "[məˈkænɪkəl]",
+"pos": [
+"adj"
+]
+},
+"counsel": {
+"conceptId": "counsel",
+"phonetic": "[ˈkaʊnsəl]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"aisle": {
+"conceptId": "aisle",
+"phonetic": "[aɪl]",
+"pos": [
+"noun"
+]
+},
+"leftover": {
+"conceptId": "leftover",
+"phonetic": "[ˈleftoʊvər]",
+"pos": [
+"noun",
+"adj"
+]
+},
+"at last": {
+"conceptId": "at last",
+"phonetic": "[æt læst]",
+"pos": [
+"adv"
+]
+},
+"platform": {
+"conceptId": "platform",
+"phonetic": "[ˈplætfɔːrm]",
+"pos": [
+"noun"
+]
+},
+"visual": {
+"conceptId": "visual",
+"phonetic": "[ˈvɪʒəwəl]",
+"pos": [
+"adj"
+]
+},
+"distinct": {
+"conceptId": "distinct",
+"phonetic": "[dɪˈstɪŋkt]",
+"pos": [
+"adj"
+]
+},
+"skip": {
+"conceptId": "skip",
+"phonetic": "[skɪp]",
+"pos": [
+"verb"
+]
+},
+"monotonous": {
+"conceptId": "monotonous",
+"phonetic": "[məˈnɑːtənəs]",
+"pos": [
+"adj"
+]
+},
+"argue": {
+"conceptId": "argue",
+"phonetic": "[ˈɑːrɡju]",
+"pos": [
+"verb"
+]
+},
+"solve": {
+"conceptId": "solve",
+"phonetic": "[sɑːlv]",
+"pos": [
+"verb"
+]
+},
+"responsible": {
+"conceptId": "responsible",
+"phonetic": "[rɪˈspɑːnsəbəl]",
+"pos": [
+"adj"
+]
+},
+"afford": {
+"conceptId": "afford",
+"phonetic": "[əˈfɔːrd]",
+"pos": [
+"verb"
+]
+},
+"path": {
+"conceptId": "path",
+"phonetic": "[pæθ]",
+"pos": [
+"noun"
+]
+},
+"divorce": {
+"conceptId": "divorce",
+"phonetic": "[dɪˈvɔːrs]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"demonstrate": {
+"conceptId": "demonstrate",
+"phonetic": "[ˈdemənstreɪt]",
+"pos": [
+"verb"
+]
+},
+"get used to": {
+"conceptId": "get used to",
+"phonetic": "[ɡet juːzd tuː]",
+"pos": [
+"aux"
+]
+},
+"keep in touch": {
+"conceptId": "keep in touch",
+"phonetic": "[kiːp ɪn tʌtʃ]",
+"pos": [
+"verb"
+]
+},
+"get along": {
+"conceptId": "get along",
+"phonetic": "[ɡet əˈlɔːŋ]",
+"pos": [
+"verb"
+]
+},
+"accuse": {
+"conceptId": "accuse",
+"phonetic": "[əˈkjuːz]",
+"pos": [
+"verb"
+]
+},
+"flag": {
+"conceptId": "flag",
+"phonetic": "[flæɡ]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"lean": {
+"conceptId": "lean",
+"phonetic": "[liːn]",
+"pos": [
+"verb"
+]
+},
+"specific": {
+"conceptId": "specific",
+"phonetic": "[spəˈsɪfɪk]",
+"pos": [
+"adj"
+]
+},
+"exclaim": {
+"conceptId": "exclaim",
+"phonetic": "[ɪksˈkleɪm]",
+"pos": [
+"verb"
+]
+},
+"driver": {
+"conceptId": "driver",
+"phonetic": "[ˈdraɪvər]",
+"pos": [
+"noun"
+]
+},
+"bump": {
+"conceptId": "bump",
+"phonetic": "[bʌmp]",
+"pos": [
+"verb"
+]
+},
+"encourage": {
+"conceptId": "encourage",
+"phonetic": "[enˈkɜːrɪdʒ]",
+"pos": [
+"verb"
+]
+},
+"scent": {
+"conceptId": "scent",
+"phonetic": "[sent]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"serve": {
+"conceptId": "serve",
+"phonetic": "[sɜːrv]",
+"pos": [
+"verb"
+]
+},
+"galaxy": {
+"conceptId": "galaxy",
+"phonetic": "[ˈɡæləksi]",
+"pos": [
+"noun"
+]
+},
+"emigrate": {
+"conceptId": "emigrate",
+"phonetic": "[ˈeməɡreɪt]",
+"pos": [
+"verb"
+]
+},
+"fake": {
+"conceptId": "fake",
+"phonetic": "[feɪk]",
+"pos": [
+"adj",
+"noun"
+]
+},
+"from time to time": {
+"conceptId": "from time to time",
+"phonetic": "[frʌm taɪm tuː taɪm]",
+"pos": [
+"adv"
+]
+},
+"ambitious": {
+"conceptId": "ambitious",
+"phonetic": "[æmˈbɪʃəs]",
+"pos": [
+"adj"
+]
+},
+"forehead": {
+"conceptId": "forehead",
+"phonetic": "[ˈfɔːrhed]",
+"pos": [
+"noun"
+]
+},
+"gradual": {
+"conceptId": "gradual",
+"phonetic": "[ˈɡrædʒuəl]",
+"pos": [
+"adj"
+]
+},
+"research": {
+"conceptId": "research",
+"phonetic": "[rɪˈsɜːrtʃ]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"relationship": {
+"conceptId": "relationship",
+"phonetic": "[rɪˈleɪʃənʃɪp]",
+"pos": [
+"noun"
+]
+},
+"retreat": {
+"conceptId": "retreat",
+"phonetic": "[rɪˈtriːt]",
+"pos": [
+"verb",
+"noun"
+]
+},
+"negative": {
+"conceptId": "negative",
+"phonetic": "[ˈneɡətɪv]",
+"pos": [
+"adj"
+]
+},
+"estimate": {
+"conceptId": "estimate",
+"phonetic": "[ˈestəmət]",
+"pos": [
+"noun",
+"verb"
+]
+},
+"instead of": {
+"conceptId": "instead of",
+"phonetic": "[ɪnˈsted ʌv]",
+"pos": [
+"prep"
+]
+},
+"enjoyable": {
+"conceptId": "enjoyable",
+"phonetic": "[enˈdʒɔɪəbəl]",
+"pos": [
+"adj"
+]
+},
+"provide": {
+"conceptId": "provide",
+"phonetic": "[prəˈvaɪd]",
+"pos": [
+"verb"
+]
+},
+"confess": {
+"conceptId": "confess",
+"phonetic": "[kənˈfes]",
+"pos": [
+"verb"
+]
+},
+"prejudice": {
+"conceptId": "prejudice",
+"phonetic": "[ˈpredʒədɪs]",
+"pos": [
+"noun"
+]
+},
+"hold on (to)": {
+"conceptId": "hold on (to)",
+"phonetic": "[hoʊld ɑːn tuː]",
+"pos": [
+"verb"
+]
+},
+"material": {
+"conceptId": "material",
+"phonetic": "[məˈtɪrɪəl]",
+"pos": [
+"noun",
+"adj"
+]
+},
+"express": {
+"conceptId": "express",
+"phonetic": "[ɪksˈpres]",
+"pos": [
+"verb",
+"adj"
+]
+},
+"arctic": {
+"conceptId": "arctic",
+"phonetic": "[ˈɑːrktɪk]",
+"pos": [
+"adj",
+"noun"
+]
+},
+"pedestrian": {
+"conceptId": "pedestrian",
+"phonetic": "[pəˈdestrɪən]",
+"pos": [
+"noun"
+]
+},
+"collar": {
+"conceptId": "collar",
+"phonetic": "[ˈkɑːlər]",
 "pos": [
 "noun"
 ]

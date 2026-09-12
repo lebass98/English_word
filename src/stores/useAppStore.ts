@@ -102,6 +102,12 @@ interface AppState {
 
   /** 단어 id → 학습 기록 */
   entries: Record<string, StudyEntry>;
+  /**
+   * 단어장에 따로 담아 둔 단어. 단어 id → 담은 시각(ISO).
+   * 외웠는지 헷갈리는지와는 별개다. 학습 화면에서 "저장"을 누르면 담기고,
+   * 다시 누르면 빠진다.
+   */
+  saved: Record<string, string>;
   /** 마지막으로 본 단어 (이어하기 지점) */
   lastStudied: LastStudied | null;
   /** 날짜별 집계 */
@@ -118,6 +124,9 @@ interface AppState {
 
   /** "외웠어요 / 아직 헷갈려요" 판정. 기록과 일별 집계를 한 번에 갱신한다 */
   recordStudy: (wordId: string, status: WordStatus) => void;
+
+  /** 단어장에 담거나 뺀다 */
+  toggleSaved: (wordId: string) => void;
 
   setNickname: (name: string) => void;
   /** 학습 기록 전체 삭제 (설정 화면) */
@@ -143,6 +152,7 @@ export const useAppStore = create<AppState>()(
       setAutoAdvance: (on) => set({ autoAdvance: on }),
 
       entries: {},
+      saved: {},
       lastStudied: null,
       dailyLog: {},
       nickname: "",
@@ -191,10 +201,18 @@ export const useAppStore = create<AppState>()(
           };
         }),
 
+      toggleSaved: (wordId) =>
+        set((s) => {
+          const next = { ...s.saved };
+          if (next[wordId]) delete next[wordId];
+          else next[wordId] = new Date().toISOString();
+          return { saved: next };
+        }),
+
       setNickname: (name) => set({ nickname: name }),
 
       resetProgress: () =>
-        set({ entries: {}, lastStudied: null, dailyLog: {} }),
+        set({ entries: {}, saved: {}, lastStudied: null, dailyLog: {} }),
     }),
     {
       name: "wordpic-store",
@@ -209,6 +227,7 @@ export const useAppStore = create<AppState>()(
         autoAdvance: s.autoAdvance,
         activeGradeId: s.activeGradeId,
         entries: s.entries,
+        saved: s.saved,
         lastStudied: s.lastStudied,
         dailyLog: s.dailyLog,
         nickname: s.nickname,

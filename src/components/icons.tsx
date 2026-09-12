@@ -340,3 +340,23 @@ export function StarIcon({ size = 10, color = "#fbbf24" }: IconProps) {
     </Svg>
   );
 }
+
+/** 🔖 단어장에 담기 (학습 화면 저장 버튼) */
+export function BookmarkIcon({
+  size = 16,
+  color = "#0eb582",
+  strokeWidth = 2.2,
+  filled = false,
+}: IconProps & { filled?: boolean }) {
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Path
+        d="M6 4.5A1.5 1.5 0 0 1 7.5 3h9A1.5 1.5 0 0 1 18 4.5V21l-6-4-6 4V4.5Z"
+        stroke={color}
+        strokeWidth={strokeWidth}
+        strokeLinejoin="round"
+        fill={filled ? color : "none"}
+      />
+    </Svg>
+  );
+}

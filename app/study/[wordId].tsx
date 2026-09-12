@@ -16,6 +16,7 @@ import { BlurView } from "expo-blur";
 import { SafeAreaView } from "react-native-safe-area-context";
 import {
   AgainIcon,
+  BookmarkIcon,
   CheckIcon,
   ChevronDownIcon,
   ChevronLeftIcon,
@@ -164,6 +165,9 @@ function StudyCard({
   const setAutoAdvance = useAppStore((s) => s.setAutoAdvance);
   const recordStudy = useAppStore((s) => s.recordStudy);
   const markSeen = useAppStore((s) => s.markSeen);
+  const toggleSaved = useAppStore((s) => s.toggleSaved);
+  // 이 단어가 단어장에 담겨 있는지. saved 전체를 구독하면 다른 단어를 담을 때도 다시 그려진다
+  const isSaved = useAppStore((s) => Boolean(s.saved[word.id]));
   const t = useT();
   const uiLang = useAppStore((s) => s.uiLang);
   const speechCode = studyLanguageOf(studyLangOfWordId(word.id)).speechCode;
@@ -611,6 +615,34 @@ function StudyCard({
             </View>
             <Text className="text-[15px] font-black tracking-tight text-emerald-800">
               {t("study.known")}
+            </Text>
+          </Pressable>
+        </View>
+
+        {/* ── 단어장에 담기 (하단 중앙) ─────────────────────── */}
+        <View className="items-center px-6 pb-4">
+          <Pressable
+            onPress={() => toggleSaved(word.id)}
+            accessibilityRole="button"
+            accessibilityState={{ selected: isSaved }}
+            accessibilityLabel={t("study.saveToggle")}
+            className={`flex-row items-center justify-center gap-2 rounded-full px-6 py-2.5 active:scale-[0.98] ${
+              isSaved
+                ? "bg-canvas shadow-neu-inset"
+                : "bg-surface shadow-neu-sm active:shadow-neu-pressed"
+            }`}
+          >
+            <BookmarkIcon
+              size={15}
+              filled={isSaved}
+              color={isSaved ? "#0eb582" : "#94a3b8"}
+            />
+            <Text
+              className={`text-[13px] font-extrabold tracking-tight ${
+                isSaved ? "text-mint-dark" : "text-slate-500"
+              }`}
+            >
+              {t(isSaved ? "study.saved" : "study.save")}
             </Text>
           </Pressable>
         </View>

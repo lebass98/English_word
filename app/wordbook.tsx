@@ -15,11 +15,12 @@ import {
   type WordStatus,
 } from "../src/stores/useAppStore";
 
-type Filter = "known" | "unsure" | "all";
+type Filter = "known" | "unsure" | "saved" | "all";
 
 const FILTERS: { key: Filter; labelKey: StringKey }[] = [
   { key: "known", labelKey: "wordbook.known" },
   { key: "unsure", labelKey: "wordbook.unsure" },
+  { key: "saved", labelKey: "wordbook.saved" },
   { key: "all", labelKey: "wordbook.all" },
 ];
 
@@ -27,6 +28,7 @@ const FILTERS: { key: Filter; labelKey: StringKey }[] = [
 const EMPTY_BY_FILTER: Record<Filter, StringKey> = {
   known: "wordbook.noKnown",
   unsure: "wordbook.noUnsure",
+  saved: "wordbook.noSaved",
   all: "wordbook.noRecords",
 };
 
@@ -42,6 +44,7 @@ export default function WordbookScreen() {
   const router = useRouter();
   const hydrated = useAppStore((s) => s.hydrated);
   const entries = useAppStore((s) => s.entries);
+  const saved = useAppStore((s) => s.saved);
   const vocab = useVocab();
   const t = useT();
 
@@ -50,23 +53,40 @@ export default function WordbookScreen() {
 
   // entries는 수천 개까지 늘 수 있어 필터·정렬을 매 렌더마다 돌리지 않는다
   const rows = useMemo<Row[]>(() => {
-    const out: Row[] = [];
-    const picked = Object.entries(entries)
-      .filter(([, e]) => filter === "all" || e.status === filter)
-      .sort((a, b) => b[1].updatedAt.localeCompare(a[1].updatedAt));
+    // "저장한 단어"는 학습 판정과 별개라 담은 시각 기준으로 따로 모은다.
+    // "전체"에서는 판정한 단어와 담아 둔 단어를 한데 놓고 최근 순으로 섞는다.
+    const at: [string, string][] =
+      filter === "saved"
+        ? Object.entries(saved)
+        : filter === "all"
+          ? Object.entries({
+              ...saved,
+              ...Object.fromEntries(
+                Object.entries(entries).map(([id, e]) => [id, e.updatedAt]),
+              ),
+            })
+          : Object.entries(entries)
+              .filter(([, e]) => e.status === filter)
+              .map(([id, e]) => [id, e.updatedAt]);
 
-    for (const [wordId, entry] of picked) {
+    const out: Row[] = [];
+    for (const [wordId] of at.sort((a, b) => b[1].localeCompare(a[1]))) {
       const found = vocab.find(wordId);
       // 단어 데이터가 바뀌어 사라진 id는 조용히 건너뛴다
-      if (found) out.push({ word: found.word, status: entry.status });
+      if (!found) continue;
+      out.push({
+        word: found.word,
+        // 담기만 하고 아직 판정하지 않은 단어는 별이 비어 있다
+        status: entries[wordId]?.status ?? "unseen",
+      });
     }
     return out;
-  }, [entries, filter, vocab]);
+  }, [entries, saved, filter, vocab]);
 
   // 기록이 아예 없는 것과 이 분류만 빈 것은 안내가 달라야 한다
   const hasAnyEntry = useMemo(
-    () => Object.keys(entries).length > 0,
-    [entries],
+    () => Object.keys(entries).length > 0 || Object.keys(saved).length > 0,
+    [entries, saved],
   );
 
   return (
@@ -79,7 +99,7 @@ export default function WordbookScreen() {
 
         {/* 기록이 하나도 없으면 고를 것이 없으므로 분류 버튼을 감춘다 */}
         {(!hydrated || hasAnyEntry) && (
-          <View className="flex-row gap-2 px-6 pb-2">
+          <View className="flex-row flex-wrap gap-2 px-6 pb-2">
             {FILTERS.map((f) => (
               <PillButton
                 key={f.key}
@@ -111,7 +131,7 @@ export default function WordbookScreen() {
             {hydrated &&
               (hasAnyEntry ? (
                 <Text className="text-[13px] text-slate-400">
-                  {EMPTY_BY_FILTER[filter]}
+                  {t(EMPTY_BY_FILTER[filter])}
                 </Text>
               ) : (
                 <View className="w-full max-w-[320px] items-center rounded-3xl bg-surface px-6 py-8 shadow-neu-card">

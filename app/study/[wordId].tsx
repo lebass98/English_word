@@ -592,11 +592,11 @@ function StudyCard({
 
         {/* ── 학습 평가 버튼 (가운데는 단어장에 담기) ────────── */}
         <View className="mx-6 flex-row items-stretch gap-1.5 px-1 pb-4 pt-3">
-          {/* 가운데 버튼이 들어오면서 좁아져, 양옆 버튼은 좌우 여백을 줄였다 */}
+          {/* 세 버튼 모두 좌우 여백을 px-1 로 같게 맞춰 글자 자리를 최대한 넓혔다 */}
           <Pressable
             onPress={() => decide("unsure")}
             style={{ flex: 1 }}
-            className="flex-row items-center justify-center gap-1.5 rounded-[28px] bg-surface px-1.5 py-4 shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
+            className="flex-row items-center justify-center gap-1.5 rounded-[28px] bg-surface px-1 py-4 shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
           >
             <View className="h-6 w-6 items-center justify-center rounded-lg bg-slate-300">
               <AgainIcon />
@@ -640,7 +640,7 @@ function StudyCard({
           <Pressable
             onPress={() => decide("known")}
             style={{ flex: 1 }}
-            className="flex-row items-center justify-center gap-1.5 rounded-[28px] bg-[#dff5ea] px-1.5 py-4 shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
+            className="flex-row items-center justify-center gap-1.5 rounded-[28px] bg-[#dff5ea] px-1 py-4 shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
           >
             <View className="h-6 w-6 items-center justify-center rounded-md bg-emerald-500">
               <CheckIcon />

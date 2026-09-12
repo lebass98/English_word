@@ -591,12 +591,13 @@ function StudyCard({
         </ScrollView>
 
         {/* ── 학습 평가 버튼 (가운데는 단어장에 담기) ────────── */}
-        <View className="mx-6 flex-row items-stretch justify-center gap-1.5 px-1 pb-4 pt-3">
-          {/* 세 버튼 모두 글씨 너비에 맞춰 줄이고 좌우 여백(px-2)을 똑같이 준다.
-              한쪽만 flex-1 로 늘이면 크기도 여백도 제각각으로 보인다 */}
+        <View className="mx-6 flex-row items-stretch gap-1.5 px-1 pb-4 pt-3">
+          {/* 세 버튼을 똑같이 flex-1 로 나눠 가진다. 폭도 좌우 여백도 셋이 같아야
+              가지런해 보인다 (한쪽만 글씨에 맞추면 그 버튼만 좁아 보인다) */}
           <Pressable
             onPress={() => decide("unsure")}
-            className="flex-row items-center justify-center gap-1.5 rounded-[28px] bg-surface px-2 py-4 shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
+            style={{ flex: 1 }}
+            className="flex-row items-center justify-center gap-1.5 rounded-[28px] bg-surface px-1 py-4 shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
           >
             <View className="h-6 w-6 items-center justify-center rounded-lg bg-slate-300">
               <AgainIcon />
@@ -609,14 +610,15 @@ function StudyCard({
             </Text>
           </Pressable>
 
-          {/* 가운데 저장 버튼도 같은 여백으로 글씨에 맞춘다. 담기면 글자가 한 자
-              늘어나(저장 → 저장됨) 버튼이 그만큼 넓어진다 */}
+          {/* 가운데 저장 버튼도 같은 몫을 가진다. 폭이 고정되어 있어
+              담겨서 '저장 → 저장됨' 으로 글자가 늘어도 버튼이 흔들리지 않는다 */}
           <Pressable
             onPress={() => toggleSaved(word.id)}
             accessibilityRole="button"
             accessibilityState={{ selected: isSaved }}
+            style={{ flex: 1 }}
             accessibilityLabel={t("study.saveToggle")}
-            className={`flex-row items-center justify-center gap-1.5 rounded-[28px] px-2 active:scale-[0.98] ${
+            className={`flex-row items-center justify-center gap-1.5 rounded-[28px] px-1 active:scale-[0.98] ${
               isSaved
                 ? "bg-canvas shadow-neu-inset"
                 : "bg-surface shadow-neu-sm active:shadow-neu-pressed"
@@ -639,7 +641,8 @@ function StudyCard({
 
           <Pressable
             onPress={() => decide("known")}
-            className="flex-row items-center justify-center gap-1.5 rounded-[28px] bg-[#dff5ea] px-2 py-4 shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
+            style={{ flex: 1 }}
+            className="flex-row items-center justify-center gap-1.5 rounded-[28px] bg-[#dff5ea] px-1 py-4 shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
           >
             <View className="h-6 w-6 items-center justify-center rounded-md bg-emerald-500">
               <CheckIcon />

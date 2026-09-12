@@ -29,9 +29,16 @@ import { BackButton } from "../../src/components/BackButton";
 import { LabeledSection } from "../../src/components/LabeledSection";
 import { PillButton } from "../../src/components/PillButton";
 import { SynonymList } from "../../src/components/SynonymList";
-import { useGrade } from "../../src/constants/grades";
-import { UNIT_SIZE, useVocab, type Word } from "../../src/constants/words";
-import { studyLanguageOf } from "../../src/constants/languages";
+import { gradesOf } from "../../src/constants/grades";
+import {
+  UNIT_SIZE,
+  vocabForWordId,
+  type Word,
+} from "../../src/constants/words";
+import {
+  studyLangOfWordId,
+  studyLanguageOf,
+} from "../../src/constants/languages";
 import { useT } from "../../src/i18n";
 import { WORD_IMAGES } from "../../src/constants/wordImages";
 import { speakWord, stopSpeaking } from "../../src/lib/speech";
@@ -45,7 +52,8 @@ export default function StudyScreen() {
   const router = useRouter();
 
   const t = useT();
-  const vocab = useVocab();
+  // 지금 설정이 아니라 단어 id 에 적힌 언어에서 찾는다
+  const vocab = vocabForWordId(wordId ?? "");
   const found = vocab.find(wordId ?? "");
 
   const goTo = useCallback(
@@ -157,8 +165,7 @@ function StudyCard({
   const recordStudy = useAppStore((s) => s.recordStudy);
   const markSeen = useAppStore((s) => s.markSeen);
   const t = useT();
-  const studyLang = useAppStore((s) => s.studyLang);
-  const speechCode = studyLanguageOf(studyLang).speechCode;
+  const speechCode = studyLanguageOf(studyLangOfWordId(word.id)).speechCode;
 
   const { width: screenWidth } = useWindowDimensions();
 
@@ -258,7 +265,10 @@ function StudyCard({
   }, [word.id, gradeId, markSeen]);
 
   // 헤더는 자리가 좁으므로 짧은 이름을 쓴다 (중학 2학년 → 중2)
-  const gradeLabel = useGrade(gradeId)?.short ?? "";
+  // 단계 이름도 지금 설정이 아니라 이 단어가 속한 언어에서 가져온다
+  const gradeLabel =
+    gradesOf(studyLangOfWordId(word.id)).find((g) => g.id === gradeId)?.short ??
+    "";
   const unitNo = Math.floor(index / UNIT_SIZE) + 1;
   const posInUnit = (index % UNIT_SIZE) + 1;
   // 마지막 유닛은 20개보다 적을 수 있다.

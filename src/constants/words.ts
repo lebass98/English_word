@@ -1,5 +1,6 @@
 import { useAppStore } from "../stores/useAppStore";
 import {
+  studyLangOfWordId,
   studyLanguageOf,
   type Level,
   type StudyLangId,
@@ -9,6 +10,9 @@ import enLevelMiddle1 from "../data/en/levels/middle-1.json";
 import enLevelMiddle2 from "../data/en/levels/middle-2.json";
 import enTrKo from "../data/en/tr/ko.json";
 import enWords from "../data/en/words.json";
+import jaLevelN5 from "../data/ja/levels/jlpt-n5.json";
+import jaTrKo from "../data/ja/tr/ko.json";
+import jaWords from "../data/ja/words.json";
 
 export const UNIT_SIZE = 20;
 
@@ -73,8 +77,6 @@ interface LanguageData {
   ko: TranslationFile;
 }
 
-const EMPTY_TR: TranslationFile = { meanings: {}, details: {} };
-
 /**
  * 학습 언어별 원본 데이터.
  * 새 언어를 붙일 때는 여기에 항목을 추가하고 json 을 import 하면 된다.
@@ -88,11 +90,12 @@ const DATA: Record<StudyLangId, LanguageData> = {
     words: enWords as Record<string, NeutralEntry>,
     ko: enTrKo as TranslationFile,
   },
-  // 일본어는 아직 단어 데이터를 채우는 중이다. 자리만 열어 둔다
   ja: {
-    levels: {},
-    words: {},
-    ko: EMPTY_TR,
+    levels: {
+      "jlpt-n5": jaLevelN5 as string[],
+    },
+    words: jaWords as Record<string, NeutralEntry>,
+    ko: jaTrKo as TranslationFile,
   },
 };
 
@@ -203,6 +206,17 @@ export function getVocab(studyLang: StudyLangId): Vocab {
 export function useVocab(): Vocab {
   const studyLang = useAppStore((s) => s.studyLang);
   return getVocab(studyLang);
+}
+
+/**
+ * 단어 id 가 가리키는 언어의 단어 모음.
+ *
+ * 단어 id 앞에 학습 언어가 붙어 있으므로(en-m1-1, ja-n5-1) 지금 설정과
+ * 상관없이 그 단어가 속한 언어에서 찾는다. 주소로 바로 들어오거나
+ * 단어장에서 다른 언어의 단어를 눌러도 화면이 제대로 뜬다.
+ */
+export function vocabForWordId(wordId: string): Vocab {
+  return getVocab(studyLangOfWordId(wordId));
 }
 
 /** 훅을 쓸 수 없는 곳에서 지금 학습 언어의 단어 모음이 필요할 때 */

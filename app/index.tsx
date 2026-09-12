@@ -5,8 +5,10 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { BottomNav } from "../src/components/BottomNav";
 import { ContinueCard } from "../src/components/ContinueCard";
 import { GradeCard } from "../src/components/GradeCard";
+import { LanguageFlag } from "../src/components/flags";
 import { PillButton } from "../src/components/PillButton";
 import { useGrades } from "../src/constants/grades";
+import { STUDY_LANGS } from "../src/constants/languages";
 import { useVocab } from "../src/constants/words";
 import { WORD_IMAGES } from "../src/constants/wordImages";
 import { useT } from "../src/i18n";
@@ -58,6 +60,8 @@ export default function HomeScreen() {
   const entries = useAppStore((s) => s.entries);
   const dailyLog = useAppStore((s) => s.dailyLog);
   const setActiveGradeId = useAppStore((s) => s.setActiveGradeId);
+  const studyLang = useAppStore((s) => s.studyLang);
+  const setStudyLang = useAppStore((s) => s.setStudyLang);
   const t = useT();
   const vocab = useVocab();
   const grades = useGrades();
@@ -107,6 +111,35 @@ export default function HomeScreen() {
               </Text>
             </View>
           )}
+        </View>
+
+        {/* 학습 언어 고르기. 무엇을 배울지가 화면의 출발점이라 맨 위에 둔다 */}
+        <View className="mt-5 flex-row gap-3">
+          {STUDY_LANGS.map((id) => {
+            const on = studyLang === id;
+            return (
+              <Pressable
+                key={id}
+                onPress={() => setStudyLang(id)}
+                accessibilityRole="button"
+                accessibilityState={{ selected: on }}
+                accessibilityLabel={t(`studyLang.${id}` as never)}
+                style={{ flex: 1 }}
+                className={`flex-row items-center gap-3 rounded-2xl px-4 py-3 active:scale-[0.98] ${
+                  on ? "bg-canvas shadow-neu-inset" : "bg-surface shadow-neu-sm"
+                }`}
+              >
+                <LanguageFlag lang={id} size={26} />
+                <Text
+                  className={`text-[14px] font-bold ${
+                    on ? "text-mint-dark" : "text-slate-500"
+                  }`}
+                >
+                  {t(`studyLang.${id}` as never)}
+                </Text>
+              </Pressable>
+            );
+          })}
         </View>
 
         {/* 이어하기 히어로 */}
@@ -181,9 +214,22 @@ export default function HomeScreen() {
           </View>
         ) : (
           <View className="mt-4 flex-row gap-4">
-            <TodayStat emoji="👀" value={today.seen} label={t("home.seenToday")} />
-            <TodayStat emoji="✅" value={today.known} label={t("home.knownToday")} />
-            <TodayStat emoji="🔥" value={streak} unit={t("home.days")} label={t("home.streak")} />
+            <TodayStat
+              emoji="👀"
+              value={today.seen}
+              label={t("home.seenToday")}
+            />
+            <TodayStat
+              emoji="✅"
+              value={today.known}
+              label={t("home.knownToday")}
+            />
+            <TodayStat
+              emoji="🔥"
+              value={streak}
+              unit={t("home.days")}
+              label={t("home.streak")}
+            />
           </View>
         )}
 

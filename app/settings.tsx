@@ -13,13 +13,11 @@ import { BackButton } from "../src/components/BackButton";
 import { BottomNav } from "../src/components/BottomNav";
 import { PillButton } from "../src/components/PillButton";
 import {
-  BookIcon,
   ChartIcon,
   GlobeIcon,
   PersonIcon,
   SlidersIcon,
 } from "../src/components/icons";
-import { STUDY_LANGS } from "../src/constants/languages";
 import { useT } from "../src/i18n";
 import { UI_LANGS, UI_LANG_NAMES } from "../src/i18n/strings";
 import { useAppStore } from "../src/stores/useAppStore";
@@ -28,13 +26,7 @@ import { useAppStore } from "../src/stores/useAppStore";
 const CONFIRM_TIMEOUT_MS = 4000;
 
 /** 설정 칸의 제목 줄. 왼쪽에 아이콘이 붙는다 */
-function SectionTitle({
-  icon,
-  label,
-}: {
-  icon: ReactNode;
-  label: string;
-}) {
+function SectionTitle({ icon, label }: { icon: ReactNode; label: string }) {
   return (
     <View className="flex-row items-center gap-2.5">
       <View className="h-9 w-9 items-center justify-center rounded-xl bg-canvas shadow-neu-inset">
@@ -54,8 +46,6 @@ export default function SettingsScreen() {
   const resetProgress = useAppStore((s) => s.resetProgress);
   const uiLang = useAppStore((s) => s.uiLang);
   const setUiLang = useAppStore((s) => s.setUiLang);
-  const studyLang = useAppStore((s) => s.studyLang);
-  const setStudyLang = useAppStore((s) => s.setStudyLang);
   const t = useT();
 
   /** 웹에는 Alert이 없어 버튼을 두 번 눌러 확인받는다 */
@@ -91,14 +81,14 @@ export default function SettingsScreen() {
       return;
     }
 
-    Alert.alert(
-      t("settings.resetProgress"),
-      t("settings.resetConfirmDesc"),
-      [
-        { text: t("common.cancel"), style: "cancel" },
-        { text: t("common.delete"), style: "destructive", onPress: resetProgress },
-      ],
-    );
+    Alert.alert(t("settings.resetProgress"), t("settings.resetConfirmDesc"), [
+      { text: t("common.cancel"), style: "cancel" },
+      {
+        text: t("common.delete"),
+        style: "destructive",
+        onPress: resetProgress,
+      },
+    ]);
   };
 
   return (
@@ -106,7 +96,9 @@ export default function SettingsScreen() {
       <View className="w-full flex-1">
         <View className="flex-row items-center gap-4 px-6 pb-4 pt-8">
           <BackButton fallbackHref="/" />
-          <Text className="text-2xl font-bold text-ink">{t("settings.title")}</Text>
+          <Text className="text-2xl font-bold text-ink">
+            {t("settings.title")}
+          </Text>
         </View>
 
         <ScrollView
@@ -149,32 +141,13 @@ export default function SettingsScreen() {
                 />
               ))}
             </View>
-
-            {/* 지금 배우는 말 */}
-            <View className="mt-6 flex-row items-center gap-2">
-              <BookIcon size={15} />
-              <Text className="text-[15px] text-slate-700">
-                {t("settings.studyLang")}
-              </Text>
-            </View>
-            <Text className="mt-1 text-[13px] text-slate-400">
-              {t("settings.studyLangDesc")}
-            </Text>
-            <View className="mt-3 flex-row flex-wrap gap-2">
-              {STUDY_LANGS.map((id) => (
-                <PillButton
-                  key={id}
-                  size="sm"
-                  label={t(`studyLang.${id}` as never)}
-                  variant={studyLang === id ? "inset" : "default"}
-                  onPress={() => setStudyLang(id)}
-                />
-              ))}
-            </View>
           </View>
 
           <View className="mt-6 rounded-3xl bg-surface p-6 shadow-neu-card">
-<SectionTitle icon={<SlidersIcon />} label={t("settings.studySettings")} />
+            <SectionTitle
+              icon={<SlidersIcon />}
+              label={t("settings.studySettings")}
+            />
             <View className="mt-4 flex-row items-center justify-between gap-4">
               <View className="flex-1">
                 <Text className="text-[15px] text-slate-700">
@@ -207,7 +180,7 @@ export default function SettingsScreen() {
           </View>
 
           <View className="mt-6 rounded-3xl bg-surface p-6 shadow-neu-card">
-<SectionTitle icon={<ChartIcon />} label={t("settings.record")} />
+            <SectionTitle icon={<ChartIcon />} label={t("settings.record")} />
             {/* 기록이 없으면 "0개 · 0개" 대신 안내를 보여주고, 지울 것도 없으니 버튼을 감춘다 */}
             {hasRecord ? (
               <>

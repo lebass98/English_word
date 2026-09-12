@@ -30,16 +30,24 @@ export function speakWord(word: string, cb: SpeakCallbacks = {}) {
   }
   try {
     Speech.stop();
-    Speech.speak(word, {
-      language: cb.lang ?? "en-US",
-      rate: 0.85,
-      pitch: 1.0,
-      volume: cb.volume ?? 1,
-      onStart: cb.onStart,
-      onDone: cb.onDone,
-      onStopped: cb.onDone,
-      onError: cb.onDone,
-    });
+    // 웹(크롬)은 speechSynthesis.cancel() 직후 같은 틱에 speak() 를 부르면
+    // 새 발화가 조용히 사라진다. 한 틱 뒤로 미뤄 이 문제를 피한다.
+    setTimeout(() => {
+      try {
+        Speech.speak(word, {
+          language: cb.lang ?? "en-US",
+          rate: 0.85,
+          pitch: 1.0,
+          volume: cb.volume ?? 1,
+          onStart: cb.onStart,
+          onDone: cb.onDone,
+          onStopped: cb.onDone,
+          onError: cb.onDone,
+        });
+      } catch {
+        cb.onDone?.();
+      }
+    }, 0);
   } catch {
     cb.onDone?.();
   }

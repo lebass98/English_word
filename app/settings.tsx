@@ -64,6 +64,15 @@ export default function SettingsScreen() {
   const speechVolume = useAppStore((s) => s.speechVolume);
   const setSpeechVolume = useAppStore((s) => s.setSpeechVolume);
   const studyLang = useAppStore((s) => s.studyLang);
+
+  /** 고른 크기로 짧은 견본을 들려준다. 음소거면 들려줄 것이 없다 */
+  const playSample = (volume: number) => {
+    if (volume <= 0) return;
+    speakWord(VOLUME_SAMPLE[studyLang], {
+      lang: studyLanguageOf(studyLang).speechCode,
+      volume,
+    });
+  };
   const entries = useAppStore((s) => s.entries);
   const resetProgress = useAppStore((s) => s.resetProgress);
   const uiLang = useAppStore((s) => s.uiLang);
@@ -222,14 +231,21 @@ export default function SettingsScreen() {
                 </Text>
               </View>
 
-              {/* 단계를 누르면 바뀐 크기로 바로 한 번 들려준다 */}
+              {/* 단계를 누르면 바뀐 크기로 바로 한 번 들려준다.
+                  막대 자체는 낮은 단계일수록 짧아 누르기 어려우므로, 누르는
+                  자리는 막대 높이와 상관없이 48px 로 잡고 그 안에 막대를 그린다 */}
               <View className="mt-3 flex-row items-end gap-2">
-                <View className="pb-2">
+                <Pressable
+                  onPress={() => playSample(speechVolume)}
+                  accessibilityRole="button"
+                  accessibilityLabel={t("settings.speechVolume")}
+                  className="h-12 justify-center pr-1 active:opacity-60"
+                >
                   <SpeakerIcon
-                    size={16}
+                    size={18}
                     color={speechVolume === 0 ? "#94a3b8" : "#0eb582"}
                   />
-                </View>
+                </Pressable>
                 {VOLUME_STEPS.map((step, i) => {
                   const on = speechVolume >= step && step > 0;
                   return (
@@ -246,23 +262,23 @@ export default function SettingsScreen() {
                       }
                       onPress={() => {
                         setSpeechVolume(step);
-                        if (step > 0) {
-                          speakWord(VOLUME_SAMPLE[studyLang], {
-                            lang: studyLanguageOf(studyLang).speechCode,
-                            volume: step,
-                          });
-                        }
+                        playSample(step);
                       }}
-                      style={{ flex: 1, height: 16 + i * 8 }}
-                      className={`items-center justify-center rounded-lg active:opacity-70 ${
-                        on
-                          ? "bg-mint"
-                          : // 음소거를 고른 상태도 눌린 티가 나야 한다
-                            step === 0 && speechVolume === 0
-                            ? "bg-slate-300"
-                            : "bg-canvas shadow-neu-inset"
-                      }`}
-                    />
+                      style={{ flex: 1 }}
+                      className="h-12 justify-end active:opacity-70"
+                    >
+                      <View
+                        style={{ height: 12 + i * 8 }}
+                        className={`rounded-lg ${
+                          on
+                            ? "bg-mint"
+                            : // 음소거를 고른 상태도 눌린 티가 나야 한다
+                              step === 0 && speechVolume === 0
+                              ? "bg-slate-300"
+                              : "bg-canvas shadow-neu-inset"
+                        }`}
+                      />
+                    </Pressable>
                   );
                 })}
               </View>

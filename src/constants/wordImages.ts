@@ -602,6 +602,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   tightly: require("../../assets/words/tightly.png"),
   tiny: require("../../assets/words/tiny.png"),
   together: require("../../assets/words/together.png"),
+  tomb: require("../../assets/words/tomb.png"),
   tool: require("../../assets/words/tool.png"),
   torch: require("../../assets/words/torch.png"),
   touch: require("../../assets/words/touch.png"),

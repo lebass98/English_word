@@ -1,170 +1,172 @@
 {
-  "unit": 7,
+  "unit": 8,
   "total": 20,
-  "current_word": "contract",
+  "current_word": "moment",
   "current_index": 20,
   "items": [
     {
       "index": 1,
-      "id": "h1-121",
-      "word": "specific",
-      "meaning": "특정한, 구체적인",
-      "scene": "detailed illustrative narrative scene of specific, cute slender stickman Please give me a specific date and time for the group meeting., indoor room or outdoor setting, rich props",
+      "id": "h1-141",
+      "word": "stack",
+      "meaning": "쌓다, 쌓아 올리다; 더미, 무더기",
+      "scene": "detailed illustrative narrative scene of stack, cute slender stickman Please stack the chairs against the wall after class., indoor room or outdoor setting, rich props",
       "status": "FAILED"
     },
     {
       "index": 2,
-      "id": "h1-122",
-      "word": "fit",
-      "meaning": "어울리다, 맞다; 어울리는, 건강한",
-      "scene": "detailed illustrative narrative scene of fit, cute slender stickman These shoes fit my feet perfectly and feel comfortable., indoor room or outdoor setting, rich props",
+      "id": "h1-142",
+      "word": "harbor",
+      "meaning": "항구, 항만; 정박하다, 숨기다",
+      "scene": "detailed illustrative narrative scene of harbor, cute slender stickman Dozens of fishing boats returned to the harbor before the storm arrived., indoor room or outdoor setting, rich props",
       "status": "FAILED"
     },
     {
       "index": 3,
-      "id": "h1-123",
-      "word": "numerous",
-      "meaning": "수많은, 다수의",
-      "scene": "detailed illustrative narrative scene of numerous, cute slender stickman The city offers numerous ways to spend a weekend., indoor room or outdoor setting, rich props",
+      "id": "h1-143",
+      "word": "personal",
+      "meaning": "개인의, 개인적인",
+      "scene": "detailed illustrative narrative scene of personal, cute slender stickman He never shares his personal problems with people he has just met at work., indoor room or outdoor setting, rich props",
       "status": "FAILED"
     },
     {
       "index": 4,
-      "id": "h1-124",
-      "word": "steep",
-      "meaning": "가파른, 비탈진, 급격한",
-      "scene": "detailed illustrative narrative scene of steep, cute slender stickman The path to the temple was so steep that we stopped to rest twice., indoor room or outdoor setting, rich props",
+      "id": "h1-144",
+      "word": "artwork",
+      "meaning": "예술작품, 미술품",
+      "scene": "detailed illustrative narrative scene of artwork, cute slender stickman The museum displays artwork from many different countries., indoor room or outdoor setting, rich props",
       "status": "FAILED"
     },
     {
       "index": 5,
-      "id": "h1-125",
-      "word": "spare",
-      "meaning": "여가의, 남는, 여분의; (시간, 돈 등을) 내어주다",
-      "scene": "detailed illustrative narrative scene of spare, cute slender stickman I read novels in my spare time after dinner., indoor room or outdoor setting, rich props",
-      "status": "FAILED"
+      "id": "h1-145",
+      "word": "education",
+      "meaning": "교육",
+      "scene": "detailed illustrative narrative scene of education, cute slender stickman Good education helps children build a better future for themselves., indoor room or outdoor setting, rich props",
+      "status": "SKIP_EXISTS",
+      "size_kb": 1299.4
     },
     {
       "index": 6,
-      "id": "h1-126",
-      "word": "domestic",
-      "meaning": "국내의, 국산의, 가정의, 집안의",
-      "scene": "detailed illustrative narrative scene of domestic, cute slender stickman Domestic flights to Jeju Island are usually cheaper than flights to other countries., indoor room or outdoor setting, rich props",
-      "status": "FAILED"
+      "id": "h1-146",
+      "word": "international",
+      "meaning": "국제의, 국제적인",
+      "scene": "detailed illustrative narrative scene of international, cute slender stickman Our school held an international food festival last weekend., indoor room or outdoor setting, rich props",
+      "status": "SKIP_EXISTS",
+      "size_kb": 1060.2
     },
     {
       "index": 7,
-      "id": "h1-127",
-      "word": "issue",
-      "meaning": "문제, 쟁점, 사안, 발행물, (출판물의) 호; 발급하다, 교부하다",
-      "scene": "detailed illustrative narrative scene of issue, cute slender stickman Air pollution is a serious issue that our city must solve soon., indoor room or outdoor setting, rich props",
+      "id": "h1-147",
+      "word": "assist",
+      "meaning": "돕다, 거들다, 원조하다",
+      "scene": "detailed illustrative narrative scene of assist, cute slender stickman Two teachers will assist the students during the trip., indoor room or outdoor setting, rich props",
       "status": "FAILED"
     },
     {
       "index": 8,
-      "id": "h1-128",
-      "word": "contact",
-      "meaning": "연락하다, 접촉시키다; 연락, 접촉",
-      "scene": "detailed illustrative narrative scene of contact, cute slender stickman I have kept in contact with my elementary school friends for six years., indoor room or outdoor setting, rich props",
+      "id": "h1-148",
+      "word": "prevent",
+      "meaning": "예방하다, 막다, 방지하다",
+      "scene": "detailed illustrative narrative scene of prevent, cute slender stickman Washing your hands often can prevent many kinds of colds in winter., indoor room or outdoor setting, rich props",
       "status": "FAILED"
     },
     {
       "index": 9,
-      "id": "h1-129",
-      "word": "interrupt",
-      "meaning": "방해하다, 가로막다",
-      "scene": "detailed illustrative narrative scene of interrupt, cute slender stickman A loud noise interrupted our class in the middle of the math test., indoor room or outdoor setting, rich props",
+      "id": "h1-149",
+      "word": "frustrated",
+      "meaning": "좌절한, 실망한",
+      "scene": "detailed illustrative narrative scene of frustrated, cute slender stickman He felt frustrated after failing the test three times., indoor room or outdoor setting, rich props",
       "status": "FAILED"
     },
     {
       "index": 10,
-      "id": "h1-130",
-      "word": "origin",
-      "meaning": "기원, 근원, 태생",
-      "scene": "detailed illustrative narrative scene of origin, cute slender stickman Nobody knows the exact origin of this strange word in the English language., indoor room or outdoor setting, rich props",
+      "id": "h1-150",
+      "word": "border",
+      "meaning": "국경, 경계, 가장자리",
+      "scene": "detailed illustrative narrative scene of border, cute slender stickman The train slowly crossed the border between the two countries at midnight., indoor room or outdoor setting, rich props",
       "status": "FAILED"
     },
     {
       "index": 11,
-      "id": "h1-131",
-      "word": "thrive",
-      "meaning": "번창하다, 번성하다",
-      "scene": "detailed illustrative narrative scene of thrive, cute slender stickman Small shops can thrive when neighbors support them daily., indoor room or outdoor setting, rich props",
+      "id": "h1-151",
+      "word": "mutual",
+      "meaning": "상호 간의, 서로의",
+      "scene": "detailed illustrative narrative scene of mutual, cute slender stickman A good friendship should be built on mutual trust and honest talk., indoor room or outdoor setting, rich props",
       "status": "FAILED"
     },
     {
       "index": 12,
-      "id": "h1-132",
-      "word": "bury",
-      "meaning": "파묻다, 매장하다",
-      "scene": "detailed illustrative narrative scene of bury, cute slender stickman The dog likes to bury his bones under the big tree., indoor room or outdoor setting, rich props",
-      "status": "SKIP_EXISTS",
-      "size_kb": 866.4
+      "id": "h1-152",
+      "word": "neglect",
+      "meaning": "무시하다, 등한시하다, 방치하다",
+      "scene": "detailed illustrative narrative scene of neglect, cute slender stickman Do not neglect your health while preparing for exams., indoor room or outdoor setting, rich props",
+      "status": "FAILED"
     },
     {
       "index": 13,
-      "id": "h1-133",
-      "word": "plant",
-      "meaning": "심다; 식물, 초목, 공장",
-      "scene": "detailed illustrative narrative scene of plant, cute slender stickman This plant needs sunlight and water three times a week., indoor room or outdoor setting, rich props",
-      "status": "SKIP_EXISTS",
-      "size_kb": 687.3
+      "id": "h1-153",
+      "word": "candidate",
+      "meaning": "후보(자), 지원자",
+      "scene": "detailed illustrative narrative scene of candidate, cute slender stickman Every candidate for class president gave a short speech in front of us., indoor room or outdoor setting, rich props",
+      "status": "FAILED"
     },
     {
       "index": 14,
-      "id": "h1-134",
-      "word": "aid",
-      "meaning": "돕다, 거들다; 원조, 지원, 도움",
-      "scene": "detailed illustrative narrative scene of aid, cute slender stickman Volunteers came to aid the families after the flood., indoor room or outdoor setting, rich props",
+      "id": "h1-154",
+      "word": "encounter",
+      "meaning": "맞닥뜨리다, 부딪히다, 만나다; 마주침, 만남",
+      "scene": "detailed illustrative narrative scene of encounter, cute slender stickman Travelers often encounter problems they did not expect., indoor room or outdoor setting, rich props",
       "status": "FAILED"
     },
     {
       "index": 15,
-      "id": "h1-135",
-      "word": "insurance",
-      "meaning": "보험, 보험금",
-      "scene": "detailed illustrative narrative scene of insurance, cute slender stickman My father pays for car insurance every single month., indoor room or outdoor setting, rich props",
-      "status": "FAILED"
+      "id": "h1-155",
+      "word": "surface",
+      "meaning": "표면, 겉, 외관",
+      "scene": "detailed illustrative narrative scene of surface, cute slender stickman The surface of the quiet lake was as smooth as glass., indoor room or outdoor setting, rich props",
+      "status": "SKIP_EXISTS",
+      "size_kb": 1092.9
     },
     {
       "index": 16,
-      "id": "h1-136",
-      "word": "period",
-      "meaning": "기간, 시대, 마침표",
-      "scene": "detailed illustrative narrative scene of period, cute slender stickman The artist lived during a difficult period of war., indoor room or outdoor setting, rich props",
+      "id": "h1-156",
+      "word": "conference",
+      "meaning": "회의, 학회, 협의",
+      "scene": "detailed illustrative narrative scene of conference, cute slender stickman Scientists from many countries attended the conference last week., indoor room or outdoor setting, rich props",
       "status": "FAILED"
     },
     {
       "index": 17,
-      "id": "h1-137",
-      "word": "modern",
-      "meaning": "현대의, 최신의",
-      "scene": "detailed illustrative narrative scene of modern, cute slender stickman This modern building looks very different from the old ones nearby., indoor room or outdoor setting, rich props",
+      "id": "h1-157",
+      "word": "policy",
+      "meaning": "방침, 정책, 보험증권",
+      "scene": "detailed illustrative narrative scene of policy, cute slender stickman Our school has a strict policy about using smartphones during class hours., indoor room or outdoor setting, rich props",
       "status": "FAILED"
     },
     {
       "index": 18,
-      "id": "h1-138",
-      "word": "nervous",
-      "meaning": "긴장한, 불안해 하는, 신경의",
-      "scene": "detailed illustrative narrative scene of nervous, cute slender stickman She felt nervous before her first speech in class., indoor room or outdoor setting, rich props",
+      "id": "h1-158",
+      "word": "spin",
+      "meaning": "회전, 회전운동; 돌다, 회전하다",
+      "scene": "detailed illustrative narrative scene of spin, cute slender stickman The dancer ended her show with a fast spin., indoor room or outdoor setting, rich props",
       "status": "FAILED"
     },
     {
       "index": 19,
-      "id": "h1-139",
-      "word": "instantly",
-      "meaning": "즉시, 즉각적으로",
-      "scene": "detailed illustrative narrative scene of instantly, cute slender stickman The dog recognized its owner instantly and ran over., indoor room or outdoor setting, rich props",
+      "id": "h1-159",
+      "word": "predict",
+      "meaning": "예측하다, 예보하다",
+      "scene": "detailed illustrative narrative scene of predict, cute slender stickman Scientists cannot predict exactly when a big earthquake will hit this area., indoor room or outdoor setting, rich props",
       "status": "FAILED"
     },
     {
       "index": 20,
-      "id": "h1-140",
-      "word": "contract",
-      "meaning": "계약(서); 계약하다",
-      "scene": "detailed illustrative narrative scene of contract, cute slender stickman They signed a two-year contract with the new company., indoor room or outdoor setting, rich props",
-      "status": "FAILED"
+      "id": "h1-160",
+      "word": "moment",
+      "meaning": "잠시, 잠깐",
+      "scene": "detailed illustrative narrative scene of moment, cute slender stickman For a moment, nobody in the room said a single word., indoor room or outdoor setting, rich props",
+      "status": "SKIP_EXISTS",
+      "size_kb": 810.1
     }
   ]
 }

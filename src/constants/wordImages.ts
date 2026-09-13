@@ -628,6 +628,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   past: require("../../assets/words/past.png"),
   patient: require("../../assets/words/patient.png"),
   pause: require("../../assets/words/pause.png"),
+  peaceful: require("../../assets/words/peaceful.png"),
   peer: require("../../assets/words/peer.png"),
   perhaps: require("../../assets/words/perhaps.png"),
   pesticide: require("../../assets/words/pesticide.png"),

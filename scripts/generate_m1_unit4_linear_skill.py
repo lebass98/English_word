@@ -223,22 +223,22 @@ def generate_unit4_linear(start_index=1, skip_existing=False):
         print(f"Scene: {scene}", flush=True)
 
         prompt = (
-            f"linear graphic illustration, complete richly detailed scene of {word}, "
+            f"linear graphic illustration, complete richly detailed scene of {scene}, "
             f"thinnest possible 0.05mm ultra-delicate needle-thin hairline ink stroke, "
             f"extremely fine crisp outlines drawn in dark charcoal ink color #030203, "
             f"flat smooth light gray canvas background color #f5f6f8, "
             f"neckless cute slender doodle stickman characters with round bald circle heads attached directly to torso with completely no neck, tiny smiling dot faces, "
-            f"{scene}, "
             f"abundant rich background details, furniture, wall decor, floor line, ambient props, "
-            f"strictly flat 2d linear graphic, no shading, no gradients, no solid black fills, empty background"
+            f"strictly flat 2d linear graphic, no shading, no gradients, no solid black fills, empty clean background, "
+            f"strictly English text only if any letters appear, absolutely no non-English characters, 100% pure English alphabet A-Z only, completely no Korean characters, strictly no Hangul, strictly no Chinese characters, completely non-Asian script, zero foreign glyphs"
         )
 
         negative_prompt = (
+            "non-English text, non-English characters, Korean text, Hangul, Korean letters, Chinese characters, Hanzi, Kanji, Japanese text, Kana, foreign script, pseudo-Hangul, weird Asian glyphs, oriental symbols, non-Latin alphabet, foreign writing, "
             "neck, long neck, throat, collar, neck line, detailed neck anatomy, "
-            "Korean text, Hangul, Korean letters, non-English text, broken characters, foreign characters, "
             "thick lines, bold outlines, heavy brush strokes, chunky lines, fat strokes, "
             "pure white #ffffff background, dark background, black background, 3d, realistic, shadow, shading, "
-            "color, gradients, photo, blur, watermark, text, signature"
+            "color, gradients, photo, blur, watermark, signature, messy"
         )
 
         payload = {

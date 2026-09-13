@@ -1,18 +1,27 @@
 #!/usr/bin/env python3
 """
-Draw Things '선형그래픽' 스킬 기반 고등학교 1학년 자동 연속 생성 및 유닛별 Git 동기화 스크립트
-- 고1 유닛 2부터 마지막 유닛(Unit 60)까지 순차 생성
+Draw Things '선형그래픽' 최신 스킬 기반 고등학교 1학년 자동 연속 생성 및 유닛별 Git 동기화 스크립트
+- 고1 유닛 3부터 지정 유닛까지 순차 생성
+- 최신 7대 핵심 원칙 100% 준수:
+  1. 1024x1024 해상도 네이티브 렌더링
+  2. 0.05mm 초극세 바늘선 (thinnest possible 0.05mm ultra-delicate needle-thin hairline ink stroke)
+  3. 목 없는(No-Neck) 머리-몸통 직접 연결 원형 머리 스틱맨
+  4. 배경 #f5f6f8, 선색 #030203
+  5. 풍성한 내러티브 씬 묘사
+  6. 후처리 효과 없는 순수 렌더링 보존
+  7. 100% 영문 전용 절대 원칙 (프롬프트/씬 비ASCII 문자 전면 배제, 영문 외 텍스트 철저 차단)
 - 각 유닛(20단어) 완료 시:
   1. sync_word_images.py 실행하여 wordImages.ts 자동 갱신
   2. find . -name '._*' -type f -delete (macOS 임시파일 정리)
   3. README.md에 일별 작업 내역 기록
-  4. Git commit (한글 메시지: feat: 고1 유닛 X 선형그래픽 일러스트 20단어 전원 생성 및 등록 완료)
+  4. Git commit (한글 메시지)
   5. Git pull --rebase origin main && git push origin main 동기화
-- 사용자가 중지하기 전까지 무한 연속 진행
+- 사용자가 중지하기 전까지 유닛 단위 연속 진행
 """
 
 import os
 import sys
+import re
 import json
 import time
 import base64
@@ -29,37 +38,49 @@ SYNC_SCRIPT = os.path.join(PROJECT_ROOT, "scripts", "sync_word_images.py")
 README_FILE = os.path.join(PROJECT_ROOT, "README.md")
 STATUS_FILE = os.path.join(SCRIPT_DIR, "h1_continuous_status.json")
 
-# Unit별 풍성한 선형그래픽 씬 콘셉트 사전
+# Unit별 고품질 영문 씬 콘셉트 프리셋 사전 (100% 순수 영문 전용)
 SCENE_PRESETS = {
-    # Unit 2 (h1-21 ~ h1-40)
-    "express": "art studio classroom, expressive cute slender stickman artist joyfully painting vibrant feelings on a tall easel canvas with a paintbrush, emotion smileys on wall chalkboard, palette and brushes",
-    "virtual": "modern tech living room, cute slender stickman wearing high-tech VR virtual reality goggles, reaching hands out happily touching floating 3d hologram geometric wireframe cubes in midair, futuristic console table",
-    "exclude": "school sports club court entrance, three cute slender stickmen playing basketball happily inside, while a fence gate has a polite sign and barrier keeping outsider outside, clear boundary and floor lines",
-    "enthusiasm": "school science fair auditorium booth, enthusiastic cute slender stickman student passionately explaining an energetic bubbling volcano model to excited gathered stickman classmates with wide cheering gestures",
-    "subject": "quiet library study desk, cute slender stickman student with open textbooks studying chemistry and history subjects diligently under a warm desk lamp, book stacks and pen holder",
-    "orphan": "warm cozy caring community home living room, gentle kind foster caregiver stickman reading a fairy tale picture book to two adorable little stickman children on a soft sofa, rocking horse and toys",
-    "biology": "biology high school science lab, curious cute slender stickman looking into a brass microscope examining green plant leaf cells on a glass slide, potted plants, botanical posters on wall",
-    "meanwhile": "split dual living room scene, on left side cute slender stickman happily cooking soup at kitchen stove, meanwhile on right side stickman brother sweeping floor with a broom, wall clock showing same time",
-    "lift": "bright fitness gym room, determined cute slender stickman weightlifter with chalked hands lifting a heavy steel barbell above shoulders, mirror on wall, dumbbell racks on rubber floor",
-    "precious": "antique jewelry heirloom store, cute slender stickman admiring a sparkling precious gemstone necklace inside an illuminated glass velvet display pedestal case, decorative ornamental wall mirror",
-    "witness": "busy city street pedestrian crossing, observant cute slender stickman witness standing on sidewalk pointing finger to report an incident to a police officer stickman taking notes on a notepad, vintage street lamp",
-    "spread": "sunny outdoor park picnic lawn, smiling cute slender stickman holding corners of a large red checkered picnic blanket spreading it wide open onto the soft grass, wicker picnic basket and shady trees",
-    "arise": "morning sunrise bedroom, happy cute slender stickman waking up and stretching arms wide as the morning sun rises above windowsill, alarm clock on nightstand, soft window curtain",
-    "pesticide": "sunny agricultural vegetable farm field, cute slender stickman farmer wearing protective wide hat and boots carefully spraying eco-friendly mist onto cabbage rows from a backpack sprayer tank, wooden farm fence",
-    "peer": "school hallway locker row, group of friendly teenage cute slender stickman peers chatting and laughing happily together between class periods, backpacks and bulletin board",
-    "element": "science chemistry laboratory classroom, smart cute slender stickman pointing to a large colorful Periodic Table of Elements chart on wall, test tubes on laboratory counter stand",
-    "oxygen": "lush sunny forest meadow, cute slender stickman breathing in deep fresh oxygen air with open arms among tall leafy green oak trees and fluttering butterflies, wild deer resting nearby",
-    "professor": "university lecture hall podium, wise cute slender stickman professor wearing spectacles lecturing with chalk in hand, drawing complex diagrams on a massive chalkboard, student desks in foreground",
-    "fame": "grand theater red carpet entrance, celebrated cute slender stickman celebrity waving politely to cheering crowd behind velvet rope, flashing camera lights on tripod, elegant theater marquee arch",
-    "psychology": "cozy mental wellness counseling clinic, thoughtful cute slender stickman psychologist holding a clipboard listening attentively to a client stickman seated on a comfortable armchair, indoor plant and soft bookshelf"
+    # Unit 3 (h1-41 ~ h1-60)
+    "aspect": "architectural design studio, two cute slender stickman architects examining a large miniature building model from different angles and aspects, blueprints and rulers on drafting table, large window",
+    "significant": "modern scientific research lab, excited cute slender stickman scientist pointing joyfully to a significant breakthrough spike graph on a glowing computer monitor, laboratory glassware and colleague clapping",
+    "melt": "warm cozy kitchen table, cute slender stickman watching a golden square of butter melt smoothly over a stack of warm hotcakes, steaming cup of cocoa, sunny window",
+    "advance": "futuristic robotics technology workshop, cute slender stickman engineer watching an advanced humanoid bipedal robot take its first successful forward steps, tool bench, computer screens and cables",
+    "marine": "deep blue oceanic research vessel laboratory, cute slender stickman marine biologist looking through glass porthole observing swimming sea turtles and coral reef, scientific water sampling tubes",
+    "solid": "cozy masonry workshop, strong cute slender stickman builder tapping a solid sturdy rectangular stone block with a hammer testing its solid durability, neatly stacked brick wall, mortar trowel",
+    "passage": "ancient castle library, cute slender stickman explorer holding a lantern walking through a secret hidden stone passage hallway between towering wooden bookshelves, stone arched doorway",
+    "master": "traditional artistic pottery studio, skilled cute slender stickman master craftsman gently shaping a smooth clay ceramic vase on a spinning pottery wheel, finished clay pots on wooden shelves",
+    "minute": "precision watchmaker workbench, focused cute slender stickman watchmaker using an eyepiece loupe and fine tweezers to adjust tiny minute delicate gear cogs inside an antique gold pocket watch, desk lamp",
+    "vision": "scenic hilltop observation deck, cute slender stickman leader holding a brass telescope looking into distant horizon at sunrise with clear future vision, wind blowing gently, mountain ridges",
+    "experiment": "chemistry science classroom, focused cute slender stickman student carefully pouring blue liquid into a bubbling glass flask with glowing bubbles, test tube rack, chalkboard equations",
+    "shelter": "mountain hillside during a rainy day, kind cute slender stickman guiding a friendly puppy into a sturdy wooden emergency shelter cabin porch away from rain droplets, warm lamp inside",
+    "commit": "community civic hall podium, dedicated cute slender stickman raising right hand committing solemnly to public duty and service, audience seated in auditorium chairs, flags in background",
+    "possible": "bright engineering workshop, innovative cute slender stickman successfully lighting up a floating magnetic light bulb proving the impossible possible, inspiring chalkboard notes, work tools",
+    "multiple": "high-tech control workstation, busy multitasking cute slender stickman operator managing multiple digital display monitors showing weather maps and data graphs simultaneously, swivel chair",
+    "routine": "bright sunny morning bedroom and bathroom, cute slender stickman following healthy morning routine, holding a toothbrush by the sink mirror, folded blanket on bed, wall calendar",
+    "tremendous": "scenic vista plateau, awe-struck cute slender stickman standing before a tremendous roaring waterfall cascading down grand rocky cliffs, rainbow mist, flying birds",
+    "crucial": "medical operating or engineering planning room, serious cute slender stickman specialist holding a crucial key blueprint blueprint component that fits into center mechanism, team watching closely",
+    "vast": "endless desert or ocean shore, tiny cute slender stickman standing atop a rolling sand dune gazing out at the vast infinite desert plains under a wide sky with distant mountain silhouettes",
+    "develop": "community garden or software startup studio, cute slender stickman nurturing a sprouting green plant sapling in rich soil while colleague codes on laptop, growing tall together, watering can"
 }
 
-def get_scene(word: str, word_info: dict, meaning: str) -> str:
+def clean_english_only(text: str) -> str:
+    """비영문 문자를 철저히 제거하고 공백을 정돈하여 100% 영문 텍스트만 남김"""
+    if not text:
+        return ""
+    cleaned = re.sub(r'[^\x00-\x7F]+', ' ', text)
+    cleaned = re.sub(r'[^a-zA-Z0-9,\.\-\s]', ' ', cleaned)
+    cleaned = re.sub(r'\s+', ' ', cleaned).strip()
+    return cleaned
+
+def get_scene(word: str, word_info: dict) -> str:
     if word in SCENE_PRESETS:
-        return SCENE_PRESETS[word]
+        return clean_english_only(SCENE_PRESETS[word])
     
     ex = word_info.get("example", "")
-    return f"illustrative narrative scene representing {word} ({meaning}), cute slender stickman engaged in meaningful action, {ex}, cozy room or outdoor setting, rich environmental props"
+    clean_ex = clean_english_only(ex)
+    if clean_ex:
+        return f"detailed illustrative narrative scene of {word}, cute slender stickman {clean_ex}, indoor room or outdoor setting, rich props"
+    return f"detailed illustrative narrative scene representing {word}, cute slender stickman engaged in meaningful action, cozy room or outdoor setting, rich environmental props"
 
 def save_status(data: dict):
     try:
@@ -84,7 +105,7 @@ def sync_and_commit_unit(unit_num: int, unit_words: list):
     word_list_str = ", ".join([w["word"] for w in unit_words])
     new_entry = (
         f"- 고등학교 1학년 Unit {unit_num} '선형그래픽' 스타일 단어 일러스트 20종 일괄 생성 및 등록 완료 (Draw Things 로컬 API 기반)\n"
-        f"  - 1024x1024 해상도, 0.05mm 초극세선, No-Neck 스틱맨 캐릭터, 뉴모피즘 캔버스 테마(#f5f6f8), 딥차콜 선(#030203), 영문 전용 씬 묘사 원칙 준수\n"
+        f"  - 1024x1024 해상도, 0.05mm 초극세선, No-Neck 스틱맨 캐릭터, 뉴모피즘 캔버스 테마(#f5f6f8), 딥차콜 선(#030203), 영문 전용 씬 묘사 최신 스킬 원칙 준수\n"
         f"  - 대상 단어: {word_list_str}\n"
         f"  - `sync_word_images.py` 스크립트를 통해 `src/constants/wordImages.ts` 레지스트리 일괄 갱신 완료\n"
     )
@@ -126,7 +147,7 @@ def generate_unit(unit_num: int, unit_words: list, skip_existing: bool = True):
     total = len(unit_words)
     print(f"\n==================================================", flush=True)
     print(f"▶ 고등학교 1학년 Unit {unit_num} '선형그래픽' 20개 단어 생성 시작 (h1-{(unit_num-1)*20+1} ~ h1-{unit_num*20})", flush=True)
-    print(f"규격: 1024x1024, 0.05mm 초극세선, No-Neck, 배경 #f5f6f8, 선색 #030203, 영문 전용", flush=True)
+    print(f"규격: 1024x1024, 0.05mm 초극세선, No-Neck, 배경 #f5f6f8, 선색 #030203, 100% 영문 전용 최신 스킬", flush=True)
     print(f"==================================================", flush=True)
 
     status_data = {
@@ -141,7 +162,7 @@ def generate_unit(unit_num: int, unit_words: list, skip_existing: bool = True):
         word = item["word"]
         word_id = item["id"]
         meaning = item["meaning"]
-        scene = item["scene"]
+        scene = clean_english_only(item["scene"])
         file_name = word.replace(" ", "-")
         out_path = os.path.join(ASSETS_DIR, f"{file_name}.png")
 
@@ -155,6 +176,8 @@ def generate_unit(unit_num: int, unit_words: list, skip_existing: bool = True):
                 "index": idx,
                 "id": word_id,
                 "word": word,
+                "meaning": meaning,
+                "scene": scene,
                 "status": "SKIP_EXISTS",
                 "size_kb": file_size_kb
             })
@@ -165,22 +188,22 @@ def generate_unit(unit_num: int, unit_words: list, skip_existing: bool = True):
         print(f"Scene: {scene}", flush=True)
 
         prompt = (
-            f"linear graphic illustration, complete richly detailed scene of {word}, "
+            f"linear graphic illustration, complete richly detailed scene of {scene}, "
             f"thinnest possible 0.05mm ultra-delicate needle-thin hairline ink stroke, "
             f"extremely fine crisp outlines drawn in dark charcoal ink color #030203, "
             f"flat smooth light gray canvas background color #f5f6f8, "
             f"neckless cute slender doodle stickman characters with round bald circle heads attached directly to torso with completely no neck, tiny smiling dot faces, "
-            f"{scene}, "
             f"abundant rich background details, furniture, wall decor, floor line, ambient props, "
-            f"strictly flat 2d linear graphic, no shading, no gradients, no solid black fills, empty background"
+            f"strictly flat 2d linear graphic, no shading, no gradients, no solid black fills, empty clean background, "
+            f"strictly English text only if any letters appear, absolutely no non-English characters, 100% pure English alphabet A-Z only, completely no Korean characters, strictly no Hangul, strictly no Chinese characters, completely non-Asian script, zero foreign glyphs"
         )
 
         negative_prompt = (
+            "non-English text, non-English characters, Korean text, Hangul, Korean letters, Chinese characters, Hanzi, Kanji, Japanese text, Kana, foreign script, pseudo-Hangul, weird Asian glyphs, oriental symbols, non-Latin alphabet, foreign writing, "
             "neck, long neck, throat, collar, neck line, detailed neck anatomy, "
-            "Korean text, Hangul, Korean letters, non-English text, broken characters, foreign characters, "
             "thick lines, bold outlines, heavy brush strokes, chunky lines, fat strokes, "
             "pure white #ffffff background, dark background, black background, 3d, realistic, shadow, shading, "
-            "color, gradients, photo, blur, watermark, text, signature"
+            "color, gradients, photo, blur, watermark, signature, messy"
         )
 
         payload = {
@@ -219,6 +242,8 @@ def generate_unit(unit_num: int, unit_words: list, skip_existing: bool = True):
                     "index": idx,
                     "id": word_id,
                     "word": word,
+                    "meaning": meaning,
+                    "scene": scene,
                     "status": "SUCCESS",
                     "elapsed_sec": round(elapsed, 1),
                     "size_kb": file_size_kb
@@ -236,6 +261,8 @@ def generate_unit(unit_num: int, unit_words: list, skip_existing: bool = True):
                 "index": idx,
                 "id": word_id,
                 "word": word,
+                "meaning": meaning,
+                "scene": scene,
                 "status": "FAILED"
             })
             save_status(status_data)
@@ -244,8 +271,8 @@ def generate_unit(unit_num: int, unit_words: list, skip_existing: bool = True):
     sync_and_commit_unit(unit_num, unit_words)
 
 def main():
-    parser = argparse.ArgumentParser(description="고등학교 1학년 연속 자동 생성 스크립트")
-    parser.add_argument("--start-unit", type=int, default=2, help="시작할 유닛 번호 (기본값: 2)")
+    parser = argparse.ArgumentParser(description="고등학교 1학년 연속 자동 생성 스크립트 (최신 선형그래픽 스킬 적용)")
+    parser.add_argument("--start-unit", type=int, default=3, help="시작할 유닛 번호 (기본값: 3)")
     parser.add_argument("--end-unit", type=int, default=60, help="종료할 유닛 번호 (기본값: 60)")
     parser.add_argument("--skip-existing", action="store_true", default=True, help="기존 이미지 스킵 (기본값: True)")
     args = parser.parse_args()
@@ -266,7 +293,7 @@ def main():
     total_units = (total_words + 19) // 20
 
     print("==================================================", flush=True)
-    print(f"고등학교 1학년 자동 연속 생성 파이프라인 가동", flush=True)
+    print(f"고등학교 1학년 자동 연속 생성 파이프라인 가동 (최신 스킬 재적용)", flush=True)
     print(f"시작 유닛: Unit {args.start_unit} ~ 종료 유닛: Unit {args.end_unit} (총 {total_units}유닛)", flush=True)
     print("각 유닛 완료 시: 레지스트리 동기화 -> README 내역 갱신 -> 한글 커밋 -> 자동 Push", flush=True)
     print("==================================================", flush=True)
@@ -284,7 +311,7 @@ def main():
             w_id = f"h1-{global_idx}"
             meaning = tr_data.get("meanings", {}).get(w_id, "")
             info = words_dict.get(w, {})
-            scene = get_scene(w, info, meaning)
+            scene = get_scene(w, info)
             unit_items.append({
                 "id": w_id,
                 "word": w,

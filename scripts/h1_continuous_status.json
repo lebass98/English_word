@@ -1,164 +1,207 @@
 {
-  "unit": 2,
+  "unit": 3,
   "total": 20,
-  "current_word": "psychology",
+  "current_word": "develop",
   "current_index": 20,
   "items": [
     {
       "index": 1,
-      "id": "h1-21",
-      "word": "express",
+      "id": "h1-41",
+      "word": "aspect",
+      "meaning": "측면, 양상, 국면",
+      "scene": "architectural design studio, two cute slender stickman architects examining a large miniature building model from different angles and aspects, blueprints and rulers on drafting table, large window",
       "status": "SUCCESS",
-      "elapsed_sec": 176.0,
-      "size_kb": 786.8
+      "elapsed_sec": 273.9,
+      "size_kb": 1179.0
     },
     {
       "index": 2,
-      "id": "h1-22",
-      "word": "virtual",
+      "id": "h1-42",
+      "word": "significant",
+      "meaning": "중요한, 의미 있는, 상당한, 현저한",
+      "scene": "modern scientific research lab, excited cute slender stickman scientist pointing joyfully to a significant breakthrough spike graph on a glowing computer monitor, laboratory glassware and colleague clapping",
       "status": "SUCCESS",
-      "elapsed_sec": 221.2,
-      "size_kb": 802.9
+      "elapsed_sec": 211.8,
+      "size_kb": 857.3
     },
     {
       "index": 3,
-      "id": "h1-23",
-      "word": "exclude",
+      "id": "h1-43",
+      "word": "melt",
+      "meaning": "녹이다, 녹다, 차차 없어지다",
+      "scene": "warm cozy kitchen table, cute slender stickman watching a golden square of butter melt smoothly over a stack of warm hotcakes, steaming cup of cocoa, sunny window",
       "status": "SUCCESS",
-      "elapsed_sec": 234.9,
-      "size_kb": 749.9
+      "elapsed_sec": 213.3,
+      "size_kb": 880.6
     },
     {
       "index": 4,
-      "id": "h1-24",
-      "word": "enthusiasm",
+      "id": "h1-44",
+      "word": "advance",
+      "meaning": "진보하다, 다가가다; 진보, 발전",
+      "scene": "futuristic robotics technology workshop, cute slender stickman engineer watching an advanced humanoid bipedal robot take its first successful forward steps, tool bench, computer screens and cables",
       "status": "SUCCESS",
-      "elapsed_sec": 254.4,
-      "size_kb": 902.1
+      "elapsed_sec": 211.1,
+      "size_kb": 826.6
     },
     {
       "index": 5,
-      "id": "h1-25",
-      "word": "subject",
-      "status": "SKIP_EXISTS",
-      "size_kb": 881.5
+      "id": "h1-45",
+      "word": "marine",
+      "meaning": "해양의, 바다의",
+      "scene": "deep blue oceanic research vessel laboratory, cute slender stickman marine biologist looking through glass porthole observing swimming sea turtles and coral reef, scientific water sampling tubes",
+      "status": "SUCCESS",
+      "elapsed_sec": 208.6,
+      "size_kb": 1143.4
     },
     {
       "index": 6,
-      "id": "h1-26",
-      "word": "orphan",
+      "id": "h1-46",
+      "word": "solid",
+      "meaning": "고체인, 단단한; 고체",
+      "scene": "cozy masonry workshop, strong cute slender stickman builder tapping a solid sturdy rectangular stone block with a hammer testing its solid durability, neatly stacked brick wall, mortar trowel",
       "status": "SUCCESS",
-      "elapsed_sec": 248.6,
-      "size_kb": 812.8
+      "elapsed_sec": 210.2,
+      "size_kb": 779.1
     },
     {
       "index": 7,
-      "id": "h1-27",
-      "word": "biology",
-      "status": "SKIP_EXISTS",
-      "size_kb": 407.4
+      "id": "h1-47",
+      "word": "passage",
+      "meaning": "통과, 통행, 통로",
+      "scene": "ancient castle library, cute slender stickman explorer holding a lantern walking through a secret hidden stone passage hallway between towering wooden bookshelves, stone arched doorway",
+      "status": "SUCCESS",
+      "elapsed_sec": 209.6,
+      "size_kb": 1654.2
     },
     {
       "index": 8,
-      "id": "h1-28",
-      "word": "meanwhile",
+      "id": "h1-48",
+      "word": "master",
+      "meaning": "통달하다, 숙달하다; 주인, 달인",
+      "scene": "traditional artistic pottery studio, skilled cute slender stickman master craftsman gently shaping a smooth clay ceramic vase on a spinning pottery wheel, finished clay pots on wooden shelves",
       "status": "SUCCESS",
-      "elapsed_sec": 251.8,
-      "size_kb": 1092.6
+      "elapsed_sec": 207.9,
+      "size_kb": 1135.9
     },
     {
       "index": 9,
-      "id": "h1-29",
-      "word": "lift",
-      "status": "SKIP_EXISTS",
-      "size_kb": 761.5
+      "id": "h1-49",
+      "word": "minute",
+      "meaning": "(시간의) 분; 미세한, 세심한; 순간, 잠깐",
+      "scene": "precision watchmaker workbench, focused cute slender stickman watchmaker using an eyepiece loupe and fine tweezers to adjust tiny minute delicate gear cogs inside an antique gold pocket watch, desk lamp",
+      "status": "SUCCESS",
+      "elapsed_sec": 211.2,
+      "size_kb": 1020.3
     },
     {
       "index": 10,
-      "id": "h1-30",
-      "word": "precious",
-      "status": "SKIP_EXISTS",
-      "size_kb": 786.8
+      "id": "h1-50",
+      "word": "vision",
+      "meaning": "시력, 시야, 환상",
+      "scene": "scenic hilltop observation deck, cute slender stickman leader holding a brass telescope looking into distant horizon at sunrise with clear future vision, wind blowing gently, mountain ridges",
+      "status": "SUCCESS",
+      "elapsed_sec": 210.9,
+      "size_kb": 1003.4
     },
     {
       "index": 11,
-      "id": "h1-31",
-      "word": "witness",
+      "id": "h1-51",
+      "word": "experiment",
+      "meaning": "실험, 실험 장치; 실험하다",
+      "scene": "chemistry science classroom, focused cute slender stickman student carefully pouring blue liquid into a bubbling glass flask with glowing bubbles, test tube rack, chalkboard equations",
       "status": "SUCCESS",
-      "elapsed_sec": 252.7,
-      "size_kb": 1161.9
+      "elapsed_sec": 208.4,
+      "size_kb": 902.7
     },
     {
       "index": 12,
-      "id": "h1-32",
-      "word": "spread",
+      "id": "h1-52",
+      "word": "shelter",
+      "meaning": "보호소, 대피, 주거지; 보호하다, 쉴 곳을 제공하다",
+      "scene": "mountain hillside during a rainy day, kind cute slender stickman guiding a friendly puppy into a sturdy wooden emergency shelter cabin porch away from rain droplets, warm lamp inside",
       "status": "SUCCESS",
-      "elapsed_sec": 252.8,
-      "size_kb": 1135.7
+      "elapsed_sec": 210.1,
+      "size_kb": 836.7
     },
     {
       "index": 13,
-      "id": "h1-33",
-      "word": "arise",
+      "id": "h1-53",
+      "word": "commit",
+      "meaning": "(범죄를) 저지르다, (활동 등에) 전념하다",
+      "scene": "community civic hall podium, dedicated cute slender stickman raising right hand committing solemnly to public duty and service, audience seated in auditorium chairs, flags in background",
       "status": "SUCCESS",
-      "elapsed_sec": 256.1,
-      "size_kb": 737.6
+      "elapsed_sec": 208.7,
+      "size_kb": 1003.4
     },
     {
       "index": 14,
-      "id": "h1-34",
-      "word": "pesticide",
-      "status": "SUCCESS",
-      "elapsed_sec": 273.4,
-      "size_kb": 933.4
+      "id": "h1-54",
+      "word": "possible",
+      "meaning": "가능한",
+      "scene": "bright engineering workshop, innovative cute slender stickman successfully lighting up a floating magnetic light bulb proving the impossible possible, inspiring chalkboard notes, work tools",
+      "status": "SKIP_EXISTS",
+      "size_kb": 874.0
     },
     {
       "index": 15,
-      "id": "h1-35",
-      "word": "peer",
+      "id": "h1-55",
+      "word": "multiple",
+      "meaning": "여러, 다수의",
+      "scene": "high-tech control workstation, busy multitasking cute slender stickman operator managing multiple digital display monitors showing weather maps and data graphs simultaneously, swivel chair",
       "status": "SUCCESS",
-      "elapsed_sec": 277.3,
-      "size_kb": 879.0
+      "elapsed_sec": 208.0,
+      "size_kb": 969.1
     },
     {
       "index": 16,
-      "id": "h1-36",
-      "word": "element",
+      "id": "h1-56",
+      "word": "routine",
+      "meaning": "일과, 일상의 일; 일상적인",
+      "scene": "bright sunny morning bedroom and bathroom, cute slender stickman following healthy morning routine, holding a toothbrush by the sink mirror, folded blanket on bed, wall calendar",
       "status": "SUCCESS",
-      "elapsed_sec": 251.7,
-      "size_kb": 958.4
+      "elapsed_sec": 208.1,
+      "size_kb": 679.2
     },
     {
       "index": 17,
-      "id": "h1-37",
-      "word": "oxygen",
+      "id": "h1-57",
+      "word": "tremendous",
+      "meaning": "엄청난, 대단한",
+      "scene": "scenic vista plateau, awe-struck cute slender stickman standing before a tremendous roaring waterfall cascading down grand rocky cliffs, rainbow mist, flying birds",
       "status": "SUCCESS",
-      "elapsed_sec": 254.0,
-      "size_kb": 1528.2
+      "elapsed_sec": 209.7,
+      "size_kb": 1359.0
     },
     {
       "index": 18,
-      "id": "h1-38",
-      "word": "professor",
+      "id": "h1-58",
+      "word": "crucial",
+      "meaning": "매우 중요한, 결정적인",
+      "scene": "medical operating or engineering planning room, serious cute slender stickman specialist holding a crucial key blueprint blueprint component that fits into center mechanism, team watching closely",
       "status": "SUCCESS",
-      "elapsed_sec": 251.5,
-      "size_kb": 1292.8
+      "elapsed_sec": 213.8,
+      "size_kb": 871.2
     },
     {
       "index": 19,
-      "id": "h1-39",
-      "word": "fame",
+      "id": "h1-59",
+      "word": "vast",
+      "meaning": "엄청난, 막대한, 광활한",
+      "scene": "endless desert or ocean shore, tiny cute slender stickman standing atop a rolling sand dune gazing out at the vast infinite desert plains under a wide sky with distant mountain silhouettes",
       "status": "SUCCESS",
-      "elapsed_sec": 249.9,
-      "size_kb": 1068.2
+      "elapsed_sec": 211.9,
+      "size_kb": 801.8
     },
     {
       "index": 20,
-      "id": "h1-40",
-      "word": "psychology",
+      "id": "h1-60",
+      "word": "develop",
+      "meaning": "개발하다, 발전하다",
+      "scene": "community garden or software startup studio, cute slender stickman nurturing a sprouting green plant sapling in rich soil while colleague codes on laptop, growing tall together, watering can",
       "status": "SUCCESS",
-      "elapsed_sec": 249.2,
-      "size_kb": 733.7
+      "elapsed_sec": 211.0,
+      "size_kb": 866.7
     }
   ]
 }

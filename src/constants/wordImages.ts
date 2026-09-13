@@ -314,6 +314,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   engage: require("../../assets/words/engage.png"),
   engineer: require("../../assets/words/engineer.png"),
   enhance: require("../../assets/words/enhance.png"),
+  enjoy: require("../../assets/words/enjoy.png"),
   enough: require("../../assets/words/enough.png"),
   enthusiasm: require("../../assets/words/enthusiasm.png"),
   entire: require("../../assets/words/entire.png"),

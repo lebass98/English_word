@@ -32,6 +32,8 @@ npm run lint     # ESLint
 
 ### 2026-09-13
 - 중1 50단원 빠진 그림 1장 Draw Things 선형그래픽으로 생성 및 등록
+  - 대상 단어: flow
+- 중1 50단원 빠진 그림 1장 Draw Things 선형그래픽으로 생성 및 등록
   - 대상 단어: whistle
 - 중1 49단원 빠진 그림 1장 Draw Things 선형그래픽으로 생성 및 등록
   - 대상 단어: check

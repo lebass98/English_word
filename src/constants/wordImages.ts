@@ -378,6 +378,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   flight: require("../../assets/words/flight.png"),
   float: require("../../assets/words/float.png"),
   flood: require("../../assets/words/flood.png"),
+  flow: require("../../assets/words/flow.png"),
   fog: require("../../assets/words/fog.png"),
   folk: require("../../assets/words/folk.png"),
   follow: require("../../assets/words/follow.png"),

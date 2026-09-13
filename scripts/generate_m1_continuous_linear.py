@@ -1995,6 +1995,170 @@ UNIT_DATA = {
             "id": "m1-580", "word": "probably", "meaning": "아마",
             "scene": "sunny front porch walkway, thoughtful cute slender stickman looking up at clearing blue sky seeing sun peek out from clouds noting it will probably be a lovely sunny day"
         }
+    ]    ,
+    30: [
+        {
+            "id": "m1-581", "word": "perhaps", "meaning": "아마",
+            "scene": "school gymnasium locker room, thoughtful cute slender stickman tapping chin thinking perhaps forgotten brass keys are still safely inside the gym locker, sports bench"
+        },
+        {
+            "id": "m1-582", "word": "maybe", "meaning": "아마",
+            "scene": "front hallway umbrella stand, cautious cute slender stickman checking cloudy gray sky out open doorway deciding maybe it is wise to carry an umbrella, rain boots on floor"
+        },
+        {
+            "id": "m1-583", "word": "amateur", "meaning": "아마추어",
+            "scene": "cozy living room armchair, passionate cute slender stickman amateur musician smiling warmly strumming an acoustic wooden guitar playing lovely melodic chords, sheet music stand"
+        },
+        {
+            "id": "m1-584", "word": "none", "meaning": "아무것도 ~없다",
+            "scene": "classroom blackboard, curious student stickmen sitting around desk looking thoughtfully at an empty chalk problem board seeing none of them had the difficult riddle answer"
+        },
+        {
+            "id": "m1-585", "word": "quite", "meaning": "아주, 꽤",
+            "scene": "school auditorium stage, confident cute slender stickman speaking with quite a clear booming loud voice into podium microphone echoing clearly across the grand assembly hall"
+        },
+        {
+            "id": "m1-586", "word": "ache", "meaning": "아프다, 쑤시다",
+            "scene": "cozy mountain cabin fireplace hearth, tired cute slender stickman hiker sitting massaging weary aching calf muscles with gentle smile after a long day of rewarding mountain hiking"
+        },
+        {
+            "id": "m1-587", "word": "sore", "meaning": "아픈",
+            "scene": "bedroom armchair, caring cute slender stickman resting wrapped in a warm knitted woolen scarf holding hand gently to sore throat while sipping warm honey tea from mug"
+        },
+        {
+            "id": "m1-588", "word": "sick", "meaning": "아픈, 병이 든",
+            "scene": "warm bedroom bed, patient cute slender stickman resting comfortably tucked under cozy blanket with thermometer on nightstand, caring friend stickman visiting with fresh soup bowl"
+        },
+        {
+            "id": "m1-589", "word": "instrument", "meaning": "악기, 계기판",
+            "scene": "music instrument shop showroom, delighted cute slender stickman holding a polished shiny brass saxophone exploring musical instruments, violin and guitar hanging on wall"
+        },
+        {
+            "id": "m1-590", "word": "devil", "meaning": "악마",
+            "scene": "storybook puppet theater stage, playful cute slender stickman puppeteer holding up a humorous whimsical cartoon little red devil puppet with tiny horns in storytelling show"
+        },
+        {
+            "id": "m1-591", "word": "evil", "meaning": "악마, 악",
+            "scene": "fairy tale illustrated storybook desk, thoughtful cute slender stickman reading a classic fable showing noble knight defending peaceful village from cartoon shadowy dragon evil"
+        },
+        {
+            "id": "m1-592", "word": "handshake", "meaning": "악수",
+            "scene": "business conference room, two smiling professional cute slender stickman partners exchanging a firm respectful mutual handshake in complete agreement, contract folder on desk"
+        },
+        {
+            "id": "m1-593", "word": "fog", "meaning": "안개",
+            "scene": "scenic coastal mountain road, cautious cute slender stickman hiker with walking staff gazing into thick atmospheric swirling white morning fog rolling over pine trees"
+        },
+        {
+            "id": "m1-594", "word": "guide", "meaning": "안내자, 안내하다",
+            "scene": "historic palace courtyard, friendly knowledgeable cute slender stickman tour guide holding a small tour flag explaining ancient stone architecture to eager tourist stickmen"
+        },
+        {
+            "id": "m1-595", "word": "comfort", "meaning": "안락, 위안",
+            "scene": "cozy living room fireplace, deeply relaxed cute slender stickman sinking into a plush upholstered armchair feeling soothing warm comfort after a long productive workday"
+        },
+        {
+            "id": "m1-596", "word": "safely", "meaning": "안전하게",
+            "scene": "airport tarmac runway, relieved cute slender stickman passenger looking out airplane window smiling seeing the passenger jetliner touch down smoothly and safely on runway"
+        },
+        {
+            "id": "m1-597", "word": "inner", "meaning": "안쪽의",
+            "scene": "cozy entryway coat rack, tidy cute slender stickman reaching hand inside the secure zippered inner pocket of a winter jacket to retrieve a gleaming brass door key"
+        },
+        {
+            "id": "m1-598", "word": "alarm", "meaning": "알람, 주의",
+            "scene": "bedroom nightstand desk, punctual cute slender stickman reaching out smiling hand to turn off a ringing round vintage twin-bell alarm clock at sunrise, morning window light"
+        },
+        {
+            "id": "m1-599", "word": "pill", "meaning": "알약",
+            "scene": "dining room kitchen counter, conscientious cute slender stickman holding a tiny round medicinal vitamin pill in palm beside a clear glass of fresh water, medicine bottle"
+        },
+        {
+            "id": "m1-600", "word": "alphabet", "meaning": "알파벳",
+            "scene": "elementary classroom whiteboard, cheerful cute slender stickman teacher pointing with wooden pointer at a vibrant complete English alphabet chart from A to Z on wall"
+        }
+    ]    ,
+    31: [
+        {
+            "id": "m1-601", "word": "stress", "meaning": "압박, 강조하다",
+            "scene": "quiet yoga meditation room, peaceful cute slender stickman sitting cross-legged on mat breathing deeply releasing workday stress and tension, potted bamboo and soft lighting"
+        },
+        {
+            "id": "m1-602", "word": "front", "meaning": "앞",
+            "scene": "sunlit school campus, proud cute slender stickman student standing right in front of the grand classical front facade entrance of the school building, flowerbeds and walkway"
+        },
+        {
+            "id": "m1-603", "word": "ahead", "meaning": "앞서서",
+            "scene": "scenic countryside hiking trail, energetic cute slender stickman walking briskly ahead on winding mountain path turning around smiling gesturing friends to follow along"
+        },
+        {
+            "id": "m1-604", "word": "forward", "meaning": "앞으로",
+            "scene": "sports athletics running track, determined cute slender stickman runner leaning body forward driving knees high sprinting energetically forward toward the finish line"
+        },
+        {
+            "id": "m1-605", "word": "pet", "meaning": "애완동물",
+            "scene": "sunny backyard garden lawn, affectionate cute slender stickman sitting on green grass gently petting the soft fur of a happy loving golden puppy wagging tail joyfully"
+        },
+        {
+            "id": "m1-606", "word": "wild", "meaning": "야생의",
+            "scene": "vast wilderness mountain meadow, curious cute slender stickman hiker observing a magnificent wild stag deer standing proudly among pine trees in untouched wild nature"
+        },
+        {
+            "id": "m1-607", "word": "drugstore", "meaning": "약국",
+            "scene": "neighborhood street corner, neat cute slender stickman walking into a welcoming illuminated drugstore with pharmacy cross sign to pick up health supplies, tidy shelves"
+        },
+        {
+            "id": "m1-608", "word": "promise", "meaning": "약속",
+            "scene": "sunny park bench, two loyal cute slender stickman best friends locking pinky fingers in an earnest warm heartfelt pinky promise of lifelong friendship, smiling faces"
+        },
+        {
+            "id": "m1-609", "word": "weak", "meaning": "약한",
+            "scene": "physical therapy recovery gym, persevering cute slender stickman gently practicing light resistance band exercises to strengthen weak leg muscles, encouraging therapist stickman"
+        },
+        {
+            "id": "m1-610", "word": "thin", "meaning": "얇은",
+            "scene": "calligraphy studio window, artistic cute slender stickman holding up a sheet of delicate ultra-thin translucent parchment paper to the sun admiring its fine texture, ink stone"
+        },
+        {
+            "id": "m1-611", "word": "sheep", "meaning": "양",
+            "scene": "picturesque rolling green hillside, gentle cute slender stickman shepherd resting with wooden crook watching a flock of fluffy white sheep grazing peacefully on pasture knoll"
+        },
+        {
+            "id": "m1-612", "word": "amount", "meaning": "양, 액수, 총액",
+            "scene": "bakery kitchen measuring counter, precise cute slender stickman baker pouring an exact measured amount of white flour from measuring cup onto stainless digital kitchen scale"
+        },
+        {
+            "id": "m1-613", "word": "shoulder", "meaning": "어깨",
+            "scene": "hiking trail rest bench, relaxed cute slender stickman adjusting backpack shoulder straps taking weight off shoulders sitting under shady oak tree, water bottle on bench"
+        },
+        {
+            "id": "m1-614", "word": "shrug", "meaning": "어깨를 으쓱이다",
+            "scene": "classroom desk, cheerful humorous cute slender stickman playfully lifting and shrugging both shoulders with open palms with a carefree good-natured smile, notebook on desk"
+        },
+        {
+            "id": "m1-615", "word": "dark", "meaning": "어두운",
+            "scene": "bedroom nightstand, cozy cute slender stickman switching off bedside lamp settling into bed as room transitions into peaceful restful dark starry night, moon outside window"
+        },
+        {
+            "id": "m1-616", "word": "difficult", "meaning": "어려운",
+            "scene": "study room desk blackboard, determined studious cute slender stickman scratching head working through a difficult challenging mathematics geometry problem with perseverance"
+        },
+        {
+            "id": "m1-617", "word": "adult", "meaning": "어른, 성인",
+            "scene": "civic voter registration office, proud mature cute slender stickman receiving official voter registration card celebrating milestone transition into responsible adult citizen"
+        },
+        {
+            "id": "m1-618", "word": "silly", "meaning": "어리석은, 우스꽝스러운",
+            "scene": "party photo booth corner, funny playful cute slender stickman wearing an oversized silly polka-dot bowtie and funny party glasses making friends laugh in good-natured fun"
+        },
+        {
+            "id": "m1-619", "word": "foolish", "meaning": "어리석은",
+            "scene": "rainy street sidewalk, rueful cute slender stickman standing under shop awning realizing how foolish it was to leave umbrella behind at home, smiling shaking wet jacket"
+        },
+        {
+            "id": "m1-620", "word": "anyway", "meaning": "어쨌든",
+            "scene": "outdoor park walking path in light drizzle, cheerful adventurous cute slender stickman pulling up jacket hood smiling warmly deciding to enjoy the scenic walk anyway, park trees"
+        }
     ]
 }
 

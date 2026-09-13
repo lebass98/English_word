@@ -31,6 +31,11 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-13
+- 고등학교 1학년 Unit 2 '선형그래픽' 스타일 단어 일러스트 20종 일괄 생성 및 등록 완료 (Draw Things 로컬 API 기반)
+  - 1024x1024 해상도, 0.05mm 초극세선, No-Neck 스틱맨 캐릭터, 뉴모피즘 캔버스 테마(#f5f6f8), 딥차콜 선(#030203), 영문 전용 씬 묘사 원칙 준수
+  - 대상 단어: express, virtual, exclude, enthusiasm, subject, orphan, biology, meanwhile, lift, precious, witness, spread, arise, pesticide, peer, element, oxygen, professor, fame, psychology
+  - `sync_word_images.py` 스크립트를 통해 `src/constants/wordImages.ts` 레지스트리 일괄 갱신 완료
+
 - 고등학교 1학년 Unit 1 '선형그래픽' 스타일 단어 일러스트 20종 일괄 생성 및 등록 완료 (Draw Things 로컬 API 기반)
   - 1024x1024 해상도, 0.05mm 초극세선, No-Neck 스틱맨 캐릭터, 뉴모피즘 캔버스 테마(#f5f6f8), 딥차콜 선(#030203), 영문 전용 씬 묘사 원칙 준수
   - 대상 단어: present, compare, tune, trigger, obvious, return, particle, carve, mechanic, convince, rely, nature, voyage, military, replace, inquire, resource, demand, humor, obstacle

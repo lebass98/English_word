@@ -545,6 +545,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   machine: require("../../assets/words/machine.png"),
   magazine: require("../../assets/words/magazine.png"),
   mail: require("../../assets/words/mail.png"),
+  main: require("../../assets/words/main.png"),
   mammal: require("../../assets/words/mammal.png"),
   mankind: require("../../assets/words/mankind.png"),
   marble: require("../../assets/words/marble.png"),

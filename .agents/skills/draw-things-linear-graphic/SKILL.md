@@ -14,27 +14,36 @@ description: >-
 
 ---
 
-## 🎨 선형그래픽 6대 핵심 원칙
+## 🎨 선형그래픽 및 3~3.5등신 픽토그램 캐릭터 조형 원칙
 
-1. **초극세 바늘선 (0.05mm Hairline)**:
-   - 512px 업스케일 방식을 쓰지 않고, **1024×1024 네이티브 해상도**로 직접 생성하여 선 굵기를 초기부터 가장 얇게 렌더링합니다.
-   - 프롬프트 키워드: `thinnest possible 0.05mm ultra-delicate needle-thin hairline ink stroke`, `extremely fine crisp outlines`.
-2. **목 없는(No-Neck) 머리-몸통 직접 연결 캐릭터**:
-   - 사람/스틱맨 캐릭터는 **목을 절대 생성하지 않고, 동그란 머리가 몸통에 바로 부착**되도록 구성합니다.
-   - 긍정 프롬프트: `neckless cute doodle stickman, perfectly round circle head attached directly to torso with completely no neck, neckless stick figure`.
-   - 부정 프롬프트: `neck, long neck, throat, collar, neck line, detailed neck anatomy`.
-3. **배경 색상코드 `#f5f6f8`**:
-   - 뉴모피즘 캔버스 테마와 완벽히 일치하는 소프트 라이트그레이 톤 (`flat smooth light gray canvas background color #f5f6f8`).
-4. **선 색상코드 `#030203`**:
-   - 순수 칠흑색에 가까운 딥 차콜 블랙 잉크 (`dark charcoal ink color #030203`).
-5. **풍성한 씬 (Rich Scene Content)**:
-   - 인물 1명만 덩그러니 있는 것이 아니라, 배경 가구, 벽면 장식(시계, 책장, 조명), 바닥선, 소품, 2~4명의 귀여운 원형 머리 스틱맨 동료들의 상호작용을 풍성하게 묘사합니다.
+1. **전체적인 비율 및 실루엣 (3~3.5등신 SD 비율 & 유연한 곡선 & 화면별 자유로운 크기 조절)**:
+   - 몸체에 비해 머리가 확연히 큰 **3~3.5등신 SD(Super Deformed) 비율**을 적용해 친근하고 직관적인 인상을 줍니다.
+   - 각진 모서리나 해부학적인 골격 굴곡(쇄골, 어깨 각도, 척추 라인 등)을 철저히 배제하고 완만한 곡선 위주로 매끄럽게 이어집니다.
+   - **화면에 따른 캐릭터 크기 자유 조절**: 씬의 구도, 공간감, 배경 환경(넓은 실내, 야외 풍경, 거대한 건축물 등)에 따라 캐릭터의 크기를 화면에 꽉 채우지 않고 **자유롭게 축소(scale down)하여 배치**할 수 있습니다. 배경과 조화롭게 어우러지도록 유연하게 스케일을 조절합니다.
+   - 프롬프트 키워드: `3 to 3.5 head-to-body chibi SD ratio cute character, large prominent smooth spherical bald round head, gentle organic curving silhouette, flexible character scale freely scaled down to fit spacious environment and background framing, balanced scene composition`.
+2. **두상 및 이목구비 (구형 민머리 & 점/선 압축 얼굴)**:
+   - **매끄러운 구형 민머리**: 귀, 머리카락, 헤어라인, 턱선이 일절 생략된 매끄러운 원형/구형 두상입니다.
+   - **점과 선으로 압축된 이목구비**: 흰자위나 동공 없이 단순한 **두 개의 검은 점(Dot) 눈**과 얇은 호선 형태의 **가벼운 미소선(Smile line) 입** 하나로만 표현합니다. 코, 눈썹, 입술 두께, 치아는 일절 묘사하지 않습니다.
+   - 프롬프트 키워드: `smooth spherical bald round head with completely no ears and no hair, minimalist dot and line face, two simple solid black dot eyes and a tiny thin curved smile line, strictly no nose, no eyebrows, no lips, no teeth`.
+3. **몸통 및 사지 (목 없는 일체 튜브형 & 관절 생략 & 벙어리장갑 손/패드 발)**:
+   - **원통형 일체 몸체**: 목 주름, 가슴 근육, 허리 굴곡 없이 상체와 하체가 일체형 튜브처럼 부드럽게 연결되며 머리에 직접 부착됩니다 (완전한 목 없음 No-Neck).
+   - **관절이 생략된 팔다리**: 팔꿈치, 손목, 무릎, 종아리 등의 관절과 근육 굴곡을 생략하고 고무관(Rubber-hose)처럼 매끄럽게 떨어집니다.
+   - **간략화된 손과 발**:
+     - 손: 손가락 마디, 손톱, 손금 구분 없이 둥글고 뭉툭한 실루엣 (벙어리장갑 Mitten 형태).
+     - 발: 발가락, 뒤꿈치, 신발 구분이 없으며 다리 끝에서 둥글고 납작한 타원형 패드 형태로 지면을 지탱합니다.
+   - 프롬프트 키워드: `seamless tubular neckless body directly attached to round head with completely no neck, jointless smooth rubber-hose arms and legs with no elbows and no knees, simplified mitten-like blunt round hands, smooth rounded flat oval foot pads firmly touching floor line`.
+4. **표면 재질 및 라인 스타일 (평면 순백색 픽토그램 & 균일한 검은색 외곽선)**:
+   - **평면 순백색 마감**: 옷, 봉제선, 단추, 주름, 피부 질감이 일절 없는 새하얀 픽토그램/마네킹 형태입니다 (`blank solid white mannequin pictogram body fill`). 성별, 연령, 인종이 드러나지 않는 보편적 형태입니다.
+   - **균일한 검은색 외곽선**: 명암(그림자), 색상 그러데이션 없이 균일하고 맑은 딥 차콜 블랙 윤곽선(`#030203`)과 단색 순백색 채움만으로 2D 플랫(2D Flat)하게 완결됩니다.
+   - **캔버스 배경 색상코드 `#f5f6f8`**: 뉴모피즘 테마와 일치하는 소프트 라이트그레이 캔버스.
+5. **풍성한 배경 씬 (Rich Scene Content)**:
+   - 캐릭터 주변에 바닥선, 가구, 벽면 장식, 창문, 소품 등 내러티브 묘사를 균일하고 깔끔한 선화로 풍성하게 배치하여 단어의 상황을 직관적으로 전달합니다.
 6. **추후 수정 및 효과 일체 배제 (Zero Post-Processing)**:
-   - 생성 후 임계값(Threshold), 색상 왜곡, 필터 효과를 인위적으로 주지 않고, 모델 본연의 부드러운 안티에일리어싱을 보존한 **순수 렌더링 원본 파일**을 그대로 저장합니다.
+   - 생성 후 인위적인 필터, 색상 왜곡, 임계값 조작 없이 모델 본연의 부드러운 안티에일리어싱 1024x1024 원본 파일을 그대로 저장합니다.
 7. **영문 외 일체 배제 및 100% 영문 전용 절대 원칙 (Strictly English Only / Zero Non-English Characters)**:
-   - **프롬프트 및 씬 설명 내 영문 외 문자 절대 금지**: 단어 뜻, 한국어 메모(예: `(가슴)`, `(가루)`), 한자, 일본어 등 **영문 알파벳(A-Z, a-z) 및 기본 숫자/기호 이외의 모든 비영문 문자는 프롬프트에 절대 넣지 않습니다**. 오직 100% 순수 영문 씬 묘사(English prompt only)만 전달합니다.
-   - **이미지 씬 내부 텍스트 영문 외 전면 금지**: 씬 내부의 간판, 포스터, 칠판, 서류 등에 글자가 노출될 경우 **오직 100% 영문 알파벳(English alphabet A-Z)만 허용**하며, 한글(Hangul), 한자(Chinese characters/Kanji), 일본어(Kana) 등 어떠한 비영문 문자도 절대 들어가지 않도록 합니다. 왜곡된 비영어 글자가 생성되지 않도록 불필요한 간판 키워드를 배제하거나 `"SALE"`, `"LIBRARY"` 등 명확한 영어 단어로 한정합니다.
-   - **부정(Negative) 프롬프트 필수 적용**: `non-English text, non-English characters, Korean text, Hangul, Korean letters, Chinese characters, Hanzi, Kanji, Japanese text, Kana, foreign script, pseudo-Hangul, weird Asian glyphs, oriental symbols, non-Latin alphabet, foreign writing`.
+   - **프롬프트 및 씬 설명 내 영문 외 문자 절대 금지**: 단어 뜻, 한국어 메모(예: `(가슴)`, `(가루)`), 한자 등 영문(A-Z, a-z) 및 기본 숫자/기호 이외의 모든 비영문 문자는 프롬프트에 절대 넣지 않으며, 오직 100% 순수 영문 씬 묘사(English prompt only)만 전달합니다.
+   - **이미지 씬 내부 텍스트 100% 영문 전용**: 씬 내부의 간판, 포스터, 서류 등에 글자가 노출될 경우 오직 영문 알파벳(A-Z)만 허용하며, 한글/한자/일본어 및 왜곡된 기호 생성을 원천 차단합니다.
+   - **부정(Negative) 프롬프트 필수 적용**: `non-English text, Korean text, Hangul, Chinese characters, Hanzi, Kanji, Japanese, foreign characters, realistic human anatomy, realistic face, facial details, nose, eyebrows, lips, teeth, ears, hair, neck, muscles, realistic fingers, fingernails, toes, clothes, shirt, pants, wrinkles, shading, gradients, shadow, 3d render`.
 
 
 ---

@@ -24,29 +24,26 @@ PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
 ASSETS_DIR = os.path.join(PROJECT_ROOT, "assets", "words")
 WORD_IMAGES_TS = os.path.join(PROJECT_ROOT, "src", "constants", "wordImages.ts")
 
-# 스킬 표준 공통 프롬프트
+# 스킬 표준 공통 프롬프트 (3~3.5등신 순백색 픽토그램 마네킹 캐릭터)
 STYLE_PROMPT = (
     "masterpiece, best quality, ultra-detailed linear graphic illustration, "
     "clean pure line art vector aesthetic, "
-    "thinnest possible 0.05mm ultra-delicate needle-thin hairline ink stroke, "
-    "extremely fine crisp outlines, "
-    "neckless cute doodle stickman, perfectly round circle head attached directly to torso with completely no neck, neckless stick figure, "
-    "flat smooth light gray canvas background color #f5f6f8, "
-    "dark charcoal ink color #030203, "
-    "minimalist elegant modern line drawing, delicate continuous contours, "
-    "narrative background scene with clear floor line, "
+    "3 to 3.5 head-to-body chibi SD ratio cute characters with large prominent smooth spherical bald round heads, "
+    "minimalist dot and line face, two simple solid black dot eyes and a tiny thin curved smile line, strictly no nose, no eyebrows, no lips, no ears, no hair, "
+    "seamless tubular neckless body directly attached to round head with completely no neck, smooth organic curves without clavicle or muscle contours, "
+    "jointless smooth rubber-hose arms and legs with no elbows and no knees, simplified mitten-like blunt round hands, smooth rounded flat oval foot pads firmly on floor line, "
+    "blank solid white mannequin pictogram character fill with zero clothing, no seams, no buttons, no folds, no skin texture, genderless universal figure, "
+    "crisp uniform dark charcoal ink outlines #030203, strictly flat 2d linear graphic, no shading, no gradients, no solid black fills, flat smooth light gray canvas background color #f5f6f8, "
+    "flexible character scale freely scaled down to fit spacious environment and background framing, balanced scene composition, "
+    "abundant rich background details, furniture, wall decor, floor line, ambient props, "
     "strictly English text only if any letters appear, absolutely no non-English characters, 100% pure English alphabet A-Z only, completely no Korean characters, strictly no Hangul, strictly no Chinese characters, completely non-Asian script, zero foreign glyphs"
 )
 
 NEGATIVE_PROMPT = (
-    "non-English text, non-English characters, Korean text, Hangul, Korean letters, Asian characters, Chinese characters, Kanji, Hanzi, Chinese letters, Japanese characters, Kana, foreign script, "
-    "fake Korean, pseudo-Hangul, weird Asian glyphs, oriental symbols, Asian signboards, Asian calligraphy, non-Latin alphabet, foreign writing, "
-    "shading, shadow, gradient, color, coloring, fill, solid fill, black areas, "
-    "thick lines, bold lines, brush strokes, rough sketch, pencil hatching, dirty lines, "
-    "grayscale, crosshatching, textured paper, dark background, black background, inverted, "
-    "realistic anatomy, human head, realistic face, facial details, eyes, nose, mouth, hair, realistic hands, fingers, "
-    "neck, long neck, throat, collar, neck line, detailed neck anatomy, "
-    "watermark, signature, messy, text, letters, font"
+    "non-English text, non-English characters, Korean text, Hangul, Korean letters, Chinese characters, Hanzi, Kanji, Japanese text, Kana, foreign script, pseudo-Hangul, weird Asian glyphs, oriental symbols, non-Latin alphabet, foreign writing, "
+    "realistic human anatomy, realistic face, facial details, nose, eyebrows, eyelashes, eyelids, lips, teeth, ears, hair, hairstyle, neck, long neck, throat, collar, collarbone, muscles, realistic fingers, individual finger joints, fingernails, toes, shoes, clothing, clothes, shirt, pants, wrinkles, folds, "
+    "thick lines, heavy brush strokes, chunky lines, fat strokes, "
+    "pure white #ffffff background, dark background, black background, 3d, 3d render, realistic, shadow, shading, color, gradients, photo, blur, watermark, signature, messy"
 )
 
 def update_word_images_ts(word: str, word_id: str):
@@ -2326,22 +2323,350 @@ UNIT_DATA = {
             "id": "m1-660", "word": "prince", "meaning": "왕자",
             "scene": "historic fairytale castle courtyard, brave noble cute slender stickman prince wearing royal tunic and cape holding silver crest shield ready to protect kingdom, stone castle archway line"
         }
+    ],
+    34: [
+        {
+            "id": "m1-661", "word": "foreign", "meaning": "해외의, 외국의",
+            "scene": "historic city royal palace courtyard, cheerful cute slender foreign stickman tourist with small backpack and camera taking photo of magnificent palace stone arches, stone pavement line"
+        },
+        {
+            "id": "m1-662", "word": "shout", "meaning": "소리치다",
+            "scene": "wide sunny open soccer field, energetic cute slender stickman teammate cupping hands around mouth shouting encouraging words to players across green pitch, white field goal line"
+        },
+        {
+            "id": "m1-663", "word": "yell", "meaning": "고함치다, 소리 지르다",
+            "scene": "school running track stadium sideline, passionate cute slender stickman coach holding a stopwatch yelling spirited motivation to sprinting runners, running track lane line"
+        },
+        {
+            "id": "m1-664", "word": "fare", "meaning": "요금",
+            "scene": "clean modern city bus interior near entrance, polite cute slender stickman passenger gently tapping digital transport fare card on fare scanner next to driver, bus aisle floor line"
+        },
+        {
+            "id": "m1-665", "word": "bathroom", "meaning": "화장실",
+            "scene": "tidy sparkling clean home bathroom, cute slender stickman smiling at round wall mirror washing hands with foamy soap bubbles over modern ceramic sink, bath mat and tiled floor line"
+        },
+        {
+            "id": "m1-666", "word": "pardon", "meaning": "용서, 사면",
+            "scene": "ancient medieval throne room, benevolent cute slender king stickman seated on carved wooden throne holding a rolled parchment decree granting gentle pardon to kneeling villager stickman, stone floor line"
+        },
+        {
+            "id": "m1-667", "word": "dull", "meaning": "둔한, 무딘",
+            "scene": "quiet cozy workshop workbench, patient cute slender stickman sharpening a dull blunt chisel blade against an oiled whetstone, wood chips and workshop floor line"
+        },
+        {
+            "id": "m1-668", "word": "umbrella", "meaning": "우산",
+            "scene": "gentle rainy city street promenade, cheerful cute slender stickman walking comfortably holding a large round dome umbrella keeping dry under soft raindrops, puddle reflections and sidewalk line"
+        },
+        {
+            "id": "m1-669", "word": "universe", "meaning": "우주",
+            "scene": "cozy school astronomy club rooftop at night, curious cute slender stickman gazing through large brass telescope at swirling spiral galaxy and twinkling starry universe, telescope tripod and rooftop line"
+        },
+        {
+            "id": "m1-670", "word": "post", "meaning": "우편",
+            "scene": "charming suburban front garden porch, smiling cute slender stickman receiving a sealed envelope letter delivered by friendly postal courier stickman, neat red mailbox and cobblestone pathway line"
+        },
+        {
+            "id": "m1-671", "word": "exercise", "meaning": "운동, 체력 단련",
+            "scene": "refreshing sunny morning park lawn, active cute slender stickman doing stretching exercises on a soft mat while friend stickman jogs past, leafy trees and park path line"
+        },
+        {
+            "id": "m1-672", "word": "athlete", "meaning": "운동선수",
+            "scene": "indoor gymnasium sports training center, dedicated cute slender athlete stickman balancing gracefully on gymnast beam with focused concentration, safety landing mats and gym floor line"
+        },
+        {
+            "id": "m1-673", "word": "fortunately", "meaning": "다행히",
+            "scene": "leafy garden yard after windy rain, relieved cute slender stickman picking up an undamaged fragile ceramic flowerpot that luckily landed soft on grass without breaking, garden stone border line"
+        },
+        {
+            "id": "m1-674", "word": "canal", "meaning": "수로, 물길",
+            "scene": "picturesque riverside town waterway, cute slender stickman steering a slender wooden rowing boat peacefully gliding along calm canal between historic brick houses, stone canal bank line"
+        },
+        {
+            "id": "m1-675", "word": "fence", "meaning": "울타리",
+            "scene": "sunny countryside ranch meadow, cute slender stickman standing beside a neat wooden post fence gently patting a friendly horse peeking over rail, lush grass meadow line"
+        },
+        {
+            "id": "m1-676", "word": "grab", "meaning": "붙잡다",
+            "scene": "busy playful school playground, agile cute slender stickman reaching out arm to quickly grab a flying frisbee disc right before it hits the ground, playground sand line"
+        },
+        {
+            "id": "m1-677", "word": "grand", "meaning": "장엄한",
+            "scene": "majestic opera house grand foyer, awe-struck cute slender stickman visitor standing beneath towering classical marble columns and sweeping grand curved staircase, polished marble floor line"
+        },
+        {
+            "id": "m1-678", "word": "circle", "meaning": "원, 동그라미",
+            "scene": "bright math classroom desk, clever cute slender stickman using a silver drawing compass to sketch a perfect smooth circle on large drafting paper, wooden ruler and desk line"
+        },
+        {
+            "id": "m1-679", "word": "cause", "meaning": "원인",
+            "scene": "modern science laboratory room, inquisitive cute slender stickman researcher examining microscope slide clues to discover the cause of a chemical reaction, glassware test tubes and lab bench line"
+        },
+        {
+            "id": "m1-680", "word": "atom", "meaning": "원자",
+            "scene": "interactive physics science center, fascinated cute slender stickman student observing a large glowing 3D planetary atomic model with orbiting electrons, display pedestal and museum floor line"
+        }
+    ],
+    35: [
+        {
+            "id": "m1-681", "word": "stomach", "meaning": "복부, 배",
+            "scene": "cozy living room armchair, cute slender stickman gently holding a warm soothing water bottle against stomach resting comfortably after heavy meal, side table with cup of herbal tea and floor line"
+        },
+        {
+            "id": "m1-682", "word": "locate", "meaning": "위치를 찾다",
+            "scene": "spacious library study table, curious cute slender stickman spreading a large unfolded city landmark map pointing finger to locate school library building, desk lamp and floor line"
+        },
+        {
+            "id": "m1-683", "word": "danger", "meaning": "위험",
+            "scene": "rocky mountain cliff path, cautious cute slender stickman hiker carefully stopping before a steep crumbling edge marked with warning striped barrier poles, mountain stone path line"
+        },
+        {
+            "id": "m1-684", "word": "competent", "meaning": "유능한",
+            "scene": "busy design workshop office, competent skilled cute slender stickman project leader confidently presenting organized architectural blueprints on easel to admiring teammates, studio floor line"
+        },
+        {
+            "id": "m1-685", "word": "famous", "meaning": "유명한",
+            "scene": "historic artisan bakery storefront, cute slender stickman baker holding up freshly baked golden bread loaf warmly welcoming line of smiling town customers, brick storefront line"
+        },
+        {
+            "id": "m1-686", "word": "kindergarten", "meaning": "유치원",
+            "scene": "bright cheerful kindergarten playroom, kind cute slender stickman teacher reading a big illustrated storybook to tiny cute circle-headed stickman toddlers sitting on colorful rug, toy blocks and floor line"
+        },
+        {
+            "id": "m1-687", "word": "type", "meaning": "종류, 유형",
+            "scene": "neat botanist greenhouse nursery, observant cute slender stickman categorizing different types of potted leafy ferns and flowering succulents onto tiered wooden shelves, greenhouse brick floor line"
+        },
+        {
+            "id": "m1-688", "word": "general", "meaning": "장군, 사령관",
+            "scene": "historic castle military command tent, dignified cute slender general stickman wearing epaulet mantle reviewing terrain battle map on campaign table with captain stickman, tent floor line"
+        },
+        {
+            "id": "m1-689", "word": "roar", "meaning": "포효하다",
+            "scene": "nature reserve safari overlook, amazed cute slender stickman standing safely behind sturdy railing watching a proud majestic lion roaring across open savanna rock outcrop, observation deck line"
+        },
+        {
+            "id": "m1-690", "word": "musician", "meaning": "음악가",
+            "scene": "warm acoustics chamber hall stage, elegant cute slender musician stickman resting violin beneath chin passionately bowing melody, wooden music sheet stand and polished parquet stage line"
+        },
+        {
+            "id": "m1-691", "word": "concert", "meaning": "콘서트, 음악회",
+            "scene": "intimate acoustic concert auditorium, talented cute slender stickman pianist performing grand piano recital while seated stickman audience listens in peaceful delight, stage floor line"
+        },
+        {
+            "id": "m1-692", "word": "reply", "meaning": "답장하다",
+            "scene": "cozy writing desk corner, thoughtful cute slender stickman writing a warm handwritten reply letter with ink fountain pen onto crisp stationery paper, small desk lamp and wooden floor line"
+        },
+        {
+            "id": "m1-693", "word": "stare", "meaning": "응시하다",
+            "scene": "charming toy shop display window, mesmerized cute slender stickman child standing on sidewalk staring with wide round eyes at moving miniature clockwork train inside, shop window sill line"
+        },
+        {
+            "id": "m1-694", "word": "gaze", "meaning": "바라보다",
+            "scene": "tranquil ocean cliff bench at sunset, peaceful cute slender stickman sitting gazing out at shimmering distant sea horizon and drifting evening clouds, coastal wooden railing line"
+        },
+        {
+            "id": "m1-695", "word": "opinion", "meaning": "의견",
+            "scene": "school debate club conference room, thoughtful cute slender stickman student standing at podium politely sharing insightful personal opinion to attentive club members, whiteboard and floor line"
+        },
+        {
+            "id": "m1-696", "word": "compulsory", "meaning": "의무적인, 필수의",
+            "scene": "bicycle safety training track, diligent cute slender stickman carefully fastening safety helmet strap before riding bicycle adhering to compulsory safety rule, asphalt training track line"
+        },
+        {
+            "id": "m1-697", "word": "communication", "meaning": "의사소통",
+            "scene": "sunny park picnic table, two smiling cute slender stickman friends enjoying lively face-to-face communication sharing stories and laughing over cups of juice, park bench and lawn line"
+        },
+        {
+            "id": "m1-698", "word": "ceremony", "meaning": "의식, 기념식",
+            "scene": "grand school auditorium stage, proud cute slender stickman graduate receiving honor certificate scroll during formal graduation ceremony, decorative potted ferns and stage floor line"
+        },
+        {
+            "id": "m1-699", "word": "depend", "meaning": "의존하다",
+            "scene": "leafy tree branch nest outdoors, three tiny hungry baby bird stick figures peeking out eagerly depending on mother bird returning with food, sturdy oak branch and leaf line"
+        },
+        {
+            "id": "m1-700", "word": "tooth", "meaning": "치아, 이",
+            "scene": "bright modern dental clinic room, friendly dentist stickman showing cute slender stickman patient an enlarged clean tooth model illustrating proper brushing technique, clinic chair and floor line"
+        }
+    ],
+    36: [
+        {
+            "id": "m1-701", "word": "win", "meaning": "이기다, 승리하다",
+            "scene": "vibrant school sports soccer field, ecstatic cute slender stickman player holding championship golden cup trophy high above head surrounded by cheering stickman teammates, soccer goal net and grass field line"
+        },
+        {
+            "id": "m1-702", "word": "strange", "meaning": "이상한, 기묘한",
+            "scene": "cozy kitchen corner, curious cute slender stickman leaning down tilting head with puzzled smile listening to strange ticking sound coming from beneath old wooden floorboard, kitchen cabinet and floor line"
+        },
+        {
+            "id": "m1-703", "word": "neighbor", "meaning": "이웃",
+            "scene": "friendly suburban garden fence line, warm smiling cute slender stickman handing a wicker basket filled with fresh red garden apples over low wooden picket fence to neighbor stickman, garden flowerbed line"
+        },
+        {
+            "id": "m1-704", "word": "reason", "meaning": "이유, 까닭",
+            "scene": "bright school classroom teacher desk, thoughtful cute slender stickman student standing politely explaining the honest reason for being late to understanding stickman teacher, classroom chalkboard and floor line"
+        },
+        {
+            "id": "m1-705", "word": "interest", "meaning": "이해관계, 관심",
+            "scene": "peaceful diplomatic meeting room, two respectable cute slender delegate stickmen sitting across round negotiation table shaking hands reaching mutual agreement of interest, world map wall decor and floor line"
+        },
+        {
+            "id": "m1-706", "word": "settler", "meaning": "정착민",
+            "scene": "historic riverbank frontier woodland, diligent cute slender settler stickman building sturdy timber log cabin with handheld mallet near flowing river, pine trees and ground line"
+        },
+        {
+            "id": "m1-707", "word": "understand", "meaning": "이해하다",
+            "scene": "quiet study room desk, enlightened cute slender stickman student looking at open math geometry notebook with glowing idea lightbulb above head finally understanding complex problem, desk lamp and floor line"
+        },
+        {
+            "id": "m1-708", "word": "drown", "meaning": "물에 빠지다, 익사하다",
+            "scene": "rocky coastal beach water edge, heroic cute slender stickman lifeguard throwing buoyant round rescue ring with rope toward swimmer stickman in churning sea waves, shoreline sand line"
+        },
+        {
+            "id": "m1-709", "word": "population", "meaning": "인구",
+            "scene": "bustling cheerful city pedestrian boulevard, diverse cute slender stickman citizens walking happily along tree-lined sidewalk illustrating growing vibrant town population, city shopfront line"
+        },
+        {
+            "id": "m1-710", "word": "popular", "meaning": "인기 있는",
+            "scene": "lively school courtyard stage, charismatic cute slender stickman acoustic singer performing cheerful song with crowd of enthusiastic stickman students clapping and cheering, stage floor line"
+        },
+        {
+            "id": "m1-711", "word": "lead", "meaning": "안내하다, 이끌다",
+            "scene": "mysterious natural cavern entrance, confident cute slender stickman guide holding bright camping lantern leading a line of curious explorer stickmen safely along rocky cave path line"
+        },
+        {
+            "id": "m1-712", "word": "mankind", "meaning": "인류",
+            "scene": "ancient stone age campfire clearing, primitive cute slender stickman discovering early fire sparks using wooden friction drill demonstrating ancient dawn of mankind, cave wall and rocky floor line"
+        },
+        {
+            "id": "m1-713", "word": "greeting", "meaning": "인사",
+            "scene": "sunny residential morning sidewalk, cheerful cute slender stickman waving open hand high in warm friendly greeting to approaching friend stickman, neat garden hedges and street line"
+        },
+        {
+            "id": "m1-714", "word": "doll", "meaning": "인형",
+            "scene": "sweet cozy bedroom bed, peaceful cute slender stickman sleeping soundly tucked under warm duvet gently hugging soft plush button-jointed cloth doll, nightstand and bedroom floor line"
+        },
+        {
+            "id": "m1-715", "word": "diary", "meaning": "일기",
+            "scene": "peaceful bedroom study desk at night, cute slender stickman writing daily reflections with pen in hardcover open personal diary under warm small desk lamp glow, bedroom floor line"
+        },
+        {
+            "id": "m1-716", "word": "occur", "meaning": "발생하다, 일어나다",
+            "scene": "outdoor city bridge walkway, surprised cute slender stickman pedestrian observing sudden heavy gust of wind occurring and blowing dry autumn leaves across stone bridge railing line"
+        },
+        {
+            "id": "m1-717", "word": "happen", "meaning": "일어나다, 벌어지다",
+            "scene": "sunny school park path, smiling cute slender stickman watching an unexpected joyful coincidence happen as two flying colorful butterflies land gently on wooden park bench line"
+        },
+        {
+            "id": "m1-718", "word": "early", "meaning": "이른, 일찍",
+            "scene": "quiet sunrise dawn street, energetic cute slender stickman waking early walking briskly to catch first yellow morning school bus under glowing pink sunrise sky, street pavement line"
+        },
+        {
+            "id": "m1-719", "word": "lose", "meaning": "잃어버리다",
+            "scene": "clean subway station platform bench, cute slender stickman realizing a forgotten umbrella on train and checking empty pockets with hands outstretched in mild surprise, platform safety line"
+        },
+        {
+            "id": "m1-720", "word": "appointment", "meaning": "임명, 약속",
+            "scene": "formal sports team locker room ceremony, proud cute slender stickman soccer athlete receiving a captain armband appointment from smiling stickman coach, bench lockers and floor line"
+        }
+    ],
+    37: [
+        {
+            "id": "m1-721", "word": "wear", "meaning": "입다, 닳다",
+            "scene": "cozy bedroom wardrobe mirror, smiling cute slender stickman trying on a warm cozy winter knit sweater looking at self in standing mirror, clothes hanger rack and bedroom floor line"
+        },
+        {
+            "id": "m1-722", "word": "sleep", "meaning": "자다",
+            "scene": "tranquil bedroom night, peaceful cute slender stickman sleeping soundly wrapped in soft warm blanket with crescent moon shining outside window, cozy bed and bedroom floor line"
+        },
+        {
+            "id": "m1-723", "word": "proud", "meaning": "자랑스러운",
+            "scene": "bright school exhibition room, proud cute slender stickman standing happily with hands on hips showing a colorful gold medal ribbon pinned to painted canvas, display easel and floor line"
+        },
+        {
+            "id": "m1-724", "word": "lock", "meaning": "자물쇠, 잠그다",
+            "scene": "front door porch of cozy home, diligent cute slender stickman holding brass key securely locking the sturdy front door lock before leaving, doorway and porch floor line"
+        },
+        {
+            "id": "m1-725", "word": "own", "meaning": "자신의",
+            "scene": "sunny garden lawn, joyful cute slender stickman proudly holding the deed certificate of own newly built small garden greenhouse, flowering plants and lawn line"
+        },
+        {
+            "id": "m1-726", "word": "nature", "meaning": "자연",
+            "scene": "breathtaking mountain hiking path, amazed cute slender stickman standing with arms spread wide admiring lush green pine forests, distant rolling hills and winding nature trail line"
+        },
+        {
+            "id": "m1-727", "word": "resource", "meaning": "자원",
+            "scene": "sunny open prairie landscape, thoughtful cute slender stickman observing tall spinning clean wind turbine generators and solar energy panel arrays, hillside and ground line"
+        },
+        {
+            "id": "m1-728", "word": "liberty", "meaning": "자유",
+            "scene": "wide open green hillside summit, triumphant cute slender stickman standing freely under clear open sky releasing a white dove into the air representing liberty, hill ridge line"
+        },
+        {
+            "id": "m1-729", "word": "bike", "meaning": "자전거",
+            "scene": "sunny riverfront paved bicycle path, cheerful cute slender stickman wearing helmet happily pedaling a sleek classic two-wheeled bike along willow trees, river railing line"
+        },
+        {
+            "id": "m1-730", "word": "composer", "meaning": "작곡가",
+            "scene": "elegant music studio room, inspired cute slender composer stickman sitting at grand piano composing new melody on sheet music score with pencil, metronome and floor line"
+        },
+        {
+            "id": "m1-731", "word": "bit", "meaning": "작은 조각",
+            "scene": "sunny bakery kitchen table, happy cute slender stickman nibbling on a tiny delicious crispy bit of butter cookie from baking tray, rolling pin and kitchen counter line"
+        },
+        {
+            "id": "m1-732", "word": "grass", "meaning": "잔디, 풀",
+            "scene": "sunny suburban backyard, relaxed cute slender stickman resting comfortably barefoot on fresh green lush lawn grass under warm gentle sunshine, wooden fence line"
+        },
+        {
+            "id": "m1-733", "word": "error", "meaning": "잘못, 오류",
+            "scene": "modern office computer desk, focused cute slender stickman software coder spotting a syntax typo error alert highlighted on computer monitor and fixing it promptly, desk and office floor line"
+        },
+        {
+            "id": "m1-734", "word": "fault", "meaning": "잘못, 결점",
+            "scene": "living room carpet, polite cute slender stickman holding cracked ceramic vase with sheepish apologetic smile acknowledging personal fault to companion stickman, sofa and floor line"
+        },
+        {
+            "id": "m1-735", "word": "mistake", "meaning": "실수",
+            "scene": "classroom math test desk, gentle cute slender stickman student noticing a simple calculation mistake on exam paper and carefully erasing with pencil rubber, desk and classroom floor line"
+        },
+        {
+            "id": "m1-736", "word": "handsome", "meaning": "잘생긴",
+            "scene": "chic dressing room mirror, neat stylish cute slender stickman adjusting neat bowtie collar with charming smile admiring handsome dapper reflection, vanity lights and floor line"
+        },
+        {
+            "id": "m1-737", "word": "pull", "meaning": "잡아당기다",
+            "scene": "cozy countryside cottage porch, energetic cute slender stickman firmly gripping sturdy hemp rope with both hands pulling a heavy wooden farm cart forward, gravel path line"
+        },
+        {
+            "id": "m1-738", "word": "magazine", "meaning": "잡지",
+            "scene": "bright cozy living room armchair, relaxed cute slender stickman sitting comfortably turning pages of a glossy science picture magazine with coffee cup nearby, small side table and floor line"
+        },
+        {
+            "id": "m1-739", "word": "funeral", "meaning": "장례식",
+            "scene": "peaceful memorial garden cemetery, solemn cute slender stickman holding single white blossom flower paying respectful quiet tribute near memorial stone monument, cypress trees and grass line"
+        },
+        {
+            "id": "m1-740", "word": "scene", "meaning": "장면, 현장",
+            "scene": "outdoor movie filming set, creative cute slender stickman film director looking through handheld viewfinder framing a dramatic movie scene with clapperboard prop, studio lights and floor line"
+        }
     ]
 }
 
 def deploy_unit(unit_num: int):
     print(f"\n[Unit {unit_num}] 작업 완료 후 배포 파이프라인 가동...", flush=True)
     
-    # 1. 린트 검증
+    # 1. 외장하드 ._* 파일 먼저 정리 (Lint 에러 방지)
+    subprocess.run(["find", ".", "..", "-name", "._*", "-type", "f", "-delete"], cwd=PROJECT_ROOT)
+    print("._* 임시 파일 정리 완료", flush=True)
+
+    # 2. 린트 검증
     try:
         subprocess.run(["npm", "run", "lint"], cwd=PROJECT_ROOT, check=True)
         print("Lint 검증 통과!", flush=True)
     except Exception as e:
         print(f"Lint 경고/오류 (계속 진행): {e}", flush=True)
-
-    # 2. 외장하드 ._* 파일 정리
-    subprocess.run(["find", ".", "..", "-name", "._*", "-type", "f", "-delete"], cwd=PROJECT_ROOT)
-    print("._* 임시 파일 정리 완료", flush=True)
 
     # 3. Git 커밋 & 푸시
     try:
@@ -2356,12 +2681,14 @@ def deploy_unit(unit_num: int):
 
 def main():
     parser = argparse.ArgumentParser(description="중1 선형그래픽 연속 생성기")
-    parser.add_argument("--start-unit", type=int, default=32, help="시작할 유닛 번호 (기본: 32)")
-    parser.add_argument("--end-unit", type=int, default=33, help="종료할 유닛 번호 (기본: 33)")
+    parser.add_argument("--start-unit", type=int, default=35, help="시작할 유닛 번호 (기본: 35)")
+    parser.add_argument("--start-idx", type=int, default=1, help="시작할 단어 번호 (기본: 1)")
+    parser.add_argument("--end-unit", type=int, default=36, help="종료할 유닛 번호 (기본: 36)")
     args = parser.parse_args()
 
     print(f"==================================================", flush=True)
-    print(f"중학교 1학년 선형그래픽 연속 생성 파이프라인 가동 (Unit {args.start_unit} ~ {args.end_unit})", flush=True)
+    print(f"중학교 1학년 선형그래픽 연속 생성 파이프라인 가동 (Unit {args.start_unit}:{args.start_idx} ~ {args.end_unit}:20)", flush=True)
+    print(f"규칙: 3~3.5등신 픽토그램 순백색 마네킹 캐릭터 조형 원칙 적용", flush=True)
     print(f"==================================================", flush=True)
 
     for unit_num in range(args.start_unit, args.end_unit + 1):
@@ -2381,12 +2708,10 @@ def main():
             file_name = w.replace(" ", "-")
             out_file = os.path.join(ASSETS_DIR, f"{file_name}.png")
 
-            # 기존 정상 생성 파일이 있는 경우 스킵하고 즉시 등록
-            if os.path.exists(out_file) and os.path.getsize(out_file) > 10000:
-                elapsed_times[w] = 148.0
-                update_word_images_ts(w, w_id)
-                print(f"[{w}] 기존 이미지 파일 존재 확인 ({os.path.getsize(out_file)} bytes) -> 스킵 및 등록 완료", flush=True)
-                update_dashboards(unit_num, idx, item, elapsed_times, status_text=f"'{w}' 완료 (기존 파일 유지)")
+            # 시작 번호 이전 단어는 유지
+            if unit_num == args.start_unit and idx < args.start_idx:
+                elapsed_times[w] = 150.0
+                print(f"[{w}] 이전 생성 단어 유지 (번호 {idx} < {args.start_idx})", flush=True)
                 continue
 
             # 대시보드 갱신 (렌더링 시작)

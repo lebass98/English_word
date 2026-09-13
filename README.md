@@ -36,6 +36,22 @@ npm run lint     # ESLint
   - 대상 단어: aspect, significant, melt, advance, marine, solid, passage, master, minute, vision, experiment, shelter, commit, possible, multiple, routine, tremendous, crucial, vast, develop
   - `sync_word_images.py` 스크립트를 통해 `src/constants/wordImages.ts` 레지스트리 일괄 갱신 완료
 
+- 영어 **TOEFL 필수** 코스 추가 (1,495단어, 알파벳순 20단어씩 유닛)
+  - 표제어·동의어는 TOEFL 어휘서 단어 목록을 기준으로 삼고, 뜻·예문·어원·설명 문장은 모두 새로 작성
+  - 학년 코스와 겹치는 829단어는 기존 발음·예문을 그대로 쓰고, 새 666단어만 `words.json`·`tr/ko.json` 에 추가
+  - 뜻은 단어 id(`tf-N`)로 따로 두어 토플에서 쓰는 뜻을 보여 줌 (예: fine = 가는, house = 수용하다)
+  - 토플 코스 전용 보충 자료(`src/data/en/extras/ko.json`): 반의어·어근 풀이·같은 어근 단어·의미 비교를 학습 화면에 표시
+  - 연상 이미지는 아직 없음 (기존 그림이 있는 단어만 표시)
+
+- 화면 틀·여백 통일
+  - 공통 `Screen`·`ScreenHeader` 컴포넌트(`src/components/Screen.tsx`): 내용 최대 폭 480px 가운데 정렬, 헤더 위 32px·최소 높이 48px, 헤더 아래 24px
+  - 홈·유닛 목록·단어장·설정·학습 화면이 모두 이 틀을 쓰고, 아래 탭 바도 같은 폭 안에 들어감
+  - 학습 화면 단어 글자 크기는 창 폭이 아니라 최대 폭(480px) 기준으로 계산
+  - 알약 버튼 글자 크기를 작게 13px · 보통 14px · 크게 15px 로 올림
+  - 학습 화면의 emerald 색을 앱 기본 mint 로 바꾸고, 진행 막대 트랙도 다른 화면과 같은 색으로 맞춤
+  - 카드는 모서리 24px·안쪽 여백 24px, 2열 카드 간격은 16px 로 통일 (홈 코스 카드 폭은 실제 내용 폭으로 계산)
+  - 자동 넘김 버튼은 켜졌을 때 파인 모양(설정·학습 화면 모두)
+
 - 고등학교 1학년 Unit 2 '선형그래픽' 스타일 단어 일러스트 20종 일괄 생성 및 등록 완료 (Draw Things 로컬 API 기반)
   - 1024x1024 해상도, 0.05mm 초극세선, No-Neck 스틱맨 캐릭터, 뉴모피즘 캔버스 테마(#f5f6f8), 딥차콜 선(#030203), 영문 전용 씬 묘사 원칙 준수
   - 대상 단어: express, virtual, exclude, enthusiasm, subject, orphan, biology, meanwhile, lift, precious, witness, spread, arise, pesticide, peer, element, oxygen, professor, fame, psychology

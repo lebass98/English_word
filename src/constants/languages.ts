@@ -37,6 +37,7 @@ export const STUDY_LANGUAGES: Record<StudyLangId, StudyLanguage> = {
       { id: "high-1", code: "h1" },
       { id: "high-2", code: "h2" },
       { id: "high-3", code: "h3" },
+      { id: "toefl", code: "tf" },
     ],
   },
   ja: {

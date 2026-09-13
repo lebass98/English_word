@@ -1,12 +1,25 @@
 import { useRouter } from "expo-router";
 import { useMemo } from "react";
-import { Image, Pressable, ScrollView, Text, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import {
+  Image,
+  Pressable,
+  ScrollView,
+  Text,
+  useWindowDimensions,
+  View,
+} from "react-native";
 import { BottomNav } from "../src/components/BottomNav";
 import { ContinueCard } from "../src/components/ContinueCard";
 import { GradeCard } from "../src/components/GradeCard";
 import { LanguageFlag } from "../src/components/flags";
 import { PillButton } from "../src/components/PillButton";
+import {
+  GRID_GAP,
+  MAX_CONTENT_WIDTH,
+  SCREEN_PADDING_X,
+  Screen,
+  ScreenHeader,
+} from "../src/components/Screen";
 import { useGrades } from "../src/constants/grades";
 import { STUDY_LANGS } from "../src/constants/languages";
 import { useVocab } from "../src/constants/words";
@@ -25,6 +38,7 @@ import { useAppStore } from "../src/stores/useAppStore";
 /**
  * 오늘의 기록 칸. 한 줄에 셋이 들어가야 해서
  * StatCard(최소 45% 폭) 대신 홈 전용으로 좁게 만든다.
+ * 좁은 칸이라 좌우 여백만 카드 기본값(24px)보다 작게 둔다.
  */
 function TodayStat({
   emoji,
@@ -38,7 +52,7 @@ function TodayStat({
   label: string;
 }) {
   return (
-    <View className="flex-1 items-center rounded-3xl bg-surface px-2 py-5 shadow-neu-card">
+    <View className="flex-1 items-center rounded-3xl bg-surface px-2 py-6 shadow-neu-card">
       <Text className="text-[18px]">{emoji}</Text>
       <View className="mt-2 flex-row items-baseline gap-0.5">
         <Text className="text-[22px] font-bold text-ink">{value}</Text>
@@ -65,6 +79,14 @@ export default function HomeScreen() {
   const t = useT();
   const vocab = useVocab();
   const grades = useGrades();
+  const { width: windowWidth } = useWindowDimensions();
+
+  // 코스 카드는 한 줄에 두 개. 퍼센트로 잡으면 가운데 간격만큼 오른쪽 끝이
+  // 다른 카드와 어긋나므로, 실제 내용 폭에서 간격을 빼고 반으로 나눈다
+  const courseCardWidth = Math.floor(
+    (Math.min(windowWidth, MAX_CONTENT_WIDTH) - SCREEN_PADDING_X * 2 - GRID_GAP) /
+      2,
+  );
 
   // 단계 목록은 언어가 바뀔 때만 다시 만든다
   const availableList = useMemo(() => availableGrades(grades), [grades]);
@@ -93,13 +115,10 @@ export default function HomeScreen() {
   );
 
   return (
-    <SafeAreaView className="flex-1 bg-canvas">
-      <ScrollView
-        className="flex-1"
-        contentContainerClassName="w-full px-6 pb-32"
-      >
+    <Screen>
+      <ScrollView className="flex-1" contentContainerClassName="pb-32">
         {/* 헤더: 브랜드 + 연속 학습 (0일은 아예 감춘다) */}
-        <View className="flex-row items-center justify-between pb-2 pt-8">
+        <ScreenHeader className="justify-between">
           <Text className="text-2xl font-bold tracking-tight text-ink">
             Word<Text className="text-mint">Pic</Text>
           </Text>
@@ -111,157 +130,160 @@ export default function HomeScreen() {
               </Text>
             </View>
           )}
-        </View>
+        </ScreenHeader>
 
-        {/* 학습 언어 고르기. 무엇을 배울지가 화면의 출발점이라 맨 위에 둔다 */}
-        <View className="mt-5 flex-row gap-3">
-          {STUDY_LANGS.map((id) => {
-            const on = studyLang === id;
-            return (
-              <Pressable
-                key={id}
-                onPress={() => setStudyLang(id)}
-                accessibilityRole="button"
-                accessibilityState={{ selected: on }}
-                accessibilityLabel={t(`studyLang.${id}` as never)}
-                style={{ flex: 1 }}
-                className={`flex-row items-center gap-2.5 rounded-2xl px-3 py-3 active:scale-[0.98] ${
-                  on ? "bg-canvas shadow-neu-inset" : "bg-surface shadow-neu-sm"
-                }`}
-              >
-                <LanguageFlag lang={id} size={26} />
-                <Text
-                  numberOfLines={1}
-                  className={`text-[14px] font-bold ${
-                    on ? "text-mint-dark" : "text-slate-500"
+        <View className="px-6 pt-6">
+          {/* 학습 언어 고르기. 무엇을 배울지가 화면의 출발점이라 맨 위에 둔다 */}
+          <View className="flex-row gap-3">
+            {STUDY_LANGS.map((id) => {
+              const on = studyLang === id;
+              return (
+                <Pressable
+                  key={id}
+                  onPress={() => setStudyLang(id)}
+                  accessibilityRole="button"
+                  accessibilityState={{ selected: on }}
+                  accessibilityLabel={t(`studyLang.${id}` as never)}
+                  style={{ flex: 1 }}
+                  className={`flex-row items-center gap-2.5 rounded-2xl px-3 py-3 active:scale-[0.98] ${
+                    on ? "bg-canvas shadow-neu-inset" : "bg-surface shadow-neu-sm"
                   }`}
                 >
-                  {t(`studyLang.${id}` as never)}
-                </Text>
-              </Pressable>
-            );
-          })}
-        </View>
-
-        {/* 이어하기 히어로 */}
-        <View className="mt-6">
-          <ContinueCard />
-        </View>
-
-        {/* 오늘의 복습: 헷갈린다고 표시한 단어가 있을 때만 */}
-        {unsure.length > 0 && (
-          <View className="mt-8">
-            <View className="flex-row items-center justify-between gap-3">
-              <Text className="flex-1 text-[17px] font-bold text-ink">
-                헷갈리는 단어 {unsure.length}개
-              </Text>
-              <PillButton
-                label={t("home.reviewStart")}
-                size="sm"
-                variant="primary"
-                onPress={() => router.push(`/study/${unsure[0].id}`)}
-              />
-            </View>
-
-            <ScrollView
-              horizontal
-              showsHorizontalScrollIndicator={false}
-              className="mt-4"
-              contentContainerClassName="gap-3 pr-6"
-            >
-              {unsure.map((w) => {
-                const source = WORD_IMAGES[w.conceptId] ?? WORD_IMAGES[w.word];
-                return (
-                  <Pressable
-                    key={w.id}
-                    onPress={() => router.push(`/study/${w.id}`)}
-                    accessibilityRole="button"
-                    accessibilityLabel={t("a11y.reviewWord", { word: w.word })}
-                    className="w-[92px] active:opacity-70"
+                  <LanguageFlag lang={id} size={26} />
+                  <Text
+                    numberOfLines={1}
+                    className={`text-[14px] font-bold ${
+                      on ? "text-mint-dark" : "text-slate-500"
+                    }`}
                   >
-                    <View className="h-[92px] w-[92px] items-center justify-center overflow-hidden rounded-2xl bg-canvas shadow-neu-inset">
-                      {source ? (
-                        <Image
-                          source={source}
-                          resizeMode="cover"
-                          style={{ width: "100%", height: "100%" }}
-                        />
-                      ) : (
-                        <Text className="text-[26px]">🖼️</Text>
-                      )}
-                    </View>
-                    <Text
-                      numberOfLines={1}
-                      className="mt-2 text-[13px] font-bold text-ink"
+                    {t(`studyLang.${id}` as never)}
+                  </Text>
+                </Pressable>
+              );
+            })}
+          </View>
+
+          {/* 이어하기 히어로 */}
+          <View className="mt-6">
+            <ContinueCard />
+          </View>
+
+          {/* 오늘의 복습: 헷갈린다고 표시한 단어가 있을 때만 */}
+          {unsure.length > 0 && (
+            <View className="mt-8">
+              <View className="flex-row items-center justify-between gap-3">
+                <Text className="flex-1 text-[17px] font-bold text-ink">
+                  헷갈리는 단어 {unsure.length}개
+                </Text>
+                <PillButton
+                  label={t("home.reviewStart")}
+                  size="sm"
+                  variant="primary"
+                  onPress={() => router.push(`/study/${unsure[0].id}`)}
+                />
+              </View>
+
+              {/* 가로 목록은 화면 좌우 여백을 넘어 끝까지 이어지게 한다 */}
+              <ScrollView
+                horizontal
+                showsHorizontalScrollIndicator={false}
+                className="-mx-6 mt-4"
+                contentContainerClassName="gap-3 px-6"
+              >
+                {unsure.map((w) => {
+                  const source =
+                    WORD_IMAGES[w.conceptId] ?? WORD_IMAGES[w.word];
+                  return (
+                    <Pressable
+                      key={w.id}
+                      onPress={() => router.push(`/study/${w.id}`)}
+                      accessibilityRole="button"
+                      accessibilityLabel={t("a11y.reviewWord", { word: w.word })}
+                      className="w-[92px] active:opacity-70"
                     >
-                      {w.word}
-                    </Text>
-                  </Pressable>
-                );
-              })}
-            </ScrollView>
-          </View>
-        )}
+                      <View className="h-[92px] w-[92px] items-center justify-center overflow-hidden rounded-2xl bg-canvas shadow-neu-inset">
+                        {source ? (
+                          <Image
+                            source={source}
+                            resizeMode="cover"
+                            style={{ width: "100%", height: "100%" }}
+                          />
+                        ) : (
+                          <Text className="text-[26px]">🖼️</Text>
+                        )}
+                      </View>
+                      <Text
+                        numberOfLines={1}
+                        className="mt-2 text-[13px] font-bold text-ink"
+                      >
+                        {w.word}
+                      </Text>
+                    </Pressable>
+                  );
+                })}
+              </ScrollView>
+            </View>
+          )}
 
-        {/* 오늘의 기록 */}
-        <Text className="mt-8 text-[17px] font-bold text-ink">
-          {t("home.todayRecord")}
-        </Text>
-        {today.seen === 0 && today.known === 0 ? (
-          <View className="mt-4 rounded-3xl bg-surface px-6 py-5 shadow-neu-card">
-            <Text className="text-[13px] text-slate-500">
-              {t("home.firstWordPrompt")}
-            </Text>
-          </View>
-        ) : (
-          <View className="mt-4 flex-row gap-4">
-            <TodayStat
-              emoji="👀"
-              value={today.seen}
-              label={t("home.seenToday")}
-            />
-            <TodayStat
-              emoji="✅"
-              value={today.known}
-              label={t("home.knownToday")}
-            />
-            <TodayStat
-              emoji="🔥"
-              value={streak}
-              unit={t("home.days")}
-              label={t("home.streak")}
-            />
-          </View>
-        )}
-
-        {/* 내 코스 */}
-        <Text className="mt-8 text-[17px] font-bold text-ink">
-          {t("home.myCourse")}
-        </Text>
-        {/* 한 줄에 두 개씩. 폭을 47%로 잡아 좁은 화면에서도 두 칸이 확실히 들어간다 */}
-        <View className="mt-4 flex-row flex-wrap gap-4">
-          {knownByGrade.map(({ grade, known }) => (
-            <View key={grade.id} className="w-[47%]">
-              <GradeCard
-                label={grade.label}
-                learnedWords={known}
-                totalWords={grade.totalWords}
-                onPress={() => {
-                  setActiveGradeId(grade.id);
-                  router.push(`/grade/${grade.id}`);
-                }}
+          {/* 오늘의 기록 */}
+          <Text className="mt-8 text-[17px] font-bold text-ink">
+            {t("home.todayRecord")}
+          </Text>
+          {today.seen === 0 && today.known === 0 ? (
+            <View className="mt-4 rounded-3xl bg-surface p-6 shadow-neu-card">
+              <Text className="text-[13px] text-slate-500">
+                {t("home.firstWordPrompt")}
+              </Text>
+            </View>
+          ) : (
+            <View className="mt-4 flex-row gap-4">
+              <TodayStat
+                emoji="👀"
+                value={today.seen}
+                label={t("home.seenToday")}
+              />
+              <TodayStat
+                emoji="✅"
+                value={today.known}
+                label={t("home.knownToday")}
+              />
+              <TodayStat
+                emoji="🔥"
+                value={streak}
+                unit={t("home.days")}
+                label={t("home.streak")}
               />
             </View>
-          ))}
-        </View>
-        {upcomingLabel.length > 0 && (
-          <Text className="mt-4 text-[12px] text-slate-400">
-            {upcomingLabel} · {t("level.preparing")}
+          )}
+
+          {/* 내 코스 */}
+          <Text className="mt-8 text-[17px] font-bold text-ink">
+            {t("home.myCourse")}
           </Text>
-        )}
+          <View className="mt-4 flex-row flex-wrap gap-4">
+            {knownByGrade.map(({ grade, known }) => (
+              <View key={grade.id} style={{ width: courseCardWidth }}>
+                <GradeCard
+                  label={grade.label}
+                  learnedWords={known}
+                  totalWords={grade.totalWords}
+                  onPress={() => {
+                    setActiveGradeId(grade.id);
+                    router.push(`/grade/${grade.id}`);
+                  }}
+                />
+              </View>
+            ))}
+          </View>
+          {upcomingLabel.length > 0 && (
+            <Text className="mt-4 text-[12px] text-slate-400">
+              {upcomingLabel} · {t("level.preparing")}
+            </Text>
+          )}
+        </View>
       </ScrollView>
 
       <BottomNav />
-    </SafeAreaView>
+    </Screen>
   );
 }

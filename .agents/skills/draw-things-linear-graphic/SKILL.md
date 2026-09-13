@@ -16,10 +16,11 @@ description: >-
 
 ## 🎨 선형그래픽 및 3~3.5등신 픽토그램 캐릭터 조형 원칙
 
-1. **전체적인 비율 및 실루엣 (3~3.5등신 SD 비율 & 유연한 곡선)**:
+1. **전체적인 비율 및 실루엣 (3~3.5등신 SD 비율 & 유연한 곡선 & 화면별 자유로운 크기 조절)**:
    - 몸체에 비해 머리가 확연히 큰 **3~3.5등신 SD(Super Deformed) 비율**을 적용해 친근하고 직관적인 인상을 줍니다.
    - 각진 모서리나 해부학적인 골격 굴곡(쇄골, 어깨 각도, 척추 라인 등)을 철저히 배제하고 완만한 곡선 위주로 매끄럽게 이어집니다.
-   - 프롬프트 키워드: `3 to 3.5 head-to-body chibi SD ratio cute character, large prominent smooth spherical bald round head, gentle organic curving silhouette`.
+   - **화면에 따른 캐릭터 크기 자유 조절**: 씬의 구도, 공간감, 배경 환경(넓은 실내, 야외 풍경, 거대한 건축물 등)에 따라 캐릭터의 크기를 화면에 꽉 채우지 않고 **자유롭게 축소(scale down)하여 배치**할 수 있습니다. 배경과 조화롭게 어우러지도록 유연하게 스케일을 조절합니다.
+   - 프롬프트 키워드: `3 to 3.5 head-to-body chibi SD ratio cute character, large prominent smooth spherical bald round head, gentle organic curving silhouette, flexible character scale freely scaled down to fit spacious environment and background framing, balanced scene composition`.
 2. **두상 및 이목구비 (구형 민머리 & 점/선 압축 얼굴)**:
    - **매끄러운 구형 민머리**: 귀, 머리카락, 헤어라인, 턱선이 일절 생략된 매끄러운 원형/구형 두상입니다.
    - **점과 선으로 압축된 이목구비**: 흰자위나 동공 없이 단순한 **두 개의 검은 점(Dot) 눈**과 얇은 호선 형태의 **가벼운 미소선(Smile line) 입** 하나로만 표현합니다. 코, 눈썹, 입술 두께, 치아는 일절 묘사하지 않습니다.

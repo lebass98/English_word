@@ -275,6 +275,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   dictionary: require("../../assets/words/dictionary.png"),
   different: require("../../assets/words/different.png"),
   difficult: require("../../assets/words/difficult.png"),
+  dig: require("../../assets/words/dig.png"),
   diligent: require("../../assets/words/diligent.png"),
   "dining room": require("../../assets/words/dining-room.png"),
   "dinning room": require("../../assets/words/dinning-room.png"),

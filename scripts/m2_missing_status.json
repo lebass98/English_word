@@ -1,6 +1,6 @@
 {
-  "current_unit": 26,
-  "current_word": "row",
+  "current_unit": 27,
+  "current_word": "sheet",
   "total_targets": 128,
   "completed_words": [
     {
@@ -226,6 +226,27 @@
       "unit": 26,
       "elapsed_sec": 219.3,
       "size_kb": 1270.7
+    },
+    {
+      "word": "candle",
+      "id": "m2-521",
+      "unit": 27,
+      "elapsed_sec": 217.7,
+      "size_kb": 1049.8
+    },
+    {
+      "word": "cookie",
+      "id": "m2-529",
+      "unit": 27,
+      "elapsed_sec": 219.1,
+      "size_kb": 941.6
+    },
+    {
+      "word": "sheet",
+      "id": "m2-535",
+      "unit": 27,
+      "elapsed_sec": 221.8,
+      "size_kb": 584.4
     }
   ]
 }

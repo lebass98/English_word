@@ -641,6 +641,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   obvious: require("../../assets/words/obvious.png"),
   occur: require("../../assets/words/occur.png"),
   ocean: require("../../assets/words/ocean.png"),
+  offer: require("../../assets/words/offer.png"),
   office: require("../../assets/words/office.png"),
   officer: require("../../assets/words/officer.png"),
   once: require("../../assets/words/once.png"),

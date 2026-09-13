@@ -931,4 +931,8 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   "m1-678": require("../../assets/words/circle.png"),
   "m1-679": require("../../assets/words/cause.png"),
   "m1-680": require("../../assets/words/atom.png"),
+  "stomach": require("../../assets/words/stomach.png"),
+  "m1-681": require("../../assets/words/stomach.png"),
+  "m1-682": require("../../assets/words/locate.png"),
+  "m1-683": require("../../assets/words/danger.png"),
 };

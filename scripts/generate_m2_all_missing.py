@@ -36,8 +36,8 @@ WORKSPACE_ROOT = os.path.dirname(PROJECT_ROOT)
 DASHBOARD_MD = os.path.join(WORKSPACE_ROOT, "LIVE_DASHBOARD.md")
 DASHBOARD_HTML = os.path.join(WORKSPACE_ROOT, "dashboard.html")
 
-# 스킬 개정(머리·몸통 분리) 전에 만들어져 다시 그려야 하는 그림
-REGENERATE = {"intimate"}
+# 그림이 있어도 다시 그릴 단어 (비워 두면 없는 그림만 만든다)
+REGENERATE = set()
 
 
 def clean_scene(text):

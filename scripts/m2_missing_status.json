@@ -1,267 +1,35 @@
 {
-  "current_unit": null,
-  "current_word": null,
-  "total_targets": 128,
+  "current_unit": 28,
+  "current_word": "ticket",
+  "total_targets": 73,
   "completed_words": [
     {
-      "word": "intimate",
-      "id": "m2-367",
-      "unit": 19,
-      "elapsed_sec": 181.7,
-      "size_kb": 783.8
-    },
-    {
-      "word": "greedy",
-      "id": "m2-380",
-      "unit": 19,
-      "elapsed_sec": 207.0,
-      "size_kb": 867.3
-    },
-    {
-      "word": "vain",
-      "id": "m2-387",
-      "unit": 20,
-      "elapsed_sec": 212.6,
-      "size_kb": 1063.4
-    },
-    {
-      "word": "solar",
-      "id": "m2-391",
-      "unit": 20,
-      "elapsed_sec": 216.2,
-      "size_kb": 967.3
-    },
-    {
-      "word": "single",
-      "id": "m2-393",
-      "unit": 20,
-      "elapsed_sec": 217.1,
-      "size_kb": 742.5
-    },
-    {
-      "word": "serious",
-      "id": "m2-395",
-      "unit": 20,
-      "elapsed_sec": 218.2,
-      "size_kb": 704.0
-    },
-    {
-      "word": "boring",
-      "id": "m2-401",
-      "unit": 21,
-      "elapsed_sec": 216.4,
-      "size_kb": 759.9
-    },
-    {
-      "word": "fair",
-      "id": "m2-405",
-      "unit": 21,
-      "elapsed_sec": 218.5,
-      "size_kb": 728.7
-    },
-    {
-      "word": "modern",
-      "id": "m2-408",
-      "unit": 21,
-      "elapsed_sec": 218.8,
-      "size_kb": 903.7
-    },
-    {
-      "word": "harmful",
-      "id": "m2-410",
-      "unit": 21,
-      "elapsed_sec": 218.4,
-      "size_kb": 880.6
-    },
-    {
-      "word": "calm",
-      "id": "m2-411",
-      "unit": 21,
-      "elapsed_sec": 219.4,
-      "size_kb": 918.5
-    },
-    {
-      "word": "special",
-      "id": "m2-412",
-      "unit": 21,
-      "elapsed_sec": 220.4,
-      "size_kb": 657.0
-    },
-    {
-      "word": "steady",
-      "id": "m2-413",
-      "unit": 21,
-      "elapsed_sec": 220.1,
-      "size_kb": 675.9
-    },
-    {
-      "word": "company",
-      "id": "m2-419",
-      "unit": 21,
-      "elapsed_sec": 220.5,
-      "size_kb": 593.5
-    },
-    {
-      "word": "wagon",
-      "id": "m2-421",
-      "unit": 22,
-      "elapsed_sec": 215.9,
-      "size_kb": 903.2
-    },
-    {
-      "word": "mail",
-      "id": "m2-429",
-      "unit": 22,
-      "elapsed_sec": 200.9,
-      "size_kb": 852.4
-    },
-    {
-      "word": "log",
-      "id": "m2-430",
-      "unit": 22,
-      "elapsed_sec": 200.0,
-      "size_kb": 860.0
-    },
-    {
-      "word": "coast",
-      "id": "m2-440",
-      "unit": 22,
-      "elapsed_sec": 200.1,
-      "size_kb": 948.5
-    },
-    {
-      "word": "tongue",
-      "id": "m2-445",
-      "unit": 23,
-      "elapsed_sec": 198.1,
-      "size_kb": 977.1
-    },
-    {
-      "word": "blood",
-      "id": "m2-449",
-      "unit": 23,
-      "elapsed_sec": 212.0,
-      "size_kb": 847.8
-    },
-    {
-      "word": "servant",
-      "id": "m2-468",
-      "unit": 24,
-      "elapsed_sec": 217.6,
-      "size_kb": 924.1
-    },
-    {
-      "word": "horn",
-      "id": "m2-479",
-      "unit": 24,
-      "elapsed_sec": 218.1,
-      "size_kb": 696.9
-    },
-    {
-      "word": "force",
-      "id": "m2-483",
-      "unit": 25,
-      "elapsed_sec": 217.5,
-      "size_kb": 1177.5
-    },
-    {
-      "word": "wool",
-      "id": "m2-486",
-      "unit": 25,
-      "elapsed_sec": 219.1,
-      "size_kb": 662.9
-    },
-    {
-      "word": "jar",
-      "id": "m2-490",
-      "unit": 25,
-      "elapsed_sec": 218.3,
-      "size_kb": 1105.2
-    },
-    {
-      "word": "death",
-      "id": "m2-492",
-      "unit": 25,
-      "elapsed_sec": 218.4,
-      "size_kb": 998.2
-    },
-    {
-      "word": "saw",
-      "id": "m2-493",
-      "unit": 25,
-      "elapsed_sec": 219.7,
-      "size_kb": 823.6
-    },
-    {
-      "word": "eraser",
-      "id": "m2-497",
-      "unit": 25,
-      "elapsed_sec": 219.9,
-      "size_kb": 930.8
-    },
-    {
-      "word": "nephew",
-      "id": "m2-500",
-      "unit": 25,
-      "elapsed_sec": 218.5,
-      "size_kb": 765.7
-    },
-    {
-      "word": "niece",
-      "id": "m2-501",
-      "unit": 26,
-      "elapsed_sec": 218.4,
-      "size_kb": 651.8
-    },
-    {
-      "word": "earth",
-      "id": "m2-510",
-      "unit": 26,
-      "elapsed_sec": 219.6,
-      "size_kb": 968.8
-    },
-    {
-      "word": "row",
-      "id": "m2-515",
-      "unit": 26,
-      "elapsed_sec": 219.3,
-      "size_kb": 1270.7
-    },
-    {
-      "word": "candle",
-      "id": "m2-521",
-      "unit": 27,
-      "elapsed_sec": 217.7,
-      "size_kb": 1049.8
-    },
-    {
-      "word": "cookie",
-      "id": "m2-529",
-      "unit": 27,
-      "elapsed_sec": 219.1,
-      "size_kb": 941.6
-    },
-    {
-      "word": "sheet",
-      "id": "m2-535",
-      "unit": 27,
-      "elapsed_sec": 221.8,
-      "size_kb": 584.4
-    },
-    {
-      "word": "ostrich",
-      "id": "m2-542",
+      "word": "jean",
+      "id": "m2-548",
       "unit": 28,
-      "elapsed_sec": 237.6,
-      "size_kb": 1245.2
+      "elapsed_sec": 193.8,
+      "size_kb": 960.5
     },
     {
-      "word": "cricket",
-      "id": "m2-544",
+      "word": "shock",
+      "id": "m2-552",
       "unit": 28,
-      "elapsed_sec": 250.7,
-      "size_kb": 799.4
+      "elapsed_sec": 239.8,
+      "size_kb": 1148.2
+    },
+    {
+      "word": "march",
+      "id": "m2-553",
+      "unit": 28,
+      "elapsed_sec": 251.6,
+      "size_kb": 1145.7
+    },
+    {
+      "word": "ticket",
+      "id": "m2-559",
+      "unit": 28,
+      "elapsed_sec": 250.2,
+      "size_kb": 1118.2
     }
-  ],
-  "stopped": "사용자 요청으로 중단"
+  ]
 }

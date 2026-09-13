@@ -37,6 +37,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   airport: require("../../assets/words/airport.png"),
   alarm: require("../../assets/words/alarm.png"),
   alive: require("../../assets/words/alive.png"),
+  allow: require("../../assets/words/allow.png"),
   almost: require("../../assets/words/almost.png"),
   alone: require("../../assets/words/alone.png"),
   along: require("../../assets/words/along.png"),

@@ -148,6 +148,11 @@ def add_readme_entry(unit, words):
 def publish_unit(unit, words):
     """단원 누락분 완료 시 파이프라인. 실패하면 예외를 던져 전체를 멈춘다"""
     print(f"\n[Unit {unit}] 등록·검증·배포 시작: {', '.join(words)}", flush=True)
+    has_origin = subprocess.run(["git", "remote", "get-url", "origin"], cwd=PROJECT_ROOT, capture_output=True).returncode == 0
+    # 다른 기기·세션도 같은 날짜 README 에 줄을 넣으므로, README 를 고치기 전에 먼저 받아
+    # 받기와 푸시 사이를 몇 초로 줄인다 (예전엔 커밋 뒤에 받아 README 가 자주 충돌했다)
+    if has_origin and run(["git", "pull", "--rebase", "--autostash", "origin", "main"], check=False).returncode != 0:
+        raise RuntimeError("pull --rebase 충돌 - 자동 해결하지 않고 중단합니다")
     run([sys.executable, SYNC_SCRIPT])
     run(["npm", "run", "lint"])
     run(["find", ".", "..", "-name", "._*", "-type", "f", "-delete"], check=False)
@@ -159,12 +164,14 @@ def publish_unit(unit, words):
         "Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>"
     )
     run(["git", "commit", "-m", msg])
-    if subprocess.run(["git", "remote", "get-url", "origin"], cwd=PROJECT_ROOT, capture_output=True).returncode != 0:
+    if not has_origin:
         print("[Git] origin 없음 - 커밋까지만 완료", flush=True)
         return
-    if run(["git", "pull", "--rebase", "origin", "main"], check=False).returncode != 0:
-        raise RuntimeError("pull --rebase 충돌 - 자동 해결하지 않고 중단합니다")
-    run(["git", "push", "origin", "main"])
+    if run(["git", "push", "origin", "main"], check=False).returncode != 0:
+        # 그 몇 초 사이에 누가 올렸으면 한 번 더 받아 올린다
+        if run(["git", "pull", "--rebase", "origin", "main"], check=False).returncode != 0:
+            raise RuntimeError("pull --rebase 충돌 - 자동 해결하지 않고 중단합니다")
+        run(["git", "push", "origin", "main"])
     print(f"[Git] Unit {unit} 푸시 완료", flush=True)
 
 

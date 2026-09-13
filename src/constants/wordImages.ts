@@ -610,6 +610,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   none: require("../../assets/words/none.png"),
   normal: require("../../assets/words/normal.png"),
   notice: require("../../assets/words/notice.png"),
+  nuclear: require("../../assets/words/nuclear.png"),
   nurse: require("../../assets/words/nurse.png"),
   oath: require("../../assets/words/oath.png"),
   obey: require("../../assets/words/obey.png"),

@@ -31,6 +31,8 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-13
+- 중1 39단원 빠진 그림 1장 Draw Things 선형그래픽으로 생성 및 등록
+  - 대상 단어: uniform
 - 중1 hydrogen 그림을 머리·몸 구분 기준 확정 샘플로 교체하고 스킬 문서에 확정 샘플로 표시
 
 - 중2 빠진 그림 생성 스크립트(`scripts/generate_m2_all_missing.py`)를 개정 스킬 기준으로 교체

@@ -689,6 +689,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   push: require("../../assets/words/push.png"),
   puzzle: require("../../assets/words/puzzle.png"),
   quarter: require("../../assets/words/quarter.png"),
+  quiet: require("../../assets/words/quiet.png"),
   quite: require("../../assets/words/quite.png"),
   race: require("../../assets/words/race.png"),
   raise: require("../../assets/words/raise.png"),

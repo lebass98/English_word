@@ -131,6 +131,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   bubble: require("../../assets/words/bubble.png"),
   build: require("../../assets/words/build.png"),
   burden: require("../../assets/words/burden.png"),
+  burn: require("../../assets/words/burn.png"),
   bury: require("../../assets/words/bury.png"),
   bush: require("../../assets/words/bush.png"),
   business: require("../../assets/words/business.png"),

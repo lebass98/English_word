@@ -1,6 +1,6 @@
 {
-  "current_unit": 32,
-  "current_word": "couple",
+  "current_unit": 33,
+  "current_word": "sunshine",
   "total_targets": 73,
   "completed_words": [
     {
@@ -177,6 +177,41 @@
       "unit": 32,
       "elapsed_sec": 209.8,
       "size_kb": 1070.3
+    },
+    {
+      "word": "group",
+      "id": "m2-645",
+      "unit": 33,
+      "elapsed_sec": 205.7,
+      "size_kb": 765.1
+    },
+    {
+      "word": "load",
+      "id": "m2-648",
+      "unit": 33,
+      "elapsed_sec": 206.7,
+      "size_kb": 1200.6
+    },
+    {
+      "word": "port",
+      "id": "m2-652",
+      "unit": 33,
+      "elapsed_sec": 206.2,
+      "size_kb": 761.6
+    },
+    {
+      "word": "sunrise",
+      "id": "m2-654",
+      "unit": 33,
+      "elapsed_sec": 206.4,
+      "size_kb": 797.6
+    },
+    {
+      "word": "sunshine",
+      "id": "m2-655",
+      "unit": 33,
+      "elapsed_sec": 206.3,
+      "size_kb": 1095.9
     }
   ]
 }

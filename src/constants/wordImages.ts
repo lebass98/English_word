@@ -103,6 +103,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   bike: require("../../assets/words/bike.png"),
   bill: require("../../assets/words/bill.png"),
   biology: require("../../assets/words/biology.png"),
+  birth: require("../../assets/words/birth.png"),
   bit: require("../../assets/words/bit.png"),
   bite: require("../../assets/words/bite.png"),
   blanket: require("../../assets/words/blanket.png"),

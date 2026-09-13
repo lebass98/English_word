@@ -54,6 +54,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   "accustomed to": require("../../assets/words/accustomed-to.png"),
   ache: require("../../assets/words/ache.png"),
   achieve: require("../../assets/words/achieve.png"),
+  acquire: require("../../assets/words/acquire.png"),
   activity: require("../../assets/words/activity.png"),
   actually: require("../../assets/words/actually.png"),
   add: require("../../assets/words/add.png"),

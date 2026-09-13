@@ -617,13 +617,14 @@ function StudyCard({
         <View className="mx-6 flex-row items-stretch gap-1 pb-4 pt-3">
           {/* 홈으로. 유닛을 거쳐 들어온 화면이라 뒤로가기만으로는 여러 번 눌러야
               한다. 글자 없이 아이콘만 둔다.
-              높이는 옆 버튼을 따라 늘어나고(items-stretch), aspect-square 가
-              너비를 높이에 맞춰 줘서 크기를 손으로 적지 않아도 정원이 된다 */}
+              가로·세로를 같은 값으로 못 박고 self-center 로 늘어남을 끊는다.
+              aspect-square 로 높이에서 너비를 끌어오면 네이티브에서 계산이
+              어긋나 원이 일그러진다. 52px 은 옆 버튼 높이(위아래 16 + 내용 20) */}
           <Pressable
             onPress={() => router.replace("/")}
             accessibilityRole="button"
             accessibilityLabel={t("nav.home")}
-            className="aspect-square shrink-0 items-center justify-center rounded-full bg-surface shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
+            className="h-[52px] w-[52px] shrink-0 self-center items-center justify-center rounded-full bg-surface shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
           >
             <HomeIcon size={20} color="#64748b" />
           </Pressable>
@@ -645,8 +646,8 @@ function StudyCard({
             </Text>
           </Pressable>
 
-          {/* 저장 버튼은 글씨('저장됨')에 맞춘 폭으로 고정한다. 홈 버튼이
-              들어온 만큼 여기서 자리를 덜어 양옆 판정 버튼을 넓게 남긴다 */}
+          {/* 저장 버튼도 가로는 글씨('저장됨')에 맞춰 못 박는다(shrink-0).
+              늘었다 줄었다 하는 것은 '헷갈려요'·'외웠어요' 둘뿐이다 */}
           <Pressable
             onPress={() => toggleSaved(word.id)}
             accessibilityRole="button"

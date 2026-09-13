@@ -364,6 +364,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   foundation: require("../../assets/words/foundation.png"),
   "fountain-pen": require("../../assets/words/fountain-pen.png"),
   frankly: require("../../assets/words/frankly.png"),
+  French: require("../../assets/words/French.png"),
   fresh: require("../../assets/words/fresh.png"),
   frighten: require("../../assets/words/frighten.png"),
   frog: require("../../assets/words/frog.png"),

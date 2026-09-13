@@ -39,22 +39,23 @@ def generate_linear_image(
 
     prompt = (
         f"linear graphic illustration, complete richly detailed scene of {clean_concept}, "
-        "thinnest possible 0.05mm ultra-delicate needle-thin hairline ink stroke, extremely fine crisp outlines drawn in dark charcoal ink color #030203, "
-        "flat smooth light gray canvas background color #f5f6f8, "
-        "neckless cute slender doodle stickman characters with round bald circle heads attached directly to torso with completely no neck, tiny smiling dot faces, "
-        "modest compact character scale, standing cute chibi figure occupying approximately one third of frame height around 30 to 35 percent of canvas height, placed comfortably on bottom floor line, spacious upper and middle frame filled with rich environmental details, balanced wide scene composition, plenty of breathing room, full body visible without crowding, "
-        "abundant rich background details, furniture, wall decor, floor line, ambient props, "
-        "strictly flat 2d linear graphic, no shading, no gradients, no solid black fills, empty background, "
-        "strictly English text only if any letters appear, absolutely no non-English characters, 100% pure English alphabet A-Z only, completely no Korean characters, strictly no Hangul, strictly no Chinese characters, completely non-Asian script, zero foreign glyphs"
+        f"3 to 3.5 head-to-body chibi SD ratio cute characters with large prominent smooth spherical bald round heads, "
+        f"minimalist dot and line face, two simple solid black dot eyes and a tiny thin curved smile line, strictly no nose, no eyebrows, no lips, no ears, no hair, "
+        f"seamless tubular neckless body directly attached to round head with completely no neck, smooth organic curves without clavicle or muscle contours, "
+        f"jointless smooth rubber-hose arms and legs with no elbows and no knees, simplified mitten-like blunt round hands, smooth rounded flat oval foot pads firmly on floor line, "
+        f"blank solid white mannequin pictogram character fill with zero clothing, no seams, no buttons, no folds, no skin texture, genderless universal figure, "
+        f"crisp uniform dark charcoal ink outlines #030203, strictly flat 2d linear graphic, no shading, no gradients, no solid black fills, flat smooth light gray canvas background color #f5f6f8, "
+        f"small modest chibi character height strictly under 50 to 60 percent of frame height, small character occupying less than half the canvas height, spacious wide environmental framing, abundant negative space around character, full body comfortably framed with generous breathing room, "
+        f"abundant rich background details, furniture, wall decor, floor line, ambient props, "
+        f"strictly English text only if any letters appear, absolutely no non-English characters, 100% pure English alphabet A-Z only, completely no Korean characters, strictly no Hangul, strictly no Chinese characters, completely non-Asian script, zero foreign glyphs"
     )
 
     negative_prompt = (
-        "neck, long neck, throat, collar, neck line, detailed neck anatomy, "
-        "oversized character, giant figure, tall figure, frame-filling character, character taking up entire screen, close-up, extreme close-up, cropped body, zoomed in, crowding the frame, suffocating composition, character head near top of frame, dominating figure, "
-        "realistic human anatomy, realistic face, facial details, nose, eyebrows, eyelashes, eyelids, lips, teeth, ears, hair, hairstyle, muscles, realistic fingers, individual finger joints, fingernails, toes, shoes, clothing, clothes, shirt, pants, wrinkles, folds, "
-        "thick lines, bold outlines, heavy brush strokes, chunky lines, fat strokes, "
-        "pure white #ffffff background, dark background, black background, 3d, 3d render, realistic, shadow, shading, color, gradients, photo, blur, watermark, text, signature, messy, "
-        "non-English text, non-English characters, Korean text, Hangul, Korean letters, Chinese characters, Hanzi, Kanji, Japanese text, Kana, foreign script, pseudo-Hangul, weird Asian glyphs, oriental symbols, non-Latin alphabet, foreign writing"
+        "non-English text, non-English characters, Korean text, Hangul, Korean letters, Chinese characters, Hanzi, Kanji, Japanese text, Kana, foreign script, pseudo-Hangul, weird Asian glyphs, oriental symbols, non-Latin alphabet, foreign writing, "
+        "character height over 60 percent of canvas, character taller than half screen, oversized character, giant figure, frame-filling character, tall character, close-up, extreme close-up, cropped body, zoomed in, crowding the frame, large scale character dominating scene, taking over screen, "
+        "realistic human anatomy, realistic face, facial details, nose, eyebrows, eyelashes, eyelids, lips, teeth, ears, hair, hairstyle, neck, long neck, throat, collar, collarbone, muscles, realistic fingers, individual finger joints, fingernails, toes, shoes, clothing, clothes, shirt, pants, wrinkles, folds, "
+        "thick lines, heavy brush strokes, chunky lines, fat strokes, "
+        "pure white #ffffff background, dark background, black background, 3d, 3d render, realistic, shadow, shading, color, gradients, photo, blur, watermark, signature, messy"
     )
 
 

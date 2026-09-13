@@ -16,14 +16,11 @@ description: >-
 
 ## 🎨 선형그래픽 및 3~3.5등신 픽토그램 캐릭터 조형 원칙
 
-1. **전체적인 비율 및 실루엣 (3~3.5등신 SD 비율 & 화면 높이 약 1/3(30~35%) 아담한 인물 크기 & 배경 중심 와이드 구도)**:
+1. **전체적인 비율 및 실루엣 (3~3.5등신 SD 비율 & 화면 높이의 최대 60% 이하 엄격 제한 & 여백 중심 와이드 구도)**:
    - 몸체에 비해 머리가 확연히 큰 **3~3.5등신 SD(Super Deformed) 비율**을 적용해 친근하고 직관적인 인상을 줍니다.
    - 각진 모서리나 해부학적인 골격 굴곡(쇄골, 어깨 각도, 척추 라인 등)을 철저히 배제하고 완만한 곡선 위주로 매끄럽게 이어집니다.
-   - **화면 대비 약 1/3(30~35%) 높이의 아담한 인물 크기 (레퍼런스 이미지 표준)**:
-     - 인물의 전체 신장은 캔버스 전체 높이(1024px)의 **약 1/3(30~35%) 수준**으로 아담하게 바닥선(하단 지면)에 안정적으로 서 있습니다.
-     - 화면의 상단 및 중단(약 65~70%)은 칠판, 벽면 선반, 창문, 가구, 액자, 조명, 도구 등 풍성한 내러티브 배경이 시원하게 채워지며, 인물이 화면을 독점하거나 꽉 채우지 않습니다.
-     - 인물의 머리가 화면 상단까지 치솟거나 클로즈업되어 화면을 지배하는 답답한 구도를 철저히 배제합니다.
-   - 프롬프트 키워드: `3 to 3.5 head-to-body chibi SD ratio cute character, large prominent smooth spherical bald round head, gentle organic curving silhouette, modest compact character scale, standing cute chibi figure occupying approximately one third of frame height around 30 to 35 percent of canvas height, placed comfortably on bottom floor line, spacious upper and middle frame filled with rich environmental details, balanced wide scene composition, plenty of breathing room, full body visible without crowding`.
+   - **사람 크기 최대 60% 제한 절대 원칙 (Strictly under 60% of frame height)**: 캐릭터의 크기는 **화면 전체 세로 높이의 최대 60%를 절대 넘지 않아야 합니다**. 가장 권장되는 크기는 화면 높이의 약 **35%~50% 수준**으로 아담하고 단정하게 위치하며, 상하좌우에 최소 40% 이상의 풍성한 시각적 여백(Breathing room, negative space)과 시원한 배경 공간감을 반드시 확보합니다. 클로즈업이나 화면을 꽉 채우는 구도는 전면 금지되며, 인물의 머리부터 발끝까지 전신(Full body)이 넉넉한 공간 안에 편안하게 노출되어야 합니다.
+   - 프롬프트 키워드: `3 to 3.5 head-to-body chibi SD ratio cute character, large prominent smooth spherical bald round head, gentle organic curving silhouette, small modest chibi character height strictly under 50 to 60 percent of frame height, small character occupying less than half the canvas height, spacious wide environmental framing, abundant negative space around character, full body comfortably framed with generous breathing room`.
 2. **두상 및 이목구비 (구형 민머리 & 점/선 압축 얼굴)**:
    - **매끄러운 구형 민머리**: 귀, 머리카락, 헤어라인, 턱선이 일절 생략된 매끄러운 원형/구형 두상입니다.
    - **점과 선으로 압축된 이목구비**: 흰자위나 동공 없이 단순한 **두 개의 검은 점(Dot) 눈**과 얇은 호선 형태의 **가벼운 미소선(Smile line) 입** 하나로만 표현합니다. 코, 눈썹, 입술 두께, 치아는 일절 묘사하지 않습니다.
@@ -46,7 +43,7 @@ description: >-
 7. **영문 외 일체 배제 및 100% 영문 전용 절대 원칙 (Strictly English Only / Zero Non-English Characters)**:
    - **프롬프트 및 씬 설명 내 영문 외 문자 절대 금지**: 단어 뜻, 한국어 메모(예: `(가슴)`, `(가루)`), 한자 등 영문(A-Z, a-z) 및 기본 숫자/기호 이외의 모든 비영문 문자는 프롬프트에 절대 넣지 않으며, 오직 100% 순수 영문 씬 묘사(English prompt only)만 전달합니다.
    - **이미지 씬 내부 텍스트 100% 영문 전용**: 씬 내부의 간판, 포스터, 서류 등에 글자가 노출될 경우 오직 영문 알파벳(A-Z)만 허용하며, 한글/한자/일본어 및 왜곡된 기호 생성을 원천 차단합니다.
-   - **부정(Negative) 프롬프트 필수 적용**: `non-English text, Korean text, Hangul, Chinese characters, Hanzi, Kanji, Japanese, foreign characters, dominant character crowding the frame, overwhelming screen, frame-filling figure, suffocating composition, unnatural forced character size, giant figure dominating scenery, oversized character, close-up, extreme close-up, cropped body, zoomed in, crowding the frame, large scale character dominating scene, realistic human anatomy, realistic face, facial details, nose, eyebrows, lips, teeth, ears, hair, neck, muscles, realistic fingers, fingernails, toes, clothes, shirt, pants, wrinkles, shading, gradients, shadow, 3d render`.
+   - **부정(Negative) 프롬프트 필수 적용**: `non-English text, Korean text, Hangul, Chinese characters, Hanzi, Kanji, Japanese, foreign characters, character height over 60 percent of canvas, character taller than half screen, oversized character, giant figure, frame-filling character, tall character, close-up, extreme close-up, cropped body, zoomed in, crowding the frame, large scale character dominating scene, taking over screen, realistic human anatomy, realistic face, facial details, nose, eyebrows, lips, teeth, ears, hair, neck, muscles, realistic fingers, fingernails, toes, clothes, shirt, pants, wrinkles, shading, gradients, shadow, 3d render`.
 
 
 ---

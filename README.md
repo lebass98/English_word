@@ -31,6 +31,11 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-13
+- 중학교 2학년 Unit 4 누락 단어 선형그래픽 일러스트 4종 생성 및 등록 완료 (Draw Things 로컬 API 기반)
+  - 1024x1024 해상도, 3~3.5등신 순백색 마네킹 픽토그램 캐릭터, 인물 크기 최대 60% 이하 엄격 제한 및 여백 중심 와이드 구도
+  - 생성 단어: hydrogen, control, uniform, damage
+  - `sync_word_images.py` 스크립트를 통해 `src/constants/wordImages.ts` 레지스트리 일괄 갱신 완료
+
 - 중학교 1학년 Unit 39 선형그래픽 일러스트 단어(`chopstick`) 생성 및 레퍼런스 표준 스타일 스킬 개정 적용
   - 업로드된 표준 레퍼런스(`possible.png`) 톤앤매너 완벽 동기화 (초극세 0.05mm 잉크선, No-Neck 라운드 스틱맨, 화면 1/3 컴팩트 비율, 풍성한 환경 씬 구성)
   - `draw-things-linear-graphic` 스킬 및 생성 엔진 프롬프트 공식 개정 완료

@@ -1021,6 +1021,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   while: require("../../assets/words/while.png"),
   whisker: require("../../assets/words/whisker.png"),
   whisper: require("../../assets/words/whisper.png"),
+  whistle: require("../../assets/words/whistle.png"),
   whole: require("../../assets/words/whole.png"),
   wide: require("../../assets/words/wide.png"),
   wild: require("../../assets/words/wild.png"),

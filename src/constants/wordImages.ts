@@ -557,6 +557,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   mental: require("../../assets/words/mental.png"),
   mention: require("../../assets/words/mention.png"),
   merchant: require("../../assets/words/merchant.png"),
+  merry: require("../../assets/words/merry.png"),
   metal: require("../../assets/words/metal.png"),
   method: require("../../assets/words/method.png"),
   might: require("../../assets/words/might.png"),

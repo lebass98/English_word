@@ -1,6 +1,6 @@
 {
-  "current_unit": 33,
-  "current_word": "sunshine",
+  "current_unit": 34,
+  "current_word": "letter",
   "total_targets": 73,
   "completed_words": [
     {
@@ -212,6 +212,20 @@
       "unit": 33,
       "elapsed_sec": 206.3,
       "size_kb": 1095.9
+    },
+    {
+      "word": "vegetable",
+      "id": "m2-665",
+      "unit": 34,
+      "elapsed_sec": 204.2,
+      "size_kb": 918.1
+    },
+    {
+      "word": "letter",
+      "id": "m2-680",
+      "unit": 34,
+      "elapsed_sec": 206.9,
+      "size_kb": 1001.1
     }
   ]
 }

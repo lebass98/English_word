@@ -990,6 +990,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   wild: require("../../assets/words/wild.png"),
   win: require("../../assets/words/win.png"),
   wink: require("../../assets/words/wink.png"),
+  wise: require("../../assets/words/wise.png"),
   wish: require("../../assets/words/wish.png"),
   without: require("../../assets/words/without.png"),
   witness: require("../../assets/words/witness.png"),

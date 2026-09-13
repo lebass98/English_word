@@ -31,6 +31,8 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-13
+- 중1 39단원 빠진 그림 1장 Draw Things 선형그래픽으로 생성 및 등록
+  - 대상 단어: honest
 - 중1 47단원 빠진 그림 1장 Draw Things 선형그래픽으로 생성 및 등록
   - 대상 단어: able
 - 중2 28단원 빠진 그림 2장(ostrich, cricket) 생성 및 등록 후 사용자 요청으로 생성 중단

@@ -453,6 +453,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   hole: require("../../assets/words/hole.png"),
   hollow: require("../../assets/words/hollow.png"),
   hometown: require("../../assets/words/hometown.png"),
+  honest: require("../../assets/words/honest.png"),
   honor: require("../../assets/words/honor.png"),
   honour: require("../../assets/words/honour.png"),
   hop: require("../../assets/words/hop.png"),

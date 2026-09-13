@@ -661,6 +661,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   own: require("../../assets/words/own.png"),
   oxygen: require("../../assets/words/oxygen.png"),
   paint: require("../../assets/words/paint.png"),
+  pair: require("../../assets/words/pair.png"),
   pal: require("../../assets/words/pal.png"),
   palace: require("../../assets/words/palace.png"),
   parade: require("../../assets/words/parade.png"),

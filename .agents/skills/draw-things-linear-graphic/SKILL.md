@@ -16,11 +16,11 @@ description: >-
 
 ## 🎨 선형그래픽 및 3~3.5등신 픽토그램 캐릭터 조형 원칙
 
-1. **전체적인 비율 및 실루엣 (3~3.5등신 SD 비율 & 유연한 곡선 & 화면별 자유로운 크기 조절)**:
+1. **전체적인 비율 및 실루엣 (3~3.5등신 SD 비율 & 화면 대비 아담한 캐릭터 크기 축소 & 여백 중심 구도)**:
    - 몸체에 비해 머리가 확연히 큰 **3~3.5등신 SD(Super Deformed) 비율**을 적용해 친근하고 직관적인 인상을 줍니다.
    - 각진 모서리나 해부학적인 골격 굴곡(쇄골, 어깨 각도, 척추 라인 등)을 철저히 배제하고 완만한 곡선 위주로 매끄럽게 이어집니다.
-   - **화면에 따른 캐릭터 크기 자유 조절**: 씬의 구도, 공간감, 배경 환경(넓은 실내, 야외 풍경, 거대한 건축물 등)에 따라 캐릭터의 크기를 화면에 꽉 채우지 않고 **자유롭게 축소(scale down)하여 배치**할 수 있습니다. 배경과 조화롭게 어우러지도록 유연하게 스케일을 조절합니다.
-   - 프롬프트 키워드: `3 to 3.5 head-to-body chibi SD ratio cute character, large prominent smooth spherical bald round head, gentle organic curving silhouette, flexible character scale freely scaled down to fit spacious environment and background framing, balanced scene composition`.
+   - **화면 대비 캐릭터 크기 축소 (컴팩트 스케일링 & 여백 확보)**: 캐릭터가 화면을 과도하게 가득 채우거나 거대하게 묘사되지 않도록, 전체적으로 아담하고 작은 컴팩트 스케일(Modest compact scale, small chibi figure)을 엄격히 유지합니다. 인물은 화면의 약 1/3~1/4 수준으로 아담하게 위치하며, 주변에 충분한 시각적 여백(Breathing room, negative space)과 시원한 배경 공간감이 풍성하게 드러나도록 와이드 구도로 연출합니다.
+   - 프롬프트 키워드: `3 to 3.5 head-to-body chibi SD ratio cute character, large prominent smooth spherical bald round head, gentle organic curving silhouette, modest compact character scale, small adorable chibi figure in spacious wide framing, plenty of surrounding negative space and breathing room around character, balanced scene composition, full body comfortably framed within scene`.
 2. **두상 및 이목구비 (구형 민머리 & 점/선 압축 얼굴)**:
    - **매끄러운 구형 민머리**: 귀, 머리카락, 헤어라인, 턱선이 일절 생략된 매끄러운 원형/구형 두상입니다.
    - **점과 선으로 압축된 이목구비**: 흰자위나 동공 없이 단순한 **두 개의 검은 점(Dot) 눈**과 얇은 호선 형태의 **가벼운 미소선(Smile line) 입** 하나로만 표현합니다. 코, 눈썹, 입술 두께, 치아는 일절 묘사하지 않습니다.
@@ -43,7 +43,7 @@ description: >-
 7. **영문 외 일체 배제 및 100% 영문 전용 절대 원칙 (Strictly English Only / Zero Non-English Characters)**:
    - **프롬프트 및 씬 설명 내 영문 외 문자 절대 금지**: 단어 뜻, 한국어 메모(예: `(가슴)`, `(가루)`), 한자 등 영문(A-Z, a-z) 및 기본 숫자/기호 이외의 모든 비영문 문자는 프롬프트에 절대 넣지 않으며, 오직 100% 순수 영문 씬 묘사(English prompt only)만 전달합니다.
    - **이미지 씬 내부 텍스트 100% 영문 전용**: 씬 내부의 간판, 포스터, 서류 등에 글자가 노출될 경우 오직 영문 알파벳(A-Z)만 허용하며, 한글/한자/일본어 및 왜곡된 기호 생성을 원천 차단합니다.
-   - **부정(Negative) 프롬프트 필수 적용**: `non-English text, Korean text, Hangul, Chinese characters, Hanzi, Kanji, Japanese, foreign characters, realistic human anatomy, realistic face, facial details, nose, eyebrows, lips, teeth, ears, hair, neck, muscles, realistic fingers, fingernails, toes, clothes, shirt, pants, wrinkles, shading, gradients, shadow, 3d render`.
+   - **부정(Negative) 프롬프트 필수 적용**: `non-English text, Korean text, Hangul, Chinese characters, Hanzi, Kanji, Japanese, foreign characters, oversized character, giant figure, frame-filling character, close-up, extreme close-up, cropped body, zoomed in, crowding the frame, large scale character dominating scene, realistic human anatomy, realistic face, facial details, nose, eyebrows, lips, teeth, ears, hair, neck, muscles, realistic fingers, fingernails, toes, clothes, shirt, pants, wrinkles, shading, gradients, shadow, 3d render`.
 
 
 ---

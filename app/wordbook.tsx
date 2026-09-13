@@ -1,10 +1,10 @@
 import { useRouter } from "expo-router";
 import { useMemo, useState } from "react";
 import { FlatList, Image, Pressable, Text, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
 import { BackButton } from "../src/components/BackButton";
 import { BottomNav } from "../src/components/BottomNav";
 import { PillButton } from "../src/components/PillButton";
+import { Screen, ScreenHeader } from "../src/components/Screen";
 import { StarIcon } from "../src/components/icons";
 import { useVocab, type Word } from "../src/constants/words";
 import { WORD_IMAGES } from "../src/constants/wordImages";
@@ -90,72 +90,74 @@ export default function WordbookScreen() {
   );
 
   return (
-    <SafeAreaView className="flex-1 bg-canvas">
-      <View className="w-full flex-1">
-        <View className="flex-row items-center gap-4 px-6 pb-4 pt-8">
-          <BackButton fallbackHref="/" />
-          <Text className="text-2xl font-bold text-ink">{t("wordbook.title")}</Text>
+    <Screen>
+      <ScreenHeader>
+        <BackButton fallbackHref="/" />
+        <Text className="text-2xl font-bold text-ink">{t("wordbook.title")}</Text>
+      </ScreenHeader>
+
+      {/* 기록이 하나도 없으면 고를 것이 없으므로 분류 버튼을 감춘다 */}
+      {(!hydrated || hasAnyEntry) && (
+        <View className="flex-row flex-wrap gap-2 px-6 pt-6">
+          {FILTERS.map((f) => (
+            <PillButton
+              key={f.key}
+              label={t(f.labelKey)}
+              size="lg"
+              variant={filter === f.key ? "inset" : "default"}
+              onPress={() => setFilter(f.key)}
+            />
+          ))}
         </View>
+      )}
 
-        {/* 기록이 하나도 없으면 고를 것이 없으므로 분류 버튼을 감춘다 */}
-        {(!hydrated || hasAnyEntry) && (
-          <View className="flex-row flex-wrap gap-2 px-6 pb-2">
-            {FILTERS.map((f) => (
-              <PillButton
-                key={f.key}
-                label={t(f.labelKey)}
-                size="lg"
-                variant={filter === f.key ? "inset" : "default"}
-                onPress={() => setFilter(f.key)}
-              />
-            ))}
-          </View>
-        )}
-
-        {rows.length > 0 ? (
-          <FlatList
-            data={rows}
-            keyExtractor={(row) => row.word.id}
-            contentContainerClassName="gap-3 px-6 pb-32 pt-4"
-            showsVerticalScrollIndicator={false}
-            renderItem={({ item }) => (
-              <WordRow
-                row={item}
-                onPress={() => router.push(`/study/${item.word.id}`)}
-              />
-            )}
-          />
-        ) : (
-          <View className="flex-1 items-center justify-center px-6 pb-32">
-            {/* 저장소를 읽는 중에는 "기록 없음"이 잘못 보이므로 비워 둔다 */}
-            {hydrated &&
-              (hasAnyEntry ? (
-                <Text className="text-[13px] text-slate-400">
-                  {t(EMPTY_BY_FILTER[filter])}
+      {rows.length > 0 ? (
+        <FlatList
+          data={rows}
+          keyExtractor={(row) => row.word.id}
+          // 분류 버튼이 있으면 그 아래 16px, 없으면 헤더 아래 24px
+          contentContainerClassName={`gap-3 px-6 pb-32 ${
+            !hydrated || hasAnyEntry ? "pt-4" : "pt-6"
+          }`}
+          showsVerticalScrollIndicator={false}
+          renderItem={({ item }) => (
+            <WordRow
+              row={item}
+              onPress={() => router.push(`/study/${item.word.id}`)}
+            />
+          )}
+        />
+      ) : (
+        <View className="flex-1 items-center justify-center px-6 pb-32">
+          {/* 저장소를 읽는 중에는 "기록 없음"이 잘못 보이므로 비워 둔다 */}
+          {hydrated &&
+            (hasAnyEntry ? (
+              <Text className="text-[13px] text-slate-400">
+                {t(EMPTY_BY_FILTER[filter])}
+              </Text>
+            ) : (
+              // 다른 화면의 카드와 같은 폭·여백을 쓴다
+              <View className="w-full items-center rounded-3xl bg-surface p-6 shadow-neu-card">
+                <Text className="text-[32px]">📖</Text>
+                <Text className="mt-3 text-[15px] font-bold text-ink">
+                  {t("wordbook.emptyTitle")}
                 </Text>
-              ) : (
-                <View className="w-full max-w-[320px] items-center rounded-3xl bg-surface px-6 py-8 shadow-neu-card">
-                  <Text className="text-[32px]">📖</Text>
-                  <Text className="mt-3 text-[15px] font-bold text-ink">
-                    {t("wordbook.emptyTitle")}
-                  </Text>
-                  <Text className="mt-1 text-center text-[13px] text-slate-500">
-                    {t("wordbook.emptyDesc")}
-                  </Text>
-                  <PillButton
-                    className="mt-5"
-                    label={t("wordbook.goStudy")}
-                    variant="primary"
-                    onPress={() => router.replace("/")}
-                  />
-                </View>
-              ))}
-          </View>
-        )}
-      </View>
+                <Text className="mt-1 text-center text-[13px] text-slate-500">
+                  {t("wordbook.emptyDesc")}
+                </Text>
+                <PillButton
+                  className="mt-5"
+                  label={t("wordbook.goStudy")}
+                  variant="primary"
+                  onPress={() => router.replace("/")}
+                />
+              </View>
+            ))}
+        </View>
+      )}
 
       <BottomNav />
-    </SafeAreaView>
+    </Screen>
   );
 }
 

@@ -28,7 +28,7 @@ export function GradeCard({
           ? t("a11y.courseProgress", { label, total: totalWords, known: learnedWords })
           : t("a11y.courseNotStarted", { label })
       }
-      className="rounded-3xl bg-surface p-5 shadow-neu-card active:shadow-neu-pressed"
+      className="rounded-3xl bg-surface p-6 shadow-neu-card active:shadow-neu-pressed"
     >
       <Text
         className={`text-[11px] font-bold ${

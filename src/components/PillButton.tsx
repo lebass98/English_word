@@ -40,10 +40,15 @@ const VARIANT = {
   },
 };
 
+/**
+ * 글자 크기는 px 로 못 박는다.
+ * 테마의 text-sm(10px) 을 쓰면 작은 버튼 글씨가 옆 본문(13~15px)보다
+ * 눈에 띄게 작아져서, 가장 작은 버튼도 본문 기본 크기인 13px 부터 시작한다.
+ */
 const SIZE = {
-  sm: { pad: "px-4 py-2", text: "text-sm" },
-  md: { pad: "px-5 py-2.5", text: "text-base" },
-  lg: { pad: "px-6 py-3", text: "text-lg" },
+  sm: { pad: "px-4 py-2", text: "text-[13px]" },
+  md: { pad: "px-5 py-2.5", text: "text-[14px]" },
+  lg: { pad: "px-6 py-3", text: "text-[15px]" },
 };
 
 export function PillButton({

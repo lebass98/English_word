@@ -13,7 +13,6 @@ import {
   Platform,
 } from "react-native";
 import { BlurView } from "expo-blur";
-import { SafeAreaView } from "react-native-safe-area-context";
 import {
   AgainIcon,
   BookmarkIcon,
@@ -30,6 +29,11 @@ import {
 import { BackButton } from "../../src/components/BackButton";
 import { LabeledSection } from "../../src/components/LabeledSection";
 import { PillButton } from "../../src/components/PillButton";
+import {
+  MAX_CONTENT_WIDTH,
+  Screen,
+  ScreenHeader,
+} from "../../src/components/Screen";
 import { SynonymList } from "../../src/components/SynonymList";
 import { gradesOf } from "../../src/constants/grades";
 import {
@@ -49,6 +53,9 @@ import { useAppStore, type WordStatus } from "../../src/stores/useAppStore";
 /** 자동 넘김 간격 (초) */
 const AUTO_ADVANCE_SEC = 15;
 
+/** 앱 기본 초록 (tailwind 의 mint). Animated.View 처럼 className 이 안 먹는 곳에 쓴다 */
+const MINT = "#0EB582";
+
 export default function StudyScreen() {
   const { wordId } = useLocalSearchParams<{ wordId: string }>();
   const router = useRouter();
@@ -67,7 +74,7 @@ export default function StudyScreen() {
 
   if (!found) {
     return (
-      <SafeAreaView className="flex-1 items-center justify-center bg-canvas">
+      <Screen className="items-center justify-center">
         <Text className="text-[14px] text-slate-500">
           {t("study.notFound")}
         </Text>
@@ -76,7 +83,7 @@ export default function StudyScreen() {
           label={t("common.backArrow")}
           onPress={() => router.back()}
         />
-      </SafeAreaView>
+      </Screen>
     );
   }
 
@@ -288,16 +295,17 @@ function StudyCard({
 
   // 단어가 길어도 두 줄로 넘기지 않고 글자 크기를 줄여 한 줄에 담는다.
   // 단어는 이미지 패널 위에 얹히므로 그 안쪽 폭을 기준으로 계산한다.
+  // 화면 내용은 최대 480px 로 모이므로 넓은 창에서도 그 폭을 기준으로 잡는다.
   // 화면 좌우 여백(48) + 카드 안쪽 여백(48) + 겹침 영역 좌우 여백(32)
   //   + 스피커 버튼(44) + 버튼과의 간격(12)
-  const wordAreaWidth = Math.max(110, screenWidth - 184);
+  const contentWidth = Math.min(screenWidth, MAX_CONTENT_WIDTH);
+  const wordAreaWidth = Math.max(110, contentWidth - 184);
   // 굵은 글씨는 한 글자가 글자 크기의 약 0.58배 너비를 차지한다
   // 최대 크기는 25px (31px 이 너무 커서 20% 줄였다)
   const wordFontSize = Math.max(
     10,
     Math.min(25, Math.floor(wordAreaWidth / (word.word.length * 0.58))),
   );
-
 
   const handleSpeak = () => {
     speakWord(word.word, {
@@ -314,458 +322,459 @@ function StudyCard({
   };
 
   return (
-    <SafeAreaView className="flex-1 bg-canvas">
-      <View className="w-full flex-1">
-        {/* ── 상단 바: 뒤로 · 유닛/진행 · 자동 넘김 ──────────── */}
-        <View className="flex-row items-center justify-between gap-2 px-6 pt-8 pb-3">
-          <BackButton onPress={onBack} />
+    <Screen>
+      {/* ── 상단 바: 뒤로 · 유닛/진행 · 자동 넘김 ──────────── */}
+      <ScreenHeader>
+        <BackButton onPress={onBack} />
 
-          {/* 유닛과 진행 개수를 하나의 알약에 담는다 */}
-          <View className="relative h-12 flex-1 flex-row items-center justify-center gap-1.5 overflow-hidden rounded-full bg-surface px-3 shadow-neu-sm">
-            <Text
-              numberOfLines={1}
-              className="text-[14px] font-bold leading-[15px] tracking-tight text-slate-700"
-            >
-              {gradeLabel} UNIT {unitNo}
+        {/* 유닛과 진행 개수를 하나의 알약에 담는다 */}
+        <View className="relative h-12 flex-1 flex-row items-center justify-center gap-1.5 overflow-hidden rounded-full bg-surface px-3 shadow-neu-sm">
+          <Text
+            numberOfLines={1}
+            className="text-[14px] font-bold leading-[15px] tracking-tight text-slate-700"
+          >
+            {gradeLabel} UNIT {unitNo}
+          </Text>
+          <Text className="text-[14px] leading-[15px] text-slate-300">·</Text>
+          <View className="flex-row items-center">
+            <Text className="text-[13px] font-extrabold leading-[15px] text-mint">
+              {posInUnit}
             </Text>
-            <Text className="text-[14px] leading-[15px] text-slate-300">·</Text>
-            <View className="flex-row items-center">
-              <Text className="text-[13px] font-extrabold leading-[15px] text-emerald-500">
-                {posInUnit}
-              </Text>
-              <Text className="text-[13px] font-medium leading-[15px] text-slate-400">
-                /{unitLen}
-              </Text>
-            </View>
-
-            {/* 유닛 진행률: 알약 안쪽 하단에 겹쳐서 표시한다 (높이 3px) */}
-            <View className="absolute inset-x-0 bottom-0 h-[3px] bg-slate-200">
-              <View
-                className="h-full bg-emerald-500"
-                style={{ width: `${(posInUnit / unitLen) * 100}%` }}
-              />
-            </View>
+            <Text className="text-[13px] font-medium leading-[15px] text-slate-400">
+              /{unitLen}
+            </Text>
           </View>
 
-          {/* 자동 넘김 켜기/끄기 (중간 버튼 줄에서 헤더로 옮김) */}
-          <Pressable
-            accessibilityLabel={t("study.autoAdvanceToggle")}
-            onPress={() => setAutoAdvance(!autoAdvance)}
-            className={`h-12 flex-row items-center justify-center gap-1 rounded-full px-3.5 active:scale-95 ${
-              autoAdvance
-                ? "bg-surface shadow-neu-sm"
-                : "bg-canvas shadow-neu-inset"
-            }`}
-          >
-            {autoAdvance ? <PlayIcon size={14} /> : <PauseIcon size={14} />}
+          {/* 유닛 진행률: 알약 안쪽 하단에 겹쳐서 표시한다 (높이 3px).
+              홈·유닛 목록의 진행 막대와 같은 트랙·채움 색을 쓴다 */}
+          <View className="absolute inset-x-0 bottom-0 h-[3px] bg-canvas">
             <View
-              className={`ml-0.5 rounded-full px-1.5 py-0.5 ${
-                autoAdvance ? "bg-emerald-500" : "bg-slate-400"
-              }`}
-            >
-              <Text className="text-[11px] font-black text-white">
-                {autoAdvance ? "ON" : "OFF"}
-              </Text>
-            </View>
-          </Pressable>
+              className="h-full bg-mint"
+              style={{ width: `${(posInUnit / unitLen) * 100}%` }}
+            />
+          </View>
         </View>
 
-        {/* ── 메인 플래시카드 ──────────────────────────────── */}
-        <ScrollView
-          className="flex-1"
-          contentContainerClassName="px-6 pb-10 pt-8"
-          showsVerticalScrollIndicator={false}
+        {/* 자동 넘김 켜기/끄기. 앱 전체에서 파인 모양은 "켜짐·선택됨"을 뜻한다 */}
+        <Pressable
+          accessibilityLabel={t("study.autoAdvanceToggle")}
+          accessibilityState={{ checked: autoAdvance }}
+          onPress={() => setAutoAdvance(!autoAdvance)}
+          className={`h-12 flex-row items-center justify-center gap-1 rounded-full px-3.5 active:scale-95 ${
+            autoAdvance
+              ? "bg-canvas shadow-neu-inset"
+              : "bg-surface shadow-neu-sm"
+          }`}
         >
-          <View className="rounded-[32px] bg-surface p-6 shadow-neu-card">
-            {/* 연상 이미지 + 좌우 이동 버튼.
-                바깥 View는 잘라내지 않아야 화살표가 패널 밖으로 걸쳐 보인다.
-                이미지가 1024x1024 정사각형이라 패널도 정사각형으로 꽉 채운다 */}
-            <View className="relative w-full" {...swipe.panHandlers}>
-              <View
-                onLayout={(e) => setPanelW(e.nativeEvent.layout.width)}
-                className="aspect-square w-full overflow-hidden rounded-2xl bg-canvas shadow-neu-inset"
+          {autoAdvance ? <PlayIcon size={14} /> : <PauseIcon size={14} />}
+          <View
+            className={`ml-0.5 rounded-full px-1.5 py-0.5 ${
+              autoAdvance ? "bg-mint" : "bg-slate-400"
+            }`}
+          >
+            <Text className="text-[11px] font-black text-white">
+              {autoAdvance ? "ON" : "OFF"}
+            </Text>
+          </View>
+        </Pressable>
+      </ScreenHeader>
+
+      {/* ── 메인 플래시카드 ──────────────────────────────── */}
+      <ScrollView
+        className="flex-1"
+        contentContainerClassName="px-6 pb-10 pt-6"
+        showsVerticalScrollIndicator={false}
+      >
+        <View className="rounded-3xl bg-surface p-6 shadow-neu-card">
+          {/* 연상 이미지 + 좌우 이동 버튼.
+              바깥 View는 잘라내지 않아야 화살표가 패널 밖으로 걸쳐 보인다.
+              이미지가 1024x1024 정사각형이라 패널도 정사각형으로 꽉 채운다 */}
+          <View className="relative w-full" {...swipe.panHandlers}>
+            <View
+              onLayout={(e) => setPanelW(e.nativeEvent.layout.width)}
+              className="aspect-square w-full overflow-hidden rounded-2xl bg-canvas shadow-neu-inset"
+            >
+              {/* 그림만 손가락을 따라 흐른다. 위에 얹힌 단어·발음 영역은 제자리에 둔다.
+                  앞·뒤 그림을 양옆에 붙여 놓아 밀면 옆 그림이 따라 들어온다 */}
+              <Animated.View
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                  transform: [{ translateX: dragX }],
+                }}
               >
-                {/* 그림만 손가락을 따라 흐른다. 위에 얹힌 단어·발음 영역은 제자리에 둔다.
-                    앞·뒤 그림을 양옆에 붙여 놓아 밀면 옆 그림이 따라 들어온다 */}
+                <WordImage word={word} />
+                {panelW > 0 && prev && (
+                  <WordImage word={prev} offset={-panelW} />
+                )}
+                {panelW > 0 && next && (
+                  <WordImage word={next} offset={panelW} />
+                )}
+              </Animated.View>
+
+              {/* 단어 · 발음기호 · 발음 듣기: 이미지 위쪽에 반투명 블러(Glassmorphism) 배경으로 표시 */}
+              <View
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  right: 0,
+                  borderTopLeftRadius: 16,
+                  borderTopRightRadius: 16,
+                  overflow: "hidden",
+                  borderBottomWidth: 1,
+                  borderBottomColor: "rgba(255, 255, 255, 0.45)",
+                }}
+              >
+                <BlurView
+                  intensity={65}
+                  tint="light"
+                  style={{
+                    width: "100%",
+                    ...(Platform.OS === "web"
+                      ? {
+                          backdropFilter: "saturate(180%) blur(7px)",
+                          WebkitBackdropFilter: "saturate(180%) blur(7px)",
+                        }
+                      : {}),
+                  }}
+                >
+                  <View
+                    style={{
+                      backgroundColor: "rgba(241, 242, 246, 0.05)",
+                    }}
+                    className="flex-row items-start justify-between px-4 pb-3 pt-4"
+                  >
+                    <View className="flex-1 pr-3">
+                      <Text
+                        numberOfLines={1}
+                        adjustsFontSizeToFit
+                        style={{
+                          fontSize: wordFontSize,
+                          lineHeight: Math.round(wordFontSize * 1.15),
+                        }}
+                        className="font-black tracking-wider text-slate-900"
+                      >
+                        {word.word}
+                      </Text>
+                      {(word.phonetic || word.pos?.length) && (
+                        <View className="mt-1 flex-row flex-wrap items-center gap-2">
+                          {word.phonetic && (
+                            <Text className="text-[13px] tracking-wide text-slate-500">
+                              {word.phonetic}
+                            </Text>
+                          )}
+                          {/* 품사 표시. 뜻이 여럿이면 여러 개가 붙는다 */}
+                          {word.pos?.map((code) => (
+                            <View
+                              key={code}
+                              className="rounded-md bg-canvas px-1.5 py-0.5 shadow-neu-sm"
+                            >
+                              <Text className="text-[11px] font-bold text-mint-dark">
+                                {t(`pos.${code}` as never)}
+                              </Text>
+                            </View>
+                          ))}
+                        </View>
+                      )}
+                    </View>
+                    {/* 설정에서 음소거해 두면 눌러도 소리가 안 난다.
+                        왜 조용한지 알 수 있게 버튼을 흐리게 보여 준다 */}
+                    <Pressable
+                      accessibilityLabel={
+                        speechVolume === 0
+                          ? t("settings.speechMuted")
+                          : t("study.speak", { word: word.word })
+                      }
+                      onPress={handleSpeak}
+                      className={`h-11 w-11 items-center justify-center rounded-full active:scale-95 ${
+                        speechVolume === 0
+                          ? "bg-surface opacity-40 shadow-neu-sm"
+                          : speaking
+                            ? "bg-canvas shadow-neu-inset"
+                            : "bg-surface shadow-neu-sm"
+                      }`}
+                    >
+                      <SpeakerIcon
+                        color={
+                          speechVolume === 0
+                            ? "#94a3b8"
+                            : speaking
+                              ? MINT
+                              : "#334155"
+                        }
+                      />
+                    </Pressable>
+                  </View>
+                </BlurView>
+              </View>
+
+              {/* 자동 넘김 초시계: 이미지 카드 안쪽 하단에 겹쳐서 표시한다 */}
+              <View className="absolute inset-x-0 bottom-0 h-1.5 bg-canvas">
+                {/* Animated.View 에는 className 이 적용되지 않아
+                    높이와 색을 인라인 스타일로 지정한다 */}
                 <Animated.View
                   style={{
-                    position: "absolute",
-                    top: 0,
-                    left: 0,
-                    right: 0,
-                    bottom: 0,
-                    transform: [{ translateX: dragX }],
+                    height: "100%",
+                    backgroundColor: autoAdvance ? MINT : "#cbd5e1",
+                    width: progress.interpolate({
+                      inputRange: [0, 1],
+                      outputRange: ["0%", "100%"],
+                    }),
                   }}
-                >
-                  <WordImage word={word} />
-                  {panelW > 0 && prev && (
-                    <WordImage word={prev} offset={-panelW} />
-                  )}
-                  {panelW > 0 && next && (
-                    <WordImage word={next} offset={panelW} />
-                  )}
-                </Animated.View>
-
-                {/* 단어 · 발음기호 · 발음 듣기: 이미지 위쪽에 반투명 블러(Glassmorphism) 배경으로 표시 */}
-                <View
-                  style={{
-                    position: "absolute",
-                    top: 0,
-                    left: 0,
-                    right: 0,
-                    borderTopLeftRadius: 16,
-                    borderTopRightRadius: 16,
-                    overflow: "hidden",
-                    borderBottomWidth: 1,
-                    borderBottomColor: "rgba(255, 255, 255, 0.45)",
-                  }}
-                >
-                  <BlurView
-                    intensity={65}
-                    tint="light"
-                    style={{
-                      width: "100%",
-                      ...(Platform.OS === "web"
-                        ? {
-                            backdropFilter: "saturate(180%) blur(7px)",
-                            WebkitBackdropFilter: "saturate(180%) blur(7px)",
-                          }
-                        : {}),
-                    }}
-                  >
-                    <View
-                      style={{
-                        backgroundColor: "rgba(241, 242, 246, 0.05)",
-                      }}
-                      className="flex-row items-start justify-between px-4 pb-3 pt-4"
-                    >
-                      <View className="flex-1 pr-3">
-                        <Text
-                          numberOfLines={1}
-                          adjustsFontSizeToFit
-                          style={{
-                            fontSize: wordFontSize,
-                            lineHeight: Math.round(wordFontSize * 1.15),
-                          }}
-                          className="font-black tracking-wider text-slate-900"
-                        >
-                          {word.word}
-                        </Text>
-                        {(word.phonetic || word.pos?.length) && (
-                          <View className="mt-1 flex-row flex-wrap items-center gap-2">
-                            {word.phonetic && (
-                              <Text className="text-[13px] tracking-wide text-slate-500">
-                                {word.phonetic}
-                              </Text>
-                            )}
-                            {/* 품사 표시. 뜻이 여럿이면 여러 개가 붙는다 */}
-                            {word.pos?.map((code) => (
-                              <View
-                                key={code}
-                                className="rounded-md bg-canvas px-1.5 py-0.5 shadow-neu-sm"
-                              >
-                                <Text className="text-[11px] font-bold text-mint-dark">
-                                  {t(`pos.${code}` as never)}
-                                </Text>
-                              </View>
-                            ))}
-                          </View>
-                        )}
-                      </View>
-                      {/* 설정에서 음소거해 두면 눌러도 소리가 안 난다.
-                          왜 조용한지 알 수 있게 버튼을 흐리게 보여 준다 */}
-                      <Pressable
-                        accessibilityLabel={
-                          speechVolume === 0
-                            ? t("settings.speechMuted")
-                            : t("study.speak", { word: word.word })
-                        }
-                        onPress={handleSpeak}
-                        className={`h-11 w-11 items-center justify-center rounded-full active:scale-95 ${
-                          speechVolume === 0
-                            ? "bg-surface opacity-40 shadow-neu-sm"
-                            : speaking
-                              ? "bg-canvas shadow-neu-inset"
-                              : "bg-surface shadow-neu-sm"
-                        }`}
-                      >
-                        <SpeakerIcon
-                          color={
-                            speechVolume === 0
-                              ? "#94a3b8"
-                              : speaking
-                                ? "#0eb582"
-                                : "#334155"
-                          }
-                        />
-                      </Pressable>
-                    </View>
-                  </BlurView>
-                </View>
-
-                {/* 자동 넘김 초시계: 이미지 카드 안쪽 하단에 겹쳐서 표시한다 */}
-                <View className="absolute inset-x-0 bottom-0 h-1.5 bg-slate-200">
-                  {/* Animated.View 에는 className 이 적용되지 않아
-                      높이와 색을 인라인 스타일로 지정한다 */}
-                  <Animated.View
-                    style={{
-                      height: "100%",
-                      backgroundColor: autoAdvance ? "#10b981" : "#cbd5e1",
-                      width: progress.interpolate({
-                        inputRange: [0, 1],
-                        outputRange: ["0%", "100%"],
-                      }),
-                    }}
-                  />
-                </View>
+                />
               </View>
-
-              {/* 이전 단어 (버튼 높이 36px의 절반만큼 올려 세로 중앙에 둔다) */}
-              <Pressable
-                accessibilityLabel={t("study.prevWord")}
-                disabled={!prevId}
-                onPress={() => onNavigate(prevId)}
-                style={{ top: "50%", marginTop: -18, left: -16 }}
-                className={`absolute h-9 w-9 items-center justify-center rounded-full bg-surface shadow-neu-sm active:scale-95 active:shadow-neu-pressed ${
-                  prevId ? "" : "opacity-40"
-                }`}
-              >
-                <ChevronLeftIcon size={14} />
-              </Pressable>
-
-              {/* 다음 단어 */}
-              <Pressable
-                accessibilityLabel={t("study.nextWord")}
-                disabled={!nextId}
-                onPress={() => onNavigate(nextId)}
-                style={{ top: "50%", marginTop: -18, right: -16 }}
-                className={`absolute h-9 w-9 items-center justify-center rounded-full bg-surface shadow-neu-sm active:scale-95 active:shadow-neu-pressed ${
-                  nextId ? "" : "opacity-40"
-                }`}
-              >
-                <ChevronRightIcon size={14} />
-              </Pressable>
             </View>
 
-            {/* 한국어 뜻풀이 */}
-            <View className="mt-4 rounded-2xl bg-surface p-4 shadow-neu-sm">
-              {/* 한글 뜻과 가리기 버튼을 한 줄에 둔다 (제목 없이) */}
-              <View className="flex-row items-center justify-between gap-3">
-                {showAnswer ? (
-                  <Text className="flex-1 text-[20px] font-black tracking-tight text-slate-950">
-                    {word.meaning}
-                  </Text>
-                ) : (
-                  /* 가려진 자리. 눌러도 바로 뜻이 나오게 해 둔다 */
-                  <Pressable
-                    onPress={() => setShowAnswer(true)}
-                    className="h-[26px] flex-1 items-center justify-center rounded-xl bg-canvas shadow-neu-inset active:opacity-70"
-                  >
-                    <Text className="text-[13px] font-bold tracking-[3px] text-slate-400">
-                      ● ● ● ●
-                    </Text>
-                  </Pressable>
-                )}
-                <Pressable
-                  onPress={() => setShowAnswer((v) => !v)}
-                  className="flex-row items-center gap-1 active:opacity-70"
-                >
-                  <Text className="text-[12px] font-bold text-emerald-500">
-                    {showAnswer ? t("study.hide") : t("study.show")}
-                  </Text>
-                  {showAnswer ? <ChevronUpIcon /> : <ChevronDownIcon />}
-                </Pressable>
-              </View>
-
-              {/* 예문·유의어·어원. 뜻과 함께 가려진다 —
-                  단어만 보고 스스로 떠올려 보기 좋다.
-                  반의어·어근 풀이·같은 어근 단어·의미 비교는 토플 코스에만 있다 */}
-              {showAnswer &&
-                (word.example ||
-                  hasSynonyms ||
-                  word.etymology ||
-                  word.antonyms ||
-                  word.roots ||
-                  word.senseFlow ||
-                  word.family ||
-                  word.compare) && (
-                <View className="mt-4 gap-5 border-t border-slate-200 pt-4">
-                  {word.example && (
-                    <LabeledSection label={t("study.example")}>
-                      <Text className="text-[15px] font-semibold leading-snug text-slate-800">
-                        {word.example}
-                      </Text>
-                      {word.exampleTr && (
-                        <Text className="mt-1 text-[14px] font-medium leading-snug text-slate-500">
-                          {word.exampleTr}
-                        </Text>
-                      )}
-                    </LabeledSection>
-                  )}
-
-                  {hasSynonyms && (
-                    <LabeledSection label={t("study.synonyms")}>
-                      <SynonymList items={word.synonyms!} />
-                    </LabeledSection>
-                  )}
-
-                  {word.antonyms && (
-                    <LabeledSection label={t("study.antonyms")}>
-                      <SynonymList items={word.antonyms} />
-                    </LabeledSection>
-                  )}
-
-                  {word.etymology && (
-                    <LabeledSection label={t("study.etymology")}>
-                      <Text className="text-[14px] leading-relaxed text-slate-600">
-                        {word.etymology}
-                      </Text>
-                    </LabeledSection>
-                  )}
-
-                  {/* 어근 공식 아래에 글자 그대로의 뜻부터 지금 뜻까지 이어 보여 준다.
-                      어근 공식이 없는 낱말은 뜻이 넓어진 순서만 보여 준다 */}
-                  {(word.roots || word.senseFlow) && (
-                    <LabeledSection label={t("study.roots")}>
-                      {word.roots && (
-                        <Text className="mb-1 text-[15px] font-semibold leading-snug text-lavender">
-                          {word.roots.formula}
-                        </Text>
-                      )}
-                      <Text className="text-[14px] leading-relaxed text-slate-600">
-                        {[
-                          ...(word.roots ? [`“${word.roots.literal}”`] : []),
-                          ...(word.senseFlow ?? []),
-                        ].join(" → ")}
-                      </Text>
-                    </LabeledSection>
-                  )}
-
-                  {/* 같은 어근 단어는 풀이가 길어 한 줄에 한 단어씩 두고 줄바꿈되게 한다 */}
-                  {word.family && (
-                    <LabeledSection label={t("study.family")}>
-                      <View className="gap-1.5">
-                        {word.family.map((item) => (
-                          <Text
-                            key={item.word}
-                            className="text-[14px] leading-snug text-slate-600"
-                          >
-                            <Text className="text-[15px] font-semibold text-lavender">
-                              {item.word}
-                            </Text>
-                            {"  "}
-                            {item.meaning}
-                          </Text>
-                        ))}
-                      </View>
-                    </LabeledSection>
-                  )}
-
-                  {word.compare && (
-                    <LabeledSection label={t("study.compare")}>
-                      <Text className="text-[13px] font-bold text-slate-500">
-                        {word.compare.title}
-                      </Text>
-                      <View className="mt-1.5 gap-1.5">
-                        {word.compare.items.map((item) => (
-                          <Text
-                            key={item.word}
-                            className="text-[14px] leading-snug text-slate-600"
-                          >
-                            <Text className="font-semibold text-lavender">
-                              {item.word}
-                            </Text>
-                            {"  "}
-                            {item.note}
-                          </Text>
-                        ))}
-                      </View>
-                    </LabeledSection>
-                  )}
-                </View>
-              )}
-            </View>
-          </View>
-        </ScrollView>
-
-        {/* ── 학습 평가 버튼 (가운데는 단어장에 담기) ────────── */}
-        <View className="mx-6 flex-row items-stretch gap-1 pb-4 pt-3">
-          {/* 홈으로. 유닛을 거쳐 들어온 화면이라 뒤로가기만으로는 여러 번 눌러야
-              한다. 글자 없이 아이콘만 둔다.
-              가로·세로를 같은 값으로 못 박고 self-center 로 늘어남을 끊는다.
-              aspect-square 로 높이에서 너비를 끌어오면 네이티브에서 계산이
-              어긋나 원이 일그러진다. 52px 은 옆 버튼 높이(위아래 16 + 내용 20) */}
-          <Pressable
-            onPress={() => router.replace("/")}
-            accessibilityRole="button"
-            accessibilityLabel={t("nav.home")}
-            className="h-[52px] w-[52px] shrink-0 self-center items-center justify-center rounded-full bg-surface shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
-          >
-            <HomeIcon size={20} color="#64748b" />
-          </Pressable>
-
-          {/* 판정 버튼 둘이 남는 자리를 똑같이 나눠 가진다 */}
-          <Pressable
-            onPress={() => decide("unsure")}
-            style={{ flex: 1 }}
-            className="flex-row items-center justify-center gap-1 rounded-[28px] bg-surface px-1 py-4 shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
-          >
-            <View className="h-5 w-5 items-center justify-center rounded-lg bg-slate-300">
-              <AgainIcon />
-            </View>
-            <Text
-              numberOfLines={1}
-              className="text-[14px] font-extrabold tracking-tight text-slate-800"
-            >
-              {t("study.unsure")}
-            </Text>
-          </Pressable>
-
-          {/* 저장 버튼도 가로는 글씨('저장됨')에 맞춰 못 박는다(shrink-0).
-              늘었다 줄었다 하는 것은 '헷갈려요'·'외웠어요' 둘뿐이다 */}
-          <Pressable
-            onPress={() => toggleSaved(word.id)}
-            accessibilityRole="button"
-            accessibilityState={{ selected: isSaved }}
-            accessibilityLabel={t("study.saveToggle")}
-            className={`w-[72px] shrink-0 flex-row items-center justify-center gap-1 rounded-[28px] px-1 active:scale-[0.98] ${
-              isSaved
-                ? "bg-canvas shadow-neu-inset"
-                : "bg-surface shadow-neu-sm active:shadow-neu-pressed"
-            }`}
-          >
-            <BookmarkIcon
-              size={16}
-              filled={isSaved}
-              color={isSaved ? "#0eb582" : "#94a3b8"}
-            />
-            <Text
-              numberOfLines={1}
-              className={`text-[14px] font-extrabold tracking-tight ${
-                isSaved ? "text-mint-dark" : "text-slate-500"
+            {/* 이전 단어 (버튼 높이 36px의 절반만큼 올려 세로 중앙에 둔다) */}
+            <Pressable
+              accessibilityLabel={t("study.prevWord")}
+              disabled={!prevId}
+              onPress={() => onNavigate(prevId)}
+              style={{ top: "50%", marginTop: -18, left: -16 }}
+              className={`absolute h-9 w-9 items-center justify-center rounded-full bg-surface shadow-neu-sm active:scale-95 active:shadow-neu-pressed ${
+                prevId ? "" : "opacity-40"
               }`}
             >
-              {t(isSaved ? "study.saved" : "study.save")}
-            </Text>
-          </Pressable>
+              <ChevronLeftIcon size={14} />
+            </Pressable>
 
-          <Pressable
-            onPress={() => decide("known")}
-            style={{ flex: 1 }}
-            className="flex-row items-center justify-center gap-1 rounded-[28px] bg-[#dff5ea] px-1 py-4 shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
-          >
-            <View className="h-5 w-5 items-center justify-center rounded-md bg-emerald-500">
-              <CheckIcon />
-            </View>
-            <Text
-              numberOfLines={1}
-              className="text-[14px] font-black tracking-tight text-emerald-800"
+            {/* 다음 단어 */}
+            <Pressable
+              accessibilityLabel={t("study.nextWord")}
+              disabled={!nextId}
+              onPress={() => onNavigate(nextId)}
+              style={{ top: "50%", marginTop: -18, right: -16 }}
+              className={`absolute h-9 w-9 items-center justify-center rounded-full bg-surface shadow-neu-sm active:scale-95 active:shadow-neu-pressed ${
+                nextId ? "" : "opacity-40"
+              }`}
             >
-              {t("study.known")}
-            </Text>
-          </Pressable>
+              <ChevronRightIcon size={14} />
+            </Pressable>
+          </View>
+
+          {/* 한국어 뜻풀이 */}
+          <View className="mt-4 rounded-2xl bg-surface p-4 shadow-neu-sm">
+            {/* 한글 뜻과 가리기 버튼을 한 줄에 둔다 (제목 없이) */}
+            <View className="flex-row items-center justify-between gap-3">
+              {showAnswer ? (
+                <Text className="flex-1 text-[20px] font-black tracking-tight text-slate-950">
+                  {word.meaning}
+                </Text>
+              ) : (
+                /* 가려진 자리. 눌러도 바로 뜻이 나오게 해 둔다 */
+                <Pressable
+                  onPress={() => setShowAnswer(true)}
+                  className="h-[26px] flex-1 items-center justify-center rounded-xl bg-canvas shadow-neu-inset active:opacity-70"
+                >
+                  <Text className="text-[13px] font-bold tracking-[3px] text-slate-400">
+                    ● ● ● ●
+                  </Text>
+                </Pressable>
+              )}
+              <Pressable
+                onPress={() => setShowAnswer((v) => !v)}
+                className="flex-row items-center gap-1 active:opacity-70"
+              >
+                <Text className="text-[12px] font-bold text-mint">
+                  {showAnswer ? t("study.hide") : t("study.show")}
+                </Text>
+                {showAnswer ? <ChevronUpIcon /> : <ChevronDownIcon />}
+              </Pressable>
+            </View>
+
+            {/* 예문·유의어·어원. 뜻과 함께 가려진다 —
+                단어만 보고 스스로 떠올려 보기 좋다.
+                반의어·어근 풀이·같은 어근 단어·의미 비교는 토플 코스에만 있다 */}
+            {showAnswer &&
+              (word.example ||
+                hasSynonyms ||
+                word.etymology ||
+                word.antonyms ||
+                word.roots ||
+                word.senseFlow ||
+                word.family ||
+                word.compare) && (
+              <View className="mt-4 gap-5 border-t border-slate-200 pt-4">
+                {word.example && (
+                  <LabeledSection label={t("study.example")}>
+                    <Text className="text-[15px] font-semibold leading-snug text-slate-800">
+                      {word.example}
+                    </Text>
+                    {word.exampleTr && (
+                      <Text className="mt-1 text-[14px] font-medium leading-snug text-slate-500">
+                        {word.exampleTr}
+                      </Text>
+                    )}
+                  </LabeledSection>
+                )}
+
+                {hasSynonyms && (
+                  <LabeledSection label={t("study.synonyms")}>
+                    <SynonymList items={word.synonyms!} />
+                  </LabeledSection>
+                )}
+
+                {word.antonyms && (
+                  <LabeledSection label={t("study.antonyms")}>
+                    <SynonymList items={word.antonyms} />
+                  </LabeledSection>
+                )}
+
+                {word.etymology && (
+                  <LabeledSection label={t("study.etymology")}>
+                    <Text className="text-[14px] leading-relaxed text-slate-600">
+                      {word.etymology}
+                    </Text>
+                  </LabeledSection>
+                )}
+
+                {/* 어근 공식 아래에 글자 그대로의 뜻부터 지금 뜻까지 이어 보여 준다.
+                    어근 공식이 없는 낱말은 뜻이 넓어진 순서만 보여 준다 */}
+                {(word.roots || word.senseFlow) && (
+                  <LabeledSection label={t("study.roots")}>
+                    {word.roots && (
+                      <Text className="mb-1 text-[15px] font-semibold leading-snug text-lavender">
+                        {word.roots.formula}
+                      </Text>
+                    )}
+                    <Text className="text-[14px] leading-relaxed text-slate-600">
+                      {[
+                        ...(word.roots ? [`“${word.roots.literal}”`] : []),
+                        ...(word.senseFlow ?? []),
+                      ].join(" → ")}
+                    </Text>
+                  </LabeledSection>
+                )}
+
+                {/* 같은 어근 단어는 풀이가 길어 한 줄에 한 단어씩 두고 줄바꿈되게 한다 */}
+                {word.family && (
+                  <LabeledSection label={t("study.family")}>
+                    <View className="gap-1.5">
+                      {word.family.map((item) => (
+                        <Text
+                          key={item.word}
+                          className="text-[14px] leading-snug text-slate-600"
+                        >
+                          <Text className="text-[15px] font-semibold text-lavender">
+                            {item.word}
+                          </Text>
+                          {"  "}
+                          {item.meaning}
+                        </Text>
+                      ))}
+                    </View>
+                  </LabeledSection>
+                )}
+
+                {word.compare && (
+                  <LabeledSection label={t("study.compare")}>
+                    <Text className="text-[13px] font-bold text-slate-500">
+                      {word.compare.title}
+                    </Text>
+                    <View className="mt-1.5 gap-1.5">
+                      {word.compare.items.map((item) => (
+                        <Text
+                          key={item.word}
+                          className="text-[14px] leading-snug text-slate-600"
+                        >
+                          <Text className="font-semibold text-lavender">
+                            {item.word}
+                          </Text>
+                          {"  "}
+                          {item.note}
+                        </Text>
+                      ))}
+                    </View>
+                  </LabeledSection>
+                )}
+              </View>
+            )}
+          </View>
         </View>
+      </ScrollView>
+
+      {/* ── 학습 평가 버튼 (가운데는 단어장에 담기) ────────── */}
+      <View className="mx-6 flex-row items-stretch gap-2 pb-4 pt-3">
+        {/* 홈으로. 유닛을 거쳐 들어온 화면이라 뒤로가기만으로는 여러 번 눌러야
+            한다. 글자 없이 아이콘만 둔다.
+            가로·세로를 같은 값으로 못 박고 self-center 로 늘어남을 끊는다.
+            aspect-square 로 높이에서 너비를 끌어오면 네이티브에서 계산이
+            어긋나 원이 일그러진다. 52px 은 옆 버튼 높이(위아래 16 + 내용 20) */}
+        <Pressable
+          onPress={() => router.replace("/")}
+          accessibilityRole="button"
+          accessibilityLabel={t("nav.home")}
+          className="h-[52px] w-[52px] shrink-0 self-center items-center justify-center rounded-full bg-surface shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
+        >
+          <HomeIcon size={20} color="#64748b" />
+        </Pressable>
+
+        {/* 판정 버튼 둘이 남는 자리를 똑같이 나눠 가진다 */}
+        <Pressable
+          onPress={() => decide("unsure")}
+          style={{ flex: 1 }}
+          className="flex-row items-center justify-center gap-1 rounded-full bg-surface px-1 py-4 shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
+        >
+          <View className="h-5 w-5 items-center justify-center rounded-lg bg-slate-300">
+            <AgainIcon />
+          </View>
+          <Text
+            numberOfLines={1}
+            className="text-[14px] font-extrabold tracking-tight text-slate-800"
+          >
+            {t("study.unsure")}
+          </Text>
+        </Pressable>
+
+        {/* 저장 버튼도 가로는 글씨('저장됨')에 맞춰 못 박는다(shrink-0).
+            늘었다 줄었다 하는 것은 '헷갈려요'·'외웠어요' 둘뿐이다 */}
+        <Pressable
+          onPress={() => toggleSaved(word.id)}
+          accessibilityRole="button"
+          accessibilityState={{ selected: isSaved }}
+          accessibilityLabel={t("study.saveToggle")}
+          className={`w-[72px] shrink-0 flex-row items-center justify-center gap-1 rounded-full px-1 active:scale-[0.98] ${
+            isSaved
+              ? "bg-canvas shadow-neu-inset"
+              : "bg-surface shadow-neu-sm active:shadow-neu-pressed"
+          }`}
+        >
+          <BookmarkIcon
+            size={16}
+            filled={isSaved}
+            color={isSaved ? MINT : "#94a3b8"}
+          />
+          <Text
+            numberOfLines={1}
+            className={`text-[14px] font-extrabold tracking-tight ${
+              isSaved ? "text-mint-dark" : "text-slate-500"
+            }`}
+          >
+            {t(isSaved ? "study.saved" : "study.save")}
+          </Text>
+        </Pressable>
+
+        {/* 외웠어요는 앱의 주요 동작 버튼(PillButton primary)과 같은 연민트 */}
+        <Pressable
+          onPress={() => decide("known")}
+          style={{ flex: 1 }}
+          className="flex-row items-center justify-center gap-1 rounded-full bg-[#dcf2ea] px-1 py-4 shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
+        >
+          <View className="h-5 w-5 items-center justify-center rounded-md bg-mint">
+            <CheckIcon />
+          </View>
+          <Text
+            numberOfLines={1}
+            className="text-[14px] font-black tracking-tight text-mint-dark"
+          >
+            {t("study.known")}
+          </Text>
+        </Pressable>
       </View>
-    </SafeAreaView>
+    </Screen>
   );
 }

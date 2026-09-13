@@ -8,10 +8,10 @@ import {
   TextInput,
   View,
 } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
 import { BackButton } from "../src/components/BackButton";
 import { BottomNav } from "../src/components/BottomNav";
 import { PillButton } from "../src/components/PillButton";
+import { Screen, ScreenHeader } from "../src/components/Screen";
 import {
   ChartIcon,
   GlobeIcon,
@@ -123,200 +123,200 @@ export default function SettingsScreen() {
   };
 
   return (
-    <SafeAreaView className="flex-1 bg-canvas">
-      <View className="w-full flex-1">
-        <View className="flex-row items-center gap-4 px-6 pb-4 pt-8">
-          <BackButton fallbackHref="/" />
-          <Text className="text-2xl font-bold text-ink">
-            {t("settings.title")}
-          </Text>
+    <Screen>
+      <ScreenHeader>
+        <BackButton fallbackHref="/" />
+        <Text className="text-2xl font-bold text-ink">
+          {t("settings.title")}
+        </Text>
+      </ScreenHeader>
+
+      <ScrollView
+        className="flex-1"
+        // 설정 카드끼리의 간격은 다른 화면의 카드 묶음과 같은 16px
+        contentContainerClassName="gap-4 px-6 pb-32 pt-6"
+        showsVerticalScrollIndicator={false}
+        keyboardShouldPersistTaps="handled"
+      >
+        <View className="rounded-3xl bg-surface p-6 shadow-neu-card">
+          <SectionTitle icon={<PersonIcon />} label={t("settings.myName")} />
+          <TextInput
+            value={nickname}
+            onChangeText={setNickname}
+            placeholder={t("settings.namePlaceholder")}
+            placeholderTextColor="#94a3b8"
+            maxLength={12}
+            returnKeyType="done"
+            className="mt-3 rounded-2xl bg-canvas px-4 py-3 text-[15px] text-ink shadow-neu-inset"
+          />
         </View>
 
-        <ScrollView
-          className="flex-1"
-          contentContainerClassName="px-6 pb-32 pt-2"
-          showsVerticalScrollIndicator={false}
-          keyboardShouldPersistTaps="handled"
-        >
-          <View className="rounded-3xl bg-surface p-6 shadow-neu-card">
-            <SectionTitle icon={<PersonIcon />} label={t("settings.myName")} />
-            <TextInput
-              value={nickname}
-              onChangeText={setNickname}
-              placeholder={t("settings.namePlaceholder")}
-              placeholderTextColor="#94a3b8"
-              maxLength={12}
-              returnKeyType="done"
-              className="mt-3 rounded-2xl bg-canvas px-4 py-3 text-[15px] text-ink shadow-neu-inset"
-            />
+        <View className="rounded-3xl bg-surface p-6 shadow-neu-card">
+          <SectionTitle icon={<GlobeIcon />} label={t("settings.language")} />
+
+          {/* 앱 화면에 쓰는 말 */}
+          <Text className="mt-4 text-[15px] text-slate-700">
+            {t("settings.uiLang")}
+          </Text>
+          <Text className="mt-1 text-[13px] text-slate-400">
+            {t("settings.uiLangDesc")}
+          </Text>
+          <View className="mt-3 flex-row flex-wrap gap-2">
+            {UI_LANGS.map((id) => (
+              <PillButton
+                key={id}
+                size="sm"
+                label={UI_LANG_NAMES[id]}
+                variant={uiLang === id ? "inset" : "default"}
+                onPress={() => setUiLang(id)}
+              />
+            ))}
           </View>
+        </View>
 
-          <View className="mt-6 rounded-3xl bg-surface p-6 shadow-neu-card">
-            <SectionTitle icon={<GlobeIcon />} label={t("settings.language")} />
-
-            {/* 앱 화면에 쓰는 말 */}
-            <Text className="mt-4 text-[15px] text-slate-700">
-              {t("settings.uiLang")}
-            </Text>
-            <Text className="mt-1 text-[13px] text-slate-400">
-              {t("settings.uiLangDesc")}
-            </Text>
-            <View className="mt-3 flex-row flex-wrap gap-2">
-              {UI_LANGS.map((id) => (
-                <PillButton
-                  key={id}
-                  size="sm"
-                  label={UI_LANG_NAMES[id]}
-                  variant={uiLang === id ? "inset" : "default"}
-                  onPress={() => setUiLang(id)}
-                />
-              ))}
+        <View className="rounded-3xl bg-surface p-6 shadow-neu-card">
+          <SectionTitle
+            icon={<SlidersIcon />}
+            label={t("settings.studySettings")}
+          />
+          <View className="mt-4 flex-row items-center justify-between gap-4">
+            <View className="flex-1">
+              <Text className="text-[15px] text-slate-700">
+                {t("settings.autoAdvance")}
+              </Text>
+              <Text className="mt-1 text-[13px] text-slate-400">
+                {t("settings.autoAdvanceDesc")}
+              </Text>
             </View>
-          </View>
-
-          <View className="mt-6 rounded-3xl bg-surface p-6 shadow-neu-card">
-            <SectionTitle
-              icon={<SlidersIcon />}
-              label={t("settings.studySettings")}
-            />
-            <View className="mt-4 flex-row items-center justify-between gap-4">
-              <View className="flex-1">
-                <Text className="text-[15px] text-slate-700">
-                  {t("settings.autoAdvance")}
-                </Text>
-                <Text className="mt-1 text-[13px] text-slate-400">
-                  {t("settings.autoAdvanceDesc")}
-                </Text>
-              </View>
-              <Pressable
-                accessibilityRole="switch"
-                accessibilityLabel={t("settings.autoAdvance")}
-                accessibilityState={{ checked: autoAdvance }}
-                onPress={() => setAutoAdvance(!autoAdvance)}
-                className={`rounded-full px-4 py-2 active:opacity-70 ${
-                  autoAdvance
-                    ? "bg-surface shadow-neu-sm"
-                    : "bg-canvas shadow-neu-inset"
+            {/* 앱 전체에서 파인 모양은 "켜짐·선택됨"을 뜻한다 */}
+            <Pressable
+              accessibilityRole="switch"
+              accessibilityLabel={t("settings.autoAdvance")}
+              accessibilityState={{ checked: autoAdvance }}
+              onPress={() => setAutoAdvance(!autoAdvance)}
+              className={`rounded-full px-4 py-2 active:opacity-70 ${
+                autoAdvance
+                  ? "bg-canvas shadow-neu-inset"
+                  : "bg-surface shadow-neu-sm"
+              }`}
+            >
+              <Text
+                className={`text-[13px] font-bold ${
+                  autoAdvance ? "text-mint-dark" : "text-slate-400"
                 }`}
               >
-                <Text
-                  className={`text-[13px] font-bold ${
-                    autoAdvance ? "text-mint-dark" : "text-slate-400"
-                  }`}
-                >
-                  {autoAdvance ? t("common.on") : t("common.off")}
-                </Text>
-              </Pressable>
-            </View>
-
-            {/* ── 발음 소리 크기 ─────────────────────────────── */}
-            <View className="mt-5 border-t border-slate-200/70 pt-5">
-              <View className="flex-row items-center justify-between gap-4">
-                <View className="flex-1">
-                  <Text className="text-[15px] text-slate-700">
-                    {t("settings.speechVolume")}
-                  </Text>
-                  <Text className="mt-1 text-[13px] text-slate-400">
-                    {t("settings.speechVolumeDesc")}
-                  </Text>
-                </View>
-                <Text
-                  className={`text-[13px] font-bold ${
-                    speechVolume === 0 ? "text-slate-400" : "text-mint-dark"
-                  }`}
-                >
-                  {speechVolume === 0
-                    ? t("settings.speechMuted")
-                    : `${Math.round(speechVolume * 100)}%`}
-                </Text>
-              </View>
-
-              {/* 단계를 누르면 바뀐 크기로 바로 한 번 들려준다.
-                  막대 자체는 낮은 단계일수록 짧아 누르기 어려우므로, 누르는
-                  자리는 막대 높이와 상관없이 48px 로 잡고 그 안에 막대를 그린다 */}
-              <View className="mt-3 flex-row items-end gap-2">
-                <Pressable
-                  onPress={() => playSample(speechVolume)}
-                  accessibilityRole="button"
-                  accessibilityLabel={t("settings.speechVolume")}
-                  className="h-12 justify-center pr-1 active:opacity-60"
-                >
-                  <SpeakerIcon
-                    size={18}
-                    color={speechVolume === 0 ? "#94a3b8" : "#0eb582"}
-                  />
-                </Pressable>
-                {VOLUME_STEPS.map((step, i) => {
-                  const on = speechVolume >= step && step > 0;
-                  return (
-                    <Pressable
-                      key={step}
-                      accessibilityRole="button"
-                      accessibilityState={{ selected: speechVolume === step }}
-                      accessibilityLabel={
-                        step === 0
-                          ? t("settings.speechMuted")
-                          : t("settings.speechVolumeLevel", {
-                              percent: Math.round(step * 100),
-                            })
-                      }
-                      onPress={() => {
-                        setSpeechVolume(step);
-                        playSample(step);
-                      }}
-                      style={{ flex: 1 }}
-                      className="h-12 justify-end active:opacity-70"
-                    >
-                      <View
-                        style={{ height: 12 + i * 8 }}
-                        className={`rounded-lg ${
-                          on
-                            ? "bg-mint"
-                            : // 음소거를 고른 상태도 눌린 티가 나야 한다
-                              step === 0 && speechVolume === 0
-                              ? "bg-slate-300"
-                              : "bg-canvas shadow-neu-inset"
-                        }`}
-                      />
-                    </Pressable>
-                  );
-                })}
-              </View>
-            </View>
-          </View>
-
-          <View className="mt-6 rounded-3xl bg-surface p-6 shadow-neu-card">
-            <SectionTitle icon={<ChartIcon />} label={t("settings.record")} />
-            {/* 기록이 없으면 "0개 · 0개" 대신 안내를 보여주고, 지울 것도 없으니 버튼을 감춘다 */}
-            {hasRecord ? (
-              <>
-                <Text className="mt-3 text-[13px] text-slate-700">
-                  {t("settings.recordSummary", {
-                    known: counts.known,
-                    unsure: counts.unsure,
-                  })}
-                </Text>
-                <PillButton
-                  className="mt-5 self-start"
-                  size="sm"
-                  label={
-                    confirming
-                      ? t("settings.resetConfirmTitle")
-                      : t("settings.resetProgress")
-                  }
-                  onPress={handleReset}
-                />
-              </>
-            ) : (
-              <Text className="mt-3 text-[13px] text-slate-400">
-                {t("settings.noRecord")}
+                {autoAdvance ? t("common.on") : t("common.off")}
               </Text>
-            )}
+            </Pressable>
           </View>
-        </ScrollView>
-      </View>
+
+          {/* ── 발음 소리 크기 ─────────────────────────────── */}
+          <View className="mt-5 border-t border-slate-200/70 pt-5">
+            <View className="flex-row items-center justify-between gap-4">
+              <View className="flex-1">
+                <Text className="text-[15px] text-slate-700">
+                  {t("settings.speechVolume")}
+                </Text>
+                <Text className="mt-1 text-[13px] text-slate-400">
+                  {t("settings.speechVolumeDesc")}
+                </Text>
+              </View>
+              <Text
+                className={`text-[13px] font-bold ${
+                  speechVolume === 0 ? "text-slate-400" : "text-mint-dark"
+                }`}
+              >
+                {speechVolume === 0
+                  ? t("settings.speechMuted")
+                  : `${Math.round(speechVolume * 100)}%`}
+              </Text>
+            </View>
+
+            {/* 단계를 누르면 바뀐 크기로 바로 한 번 들려준다.
+                막대 자체는 낮은 단계일수록 짧아 누르기 어려우므로, 누르는
+                자리는 막대 높이와 상관없이 48px 로 잡고 그 안에 막대를 그린다 */}
+            <View className="mt-3 flex-row items-end gap-2">
+              <Pressable
+                onPress={() => playSample(speechVolume)}
+                accessibilityRole="button"
+                accessibilityLabel={t("settings.speechVolume")}
+                className="h-12 justify-center pr-1 active:opacity-60"
+              >
+                <SpeakerIcon
+                  size={18}
+                  color={speechVolume === 0 ? "#94a3b8" : "#0eb582"}
+                />
+              </Pressable>
+              {VOLUME_STEPS.map((step, i) => {
+                const on = speechVolume >= step && step > 0;
+                return (
+                  <Pressable
+                    key={step}
+                    accessibilityRole="button"
+                    accessibilityState={{ selected: speechVolume === step }}
+                    accessibilityLabel={
+                      step === 0
+                        ? t("settings.speechMuted")
+                        : t("settings.speechVolumeLevel", {
+                            percent: Math.round(step * 100),
+                          })
+                    }
+                    onPress={() => {
+                      setSpeechVolume(step);
+                      playSample(step);
+                    }}
+                    style={{ flex: 1 }}
+                    className="h-12 justify-end active:opacity-70"
+                  >
+                    <View
+                      style={{ height: 12 + i * 8 }}
+                      className={`rounded-lg ${
+                        on
+                          ? "bg-mint"
+                          : // 음소거를 고른 상태도 눌린 티가 나야 한다
+                            step === 0 && speechVolume === 0
+                            ? "bg-slate-300"
+                            : "bg-canvas shadow-neu-inset"
+                      }`}
+                    />
+                  </Pressable>
+                );
+              })}
+            </View>
+          </View>
+        </View>
+
+        <View className="rounded-3xl bg-surface p-6 shadow-neu-card">
+          <SectionTitle icon={<ChartIcon />} label={t("settings.record")} />
+          {/* 기록이 없으면 "0개 · 0개" 대신 안내를 보여주고, 지울 것도 없으니 버튼을 감춘다 */}
+          {hasRecord ? (
+            <>
+              <Text className="mt-3 text-[13px] text-slate-700">
+                {t("settings.recordSummary", {
+                  known: counts.known,
+                  unsure: counts.unsure,
+                })}
+              </Text>
+              <PillButton
+                className="mt-5 self-start"
+                size="sm"
+                label={
+                  confirming
+                    ? t("settings.resetConfirmTitle")
+                    : t("settings.resetProgress")
+                }
+                onPress={handleReset}
+              />
+            </>
+          ) : (
+            <Text className="mt-3 text-[13px] text-slate-400">
+              {t("settings.noRecord")}
+            </Text>
+          )}
+        </View>
+      </ScrollView>
 
       <BottomNav />
-    </SafeAreaView>
+    </Screen>
   );
 }

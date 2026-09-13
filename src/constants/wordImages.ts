@@ -40,6 +40,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   accidentally: require("../../assets/words/accidentally.png"),
   accommodate: require("../../assets/words/accommodate.png"),
   accommodation: require("../../assets/words/accommodation.png"),
+  "accompanied by": require("../../assets/words/accompanied-by.png"),
   ache: require("../../assets/words/ache.png"),
   activity: require("../../assets/words/activity.png"),
   actually: require("../../assets/words/actually.png"),

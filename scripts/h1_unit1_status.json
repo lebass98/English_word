@@ -1,0 +1,164 @@
+{
+  "unit": "High 1 Unit 1",
+  "total": 20,
+  "current_index": 20,
+  "current_word": "obstacle",
+  "items": [
+    {
+      "index": 1,
+      "id": "h1-1",
+      "word": "present",
+      "status": "SUCCESS",
+      "elapsed_sec": 177.1,
+      "size_kb": 843.3
+    },
+    {
+      "index": 2,
+      "id": "h1-2",
+      "word": "compare",
+      "status": "SUCCESS",
+      "elapsed_sec": 218.8,
+      "size_kb": 735.6
+    },
+    {
+      "index": 3,
+      "id": "h1-3",
+      "word": "tune",
+      "status": "SUCCESS",
+      "elapsed_sec": 232.5,
+      "size_kb": 832.9
+    },
+    {
+      "index": 4,
+      "id": "h1-4",
+      "word": "trigger",
+      "status": "SUCCESS",
+      "elapsed_sec": 285.7,
+      "size_kb": 855.2
+    },
+    {
+      "index": 5,
+      "id": "h1-5",
+      "word": "obvious",
+      "status": "SUCCESS",
+      "elapsed_sec": 263.3,
+      "size_kb": 1012.4
+    },
+    {
+      "index": 6,
+      "id": "h1-6",
+      "word": "return",
+      "status": "SKIP_EXISTS",
+      "size_kb": 621.8
+    },
+    {
+      "index": 7,
+      "id": "h1-7",
+      "word": "particle",
+      "status": "SUCCESS",
+      "elapsed_sec": 235.5,
+      "size_kb": 1373.6
+    },
+    {
+      "index": 8,
+      "id": "h1-8",
+      "word": "carve",
+      "status": "SKIP_EXISTS",
+      "size_kb": 962.6
+    },
+    {
+      "index": 9,
+      "id": "h1-9",
+      "word": "mechanic",
+      "status": "SUCCESS",
+      "elapsed_sec": 251.0,
+      "size_kb": 933.9
+    },
+    {
+      "index": 10,
+      "id": "h1-10",
+      "word": "convince",
+      "status": "SUCCESS",
+      "elapsed_sec": 245.7,
+      "size_kb": 659.9
+    },
+    {
+      "index": 11,
+      "id": "h1-11",
+      "word": "rely",
+      "status": "SUCCESS",
+      "elapsed_sec": 247.4,
+      "size_kb": 1092.7
+    },
+    {
+      "index": 12,
+      "id": "h1-12",
+      "word": "nature",
+      "status": "SUCCESS",
+      "elapsed_sec": 257.3,
+      "size_kb": 1383.9
+    },
+    {
+      "index": 13,
+      "id": "h1-13",
+      "word": "voyage",
+      "status": "SKIP_EXISTS",
+      "size_kb": 854.7
+    },
+    {
+      "index": 14,
+      "id": "h1-14",
+      "word": "military",
+      "status": "SUCCESS",
+      "elapsed_sec": 250.9,
+      "size_kb": 962.5
+    },
+    {
+      "index": 15,
+      "id": "h1-15",
+      "word": "replace",
+      "status": "SKIP_EXISTS",
+      "size_kb": 820.7
+    },
+    {
+      "index": 16,
+      "id": "h1-16",
+      "word": "inquire",
+      "status": "SUCCESS",
+      "elapsed_sec": 255.3,
+      "size_kb": 642.7
+    },
+    {
+      "index": 17,
+      "id": "h1-17",
+      "word": "resource",
+      "status": "SUCCESS",
+      "elapsed_sec": 254.4,
+      "size_kb": 708.9
+    },
+    {
+      "index": 18,
+      "id": "h1-18",
+      "word": "demand",
+      "status": "SUCCESS",
+      "elapsed_sec": 257.9,
+      "size_kb": 1124.3
+    },
+    {
+      "index": 19,
+      "id": "h1-19",
+      "word": "humor",
+      "status": "SUCCESS",
+      "elapsed_sec": 256.3,
+      "size_kb": 1105.4
+    },
+    {
+      "index": 20,
+      "id": "h1-20",
+      "word": "obstacle",
+      "status": "SUCCESS",
+      "elapsed_sec": 258.3,
+      "size_kb": 877.4
+    }
+  ]
+}

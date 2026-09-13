@@ -185,6 +185,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   climb: require("../../assets/words/climb.png"),
   close: require("../../assets/words/close.png"),
   closet: require("../../assets/words/closet.png"),
+  cloth: require("../../assets/words/cloth.png"),
   cloudy: require("../../assets/words/cloudy.png"),
   clue: require("../../assets/words/clue.png"),
   coal: require("../../assets/words/coal.png"),

@@ -1,6 +1,6 @@
 {
-  "current_unit": 28,
-  "current_word": "ticket",
+  "current_unit": 29,
+  "current_word": "comedy",
   "total_targets": 73,
   "completed_words": [
     {
@@ -30,6 +30,27 @@
       "unit": 28,
       "elapsed_sec": 250.2,
       "size_kb": 1118.2
+    },
+    {
+      "word": "plenty",
+      "id": "m2-567",
+      "unit": 29,
+      "elapsed_sec": 247.7,
+      "size_kb": 1006.3
+    },
+    {
+      "word": "luck",
+      "id": "m2-568",
+      "unit": 29,
+      "elapsed_sec": 250.5,
+      "size_kb": 898.6
+    },
+    {
+      "word": "comedy",
+      "id": "m2-569",
+      "unit": 29,
+      "elapsed_sec": 251.2,
+      "size_kb": 1118.9
     }
   ]
 }

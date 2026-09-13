@@ -37,6 +37,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   alarm: require("../../assets/words/alarm.png"),
   alive: require("../../assets/words/alive.png"),
   almost: require("../../assets/words/almost.png"),
+  alone: require("../../assets/words/alone.png"),
   along: require("../../assets/words/along.png"),
   alphabet: require("../../assets/words/alphabet.png"),
   altogether: require("../../assets/words/altogether.png"),

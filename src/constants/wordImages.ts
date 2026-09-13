@@ -19,6 +19,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   "a wide range of": require("../../assets/words/a-wide-range-of.png"),
   abandon: require("../../assets/words/abandon.png"),
   able: require("../../assets/words/able.png"),
+  abnormally: require("../../assets/words/abnormally.png"),
   absent: require("../../assets/words/absent.png"),
   abuse: require("../../assets/words/abuse.png"),
   academic: require("../../assets/words/academic.png"),

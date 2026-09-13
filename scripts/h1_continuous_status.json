@@ -1,173 +1,172 @@
 {
-  "unit": 5,
+  "unit": 6,
   "total": 20,
-  "current_word": "revolution",
+  "current_word": "royal",
   "current_index": 20,
   "items": [
     {
       "index": 1,
-      "id": "h1-81",
-      "word": "entry",
-      "meaning": "참가, 입장, 가입",
-      "scene": "grand exhibition hall entrance archway, cute chibi mannequin visitor scanning an admission ticket badge at the modern turnstile gate to enter, welcome banners and velvet stanchions",
+      "id": "h1-101",
+      "word": "innovation",
+      "meaning": "혁신, 획기적인 것",
+      "scene": "detailed illustrative narrative scene of innovation, cute slender stickman This innovation changed how people share news online., indoor room or outdoor setting, rich props",
       "status": "FAILED"
     },
     {
       "index": 2,
-      "id": "h1-82",
-      "word": "magazine",
-      "meaning": "잡지",
-      "scene": "cozy library lounge reading nook, cute chibi mannequin sitting comfortably on a cushioned armchair flipping through the glossy illustrated pages of an open magazine, wooden bookshelf and coffee table",
+      "id": "h1-102",
+      "word": "pitch",
+      "meaning": "음높이, 음조, 정점",
+      "scene": "detailed illustrative narrative scene of pitch, cute slender stickman The young player pitched the ball fast and won the game., indoor room or outdoor setting, rich props",
       "status": "SKIP_EXISTS",
-      "size_kb": 992.5
+      "size_kb": 601.4
     },
     {
       "index": 3,
-      "id": "h1-83",
-      "word": "increase",
-      "meaning": "증가하다, 늘다, 인상되다; 증가, 증대",
-      "scene": "bright analytical office, smiling cute chibi mannequin standing beside an upward climbing financial growth line chart on a presentation easel, stack of rising coins on the desk",
-      "status": "SKIP_EXISTS",
-      "size_kb": 883.4
-    },
-    {
-      "index": 4,
-      "id": "h1-84",
-      "word": "pour",
-      "meaning": "붓다, 따르다, 마구 쏟아지다",
-      "scene": "cozy cafe counter or kitchen, cute chibi mannequin barista carefully pouring hot water from an elegant slender gooseneck kettle into a glass coffee drip cone, ceramic mugs and coffee beans",
+      "id": "h1-103",
+      "word": "surprised",
+      "meaning": "놀란, 놀라는",
+      "scene": "detailed illustrative narrative scene of surprised, cute slender stickman She looked surprised when I told her the good news., indoor room or outdoor setting, rich props",
       "status": "FAILED"
     },
     {
+      "index": 4,
+      "id": "h1-104",
+      "word": "upset",
+      "meaning": "화가 난, 속상한; 당황하게 하다, 뒤엎다",
+      "scene": "detailed illustrative narrative scene of upset, cute slender stickman The playful cat upset a glass of milk on the table., indoor room or outdoor setting, rich props",
+      "status": "SKIP_EXISTS",
+      "size_kb": 816.2
+    },
+    {
       "index": 5,
-      "id": "h1-85",
-      "word": "deliver",
-      "meaning": "배달하다, 연설하다, 출산하다",
-      "scene": "suburban house front porch, cheerful cute chibi mannequin courier handing a neat cardboard delivery parcel box to a resident at the open doorway, delivery bicycle with basket parked nearby",
+      "id": "h1-105",
+      "word": "starve",
+      "meaning": "굶주리다, 갈망하다",
+      "scene": "detailed illustrative narrative scene of starve, cute slender stickman Without rain for months, thousands of farm animals began to starve., indoor room or outdoor setting, rich props",
       "status": "FAILED"
     },
     {
       "index": 6,
-      "id": "h1-86",
-      "word": "convert",
-      "meaning": "바꾸다, 전환하다",
-      "scene": "green energy workshop laboratory, cute chibi mannequin technician adjusting solar inverter device converting rooftop sun ray beams into electrical battery energy, power gauge meter and cables",
+      "id": "h1-106",
+      "word": "level",
+      "meaning": "(가치·정도 등의) 수준, 위치, (수평)면; 수평의, 평평한",
+      "scene": "detailed illustrative narrative scene of level, cute slender stickman His English is at a very high level now., indoor room or outdoor setting, rich props",
       "status": "FAILED"
     },
     {
       "index": 7,
-      "id": "h1-87",
-      "word": "region",
-      "meaning": "지역, 지방, 범위",
-      "scene": "cartography study room, cute chibi mannequin geographer holding a wooden pointer rod indicating a distinct geographical highlighted region on a grand wall world map, globe and compass on desk",
+      "id": "h1-107",
+      "word": "necessary",
+      "meaning": "필수적인, 필요한",
+      "scene": "detailed illustrative narrative scene of necessary, cute slender stickman Warm clothes are necessary if you climb the mountain in winter., indoor room or outdoor setting, rich props",
       "status": "FAILED"
     },
     {
       "index": 8,
-      "id": "h1-88",
-      "word": "wage",
-      "meaning": "임금, 급료",
-      "scene": "cozy company office accounting desk, happy cute chibi mannequin employee receiving a monthly pay wage salary envelope with a smile, desk calendar and ledger notebook",
+      "id": "h1-108",
+      "word": "volunteer",
+      "meaning": "자원봉사자; 자발적인, 자원의; 자원하다",
+      "scene": "detailed illustrative narrative scene of volunteer, cute slender stickman Every Saturday a young volunteer teaches free math lessons at our community center., indoor room or outdoor setting, rich props",
       "status": "FAILED"
     },
     {
       "index": 9,
-      "id": "h1-89",
-      "word": "vary",
-      "meaning": "다르다, 다양하다, 변화하다",
-      "scene": "artisan ceramic studio shelf, cute chibi mannequin potter standing admiring a collection of pottery jars that vary in different sizes, geometric heights and silhouettes, clay sculpting tools",
-      "status": "FAILED"
+      "id": "h1-109",
+      "word": "grain",
+      "meaning": "곡물, 곡식, 낟알",
+      "scene": "detailed illustrative narrative scene of grain, cute slender stickman Farmers store their grain in a dry place after the harvest., indoor room or outdoor setting, rich props",
+      "status": "SKIP_EXISTS",
+      "size_kb": 1331.5
     },
     {
       "index": 10,
-      "id": "h1-90",
-      "word": "storm",
-      "meaning": "폭풍, 폭풍우",
-      "scene": "cozy attic bedroom window, cute chibi mannequin looking through window glass pane at a stormy rainy night sky with diagonal rain streaks and distant zigzag lightning flash, soft warm bedside lamp",
+      "id": "h1-110",
+      "word": "ritual",
+      "meaning": "의식(절차), 의례; 의례적인",
+      "scene": "detailed illustrative narrative scene of ritual, cute slender stickman The tea ceremony is an ancient ritual in many cultures., indoor room or outdoor setting, rich props",
       "status": "FAILED"
     },
     {
       "index": 11,
-      "id": "h1-91",
-      "word": "electronic",
-      "meaning": "전자의, 전자공학의",
-      "scene": "modern maker electronics lab, focused cute chibi mannequin engineer using a fine precision soldering iron on a green electronic circuit board with microchips and tiny wires, desk magnifier",
+      "id": "h1-111",
+      "word": "process",
+      "meaning": "과정, 절차; 처리하다",
+      "scene": "detailed illustrative narrative scene of process, cute slender stickman Learning a language is a slow but rewarding process., indoor room or outdoor setting, rich props",
       "status": "FAILED"
     },
     {
       "index": 12,
-      "id": "h1-92",
-      "word": "orbit",
-      "meaning": "궤도, 활동 범위; 궤도를 돌다",
-      "scene": "planetary science astronomy lab, cute chibi mannequin astronomer observing a glowing mechanical orrery model showing a small moon satellite in circular orbit around a large planet globe",
+      "id": "h1-112",
+      "word": "precede",
+      "meaning": "선행하다, 앞서다",
+      "scene": "detailed illustrative narrative scene of precede, cute slender stickman A short speech will precede the award ceremony tonight., indoor room or outdoor setting, rich props",
       "status": "FAILED"
     },
     {
       "index": 13,
-      "id": "h1-93",
-      "word": "interact",
-      "meaning": "상호작용하다, 소통하다",
-      "scene": "bright community innovation lounge, two friendly cute chibi mannequins gesturing happily as they interact in lively conversation while pointing at shared tablet screen, potted plants and round table",
+      "id": "h1-113",
+      "word": "penalty",
+      "meaning": "벌칙, 처벌, 불이익",
+      "scene": "detailed illustrative narrative scene of penalty, cute slender stickman The player received a penalty for pushing an opponent during the match., indoor room or outdoor setting, rich props",
       "status": "FAILED"
     },
     {
       "index": 14,
-      "id": "h1-94",
-      "word": "household",
-      "meaning": "가구, 가정, 가족; 가족의",
-      "scene": "warm living room home scene, loving cute chibi mannequin family gathered together in their cozy household, sofa, floor rug, wall picture frame and warm floor lamp",
+      "id": "h1-114",
+      "word": "quit",
+      "meaning": "그만두다",
+      "scene": "detailed illustrative narrative scene of quit, cute slender stickman He decided to quit his job and study abroad., indoor room or outdoor setting, rich props",
       "status": "FAILED"
     },
     {
       "index": 15,
-      "id": "h1-95",
-      "word": "climate",
-      "meaning": "기후, 분위기",
-      "scene": "environmental meteorological station, cute chibi mannequin climatologist observing world climate map display showing temperature zones and weather atmospheric sensors, barometer on wall",
+      "id": "h1-115",
+      "word": "practice",
+      "meaning": "연습하다; 연습, 관행",
+      "scene": "detailed illustrative narrative scene of practice, cute slender stickman Mina practices the piano for an hour after dinner., indoor room or outdoor setting, rich props",
       "status": "SKIP_EXISTS",
-      "size_kb": 1102.5
+      "size_kb": 1029.9
     },
     {
       "index": 16,
-      "id": "h1-96",
-      "word": "grant",
-      "meaning": "주다, 인정하다, 승인하다; 보조금",
-      "scene": "university auditorium ceremony stage, cute chibi mannequin researcher humbly receiving an official research fellowship grant certificate plaque from an academy dean, floral decor and podium",
+      "id": "h1-116",
+      "word": "request",
+      "meaning": "요청, 요구사항; 요청하다, 부탁하다",
+      "scene": "detailed illustrative narrative scene of request, cute slender stickman The teacher agreed to my request for extra time., indoor room or outdoor setting, rich props",
       "status": "FAILED"
     },
     {
       "index": 17,
-      "id": "h1-97",
-      "word": "provide",
-      "meaning": "제공하다, 공급하다",
-      "scene": "community volunteer kitchen, kind cute chibi mannequin volunteer warmly providing a warm bowl of soup and freshly baked loaf of bread to a grateful neighbor across wooden counter",
+      "id": "h1-117",
+      "word": "defeat",
+      "meaning": "패배시키다, 물리치다; 패배",
+      "scene": "detailed illustrative narrative scene of defeat, cute slender stickman Our team hopes to defeat the champions this Saturday., indoor room or outdoor setting, rich props",
       "status": "FAILED"
     },
     {
       "index": 18,
-      "id": "h1-98",
-      "word": "heritage",
-      "meaning": "유산, 전통",
-      "scene": "historical museum gallery hall, cute chibi mannequin docent introducing an ancient carved cultural stone pillar monument heritage relic preserved inside a glass pedestal case",
+      "id": "h1-118",
+      "word": "scent",
+      "meaning": "향기, 냄새; 향기가 나다",
+      "scene": "detailed illustrative narrative scene of scent, cute slender stickman The sweet scent of fresh bread filled the whole kitchen this morning., indoor room or outdoor setting, rich props",
       "status": "FAILED"
     },
     {
       "index": 19,
-      "id": "h1-99",
-      "word": "limit",
-      "meaning": "제한, 한도, 한계; 제한하다, 한정하다",
-      "scene": "scenic country road bridge crossing, cute chibi mannequin driver observing a clear round speed limit sign marking road safety regulations, guardrail and open rolling hills",
-      "status": "SKIP_EXISTS",
-      "size_kb": 1127.2
+      "id": "h1-119",
+      "word": "crisis",
+      "meaning": "위기, 중대한 기로",
+      "scene": "detailed illustrative narrative scene of crisis, cute slender stickman The small country faced a serious water crisis after two years without rain., indoor room or outdoor setting, rich props",
+      "status": "FAILED"
     },
     {
       "index": 20,
-      "id": "h1-100",
-      "word": "revolution",
-      "meaning": "혁명, 변혁",
-      "scene": "historic town square or technology innovation hub, inspiring cute chibi mannequin leader holding a raised banner sparking a peaceful scientific and cultural revolution, enthusiastic crowd waving",
-      "status": "SKIP_EXISTS",
-      "size_kb": 899.8
+      "id": "h1-120",
+      "word": "royal",
+      "meaning": "왕의, 국왕의; 왕족",
+      "scene": "detailed illustrative narrative scene of royal, cute slender stickman The royal family waved to the crowd from the balcony., indoor room or outdoor setting, rich props",
+      "status": "FAILED"
     }
   ]
 }

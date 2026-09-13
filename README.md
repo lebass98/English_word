@@ -31,6 +31,13 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-13
+- 영어 **TOEFL 필수** 코스 추가 (1,495단어, 알파벳순 20단어씩 유닛)
+  - 표제어·동의어는 TOEFL 어휘서 단어 목록을 기준으로 삼고, 뜻·예문·어원·설명 문장은 모두 새로 작성
+  - 학년 코스와 겹치는 829단어는 기존 발음·예문을 그대로 쓰고, 새 666단어만 `words.json`·`tr/ko.json` 에 추가
+  - 뜻은 단어 id(`tf-N`)로 따로 두어 토플에서 쓰는 뜻을 보여 줌 (예: fine = 가는, house = 수용하다)
+  - 토플 코스 전용 보충 자료(`src/data/en/extras/ko.json`): 반의어·어근 풀이·같은 어근 단어·의미 비교를 학습 화면에 표시
+  - 연상 이미지는 아직 없음 (기존 그림이 있는 단어만 표시)
+
 - 고등학교 1학년 Unit 2 '선형그래픽' 스타일 단어 일러스트 20종 일괄 생성 및 등록 완료 (Draw Things 로컬 API 기반)
   - 1024x1024 해상도, 0.05mm 초극세선, No-Neck 스틱맨 캐릭터, 뉴모피즘 캔버스 테마(#f5f6f8), 딥차콜 선(#030203), 영문 전용 씬 묘사 원칙 준수
   - 대상 단어: express, virtual, exclude, enthusiasm, subject, orphan, biology, meanwhile, lift, precious, witness, spread, arise, pesticide, peer, element, oxygen, professor, fame, psychology

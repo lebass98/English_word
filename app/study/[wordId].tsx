@@ -578,8 +578,17 @@ function StudyCard({
               </View>
 
               {/* 예문·유의어·어원. 뜻과 함께 가려진다 —
-                  단어만 보고 스스로 떠올려 보기 좋다 */}
-              {showAnswer && (word.example || hasSynonyms || word.etymology) && (
+                  단어만 보고 스스로 떠올려 보기 좋다.
+                  반의어·어근 풀이·같은 어근 단어·의미 비교는 토플 코스에만 있다 */}
+              {showAnswer &&
+                (word.example ||
+                  hasSynonyms ||
+                  word.etymology ||
+                  word.antonyms ||
+                  word.roots ||
+                  word.senseFlow ||
+                  word.family ||
+                  word.compare) && (
                 <View className="mt-4 gap-5 border-t border-slate-200 pt-4">
                   {word.example && (
                     <LabeledSection label={t("study.example")}>
@@ -600,11 +609,77 @@ function StudyCard({
                     </LabeledSection>
                   )}
 
+                  {word.antonyms && (
+                    <LabeledSection label={t("study.antonyms")}>
+                      <SynonymList items={word.antonyms} />
+                    </LabeledSection>
+                  )}
+
                   {word.etymology && (
                     <LabeledSection label={t("study.etymology")}>
                       <Text className="text-[14px] leading-relaxed text-slate-600">
                         {word.etymology}
                       </Text>
+                    </LabeledSection>
+                  )}
+
+                  {/* 어근 공식 아래에 글자 그대로의 뜻부터 지금 뜻까지 이어 보여 준다.
+                      어근 공식이 없는 낱말은 뜻이 넓어진 순서만 보여 준다 */}
+                  {(word.roots || word.senseFlow) && (
+                    <LabeledSection label={t("study.roots")}>
+                      {word.roots && (
+                        <Text className="mb-1 text-[15px] font-semibold leading-snug text-lavender">
+                          {word.roots.formula}
+                        </Text>
+                      )}
+                      <Text className="text-[14px] leading-relaxed text-slate-600">
+                        {[
+                          ...(word.roots ? [`“${word.roots.literal}”`] : []),
+                          ...(word.senseFlow ?? []),
+                        ].join(" → ")}
+                      </Text>
+                    </LabeledSection>
+                  )}
+
+                  {/* 같은 어근 단어는 풀이가 길어 한 줄에 한 단어씩 두고 줄바꿈되게 한다 */}
+                  {word.family && (
+                    <LabeledSection label={t("study.family")}>
+                      <View className="gap-1.5">
+                        {word.family.map((item) => (
+                          <Text
+                            key={item.word}
+                            className="text-[14px] leading-snug text-slate-600"
+                          >
+                            <Text className="text-[15px] font-semibold text-lavender">
+                              {item.word}
+                            </Text>
+                            {"  "}
+                            {item.meaning}
+                          </Text>
+                        ))}
+                      </View>
+                    </LabeledSection>
+                  )}
+
+                  {word.compare && (
+                    <LabeledSection label={t("study.compare")}>
+                      <Text className="text-[13px] font-bold text-slate-500">
+                        {word.compare.title}
+                      </Text>
+                      <View className="mt-1.5 gap-1.5">
+                        {word.compare.items.map((item) => (
+                          <Text
+                            key={item.word}
+                            className="text-[14px] leading-snug text-slate-600"
+                          >
+                            <Text className="font-semibold text-lavender">
+                              {item.word}
+                            </Text>
+                            {"  "}
+                            {item.note}
+                          </Text>
+                        ))}
+                      </View>
                     </LabeledSection>
                   )}
                 </View>

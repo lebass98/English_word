@@ -13,6 +13,8 @@ import enLevelMiddle3 from "../data/en/levels/middle-3.json";
 import enLevelHigh1 from "../data/en/levels/high-1.json";
 import enLevelHigh2 from "../data/en/levels/high-2.json";
 import enLevelHigh3 from "../data/en/levels/high-3.json";
+import enLevelToefl from "../data/en/levels/toefl.json";
+import enExtrasKo from "../data/en/extras/ko.json";
 import enTrJa from "../data/en/tr/ja.json";
 import enTrKo from "../data/en/tr/ko.json";
 import enWords from "../data/en/words.json";
@@ -55,6 +57,32 @@ export interface Word {
   exampleTr?: string;
   etymology?: string;
   synonyms?: Synonym[];
+  /** 아래는 코스 전용 보충 자료다 (지금은 토플 코스에만 있다) */
+  antonyms?: Synonym[];
+  roots?: WordExtras["roots"];
+  senseFlow?: string[];
+  family?: Synonym[];
+  compare?: WordExtras["compare"];
+}
+
+/**
+ * 코스 하나에만 붙는 보충 자료.
+ *
+ * 토플 단어 절반은 학년 코스와 겹치는데, 어근 풀이 같은 시험 대비 자료는
+ * 토플 코스로 볼 때만 보여 주려고 철자가 아니라 단어 id(tf-1) 로 묶는다.
+ */
+export interface WordExtras {
+  /** 이 코스에서 가르치는 뜻에 맞춘 유의어. 있으면 공용 유의어 대신 쓴다 */
+  synonyms?: Synonym[];
+  antonyms?: Synonym[];
+  /** 어근 공식과 글자 그대로의 뜻 (ab(away) + rupt(break) / 부수고 뛰쳐나오는) */
+  roots?: { formula: string; literal: string };
+  /** 글자 그대로의 뜻에서 지금 뜻까지 넓어진 순서 */
+  senseFlow?: string[];
+  /** 같은 어근을 쓰는 단어들 */
+  family?: Synonym[];
+  /** 뜻이 비슷한 단어끼리의 쓰임 차이 */
+  compare?: { title: string; items: { word: string; note: string }[] };
 }
 
 export interface Unit {
@@ -88,6 +116,8 @@ interface LanguageData {
   words: Record<string, NeutralEntry>;
   /** 표시 언어별 뜻·해석 */
   tr: Partial<Record<UiLangId, TranslationFile>>;
+  /** 표시 언어별 코스 전용 보충 자료. 단어 id(tf-1) 기준 */
+  extras?: Partial<Record<UiLangId, Record<string, WordExtras>>>;
 }
 
 const EMPTY_TR: TranslationFile = { meanings: {}, details: {} };
@@ -105,12 +135,15 @@ const DATA: Record<StudyLangId, LanguageData> = {
       "high-1": enLevelHigh1 as string[],
       "high-2": enLevelHigh2 as string[],
       "high-3": enLevelHigh3 as string[],
+      toefl: enLevelToefl as string[],
     },
     words: enWords as Record<string, NeutralEntry>,
     tr: {
       ko: enTrKo as TranslationFile,
       ja: enTrJa as TranslationFile,
     },
+    // 토플 코스 보충 자료는 한국어로만 있다. 일본어 화면에서도 한국어로 보인다
+    extras: { ko: enExtrasKo as Record<string, WordExtras> },
   },
   ja: {
     levels: {
@@ -151,6 +184,8 @@ function buildVocab(studyLang: StudyLangId, uiLang: UiLangId): Vocab {
     ...fallback.details[spelling],
     ...tr.details[spelling],
   });
+  // 코스 전용 보충 자료. 고른 표시 언어에 없으면 한국어로 대신 보여준다
+  const extrasByLang = data.extras?.[uiLang] ?? data.extras?.ko ?? {};
 
   const byLevel: Record<string, Word[]> = {};
   const location = new Map<string, { levelId: string; index: number }>();
@@ -161,10 +196,16 @@ function buildVocab(studyLang: StudyLangId, uiLang: UiLangId): Vocab {
       const localId = `${level.code}-${i + 1}`;
       const neutral = data.words[spelling] ?? {};
       const detail = mergeDetail(spelling);
+      const extra = extrasByLang[localId];
       const synonymWords = neutral.synonyms ?? [];
       const synonymMeanings = detail.synonymMeanings ?? [];
 
       return {
+        antonyms: extra?.antonyms?.length ? extra.antonyms : undefined,
+        roots: extra?.roots,
+        senseFlow: extra?.senseFlow,
+        family: extra?.family?.length ? extra.family : undefined,
+        compare: extra?.compare,
         id: `${studyLang}-${localId}`,
         word: spelling,
         // 개념을 따로 안 적어 둔 낱말은 낱말 자신을 개념으로 본다
@@ -175,12 +216,15 @@ function buildVocab(studyLang: StudyLangId, uiLang: UiLangId): Vocab {
         meaning: tr.meanings[localId] ?? fallback.meanings[localId] ?? spelling,
         exampleTr: detail.exampleTr,
         etymology: detail.etymology,
-        synonyms: synonymWords.length
-          ? synonymWords.map((w, k) => ({
-              word: w,
-              meaning: synonymMeanings[k] ?? "",
-            }))
-          : undefined,
+        // 코스에서 가르치는 뜻에 맞춘 유의어가 있으면 그것을 먼저 쓴다
+        synonyms: extra?.synonyms?.length
+          ? extra.synonyms
+          : synonymWords.length
+            ? synonymWords.map((w, k) => ({
+                word: w,
+                meaning: synonymMeanings[k] ?? "",
+              }))
+            : undefined,
       } satisfies Word;
     });
 

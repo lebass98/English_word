@@ -24,22 +24,33 @@ async function generateLinearImage({
   height = 1024,
   steps = 8
 }) {
+  // 영문 외 문자 엄격 차단 및 정제 (한글, 한자, 일본어 등 비영문 문자 원천 제거)
+  const cleanConcept = (concept || '')
+    .replace(/[^\x00-\x7F]/g, ' ') // 비ASCII/비영문 문자 전면 제거
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  if (!cleanConcept) {
+    throw new Error("영문 외 문자만 입력되었거나 유효한 영문 씬 설명(concept)이 없습니다. 오직 순수 영문(English only)만 허용됩니다.");
+  }
+
   const prompt = [
-    `linear graphic illustration, complete richly detailed scene of ${concept}`,
+    `linear graphic illustration, complete richly detailed scene of ${cleanConcept}`,
     "thinnest possible 0.05mm ultra-delicate needle-thin hairline ink stroke",
     "extremely fine crisp outlines drawn in dark charcoal ink color #030203",
     "flat smooth light gray canvas background color #f5f6f8",
     "neckless cute slender doodle stickman characters with round bald circle heads attached directly to torso with completely no neck, tiny smiling dot faces",
     "abundant rich background details, furniture, wall decor, floor line, ambient props",
-    "strictly flat 2d linear graphic, no shading, no gradients, no solid black fills, empty clean background"
+    "strictly flat 2d linear graphic, no shading, no gradients, no solid black fills, empty clean background",
+    "strictly English text only if any letters appear, absolutely no non-English characters, 100% pure English alphabet A-Z only, completely no Korean characters, strictly no Hangul, strictly no Chinese characters, completely non-Asian script, zero foreign glyphs"
   ].join(", ");
 
   const negativePrompt = [
+    "non-English text, non-English characters, Korean text, Hangul, Korean letters, Chinese characters, Hanzi, Kanji, Japanese text, Kana, foreign script, pseudo-Hangul, weird Asian glyphs, oriental symbols, non-Latin alphabet, foreign writing",
     "neck, long neck, throat, collar, neck line, detailed neck anatomy",
-    "Korean text, Hangul, Korean letters, non-English text, broken characters, foreign characters",
     "thick lines, bold outlines, heavy brush strokes, chunky lines, fat strokes",
     "pure white #ffffff background, dark background, black background, 3d, realistic, shadow, shading",
-    "color, gradients, photo, blur, watermark, text, signature"
+    "color, gradients, photo, blur, watermark, signature, messy"
   ].join(", ");
 
   const payload = {

@@ -470,6 +470,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   imagine: require("../../assets/words/imagine.png"),
   immediately: require("../../assets/words/immediately.png"),
   import: require("../../assets/words/import.png"),
+  important: require("../../assets/words/important.png"),
   include: require("../../assets/words/include.png"),
   increase: require("../../assets/words/increase.png"),
   indeed: require("../../assets/words/indeed.png"),

@@ -41,6 +41,14 @@ npm run lint     # ESLint
   - 대상 단어: aspect, significant, melt, advance, marine, solid, passage, master, minute, vision, experiment, shelter, commit, possible, multiple, routine, tremendous, crucial, vast, develop
   - `sync_word_images.py` 스크립트를 통해 `src/constants/wordImages.ts` 레지스트리 일괄 갱신 완료
 
+- 학습 화면에서 다음 단어로 넘어갈 때 화면 전체가 위에서 내려오듯 꿀렁이고 깜빡이던 문제 수정
+  - 단어마다 `key` 로 화면 전체(안전 영역 포함)를 새로 만들고 있었다. 폰에서는 안전 영역 여백이 한 박자 늦게 붙어 화면이 밀려 내려왔고, 그림·블러도 매번 새로 그려져 깜빡였다
+  - 화면 틀은 한 번만 만들고 단어·그림·내용만 바뀌게 함. 뜻 가리기·발음 중 표시는 단어 id 에 묶어 넘어가면 저절로 초기화되고, 스크롤과 스와이프 위치는 새 단어가 그려지기 전에 처음으로 돌림
+  - 앞·현재·뒤 그림을 단어 id 로 묶어, 옆에 미리 올려 둔 그림이 그대로 가운데로 옮겨 오게 함
+- PC 웹에서 홈 '내 코스' 카드가 좌우 반씩이 아니라 좁게 나오던 문제 수정
+  - 카드 폭을 창 폭(`useWindowDimensions`)으로 계산했는데, 웹은 미리 그려 둔 화면을 쓰느라 처음 받는 창 폭이 실제와 달랐다
+  - 두 개씩 한 줄로 묶어 반씩 나눠 갖게 바꿔 창 폭을 몰라도 맞게 함 (홀수 개면 빈 칸을 둠)
+
 - 영어 **TOEFL 필수** 코스 추가 (1,495단어, 알파벳순 20단어씩 유닛)
   - 표제어·동의어는 TOEFL 어휘서 단어 목록을 기준으로 삼고, 뜻·예문·어원·설명 문장은 모두 새로 작성
   - 학년 코스와 겹치는 829단어는 기존 발음·예문을 그대로 쓰고, 새 666단어만 `words.json`·`tr/ko.json` 에 추가

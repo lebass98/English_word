@@ -1,25 +1,12 @@
 import { useRouter } from "expo-router";
 import { useMemo } from "react";
-import {
-  Image,
-  Pressable,
-  ScrollView,
-  Text,
-  useWindowDimensions,
-  View,
-} from "react-native";
+import { Image, Pressable, ScrollView, Text, View } from "react-native";
 import { BottomNav } from "../src/components/BottomNav";
 import { ContinueCard } from "../src/components/ContinueCard";
 import { GradeCard } from "../src/components/GradeCard";
 import { LanguageFlag } from "../src/components/flags";
 import { PillButton } from "../src/components/PillButton";
-import {
-  GRID_GAP,
-  MAX_CONTENT_WIDTH,
-  SCREEN_PADDING_X,
-  Screen,
-  ScreenHeader,
-} from "../src/components/Screen";
+import { Screen, ScreenHeader } from "../src/components/Screen";
 import { useGrades } from "../src/constants/grades";
 import { STUDY_LANGS } from "../src/constants/languages";
 import { useVocab } from "../src/constants/words";
@@ -79,14 +66,6 @@ export default function HomeScreen() {
   const t = useT();
   const vocab = useVocab();
   const grades = useGrades();
-  const { width: windowWidth } = useWindowDimensions();
-
-  // 코스 카드는 한 줄에 두 개. 퍼센트로 잡으면 가운데 간격만큼 오른쪽 끝이
-  // 다른 카드와 어긋나므로, 실제 내용 폭에서 간격을 빼고 반으로 나눈다
-  const courseCardWidth = Math.floor(
-    (Math.min(windowWidth, MAX_CONTENT_WIDTH) - SCREEN_PADDING_X * 2 - GRID_GAP) /
-      2,
-  );
 
   // 단계 목록은 언어가 바뀔 때만 다시 만든다
   const availableList = useMemo(() => availableGrades(grades), [grades]);
@@ -113,6 +92,16 @@ export default function HomeScreen() {
       })),
     [entries, vocab, availableList],
   );
+
+  // 코스 카드는 한 줄에 두 개. 창 폭으로 카드 폭을 계산하면 웹에서 처음 그릴 때
+  // 창 폭이 실제와 달라 카드가 좁아졌다. 두 개씩 줄로 묶어 반씩 나눠 갖게 한다
+  const courseRows = useMemo(() => {
+    const rows: (typeof knownByGrade)[] = [];
+    for (let i = 0; i < knownByGrade.length; i += 2) {
+      rows.push(knownByGrade.slice(i, i + 2));
+    }
+    return rows;
+  }, [knownByGrade]);
 
   return (
     <Screen>
@@ -260,18 +249,24 @@ export default function HomeScreen() {
           <Text className="mt-8 text-[17px] font-bold text-ink">
             {t("home.myCourse")}
           </Text>
-          <View className="mt-4 flex-row flex-wrap gap-4">
-            {knownByGrade.map(({ grade, known }) => (
-              <View key={grade.id} style={{ width: courseCardWidth }}>
-                <GradeCard
-                  label={grade.label}
-                  learnedWords={known}
-                  totalWords={grade.totalWords}
-                  onPress={() => {
-                    setActiveGradeId(grade.id);
-                    router.push(`/grade/${grade.id}`);
-                  }}
-                />
+          <View className="mt-4 gap-4">
+            {courseRows.map((row) => (
+              <View key={row[0].grade.id} className="flex-row gap-4">
+                {row.map(({ grade, known }) => (
+                  <View key={grade.id} className="flex-1">
+                    <GradeCard
+                      label={grade.label}
+                      learnedWords={known}
+                      totalWords={grade.totalWords}
+                      onPress={() => {
+                        setActiveGradeId(grade.id);
+                        router.push(`/grade/${grade.id}`);
+                      }}
+                    />
+                  </View>
+                ))}
+                {/* 홀수 개일 때 마지막 카드가 한 줄을 다 차지하지 않게 빈 칸을 둔다 */}
+                {row.length === 1 && <View className="flex-1" />}
               </View>
             ))}
           </View>

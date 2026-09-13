@@ -1,5 +1,12 @@
 import { useLocalSearchParams, useRouter } from "expo-router";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import {
+  useCallback,
+  useEffect,
+  useLayoutEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import {
   Animated,
   Easing,
@@ -90,23 +97,26 @@ export default function StudyScreen() {
   const { levelId: gradeId, words, index, word } = found;
 
   return (
-    // key로 단어마다 새로 마운트해서 뜻 가리기·타이머 상태가 자동 초기화되게 한다.
-    <StudyCard
-      key={word.id}
-      word={word}
-      gradeId={gradeId}
-      index={index}
-      total={words.length}
-      prev={words[index - 1]}
-      next={words[index + 1]}
-      onNavigate={goTo}
-      onBack={() => {
-        // 주소로 바로 들어오거나 새로고침한 경우엔 되돌아갈 기록이 없다.
-        // 그때는 해당 학년의 유닛 목록으로 보낸다.
-        if (router.canGoBack()) router.back();
-        else router.replace(`/grade/${gradeId}`);
-      }}
-    />
+    // 화면 틀(안전 영역 포함)은 한 번만 만들고 단어가 바뀌어도 그대로 둔다.
+    // 예전에는 key 로 단어마다 화면 전체를 새로 만들어서, 폰에서 안전 영역 여백이
+    // 한 박자 늦게 붙으며 화면이 위에서 내려오듯 꿀렁이고 그림도 깜빡였다.
+    <Screen>
+      <StudyCard
+        word={word}
+        gradeId={gradeId}
+        index={index}
+        total={words.length}
+        prev={words[index - 1]}
+        next={words[index + 1]}
+        onNavigate={goTo}
+        onBack={() => {
+          // 주소로 바로 들어오거나 새로고침한 경우엔 되돌아갈 기록이 없다.
+          // 그때는 해당 학년의 유닛 목록으로 보낸다.
+          if (router.canGoBack()) router.back();
+          else router.replace(`/grade/${gradeId}`);
+        }}
+      />
+    </Screen>
   );
 }
 
@@ -184,9 +194,12 @@ function StudyCard({
 
   const { width: screenWidth } = useWindowDimensions();
 
-  /** 정답(뜻·예문)을 보여줄지 여부. 끄면 뜻까지 통째로 가려진다 */
-  const [showAnswer, setShowAnswer] = useState(true);
-  const [speaking, setSpeaking] = useState(false);
+  /** 뜻·예문을 가려 둔 단어. 다음 단어로 넘어가면 따로 되돌리지 않아도 다시 보인다 */
+  const [answerHiddenFor, setAnswerHiddenFor] = useState<string | null>(null);
+  const showAnswer = answerHiddenFor !== word.id;
+  /** 발음 중인 단어. 넘어가면 이전 단어의 재생 표시가 남지 않는다 */
+  const [speakingFor, setSpeakingFor] = useState<string | null>(null);
+  const speaking = speakingFor === word.id;
   /** 자동 넘김 진행도 0 → 1. 애니메이션 값이라 매 프레임 부드럽게 움직인다.
       한 번만 만들어 두고 계속 같은 값을 쓴다 */
   const [progress] = useState(() => new Animated.Value(0));
@@ -197,6 +210,15 @@ function StudyCard({
       그림만 손가락을 따라 흐르고, 충분히 밀면 옆 그림이 자리를 넘겨받으며 단어가 바뀐다 */
   const [panelW, setPanelW] = useState(0);
   const [dragX] = useState(() => new Animated.Value(0));
+  const scrollRef = useRef<ScrollView>(null);
+
+  // 단어가 바뀌면 그림 위치와 스크롤을 처음 자리로 돌린다.
+  // 새 단어가 화면에 그려지기 전에 맞춰야 한 프레임 어긋나 보이지 않는다
+  useLayoutEffect(() => {
+    dragX.setValue(0);
+    scrollRef.current?.scrollTo({ y: 0, animated: false });
+  }, [word.id, dragX]);
+
   const swipe = useMemo(() => {
     // 웹에서는 네이티브 드라이버를 쓸 수 없다
     const useNativeDriver = Platform.OS !== "web";
@@ -224,7 +246,7 @@ function StudyCard({
         if (!enough || !target) return springBack();
 
         // 옆 그림이 자리를 다 채운 다음에 단어를 바꾼다.
-        // 카드가 새로 마운트되면서 위치는 저절로 초기화된다
+        // 위치는 단어가 바뀔 때 위의 useLayoutEffect 가 0 으로 돌린다
         Animated.timing(dragX, {
           toValue: g.dx < 0 ? -panelW : panelW,
           duration: 180,
@@ -262,14 +284,14 @@ function StudyCard({
   }, [autoAdvance, advance, progress]);
 
   // 단어가 바뀌면 발음을 자동으로 한 번 들려준다.
-  // (단어마다 key로 새로 마운트되므로 단어당 정확히 한 번 실행된다)
+  // (단어가 바뀔 때마다 정확히 한 번 실행된다)
   // 화면을 벗어날 때는 재생 중인 음성을 멈춘다.
   useEffect(() => {
     speakWord(word.word, {
       lang: speechCode,
       volume: speechVolume,
-      onStart: () => setSpeaking(true),
-      onDone: () => setSpeaking(false),
+      onStart: () => setSpeakingFor(word.id),
+      onDone: () => setSpeakingFor((cur) => (cur === word.id ? null : cur)),
     });
     return stopSpeaking;
     // 소리 크기를 바꿨다고 발음을 다시 들려줄 필요는 없어 의존성에서 뺀다
@@ -311,8 +333,8 @@ function StudyCard({
     speakWord(word.word, {
       lang: speechCode,
       volume: speechVolume,
-      onStart: () => setSpeaking(true),
-      onDone: () => setSpeaking(false),
+      onStart: () => setSpeakingFor(word.id),
+      onDone: () => setSpeakingFor((cur) => (cur === word.id ? null : cur)),
     });
   };
 
@@ -322,7 +344,7 @@ function StudyCard({
   };
 
   return (
-    <Screen>
+    <>
       {/* ── 상단 바: 뒤로 · 유닛/진행 · 자동 넘김 ──────────── */}
       <ScreenHeader>
         <BackButton onPress={onBack} />
@@ -381,6 +403,7 @@ function StudyCard({
 
       {/* ── 메인 플래시카드 ──────────────────────────────── */}
       <ScrollView
+        ref={scrollRef}
         className="flex-1"
         contentContainerClassName="px-6 pb-10 pt-6"
         showsVerticalScrollIndicator={false}
@@ -406,12 +429,17 @@ function StudyCard({
                   transform: [{ translateX: dragX }],
                 }}
               >
-                <WordImage word={word} />
-                {panelW > 0 && prev && (
-                  <WordImage word={prev} offset={-panelW} />
-                )}
-                {panelW > 0 && next && (
-                  <WordImage word={next} offset={panelW} />
+                {/* 앞·현재·뒤 그림을 단어 id 로 묶어 둔다. 다음 단어로 넘어가면
+                    옆에 미리 그려 둔 그림이 그대로 가운데 자리로 옮겨 와서
+                    새로 불러오며 깜빡이지 않는다 */}
+                {[
+                  { w: prev, offset: -panelW },
+                  { w: word, offset: 0 },
+                  { w: next, offset: panelW },
+                ].map(({ w, offset }) =>
+                  w && (offset === 0 || panelW > 0) ? (
+                    <WordImage key={w.id} word={w} offset={offset} />
+                  ) : null,
                 )}
               </Animated.View>
 
@@ -567,7 +595,7 @@ function StudyCard({
               ) : (
                 /* 가려진 자리. 눌러도 바로 뜻이 나오게 해 둔다 */
                 <Pressable
-                  onPress={() => setShowAnswer(true)}
+                  onPress={() => setAnswerHiddenFor(null)}
                   className="h-[26px] flex-1 items-center justify-center rounded-xl bg-canvas shadow-neu-inset active:opacity-70"
                 >
                   <Text className="text-[13px] font-bold tracking-[3px] text-slate-400">
@@ -576,7 +604,7 @@ function StudyCard({
                 </Pressable>
               )}
               <Pressable
-                onPress={() => setShowAnswer((v) => !v)}
+                onPress={() => setAnswerHiddenFor(showAnswer ? word.id : null)}
                 className="flex-row items-center gap-1 active:opacity-70"
               >
                 <Text className="text-[12px] font-bold text-mint">
@@ -775,6 +803,6 @@ function StudyCard({
           </Text>
         </Pressable>
       </View>
-    </Screen>
+    </>
   );
 }

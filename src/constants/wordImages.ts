@@ -13,6 +13,7 @@ import { ImageSourcePropType } from "react-native";
  * (living room → living-room.png).
  */
 export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
+  "a great deal": require("../../assets/words/a-great-deal.png"),
   able: require("../../assets/words/able.png"),
   absent: require("../../assets/words/absent.png"),
   abuse: require("../../assets/words/abuse.png"),

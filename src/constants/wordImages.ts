@@ -532,6 +532,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   jar: require("../../assets/words/jar.png"),
   jean: require("../../assets/words/jean.png"),
   jewel: require("../../assets/words/jewel.png"),
+  job: require("../../assets/words/job.png"),
   join: require("../../assets/words/join.png"),
   joke: require("../../assets/words/joke.png"),
   journey: require("../../assets/words/journey.png"),

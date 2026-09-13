@@ -31,6 +31,8 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-13
+- 중1 hydrogen 그림을 머리·몸 구분 기준 확정 샘플로 교체하고 스킬 문서에 확정 샘플로 표시
+
 - 중2 빠진 그림 생성 스크립트(`scripts/generate_m2_all_missing.py`)를 개정 스킬 기준으로 교체
   - 프롬프트를 복사해 두지 않고 스킬 스크립트 `generate_linear_image` 를 직접 불러 써서, 스킬이 바뀌면 자동 반영
   - 남은 129단어 영문 장면을 `scripts/m2_missing_scenes.json` 에 작성, 개정 전 모습으로 만든 intimate 는 다시 생성

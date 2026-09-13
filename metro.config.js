@@ -20,4 +20,12 @@ config.resolver.blockList = [
   APPLE_DOUBLE,
 ];
 
-module.exports = withNativeWind(config, { input: "./global.css" });
+/**
+ * 네이티브에서 1rem 을 몇 px 로 볼지. NativeWind 기본값은 14 라서
+ * p-6 이 웹(24px)과 달리 21px 로 줄고, px 로 계산한 카드 폭과도 어긋났다.
+ * 웹 브라우저와 같은 16 으로 맞춰 두 환경의 간격을 같게 한다.
+ */
+module.exports = withNativeWind(config, {
+  input: "./global.css",
+  inlineRem: 16,
+});

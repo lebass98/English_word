@@ -69,7 +69,10 @@ module.exports = {
     ? [
         plugin(({ matchUtilities }) => {
           matchUtilities(
-            { shadow: (value) => ({ "-rn-box-shadow": value }) },
+            // 값을 따옴표로 감싸 문자열 하나로 넘긴다. 그냥 넘기면 NativeWind 가
+            // 낱말을 쪼개 [8, 8, 16, "#aeaec073", -6, ...] 같은 배열로 만들고,
+            // React Native 는 이 모양을 그림자로 읽지 못해 아무것도 그리지 않는다
+            { shadow: (value) => ({ "-rn-box-shadow": `"${value}"` }) },
             { values: NEU, type: ["shadow"] },
           );
         }),

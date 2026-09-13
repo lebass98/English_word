@@ -14,24 +14,27 @@ description: >-
 
 ---
 
-## 🎨 선형그래픽 및 3~3.5등신 픽토그램 캐릭터 조형 원칙
+## 🎨 선형그래픽 및 날씬한 픽토그램 캐릭터 조형 원칙
 
-1. **전체적인 비율 및 실루엣 (3~3.5등신 SD 비율 & 화면 높이의 최대 60% 이하 엄격 제한 & 여백 중심 와이드 구도)**:
-   - 몸체에 비해 머리가 확연히 큰 **3~3.5등신 SD(Super Deformed) 비율**을 적용해 친근하고 직관적인 인상을 줍니다.
-   - 각진 모서리나 해부학적인 골격 굴곡(쇄골, 어깨 각도, 척추 라인 등)을 철저히 배제하고 완만한 곡선 위주로 매끄럽게 이어집니다.
-   - **사람 크기 최대 60% 제한 절대 원칙 (Strictly under 60% of frame height)**: 캐릭터의 크기는 **화면 전체 세로 높이의 최대 60%를 절대 넘지 않아야 합니다**. 가장 권장되는 크기는 화면 높이의 약 **35%~50% 수준**으로 아담하고 단정하게 위치하며, 상하좌우에 최소 40% 이상의 풍성한 시각적 여백(Breathing room, negative space)과 시원한 배경 공간감을 반드시 확보합니다. 클로즈업이나 화면을 꽉 채우는 구도는 전면 금지되며, 인물의 머리부터 발끝까지 전신(Full body)이 넉넉한 공간 안에 편안하게 노출되어야 합니다.
-   - 프롬프트 키워드: `3 to 3.5 head-to-body chibi SD ratio cute character, large prominent smooth spherical bald round head, gentle organic curving silhouette, small modest chibi character height strictly under 50 to 60 percent of frame height, small character occupying less than half the canvas height, spacious wide environmental framing, abundant negative space around character, full body comfortably framed with generous breathing room`.
-2. **두상 및 이목구비 (구형 민머리 & 점/선 압축 얼굴)**:
-   - **매끄러운 구형 민머리**: 귀, 머리카락, 헤어라인, 턱선이 일절 생략된 매끄러운 원형/구형 두상입니다.
-   - **점과 선으로 압축된 이목구비**: 흰자위나 동공 없이 단순한 **두 개의 검은 점(Dot) 눈**과 얇은 호선 형태의 **가벼운 미소선(Smile line) 입** 하나로만 표현합니다. 코, 눈썹, 입술 두께, 치아는 일절 묘사하지 않습니다.
-   - 프롬프트 키워드: `smooth spherical bald round head with completely no ears and no hair, minimalist dot and line face, two simple solid black dot eyes and a tiny thin curved smile line, strictly no nose, no eyebrows, no lips, no teeth`.
-3. **몸통 및 사지 (목 없는 일체 튜브형 & 관절 생략 & 벙어리장갑 손/패드 발)**:
-   - **원통형 일체 몸체**: 목 주름, 가슴 근육, 허리 굴곡 없이 상체와 하체가 일체형 튜브처럼 부드럽게 연결되며 머리에 직접 부착됩니다 (완전한 목 없음 No-Neck).
-   - **관절이 생략된 팔다리**: 팔꿈치, 손목, 무릎, 종아리 등의 관절과 근육 굴곡을 생략하고 고무관(Rubber-hose)처럼 매끄럽게 떨어집니다.
-   - **간략화된 손과 발**:
-     - 손: 손가락 마디, 손톱, 손금 구분 없이 둥글고 뭉툭한 실루엣 (벙어리장갑 Mitten 형태).
-     - 발: 발가락, 뒤꿈치, 신발 구분이 없으며 다리 끝에서 둥글고 납작한 타원형 패드 형태로 지면을 지탱합니다.
-   - 프롬프트 키워드: `seamless tubular neckless body directly attached to round head with completely no neck, jointless smooth rubber-hose arms and legs with no elbows and no knees, simplified mitten-like blunt round hands, smooth rounded flat oval foot pads firmly touching floor line`.
+> **2026-09-13 개정**: 사용자 레퍼런스(칠판 앞 캐릭터 3명)에 맞춰 사람 모양을 바꿨다.
+> 가는 막대 인간(선 한 줄 팔다리)도, 머리가 큰 통통한 SD 캐릭터도 아닌 **좁고 긴 몸통 + 선 두 줄 튜브 팔다리**가 표준이다.
+> 확정 샘플: `assets/words/hydrogen.png` (중1 m1-525).
+
+1. **전체 비율 및 실루엣 (좁고 긴 몸 & 화면 높이 약 1/3 & 배경 중심 와이드 구도)**:
+   - 몸통 폭은 **머리 폭의 절반 정도**이고, 전체 모습은 **폭보다 세 배쯤 키가 큰** 날씬한 형태입니다. 옆으로 넓거나 통통한 몸은 쓰지 않습니다.
+   - 인물 키는 캔버스 높이의 **약 1/3**을 목표로 하고 바닥선에 서 있습니다. 화면 위·중단은 칠판, 선반, 창문, 가구, 도구 같은 배경으로 채우며, 클로즈업이나 화면을 꽉 채우는 구도는 배제합니다.
+   - **`cute`, `chibi`, `plump` 같은 낱말은 넣지 않습니다.** 이 모델(z_image_turbo, 8단계)은 부정 프롬프트를 거의 따르지 않아서, 이런 낱말이 들어가면 머리가 커지고 몸이 넓어지며 볼 홍조가 생깁니다. 모양은 긍정 문장으로만 정합니다.
+   - 프롬프트 키워드: `small character in a wide scene, modest compact character scale, standing small figure occupying approximately one third of frame height around 30 to 35 percent of canvas height, placed comfortably on bottom floor line, spacious upper and middle frame filled with rich environmental details, balanced wide scene composition, plenty of breathing room, full body visible without crowding`.
+2. **두상 및 이목구비 (구형 민머리 & 점/선 얼굴)**:
+   - 귀, 머리카락, 턱선이 없는 매끄러운 원형 민머리가 **목 없이 몸통 위에 바로** 얹힙니다.
+   - 두 개의 검은 점 눈과 얇은 미소선 입만 그립니다. 코, 눈썹, 입술, 치아, **볼 홍조**는 그리지 않습니다.
+   - 프롬프트 키워드: `simple white pictogram characters, round bald head resting directly on top of the body with completely no neck, two small dot eyes and a small smile line, plain white face`.
+3. **몸통 및 팔다리 (좁고 긴 둥근 직사각형 몸통 & 선 두 줄 튜브 팔다리)**:
+   - **몸통**: 머리 폭의 절반 정도로 좁고, 세로로 긴 부드러운 둥근 직사각형이며 밑단이 평평합니다 (단순한 원피스 실루엣).
+   - **팔다리**: 짧고 가는 튜브 모양이지만 **선 두 줄로 두께가 보이게** 그립니다. 선 한 줄짜리 막대 팔다리는 금지합니다. 관절은 그리지 않고, 팔은 몸에 붙여 옆으로 퍼지지 않게 합니다.
+   - **손발**: 손은 둥글고 뭉툭한 벙어리장갑 끝, 발은 작고 둥근 발끝입니다.
+   - 프롬프트 키워드: `very narrow slim torso only about half as wide as the head, tall soft rounded rectangle body with a flat bottom edge, the whole figure is narrow and about three times taller than it is wide, short slim rounded tube arms drawn with two close parallel outlines ending in small round mitten nubs, held close to the body, short slim rounded tube legs drawn with two close parallel outlines ending in small rounded feet, limbs are narrow but still have visible width and are never a single line`.
+   - **장면 묘사 정리**: 단어별 장면에 `cute slender stickman` 같은 표현이 있으면 생성 전에 `small slim white pictogram character`로 바꾸고, 남은 `slender`·`skinny`는 지웁니다. 장면 문장 속 낱말이 캐릭터 설명보다 강하게 작용합니다.
 4. **표면 재질 및 라인 스타일 (평면 순백색 픽토그램 & 균일한 검은색 외곽선)**:
    - **평면 순백색 마감**: 옷, 봉제선, 단추, 주름, 피부 질감이 일절 없는 새하얀 픽토그램/마네킹 형태입니다 (`blank solid white mannequin pictogram body fill`). 성별, 연령, 인종이 드러나지 않는 보편적 형태입니다.
    - **균일한 검은색 외곽선**: 명암(그림자), 색상 그러데이션 없이 균일하고 맑은 딥 차콜 블랙 윤곽선(`#030203`)과 단색 순백색 채움만으로 2D 플랫(2D Flat)하게 완결됩니다.
@@ -43,7 +46,7 @@ description: >-
 7. **영문 외 일체 배제 및 100% 영문 전용 절대 원칙 (Strictly English Only / Zero Non-English Characters)**:
    - **프롬프트 및 씬 설명 내 영문 외 문자 절대 금지**: 단어 뜻, 한국어 메모(예: `(가슴)`, `(가루)`), 한자 등 영문(A-Z, a-z) 및 기본 숫자/기호 이외의 모든 비영문 문자는 프롬프트에 절대 넣지 않으며, 오직 100% 순수 영문 씬 묘사(English prompt only)만 전달합니다.
    - **이미지 씬 내부 텍스트 100% 영문 전용**: 씬 내부의 간판, 포스터, 서류 등에 글자가 노출될 경우 오직 영문 알파벳(A-Z)만 허용하며, 한글/한자/일본어 및 왜곡된 기호 생성을 원천 차단합니다.
-   - **부정(Negative) 프롬프트 필수 적용**: `non-English text, Korean text, Hangul, Chinese characters, Hanzi, Kanji, Japanese, foreign characters, character height over 60 percent of canvas, character taller than half screen, oversized character, giant figure, frame-filling character, tall character, close-up, extreme close-up, cropped body, zoomed in, crowding the frame, large scale character dominating scene, taking over screen, realistic human anatomy, realistic face, facial details, nose, eyebrows, lips, teeth, ears, hair, neck, muscles, realistic fingers, fingernails, toes, clothes, shirt, pants, wrinkles, shading, gradients, shadow, 3d render`.
+   - **부정(Negative) 프롬프트 필수 적용**: `non-English text, Korean text, Hangul, Chinese characters, Hanzi, Kanji, Japanese, foreign characters, dominant character crowding the frame, overwhelming screen, frame-filling figure, suffocating composition, unnatural forced character size, giant figure dominating scenery, oversized character, close-up, extreme close-up, cropped body, zoomed in, crowding the frame, large scale character dominating scene, realistic human anatomy, realistic face, facial details, nose, eyebrows, lips, teeth, ears, hair, neck, muscles, realistic fingers, fingernails, toes, clothes, shirt, pants, wrinkles, shading, gradients, shadow, 3d render`.
 
 
 ---

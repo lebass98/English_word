@@ -38,14 +38,20 @@ async function generateLinearImage({
     `linear graphic illustration, complete richly detailed scene of ${cleanConcept}`,
     "thinnest possible 0.05mm ultra-delicate needle-thin hairline ink stroke, extremely fine crisp outlines drawn in dark charcoal ink color #030203",
     "flat smooth light gray canvas background color #f5f6f8",
-    "neckless cute slender doodle stickman characters with round bald circle heads attached directly to torso with completely no neck, tiny smiling dot faces",
-    "modest compact character scale, standing cute chibi figure occupying approximately one third of frame height around 30 to 35 percent of canvas height, placed comfortably on bottom floor line, spacious upper and middle frame filled with rich environmental details, balanced wide scene composition, plenty of breathing room, full body visible without crowding",
+    // 사람 모양: 가는 막대 인간이 아니라 도톰한 튜브 팔다리의 순백 픽토그램 (사용자 레퍼런스)
+    "simple white pictogram characters, round bald head resting directly on top of the body with completely no neck, two small dot eyes and a small smile line, plain white face",
+    "very narrow slim torso only about half as wide as the head, tall soft rounded rectangle body with a flat bottom edge, the whole figure is narrow and about three times taller than it is wide",
+    "short slim rounded tube arms drawn with two close parallel outlines ending in small round mitten nubs, held close to the body",
+    "short slim rounded tube legs drawn with two close parallel outlines ending in small rounded feet, limbs are narrow but still have visible width and are never a single line",
+    "small character in a wide scene, modest compact character scale, standing small figure occupying approximately one third of frame height around 30 to 35 percent of canvas height, placed comfortably on bottom floor line, spacious upper and middle frame filled with rich environmental details, balanced wide scene composition, plenty of breathing room, full body visible without crowding",
     "abundant rich background details, furniture, wall decor, floor line, ambient props",
     "strictly flat 2d linear graphic, no shading, no gradients, no solid black fills, empty background",
     "strictly English text only if any letters appear, absolutely no non-English characters, 100% pure English alphabet A-Z only, completely no Korean characters, strictly no Hangul, strictly no Chinese characters, completely non-Asian script, zero foreign glyphs"
   ].join(", ");
 
   const negativePrompt = [
+    "stick figure, stickman, matchstick limbs, single-line arms, single-line legs, thin wire limbs, long thin legs",
+    "fat body, chubby, plump, round belly, wide bulky torso, blush, rosy cheeks, pink cheeks, cheek marks",
     "neck, long neck, throat, collar, neck line, detailed neck anatomy",
     "oversized character, giant figure, tall figure, frame-filling character, character taking up entire screen, close-up, extreme close-up, cropped body, zoomed in, crowding the frame, suffocating composition, character head near top of frame, dominating figure",
     "realistic human anatomy, realistic face, facial details, nose, eyebrows, eyelashes, eyelids, lips, teeth, ears, hair, hairstyle, muscles, realistic fingers, individual finger joints, fingernails, toes, shoes, clothing, clothes, shirt, pants, wrinkles, folds",

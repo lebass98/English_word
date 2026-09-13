@@ -31,6 +31,11 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-13
+- 선형그래픽 스킬의 사람 모양을 사용자 레퍼런스에 맞춰 개정 (`draw-things-linear-graphic`)
+  - 가는 막대 인간(선 한 줄 팔다리) 대신 머리 폭 절반 정도의 좁고 긴 몸통 + 선 두 줄로 두께가 보이는 짧은 튜브 팔다리로 바꿈
+  - `cute`·`chibi`·`plump` 낱말이 머리를 키우고 몸을 넓히며 볼 홍조를 만들어 프롬프트에서 뺌 (z_image_turbo 는 부정 프롬프트를 거의 따르지 않아 긍정 문장으로 모양을 정함)
+  - 장면 묘사 속 `slender stickman` 표현은 생성 전에 `small slim white pictogram character` 로 바꿈. 확정 샘플은 `assets/words/hydrogen.png`
+
 - 중학교 2학년 Unit 19 누락 단어(`curious`) 선형그래픽 일러스트 생성 및 등록 완료 (Draw Things 로컬 API 기반)
   - 1024x1024 해상도, 3~3.5등신 순백색 마네킹 픽토그램 캐릭터, 화면 높이 60% 이하(30~35% 아담한 전신 크기 + 상단 70% 서가 풍성한 배경 씬)
   - `sync_word_images.py` 스크립트를 통해 `src/constants/wordImages.ts` 레지스트리 갱신 완료

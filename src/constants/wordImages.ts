@@ -149,6 +149,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   cemetery: require("../../assets/words/cemetery.png"),
   century: require("../../assets/words/century.png"),
   ceremony: require("../../assets/words/ceremony.png"),
+  certain: require("../../assets/words/certain.png"),
   chain: require("../../assets/words/chain.png"),
   chance: require("../../assets/words/chance.png"),
   change: require("../../assets/words/change.png"),

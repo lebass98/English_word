@@ -1,280 +1,251 @@
 #!/usr/bin/env python3
 """
-중학교 2학년(Middle 2) 1유닛부터 끝까지 순차 검사 후 미제작 단어 완전 정복 스크립트
-- 중2 전체 1,003개 단어 (Unit 1 ~ Unit 51)를 1유닛부터 순차 스캔
-- 이미지가 없는 단어만 골라 최신 개정 스킬(2026-09-13 확정 레퍼런스 스타일)로 연속 생성
-- 최신 조형 스킬 규격 (레퍼런스 칠판 앞 3명 스타일):
-  1. 좁고 긴 둥근 직사각형 몸통 (머리 폭 절반 폭, 폭보다 3배 큰 키)
-  2. 선 두 줄 튜브 팔다리 (선 한 줄 막대 팔다리 절대 금지, 적당한 두께감)
-  3. 구형 원형 민머리, 목 없음(No-Neck), 점 눈 2개 + 얇은 미소선 입, 볼 홍조 배제
-  4. cute, chibi, plump 등 머리 커지는 단어 프롬프트에서 전면 배제
-  5. 화면 높이 약 1/3 (30~35%) 아담한 크기로 바닥선에 안정적으로 배치, 상단 65~70%는 풍성한 배경 내러티브
-  6. 1024x1024 해상도, #f5f6f8 배경, #030203 선, 100% 영문 전용
-- 각 유닛의 누락 단어 생성 완료 시 자동:
-  - sync_word_images.py 레지스트리 동기화
-  - macOS '._*' 임시파일 정리
-  - README.md 작업 내역 기록
-  - 한글 커밋 및 origin/main push
+중2 전체 단원을 1단원부터 훑어 그림이 없는 단어만 선형그래픽으로 만든다.
+
+- 프롬프트는 여기서 따로 쓰지 않고 스킬 스크립트(generate_linear_graphic.py)를 그대로 불러 쓴다.
+  그래서 스킬이 개정되면 이 스크립트도 자동으로 최신 규칙을 따른다.
+- 단어별 장면은 scripts/m2_missing_scenes.json 에 있다. 없으면 예문으로 장면을 만든다.
+- REGENERATE 에 넣은 단어는 그림이 있어도 다시 만든다 (스킬 개정 전 모습으로 만든 그림).
+- 한 단원의 누락분이 끝날 때마다: wordImages.ts 등록 -> lint -> ._* 정리 -> README -> 커밋 & 푸시
+- 진행 상황은 LIVE_DASHBOARD.md / dashboard.html (dashboard_updater.py 와 같은 위치)에 갱신한다.
+
+    python3 scripts/generate_m2_all_missing.py            # 생성
+    python3 scripts/generate_m2_all_missing.py --dry-run  # 대상만 보기
 """
 
-import os
-import sys
 import json
-import time
-import base64
-import urllib.request
-import subprocess
+import os
 import re
+import subprocess
+import sys
+import time
 from datetime import datetime
 
-API_URL = "http://127.0.0.1:7860/sdapi/v1/txt2img"
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
+SKILL_SCRIPTS = os.path.join(PROJECT_ROOT, ".agents", "skills", "draw-things-linear-graphic", "scripts")
+sys.path.insert(0, SKILL_SCRIPTS)
+from generate_linear_graphic import generate_linear_image  # noqa: E402
+
 ASSETS_DIR = os.path.join(PROJECT_ROOT, "assets", "words")
-SYNC_SCRIPT = os.path.join(PROJECT_ROOT, "scripts", "sync_word_images.py")
+SYNC_SCRIPT = os.path.join(SCRIPT_DIR, "sync_word_images.py")
 README_FILE = os.path.join(PROJECT_ROOT, "README.md")
 STATUS_FILE = os.path.join(SCRIPT_DIR, "m2_missing_status.json")
+SCENES_FILE = os.path.join(SCRIPT_DIR, "m2_missing_scenes.json")
+WORKSPACE_ROOT = os.path.dirname(PROJECT_ROOT)
+DASHBOARD_MD = os.path.join(WORKSPACE_ROOT, "LIVE_DASHBOARD.md")
+DASHBOARD_HTML = os.path.join(WORKSPACE_ROOT, "dashboard.html")
 
-# 최신 개정 스킬 표준 공통 스타일 프롬프트 (2026-09-13 레퍼런스 확정 규격)
-STYLE_PROMPT = (
-    "thinnest possible 0.05mm ultra-delicate needle-thin hairline ink stroke, extremely fine crisp outlines drawn in dark charcoal ink color #030203, "
-    "flat smooth light gray canvas background color #f5f6f8, "
-    "simple white pictogram characters, round bald head resting directly on top of the body with completely no neck, two small dot eyes and a small smile line, plain white face, "
-    "very narrow slim torso only about half as wide as the head, tall soft rounded rectangle body with a flat bottom edge, the whole figure is narrow and about three times taller than it is wide, "
-    "short slim rounded tube arms drawn with two close parallel outlines ending in small round mitten nubs, held close to the body, "
-    "short slim rounded tube legs drawn with two close parallel outlines ending in small rounded feet, limbs are narrow but still have visible width and are never a single line, "
-    "small character in a wide scene, modest compact character scale, standing small figure occupying approximately one third of frame height around 30 to 35 percent of canvas height, placed comfortably on bottom floor line, spacious upper and middle frame filled with rich environmental details, balanced wide scene composition, plenty of breathing room, full body visible without crowding, "
-    "abundant rich background details, furniture, wall decor, floor line, ambient props, "
-    "strictly flat 2d linear graphic, no shading, no gradients, no solid black fills, empty background, "
-    "strictly English text only if any letters appear, absolutely no non-English characters, 100% pure English alphabet A-Z only, completely no Korean characters, strictly no Hangul, strictly no Chinese characters, completely non-Asian script, zero foreign glyphs"
-)
+# 스킬 개정(머리·몸통 분리) 전에 만들어져 다시 그려야 하는 그림
+REGENERATE = {"intimate"}
 
-NEGATIVE_PROMPT = (
-    "stick figure, stickman, matchstick limbs, single-line arms, single-line legs, thin wire limbs, long thin legs, "
-    "fat body, chubby, plump, round belly, wide bulky torso, blush, rosy cheeks, pink cheeks, cheek marks, "
-    "neck, long neck, throat, collar, neck line, detailed neck anatomy, "
-    "oversized character, giant figure, tall figure, frame-filling character, character taking up entire screen, close-up, extreme close-up, cropped body, zoomed in, crowding the frame, suffocating composition, character head near top of frame, dominating figure, "
-    "realistic human anatomy, realistic face, facial details, nose, eyebrows, eyelashes, eyelids, lips, teeth, ears, hair, hairstyle, muscles, realistic fingers, individual finger joints, fingernails, toes, shoes, clothing, clothes, shirt, pants, wrinkles, folds, "
-    "thick lines, bold outlines, heavy brush strokes, chunky lines, fat strokes, "
-    "pure white #ffffff background, dark background, black background, 3d, 3d render, realistic, shadow, shading, color, gradients, photo, blur, watermark, text, signature, messy, "
-    "non-English text, non-English characters, Korean text, Hangul, Korean letters, Chinese characters, Hanzi, Kanji, Japanese text, Kana, foreign script, pseudo-Hangul, weird Asian glyphs, oriental symbols, non-Latin alphabet, foreign writing"
-)
 
-# 단어별 맞춤형 고품질 영문 내러티브 씬 사전 (cute/chibi/stickman 전면 배제)
-SCENE_PRESETS = {
-    # Unit 19
-    "intimate": "warm cozy hearthside reading nook, two close small slim white pictogram friends sitting together on floor cushions sharing a warm teapot and intimate quiet conversation, soft floor lamp and bookshelf",
-    "grave": "formal historic council chambers, solemn small slim white pictogram statesman standing before a grand oak council table addressing a grave serious national proclamation, heavy drapes and antique stone pillars",
-    "elementary": "bright friendly beginner art workshop, small slim white pictogram student happily learning elementary basic watercolor painting brush strokes on an easel canvas, color mixing palette and jar",
-    "greedy": "lavish banquet dining hall, greedy small slim white pictogram person hoarding a towering high stack of golden freshly baked pies and cakes all to itself on a long banquet table, ornate candelabras",
-    # Unit 20
-    "vain": "elegant private dressing hall, vain small slim white pictogram figure admiring reflection in an ornate oval standing mirror with dramatic proud gestures, vanity table and perfumes",
-    "solar": "clean energy astronomy observatory, small slim white pictogram scientist pointing toward a glowing solar system sun model and rooftop solar panel blueprints, telescope and planet charts on wall",
-    "single": "peaceful sunny studio apartment, content small slim white pictogram person living a joyful single life reading a book by the sunny window plant stand, comfortable armchair and tea mug",
-    "serious": "library study room, focused and serious small slim white pictogram researcher deeply reading a large open reference encyclopedia book taking neat notes, desk lamp and stacked books",
-    # Unit 21
-    "boring": "quiet rainy afternoon room, small slim white pictogram student resting chin on hand looking bored at a monotonous ticking wall clock, open textbook and rain outside window",
-    "fair": "sports athletics arena finish line, fair and honest small slim white pictogram referee checking a digital stopwatch timer ensuring a fair tournament outcome, track lanes and grandstand",
-    "modern": "high-tech urban smart home living room, small slim white pictogram person controlling automated modern lighting and smart home devices via wall tablet panel, sleek minimalist furniture",
-    "harmful": "environmental laboratory, small slim white pictogram researcher pointing at a clear warning sign indicating harmful toxic chemicals kept safely in sealed glass containers, ventilation hood",
-    "calm": "tranquil lakeside wooden dock at sunrise, peaceful small slim white pictogram figure standing in calm contemplation watching gentle still water and distant mist, pine trees",
-    "special": "celebration workshop studio, happy small slim white pictogram craftsperson presenting a beautifully wrapped special gift box tied with an elegant ribbon, confetti and gift tags",
-    "steady": "woodworking carpentry bench, skilled small slim white pictogram artisan using a steady hand to guide a hand chisel along a smooth oak board, wood shavings and tool rack",
-    "company": "bright collaborative office meeting room, group of small slim white pictogram colleagues having a productive company meeting around a conference table, whiteboard project timeline"
-}
+def clean_scene(text):
+    """스킬 원칙 3: 캐릭터 모양을 흔드는 낱말을 장면 문장에서 정리한다"""
+    text = re.sub(r"[^\x00-\x7F]+", " ", text or "")
+    text = re.sub(r"\b(cute\s+)?slender\s+stickman\b|\bstickman\b", "small slim white pictogram character", text, flags=re.I)
+    text = re.sub(r"\b(cute|chibi|plump|chubby|slender|skinny)\b", "", text, flags=re.I)
+    return re.sub(r"\s+", " ", text).strip(" ,")
 
-def clean_concept(text: str) -> str:
-    if not text:
-        return ""
-    # non-ASCII 제거
-    cleaned = re.sub(r'[^\x00-\x7F]+', ' ', text)
-    # cute, chibi, slender, stickman, chubby 등을 표준 지침에 맞게 정리
-    cleaned = re.sub(r'\b(cute|chibi|plump|chubby)\b', '', cleaned, flags=re.I)
-    cleaned = re.sub(r'\b(slender\s+stickman|stickman)\b', 'small slim white pictogram character', cleaned, flags=re.I)
-    cleaned = re.sub(r'\s+', ' ', cleaned).strip()
-    return cleaned
 
-def get_scene(word: str, word_info: dict, meaning: str) -> str:
-    if word in SCENE_PRESETS:
-        return clean_concept(SCENE_PRESETS[word])
-    ex = word_info.get("example", "")
-    if ex:
-        c_ex = clean_concept(ex)
-        return f"cozy illustrative room setting, small slim white pictogram character {c_ex}, rich background furniture, wall decor, floor line"
-    return f"cozy illustrative narrative scene of {word}, small slim white pictogram character interacting naturally in comfortable setting, rich props, wall decor, floor line"
+def get_scene(word, scenes, words_dict):
+    if word in scenes:
+        return clean_scene(scenes[word])
+    example = clean_scene(words_dict.get(word, {}).get("example", ""))
+    if example:
+        return f"a small slim white pictogram character acting out the sentence: {example}, rich background furniture, props and floor line"
+    return f"a small slim white pictogram character showing the meaning of the word {word}, rich props, wall decor and floor line"
 
-def save_status(data: dict):
-    try:
-        with open(STATUS_FILE, "w", encoding="utf-8") as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
-    except Exception:
-        pass
 
-def generate_word_image(word: str, scene: str, out_path: str, seed: int = 42):
-    full_prompt = f"linear graphic illustration, complete richly detailed scene of {scene}, {STYLE_PROMPT}"
-    payload = {
-        "prompt": full_prompt,
-        "negative_prompt": NEGATIVE_PROMPT,
-        "steps": 8,
-        "width": 1024,
-        "height": 1024,
-        "seed": seed
-    }
+def run(cmd, check=True):
+    print("$ " + " ".join(cmd), flush=True)
+    return subprocess.run(cmd, cwd=PROJECT_ROOT, check=check)
 
-    req = urllib.request.Request(
-        API_URL,
-        data=json.dumps(payload).encode("utf-8"),
-        headers={"Content-Type": "application/json"}
+
+def save_status(status):
+    with open(STATUS_FILE, "w", encoding="utf-8") as f:
+        json.dump(status, f, ensure_ascii=False, indent=2)
+
+
+def write_dashboard(targets, done, current, started_at):
+    """전체 대상 기준 진행 상황판 (md + 8초 자동 새로고침 html)"""
+    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    total = len(targets)
+    n_done = len(done)
+    pct = n_done / total * 100 if total else 100
+    bar = "█" * int(pct // 5) + "░" * (20 - int(pct // 5))
+    avg = sum(d["elapsed_sec"] for d in done.values()) / n_done if n_done else 0
+    remain_min = avg * (total - n_done) / 60 if avg else 0
+    run_min = (time.time() - started_at) / 60
+
+    def state(t):
+        if t["word"] in done:
+            return f"✅ 완료 ({done[t['word']]['elapsed_sec']:.0f}초)"
+        if current and t["word"] == current["word"]:
+            return "🔄 렌더링 중"
+        return "🕒 대기"
+
+    md = [
+        "# 🚀 중2 누락 그림 선형그래픽 상황판\n",
+        f"> **진행**: `[{bar}] {pct:.1f}% ({n_done}/{total})`  ",
+        f"> **현재**: {current['id'] + ' ' + current['word'] + ' (Unit ' + str(current['unit']) + ')' if current else '없음'}  ",
+        f"> **경과**: {run_min:.0f}분 · 평균 {avg:.0f}초/장 · 남은 예상 {remain_min:.0f}분  ",
+        f"> **마지막 갱신**: {now}\n",
+    ]
+    if current:
+        md.append(f"**현재 장면**: {current['scene']}\n")
+    md += ["| Unit | ID | 단어 | 뜻 | 상태 |", "| :-: | :-: | :-: | :-- | :-- |"]
+    md += [f"| {t['unit']} | {t['id']} | **{t['word']}** | {t['meaning']} | {state(t)} |" for t in targets]
+    with open(DASHBOARD_MD, "w", encoding="utf-8") as f:
+        f.write("\n".join(md) + "\n")
+
+    rows = "\n".join(
+        f"<tr><td>{t['unit']}</td><td>{t['id']}</td><td><b>{t['word']}</b></td><td>{t['meaning']}</td><td>{state(t)}</td></tr>"
+        for t in targets
     )
+    cur_html = (
+        f"<div class='cur'><div class='lbl'>현재 렌더링</div><div class='w'>{current['word']}</div>"
+        f"<div class='m'>{current['id']} · Unit {current['unit']} · {current['meaning']}</div><div class='s'>{current['scene']}</div></div>"
+        if current else "<div class='cur'><div class='w'>대기 없음</div></div>"
+    )
+    html = f"""<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><meta http-equiv="refresh" content="8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>중2 선형그래픽 상황판</title>
+<style>body{{font-family:-apple-system,sans-serif;background:#0f1117;color:#f3f4f6;padding:24px;margin:0}}
+.bar{{height:16px;background:#212530;border-radius:99px;overflow:hidden;margin:12px 0}}
+.fill{{height:100%;width:{pct:.1f}%;background:linear-gradient(90deg,#6366f1,#38bdf8)}}
+.cur{{background:#181b24;border:1px solid #6366f1;border-radius:14px;padding:18px;margin:16px 0}}
+.lbl{{color:#38bdf8;font-size:12px;font-weight:700}}.w{{font-size:32px;font-weight:800}}.m{{color:#9ca3af}}.s{{color:#9ca3af;font-size:12px;margin-top:8px}}
+table{{width:100%;border-collapse:collapse;font-size:14px}}td,th{{padding:8px 10px;border-bottom:1px solid #222;text-align:left}}th{{color:#9ca3af}}</style></head>
+<body><h2>🎨 중2 누락 그림 선형그래픽 상황판</h2>
+<div>{pct:.1f}% ({n_done}/{total}) · 경과 {run_min:.0f}분 · 평균 {avg:.0f}초/장 · 남은 예상 {remain_min:.0f}분 · 갱신 {now}</div>
+<div class="bar"><div class="fill"></div></div>{cur_html}
+<table><thead><tr><th>Unit</th><th>ID</th><th>단어</th><th>뜻</th><th>상태</th></tr></thead><tbody>{rows}</tbody></table></body></html>"""
+    with open(DASHBOARD_HTML, "w", encoding="utf-8") as f:
+        f.write(html)
 
-    t0 = time.time()
-    try:
-        with urllib.request.urlopen(req, timeout=600) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            images = data.get("images", [])
-            if not images:
-                return False, 0, 0
-            raw_bytes = base64.b64decode(images[0])
 
-        os.makedirs(os.path.dirname(out_path), exist_ok=True)
-        with open(out_path, "wb") as f:
-            f.write(raw_bytes)
+def add_readme_entry(unit, words):
+    today = f"### {datetime.now().strftime('%Y-%m-%d')}"
+    entry = (
+        f"- 중2 {unit}단원 빠진 그림 {len(words)}장 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)\n"
+        f"  - 대상: {', '.join(words)}\n"
+    )
+    with open(README_FILE, encoding="utf-8") as f:
+        content = f.read()
+    marker = "## 작업 내역\n\n"
+    if today in content:
+        head, tail = content.split(today, 1)
+        content = head + today + "\n" + entry + tail.lstrip("\n")
+    elif marker in content:
+        head, tail = content.split(marker, 1)
+        content = head + marker + today + "\n" + entry + "\n" + tail
+    else:
+        content += f"\n## 작업 내역\n\n{today}\n{entry}"
+    with open(README_FILE, "w", encoding="utf-8") as f:
+        f.write(content)
 
-        elapsed = time.time() - t0
-        file_size_kb = round(len(raw_bytes) / 1024, 1)
-        print(f"[{word}] 생성 성공! ({elapsed:.1f}초, {file_size_kb} KB) -> {out_path}", flush=True)
-        return True, elapsed, file_size_kb
-    except Exception as e:
-        print(f"[{word}] 생성 실패: {e}", flush=True)
-        return False, 0, 0
 
-def sync_and_commit(unit_num: int, created_words: list):
-    if not created_words:
+def publish_unit(unit, words):
+    """단원 누락분 완료 시 파이프라인. 실패하면 예외를 던져 전체를 멈춘다"""
+    print(f"\n[Unit {unit}] 등록·검증·배포 시작: {', '.join(words)}", flush=True)
+    run([sys.executable, SYNC_SCRIPT])
+    run(["npm", "run", "lint"])
+    run(["find", ".", "..", "-name", "._*", "-type", "f", "-delete"], check=False)
+    add_readme_entry(unit, words)
+    run(["git", "add", "-A"])
+    msg = (
+        f"feat: 중2 {unit}단원 빠진 그림 {len(words)}장 생성 및 등록\n\n"
+        f"대상: {', '.join(words)}\n\n"
+        "Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>"
+    )
+    run(["git", "commit", "-m", msg])
+    if subprocess.run(["git", "remote", "get-url", "origin"], cwd=PROJECT_ROOT, capture_output=True).returncode != 0:
+        print("[Git] origin 없음 - 커밋까지만 완료", flush=True)
         return
-    print(f"\n[Unit {unit_num} 누락분 완료] 레지스트리 동기화 및 Git 푸시 시작...", flush=True)
-    subprocess.run([sys.executable, SYNC_SCRIPT], check=False)
-    subprocess.run(["find", ".", "-name", "._*", "-type", "f", "-delete"], cwd=PROJECT_ROOT, check=False)
+    if run(["git", "pull", "--rebase", "origin", "main"], check=False).returncode != 0:
+        raise RuntimeError("pull --rebase 충돌 - 자동 해결하지 않고 중단합니다")
+    run(["git", "push", "origin", "main"])
+    print(f"[Git] Unit {unit} 푸시 완료", flush=True)
 
-    today_str = datetime.now().strftime("%Y-%m-%d")
-    today_header = f"### {today_str}"
-    word_list_str = ", ".join([w["word"] for w in created_words])
-    new_entry = (
-        f"- 중학교 2학년 Unit {unit_num} 누락 단어 선형그래픽 일러스트 {len(created_words)}종 생성 및 등록 완료 (Draw Things 로컬 API 기반)\n"
-        f"  - 1024x1024 해상도, 2026-09-13 개정 레퍼런스 표준(좁고 긴 몸통, 선 두 줄 튜브 팔다리, 화면 1/3 아담한 크기, 0.05mm 초극세선, #f5f6f8 배경, #030203 선)\n"
-        f"  - 생성 단어: {word_list_str}\n"
-        f"  - `sync_word_images.py` 스크립트를 통해 `src/constants/wordImages.ts` 레지스트리 일괄 갱신 완료\n"
-    )
 
-    if os.path.exists(README_FILE):
-        with open(README_FILE, "r", encoding="utf-8") as f:
-            content = f.read()
-        if today_header in content:
-            parts = content.split(today_header, 1)
-            updated_content = parts[0] + today_header + "\n" + new_entry + parts[1]
-        else:
-            marker = "## 작업 내역\n\n"
-            if marker in content:
-                parts = content.split(marker, 1)
-                updated_content = parts[0] + marker + today_header + "\n" + new_entry + "\n" + parts[1]
-            else:
-                updated_content = content + f"\n\n## 작업 내역\n\n{today_header}\n{new_entry}\n"
-        with open(README_FILE, "w", encoding="utf-8") as f:
-            f.write(updated_content)
+def generate_with_retry(item, attempts=3):
+    for n in range(1, attempts + 1):
+        t0 = time.time()
+        try:
+            generate_linear_image(item["scene"], item["file_path"], seed=950 + item["global_idx"] * 19)
+            return time.time() - t0
+        except Exception as e:  # Draw Things 일시 오류는 잠시 뒤 다시 시도
+            print(f"[{item['word']}] 실패 {n}/{attempts}: {e}", flush=True)
+            if n < attempts:
+                time.sleep(30)
+    return None
 
-    commit_msg = f"feat: 중2 유닛 {unit_num} 누락 단어({word_list_str}) 선형그래픽 일러스트 생성 및 등록 완료"
-    try:
-        subprocess.run(["git", "add", "-A"], cwd=PROJECT_ROOT, check=True)
-        subprocess.run(["git", "commit", "-m", commit_msg], cwd=PROJECT_ROOT, check=True)
-        subprocess.run(["git", "pull", "--rebase", "origin", "main"], cwd=PROJECT_ROOT, check=True)
-        subprocess.run(["git", "push", "origin", "main"], cwd=PROJECT_ROOT, check=True)
-        print(f"[Git] Unit {unit_num} 누락분 원격 푸시 완료!", flush=True)
-    except Exception as e:
-        print(f"[Git 오류] {e}", flush=True)
 
 def main():
-    m2_file = os.path.join(PROJECT_ROOT, "src", "data", "en", "levels", "middle-2.json")
-    tr_file = os.path.join(PROJECT_ROOT, "src", "data", "en", "tr", "ko.json")
-    words_file = os.path.join(PROJECT_ROOT, "src", "data", "en", "words.json")
-
-    with open(m2_file, "r", encoding="utf-8") as f:
+    dry_run = "--dry-run" in sys.argv
+    with open(os.path.join(PROJECT_ROOT, "src/data/en/levels/middle-2.json"), encoding="utf-8") as f:
         m2_words = json.load(f)
-    with open(tr_file, "r", encoding="utf-8") as f:
-        tr_data = json.load(f)
-    with open(words_file, "r", encoding="utf-8") as f:
+    with open(os.path.join(PROJECT_ROOT, "src/data/en/tr/ko.json"), encoding="utf-8") as f:
+        meanings = json.load(f).get("meanings", {})
+    with open(os.path.join(PROJECT_ROOT, "src/data/en/words.json"), encoding="utf-8") as f:
         words_dict = json.load(f)
+    with open(SCENES_FILE, encoding="utf-8") as f:
+        scenes = json.load(f)
 
-    total_words = len(m2_words)
-    total_units = (total_words + 19) // 20
-
-    print("==================================================", flush=True)
-    print("중학교 2학년 누락 이미지 순차 탐색 및 완성 파이프라인 가동", flush=True)
-    print(f"총 단어: {total_words}개 (총 {total_units}개 유닛, 1유닛부터 끝까지 순차 검사)", flush=True)
-    print("스킬 표준: 2026-09-13 개정 레퍼런스 스타일 (좁고 긴 몸통, 선 두 줄 튜브 팔다리, 화면 1/3 높이)", flush=True)
-    print("==================================================", flush=True)
-
-    status_data = {
-        "current_unit": 1,
-        "current_word": "",
-        "missing_found_in_unit": [],
-        "completed_words": []
-    }
-
-    for unit_num in range(1, total_units + 1):
-        start_idx = (unit_num - 1) * 20
-        end_idx = min(start_idx + 20, total_words)
-        unit_slice = m2_words[start_idx:end_idx]
-
-        missing_in_unit = []
-        for i, word in enumerate(unit_slice):
-            g_idx = start_idx + i + 1
-            w_id = f"m2-{g_idx}"
-            f_name = word.replace(" ", "-") + ".png"
-            p = os.path.join(ASSETS_DIR, f_name)
-            if not os.path.exists(p):
-                meaning = tr_data.get("meanings", {}).get(w_id, "")
-                info = words_dict.get(word, {})
-                scene = get_scene(word, info, meaning)
-                missing_in_unit.append({
-                    "global_idx": g_idx,
-                    "pos": i + 1,
-                    "unit": unit_num,
-                    "id": w_id,
-                    "word": word,
-                    "meaning": meaning,
-                    "scene": scene,
-                    "file_path": p
-                })
-
-        if not missing_in_unit:
+    targets = []
+    for i, word in enumerate(m2_words):
+        path = os.path.join(ASSETS_DIR, word.replace(" ", "-") + ".png")
+        if os.path.exists(path) and word not in REGENERATE:
             continue
+        targets.append({
+            "global_idx": i + 1,
+            "unit": i // 20 + 1,
+            "id": f"m2-{i + 1}",
+            "word": word,
+            "meaning": meanings.get(f"m2-{i + 1}", ""),
+            "scene": get_scene(word, scenes, words_dict),
+            "file_path": path,
+        })
 
-        print(f"\n▶ [Unit {unit_num}] 누락 이미지 {len(missing_in_unit)}개 발견! 생성 시작", flush=True)
-        created_in_unit = []
-        for item in missing_in_unit:
-            w = item["word"]
-            status_data["current_unit"] = unit_num
-            status_data["current_word"] = w
-            save_status(status_data)
+    print(f"중2 {len(m2_words)}단어 중 생성 대상 {len(targets)}개", flush=True)
+    if dry_run:
+        for t in targets:
+            print(f"  U{t['unit']} {t['id']} {t['word']}: {t['scene']}")
+        return 0
 
-            print(f"\n[{item['id']}] '{w}' ({item['meaning']}) 생성 시작...", flush=True)
-            print(f"Scene: {item['scene']}", flush=True)
+    started_at = time.time()
+    done = {}
+    status = {"current_unit": None, "current_word": None, "total_targets": len(targets), "completed_words": []}
 
-            res = generate_word_image(w, item["scene"], item["file_path"], seed=950 + item["global_idx"] * 19)
-            if isinstance(res, tuple) and res[0]:
-                created_in_unit.append(item)
-                status_data["completed_words"].append({
-                    "word": w,
-                    "id": item["id"],
-                    "unit": unit_num,
-                    "elapsed_sec": res[1],
-                    "size_kb": res[2]
-                })
-                save_status(status_data)
+    for unit in sorted({t["unit"] for t in targets}):
+        created = []
+        for item in (t for t in targets if t["unit"] == unit):
+            status.update(current_unit=unit, current_word=item["word"])
+            save_status(status)
+            write_dashboard(targets, done, item, started_at)
+            print(f"\n[{item['id']}] {item['word']} ({item['meaning']})\nScene: {item['scene']}", flush=True)
 
-        if created_in_unit:
-            sync_and_commit(unit_num, created_in_unit)
+            elapsed = generate_with_retry(item)
+            if elapsed is None:
+                continue
+            size_kb = round(os.path.getsize(item["file_path"]) / 1024, 1)
+            done[item["word"]] = {"word": item["word"], "id": item["id"], "unit": unit, "elapsed_sec": round(elapsed, 1), "size_kb": size_kb}
+            status["completed_words"].append(done[item["word"]])
+            save_status(status)
+            created.append(item["word"])
+            print(f"PROGRESS {len(done)}/{len(targets)} {item['word']} {elapsed:.0f}s", flush=True)
 
-    print("\n🎉 축하합니다! 중학교 2학년 전체 51유닛 모든 단어의 선형그래픽 이미지 제작 및 배포가 완료되었습니다!", flush=True)
+        write_dashboard(targets, done, None, started_at)
+        if created:
+            publish_unit(unit, created)
+
+    status.update(current_unit=None, current_word=None)
+    save_status(status)
+    write_dashboard(targets, done, None, started_at)
+    failed = [t["word"] for t in targets if t["word"] not in done]
+    print(f"\n완료: {len(done)}/{len(targets)} 생성" + (f", 실패: {failed}" if failed else ""), flush=True)
+    return 0
+
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

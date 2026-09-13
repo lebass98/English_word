@@ -86,6 +86,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   beat: require("../../assets/words/beat.png"),
   beauty: require("../../assets/words/beauty.png"),
   become: require("../../assets/words/become.png"),
+  bedside: require("../../assets/words/bedside.png"),
   beef: require("../../assets/words/beef.png"),
   beer: require("../../assets/words/beer.png"),
   beg: require("../../assets/words/beg.png"),

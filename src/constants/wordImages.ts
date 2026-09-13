@@ -854,6 +854,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   stomach: require("../../assets/words/stomach.png"),
   stone: require("../../assets/words/stone.png"),
   store: require("../../assets/words/store.png"),
+  stormy: require("../../assets/words/stormy.png"),
   straight: require("../../assets/words/straight.png"),
   strange: require("../../assets/words/strange.png"),
   stream: require("../../assets/words/stream.png"),

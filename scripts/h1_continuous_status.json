@@ -1,207 +1,202 @@
 {
-  "unit": 3,
+  "unit": 4,
   "total": 20,
-  "current_word": "develop",
+  "current_word": "survey",
   "current_index": 20,
   "items": [
     {
       "index": 1,
-      "id": "h1-41",
-      "word": "aspect",
-      "meaning": "측면, 양상, 국면",
-      "scene": "architectural design studio, two cute slender stickman architects examining a large miniature building model from different angles and aspects, blueprints and rulers on drafting table, large window",
+      "id": "h1-61",
+      "word": "victim",
+      "meaning": "피해자, 희생자",
+      "scene": "detailed illustrative narrative scene of victim, cute slender stickman The victim of the traffic accident is getting better at the city hospital., indoor room or outdoor setting, rich props",
       "status": "SUCCESS",
-      "elapsed_sec": 273.9,
-      "size_kb": 1179.0
+      "elapsed_sec": 209.2,
+      "size_kb": 775.4
     },
     {
       "index": 2,
-      "id": "h1-42",
-      "word": "significant",
-      "meaning": "중요한, 의미 있는, 상당한, 현저한",
-      "scene": "modern scientific research lab, excited cute slender stickman scientist pointing joyfully to a significant breakthrough spike graph on a glowing computer monitor, laboratory glassware and colleague clapping",
+      "id": "h1-62",
+      "word": "material",
+      "meaning": "재료, 물질, 자료",
+      "scene": "detailed illustrative narrative scene of material, cute slender stickman Wood is a warm material that many Korean houses used long ago., indoor room or outdoor setting, rich props",
       "status": "SUCCESS",
-      "elapsed_sec": 211.8,
-      "size_kb": 857.3
+      "elapsed_sec": 207.7,
+      "size_kb": 1001.1
     },
     {
       "index": 3,
-      "id": "h1-43",
-      "word": "melt",
-      "meaning": "녹이다, 녹다, 차차 없어지다",
-      "scene": "warm cozy kitchen table, cute slender stickman watching a golden square of butter melt smoothly over a stack of warm hotcakes, steaming cup of cocoa, sunny window",
-      "status": "SUCCESS",
-      "elapsed_sec": 213.3,
-      "size_kb": 880.6
+      "id": "h1-63",
+      "word": "laundry",
+      "meaning": "세탁물, 세탁일",
+      "scene": "detailed illustrative narrative scene of laundry, cute slender stickman I took my father s coat to the laundry near the station., indoor room or outdoor setting, rich props",
+      "status": "SKIP_EXISTS",
+      "size_kb": 815.3
     },
     {
       "index": 4,
-      "id": "h1-44",
-      "word": "advance",
-      "meaning": "진보하다, 다가가다; 진보, 발전",
-      "scene": "futuristic robotics technology workshop, cute slender stickman engineer watching an advanced humanoid bipedal robot take its first successful forward steps, tool bench, computer screens and cables",
+      "id": "h1-64",
+      "word": "internal",
+      "meaning": "내적인, 내부의, 체내의",
+      "scene": "detailed illustrative narrative scene of internal, cute slender stickman The building suffered serious internal damage from the fire., indoor room or outdoor setting, rich props",
       "status": "SUCCESS",
-      "elapsed_sec": 211.1,
-      "size_kb": 826.6
+      "elapsed_sec": 204.0,
+      "size_kb": 842.0
     },
     {
       "index": 5,
-      "id": "h1-45",
-      "word": "marine",
-      "meaning": "해양의, 바다의",
-      "scene": "deep blue oceanic research vessel laboratory, cute slender stickman marine biologist looking through glass porthole observing swimming sea turtles and coral reef, scientific water sampling tubes",
+      "id": "h1-65",
+      "word": "ripe",
+      "meaning": "익은, 숙성한",
+      "scene": "detailed illustrative narrative scene of ripe, cute slender stickman These peaches are ripe enough to eat right now., indoor room or outdoor setting, rich props",
       "status": "SUCCESS",
-      "elapsed_sec": 208.6,
-      "size_kb": 1143.4
+      "elapsed_sec": 206.1,
+      "size_kb": 1086.9
     },
     {
       "index": 6,
-      "id": "h1-46",
-      "word": "solid",
-      "meaning": "고체인, 단단한; 고체",
-      "scene": "cozy masonry workshop, strong cute slender stickman builder tapping a solid sturdy rectangular stone block with a hammer testing its solid durability, neatly stacked brick wall, mortar trowel",
-      "status": "SUCCESS",
-      "elapsed_sec": 210.2,
-      "size_kb": 779.1
+      "id": "h1-66",
+      "word": "record",
+      "meaning": "기록, 음반; 기록하다",
+      "scene": "detailed illustrative narrative scene of record, cute slender stickman She broke the school record for the hundred-meter race., indoor room or outdoor setting, rich props",
+      "status": "SKIP_EXISTS",
+      "size_kb": 699.7
     },
     {
       "index": 7,
-      "id": "h1-47",
-      "word": "passage",
-      "meaning": "통과, 통행, 통로",
-      "scene": "ancient castle library, cute slender stickman explorer holding a lantern walking through a secret hidden stone passage hallway between towering wooden bookshelves, stone arched doorway",
+      "id": "h1-67",
+      "word": "delighted",
+      "meaning": "기쁜, 아주 즐거운",
+      "scene": "detailed illustrative narrative scene of delighted, cute slender stickman We were delighted to hear about your exam results., indoor room or outdoor setting, rich props",
       "status": "SUCCESS",
-      "elapsed_sec": 209.6,
-      "size_kb": 1654.2
+      "elapsed_sec": 205.6,
+      "size_kb": 907.3
     },
     {
       "index": 8,
-      "id": "h1-48",
-      "word": "master",
-      "meaning": "통달하다, 숙달하다; 주인, 달인",
-      "scene": "traditional artistic pottery studio, skilled cute slender stickman master craftsman gently shaping a smooth clay ceramic vase on a spinning pottery wheel, finished clay pots on wooden shelves",
+      "id": "h1-68",
+      "word": "conduct",
+      "meaning": "(특정한 활동을) 하다, 실시하다; 행위, 지도",
+      "scene": "detailed illustrative narrative scene of conduct, cute slender stickman A famous musician will conduct our school orchestra at the concert next Friday., indoor room or outdoor setting, rich props",
       "status": "SUCCESS",
-      "elapsed_sec": 207.9,
-      "size_kb": 1135.9
+      "elapsed_sec": 207.8,
+      "size_kb": 1215.5
     },
     {
       "index": 9,
-      "id": "h1-49",
-      "word": "minute",
-      "meaning": "(시간의) 분; 미세한, 세심한; 순간, 잠깐",
-      "scene": "precision watchmaker workbench, focused cute slender stickman watchmaker using an eyepiece loupe and fine tweezers to adjust tiny minute delicate gear cogs inside an antique gold pocket watch, desk lamp",
-      "status": "SUCCESS",
-      "elapsed_sec": 211.2,
-      "size_kb": 1020.3
+      "id": "h1-69",
+      "word": "besides",
+      "meaning": "게다가, 뿐만 아니라",
+      "scene": "detailed illustrative narrative scene of besides, cute slender stickman The room was very small, and besides, it had no windows., indoor room or outdoor setting, rich props",
+      "status": "SKIP_EXISTS",
+      "size_kb": 793.6
     },
     {
       "index": 10,
-      "id": "h1-50",
-      "word": "vision",
-      "meaning": "시력, 시야, 환상",
-      "scene": "scenic hilltop observation deck, cute slender stickman leader holding a brass telescope looking into distant horizon at sunrise with clear future vision, wind blowing gently, mountain ridges",
+      "id": "h1-70",
+      "word": "notice",
+      "meaning": "통지, 공고문; 알아차리다, 인지하다",
+      "scene": "detailed illustrative narrative scene of notice, cute slender stickman Did you notice the small bird sitting on the window this morning, indoor room or outdoor setting, rich props",
       "status": "SUCCESS",
-      "elapsed_sec": 210.9,
-      "size_kb": 1003.4
+      "elapsed_sec": 207.3,
+      "size_kb": 1003.9
     },
     {
       "index": 11,
-      "id": "h1-51",
-      "word": "experiment",
-      "meaning": "실험, 실험 장치; 실험하다",
-      "scene": "chemistry science classroom, focused cute slender stickman student carefully pouring blue liquid into a bubbling glass flask with glowing bubbles, test tube rack, chalkboard equations",
+      "id": "h1-71",
+      "word": "compel",
+      "meaning": "강요하다, ~하게 만들다",
+      "scene": "detailed illustrative narrative scene of compel, cute slender stickman Heavy rain compelled us to cancel the outdoor concert., indoor room or outdoor setting, rich props",
       "status": "SUCCESS",
-      "elapsed_sec": 208.4,
-      "size_kb": 902.7
+      "elapsed_sec": 222.6,
+      "size_kb": 975.5
     },
     {
       "index": 12,
-      "id": "h1-52",
-      "word": "shelter",
-      "meaning": "보호소, 대피, 주거지; 보호하다, 쉴 곳을 제공하다",
-      "scene": "mountain hillside during a rainy day, kind cute slender stickman guiding a friendly puppy into a sturdy wooden emergency shelter cabin porch away from rain droplets, warm lamp inside",
+      "id": "h1-72",
+      "word": "fasten",
+      "meaning": "매다, 채우다, 잠그다",
+      "scene": "detailed illustrative narrative scene of fasten, cute slender stickman Please fasten your seat belt before the airplane starts moving down the runway., indoor room or outdoor setting, rich props",
       "status": "SUCCESS",
-      "elapsed_sec": 210.1,
-      "size_kb": 836.7
+      "elapsed_sec": 235.0,
+      "size_kb": 953.2
     },
     {
       "index": 13,
-      "id": "h1-53",
-      "word": "commit",
-      "meaning": "(범죄를) 저지르다, (활동 등에) 전념하다",
-      "scene": "community civic hall podium, dedicated cute slender stickman raising right hand committing solemnly to public duty and service, audience seated in auditorium chairs, flags in background",
-      "status": "SUCCESS",
-      "elapsed_sec": 208.7,
-      "size_kb": 1003.4
+      "id": "h1-73",
+      "word": "seed",
+      "meaning": "씨(앗), 종자",
+      "scene": "detailed illustrative narrative scene of seed, cute slender stickman Plant this tiny seed and water it every single morning., indoor room or outdoor setting, rich props",
+      "status": "SKIP_EXISTS",
+      "size_kb": 671.0
     },
     {
       "index": 14,
-      "id": "h1-54",
-      "word": "possible",
-      "meaning": "가능한",
-      "scene": "bright engineering workshop, innovative cute slender stickman successfully lighting up a floating magnetic light bulb proving the impossible possible, inspiring chalkboard notes, work tools",
+      "id": "h1-74",
+      "word": "reply",
+      "meaning": "답장, 대답; 대답하다, 대응하다",
+      "scene": "detailed illustrative narrative scene of reply, cute slender stickman She did not reply to my message until late at night., indoor room or outdoor setting, rich props",
       "status": "SKIP_EXISTS",
-      "size_kb": 874.0
+      "size_kb": 656.1
     },
     {
       "index": 15,
-      "id": "h1-55",
-      "word": "multiple",
-      "meaning": "여러, 다수의",
-      "scene": "high-tech control workstation, busy multitasking cute slender stickman operator managing multiple digital display monitors showing weather maps and data graphs simultaneously, swivel chair",
+      "id": "h1-75",
+      "word": "mental",
+      "meaning": "정신적인, 마음의",
+      "scene": "detailed illustrative narrative scene of mental, cute slender stickman Enough sleep and exercise are important for your mental health during exam season., indoor room or outdoor setting, rich props",
       "status": "SUCCESS",
-      "elapsed_sec": 208.0,
-      "size_kb": 969.1
+      "elapsed_sec": 243.6,
+      "size_kb": 920.1
     },
     {
       "index": 16,
-      "id": "h1-56",
-      "word": "routine",
-      "meaning": "일과, 일상의 일; 일상적인",
-      "scene": "bright sunny morning bedroom and bathroom, cute slender stickman following healthy morning routine, holding a toothbrush by the sink mirror, folded blanket on bed, wall calendar",
-      "status": "SUCCESS",
-      "elapsed_sec": 208.1,
-      "size_kb": 679.2
+      "id": "h1-76",
+      "word": "search",
+      "meaning": "수색, 검색; 수색하다, 찾다",
+      "scene": "detailed illustrative narrative scene of search, cute slender stickman The police searched the whole park for the missing boy., indoor room or outdoor setting, rich props",
+      "status": "SKIP_EXISTS",
+      "size_kb": 741.3
     },
     {
       "index": 17,
-      "id": "h1-57",
-      "word": "tremendous",
-      "meaning": "엄청난, 대단한",
-      "scene": "scenic vista plateau, awe-struck cute slender stickman standing before a tremendous roaring waterfall cascading down grand rocky cliffs, rainbow mist, flying birds",
+      "id": "h1-77",
+      "word": "enhance",
+      "meaning": "향상시키다, 높이다",
+      "scene": "detailed illustrative narrative scene of enhance, cute slender stickman Regular exercise can enhance both memory and mood., indoor room or outdoor setting, rich props",
       "status": "SUCCESS",
-      "elapsed_sec": 209.7,
-      "size_kb": 1359.0
+      "elapsed_sec": 241.6,
+      "size_kb": 760.4
     },
     {
       "index": 18,
-      "id": "h1-58",
-      "word": "crucial",
-      "meaning": "매우 중요한, 결정적인",
-      "scene": "medical operating or engineering planning room, serious cute slender stickman specialist holding a crucial key blueprint blueprint component that fits into center mechanism, team watching closely",
+      "id": "h1-78",
+      "word": "academic",
+      "meaning": "학문적인, 학업의",
+      "scene": "detailed illustrative narrative scene of academic, cute slender stickman My brother won a prize for his academic achievement in science last year., indoor room or outdoor setting, rich props",
       "status": "SUCCESS",
-      "elapsed_sec": 213.8,
-      "size_kb": 871.2
+      "elapsed_sec": 246.9,
+      "size_kb": 970.6
     },
     {
       "index": 19,
-      "id": "h1-59",
-      "word": "vast",
-      "meaning": "엄청난, 막대한, 광활한",
-      "scene": "endless desert or ocean shore, tiny cute slender stickman standing atop a rolling sand dune gazing out at the vast infinite desert plains under a wide sky with distant mountain silhouettes",
+      "id": "h1-79",
+      "word": "overcome",
+      "meaning": "극복하다, 이기다",
+      "scene": "detailed illustrative narrative scene of overcome, cute slender stickman He overcame his fear of water and swam across the pool last week., indoor room or outdoor setting, rich props",
       "status": "SUCCESS",
-      "elapsed_sec": 211.9,
-      "size_kb": 801.8
+      "elapsed_sec": 263.3,
+      "size_kb": 1220.6
     },
     {
       "index": 20,
-      "id": "h1-60",
-      "word": "develop",
-      "meaning": "개발하다, 발전하다",
-      "scene": "community garden or software startup studio, cute slender stickman nurturing a sprouting green plant sapling in rich soil while colleague codes on laptop, growing tall together, watering can",
+      "id": "h1-80",
+      "word": "survey",
+      "meaning": "설문조사; 조사하다, 바라보다",
+      "scene": "detailed illustrative narrative scene of survey, cute slender stickman The survey showed that most students enjoy group work., indoor room or outdoor setting, rich props",
       "status": "SUCCESS",
-      "elapsed_sec": 211.0,
-      "size_kb": 866.7
+      "elapsed_sec": 248.5,
+      "size_kb": 1119.1
     }
   ]
 }

@@ -46,6 +46,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   amateur: require("../../assets/words/amateur.png"),
   amazing: require("../../assets/words/amazing.png"),
   amount: require("../../assets/words/amount.png"),
+  amuse: require("../../assets/words/amuse.png"),
   ancestor: require("../../assets/words/ancestor.png"),
   ancient: require("../../assets/words/ancient.png"),
   angle: require("../../assets/words/angle.png"),

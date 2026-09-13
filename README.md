@@ -31,6 +31,8 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-13
+- 중1 44단원 빠진 그림 1장 Draw Things 선형그래픽으로 생성 및 등록
+  - 대상 단어: enough
 - 중1 49단원 빠진 그림 1장 Draw Things 선형그래픽으로 생성 및 등록
   - 대상 단어: wise
 - 단어 그림 관리 구조 개편 1단계: 그림 카탈로그 추가 (`src/data/images/catalog.json`, `scripts/image_catalog.py`)

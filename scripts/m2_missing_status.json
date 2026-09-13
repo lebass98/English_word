@@ -1,6 +1,6 @@
 {
-  "current_unit": 27,
-  "current_word": "sheet",
+  "current_unit": null,
+  "current_word": null,
   "total_targets": 128,
   "completed_words": [
     {
@@ -247,6 +247,21 @@
       "unit": 27,
       "elapsed_sec": 221.8,
       "size_kb": 584.4
+    },
+    {
+      "word": "ostrich",
+      "id": "m2-542",
+      "unit": 28,
+      "elapsed_sec": 237.6,
+      "size_kb": 1245.2
+    },
+    {
+      "word": "cricket",
+      "id": "m2-544",
+      "unit": 28,
+      "elapsed_sec": 250.7,
+      "size_kb": 799.4
     }
-  ]
+  ],
+  "stopped": "사용자 요청으로 중단"
 }

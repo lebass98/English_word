@@ -31,6 +31,9 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-13
+- 중2 28단원 빠진 그림 2장(ostrich, cricket) 생성 및 등록 후 사용자 요청으로 생성 중단
+  - 이번 작업으로 19~28단원 그림 37장 생성, 중2 남은 빠진 그림 78장 (`python3 scripts/generate_m2_all_missing.py` 로 이어서 생성)
+  - 다시 만들 후보: intimate(두 사람 몸이 뭉침), steady(밧줄 잡는 뜻이 약함), death(묘비·사람이 웃는 얼굴)
 - 중1 44단원 빠진 그림 1장 Draw Things 선형그래픽으로 생성 및 등록
   - 대상 단어: enough
 - 중1 49단원 빠진 그림 1장 Draw Things 선형그래픽으로 생성 및 등록

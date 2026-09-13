@@ -896,6 +896,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   statue: require("../../assets/words/statue.png"),
   stay: require("../../assets/words/stay.png"),
   steady: require("../../assets/words/steady.png"),
+  steal: require("../../assets/words/steal.png"),
   stem: require("../../assets/words/stem.png"),
   step: require("../../assets/words/step.png"),
   stethoscope: require("../../assets/words/stethoscope.png"),

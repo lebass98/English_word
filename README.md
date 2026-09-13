@@ -31,6 +31,8 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-14
+- 중1 50단원 빠진 그림 1장 Draw Things 선형그래픽으로 생성 및 등록
+  - 대상 단어: steal
 - 중2 31단원 빠진 그림 7장 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
   - 대상: holiday, center, cash, fur, shore, pumpkin, beach
 - 중1 46단원 빠진 그림 1장 Draw Things 선형그래픽으로 생성 및 등록

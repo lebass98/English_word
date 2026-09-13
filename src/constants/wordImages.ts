@@ -241,6 +241,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   daughter: require("../../assets/words/daughter.png"),
   dawn: require("../../assets/words/dawn.png"),
   deal: require("../../assets/words/deal.png"),
+  dear: require("../../assets/words/dear.png"),
   death: require("../../assets/words/death.png"),
   debt: require("../../assets/words/debt.png"),
   deck: require("../../assets/words/deck.png"),

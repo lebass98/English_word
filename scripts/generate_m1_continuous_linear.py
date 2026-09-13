@@ -2734,6 +2734,88 @@ UNIT_DATA = {
             "id": "m1-760", "word": "dish", "meaning": "접시, 음식",
             "scene": "cozy restaurant dining table, smiling cute slender stickman serving a delicious steaming hot gourmet pasta dish garnished with fresh basil leaves, dining chair and floor line"
         }
+    ],
+    39: [
+        {
+            "id": "m1-761", "word": "chopstick", "meaning": "젓가락",
+            "scene": "cozy dining room table, small cute slender stickman sitting politely holding wooden chopsticks picking up food from steaming ceramic bowl, dining table and floor line"
+        },
+        {
+            "id": "m1-762", "word": "square", "meaning": "정사각형",
+            "scene": "bright art classroom easel, small cute slender stickman artist drawing a crisp perfect geometric square shape on paper with wooden ruler, easel stand and floor line"
+        },
+        {
+            "id": "m1-763", "word": "information", "meaning": "정보",
+            "scene": "spacious modern museum lobby, small cute slender visitor stickman asking polite question at public information booth to friendly staff stickman, lobby floor line"
+        },
+        {
+            "id": "m1-764", "word": "government", "meaning": "정부",
+            "scene": "majestic neoclassical parliament hall, small cute slender statesman stickman speaking from rostrum before grand assembly council, classical pillars and floor line"
+        },
+        {
+            "id": "m1-765", "word": "spirit", "meaning": "정신",
+            "scene": "high windy mountain summit plateau, small cute slender stickman standing firm with hands on hips gazing determinedly at sunrise showing strong unyielding spirit, mountain ridge line"
+        },
+        {
+            "id": "m1-766", "word": "halt", "meaning": "정지하다",
+            "scene": "quiet city street crosswalk, small cute slender crossing guard stickman holding red stop paddle bringing school crosswalk traffic to safe complete halt, street curb line"
+        },
+        {
+            "id": "m1-767", "word": "honest", "meaning": "정직한",
+            "scene": "cozy lost and found counter, honest small cute slender stickman handing found leather wallet to smiling office officer stickman, counter and floor line"
+        },
+        {
+            "id": "m1-768", "word": "correctly", "meaning": "정확히",
+            "scene": "clean science workshop workbench, small cute slender student stickman measuring liquid volume correctly matching precision graduated cylinder mark, table and floor line"
+        },
+        {
+            "id": "m1-769", "word": "exactly", "meaning": "정확히",
+            "scene": "woodworking workshop table, focused small cute slender carpenter stickman aligning wooden joint parts fitting together exactly with zero gap, workbench and floor line"
+        },
+        {
+            "id": "m1-770", "word": "wet", "meaning": "젖은",
+            "scene": "rainy home entrance hallway, small cute slender stickman standing indoors shaking water droplets from soaked wet umbrella into umbrella stand, entryway floor line"
+        },
+        {
+            "id": "m1-771", "word": "remove", "meaning": "제거하다",
+            "scene": "sunny community garden flowerbed, diligent small cute slender stickman using small garden trowel carefully removing wild weed from around young flowering plant, garden soil line"
+        },
+        {
+            "id": "m1-772", "word": "rid", "meaning": "제거하다",
+            "scene": "tidy bedroom wardrobe corner, energetic small cute slender stickman sorting and clearing out unnecessary old clutter boxes getting rid of mess, bedroom floor line"
+        },
+        {
+            "id": "m1-773", "word": "offer", "meaning": "제공하다",
+            "scene": "warm tea party lounge, courteous small cute slender stickman holding tray offering warm porcelain cup of fresh herbal tea to guest stickman, low table and floor line"
+        },
+        {
+            "id": "m1-774", "word": "uniform", "meaning": "제복, 교복",
+            "scene": "school hallway locker row, neat small cute slender stickman wearing tidy buttoned school uniform standing proudly with backpack, locker doors and floor line"
+        },
+        {
+            "id": "m1-775", "word": "limit", "meaning": "제한하다, 제한",
+            "scene": "quiet highway road shoulder, small cute slender stickman driver looking at roadside maximum speed limit sign driving responsibly at safe steady pace, highway barrier line"
+        },
+        {
+            "id": "m1-776", "word": "piece", "meaning": "조각",
+            "scene": "cozy living room carpet, small cute slender stickman sitting placing the final interlocking piece into a colorful jigsaw puzzle on low coffee table, floor line"
+        },
+        {
+            "id": "m1-777", "word": "sculpture", "meaning": "조각(품)",
+            "scene": "bright stone carving studio, creative small cute slender sculptor stickman using mallet and chisel carefully shaping a smooth marble stone sculpture, studio floor line"
+        },
+        {
+            "id": "m1-778", "word": "statue", "meaning": "조각상",
+            "scene": "sunny grand historic park plaza, small cute slender stickman tourist looking up admiring a tall classical bronze hero statue on granite pedestal, park pavement line"
+        },
+        {
+            "id": "m1-779", "word": "shell", "meaning": "조개껍질",
+            "scene": "peaceful sandy ocean beach, joyful small cute slender stickman crouching near gentle water edge picking up a beautiful spiral seashell from wet sand, shoreline line"
+        },
+        {
+            "id": "m1-780", "word": "ancestor", "meaning": "조상, 선조",
+            "scene": "traditional quiet family shrine room, respectful small cute slender stickman offering polite bow before historic ancestral portrait scroll, incense burner and floor line"
+        }
     ]
 }
 

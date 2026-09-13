@@ -760,6 +760,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   revolution: require("../../assets/words/revolution.png"),
   rid: require("../../assets/words/rid.png"),
   riddle: require("../../assets/words/riddle.png"),
+  ride: require("../../assets/words/ride.png"),
   ripe: require("../../assets/words/ripe.png"),
   roar: require("../../assets/words/roar.png"),
   robber: require("../../assets/words/robber.png"),

@@ -685,6 +685,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   pigeon: require("../../assets/words/pigeon.png"),
   pilgrim: require("../../assets/words/pilgrim.png"),
   pill: require("../../assets/words/pill.png"),
+  pilot: require("../../assets/words/pilot.png"),
   pitch: require("../../assets/words/pitch.png"),
   plane: require("../../assets/words/plane.png"),
   planet: require("../../assets/words/planet.png"),

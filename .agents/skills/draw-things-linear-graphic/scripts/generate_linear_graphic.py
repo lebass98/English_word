@@ -42,7 +42,10 @@ def generate_linear_image(
         "thinnest possible 0.05mm ultra-delicate needle-thin hairline ink stroke, extremely fine crisp outlines drawn in dark charcoal ink color #030203, "
         "flat smooth light gray canvas background color #f5f6f8, "
         # 사람 모양: 가는 막대 인간이 아니라 도톰한 튜브 팔다리의 순백 픽토그램 (사용자 레퍼런스)
-        "simple white pictogram characters, round bald head resting directly on top of the body with completely no neck, two small dot eyes and a small smile line, plain white face, "
+        # 머리와 몸통은 한 덩어리로 잇지 않는다. 이어 그리면 이음새가 두꺼운 목처럼 보인다
+        "simple white pictogram characters, two small dot eyes and a small smile line, plain white face, "
+        "the round bald head is drawn as its own complete closed circle outline, and directly below it the narrow torso starts with its own separate small rounded top edge, "
+        "head and body are two clearly separate shapes that touch only at one small narrow point under the chin, no thick neck, "
         "very narrow slim torso only about half as wide as the head, tall soft rounded rectangle body with a flat bottom edge, the whole figure is narrow and about three times taller than it is wide, "
         "short slim rounded tube arms drawn with two close parallel outlines ending in small round mitten nubs, held close to the body, "
         "short slim rounded tube legs drawn with two close parallel outlines ending in small rounded feet, limbs are narrow but still have visible width and are never a single line, "
@@ -55,7 +58,8 @@ def generate_linear_image(
     negative_prompt = (
         "stick figure, stickman, matchstick limbs, single-line arms, single-line legs, thin wire limbs, long thin legs, "
         "fat body, chubby, plump, round belly, wide bulky torso, blush, rosy cheeks, pink cheeks, cheek marks, "
-        "neck, long neck, throat, collar, neck line, detailed neck anatomy, "
+        "thick neck, wide neck, head merged into body, head and torso as one continuous blob, head outline flowing into shoulders, "
+        "long neck, throat, collar, detailed neck anatomy, "
         "oversized character, giant figure, tall figure, frame-filling character, character taking up entire screen, close-up, extreme close-up, cropped body, zoomed in, crowding the frame, suffocating composition, character head near top of frame, dominating figure, "
         "realistic human anatomy, realistic face, facial details, nose, eyebrows, eyelashes, eyelids, lips, teeth, ears, hair, hairstyle, muscles, realistic fingers, individual finger joints, fingernails, toes, shoes, clothing, clothes, shirt, pants, wrinkles, folds, "
         "thick lines, bold outlines, heavy brush strokes, chunky lines, fat strokes, "

@@ -18,7 +18,8 @@ description: >-
 
 > **2026-09-13 개정**: 사용자 레퍼런스(칠판 앞 캐릭터 3명)에 맞춰 사람 모양을 바꿨다.
 > 가는 막대 인간(선 한 줄 팔다리)도, 머리가 큰 통통한 SD 캐릭터도 아닌 **좁고 긴 몸통 + 선 두 줄 튜브 팔다리**가 표준이다.
-> 확정 샘플: `assets/words/hydrogen.png` (중1 m1-525).
+> **같은 날 추가 개정**: 머리와 몸통을 한 덩어리로 이어 그리면 이음새가 두꺼운 목처럼 보여서, **머리는 따로 닫힌 동그라미, 몸통은 그 아래 자기 윗선에서 시작**하도록 바꿨다 (원칙 2).
+> 참고 샘플: `assets/words/hydrogen.png` (중1 m1-525) — 머리·몸 구분 개정 전 모습이라 목 부분은 따르지 않는다.
 
 1. **전체 비율 및 실루엣 (좁고 긴 몸 & 화면 높이 약 1/3 & 배경 중심 와이드 구도)**:
    - 몸통 폭은 **머리 폭의 절반 정도**이고, 전체 모습은 **폭보다 세 배쯤 키가 큰** 날씬한 형태입니다. 옆으로 넓거나 통통한 몸은 쓰지 않습니다.
@@ -26,9 +27,11 @@ description: >-
    - **`cute`, `chibi`, `plump` 같은 낱말은 넣지 않습니다.** 이 모델(z_image_turbo, 8단계)은 부정 프롬프트를 거의 따르지 않아서, 이런 낱말이 들어가면 머리가 커지고 몸이 넓어지며 볼 홍조가 생깁니다. 모양은 긍정 문장으로만 정합니다.
    - 프롬프트 키워드: `small character in a wide scene, modest compact character scale, standing small figure occupying approximately one third of frame height around 30 to 35 percent of canvas height, placed comfortably on bottom floor line, spacious upper and middle frame filled with rich environmental details, balanced wide scene composition, plenty of breathing room, full body visible without crowding`.
 2. **두상 및 이목구비 (구형 민머리 & 점/선 얼굴)**:
-   - 귀, 머리카락, 턱선이 없는 매끄러운 원형 민머리가 **목 없이 몸통 위에 바로** 얹힙니다.
+   - 귀, 머리카락이 없는 매끄러운 원형 민머리를 **따로 닫힌 동그라미 윤곽**으로 그립니다.
+   - **머리와 몸통은 한 덩어리로 잇지 않습니다.** 몸통은 머리 바로 아래에서 자기만의 작고 둥근 윗선으로 시작하고, 둘은 턱 밑 좁은 한 점에서만 만납니다. 머리 윤곽이 어깨로 흘러내리듯 이어지면 이음새가 두꺼운 목처럼 보이므로 금지합니다. 길게 드러나는 목도 그리지 않습니다.
    - 두 개의 검은 점 눈과 얇은 미소선 입만 그립니다. 코, 눈썹, 입술, 치아, **볼 홍조**는 그리지 않습니다.
-   - 프롬프트 키워드: `simple white pictogram characters, round bald head resting directly on top of the body with completely no neck, two small dot eyes and a small smile line, plain white face`.
+   - 프롬프트 키워드: `simple white pictogram characters, two small dot eyes and a small smile line, plain white face, the round bald head is drawn as its own complete closed circle outline, and directly below it the narrow torso starts with its own separate small rounded top edge, head and body are two clearly separate shapes that touch only at one small narrow point under the chin, no thick neck`.
+   - 부정 프롬프트에 `thick neck, wide neck, head merged into body, head and torso as one continuous blob, head outline flowing into shoulders`를 넣습니다. 머리와 몸 사이 구분선은 보여야 하므로 `neck line`은 부정 프롬프트에 넣지 않습니다.
 3. **몸통 및 팔다리 (좁고 긴 둥근 직사각형 몸통 & 선 두 줄 튜브 팔다리)**:
    - **몸통**: 머리 폭의 절반 정도로 좁고, 세로로 긴 부드러운 둥근 직사각형이며 밑단이 평평합니다 (단순한 원피스 실루엣).
    - **팔다리**: 짧고 가는 튜브 모양이지만 **선 두 줄로 두께가 보이게** 그립니다. 선 한 줄짜리 막대 팔다리는 금지합니다. 관절은 그리지 않고, 팔은 몸에 붙여 옆으로 퍼지지 않게 합니다.

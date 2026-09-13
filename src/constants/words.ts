@@ -14,6 +14,7 @@ import enLevelHigh1 from "../data/en/levels/high-1.json";
 import enLevelHigh2 from "../data/en/levels/high-2.json";
 import enLevelHigh3 from "../data/en/levels/high-3.json";
 import enLevelToefl from "../data/en/levels/toefl.json";
+import enExtrasJa from "../data/en/extras/ja.json";
 import enExtrasKo from "../data/en/extras/ko.json";
 import enTrJa from "../data/en/tr/ja.json";
 import enTrKo from "../data/en/tr/ko.json";
@@ -142,8 +143,10 @@ const DATA: Record<StudyLangId, LanguageData> = {
       ko: enTrKo as TranslationFile,
       ja: enTrJa as TranslationFile,
     },
-    // 토플 코스 보충 자료는 한국어로만 있다. 일본어 화면에서도 한국어로 보인다
-    extras: { ko: enExtrasKo as Record<string, WordExtras> },
+    extras: {
+      ko: enExtrasKo as Record<string, WordExtras>,
+      ja: enExtrasJa as Record<string, WordExtras>,
+    },
   },
   ja: {
     levels: {

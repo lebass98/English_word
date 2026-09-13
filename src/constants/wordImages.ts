@@ -988,6 +988,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   weather: require("../../assets/words/weather.png"),
   wedding: require("../../assets/words/wedding.png"),
   weight: require("../../assets/words/weight.png"),
+  wet: require("../../assets/words/wet.png"),
   whether: require("../../assets/words/whether.png"),
   while: require("../../assets/words/while.png"),
   whisker: require("../../assets/words/whisker.png"),

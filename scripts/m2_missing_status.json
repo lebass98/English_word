@@ -1,6 +1,6 @@
 {
-  "current_unit": 30,
-  "current_word": "dinning room",
+  "current_unit": 31,
+  "current_word": "beach",
   "total_targets": 73,
   "completed_words": [
     {
@@ -72,6 +72,55 @@
       "unit": 30,
       "elapsed_sec": 251.4,
       "size_kb": 945.1
+    },
+    {
+      "word": "holiday",
+      "id": "m2-606",
+      "unit": 31,
+      "elapsed_sec": 251.2,
+      "size_kb": 835.1
+    },
+    {
+      "word": "center",
+      "id": "m2-607",
+      "unit": 31,
+      "elapsed_sec": 251.5,
+      "size_kb": 850.0
+    },
+    {
+      "word": "cash",
+      "id": "m2-608",
+      "unit": 31,
+      "elapsed_sec": 252.4,
+      "size_kb": 746.7
+    },
+    {
+      "word": "fur",
+      "id": "m2-611",
+      "unit": 31,
+      "elapsed_sec": 252.0,
+      "size_kb": 711.0
+    },
+    {
+      "word": "shore",
+      "id": "m2-612",
+      "unit": 31,
+      "elapsed_sec": 250.2,
+      "size_kb": 718.2
+    },
+    {
+      "word": "pumpkin",
+      "id": "m2-615",
+      "unit": 31,
+      "elapsed_sec": 219.3,
+      "size_kb": 1135.7
+    },
+    {
+      "word": "beach",
+      "id": "m2-618",
+      "unit": 31,
+      "elapsed_sec": 210.7,
+      "size_kb": 615.9
     }
   ]
 }

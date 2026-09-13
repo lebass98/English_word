@@ -442,6 +442,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   guess: require("../../assets/words/guess.png"),
   guest: require("../../assets/words/guest.png"),
   guide: require("../../assets/words/guide.png"),
+  gun: require("../../assets/words/gun.png"),
   habit: require("../../assets/words/habit.png"),
   halt: require("../../assets/words/halt.png"),
   hand: require("../../assets/words/hand.png"),

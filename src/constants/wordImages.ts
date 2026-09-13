@@ -787,6 +787,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   resource: require("../../assets/words/resource.png"),
   resources: require("../../assets/words/resources.png"),
   respect: require("../../assets/words/respect.png"),
+  rest: require("../../assets/words/rest.png"),
   restaurant: require("../../assets/words/restaurant.png"),
   return: require("../../assets/words/return.png"),
   review: require("../../assets/words/review.png"),

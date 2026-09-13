@@ -671,6 +671,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   poet: require("../../assets/words/poet.png"),
   politely: require("../../assets/words/politely.png"),
   pollution: require("../../assets/words/pollution.png"),
+  pop: require("../../assets/words/pop.png"),
   popular: require("../../assets/words/popular.png"),
   population: require("../../assets/words/population.png"),
   possible: require("../../assets/words/possible.png"),

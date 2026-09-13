@@ -36,7 +36,10 @@ npm run lint     # ESLint
 - 중1 39단원 빠진 그림 1장 Draw Things 선형그래픽으로 생성 및 등록
   - 대상 단어: uniform
 - 중1 hydrogen 그림을 머리·몸 구분 기준 확정 샘플로 교체하고 스킬 문서에 확정 샘플로 표시
-
+- 중2 19단원 빠진 그림 2장(grave, elementary) 개정 스킬로 생성 및 등록
+  - greedy 는 장면의 gold 낱말 때문에 노란 색이 칠해져 삭제 후 색 낱말을 뺀 장면으로 다시 생성, intimate 는 앉은 자세라 몸이 뭉쳐 서 있는 장면으로 다시 생성
+  - 남은 장면에서 blue·silver·gray 같은 색 낱말 제거
+  - `expo-localization` 이 설치되지 않은 채 남은 lint 캐시(`.expo/cache/eslint`) 때문에 lint 가 실패해, `npm install` 후 캐시를 지워 해결
 - 중2 빠진 그림 생성 스크립트(`scripts/generate_m2_all_missing.py`)를 개정 스킬 기준으로 교체
   - 프롬프트를 복사해 두지 않고 스킬 스크립트 `generate_linear_image` 를 직접 불러 써서, 스킬이 바뀌면 자동 반영
   - 남은 129단어 영문 장면을 `scripts/m2_missing_scenes.json` 에 작성, 개정 전 모습으로 만든 intimate 는 다시 생성

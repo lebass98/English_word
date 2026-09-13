@@ -789,6 +789,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   spread: require("../../assets/words/spread.png"),
   square: require("../../assets/words/square.png"),
   squirrel: require("../../assets/words/squirrel.png"),
+  stack: require("../../assets/words/stack.png"),
   stadium: require("../../assets/words/stadium.png"),
   stage: require("../../assets/words/stage.png"),
   stair: require("../../assets/words/stair.png"),

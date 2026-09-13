@@ -1,0 +1,18 @@
+{
+  "unit": 8,
+  "total": 20,
+  "current_word": "stack",
+  "current_index": 1,
+  "items": [
+    {
+      "index": 1,
+      "id": "h1-141",
+      "word": "stack",
+      "meaning": "쌓다, 쌓아 올리다; 더미",
+      "scene": "cozy library study room, cute chibi mannequin carefully stacking a tall neat stack of hardcover books on a sturdy wooden table, floor lamp and bookshelf",
+      "status": "SUCCESS",
+      "elapsed_sec": 454.7,
+      "size_kb": 934.5
+    }
+  ]
+}

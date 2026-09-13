@@ -16,11 +16,11 @@ description: >-
 
 ## 🎨 선형그래픽 및 3~3.5등신 픽토그램 캐릭터 조형 원칙
 
-1. **전체적인 비율 및 실루엣 (3~3.5등신 SD 비율 & 화면 대비 아담한 캐릭터 크기 축소 & 여백 중심 구도)**:
+1. **전체적인 비율 및 실루엣 (3~3.5등신 SD 비율 & 상황별 유연한 크기 자유도 & 과도하게 큰 인물 엄격 배제)**:
    - 몸체에 비해 머리가 확연히 큰 **3~3.5등신 SD(Super Deformed) 비율**을 적용해 친근하고 직관적인 인상을 줍니다.
    - 각진 모서리나 해부학적인 골격 굴곡(쇄골, 어깨 각도, 척추 라인 등)을 철저히 배제하고 완만한 곡선 위주로 매끄럽게 이어집니다.
-   - **화면 대비 캐릭터 크기 축소 (컴팩트 스케일링 & 여백 확보)**: 캐릭터가 화면을 과도하게 가득 채우거나 거대하게 묘사되지 않도록, 전체적으로 아담하고 작은 컴팩트 스케일(Modest compact scale, small chibi figure)을 엄격히 유지합니다. 인물은 화면의 약 1/3~1/4 수준으로 아담하게 위치하며, 주변에 충분한 시각적 여백(Breathing room, negative space)과 시원한 배경 공간감이 풍성하게 드러나도록 와이드 구도로 연출합니다.
-   - 프롬프트 키워드: `3 to 3.5 head-to-body chibi SD ratio cute character, large prominent smooth spherical bald round head, gentle organic curving silhouette, modest compact character scale, small adorable chibi figure in spacious wide framing, plenty of surrounding negative space and breathing room around character, balanced scene composition, full body comfortably framed within scene`.
+   - **사람 크기 자유도 및 상한선 (자연스러운 씬 스케일링 & 거대 인물 배제)**: 씬의 분위기와 배경 구성(원근감, 실내/야외 공간감)에 맞추어 인물의 크기에 자연스러운 자유도를 부여하되, **인물이 화면을 과도하게 가득 채우거나 거대하게 커지지 않도록(Never oversized)** 제어합니다. 배경 오브젝트와 조화롭게 어우러지는 쾌적한 공간감과 시각적 여백(Breathing room, balanced framing)을 유지하며 전신이 화면 안에 편안하게 들어오도록 연출합니다.
+   - 프롬프트 키워드: `3 to 3.5 head-to-body chibi SD ratio cute character, large prominent smooth spherical bald round head, gentle organic curving silhouette, flexible natural character scale freely tailored to scene context, comfortably sized chibi figure without being oversized, plenty of surrounding breathing room and balanced environmental framing, full body comfortably framed within scene`.
 2. **두상 및 이목구비 (구형 민머리 & 점/선 압축 얼굴)**:
    - **매끄러운 구형 민머리**: 귀, 머리카락, 헤어라인, 턱선이 일절 생략된 매끄러운 원형/구형 두상입니다.
    - **점과 선으로 압축된 이목구비**: 흰자위나 동공 없이 단순한 **두 개의 검은 점(Dot) 눈**과 얇은 호선 형태의 **가벼운 미소선(Smile line) 입** 하나로만 표현합니다. 코, 눈썹, 입술 두께, 치아는 일절 묘사하지 않습니다.

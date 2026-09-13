@@ -31,6 +31,8 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-13
+- 중2 22단원 빠진 그림 4장 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상: wagon, mail, log, coast
 - 중2 21단원 빠진 그림 8장 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
   - 대상: boring, fair, modern, harmful, calm, special, steady, company
 - 중2 20단원 빠진 그림 4장 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)

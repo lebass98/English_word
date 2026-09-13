@@ -1,6 +1,6 @@
 {
-  "current_unit": 21,
-  "current_word": "company",
+  "current_unit": 22,
+  "current_word": "coast",
   "total_targets": 128,
   "completed_words": [
     {
@@ -100,6 +100,34 @@
       "unit": 21,
       "elapsed_sec": 220.5,
       "size_kb": 593.5
+    },
+    {
+      "word": "wagon",
+      "id": "m2-421",
+      "unit": 22,
+      "elapsed_sec": 215.9,
+      "size_kb": 903.2
+    },
+    {
+      "word": "mail",
+      "id": "m2-429",
+      "unit": 22,
+      "elapsed_sec": 200.9,
+      "size_kb": 852.4
+    },
+    {
+      "word": "log",
+      "id": "m2-430",
+      "unit": 22,
+      "elapsed_sec": 200.0,
+      "size_kb": 860.0
+    },
+    {
+      "word": "coast",
+      "id": "m2-440",
+      "unit": 22,
+      "elapsed_sec": 200.1,
+      "size_kb": 948.5
     }
   ]
 }

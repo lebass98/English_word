@@ -1,0 +1,17 @@
+import { ImageSourcePropType } from "react-native";
+
+// "u" 로 시작하는 단어 그림. scripts/sync_word_images.py 가 만든다 (손으로 고치지 않는다)
+export const IMAGES_U: Record<string, ImageSourcePropType> = {
+  umbrella: require("../../../assets/words/u/umbrella.png"),
+  understand: require("../../../assets/words/u/understand.png"),
+  unification: require("../../../assets/words/u/unification.png"),
+  uniform: require("../../../assets/words/u/uniform.png"),
+  unity: require("../../../assets/words/u/unity.png"),
+  universe: require("../../../assets/words/u/universe.png"),
+  unless: require("../../../assets/words/u/unless.png"),
+  unlike: require("../../../assets/words/u/unlike.png"),
+  upset: require("../../../assets/words/u/upset.png"),
+  "upside down": require("../../../assets/words/u/upside-down.png"),
+  useless: require("../../../assets/words/u/useless.png"),
+  usually: require("../../../assets/words/u/usually.png"),
+};

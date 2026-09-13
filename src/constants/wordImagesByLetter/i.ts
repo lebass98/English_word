@@ -1,0 +1,33 @@
+import { ImageSourcePropType } from "react-native";
+
+// "i" 로 시작하는 단어 그림. scripts/sync_word_images.py 가 만든다 (손으로 고치지 않는다)
+export const IMAGES_I: Record<string, ImageSourcePropType> = {
+  iceberg: require("../../../assets/words/i/iceberg.png"),
+  idea: require("../../../assets/words/i/idea.png"),
+  imagine: require("../../../assets/words/i/imagine.png"),
+  immediately: require("../../../assets/words/i/immediately.png"),
+  import: require("../../../assets/words/i/import.png"),
+  important: require("../../../assets/words/i/important.png"),
+  include: require("../../../assets/words/i/include.png"),
+  increase: require("../../../assets/words/i/increase.png"),
+  indeed: require("../../../assets/words/i/indeed.png"),
+  independent: require("../../../assets/words/i/independent.png"),
+  industrial: require("../../../assets/words/i/industrial.png"),
+  information: require("../../../assets/words/i/information.png"),
+  inner: require("../../../assets/words/i/inner.png"),
+  inning: require("../../../assets/words/i/inning.png"),
+  innocent: require("../../../assets/words/i/innocent.png"),
+  inquire: require("../../../assets/words/i/inquire.png"),
+  insect: require("../../../assets/words/i/insect.png"),
+  instead: require("../../../assets/words/i/instead.png"),
+  instrument: require("../../../assets/words/i/instrument.png"),
+  interest: require("../../../assets/words/i/interest.png"),
+  interesting: require("../../../assets/words/i/interesting.png"),
+  internal: require("../../../assets/words/i/internal.png"),
+  international: require("../../../assets/words/i/international.png"),
+  intimate: require("../../../assets/words/i/intimate.png"),
+  introduce: require("../../../assets/words/i/introduce.png"),
+  invader: require("../../../assets/words/i/invader.png"),
+  invent: require("../../../assets/words/i/invent.png"),
+  ivy: require("../../../assets/words/i/ivy.png"),
+};

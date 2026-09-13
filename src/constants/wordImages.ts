@@ -366,6 +366,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   fierce: require("../../assets/words/fierce.png"),
   fight: require("../../assets/words/fight.png"),
   figure: require("../../assets/words/figure.png"),
+  fill: require("../../assets/words/fill.png"),
   finally: require("../../assets/words/finally.png"),
   firm: require("../../assets/words/firm.png"),
   flame: require("../../assets/words/flame.png"),

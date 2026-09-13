@@ -1,6 +1,6 @@
 {
-  "current_unit": 23,
-  "current_word": "blood",
+  "current_unit": 24,
+  "current_word": "horn",
   "total_targets": 128,
   "completed_words": [
     {
@@ -142,6 +142,20 @@
       "unit": 23,
       "elapsed_sec": 212.0,
       "size_kb": 847.8
+    },
+    {
+      "word": "servant",
+      "id": "m2-468",
+      "unit": 24,
+      "elapsed_sec": 217.6,
+      "size_kb": 924.1
+    },
+    {
+      "word": "horn",
+      "id": "m2-479",
+      "unit": 24,
+      "elapsed_sec": 218.1,
+      "size_kb": 696.9
     }
   ]
 }

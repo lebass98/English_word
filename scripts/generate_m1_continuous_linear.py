@@ -2651,12 +2651,128 @@ UNIT_DATA = {
             "id": "m1-740", "word": "scene", "meaning": "장면, 현장",
             "scene": "outdoor movie filming set, creative cute slender stickman film director looking through handheld viewfinder framing a dramatic movie scene with clapperboard prop, studio lights and floor line"
         }
+    ],
+    38: [
+        {
+            "id": "m1-741", "word": "site", "meaning": "장소, 현장",
+            "scene": "historic architectural excavation site, curious cute slender stickman archaeologist examining ancient stone column ruins with magnifying glass, ground line"
+        },
+        {
+            "id": "m1-742", "word": "fun", "meaning": "재미, 즐거움",
+            "scene": "cheerful amusement park playground, ecstatic cute slender stickman sliding down spiral playground slide with raised hands in pure fun and laughter, sandpit line"
+        },
+        {
+            "id": "m1-743", "word": "interesting", "meaning": "재미있는, 흥미로운",
+            "scene": "quiet cozy library study nook, intrigued cute slender stickman reading a fascinating illustrated science discovery book with wide curious eyes, bookshelf and floor line"
+        },
+        {
+            "id": "m1-744", "word": "judge", "meaning": "재판관, 판사",
+            "scene": "formal solemn courtroom, dignified cute slender judge stickman sitting high at mahogany judicial bench tapping wooden gavel firmly, law books and courtroom floor line"
+        },
+        {
+            "id": "m1-745", "word": "enemy", "meaning": "적",
+            "scene": "classic fairytale castle parapet, brave cute slender knight stickman standing guard with shield looking out across moat at distant opposing rival knight stickman, stone wall line"
+        },
+        {
+            "id": "m1-746", "word": "properly", "meaning": "적절하게, 제대로",
+            "scene": "bright organized laboratory workbench, meticulous cute slender scientist stickman carefully measuring chemical liquid with precision pipette properly into test tube rack, desk and floor line"
+        },
+        {
+            "id": "m1-747", "word": "electricity", "meaning": "전기",
+            "scene": "bright physics classroom laboratory, amazed cute slender stickman student observing crackling electric spark arcs leaping across glass plasma ball generator, lab bench and floor line"
+        },
+        {
+            "id": "m1-748", "word": "coil", "meaning": "전선, 코일",
+            "scene": "electronics engineering workshop desk, focused cute slender stickman technician carefully winding insulated copper wire coil around magnetic iron core, soldering iron and workbench line"
+        },
+        {
+            "id": "m1-749", "word": "war", "meaning": "전쟁",
+            "scene": "historic museum panorama exhibit, thoughtful cute slender stickman visitor observing detailed miniature peace memorial diorama learning about historic ancient war, display case and floor line"
+        },
+        {
+            "id": "m1-750", "word": "whole", "meaning": "전체의",
+            "scene": "sunny family dining room, happy cute slender stickman carrying a large whole freshly baked golden crust fruit pie on round baking tray to dining table, kitchen floor line"
+        },
+        {
+            "id": "m1-751", "word": "entire", "meaning": "전체의",
+            "scene": "spacious geography classroom, proud cute slender stickman teacher holding pointer wand indicating the entire world globe map displayed across wide wall chalkboard, classroom floor line"
+        },
+        {
+            "id": "m1-752", "word": "tradition", "meaning": "전통",
+            "scene": "historic folk festival village square, joyful cute slender stickman performing ceremonial folk circle dance celebrating beloved cultural heritage tradition, lanterns and cobblestone ground line"
+        },
+        {
+            "id": "m1-753", "word": "battle", "meaning": "전투",
+            "scene": "grand tournament arena stage, two energetic cute slender stickman martial artists engaging in friendly disciplined sparring contest, spectators and mat floor line"
+        },
+        {
+            "id": "m1-754", "word": "telephone", "meaning": "전화",
+            "scene": "cozy vintage hallway table, cheerful cute slender stickman holding classic rotary telephone handset chatting and laughing happily with good friend, wallpaper and wooden floor line"
+        },
+        {
+            "id": "m1-755", "word": "temple", "meaning": "절, 사원",
+            "scene": "peaceful misty bamboo forest hillside, serene cute slender stickman traveler walking toward ancient wooden temple pagoda with gentle stone lantern steps, mountain path line"
+        },
+        {
+            "id": "m1-756", "word": "bow", "meaning": "절하다, 인사하다",
+            "scene": "polite martial arts dojo hall, respectful cute slender stickman student in tidy uniform bowing low with bent waist in polite traditional greeting to master, wooden dojo floor line"
+        },
+        {
+            "id": "m1-757", "word": "score", "meaning": "점수",
+            "scene": "sunny basketball playground court, cheering cute slender stickman player looking up at high scoreboard flipper showing winning final match score, basketball hoop and court line"
+        },
+        {
+            "id": "m1-758", "word": "clerk", "meaning": "점원",
+            "scene": "charming corner grocery shop counter, friendly polite cute slender clerk stickman handing brown paper grocery bag with fresh produce to customer stickman, shop counter and floor line"
+        },
+        {
+            "id": "m1-759", "word": "plate", "meaning": "접시",
+            "scene": "sparkling clean kitchen sink counter, diligent cute slender stickman gently wiping a smooth ceramic porcelain dining plate with soft dishcloth, drying rack and kitchen floor line"
+        },
+        {
+            "id": "m1-760", "word": "dish", "meaning": "접시, 음식",
+            "scene": "cozy restaurant dining table, smiling cute slender stickman serving a delicious steaming hot gourmet pasta dish garnished with fresh basil leaves, dining chair and floor line"
+        }
     ]
 }
+
+def deduplicate_word_images():
+    if not os.path.exists(WORD_IMAGES_TS):
+        return
+    import re
+    with open(WORD_IMAGES_TS, "r", encoding="utf-8") as f:
+        lines = f.readlines()
+    header, entries, seen_order, footer = [], {}, [], []
+    in_entries = False
+    for line in lines:
+        m = re.match(r"^\s*([\"\x27]?)([\w-]+)\1:\s*(require\(.+\)),?$", line)
+        if m:
+            key, val = m.group(2), m.group(3)
+            if key not in entries:
+                seen_order.append(key)
+            entries[key] = val
+            in_entries = True
+        else:
+            if not in_entries:
+                header.append(line)
+            else:
+                footer.append(line)
+    out = "".join(header)
+    for k in seen_order:
+        if "-" in k or not k.isidentifier():
+            out += f'  "{k}": {entries[k]},\n'
+        else:
+            out += f'  {k}: {entries[k]},\n'
+    out += "".join(footer)
+    with open(WORD_IMAGES_TS, "w", encoding="utf-8") as f:
+        f.write(out)
 
 def deploy_unit(unit_num: int):
     print(f"\n[Unit {unit_num}] 작업 완료 후 배포 파이프라인 가동...", flush=True)
     
+    # 0. wordImages.ts 중복 키 자동 정리
+    deduplicate_word_images()
+
     # 1. 외장하드 ._* 파일 먼저 정리 (Lint 에러 방지)
     subprocess.run(["find", ".", "..", "-name", "._*", "-type", "f", "-delete"], cwd=PROJECT_ROOT)
     print("._* 임시 파일 정리 완료", flush=True)
@@ -2678,6 +2794,14 @@ def deploy_unit(unit_num: int):
         print(f"Git 배포 완료: 유닛 {unit_num}", flush=True)
     except Exception as e:
         print(f"Git 커밋/푸시 중 오류: {e}", flush=True)
+        try:
+            deduplicate_word_images()
+            subprocess.run(["git", "add", "."], cwd=PROJECT_ROOT)
+            subprocess.run(["git", "rebase", "--continue"], cwd=PROJECT_ROOT, env={**os.environ, "GIT_EDITOR": "true"})
+            subprocess.run(["git", "push", "origin", "main"], cwd=PROJECT_ROOT, check=True)
+            print(f"Git 배포 재시도 성공: 유닛 {unit_num}", flush=True)
+        except Exception as e2:
+            print(f"Git 배포 재시도 오류: {e2}", flush=True)
 
 def main():
     parser = argparse.ArgumentParser(description="중1 선형그래픽 연속 생성기")

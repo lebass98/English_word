@@ -159,6 +159,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   charming: require("../../assets/words/charming.png"),
   chase: require("../../assets/words/chase.png"),
   cheap: require("../../assets/words/cheap.png"),
+  check: require("../../assets/words/check.png"),
   cheek: require("../../assets/words/cheek.png"),
   chest: require("../../assets/words/chest.png"),
   chief: require("../../assets/words/chief.png"),

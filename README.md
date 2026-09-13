@@ -31,6 +31,8 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-13
+- 중2 30단원 빠진 그림 3장 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상: bean, subway, dinning room
 - 중1 41단원 빠진 그림 1장 Draw Things 선형그래픽으로 생성 및 등록
   - 대상 단어: pick
 - 중1 43단원 빠진 그림 1장 Draw Things 선형그래픽으로 생성 및 등록

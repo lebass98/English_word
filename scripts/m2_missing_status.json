@@ -1,6 +1,6 @@
 {
-  "current_unit": 29,
-  "current_word": "comedy",
+  "current_unit": 30,
+  "current_word": "dinning room",
   "total_targets": 73,
   "completed_words": [
     {
@@ -51,6 +51,27 @@
       "unit": 29,
       "elapsed_sec": 251.2,
       "size_kb": 1118.9
+    },
+    {
+      "word": "bean",
+      "id": "m2-588",
+      "unit": 30,
+      "elapsed_sec": 251.0,
+      "size_kb": 1240.6
+    },
+    {
+      "word": "subway",
+      "id": "m2-593",
+      "unit": 30,
+      "elapsed_sec": 252.3,
+      "size_kb": 1361.7
+    },
+    {
+      "word": "dinning room",
+      "id": "m2-596",
+      "unit": 30,
+      "elapsed_sec": 251.4,
+      "size_kb": 945.1
     }
   ]
 }

@@ -41,6 +41,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   accommodate: require("../../assets/words/accommodate.png"),
   accommodation: require("../../assets/words/accommodation.png"),
   "accompanied by": require("../../assets/words/accompanied-by.png"),
+  accompany: require("../../assets/words/accompany.png"),
   ache: require("../../assets/words/ache.png"),
   activity: require("../../assets/words/activity.png"),
   actually: require("../../assets/words/actually.png"),

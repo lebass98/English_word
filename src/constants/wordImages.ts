@@ -510,6 +510,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   introduce: require("../../assets/words/introduce.png"),
   invader: require("../../assets/words/invader.png"),
   invent: require("../../assets/words/invent.png"),
+  invite: require("../../assets/words/invite.png"),
   ivy: require("../../assets/words/ivy.png"),
   jar: require("../../assets/words/jar.png"),
   jean: require("../../assets/words/jean.png"),

@@ -25,6 +25,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   abroad: require("../../assets/words/abroad.png"),
   abrupt: require("../../assets/words/abrupt.png"),
   absent: require("../../assets/words/absent.png"),
+  absolute: require("../../assets/words/absolute.png"),
   abuse: require("../../assets/words/abuse.png"),
   academic: require("../../assets/words/academic.png"),
   accept: require("../../assets/words/accept.png"),

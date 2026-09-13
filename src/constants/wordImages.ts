@@ -663,6 +663,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   pet: require("../../assets/words/pet.png"),
   petal: require("../../assets/words/petal.png"),
   photographer: require("../../assets/words/photographer.png"),
+  pick: require("../../assets/words/pick.png"),
   pigeon: require("../../assets/words/pigeon.png"),
   pilgrim: require("../../assets/words/pilgrim.png"),
   pill: require("../../assets/words/pill.png"),

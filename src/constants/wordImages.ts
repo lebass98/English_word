@@ -597,6 +597,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   nature: require("../../assets/words/nature.png"),
   navy: require("../../assets/words/navy.png"),
   nearly: require("../../assets/words/nearly.png"),
+  necessary: require("../../assets/words/necessary.png"),
   neighbor: require("../../assets/words/neighbor.png"),
   neither: require("../../assets/words/neither.png"),
   nephew: require("../../assets/words/nephew.png"),

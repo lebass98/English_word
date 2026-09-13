@@ -1089,4 +1089,6 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   "mass communication": require("../../assets/words/mass-communication.png"),
   "no smoking section": require("../../assets/words/no-smoking-section.png"),
   "upside down": require("../../assets/words/upside-down.png"),
+  "chopstick": require("../../assets/words/chopstick.png"),
+  "m1-761": require("../../assets/words/chopstick.png"),
 };

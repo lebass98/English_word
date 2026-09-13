@@ -219,6 +219,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   crown: require("../../assets/words/crown.png"),
   crucial: require("../../assets/words/crucial.png"),
   culture: require("../../assets/words/culture.png"),
+  curious: require("../../assets/words/curious.png"),
   custom: require("../../assets/words/custom.png"),
   damage: require("../../assets/words/damage.png"),
   danger: require("../../assets/words/danger.png"),

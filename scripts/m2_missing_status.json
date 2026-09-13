@@ -1,35 +1,14 @@
 {
   "current_unit": 19,
-  "current_word": "curious",
+  "current_word": "intimate",
   "missing_found_in_unit": [],
   "completed_words": [
     {
-      "word": "hydrogen",
-      "id": "m2-74",
-      "unit": 4,
-      "elapsed_sec": 294.5484371185303,
-      "size_kb": 792.6
-    },
-    {
-      "word": "control",
-      "id": "m2-75",
-      "unit": 4,
-      "elapsed_sec": 222.74123096466064,
-      "size_kb": 801.9
-    },
-    {
-      "word": "uniform",
-      "id": "m2-76",
-      "unit": 4,
-      "elapsed_sec": 222.35866975784302,
-      "size_kb": 724.5
-    },
-    {
-      "word": "damage",
-      "id": "m2-78",
-      "unit": 4,
-      "elapsed_sec": 221.87581324577332,
-      "size_kb": 851.9
+      "word": "curious",
+      "id": "m2-365",
+      "unit": 19,
+      "elapsed_sec": 354.542396068573,
+      "size_kb": 981.5
     }
   ]
 }

@@ -60,7 +60,13 @@ SCENE_PRESETS = {
     "hydrogen": "clean chemistry science laboratory, cute chibi mannequin scientist observing a clear glass electrolysis container separating water into glowing hydrogen and oxygen gas bubbles, scientific flasks and Periodic Table poster on wall",
     "control": "high-tech operations control room, calm cute chibi mannequin operator at a neat console desk steering control levers and monitoring orderly signal monitors with complete steady composure",
     "uniform": "tailor studio and fitting room, cute chibi mannequin looking into a full-length dressing mirror admiring a crisp neat classic school uniform jacket displayed on a tailor mannequin stand",
-    "damage": "cozy suburban house attic and roof, cute chibi mannequin inspector carefully examining cracked storm damage shingles on a wooden roof with a clipboard and gentle inspection tool after heavy rain"
+    "damage": "cozy suburban house attic and roof, cute chibi mannequin inspector carefully examining cracked storm damage shingles on a wooden roof with a clipboard and gentle inspection tool after heavy rain",
+    # Unit 19
+    "curious": "antique curiosity shop or library, cute curious chibi mannequin leaning forward examining an ancient mysterious glowing brass compass with magnifying glass, wooden curiosities shelves and starry window",
+    "intimate": "warm cozy hearthside reading nook, two close cute chibi mannequin friends sitting together on plush cushions sharing a warm teapot and intimate quiet conversation, soft floor lamp and bookshelf",
+    "grave": "formal historic council chambers, solemn cute chibi mannequin statesman standing before a grand oak council table addressing a grave serious national proclamation, heavy drapes and antique stone pillars",
+    "elementary": "bright friendly beginner art workshop, cute chibi mannequin student happily learning elementary basic watercolor painting brush strokes on an easel canvas, color mixing palette and jar",
+    "greedy": "lavish banquet dining hall, greedy cute chibi mannequin hoarding a towering high stack of golden freshly baked pies and cakes all to itself on a long banquet table, ornate candelabras"
 }
 
 def save_status(data: dict):

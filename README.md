@@ -31,6 +31,10 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-13
+- 중학교 2학년 Unit 19 누락 단어(`curious`) 선형그래픽 일러스트 생성 및 등록 완료 (Draw Things 로컬 API 기반)
+  - 1024x1024 해상도, 3~3.5등신 순백색 마네킹 픽토그램 캐릭터, 화면 높이 60% 이하(30~35% 아담한 전신 크기 + 상단 70% 서가 풍성한 배경 씬)
+  - `sync_word_images.py` 스크립트를 통해 `src/constants/wordImages.ts` 레지스트리 갱신 완료
+
 - 중학교 2학년 Unit 4 누락 단어 선형그래픽 일러스트 4종 생성 및 등록 완료 (Draw Things 로컬 API 기반)
   - 1024x1024 해상도, 3~3.5등신 순백색 마네킹 픽토그램 캐릭터, 인물 크기 최대 60% 이하 엄격 제한 및 여백 중심 와이드 구도
   - 생성 단어: hydrogen, control, uniform, damage

@@ -804,6 +804,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   sad: require("../../assets/words/sad.png"),
   safely: require("../../assets/words/safely.png"),
   sail: require("../../assets/words/sail.png"),
+  sale: require("../../assets/words/sale.png"),
   salt: require("../../assets/words/salt.png"),
   sample: require("../../assets/words/sample.png"),
   sand: require("../../assets/words/sand.png"),

@@ -1017,6 +1017,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   virtual: require("../../assets/words/virtual.png"),
   vision: require("../../assets/words/vision.png"),
   voice: require("../../assets/words/voice.png"),
+  vote: require("../../assets/words/vote.png"),
   voyage: require("../../assets/words/voyage.png"),
   wagon: require("../../assets/words/wagon.png"),
   wake: require("../../assets/words/wake.png"),

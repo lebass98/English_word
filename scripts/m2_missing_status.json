@@ -1,14 +1,14 @@
 {
   "current_unit": 19,
-  "current_word": "intimate",
+  "current_word": "grave",
   "missing_found_in_unit": [],
   "completed_words": [
     {
-      "word": "curious",
-      "id": "m2-365",
+      "word": "intimate",
+      "id": "m2-367",
       "unit": 19,
-      "elapsed_sec": 354.542396068573,
-      "size_kb": 981.5
+      "elapsed_sec": 177.45455384254456,
+      "size_kb": 851.3
     }
   ]
 }

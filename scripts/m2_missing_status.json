@@ -1,6 +1,6 @@
 {
-  "current_unit": 19,
-  "current_word": "greedy",
+  "current_unit": 20,
+  "current_word": "serious",
   "total_targets": 128,
   "completed_words": [
     {
@@ -16,6 +16,34 @@
       "unit": 19,
       "elapsed_sec": 207.0,
       "size_kb": 867.3
+    },
+    {
+      "word": "vain",
+      "id": "m2-387",
+      "unit": 20,
+      "elapsed_sec": 212.6,
+      "size_kb": 1063.4
+    },
+    {
+      "word": "solar",
+      "id": "m2-391",
+      "unit": 20,
+      "elapsed_sec": 216.2,
+      "size_kb": 967.3
+    },
+    {
+      "word": "single",
+      "id": "m2-393",
+      "unit": 20,
+      "elapsed_sec": 217.1,
+      "size_kb": 742.5
+    },
+    {
+      "word": "serious",
+      "id": "m2-395",
+      "unit": 20,
+      "elapsed_sec": 218.2,
+      "size_kb": 704.0
     }
   ]
 }

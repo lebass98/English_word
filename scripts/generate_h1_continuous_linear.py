@@ -41,26 +41,47 @@ STATUS_FILE = os.path.join(SCRIPT_DIR, "h1_continuous_status.json")
 # Unit별 고품질 영문 씬 콘셉트 프리셋 사전 (100% 순수 영문 전용)
 SCENE_PRESETS = {
     # Unit 3 (h1-41 ~ h1-60)
-    "aspect": "architectural design studio, two cute slender stickman architects examining a large miniature building model from different angles and aspects, blueprints and rulers on drafting table, large window",
-    "significant": "modern scientific research lab, excited cute slender stickman scientist pointing joyfully to a significant breakthrough spike graph on a glowing computer monitor, laboratory glassware and colleague clapping",
-    "melt": "warm cozy kitchen table, cute slender stickman watching a golden square of butter melt smoothly over a stack of warm hotcakes, steaming cup of cocoa, sunny window",
-    "advance": "futuristic robotics technology workshop, cute slender stickman engineer watching an advanced humanoid bipedal robot take its first successful forward steps, tool bench, computer screens and cables",
-    "marine": "deep blue oceanic research vessel laboratory, cute slender stickman marine biologist looking through glass porthole observing swimming sea turtles and coral reef, scientific water sampling tubes",
-    "solid": "cozy masonry workshop, strong cute slender stickman builder tapping a solid sturdy rectangular stone block with a hammer testing its solid durability, neatly stacked brick wall, mortar trowel",
-    "passage": "ancient castle library, cute slender stickman explorer holding a lantern walking through a secret hidden stone passage hallway between towering wooden bookshelves, stone arched doorway",
-    "master": "traditional artistic pottery studio, skilled cute slender stickman master craftsman gently shaping a smooth clay ceramic vase on a spinning pottery wheel, finished clay pots on wooden shelves",
-    "minute": "precision watchmaker workbench, focused cute slender stickman watchmaker using an eyepiece loupe and fine tweezers to adjust tiny minute delicate gear cogs inside an antique gold pocket watch, desk lamp",
-    "vision": "scenic hilltop observation deck, cute slender stickman leader holding a brass telescope looking into distant horizon at sunrise with clear future vision, wind blowing gently, mountain ridges",
-    "experiment": "chemistry science classroom, focused cute slender stickman student carefully pouring blue liquid into a bubbling glass flask with glowing bubbles, test tube rack, chalkboard equations",
-    "shelter": "mountain hillside during a rainy day, kind cute slender stickman guiding a friendly puppy into a sturdy wooden emergency shelter cabin porch away from rain droplets, warm lamp inside",
-    "commit": "community civic hall podium, dedicated cute slender stickman raising right hand committing solemnly to public duty and service, audience seated in auditorium chairs, flags in background",
-    "possible": "bright engineering workshop, innovative cute slender stickman successfully lighting up a floating magnetic light bulb proving the impossible possible, inspiring chalkboard notes, work tools",
-    "multiple": "high-tech control workstation, busy multitasking cute slender stickman operator managing multiple digital display monitors showing weather maps and data graphs simultaneously, swivel chair",
-    "routine": "bright sunny morning bedroom and bathroom, cute slender stickman following healthy morning routine, holding a toothbrush by the sink mirror, folded blanket on bed, wall calendar",
-    "tremendous": "scenic vista plateau, awe-struck cute slender stickman standing before a tremendous roaring waterfall cascading down grand rocky cliffs, rainbow mist, flying birds",
-    "crucial": "medical operating or engineering planning room, serious cute slender stickman specialist holding a crucial key blueprint blueprint component that fits into center mechanism, team watching closely",
-    "vast": "endless desert or ocean shore, tiny cute slender stickman standing atop a rolling sand dune gazing out at the vast infinite desert plains under a wide sky with distant mountain silhouettes",
-    "develop": "community garden or software startup studio, cute slender stickman nurturing a sprouting green plant sapling in rich soil while colleague codes on laptop, growing tall together, watering can"
+    "aspect": "architectural design studio, two cute chibi mannequin architects examining a large miniature building model from different angles and aspects, blueprints and rulers on drafting table, large window",
+    "significant": "modern scientific research lab, excited cute chibi mannequin scientist pointing joyfully to a significant breakthrough spike graph on a glowing computer monitor, laboratory glassware and colleague clapping",
+    "melt": "warm cozy kitchen table, cute chibi mannequin watching a golden square of butter melt smoothly over a stack of warm hotcakes, steaming cup of cocoa, sunny window",
+    "advance": "futuristic robotics technology workshop, cute chibi mannequin engineer watching an advanced humanoid bipedal robot take its first successful forward steps, tool bench, computer screens and cables",
+    "marine": "deep blue oceanic research vessel laboratory, cute chibi mannequin marine biologist looking through glass porthole observing swimming sea turtles and coral reef, scientific water sampling tubes",
+    "solid": "cozy masonry workshop, strong cute chibi mannequin builder tapping a solid sturdy rectangular stone block with a hammer testing its solid durability, neatly stacked brick wall, mortar trowel",
+    "passage": "ancient castle library, cute chibi mannequin explorer holding a lantern walking through a secret hidden stone passage hallway between towering wooden bookshelves, stone arched doorway",
+    "master": "traditional artistic pottery studio, skilled cute chibi mannequin master craftsman gently shaping a smooth clay ceramic vase on a spinning pottery wheel, finished clay pots on wooden shelves",
+    "minute": "precision watchmaker workbench, focused cute chibi mannequin watchmaker using an eyepiece loupe and fine tweezers to adjust tiny minute delicate gear cogs inside an antique gold pocket watch, desk lamp",
+    "vision": "scenic hilltop observation deck, cute chibi mannequin leader holding a brass telescope looking into distant horizon at sunrise with clear future vision, wind blowing gently, mountain ridges",
+    "experiment": "chemistry science classroom, focused cute chibi mannequin student carefully pouring blue liquid into a bubbling glass flask with glowing bubbles, test tube rack, chalkboard equations",
+    "shelter": "mountain hillside during a rainy day, kind cute chibi mannequin guiding a friendly puppy into a sturdy wooden emergency shelter cabin porch away from rain droplets, warm lamp inside",
+    "commit": "community civic hall podium, dedicated cute chibi mannequin raising right hand committing solemnly to public duty and service, audience seated in auditorium chairs, flags in background",
+    "possible": "bright engineering workshop, innovative cute chibi mannequin successfully lighting up a floating magnetic light bulb proving the impossible possible, inspiring chalkboard notes, work tools",
+    "multiple": "high-tech control workstation, busy multitasking cute chibi mannequin operator managing multiple digital display monitors showing weather maps and data graphs simultaneously, swivel chair",
+    "routine": "bright sunny morning bedroom and bathroom, cute chibi mannequin following healthy morning routine, holding a toothbrush by the sink mirror, folded blanket on bed, wall calendar",
+    "tremendous": "scenic vista plateau, awe-struck cute chibi mannequin standing before a tremendous roaring waterfall cascading down grand rocky cliffs, rainbow mist, flying birds",
+    "crucial": "medical operating or engineering planning room, serious cute chibi mannequin specialist holding a crucial key blueprint blueprint component that fits into center mechanism, team watching closely",
+    "vast": "endless desert or ocean shore, tiny cute chibi mannequin standing atop a rolling sand dune gazing out at the vast infinite desert plains under a wide sky with distant mountain silhouettes",
+    "develop": "community garden or software startup studio, cute chibi mannequin nurturing a sprouting green plant sapling in rich soil while colleague codes on laptop, growing tall together, watering can",
+    # Unit 5 (h1-81 ~ h1-100)
+    "entry": "grand exhibition hall entrance archway, cute chibi mannequin visitor scanning an admission ticket badge at the modern turnstile gate to enter, welcome banners and velvet stanchions",
+    "magazine": "cozy library lounge reading nook, cute chibi mannequin sitting comfortably on a cushioned armchair flipping through the glossy illustrated pages of an open magazine, wooden bookshelf and coffee table",
+    "increase": "bright analytical office, smiling cute chibi mannequin standing beside an upward climbing financial growth line chart on a presentation easel, stack of rising coins on the desk",
+    "pour": "cozy cafe counter or kitchen, cute chibi mannequin barista carefully pouring hot water from an elegant slender gooseneck kettle into a glass coffee drip cone, ceramic mugs and coffee beans",
+    "deliver": "suburban house front porch, cheerful cute chibi mannequin courier handing a neat cardboard delivery parcel box to a resident at the open doorway, delivery bicycle with basket parked nearby",
+    "convert": "green energy workshop laboratory, cute chibi mannequin technician adjusting solar inverter device converting rooftop sun ray beams into electrical battery energy, power gauge meter and cables",
+    "region": "cartography study room, cute chibi mannequin geographer holding a wooden pointer rod indicating a distinct geographical highlighted region on a grand wall world map, globe and compass on desk",
+    "wage": "cozy company office accounting desk, happy cute chibi mannequin employee receiving a monthly pay wage salary envelope with a smile, desk calendar and ledger notebook",
+    "vary": "artisan ceramic studio shelf, cute chibi mannequin potter standing admiring a collection of pottery jars that vary in different sizes, geometric heights and silhouettes, clay sculpting tools",
+    "storm": "cozy attic bedroom window, cute chibi mannequin looking through window glass pane at a stormy rainy night sky with diagonal rain streaks and distant zigzag lightning flash, soft warm bedside lamp",
+    "electronic": "modern maker electronics lab, focused cute chibi mannequin engineer using a fine precision soldering iron on a green electronic circuit board with microchips and tiny wires, desk magnifier",
+    "orbit": "planetary science astronomy lab, cute chibi mannequin astronomer observing a glowing mechanical orrery model showing a small moon satellite in circular orbit around a large planet globe",
+    "interact": "bright community innovation lounge, two friendly cute chibi mannequins gesturing happily as they interact in lively conversation while pointing at shared tablet screen, potted plants and round table",
+    "household": "warm living room home scene, loving cute chibi mannequin family gathered together in their cozy household, sofa, floor rug, wall picture frame and warm floor lamp",
+    "climate": "environmental meteorological station, cute chibi mannequin climatologist observing world climate map display showing temperature zones and weather atmospheric sensors, barometer on wall",
+    "grant": "university auditorium ceremony stage, cute chibi mannequin researcher humbly receiving an official research fellowship grant certificate plaque from an academy dean, floral decor and podium",
+    "provide": "community volunteer kitchen, kind cute chibi mannequin volunteer warmly providing a warm bowl of soup and freshly baked loaf of bread to a grateful neighbor across wooden counter",
+    "heritage": "historical museum gallery hall, cute chibi mannequin docent introducing an ancient carved cultural stone pillar monument heritage relic preserved inside a glass pedestal case",
+    "limit": "scenic country road bridge crossing, cute chibi mannequin driver observing a clear round speed limit sign marking road safety regulations, guardrail and open rolling hills",
+    "revolution": "historic town square or technology innovation hub, inspiring cute chibi mannequin leader holding a raised banner sparking a peaceful scientific and cultural revolution, enthusiastic crowd waving"
 }
 
 def clean_english_only(text: str) -> str:
@@ -189,21 +210,22 @@ def generate_unit(unit_num: int, unit_words: list, skip_existing: bool = True):
 
         prompt = (
             f"linear graphic illustration, complete richly detailed scene of {scene}, "
-            f"thinnest possible 0.05mm ultra-delicate needle-thin hairline ink stroke, "
-            f"extremely fine crisp outlines drawn in dark charcoal ink color #030203, "
-            f"flat smooth light gray canvas background color #f5f6f8, "
-            f"neckless cute slender doodle stickman characters with round bald circle heads attached directly to torso with completely no neck, tiny smiling dot faces, "
+            f"3 to 3.5 head-to-body chibi SD ratio cute characters with large prominent smooth spherical bald round heads, "
+            f"minimalist dot and line face, two simple solid black dot eyes and a tiny thin curved smile line, strictly no nose, no eyebrows, no lips, no ears, no hair, "
+            f"seamless tubular neckless body directly attached to round head with completely no neck, smooth organic curves without clavicle or muscle contours, "
+            f"jointless smooth rubber-hose arms and legs with no elbows and no knees, simplified mitten-like blunt round hands, smooth rounded flat oval foot pads firmly on floor line, "
+            f"blank solid white mannequin pictogram character fill with zero clothing, no seams, no buttons, no folds, no skin texture, genderless universal figure, "
+            f"crisp uniform dark charcoal ink outlines #030203, strictly flat 2d linear graphic, no shading, no gradients, no solid black fills, flat smooth light gray canvas background color #f5f6f8, "
+            f"flexible character scale freely scaled down to fit spacious environment and background framing, balanced scene composition, "
             f"abundant rich background details, furniture, wall decor, floor line, ambient props, "
-            f"strictly flat 2d linear graphic, no shading, no gradients, no solid black fills, empty clean background, "
             f"strictly English text only if any letters appear, absolutely no non-English characters, 100% pure English alphabet A-Z only, completely no Korean characters, strictly no Hangul, strictly no Chinese characters, completely non-Asian script, zero foreign glyphs"
         )
 
         negative_prompt = (
             "non-English text, non-English characters, Korean text, Hangul, Korean letters, Chinese characters, Hanzi, Kanji, Japanese text, Kana, foreign script, pseudo-Hangul, weird Asian glyphs, oriental symbols, non-Latin alphabet, foreign writing, "
-            "neck, long neck, throat, collar, neck line, detailed neck anatomy, "
-            "thick lines, bold outlines, heavy brush strokes, chunky lines, fat strokes, "
-            "pure white #ffffff background, dark background, black background, 3d, realistic, shadow, shading, "
-            "color, gradients, photo, blur, watermark, signature, messy"
+            "realistic human anatomy, realistic face, facial details, nose, eyebrows, eyelashes, eyelids, lips, teeth, ears, hair, hairstyle, neck, long neck, throat, collar, collarbone, muscles, realistic fingers, individual finger joints, fingernails, toes, shoes, clothing, clothes, shirt, pants, wrinkles, folds, "
+            "thick lines, heavy brush strokes, chunky lines, fat strokes, "
+            "pure white #ffffff background, dark background, black background, 3d, 3d render, realistic, shadow, shading, color, gradients, photo, blur, watermark, signature, messy"
         )
 
         payload = {

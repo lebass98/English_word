@@ -1,202 +1,173 @@
 {
-  "unit": 4,
+  "unit": 5,
   "total": 20,
-  "current_word": "survey",
+  "current_word": "revolution",
   "current_index": 20,
   "items": [
     {
       "index": 1,
-      "id": "h1-61",
-      "word": "victim",
-      "meaning": "피해자, 희생자",
-      "scene": "detailed illustrative narrative scene of victim, cute slender stickman The victim of the traffic accident is getting better at the city hospital., indoor room or outdoor setting, rich props",
-      "status": "SUCCESS",
-      "elapsed_sec": 209.2,
-      "size_kb": 775.4
+      "id": "h1-81",
+      "word": "entry",
+      "meaning": "참가, 입장, 가입",
+      "scene": "grand exhibition hall entrance archway, cute chibi mannequin visitor scanning an admission ticket badge at the modern turnstile gate to enter, welcome banners and velvet stanchions",
+      "status": "FAILED"
     },
     {
       "index": 2,
-      "id": "h1-62",
-      "word": "material",
-      "meaning": "재료, 물질, 자료",
-      "scene": "detailed illustrative narrative scene of material, cute slender stickman Wood is a warm material that many Korean houses used long ago., indoor room or outdoor setting, rich props",
-      "status": "SUCCESS",
-      "elapsed_sec": 207.7,
-      "size_kb": 1001.1
+      "id": "h1-82",
+      "word": "magazine",
+      "meaning": "잡지",
+      "scene": "cozy library lounge reading nook, cute chibi mannequin sitting comfortably on a cushioned armchair flipping through the glossy illustrated pages of an open magazine, wooden bookshelf and coffee table",
+      "status": "SKIP_EXISTS",
+      "size_kb": 992.5
     },
     {
       "index": 3,
-      "id": "h1-63",
-      "word": "laundry",
-      "meaning": "세탁물, 세탁일",
-      "scene": "detailed illustrative narrative scene of laundry, cute slender stickman I took my father s coat to the laundry near the station., indoor room or outdoor setting, rich props",
+      "id": "h1-83",
+      "word": "increase",
+      "meaning": "증가하다, 늘다, 인상되다; 증가, 증대",
+      "scene": "bright analytical office, smiling cute chibi mannequin standing beside an upward climbing financial growth line chart on a presentation easel, stack of rising coins on the desk",
       "status": "SKIP_EXISTS",
-      "size_kb": 815.3
+      "size_kb": 883.4
     },
     {
       "index": 4,
-      "id": "h1-64",
-      "word": "internal",
-      "meaning": "내적인, 내부의, 체내의",
-      "scene": "detailed illustrative narrative scene of internal, cute slender stickman The building suffered serious internal damage from the fire., indoor room or outdoor setting, rich props",
-      "status": "SUCCESS",
-      "elapsed_sec": 204.0,
-      "size_kb": 842.0
+      "id": "h1-84",
+      "word": "pour",
+      "meaning": "붓다, 따르다, 마구 쏟아지다",
+      "scene": "cozy cafe counter or kitchen, cute chibi mannequin barista carefully pouring hot water from an elegant slender gooseneck kettle into a glass coffee drip cone, ceramic mugs and coffee beans",
+      "status": "FAILED"
     },
     {
       "index": 5,
-      "id": "h1-65",
-      "word": "ripe",
-      "meaning": "익은, 숙성한",
-      "scene": "detailed illustrative narrative scene of ripe, cute slender stickman These peaches are ripe enough to eat right now., indoor room or outdoor setting, rich props",
-      "status": "SUCCESS",
-      "elapsed_sec": 206.1,
-      "size_kb": 1086.9
+      "id": "h1-85",
+      "word": "deliver",
+      "meaning": "배달하다, 연설하다, 출산하다",
+      "scene": "suburban house front porch, cheerful cute chibi mannequin courier handing a neat cardboard delivery parcel box to a resident at the open doorway, delivery bicycle with basket parked nearby",
+      "status": "FAILED"
     },
     {
       "index": 6,
-      "id": "h1-66",
-      "word": "record",
-      "meaning": "기록, 음반; 기록하다",
-      "scene": "detailed illustrative narrative scene of record, cute slender stickman She broke the school record for the hundred-meter race., indoor room or outdoor setting, rich props",
-      "status": "SKIP_EXISTS",
-      "size_kb": 699.7
+      "id": "h1-86",
+      "word": "convert",
+      "meaning": "바꾸다, 전환하다",
+      "scene": "green energy workshop laboratory, cute chibi mannequin technician adjusting solar inverter device converting rooftop sun ray beams into electrical battery energy, power gauge meter and cables",
+      "status": "FAILED"
     },
     {
       "index": 7,
-      "id": "h1-67",
-      "word": "delighted",
-      "meaning": "기쁜, 아주 즐거운",
-      "scene": "detailed illustrative narrative scene of delighted, cute slender stickman We were delighted to hear about your exam results., indoor room or outdoor setting, rich props",
-      "status": "SUCCESS",
-      "elapsed_sec": 205.6,
-      "size_kb": 907.3
+      "id": "h1-87",
+      "word": "region",
+      "meaning": "지역, 지방, 범위",
+      "scene": "cartography study room, cute chibi mannequin geographer holding a wooden pointer rod indicating a distinct geographical highlighted region on a grand wall world map, globe and compass on desk",
+      "status": "FAILED"
     },
     {
       "index": 8,
-      "id": "h1-68",
-      "word": "conduct",
-      "meaning": "(특정한 활동을) 하다, 실시하다; 행위, 지도",
-      "scene": "detailed illustrative narrative scene of conduct, cute slender stickman A famous musician will conduct our school orchestra at the concert next Friday., indoor room or outdoor setting, rich props",
-      "status": "SUCCESS",
-      "elapsed_sec": 207.8,
-      "size_kb": 1215.5
+      "id": "h1-88",
+      "word": "wage",
+      "meaning": "임금, 급료",
+      "scene": "cozy company office accounting desk, happy cute chibi mannequin employee receiving a monthly pay wage salary envelope with a smile, desk calendar and ledger notebook",
+      "status": "FAILED"
     },
     {
       "index": 9,
-      "id": "h1-69",
-      "word": "besides",
-      "meaning": "게다가, 뿐만 아니라",
-      "scene": "detailed illustrative narrative scene of besides, cute slender stickman The room was very small, and besides, it had no windows., indoor room or outdoor setting, rich props",
-      "status": "SKIP_EXISTS",
-      "size_kb": 793.6
+      "id": "h1-89",
+      "word": "vary",
+      "meaning": "다르다, 다양하다, 변화하다",
+      "scene": "artisan ceramic studio shelf, cute chibi mannequin potter standing admiring a collection of pottery jars that vary in different sizes, geometric heights and silhouettes, clay sculpting tools",
+      "status": "FAILED"
     },
     {
       "index": 10,
-      "id": "h1-70",
-      "word": "notice",
-      "meaning": "통지, 공고문; 알아차리다, 인지하다",
-      "scene": "detailed illustrative narrative scene of notice, cute slender stickman Did you notice the small bird sitting on the window this morning, indoor room or outdoor setting, rich props",
-      "status": "SUCCESS",
-      "elapsed_sec": 207.3,
-      "size_kb": 1003.9
+      "id": "h1-90",
+      "word": "storm",
+      "meaning": "폭풍, 폭풍우",
+      "scene": "cozy attic bedroom window, cute chibi mannequin looking through window glass pane at a stormy rainy night sky with diagonal rain streaks and distant zigzag lightning flash, soft warm bedside lamp",
+      "status": "FAILED"
     },
     {
       "index": 11,
-      "id": "h1-71",
-      "word": "compel",
-      "meaning": "강요하다, ~하게 만들다",
-      "scene": "detailed illustrative narrative scene of compel, cute slender stickman Heavy rain compelled us to cancel the outdoor concert., indoor room or outdoor setting, rich props",
-      "status": "SUCCESS",
-      "elapsed_sec": 222.6,
-      "size_kb": 975.5
+      "id": "h1-91",
+      "word": "electronic",
+      "meaning": "전자의, 전자공학의",
+      "scene": "modern maker electronics lab, focused cute chibi mannequin engineer using a fine precision soldering iron on a green electronic circuit board with microchips and tiny wires, desk magnifier",
+      "status": "FAILED"
     },
     {
       "index": 12,
-      "id": "h1-72",
-      "word": "fasten",
-      "meaning": "매다, 채우다, 잠그다",
-      "scene": "detailed illustrative narrative scene of fasten, cute slender stickman Please fasten your seat belt before the airplane starts moving down the runway., indoor room or outdoor setting, rich props",
-      "status": "SUCCESS",
-      "elapsed_sec": 235.0,
-      "size_kb": 953.2
+      "id": "h1-92",
+      "word": "orbit",
+      "meaning": "궤도, 활동 범위; 궤도를 돌다",
+      "scene": "planetary science astronomy lab, cute chibi mannequin astronomer observing a glowing mechanical orrery model showing a small moon satellite in circular orbit around a large planet globe",
+      "status": "FAILED"
     },
     {
       "index": 13,
-      "id": "h1-73",
-      "word": "seed",
-      "meaning": "씨(앗), 종자",
-      "scene": "detailed illustrative narrative scene of seed, cute slender stickman Plant this tiny seed and water it every single morning., indoor room or outdoor setting, rich props",
-      "status": "SKIP_EXISTS",
-      "size_kb": 671.0
+      "id": "h1-93",
+      "word": "interact",
+      "meaning": "상호작용하다, 소통하다",
+      "scene": "bright community innovation lounge, two friendly cute chibi mannequins gesturing happily as they interact in lively conversation while pointing at shared tablet screen, potted plants and round table",
+      "status": "FAILED"
     },
     {
       "index": 14,
-      "id": "h1-74",
-      "word": "reply",
-      "meaning": "답장, 대답; 대답하다, 대응하다",
-      "scene": "detailed illustrative narrative scene of reply, cute slender stickman She did not reply to my message until late at night., indoor room or outdoor setting, rich props",
-      "status": "SKIP_EXISTS",
-      "size_kb": 656.1
+      "id": "h1-94",
+      "word": "household",
+      "meaning": "가구, 가정, 가족; 가족의",
+      "scene": "warm living room home scene, loving cute chibi mannequin family gathered together in their cozy household, sofa, floor rug, wall picture frame and warm floor lamp",
+      "status": "FAILED"
     },
     {
       "index": 15,
-      "id": "h1-75",
-      "word": "mental",
-      "meaning": "정신적인, 마음의",
-      "scene": "detailed illustrative narrative scene of mental, cute slender stickman Enough sleep and exercise are important for your mental health during exam season., indoor room or outdoor setting, rich props",
-      "status": "SUCCESS",
-      "elapsed_sec": 243.6,
-      "size_kb": 920.1
+      "id": "h1-95",
+      "word": "climate",
+      "meaning": "기후, 분위기",
+      "scene": "environmental meteorological station, cute chibi mannequin climatologist observing world climate map display showing temperature zones and weather atmospheric sensors, barometer on wall",
+      "status": "SKIP_EXISTS",
+      "size_kb": 1102.5
     },
     {
       "index": 16,
-      "id": "h1-76",
-      "word": "search",
-      "meaning": "수색, 검색; 수색하다, 찾다",
-      "scene": "detailed illustrative narrative scene of search, cute slender stickman The police searched the whole park for the missing boy., indoor room or outdoor setting, rich props",
-      "status": "SKIP_EXISTS",
-      "size_kb": 741.3
+      "id": "h1-96",
+      "word": "grant",
+      "meaning": "주다, 인정하다, 승인하다; 보조금",
+      "scene": "university auditorium ceremony stage, cute chibi mannequin researcher humbly receiving an official research fellowship grant certificate plaque from an academy dean, floral decor and podium",
+      "status": "FAILED"
     },
     {
       "index": 17,
-      "id": "h1-77",
-      "word": "enhance",
-      "meaning": "향상시키다, 높이다",
-      "scene": "detailed illustrative narrative scene of enhance, cute slender stickman Regular exercise can enhance both memory and mood., indoor room or outdoor setting, rich props",
-      "status": "SUCCESS",
-      "elapsed_sec": 241.6,
-      "size_kb": 760.4
+      "id": "h1-97",
+      "word": "provide",
+      "meaning": "제공하다, 공급하다",
+      "scene": "community volunteer kitchen, kind cute chibi mannequin volunteer warmly providing a warm bowl of soup and freshly baked loaf of bread to a grateful neighbor across wooden counter",
+      "status": "FAILED"
     },
     {
       "index": 18,
-      "id": "h1-78",
-      "word": "academic",
-      "meaning": "학문적인, 학업의",
-      "scene": "detailed illustrative narrative scene of academic, cute slender stickman My brother won a prize for his academic achievement in science last year., indoor room or outdoor setting, rich props",
-      "status": "SUCCESS",
-      "elapsed_sec": 246.9,
-      "size_kb": 970.6
+      "id": "h1-98",
+      "word": "heritage",
+      "meaning": "유산, 전통",
+      "scene": "historical museum gallery hall, cute chibi mannequin docent introducing an ancient carved cultural stone pillar monument heritage relic preserved inside a glass pedestal case",
+      "status": "FAILED"
     },
     {
       "index": 19,
-      "id": "h1-79",
-      "word": "overcome",
-      "meaning": "극복하다, 이기다",
-      "scene": "detailed illustrative narrative scene of overcome, cute slender stickman He overcame his fear of water and swam across the pool last week., indoor room or outdoor setting, rich props",
-      "status": "SUCCESS",
-      "elapsed_sec": 263.3,
-      "size_kb": 1220.6
+      "id": "h1-99",
+      "word": "limit",
+      "meaning": "제한, 한도, 한계; 제한하다, 한정하다",
+      "scene": "scenic country road bridge crossing, cute chibi mannequin driver observing a clear round speed limit sign marking road safety regulations, guardrail and open rolling hills",
+      "status": "SKIP_EXISTS",
+      "size_kb": 1127.2
     },
     {
       "index": 20,
-      "id": "h1-80",
-      "word": "survey",
-      "meaning": "설문조사; 조사하다, 바라보다",
-      "scene": "detailed illustrative narrative scene of survey, cute slender stickman The survey showed that most students enjoy group work., indoor room or outdoor setting, rich props",
-      "status": "SUCCESS",
-      "elapsed_sec": 248.5,
-      "size_kb": 1119.1
+      "id": "h1-100",
+      "word": "revolution",
+      "meaning": "혁명, 변혁",
+      "scene": "historic town square or technology innovation hub, inspiring cute chibi mannequin leader holding a raised banner sparking a peaceful scientific and cultural revolution, enthusiastic crowd waving",
+      "status": "SKIP_EXISTS",
+      "size_kb": 899.8
     }
   ]
 }

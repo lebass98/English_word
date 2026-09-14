@@ -99,6 +99,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   branch: require("../../../assets/words/b/branch.png"),
   break: require("../../../assets/words/b/break.png"),
   "break with": require("../../../assets/words/b/break-with.png"),
+  breakdown: require("../../../assets/words/b/breakdown.png"),
   breathe: require("../../../assets/words/b/breathe.png"),
   bridge: require("../../../assets/words/b/bridge.png"),
   bright: require("../../../assets/words/b/bright.png"),

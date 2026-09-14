@@ -706,6 +706,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   obstacle: require("../../assets/words/obstacle.png"),
   obtain: require("../../assets/words/obtain.png"),
   obvious: require("../../assets/words/obvious.png"),
+  obsess: require("../../assets/words/obsess.png"),
   occur: require("../../assets/words/occur.png"),
   ocean: require("../../assets/words/ocean.png"),
   offer: require("../../assets/words/offer.png"),

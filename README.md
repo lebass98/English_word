@@ -36,6 +36,8 @@ npm run lint     # ESLint
 - 고1 미생성 단어 5장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
   - 대상 단어: interact, household, grant, provide, heritage
 - 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: obsess
+- 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
   - 대상 단어: passive
 - 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
   - 대상 단어: authenticity

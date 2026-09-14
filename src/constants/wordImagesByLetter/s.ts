@@ -36,6 +36,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   select: require("../../../assets/words/s/select.png"),
   semester: require("../../../assets/words/s/semester.png"),
   senior: require("../../../assets/words/s/senior.png"),
+  sensitive: require("../../../assets/words/s/sensitive.png"),
   sentence: require("../../../assets/words/s/sentence.png"),
   separate: require("../../../assets/words/s/separate.png"),
   series: require("../../../assets/words/s/series.png"),

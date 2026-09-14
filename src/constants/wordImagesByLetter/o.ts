@@ -14,6 +14,7 @@ export const IMAGES_O: Record<string, ImageSourcePropType> = {
   offer: require("../../../assets/words/o/offer.png"),
   office: require("../../../assets/words/o/office.png"),
   officer: require("../../../assets/words/o/officer.png"),
+  official: require("../../../assets/words/o/official.png"),
   once: require("../../../assets/words/o/once.png"),
   operator: require("../../../assets/words/o/operator.png"),
   opinion: require("../../../assets/words/o/opinion.png"),

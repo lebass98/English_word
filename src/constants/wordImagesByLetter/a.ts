@@ -120,6 +120,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   ancient: require("../../../assets/words/a/ancient.png"),
   angle: require("../../../assets/words/a/angle.png"),
   angry: require("../../../assets/words/a/angry.png"),
+  announce: require("../../../assets/words/a/announce.png"),
   annoying: require("../../../assets/words/a/annoying.png"),
   annual: require("../../../assets/words/a/annual.png"),
   answer: require("../../../assets/words/a/answer.png"),

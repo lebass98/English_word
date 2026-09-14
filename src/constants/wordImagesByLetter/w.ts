@@ -10,6 +10,7 @@ export const IMAGES_W: Record<string, ImageSourcePropType> = {
   warn: require("../../../assets/words/w/warn.png"),
   waste: require("../../../assets/words/w/waste.png"),
   watch: require("../../../assets/words/w/watch.png"),
+  wavy: require("../../../assets/words/w/wavy.png"),
   weak: require("../../../assets/words/w/weak.png"),
   wealth: require("../../../assets/words/w/wealth.png"),
   weapon: require("../../../assets/words/w/weapon.png"),

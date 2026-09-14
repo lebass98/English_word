@@ -33,6 +33,7 @@ export const IMAGES_L: Record<string, ImageSourcePropType> = {
   lift: require("../../../assets/words/l/lift.png"),
   likely: require("../../../assets/words/l/likely.png"),
   limit: require("../../../assets/words/l/limit.png"),
+  liquid: require("../../../assets/words/l/liquid.png"),
   list: require("../../../assets/words/l/list.png"),
   literature: require("../../../assets/words/l/literature.png"),
   "living room": require("../../../assets/words/l/living-room.png"),

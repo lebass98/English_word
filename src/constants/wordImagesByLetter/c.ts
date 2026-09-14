@@ -4,6 +4,7 @@ import { ImageSourcePropType } from "react-native";
 export const IMAGES_C: Record<string, ImageSourcePropType> = {
   cage: require("../../../assets/words/c/cage.png"),
   calculate: require("../../../assets/words/c/calculate.png"),
+  "call for": require("../../../assets/words/c/call-for.png"),
   calm: require("../../../assets/words/c/calm.png"),
   canal: require("../../../assets/words/c/canal.png"),
   candidate: require("../../../assets/words/c/candidate.png"),

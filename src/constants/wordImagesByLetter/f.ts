@@ -41,6 +41,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   float: require("../../../assets/words/f/float.png"),
   flood: require("../../../assets/words/f/flood.png"),
   flow: require("../../../assets/words/f/flow.png"),
+  fluent: require("../../../assets/words/f/fluent.png"),
   flute: require("../../../assets/words/f/flute.png"),
   fog: require("../../../assets/words/f/fog.png"),
   folk: require("../../../assets/words/f/folk.png"),

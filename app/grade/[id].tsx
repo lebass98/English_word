@@ -7,7 +7,7 @@ import { Screen, ScreenHeader } from "../../src/components/Screen";
 import { useGrade } from "../../src/constants/grades";
 import { useVocab } from "../../src/constants/words";
 import { useT } from "../../src/i18n";
-import { imageCoverageOfWords } from "../../src/lib/imageDebug";
+import { imageCoverageOfWords, registeredImageCount } from "../../src/lib/imageDebug";
 import {
   knownCountByGrade,
   knownCountInWords,
@@ -66,7 +66,8 @@ export default function GradeScreen() {
           keyExtractor={(u) => String(u.unitNo)}
           numColumns={2}
           // 학습 기록이 바뀌면 셀을 다시 그려야 개수·진행바가 따라간다
-          extraData={entries}
+          // 등록된 그림 수가 바뀌어도 셀을 다시 그려야 그림 미완료 배지가 따라간다
+          extraData={[entries, registeredImageCount()]}
           // 2열 카드 간격은 홈 코스 카드와 같은 16px
           columnWrapperClassName="gap-4"
           contentContainerClassName="gap-4 px-6 pb-10 pt-6"

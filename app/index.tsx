@@ -4,7 +4,7 @@ import { Image, Pressable, ScrollView, Text, View } from "react-native";
 import { BottomNav } from "../src/components/BottomNav";
 import { ContinueCard } from "../src/components/ContinueCard";
 import { GradeCard } from "../src/components/GradeCard";
-import { imageCoverageOf } from "../src/lib/imageDebug";
+import { imageCoverageOf, registeredImageCount } from "../src/lib/imageDebug";
 import { LanguageFlag } from "../src/components/flags";
 import { PillButton } from "../src/components/PillButton";
 import { Screen, ScreenHeader } from "../src/components/Screen";
@@ -85,6 +85,7 @@ export default function HomeScreen() {
     () => unsureWords(entries, vocab, 10),
     [entries, vocab],
   );
+  const imageCount = registeredImageCount();
   const knownByGrade = useMemo(
     () =>
       availableList.map((grade) => ({
@@ -94,7 +95,9 @@ export default function HomeScreen() {
         // 등록하면 화면의 숫자가 곧바로 줄어든다
         missingImages: imageCoverageOf(vocab, grade.id).missing,
       })),
-    [entries, vocab, availableList],
+    // 등록된 그림 수가 바뀌면 미완료 개수를 다시 센다 (memo 가 옛 숫자를 붙잡지 않게)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [entries, vocab, availableList, imageCount],
   );
 
   // 코스 카드는 한 줄에 두 개. 창 폭으로 카드 폭을 계산하면 웹에서 처음 그릴 때

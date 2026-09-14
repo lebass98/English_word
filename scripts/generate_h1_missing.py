@@ -110,6 +110,7 @@ def main():
 
     print(f"대상 과정: {' → '.join(LEVEL_LABEL.get(l, l) for l in levels)}", flush=True)
     done = failed = skipped = 0
+    streak = 0  # 연달아 실패한 횟수
 
     while True:
         if os.path.exists(STOP):
@@ -136,7 +137,15 @@ def main():
         if r.returncode != 0 or not os.path.exists(os.path.join(ROOT, rel)):
             print(f"[실패] {word}: {(r.stderr or r.stdout)[-200:]}", flush=True)
             failed += 1
+            # 같은 단어가 큐 맨 앞에 그대로 남아 있어서 곧바로 다시 시도한다.
+            # Draw Things 가 응답을 못 하는 동안에는 그렇게 쉬지 않고 두드리게 되므로
+            # 연달아 실패할수록 더 오래 쉬었다가 간다 (최대 5분).
+            streak += 1
+            wait = min(300, 15 * streak)
+            print(f"       {wait}초 쉬었다 다시 시도한다 (연속 실패 {streak}회)", flush=True)
+            time.sleep(wait)
             continue
+        streak = 0
         sec = time.time() - t0
 
         run(["python3", os.path.join(ROOT, "scripts/sync_word_images.py")])

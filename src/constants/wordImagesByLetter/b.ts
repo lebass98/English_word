@@ -78,6 +78,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   blow: require("../../../assets/words/b/blow.png"),
   board: require("../../../assets/words/b/board.png"),
   body: require("../../../assets/words/b/body.png"),
+  bold: require("../../../assets/words/b/bold.png"),
   bone: require("../../../assets/words/b/bone.png"),
   bookstore: require("../../../assets/words/b/bookstore.png"),
   booth: require("../../../assets/words/b/booth.png"),

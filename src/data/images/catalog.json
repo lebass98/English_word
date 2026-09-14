@@ -12720,18 +12720,18 @@
    "status": "missing"
   },
   "creature": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/creature.png",
+   "blob": "5b8be0394c92cdce2e889b30ce89e397d0374c98",
    "courses": [
     "h1",
     "h2"
    ],
    "sense": "생명체, 생물, 창조물",
    "sense_from": "h1-161",
-   "scene": "moonlit cave exploration, a small slim white pictogram explorer leaping back in surprise as a friendly many-legged creature with big round eyes scuttles out from behind a rock, stalactites, lantern swinging, motion lines",
+   "scene": "bright daylight cave entrance with sunlight pouring in, a small slim white pictogram explorer leaping back in surprise as a friendly many-legged creature with big round eyes scuttles out from behind a pale rock, open sky beyond the entrance, backpack, motion lines, clean even thin outlines",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "credibility": {
    "file": null,
@@ -14663,7 +14663,7 @@
    ],
    "sense": "불우한, 궁핍한, 박탈당한",
    "sense_from": "h1-203",
-   "scene": "bare attic room, a small slim white pictogram character reaching up toward an empty shelf and an empty bowl while a single worn blanket hangs on a hook, cracked window, dripping pipe, bare floor boards",
+   "scene": "bare room in plain daylight from a wide window, a small slim white pictogram character reaching up toward an empty shelf and an empty bowl while a single worn blanket hangs on a hook, cracked wall, bare floor boards, clean even thin outlines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "style": null,
    "status": "missing"
@@ -25987,7 +25987,7 @@
    ],
    "sense": "환대, 후대, 접대",
    "sense_from": "h1-164",
-   "scene": "warm inn doorway at night, a small slim white pictogram host running out with arms wide open carrying a tray of bread and a steaming teapot to greet an arriving traveler, lantern, luggage, welcome mat",
+   "scene": "bright inn doorway in the daytime, a small slim white pictogram host running out with arms wide open carrying a tray of bread and a teapot to greet an arriving traveler, open windows, luggage, welcome mat, flower pots, clean even thin outlines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "style": null,
    "status": "missing"
@@ -32297,7 +32297,7 @@
    ],
    "sense": "충성스러운, 충실한, 성실한",
    "sense_from": "h1-246",
-   "scene": "cottage gate in rain, a small slim white pictogram character returning home as a dog bounds up wagging and jumping, worn waiting spot by the gate, umbrella, fence, muddy paw prints, motion lines",
+   "scene": "cottage gate on a bright overcast day, a small slim white pictogram character returning home as a dog bounds up wagging and jumping, worn waiting spot by the gate, fence, garden path, motion lines, clean even thin outlines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "style": null,
    "status": "missing"
@@ -43947,7 +43947,7 @@
    ],
    "sense": "후회하다, 유감스럽게 생각하다, 후회, 유감",
    "sense_from": "m3-170",
-   "scene": "bedroom desk at night, a small slim white pictogram character clutching the head while staring at a torn letter and a calendar with a circled past date, crumpled paper balls, dim lamp, wavy thought lines",
+   "scene": "bright study room by a wide sunlit window, a small slim white pictogram character clutching the head while staring at a torn letter and a wall calendar with one circled past date, crumpled paper balls on the floor, bookshelf, wavy thought lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
    "style": null,
@@ -53133,7 +53133,7 @@
    ],
    "sense": "이야기, 설화, 동화",
    "sense_from": "h1-257",
-   "scene": "fireside storytelling corner, a small slim white pictogram storyteller leaping up with arms spread wide acting out a dragon while children lean in around an open book, floating castle outline, chimney",
+   "scene": "bright library story corner by tall windows, a small slim white pictogram storyteller leaping up with arms spread wide acting out a dragon while children lean in around an open book, floating castle outline drawn in thin lines, bookshelves, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "style": null,
    "status": "missing"
@@ -58023,7 +58023,7 @@
    ],
    "sense": "무기, 병기",
    "sense_from": "h1-229",
-   "scene": "castle armory hall, a small slim white pictogram knight leaping to pull a sword down from a rack of shields and spears, helmet stand, torch bracket, stone arches, motion lines",
+   "scene": "bright castle armory hall with tall open windows, a small slim white pictogram knight leaping to pull a sword down from a rack of shields and spears, helmet stand, stone arches, daylight streaming in, clean even thin outlines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "style": null,
    "status": "missing"

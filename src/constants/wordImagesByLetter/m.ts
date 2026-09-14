@@ -4,6 +4,7 @@ import { ImageSourcePropType } from "react-native";
 export const IMAGES_M: Record<string, ImageSourcePropType> = {
   machine: require("../../../assets/words/m/machine.png"),
   magazine: require("../../../assets/words/m/magazine.png"),
+  magnet: require("../../../assets/words/m/magnet.png"),
   mail: require("../../../assets/words/m/mail.png"),
   main: require("../../../assets/words/m/main.png"),
   "make a decision": require("../../../assets/words/m/make-a-decision.png"),

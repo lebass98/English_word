@@ -3,6 +3,7 @@ import { ImageSourcePropType } from "react-native";
 // "c" 로 시작하는 단어 그림. scripts/sync_word_images.py 가 만든다 (손으로 고치지 않는다)
 export const IMAGES_C: Record<string, ImageSourcePropType> = {
   cage: require("../../../assets/words/c/cage.png"),
+  calculate: require("../../../assets/words/c/calculate.png"),
   calm: require("../../../assets/words/c/calm.png"),
   canal: require("../../../assets/words/c/canal.png"),
   candidate: require("../../../assets/words/c/candidate.png"),

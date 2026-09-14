@@ -28,6 +28,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   perform: require("../../../assets/words/p/perform.png"),
   perhaps: require("../../../assets/words/p/perhaps.png"),
   period: require("../../../assets/words/p/period.png"),
+  permanent: require("../../../assets/words/p/permanent.png"),
   permit: require("../../../assets/words/p/permit.png"),
   personal: require("../../../assets/words/p/personal.png"),
   personality: require("../../../assets/words/p/personality.png"),

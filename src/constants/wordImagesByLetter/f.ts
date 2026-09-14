@@ -29,6 +29,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   figure: require("../../../assets/words/f/figure.png"),
   fill: require("../../../assets/words/f/fill.png"),
   finally: require("../../../assets/words/f/finally.png"),
+  finance: require("../../../assets/words/f/finance.png"),
   firm: require("../../../assets/words/f/firm.png"),
   fit: require("../../../assets/words/f/fit.png"),
   flame: require("../../../assets/words/f/flame.png"),

@@ -38,6 +38,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   metal: require("../../../assets/words/m/metal.png"),
   metaphor: require("../../../assets/words/m/metaphor.png"),
   method: require("../../../assets/words/m/method.png"),
+  microscope: require("../../../assets/words/m/microscope.png"),
   might: require("../../../assets/words/m/might.png"),
   mild: require("../../../assets/words/m/mild.png"),
   mile: require("../../../assets/words/m/mile.png"),

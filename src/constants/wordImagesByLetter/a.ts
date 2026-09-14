@@ -195,6 +195,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   assuredly: require("../../../assets/words/a/assuredly.png"),
   astonish: require("../../../assets/words/a/astonish.png"),
   astonishing: require("../../../assets/words/a/astonishing.png"),
+  astronaut: require("../../../assets/words/a/astronaut.png"),
   "at hand": require("../../../assets/words/a/at-hand.png"),
   "at least": require("../../../assets/words/a/at-least.png"),
   "at once": require("../../../assets/words/a/at-once.png"),

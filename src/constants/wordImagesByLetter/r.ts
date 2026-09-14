@@ -20,6 +20,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   refrigerator: require("../../../assets/words/r/refrigerator.png"),
   refuse: require("../../../assets/words/r/refuse.png"),
   region: require("../../../assets/words/r/region.png"),
+  regret: require("../../../assets/words/r/regret.png"),
   regular: require("../../../assets/words/r/regular.png"),
   rein: require("../../../assets/words/r/rein.png"),
   relative: require("../../../assets/words/r/relative.png"),

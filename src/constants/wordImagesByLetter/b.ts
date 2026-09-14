@@ -24,6 +24,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   "be capable of": require("../../../assets/words/b/be-capable-of.png"),
   "be characterized by": require("../../../assets/words/b/be-characterized-by.png"),
   "be considered": require("../../../assets/words/b/be-considered.png"),
+  "be derived from": require("../../../assets/words/b/be-derived-from.png"),
   beach: require("../../../assets/words/b/beach.png"),
   bean: require("../../../assets/words/b/bean.png"),
   bear: require("../../../assets/words/b/bear.png"),

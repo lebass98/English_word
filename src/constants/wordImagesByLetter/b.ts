@@ -40,6 +40,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   bedside: require("../../../assets/words/b/bedside.png"),
   beef: require("../../../assets/words/b/beef.png"),
   beer: require("../../../assets/words/b/beer.png"),
+  "before long": require("../../../assets/words/b/before-long.png"),
   beg: require("../../../assets/words/b/beg.png"),
   beggar: require("../../../assets/words/b/beggar.png"),
   behave: require("../../../assets/words/b/behave.png"),

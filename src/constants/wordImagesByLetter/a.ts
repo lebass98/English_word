@@ -203,6 +203,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   attribute: require("../../../assets/words/a/attribute.png"),
   authenticity: require("../../../assets/words/a/authenticity.png"),
   authorize: require("../../../assets/words/a/authorize.png"),
+  automatic: require("../../../assets/words/a/automatic.png"),
   available: require("../../../assets/words/a/available.png"),
   avoid: require("../../../assets/words/a/avoid.png"),
   awaken: require("../../../assets/words/a/awaken.png"),

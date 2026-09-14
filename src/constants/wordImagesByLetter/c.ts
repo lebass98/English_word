@@ -131,6 +131,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   crowded: require("../../../assets/words/c/crowded.png"),
   crown: require("../../../assets/words/c/crown.png"),
   crucial: require("../../../assets/words/c/crucial.png"),
+  cultivate: require("../../../assets/words/c/cultivate.png"),
   culture: require("../../../assets/words/c/culture.png"),
   curious: require("../../../assets/words/c/curious.png"),
   custom: require("../../../assets/words/c/custom.png"),

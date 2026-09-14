@@ -160,6 +160,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   connection: require("../../../assets/words/c/connection.png"),
   conscious: require("../../../assets/words/c/conscious.png"),
   consciously: require("../../../assets/words/c/consciously.png"),
+  consensus: require("../../../assets/words/c/consensus.png"),
   construction: require("../../../assets/words/c/construction.png"),
   contact: require("../../../assets/words/c/contact.png"),
   contest: require("../../../assets/words/c/contest.png"),

@@ -1034,6 +1034,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   struggle: require("../../assets/words/struggle.png"),
   stupid: require("../../assets/words/stupid.png"),
   subject: require("../../assets/words/subject.png"),
+  substance: require("../../assets/words/substance.png"),
   suburb: require("../../assets/words/suburb.png"),
   subway: require("../../assets/words/subway.png"),
   successful: require("../../assets/words/successful.png"),

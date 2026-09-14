@@ -107,6 +107,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   colorful: require("../../../assets/words/c/colorful.png"),
   comb: require("../../../assets/words/c/comb.png"),
   combination: require("../../../assets/words/c/combination.png"),
+  combine: require("../../../assets/words/c/combine.png"),
   combined: require("../../../assets/words/c/combined.png"),
   "come to mind": require("../../../assets/words/c/come-to-mind.png"),
   comedy: require("../../../assets/words/c/comedy.png"),

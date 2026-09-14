@@ -27,6 +27,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   regular: require("../../../assets/words/r/regular.png"),
   rein: require("../../../assets/words/r/rein.png"),
   related: require("../../../assets/words/r/related.png"),
+  relation: require("../../../assets/words/r/relation.png"),
   relative: require("../../../assets/words/r/relative.png"),
   relay: require("../../../assets/words/r/relay.png"),
   religious: require("../../../assets/words/r/religious.png"),

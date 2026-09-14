@@ -39,6 +39,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   folk: require("../../../assets/words/f/folk.png"),
   follow: require("../../../assets/words/f/follow.png"),
   foolish: require("../../../assets/words/f/foolish.png"),
+  "for a while": require("../../../assets/words/f/for-a-while.png"),
   force: require("../../../assets/words/f/force.png"),
   foreign: require("../../../assets/words/f/foreign.png"),
   foreigner: require("../../../assets/words/f/foreigner.png"),

@@ -175,6 +175,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   "ascribe A to B": require("../../assets/words/ascribe-A-to-B.png"),
   aspect: require("../../assets/words/aspect.png"),
   aspiration: require("../../assets/words/aspiration.png"),
+  assemble: require("../../assets/words/assemble.png"),
   astonish: require("../../assets/words/astonish.png"),
   athlete: require("../../assets/words/athlete.png"),
   atom: require("../../assets/words/atom.png"),

@@ -29,6 +29,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   meanwhile: require("../../../assets/words/m/meanwhile.png"),
   meat: require("../../../assets/words/m/meat.png"),
   mechanic: require("../../../assets/words/m/mechanic.png"),
+  medical: require("../../../assets/words/m/medical.png"),
   melt: require("../../../assets/words/m/melt.png"),
   memory: require("../../../assets/words/m/memory.png"),
   mental: require("../../../assets/words/m/mental.png"),

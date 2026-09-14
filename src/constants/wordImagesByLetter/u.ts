@@ -22,4 +22,5 @@ export const IMAGES_U: Record<string, ImageSourcePropType> = {
   "upside down": require("../../../assets/words/u/upside-down.png"),
   useless: require("../../../assets/words/u/useless.png"),
   usually: require("../../../assets/words/u/usually.png"),
+  utilize: require("../../../assets/words/u/utilize.png"),
 };

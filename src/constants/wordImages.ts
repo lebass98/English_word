@@ -520,6 +520,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   hawk: require("../../assets/words/hawk.png"),
   hay: require("../../assets/words/hay.png"),
   health: require("../../assets/words/health.png"),
+  headquarters: require("../../assets/words/headquarters.png"),
   heart: require("../../assets/words/heart.png"),
   heat: require("../../assets/words/heat.png"),
   heaven: require("../../assets/words/heaven.png"),

@@ -924,6 +924,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   select: require("../../assets/words/select.png"),
   semester: require("../../assets/words/semester.png"),
   senior: require("../../assets/words/senior.png"),
+  separate: require("../../assets/words/separate.png"),
   sentence: require("../../assets/words/sentence.png"),
   series: require("../../assets/words/series.png"),
   serious: require("../../assets/words/serious.png"),

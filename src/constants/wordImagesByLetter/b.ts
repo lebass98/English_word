@@ -113,6 +113,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   "bring about": require("../../../assets/words/b/bring-about.png"),
   british: require("../../../assets/words/b/british.png"),
   broad: require("../../../assets/words/b/broad.png"),
+  broaden: require("../../../assets/words/b/broaden.png"),
   brown: require("../../../assets/words/b/brown.png"),
   bubble: require("../../../assets/words/b/bubble.png"),
   build: require("../../../assets/words/b/build.png"),

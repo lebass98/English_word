@@ -83,6 +83,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   competition: require("../../../assets/words/c/competition.png"),
   complain: require("../../../assets/words/c/complain.png"),
   complete: require("../../../assets/words/c/complete.png"),
+  complicated: require("../../../assets/words/c/complicated.png"),
   composer: require("../../../assets/words/c/composer.png"),
   compulsory: require("../../../assets/words/c/compulsory.png"),
   concern: require("../../../assets/words/c/concern.png"),

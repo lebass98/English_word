@@ -831,6 +831,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   rat: require("../../assets/words/rat.png"),
   rate: require("../../assets/words/rate.png"),
   rather: require("../../assets/words/rather.png"),
+  rational: require("../../assets/words/rational.png"),
   reach: require("../../assets/words/reach.png"),
   rear: require("../../assets/words/rear.png"),
   reason: require("../../assets/words/reason.png"),

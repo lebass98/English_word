@@ -135,6 +135,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   stripe: require("../../../assets/words/s/stripe.png"),
   struggle: require("../../../assets/words/s/struggle.png"),
   stupid: require("../../../assets/words/s/stupid.png"),
+  sturdy: require("../../../assets/words/s/sturdy.png"),
   subject: require("../../../assets/words/s/subject.png"),
   substance: require("../../../assets/words/s/substance.png"),
   suburb: require("../../../assets/words/s/suburb.png"),

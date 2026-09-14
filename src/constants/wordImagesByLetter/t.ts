@@ -49,6 +49,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   treasure: require("../../../assets/words/t/treasure.png"),
   treat: require("../../../assets/words/t/treat.png"),
   tremendous: require("../../../assets/words/t/tremendous.png"),
+  trial: require("../../../assets/words/t/trial.png"),
   trick: require("../../../assets/words/t/trick.png"),
   trigger: require("../../../assets/words/t/trigger.png"),
   trim: require("../../../assets/words/t/trim.png"),

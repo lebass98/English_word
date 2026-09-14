@@ -28,6 +28,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   "be fond of": require("../../../assets/words/b/be-fond-of.png"),
   "be likely to": require("../../../assets/words/b/be-likely-to.png"),
   "be marked": require("../../../assets/words/b/be-marked.png"),
+  "be worthy of": require("../../../assets/words/b/be-worthy-of.png"),
   beach: require("../../../assets/words/b/beach.png"),
   beam: require("../../../assets/words/b/beam.png"),
   bean: require("../../../assets/words/b/bean.png"),

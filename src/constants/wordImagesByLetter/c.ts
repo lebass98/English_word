@@ -165,6 +165,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   confirm: require("../../../assets/words/c/confirm.png"),
   conflicting: require("../../../assets/words/c/conflicting.png"),
   confront: require("../../../assets/words/c/confront.png"),
+  congratulation: require("../../../assets/words/c/congratulation.png"),
   connect: require("../../../assets/words/c/connect.png"),
   connection: require("../../../assets/words/c/connection.png"),
   conquer: require("../../../assets/words/c/conquer.png"),

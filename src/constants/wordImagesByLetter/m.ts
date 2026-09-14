@@ -45,6 +45,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   million: require("../../../assets/words/m/million.png"),
   mind: require("../../../assets/words/m/mind.png"),
   mineral: require("../../../assets/words/m/mineral.png"),
+  minister: require("../../../assets/words/m/minister.png"),
   minority: require("../../../assets/words/m/minority.png"),
   minute: require("../../../assets/words/m/minute.png"),
   miss: require("../../../assets/words/m/miss.png"),

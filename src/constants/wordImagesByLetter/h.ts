@@ -15,6 +15,7 @@ export const IMAGES_H: Record<string, ImageSourcePropType> = {
   harvest: require("../../../assets/words/h/harvest.png"),
   haste: require("../../../assets/words/h/haste.png"),
   hastily: require("../../../assets/words/h/hastily.png"),
+  hatch: require("../../../assets/words/h/hatch.png"),
   hate: require("../../../assets/words/h/hate.png"),
   hawk: require("../../../assets/words/h/hawk.png"),
   hay: require("../../../assets/words/h/hay.png"),

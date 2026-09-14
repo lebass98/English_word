@@ -64,6 +64,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   intuition: require("../../../assets/words/i/intuition.png"),
   invader: require("../../../assets/words/i/invader.png"),
   invent: require("../../../assets/words/i/invent.png"),
+  invitation: require("../../../assets/words/i/invitation.png"),
   invite: require("../../../assets/words/i/invite.png"),
   iron: require("../../../assets/words/i/iron.png"),
   island: require("../../../assets/words/i/island.png"),

@@ -205,6 +205,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   attract: require("../../assets/words/attract.png"),
   attribute: require("../../assets/words/attribute.png"),
   authorize: require("../../assets/words/authorize.png"),
+  available: require("../../assets/words/available.png"),
   background: require("../../assets/words/background.png"),
   badly: require("../../assets/words/badly.png"),
   balance: require("../../assets/words/balance.png"),

@@ -17,6 +17,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   mass: require("../../../assets/words/m/mass.png"),
   "mass communication": require("../../../assets/words/m/mass-communication.png"),
   master: require("../../../assets/words/m/master.png"),
+  masterpiece: require("../../../assets/words/m/masterpiece.png"),
   match: require("../../../assets/words/m/match.png"),
   material: require("../../../assets/words/m/material.png"),
   math: require("../../../assets/words/m/math.png"),

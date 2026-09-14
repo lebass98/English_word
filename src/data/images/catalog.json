@@ -226,8 +226,8 @@
    "status": "ok"
   },
   "absence": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/absence.png",
+   "blob": "1b0e6c53278f424ec26bc28df85a0527afb5f40e",
    "courses": [
     "h1",
     "h3"
@@ -236,8 +236,8 @@
    "sense_from": "h1-198",
    "scene": "classroom morning roll call, a small slim white pictogram teacher pointing at one empty desk with a chair pushed out while every other seat is filled, attendance board with one blank slot, window",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "absent": {
    "file": "assets/words/a/absent.png",
@@ -1256,8 +1256,8 @@
    "status": "ok"
   },
   "advantage": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/advantage.png",
+   "blob": "fecbd548e5699eb78b2f50961481842657f08c96",
    "courses": [
     "m3"
    ],
@@ -1265,8 +1265,8 @@
    "sense_from": "m3-89",
    "scene": "bright race start, a small slim white pictogram runner beginning several steps ahead of the line while others start behind, head start arrow, plus mark, motion lines",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "advent": {
    "file": "assets/words/a/advent.png",
@@ -1438,8 +1438,8 @@
    "status": "review"
   },
   "affect": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/affect.png",
+   "blob": "2b78904a6ab49dd6e3862613b651e5a951c7f88c",
    "courses": [
     "m3",
     "h1"
@@ -1449,8 +1449,8 @@
    "scene": "bright science bench, a small slim white pictogram student dropping one pellet into water so ripples spread and a plant beside visibly bends, cause arrow, notebook, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "affection": {
    "file": "assets/words/a/affection.png",
@@ -1904,8 +1904,8 @@
    "status": "missing"
   },
   "alike": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/alike.png",
+   "blob": "433fb84c392afeb0de2936a8eb20d309f3875850",
    "courses": [
     "m3"
    ],
@@ -1913,8 +1913,8 @@
    "sense_from": "m3-100",
    "scene": "bright bench, two small slim white pictogram twins sitting in the same pose wearing the same smock while an equal sign floats between them, mirrored lines, motion lines",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "alive": {
    "file": "assets/words/a/alive.png",
@@ -2392,8 +2392,8 @@
    "status": "missing"
   },
   "analyze": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/analyze.png",
+   "blob": "40d2303adfd0ffd5ce7c7ca3f48e8d1495f11682",
    "courses": [
     "m3",
     "h1"
@@ -2403,8 +2403,8 @@
    "scene": "data lab, a small slim white pictogram analyst leaping between three large pinned charts drawing connecting lines with a marker, magnifier in hand, stacks of printouts, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "anarchy": {
    "file": null,
@@ -2885,8 +2885,8 @@
    "status": "review"
   },
   "appearance": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/appearance.png",
+   "blob": "bd72c2e6d500105f9bf0c0fa28c5d5ef5068a34b",
    "courses": [
     "m3",
     "h1"
@@ -2896,8 +2896,8 @@
    "scene": "bright dressing room, a small slim white pictogram character spinning in front of a tall mirror while brushing the head and straightening a collar, makeup table, hat stand, bulb frame around mirror, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "appendix": {
    "file": null,
@@ -4573,8 +4573,8 @@
    "status": "missing"
   },
   "automatic": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/automatic.png",
+   "blob": "1799511ac9e9bcab645573b31c9e6e8a2f7c001c",
    "courses": [
     "m3",
     "h1"
@@ -4584,8 +4584,8 @@
    "scene": "bright factory line, a small slim white pictogram worker standing back with arms folded while a robot arm packs boxes by itself along a moving conveyor, control panel with a switch on, gears, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "automatically": {
    "file": null,
@@ -5315,8 +5315,8 @@
    "status": "missing"
   },
   "be likely to": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/be-likely-to.png",
+   "blob": "8b0a548edde21ceb9d818f1860f55a2d24b4a03d",
    "courses": [
     "m3"
    ],
@@ -5324,8 +5324,8 @@
    "sense_from": "m3-70",
    "scene": "bright weather station, a small slim white pictogram forecaster moving a pointer far toward a rain symbol on a probability dial while already opening an umbrella, cloud outlines",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "be marked": {
    "file": "assets/words/b/be-marked.png",
@@ -5687,8 +5687,8 @@
    "status": "ok"
   },
   "belief": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/belief.png",
+   "blob": "87fbe9fe46b5619bd3e1c20e23712d3731828415",
    "courses": [
     "m3",
     "h1"
@@ -5698,8 +5698,8 @@
    "scene": "bright hilltop at dawn light, a small slim white pictogram character standing firm with one hand over the heart looking up at a distant star outline while others walk away, signpost, open field, thin ray lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "believe": {
    "file": "assets/words/b/believe.png",
@@ -7026,8 +7026,8 @@
    "status": "ok"
   },
   "bring back": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/bring-back.png",
+   "blob": "0a4f80d4bc7afea7e48f255f83264d85dcc6922f",
    "courses": [
     "m3"
    ],
@@ -7035,8 +7035,8 @@
    "sense_from": "m3-76",
    "scene": "bright doorway, a small slim white pictogram character returning a borrowed book while an old photo in hand stirs a memory shape above the head, return arrow, motion lines",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "British": {
    "file": null,
@@ -7080,8 +7080,8 @@
    "status": "ok"
   },
   "broadcast": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/broadcast.png",
+   "blob": "5601ba31e159185a94fbd2331fed179f6a3fbb8c",
    "courses": [
     "m3",
     "h1"
@@ -7091,8 +7091,8 @@
    "scene": "radio station booth, a small slim white pictogram host leaning into a big microphone with one arm raised while a tall antenna outside sends widening signal arcs over rooftops, on air sign, console dials",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "broadcasting": {
    "file": null,
@@ -7161,8 +7161,8 @@
    "status": "review"
   },
   "browse": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/browse.png",
+   "blob": "820edb8978442f52c6fefa0a3cb74d5860d56914",
    "courses": [
     "m3",
     "h1",
@@ -7173,8 +7173,8 @@
    "scene": "bright bookshop aisle, a small slim white pictogram shopper flipping quickly through book after book along a shelf without picking one, trolley, display table, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "bruise": {
    "file": null,
@@ -7386,8 +7386,8 @@
    "status": "missing"
   },
   "burst": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/burst.png",
+   "blob": "f19d705ba49263c8768292ec6da3fc3cab31ac57",
    "courses": [
     "h1",
     "h3"
@@ -7396,8 +7396,8 @@
    "sense_from": "h1-218",
    "scene": "party hall, a small slim white pictogram character leaping back as a giant balloon pops into jagged fragments, confetti flying outward, streamers, star burst marks and radiating motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "bury": {
    "file": "assets/words/b/bury.png",
@@ -7630,8 +7630,8 @@
    "status": "review"
   },
   "cancel": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/cancel.png",
+   "blob": "ff11b53ba61c6730f8027203a178984d448c5bd6",
    "courses": [
     "h1"
    ],
@@ -7639,8 +7639,8 @@
    "sense_from": "h1-247",
    "scene": "travel agency counter, a small slim white pictogram clerk stamping a big cross over a ticket while a departure board flips a row to blank, crumpled itinerary in bin, calendar with a crossed date",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "candid": {
    "file": null,
@@ -7687,8 +7687,8 @@
    "status": "ok"
   },
   "capable": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/capable.png",
+   "blob": "f76df41b50faae26fb2dbe7386a783fe76bac233",
    "courses": [
     "m3",
     "h1"
@@ -7698,8 +7698,8 @@
    "scene": "bright workshop, a small slim white pictogram worker handling three tasks at once with steady hands while a certificate of skill hangs above the bench, tool belt, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "capable of": {
    "file": null,
@@ -7845,8 +7845,8 @@
    "status": "missing"
   },
   "careless": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/careless.png",
+   "blob": "5ab1bbab065fa8555dd4925434ece8b8afe527fd",
    "courses": [
     "m3"
    ],
@@ -7854,8 +7854,8 @@
    "sense_from": "m3-79",
    "scene": "bright kitchen, a small slim white pictogram character knocking a glass off the counter while looking the other way, spilled liquid, dropped keys, cross mark, motion lines",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "cargo": {
    "file": "assets/words/c/cargo.png",
@@ -7999,8 +7999,8 @@
    "status": "review"
   },
   "casual": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/casual.png",
+   "blob": "d3ef470b8a31db2d9e1346ffcde601f37b34017d",
    "courses": [
     "m3",
     "h1"
@@ -8010,8 +8010,8 @@
    "scene": "back porch afternoon, a small slim white pictogram character sprawled sideways on a swing chair with one leg dangling tossing a ball up lazily, sandals kicked off, open magazine, garden fence, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "casualty": {
    "file": null,
@@ -8040,8 +8040,8 @@
    "status": "missing"
   },
   "catch up": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/catch-up.png",
+   "blob": "9f78a2ddb6665813f02aace5c55bec81fa6e41fb",
    "courses": [
     "m3"
    ],
@@ -8049,8 +8049,8 @@
    "sense_from": "m3-78",
    "scene": "bright running track, a small slim white pictogram runner sprinting hard to close the gap on the leader ahead while a gap arrow shrinks, lane lines, strong motion lines",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "category": {
    "file": null,
@@ -8110,8 +8110,8 @@
    "status": "review"
   },
   "caution": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/caution.png",
+   "blob": "813aaf92d372db5fa74b7ff1b821a18652ad812d",
    "courses": [
     "h1"
    ],
@@ -8119,8 +8119,8 @@
    "sense_from": "h1-196",
    "scene": "wet floor corridor, a small slim white pictogram cleaner skidding to a stop with arms windmilling beside a folding warning sign, mop bucket sloshing, exclamation mark sign, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "cautious": {
    "file": "assets/words/c/cautious.png",
@@ -8550,8 +8550,8 @@
    "status": "review"
   },
   "chart": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/chart.png",
+   "blob": "e1888c2a78a32d507dc3b8b0cdec1e8f54e65334",
    "courses": [
     "m3"
    ],
@@ -8559,8 +8559,8 @@
    "sense_from": "m3-97",
    "scene": "bright office wall, a small slim white pictogram analyst drawing bars and a rising line onto a big pinned graph sheet while a table of numbers sits beside, ruler, motion lines",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "charting": {
    "file": null,
@@ -8728,8 +8728,8 @@
    "status": "missing"
   },
   "cherish": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/cherish.png",
+   "blob": "fd015b2b4de8da39d62ada262eb2d8ec33d3fa95",
    "courses": [
     "h1",
     "h2"
@@ -8738,8 +8738,8 @@
    "sense_from": "h1-282",
    "scene": "bright living room, a small slim white pictogram character hugging an old photo album close to the chest with eyes closed while kneeling by a memory box, ribbon tied bundle, shelf of keepsakes, thin heart outline",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "chest": {
    "file": "assets/words/c/chest.png",
@@ -8995,8 +8995,8 @@
    "status": "missing"
   },
   "civilization": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/civilization.png",
+   "blob": "124d929e66984e43d1ba801a0a4f178130793c15",
    "courses": [
     "m3",
     "h2",
@@ -9006,8 +9006,8 @@
    "sense_from": "m3-49",
    "scene": "bright ancient city view, small slim white pictogram people building temples, writing on tablets and trading in a planned street grid, aqueduct, pottery, city walls, motion lines",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "claim": {
    "file": null,
@@ -9924,8 +9924,8 @@
    "status": "missing"
   },
   "commerce": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/commerce.png",
+   "blob": "435ba53726603077815da07d72c39f22735538a5",
    "courses": [
     "m3",
     "h3",
@@ -9936,8 +9936,8 @@
    "scene": "busy online shop warehouse, small slim white pictogram workers racing on scooters carrying parcels to a conveyor belt while a big phone screen shows a shopping cart, boxes flying",
    "scene_source": "scripts/tf_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 tf 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "commercial": {
    "file": null,
@@ -10056,8 +10056,8 @@
    "status": "review"
   },
   "community": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/community.png",
+   "blob": "a408e6cc7dc523d05cff6a5ad9f4a1f017164c65",
    "courses": [
     "m3",
     "h1",
@@ -10069,8 +10069,8 @@
    "scene": "village square festival, many small slim white pictogram neighbors joining hands in a big ring dance around a bonfire while others carry a shared table, bunting flags, houses, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "commute": {
    "file": null,
@@ -10419,8 +10419,8 @@
    "status": "missing"
   },
   "complicated": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/complicated.png",
+   "blob": "4a7c63f58a2052457a41565ec1291f1c500e02de",
    "courses": [
     "m3",
     "tf"
@@ -10430,8 +10430,8 @@
    "scene": "family game night, a small slim white pictogram child climbing onto the table to read a very long rule book that unrolls to the floor while others hold tangled game pieces",
    "scene_source": "scripts/tf_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 tf 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "compliment": {
    "file": null,
@@ -10962,8 +10962,8 @@
    "status": "missing"
   },
   "confirm": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/confirm.png",
+   "blob": "3013633ec4fd877df46894490c3730888d6108ec",
    "courses": [
     "m3",
     "h1",
@@ -10975,8 +10975,8 @@
    "scene": "ticket gate, a small slim white pictogram attendant punching a ticket and stamping a big check mark while the traveler dashes through the opening barrier, schedule board, suitcase, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "conflict": {
    "file": null,
@@ -11445,8 +11445,8 @@
    "status": "missing"
   },
   "construction": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/construction.png",
+   "blob": "bb5f4b8833cd0c6c843eb5e24d631c86e8187c19",
    "courses": [
     "h1",
     "h2"
@@ -11455,8 +11455,8 @@
    "sense_from": "h1-225",
    "scene": "building site, a small slim white pictogram builder climbing a scaffold while a crane swings a steel beam into place, cement mixer, stacked bricks, hard hat sign, dust puffs, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "consult": {
    "file": null,
@@ -11703,8 +11703,8 @@
    "status": "review"
   },
   "continuous": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/continuous.png",
+   "blob": "583a9f493c471ff24a2421f83847df380bf64143",
    "courses": [
     "h1",
     "h3",
@@ -11715,8 +11715,8 @@
    "scene": "bedroom at night, a small slim white pictogram character tossing and turning and finally jumping out of bed as endless street noise lines pour through the window, cars and a moon",
    "scene_source": "scripts/tf_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(h1)이 아니라 tf 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "continuously": {
    "file": null,
@@ -12161,8 +12161,8 @@
    "status": "missing"
   },
   "correct": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/correct.png",
+   "blob": "0ec10aede65e3aecdc7b8504510aecbbb5fdbeec",
    "courses": [
     "h1"
    ],
@@ -12170,8 +12170,8 @@
    "sense_from": "h1-275",
    "scene": "bright classroom, a small slim white pictogram teacher sweeping a red free pen across a worksheet to cross out a wrong sum and write the right one beside it, big check mark on the board, desks, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "correctly": {
    "file": "assets/words/c/correctly.png",
@@ -12202,8 +12202,8 @@
    "status": "missing"
   },
   "correspond": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/correspond.png",
+   "blob": "462addcb36700487d9f402cb7a9f8a1429d49c2d",
    "courses": [
     "h1",
     "h2",
@@ -12213,8 +12213,8 @@
    "sense_from": "h1-207",
    "scene": "post office sorting room, two small slim white pictogram clerks tossing letters back and forth between matching labeled slots that line up exactly, mail sacks, stamp press, arrow marks, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "correspondence": {
    "file": null,
@@ -12672,8 +12672,8 @@
    "status": "missing"
   },
   "crane": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/crane.png",
+   "blob": "01277a6792da5bf803a781b9d71b9c40fffb2d28",
    "courses": [
     "m3"
    ],
@@ -12681,8 +12681,8 @@
    "sense_from": "m3-58",
    "scene": "bright building site, a small slim white pictogram operator working a tall lifting machine that swings a steel beam high over the frame, hook, cables, hard hats, motion lines",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "crash": {
    "file": "assets/words/c/crash.png",
@@ -13150,8 +13150,8 @@
    "status": "missing"
   },
   "cultivate": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/cultivate.png",
+   "blob": "126798cb299308f649c366f54353c98d258fb280",
    "courses": [
     "m3",
     "h1",
@@ -13164,8 +13164,8 @@
    "scene": "vegetable field, a small slim white pictogram farmer swinging a hoe and jumping over furrows while young sprouts rise in neat rows behind, watering can, seed sack, greenhouse, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "cultivator": {
    "file": null,
@@ -13938,8 +13938,8 @@
    "status": "missing"
   },
   "decorate": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/d/decorate.png",
+   "blob": "08c94f5dbec30f7b0a31d32c235326acf25a01f6",
    "courses": [
     "m3",
     "h1",
@@ -13950,8 +13950,8 @@
    "scene": "bright hall, a small slim white pictogram decorator on a ladder hanging streamers and wreaths while stringing bunting across the ceiling, boxes of ornaments, tape, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "decrease": {
    "file": "assets/words/d/decrease.png",
@@ -14713,8 +14713,8 @@
    "status": "missing"
   },
   "deprived": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/d/deprived.png",
+   "blob": "bcea630533ef650692ab65c75178586a238a5da8",
    "courses": [
     "h1"
    ],
@@ -14722,8 +14722,8 @@
    "sense_from": "h1-203",
    "scene": "bare room in plain daylight from a wide window, a small slim white pictogram character reaching up toward an empty shelf and an empty bowl while a single worn blanket hangs on a hook, cracked wall, bare floor boards, clean even thin outlines",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "depth": {
    "file": null,
@@ -15816,8 +15816,8 @@
    "status": "review"
   },
   "disappointed": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/d/disappointed.png",
+   "blob": "164942c5f9e7018ea2f3fc212fc5b6394c955b30",
    "courses": [
     "h1"
    ],
@@ -15825,8 +15825,8 @@
    "sense_from": "h1-220",
    "scene": "school corridor notice board, a small slim white pictogram student slumping with shoulders dropped and arms hanging after reading a result list, crumpled paper falling, lockers, downward motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "disapprove": {
    "file": null,
@@ -16524,8 +16524,8 @@
    "status": "missing"
   },
   "distribute": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/d/distribute.png",
+   "blob": "44a628a7b1fac8989acb9b56a9c3d136c604c7c3",
    "courses": [
     "m3",
     "h1",
@@ -16536,8 +16536,8 @@
    "scene": "relief tent, a small slim white pictogram volunteer tossing supply parcels out to many outstretched hands from a big open crate, boxes stacked behind, queue line, arrow marks fanning outward",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "distribution": {
    "file": null,
@@ -16696,8 +16696,8 @@
    "status": "missing"
   },
   "document": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/d/document.png",
+   "blob": "38a1b6d1b13a30de1a9835227ea013f041bb6158",
    "courses": [
     "m3",
     "h1",
@@ -16708,8 +16708,8 @@
    "scene": "university office counter, a small slim white pictogram student signing a document with a flourish and racing to drop it into an application box, clock and stamps",
    "scene_source": "scripts/tf_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 tf 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "doll": {
    "file": "assets/words/d/doll.png",
@@ -16784,8 +16784,8 @@
    "status": "missing"
   },
   "dominate": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/d/dominate.png",
+   "blob": "e95f71aab320e5f1fd503d883db88c7cdc68ad7b",
    "courses": [
     "m3",
     "h2",
@@ -16796,8 +16796,8 @@
    "scene": "soccer field, a small slim white pictogram team running circles around the other team and kicking a ball into the goal again and again, scoreboard showing 5 to 0",
    "scene_source": "scripts/tf_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 tf 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "donate": {
    "file": null,
@@ -17104,8 +17104,8 @@
    "status": "review"
   },
   "drop out": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/d/drop-out.png",
+   "blob": "10c69901fa66c714c41a00ef2e0f772e00d5e4c7",
    "courses": [
     "m3"
    ],
@@ -17113,8 +17113,8 @@
    "sense_from": "m3-44",
    "scene": "bright school gate, a small slim white pictogram student walking away from the building with a bag while classmates head inside, a name being crossed off a class list, exit arrow, motion lines",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "drought": {
    "file": null,
@@ -17394,8 +17394,8 @@
    "status": "missing"
   },
   "dynasty": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/d/dynasty.png",
+   "blob": "b70a31e115a6cd2955663706e0d6ceca30994702",
    "courses": [
     "m3"
    ],
@@ -17403,8 +17403,8 @@
    "sense_from": "m3-56",
    "scene": "bright palace hall, small slim white pictogram rulers of one family shown in a line of portraits passing a crown down the generations, throne, banner, family chart, motion lines",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "eager": {
    "file": null,
@@ -17505,8 +17505,8 @@
    "status": "missing"
   },
   "earthquake": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/e/earthquake.png",
+   "blob": "388694b1907401111fd28f5c09814543e5c9d07b",
    "courses": [
     "h1",
     "h2"
@@ -17515,8 +17515,8 @@
    "sense_from": "h1-230",
    "scene": "city street corner, a small slim white pictogram character stumbling with arms out as the pavement splits into a jagged crack and lamp posts tilt, falling roof tiles, shaking building outlines, tremor lines",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "ease": {
    "file": null,
@@ -17664,8 +17664,8 @@
    "status": "review"
   },
   "edible": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/e/edible.png",
+   "blob": "c96163e8dce09a6040e5ad8c874cf86500a56f5e",
    "courses": [
     "m3",
     "h1",
@@ -17676,8 +17676,8 @@
    "scene": "bright farmers market stall, a small slim white pictogram shopper biting into a crisp apple while pointing at a sign over baskets of fruit and vegetables, scales, crates, awning, motion lines, clean even thin outlines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "educate": {
    "file": null,
@@ -17955,8 +17955,8 @@
    "status": "missing"
   },
   "eliminate": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/e/eliminate.png",
+   "blob": "cbcaa8a869ff560a331189a8356f2bcd2feae08a",
    "courses": [
     "h1",
     "tf"
@@ -17965,8 +17965,8 @@
    "sense_from": "h1-228",
    "scene": "puzzle room, a small slim white pictogram solver sweeping one whole row of wrong answer cards off a board into a bin with a big arm swing, remaining single card standing, cross marks, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "else": {
    "file": "assets/words/e/else.png",
@@ -18255,8 +18255,8 @@
    "status": "missing"
   },
   "employ": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/e/employ.png",
+   "blob": "03d82550432b0d891548a3e2532a22140541e1fa",
    "courses": [
     "m3",
     "h1",
@@ -18269,8 +18269,8 @@
    "scene": "small factory office, a small slim white pictogram owner shaking hands vigorously with a new worker while handing over a tool belt, hiring notice on the wall, workbenches, time clock, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "empower": {
    "file": null,
@@ -18727,8 +18727,8 @@
    "status": "missing"
   },
   "ensure": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/e/ensure.png",
+   "blob": "bb289f57177d018408b95a030c604201544e88ca",
    "courses": [
     "h1",
     "h3",
@@ -18738,8 +18738,8 @@
    "sense_from": "h1-205",
    "scene": "workshop door, a small slim white pictogram inspector pulling hard on a padlock to test it and stamping a big check mark on a checklist board, tool belt, spare locks on hooks, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "entail": {
    "file": null,
@@ -19382,8 +19382,8 @@
    "status": "missing"
   },
   "ethic": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/e/ethic.png",
+   "blob": "bd4a79da1e67eb55506e8c7ef4fe643800631417",
    "courses": [
     "m3"
    ],
@@ -19391,8 +19391,8 @@
    "sense_from": "m3-64",
    "scene": "bright office, a small slim white pictogram worker returning a found wallet while a code of conduct board hangs on the wall and a tempting cash box stays shut, motion lines",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "ethical": {
    "file": null,
@@ -20518,8 +20518,8 @@
    "status": "missing"
   },
   "extensive": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/e/extensive.png",
+   "blob": "4a8bc71d6ab322fe6a60cef0b6c297289b7a74ca",
    "courses": [
     "h1",
     "tf"
@@ -20528,8 +20528,8 @@
    "sense_from": "h1-271",
    "scene": "bright hilltop lookout, a small slim white pictogram surveyor stretching both arms wide across a vast patchwork of fields stretching to the far horizon, tripod telescope, rolled maps, fence line, thin distance lines",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "extent": {
    "file": null,
@@ -21439,8 +21439,8 @@
    "status": "review"
   },
   "feature": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/f/feature.png",
+   "blob": "b1542fc46b889ab37e787bdeac0341d66b8ec7ba",
    "courses": [
     "m3",
     "h1",
@@ -21452,8 +21452,8 @@
    "scene": "bright product stand, a small slim white pictogram presenter pointing at one standout function of a machine while a poster lists it as the headline, arrow, spotlight outline, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "federal": {
    "file": null,
@@ -22709,8 +22709,8 @@
    "status": "missing"
   },
   "foster": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/f/foster.png",
+   "blob": "33feb74f022de7488cfc237200fe49339475c95c",
    "courses": [
     "h1",
     "h3"
@@ -22719,8 +22719,8 @@
    "sense_from": "h1-255",
    "scene": "greenhouse nursery, a small slim white pictogram gardener kneeling to cup a tiny sprout and lift a watering can over it while rows of growing plants rise behind, seed trays, growth chart, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "foul": {
    "file": null,
@@ -23412,8 +23412,8 @@
    "status": "review"
   },
   "gap": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/g/gap.png",
+   "blob": "78b9dfc447e773acc47e530af3cec98a3a4cf35f",
    "courses": [
     "m3",
     "tf"
@@ -23422,8 +23422,8 @@
    "sense_from": "m3-93",
    "scene": "bright bridge, a small slim white pictogram walker stopping at a wide missing section between two halves while a measuring band shows the distance, warning post, gap lines",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "garage": {
    "file": "assets/words/g/garage.png",
@@ -24253,8 +24253,8 @@
    "status": "missing"
   },
   "govern": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/g/govern.png",
+   "blob": "0fb42aa308f96761de3c210e51cfb2665ff7fcf9",
    "courses": [
     "h1",
     "tf"
@@ -24263,8 +24263,8 @@
    "sense_from": "h1-221",
    "scene": "town hall chamber, a small slim white pictogram leader standing at a raised podium sweeping one arm over a city map while council members raise hands to vote, flags, gavel, ledger books, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "governing": {
    "file": null,
@@ -24492,8 +24492,8 @@
    "status": "missing"
   },
   "gratitude": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/g/gratitude.png",
+   "blob": "8067b14edaca638490daeef567c136e1da5df463",
    "courses": [
     "h1",
     "h3"
@@ -24502,8 +24502,8 @@
    "sense_from": "h1-254",
    "scene": "farmhouse doorway, a small slim white pictogram character bowing deeply while holding out a basket of fruit to a neighbor with both hands, thank you note pinned nearby, garden gate, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "grave": {
    "file": "assets/words/g/grave.png",
@@ -24833,8 +24833,8 @@
    "status": "missing"
   },
   "guilty": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/g/guilty.png",
+   "blob": "4b2884d5b716716ac04ec0a89e13767139ff4b56",
    "courses": [
     "m3",
     "h3"
@@ -24843,8 +24843,8 @@
    "sense_from": "m3-46",
    "scene": "bright courtroom, a small slim white pictogram defendant lowering the head with hands clasped while a judge holds up a verdict card and a broken window piece sits as evidence, motion lines",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "gun": {
    "file": "assets/words/g/gun.png",
@@ -25133,8 +25133,8 @@
    "status": "ok"
   },
   "harsh": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/h/harsh.png",
+   "blob": "f2ead125da824780e18d6a0ccb82c3ffebb012a1",
    "courses": [
     "h1",
     "h2",
@@ -25144,8 +25144,8 @@
    "sense_from": "h1-199",
    "scene": "desert storm ridge, a small slim white pictogram traveler leaning hard into a blasting sandstorm gripping a hat while a scarf whips straight out, bent cactus, cracked ground, strong wind streak lines",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "harvest": {
    "file": "assets/words/h/harvest.png",
@@ -26803,8 +26803,8 @@
    "status": "review"
   },
   "imitate": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/i/imitate.png",
+   "blob": "47c505a9cd3b444e6f9707263e623ab5486d7f4a",
    "courses": [
     "m3",
     "h1",
@@ -26816,8 +26816,8 @@
    "scene": "bright dance studio, a small slim white pictogram learner copying a teacher's exact arm position step for step in the mirror, dotted outline over the pose, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "immediate": {
    "file": null,
@@ -26933,8 +26933,8 @@
    "status": "missing"
   },
   "immune": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/i/immune.png",
+   "blob": "8b1586ebbd802a5c2c7f5bc8d3cb75077a02f4b0",
    "courses": [
     "m3",
     "h2",
@@ -26944,8 +26944,8 @@
    "sense_from": "m3-51",
    "scene": "bright clinic, a small slim white pictogram patient standing unaffected behind a shield outline while germ shapes bounce off after a vaccination, chart of defence cells, motion lines",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "impact": {
    "file": null,
@@ -27292,8 +27292,8 @@
    "status": "missing"
   },
   "impression": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/i/impression.png",
+   "blob": "382ee826b22ca19dc500c5b13d1781c8cc02f1e3",
    "courses": [
     "m3",
     "tf"
@@ -27302,8 +27302,8 @@
    "sense_from": "m3-113",
    "scene": "bright doorway, a small slim white pictogram guest leaving while the host holds a strong thought shape of that first meeting above the head, footprint pressed into soft ground",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "impressive": {
    "file": null,
@@ -27346,8 +27346,8 @@
    "status": "missing"
   },
   "improve": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/i/improve.png",
+   "blob": "22acd69042f479c27c885d5b34213201f87b41dc",
    "courses": [
     "m3",
     "h1",
@@ -27360,8 +27360,8 @@
    "scene": "bright pottery studio, a small slim white pictogram potter reshaping a lopsided bowl into a smooth even one on the wheel, a row on the shelf showing worse to better, clay tools, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "improvise": {
    "file": null,
@@ -28146,8 +28146,8 @@
    "status": "missing"
   },
   "indicate": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/i/indicate.png",
+   "blob": "77db303b14a9f8fae50b56c11af028df15bd2d02",
    "courses": [
     "m3",
     "h1",
@@ -28160,8 +28160,8 @@
    "scene": "railway platform, a small slim white pictogram guard stretching one arm out to point at a big arrow sign showing the way to the track, hanging timetable board, luggage cart, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "indication": {
    "file": null,
@@ -28306,8 +28306,8 @@
    "status": "review"
   },
   "industry": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/i/industry.png",
+   "blob": "c5bbebd36ed8081d3f931cf7d8f298ea7830f27f",
    "courses": [
     "m3",
     "h1",
@@ -28318,8 +28318,8 @@
    "scene": "bright factory district, a small slim white pictogram worker walking past rows of machines and chimneys while a conveyor moves parts along, crates, warehouse, gears, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "ineffective": {
    "file": null,
@@ -28536,8 +28536,8 @@
    "status": "missing"
   },
   "influence": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/i/influence.png",
+   "blob": "45b4c15bc48484c7db5b84023a1e5e0de611acd8",
    "courses": [
     "m3",
     "h1",
@@ -28548,8 +28548,8 @@
    "scene": "billiard hall, a small slim white pictogram player striking a cue ball that sends a whole row of balls scattering across the table, chalk cube, score board, spreading ripple arcs, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "influential": {
    "file": null,
@@ -28688,8 +28688,8 @@
    "status": "missing"
   },
   "ingredient": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/i/ingredient.png",
+   "blob": "bed8a6ebe5e4d2ad705bee4eb66ddc99aa5824de",
    "courses": [
     "m3",
     "h1",
@@ -28701,8 +28701,8 @@
    "scene": "bright baking bench, a small slim white pictogram baker tipping flour, eggs, butter and sugar one by one from small bowls into a big mixing bowl, spoon, scale, recipe card, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "inhabit": {
    "file": null,
@@ -28839,8 +28839,8 @@
    "status": "missing"
   },
   "injure": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/i/injure.png",
+   "blob": "cb2a7790b1034341211943d074bbdeaccb61c9b4",
    "courses": [
     "m3",
     "h2"
@@ -28849,8 +28849,8 @@
    "sense_from": "m3-59",
    "scene": "bright sports field, a small slim white pictogram player falling and clutching a knee after a tackle while a trainer runs in with a kit, pain burst mark, stretcher, motion lines",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "injurious": {
    "file": null,
@@ -30314,8 +30314,8 @@
    "status": "missing"
   },
   "island": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/i/island.png",
+   "blob": "e84fedc47b034c3aaebf0666f9776b2c58f02906",
    "courses": [
     "m3"
    ],
@@ -30323,8 +30323,8 @@
    "sense_from": "m3-81",
    "scene": "bright sea view, a small slim white pictogram explorer standing on a small patch of land ringed by water with one palm tree while a boat approaches, waves, shore lines, motion lines",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "isolate": {
    "file": null,
@@ -30549,8 +30549,8 @@
    "status": "missing"
   },
   "journalism": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/j/journalism.png",
+   "blob": "e4c7acf34ba6a7c6325c562bdd84ce1b57a625da",
    "courses": [
     "m3"
    ],
@@ -30558,8 +30558,8 @@
    "sense_from": "m3-102",
    "scene": "bright newsroom, a small slim white pictogram reporter typing fast at a desk while another holds a microphone and a press badge, printing press, headline board, motion lines",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "journey": {
    "file": "assets/words/j/journey.png",
@@ -31209,8 +31209,8 @@
    "status": "missing"
   },
   "layer": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/l/layer.png",
+   "blob": "924e570569ded11fa1528be04e5fe47b4f101497",
    "courses": [
     "m3",
     "h1"
@@ -31219,8 +31219,8 @@
    "sense_from": "m3-40",
    "scene": "attic bookshelf, small slim white pictogram character sweeping a cloth in a big swing to blast away a thick fuzzy layer of dust from a stack of old books, dust puffs flying through the air, motion lines, shelves and floor line",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "lead": {
    "file": "assets/words/l/lead.png",
@@ -31762,8 +31762,8 @@
    "status": "missing"
   },
   "likely": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/l/likely.png",
+   "blob": "f39854b740909edd81f9cf1f1b3da266d47f25f7",
    "courses": [
     "m3",
     "h1"
@@ -31773,8 +31773,8 @@
    "scene": "weather station porch, a small slim white pictogram forecaster reaching up to move a pointer toward a cloud symbol on a probability dial, umbrella already in hand, barometer, cloud outlines gathering",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "likeness": {
    "file": null,
@@ -32438,8 +32438,8 @@
    "status": "missing"
   },
   "loyal": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/l/loyal.png",
+   "blob": "e78c210fdbb7f51b95903b65dfb36529803446fc",
    "courses": [
     "h1",
     "h3"
@@ -32448,8 +32448,8 @@
    "sense_from": "h1-246",
    "scene": "cottage gate on a bright overcast day, a small slim white pictogram character returning home as a dog bounds up wagging and jumping, worn waiting spot by the gate, fence, garden path, motion lines, clean even thin outlines",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "luck": {
    "file": "assets/words/l/luck.png",
@@ -32718,8 +32718,8 @@
    "status": "missing"
   },
   "make a decision": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/m/make-a-decision.png",
+   "blob": "a44265d4b889c0e59d5d1540cf75d7d4bea12111",
    "courses": [
     "m3"
    ],
@@ -32727,8 +32727,8 @@
    "sense_from": "m3-72",
    "scene": "bright crossroads, a small slim white pictogram walker stepping firmly onto one of two paths after lowering a pointing hand, discarded map of the other route, arrow chosen",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "make sense": {
    "file": null,
@@ -33181,8 +33181,8 @@
    "status": "missing"
   },
   "mass": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/m/mass.png",
+   "blob": "b62d6cdbab007ac948c5415c1127d411443641af",
    "courses": [
     "m3",
     "h1",
@@ -33193,8 +33193,8 @@
    "scene": "warehouse floor, a small slim white pictogram worker climbing a ladder beside an enormous heap of identical crates stacked to the ceiling, forklift, conveyor belt rolling out more boxes, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "mass communication": {
    "file": "assets/words/m/mass-communication.png",
@@ -33343,8 +33343,8 @@
    "status": "review"
   },
   "mature": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/m/mature.png",
+   "blob": "5c6ef0c24bbbc28bf167398fda9fa96063c4ae38",
    "courses": [
     "m3",
     "h1",
@@ -33355,8 +33355,8 @@
    "scene": "bright orchard, a small slim white pictogram grower picking a fully ripe fruit while a growth chart shows sapling to full tree, measuring post, unripe fruit aside, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "maturity": {
    "file": null,
@@ -33933,8 +33933,8 @@
    "status": "review"
   },
   "metaphor": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/m/metaphor.png",
+   "blob": "9fc689f15043d94d53b9ce08a2318ce6a7890b2f",
    "courses": [
     "h1",
     "h2",
@@ -33944,8 +33944,8 @@
    "sense_from": "h1-206",
    "scene": "poetry classroom, a small slim white pictogram poet leaping to chalk a heart shape and a lion shape joined by an equal sign on the board, open book, quill, floating word cards, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "method": {
    "file": "assets/words/m/method.png",
@@ -34175,8 +34175,8 @@
    "status": "missing"
   },
   "mineral": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/m/mineral.png",
+   "blob": "ae470b337951747c970c552857a9cf70b1ec4188",
    "courses": [
     "m3"
    ],
@@ -34184,8 +34184,8 @@
    "sense_from": "m3-68",
    "scene": "bright geology lab, a small slim white pictogram student sorting crystal and ore samples into labelled trays while a chart names each rock, hammer, magnifier, motion lines",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "minimal": {
    "file": null,
@@ -34875,8 +34875,8 @@
    "status": "missing"
   },
   "most of all": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/m/most-of-all.png",
+   "blob": "806781280f4c422449e0e1eeca78c7290e8f15bd",
    "courses": [
     "m3"
    ],
@@ -34884,8 +34884,8 @@
    "sense_from": "m3-105",
    "scene": "bright display shelf, a small slim white pictogram shopper lifting one favourite item high above several others while a top ranking star marks it, arrow to the best, motion lines",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "mostly": {
    "file": "assets/words/m/mostly.png",
@@ -35129,8 +35129,8 @@
    "status": "missing"
   },
   "murder": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/m/murder.png",
+   "blob": "a4f63ca11419f8315cc4cc4ff94369ab2849e17f",
    "courses": [
     "m3"
    ],
@@ -35138,8 +35138,8 @@
    "sense_from": "m3-80",
    "scene": "bright detective office, a small slim white pictogram investigator studying a case board with an outline shape on the floor plan and a crossed out name, evidence bag, magnifier",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "muscle": {
    "file": null,
@@ -35230,8 +35230,8 @@
    "status": "review"
   },
   "myth": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/m/myth.png",
+   "blob": "cf15a36a8d1d6784d66148bb52313e5a7177aee2",
    "courses": [
     "m3",
     "h1",
@@ -35244,8 +35244,8 @@
    "scene": "bright museum gallery, a small slim white pictogram guide pointing up at a huge relief carving of a winged horse and a giant while children look up, ancient urns, plaque, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "nail": {
    "file": "assets/words/n/nail.png",
@@ -35359,8 +35359,8 @@
    "status": "review"
   },
   "native": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/n/native.png",
+   "blob": "a19d05e0bb375a5a431c51d45e18825331e77536",
    "courses": [
     "m3",
     "h1",
@@ -35371,8 +35371,8 @@
    "scene": "bright village clearing, a small slim white pictogram local in traditional dress welcoming a visitor while showing a home built in the old way, carved totem, home ground sign, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "natural": {
    "file": null,
@@ -35544,8 +35544,8 @@
    "status": "missing"
   },
   "negative": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/n/negative.png",
+   "blob": "53b12088f2ef36d4e5b90cd976ac6241fe6c9c97",
    "courses": [
     "m3",
     "h1"
@@ -35555,8 +35555,8 @@
    "scene": "school science room, a small slim white pictogram student jumping back as two magnet poles push apart with a minus sign chalked on the board, repelling arrow marks, battery models on the bench",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "neglect": {
    "file": "assets/words/n/neglect.png",
@@ -36695,8 +36695,8 @@
    "status": "review"
   },
   "official": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/o/official.png",
+   "blob": "6fc095b0b6fa4ac9406b6fc963a20c35823701d7",
    "courses": [
     "m3",
     "h1"
@@ -36706,8 +36706,8 @@
    "scene": "bright counter, a small slim white pictogram officer in a uniform cap pressing a government seal onto a certificate while a badge and notice board stand behind, stamp pad, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "offspring": {
    "file": null,
@@ -36817,8 +36817,8 @@
    "status": "missing"
   },
   "online": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/o/online.png",
+   "blob": "d421057aa781b49823a07ee86bf6c8d7ea994d26",
    "courses": [
     "m3"
    ],
@@ -36826,8 +36826,8 @@
    "sense_from": "m3-112",
    "scene": "bright desk, a small slim white pictogram user typing at a screen while signal arcs connect to other screens across a wide network diagram, router, cloud outline, motion lines",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "onset": {
    "file": null,
@@ -37494,8 +37494,8 @@
    "status": "missing"
   },
   "outstanding": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/o/outstanding.png",
+   "blob": "a8b9f5582d04b6de9bad81dc5d3f6e90f41ae511",
    "courses": [
     "m3",
     "h1",
@@ -37506,8 +37506,8 @@
    "scene": "bright award stage, a small slim white pictogram winner leaping up on the tallest podium step holding a trophy high while two others clap below, ribbon banner, spotlight outlines, confetti, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "outward": {
    "file": null,
@@ -37878,8 +37878,8 @@
    "status": "review"
   },
   "pace": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/p/pace.png",
+   "blob": "e62bed5350b32ea4f9be7706522c6ac3f779290b",
    "courses": [
     "h1",
     "tf"
@@ -37888,8 +37888,8 @@
    "sense_from": "h1-237",
    "scene": "running track, a small slim white pictogram runner glancing at a big stopwatch while striding in long even steps past distance markers, coach with clipboard, lane lines, evenly spaced motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "Pacific": {
    "file": null,
@@ -38282,8 +38282,8 @@
    "status": "ok"
   },
   "pass away": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/p/pass-away.png",
+   "blob": "fd00e4cfa6b5ccd58767b8319c650a10cae516de",
    "courses": [
     "m3"
    ],
@@ -38291,8 +38291,8 @@
    "sense_from": "m3-87",
    "scene": "bright memorial garden, small slim white pictogram mourners laying flowers at a headstone while a framed portrait rests on a stand, candle, quiet bowed heads, motion lines",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "pass through": {
    "file": null,
@@ -38589,8 +38589,8 @@
    "status": "missing"
   },
   "pay attention": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/p/pay-attention.png",
+   "blob": "1dce91696d914c414249b86940d801bbb9850814",
    "courses": [
     "m3"
    ],
@@ -38598,8 +38598,8 @@
    "sense_from": "m3-83",
    "scene": "bright classroom, a small slim white pictogram student sitting upright with eyes fixed on the teacher and a pointing finger while a neighbour daydreams, focus lines, motion lines",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "pay off": {
    "file": null,
@@ -38944,8 +38944,8 @@
    "status": "missing"
   },
   "permit": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/p/permit.png",
+   "blob": "183a8c8c7593ef0bb18972a067e4ea9a7fef10b1",
    "courses": [
     "m3",
     "h1",
@@ -38956,8 +38956,8 @@
    "scene": "construction site gate, a small slim white pictogram guard lifting the barrier arm and waving a truck through while holding up a stamped permit card, gate house, fence, sign board, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "perplex": {
    "file": null,
@@ -39339,8 +39339,8 @@
    "status": "missing"
   },
   "physician": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/p/physician.png",
+   "blob": "df4d014ba9244b446dabebcb97e2089153c07ef6",
    "courses": [
     "h1",
     "h2",
@@ -39351,8 +39351,8 @@
    "sense_from": "h1-278",
    "scene": "bright clinic room, a small slim white pictogram doctor hurrying over with a stethoscope raised to listen to a patient sitting on the examination bed, chart clipboard, medicine cabinet, height chart, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "pick": {
    "file": "assets/words/p/pick.png",
@@ -39817,8 +39817,8 @@
    "status": "review"
   },
   "poetry": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/p/poetry.png",
+   "blob": "03203c3d4f207f6db2b50ae5b7e56a755b7d8970",
    "courses": [
     "h1",
     "h2"
@@ -39827,8 +39827,8 @@
    "sense_from": "h1-276",
    "scene": "bright reading garden pavilion, a small slim white pictogram poet standing on a bench reciting from an open book with one arm raised while pages float around, quill, ink pot, ivy trellis, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "point": {
    "file": null,
@@ -39981,8 +39981,8 @@
    "status": "missing"
   },
   "poll": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/p/poll.png",
+   "blob": "d02003832cf64c040a4881419534670b0c7b36e4",
    "courses": [
     "m3",
     "h1",
@@ -39993,8 +39993,8 @@
    "scene": "bright village hall, a small slim white pictogram voter dropping a slip into a ballot box while a tally chart of two options fills in on the wall, queue line, pencil on a string, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "pollen": {
    "file": null,
@@ -42354,8 +42354,8 @@
    "status": "missing"
   },
   "publish": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/p/publish.png",
+   "blob": "1a61dde0dc681318df71309445e984129392ba5a",
    "courses": [
     "m3",
     "h1"
@@ -42365,8 +42365,8 @@
    "scene": "bright print house, a small slim white pictogram publisher lifting the first finished copy off a press while stacks of bound books go out in a crate, proof sheets, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "pull": {
    "file": "assets/words/p/pull.png",
@@ -43038,8 +43038,8 @@
    "status": "missing"
   },
   "random": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/r/random.png",
+   "blob": "8cb8abf7d0b005cf56ba17e106383321cc5d972c",
    "courses": [
     "h1",
     "tf"
@@ -43048,8 +43048,8 @@
    "sense_from": "h1-244",
    "scene": "game hall table, a small slim white pictogram player shaking a lottery drum so numbered balls tumble out in no order and dice bounce across the table, scattered cards, spinner wheel, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "range": {
    "file": null,
@@ -43082,8 +43082,8 @@
    "status": "missing"
   },
   "rapid": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/r/rapid.png",
+   "blob": "666b9b3c1fde95551c546e8ea8e6d442b6e310aa",
    "courses": [
     "m3",
     "h1",
@@ -43094,8 +43094,8 @@
    "scene": "mountain river rapids, a small slim white pictogram rafter paddling furiously as the raft shoots between rocks through churning white water, speed streak lines, spray droplets, pine trees on the bank",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "rapidly": {
    "file": "assets/words/r/rapidly.png",
@@ -43271,8 +43271,8 @@
    "status": "review"
   },
   "react": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/r/react.png",
+   "blob": "682f6f965f263e82773349fc9f3ee1a7f2aeeab5",
    "courses": [
     "m3",
     "h1"
@@ -43282,8 +43282,8 @@
    "scene": "bright science classroom, a small slim white pictogram student jumping back as a flask on the bench fizzes over with bubbles, safety goggles slipping, spilled beaker, chart on wall, burst marks, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "readily": {
    "file": null,
@@ -44107,8 +44107,8 @@
    "status": "missing"
   },
   "regardless of": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/r/regardless-of.png",
+   "blob": "6f151145b2c23972fb4eecfdf96916211a906ae5",
    "courses": [
     "m3",
     "tf"
@@ -44117,8 +44117,8 @@
    "sense_from": "m3-90",
    "scene": "bright street in heavy rain, a small slim white pictogram walker striding on toward the goal despite a storm sign and a broken umbrella, forward arrow crossing obstacles",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "regime": {
    "file": null,
@@ -44163,8 +44163,8 @@
    "status": "missing"
   },
   "regret": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/r/regret.png",
+   "blob": "166509c1c34699a9cc110fdb2723f751de63ddbc",
    "courses": [
     "m3",
     "h1",
@@ -44175,8 +44175,8 @@
    "scene": "bright study room by a wide sunlit window, a small slim white pictogram character clutching the head while staring at a torn letter and a wall calendar with one circled past date, crumpled paper balls on the floor, bookshelf, wavy thought lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "regular": {
    "file": "assets/words/r/regular.png",
@@ -44310,8 +44310,8 @@
    "status": "missing"
   },
   "related": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/r/related.png",
+   "blob": "dc9036cb7ae59c50c1cee2c6e54e0ce7839f798f",
    "courses": [
     "h1",
     "h2",
@@ -44321,8 +44321,8 @@
    "sense_from": "h1-268",
    "scene": "bright family archive room, a small slim white pictogram researcher reaching up to connect two portrait frames on a big family tree chart with a drawn line, boxes of records, ladder, magnifier, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "relation": {
    "file": null,
@@ -45037,8 +45037,8 @@
    "status": "missing"
   },
   "reproduce": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/r/reproduce.png",
+   "blob": "b52e2babbf473ee81758c548233eb3c8e3dc12f9",
    "courses": [
     "m3",
     "h1",
@@ -45050,8 +45050,8 @@
    "scene": "bright print shop, a small slim white pictogram printer cranking a copy machine that spits out a row of identical posters flying into the air, original drawing pinned above, paper stacks, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "republic": {
    "file": "assets/words/r/republic.png",
@@ -46556,8 +46556,8 @@
    "status": "missing"
   },
   "run out of": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/r/run-out-of.png",
+   "blob": "9cdf23d905ec189ec41875dcad1e7af02b47a8e7",
    "courses": [
     "m3"
    ],
@@ -46565,8 +46565,8 @@
    "sense_from": "m3-108",
    "scene": "bright kitchen, a small slim white pictogram cook shaking a completely empty flour sack upside down while a shopping list is written, empty jars, nothing falls, motion lines",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "runaway": {
    "file": null,
@@ -46639,8 +46639,8 @@
    "status": "missing"
   },
   "sacrifice": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/s/sacrifice.png",
+   "blob": "4cbac28f143e20e05223b06d3de896ff53259021",
    "courses": [
     "m3",
     "h1",
@@ -46651,8 +46651,8 @@
    "scene": "rope bridge over a gorge, a small slim white pictogram climber handing over the last water bottle and the only rope to a friend while stepping back empty handed, cliffs, swaying planks, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "sad": {
    "file": "assets/words/s/sad.png",
@@ -46887,8 +46887,8 @@
    "status": "missing"
   },
   "satisfy": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/s/satisfy.png",
+   "blob": "80596f052bac242cf848122e1c5c0ee315b85018",
    "courses": [
     "m3",
     "h1"
@@ -46898,8 +46898,8 @@
    "scene": "diner counter, a small slim white pictogram cook sliding a full plate across to a customer who leans back with a wide smile patting a full belly, empty bowl stack, order bell, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "save": {
    "file": "assets/words/s/save.png",
@@ -47254,8 +47254,8 @@
    "status": "review"
   },
   "screen": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/s/screen.png",
+   "blob": "22f8e4d94372b1ef3d9fa1c1eafe330326ef98ad",
    "courses": [
     "h1"
    ],
@@ -47263,8 +47263,8 @@
    "sense_from": "h1-262",
    "scene": "bright cinema lobby, a small slim white pictogram usher pulling back a wide folding partition to reveal a large blank projection screen, film reels, ticket booth, rows of seats beyond, motion lines, clean even thin outlines",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "script": {
    "file": null,
@@ -47299,8 +47299,8 @@
    "status": "review"
   },
   "seal": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/s/seal.png",
+   "blob": "f9865dc982dae075f4ca5a06778fefca6f0988ef",
    "courses": [
     "h1",
     "h3",
@@ -47310,8 +47310,8 @@
    "sense_from": "h1-214",
    "scene": "shipping room, a small slim white pictogram packer slamming a big stamp onto a parcel to press wax shut while a seal animal balances a ball on a crate nearby, tape rolls, shelves, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "search": {
    "file": "assets/words/s/search.png",
@@ -47706,8 +47706,8 @@
    "status": "missing"
   },
   "sensitive": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/s/sensitive.png",
+   "blob": "6148a4a80d7b9228595ebe6ccbe39836a4398ff5",
    "courses": [
     "m3",
     "h3",
@@ -47717,8 +47717,8 @@
    "sense_from": "m3-110",
    "scene": "bright clinic, a small slim white pictogram patient flinching from a light touch on the arm while a feather is drawn nearby, ripple marks of feeling, motion lines",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "sensory": {
    "file": null,
@@ -47988,8 +47988,8 @@
    "status": "missing"
   },
   "set up": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/s/set-up.png",
+   "blob": "c892b01082234f90e2ab3d76f167835e6f117194",
    "courses": [
     "m3"
    ],
@@ -47997,8 +47997,8 @@
    "sense_from": "m3-91",
    "scene": "bright hall, a small slim white pictogram organizer raising a folding table and clipping a banner into place while chairs are arranged in rows, toolbox, motion lines",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "setback": {
    "file": null,
@@ -50868,8 +50868,8 @@
    "status": "review"
   },
   "station": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/s/station.png",
+   "blob": "338984f68c803e349e55e7674df79ddcbbc46c5c",
    "courses": [
     "h1"
    ],
@@ -50877,8 +50877,8 @@
    "sense_from": "h1-223",
    "scene": "busy train station hall, a small slim white pictogram traveler running across the platform toward an arriving train with a suitcase bouncing behind, big clock, departure board, benches, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "stationary": {
    "file": null,
@@ -50894,8 +50894,8 @@
    "status": "missing"
   },
   "stationery": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/s/stationery.png",
+   "blob": "66d1993f50e6ce66964a9ea33899da21cac80289",
    "courses": [
     "h1"
    ],
@@ -50903,8 +50903,8 @@
    "sense_from": "h1-226",
    "scene": "school supply shop, a small slim white pictogram shopper reaching over a counter stacked with pencils, notebooks, scissors and glue sticks in tidy bins, shelf signs, paper rolls, price tags",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "statistic": {
    "file": null,
@@ -53399,8 +53399,8 @@
    "status": "missing"
   },
   "tale": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/t/tale.png",
+   "blob": "a901db6bb8b6cb95b9db5884bab04c97d77177a6",
    "courses": [
     "h1"
    ],
@@ -53408,8 +53408,8 @@
    "sense_from": "h1-257",
    "scene": "bright library story corner by tall windows, a small slim white pictogram storyteller leaping up with arms spread wide acting out a dragon while children lean in around an open book, floating castle outline drawn in thin lines, bookshelves, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "talent": {
    "file": null,
@@ -53686,8 +53686,8 @@
    "status": "missing"
   },
   "temporary": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/t/temporary.png",
+   "blob": "aaa6d814389615acc49969b03a645a77ba918059",
    "courses": [
     "m3",
     "h1",
@@ -53699,8 +53699,8 @@
    "scene": "campsite clearing, a small slim white pictogram camper hammering the last peg of a pop up tent that is clearly built to come down tomorrow, folded poles, backpack, a short stay sign, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "tempt": {
    "file": null,
@@ -53744,8 +53744,8 @@
    "status": "missing"
   },
   "tend": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/t/tend.png",
+   "blob": "02031cd0a4592baa595f5b8cc8833c45633eae5c",
    "courses": [
     "m3",
     "h1",
@@ -53756,8 +53756,8 @@
    "scene": "hillside path, a small slim white pictogram shepherd walking the same worn track again while sheep drift the usual way, repeated footprint trail, fence, arrow marks along the habitual route",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "tend to": {
    "file": null,
@@ -54139,8 +54139,8 @@
    "status": "review"
   },
   "thorn": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/t/thorn.png",
+   "blob": "d1f259515463ee43aed94f4184aab90bbcd7bead",
    "courses": [
     "m3"
    ],
@@ -54148,8 +54148,8 @@
    "sense_from": "m3-50",
    "scene": "bright rose garden, a small slim white pictogram gardener snatching a hand back from a sharp spike on a stem while wearing one glove, pruning shears, prick mark, motion lines",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "thoroughly": {
    "file": null,
@@ -55383,8 +55383,8 @@
    "status": "ok"
   },
   "tribe": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/t/tribe.png",
+   "blob": "3a1289c404121482754c2899c79f69f1b4633d8f",
    "courses": [
     "h1",
     "h2",
@@ -55394,8 +55394,8 @@
    "sense_from": "h1-263",
    "scene": "sunlit grassland camp, a group of small slim white pictogram people dancing in a ring around a totem pole while one beats a drum, round huts, woven baskets, banners on poles, motion lines, clean even thin outlines",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "trick": {
    "file": "assets/words/t/trick.png",
@@ -55680,8 +55680,8 @@
    "status": "missing"
   },
   "turn in": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/t/turn-in.png",
+   "blob": "61f830e5a8d185efcdb9eb18a2133594747e0426",
    "courses": [
     "m3"
    ],
@@ -55689,8 +55689,8 @@
    "sense_from": "m3-74",
    "scene": "bright classroom, a small slim white pictogram student placing a finished worksheet into the teacher's collection tray while others still write, due list, pen down, motion lines",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "turn out": {
    "file": null,
@@ -55808,8 +55808,8 @@
    "status": "missing"
   },
   "ultimate": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/u/ultimate.png",
+   "blob": "3200a53190cddf4a4590a6808f804d975b21e650",
    "courses": [
     "m3",
     "h1"
@@ -55819,8 +55819,8 @@
    "scene": "mountain summit, a small slim white pictogram climber hauling up onto the very top rock and thrusting both arms skyward beside a final summit flag, rope trailing down, clouds below, peak marker, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "ultimately": {
    "file": null,
@@ -56492,8 +56492,8 @@
    "status": "missing"
   },
   "unite": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/u/unite.png",
+   "blob": "e3ad62d367673bc5f8cc09eab03c0b855e6a784f",
    "courses": [
     "m3",
     "h1",
@@ -56504,8 +56504,8 @@
    "scene": "playground tug of war, a row of small slim white pictogram children pulling one rope together in perfect line while a knot ties two rope ends into one, chalk center line, cheering flags, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "unity": {
    "file": "assets/words/u/unity.png",
@@ -56564,8 +56564,8 @@
    "status": "review"
   },
   "university": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/u/university.png",
+   "blob": "5dc514aee061d4d0e267a0224b748ef32d6a6fe8",
    "courses": [
     "h1"
    ],
@@ -56573,8 +56573,8 @@
    "sense_from": "h1-231",
    "scene": "campus quadrangle, a small slim white pictogram graduate running up wide stone steps toward a grand lecture hall with a clock tower, students on the lawn, notice boards, bicycle rack, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "unknown": {
    "file": null,
@@ -57012,8 +57012,8 @@
    "status": "missing"
   },
   "utilize": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/u/utilize.png",
+   "blob": "7ee64a7a53506db8a21f34f13e3ab5a5e18ff9a6",
    "courses": [
     "h1",
     "h3",
@@ -57023,8 +57023,8 @@
    "sense_from": "h1-261",
    "scene": "bright maker workshop, a small slim white pictogram inventor leaping to grab a spare wheel off a shelf and bolt it onto a cart being built, toolboxes open, spare parts bins, pegboard of tools, motion lines, clean even thin outlines",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "utmost": {
    "file": null,
@@ -57593,8 +57593,8 @@
    "status": "missing"
   },
   "vice": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/v/vice.png",
+   "blob": "528349b560c632a5815c80c4a63c3a6ce795dd25",
    "courses": [
     "h1",
     "h3",
@@ -57604,8 +57604,8 @@
    "sense_from": "h1-279",
    "scene": "bright courtroom corridor, a small slim white pictogram officer holding up a handcuff while a masked figure tries to slip away with a stolen bag, warning notice board, columns, motion lines, clean even thin outlines",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "vicious": {
    "file": null,
@@ -57857,8 +57857,8 @@
    "status": "missing"
   },
   "vital": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/v/vital.png",
+   "blob": "5c71f971ef934f09bf4ded77f2d9cd0cccabccc4",
    "courses": [
     "m3",
     "h1",
@@ -57870,8 +57870,8 @@
    "scene": "hospital ward, a small slim white pictogram doctor rushing in to press a hand over a patient chest as a heartbeat line jumps on the monitor, oxygen stand, chart clipboard, urgent motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "vivid": {
    "file": null,
@@ -58248,8 +58248,8 @@
    "status": "missing"
   },
   "wavy": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/w/wavy.png",
+   "blob": "9779f50a993b5e8ee867b127ae2b0ac832a96071",
    "courses": [
     "m3"
    ],
@@ -58257,8 +58257,8 @@
    "sense_from": "m3-103",
    "scene": "bright beach, a small slim white pictogram character running a hand through hair drawn in curling ripples while the sea beyond rolls in matching wave lines, towel, motion lines",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "weak": {
    "file": "assets/words/w/weak.png",
@@ -58304,8 +58304,8 @@
    "status": "review"
   },
   "weapon": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/w/weapon.png",
+   "blob": "9a996a27f488c60de1704da3cc62f1b8596124ee",
    "courses": [
     "h1",
     "tf"
@@ -58314,8 +58314,8 @@
    "sense_from": "h1-229",
    "scene": "bright castle armory hall with tall open windows, a small slim white pictogram knight leaping to pull a sword down from a rack of shields and spears, helmet stand, stone arches, daylight streaming in, clean even thin outlines",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "wear": {
    "file": "assets/words/w/wear.png",

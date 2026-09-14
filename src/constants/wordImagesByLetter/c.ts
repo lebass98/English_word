@@ -172,6 +172,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   constant: require("../../../assets/words/c/constant.png"),
   construct: require("../../../assets/words/c/construct.png"),
   construction: require("../../../assets/words/c/construction.png"),
+  consumer: require("../../../assets/words/c/consumer.png"),
   contact: require("../../../assets/words/c/contact.png"),
   contest: require("../../../assets/words/c/contest.png"),
   continent: require("../../../assets/words/c/continent.png"),

@@ -41,6 +41,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   replace: require("../../../assets/words/r/replace.png"),
   reply: require("../../../assets/words/r/reply.png"),
   report: require("../../../assets/words/r/report.png"),
+  reproduce: require("../../../assets/words/r/reproduce.png"),
   republic: require("../../../assets/words/r/republic.png"),
   request: require("../../../assets/words/r/request.png"),
   resist: require("../../../assets/words/r/resist.png"),

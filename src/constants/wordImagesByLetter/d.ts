@@ -50,6 +50,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   "dialogue between north and south": require("../../../assets/words/d/dialogue-between-north-and-south.png"),
   diary: require("../../../assets/words/d/diary.png"),
   dictionary: require("../../../assets/words/d/dictionary.png"),
+  "die of": require("../../../assets/words/d/die-of.png"),
   different: require("../../../assets/words/d/different.png"),
   difficult: require("../../../assets/words/d/difficult.png"),
   dig: require("../../../assets/words/d/dig.png"),

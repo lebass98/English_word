@@ -53,6 +53,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   mostly: require("../../../assets/words/m/mostly.png"),
   mouse: require("../../../assets/words/m/mouse.png"),
   multiple: require("../../../assets/words/m/multiple.png"),
+  murder: require("../../../assets/words/m/murder.png"),
   museum: require("../../../assets/words/m/museum.png"),
   musician: require("../../../assets/words/m/musician.png"),
   mutual: require("../../../assets/words/m/mutual.png"),

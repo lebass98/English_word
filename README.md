@@ -31,6 +31,8 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-14
+- 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: shortcut
 - 고1 미생성 단어 5장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
   - 대상 단어: specific, fit, numerous, steep, spare
 - 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)

@@ -41,6 +41,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   invader: require("../../../assets/words/i/invader.png"),
   invent: require("../../../assets/words/i/invent.png"),
   invite: require("../../../assets/words/i/invite.png"),
+  iron: require("../../../assets/words/i/iron.png"),
   issue: require("../../../assets/words/i/issue.png"),
   ivy: require("../../../assets/words/i/ivy.png"),
 };

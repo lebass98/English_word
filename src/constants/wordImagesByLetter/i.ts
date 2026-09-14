@@ -5,6 +5,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   iceberg: require("../../../assets/words/i/iceberg.png"),
   idea: require("../../../assets/words/i/idea.png"),
   imagine: require("../../../assets/words/i/imagine.png"),
+  imitate: require("../../../assets/words/i/imitate.png"),
   immediately: require("../../../assets/words/i/immediately.png"),
   immigrant: require("../../../assets/words/i/immigrant.png"),
   immune: require("../../../assets/words/i/immune.png"),

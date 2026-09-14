@@ -110,6 +110,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   common: require("../../../assets/words/c/common.png"),
   communication: require("../../../assets/words/c/communication.png"),
   community: require("../../../assets/words/c/community.png"),
+  compact: require("../../../assets/words/c/compact.png"),
   company: require("../../../assets/words/c/company.png"),
   compare: require("../../../assets/words/c/compare.png"),
   comparison: require("../../../assets/words/c/comparison.png"),

@@ -7,7 +7,8 @@
 
 카탈로그 한 항목:
     "bear": {
-      "file": "assets/words/bear.png",   # 없으면 null
+      "file": "assets/words/b/bear.png",  # 없으면 null
+      "blob": "3f2a…",                    # 그림 내용 지문 (git blob). 그림이 바뀌었는지 가린다
       "courses": ["m1", "m2", "h1", "tf"],
       "sense": "곰, 낳다, 참다",          # 대표 뜻 (sense_from 칸의 한국어 뜻)
       "sense_from": "m1-123",
@@ -17,6 +18,10 @@
       "status": "ok",                     # ok / review / missing  (status_manual 이 있으면 그 값)
       "note": "..."                       # 선택
     }
+
+그림체 버전은 그림 파일이 마지막으로 커밋된 시각으로 가른다. 다만 그림을 폴더만
+옮겼을 때는 커밋 시각이 이동 시각이 되므로, 내용 지문(blob)이 이전과 같으면
+이전에 매긴 버전을 그대로 쓴다. 아직 커밋하지 않은 그림은 지금 기준(v3)으로 본다.
 
 사용법:
     python3 scripts/image_catalog.py          # 만들고 요약 출력
@@ -47,6 +52,7 @@ STYLE_COMMITS = [
     ("v2", "efc187d", "좁은 몸통·선 두 줄 튜브 팔다리 (머리·몸 분리 전)"),
 ]
 LEGACY = ("legacy", "개정 전 그림 (막대 인간·SD 캐릭터·색 들어간 그림 등이 섞임)")
+CURRENT_STYLE = "v3"
 
 # 눈으로 확인해 문제가 있던 그림. status_manual 이 없는 항목에만 넣는다
 KNOWN_ISSUES = {
@@ -90,6 +96,8 @@ def course_of(word_id, source_path):
 def collect_scenes():
     """scripts/ 에 흩어진 장면 묘사를 모두 모은다 → [(word, scene, id, course, source, commit_time)]"""
     records = []
+    skip = {"scripts/image_catalog.py", "scripts/generate_images.py",
+            "scripts/sync_word_images.py", "scripts/migrate_images_by_letter.py"}
 
     def source_time(rel):
         t = git("log", "-1", "--format=%ct", "--", rel).strip()
@@ -102,7 +110,7 @@ def collect_scenes():
 
     for path in sorted(glob.glob(os.path.join(ROOT, "scripts/*.py"))):
         rel = os.path.relpath(path, ROOT)
-        if rel == "scripts/image_catalog.py":
+        if rel in skip:
             continue
         try:
             tree = ast.parse(open(path).read())
@@ -142,6 +150,36 @@ def collect_scenes():
     return records
 
 
+def find_image_files():
+    """파일 이름(확장자 뺀 철자) → 저장소 기준 경로. 글자 폴더가 있으면 그쪽을 쓴다"""
+    files = {}
+    for dirpath, _, names in os.walk(ASSETS):
+        for name in names:
+            if name.endswith(".png") and not name.startswith("._"):
+                rel = os.path.relpath(os.path.join(dirpath, name), ROOT)
+                stem = name[:-4]
+                in_letter_folder = os.path.dirname(rel) != "assets/words"
+                if stem not in files or in_letter_folder:
+                    files[stem] = rel
+    return files
+
+
+def image_blobs(paths):
+    """그림 경로 → 내용 지문. 커밋된 그림은 git 색인에서 한 번에, 나머지만 따로 계산"""
+    blobs = {}
+    for line in git("ls-files", "-s", "--", "assets/words").splitlines():
+        meta, _, path = line.partition("\t")
+        parts = meta.split()
+        if len(parts) >= 2:
+            blobs[path] = parts[1]
+    for path in paths:
+        if path not in blobs:
+            h = git("hash-object", path).strip()
+            if h:
+                blobs[path] = h
+    return blobs
+
+
 def image_commit_times():
     """그림 파일 → 마지막으로 커밋된 시각 (git log 한 번으로)"""
     times, current = {}, None
@@ -166,13 +204,10 @@ def build(existing):
     usage = load_courses()
     ko = json.load(open(os.path.join(ROOT, "src/data/en/tr/ko.json")))["meanings"]
     scenes = collect_scenes()
+    files = find_image_files()
+    blobs = image_blobs(files.values())
     img_times = image_commit_times()
     bounds = style_boundaries()
-
-    files = {}
-    for name in os.listdir(ASSETS):
-        if name.endswith(".png") and not name.startswith("._"):
-            files[name[:-4]] = f"assets/words/{name}"
 
     # 철자마다 대표 장면: 가장 낮은 과정 → 같은 과정이면 가장 최근에 고친 파일
     best = {}
@@ -181,13 +216,19 @@ def build(existing):
         if word not in best or key < best[word][0]:
             best[word] = (key, scene, wid, course, src)
 
-    spellings = list(usage.keys()) + [s for s in (f.replace("-", " ") for f in files) if s not in usage and s.replace(" ", "-") in files]
+    spellings = list(usage.keys()) + [
+        stem.replace("-", " ") if stem.replace("-", " ") in usage else stem
+        for stem in files
+        if stem not in usage and stem.replace("-", " ") not in usage
+    ]
     catalog = {}
     for word in dict.fromkeys(spellings):
         prev = existing.get(word, {})
         uses = usage.get(word, [])
+        path = files.get(file_name(word))
         entry = {
-            "file": files.get(file_name(word)),
+            "file": path,
+            "blob": blobs.get(path) if path else None,
             "courses": [code for code, _ in uses],
             "sense": ko.get(uses[0][1]) if uses else None,
             "sense_from": uses[0][1] if uses else None,
@@ -203,25 +244,31 @@ def build(existing):
             entry["scene"], entry["scene_source"] = None, None
 
         style = None
-        if entry["file"]:
-            t = img_times.get(entry["file"])
-            style = LEGACY[0]
-            for name, bound, _ in bounds:
-                if t is not None and t >= bound:
-                    style = name
-                    break
+        if path:
+            if prev.get("blob") and prev.get("blob") == entry["blob"] and prev.get("style"):
+                style = prev["style"]  # 폴더만 옮긴 그림: 이전 판정 유지
+            else:
+                t = img_times.get(path)
+                if t is None:
+                    style = CURRENT_STYLE  # 아직 커밋 안 된 새 그림
+                else:
+                    style = LEGACY[0]
+                    for name, bound, _ in bounds:
+                        if t >= bound:
+                            style = name
+                            break
         entry["style"] = style
 
         if prev.get("status_manual"):
             entry["status"] = entry["status_manual"] = prev["status_manual"]
             if prev.get("note"):
                 entry["note"] = prev["note"]
-        elif not entry["file"]:
+        elif not path:
             entry["status"] = "missing"
-        elif word in KNOWN_ISSUES:
+        elif word in KNOWN_ISSUES and not (prev.get("blob") and prev.get("blob") != entry["blob"]):
             entry["status"], entry["note"] = "review", KNOWN_ISSUES[word]
         else:
-            entry["status"] = "ok" if style == "v3" else "review"
+            entry["status"] = "ok" if style == CURRENT_STYLE else "review"
         catalog[word] = entry
 
     meta = {

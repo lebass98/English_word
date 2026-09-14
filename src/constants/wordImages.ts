@@ -553,6 +553,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   hurt: require("../../assets/words/hurt.png"),
   husband: require("../../assets/words/husband.png"),
   hut: require("../../assets/words/hut.png"),
+  hybrid: require("../../assets/words/hybrid.png"),
   hydrogen: require("../../assets/words/hydrogen.png"),
   iceberg: require("../../assets/words/iceberg.png"),
   idea: require("../../assets/words/idea.png"),

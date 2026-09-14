@@ -138,6 +138,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   comprise: require("../../../assets/words/c/comprise.png"),
   compulsive: require("../../../assets/words/c/compulsive.png"),
   compulsory: require("../../../assets/words/c/compulsory.png"),
+  conceal: require("../../../assets/words/c/conceal.png"),
   concern: require("../../../assets/words/c/concern.png"),
   concert: require("../../../assets/words/c/concert.png"),
   conduct: require("../../../assets/words/c/conduct.png"),

@@ -104,6 +104,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   comedy: require("../../../assets/words/c/comedy.png"),
   comfort: require("../../../assets/words/c/comfort.png"),
   comic: require("../../../assets/words/c/comic.png"),
+  commence: require("../../../assets/words/c/commence.png"),
   commerce: require("../../../assets/words/c/commerce.png"),
   commit: require("../../../assets/words/c/commit.png"),
   common: require("../../../assets/words/c/common.png"),

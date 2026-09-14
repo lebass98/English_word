@@ -21,6 +21,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   recent: require("../../../assets/words/r/recent.png"),
   recently: require("../../../assets/words/r/recently.png"),
   record: require("../../../assets/words/r/record.png"),
+  recreation: require("../../../assets/words/r/recreation.png"),
   reduce: require("../../../assets/words/r/reduce.png"),
   referee: require("../../../assets/words/r/referee.png"),
   refine: require("../../../assets/words/r/refine.png"),

@@ -60,6 +60,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   travel: require("../../../assets/words/t/travel.png"),
   treasure: require("../../../assets/words/t/treasure.png"),
   treat: require("../../../assets/words/t/treat.png"),
+  treatment: require("../../../assets/words/t/treatment.png"),
   tremendous: require("../../../assets/words/t/tremendous.png"),
   trend: require("../../../assets/words/t/trend.png"),
   trial: require("../../../assets/words/t/trial.png"),

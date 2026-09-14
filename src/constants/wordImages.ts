@@ -147,6 +147,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   appreciable: require("../../assets/words/appreciable.png"),
   appreciate: require("../../assets/words/appreciate.png"),
   apprehend: require("../../assets/words/apprehend.png"),
+  approach: require("../../assets/words/approach.png"),
   area: require("../../assets/words/area.png"),
   arise: require("../../assets/words/arise.png"),
   army: require("../../assets/words/army.png"),

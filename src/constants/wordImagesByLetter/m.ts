@@ -8,6 +8,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   mail: require("../../../assets/words/m/mail.png"),
   main: require("../../../assets/words/m/main.png"),
   "make a decision": require("../../../assets/words/m/make-a-decision.png"),
+  "make sure": require("../../../assets/words/m/make-sure.png"),
   mammal: require("../../../assets/words/m/mammal.png"),
   mankind: require("../../../assets/words/m/mankind.png"),
   marble: require("../../../assets/words/m/marble.png"),

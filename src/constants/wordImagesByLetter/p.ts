@@ -25,6 +25,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   peer: require("../../../assets/words/p/peer.png"),
   penalty: require("../../../assets/words/p/penalty.png"),
   pepper: require("../../../assets/words/p/pepper.png"),
+  perform: require("../../../assets/words/p/perform.png"),
   perhaps: require("../../../assets/words/p/perhaps.png"),
   period: require("../../../assets/words/p/period.png"),
   permit: require("../../../assets/words/p/permit.png"),

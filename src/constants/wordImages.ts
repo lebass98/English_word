@@ -322,6 +322,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   detective: require("../../assets/words/detective.png"),
   develop: require("../../assets/words/develop.png"),
   devil: require("../../assets/words/devil.png"),
+  diagnose: require("../../assets/words/diagnose.png"),
   dialogue: require("../../assets/words/dialogue.png"),
   "dialogue between north and south": require("../../assets/words/dialogue-between-north-and-south.png"),
   diary: require("../../assets/words/diary.png"),

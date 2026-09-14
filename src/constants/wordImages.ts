@@ -94,6 +94,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   agriculture: require("../../assets/words/agriculture.png"),
   ahead: require("../../assets/words/ahead.png"),
   aid: require("../../assets/words/aid.png"),
+  aim: require("../../assets/words/aim.png"),
   airport: require("../../assets/words/airport.png"),
   alarm: require("../../assets/words/alarm.png"),
   alive: require("../../assets/words/alive.png"),

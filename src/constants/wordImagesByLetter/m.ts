@@ -13,6 +13,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   marine: require("../../../assets/words/m/marine.png"),
   marry: require("../../../assets/words/m/marry.png"),
   mars: require("../../../assets/words/m/mars.png"),
+  mass: require("../../../assets/words/m/mass.png"),
   "mass communication": require("../../../assets/words/m/mass-communication.png"),
   master: require("../../../assets/words/m/master.png"),
   match: require("../../../assets/words/m/match.png"),

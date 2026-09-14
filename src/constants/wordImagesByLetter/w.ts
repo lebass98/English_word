@@ -29,6 +29,7 @@ export const IMAGES_W: Record<string, ImageSourcePropType> = {
   whole: require("../../../assets/words/w/whole.png"),
   wide: require("../../../assets/words/w/wide.png"),
   wild: require("../../../assets/words/w/wild.png"),
+  willing: require("../../../assets/words/w/willing.png"),
   win: require("../../../assets/words/w/win.png"),
   wink: require("../../../assets/words/w/wink.png"),
   wise: require("../../../assets/words/w/wise.png"),

@@ -5,6 +5,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   "a great deal": require("../../../assets/words/a/a-great-deal.png"),
   "a host of": require("../../../assets/words/a/a-host-of.png"),
   "a quarter": require("../../../assets/words/a/a-quarter.png"),
+  "a variety of": require("../../../assets/words/a/a-variety-of.png"),
   "a wide range of": require("../../../assets/words/a/a-wide-range-of.png"),
   abandon: require("../../../assets/words/a/abandon.png"),
   able: require("../../../assets/words/a/able.png"),

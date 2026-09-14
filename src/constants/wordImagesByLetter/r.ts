@@ -15,6 +15,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   receive: require("../../../assets/words/r/receive.png"),
   recently: require("../../../assets/words/r/recently.png"),
   record: require("../../../assets/words/r/record.png"),
+  referee: require("../../../assets/words/r/referee.png"),
   refrigerator: require("../../../assets/words/r/refrigerator.png"),
   refuse: require("../../../assets/words/r/refuse.png"),
   region: require("../../../assets/words/r/region.png"),

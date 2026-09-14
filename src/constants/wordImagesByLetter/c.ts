@@ -96,6 +96,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   conference: require("../../../assets/words/c/conference.png"),
   confirm: require("../../../assets/words/c/confirm.png"),
   connect: require("../../../assets/words/c/connect.png"),
+  construction: require("../../../assets/words/c/construction.png"),
   contact: require("../../../assets/words/c/contact.png"),
   contest: require("../../../assets/words/c/contest.png"),
   continent: require("../../../assets/words/c/continent.png"),

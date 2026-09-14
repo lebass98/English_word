@@ -20,6 +20,7 @@ export const IMAGES_H: Record<string, ImageSourcePropType> = {
   hastily: require("../../../assets/words/h/hastily.png"),
   hatch: require("../../../assets/words/h/hatch.png"),
   hate: require("../../../assets/words/h/hate.png"),
+  "have ~ in common": require("../../../assets/words/h/have-~-in-common.png"),
   hawk: require("../../../assets/words/h/hawk.png"),
   hay: require("../../../assets/words/h/hay.png"),
   headquarters: require("../../../assets/words/h/headquarters.png"),

@@ -50,6 +50,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   actually: require("../../../assets/words/a/actually.png"),
   adapt: require("../../../assets/words/a/adapt.png"),
   adaptability: require("../../../assets/words/a/adaptability.png"),
+  adaptable: require("../../../assets/words/a/adaptable.png"),
   adaptation: require("../../../assets/words/a/adaptation.png"),
   add: require("../../../assets/words/a/add.png"),
   additive: require("../../../assets/words/a/additive.png"),

@@ -153,6 +153,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   apprehend: require("../../../assets/words/a/apprehend.png"),
   approach: require("../../../assets/words/a/approach.png"),
   appropriate: require("../../../assets/words/a/appropriate.png"),
+  approve: require("../../../assets/words/a/approve.png"),
   approximately: require("../../../assets/words/a/approximately.png"),
   apt: require("../../../assets/words/a/apt.png"),
   aptly: require("../../../assets/words/a/aptly.png"),

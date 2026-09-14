@@ -487,6 +487,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   grab: require("../../assets/words/grab.png"),
   grade: require("../../assets/words/grade.png"),
   graduate: require("../../assets/words/graduate.png"),
+  gradually: require("../../assets/words/gradually.png"),
   grain: require("../../assets/words/grain.png"),
   grammar: require("../../assets/words/grammar.png"),
   grand: require("../../assets/words/grand.png"),

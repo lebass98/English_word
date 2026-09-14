@@ -10,6 +10,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   salt: require("../../../assets/words/s/salt.png"),
   sample: require("../../../assets/words/s/sample.png"),
   sand: require("../../../assets/words/s/sand.png"),
+  satellite: require("../../../assets/words/s/satellite.png"),
   satisfy: require("../../../assets/words/s/satisfy.png"),
   save: require("../../../assets/words/s/save.png"),
   saw: require("../../../assets/words/s/saw.png"),

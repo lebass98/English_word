@@ -144,6 +144,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   cricket: require("../../../assets/words/c/cricket.png"),
   crisis: require("../../../assets/words/c/crisis.png"),
   crop: require("../../../assets/words/c/crop.png"),
+  crowd: require("../../../assets/words/c/crowd.png"),
   crowded: require("../../../assets/words/c/crowded.png"),
   crown: require("../../../assets/words/c/crown.png"),
   crucial: require("../../../assets/words/c/crucial.png"),

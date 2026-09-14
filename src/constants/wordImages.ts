@@ -1138,6 +1138,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   wage: require("../../assets/words/wage.png"),
   wagon: require("../../assets/words/wagon.png"),
   wake: require("../../assets/words/wake.png"),
+  wander: require("../../assets/words/wander.png"),
   war: require("../../assets/words/war.png"),
   warn: require("../../assets/words/warn.png"),
   waste: require("../../assets/words/waste.png"),

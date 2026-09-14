@@ -57,6 +57,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   besides: require("../../../assets/words/b/besides.png"),
   "best fit": require("../../../assets/words/b/best-fit.png"),
   bet: require("../../../assets/words/b/bet.png"),
+  beverage: require("../../../assets/words/b/beverage.png"),
   beyond: require("../../../assets/words/b/beyond.png"),
   bike: require("../../../assets/words/b/bike.png"),
   bill: require("../../../assets/words/b/bill.png"),

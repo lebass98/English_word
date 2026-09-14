@@ -35,6 +35,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   remain: require("../../../assets/words/r/remain.png"),
   remember: require("../../../assets/words/r/remember.png"),
   remind: require("../../../assets/words/r/remind.png"),
+  remote: require("../../../assets/words/r/remote.png"),
   remove: require("../../../assets/words/r/remove.png"),
   renewable: require("../../../assets/words/r/renewable.png"),
   rent: require("../../../assets/words/r/rent.png"),

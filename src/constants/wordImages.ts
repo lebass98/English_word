@@ -142,6 +142,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   appear: require("../../assets/words/appear.png"),
   appetite: require("../../assets/words/appetite.png"),
   "applicable to": require("../../assets/words/applicable-to.png"),
+  application: require("../../assets/words/application.png"),
   appointment: require("../../assets/words/appointment.png"),
   area: require("../../assets/words/area.png"),
   arise: require("../../assets/words/arise.png"),

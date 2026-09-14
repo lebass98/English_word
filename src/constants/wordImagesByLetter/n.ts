@@ -9,6 +9,7 @@ export const IMAGES_N: Record<string, ImageSourcePropType> = {
   nearly: require("../../../assets/words/n/nearly.png"),
   necessary: require("../../../assets/words/n/necessary.png"),
   need: require("../../../assets/words/n/need.png"),
+  neglect: require("../../../assets/words/n/neglect.png"),
   neighbor: require("../../../assets/words/n/neighbor.png"),
   neither: require("../../../assets/words/n/neither.png"),
   nephew: require("../../../assets/words/n/nephew.png"),

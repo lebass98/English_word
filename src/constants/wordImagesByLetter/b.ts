@@ -50,6 +50,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   bone: require("../../../assets/words/b/bone.png"),
   bookstore: require("../../../assets/words/b/bookstore.png"),
   booth: require("../../../assets/words/b/booth.png"),
+  border: require("../../../assets/words/b/border.png"),
   boring: require("../../../assets/words/b/boring.png"),
   borrow: require("../../../assets/words/b/borrow.png"),
   bother: require("../../../assets/words/b/bother.png"),

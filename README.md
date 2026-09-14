@@ -38,6 +38,8 @@ npm run lint     # ESLint
 - 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
   - 대상 단어: sturdy
 - 고1 미생성 단어 5장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: prevent, frustrated, border, mutual, neglect
+- 고1 미생성 단어 5장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
   - 대상 단어: instantly, contract, harbor, personal, artwork
 - 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
   - 대상 단어: political

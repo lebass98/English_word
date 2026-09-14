@@ -2634,8 +2634,8 @@
    "status": "ok"
   },
   "anthropologist": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/anthropologist.png",
+   "blob": "416064dee1ec6fde85b3c780d12d4e1a7a4b153a",
    "courses": [
     "h2"
    ],
@@ -2643,8 +2643,8 @@
    "sense_from": "h2-45",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "antibiotic": {
    "file": null,
@@ -6476,8 +6476,8 @@
    "status": "review"
   },
   "border": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/border.png",
+   "blob": "18bbb6cded850bfd0491fcaff2db072da4136345",
    "courses": [
     "m3",
     "h1",
@@ -6489,8 +6489,8 @@
    "scene": "scenic mountain pass boundary line, cute chibi mannequin hiker observing a distinct border stone monument marking boundary between two regions, scenic path with fence",
    "scene_source": "scripts/generate_h1_unit8.py",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "boring": {
    "file": "assets/words/b/boring.png",
@@ -22893,8 +22893,8 @@
    "status": "missing"
   },
   "frustrated": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/f/frustrated.png",
+   "blob": "ec4d5d9203682543c281dbf0aa8a495a0bb2128b",
    "courses": [
     "h1"
    ],
@@ -22902,8 +22902,8 @@
    "sense_from": "h1-149",
    "scene": "office desk with crumpled papers, frustrated cute chibi mannequin holding round head in mild despair over complicated jigsaw puzzle pieces not fitting together, desk lamp",
    "scene_source": "scripts/generate_h1_unit8.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "fuel": {
    "file": null,
@@ -24968,8 +24968,8 @@
    "status": "review"
   },
   "hatch": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/h/hatch.png",
+   "blob": "1f14af79b07700ac03b9bb4ac55d7671323bf3d6",
    "courses": [
     "h1",
     "h2"
@@ -24978,8 +24978,8 @@
    "sense_from": "h1-287",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "hate": {
    "file": "assets/words/h/hate.png",
@@ -26646,8 +26646,8 @@
    "status": "missing"
   },
   "immigrant": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/i/immigrant.png",
+   "blob": "c2448667d4e82451c1409f3f9340aa7c09098e26",
    "courses": [
     "h2"
    ],
@@ -26655,8 +26655,8 @@
    "sense_from": "h2-44",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "immigrate": {
    "file": null,
@@ -28365,8 +28365,8 @@
    "status": "review"
   },
   "infrastructure": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/i/infrastructure.png",
+   "blob": "b7ecdf027cd345a1212cfd73d19abd2d5f14998c",
    "courses": [
     "h2",
     "h3",
@@ -28376,8 +28376,8 @@
    "sense_from": "h2-43",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "infrequent": {
    "file": null,
@@ -34907,8 +34907,8 @@
    "status": "review"
   },
   "mutual": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/m/mutual.png",
+   "blob": "a55fe2d61757e0d6d32d2eb007e89e3262bc44fc",
    "courses": [
     "m3",
     "h1",
@@ -34920,8 +34920,8 @@
    "scene": "cozy shared creative studio, two friendly cute chibi mannequins nodding in warm mutual agreement and partnership while working together on a collaborative blueprint design",
    "scene_source": "scripts/generate_h1_unit8.py",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "myriad": {
    "file": null,
@@ -35277,8 +35277,8 @@
    "status": "missing"
   },
   "neglect": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/n/neglect.png",
+   "blob": "68a87dd8f92f18cb10414cad16df8f74aad41dcc",
    "courses": [
     "h1",
     "h2",
@@ -35288,8 +35288,8 @@
    "sense_from": "h1-152",
    "scene": "dusty greenhouse corner, cute chibi mannequin noticing a neglected wilting potted houseplant on window sill with dry soil, holding a fresh watering can to rescue it",
    "scene_source": "scripts/generate_h1_unit8.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "negotiate": {
    "file": null,
@@ -39646,8 +39646,8 @@
    "status": "review"
   },
   "political": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/p/political.png",
+   "blob": "b0739415ff6ec2f442207f44f2f71cc99065ec66",
    "courses": [
     "h2"
    ],
@@ -39655,8 +39655,8 @@
    "sense_from": "h2-47",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "politics": {
    "file": null,
@@ -40724,8 +40724,8 @@
    "status": "missing"
   },
   "prevent": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/p/prevent.png",
+   "blob": "50a755542a075242df91bd56197495b62e6987e0",
    "courses": [
     "m3",
     "h1",
@@ -40736,8 +40736,8 @@
    "scene": "safety industrial laboratory, vigilant cute chibi mannequin putting up clear warning guardrail barrier and safety gate to prevent falling hazards, caution signs on wall",
    "scene_source": "scripts/generate_h1_unit8.py",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "previous": {
    "file": null,
@@ -58776,8 +58776,8 @@
    "status": "missing"
   },
   "wrist": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/w/wrist.png",
+   "blob": "e929a18c5a571dc9ac023cfff39b0653fe3f5a98",
    "courses": [
     "m3",
     "h2"
@@ -58786,8 +58786,8 @@
    "sense_from": "m3-407",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "wrong": {
    "file": "assets/words/w/wrong.png",

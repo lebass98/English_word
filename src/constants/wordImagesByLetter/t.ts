@@ -68,6 +68,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   tune: require("../../../assets/words/t/tune.png"),
   turkey: require("../../../assets/words/t/turkey.png"),
   turn: require("../../../assets/words/t/turn.png"),
+  "turn in": require("../../../assets/words/t/turn-in.png"),
   turtle: require("../../../assets/words/t/turtle.png"),
   twice: require("../../../assets/words/t/twice.png"),
   twin: require("../../../assets/words/t/twin.png"),

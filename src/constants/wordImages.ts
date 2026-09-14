@@ -117,6 +117,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   ambition: require("../../assets/words/ambition.png"),
   amount: require("../../assets/words/amount.png"),
   ample: require("../../assets/words/ample.png"),
+  amplify: require("../../assets/words/amplify.png"),
   amuse: require("../../assets/words/amuse.png"),
   ancestor: require("../../assets/words/ancestor.png"),
   ancient: require("../../assets/words/ancient.png"),

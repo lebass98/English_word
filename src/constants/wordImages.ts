@@ -97,6 +97,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   aim: require("../../assets/words/aim.png"),
   airport: require("../../assets/words/airport.png"),
   alarm: require("../../assets/words/alarm.png"),
+  alarming: require("../../assets/words/alarming.png"),
   alive: require("../../assets/words/alive.png"),
   allow: require("../../assets/words/allow.png"),
   almost: require("../../assets/words/almost.png"),

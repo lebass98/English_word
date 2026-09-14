@@ -100,6 +100,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   almost: require("../../../assets/words/a/almost.png"),
   alone: require("../../../assets/words/a/alone.png"),
   along: require("../../../assets/words/a/along.png"),
+  "along with": require("../../../assets/words/a/along-with.png"),
   alphabet: require("../../../assets/words/a/alphabet.png"),
   alter: require("../../../assets/words/a/alter.png"),
   alteration: require("../../../assets/words/a/alteration.png"),

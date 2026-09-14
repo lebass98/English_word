@@ -10,6 +10,7 @@ export const IMAGES_U: Record<string, ImageSourcePropType> = {
   unification: require("../../../assets/words/u/unification.png"),
   uniform: require("../../../assets/words/u/uniform.png"),
   unify: require("../../../assets/words/u/unify.png"),
+  union: require("../../../assets/words/u/union.png"),
   unity: require("../../../assets/words/u/unity.png"),
   universe: require("../../../assets/words/u/universe.png"),
   unless: require("../../../assets/words/u/unless.png"),

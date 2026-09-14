@@ -5,6 +5,7 @@ export const IMAGES_L: Record<string, ImageSourcePropType> = {
   label: require("../../../assets/words/l/label.png"),
   laboratory: require("../../../assets/words/l/laboratory.png"),
   lamb: require("../../../assets/words/l/lamb.png"),
+  landscape: require("../../../assets/words/l/landscape.png"),
   language: require("../../../assets/words/l/language.png"),
   lantern: require("../../../assets/words/l/lantern.png"),
   later: require("../../../assets/words/l/later.png"),

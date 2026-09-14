@@ -22,6 +22,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   insect: require("../../../assets/words/i/insect.png"),
   instead: require("../../../assets/words/i/instead.png"),
   instrument: require("../../../assets/words/i/instrument.png"),
+  insurance: require("../../../assets/words/i/insurance.png"),
   interact: require("../../../assets/words/i/interact.png"),
   interest: require("../../../assets/words/i/interest.png"),
   interesting: require("../../../assets/words/i/interesting.png"),

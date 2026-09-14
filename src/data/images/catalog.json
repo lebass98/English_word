@@ -29090,8 +29090,8 @@
    "status": "missing"
   },
   "insurance": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/i/insurance.png",
+   "blob": "8226524e5018482afb882c6e182ef25e787b1c9c",
    "courses": [
     "h1",
     "h2"
@@ -29100,8 +29100,8 @@
    "sense_from": "h1-135",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "insure": {
    "file": null,
@@ -35389,8 +35389,8 @@
    "status": "missing"
   },
   "nervous": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/n/nervous.png",
+   "blob": "20c69c6b52ab4350247af6d83259eb74888d26db",
    "courses": [
     "h1",
     "h2"
@@ -35399,8 +35399,8 @@
    "sense_from": "h1-138",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "nest": {
    "file": null,
@@ -36854,8 +36854,8 @@
    "status": "missing"
   },
   "organism": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/o/organism.png",
+   "blob": "fc6836dc1311b5c386fdec923e8c613cf53cf126",
    "courses": [
     "h2",
     "h3"
@@ -36864,8 +36864,8 @@
    "sense_from": "h2-34",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "organization": {
    "file": null,
@@ -38587,8 +38587,8 @@
    "status": "review"
   },
   "period": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/p/period.png",
+   "blob": "3842c366f6a1594b9e8ebd2dc756acf2e1641f2c",
    "courses": [
     "h1",
     "tf"
@@ -38597,8 +38597,8 @@
    "sense_from": "h1-136",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "periodically": {
    "file": null,
@@ -53835,8 +53835,8 @@
    "status": "missing"
   },
   "thrive": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/t/thrive.png",
+   "blob": "17bd79a30b4ad5d1d22f9bfc6da3b94f1232d8cd",
    "courses": [
     "h1",
     "h2",
@@ -53846,8 +53846,8 @@
    "sense_from": "h1-131",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "throat": {
    "file": "assets/words/t/throat.png",

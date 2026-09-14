@@ -19,6 +19,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   thin: require("../../../assets/words/t/thin.png"),
   thirsty: require("../../../assets/words/t/thirsty.png"),
   though: require("../../../assets/words/t/though.png"),
+  thrive: require("../../../assets/words/t/thrive.png"),
   throat: require("../../../assets/words/t/throat.png"),
   throw: require("../../../assets/words/t/throw.png"),
   thumb: require("../../../assets/words/t/thumb.png"),

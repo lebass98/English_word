@@ -12,6 +12,7 @@ export const IMAGES_N: Record<string, ImageSourcePropType> = {
   neighbor: require("../../../assets/words/n/neighbor.png"),
   neither: require("../../../assets/words/n/neither.png"),
   nephew: require("../../../assets/words/n/nephew.png"),
+  nervous: require("../../../assets/words/n/nervous.png"),
   nickname: require("../../../assets/words/n/nickname.png"),
   niece: require("../../../assets/words/n/niece.png"),
   "no smoking section": require("../../../assets/words/n/no-smoking-section.png"),

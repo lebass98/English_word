@@ -53,4 +53,5 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   musician: require("../../../assets/words/m/musician.png"),
   mutual: require("../../../assets/words/m/mutual.png"),
   mystery: require("../../../assets/words/m/mystery.png"),
+  myth: require("../../../assets/words/m/myth.png"),
 };

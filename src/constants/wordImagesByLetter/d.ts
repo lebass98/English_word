@@ -62,6 +62,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   dispose: require("../../../assets/words/d/dispose.png"),
   ditch: require("../../../assets/words/d/ditch.png"),
   dive: require("../../../assets/words/d/dive.png"),
+  document: require("../../../assets/words/d/document.png"),
   doll: require("../../../assets/words/d/doll.png"),
   dollar: require("../../../assets/words/d/dollar.png"),
   domestic: require("../../../assets/words/d/domestic.png"),

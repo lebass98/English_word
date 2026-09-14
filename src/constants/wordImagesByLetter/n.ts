@@ -3,6 +3,7 @@ import { ImageSourcePropType } from "react-native";
 // "n" 로 시작하는 단어 그림. scripts/sync_word_images.py 가 만든다 (손으로 고치지 않는다)
 export const IMAGES_N: Record<string, ImageSourcePropType> = {
   nail: require("../../../assets/words/n/nail.png"),
+  narrator: require("../../../assets/words/n/narrator.png"),
   narrow: require("../../../assets/words/n/narrow.png"),
   nasty: require("../../../assets/words/n/nasty.png"),
   nation: require("../../../assets/words/n/nation.png"),

@@ -18,6 +18,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   past: require("../../../assets/words/p/past.png"),
   patient: require("../../../assets/words/p/patient.png"),
   pause: require("../../../assets/words/p/pause.png"),
+  "pay attention": require("../../../assets/words/p/pay-attention.png"),
   peaceful: require("../../../assets/words/p/peaceful.png"),
   peer: require("../../../assets/words/p/peer.png"),
   penalty: require("../../../assets/words/p/penalty.png"),

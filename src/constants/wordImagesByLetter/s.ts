@@ -25,6 +25,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   scratch: require("../../../assets/words/s/scratch.png"),
   scream: require("../../../assets/words/s/scream.png"),
   sculpture: require("../../../assets/words/s/sculpture.png"),
+  seal: require("../../../assets/words/s/seal.png"),
   search: require("../../../assets/words/s/search.png"),
   seat: require("../../../assets/words/s/seat.png"),
   secretary: require("../../../assets/words/s/secretary.png"),

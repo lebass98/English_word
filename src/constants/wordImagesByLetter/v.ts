@@ -10,6 +10,7 @@ export const IMAGES_V: Record<string, ImageSourcePropType> = {
   vary: require("../../../assets/words/v/vary.png"),
   vast: require("../../../assets/words/v/vast.png"),
   vegetable: require("../../../assets/words/v/vegetable.png"),
+  vehicle: require("../../../assets/words/v/vehicle.png"),
   vessel: require("../../../assets/words/v/vessel.png"),
   via: require("../../../assets/words/v/via.png"),
   vice: require("../../../assets/words/v/vice.png"),

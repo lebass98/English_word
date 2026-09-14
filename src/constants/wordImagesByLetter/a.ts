@@ -201,4 +201,5 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   authorize: require("../../../assets/words/a/authorize.png"),
   available: require("../../../assets/words/a/available.png"),
   avoid: require("../../../assets/words/a/avoid.png"),
+  award: require("../../../assets/words/a/award.png"),
 };

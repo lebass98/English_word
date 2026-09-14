@@ -8,6 +8,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   imitate: require("../../../assets/words/i/imitate.png"),
   immediately: require("../../../assets/words/i/immediately.png"),
   immigrant: require("../../../assets/words/i/immigrant.png"),
+  immigrate: require("../../../assets/words/i/immigrate.png"),
   immune: require("../../../assets/words/i/immune.png"),
   import: require("../../../assets/words/i/import.png"),
   important: require("../../../assets/words/i/important.png"),

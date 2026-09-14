@@ -397,6 +397,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   exchange: require("../../assets/words/exchange.png"),
   excited: require("../../assets/words/excited.png"),
   exclude: require("../../assets/words/exclude.png"),
+  excessive: require("../../assets/words/excessive.png"),
   excuse: require("../../assets/words/excuse.png"),
   exercise: require("../../assets/words/exercise.png"),
   exit: require("../../assets/words/exit.png"),

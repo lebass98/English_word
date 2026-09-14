@@ -34,7 +34,7 @@ description: >-
    - 부정 프롬프트에 `thick neck, wide neck, head merged into body, head and torso as one continuous blob, head outline flowing into shoulders`를 넣습니다. 머리와 몸 사이 구분선은 보여야 하므로 `neck line`은 부정 프롬프트에 넣지 않습니다.
 3. **몸통 및 팔다리 (좁고 긴 둥근 직사각형 몸통 & 선 두 줄 튜브 팔다리)**:
    - **몸통**: 머리 폭의 절반 정도로 좁고, 세로로 긴 부드러운 둥근 직사각형이며 밑단이 평평합니다 (단순한 원피스 실루엣).
-   - **팔다리**: 짧고 가는 튜브 모양이지만 **선 두 줄로 두께가 보이게** 그립니다. 선 한 줄짜리 막대 팔다리는 금지합니다. 관절은 그리지 않고, 팔은 몸에 붙여 옆으로 퍼지지 않게 합니다.
+   - **팔다리**: 짧고 가는 튜브 모양이지만 **선 두 줄로 두께가 보이게** 그립니다. 선 한 줄짜리 막대 팔다리는 금지합니다. 관절은 그리지 않습니다. 팔다리의 **모양**은 그대로 두되, 원칙 8에 따라 **동작에 맞춰 자유롭게 움직입니다** (예전의 "팔은 몸에 붙인다"는 폐지).
    - **손발**: 손은 둥글고 뭉툭한 벙어리장갑 끝, 발은 작고 둥근 발끝입니다.
    - 프롬프트 키워드: `very narrow slim torso only about half as wide as the head, tall soft rounded rectangle body with a flat bottom edge, the whole figure is narrow and about three times taller than it is wide, short slim rounded tube arms drawn with two close parallel outlines ending in small round mitten nubs, held close to the body, short slim rounded tube legs drawn with two close parallel outlines ending in small rounded feet, limbs are narrow but still have visible width and are never a single line`.
    - **장면 묘사 정리**: 단어별 장면에 `cute slender stickman` 같은 표현이 있으면 생성 전에 `small slim white pictogram character`로 바꾸고, 남은 `slender`·`skinny`는 지웁니다. 장면 문장 속 낱말이 캐릭터 설명보다 강하게 작용합니다.
@@ -49,7 +49,14 @@ description: >-
 7. **영문 외 일체 배제 및 100% 영문 전용 절대 원칙 (Strictly English Only / Zero Non-English Characters)**:
    - **프롬프트 및 씬 설명 내 영문 외 문자 절대 금지**: 단어 뜻, 한국어 메모(예: `(가슴)`, `(가루)`), 한자 등 영문(A-Z, a-z) 및 기본 숫자/기호 이외의 모든 비영문 문자는 프롬프트에 절대 넣지 않으며, 오직 100% 순수 영문 씬 묘사(English prompt only)만 전달합니다.
    - **이미지 씬 내부 텍스트 100% 영문 전용**: 씬 내부의 간판, 포스터, 서류 등에 글자가 노출될 경우 오직 영문 알파벳(A-Z)만 허용하며, 한글/한자/일본어 및 왜곡된 기호 생성을 원천 차단합니다.
-   - **부정(Negative) 프롬프트 필수 적용**: `non-English text, Korean text, Hangul, Chinese characters, Hanzi, Kanji, Japanese, foreign characters, dominant character crowding the frame, overwhelming screen, frame-filling figure, suffocating composition, unnatural forced character size, giant figure dominating scenery, oversized character, close-up, extreme close-up, cropped body, zoomed in, crowding the frame, large scale character dominating scene, realistic human anatomy, realistic face, facial details, nose, eyebrows, lips, teeth, ears, hair, neck, muscles, realistic fingers, fingernails, toes, clothes, shirt, pants, wrinkles, shading, gradients, shadow, 3d render`.
+   - **부정(Negative) 프롬프트 필수 적용 (영문 전용)**: 아래 원칙 8 뒤 목록 참고.
+8. **익사이팅한 활동 장면 (Exciting Action Moment)** — 2026-09-14 사용자 요청으로 추가:
+   - 인물이 가만히 서 있거나 물건을 들고 있기만 한 그림 대신, **한창 신나게 움직이는 순간**을 그립니다 (달리기, 점프, 뛰어오르기, 손 뻗기, 던지기, 오르기 등).
+   - 몸 **모양**(좁은 몸통, 선 두 줄 튜브 팔다리, 머리·몸통 분리)과 **크기**(화면 높이 약 1/3)는 그대로 두고, 팔다리만 동작에 맞춰 자유롭게 움직입니다. 속도감을 주는 작은 동작선(motion lines)을 곁들입니다.
+   - **장면 묘사도 동작 동사로** 씁니다. `a person holding a map` 보다 `a person racing up a hill waving a map toward the peak` 처럼 단어 뜻이 신나는 행동 속에서 드러나게 합니다. 슬프거나 조용한 뜻의 단어도 인물이 뭔가를 적극적으로 하는 장면으로 풉니다.
+   - 프롬프트 키워드: `the characters are caught in the middle of an exciting energetic activity, dynamic action pose full of movement such as running, jumping, leaping, reaching, throwing or climbing, arms and legs move freely with the action while keeping the same slim tube shape, playful adventurous mood, small motion lines and action marks showing speed and excitement, lively storytelling moment`.
+
+   영문 전용·구도 부정 프롬프트 목록: `non-English text, Korean text, Hangul, Chinese characters, Hanzi, Kanji, Japanese, foreign characters, dominant character crowding the frame, overwhelming screen, frame-filling figure, suffocating composition, unnatural forced character size, giant figure dominating scenery, oversized character, close-up, extreme close-up, cropped body, zoomed in, crowding the frame, large scale character dominating scene, realistic human anatomy, realistic face, facial details, nose, eyebrows, lips, teeth, ears, hair, neck, muscles, realistic fingers, fingernails, toes, clothes, shirt, pants, wrinkles, shading, gradients, shadow, 3d render`.
 
 
 ---

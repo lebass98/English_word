@@ -47,9 +47,13 @@ def generate_linear_image(
         "the round bald head is drawn as its own complete closed circle outline, and directly below it the narrow torso starts with its own separate small rounded top edge, "
         "head and body are two clearly separate shapes that touch only at one small narrow point under the chin, no thick neck, "
         "very narrow slim torso only about half as wide as the head, tall soft rounded rectangle body with a flat bottom edge, the whole figure is narrow and about three times taller than it is wide, "
-        "short slim rounded tube arms drawn with two close parallel outlines ending in small round mitten nubs, held close to the body, "
+        "short slim rounded tube arms drawn with two close parallel outlines ending in small round mitten nubs, "
         "short slim rounded tube legs drawn with two close parallel outlines ending in small rounded feet, limbs are narrow but still have visible width and are never a single line, "
-        "small character in a wide scene, modest compact character scale, standing small figure occupying approximately one third of frame height around 30 to 35 percent of canvas height, placed comfortably on bottom floor line, spacious upper and middle frame filled with rich environmental details, balanced wide scene composition, plenty of breathing room, full body visible without crowding, "
+        # 익사이팅한 활동: 가만히 서 있는 그림 대신 한창 신나게 움직이는 순간을 그린다 (2026-09-14 사용자 요청)
+        # 몸 모양은 그대로 두고 팔다리만 동작에 맞춰 자유롭게 움직인다
+        "the characters are caught in the middle of an exciting energetic activity, dynamic action pose full of movement such as running, jumping, leaping, reaching, throwing or climbing, "
+        "arms and legs move freely with the action while keeping the same slim tube shape, playful adventurous mood, small motion lines and action marks showing speed and excitement, lively storytelling moment, "
+        "small character in a wide scene,modest compact character scale, standing small figure occupying approximately one third of frame height around 30 to 35 percent of canvas height, placed comfortably on bottom floor line, spacious upper and middle frame filled with rich environmental details, balanced wide scene composition, plenty of breathing room, full body visible without crowding, "
         "abundant rich background details, furniture, wall decor, floor line, ambient props, "
         "strictly flat 2d linear graphic, no shading, no gradients, no solid black fills, empty background, "
         "strictly English text only if any letters appear, absolutely no non-English characters, 100% pure English alphabet A-Z only, completely no Korean characters, strictly no Hangul, strictly no Chinese characters, completely non-Asian script, zero foreign glyphs"

@@ -31,6 +31,11 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-14
+- 선형그래픽 스킬에 '익사이팅한 활동 장면' 원칙(8) 추가 (사용자 요청)
+  - 가만히 서 있는 대신 달리기·점프·오르기 같은 한창 신나게 움직이는 순간을 그리도록 Python·Node 프롬프트에 동작 문구와 동작선을 넣음
+  - 팔을 몸에 붙이던 문구는 빼고, 몸 모양·크기(화면 1/3)·머리와 몸통 분리는 그대로 둠
+- 토플 그림 없는 단어 120개의 영문 장면을 동작 중심으로 작성 (`scripts/tf_missing_scenes.json`), 카탈로그 갱신
+  - 이제 토플에서 바로 그릴 수 있는 단어 127개, 장면이 아직 없는 단어 976개
 - 규칙 변경: 진행 상황판(`LIVE_DASHBOARD.md`·`dashboard.html`) 의무 규칙 폐지. 상황판 파일을 만들지 않고 채팅에 1줄로만 보고한다
   - CLAUDE.md / AGENTS.md / .agents/rules / 스킬 문서의 대시보드 의무 조항을 "만들지 않기" 규칙으로 교체
   - `dashboard.html`, `scripts/dashboard_updater.py`, `scripts/generate_html_dashboard.py` 삭제, 생성 스크립트 5개에서 상황판 코드 제거

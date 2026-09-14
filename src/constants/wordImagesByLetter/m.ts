@@ -31,6 +31,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   mechanic: require("../../../assets/words/m/mechanic.png"),
   medical: require("../../../assets/words/m/medical.png"),
   melt: require("../../../assets/words/m/melt.png"),
+  memorize: require("../../../assets/words/m/memorize.png"),
   memory: require("../../../assets/words/m/memory.png"),
   mental: require("../../../assets/words/m/mental.png"),
   mention: require("../../../assets/words/m/mention.png"),

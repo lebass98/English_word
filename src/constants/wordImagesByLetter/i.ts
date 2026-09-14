@@ -26,6 +26,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   infrastructure: require("../../../assets/words/i/infrastructure.png"),
   ingredient: require("../../../assets/words/i/ingredient.png"),
   initial: require("../../../assets/words/i/initial.png"),
+  injure: require("../../../assets/words/i/injure.png"),
   inner: require("../../../assets/words/i/inner.png"),
   inning: require("../../../assets/words/i/inning.png"),
   innocent: require("../../../assets/words/i/innocent.png"),

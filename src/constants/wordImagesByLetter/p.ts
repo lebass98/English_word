@@ -47,6 +47,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   pleasant: require("../../../assets/words/p/pleasant.png"),
   plenty: require("../../../assets/words/p/plenty.png"),
   poet: require("../../../assets/words/p/poet.png"),
+  poetry: require("../../../assets/words/p/poetry.png"),
   policy: require("../../../assets/words/p/policy.png"),
   politely: require("../../../assets/words/p/politely.png"),
   political: require("../../../assets/words/p/political.png"),

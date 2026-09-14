@@ -20,6 +20,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   recently: require("../../../assets/words/r/recently.png"),
   record: require("../../../assets/words/r/record.png"),
   referee: require("../../../assets/words/r/referee.png"),
+  refine: require("../../../assets/words/r/refine.png"),
   refrigerator: require("../../../assets/words/r/refrigerator.png"),
   refuse: require("../../../assets/words/r/refuse.png"),
   "regardless of": require("../../../assets/words/r/regardless-of.png"),

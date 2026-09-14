@@ -79,6 +79,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   contest: require("../../../assets/words/c/contest.png"),
   continent: require("../../../assets/words/c/continent.png"),
   continue: require("../../../assets/words/c/continue.png"),
+  contract: require("../../../assets/words/c/contract.png"),
   contrary: require("../../../assets/words/c/contrary.png"),
   control: require("../../../assets/words/c/control.png"),
   convenient: require("../../../assets/words/c/convenient.png"),

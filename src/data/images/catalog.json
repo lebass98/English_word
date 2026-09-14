@@ -1744,7 +1744,7 @@
   },
   "aid": {
    "file": "assets/words/a/aid.png",
-   "blob": "34ad9dd16c31f4bcc028bb525721c73bc8b6b6a3",
+   "blob": "99caf0e44a643edee305c2bf1f464163f0cf2aaa",
    "courses": [
     "h1",
     "h2",
@@ -3499,8 +3499,8 @@
    "status": "ok"
   },
   "artwork": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/artwork.png",
+   "blob": "eae8ea648593be44cf8138ce66067b73f6b15cf0",
    "courses": [
     "h1"
    ],
@@ -3508,8 +3508,8 @@
    "sense_from": "h1-144",
    "scene": "modern art museum exhibition gallery, cute chibi mannequin admiring a grand framed abstract linear artwork painting hanging on gallery wall, bench and exhibition spotlight",
    "scene_source": "scripts/generate_h1_unit8.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "as a result": {
    "file": "assets/words/a/as-a-result.png",
@@ -4661,8 +4661,8 @@
    "status": "missing"
   },
   "avoid": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/avoid.png",
+   "blob": "70f39fba9fa9566b97caac69ed193829912afd4d",
    "courses": [
     "m3",
     "h2",
@@ -4672,8 +4672,8 @@
    "sense_from": "m3-18",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "awake": {
    "file": null,
@@ -11657,8 +11657,8 @@
    "status": "missing"
   },
   "contract": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/contract.png",
+   "blob": "34498605bf8c006224f8dd3840b1ed1b85383e77",
    "courses": [
     "h1"
    ],
@@ -11666,8 +11666,8 @@
    "sense_from": "h1-140",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "contradict": {
    "file": null,
@@ -11771,8 +11771,8 @@
    "status": "missing"
   },
   "convenient": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/convenient.png",
+   "blob": "48d5f466b834181a658f2558f2a5f8eabc25d96c",
    "courses": [
     "m3",
     "h2"
@@ -11781,8 +11781,8 @@
    "sense_from": "m3-821",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "convention": {
    "file": null,
@@ -18284,8 +18284,8 @@
    "status": "missing"
   },
   "endeavor": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/e/endeavor.png",
+   "blob": "4b14e3380eb73648cf1716cc6cee5a0af7b39b0d",
    "courses": [
     "h2",
     "tf"
@@ -18294,8 +18294,8 @@
    "sense_from": "h2-38",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "endless": {
    "file": null,
@@ -24835,8 +24835,8 @@
    "status": "review"
   },
   "harbor": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/h/harbor.png",
+   "blob": "04ebc1251e043ff8775cf87294ddf4b0035a66b7",
    "courses": [
     "m3",
     "h1"
@@ -24846,8 +24846,8 @@
    "scene": "bustling seaside harbor pier, cute chibi mannequin standing by mooring bollard looking at sailboats anchored in harbor water, lighthouse and seagulls in background",
    "scene_source": "scripts/generate_h1_unit8.py",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "hardly": {
    "file": "assets/words/h/hardly.png",
@@ -28909,8 +28909,8 @@
    "status": "missing"
   },
   "instantly": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/i/instantly.png",
+   "blob": "a1d7f74c9c212d9e42b79075d6d7f1835416680c",
    "courses": [
     "h1",
     "h3"
@@ -28919,8 +28919,8 @@
    "sense_from": "h1-139",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "instead": {
    "file": "assets/words/i/instead.png",
@@ -31188,8 +31188,8 @@
    "status": "missing"
   },
   "legislation": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/l/legislation.png",
+   "blob": "dbee8c3f92f7b18a237f6d20c69eb728e2d11c24",
    "courses": [
     "h2"
    ],
@@ -31197,8 +31197,8 @@
    "sense_from": "h2-40",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "legitimacy": {
    "file": null,
@@ -38725,8 +38725,8 @@
    "status": "missing"
   },
   "personal": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/p/personal.png",
+   "blob": "c4c4eea285a5c548aeb06450d15cf7a541af9cd9",
    "courses": [
     "m3",
     "h1"
@@ -38736,8 +38736,8 @@
    "scene": "warm private bedroom study nook, cute chibi mannequin writing personal thoughts in a secret leather journal notebook with a fountain pen, desk plant and family photo frame",
    "scene_source": "scripts/generate_h1_unit8.py",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "personality": {
    "file": null,
@@ -53140,8 +53140,8 @@
    "status": "ok"
   },
   "tease": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/t/tease.png",
+   "blob": "2d1dd3e75906517032566c05fe45de3abca3d38b",
    "courses": [
     "h2",
     "h3"
@@ -53150,8 +53150,8 @@
    "sense_from": "h2-35",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "technique": {
    "file": null,
@@ -57115,8 +57115,8 @@
    "status": "missing"
   },
   "vessel": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/v/vessel.png",
+   "blob": "b21761c9421c8030b2b1e83e3f698fd09b86c388",
    "courses": [
     "h2",
     "h3"
@@ -57125,8 +57125,8 @@
    "sense_from": "h2-39",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "veterinarian": {
    "file": null,

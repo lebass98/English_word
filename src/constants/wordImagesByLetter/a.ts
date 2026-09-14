@@ -158,6 +158,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   artifact: require("../../../assets/words/a/artifact.png"),
   artificial: require("../../../assets/words/a/artificial.png"),
   artisan: require("../../../assets/words/a/artisan.png"),
+  artwork: require("../../../assets/words/a/artwork.png"),
   "as a result": require("../../../assets/words/a/as-a-result.png"),
   "as well": require("../../../assets/words/a/as-well.png"),
   "as well as": require("../../../assets/words/a/as-well-as.png"),

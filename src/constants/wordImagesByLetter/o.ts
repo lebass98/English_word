@@ -19,6 +19,7 @@ export const IMAGES_O: Record<string, ImageSourcePropType> = {
   online: require("../../../assets/words/o/online.png"),
   operator: require("../../../assets/words/o/operator.png"),
   opinion: require("../../../assets/words/o/opinion.png"),
+  opportunity: require("../../../assets/words/o/opportunity.png"),
   orbit: require("../../../assets/words/o/orbit.png"),
   order: require("../../../assets/words/o/order.png"),
   organism: require("../../../assets/words/o/organism.png"),

@@ -11,6 +11,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   false: require("../../../assets/words/f/false.png"),
   fame: require("../../../assets/words/f/fame.png"),
   famous: require("../../../assets/words/f/famous.png"),
+  fantastic: require("../../../assets/words/f/fantastic.png"),
   fare: require("../../../assets/words/f/fare.png"),
   fashion: require("../../../assets/words/f/fashion.png"),
   fasten: require("../../../assets/words/f/fasten.png"),

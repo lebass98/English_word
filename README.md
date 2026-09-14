@@ -31,8 +31,76 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-14
+- 고1 미생성 단어 5장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: domestic, issue, contact, interrupt, origin
+- 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: advocate
+- 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: separate
+- 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: intuition
+- 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: transportation
+- 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: degrade
+- 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: unexpected
+- 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: arrogant
+- 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: unfortunately
+- 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: overestimate
+- 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: agriculture
+- 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: overlook
+- 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: shortcut
+- 고1 미생성 단어 5장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: specific, fit, numerous, steep, spare
+- 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: wander
+- 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: biodiversity
+- 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: gradually
+- 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: headquarters
+- 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: therapy
+- 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: rational
+- 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: appropriate
+- 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: hybrid
+- 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: excessive
+- 고1 미생성 단어 5장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: request, defeat, scent, crisis, royal
+- 고1 미생성 단어 5장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: ritual, process, precede, penalty, quit
+- 고1 미생성 단어 5장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: innovation, surprised, starve, level, volunteer
+- 고1 미생성 단어 5장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: interact, household, grant, provide, heritage
+- 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: obsess
+- 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: passive
+- 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: authenticity
+- 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: diagnose
+- 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: exaggerate
+- 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: counterpart
 - 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
   - 대상 단어: trim
+- 고1 미생성 단어 5장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: wage, vary, storm, electronic, orbit
 - 고1 미생성 단어 5장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
   - 대상 단어: entry, pour, deliver, convert, region
 - 중2 34단원 빠진 그림 2장 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)

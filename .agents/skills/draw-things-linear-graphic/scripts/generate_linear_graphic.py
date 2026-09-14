@@ -85,7 +85,7 @@ def generate_linear_image(
         headers={"Content-Type": "application/json"}
     )
 
-    with urllib.request.urlopen(req, timeout=300) as resp:
+    with urllib.request.urlopen(req, timeout=600) as resp:
         data = json.loads(resp.read().decode("utf-8"))
         images = data.get("images", [])
         if not images:

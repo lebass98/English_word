@@ -303,9 +303,14 @@ def main():
     summary(data)
     if not args.check:
         os.makedirs(os.path.dirname(CATALOG), exist_ok=True)
-        with open(CATALOG, "w", encoding="utf-8") as f:
+        # 임시 파일에 다 쓴 다음 한 번에 바꿔 끼운다.
+        # 그림 생성기가 매 장마다 이 파일을 읽는데, 바로 덮어쓰면 쓰다 만 파일을
+        # 읽어 JSON 오류로 죽는다. 실제로 한 번 그렇게 멈춘 적이 있다.
+        tmp = CATALOG + ".tmp"
+        with open(tmp, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=1)
             f.write("\n")
+        os.replace(tmp, CATALOG)
         print("wrote", os.path.relpath(CATALOG, ROOT))
 
 

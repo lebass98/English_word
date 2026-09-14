@@ -70,7 +70,16 @@ def build_queue(levels):
     다른 컴퓨터가 먼저 올린 그림은 자동으로 빠진다.
     """
     keys = registered_keys()
-    cat = json.load(open(CATALOG, encoding="utf-8"))["images"]
+    # 카탈로그를 다시 만드는 중이면 잠깐 기다렸다 읽는다.
+    # 원자적 쓰기를 넣었지만 다른 도구가 그냥 덮어쓸 수도 있어 한 겹 더 둔다
+    for attempt in range(5):
+        try:
+            cat = json.load(open(CATALOG, encoding="utf-8"))["images"]
+            break
+        except (json.JSONDecodeError, KeyError):
+            if attempt == 4:
+                raise
+            time.sleep(2)
     words = json.load(open(os.path.join(ROOT, "src/data/en/words.json"), encoding="utf-8"))
 
     queue, seen = [], set()

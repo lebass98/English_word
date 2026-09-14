@@ -126,6 +126,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   angry: require("../../assets/words/angry.png"),
   annoying: require("../../assets/words/annoying.png"),
   answer: require("../../assets/words/answer.png"),
+  antecedent: require("../../assets/words/antecedent.png"),
   anxious: require("../../assets/words/anxious.png"),
   anyway: require("../../assets/words/anyway.png"),
   apart: require("../../assets/words/apart.png"),

@@ -35302,8 +35302,8 @@
    "status": "missing"
   },
   "narrow": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/n/narrow.png",
+   "blob": "137f7dde8aebdb63ce02c9cfbe61a7da03b319b0",
    "courses": [
     "m3",
     "h1",
@@ -35313,8 +35313,8 @@
    "sense_from": "m3-20",
    "scene": "narrow old village street between two tall stone houses, small slim white pictogram character squeezing sideways with arms stretched along the walls while scooting through the tight gap, a car stuck at the entrance, motion marks, cobblestone ground line",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "nasty": {
    "file": "assets/words/n/nasty.png",
@@ -41415,7 +41415,7 @@
    ],
    "sense": "조사하다, 탐색하다; 조사, 탐사",
    "sense_from": "h2-234",
-   "scene": "bright lab, a small slim white pictogram investigator pushing a slender instrument into a sample to explore inside while taking readings, notes, motion lines",
+   "scene": "bright lab, a small slim white pictogram investigator pushing a thin probing instrument into a sample to explore inside while taking readings, notes, motion lines",
    "scene_source": "scripts/h2_missing_scenes.json",
    "style": null,
    "status": "missing"

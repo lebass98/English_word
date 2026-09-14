@@ -112,8 +112,14 @@ def pull_rebase():
     """받아서 rebase. 성공이면 None, 실제 충돌이면 사유"""
     clear_appledouble()
     sh(["git", "pull", "--rebase", "origin", "main"])
-    if rebasing() and not conflicted():
+    # 외장하드(exFAT)에서는 ._ 파일이나 사라진 objects 폴더 때문에 충돌 없이 멈추는 일이 잦아
+    # 몇 번 더 이어 간다. 실제 내용 충돌이면 바로 멈춘다
+    for _ in range(5):
+        if not rebasing() or conflicted():
+            break
         clear_appledouble()
+        for i in range(256):
+            os.makedirs(os.path.join(ROOT, ".git/objects", f"{i:02x}"), exist_ok=True)
         sh(["git", "rebase", "--continue"], env={**os.environ, "GIT_EDITOR": "true"})
     if rebasing():
         files = conflicted()

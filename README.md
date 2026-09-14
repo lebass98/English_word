@@ -31,6 +31,17 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-14
+- 고1·중3·고2·고3·토플 다섯 과정의 장면 묘사 전면 작성 — 그림 없는 4,474단어가 전부 장면을 갖춤 (시작 시 고1은 733개 중 predict 하나뿐이었다)
+  - `scripts/h1_missing_scenes.json`(677) · `m3_missing_scenes.json`(467) · `h2_missing_scenes.json`(534) · `h3_missing_scenes.json`(500) · `tf_more_scenes.json`(469)
+  - 밤·달빛·화롯불 같은 어두운 배경은 쓰지 않는다. 첫 장 creature 에서 동굴 입구가 검은 면으로 칠해지고 벽이 해칭으로 덮여, 이후 전부 밝은 낮으로 고쳐 썼다
+  - 금지어(cute/chibi/slender/skinny/plump)와 비영문은 매 배치마다 전수 검사. probe·reed 의 slender 는 thin 으로 교체
+- `scripts/generate_h1_missing.py` 추가: 그림 없는 단어를 과정 순서(고1→중3→고2→고3→토플)대로 한 장씩 그려 등록·커밋·푸시까지 반복
+  - 한 장 끝낼 때마다 목록을 다시 세므로 도중에 장면을 추가하면 바로 이어서 그리고, 다른 컴퓨터가 먼저 올린 그림은 자동으로 빠진다
+  - 상위 폴더에 `STOP_IMAGES` 파일을 만들면 그 장까지만 하고 멈춘다
+- 카탈로그 경합 사고 수정: 생성기가 매 장 `catalog.json` 을 읽는데 `image_catalog.py` 가 같은 파일을 그 자리에서 덮어써, 쓰다 만 파일을 읽은 생성기가 JSON 오류로 멈추고 카탈로그도 깨졌다
+  - 임시 파일에 쓴 뒤 `os.replace` 로 바꿔 끼우도록 고치고, 생성기에도 재시도(2초×5회)를 넣었다
+- 홈·유닛 카드에 그림 제작 현황 임시 표시 추가 (`🖼 N개 미완료` / `🖼 그림 완료`), 등록표를 실행 중에 세므로 그림을 올리면 숫자가 바로 줄어든다
+- 중2 british/french/german 이 안 보이던 문제 해결 — 그림은 있었고 파일명이 `British.png`(대문자)라 conceptId(소문자)와 어긋났다. 파일명을 conceptId 에 맞추고, git 이 core.ignorecase 로 옛 이름을 추적하던 것도 바로잡았다 (리눅스 CI 빌드 깨짐 방지)
 - 토플 그림 생성 사용자 요청으로 중단 (이번에 adaptable 부터 cautious 까지 13장 생성·등록)
   - 다음 60단어(donate~exhaustively) 장면을 동작 중심으로 미리 작성해 `scripts/tf_missing_scenes.json` 에 추가 (총 240개)
   - 다시 볼 그림: capture (닭 볏·발에 색이 들어가고 인물 머리와 몸이 붙음). 동물이 나오면 색이 칠해지는 경향이 있음

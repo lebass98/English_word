@@ -88,6 +88,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   boring: require("../../../assets/words/b/boring.png"),
   borrow: require("../../../assets/words/b/borrow.png"),
   bother: require("../../../assets/words/b/bother.png"),
+  bothersome: require("../../../assets/words/b/bothersome.png"),
   bottle: require("../../../assets/words/b/bottle.png"),
   bottom: require("../../../assets/words/b/bottom.png"),
   bound: require("../../../assets/words/b/bound.png"),

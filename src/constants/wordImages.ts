@@ -67,6 +67,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   address: require("../../assets/words/address.png"),
   adequate: require("../../assets/words/adequate.png"),
   adjust: require("../../assets/words/adjust.png"),
+  administered: require("../../assets/words/administered.png"),
   admiral: require("../../assets/words/admiral.png"),
   adult: require("../../assets/words/adult.png"),
   advance: require("../../assets/words/advance.png"),

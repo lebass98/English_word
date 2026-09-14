@@ -81,6 +81,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   continue: require("../../../assets/words/c/continue.png"),
   contrary: require("../../../assets/words/c/contrary.png"),
   control: require("../../../assets/words/c/control.png"),
+  convenient: require("../../../assets/words/c/convenient.png"),
   convert: require("../../../assets/words/c/convert.png"),
   convince: require("../../../assets/words/c/convince.png"),
   cookie: require("../../../assets/words/c/cookie.png"),

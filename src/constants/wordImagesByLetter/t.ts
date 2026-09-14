@@ -6,6 +6,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   taste: require("../../../assets/words/t/taste.png"),
   tax: require("../../../assets/words/t/tax.png"),
   tear: require("../../../assets/words/t/tear.png"),
+  tease: require("../../../assets/words/t/tease.png"),
   teenager: require("../../../assets/words/t/teenager.png"),
   telephone: require("../../../assets/words/t/telephone.png"),
   temperature: require("../../../assets/words/t/temperature.png"),

@@ -53,6 +53,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   report: require("../../../assets/words/r/report.png"),
   reproduce: require("../../../assets/words/r/reproduce.png"),
   republic: require("../../../assets/words/r/republic.png"),
+  reputation: require("../../../assets/words/r/reputation.png"),
   request: require("../../../assets/words/r/request.png"),
   rescue: require("../../../assets/words/r/rescue.png"),
   resemble: require("../../../assets/words/r/resemble.png"),

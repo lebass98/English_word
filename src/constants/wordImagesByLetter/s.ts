@@ -99,6 +99,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   solid: require("../../../assets/words/s/solid.png"),
   solution: require("../../../assets/words/s/solution.png"),
   sometime: require("../../../assets/words/s/sometime.png"),
+  "sooner or later": require("../../../assets/words/s/sooner-or-later.png"),
   sophomore: require("../../../assets/words/s/sophomore.png"),
   sore: require("../../../assets/words/s/sore.png"),
   sound: require("../../../assets/words/s/sound.png"),

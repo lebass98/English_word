@@ -24,6 +24,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   innovation: require("../../../assets/words/i/innovation.png"),
   inquire: require("../../../assets/words/i/inquire.png"),
   insect: require("../../../assets/words/i/insect.png"),
+  insight: require("../../../assets/words/i/insight.png"),
   instantly: require("../../../assets/words/i/instantly.png"),
   instead: require("../../../assets/words/i/instead.png"),
   instrument: require("../../../assets/words/i/instrument.png"),

@@ -17,6 +17,7 @@ export const IMAGES_G: Record<string, ImageSourcePropType> = {
   glory: require("../../../assets/words/g/glory.png"),
   goal: require("../../../assets/words/g/goal.png"),
   god: require("../../../assets/words/g/god.png"),
+  govern: require("../../../assets/words/g/govern.png"),
   government: require("../../../assets/words/g/government.png"),
   grab: require("../../../assets/words/g/grab.png"),
   grade: require("../../../assets/words/g/grade.png"),

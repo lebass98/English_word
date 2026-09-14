@@ -9,6 +9,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   canal: require("../../../assets/words/c/canal.png"),
   candidate: require("../../../assets/words/c/candidate.png"),
   candle: require("../../../assets/words/c/candle.png"),
+  capable: require("../../../assets/words/c/capable.png"),
   capacity: require("../../../assets/words/c/capacity.png"),
   capital: require("../../../assets/words/c/capital.png"),
   captain: require("../../../assets/words/c/captain.png"),

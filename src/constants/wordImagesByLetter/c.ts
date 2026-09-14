@@ -68,6 +68,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   college: require("../../../assets/words/c/college.png"),
   colorful: require("../../../assets/words/c/colorful.png"),
   comb: require("../../../assets/words/c/comb.png"),
+  "come to mind": require("../../../assets/words/c/come-to-mind.png"),
   comedy: require("../../../assets/words/c/comedy.png"),
   comfort: require("../../../assets/words/c/comfort.png"),
   commit: require("../../../assets/words/c/commit.png"),

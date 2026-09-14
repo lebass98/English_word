@@ -66,6 +66,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   adult: require("../../../assets/words/a/adult.png"),
   advance: require("../../../assets/words/a/advance.png"),
   advancement: require("../../../assets/words/a/advancement.png"),
+  advantage: require("../../../assets/words/a/advantage.png"),
   advent: require("../../../assets/words/a/advent.png"),
   adventure: require("../../../assets/words/a/adventure.png"),
   adversary: require("../../../assets/words/a/adversary.png"),

@@ -2,6 +2,7 @@ import { ImageSourcePropType } from "react-native";
 
 // "f" 로 시작하는 단어 그림. scripts/sync_word_images.py 가 만든다 (손으로 고치지 않는다)
 export const IMAGES_F: Record<string, ImageSourcePropType> = {
+  facial: require("../../../assets/words/f/facial.png"),
   fact: require("../../../assets/words/f/fact.png"),
   factory: require("../../../assets/words/f/factory.png"),
   fail: require("../../../assets/words/f/fail.png"),

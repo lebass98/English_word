@@ -129,6 +129,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   antecedent: require("../../assets/words/antecedent.png"),
   anticipate: require("../../assets/words/anticipate.png"),
   antique: require("../../assets/words/antique.png"),
+  antiquity: require("../../assets/words/antiquity.png"),
   anxious: require("../../assets/words/anxious.png"),
   anyway: require("../../assets/words/anyway.png"),
   apart: require("../../assets/words/apart.png"),

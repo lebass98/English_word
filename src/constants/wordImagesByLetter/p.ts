@@ -62,6 +62,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   post: require("../../../assets/words/p/post.png"),
   potato: require("../../../assets/words/p/potato.png"),
   pour: require("../../../assets/words/p/pour.png"),
+  poverty: require("../../../assets/words/p/poverty.png"),
   powder: require("../../../assets/words/p/powder.png"),
   practice: require("../../../assets/words/p/practice.png"),
   prairie: require("../../../assets/words/p/prairie.png"),

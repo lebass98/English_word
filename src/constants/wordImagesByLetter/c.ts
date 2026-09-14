@@ -69,6 +69,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   clap: require("../../../assets/words/c/clap.png"),
   clarify: require("../../../assets/words/c/clarify.png"),
   classic: require("../../../assets/words/c/classic.png"),
+  classify: require("../../../assets/words/c/classify.png"),
   clean: require("../../../assets/words/c/clean.png"),
   clear: require("../../../assets/words/c/clear.png"),
   cleave: require("../../../assets/words/c/cleave.png"),

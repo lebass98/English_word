@@ -54,6 +54,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   different: require("../../../assets/words/d/different.png"),
   difficult: require("../../../assets/words/d/difficult.png"),
   dig: require("../../../assets/words/d/dig.png"),
+  digest: require("../../../assets/words/d/digest.png"),
   diligent: require("../../../assets/words/d/diligent.png"),
   "dining room": require("../../../assets/words/d/dining-room.png"),
   "dinning room": require("../../../assets/words/d/dinning-room.png"),

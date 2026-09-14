@@ -7803,8 +7803,8 @@
    "status": "review"
   },
   "care about": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/care-about.png",
+   "blob": "b864f51a0e6bd216a1b26c6fc7dbc9ff88843c4d",
    "courses": [
     "m3"
    ],
@@ -7812,8 +7812,8 @@
    "sense_from": "m3-29",
    "scene": "family kitchen, parent pictogram character hurrying over with a steaming plate of vegetables and fruit while a small slim white pictogram character child jumps up happily from the chair with arms open, a heart note on the refrigerator, motion lines, floor line",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "career": {
    "file": "assets/words/c/career.png",
@@ -17335,8 +17335,8 @@
    ],
    "sense": "~에 살다, 거주하다",
    "sense_from": "tf-433",
-   "scene": null,
-   "scene_source": null,
+   "scene": "deep ocean floor, strange glowing fish swimming around a small slim white pictogram diver in a submarine that shines a flashlight into the dark water, coral and bubbles",
+   "scene_source": "scripts/tf_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -17388,8 +17388,8 @@
    ],
    "sense": "역동적인, 힘찬, 활발한",
    "sense_from": "tf-434",
-   "scene": null,
-   "scene_source": null,
+   "scene": "busy tech city street, small slim white pictogram workers riding scooters, carrying laptops and running between startup offices and food trucks, cranes building new towers",
+   "scene_source": "scripts/tf_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -17458,8 +17458,8 @@
    ],
    "sense": "진지한, 성실한, 열심인",
    "sense_from": "tf-439",
-   "scene": null,
-   "scene_source": null,
+   "scene": "school cafeteria, small slim white pictogram students racing to sort trash into recycling bins and compost buckets while one holds a clipboard, lunch trays and posters",
+   "scene_source": "scripts/tf_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -17499,8 +17499,8 @@
    ],
    "sense": "세속적인, 지상의, 현세의",
    "sense_from": "tf-440",
-   "scene": null,
-   "scene_source": null,
+   "scene": "mountain monastery path, a small slim white pictogram monk leaving a pile of belongings behind at the bottom and climbing happily up stone steps to a small temple, clouds and pine trees",
+   "scene_source": "scripts/tf_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -18126,8 +18126,8 @@
    ],
    "sense": "명성, 저명; 높은 지위",
    "sense_from": "tf-446",
-   "scene": null,
-   "scene_source": null,
+   "scene": "science award hall, a small slim white pictogram scientist climbing the steps to a high podium holding a DNA model while the crowd applauds, medal and trophies",
+   "scene_source": "scripts/tf_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -18139,8 +18139,8 @@
    ],
    "sense": "대단히, 탁월하게, 뛰어나게",
    "sense_from": "tf-447",
-   "scene": null,
-   "scene_source": null,
+   "scene": "school office, a small slim white pictogram teacher leaping up a staircase of stacked books labeled with years toward a door marked HEAD, certificates on the wall",
+   "scene_source": "scripts/tf_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -18152,8 +18152,8 @@
    ],
    "sense": "(빛·열·가스 등을) 방출하다, 내뿜다",
    "sense_from": "tf-448",
-   "scene": null,
-   "scene_source": null,
+   "scene": "city skyline, cars and factory chimneys puffing big clouds of gas into the sky while a small slim white pictogram scientist runs with a measuring device and a kite with a sensor",
+   "scene_source": "scripts/tf_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -18434,8 +18434,8 @@
    ],
    "sense": "목적, 목표; 끝, 결말",
    "sense_from": "tf-454",
-   "scene": null,
-   "scene_source": null,
+   "scene": "graduation stage, a small slim white pictogram graduate tossing a cap high then running toward a door labeled HELP OTHERS where people wait, diploma and banners",
+   "scene_source": "scripts/tf_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -18489,8 +18489,8 @@
    ],
    "sense": "끝없는, 무한한",
    "sense_from": "tf-458",
-   "scene": null,
-   "scene_source": null,
+   "scene": "kitchen table, a small slim white pictogram child bouncing on a chair firing a long chain of question marks toward a parent who juggles books, globe and science toys",
+   "scene_source": "scripts/tf_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -18502,8 +18502,8 @@
    ],
    "sense": "(기금을) 기부하다; (능력·자질을) 부여하다",
    "sense_from": "tf-461",
-   "scene": null,
-   "scene_source": null,
+   "scene": "university campus, a small slim white pictogram donor handing a giant check to cheering students who toss caps in the air, a scholarship banner and library building",
+   "scene_source": "scripts/tf_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -18529,8 +18529,8 @@
    ],
    "sense": "오래 지속되는, 영속적인",
    "sense_from": "tf-462",
-   "scene": null,
-   "scene_source": null,
+   "scene": "library reading club, small slim white pictogram readers of different ages running to grab the same old worn novel from a shelf, a timeline of years on the wall",
+   "scene_source": "scripts/tf_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -18693,8 +18693,9 @@
    ],
    "sense": "풍요롭게 하다, (질을) 높이다",
    "sense_from": "h3-1092",
-   "scene": null,
-   "scene_source": null,
+   "scene": "airport arrival gate, a small slim white pictogram traveler bursting out with a backpack full of souvenirs, masks, drums and books from many cultures, flags overhead",
+   "scene_source": "scripts/tf_missing_scenes.json",
+   "note": "장면이 대표 뜻 과정(h3)이 아니라 tf 것",
    "style": null,
    "status": "missing"
   },
@@ -18762,8 +18763,8 @@
    ],
    "sense": "들어가다; 참가하다, 입력하다",
    "sense_from": "tf-467",
-   "scene": null,
-   "scene_source": null,
+   "scene": "temple entrance, a small slim white pictogram visitor hopping on one foot while pulling off shoes before stepping into the main hall, shoe rack and lanterns",
+   "scene_source": "scripts/tf_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -18834,8 +18835,8 @@
    ],
    "sense": "열렬한, 열정적인, 열심인",
    "sense_from": "tf-470",
-   "scene": null,
-   "scene_source": null,
+   "scene": "charity event hall, small slim white pictogram volunteers rushing in at dawn carrying tables and chairs and hanging banners with big smiles, balloons and a clock",
+   "scene_source": "scripts/tf_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -18863,8 +18864,8 @@
    ],
    "sense": "완전히, 전적으로",
    "sense_from": "tf-472",
-   "scene": null,
-   "scene_source": null,
+   "scene": "small island, a small slim white pictogram engineer leaping between solar panels and spinning wind turbines while houses glow with light, sea waves and seagulls",
+   "scene_source": "scripts/tf_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -19083,8 +19084,8 @@
    ],
    "sense": "(장비를) 갖추다, 설비하다; (능력을) 갖추게 하다",
    "sense_from": "tf-474",
-   "scene": null,
-   "scene_source": null,
+   "scene": "classroom, small slim white pictogram workers rolling in new computers and a projector on carts while students jump with excitement, cables and boxes",
+   "scene_source": "scripts/tf_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -19125,8 +19126,8 @@
    ],
    "sense": "모호하게, 애매하게",
    "sense_from": "tf-475",
-   "scene": null,
-   "scene_source": null,
+   "scene": "press conference, a small slim white pictogram mayor dodging around microphones and shrugging with a big question mark and wavy lines, reporters leaning in",
+   "scene_source": "scripts/tf_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -19320,8 +19321,8 @@
    ],
    "sense": "인정받는, 자리를 잡은, 확립된",
    "sense_from": "tf-479",
-   "scene": null,
-   "scene_source": null,
+   "scene": "world conference, a small slim white pictogram ocean scientist on stage pointing at a big ocean current map while audience members from many countries take notes, globe",
+   "scene_source": "scripts/tf_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -19476,8 +19477,8 @@
    ],
    "sense": "일정한, 한결같은, 고른; 평평한; ~조차",
    "sense_from": "tf-483",
-   "scene": null,
-   "scene_source": null,
+   "scene": "greenhouse in winter, a small slim white pictogram gardener dashing between plant rows adjusting a thermostat that shows a steady line, snow outside the glass",
+   "scene_source": "scripts/tf_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -19503,8 +19504,8 @@
    ],
    "sense": "궁극적인, 최종적인, 나중의",
    "sense_from": "tf-484",
-   "scene": null,
-   "scene_source": null,
+   "scene": "shop closing down, a small slim white pictogram owner running after flying messy plans as a CLOSED sign swings, a calendar showing two years, empty shelves",
+   "scene_source": "scripts/tf_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -19516,8 +19517,8 @@
    ],
    "sense": "결국, 마침내, 궁극적으로",
    "sense_from": "tf-485",
-   "scene": null,
-   "scene_source": null,
+   "scene": "concert hall, a small slim white pictogram pianist playing with big leaps of joy while crumpled practice sheets and calendars pile up behind, audience clapping",
+   "scene_source": "scripts/tf_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -19559,8 +19560,8 @@
    ],
    "sense": "분명한, 명백한, 눈에 띄는",
    "sense_from": "tf-487",
-   "scene": null,
-   "scene_source": null,
+   "scene": "dry farmland, a small slim white pictogram reporter running with a camera past cracked fields, empty riverbeds and wilted crops, a hot sun overhead",
+   "scene_source": "scripts/tf_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -19716,8 +19717,9 @@
    ],
    "sense": "발굴하다, 파내다",
    "sense_from": "h3-692",
-   "scene": null,
-   "scene_source": null,
+   "scene": "ancient ruins dig site, small slim white pictogram archaeologists digging fast with shovels and brushes uncovering stone columns and pottery, tents and ropes",
+   "scene_source": "scripts/tf_missing_scenes.json",
+   "note": "장면이 대표 뜻 과정(h3)이 아니라 tf 것",
    "style": null,
    "status": "missing"
   },
@@ -19745,8 +19747,8 @@
    ],
    "sense": "대단히, 몹시, 극도로",
    "sense_from": "tf-493",
-   "scene": null,
-   "scene_source": null,
+   "scene": "desert day and night split scene, a small slim white pictogram explorer sweating under a blazing sun on one side and shivering in a blanket by a campfire under stars on the other",
+   "scene_source": "scripts/tf_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -19758,8 +19760,8 @@
    ],
    "sense": "뛰어나다, 탁월하다",
    "sense_from": "tf-494",
-   "scene": null,
-   "scene_source": null,
+   "scene": "math competition, a small slim white pictogram student leaping onto the winner's podium holding a trophy while equations and a rocket model fill the board behind",
+   "scene_source": "scripts/tf_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -19828,8 +19830,8 @@
    ],
    "sense": "예외적인, 이례적인; 특출한, 뛰어난",
    "sense_from": "tf-495",
-   "scene": null,
-   "scene_source": null,
+   "scene": "flooded town street, small slim white pictogram residents paddling a rowboat and carrying sandbags as heavy rain pours, water up to the doors and a rain gauge overflowing",
+   "scene_source": "scripts/tf_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -19841,8 +19843,8 @@
    ],
    "sense": "유난히, 예외적으로, 특별히",
    "sense_from": "tf-496",
-   "scene": null,
-   "scene_source": null,
+   "scene": "early spring garden in mild winter, a small slim white pictogram gardener leaping in surprise as flowers burst open next to melting snow patches, a calendar showing January",
+   "scene_source": "scripts/tf_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -19956,8 +19958,8 @@
    ],
    "sense": "실행하다, 수행하다; 처형하다",
    "sense_from": "tf-498",
-   "scene": null,
-   "scene_source": null,
+   "scene": "project office, small slim white pictogram team members running between a big plan board, computers and a deadline clock, checking off boxes one by one",
+   "scene_source": "scripts/tf_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -20038,8 +20040,8 @@
    ],
    "sense": "철저하게, 빠짐없이",
    "sense_from": "tf-501",
-   "scene": null,
-   "scene_source": null,
+   "scene": "research library, small slim white pictogram researchers on rolling ladders pulling every journal from tall shelves and stacking reviewed piles with check marks",
+   "scene_source": "scripts/tf_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -54490,8 +54492,8 @@
    "status": "missing"
   },
   "tissue": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/t/tissue.png",
+   "blob": "2bac97d5065683d4e0d273b0136d2b1589a38fde",
    "courses": [
     "h1"
    ],
@@ -54499,8 +54501,8 @@
    "sense_from": "h1-183",
    "scene": "biology laboratory bench, a small slim white pictogram researcher reaching across to place a thin slice sample under a large microscope while a box of paper tissues tips over, slide trays, charts",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "title": {
    "file": null,

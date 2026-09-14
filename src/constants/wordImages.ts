@@ -159,6 +159,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   aromatic: require("../../assets/words/aromatic.png"),
   arouse: require("../../assets/words/arouse.png"),
   arrange: require("../../assets/words/arrange.png"),
+  array: require("../../assets/words/array.png"),
   arrest: require("../../assets/words/arrest.png"),
   arrive: require("../../assets/words/arrive.png"),
   art: require("../../assets/words/art.png"),

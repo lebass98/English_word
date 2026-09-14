@@ -1116,6 +1116,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   unification: require("../../assets/words/unification.png"),
   uniform: require("../../assets/words/uniform.png"),
   unfortunately: require("../../assets/words/unfortunately.png"),
+  unexpected: require("../../assets/words/unexpected.png"),
   unity: require("../../assets/words/unity.png"),
   universe: require("../../assets/words/universe.png"),
   unless: require("../../assets/words/unless.png"),

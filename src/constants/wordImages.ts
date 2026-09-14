@@ -166,6 +166,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   article: require("../../assets/words/article.png"),
   artifact: require("../../assets/words/artifact.png"),
   artificial: require("../../assets/words/artificial.png"),
+  artisan: require("../../assets/words/artisan.png"),
   aspect: require("../../assets/words/aspect.png"),
   astonish: require("../../assets/words/astonish.png"),
   athlete: require("../../assets/words/athlete.png"),

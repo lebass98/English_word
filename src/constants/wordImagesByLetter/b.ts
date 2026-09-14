@@ -106,6 +106,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   bridge: require("../../../assets/words/b/bridge.png"),
   bright: require("../../../assets/words/b/bright.png"),
   brightness: require("../../../assets/words/b/brightness.png"),
+  brilliance: require("../../../assets/words/b/brilliance.png"),
   bring: require("../../../assets/words/b/bring.png"),
   british: require("../../../assets/words/b/british.png"),
   brown: require("../../../assets/words/b/brown.png"),

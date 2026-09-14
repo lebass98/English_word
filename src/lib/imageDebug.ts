@@ -30,6 +30,15 @@ export function imageCoverageOf(vocab: Vocab, levelId: string): ImageCoverage {
   return { total: words.length, made, missing: words.length - made };
 }
 
+/** 낱말 묶음(유닛 등)의 그림 현황 */
+export function imageCoverageOfWords(
+  words: { id: string; word: string; conceptId: string }[],
+): ImageCoverage {
+  let made = 0;
+  for (const w of words) if (hasImage(w)) made += 1;
+  return { total: words.length, made, missing: words.length - made };
+}
+
 /** 지금 학습 언어 전체의 그림 현황 */
 export function imageCoverageAll(vocab: Vocab): ImageCoverage {
   let total = 0;

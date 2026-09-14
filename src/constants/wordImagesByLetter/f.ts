@@ -46,7 +46,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   foundation: require("../../../assets/words/f/foundation.png"),
   "fountain-pen": require("../../../assets/words/f/fountain-pen.png"),
   frankly: require("../../../assets/words/f/frankly.png"),
-  French: require("../../../assets/words/f/French.png"),
+  french: require("../../../assets/words/f/french.png"),
   fresh: require("../../../assets/words/f/fresh.png"),
   frighten: require("../../../assets/words/f/frighten.png"),
   frog: require("../../../assets/words/f/frog.png"),

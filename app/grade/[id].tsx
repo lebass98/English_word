@@ -7,6 +7,7 @@ import { Screen, ScreenHeader } from "../../src/components/Screen";
 import { useGrade } from "../../src/constants/grades";
 import { useVocab } from "../../src/constants/words";
 import { useT } from "../../src/i18n";
+import { imageCoverageOfWords } from "../../src/lib/imageDebug";
 import {
   knownCountByGrade,
   knownCountInWords,
@@ -73,6 +74,8 @@ export default function GradeScreen() {
             const total = item.words.length;
             const known = knownCountInWords(entries, item.words);
             const done = total > 0 && known === total;
+            // 그림 제작 현황(임시). 그림을 전부 채우면 이 줄과 아래 배지를 지운다
+            const noImage = imageCoverageOfWords(item.words).missing;
 
             return (
               <Pressable
@@ -115,6 +118,21 @@ export default function GradeScreen() {
                   <Text className="text-[13px] text-slate-500">
                     {" "}
                     / {total}
+                  </Text>
+                </View>
+
+                {/* 그림 제작 현황(임시). 다 그린 유닛은 초록 표시로 바뀐다 */}
+                <View
+                  className={`mt-1.5 self-start rounded-full px-2 py-0.5 ${
+                    noImage > 0 ? "bg-canvas shadow-neu-inset" : "bg-[#dcf2ea]"
+                  }`}
+                >
+                  <Text
+                    className={`text-[10px] font-bold ${
+                      noImage > 0 ? "text-amber-600" : "text-mint-dark"
+                    }`}
+                  >
+                    {noImage > 0 ? `🖼 ${noImage}개 미완료` : "🖼 그림 완료"}
                   </Text>
                 </View>
               </Pressable>

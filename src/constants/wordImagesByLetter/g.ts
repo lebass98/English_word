@@ -9,7 +9,7 @@ export const IMAGES_G: Record<string, ImageSourcePropType> = {
   gay: require("../../../assets/words/g/gay.png"),
   gaze: require("../../../assets/words/g/gaze.png"),
   general: require("../../../assets/words/g/general.png"),
-  German: require("../../../assets/words/g/German.png"),
+  german: require("../../../assets/words/g/german.png"),
   gesture: require("../../../assets/words/g/gesture.png"),
   giant: require("../../../assets/words/g/giant.png"),
   gift: require("../../../assets/words/g/gift.png"),

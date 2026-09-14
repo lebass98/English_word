@@ -21,6 +21,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   record: require("../../../assets/words/r/record.png"),
   referee: require("../../../assets/words/r/referee.png"),
   refine: require("../../../assets/words/r/refine.png"),
+  reflect: require("../../../assets/words/r/reflect.png"),
   refrigerator: require("../../../assets/words/r/refrigerator.png"),
   refuse: require("../../../assets/words/r/refuse.png"),
   "regardless of": require("../../../assets/words/r/regardless-of.png"),

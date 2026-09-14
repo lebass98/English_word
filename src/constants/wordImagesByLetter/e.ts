@@ -37,6 +37,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   especially: require("../../../assets/words/e/especially.png"),
   event: require("../../../assets/words/e/event.png"),
   evil: require("../../../assets/words/e/evil.png"),
+  exact: require("../../../assets/words/e/exact.png"),
   exactly: require("../../../assets/words/e/exactly.png"),
   exaggerate: require("../../../assets/words/e/exaggerate.png"),
   examination: require("../../../assets/words/e/examination.png"),

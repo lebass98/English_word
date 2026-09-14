@@ -132,6 +132,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   appeal: require("../../../assets/words/a/appeal.png"),
   appealing: require("../../../assets/words/a/appealing.png"),
   appear: require("../../../assets/words/a/appear.png"),
+  appearance: require("../../../assets/words/a/appearance.png"),
   appetite: require("../../../assets/words/a/appetite.png"),
   "applicable to": require("../../../assets/words/a/applicable-to.png"),
   application: require("../../../assets/words/a/application.png"),

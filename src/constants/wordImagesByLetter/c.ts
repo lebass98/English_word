@@ -120,6 +120,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   compel: require("../../../assets/words/c/compel.png"),
   competent: require("../../../assets/words/c/competent.png"),
   competition: require("../../../assets/words/c/competition.png"),
+  compile: require("../../../assets/words/c/compile.png"),
   complain: require("../../../assets/words/c/complain.png"),
   complete: require("../../../assets/words/c/complete.png"),
   complicated: require("../../../assets/words/c/complicated.png"),

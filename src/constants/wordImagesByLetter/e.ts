@@ -16,6 +16,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   either: require("../../../assets/words/e/either.png"),
   elder: require("../../../assets/words/e/elder.png"),
   election: require("../../../assets/words/e/election.png"),
+  electric: require("../../../assets/words/e/electric.png"),
   electricity: require("../../../assets/words/e/electricity.png"),
   electronic: require("../../../assets/words/e/electronic.png"),
   element: require("../../../assets/words/e/element.png"),

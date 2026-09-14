@@ -15,6 +15,8 @@ export const IMAGES_L: Record<string, ImageSourcePropType> = {
   least: require("../../../assets/words/l/least.png"),
   lend: require("../../../assets/words/l/lend.png"),
   lesson: require("../../../assets/words/l/lesson.png"),
+  letter: require("../../../assets/words/l/letter.png"),
+  level: require("../../../assets/words/l/level.png"),
   liberty: require("../../../assets/words/l/liberty.png"),
   library: require("../../../assets/words/l/library.png"),
   license: require("../../../assets/words/l/license.png"),
@@ -23,6 +25,7 @@ export const IMAGES_L: Record<string, ImageSourcePropType> = {
   limit: require("../../../assets/words/l/limit.png"),
   list: require("../../../assets/words/l/list.png"),
   "living room": require("../../../assets/words/l/living-room.png"),
+  load: require("../../../assets/words/l/load.png"),
   loaf: require("../../../assets/words/l/loaf.png"),
   locate: require("../../../assets/words/l/locate.png"),
   lock: require("../../../assets/words/l/lock.png"),
@@ -31,4 +34,5 @@ export const IMAGES_L: Record<string, ImageSourcePropType> = {
   lose: require("../../../assets/words/l/lose.png"),
   loud: require("../../../assets/words/l/loud.png"),
   low: require("../../../assets/words/l/low.png"),
+  luck: require("../../../assets/words/l/luck.png"),
 };

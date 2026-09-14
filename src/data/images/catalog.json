@@ -9,43 +9,46 @@
  },
  "images": {
   "a great deal": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/a-great-deal.png",
+   "blob": "ba0dafdeea2a69a930b4031acac3bc83f67c2e47",
    "courses": [
     "tf"
    ],
    "sense": "많음, 다량; 크게, 많이",
    "sense_from": "tf-1",
-   "scene": null,
-   "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "scene": "polar science research station laboratory, curious small slim white pictogram scientist examining large stack of expedition field journals and glacier data charts on wide wooden workbench, polar maps on wall and wooden floor line",
+   "scene_source": "scripts/generate_m1_missing_and_toefl.py",
+   "note": "장면이 대표 뜻 과정(tf)이 아니라 m1 것",
+   "style": "v3",
+   "status": "ok"
   },
   "a host of": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/a-host-of.png",
+   "blob": "6a33b8d3d266b549419777aaba56f7905373432d",
    "courses": [
     "tf"
    ],
    "sense": "다수의, 많은",
    "sense_from": "tf-2",
-   "scene": null,
-   "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "scene": "lush botanical conservatory greenhouse, small slim white pictogram explorer with magnifying glass observing a host of exotic beetles and butterflies perched on jungle leaves, glass greenhouse frames and pathway line",
+   "scene_source": "scripts/generate_m1_missing_and_toefl.py",
+   "note": "장면이 대표 뜻 과정(tf)이 아니라 m1 것",
+   "style": "v3",
+   "status": "ok"
   },
   "a quarter": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/a-quarter.png",
+   "blob": "308e86392339351554066d765a98b16a2ef5afcb",
    "courses": [
     "tf"
    ],
    "sense": "4분의 1; 15분, 분기",
    "sense_from": "tf-3",
-   "scene": null,
-   "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "scene": "modern classroom lecture hall, thoughtful small slim white pictogram teacher pointing at a large chalkboard diagram dividing a circular pie chart into four neat quarter sections, lecture desk and classroom floor line",
+   "scene_source": "scripts/generate_m1_missing_and_toefl.py",
+   "note": "장면이 대표 뜻 과정(tf)이 아니라 m1 것",
+   "style": "v3",
+   "status": "ok"
   },
   "a variety of": {
    "file": null,
@@ -61,21 +64,22 @@
    "status": "missing"
   },
   "a wide range of": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/a-wide-range-of.png",
+   "blob": "71444d29d2992a859d0319ec496324fbfa22a4d7",
    "courses": [
     "tf"
    ],
    "sense": "폭넓은, 다양한",
    "sense_from": "tf-4",
-   "scene": null,
-   "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "scene": "artisan craft museum hall, observant small slim white pictogram visitor walking beside a long exhibition display shelf showcasing a wide range of traditional woodworking tools, display glass cabinet and museum floor line",
+   "scene_source": "scripts/generate_m1_missing_and_toefl.py",
+   "note": "장면이 대표 뜻 과정(tf)이 아니라 m1 것",
+   "style": "v3",
+   "status": "ok"
   },
   "abandon": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/abandon.png",
+   "blob": "cff47c34f27123b8f7ac3f164c8b5adc7d656084",
    "courses": [
     "m3",
     "h1",
@@ -85,14 +89,15 @@
    ],
    "sense": "버리다, 유기하다, 포기하다",
    "sense_from": "m3-144",
-   "scene": null,
-   "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "scene": "weathered ancient stone castle courtyard, solitary small slim white pictogram traveler exploring long abandoned stone castle gates covered with wild ivy vines, stone archway and cobblestone floor line",
+   "scene_source": "scripts/generate_m1_missing_and_toefl.py",
+   "note": "장면이 대표 뜻 과정(m3)이 아니라 m1 것",
+   "style": "v3",
+   "status": "ok"
   },
   "able": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/able.png",
+   "blob": "2af2f55fdfabf778afcf0449a011d76e8be8c44b",
    "courses": [
     "m1",
     "m2",
@@ -102,8 +107,8 @@
    "sense_from": "m1-935",
    "scene": "fitness gym workout bench, determined cute slender stickman smiling triumphantly after proving he is able to lift the workout barbell, weights rack and floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "abnormal": {
    "file": null,
@@ -119,17 +124,18 @@
    "status": "missing"
   },
   "abnormally": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/abnormally.png",
+   "blob": "4ba864589f861679cb7005c6107a041d202555e7",
    "courses": [
     "tf"
    ],
    "sense": "비정상적으로, 이례적으로",
    "sense_from": "tf-6",
-   "scene": null,
-   "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "scene": "meteorology weather observatory station, surprised small slim white pictogram meteorologist wiping brow looking up at a giant wall thermometer showing abnormally high heat reading, weather instruments and floor line",
+   "scene_source": "scripts/generate_m1_missing_and_toefl.py",
+   "note": "장면이 대표 뜻 과정(tf)이 아니라 m1 것",
+   "style": "v3",
+   "status": "ok"
   },
   "aboard": {
    "file": null,
@@ -145,18 +151,19 @@
    "status": "missing"
   },
   "abolish": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/abolish.png",
+   "blob": "f68a6bf922b0ddbb148aacfc4ecc06d7482813ff",
    "courses": [
     "h2",
     "tf"
    ],
    "sense": "폐지하다",
    "sense_from": "h2-888",
-   "scene": null,
-   "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "scene": "historic parliament council hall, determined small slim white pictogram official holding up an official decree document marking the vote to abolish an obsolete law, wooden council dais and hall floor line",
+   "scene_source": "scripts/generate_m1_missing_and_toefl.py",
+   "note": "장면이 대표 뜻 과정(h2)이 아니라 m1 것",
+   "style": "v3",
+   "status": "ok"
   },
   "aboriginal": {
    "file": null,
@@ -173,21 +180,22 @@
    "status": "missing"
   },
   "abound in": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/abound-in.png",
+   "blob": "ebdef68c63493fac7c3f4ee0c85501b481bcb4b9",
    "courses": [
     "tf"
    ],
    "sense": "~이 풍부하다, ~으로 가득하다",
    "sense_from": "tf-8",
-   "scene": null,
-   "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "scene": "scenic coastal harbor dock, cheerful small slim white pictogram fisherman on wooden pier looking into crystal clear harbor water that abounds in swimming fish schools, wooden pilings and pier plank line",
+   "scene_source": "scripts/generate_m1_missing_and_toefl.py",
+   "note": "장면이 대표 뜻 과정(tf)이 아니라 m1 것",
+   "style": "v3",
+   "status": "ok"
   },
   "abroad": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/abroad.png",
+   "blob": "d7796c50ec17f37c19c185ebd0d029cbce742087",
    "courses": [
     "m3",
     "h2",
@@ -195,14 +203,15 @@
    ],
    "sense": "해외에, 해외로, 널리",
    "sense_from": "m3-173",
-   "scene": null,
-   "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "scene": "bright international airport terminal, excited small slim white pictogram student pulling travel wheeled suitcase towards departure gate to study abroad, airport panoramic window and floor line",
+   "scene_source": "scripts/generate_m1_missing_and_toefl.py",
+   "note": "장면이 대표 뜻 과정(m3)이 아니라 m1 것",
+   "style": "v3",
+   "status": "ok"
   },
   "abrupt": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/abrupt.png",
+   "blob": "45280eed384855e01145ce5439b86813b5221dae",
    "courses": [
     "h2",
     "h3",
@@ -210,10 +219,11 @@
    ],
    "sense": "갑작스러운, 퉁명스러운",
    "sense_from": "h2-853",
-   "scene": null,
-   "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "scene": "windy mountain hiking trail, cautious small slim white pictogram hiker stopping on rocky ridge path noticing an abrupt steep mountain slope cliff ahead, mountain peaks and trail ground line",
+   "scene_source": "scripts/generate_m1_missing_and_toefl.py",
+   "note": "장면이 대표 뜻 과정(h2)이 아니라 m1 것",
+   "style": "v3",
+   "status": "ok"
   },
   "absence": {
    "file": null,
@@ -244,8 +254,8 @@
    "status": "review"
   },
   "absolute": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/absolute.png",
+   "blob": "b6583e7b29faa867c15e2476a69fb00b74aea353",
    "courses": [
     "h1",
     "h2",
@@ -254,14 +264,15 @@
    ],
    "sense": "절대적인, 완전한, 확고한",
    "sense_from": "h1-671",
-   "scene": null,
-   "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "scene": "grand historical throne hall, small slim white pictogram sovereign holding ceremonial golden orb and scepter sitting with absolute authority on stone throne, royal banners and hall floor line",
+   "scene_source": "scripts/generate_m1_missing_and_toefl.py",
+   "note": "장면이 대표 뜻 과정(h1)이 아니라 m1 것",
+   "style": "v3",
+   "status": "ok"
   },
   "absorb": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/absorb.png",
+   "blob": "0ce031b8fdfc57707774602d578cd0e62e5fb5ce",
    "courses": [
     "m3",
     "h1",
@@ -270,14 +281,15 @@
    ],
    "sense": "흡수하다, (사람·마음을) 열중시키다",
    "sense_from": "m3-513",
-   "scene": null,
-   "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "scene": "biology science classroom laboratory, curious small slim white pictogram student watching a large green potted plant absorb water through transparent root observation chamber, lab bench and floor line",
+   "scene_source": "scripts/generate_m1_missing_and_toefl.py",
+   "note": "장면이 대표 뜻 과정(m3)이 아니라 m1 것",
+   "style": "v3",
+   "status": "ok"
   },
   "abstract": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/abstract.png",
+   "blob": "395ffdac76dd33cf7380ca9d50f7712923461451",
    "courses": [
     "m3",
     "h1",
@@ -287,27 +299,29 @@
    ],
    "sense": "추상화, 추상물, 추상적인",
    "sense_from": "m3-756",
-   "scene": null,
-   "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "scene": "modern contemporary art museum gallery, contemplative small slim white pictogram visitor standing with folded hands admiring a large abstract wall painting composed of pure geometric lines and circles, gallery bench and floor line",
+   "scene_source": "scripts/generate_m1_missing_and_toefl.py",
+   "note": "장면이 대표 뜻 과정(m3)이 아니라 m1 것",
+   "style": "v3",
+   "status": "ok"
   },
   "abundance": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/abundance.png",
+   "blob": "9540fd5a5799a7f96bbe84fa152880a9008744d1",
    "courses": [
     "tf"
    ],
    "sense": "풍부, 다량, 많음",
    "sense_from": "tf-14",
-   "scene": null,
-   "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "scene": "lush green river valley oasis, joyful small slim white pictogram villager filling clay water jugs at a natural crystal spring bubbling with an abundance of fresh clear water, riverbank rocks and meadow line",
+   "scene_source": "scripts/generate_m1_missing_and_toefl.py",
+   "note": "장면이 대표 뜻 과정(tf)이 아니라 m1 것",
+   "style": "v3",
+   "status": "ok"
   },
   "abundant": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/abundant.png",
+   "blob": "d9caa841189d4f90b1151d76d89010ad4df06a88",
    "courses": [
     "h2",
     "h3",
@@ -315,10 +329,11 @@
    ],
    "sense": "풍부한, 풍족한",
    "sense_from": "h2-1200",
-   "scene": null,
-   "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "scene": "sunny orchard harvest market, cheerful small slim white pictogram fruit farmer standing behind wooden market stall overflowing with abundant ripe apples and oranges in wooden crates, canopy and market floor line",
+   "scene_source": "scripts/generate_m1_missing_and_toefl.py",
+   "note": "장면이 대표 뜻 과정(h2)이 아니라 m1 것",
+   "style": "v3",
+   "status": "ok"
   },
   "abuse": {
    "file": "assets/words/a/abuse.png",
@@ -331,8 +346,8 @@
    ],
    "sense": "남용하다, 오용하다",
    "sense_from": "m1-203",
-   "scene": "office desk with warning stop sign, conscientious cute slender stickman manager holding hand up firmly gesturing stop to prevent overuse and abuse of company office resources, recycling bins",
-   "scene_source": "scripts/generate_m1_continuous_linear.py",
+   "scene": "office human resources discussion room, small slim white pictogram counselor calmly resolving interpersonal issues with listening ear, office table and floor line",
+   "scene_source": "scripts/generate_m1_missing_and_toefl.py",
    "style": "legacy",
    "status": "review"
   },
@@ -351,21 +366,22 @@
    "status": "review"
   },
   "accede with": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/accede-with.png",
+   "blob": "1c83c84b83abaf122e5f0a220ea06c6b414f9ecd",
    "courses": [
     "tf"
    ],
    "sense": "~에 동의하다, 응하다",
    "sense_from": "tf-17",
-   "scene": null,
-   "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "scene": "formal corporate negotiation meeting room, two professional small slim white pictogram negotiators smiling and shaking hands across wooden conference table having reached mutual accession, office windows and carpet line",
+   "scene_source": "scripts/generate_m1_missing_and_toefl.py",
+   "note": "장면이 대표 뜻 과정(tf)이 아니라 m1 것",
+   "style": "v3",
+   "status": "ok"
   },
   "accelerate": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/accelerate.png",
+   "blob": "6bf0b5be108486d8f74568074032b70143e8931e",
    "courses": [
     "m3",
     "h1",
@@ -374,10 +390,11 @@
    ],
    "sense": "가속하다, 촉진하다",
    "sense_from": "m3-88",
-   "scene": null,
-   "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "scene": "futuristic test track stadium, energetic small slim white pictogram racer in streamlined aerodynamic go-kart accelerating smoothly down empty straight test course, track barriers and track line",
+   "scene_source": "scripts/generate_m1_missing_and_toefl.py",
+   "note": "장면이 대표 뜻 과정(m3)이 아니라 m1 것",
+   "style": "v3",
+   "status": "ok"
   },
   "accent": {
    "file": null,
@@ -424,17 +441,18 @@
    "status": "missing"
   },
   "accessible": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/accessible.png",
+   "blob": "8aa9e58b099c2f49dff7b3cfc9c2d536f5a1c869",
    "courses": [
     "tf"
    ],
    "sense": "이용할 수 있는, 접근하기 쉬운; 이해하기 쉬운",
    "sense_from": "tf-19",
-   "scene": null,
-   "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "scene": "modern public library entrance plaza, polite small slim white pictogram student easily walking up a gentle smooth accessible ramp leading into wide library doors, handrails and plaza stone line",
+   "scene_source": "scripts/generate_m1_missing_and_toefl.py",
+   "note": "장면이 대표 뜻 과정(tf)이 아니라 m1 것",
+   "style": "v3",
+   "status": "ok"
   },
   "accident": {
    "file": "assets/words/a/accident.png",
@@ -452,21 +470,22 @@
    "status": "review"
   },
   "accidentally": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/accidentally.png",
+   "blob": "13e2f87b9089d6b817c93fee90e6f4c33451d926",
    "courses": [
     "tf"
    ],
    "sense": "우연히, 뜻하지 않게; 실수로",
    "sense_from": "tf-20",
-   "scene": null,
-   "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "scene": "chemistry research laboratory bench, startled small slim white pictogram chemist watching a colorful foamy reaction bubble up unexpectedly from beaker after accidentally mixing test solutions, laboratory glassware and floor line",
+   "scene_source": "scripts/generate_m1_missing_and_toefl.py",
+   "note": "장면이 대표 뜻 과정(tf)이 아니라 m1 것",
+   "style": "v3",
+   "status": "ok"
   },
   "accommodate": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/accommodate.png",
+   "blob": "aad8f05347afb4e1bce68fe6e79e3a86f1af7c90",
    "courses": [
     "h2",
     "tf"
@@ -475,12 +494,12 @@
    "sense_from": "h2-485",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "accommodation": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/accommodation.png",
+   "blob": "1fe4755f23da62652be4eeadf6e32297ac2ae329",
    "courses": [
     "h2",
     "h3",
@@ -490,12 +509,12 @@
    "sense_from": "h2-749",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "accompanied by": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/accompanied-by.png",
+   "blob": "51a4497132c299b3177bf58826576b40e1241e33",
    "courses": [
     "tf"
    ],
@@ -503,12 +522,12 @@
    "sense_from": "tf-23",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "accompany": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/accompany.png",
+   "blob": "88076cf95918531c8d6c9b7940518731b647e092",
    "courses": [
     "m3",
     "h1",
@@ -520,12 +539,12 @@
    "sense_from": "m3-998",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "accomplish": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/accomplish.png",
+   "blob": "f9e3f6a04a5499af7aada9b326a7e5e80142b6af",
    "courses": [
     "m3",
     "h1",
@@ -536,12 +555,12 @@
    "sense_from": "m3-606",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "accomplished": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/accomplished.png",
+   "blob": "0d6532b2ebc0bc3def94e52374180f49b0f66fe6",
    "courses": [
     "tf"
    ],
@@ -549,12 +568,12 @@
    "sense_from": "tf-26",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "accord": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/accord.png",
+   "blob": "4ffbef90f1fa82ca30d6807deaa84159cf3ed100",
    "courses": [
     "h2",
     "h3",
@@ -564,12 +583,12 @@
    "sense_from": "h2-642",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "according to": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/according-to.png",
+   "blob": "0963ef4d1bc2c88bd5d96b83c8e3c9a6bd5607c4",
    "courses": [
     "m3",
     "tf"
@@ -578,12 +597,12 @@
    "sense_from": "m3-226",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "account": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/account.png",
+   "blob": "a9edbb36f22f2b72b5e5ffafbf0c7c8893a79d9e",
    "courses": [
     "m3",
     "h1",
@@ -594,12 +613,12 @@
    "sense_from": "m3-98",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "account for": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/account-for.png",
+   "blob": "f50a10dabfe28bbaa84ed6cfb6de40ba2ff71ac7",
    "courses": [
     "tf"
    ],
@@ -607,12 +626,12 @@
    "sense_from": "tf-30",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "accumulate": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/accumulate.png",
+   "blob": "1a27f1bef9db20e17e17ade3f30f8105bbc63ed1",
    "courses": [
     "h3",
     "tf"
@@ -621,12 +640,12 @@
    "sense_from": "h3-174",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "accuracy": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/accuracy.png",
+   "blob": "fb9cbdf8a72e23c270b6c80135cfc461974e3b52",
    "courses": [
     "tf"
    ],
@@ -634,12 +653,12 @@
    "sense_from": "tf-32",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "accurate": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/accurate.png",
+   "blob": "82315c451fa1b9bc299b60777b7df96c8357cafe",
    "courses": [
     "m3",
     "h1",
@@ -649,8 +668,8 @@
    "sense_from": "m3-65",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "accuse": {
    "file": null,
@@ -682,8 +701,8 @@
    "status": "missing"
   },
   "accustomed to": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/accustomed-to.png",
+   "blob": "d8c5eb8f9fd2b68105af5f3915c329982a7cf31a",
    "courses": [
     "tf"
    ],
@@ -691,8 +710,8 @@
    "sense_from": "tf-34",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "ache": {
    "file": "assets/words/a/ache.png",
@@ -710,8 +729,8 @@
    "status": "review"
   },
   "achieve": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/achieve.png",
+   "blob": "7a79145e6fd3ce8e92df1e3bcf2555642f69585b",
    "courses": [
     "m3",
     "h1",
@@ -722,8 +741,8 @@
    "sense_from": "m3-176",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "acid": {
    "file": null,
@@ -781,8 +800,8 @@
    "status": "missing"
   },
   "acquire": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/acquire.png",
+   "blob": "cb0bd03e8b5f1bdd78c40f1ce35bf381f3903d7e",
    "courses": [
     "m3",
     "h1",
@@ -793,12 +812,12 @@
    "sense_from": "m3-785",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "acquisition": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/acquisition.png",
+   "blob": "568b9cbb20c0d9a13174fdfdbb9e58bd046693c9",
    "courses": [
     "tf"
    ],
@@ -806,12 +825,12 @@
    "sense_from": "tf-38",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "active": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/active.png",
+   "blob": "6e4662dbd2b8285d17feb049ee576e1008be708e",
    "courses": [
     "m3",
     "h1",
@@ -821,8 +840,8 @@
    "sense_from": "m3-250",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "activity": {
    "file": "assets/words/a/activity.png",
@@ -868,8 +887,8 @@
    "status": "review"
   },
   "adapt": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/adapt.png",
+   "blob": "436bbe8069e301ab5a14476a3fa007a4d00a66ae",
    "courses": [
     "h1",
     "tf"
@@ -878,12 +897,12 @@
    "sense_from": "h1-1130",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "adaptability": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/adaptability.png",
+   "blob": "2b4c38a596297562f98e289e17e13f182134122d",
    "courses": [
     "tf"
    ],
@@ -891,8 +910,8 @@
    "sense_from": "tf-43",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "adaptable": {
    "file": null,
@@ -908,8 +927,8 @@
    "status": "missing"
   },
   "adaptation": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/adaptation.png",
+   "blob": "a86f9cc9d216a12ce24982103346e67a32622c93",
    "courses": [
     "tf"
    ],
@@ -917,8 +936,8 @@
    "sense_from": "tf-45",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "add": {
    "file": "assets/words/a/add.png",
@@ -962,8 +981,8 @@
    "status": "missing"
   },
   "additive": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/additive.png",
+   "blob": "1c069ddccf3802e303b7f7f33d69d24a0f4e6c71",
    "courses": [
     "tf"
    ],
@@ -971,8 +990,8 @@
    "sense_from": "tf-46",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "address": {
    "file": "assets/words/a/address.png",
@@ -993,8 +1012,8 @@
    "status": "review"
   },
   "adequate": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/adequate.png",
+   "blob": "aeff274b0cf699fe7c3fa92bea611bca653a21cb",
    "courses": [
     "h2",
     "h3",
@@ -1004,8 +1023,8 @@
    "sense_from": "h2-1098",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "adhere": {
    "file": null,
@@ -1034,8 +1053,8 @@
    "status": "missing"
   },
   "adjust": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/adjust.png",
+   "blob": "8c94ef1c62e5ad49c5bfc2425431c950c2cc48a5",
    "courses": [
     "m3",
     "h1",
@@ -1046,8 +1065,8 @@
    "sense_from": "m3-21",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "administer": {
    "file": null,
@@ -1064,8 +1083,8 @@
    "status": "missing"
   },
   "administered": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/administered.png",
+   "blob": "d041cadc21e4f90ca9c0bb7547672d6de9c91fdf",
    "courses": [
     "tf"
    ],
@@ -1073,8 +1092,8 @@
    "sense_from": "tf-50",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "administration": {
    "file": null,
@@ -1104,8 +1123,8 @@
    "status": "review"
   },
   "admire": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/admire.png",
+   "blob": "949aaf57529461cbd459c1f06817b01076906611",
    "courses": [
     "h1",
     "h2",
@@ -1116,12 +1135,12 @@
    "sense_from": "h1-938",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "admit": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/admit.png",
+   "blob": "04170992155a258de11a9ea6aeaf7af63cee3563",
    "courses": [
     "m3",
     "h1",
@@ -1132,8 +1151,8 @@
    "sense_from": "m3-801",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "adolescent": {
    "file": null,
@@ -1149,8 +1168,8 @@
    "status": "missing"
   },
   "adopt": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/adopt.png",
+   "blob": "0ad4b3ab049a036aad29b035dd45b88877c1c811",
    "courses": [
     "h1",
     "h3",
@@ -1160,8 +1179,8 @@
    "sense_from": "h1-752",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "adorn": {
    "file": null,
@@ -1222,8 +1241,8 @@
    "status": "review"
   },
   "advancement": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/advancement.png",
+   "blob": "b04dc3446ed63981552efa5947563b497c22d66c",
    "courses": [
     "tf"
    ],
@@ -1231,8 +1250,8 @@
    "sense_from": "tf-56",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "advantage": {
    "file": null,
@@ -1248,8 +1267,8 @@
    "status": "missing"
   },
   "advent": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/advent.png",
+   "blob": "b40f99ccda6ab3fbf05541a2f365550a4b7c82aa",
    "courses": [
     "h3",
     "tf"
@@ -1258,8 +1277,8 @@
    "sense_from": "h3-996",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "adventure": {
    "file": "assets/words/a/adventure.png",
@@ -1289,8 +1308,8 @@
    "status": "missing"
   },
   "adversary": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/adversary.png",
+   "blob": "bf61330313a2b139d0acfa17dc6d6d181e024778",
    "courses": [
     "tf"
    ],
@@ -1298,8 +1317,8 @@
    "sense_from": "tf-58",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "adverse": {
    "file": null,
@@ -1358,8 +1377,8 @@
    "status": "review"
   },
   "advisor": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/advisor.png",
+   "blob": "04599f8e1a4bdf0c27f911cd154fee66d284455c",
    "courses": [
     "tf"
    ],
@@ -1367,12 +1386,12 @@
    "sense_from": "tf-59",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "advocate": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/advocate.png",
+   "blob": "b4603388aa32ed9eeb94b66660125909e8edfbba",
    "courses": [
     "h2",
     "h3",
@@ -1382,8 +1401,8 @@
    "sense_from": "h2-32",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "aesthetic": {
    "file": null,
@@ -1430,8 +1449,8 @@
    "status": "missing"
   },
   "affection": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/affection.png",
+   "blob": "13fd44caf90dd01a473373c549c1a9d3e29f3546",
    "courses": [
     "h2",
     "h3",
@@ -1441,8 +1460,8 @@
    "sense_from": "h2-610",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "affirm": {
    "file": null,
@@ -1472,8 +1491,8 @@
    "status": "missing"
   },
   "affluence": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/affluence.png",
+   "blob": "792b4fc6440605707099e76ccc43bc1283ca6361",
    "courses": [
     "tf"
    ],
@@ -1481,12 +1500,12 @@
    "sense_from": "tf-63",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "affluent": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/affluent.png",
+   "blob": "954e4b2b0a6473be9c4f24811eb524344da99e00",
    "courses": [
     "h3",
     "tf"
@@ -1495,12 +1514,12 @@
    "sense_from": "h3-884",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "afford": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/afford.png",
+   "blob": "5feebcaf016cedcea824a9248960344d83b85f40",
    "courses": [
     "m3",
     "h1",
@@ -1511,8 +1530,8 @@
    "sense_from": "m3-1147",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "affordable": {
    "file": null,
@@ -1597,8 +1616,8 @@
    "status": "missing"
   },
   "agent": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/agent.png",
+   "blob": "adb7a00c27bff80172c7cb31a79dbb2f0f945369",
    "courses": [
     "h1",
     "tf"
@@ -1607,8 +1626,8 @@
    "sense_from": "h1-748",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "aggravate": {
    "file": null,
@@ -1637,8 +1656,8 @@
    "status": "missing"
   },
   "aggression": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/aggression.png",
+   "blob": "91ba715456beb687cbb430c99c19aef7bb300002",
    "courses": [
     "tf"
    ],
@@ -1646,8 +1665,8 @@
    "sense_from": "tf-67",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "aggressive": {
    "file": null,
@@ -1692,8 +1711,8 @@
    "status": "review"
   },
   "agriculture": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/agriculture.png",
+   "blob": "b0ba7ac916a2d153fd3fa4b631191feebbca03d9",
    "courses": [
     "m3",
     "h1",
@@ -1705,8 +1724,8 @@
    "sense_from": "m3-907",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "ahead": {
    "file": "assets/words/a/ahead.png",
@@ -1724,8 +1743,8 @@
    "status": "review"
   },
   "aid": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/aid.png",
+   "blob": "34ad9dd16c31f4bcc028bb525721c73bc8b6b6a3",
    "courses": [
     "h1",
     "h2",
@@ -1735,12 +1754,12 @@
    "sense_from": "h1-134",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "aim": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/aim.png",
+   "blob": "018f00656ea80fa0a8a959e8203565b8866e333c",
    "courses": [
     "m3",
     "h1",
@@ -1751,8 +1770,8 @@
    "sense_from": "m3-431",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "aircraft": {
    "file": null,
@@ -1812,8 +1831,8 @@
    "status": "review"
   },
   "alarming": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/alarming.png",
+   "blob": "bbb6a7831d6366a6e473c451f683460ed05988d0",
    "courses": [
     "h1",
     "tf"
@@ -1822,8 +1841,8 @@
    "sense_from": "h1-842",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "alert": {
    "file": null,
@@ -1933,8 +1952,8 @@
    "status": "missing"
   },
   "allocate": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/allocate.png",
+   "blob": "2d12b83159f17eaeb9a11318566937db03987716",
    "courses": [
     "h2",
     "h3",
@@ -1944,12 +1963,12 @@
    "sense_from": "h2-394",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "allow": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/allow.png",
+   "blob": "25d9713874c92051295dd82b95e08916aaa77a6d",
    "courses": [
     "m1",
     "m2",
@@ -1962,8 +1981,8 @@
    "sense_from": "m1-959",
    "scene": "school library entrance desk, courteous cute slender librarian stickman stamping borrowing card and nodding warmly to allow student stickman to borrow books, check-out desk and floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "allowance": {
    "file": null,
@@ -2061,8 +2080,8 @@
    "status": "review"
   },
   "alter": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/alter.png",
+   "blob": "3a956e90bf7b8cb3b9b161f9078a088793b8090f",
    "courses": [
     "m3",
     "h1",
@@ -2073,12 +2092,12 @@
    "sense_from": "m3-1063",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "alteration": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/alteration.png",
+   "blob": "51c13927542906ed7cfc0928cf2c6d8daecd9dd7",
    "courses": [
     "tf"
    ],
@@ -2086,12 +2105,12 @@
    "sense_from": "tf-75",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "alternate": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/alternate.png",
+   "blob": "6e96a913b392d747e112f77fcc41dd7a17954095",
    "courses": [
     "tf"
    ],
@@ -2099,12 +2118,12 @@
    "sense_from": "tf-76",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "alternative": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/alternative.png",
+   "blob": "5cbf66d0bc94a3cc996506f583122478407ccf18",
    "courses": [
     "m3",
     "h1",
@@ -2116,12 +2135,12 @@
    "sense_from": "m3-707",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "although": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/although.png",
+   "blob": "b2ad86ea1044c4c81368d7cd04fa7ae354c754d4",
    "courses": [
     "tf"
    ],
@@ -2129,8 +2148,8 @@
    "sense_from": "tf-78",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "altogether": {
    "file": "assets/words/a/altogether.png",
@@ -2218,8 +2237,8 @@
    "status": "missing"
   },
   "ambiguous": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/ambiguous.png",
+   "blob": "c24b0090ea907beeac3e6d5744c0a4284d67360e",
    "courses": [
     "tf"
    ],
@@ -2227,12 +2246,12 @@
    "sense_from": "tf-80",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "ambition": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/ambition.png",
+   "blob": "fbe18443536e1529dcb758d5a12a91a185448666",
    "courses": [
     "tf"
    ],
@@ -2240,8 +2259,8 @@
    "sense_from": "tf-81",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "ambitious": {
    "file": null,
@@ -2299,8 +2318,8 @@
    "status": "review"
   },
   "ample": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/ample.png",
+   "blob": "eac67adcf7df289084592be3f0c67af8db193c6e",
    "courses": [
     "tf"
    ],
@@ -2308,12 +2327,12 @@
    "sense_from": "tf-83",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "amplify": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/amplify.png",
+   "blob": "8182c2c94295955c5656f1d56504b6d949b53d59",
    "courses": [
     "h3",
     "tf"
@@ -2322,12 +2341,12 @@
    "sense_from": "h3-866",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "amuse": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/amuse.png",
+   "blob": "f0a65bead40e8ae067cceed7a53ace7c5614e9d9",
    "courses": [
     "m1",
     "m2",
@@ -2337,12 +2356,12 @@
    "sense_from": "m1-809",
    "scene": "lively children festival party, cheerful cute slender clown stickman juggling three colorful round balls skillfully to amuse smiling audience friends, party streamers and floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "an array of": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/an-array-of.png",
+   "blob": "adae9e37eee18c3cd565010c4cac3b0eada3773e",
    "courses": [
     "tf"
    ],
@@ -2350,8 +2369,8 @@
    "sense_from": "tf-85",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "analogy": {
    "file": null,
@@ -2558,8 +2577,8 @@
    "status": "missing"
   },
   "annoying": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/annoying.png",
+   "blob": "7d3fd056e677477c54f9db4b7e6ba774698dc813",
    "courses": [
     "tf"
    ],
@@ -2567,12 +2586,12 @@
    "sense_from": "tf-88",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "annual": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/annual.png",
+   "blob": "f37940a653fa82e1077667187c0ad7814e65027f",
    "courses": [
     "m3",
     "h1",
@@ -2584,8 +2603,8 @@
    "sense_from": "m3-669",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "answer": {
    "file": "assets/words/a/answer.png",
@@ -2602,8 +2621,8 @@
    "status": "review"
   },
   "antecedent": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/antecedent.png",
+   "blob": "99805dd5fdbb61d9132b3beba1edf4cb071995b9",
    "courses": [
     "tf"
    ],
@@ -2611,8 +2630,8 @@
    "sense_from": "tf-89",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "anthropologist": {
    "file": null,
@@ -2655,8 +2674,8 @@
    "status": "missing"
   },
   "anticipate": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/anticipate.png",
+   "blob": "f2f58a2707e5ea700363b87f3fc22db56fddd930",
    "courses": [
     "m3",
     "h1",
@@ -2668,12 +2687,12 @@
    "sense_from": "m3-747",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "antique": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/antique.png",
+   "blob": "017a0b1cf1bec8a5c32b2f53a692bc253ed95ccf",
    "courses": [
     "m3",
     "tf"
@@ -2682,12 +2701,12 @@
    "sense_from": "m3-700",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "antiquity": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/antiquity.png",
+   "blob": "42fb22eb34de01fd9a41e1408eef9a93d48fcc57",
    "courses": [
     "tf"
    ],
@@ -2695,8 +2714,8 @@
    "sense_from": "tf-92",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "anxiety": {
    "file": null,
@@ -2757,8 +2776,8 @@
    "status": "review"
   },
   "apart from": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/apart-from.png",
+   "blob": "4c54cbc0ecfa3d1478efc0644a972ec990534f30",
    "courses": [
     "tf"
    ],
@@ -2766,8 +2785,8 @@
    "sense_from": "tf-95",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "apologize": {
    "file": null,
@@ -2785,8 +2804,8 @@
    "status": "missing"
   },
   "apparent": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/apparent.png",
+   "blob": "b8d712fbbc09d4bd68702a6eb8e5d074e6612cd6",
    "courses": [
     "h1",
     "h2",
@@ -2796,12 +2815,12 @@
    "sense_from": "h1-868",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "apparently": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/apparently.png",
+   "blob": "b74509036856b8f62dc8a6bd81e5039019d067a2",
    "courses": [
     "h3",
     "tf"
@@ -2810,12 +2829,12 @@
    "sense_from": "h3-1149",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "appeal": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/appeal.png",
+   "blob": "e32b35e6a535618ade8808df4c94ce95f92d7647",
    "courses": [
     "m3",
     "h1",
@@ -2825,12 +2844,12 @@
    "sense_from": "m3-984",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "appealing": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/appealing.png",
+   "blob": "8da5ff7de92c1186888894c67922aec767a08527",
    "courses": [
     "tf"
    ],
@@ -2838,8 +2857,8 @@
    "sense_from": "tf-99",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "appear": {
    "file": "assets/words/a/appear.png",
@@ -2931,8 +2950,8 @@
    "status": "missing"
   },
   "applicable to": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/applicable-to.png",
+   "blob": "1b25c15287810933adca95922bfe3ef6192f5389",
    "courses": [
     "tf"
    ],
@@ -2940,12 +2959,12 @@
    "sense_from": "tf-101",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "application": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/application.png",
+   "blob": "3ed831199b43186642970fd1d4d621988e0c626b",
    "courses": [
     "tf"
    ],
@@ -2953,8 +2972,8 @@
    "sense_from": "tf-102",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "apply": {
    "file": null,
@@ -2998,8 +3017,8 @@
    "status": "review"
   },
   "appreciable": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/appreciable.png",
+   "blob": "1557d49bc76d437878562e7c804ccff14f384143",
    "courses": [
     "tf"
    ],
@@ -3007,12 +3026,12 @@
    "sense_from": "tf-103",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "appreciate": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/appreciate.png",
+   "blob": "67b34ed4064cfdb6220c1217037bb964ad3f5209",
    "courses": [
     "m3",
     "h1",
@@ -3023,12 +3042,12 @@
    "sense_from": "m3-1009",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "apprehend": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/apprehend.png",
+   "blob": "bbae08546b0a0577c9baf5ebfe11e41da55d6828",
    "courses": [
     "h3",
     "tf"
@@ -3037,12 +3056,12 @@
    "sense_from": "h3-1187",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "approach": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/approach.png",
+   "blob": "80b4c5d24642146fc672cf787651365d7d84ebfd",
    "courses": [
     "h1",
     "h2",
@@ -3053,12 +3072,12 @@
    "sense_from": "h1-479",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "appropriate": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/appropriate.png",
+   "blob": "bd666d425bf0dbcedc36e38d7db97b809fceaf8d",
    "courses": [
     "h1",
     "h2",
@@ -3069,8 +3088,8 @@
    "sense_from": "h1-1062",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "approve": {
    "file": null,
@@ -3088,8 +3107,8 @@
    "status": "missing"
   },
   "approximately": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/approximately.png",
+   "blob": "a43ec2a7a0f03235adf699798d2c101e0e65d60a",
    "courses": [
     "tf"
    ],
@@ -3097,12 +3116,12 @@
    "sense_from": "tf-109",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "apt": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/apt.png",
+   "blob": "c413266f7b113d405b59111ec0cb445eb87da055",
    "courses": [
     "tf"
    ],
@@ -3110,12 +3129,12 @@
    "sense_from": "tf-110",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "aptly": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/aptly.png",
+   "blob": "8ac1a9c570d54cb3e232e268f8ffbcb47e74fe76",
    "courses": [
     "tf"
    ],
@@ -3123,8 +3142,8 @@
    "sense_from": "tf-111",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "aquarium": {
    "file": null,
@@ -3222,8 +3241,8 @@
    "status": "review"
   },
   "argue": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/argue.png",
+   "blob": "c3ed88b9d7cd5702f45afc47f6b3712728f850e5",
    "courses": [
     "m3",
     "h1",
@@ -3234,8 +3253,8 @@
    "sense_from": "m3-1144",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "arise": {
    "file": "assets/words/a/arise.png",
@@ -3282,8 +3301,8 @@
    "status": "review"
   },
   "aromatic": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/aromatic.png",
+   "blob": "3ab0abacd27c632a5962664965a59d2dc7a71d3c",
    "courses": [
     "tf"
    ],
@@ -3291,12 +3310,12 @@
    "sense_from": "tf-108",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "arouse": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/arouse.png",
+   "blob": "36eec5c94d40548d72fbc41c47bd77a2c49e1c4e",
    "courses": [
     "tf"
    ],
@@ -3304,12 +3323,12 @@
    "sense_from": "tf-115",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "arrange": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/arrange.png",
+   "blob": "543c8a83433bcf956d452ad5b42a77306ea8d557",
    "courses": [
     "m3",
     "h1",
@@ -3320,12 +3339,12 @@
    "sense_from": "m3-1011",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "array": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/array.png",
+   "blob": "394110330c765e3e9771bccd689d939b2a46df00",
    "courses": [
     "tf"
    ],
@@ -3333,8 +3352,8 @@
    "sense_from": "tf-117",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "arrest": {
    "file": "assets/words/a/arrest.png",
@@ -3367,8 +3386,8 @@
    "status": "review"
   },
   "arrogant": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/arrogant.png",
+   "blob": "9f8573675bbe4fe17799001b38816e66201ff0f7",
    "courses": [
     "m3",
     "h2"
@@ -3377,8 +3396,8 @@
    "sense_from": "m3-215",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "arrow": {
    "file": null,
@@ -3421,8 +3440,8 @@
    "status": "missing"
   },
   "article": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/article.png",
+   "blob": "84065ffa36669ba81218799f55427d2f3881b9de",
    "courses": [
     "m3",
     "h1",
@@ -3432,12 +3451,12 @@
    "sense_from": "m3-106",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "artifact": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/artifact.png",
+   "blob": "c3a9f3810a1449558d1cb289c0a60c40ee6e32fc",
    "courses": [
     "h2",
     "tf"
@@ -3446,12 +3465,12 @@
    "sense_from": "h2-102",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "artificial": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/artificial.png",
+   "blob": "1da15cdd589e27b8f79ef72c09d81c90334133a0",
    "courses": [
     "m3",
     "h1",
@@ -3463,12 +3482,12 @@
    "sense_from": "m3-956",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "artisan": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/artisan.png",
+   "blob": "4c9a615c85957abaa714774f8934a5d0060f4979",
    "courses": [
     "tf"
    ],
@@ -3476,8 +3495,8 @@
    "sense_from": "tf-121",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "artwork": {
    "file": null,
@@ -3493,8 +3512,8 @@
    "status": "missing"
   },
   "as a result": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/as-a-result.png",
+   "blob": "03761150db7e742f52517293733cae05092aae45",
    "courses": [
     "tf"
    ],
@@ -3502,8 +3521,8 @@
    "sense_from": "tf-122",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "as long as": {
    "file": null,
@@ -3519,8 +3538,8 @@
    "status": "missing"
   },
   "as well": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/as-well.png",
+   "blob": "f892642f72d0ee82ec462885db68d7f6f4bd68aa",
    "courses": [
     "tf"
    ],
@@ -3528,12 +3547,12 @@
    "sense_from": "tf-123",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "as well as": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/as-well-as.png",
+   "blob": "05584c21de0e6ac81f9cfdcc387e21ad090e8a85",
    "courses": [
     "tf"
    ],
@@ -3541,8 +3560,8 @@
    "sense_from": "tf-124",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "as ~ as possible": {
    "file": null,
@@ -3558,8 +3577,8 @@
    "status": "missing"
   },
   "ascending": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/ascending.png",
+   "blob": "8bb7d2a8b8cfb2aa34ecee6724365c259d80ebca",
    "courses": [
     "tf"
    ],
@@ -3567,12 +3586,12 @@
    "sense_from": "tf-125",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "ascertain": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/ascertain.png",
+   "blob": "f9cc7b3fb1bda49019a0ed3adc681e7a1576c832",
    "courses": [
     "tf"
    ],
@@ -3580,8 +3599,8 @@
    "sense_from": "tf-126",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "ascribe": {
    "file": null,
@@ -3597,8 +3616,8 @@
    "status": "missing"
   },
   "ascribe A to B": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/ascribe-A-to-B.png",
+   "blob": "d07c6acfb99f83c3cc0bec06e1c91af69fd56f9e",
    "courses": [
     "tf"
    ],
@@ -3606,8 +3625,8 @@
    "sense_from": "tf-127",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "ash": {
    "file": null,
@@ -3681,8 +3700,8 @@
    "status": "review"
   },
   "aspiration": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/aspiration.png",
+   "blob": "ad53234078a0059dffd6cba174d868a482e863bd",
    "courses": [
     "tf"
    ],
@@ -3690,8 +3709,8 @@
    "sense_from": "tf-128",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "aspire": {
    "file": null,
@@ -3720,8 +3739,8 @@
    "status": "missing"
   },
   "assemble": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/assemble.png",
+   "blob": "8a9560fa941dd63330e618d573c7e08448c4a0ec",
    "courses": [
     "m3",
     "h1",
@@ -3733,12 +3752,12 @@
    "sense_from": "m3-309",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "assert": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/assert.png",
+   "blob": "d3a993fffba43b45cc7fba38e607d07f89b26ca1",
    "courses": [
     "h3",
     "tf"
@@ -3747,12 +3766,12 @@
    "sense_from": "h3-390",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "assertion": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/assertion.png",
+   "blob": "f88bdbfbaec6d0925cce1231a2c89fbc21dee2b5",
    "courses": [
     "tf"
    ],
@@ -3760,8 +3779,8 @@
    "sense_from": "tf-131",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "assertive": {
    "file": null,
@@ -3803,8 +3822,8 @@
    "status": "missing"
   },
   "assign": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/assign.png",
+   "blob": "04219c4a74065678e47ca832041dc923ef8dc2a9",
    "courses": [
     "m3",
     "h2",
@@ -3814,8 +3833,8 @@
    "sense_from": "m3-805",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "assignment": {
    "file": null,
@@ -3845,8 +3864,8 @@
    "status": "missing"
   },
   "assist": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/assist.png",
+   "blob": "25ff34663164b902b1593d57bb559c5fb8795c47",
    "courses": [
     "h1",
     "tf"
@@ -3855,12 +3874,12 @@
    "sense_from": "h1-147",
    "scene": "bright community workshop, kind cute chibi mannequin warmly assisting an elderly neighbor cute chibi mannequin carry heavy grocery bags across the doorway",
    "scene_source": "scripts/generate_h1_unit8.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "associate": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/associate.png",
+   "blob": "a56b3c6cb2a3c928cd3d9e6d505210bd7b8f0a2c",
    "courses": [
     "m3",
     "h1",
@@ -3872,12 +3891,12 @@
    "sense_from": "m3-394",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "associated": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/associated.png",
+   "blob": "5c1eb0a52569fac0deac29566caa1c4417557230",
    "courses": [
     "tf"
    ],
@@ -3885,12 +3904,12 @@
    "sense_from": "tf-135",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "assortment": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/assortment.png",
+   "blob": "32dcdd49591cf63a246fd3d9422e8a439c408ebc",
    "courses": [
     "tf"
    ],
@@ -3898,12 +3917,12 @@
    "sense_from": "tf-136",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "assume": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/assume.png",
+   "blob": "20545590fab5d8d4c4af42e01d217b7530e87a4a",
    "courses": [
     "m3",
     "h1",
@@ -3914,12 +3933,12 @@
    "sense_from": "m3-846",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "assumption": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/assumption.png",
+   "blob": "a2fdafe61c3f7308a19485f8836175fd35152a09",
    "courses": [
     "h2",
     "tf"
@@ -3928,8 +3947,8 @@
    "sense_from": "h2-182",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "assure": {
    "file": null,
@@ -3946,8 +3965,8 @@
    "status": "missing"
   },
   "assuredly": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/assuredly.png",
+   "blob": "784a562726c33d62f06b3d463e604ce9b150dd90",
    "courses": [
     "tf"
    ],
@@ -3955,8 +3974,8 @@
    "sense_from": "tf-139",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "asthma": {
    "file": null,
@@ -3987,8 +4006,8 @@
    "status": "review"
   },
   "astonishing": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/astonishing.png",
+   "blob": "059e9f8208c9a26440e041796b62feba7d2cfd0c",
    "courses": [
     "tf"
    ],
@@ -3996,8 +4015,8 @@
    "sense_from": "tf-140",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "astronaut": {
    "file": null,
@@ -4015,8 +4034,8 @@
    "status": "missing"
   },
   "at hand": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/at-hand.png",
+   "blob": "277a5c267e942127bc063bd2b1a139ab1e4a7202",
    "courses": [
     "tf"
    ],
@@ -4024,8 +4043,8 @@
    "sense_from": "tf-141",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "at last": {
    "file": null,
@@ -4041,8 +4060,8 @@
    "status": "missing"
   },
   "at least": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/at-least.png",
+   "blob": "379cec4e094e73005f69a139077f36f9e2c1e854",
    "courses": [
     "tf"
    ],
@@ -4050,12 +4069,12 @@
    "sense_from": "tf-142",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "at once": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/at-once.png",
+   "blob": "1ade012298cb97aa4fb7eebdfda9c8d45f0e3d52",
    "courses": [
     "tf"
    ],
@@ -4063,12 +4082,12 @@
    "sense_from": "tf-143",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "at the expense of": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/at-the-expense-of.png",
+   "blob": "72547f36a4b281ff776e7a87919deecba3fed5a2",
    "courses": [
     "tf"
    ],
@@ -4076,12 +4095,12 @@
    "sense_from": "tf-144",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "at the same time": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/at-the-same-time.png",
+   "blob": "fa86059d5a11f2d261f2a76d5ecc9f62b57ce408",
    "courses": [
     "tf"
    ],
@@ -4089,8 +4108,8 @@
    "sense_from": "tf-145",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "athlete": {
    "file": "assets/words/a/athlete.png",
@@ -4122,8 +4141,8 @@
    "status": "missing"
   },
   "atmosphere": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/atmosphere.png",
+   "blob": "d199c3d27847d1cee83c9575b2024863ff640366",
    "courses": [
     "m3",
     "h1",
@@ -4134,8 +4153,8 @@
    "sense_from": "m3-686",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "atom": {
    "file": "assets/words/a/atom.png",
@@ -4154,8 +4173,8 @@
    "status": "review"
   },
   "attach": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/attach.png",
+   "blob": "0dc2ddb23d1fd2dba3b7e4cac92e01e9b8134e2a",
    "courses": [
     "m3",
     "h1",
@@ -4165,12 +4184,12 @@
    "sense_from": "m3-879",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "attachment to": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/attachment-to.png",
+   "blob": "21efb9009c909ea53e08c2c6c53c4b1ecdb027ad",
    "courses": [
     "tf"
    ],
@@ -4178,12 +4197,12 @@
    "sense_from": "tf-148",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "attain": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/attain.png",
+   "blob": "7ff7d873e2549816694dfa0eeb45f98395239a53",
    "courses": [
     "h2",
     "h3",
@@ -4193,12 +4212,12 @@
    "sense_from": "h2-476",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "attempt": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/attempt.png",
+   "blob": "64bee122673ab890aec7f3c318b416afa1cbeeb5",
    "courses": [
     "m3",
     "h1",
@@ -4209,8 +4228,8 @@
    "sense_from": "m3-163",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "attend": {
    "file": "assets/words/a/attend.png",
@@ -4228,8 +4247,8 @@
    "status": "review"
   },
   "attendant": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/attendant.png",
+   "blob": "e668fc7bc732c3beaf2f38ea8cbad2625398b11e",
    "courses": [
     "tf"
    ],
@@ -4237,8 +4256,8 @@
    "sense_from": "tf-151",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "attention": {
    "file": null,
@@ -4354,8 +4373,8 @@
    "status": "missing"
   },
   "attribute": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/attribute.png",
+   "blob": "d97d05000d63f502ffa1e9ac5be8505abdf5a3c9",
    "courses": [
     "h1",
     "h3",
@@ -4365,8 +4384,8 @@
    "sense_from": "h1-295",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "auction": {
    "file": null,
@@ -4451,8 +4470,8 @@
    "status": "missing"
   },
   "authenticity": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/authenticity.png",
+   "blob": "bf0b6bc3e50c0efc62970420d9994012dab9326b",
    "courses": [
     "h2"
    ],
@@ -4460,8 +4479,8 @@
    "sense_from": "h2-6",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "author": {
    "file": null,
@@ -4494,8 +4513,8 @@
    "status": "missing"
   },
   "authorize": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/authorize.png",
+   "blob": "fdb017e5658f07af85bf3e7e86a5d799d4585e28",
    "courses": [
     "tf"
    ],
@@ -4503,8 +4522,8 @@
    "sense_from": "tf-154",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "authorship": {
    "file": null,
@@ -4574,8 +4593,8 @@
    "status": "missing"
   },
   "available": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/available.png",
+   "blob": "73cb99e4023eab029403cc7c85a9202c7361a399",
    "courses": [
     "m3",
     "h1",
@@ -4585,8 +4604,8 @@
    "sense_from": "m3-803",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "avalanche": {
    "file": null,
@@ -5339,8 +5358,8 @@
    "status": "missing"
   },
   "beach": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/beach.png",
+   "blob": "dcf7d2b113a4d923e151399a16db79fb83eed939",
    "courses": [
     "m1",
     "m2"
@@ -5349,8 +5368,8 @@
    "sense_from": "m1-947",
    "scene": "sunny tropical ocean beach, joyful cute slender stickman walking along sunny sandy beach holding colorful beach ball under palm umbrella, seashells and shoreline line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "beam": {
    "file": null,
@@ -5366,8 +5385,8 @@
    "status": "missing"
   },
   "bean": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/bean.png",
+   "blob": "ab6579ca7e1f317dac5dc1d66ba06c6770c54507",
    "courses": [
     "m1",
     "m2"
@@ -5376,8 +5395,8 @@
    "sense_from": "m1-878",
    "scene": "sunny countryside vegetable patch, curious cute slender stickman opening a fresh green garden bean pod showing plump round peas and beans inside, garden trellis and soil line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "bear": {
    "file": "assets/words/b/bear.png",
@@ -5480,18 +5499,18 @@
    "status": "review"
   },
   "bedside": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/bedside.png",
+   "blob": "77d6512dcbe09d9055545ef03af12800faba23da",
    "courses": [
     "m1",
     "m2"
    ],
    "sense": "침대 곁",
    "sense_from": "m1-874",
-   "scene": "cozy peaceful bedroom corner, caring cute slender stickman sitting on bedside chair reading bedtime story to resting friend, bedside nightstand table lamp and floor line",
-   "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "scene": "cozy peaceful bedroom corner, caring small slim white pictogram character sitting on bedside wooden chair reading a bedtime book to a resting friend in bed, bedside nightstand table lamp with soft glow and floor line",
+   "scene_source": "scripts/generate_m1_missing_and_toefl.py",
+   "style": "v3",
+   "status": "ok"
   },
   "beef": {
    "file": "assets/words/b/beef.png",
@@ -5985,8 +6004,8 @@
    "status": "missing"
   },
   "biodiversity": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/biodiversity.png",
+   "blob": "5f81987af1c970ee56e2319c61586114838a0f87",
    "courses": [
     "h2"
    ],
@@ -5994,8 +6013,8 @@
    "sense_from": "h2-17",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "biography": {
    "file": null,
@@ -6041,8 +6060,8 @@
    "status": "review"
   },
   "birth": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/birth.png",
+   "blob": "e601a1ec083f45a6df6dfb98f08ac2233d344ea7",
    "courses": [
     "m1",
     "m2"
@@ -6051,8 +6070,8 @@
    "sense_from": "m1-859",
    "scene": "cozy sunlit nursery room, tender cute slender stickman parent lovingly cradling a tiny newborn baby swaddled in soft blanket beside wooden crib, rocking chair and rug line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "bit": {
    "file": "assets/words/b/bit.png",
@@ -6303,8 +6322,8 @@
    "status": "missing"
   },
   "board": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/board.png",
+   "blob": "53a5d06bf4790b74dcb98cd210ba1d6495a511d8",
    "courses": [
     "m1",
     "m2",
@@ -6314,8 +6333,8 @@
    "sense_from": "m1-904",
    "scene": "woodworking construction site, industrious cute slender stickman carrying a long smooth pine wood board upon shoulder towards workbench, building frames and floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "body": {
    "file": "assets/words/b/body.png",
@@ -7307,8 +7326,8 @@
    "status": "review"
   },
   "burn": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/burn.png",
+   "blob": "faae5e8ecfd93190e461ad44ee0c2b4257db4f85",
    "courses": [
     "m1",
     "m2"
@@ -7317,8 +7336,8 @@
    "sense_from": "m1-883",
    "scene": "outdoor campsite circle, careful cute slender stickman watching camp wood logs burn safely with glowing embers inside circular stone campfire pit, camping tent and ground line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "burrow": {
    "file": null,
@@ -7897,8 +7916,8 @@
    "status": "missing"
   },
   "cash": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/cash.png",
+   "blob": "765f405e407598d7c21bc483ec1a1aeaf41ee29f",
    "courses": [
     "m1",
     "m2"
@@ -7907,8 +7926,8 @@
    "sense_from": "m1-963",
    "scene": "bank teller counter station, polite cute slender bank teller stickman neatly counting out paper cash bills to hand to customer stickman, counter partition and floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "cast": {
    "file": null,
@@ -8089,8 +8108,8 @@
    "status": "missing"
   },
   "ceiling": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/ceiling.png",
+   "blob": "d93e77f9208545b1084c07a8fe328f4c80e674e4",
    "courses": [
     "m1",
     "m2",
@@ -8101,8 +8120,8 @@
    "sense_from": "m1-845",
    "scene": "historic ornate museum gallery, cute slender stickman tourist looking straight up admiring detailed classical painted fresco murals on high arched ceiling, columns and polished marble floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "celebrate": {
    "file": "assets/words/c/celebrate.png",
@@ -8189,8 +8208,8 @@
    "status": "review"
   },
   "center": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/center.png",
+   "blob": "3fb40c87bf8ea7ff96fe4fe189fbcfbd90cd77a9",
    "courses": [
     "m1",
     "m2"
@@ -8199,8 +8218,8 @@
    "sense_from": "m1-805",
    "scene": "vibrant community sports field, focused cute slender stickman soccer player placing a soccer ball precisely at the painted center spot circle before kickoff, stadium lawn line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "central": {
    "file": null,
@@ -8581,8 +8600,8 @@
    "status": "missing"
   },
   "check": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/check.png",
+   "blob": "13a63edde2dedbafd4b07ce64a44568d59135199",
    "courses": [
     "m1",
     "m2",
@@ -8592,8 +8611,8 @@
    "sense_from": "m1-977",
    "scene": "airport departure gate desk, organized cute slender traveler stickman carefully checking boarding pass and passport details before boarding flight, counter and airport floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "check out": {
    "file": null,
@@ -9222,8 +9241,8 @@
    "status": "review"
   },
   "cloth": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/cloth.png",
+   "blob": "2e33c009e5300d7e0f44c4bc9f9571de4d563a48",
    "courses": [
     "m1",
     "m2"
@@ -9232,8 +9251,8 @@
    "sense_from": "m1-844",
    "scene": "traditional fabric textile boutique, smiling cute slender stickman merchant unrolling a bolt of fine smooth patterned linen cloth across wooden cutting counter, rolls of fabric and floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "cloudy": {
    "file": "assets/words/c/cloudy.png",
@@ -9766,8 +9785,8 @@
    "status": "missing"
   },
   "comedy": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/comedy.png",
+   "blob": "ebf578b191ac0652ec19d27ddee1260a79868a2d",
    "courses": [
     "m1",
     "m2"
@@ -9776,8 +9795,8 @@
    "sense_from": "m1-992",
    "scene": "lively comedy club theater stage, laughing cute slender stickman audience watching funny comedian stickman perform delightful comedy routine, stage spotlight and theater seats line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "comfort": {
    "file": "assets/words/c/comfort.png",
@@ -11386,8 +11405,8 @@
    "status": "missing"
   },
   "contact": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/contact.png",
+   "blob": "b311e7e55189da323331c1c2ff1aca8b479f1ef1",
    "courses": [
     "m3",
     "h1",
@@ -11397,8 +11416,8 @@
    "sense_from": "m3-832",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "contagious": {
    "file": null,
@@ -11823,8 +11842,8 @@
    "status": "missing"
   },
   "convert": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/convert.png",
+   "blob": "1b5d481f502b6d09cd18319a1627f56e26015a6f",
    "courses": [
     "h1",
     "h2",
@@ -11835,8 +11854,8 @@
    "sense_from": "h1-86",
    "scene": "green energy workshop laboratory, cute chibi mannequin technician adjusting solar inverter device converting rooftop sun ray beams into electrical battery energy, power gauge meter and cables",
    "scene_source": "scripts/generate_h1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "convey": {
    "file": null,
@@ -12297,8 +12316,8 @@
    "status": "missing"
   },
   "counterpart": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/counterpart.png",
+   "blob": "12b03673fc5620cbf9b94d8fca3998d1a3aca3dd",
    "courses": [
     "h2",
     "h3",
@@ -12308,8 +12327,8 @@
    "sense_from": "h2-3",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "counterproductive": {
    "file": null,
@@ -12364,8 +12383,8 @@
    "status": "missing"
   },
   "couple": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/couple.png",
+   "blob": "d1a680c8b37fccc7cbfcb10f19876bebb6284fe6",
    "courses": [
     "m1",
     "m2"
@@ -12374,8 +12393,8 @@
    "sense_from": "m1-934",
    "scene": "romantic botanical rose garden, happy cute slender stickman couple holding hands walking together under blossoming flower trellis arch, garden path line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "courage": {
    "file": null,
@@ -12723,8 +12742,8 @@
    "status": "review"
   },
   "cricket": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/cricket.png",
+   "blob": "1602a5b5497eb020a258d9de5599530635752ced",
    "courses": [
     "m1",
     "m2"
@@ -12733,8 +12752,8 @@
    "sense_from": "m1-880",
    "scene": "green countryside sporting lawn, focused cute slender stickman cricket player holding flat wooden cricket bat ready at wooden wickets, green grass pitch line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "criminal": {
    "file": null,
@@ -12750,8 +12769,8 @@
    "status": "missing"
   },
   "crisis": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/crisis.png",
+   "blob": "a0dcb105d477a6ef71aaf6887098cad5180ae60f",
    "courses": [
     "m3",
     "h1",
@@ -12761,8 +12780,8 @@
    "sense_from": "m3-247",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "criteria": {
    "file": null,
@@ -13566,8 +13585,8 @@
    "status": "missing"
   },
   "dear": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/d/dear.png",
+   "blob": "1acd839eb8af37b68611e2b1e8cab3fc519d29b4",
    "courses": [
     "m1",
     "m2"
@@ -13576,8 +13595,8 @@
    "sense_from": "m1-870",
    "scene": "vintage writing desk room, affectionate cute slender stickman writing a loving letter beginning with words Dear Friend with fountain pen, open letter and desk line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "death": {
    "file": "assets/words/d/death.png",
@@ -13898,8 +13917,8 @@
    "status": "review"
   },
   "defeat": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/d/defeat.png",
+   "blob": "1a723c014726627f612ed25c25b94dbee09d7d8b",
    "courses": [
     "h1",
     "h2",
@@ -13910,8 +13929,8 @@
    "sense_from": "h1-117",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "defect": {
    "file": null,
@@ -14066,8 +14085,8 @@
    "status": "missing"
   },
   "degrade": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/d/degrade.png",
+   "blob": "a69b2edc6e55c3058ce01b71b55261156dc7d4b7",
    "courses": [
     "h2",
     "h3"
@@ -14076,8 +14095,8 @@
    "sense_from": "h2-27",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "degree": {
    "file": "assets/words/d/degree.png",
@@ -14208,8 +14227,8 @@
    "status": "review"
   },
   "deliver": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/d/deliver.png",
+   "blob": "73b9e64b299e1dfd4e5ef0eabf8263d84d883ab6",
    "courses": [
     "m3",
     "h1"
@@ -14219,8 +14238,8 @@
    "scene": "suburban house front porch, cheerful cute chibi mannequin courier handing a neat cardboard delivery parcel box to a resident at the open doorway, delivery bicycle with basket parked nearby",
    "scene_source": "scripts/generate_h1_continuous_linear.py",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "delivery": {
    "file": null,
@@ -15129,8 +15148,8 @@
    "status": "missing"
   },
   "diagnose": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/d/diagnose.png",
+   "blob": "825f2ec5bc5301f5b922c980afddd00edebec5cd",
    "courses": [
     "h2",
     "h3"
@@ -15139,8 +15158,8 @@
    "sense_from": "h2-5",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "dialect": {
    "file": null,
@@ -15337,8 +15356,8 @@
    "status": "missing"
   },
   "dig": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/d/dig.png",
+   "blob": "f6c2c24fdf4291d3e30455eb644d7352d75550a5",
    "courses": [
     "m1",
     "m2",
@@ -15348,8 +15367,8 @@
    "sense_from": "m1-902",
    "scene": "sunny community garden plot, energetic cute slender stickman using garden spade shovel to dig a deep planting hole for new apple sapling, mounds of soil and garden line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "digest": {
    "file": null,
@@ -15505,8 +15524,8 @@
    "status": "review"
   },
   "dinning room": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/d/dinning-room.png",
+   "blob": "cb8f460cd827620ba34fab700dd17abcb2948e6c",
    "courses": [
     "m2"
    ],
@@ -15514,8 +15533,8 @@
    "sense_from": "m2-596",
    "scene": "dining room with a long table, a small slim white pictogram family eating breakfast together, plates, bread basket, juice pitcher, chandelier, cupboard and window",
    "scene_source": "scripts/m2_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "direct": {
    "file": null,
@@ -16559,8 +16578,8 @@
    "status": "missing"
   },
   "domestic": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/d/domestic.png",
+   "blob": "88f86bd5e5ec5fc3f6f26c33ab32ac8b2e980ee8",
    "courses": [
     "m3",
     "h1",
@@ -16571,8 +16590,8 @@
    "sense_from": "m3-54",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "dominant": {
    "file": null,
@@ -17669,8 +17688,8 @@
    "status": "review"
   },
   "electronic": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/e/electronic.png",
+   "blob": "7f28fbeeacc5605a862be90429ae1076be999d06",
    "courses": [
     "m3",
     "h1"
@@ -17680,8 +17699,8 @@
    "scene": "modern maker electronics lab, focused cute chibi mannequin engineer using a fine precision soldering iron on a green electronic circuit board with microchips and tiny wires, desk magnifier",
    "scene_source": "scripts/generate_h1_continuous_linear.py",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "elegance": {
    "file": null,
@@ -18409,8 +18428,8 @@
    "status": "review"
   },
   "enjoy": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/e/enjoy.png",
+   "blob": "84b28165e86356770d9fbda2adc32357c0ce09ae",
    "courses": [
     "m1",
     "m2"
@@ -18419,8 +18438,8 @@
    "sense_from": "m1-811",
    "scene": "sunny seaside promenade bench, relaxed cute slender stickman wearing sunglasses smiling and enjoying a delicious double scoop ice cream cone under warm ocean breeze, coastal promenade line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "enjoyable": {
    "file": null,
@@ -18467,8 +18486,8 @@
    "status": "missing"
   },
   "enough": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/e/enough.png",
+   "blob": "36682eacefef1f13e051493f540534351e852aad",
    "courses": [
     "m1",
     "m2"
@@ -18477,8 +18496,8 @@
    "sense_from": "m1-864",
    "scene": "cozy kitchen dining table, contented cute slender stickman gently waving hand over full dinner plate smiling showing he has eaten enough delicious meal, dining chair and floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "enrich": {
    "file": null,
@@ -18717,8 +18736,8 @@
    "status": "missing"
   },
   "entry": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/e/entry.png",
+   "blob": "76274441cfa39d53ca3b815233d933a4078c05d0",
    "courses": [
     "h1",
     "h2"
@@ -18727,8 +18746,8 @@
    "sense_from": "h1-81",
    "scene": "grand exhibition hall entrance archway, cute chibi mannequin visitor scanning an admission ticket badge at the modern turnstile gate to enter, welcome banners and velvet stanchions",
    "scene_source": "scripts/generate_h1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "envelope": {
    "file": "assets/words/e/envelope.png",
@@ -19439,8 +19458,8 @@
    "status": "review"
   },
   "exaggerate": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/e/exaggerate.png",
+   "blob": "a67480a5b09294b7b1e8062374a87d69a467d449",
    "courses": [
     "h2",
     "h3"
@@ -19449,8 +19468,8 @@
    "sense_from": "h2-4",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "examination": {
    "file": "assets/words/e/examination.png",
@@ -19650,8 +19669,8 @@
    "status": "missing"
   },
   "excessive": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/e/excessive.png",
+   "blob": "07dbebcacc1ed63339387efc4250c5b17205c721",
    "courses": [
     "h2",
     "tf"
@@ -19660,8 +19679,8 @@
    "sense_from": "h2-9",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "exchange": {
    "file": "assets/words/e/exchange.png",
@@ -21461,8 +21480,8 @@
    "status": "missing"
   },
   "fill": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/f/fill.png",
+   "blob": "675c14fa0fe308e28dc8b81e4b56cbf6a3f16df5",
    "courses": [
     "m1",
     "m2"
@@ -21471,8 +21490,8 @@
    "sense_from": "m1-843",
    "scene": "sunny patio garden bench, diligent cute slender stickman gardener holding green watering can carefully pouring water to fill decorative terracotta flower planter to the brim, patio tiles line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "fill out": {
    "file": null,
@@ -21614,8 +21633,8 @@
    "status": "missing"
   },
   "fit": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/f/fit.png",
+   "blob": "7eaa2247e5f4345a281d166c157f195c4203f361",
    "courses": [
     "h1",
     "tf"
@@ -21624,8 +21643,8 @@
    "sense_from": "h1-122",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "fix": {
    "file": null,
@@ -21710,8 +21729,8 @@
    "status": "review"
   },
   "flat": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/f/flat.png",
+   "blob": "fb5b506c45999ab2b75896520bd2462b344053e8",
    "courses": [
     "m1",
     "m2",
@@ -21721,8 +21740,8 @@
    "sense_from": "m1-909",
    "scene": "indoor carpentry studio, focused cute slender stickman placing a spirit level tool on a perfectly flat polished wooden tabletop checking horizontal line, workbench line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "flatter": {
    "file": null,
@@ -21938,8 +21957,8 @@
    "status": "missing"
   },
   "flow": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/f/flow.png",
+   "blob": "c08848131045a5e2d1245e43f12358d031547450",
    "courses": [
     "m1",
     "m2",
@@ -21950,8 +21969,8 @@
    "sense_from": "m1-991",
    "scene": "peaceful mountain brook meadow, gentle cute slender stickman watching clear cool stream water flow smoothly over smooth river stones, grassy riverbank line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "fluctuate": {
    "file": null,
@@ -22009,8 +22028,8 @@
    "status": "missing"
   },
   "flute": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/f/flute.png",
+   "blob": "c39f1181558a5cc5d195587955035e6d4f38ba87",
    "courses": [
     "m1",
     "m2"
@@ -22019,8 +22038,8 @@
    "sense_from": "m1-919",
    "scene": "bright music rehearsal hall, focused cute slender stickman musician playing a silver flute producing graceful notes beside music stand, stage floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "focus": {
    "file": null,
@@ -23004,8 +23023,8 @@
    "status": "review"
   },
   "fur": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/f/fur.png",
+   "blob": "74dae2d6f6dda8b4ea479ab0941d84d2a23d8bbd",
    "courses": [
     "m1",
     "m2"
@@ -23014,8 +23033,8 @@
    "sense_from": "m1-890",
    "scene": "cozy living room sofa, smiling cute slender stickman gently brushing the soft clean fluffy fur coat of an adorable friendly lap pet, warm fireplace and rug line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "furious": {
    "file": null,
@@ -24103,8 +24122,8 @@
    "status": "missing"
   },
   "gradually": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/g/gradually.png",
+   "blob": "035a2b552f1e0bd550d981aea0887c4598887bcb",
    "courses": [
     "h2"
    ],
@@ -24112,8 +24131,8 @@
    "sense_from": "h2-15",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "graduate": {
    "file": "assets/words/g/graduate.png",
@@ -24180,8 +24199,8 @@
    "status": "review"
   },
   "grant": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/g/grant.png",
+   "blob": "517f6dba84c8b3fcf902a39ac479422539ba0dd8",
    "courses": [
     "h1",
     "tf"
@@ -24190,8 +24209,8 @@
    "sense_from": "h1-96",
    "scene": "university auditorium ceremony stage, cute chibi mannequin researcher humbly receiving an official research fellowship grant certificate plaque from an academy dean, floral decor and podium",
    "scene_source": "scripts/generate_h1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "grasp": {
    "file": null,
@@ -24296,8 +24315,8 @@
    "status": "missing"
   },
   "gray": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/g/gray.png",
+   "blob": "fb6a74713fd0fd86cf8a6883930d017510cf0db7",
    "courses": [
     "m1",
     "m2"
@@ -24306,8 +24325,8 @@
    "sense_from": "m1-983",
    "scene": "cozy rainy street sidewalk, stylish cute slender stickman walking comfortably wearing a neat warm gray wool coat holding umbrella, rain puddle and pavement line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "graze": {
    "file": null,
@@ -24460,8 +24479,8 @@
    "status": "missing"
   },
   "group": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/g/group.png",
+   "blob": "eb38ddff232fd48ecaa5e9c26bff1db29616e994",
    "courses": [
     "m1",
     "m2"
@@ -24470,8 +24489,8 @@
    "sense_from": "m1-832",
    "scene": "spacious school workshop activity room, friendly cute slender stickman students sitting in a circle working together harmoniously as a cooperative project study group, study tables and floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "grown-up": {
    "file": null,
@@ -24532,8 +24551,8 @@
    "status": "missing"
   },
   "guess": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/g/guess.png",
+   "blob": "6e96b3ac4308fff699fe5ff12bf9e8d0dce286b8",
    "courses": [
     "m1",
     "m2",
@@ -24544,8 +24563,8 @@
    "sense_from": "m1-855",
    "scene": "cozy family parlor room, cheerful cute slender stickman playing a fun parlor guessing game tapping chin thoughtfully trying to guess mystery secret object inside gift box, coffee table and floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "guest": {
    "file": "assets/words/g/guest.png",
@@ -24604,8 +24623,8 @@
    "status": "missing"
   },
   "gun": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/g/gun.png",
+   "blob": "2ff4034b1470b81060739a247e2e11b425426a32",
    "courses": [
     "m1",
     "m2",
@@ -24615,8 +24634,8 @@
    "sense_from": "m1-853",
    "scene": "historic naval museum gallery, interested cute slender stickman visitor observing an antique historical brass ceremonial cannon gun mounted on oak carriage, display railing and museum floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "habit": {
    "file": "assets/words/h/habit.png",
@@ -25046,8 +25065,8 @@
    "status": "missing"
   },
   "headquarters": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/h/headquarters.png",
+   "blob": "020eef1776a2a92d5f12674caf6c2d13fd10e0be",
    "courses": [
     "h2",
     "h3"
@@ -25056,8 +25075,8 @@
    "sense_from": "h2-14",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "heal": {
    "file": null,
@@ -25266,8 +25285,8 @@
    "status": "missing"
   },
   "heritage": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/h/heritage.png",
+   "blob": "92478f56cc479ff3f7a9307418a2f0c7aea2ada2",
    "courses": [
     "m3",
     "h1",
@@ -25280,8 +25299,8 @@
    "scene": "historical museum gallery hall, cute chibi mannequin docent introducing an ancient carved cultural stone pillar monument heritage relic preserved inside a glass pedestal case",
    "scene_source": "scripts/generate_h1_continuous_linear.py",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "hero": {
    "file": "assets/words/h/hero.png",
@@ -25555,8 +25574,8 @@
    "status": "review"
   },
   "hit": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/h/hit.png",
+   "blob": "9a309e24df81b0e734cc32c872766b9f2dbd5281",
    "courses": [
     "m1",
     "m2"
@@ -25565,8 +25584,8 @@
    "sense_from": "m1-866",
    "scene": "sunny baseball diamond field, athletic cute slender stickman baseball batter swinging wooden bat making solid clean hit connecting with baseball into outfield, home plate and dirt field line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "hobby": {
    "file": "assets/words/h/hobby.png",
@@ -25641,8 +25660,8 @@
    "status": "review"
   },
   "holiday": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/h/holiday.png",
+   "blob": "114a02d45218ad50f379c3fef3a8d91ab58e2efa",
    "courses": [
     "m1",
     "m2",
@@ -25652,8 +25671,8 @@
    "sense_from": "m1-990",
    "scene": "tropical resort patio deck, cheerful cute slender stickman wearing straw sunhat celebrating holiday vacation lounging beside sparkling pool with fruity drink, pool deck line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "hollow": {
    "file": "assets/words/h/hollow.png",
@@ -25696,8 +25715,8 @@
    "status": "missing"
   },
   "homesick": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/h/homesick.png",
+   "blob": "8074d56795285719cc41165ec8948eb374a8e39d",
    "courses": [
     "m1",
     "m2"
@@ -25706,8 +25725,8 @@
    "sense_from": "m1-957",
    "scene": "cozy dormitory room window, quiet cute slender stickman holding a framed family photo gazing fondly out window feeling a little homesick, bed and floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "hometown": {
    "file": "assets/words/h/hometown.png",
@@ -25737,8 +25756,8 @@
    "status": "missing"
   },
   "honest": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/h/honest.png",
+   "blob": "7bdbd3ae69b23c4d5430b8fb36b99e92112ca3c6",
    "courses": [
     "m1",
     "m2"
@@ -25747,8 +25766,8 @@
    "sense_from": "m1-767",
    "scene": "cozy lost and found counter, honest small cute slender stickman handing found leather wallet to smiling office officer stickman, counter and floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "honor": {
    "file": "assets/words/h/honor.png",
@@ -25907,8 +25926,8 @@
    "status": "missing"
   },
   "household": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/h/household.png",
+   "blob": "b5d8e9465c21b1801811a2e82909cf7d9a01ec9f",
    "courses": [
     "m3",
     "h1",
@@ -25919,8 +25938,8 @@
    "scene": "warm living room home scene, loving cute chibi mannequin family gathered together in their cozy household, sofa, floor rug, wall picture frame and warm floor lamp",
    "scene_source": "scripts/generate_h1_continuous_linear.py",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "however": {
    "file": "assets/words/h/however.png",
@@ -26202,8 +26221,8 @@
    "status": "review"
   },
   "hybrid": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/h/hybrid.png",
+   "blob": "37ae6414816a1d1885e05252deaac66d7e3652f2",
    "courses": [
     "h2"
    ],
@@ -26211,8 +26230,8 @@
    "sense_from": "h2-10",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "hydrogen": {
    "file": "assets/words/h/hydrogen.png",
@@ -28663,8 +28682,8 @@
    "status": "review"
   },
   "innovation": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/i/innovation.png",
+   "blob": "66d1d3a14a747d253b1568b2cd8bb90ee3d99471",
    "courses": [
     "h1",
     "h3",
@@ -28674,8 +28693,8 @@
    "sense_from": "h1-101",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "innovative": {
    "file": null,
@@ -29330,8 +29349,8 @@
    "status": "missing"
   },
   "interact": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/i/interact.png",
+   "blob": "c44d9f9c6be5ad6433080a437a0300653a7c8993",
    "courses": [
     "h1"
    ],
@@ -29339,8 +29358,8 @@
    "sense_from": "h1-93",
    "scene": "bright community innovation lounge, two friendly cute chibi mannequins gesturing happily as they interact in lively conversation while pointing at shared tablet screen, potted plants and round table",
    "scene_source": "scripts/generate_h1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "interaction": {
    "file": null,
@@ -29511,8 +29530,8 @@
    "status": "missing"
   },
   "interrupt": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/i/interrupt.png",
+   "blob": "643181dbb33016c85521a27f62457d6fe7af0d63",
    "courses": [
     "m3",
     "h1",
@@ -29522,8 +29541,8 @@
    "sense_from": "m3-886",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "intersect": {
    "file": null,
@@ -29731,8 +29750,8 @@
    "status": "missing"
   },
   "intuition": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/i/intuition.png",
+   "blob": "2f009894de51580ab2a7edfc73a462cc20e97063",
    "courses": [
     "h2",
     "h3"
@@ -29741,8 +29760,8 @@
    "sense_from": "h2-30",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "invade": {
    "file": null,
@@ -29899,8 +29918,8 @@
    "status": "missing"
   },
   "invite": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/i/invite.png",
+   "blob": "158696815116eb6bc2f37fd3168f44098b10fe09",
    "courses": [
     "m1",
     "m2"
@@ -29909,8 +29928,8 @@
    "sense_from": "m1-851",
    "scene": "cheerful sunny front porch, smiling cute slender stickman handing a beautifully sealed party invitation envelope to friendly neighbor friend stickman, welcome mat and porch line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "involuntary": {
    "file": null,
@@ -30100,8 +30119,8 @@
    "status": "missing"
   },
   "issue": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/i/issue.png",
+   "blob": "ad7c771c115d46d762c9ce04628a546cc9a8d496",
    "courses": [
     "m3",
     "h1",
@@ -30111,8 +30130,8 @@
    "sense_from": "m3-567",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "itinerary": {
    "file": null,
@@ -30170,8 +30189,8 @@
    "status": "missing"
   },
   "jean": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/j/jean.png",
+   "blob": "ae602cba8b218461bee9eba908e8c7624132d6dc",
    "courses": [
     "m1",
     "m2"
@@ -30180,8 +30199,8 @@
    "sense_from": "m1-848",
    "scene": "trendy clothing boutique showroom, stylish cute slender stickman holding up and admiring a pair of classic blue denim jeans in front of full-length mirror, display racks and floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "jewel": {
    "file": "assets/words/j/jewel.png",
@@ -30211,8 +30230,8 @@
    "status": "missing"
   },
   "job": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/j/job.png",
+   "blob": "8e99a72dbcc2f9f5d842abcc4960df6cc20fc203",
    "courses": [
     "m1",
     "m2"
@@ -30221,8 +30240,8 @@
    "sense_from": "m1-823",
    "scene": "bright creative architectural design studio, industrious cute slender stickman architect diligently drawing floor plan blueprints on tilted drafting table, office desk and floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "join": {
    "file": "assets/words/j/join.png",
@@ -31306,8 +31325,8 @@
    "status": "missing"
   },
   "letter": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/l/letter.png",
+   "blob": "1fedc9aa142f39aff816e891749dde844a789970",
    "courses": [
     "m1",
     "m2"
@@ -31316,12 +31335,12 @@
    "sense_from": "m1-907",
    "scene": "cozy antique writing desk, thoughtful cute slender stickman reading a warm handwritten letter with joyful smile, envelope and wooden desk line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "level": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/l/level.png",
+   "blob": "cf1a721fdbf73cd77c8bbb88530cd5e94a5f8868",
    "courses": [
     "h1"
    ],
@@ -31329,8 +31348,8 @@
    "sense_from": "h1-106",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "liability": {
    "file": null,
@@ -31708,8 +31727,8 @@
    "status": "review"
   },
   "load": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/l/load.png",
+   "blob": "50b27c3608d5466696e7c2fb7900ab743847c525",
    "courses": [
     "m1",
     "m2",
@@ -31719,8 +31738,8 @@
    "sense_from": "m1-829",
    "scene": "warehouse shipping dock bay, energetic cute slender logistics stickman carefully loading cardboard parcel boxes onto wooden pallet transport cart, cargo shelving and concrete floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "loaf": {
    "file": "assets/words/l/loaf.png",
@@ -32170,8 +32189,8 @@
    "status": "missing"
   },
   "luck": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/l/luck.png",
+   "blob": "b25b638af56f5bc97d765ca3cf0d17208caf9ca0",
    "courses": [
     "m1",
     "m2"
@@ -32180,8 +32199,8 @@
    "sense_from": "m1-955",
    "scene": "sunny clover grass meadow, delighted cute slender stickman kneeling down finding a rare lucky four-leaf clover smiling in celebration of good luck, grassy meadow line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "lure": {
    "file": null,
@@ -32365,8 +32384,8 @@
    "status": "ok"
   },
   "main": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/m/main.png",
+   "blob": "1b186c3949ccc1f0c327d4dcaff12e34c1d417ce",
    "courses": [
     "m1",
     "m2"
@@ -32375,8 +32394,8 @@
    "sense_from": "m1-795",
    "scene": "bustling city central avenue, cute slender stickman pedestrian standing on sidewalk admiring the wide grand main boulevard lined with historical buildings and streetlights, crosswalk and street curb line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "mainly": {
    "file": null,
@@ -32736,8 +32755,8 @@
    "status": "review"
   },
   "march": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/m/march.png",
+   "blob": "e7d2118efb2117661844ae9fad02ca189c4ffc25",
    "courses": [
     "m1",
     "m2"
@@ -32746,8 +32765,8 @@
    "sense_from": "m1-956",
    "scene": "outdoor festival parade boulevard, energetic cute slender brass band stickman playing marching snare drum marching forward with high knees, marching route line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "margin": {
    "file": null,
@@ -35161,8 +35180,8 @@
    "status": "missing"
   },
   "necessary": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/n/necessary.png",
+   "blob": "579530305a4854b19fab58c85565813b0b41f298",
    "courses": [
     "m1",
     "m2",
@@ -35173,8 +35192,8 @@
    "sense_from": "m1-923",
    "scene": "outdoor camping preparation porch, organized cute slender camper stickman checking off necessary survival supplies on checklist including flashlight and first aid kit, camping gear and floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "necessity": {
    "file": null,
@@ -35204,8 +35223,8 @@
    "status": "missing"
   },
   "need": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/n/need.png",
+   "blob": "2494978a0e151c5ed8d3e436fb3f58f60f245cae",
    "courses": [
     "m1",
     "m2"
@@ -35214,8 +35233,8 @@
    "sense_from": "m1-922",
    "scene": "busy hardware tool store, cute slender stickman customer holding a broken screw showing shopkeeper he has urgent need for matching replacement, store aisles and floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "needle": {
    "file": null,
@@ -35854,8 +35873,8 @@
    "status": "missing"
   },
   "nuclear": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/n/nuclear.png",
+   "blob": "b43d66c1e977be98c075fa2775d22356f60cb540",
    "courses": [
     "m1",
     "m2",
@@ -35866,8 +35885,8 @@
    "sense_from": "m1-950",
    "scene": "modern clean energy research institute, smart cute slender physicist stickman studying atomic structure models at clean nuclear energy research facility, control monitors and floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "nuisance": {
    "file": null,
@@ -35884,8 +35903,8 @@
    "status": "missing"
   },
   "numerous": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/n/numerous.png",
+   "blob": "c8afcd9e5c6ffec9861ef19e6fbdfc49e9773140",
    "courses": [
     "h1",
     "h3",
@@ -35895,8 +35914,8 @@
    "sense_from": "h1-123",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "nurse": {
    "file": "assets/words/n/nurse.png",
@@ -36087,8 +36106,8 @@
    "status": "missing"
   },
   "obsess": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/o/obsess.png",
+   "blob": "eacea14d085a3f0fd6695f5c1265440a779c5bc6",
    "courses": [
     "h2"
    ],
@@ -36096,8 +36115,8 @@
    "sense_from": "h2-8",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "obsession": {
    "file": null,
@@ -36343,8 +36362,8 @@
    "status": "missing"
   },
   "offer": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/o/offer.png",
+   "blob": "9ea15b5a5b2845caa15c60bace67570cad507e84",
    "courses": [
     "m1",
     "m2",
@@ -36356,8 +36375,8 @@
    "sense_from": "m1-773",
    "scene": "warm tea party lounge, courteous small cute slender stickman holding tray offering warm porcelain cup of fresh herbal tea to guest stickman, low table and floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "office": {
    "file": "assets/words/o/office.png",
@@ -36722,8 +36741,8 @@
    "status": "missing"
   },
   "orbit": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/o/orbit.png",
+   "blob": "e2eb66a61d9f3638df8d9dc0ffcc315bc1957fdf",
    "courses": [
     "m3",
     "h1",
@@ -36735,8 +36754,8 @@
    "scene": "planetary science astronomy lab, cute chibi mannequin astronomer observing a glowing mechanical orrery model showing a small moon satellite in circular orbit around a large planet globe",
    "scene_source": "scripts/generate_h1_continuous_linear.py",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "orchard": {
    "file": null,
@@ -36891,8 +36910,8 @@
    "status": "missing"
   },
   "origin": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/o/origin.png",
+   "blob": "63c42889d07241a2d166427b9b7e3801d9c52040",
    "courses": [
     "m3",
     "h1",
@@ -36903,8 +36922,8 @@
    "sense_from": "m3-117",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "originate": {
    "file": null,
@@ -36950,8 +36969,8 @@
    "status": "review"
   },
   "ostrich": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/o/ostrich.png",
+   "blob": "e1b34ea533332d7c5087196d2ab82d574c2d7702",
    "courses": [
     "m1",
     "m2"
@@ -36960,8 +36979,8 @@
    "sense_from": "m1-884",
    "scene": "spacious safari wildlife sanctuary, curious cute slender stickman standing safely behind fence admiring a tall friendly ostrich with long neck and soft feathers, savannah bushes and ground line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "other than": {
    "file": null,
@@ -37280,8 +37299,8 @@
    "status": "review"
   },
   "overestimate": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/o/overestimate.png",
+   "blob": "fc721d5d006133cfc5a53ef0d61e72aa4069c1d2",
    "courses": [
     "h2"
    ],
@@ -37289,8 +37308,8 @@
    "sense_from": "h2-23",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "overflow": {
    "file": null,
@@ -37335,8 +37354,8 @@
    "status": "missing"
   },
   "overlook": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/o/overlook.png",
+   "blob": "feefb10c6c9be5314a27bab6d8390dcbcbf0eed6",
    "courses": [
     "h1",
     "h2",
@@ -37346,8 +37365,8 @@
    "sense_from": "h1-521",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "overnight": {
    "file": null,
@@ -37632,8 +37651,8 @@
    "status": "review"
   },
   "pair": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/p/pair.png",
+   "blob": "6b628cfb6235cb671a377a38c44ae9548f6f23a9",
    "courses": [
     "m1",
     "m2"
@@ -37642,8 +37661,8 @@
    "sense_from": "m1-931",
    "scene": "cozy shoe shop boutique, delighted cute slender stickman holding up and trying on a comfortable new pair of white sneakers, shoe display boxes and floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "pal": {
    "file": "assets/words/p/pal.png",
@@ -37950,8 +37969,8 @@
    "status": "missing"
   },
   "pass": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/p/pass.png",
+   "blob": "7b6e5a644c3353c0f4cf733dd5da973081cf2ce8",
    "courses": [
     "m1",
     "m2"
@@ -37960,8 +37979,8 @@
    "sense_from": "m1-816",
    "scene": "high school hallway corridor, polite cute slender stickman student smiling and stepping aside to let friends pass by comfortably through the wide hallway, locker doors and hallway floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "pass away": {
    "file": null,
@@ -38032,8 +38051,8 @@
    "status": "missing"
   },
   "passive": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/p/passive.png",
+   "blob": "0eff18952b226e9cb47b93a65c287f05347a521c",
    "courses": [
     "m3",
     "h2"
@@ -38042,8 +38061,8 @@
    "sense_from": "m3-931",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "passport": {
    "file": "assets/words/p/passport.png",
@@ -38399,8 +38418,8 @@
    "status": "review"
   },
   "penalty": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/p/penalty.png",
+   "blob": "e62924148bb11ba346f6482b4fe792deb4543c83",
    "courses": [
     "m3",
     "h1"
@@ -38409,8 +38428,8 @@
    "sense_from": "m3-660",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "penetrate": {
    "file": null,
@@ -38441,18 +38460,18 @@
    "status": "missing"
   },
   "pepper": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/p/pepper.png",
+   "blob": "0994ddec37ad538d7191a5509002abfd1eedb22d",
    "courses": [
     "m1",
     "m2"
    ],
    "sense": "후추",
    "sense_from": "m1-986",
-   "scene": "warm dining restaurant table, cheerful cute slender chef stickman using a classic wooden pepper mill to grind fresh aromatic black pepper onto hot soup, dining table and floor line",
-   "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "scene": "warm dining restaurant table, cheerful small slim white pictogram character chef using a classic wooden pepper mill to grind fresh aromatic black pepper onto a hot bowl of soup, dining table and floor line",
+   "scene_source": "scripts/generate_m1_missing_and_toefl.py",
+   "style": "v3",
+   "status": "ok"
   },
   "perceive": {
    "file": null,
@@ -39029,8 +39048,8 @@
    "status": "missing"
   },
   "pick": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/p/pick.png",
+   "blob": "be8a87f038487d0f253b2b49d6536c665d0e9874",
    "courses": [
     "m1",
     "m2"
@@ -39039,12 +39058,12 @@
    "sense_from": "m1-804",
    "scene": "sunny orchard fruit grove, joyful cute slender stickman reaching up into leafy apple tree branches picking a ripe red round apple and placing it into wicker basket, grass lawn line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "piece": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/p/piece.png",
+   "blob": "69c58859d4b01f6256a8e71205c0579af5773b07",
    "courses": [
     "m1",
     "m2"
@@ -39053,8 +39072,8 @@
    "sense_from": "m1-776",
    "scene": "cozy living room carpet, small cute slender stickman sitting placing the final interlocking piece into a colorful jigsaw puzzle on low coffee table, floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "pigeon": {
    "file": "assets/words/p/pigeon.png",
@@ -39139,8 +39158,8 @@
    "status": "missing"
   },
   "pilot": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/p/pilot.png",
+   "blob": "39eb371584b973b8fdf6a00a2e72f517567b67b3",
    "courses": [
     "m1",
     "m2"
@@ -39149,8 +39168,8 @@
    "sense_from": "m1-784",
    "scene": "sunny airplane cockpit cabin, proud smiling cute slender stickman pilot wearing aviator headset holding steering yoke looking out forward cockpit windows into clear sky, flight dashboard dials and floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "pioneer": {
    "file": null,
@@ -39405,8 +39424,8 @@
    "status": "missing"
   },
   "plenty": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/p/plenty.png",
+   "blob": "93967c9223f8c8b984c9a7ab0d8fc0a73b770107",
    "courses": [
     "m1",
     "m2",
@@ -39417,8 +39436,8 @@
    "sense_from": "m1-917",
    "scene": "autumn harvest pantry room, cheerful cute slender stickman standing beside wooden shelves brimming with plenty of canned fruit jars and harvest baskets, pantry shelves and floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "plot": {
    "file": null,
@@ -39723,8 +39742,8 @@
    "status": "missing"
   },
   "pop": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/p/pop.png",
+   "blob": "555e8fd0c549ea6b7e7404e5c08733a8154d416a",
    "courses": [
     "m1",
     "m2",
@@ -39734,8 +39753,8 @@
    "sense_from": "m1-905",
    "scene": "cheerful party hall, playful cute slender stickman using a small pin to make a colorful party balloon pop with a fun surprise, party streamers and floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "popular": {
    "file": "assets/words/p/popular.png",
@@ -39769,8 +39788,8 @@
    "status": "review"
   },
   "port": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/p/port.png",
+   "blob": "f03ab6db62593956faf264dc516d9076e69c6584",
    "courses": [
     "m1",
     "m2",
@@ -39780,8 +39799,8 @@
    "sense_from": "m1-938",
    "scene": "scenic coastal marine port dock, friendly cute slender stickman standing on wooden dock watching fishing boats and cargo ships docked at busy harbor port, bollards and water line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "portable": {
    "file": null,
@@ -40012,8 +40031,8 @@
    "status": "missing"
   },
   "pour": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/p/pour.png",
+   "blob": "4db791e55f03fd034360ef7c366557b2916ba75f",
    "courses": [
     "h1"
    ],
@@ -40021,8 +40040,8 @@
    "sense_from": "h1-84",
    "scene": "cozy cafe counter or kitchen, cute chibi mannequin barista carefully pouring hot water from an elegant slender gooseneck kettle into a glass coffee drip cone, ceramic mugs and coffee beans",
    "scene_source": "scripts/generate_h1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "poverty": {
    "file": null,
@@ -40163,8 +40182,8 @@
    "status": "review"
   },
   "precede": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/p/precede.png",
+   "blob": "153533d5ede135e4b899f2447fac8c6e196e681b",
    "courses": [
     "h1",
     "h3",
@@ -40174,8 +40193,8 @@
    "sense_from": "h1-112",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "precious": {
    "file": "assets/words/p/precious.png",
@@ -41124,8 +41143,8 @@
    "status": "missing"
   },
   "process": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/p/process.png",
+   "blob": "634dbc0b52a41b285bcefcef24fc289499ce6d95",
    "courses": [
     "h1",
     "h3",
@@ -41135,8 +41154,8 @@
    "sense_from": "h1-111",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "proclaim": {
    "file": null,
@@ -41871,8 +41890,8 @@
    "status": "review"
   },
   "provide": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/p/provide.png",
+   "blob": "6b7e46b6a4ee58dd2a194dcf001815f60876edbc",
    "courses": [
     "m3",
     "h1",
@@ -41884,8 +41903,8 @@
    "scene": "community volunteer kitchen, kind cute chibi mannequin volunteer warmly providing a warm bowl of soup and freshly baked loaf of bread to a grateful neighbor across wooden counter",
    "scene_source": "scripts/generate_h1_continuous_linear.py",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "provided": {
    "file": null,
@@ -42053,8 +42072,8 @@
    "status": "review"
   },
   "pumpkin": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/p/pumpkin.png",
+   "blob": "94adef241c8c4e335e2b14227c11d9930f4a313b",
    "courses": [
     "m1",
     "m2"
@@ -42063,8 +42082,8 @@
    "sense_from": "m1-968",
    "scene": "sunny autumn farm pumpkin patch, joyful cute slender farmer stickman carrying a large round ripe orange pumpkin across fertile field, wooden crates and garden soil line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "punctual": {
    "file": null,
@@ -42496,8 +42515,8 @@
    "status": "ok"
   },
   "quit": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/q/quit.png",
+   "blob": "273da1deeadd8095c997afb9d0ecafc29ddb1c71",
    "courses": [
     "h1",
     "tf"
@@ -42506,8 +42525,8 @@
    "sense_from": "h1-114",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "quite": {
    "file": "assets/words/q/quite.png",
@@ -42805,8 +42824,8 @@
    "status": "missing"
   },
   "rat": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/r/rat.png",
+   "blob": "2eb0da64305830aad91d0acc21213a53342357a2",
    "courses": [
     "m1",
     "m2"
@@ -42815,8 +42834,8 @@
    "sense_from": "m1-808",
    "scene": "quiet barn storage floor, observant cute slender stickman farmer shining a flashlight onto floor seeing a small harmless country field rat scurrying behind a wooden grain crate, wooden crates and floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "rate": {
    "file": "assets/words/r/rate.png",
@@ -42866,8 +42885,8 @@
    "status": "missing"
   },
   "rational": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/r/rational.png",
+   "blob": "03427f31504f05ba5e6b616eedf59e3f7240b0a2",
    "courses": [
     "h1",
     "h2",
@@ -42877,8 +42896,8 @@
    "sense_from": "h1-1001",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "rationale": {
    "file": null,
@@ -43772,8 +43791,8 @@
    "status": "missing"
   },
   "region": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/r/region.png",
+   "blob": "05508aa765b63bbd85a557aa19aa287a8e75d354",
    "courses": [
     "h1",
     "tf"
@@ -43782,8 +43801,8 @@
    "sense_from": "h1-87",
    "scene": "cartography study room, cute chibi mannequin geographer holding a wooden pointer rod indicating a distinct geographical highlighted region on a grand wall world map, globe and compass on desk",
    "scene_source": "scripts/generate_h1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "register": {
    "file": null,
@@ -44729,8 +44748,8 @@
    "status": "missing"
   },
   "request": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/r/request.png",
+   "blob": "e92586ee32071c51bd2a4cd166b959e9224c574d",
    "courses": [
     "h1",
     "h2"
@@ -44739,8 +44758,8 @@
    "sense_from": "h1-116",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "require": {
    "file": null,
@@ -45097,8 +45116,8 @@
    "status": "missing"
   },
   "rest": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/r/rest.png",
+   "blob": "eb1f0b7b1170e9be25970be5535b6daf48382014",
    "courses": [
     "m1",
     "m2"
@@ -45107,8 +45126,8 @@
    "sense_from": "m1-989",
    "scene": "shady garden park hammock, relaxed cute slender stickman lying comfortably taking a peaceful afternoon rest in hammock strung between two shady trees, grass lawn line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "restaurant": {
    "file": "assets/words/r/restaurant.png",
@@ -45590,8 +45609,8 @@
    "status": "review"
   },
   "ride": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/r/ride.png",
+   "blob": "142df6354133cb5e46be893be7e831437a45228c",
    "courses": [
     "m1",
     "m2",
@@ -45601,8 +45620,8 @@
    "sense_from": "m1-882",
    "scene": "sunny park riverside path, cheerful cute slender stickman wearing helmet happily going for a bicycle ride along tree-lined paved route, bicycle and path line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "ridiculous": {
    "file": null,
@@ -45730,8 +45749,8 @@
    "status": "missing"
   },
   "ritual": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/r/ritual.png",
+   "blob": "0969edd12e1c8b2e707855d631d93a0c6bc19d32",
    "courses": [
     "h1",
     "h2",
@@ -45742,8 +45761,8 @@
    "sense_from": "h1-110",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "rival": {
    "file": null,
@@ -46049,8 +46068,8 @@
    "status": "ok"
   },
   "royal": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/r/royal.png",
+   "blob": "ad6b5c752db649d297f33e36074dca5c3485bf00",
    "courses": [
     "h1"
    ],
@@ -46058,8 +46077,8 @@
    "sense_from": "h1-120",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "rub": {
    "file": "assets/words/r/rub.png",
@@ -46327,8 +46346,8 @@
    "status": "missing"
   },
   "sail": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/s/sail.png",
+   "blob": "f1d23a72bf0519f5a85d7f7514288f0ad953cb0a",
    "courses": [
     "m1",
     "m2"
@@ -46337,12 +46356,12 @@
    "sense_from": "m1-941",
    "scene": "sunny coastal bay waters, cheerful cute slender stickman sailing a graceful white canvas sailboat holding the tiller steering smoothly across sea, water ripples line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "sale": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/s/sale.png",
+   "blob": "da05fee4a513f80f5ba48cf7abf315c21ae731fb",
    "courses": [
     "m1",
     "m2"
@@ -46351,8 +46370,8 @@
    "sense_from": "m1-903",
    "scene": "charming neighborhood yard lawn, friendly cute slender stickman standing beside a neat table of vintage books and toys with a colorful sale sign, front lawn line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "salient": {
    "file": null,
@@ -46675,8 +46694,8 @@
    "status": "review"
   },
   "scent": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/s/scent.png",
+   "blob": "10fb156041b9c7084db92305f78574931e9ef298",
    "courses": [
     "m3",
     "h1",
@@ -46687,8 +46706,8 @@
    "sense_from": "m3-1169",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "schedule": {
    "file": "assets/words/s/schedule.png",
@@ -46956,8 +46975,8 @@
    "status": "missing"
   },
   "seat": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/s/seat.png",
+   "blob": "84540101f72fcf0f4943db8720a302c5d662626a",
    "courses": [
     "m1",
     "m2"
@@ -46966,8 +46985,8 @@
    "sense_from": "m1-792",
    "scene": "modern cinema movie theater hall, courteous cute slender stickman usher holding small flashlight guiding smiling moviegoer stickman to designated plush numbered velvet seat, carpeted theater aisle and floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "secondhand": {
    "file": null,
@@ -47391,8 +47410,8 @@
    "status": "missing"
   },
   "separate": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/s/separate.png",
+   "blob": "c5e37e1caf85245cb22f6ecc6093e6669eef2461",
    "courses": [
     "m3",
     "h1",
@@ -47404,8 +47423,8 @@
    "sense_from": "m3-147",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "sequence": {
    "file": null,
@@ -47949,8 +47968,8 @@
    "status": "missing"
   },
   "shell": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/s/shell.png",
+   "blob": "ba657c9bc169f9bd278ec472468c1047dae1fc08",
    "courses": [
     "m1",
     "m2"
@@ -47959,8 +47978,8 @@
    "sense_from": "m1-779",
    "scene": "peaceful sandy ocean beach, joyful small cute slender stickman crouching near gentle water edge picking up a beautiful spiral seashell from wet sand, shoreline line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "shelter": {
    "file": "assets/words/s/shelter.png",
@@ -48032,8 +48051,8 @@
    "status": "review"
   },
   "shock": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/s/shock.png",
+   "blob": "6b55f547b6c7e2d5c5f98958e9f534803d8e3bc9",
    "courses": [
     "m1",
     "m2"
@@ -48042,8 +48061,8 @@
    "sense_from": "m1-861",
    "scene": "cozy living room armchair, astonished cute slender stickman opening mouth and gasping in genuine shock at shocking plot twist in mystery book, reading lamp and floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "shoot": {
    "file": "assets/words/s/shoot.png",
@@ -48060,8 +48079,8 @@
    "status": "review"
   },
   "shore": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/s/shore.png",
+   "blob": "41f2387f7151a976bb513a207a7d9a2cfaf8f118",
    "courses": [
     "m1",
     "m2",
@@ -48071,8 +48090,8 @@
    "sense_from": "m1-948",
    "scene": "rocky ocean shore coast, peaceful cute slender stickman standing on smooth shoreline pebbles watching gentle foaming waves break onto shore, sea spray and shoreline line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "short": {
    "file": "assets/words/s/short.png",
@@ -48143,8 +48162,8 @@
    "status": "missing"
   },
   "shortcut": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/s/shortcut.png",
+   "blob": "028fbc01cf9a61ba868e1641767c120a97c47fc9",
    "courses": [
     "h2"
    ],
@@ -48152,8 +48171,8 @@
    "sense_from": "h2-19",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "shorten": {
    "file": null,
@@ -48465,8 +48484,8 @@
    "status": "missing"
   },
   "silent": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/s/silent.png",
+   "blob": "9ddd22aa86ce7d97826dab2365d61fc5c9d5061e",
    "courses": [
     "m1",
     "m2",
@@ -48476,8 +48495,8 @@
    "sense_from": "m1-782",
    "scene": "peaceful snowy park glade at night, cute slender stickman standing in soft winter muffler gazing peacefully at brilliant night stars in complete silence, snow covered evergreen trees and ground line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "silk": {
    "file": "assets/words/s/silk.png",
@@ -49587,8 +49606,8 @@
    "status": "review"
   },
   "spare": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/s/spare.png",
+   "blob": "d4c87c998f92c465b1ec9f9600552eb963c2213f",
    "courses": [
     "h1",
     "tf"
@@ -49597,8 +49616,8 @@
    "sense_from": "h1-125",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "spark": {
    "file": null,
@@ -49682,8 +49701,8 @@
    "status": "missing"
   },
   "specific": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/s/specific.png",
+   "blob": "261a76383ebd4594087d89aa6dd4215849860176",
    "courses": [
     "m3",
     "h1"
@@ -49692,8 +49711,8 @@
    "sense_from": "m3-1164",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "specifically": {
    "file": null,
@@ -50435,8 +50454,8 @@
    "status": "missing"
   },
   "starve": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/s/starve.png",
+   "blob": "d7874209a8fbb0c77665f806ab65e583e865776e",
    "courses": [
     "m3",
     "h1",
@@ -50447,8 +50466,8 @@
    "sense_from": "m3-1120",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "state": {
    "file": "assets/words/s/state.png",
@@ -50611,8 +50630,8 @@
    "status": "ok"
   },
   "steal": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/s/steal.png",
+   "blob": "9f254446a13faab5ea43306d3bf81f7ae6f75f72",
    "courses": [
     "m1",
     "m2"
@@ -50621,12 +50640,12 @@
    "sense_from": "m1-987",
    "scene": "humorous family kitchen counter, mischievous playful cute slender stickman tiptoeing comically to steal a warm chocolate cookie from cooling rack, kitchen cabinets and floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "steep": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/s/steep.png",
+   "blob": "1f3f96ac4aecc8c683b02380cc6b7851e7d4d4c4",
    "courses": [
     "m3",
     "h1",
@@ -50637,8 +50656,8 @@
    "sense_from": "m3-155",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "steer": {
    "file": null,
@@ -50918,8 +50937,8 @@
    "status": "review"
   },
   "storm": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/s/storm.png",
+   "blob": "beee9da31b6bce5a59df1f7e981431661bd6d84a",
    "courses": [
     "h1"
    ],
@@ -50927,8 +50946,8 @@
    "sense_from": "h1-90",
    "scene": "cozy attic bedroom window, cute chibi mannequin looking through window glass pane at a stormy rainy night sky with diagonal rain streaks and distant zigzag lightning flash, soft warm bedside lamp",
    "scene_source": "scripts/generate_h1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "stormy": {
    "file": "assets/words/s/stormy.png",
@@ -51590,8 +51609,8 @@
    "status": "missing"
   },
   "substance": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/s/substance.png",
+   "blob": "0270dadc44be85deb99adb8c0126e360607fff7e",
    "courses": [
     "m3",
     "h1",
@@ -51602,8 +51621,8 @@
    "sense_from": "m3-61",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "substantial": {
    "file": null,
@@ -51680,8 +51699,8 @@
    "status": "review"
   },
   "subway": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/s/subway.png",
+   "blob": "af93ee1e04987675ba30bf5d06137248c02c1d99",
    "courses": [
     "m1",
     "m2"
@@ -51690,8 +51709,8 @@
    "sense_from": "m1-822",
    "scene": "clean underground subway metro platform, cute slender stickman commuter standing behind yellow safety line waiting as sleek modern train arrives smoothly at station, tiled wall and platform line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "succeed": {
    "file": null,
@@ -52030,8 +52049,8 @@
    "status": "missing"
   },
   "sunrise": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/s/sunrise.png",
+   "blob": "f3ab0a1d66b88dae86c51784ac4709794879a11c",
    "courses": [
     "m1",
     "m2"
@@ -52040,12 +52059,12 @@
    "sense_from": "m1-945",
    "scene": "quiet coastal beach cliff, awe-inspired cute slender stickman standing watching the glowing golden sunrise rise above ocean horizon, ocean waves and sandy shoreline line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "sunshine": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/s/sunshine.png",
+   "blob": "c3d9a7cfe186eaa4dc72f7c53a08653f0760d421",
    "courses": [
     "m1",
     "m2"
@@ -52054,8 +52073,8 @@
    "sense_from": "m1-951",
    "scene": "sunny flower garden terrace, happy cute slender stickman sitting on garden chair basking warmly under bright golden sunshine with closed eyes and gentle smile, patio plants line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "superb": {
    "file": null,
@@ -52368,8 +52387,8 @@
    "status": "review"
   },
   "surprised": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/s/surprised.png",
+   "blob": "1733331eb459967a5c477ec733e82042e138d317",
    "courses": [
     "h1"
    ],
@@ -52377,8 +52396,8 @@
    "sense_from": "h1-103",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "surrender": {
    "file": null,
@@ -53107,8 +53126,8 @@
    "status": "review"
   },
   "tear": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/t/tear.png",
+   "blob": "69d85b1fa59aa0db0603e06a48a86dba26f25416",
    "courses": [
     "m1",
     "m2"
@@ -53117,8 +53136,8 @@
    "sense_from": "m1-836",
    "scene": "craft workshop table, focused cute slender stickman artist carefully tearing decorative textured handmade paper sheets along ruler line to make scrapbook collage, cutting mat and floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "tease": {
    "file": null,
@@ -53623,8 +53642,8 @@
    "status": "missing"
   },
   "therapy": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/t/therapy.png",
+   "blob": "d19eb4ea79928472e0fd621a4fd43de04ba84037",
    "courses": [
     "h1",
     "h2"
@@ -53633,8 +53652,8 @@
    "sense_from": "h1-1109",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "therefore": {
    "file": null,
@@ -53942,8 +53961,8 @@
    "status": "missing"
   },
   "ticket": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/t/ticket.png",
+   "blob": "3b615f761a68f3e2a9d5d6140537fcad9b901bad",
    "courses": [
     "m1",
     "m2"
@@ -53952,8 +53971,8 @@
    "sense_from": "m1-915",
    "scene": "historic train station barrier, excited cute slender passenger stickman holding up a printed train ticket showing it to friendly conductor stickman, platform barrier and floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "tide": {
    "file": null,
@@ -54375,8 +54394,8 @@
    "status": "review"
   },
   "tower": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/t/tower.png",
+   "blob": "2e738317e6da2c756bfc841e7733ab7a415b6d2c",
    "courses": [
     "m1",
     "m2"
@@ -54385,8 +54404,8 @@
    "sense_from": "m1-888",
    "scene": "historic medieval city square, awe-struck cute slender stickman tourist looking up at a grand stone clock bell tower reaching high into sky, plaza cobblestones line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "town": {
    "file": "assets/words/t/town.png",
@@ -54790,8 +54809,8 @@
    "status": "missing"
   },
   "transportation": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/t/transportation.png",
+   "blob": "224729142d382f6fca69bc969341dc524ded8f3e",
    "courses": [
     "m3",
     "h2"
@@ -54800,8 +54819,8 @@
    "sense_from": "m3-258",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "trap": {
    "file": null,
@@ -55003,8 +55022,8 @@
    "status": "review"
   },
   "trim": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/t/trim.png",
+   "blob": "a3bc2fd7d9129ec396b2f1561a30de28cfd34f44",
    "courses": [
     "m3",
     "h2",
@@ -55014,8 +55033,8 @@
    "sense_from": "m3-1026",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "trip": {
    "file": "assets/words/t/trip.png",
@@ -55215,8 +55234,8 @@
    "status": "review"
   },
   "turkey": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/t/turkey.png",
+   "blob": "137c04214d8d3486183bc16b56c3423af977ddc6",
    "courses": [
     "m1",
     "m2"
@@ -55225,8 +55244,8 @@
    "sense_from": "m1-873",
    "scene": "cheerful holiday dining table, proud cute slender stickman host presenting a large golden roasted holiday turkey on silver platter to cheering dinner guests, dining chairs and floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "turn": {
    "file": "assets/words/t/turn.png",
@@ -55876,8 +55895,8 @@
    "status": "missing"
   },
   "unexpected": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/u/unexpected.png",
+   "blob": "f4368eb0e5fb427fd029bba93aa68a610a6fcf1d",
    "courses": [
     "m3",
     "h2"
@@ -55886,8 +55905,8 @@
    "sense_from": "m3-887",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "unexpectedly": {
    "file": null,
@@ -55929,8 +55948,8 @@
    "status": "missing"
   },
   "unfortunately": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/u/unfortunately.png",
+   "blob": "488edb96294e0a783155b1d1dd3e2133d0749ec0",
    "courses": [
     "h2"
    ],
@@ -55938,8 +55957,8 @@
    "sense_from": "h2-24",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "unification": {
    "file": "assets/words/u/unification.png",
@@ -56879,8 +56898,8 @@
    "status": "review"
   },
   "vary": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/v/vary.png",
+   "blob": "2e679d18e2c1fe9e07a0e83e6dd4e573a22f7cda",
    "courses": [
     "h1"
    ],
@@ -56888,8 +56907,8 @@
    "sense_from": "h1-89",
    "scene": "artisan ceramic studio shelf, cute chibi mannequin potter standing admiring a collection of pottery jars that vary in different sizes, geometric heights and silhouettes, clay sculpting tools",
    "scene_source": "scripts/generate_h1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "vast": {
    "file": "assets/words/v/vast.png",
@@ -56906,8 +56925,8 @@
    "status": "review"
   },
   "vegetable": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/v/vegetable.png",
+   "blob": "ed0050b6eae5a272cc7b3a5c383fba864dcb6cef",
    "courses": [
     "m1",
     "m2"
@@ -56916,8 +56935,8 @@
    "sense_from": "m1-842",
    "scene": "cheerful local farmers market stall, smiling cute slender stickman vendor displaying wooden crates of fresh colorful vegetables including orange carrots, green broccoli, and red tomatoes, market awning and cobblestone line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "vegetarian": {
    "file": null,
@@ -57525,8 +57544,8 @@
    "status": "missing"
   },
   "volunteer": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/v/volunteer.png",
+   "blob": "699df222803e3d49f3b0d83cd21c9a556273ce72",
    "courses": [
     "m3",
     "h1",
@@ -57536,8 +57555,8 @@
    "sense_from": "m3-561",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "vomit": {
    "file": null,
@@ -57553,8 +57572,8 @@
    "status": "missing"
   },
   "vote": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/v/vote.png",
+   "blob": "cce0ff8c5f7409a166774ede2ed6f95de0bd5ecd",
    "courses": [
     "m1",
     "m2",
@@ -57565,8 +57584,8 @@
    "sense_from": "m1-897",
    "scene": "civic polling election station, responsible cute slender citizen stickman slipping a folded official ballot paper into sealed wooden voting ballot box, voting booth curtain and floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "voyage": {
    "file": "assets/words/v/voyage.png",
@@ -57601,8 +57620,8 @@
    "status": "missing"
   },
   "wage": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/w/wage.png",
+   "blob": "01a540313ffd26c38e81e0ee5255ff5faceb40db",
    "courses": [
     "h1",
     "h2",
@@ -57613,8 +57632,8 @@
    "sense_from": "h1-88",
    "scene": "cozy company office accounting desk, happy cute chibi mannequin employee receiving a monthly pay wage salary envelope with a smile, desk calendar and ledger notebook",
    "scene_source": "scripts/generate_h1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "wagon": {
    "file": "assets/words/w/wagon.png",
@@ -57671,8 +57690,8 @@
    "status": "missing"
   },
   "wander": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/w/wander.png",
+   "blob": "c20e12073ba3e057b6134372bd5c11f4ad66e3ef",
    "courses": [
     "h1",
     "h2"
@@ -57681,8 +57700,8 @@
    "sense_from": "h1-286",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "war": {
    "file": "assets/words/w/war.png",
@@ -58034,8 +58053,8 @@
    "status": "missing"
   },
   "wet": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/w/wet.png",
+   "blob": "73108cf04df4e6ede0ba726bfacb2e433102cf89",
    "courses": [
     "m1",
     "m2"
@@ -58044,8 +58063,8 @@
    "sense_from": "m1-770",
    "scene": "rainy home entrance hallway, small cute slender stickman standing indoors shaking water droplets from soaked wet umbrella into umbrella stand, entryway floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "wetland": {
    "file": null,
@@ -58172,8 +58191,8 @@
    "status": "review"
   },
   "whistle": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/w/whistle.png",
+   "blob": "85fbb1b0204258cfff8148a605b1b3ae18830f5e",
    "courses": [
     "m1",
     "m2"
@@ -58182,8 +58201,8 @@
    "sense_from": "m1-988",
    "scene": "sunny countryside trail promenade, joyful cute slender stickman walking with hands in pockets puckering lips whistling a cheerful melodic tune, wildflower path line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "whole": {
    "file": "assets/words/w/whole.png",
@@ -58392,8 +58411,8 @@
    "status": "missing"
   },
   "wise": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/w/wise.png",
+   "blob": "43c8a178e6f17056ac3237cd46af09c991a4d459",
    "courses": [
     "m1",
     "m2"
@@ -58402,8 +58421,8 @@
    "sense_from": "m1-965",
    "scene": "tranquil mountain temple pavilion, serene cute slender elder stickman philosopher stroking chin offering thoughtful wise guidance over hot tea, stone balcony and floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "wish": {
    "file": "assets/words/w/wish.png",

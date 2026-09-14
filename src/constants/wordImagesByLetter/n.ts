@@ -7,6 +7,8 @@ export const IMAGES_N: Record<string, ImageSourcePropType> = {
   nature: require("../../../assets/words/n/nature.png"),
   navy: require("../../../assets/words/n/navy.png"),
   nearly: require("../../../assets/words/n/nearly.png"),
+  necessary: require("../../../assets/words/n/necessary.png"),
+  need: require("../../../assets/words/n/need.png"),
   neighbor: require("../../../assets/words/n/neighbor.png"),
   neither: require("../../../assets/words/n/neither.png"),
   nephew: require("../../../assets/words/n/nephew.png"),
@@ -19,5 +21,7 @@ export const IMAGES_N: Record<string, ImageSourcePropType> = {
   none: require("../../../assets/words/n/none.png"),
   normal: require("../../../assets/words/n/normal.png"),
   notice: require("../../../assets/words/n/notice.png"),
+  nuclear: require("../../../assets/words/n/nuclear.png"),
+  numerous: require("../../../assets/words/n/numerous.png"),
   nurse: require("../../../assets/words/n/nurse.png"),
 };

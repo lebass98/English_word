@@ -4,6 +4,8 @@ import { ImageSourcePropType } from "react-native";
 export const IMAGES_U: Record<string, ImageSourcePropType> = {
   umbrella: require("../../../assets/words/u/umbrella.png"),
   understand: require("../../../assets/words/u/understand.png"),
+  unexpected: require("../../../assets/words/u/unexpected.png"),
+  unfortunately: require("../../../assets/words/u/unfortunately.png"),
   unification: require("../../../assets/words/u/unification.png"),
   uniform: require("../../../assets/words/u/uniform.png"),
   unity: require("../../../assets/words/u/unity.png"),

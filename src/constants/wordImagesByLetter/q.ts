@@ -4,5 +4,6 @@ import { ImageSourcePropType } from "react-native";
 export const IMAGES_Q: Record<string, ImageSourcePropType> = {
   quarter: require("../../../assets/words/q/quarter.png"),
   quiet: require("../../../assets/words/q/quiet.png"),
+  quit: require("../../../assets/words/q/quit.png"),
   quite: require("../../../assets/words/q/quite.png"),
 };

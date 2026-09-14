@@ -67,4 +67,5 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   explore: require("../../../assets/words/e/explore.png"),
   express: require("../../../assets/words/e/express.png"),
   expressway: require("../../../assets/words/e/expressway.png"),
+  extensive: require("../../../assets/words/e/extensive.png"),
 };

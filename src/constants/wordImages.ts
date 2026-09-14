@@ -188,6 +188,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   assuredly: require("../../assets/words/assuredly.png"),
   astonish: require("../../assets/words/astonish.png"),
   astonishing: require("../../assets/words/astonishing.png"),
+  "at hand": require("../../assets/words/at-hand.png"),
   athlete: require("../../assets/words/athlete.png"),
   atom: require("../../assets/words/atom.png"),
   attend: require("../../assets/words/attend.png"),

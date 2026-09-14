@@ -55,6 +55,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   rest: require("../../../assets/words/r/rest.png"),
   restaurant: require("../../../assets/words/r/restaurant.png"),
   result: require("../../../assets/words/r/result.png"),
+  "result in": require("../../../assets/words/r/result-in.png"),
   return: require("../../../assets/words/r/return.png"),
   review: require("../../../assets/words/r/review.png"),
   revival: require("../../../assets/words/r/revival.png"),

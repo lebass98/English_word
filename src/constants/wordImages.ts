@@ -727,6 +727,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   pass: require("../../assets/words/pass.png"),
   passage: require("../../assets/words/passage.png"),
   passenger: require("../../assets/words/passenger.png"),
+  passive: require("../../assets/words/passive.png"),
   passport: require("../../assets/words/passport.png"),
   past: require("../../assets/words/past.png"),
   patient: require("../../assets/words/patient.png"),

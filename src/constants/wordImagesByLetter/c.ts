@@ -64,6 +64,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   choicest: require("../../../assets/words/c/choicest.png"),
   choose: require("../../../assets/words/c/choose.png"),
   chopstick: require("../../../assets/words/c/chopstick.png"),
+  chronic: require("../../../assets/words/c/chronic.png"),
   circle: require("../../../assets/words/c/circle.png"),
   civil: require("../../../assets/words/c/civil.png"),
   civilization: require("../../../assets/words/c/civilization.png"),

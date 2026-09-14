@@ -120,6 +120,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   bump: require("../../../assets/words/b/bump.png"),
   burden: require("../../../assets/words/b/burden.png"),
   burn: require("../../../assets/words/b/burn.png"),
+  burst: require("../../../assets/words/b/burst.png"),
   bury: require("../../../assets/words/b/bury.png"),
   bush: require("../../../assets/words/b/bush.png"),
   business: require("../../../assets/words/b/business.png"),

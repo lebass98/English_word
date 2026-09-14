@@ -112,6 +112,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   breathe: require("../../../assets/words/b/breathe.png"),
   breathing: require("../../../assets/words/b/breathing.png"),
   bridge: require("../../../assets/words/b/bridge.png"),
+  brief: require("../../../assets/words/b/brief.png"),
   bright: require("../../../assets/words/b/bright.png"),
   brightness: require("../../../assets/words/b/brightness.png"),
   brilliance: require("../../../assets/words/b/brilliance.png"),

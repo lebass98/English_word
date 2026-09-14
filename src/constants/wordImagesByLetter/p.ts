@@ -88,6 +88,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   problem: require("../../../assets/words/p/problem.png"),
   process: require("../../../assets/words/p/process.png"),
   produce: require("../../../assets/words/p/produce.png"),
+  profession: require("../../../assets/words/p/profession.png"),
   professor: require("../../../assets/words/p/professor.png"),
   project: require("../../../assets/words/p/project.png"),
   promise: require("../../../assets/words/p/promise.png"),

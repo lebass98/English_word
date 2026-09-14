@@ -63,6 +63,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   frustrated: require("../../../assets/words/f/frustrated.png"),
   fun: require("../../../assets/words/f/fun.png"),
   function: require("../../../assets/words/f/function.png"),
+  fund: require("../../../assets/words/f/fund.png"),
   funeral: require("../../../assets/words/f/funeral.png"),
   fur: require("../../../assets/words/f/fur.png"),
   furniture: require("../../../assets/words/f/furniture.png"),

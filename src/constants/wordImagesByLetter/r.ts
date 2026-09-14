@@ -72,4 +72,5 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   rudely: require("../../../assets/words/r/rudely.png"),
   ruin: require("../../../assets/words/r/ruin.png"),
   rule: require("../../../assets/words/r/rule.png"),
+  "run out of": require("../../../assets/words/r/run-out-of.png"),
 };

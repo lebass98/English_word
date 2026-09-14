@@ -12,6 +12,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   particle: require("../../../assets/words/p/particle.png"),
   pass: require("../../../assets/words/p/pass.png"),
   "pass away": require("../../../assets/words/p/pass-away.png"),
+  "pass through": require("../../../assets/words/p/pass-through.png"),
   passage: require("../../../assets/words/p/passage.png"),
   passenger: require("../../../assets/words/p/passenger.png"),
   passive: require("../../../assets/words/p/passive.png"),

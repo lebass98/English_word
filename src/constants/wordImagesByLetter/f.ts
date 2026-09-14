@@ -16,6 +16,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   fear: require("../../../assets/words/f/fear.png"),
   feast: require("../../../assets/words/f/feast.png"),
   feather: require("../../../assets/words/f/feather.png"),
+  feature: require("../../../assets/words/f/feature.png"),
   feed: require("../../../assets/words/f/feed.png"),
   fence: require("../../../assets/words/f/fence.png"),
   fever: require("../../../assets/words/f/fever.png"),

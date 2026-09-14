@@ -24,6 +24,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   eliminate: require("../../../assets/words/e/eliminate.png"),
   else: require("../../../assets/words/e/else.png"),
   empathy: require("../../../assets/words/e/empathy.png"),
+  empire: require("../../../assets/words/e/empire.png"),
   employ: require("../../../assets/words/e/employ.png"),
   empty: require("../../../assets/words/e/empty.png"),
   encounter: require("../../../assets/words/e/encounter.png"),

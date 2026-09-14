@@ -16,7 +16,6 @@ import base64
 import urllib.request
 import subprocess
 import argparse
-from dashboard_updater import update_dashboards
 
 API_URL = "http://127.0.0.1:7860/sdapi/v1/txt2img"
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -3178,7 +3177,6 @@ def main():
                 continue
 
             # 대시보드 갱신 (렌더링 시작)
-            update_dashboards(unit_num, idx, item, elapsed_times, status_text=f"'{w}' 렌더링 중...")
 
             print(f"\n[Unit {unit_num} - {idx}/20] '{w}' ({w_id}: {meaning}) 생성 중...", flush=True)
             print(f"Scene: {scene}", flush=True)
@@ -3190,14 +3188,11 @@ def main():
                 print(f"[{w}] 생성 완료 ({elapsed:.1f}초) -> {out_file}", flush=True)
                 update_word_images_ts(w, w_id)
                 # 대시보드 갱신 (단어 완료)
-                update_dashboards(unit_num, idx, item, elapsed_times, status_text=f"'{w}' 완료 ({elapsed:.1f}초)")
             else:
                 print(f"[{w}] 생성 실패!", flush=True)
 
         # 1개 유닛(20단어) 완료 시 배포
-        update_dashboards(unit_num, 20, words[-1], elapsed_times, status_text="유닛 완료 및 Git 배포 중...")
         deploy_unit(unit_num)
-        update_dashboards(unit_num, 20, words[-1], elapsed_times, status_text="✅ 유닛 배포 완료")
         print(f"🎉 [Unit {unit_num}] 20단어 생성 및 등록 배포 전원 완료!\n", flush=True)
 
     print("모든 지정 유닛 생성 파이프라인이 성공적으로 완료되었습니다!", flush=True)

@@ -31,6 +31,9 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-14
+- 규칙 변경: 진행 상황판(`LIVE_DASHBOARD.md`·`dashboard.html`) 의무 규칙 폐지. 상황판 파일을 만들지 않고 채팅에 1줄로만 보고한다
+  - CLAUDE.md / AGENTS.md / .agents/rules / 스킬 문서의 대시보드 의무 조항을 "만들지 않기" 규칙으로 교체
+  - `dashboard.html`, `scripts/dashboard_updater.py`, `scripts/generate_html_dashboard.py` 삭제, 생성 스크립트 5개에서 상황판 코드 제거
 - 유닛 카드에도 그림 제작 현황 임시 표시 추가 (`🖼 N개 미완료` / `🖼 그림 완료`)
 - 중2 그림 3장(british, french, german)이 안 보이던 문제 해결 — 그림은 이미 있었고 등록 이름이 `British.png`(대문자)라 conceptId(`british`)와 어긋나 있었다. 파일명을 conceptId 에 맞춰 소문자로 바꿔 중1·중2가 같은 그림을 쓰게 했다. 중2 그림 100% 완료
 - 홈 코스 카드에 연상 그림 제작 현황 임시 표시 추가 (`🖼 N개 미완료`) — 등록표를 실행 중에 세므로 그림을 등록하면 숫자가 바로 줄어든다. 전부 채우면 `src/lib/imageDebug.ts`와 함께 지운다

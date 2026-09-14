@@ -7,7 +7,6 @@
 - 단어별 장면은 scripts/m2_missing_scenes.json 에 있다. 없으면 예문으로 장면을 만든다.
 - REGENERATE 에 넣은 단어는 그림이 있어도 다시 만든다 (스킬 개정 전 모습으로 만든 그림).
 - 한 단원의 누락분이 끝날 때마다: wordImages.ts 등록 -> lint -> ._* 정리 -> README -> 커밋 & 푸시
-- 진행 상황은 LIVE_DASHBOARD.md / dashboard.html (dashboard_updater.py 와 같은 위치)에 갱신한다.
 
     python3 scripts/generate_m2_all_missing.py            # 생성
     python3 scripts/generate_m2_all_missing.py --dry-run  # 대상만 보기
@@ -33,8 +32,6 @@ README_FILE = os.path.join(PROJECT_ROOT, "README.md")
 STATUS_FILE = os.path.join(SCRIPT_DIR, "m2_missing_status.json")
 SCENES_FILE = os.path.join(SCRIPT_DIR, "m2_missing_scenes.json")
 WORKSPACE_ROOT = os.path.dirname(PROJECT_ROOT)
-DASHBOARD_MD = os.path.join(WORKSPACE_ROOT, "LIVE_DASHBOARD.md")
-DASHBOARD_HTML = os.path.join(WORKSPACE_ROOT, "dashboard.html")
 
 # 그림이 있어도 다시 그릴 단어 (비워 두면 없는 그림만 만든다)
 REGENERATE = set()
@@ -65,63 +62,6 @@ def run(cmd, check=True):
 def save_status(status):
     with open(STATUS_FILE, "w", encoding="utf-8") as f:
         json.dump(status, f, ensure_ascii=False, indent=2)
-
-
-def write_dashboard(targets, done, current, started_at):
-    """전체 대상 기준 진행 상황판 (md + 8초 자동 새로고침 html)"""
-    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    total = len(targets)
-    n_done = len(done)
-    pct = n_done / total * 100 if total else 100
-    bar = "█" * int(pct // 5) + "░" * (20 - int(pct // 5))
-    avg = sum(d["elapsed_sec"] for d in done.values()) / n_done if n_done else 0
-    remain_min = avg * (total - n_done) / 60 if avg else 0
-    run_min = (time.time() - started_at) / 60
-
-    def state(t):
-        if t["word"] in done:
-            return f"✅ 완료 ({done[t['word']]['elapsed_sec']:.0f}초)"
-        if current and t["word"] == current["word"]:
-            return "🔄 렌더링 중"
-        return "🕒 대기"
-
-    md = [
-        "# 🚀 중2 누락 그림 선형그래픽 상황판\n",
-        f"> **진행**: `[{bar}] {pct:.1f}% ({n_done}/{total})`  ",
-        f"> **현재**: {current['id'] + ' ' + current['word'] + ' (Unit ' + str(current['unit']) + ')' if current else '없음'}  ",
-        f"> **경과**: {run_min:.0f}분 · 평균 {avg:.0f}초/장 · 남은 예상 {remain_min:.0f}분  ",
-        f"> **마지막 갱신**: {now}\n",
-    ]
-    if current:
-        md.append(f"**현재 장면**: {current['scene']}\n")
-    md += ["| Unit | ID | 단어 | 뜻 | 상태 |", "| :-: | :-: | :-: | :-- | :-- |"]
-    md += [f"| {t['unit']} | {t['id']} | **{t['word']}** | {t['meaning']} | {state(t)} |" for t in targets]
-    with open(DASHBOARD_MD, "w", encoding="utf-8") as f:
-        f.write("\n".join(md) + "\n")
-
-    rows = "\n".join(
-        f"<tr><td>{t['unit']}</td><td>{t['id']}</td><td><b>{t['word']}</b></td><td>{t['meaning']}</td><td>{state(t)}</td></tr>"
-        for t in targets
-    )
-    cur_html = (
-        f"<div class='cur'><div class='lbl'>현재 렌더링</div><div class='w'>{current['word']}</div>"
-        f"<div class='m'>{current['id']} · Unit {current['unit']} · {current['meaning']}</div><div class='s'>{current['scene']}</div></div>"
-        if current else "<div class='cur'><div class='w'>대기 없음</div></div>"
-    )
-    html = f"""<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><meta http-equiv="refresh" content="8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>중2 선형그래픽 상황판</title>
-<style>body{{font-family:-apple-system,sans-serif;background:#0f1117;color:#f3f4f6;padding:24px;margin:0}}
-.bar{{height:16px;background:#212530;border-radius:99px;overflow:hidden;margin:12px 0}}
-.fill{{height:100%;width:{pct:.1f}%;background:linear-gradient(90deg,#6366f1,#38bdf8)}}
-.cur{{background:#181b24;border:1px solid #6366f1;border-radius:14px;padding:18px;margin:16px 0}}
-.lbl{{color:#38bdf8;font-size:12px;font-weight:700}}.w{{font-size:32px;font-weight:800}}.m{{color:#9ca3af}}.s{{color:#9ca3af;font-size:12px;margin-top:8px}}
-table{{width:100%;border-collapse:collapse;font-size:14px}}td,th{{padding:8px 10px;border-bottom:1px solid #222;text-align:left}}th{{color:#9ca3af}}</style></head>
-<body><h2>🎨 중2 누락 그림 선형그래픽 상황판</h2>
-<div>{pct:.1f}% ({n_done}/{total}) · 경과 {run_min:.0f}분 · 평균 {avg:.0f}초/장 · 남은 예상 {remain_min:.0f}분 · 갱신 {now}</div>
-<div class="bar"><div class="fill"></div></div>{cur_html}
-<table><thead><tr><th>Unit</th><th>ID</th><th>단어</th><th>뜻</th><th>상태</th></tr></thead><tbody>{rows}</tbody></table></body></html>"""
-    with open(DASHBOARD_HTML, "w", encoding="utf-8") as f:
-        f.write(html)
 
 
 def add_readme_entry(unit, words):
@@ -229,7 +169,6 @@ def main():
         for item in (t for t in targets if t["unit"] == unit):
             status.update(current_unit=unit, current_word=item["word"])
             save_status(status)
-            write_dashboard(targets, done, item, started_at)
             print(f"\n[{item['id']}] {item['word']} ({item['meaning']})\nScene: {item['scene']}", flush=True)
 
             elapsed = generate_with_retry(item)
@@ -242,13 +181,11 @@ def main():
             created.append(item["word"])
             print(f"PROGRESS {len(done)}/{len(targets)} {item['word']} {elapsed:.0f}s", flush=True)
 
-        write_dashboard(targets, done, None, started_at)
         if created:
             publish_unit(unit, created)
 
     status.update(current_unit=None, current_word=None)
     save_status(status)
-    write_dashboard(targets, done, None, started_at)
     failed = [t["word"] for t in targets if t["word"] not in done]
     print(f"\n완료: {len(done)}/{len(targets)} 생성" + (f", 실패: {failed}" if failed else ""), flush=True)
     return 0

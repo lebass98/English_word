@@ -14,7 +14,6 @@
   → 글자별 등록 → ._ 정리 → lint → 커밋(그림 + 그 글자 등록 파일) → 받아서 올리기
 - README 에는 장마다 적지 않는다. 카탈로그 상태는 끝난 뒤 image_catalog.py 로 다시 만든다
 - 멈추기: 저장소 바깥 상위 폴더에 STOP_IMAGES 파일을 만들면 지금 장까지만 하고 멈춘다
-- 상황판: 상위 폴더의 LIVE_DASHBOARD.md, dashboard.html (컴퓨터마다 따로 생긴다)
 """
 import argparse
 import html
@@ -29,8 +28,6 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 WORKSPACE = os.path.dirname(ROOT)
 CATALOG = os.path.join(ROOT, "src/data/images/catalog.json")
 STOP = os.path.join(WORKSPACE, "STOP_IMAGES")
-DASH_MD = os.path.join(WORKSPACE, "LIVE_DASHBOARD.md")
-DASH_HTML = os.path.join(WORKSPACE, "dashboard.html")
 COAUTHOR = "Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>"
 
 sys.path.insert(0, os.path.join(ROOT, ".agents/skills/draw-things-linear-graphic/scripts"))
@@ -141,46 +138,9 @@ LABEL = {"waiting": "🕒 대기", "rendering": "⏳ 렌더링", "done": "✅ �
          "skipped": "⏭ 다른 컴퓨터가 먼저 올림", "no-scene": "📝 장면 묘사 없음"}
 
 
-def render_dashboard(state):
-    items = state["items"]
-    done = sum(1 for it in items if it["status"] == "done")
-    total = sum(1 for it in items if it["status"] != "no-scene")
-    current = next((it for it in items if it["status"] == "rendering"), None)
-    head = (f"# 🎨 단어 그림 생성 상황판 ({state['letters']})\n\n"
-            f"> **상태**: {state['phase']}  \n> **갱신**: {state['updated']}  \n"
-            f"> **진행**: {done} / {total} (장면 묘사 없음 {len(items) - total})\n\n")
-    if current:
-        head += f"**지금 렌더링**: `{current['word']}` — {current['scene']}\n\n"
-    rows = "| 단어 | 대표 뜻 | 초 | 상태 |\n| :--- | :--- | :---: | :--- |\n" + "".join(
-        f"| **{it['word']}** | {it['sense'] or ''} | {it['sec'] or '-'} | {LABEL[it['status']]} |\n"
-        for it in items if it["status"] != "no-scene"
-    )
-    with open(DASH_MD, "w", encoding="utf-8") as f:
-        f.write(head + rows)
-    trs = "".join(
-        f"<tr class='{it['status']}'><td><b>{html.escape(it['word'])}</b></td><td>{html.escape(it['sense'] or '')}</td>"
-        f"<td>{it['sec'] or '-'}</td><td>{LABEL[it['status']]}</td></tr>"
-        for it in items if it["status"] != "no-scene"
-    )
-    page = (f"<!doctype html><html lang='ko'><head><meta charset='utf-8'><meta http-equiv='refresh' content='8'>"
-            f"<title>단어 그림 생성 ({html.escape(state['letters'])})</title><style>"
-            "body{font:14px/1.5 -apple-system,sans-serif;background:#ecedf1;color:#121826;margin:0;padding:24px}"
-            "table{width:100%;max-width:880px;border-collapse:collapse;background:#f1f2f6}"
-            "td,th{padding:6px 10px;border-bottom:1px solid #e3e5ea;text-align:left}"
-            "tr.rendering{background:#dcf2ea}tr.failed{background:#fde8e8}</style></head><body>"
-            f"<h1>단어 그림 생성 ({html.escape(state['letters'])})</h1><p>{html.escape(state['phase'])} · "
-            f"<b>{done} / {total}</b> · 갱신 {state['updated']}</p><table><tr><th>단어</th><th>대표 뜻</th>"
-            f"<th>초</th><th>상태</th></tr>{trs}</table></body></html>")
-    with open(DASH_HTML, "w", encoding="utf-8") as f:
-        f.write(page)
-
-
 def save(state):
+    """진행 상태를 기억해 둔다. 예전에는 상황판 파일도 썼으나 그 기능은 없앴다"""
     state["updated"] = time.strftime("%Y-%m-%d %H:%M:%S")
-    try:
-        render_dashboard(state)
-    except OSError as e:
-        print("상황판 쓰기 실패:", e, flush=True)
 
 
 # ── 본체 ───────────────────────────────────────────────────────────

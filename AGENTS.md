@@ -42,10 +42,9 @@ Read the exact versioned docs at https://docs.expo.dev/versions/v57.0.0/ before 
    - 풍성한 배경 씬(바닥선, 가구, 소품 등 내러티브 묘사)
    - 후처리 효과(필터, 임계값) 배제 원본 보존
    - 씬 내 텍스트는 영문(English)만 사용하며 한글 텍스트 전면 배제
-3. **실시간 대시보드(상황판) 의무**:
-   - 제작 시작 즉시 1차 현황판 출력
-   - 단어 렌더링 진행 중 매 2분 주기로 실시간 상황판 갱신
-   - 작업 완료 시 최종 집계 완료 상황판 출력
+3. **대시보드·상황판 만들지 않기**:
+   - `LIVE_DASHBOARD.md` / `dashboard.html` 등 상황판 파일을 만들지 않는다 (규칙 폐지)
+   - 진행 보고는 채팅창에 간결한 1줄로만 한다
 4. **자동화 파이프라인**:
    - `assets/words/<단어>.png` 저장 -> `src/constants/wordImages.ts` 등록 -> `npm run lint` -> `find . .. -name '._*' -type f -delete` -> 한글 커밋 & push
 

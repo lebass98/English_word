@@ -72,6 +72,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   afraid: require("../../assets/words/afraid.png"),
   afterward: require("../../assets/words/afterward.png"),
   agree: require("../../assets/words/agree.png"),
+  agriculture: require("../../assets/words/agriculture.png"),
   ahead: require("../../assets/words/ahead.png"),
   airport: require("../../assets/words/airport.png"),
   alarm: require("../../assets/words/alarm.png"),

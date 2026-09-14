@@ -29,6 +29,7 @@ export const IMAGES_N: Record<string, ImageSourcePropType> = {
   none: require("../../../assets/words/n/none.png"),
   normal: require("../../../assets/words/n/normal.png"),
   notice: require("../../../assets/words/n/notice.png"),
+  novel: require("../../../assets/words/n/novel.png"),
   nuclear: require("../../../assets/words/n/nuclear.png"),
   numerous: require("../../../assets/words/n/numerous.png"),
   nurse: require("../../../assets/words/n/nurse.png"),

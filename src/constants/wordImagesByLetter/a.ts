@@ -9,6 +9,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   abandon: require("../../../assets/words/a/abandon.png"),
   able: require("../../../assets/words/a/able.png"),
   abnormally: require("../../../assets/words/a/abnormally.png"),
+  aboard: require("../../../assets/words/a/aboard.png"),
   abolish: require("../../../assets/words/a/abolish.png"),
   "abound in": require("../../../assets/words/a/abound-in.png"),
   abroad: require("../../../assets/words/a/abroad.png"),

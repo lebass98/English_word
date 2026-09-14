@@ -44,6 +44,15 @@ TOEFL_PATH = os.path.join(PROJECT_ROOT, "src", "data", "en", "levels", "toefl.js
 TR_PATH = os.path.join(PROJECT_ROOT, "src", "data", "en", "tr", "ko.json")
 WORDS_PATH = os.path.join(PROJECT_ROOT, "src", "data", "en", "words.json")
 
+def letter_of(word: str) -> str:
+    first = word[:1].lower()
+    return first if "a" <= first <= "z" else "_"
+
+def get_word_image_path(word: str) -> str:
+    letter = letter_of(word)
+    fname = word.replace(" ", "-") + ".png"
+    return os.path.join(ASSETS_DIR, letter, fname)
+
 def clean_appledouble():
     subprocess.run(["find", ".", "..", "-name", "._*", "-type", "f", "-delete"], cwd=PROJECT_ROOT, stderr=subprocess.DEVNULL)
 
@@ -263,8 +272,7 @@ def main():
 
         # 기존 파일 사전 확인
         for t in unit_tasks:
-            fname = t["word"].replace(" ", "-") + ".png"
-            fpath = os.path.join(ASSETS_DIR, fname)
+            fpath = get_word_image_path(t["word"])
             if os.path.exists(fpath):
                 sz_kb = f"{os.path.getsize(fpath) // 1024}KB"
                 done_records[t["word"]] = {"elapsed": 0.0, "size": sz_kb}
@@ -276,8 +284,8 @@ def main():
             wid = task["id"]
             meaning = task["meaning"]
             scene = task["scene"]
-            fname = w.replace(" ", "-") + ".png"
-            out_path = os.path.join(ASSETS_DIR, fname)
+            out_path = get_word_image_path(w)
+            os.makedirs(os.path.dirname(out_path), exist_ok=True)
 
             if os.path.exists(out_path):
                 print(f"[Unit {u}] '{w}' 이미 파일이 존재하여 건너뜁니다 -> {out_path}", flush=True)

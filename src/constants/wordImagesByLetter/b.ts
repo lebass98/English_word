@@ -5,6 +5,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   background: require("../../../assets/words/b/background.png"),
   badly: require("../../../assets/words/b/badly.png"),
   balance: require("../../../assets/words/b/balance.png"),
+  ban: require("../../../assets/words/b/ban.png"),
   bar: require("../../../assets/words/b/bar.png"),
   base: require("../../../assets/words/b/base.png"),
   basement: require("../../../assets/words/b/basement.png"),

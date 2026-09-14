@@ -3,6 +3,7 @@ import { ImageSourcePropType } from "react-native";
 // "l" 로 시작하는 단어 그림. scripts/sync_word_images.py 가 만든다 (손으로 고치지 않는다)
 export const IMAGES_L: Record<string, ImageSourcePropType> = {
   label: require("../../../assets/words/l/label.png"),
+  laboratory: require("../../../assets/words/l/laboratory.png"),
   lamb: require("../../../assets/words/l/lamb.png"),
   language: require("../../../assets/words/l/language.png"),
   lantern: require("../../../assets/words/l/lantern.png"),

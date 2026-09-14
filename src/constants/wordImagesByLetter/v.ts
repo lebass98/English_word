@@ -16,6 +16,7 @@ export const IMAGES_V: Record<string, ImageSourcePropType> = {
   victim: require("../../../assets/words/v/victim.png"),
   view: require("../../../assets/words/v/view.png"),
   village: require("../../../assets/words/v/village.png"),
+  violate: require("../../../assets/words/v/violate.png"),
   virtual: require("../../../assets/words/v/virtual.png"),
   virtue: require("../../../assets/words/v/virtue.png"),
   vision: require("../../../assets/words/v/vision.png"),

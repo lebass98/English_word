@@ -126,6 +126,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   continuous: require("../../../assets/words/c/continuous.png"),
   contract: require("../../../assets/words/c/contract.png"),
   contrary: require("../../../assets/words/c/contrary.png"),
+  contribute: require("../../../assets/words/c/contribute.png"),
   control: require("../../../assets/words/c/control.png"),
   convenient: require("../../../assets/words/c/convenient.png"),
   convert: require("../../../assets/words/c/convert.png"),

@@ -38,6 +38,8 @@ npm run lint     # ESLint
 - 고2 미생성 단어 1장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
   - 대상 단어: excessive
 - 고1 미생성 단어 5장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상 단어: request, defeat, scent, crisis, royal
+- 고1 미생성 단어 5장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
   - 대상 단어: ritual, process, precede, penalty, quit
 - 고1 미생성 단어 5장 Draw Things 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
   - 대상 단어: innovation, surprised, starve, level, volunteer

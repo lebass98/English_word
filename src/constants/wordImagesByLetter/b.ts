@@ -122,4 +122,5 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   business: require("../../../assets/words/b/business.png"),
   busy: require("../../../assets/words/b/busy.png"),
   butterfly: require("../../../assets/words/b/butterfly.png"),
+  bystander: require("../../../assets/words/b/bystander.png"),
 };

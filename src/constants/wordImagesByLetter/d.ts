@@ -83,6 +83,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   drugstore: require("../../../assets/words/d/drugstore.png"),
   drum: require("../../../assets/words/d/drum.png"),
   dry: require("../../../assets/words/d/dry.png"),
+  due: require("../../../assets/words/d/due.png"),
   dull: require("../../../assets/words/d/dull.png"),
   dumb: require("../../../assets/words/d/dumb.png"),
   dye: require("../../../assets/words/d/dye.png"),

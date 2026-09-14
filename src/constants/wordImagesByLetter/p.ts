@@ -25,6 +25,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   pepper: require("../../../assets/words/p/pepper.png"),
   perhaps: require("../../../assets/words/p/perhaps.png"),
   period: require("../../../assets/words/p/period.png"),
+  permit: require("../../../assets/words/p/permit.png"),
   personal: require("../../../assets/words/p/personal.png"),
   perspective: require("../../../assets/words/p/perspective.png"),
   pesticide: require("../../../assets/words/p/pesticide.png"),

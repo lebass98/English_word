@@ -48,6 +48,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   exclude: require("../../../assets/words/e/exclude.png"),
   excuse: require("../../../assets/words/e/excuse.png"),
   exercise: require("../../../assets/words/e/exercise.png"),
+  exhausted: require("../../../assets/words/e/exhausted.png"),
   exit: require("../../../assets/words/e/exit.png"),
   expect: require("../../../assets/words/e/expect.png"),
   expensive: require("../../../assets/words/e/expensive.png"),

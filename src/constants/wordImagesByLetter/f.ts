@@ -40,6 +40,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   foolish: require("../../../assets/words/f/foolish.png"),
   force: require("../../../assets/words/f/force.png"),
   foreign: require("../../../assets/words/f/foreign.png"),
+  foreigner: require("../../../assets/words/f/foreigner.png"),
   forest: require("../../../assets/words/f/forest.png"),
   fortunately: require("../../../assets/words/f/fortunately.png"),
   forward: require("../../../assets/words/f/forward.png"),

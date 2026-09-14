@@ -6,6 +6,7 @@ export const IMAGES_J: Record<string, ImageSourcePropType> = {
   jealous: require("../../../assets/words/j/jealous.png"),
   jean: require("../../../assets/words/j/jean.png"),
   jewel: require("../../../assets/words/j/jewel.png"),
+  jewelry: require("../../../assets/words/j/jewelry.png"),
   job: require("../../../assets/words/j/job.png"),
   join: require("../../../assets/words/j/join.png"),
   joke: require("../../../assets/words/j/joke.png"),

@@ -7,6 +7,7 @@ export const IMAGES_W: Record<string, ImageSourcePropType> = {
   wake: require("../../../assets/words/w/wake.png"),
   wander: require("../../../assets/words/w/wander.png"),
   war: require("../../../assets/words/w/war.png"),
+  warmth: require("../../../assets/words/w/warmth.png"),
   warn: require("../../../assets/words/w/warn.png"),
   waste: require("../../../assets/words/w/waste.png"),
   watch: require("../../../assets/words/w/watch.png"),

@@ -14,6 +14,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   rational: require("../../../assets/words/r/rational.png"),
   reach: require("../../../assets/words/r/reach.png"),
   react: require("../../../assets/words/r/react.png"),
+  realistic: require("../../../assets/words/r/realistic.png"),
   rear: require("../../../assets/words/r/rear.png"),
   reason: require("../../../assets/words/r/reason.png"),
   receive: require("../../../assets/words/r/receive.png"),

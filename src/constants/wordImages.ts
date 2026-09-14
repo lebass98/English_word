@@ -591,6 +591,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   internal: require("../../assets/words/internal.png"),
   international: require("../../assets/words/international.png"),
   intimate: require("../../assets/words/intimate.png"),
+  intuition: require("../../assets/words/intuition.png"),
   introduce: require("../../assets/words/introduce.png"),
   invader: require("../../assets/words/invader.png"),
   invent: require("../../assets/words/invent.png"),

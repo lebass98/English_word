@@ -40,6 +40,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   chain: require("../../../assets/words/c/chain.png"),
   chance: require("../../../assets/words/c/chance.png"),
   change: require("../../../assets/words/c/change.png"),
+  channel: require("../../../assets/words/c/channel.png"),
   charge: require("../../../assets/words/c/charge.png"),
   charming: require("../../../assets/words/c/charming.png"),
   chart: require("../../../assets/words/c/chart.png"),

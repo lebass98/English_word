@@ -3,6 +3,7 @@ import { ImageSourcePropType } from "react-native";
 // "r" 로 시작하는 단어 그림. scripts/sync_word_images.py 가 만든다 (손으로 고치지 않는다)
 export const IMAGES_R: Record<string, ImageSourcePropType> = {
   race: require("../../../assets/words/r/race.png"),
+  racial: require("../../../assets/words/r/racial.png"),
   raise: require("../../../assets/words/r/raise.png"),
   random: require("../../../assets/words/r/random.png"),
   rapid: require("../../../assets/words/r/rapid.png"),

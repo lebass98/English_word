@@ -61,6 +61,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   treasure: require("../../../assets/words/t/treasure.png"),
   treat: require("../../../assets/words/t/treat.png"),
   tremendous: require("../../../assets/words/t/tremendous.png"),
+  trend: require("../../../assets/words/t/trend.png"),
   trial: require("../../../assets/words/t/trial.png"),
   tribe: require("../../../assets/words/t/tribe.png"),
   trick: require("../../../assets/words/t/trick.png"),

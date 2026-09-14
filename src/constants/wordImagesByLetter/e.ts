@@ -7,6 +7,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   earth: require("../../../assets/words/e/earth.png"),
   earthquake: require("../../../assets/words/e/earthquake.png"),
   ease: require("../../../assets/words/e/ease.png"),
+  ecosystem: require("../../../assets/words/e/ecosystem.png"),
   edge: require("../../../assets/words/e/edge.png"),
   edible: require("../../../assets/words/e/edible.png"),
   education: require("../../../assets/words/e/education.png"),

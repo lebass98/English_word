@@ -12,6 +12,7 @@ export const IMAGES_H: Record<string, ImageSourcePropType> = {
   happen: require("../../../assets/words/h/happen.png"),
   harbor: require("../../../assets/words/h/harbor.png"),
   hardly: require("../../../assets/words/h/hardly.png"),
+  harm: require("../../../assets/words/h/harm.png"),
   harmful: require("../../../assets/words/h/harmful.png"),
   harsh: require("../../../assets/words/h/harsh.png"),
   harvest: require("../../../assets/words/h/harvest.png"),

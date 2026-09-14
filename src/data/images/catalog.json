@@ -346,8 +346,8 @@
    ],
    "sense": "남용하다, 오용하다",
    "sense_from": "m1-203",
-   "scene": "office human resources discussion room, small slim white pictogram counselor calmly resolving interpersonal issues with listening ear, office table and floor line",
-   "scene_source": "scripts/generate_m1_missing_and_toefl.py",
+   "scene": "office desk with warning stop sign, conscientious cute slender stickman manager holding hand up firmly gesturing stop to prevent overuse and abuse of company office resources, recycling bins",
+   "scene_source": "scripts/generate_m1_continuous_linear.py",
    "style": "legacy",
    "status": "review"
   },
@@ -3173,8 +3173,8 @@
    "status": "missing"
   },
   "archaeologist": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/archaeologist.png",
+   "blob": "aadf9267d2662734956286c0ed6c860f35fe8fb0",
    "courses": [
     "h2"
    ],
@@ -3182,8 +3182,8 @@
    "sense_from": "h2-53",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "architect": {
    "file": null,
@@ -4689,8 +4689,8 @@
    "status": "missing"
   },
   "awaken": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/awaken.png",
+   "blob": "e39965662aabce69b0de7d68a7902c74432b4e48",
    "courses": [
     "tf"
    ],
@@ -4698,12 +4698,12 @@
    "sense_from": "tf-157",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "award": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/award.png",
+   "blob": "7b4737e793e5639005cb33fa092c63417ef54a2d",
    "courses": [
     "h1",
     "tf"
@@ -4712,8 +4712,8 @@
    "sense_from": "h1-349",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "aware": {
    "file": null,
@@ -4730,8 +4730,8 @@
    "status": "missing"
   },
   "awareness": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/a/awareness.png",
+   "blob": "80405416b71a4058179c483c489c7cd82fe7f8be",
    "courses": [
     "tf"
    ],
@@ -4739,8 +4739,8 @@
    "sense_from": "tf-160",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "awe": {
    "file": null,
@@ -4796,8 +4796,8 @@
    "status": "missing"
   },
   "backbone": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/backbone.png",
+   "blob": "a6e2cca7bae263d76b33be94d5abf3ffe3028253",
    "courses": [
     "tf"
    ],
@@ -4805,8 +4805,8 @@
    "sense_from": "tf-164",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "backfire": {
    "file": null,
@@ -4895,8 +4895,8 @@
    "status": "missing"
   },
   "ban": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/ban.png",
+   "blob": "2b56a68ef138773f36072d574780c9c9ae78f8c1",
    "courses": [
     "h1",
     "h2",
@@ -4906,12 +4906,12 @@
    "sense_from": "h1-1136",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "band": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/band.png",
+   "blob": "3309dd62e9f57249ca43dfca940df4842ef29d7a",
    "courses": [
     "tf"
    ],
@@ -4919,8 +4919,8 @@
    "sense_from": "tf-161",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "bankrupt": {
    "file": null,
@@ -4963,8 +4963,8 @@
    "status": "missing"
   },
   "bare": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/bare.png",
+   "blob": "0e9017f27b580a905308c1692a4a0a31b83852ac",
    "courses": [
     "tf"
    ],
@@ -4972,12 +4972,12 @@
    "sense_from": "tf-162",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "barely": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/barely.png",
+   "blob": "5554717baae52c07a155c632f573c8349d9799d6",
    "courses": [
     "h1",
     "tf"
@@ -4986,8 +4986,8 @@
    "sense_from": "h1-357",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "bargain": {
    "file": null,
@@ -5016,8 +5016,8 @@
    "status": "missing"
   },
   "barren": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/barren.png",
+   "blob": "a10d0f8e7b74f3885b44b82865e635f7e93ac541",
    "courses": [
     "h2",
     "h3",
@@ -5027,12 +5027,12 @@
    "sense_from": "h2-564",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "barrier": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/barrier.png",
+   "blob": "b26c0286e9c0ddd0cf0148d2db5868f7c9da6dd1",
    "courses": [
     "m3",
     "h1",
@@ -5044,12 +5044,12 @@
    "sense_from": "m3-497",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "barter": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/barter.png",
+   "blob": "cb7c5cdfd99f9c8e0823d84e496d6814db5ca856",
    "courses": [
     "h2",
     "tf"
@@ -5058,8 +5058,8 @@
    "sense_from": "h2-654",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "base": {
    "file": "assets/words/b/base.png",
@@ -5163,8 +5163,8 @@
    "status": "missing"
   },
   "be accustomed to": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/be-accustomed-to.png",
+   "blob": "6c3c798467c28f9bf1e85add186f0de07b313886",
    "courses": [
     "tf"
    ],
@@ -5172,8 +5172,8 @@
    "sense_from": "tf-171",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "be afraid of": {
    "file": null,
@@ -5202,8 +5202,8 @@
    "status": "missing"
   },
   "be bound to": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/be-bound-to.png",
+   "blob": "ed4755b6bab084e044765cfab7513594b913bb74",
    "courses": [
     "tf"
    ],
@@ -5211,12 +5211,12 @@
    "sense_from": "tf-172",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "be capable of": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/be-capable-of.png",
+   "blob": "e822904167268c60ed7b87e6f04b521b5071300c",
    "courses": [
     "tf"
    ],
@@ -5224,12 +5224,12 @@
    "sense_from": "tf-173",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "be characterized by": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/be-characterized-by.png",
+   "blob": "1b1e911399865f00604ce601b0acf181a382b987",
    "courses": [
     "tf"
    ],
@@ -5237,12 +5237,12 @@
    "sense_from": "tf-174",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "be considered": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/be-considered.png",
+   "blob": "3fc4781ca200b7f9d01362ab9358b1afd739fa53",
    "courses": [
     "tf"
    ],
@@ -5250,12 +5250,12 @@
    "sense_from": "tf-175",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "be derived from": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/be-derived-from.png",
+   "blob": "c959dafbaceb3750042651b5c9ecc4b68015f1ec",
    "courses": [
     "tf"
    ],
@@ -5263,12 +5263,12 @@
    "sense_from": "tf-176",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "be fond of": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/be-fond-of.png",
+   "blob": "1f3d2ca84c4d552d4c70dac41f85e73bbb915a2e",
    "courses": [
     "tf"
    ],
@@ -5276,8 +5276,8 @@
    "sense_from": "tf-177",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "be known as": {
    "file": null,
@@ -5306,8 +5306,8 @@
    "status": "missing"
   },
   "be marked": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/be-marked.png",
+   "blob": "b843fe2fc1fa02d9aaed0f776e30edeaea96efca",
    "courses": [
     "tf"
    ],
@@ -5315,8 +5315,8 @@
    "sense_from": "tf-178",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "be supposed to": {
    "file": null,
@@ -5372,8 +5372,8 @@
    "status": "ok"
   },
   "beam": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/beam.png",
+   "blob": "33cfb3ec1ef2cd4795ff685a00c82a16da13b989",
    "courses": [
     "tf"
    ],
@@ -5381,8 +5381,8 @@
    "sense_from": "tf-179",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "bean": {
    "file": "assets/words/b/bean.png",
@@ -5415,8 +5415,8 @@
    "status": "review"
   },
   "bear in mind": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/bear-in-mind.png",
+   "blob": "71f4d6e374cfb0b4b66660720bbd8a5451c4cf2b",
    "courses": [
     "tf"
    ],
@@ -5424,8 +5424,8 @@
    "sense_from": "tf-181",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "beard": {
    "file": null,
@@ -5507,8 +5507,8 @@
    ],
    "sense": "침대 곁",
    "sense_from": "m1-874",
-   "scene": "cozy peaceful bedroom corner, caring small slim white pictogram character sitting on bedside wooden chair reading a bedtime book to a resting friend in bed, bedside nightstand table lamp with soft glow and floor line",
-   "scene_source": "scripts/generate_m1_missing_and_toefl.py",
+   "scene": "cozy peaceful bedroom corner, caring cute slender stickman sitting on bedside chair reading bedtime story to resting friend, bedside nightstand table lamp and floor line",
+   "scene_source": "scripts/generate_m1_continuous_linear.py",
    "style": "v3",
    "status": "ok"
   },
@@ -5609,8 +5609,8 @@
    "status": "review"
   },
   "behavior": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/behavior.png",
+   "blob": "03738b3b509c7b5668bdb73a03f6aeb5cc21e47f",
    "courses": [
     "m3",
     "h2",
@@ -5620,8 +5620,8 @@
    "sense_from": "m3-160",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "behind": {
    "file": "assets/words/b/behind.png",
@@ -5638,8 +5638,8 @@
    "status": "review"
   },
   "behold": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/behold.png",
+   "blob": "db11285a50b2f95fe9fd4064e507cb95e32b9150",
    "courses": [
     "h3",
     "tf"
@@ -5648,12 +5648,12 @@
    "sense_from": "h3-462",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "beings": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/beings.png",
+   "blob": "7e36bca2c3c8f9e6846cd81d66996cd7386e3fc0",
    "courses": [
     "tf"
    ],
@@ -5661,8 +5661,8 @@
    "sense_from": "tf-184",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "belief": {
    "file": null,
@@ -5777,8 +5777,8 @@
    "status": "review"
   },
   "beneath": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/beneath.png",
+   "blob": "08c3235a3b17828fabf021a361d8cc6d8581c79f",
    "courses": [
     "tf"
    ],
@@ -5786,12 +5786,12 @@
    "sense_from": "tf-185",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "benediction": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/benediction.png",
+   "blob": "90850cccdbab3f75b74ca6a530c9fe98706214ef",
    "courses": [
     "tf"
    ],
@@ -5799,12 +5799,12 @@
    "sense_from": "tf-186",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "beneficial": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/beneficial.png",
+   "blob": "8026ddc66bc5a9f710dd1c9b48970c5df08869d8",
    "courses": [
     "h2",
     "h3",
@@ -5814,8 +5814,8 @@
    "sense_from": "h2-760",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "benefit": {
    "file": null,
@@ -5864,8 +5864,8 @@
    "status": "review"
   },
   "best fit": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/best-fit.png",
+   "blob": "f645c18bca5ce9e3516da1e8e8be5a4bae72ca65",
    "courses": [
     "tf"
    ],
@@ -5873,8 +5873,8 @@
    "sense_from": "tf-189",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "bet": {
    "file": "assets/words/b/bet.png",
@@ -5891,8 +5891,8 @@
    "status": "review"
   },
   "beverage": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/beverage.png",
+   "blob": "2e843b008216761d39a26cc0758613c40ebfa744",
    "courses": [
     "m3",
     "h1",
@@ -5903,8 +5903,8 @@
    "sense_from": "m3-364",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "bewilder": {
    "file": null,
@@ -6017,8 +6017,8 @@
    "status": "ok"
   },
   "biography": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/biography.png",
+   "blob": "21cbb661cd43bad0e9c64140d3afc09823f7b17b",
    "courses": [
     "m3",
     "tf"
@@ -6027,12 +6027,12 @@
    "sense_from": "m3-917",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "biological": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/biological.png",
+   "blob": "ad79d5d122ea4567cb44afac1ea070c6197090c2",
    "courses": [
     "tf"
    ],
@@ -6040,8 +6040,8 @@
    "sense_from": "tf-192",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "biology": {
    "file": "assets/words/b/biology.png",
@@ -6182,8 +6182,8 @@
    "status": "missing"
   },
   "blend": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/blend.png",
+   "blob": "0f5c0e6cec3a0d8dbc5b83dcaf041e39a4135c3e",
    "courses": [
     "h2",
     "h3",
@@ -6193,8 +6193,8 @@
    "sense_from": "h2-711",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "bless": {
    "file": "assets/words/b/bless.png",
@@ -6239,8 +6239,8 @@
    "status": "missing"
   },
   "block": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/block.png",
+   "blob": "b32902f09d64306b523e2046a5f58693a7055d1e",
    "courses": [
     "h1",
     "tf"
@@ -6249,8 +6249,8 @@
    "sense_from": "h1-712",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "blood": {
    "file": "assets/words/b/blood.png",
@@ -6280,8 +6280,8 @@
    "status": "missing"
   },
   "blossom": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/blossom.png",
+   "blob": "01a3bd2939bf61dbbfd8771dccac232939c09026",
    "courses": [
     "h2",
     "tf"
@@ -6290,8 +6290,8 @@
    "sense_from": "h2-964",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "blow": {
    "file": "assets/words/b/blow.png",
@@ -6351,8 +6351,8 @@
    "status": "review"
   },
   "bold": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/bold.png",
+   "blob": "588028e6ce166bba6a5d85819b303e3c79a92193",
    "courses": [
     "h1",
     "h3",
@@ -6362,8 +6362,8 @@
    "sense_from": "h1-897",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "bomb": {
    "file": null,
@@ -6379,8 +6379,8 @@
    "status": "missing"
   },
   "bond": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/bond.png",
+   "blob": "6a27d676d340ba258dbddfaecc2045c503144808",
    "courses": [
     "h1",
     "h3",
@@ -6390,8 +6390,8 @@
    "sense_from": "h1-592",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "bone": {
    "file": "assets/words/b/bone.png",
@@ -6435,8 +6435,8 @@
    "status": "review"
   },
   "boom": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/boom.png",
+   "blob": "77d745a60ddf6ffa1e974b11fb62438e14d4975a",
    "courses": [
     "tf"
    ],
@@ -6444,8 +6444,8 @@
    "sense_from": "tf-198",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "boost": {
    "file": null,
@@ -6477,7 +6477,7 @@
   },
   "border": {
    "file": "assets/words/b/border.png",
-   "blob": "18bbb6cded850bfd0491fcaff2db072da4136345",
+   "blob": "1045d84b16fd26ef4fb47cd5807ea0eba597725a",
    "courses": [
     "m3",
     "h1",
@@ -6552,8 +6552,8 @@
    "status": "review"
   },
   "bothersome": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/bothersome.png",
+   "blob": "82f01cf20b3c70fe8cfb8c20daf0243838b11373",
    "courses": [
     "tf"
    ],
@@ -6561,8 +6561,8 @@
    "sense_from": "tf-200",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "bottle": {
    "file": "assets/words/b/bottle.png",
@@ -6622,8 +6622,8 @@
    "status": "review"
   },
   "boundary": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/boundary.png",
+   "blob": "7724a7ec244c51302ccf4d276a443ea49cc073bd",
    "courses": [
     "h1",
     "h2",
@@ -6633,8 +6633,8 @@
    "sense_from": "h1-723",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "bow": {
    "file": "assets/words/b/bow.png",
@@ -6750,8 +6750,8 @@
    "status": "missing"
   },
   "break with": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/break-with.png",
+   "blob": "4831a3064dc71d117eae6d635b5f997427eeeb99",
    "courses": [
     "tf"
    ],
@@ -6759,12 +6759,12 @@
    "sense_from": "tf-205",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "breakdown": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/breakdown.png",
+   "blob": "b39daadf560d7aa441d9317cba8111c2374fb47a",
    "courses": [
     "tf"
    ],
@@ -6772,12 +6772,12 @@
    "sense_from": "tf-206",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "breakthrough": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/breakthrough.png",
+   "blob": "379b5b43a55cc195d374cddc1394f155b81490b5",
    "courses": [
     "h3",
     "tf"
@@ -6786,8 +6786,8 @@
    "sense_from": "h3-975",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "breathe": {
    "file": "assets/words/b/breathe.png",
@@ -6805,8 +6805,8 @@
    "status": "review"
   },
   "breathing": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/breathing.png",
+   "blob": "072c3d6e9da62d1a8a4cce9eb9c3d04dc5bf3a22",
    "courses": [
     "tf"
    ],
@@ -6814,8 +6814,8 @@
    "sense_from": "tf-208",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "breathtaking": {
    "file": null,
@@ -6917,8 +6917,8 @@
    "status": "review"
   },
   "brightness": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/brightness.png",
+   "blob": "9a4f13b45582ca8c9d62d10706faad5e16c12db6",
    "courses": [
     "tf"
    ],
@@ -6926,12 +6926,12 @@
    "sense_from": "tf-209",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "brilliance": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/brilliance.png",
+   "blob": "3fc1d89a8c2aaa5185ab33ba585ba6426afedd24",
    "courses": [
     "tf"
    ],
@@ -6939,8 +6939,8 @@
    "sense_from": "tf-210",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "brilliant": {
    "file": null,
@@ -6957,8 +6957,8 @@
    "status": "missing"
   },
   "brilliantly": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/brilliantly.png",
+   "blob": "4d69c10afec53770d14b7568fc38e5a5ba69ce25",
    "courses": [
     "tf"
    ],
@@ -6966,8 +6966,8 @@
    "sense_from": "tf-211",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "bring": {
    "file": "assets/words/b/bring.png",
@@ -7011,8 +7011,8 @@
    "status": "missing"
   },
   "British": {
-   "file": "assets/words/b/British.png",
-   "blob": "3b386744295298d210b26ebbc8504a517a7da523",
+   "file": null,
+   "blob": null,
    "courses": [
     "m1"
    ],
@@ -7020,12 +7020,12 @@
    "sense_from": "m1-642",
    "scene": "bright friendly school classroom, new British cute slender stickman student standing by teacher podium waving cheerful greeting to classmates, neat school uniform and chalkboard line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": "legacy",
-   "status": "review"
+   "style": null,
+   "status": "missing"
   },
   "british": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/british.png",
+   "blob": "ac8c8b865caff71e6786d14d4ebd4c1f5b9b86a0",
    "courses": [
     "m2"
    ],
@@ -7033,8 +7033,8 @@
    "sense_from": "m2-706",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "broad": {
    "file": null,
@@ -7772,8 +7772,8 @@
    ],
    "sense": "~에 마음을 쓰다, 관심을 가지다",
    "sense_from": "m3-29",
-   "scene": null,
-   "scene_source": null,
+   "scene": "family kitchen, parent pictogram character placing a plate of vegetables and fruit in front of a seated small slim white pictogram character child, a heart shaped note on the refrigerator, table and floor line",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -9766,8 +9766,8 @@
    ],
    "sense": "생각이 나다, 떠오르다",
    "sense_from": "m3-33",
-   "scene": null,
-   "scene_source": null,
+   "scene": "summer bedroom desk, small slim white pictogram character sitting with chin on hand, a thought bubble above showing a slice of watermelon, a beach umbrella and ocean waves, open notebook and floor line",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -10664,8 +10664,8 @@
    ],
    "sense": "우려, 걱정, 관심사",
    "sense_from": "m3-31",
-   "scene": null,
-   "scene_source": null,
+   "scene": "city apartment balcony, small slim white pictogram character looking worried at a skyline of factory chimneys and haze, a face mask on the railing, a newspaper with an air quality chart, floor line",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -13716,8 +13716,8 @@
    "status": "missing"
   },
   "decide": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/d/decide.png",
+   "blob": "985f7203ff5aedf724a6c6b72db540d68f5af7e7",
    "courses": [
     "m2"
    ],
@@ -13725,8 +13725,8 @@
    "sense_from": "m2-762",
    "scene": "city street, a small slim white pictogram person standing at a fork with two signposts thinking with a question mark and a light bulb, movie theater building ahead",
    "scene_source": "scripts/m2_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "decision": {
    "file": null,
@@ -14031,8 +14031,8 @@
    "status": "missing"
   },
   "definitely": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/d/definitely.png",
+   "blob": "d7dca761b00e52bee68a8eb22abc8c99f48df80c",
    "courses": [
     "h2",
     "tf"
@@ -14041,8 +14041,8 @@
    "sense_from": "h2-52",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "deflate": {
    "file": null,
@@ -15644,8 +15644,8 @@
    ],
    "sense": "사라지다, 소멸하다",
    "sense_from": "m3-10",
-   "scene": null,
-   "scene_source": null,
+   "scene": "night meadow under a cloudy sky, small slim white pictogram character looking up as the moon slips behind thick clouds with only a thin edge still showing, fence posts and tall grass on the ground line",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -16084,8 +16084,8 @@
    ],
    "sense": "처리하다, 폐기하다",
    "sense_from": "m3-25",
-   "scene": null,
-   "scene_source": null,
+   "scene": "recycling station with three labeled bins reading PLASTIC PAPER GLASS, small slim white pictogram character dropping an empty plastic bottle into the plastic bin, a broom leaning on the wall, floor line",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -19436,8 +19436,8 @@
    ],
    "sense": "정확한, 정밀한, 꼼꼼한",
    "sense_from": "m3-7",
-   "scene": null,
-   "scene_source": null,
+   "scene": "watch repair workshop, small slim white pictogram character looking closely through a magnifying lens at a large wall clock showing exactly twelve o clock, a ruler and tiny tools on the workbench, floor line",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -22285,8 +22285,8 @@
    ],
    "sense": "외국인",
    "sense_from": "m3-24",
-   "scene": null,
-   "scene_source": null,
+   "scene": "city sidewalk near a subway entrance, small slim white pictogram character holding a suitcase and an open map asking directions from a local pictogram character who points toward the station sign, street lamp and ground line",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -22702,8 +22702,8 @@
    "status": "missing"
   },
   "French": {
-   "file": "assets/words/f/French.png",
-   "blob": "1bf7fc31fae65be9155671af0b2def72935fe80e",
+   "file": null,
+   "blob": null,
    "courses": [
     "m1"
    ],
@@ -22711,13 +22711,12 @@
    "sense_from": "m1-918",
    "scene": "charming Parisian style bakery cafe, smiling cute slender stickman holding a fresh crispy French baguette loaf standing beside chalkboard menu, cafe table and floor line",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": "v3",
-   "status": "review",
-   "note": "바게트에 주황·갈색, 칠판이 검게 채워짐"
+   "style": null,
+   "status": "missing"
   },
   "french": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/f/french.png",
+   "blob": "1bf7fc31fae65be9155671af0b2def72935fe80e",
    "courses": [
     "m2"
    ],
@@ -22725,8 +22724,8 @@
    "sense_from": "m2-707",
    "scene": "Paris street with the Eiffel Tower in the background, a small slim white pictogram French visitor wearing a beret asking another person for directions with a map, cafe tables",
    "scene_source": "scripts/m2_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "frequent": {
    "file": null,
@@ -23555,8 +23554,8 @@
    "status": "missing"
   },
   "German": {
-   "file": "assets/words/g/German.png",
-   "blob": "9facc642897acada8cc85b6b88b0c207bc76c591",
+   "file": null,
+   "blob": null,
    "courses": [
     "m1"
    ],
@@ -23564,12 +23563,12 @@
    "sense_from": "m1-267",
    "scene": "traditional European cobblestone town square, cheerful cute slender stickman wearing Alpine Bavarian hat waving warmly holding a pretzel before historic timbered German style house",
    "scene_source": "scripts/generate_m1_continuous_linear.py",
-   "style": "legacy",
-   "status": "review"
+   "style": null,
+   "status": "missing"
   },
   "german": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/g/german.png",
+   "blob": "9facc642897acada8cc85b6b88b0c207bc76c591",
    "courses": [
     "m2"
    ],
@@ -23577,8 +23576,8 @@
    "sense_from": "m2-708",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "germinate": {
    "file": null,
@@ -28779,8 +28778,8 @@
    ],
    "sense": "통찰력, 식견",
    "sense_from": "m3-34",
-   "scene": null,
-   "scene_source": null,
+   "scene": "quiet library reading nook, small slim white pictogram character holding an open book with a lightbulb glowing above the head, tall bookshelves and a reading lamp, floor line",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -29968,8 +29967,8 @@
    ],
    "sense": "철, 쇠, 다리미, 다림질하다",
    "sense_from": "m3-32",
-   "scene": null,
-   "scene_source": null,
+   "scene": "old iron bridge over a river, small slim white pictogram character standing on the bridge deck touching a thick riveted iron beam, crossed steel girders above, riverbank line below",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -30656,8 +30655,8 @@
    ],
    "sense": "실험실, 연구실, 실험용의",
    "sense_from": "m3-11",
-   "scene": null,
-   "scene_source": null,
+   "scene": "science laboratory, small slim white pictogram character wearing safety goggles holding a test tube, lab bench with beakers, flasks, a microscope and shelves of bottles, floor line",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -30964,8 +30963,8 @@
    ],
    "sense": "층, 막",
    "sense_from": "m3-40",
-   "scene": null,
-   "scene_source": null,
+   "scene": "attic bookshelf, small slim white pictogram character wiping a thick fuzzy layer of dust off a stack of old books with a cloth, dust puff in the air, shelves and floor line",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -31020,8 +31019,8 @@
    ],
    "sense": "(스포츠 경기의) 리그, 연맹",
    "sense_from": "m3-12",
-   "scene": null,
-   "scene_source": null,
+   "scene": "school gym trophy corner, small slim white pictogram character in a soccer jersey holding a runner up medal in front of a league standings board listing team names and points, a soccer ball on the floor line",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -35032,14 +35031,14 @@
    ],
    "sense": "(폭이) 좁은, 제한된, 한정된",
    "sense_from": "m3-20",
-   "scene": null,
-   "scene_source": null,
+   "scene": "narrow old village street between two tall stone houses, small slim white pictogram character walking sideways through the tight gap, a car stopped at the entrance unable to fit, cobblestone ground line",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
   "nasty": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/n/nasty.png",
+   "blob": "4609e7f6626ce8c55714fb69c94e90ae87991422",
    "courses": [
     "h2"
    ],
@@ -35047,8 +35046,8 @@
    "sense_from": "h2-54",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "natal": {
    "file": null,
@@ -35518,8 +35517,8 @@
    ],
    "sense": "더 이상 ~ 아닌",
    "sense_from": "m3-19",
-   "scene": null,
-   "scene_source": null,
+   "scene": "garage corner, small slim white pictogram character standing beside an old broken bicycle with a flat tire and a rusty chain, a crossed out sign, a pair of walking shoes placed at the door, floor line",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -38468,8 +38467,8 @@
    ],
    "sense": "후추",
    "sense_from": "m1-986",
-   "scene": "warm dining restaurant table, cheerful small slim white pictogram character chef using a classic wooden pepper mill to grind fresh aromatic black pepper onto a hot bowl of soup, dining table and floor line",
-   "scene_source": "scripts/generate_m1_missing_and_toefl.py",
+   "scene": "warm dining restaurant table, cheerful cute slender chef stickman using a classic wooden pepper mill to grind fresh aromatic black pepper onto hot soup, dining table and floor line",
+   "scene_source": "scripts/generate_m1_continuous_linear.py",
    "style": "v3",
    "status": "ok"
   },
@@ -42148,8 +42147,8 @@
    ],
    "sense": "구매, 구매하다",
    "sense_from": "m3-39",
-   "scene": null,
-   "scene_source": null,
+   "scene": "electronics store checkout counter, small slim white pictogram character receiving a boxed laptop and a long receipt from a cashier pictogram character, shelves of gadgets behind, floor line",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -43534,8 +43533,8 @@
    ],
    "sense": "심판, 심판하다",
    "sense_from": "m3-28",
-   "scene": null,
-   "scene_source": null,
+   "scene": "soccer field, referee pictogram character in a striped shirt blowing a whistle and raising one hand with a card, two player pictogram characters stopped nearby, goal net and field line",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -44509,8 +44508,8 @@
    ],
    "sense": "집세, 방세, 빌리다, 빌려주다",
    "sense_from": "m3-3",
-   "scene": null,
-   "scene_source": null,
+   "scene": "apartment building entrance hall, small slim white pictogram character tenant handing an envelope of money to a landlord pictogram character who holds a key, a signed rental contract on a small table, doorway and floor line",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -44940,8 +44939,8 @@
    ],
    "sense": "저항하다, 견디다",
    "sense_from": "m3-35",
-   "scene": null,
-   "scene_source": null,
+   "scene": "village edge, a group of small slim white pictogram characters standing in a line with linked arms holding a sign reading NO FACTORY in front of a bulldozer and a factory blueprint, dirt ground line",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -51721,8 +51720,8 @@
    ],
    "sense": "성공하다, 잘 되다, 뒤를 잇다, 계승하다",
    "sense_from": "m3-13",
-   "scene": null,
-   "scene_source": null,
+   "scene": "small music room, small slim white pictogram character standing on a low stage playing a guitar with a big smile, a calendar full of check marks on the wall, a music stand and floor line",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -53413,8 +53412,8 @@
    ],
    "sense": "긴장, 불안",
    "sense_from": "m3-38",
-   "scene": null,
-   "scene_source": null,
+   "scene": "classroom before results, rows of small slim white pictogram characters sitting stiffly at desks biting nails, a teacher pictogram character holding a sealed envelope at the front, a ticking wall clock, floor line",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -54972,8 +54971,8 @@
    ],
    "sense": "재판, 시도, 시험",
    "sense_from": "m3-22",
-   "scene": null,
-   "scene_source": null,
+   "scene": "courtroom interior, judge pictogram character seated high behind the bench holding a gavel, small slim white pictogram character standing at the witness stand, jury box and tall wooden panels, floor line",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -55662,8 +55661,8 @@
    ],
    "sense": "지하의, 지하에, 지하로, 지하철",
    "sense_from": "m3-2",
-   "scene": null,
-   "scene_source": null,
+   "scene": "subway station platform below street level, small slim white pictogram character standing on the platform beside a stairway going up to the street, a subway train arriving with headlights, tiled wall with a station sign reading UNDERGROUND, platform floor line",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -56064,8 +56063,8 @@
    ],
    "sense": "연합, 연방, 조합, 협회",
    "sense_from": "m3-5",
-   "scene": null,
-   "scene_source": null,
+   "scene": "town hall meeting room, three small slim white pictogram characters standing together holding hands in a line under a banner reading UNION, chairs in rows and flags on the wall, floor line",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -57142,8 +57141,8 @@
    "status": "missing"
   },
   "via": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/v/via.png",
+   "blob": "221f64d95a1ee3b7a470bfd6396d544cebde2eaf",
    "courses": [
     "h2"
    ],
@@ -57151,8 +57150,8 @@
    "sense_from": "h2-51",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "vibrate": {
    "file": null,

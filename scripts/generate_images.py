@@ -7,6 +7,7 @@
     python3 scripts/generate_images.py --letters a-h                  # 그림 없는 단어만
     python3 scripts/generate_images.py --letters i-p --include-review  # 개정 전 그림(review)도 다시
     python3 scripts/generate_images.py --letters q-z,_ --limit 5 --dry-run
+    python3 scripts/generate_images.py --course middle-3               # 한 과정을 단어 순서대로
 
 - 대상: 카탈로그에서 어느 과정이든 쓰는 철자 중 첫 글자가 범위 안이고 그림이 없는 것
   (--include-review 면 status 가 review 인 것도). 장면 묘사가 없는 단어는 건너뛰고 끝에 알려 준다
@@ -146,11 +147,18 @@ def save(state):
 # ── 본체 ───────────────────────────────────────────────────────────
 
 
-def build_queue(letters, include_review):
+def build_queue(letters, include_review, course=None):
     images = json.load(open(CATALOG))["images"]
+    order = None
+    if course:
+        # 과정을 지정하면 그 과정의 단어를 단어 번호 순서대로 그린다
+        level = json.load(open(os.path.join(ROOT, f"src/data/en/levels/{course}.json")))
+        order = {w: i for i, w in enumerate(level)}
     queue = []
     for word, e in images.items():
-        if not e.get("courses") or letter_of(word) not in letters:
+        if not e.get("courses") or (letters and letter_of(word) not in letters):
+            continue
+        if order is not None and word not in order:
             continue
         wanted = e["status"] == "missing" or (include_review and e["status"] == "review")
         if not wanted:
@@ -160,7 +168,7 @@ def build_queue(letters, include_review):
             "redo": e["status"] == "review",
             "status": "waiting" if e.get("scene") else "no-scene", "sec": None,
         })
-    queue.sort(key=lambda it: it["word"].lower())
+    queue.sort(key=(lambda it: order[it["word"]]) if order is not None else (lambda it: it["word"].lower()))
     return queue
 
 
@@ -187,12 +195,16 @@ def publish(word, state):
 
 def main():
     parser = argparse.ArgumentParser(description="카탈로그 기준 단어 그림 생성 (알파벳 범위 분담)")
-    parser.add_argument("--letters", required=True, help="맡을 첫 글자 범위. 예: a-h / i-p / q-z,_")
+    parser.add_argument("--letters", default="", help="맡을 첫 글자 범위. 예: a-h / i-p / q-z,_ (--course 와 함께 쓰면 그 안에서만)")
+    parser.add_argument("--course", default="", help="한 과정을 단어 순서대로. 예: middle-3 / toefl")
     parser.add_argument("--include-review", action="store_true", help="개정 전 그림(review)도 다시 그린다")
     parser.add_argument("--limit", type=int, default=0, help="이번에 그릴 최대 장 수 (0 = 끝까지)")
     parser.add_argument("--dry-run", action="store_true", help="대상만 출력하고 끝낸다")
     args = parser.parse_args()
-    letters = parse_letters(args.letters)
+    if not args.letters and not args.course:
+        parser.error("--letters 나 --course 중 하나는 있어야 합니다")
+    letters = parse_letters(args.letters) if args.letters else None
+    scope = " ".join(x for x in (args.course, args.letters) if x)
 
     flat = [n for n in os.listdir(os.path.join(ROOT, "assets/words"))
             if n.endswith(".png") and not n.startswith("._")]
@@ -200,10 +212,10 @@ def main():
         raise SystemExit(f"assets/words 바로 아래에 옮기지 않은 그림 {len(flat)}장이 있습니다. "
                          "scripts/migrate_images_by_letter.py 를 먼저 돌리세요")
 
-    queue = build_queue(letters, args.include_review)
+    queue = build_queue(letters, args.include_review, args.course or None)
     todo = [it for it in queue if it["status"] == "waiting"]
     no_scene = [it["word"] for it in queue if it["status"] == "no-scene"]
-    print(f"범위 {args.letters}: 그릴 단어 {len(todo)}개 (다시 그리기 {sum(it['redo'] for it in todo)}), 장면 묘사 없음 {len(no_scene)}개")
+    print(f"범위 {scope}: 그릴 단어 {len(todo)}개 (다시 그리기 {sum(it['redo'] for it in todo)}), 장면 묘사 없음 {len(no_scene)}개")
     print("앞 20개:", [it["word"] for it in todo[:20]])
     if args.dry_run:
         if no_scene:
@@ -218,7 +230,7 @@ def main():
 
     from generate_linear_graphic import generate_linear_image
 
-    state = {"letters": args.letters, "phase": "시작", "items": queue,
+    state = {"letters": scope, "phase": "시작", "items": queue,
              "sense_of": {it["word"]: it["sense"] for it in queue}}
     save(state)
     drawn = 0

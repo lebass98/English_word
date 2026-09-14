@@ -26,6 +26,7 @@ export const IMAGES_L: Record<string, ImageSourcePropType> = {
   license: require("../../../assets/words/l/license.png"),
   life: require("../../../assets/words/l/life.png"),
   lift: require("../../../assets/words/l/lift.png"),
+  likely: require("../../../assets/words/l/likely.png"),
   limit: require("../../../assets/words/l/limit.png"),
   list: require("../../../assets/words/l/list.png"),
   "living room": require("../../../assets/words/l/living-room.png"),

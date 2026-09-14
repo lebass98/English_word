@@ -117,6 +117,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   brown: require("../../../assets/words/b/brown.png"),
   bubble: require("../../../assets/words/b/bubble.png"),
   build: require("../../../assets/words/b/build.png"),
+  bump: require("../../../assets/words/b/bump.png"),
   burden: require("../../../assets/words/b/burden.png"),
   burn: require("../../../assets/words/b/burn.png"),
   bury: require("../../../assets/words/b/bury.png"),

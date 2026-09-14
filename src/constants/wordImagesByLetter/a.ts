@@ -142,6 +142,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   approximately: require("../../../assets/words/a/approximately.png"),
   apt: require("../../../assets/words/a/apt.png"),
   aptly: require("../../../assets/words/a/aptly.png"),
+  archaeologist: require("../../../assets/words/a/archaeologist.png"),
   area: require("../../../assets/words/a/area.png"),
   argue: require("../../../assets/words/a/argue.png"),
   arise: require("../../../assets/words/a/arise.png"),

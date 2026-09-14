@@ -23,6 +23,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   cash: require("../../../assets/words/c/cash.png"),
   castle: require("../../../assets/words/c/castle.png"),
   casual: require("../../../assets/words/c/casual.png"),
+  "catch up": require("../../../assets/words/c/catch-up.png"),
   cause: require("../../../assets/words/c/cause.png"),
   caution: require("../../../assets/words/c/caution.png"),
   cautious: require("../../../assets/words/c/cautious.png"),

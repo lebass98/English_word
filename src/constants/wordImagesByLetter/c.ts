@@ -128,6 +128,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   completely: require("../../../assets/words/c/completely.png"),
   complex: require("../../../assets/words/c/complex.png"),
   complicated: require("../../../assets/words/c/complicated.png"),
+  compliment: require("../../../assets/words/c/compliment.png"),
   composer: require("../../../assets/words/c/composer.png"),
   compulsory: require("../../../assets/words/c/compulsory.png"),
   concern: require("../../../assets/words/c/concern.png"),

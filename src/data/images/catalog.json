@@ -7621,8 +7621,8 @@
    "status": "missing"
   },
   "candidate": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/candidate.png",
+   "blob": "921726bae8fa8ef455576bc03e58a853372a0f2c",
    "courses": [
     "m3",
     "h1",
@@ -7634,8 +7634,8 @@
    "scene": "civic community election hall, confident cute chibi mannequin candidate delivering an encouraging campaign speech from a wooden podium with microphone, campaign poster on wall",
    "scene_source": "scripts/generate_h1_unit8.py",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "candle": {
    "file": "assets/words/c/candle.png",
@@ -10797,8 +10797,8 @@
    "status": "review"
   },
   "conference": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/conference.png",
+   "blob": "1073da2413303868519ab74bb70d5725f36ec577",
    "courses": [
     "h1",
     "h2",
@@ -10808,8 +10808,8 @@
    "sense_from": "h1-156",
    "scene": "corporate boardroom meeting room, cute chibi mannequin presenting slideshow charts on a large screen at an annual professional conference table surrounded by seated colleagues",
    "scene_source": "scripts/generate_h1_unit8.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "confess": {
    "file": null,
@@ -18200,8 +18200,8 @@
    "status": "missing"
   },
   "encounter": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/e/encounter.png",
+   "blob": "475326a97aa84e67ffb9f3ad35ea2c3ec69dea28",
    "courses": [
     "h1"
    ],
@@ -18209,8 +18209,8 @@
    "sense_from": "h1-154",
    "scene": "enchanted forest nature trail, surprised cute chibi mannequin explorer having a sudden friendly encounter with a gentle wild deer among tall trees and wildflowers",
    "scene_source": "scripts/generate_h1_unit8.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "encourage": {
    "file": null,
@@ -19825,8 +19825,8 @@
    "status": "review"
   },
   "exhausted": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/e/exhausted.png",
+   "blob": "6660b3a6c3cc69d0d166749c35cce8444e85ce49",
    "courses": [
     "h2",
     "tf"
@@ -19835,8 +19835,8 @@
    "sense_from": "h2-49",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "exhaustively": {
    "file": null,
@@ -39602,8 +39602,8 @@
    "status": "missing"
   },
   "policy": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/p/policy.png",
+   "blob": "9318abfc4510e2bb917940ba135b1160100ccc21",
    "courses": [
     "m3",
     "h1",
@@ -39614,8 +39614,8 @@
    "scene": "formal executive office room, cute chibi mannequin director reviewing and stamping an official institutional policy document paper binder, neatly organized archive shelf",
    "scene_source": "scripts/generate_h1_unit8.py",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "polish": {
    "file": null,
@@ -49879,8 +49879,8 @@
    "status": "missing"
   },
   "spin": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/s/spin.png",
+   "blob": "61d3659ab63950ee62837ee57ba38aa01b2ae40e",
    "courses": [
     "h1"
    ],
@@ -49888,8 +49888,8 @@
    "sense_from": "h1-158",
    "scene": "playful science playground, cute chibi mannequin joyfully spinning a colorful whirligig pinwheel toy with swirling motion wind lines, park bench and trees",
    "scene_source": "scripts/generate_h1_unit8.py",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "spine": {
    "file": null,
@@ -51378,8 +51378,8 @@
    "status": "review"
   },
   "sturdy": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/s/sturdy.png",
+   "blob": "3ce89aab0e22fa554baa256c5e0a93a4d1730919",
    "courses": [
     "h2"
    ],
@@ -51387,8 +51387,8 @@
    "sense_from": "h2-48",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "style": {
    "file": null,
@@ -56003,8 +56003,8 @@
    "status": "missing"
   },
   "unify": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/u/unify.png",
+   "blob": "6a30af80e54260db52756c7d61d5e3ae307cb6c6",
    "courses": [
     "m3",
     "h2"
@@ -56013,8 +56013,8 @@
    "sense_from": "m3-717",
    "scene": null,
    "scene_source": null,
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "unintentional": {
    "file": null,

@@ -103,6 +103,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   specific: require("../../../assets/words/s/specific.png"),
   speech: require("../../../assets/words/s/speech.png"),
   spend: require("../../../assets/words/s/spend.png"),
+  spin: require("../../../assets/words/s/spin.png"),
   spirit: require("../../../assets/words/s/spirit.png"),
   spot: require("../../../assets/words/s/spot.png"),
   spread: require("../../../assets/words/s/spread.png"),

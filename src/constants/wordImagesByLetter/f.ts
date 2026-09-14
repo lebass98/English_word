@@ -40,6 +40,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   flame: require("../../../assets/words/f/flame.png"),
   flashlight: require("../../../assets/words/f/flashlight.png"),
   flat: require("../../../assets/words/f/flat.png"),
+  flexible: require("../../../assets/words/f/flexible.png"),
   flight: require("../../../assets/words/f/flight.png"),
   float: require("../../../assets/words/f/float.png"),
   flood: require("../../../assets/words/f/flood.png"),

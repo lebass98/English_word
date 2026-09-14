@@ -50,6 +50,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   request: require("../../../assets/words/r/request.png"),
   rescue: require("../../../assets/words/r/rescue.png"),
   resemble: require("../../../assets/words/r/resemble.png"),
+  resident: require("../../../assets/words/r/resident.png"),
   resist: require("../../../assets/words/r/resist.png"),
   resource: require("../../../assets/words/r/resource.png"),
   resources: require("../../../assets/words/r/resources.png"),

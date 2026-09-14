@@ -70,6 +70,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   sigh: require("../../../assets/words/s/sigh.png"),
   sight: require("../../../assets/words/s/sight.png"),
   sign: require("../../../assets/words/s/sign.png"),
+  "sign up (for)": require("../../../assets/words/s/sign-up-(for).png"),
   significant: require("../../../assets/words/s/significant.png"),
   silent: require("../../../assets/words/s/silent.png"),
   silk: require("../../../assets/words/s/silk.png"),

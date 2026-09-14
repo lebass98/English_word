@@ -190,6 +190,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   crash: require("../../../assets/words/c/crash.png"),
   crazy: require("../../../assets/words/c/crazy.png"),
   create: require("../../../assets/words/c/create.png"),
+  creative: require("../../../assets/words/c/creative.png"),
   creature: require("../../../assets/words/c/creature.png"),
   creek: require("../../../assets/words/c/creek.png"),
   crew: require("../../../assets/words/c/crew.png"),

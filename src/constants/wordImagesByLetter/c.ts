@@ -113,6 +113,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   compact: require("../../../assets/words/c/compact.png"),
   company: require("../../../assets/words/c/company.png"),
   comparable: require("../../../assets/words/c/comparable.png"),
+  comparatively: require("../../../assets/words/c/comparatively.png"),
   compare: require("../../../assets/words/c/compare.png"),
   comparison: require("../../../assets/words/c/comparison.png"),
   compel: require("../../../assets/words/c/compel.png"),

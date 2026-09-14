@@ -181,6 +181,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   suffer: require("../../../assets/words/s/suffer.png"),
   sugar: require("../../../assets/words/s/sugar.png"),
   suitcase: require("../../../assets/words/s/suitcase.png"),
+  sum: require("../../../assets/words/s/sum.png"),
   sunrise: require("../../../assets/words/s/sunrise.png"),
   sunshine: require("../../../assets/words/s/sunshine.png"),
   superstition: require("../../../assets/words/s/superstition.png"),

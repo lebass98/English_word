@@ -14,6 +14,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   independent: require("../../../assets/words/i/independent.png"),
   industrial: require("../../../assets/words/i/industrial.png"),
   information: require("../../../assets/words/i/information.png"),
+  infrastructure: require("../../../assets/words/i/infrastructure.png"),
   inner: require("../../../assets/words/i/inner.png"),
   inning: require("../../../assets/words/i/inning.png"),
   innocent: require("../../../assets/words/i/innocent.png"),

@@ -9,6 +9,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   band: require("../../../assets/words/b/band.png"),
   bar: require("../../../assets/words/b/bar.png"),
   bare: require("../../../assets/words/b/bare.png"),
+  barely: require("../../../assets/words/b/barely.png"),
   base: require("../../../assets/words/b/base.png"),
   basement: require("../../../assets/words/b/basement.png"),
   bathroom: require("../../../assets/words/b/bathroom.png"),

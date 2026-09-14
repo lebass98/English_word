@@ -270,6 +270,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   cotton: require("../../assets/words/cotton.png"),
   cough: require("../../assets/words/cough.png"),
   count: require("../../assets/words/count.png"),
+  counterpart: require("../../assets/words/counterpart.png"),
   couple: require("../../assets/words/couple.png"),
   course: require("../../assets/words/course.png"),
   cousin: require("../../assets/words/cousin.png"),

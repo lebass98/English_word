@@ -62,6 +62,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   moment: require("../../../assets/words/m/moment.png"),
   monk: require("../../../assets/words/m/monk.png"),
   monument: require("../../../assets/words/m/monument.png"),
+  moral: require("../../../assets/words/m/moral.png"),
   moreover: require("../../../assets/words/m/moreover.png"),
   "most of all": require("../../../assets/words/m/most-of-all.png"),
   mostly: require("../../../assets/words/m/mostly.png"),

@@ -52,6 +52,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   interact: require("../../../assets/words/i/interact.png"),
   interest: require("../../../assets/words/i/interest.png"),
   interesting: require("../../../assets/words/i/interesting.png"),
+  interior: require("../../../assets/words/i/interior.png"),
   internal: require("../../../assets/words/i/internal.png"),
   international: require("../../../assets/words/i/international.png"),
   interrupt: require("../../../assets/words/i/interrupt.png"),

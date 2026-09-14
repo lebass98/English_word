@@ -2,6 +2,7 @@ import { ImageSourcePropType } from "react-native";
 
 // "b" 로 시작하는 단어 그림. scripts/sync_word_images.py 가 만든다 (손으로 고치지 않는다)
 export const IMAGES_B: Record<string, ImageSourcePropType> = {
+  backbone: require("../../../assets/words/b/backbone.png"),
   background: require("../../../assets/words/b/background.png"),
   badly: require("../../../assets/words/b/badly.png"),
   balance: require("../../../assets/words/b/balance.png"),

@@ -151,6 +151,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   conditional: require("../../../assets/words/c/conditional.png"),
   conduct: require("../../../assets/words/c/conduct.png"),
   conference: require("../../../assets/words/c/conference.png"),
+  confidence: require("../../../assets/words/c/confidence.png"),
   confine: require("../../../assets/words/c/confine.png"),
   confirm: require("../../../assets/words/c/confirm.png"),
   connect: require("../../../assets/words/c/connect.png"),

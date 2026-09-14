@@ -1047,6 +1047,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   temple: require("../../assets/words/temple.png"),
   terrible: require("../../assets/words/terrible.png"),
   theater: require("../../assets/words/theater.png"),
+  therapy: require("../../assets/words/therapy.png"),
   thermometer: require("../../assets/words/thermometer.png"),
   thief: require("../../assets/words/thief.png"),
   thin: require("../../assets/words/thin.png"),

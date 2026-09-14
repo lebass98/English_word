@@ -386,6 +386,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   event: require("../../assets/words/event.png"),
   evil: require("../../assets/words/evil.png"),
   exactly: require("../../assets/words/exactly.png"),
+  exaggerate: require("../../assets/words/exaggerate.png"),
   examination: require("../../assets/words/examination.png"),
   example: require("../../assets/words/example.png"),
   excellent: require("../../assets/words/excellent.png"),

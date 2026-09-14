@@ -732,6 +732,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   ostrich: require("../../assets/words/ostrich.png"),
   otherwise: require("../../assets/words/otherwise.png"),
   overcome: require("../../assets/words/overcome.png"),
+  overestimate: require("../../assets/words/overestimate.png"),
   overhear: require("../../assets/words/overhear.png"),
   overlook: require("../../assets/words/overlook.png"),
   owe: require("../../assets/words/owe.png"),

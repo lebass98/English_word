@@ -145,8 +145,8 @@
    ],
    "sense": "~을 타고, 탑승하여",
    "sense_from": "m3-152",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright gangway, a small slim white pictogram traveler stepping up onto a ship deck with a ticket while luggage is carried on, railing, funnel, boarding arrow, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -1263,8 +1263,8 @@
    ],
    "sense": "장점, 이점",
    "sense_from": "m3-89",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright race start, a small slim white pictogram runner beginning several steps ahead of the line while others start behind, head start arrow, plus mark, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -1601,8 +1601,8 @@
    ],
    "sense": "되풀이해서, 몇 번이고",
    "sense_from": "m3-243",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright practice room, a small slim white pictogram student repeating the same drill while tally marks pile up on a board and a loop arrow circles, worn mat, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -1911,8 +1911,8 @@
    ],
    "sense": "(아주) 비슷한, 같은, 같게, 마찬가지로",
    "sense_from": "m3-100",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright bench, two small slim white pictogram twins sitting in the same pose wearing the same smock while an equal sign floats between them, mirrored lines, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -2065,8 +2065,8 @@
    ],
    "sense": "~과 함께, ~에 덧붙여",
    "sense_from": "m3-244",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright path, a small slim white pictogram walker carrying a bag together with a friend who carries another while a plus sign joins them, shared handle, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -4799,8 +4799,8 @@
    ],
    "sense": "A 뿐만 아니라 B도",
    "sense_from": "m3-302",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright counter, a small slim white pictogram shopper placing a second item beside the first and holding up two fingers to take both, plus sign, bag, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -5322,8 +5322,8 @@
    ],
    "sense": "~할 가능성이 크다, ~할 것 같다",
    "sense_from": "m3-70",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright weather station, a small slim white pictogram forecaster moving a pointer far toward a rain symbol on a probability dial while already opening an umbrella, cloud outlines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -5361,8 +5361,8 @@
    ],
    "sense": "~에 익숙하다",
    "sense_from": "m3-333",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright kitchen, a small slim white pictogram cook chopping fast without looking after long practice while a beginner beside fumbles, repeated tally marks, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -5374,8 +5374,8 @@
    ],
    "sense": "~할 만하다, 가치가 있다",
    "sense_from": "m3-197",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright award stand, a small slim white pictogram judge placing a medal on someone whose long record sheet justifies it, scales tipping to deserve, tick marks, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -5570,8 +5570,8 @@
    ],
    "sense": "오래지 않아, 얼마 후에",
    "sense_from": "m3-167",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright platform, a small slim white pictogram traveler checking a board where the next arrival is only a few minutes away while a clock hand nears, soon arrow, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -7033,8 +7033,8 @@
    ],
    "sense": "상기시키다, 돌려주다",
    "sense_from": "m3-76",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright doorway, a small slim white pictogram character returning a borrowed book while an old photo in hand stirs a memory shape above the head, return arrow, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -7108,8 +7108,8 @@
    "status": "missing"
   },
   "broaden": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/broaden.png",
+   "blob": "5bc9e411214b1b044acf59422a5130b95fdbb154",
    "courses": [
     "tf"
    ],
@@ -7117,8 +7117,8 @@
    "sense_from": "tf-216",
    "scene": "airport departure hall, a small slim white pictogram traveler sprinting with a backpack toward a big world map board while flags of many countries fly overhead, suitcases rolling behind",
    "scene_source": "scripts/tf_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "brochure": {
    "file": null,
@@ -7476,8 +7476,8 @@
    "status": "review"
   },
   "by chance": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/b/by-chance.png",
+   "blob": "c0ab88bb0bde4f501063a366b7101b7ee83e5f02",
    "courses": [
     "m3",
     "tf"
@@ -7487,8 +7487,8 @@
    "scene": "train station platform, two small slim white pictogram characters spinning around in surprise and running toward each other with open arms after meeting by chance, train doors open, clock and benches",
    "scene_source": "scripts/tf_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 tf 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "by oneself": {
    "file": null,
@@ -7524,8 +7524,8 @@
    ],
    "sense": "(항공기·배) 객실, 선실, 오두막집",
    "sense_from": "m3-312",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright deck, a small slim white pictogram passenger opening a small room door on a ship with a bunk and a porthole while a wooden hut stands on the shore, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -7852,8 +7852,8 @@
    ],
    "sense": "부주의한, 조심성 없는",
    "sense_from": "m3-79",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright kitchen, a small slim white pictogram character knocking a glass off the counter while looking the other way, spilled liquid, dropped keys, cross mark, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -8047,8 +8047,8 @@
    ],
    "sense": "따라잡다, 따라가다",
    "sense_from": "m3-78",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright running track, a small slim white pictogram runner sprinting hard to close the gap on the leader ahead while a gap arrow shrinks, lane lines, strong motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -8060,8 +8060,8 @@
    ],
    "sense": "범주, 카테고리",
    "sense_from": "m3-221",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright shop shelves, a small slim white pictogram clerk sorting goods under separate labelled headings for fruit, tools and books, section signs, sorting arrows, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -8087,8 +8087,8 @@
    ],
    "sense": "소",
    "sense_from": "m3-149",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright pasture, a small slim white pictogram herder walking beside a group of cows grazing behind a fence while a milking pail waits, barn, hay bales, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -8557,8 +8557,8 @@
    ],
    "sense": "도표, 차트",
    "sense_from": "m3-97",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright office wall, a small slim white pictogram analyst drawing bars and a rising line onto a big pinned graph sheet while a table of numbers sits beside, ruler, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -8695,8 +8695,8 @@
    ],
    "sense": "쾌활한, 명랑한",
    "sense_from": "m3-307",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright street, a small slim white pictogram character skipping along with a wide smile waving to everyone while humming notes float, bright open posture, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -9004,8 +9004,8 @@
    ],
    "sense": "문명",
    "sense_from": "m3-49",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright ancient city view, small slim white pictogram people building temples, writing on tablets and trading in a planned street grid, aqueduct, pottery, city walls, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -9682,8 +9682,8 @@
    ],
    "sense": "식민지",
    "sense_from": "m3-322",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright coastal settlement, small slim white pictogram settlers building homes under a distant home country flag while a governor reads an order, ships, fields, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -9751,8 +9751,8 @@
    ],
    "sense": "조합, 결합",
    "sense_from": "m3-142",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright workbench, a small slim white pictogram maker snapping two separate parts into one joined unit while a lock dial shows a set of numbers, plus sign, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -11439,8 +11439,8 @@
    ],
    "sense": "건설하다, 구성하다",
    "sense_from": "m3-298",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright site, a small slim white pictogram builder fitting a beam into a rising frame while a crane lifts another piece, blueprint, bricks, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -12099,8 +12099,8 @@
    ],
    "sense": "저작권, 판권, 저작권 보호를 받는",
    "sense_from": "m3-165",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright studio, a small slim white pictogram artist stamping a symbol onto an original drawing while blocking someone from copying it, certificate, cross mark, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -12679,8 +12679,8 @@
    ],
    "sense": "크레인(기중기)",
    "sense_from": "m3-58",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright building site, a small slim white pictogram operator working a tall lifting machine that swings a steel beam high over the frame, hook, cables, hard hats, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -13027,8 +13027,8 @@
    ],
    "sense": "횡단보도",
    "sense_from": "m3-324",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright street, a small slim white pictogram pedestrian stepping onto broad painted stripes across the road while a signal shows the walking figure, cars waiting, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -13040,8 +13040,8 @@
    ],
    "sense": "군중, 무리, 붐비다",
    "sense_from": "m3-153",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright square, many small slim white pictogram people packed shoulder to shoulder around a stage while one squeezes through the mass, raised hands, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -13697,8 +13697,8 @@
    ],
    "sense": "처리하다, 다루다",
    "sense_from": "m3-340",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright office, a small slim white pictogram worker rolling up sleeves to sort a pile of problem files one by one into a solved tray, checklist, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -15426,8 +15426,8 @@
    ],
    "sense": "~으로 죽다",
    "sense_from": "m3-164",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright clinic corridor, a small slim white pictogram doctor lowering a chart while a bed lies empty and a cause note is pinned to the record, family waiting, quiet lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -15528,8 +15528,8 @@
    ],
    "sense": "소화하다, 소화되다, 잘 이해하다",
    "sense_from": "m3-287",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright kitchen, a small slim white pictogram diner patting a full stomach while a body diagram traces food down the digestive path, plate cleared, arrow downward, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -15788,8 +15788,8 @@
    "status": "missing"
   },
   "disappear": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/d/disappear.png",
+   "blob": "a683f2946d14b97fc7f665468df107772b66b100",
    "courses": [
     "m3",
     "h1"
@@ -15798,8 +15798,8 @@
    "sense_from": "m3-10",
    "scene": "night meadow under a cloudy sky, small slim white pictogram character running and reaching up with both arms as the moon slips behind thick clouds with only a thin edge still showing, grass swaying, motion lines, fence posts and ground line",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "disappoint": {
    "file": "assets/words/d/disappoint.png",
@@ -17111,8 +17111,8 @@
    ],
    "sense": "중퇴하다, 탈퇴하다",
    "sense_from": "m3-44",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright school gate, a small slim white pictogram student walking away from the building with a bag while classmates head inside, a name being crossed off a class list, exit arrow, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -17253,8 +17253,8 @@
    ],
    "sense": "내버리다, 쓰레기장, 쓰레기 더미",
    "sense_from": "m3-316",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright waste ground, a small slim white pictogram worker tipping a barrow of rubbish onto a big heap at a tipping site, gulls, bins, sign, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -17401,8 +17401,8 @@
    ],
    "sense": "왕조, 왕가, (왕조의) 지배, 통치 기간",
    "sense_from": "m3-56",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright palace hall, small slim white pictogram rulers of one family shown in a line of portraits passing a crown down the generations, throne, banner, family chart, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -17847,8 +17847,8 @@
    ],
    "sense": "전기의",
    "sense_from": "m3-268",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright workshop, a small slim white pictogram technician plugging a cord into a socket so a lamp and a fan spring to life, wires, switch panel, spark marks, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -18236,8 +18236,8 @@
    ],
    "sense": "제국",
    "sense_from": "m3-304",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright throne hall, a small slim white pictogram emperor before a wide map of many conquered lands while envoys from distant places bow, banners, crown, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -19275,8 +19275,8 @@
    ],
    "sense": "에세이, 수필",
    "sense_from": "m3-169",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright desk, a small slim white pictogram student writing a flowing personal piece across lined pages with a title at the top, drafts beside, pen, lamp, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -19388,8 +19388,8 @@
    ],
    "sense": "윤리, 도덕",
    "sense_from": "m3-64",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright office, a small slim white pictogram worker returning a found wallet while a code of conduct board hangs on the wall and a tempting cash box stays shut, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -19620,8 +19620,8 @@
    "status": "missing"
   },
   "exact": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/e/exact.png",
+   "blob": "7f759ee61b25d0583f28c2bd234341cfaf40d2b8",
    "courses": [
     "m3",
     "tf"
@@ -19630,8 +19630,8 @@
    "sense_from": "m3-7",
    "scene": "watch repair workshop, small slim white pictogram character leaning far forward on tiptoes pointing excitedly with a magnifying lens at a large wall clock hitting exactly twelve o clock, tiny tools bouncing on the workbench, motion marks, floor line",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "exactly": {
    "file": "assets/words/e/exactly.png",
@@ -20422,8 +20422,8 @@
    ],
    "sense": "수출하다, 수출",
    "sense_from": "m3-162",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright dock, a small slim white pictogram worker loading crates onto a ship bound outward while an arrow points from the country map to overseas, cranes, labels, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -20713,8 +20713,8 @@
    ],
    "sense": "우화",
    "sense_from": "m3-219",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright story corner, a small slim white pictogram teller acting out a tortoise and a hare tale for children while a lesson line is written under the book, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -20753,8 +20753,8 @@
    ],
    "sense": "얼굴의, 안면의",
    "sense_from": "m3-128",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright mirror, a small slim white pictogram character touching the cheek while a chart of eyes, nose and mouth positions hangs beside, towel, expression icons, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -21029,8 +21029,8 @@
    ],
    "sense": "거짓의, 틀린",
    "sense_from": "m3-291",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright classroom, a small slim white pictogram teacher marking a big cross beside a wrong statement while a true one gets a tick, quiz board, pointer, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -21293,8 +21293,8 @@
    ],
    "sense": "운명, 숙명",
    "sense_from": "m3-192",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright crossroads, a small slim white pictogram traveler drawing a marked card that shows the road already written while a thread of destiny stretches ahead, signpost, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -21322,8 +21322,8 @@
    ],
    "sense": "수도꼭지",
    "sense_from": "m3-191",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright sink, a small slim white pictogram user twisting a tap handle so water runs into a basin while a pipe and washer lie beside for repair, drip marks, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -22328,8 +22328,8 @@
    ],
    "sense": "그다음의, 다음의 것",
    "sense_from": "m3-218",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright path, a small slim white pictogram walker stepping directly behind a leader in a line while a numbered order shows who comes next, dotted trail, arrow, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -22355,8 +22355,8 @@
    ],
    "sense": "잠시 동안, 잠깐",
    "sense_from": "m3-114",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright bench, a small slim white pictogram character waiting with a book as a clock hand moves through a short shaded span, other people pass by, waiting marks, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -22381,8 +22381,8 @@
    ],
    "sense": "혼자 힘으로, 자신을 위해서",
    "sense_from": "m3-204",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright workshop, a small slim white pictogram maker finishing a stool entirely alone with no helper while a help offer is waved away, solo arrow, tools, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -23419,8 +23419,8 @@
    ],
    "sense": "격차, 차이, 틈",
    "sense_from": "m3-93",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright bridge, a small slim white pictogram walker stopping at a wide missing section between two halves while a measuring band shows the distance, warning post, gap lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -24166,8 +24166,8 @@
    ],
    "sense": "~와 데이트를 하다",
    "sense_from": "m3-266",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright park path, two small slim white pictogram friends walking side by side sharing an ice cream while a circled date on a pocket calendar shows the outing, bench, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -24840,8 +24840,8 @@
    ],
    "sense": "유죄의, 죄책감을 느끼는",
    "sense_from": "m3-46",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright courtroom, a small slim white pictogram defendant lowering the head with hands clasped while a judge holds up a verdict card and a broken window piece sits as evidence, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -25228,8 +25228,8 @@
    ],
    "sense": "~을 공통적으로 가지다",
    "sense_from": "m3-276",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright table, two small slim white pictogram friends holding up the same book title while an overlap circle diagram marks the shared part, equal mark, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -26628,8 +26628,8 @@
    ],
    "sense": "불법의, 비합법적인",
    "sense_from": "m3-161",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright street, a small slim white pictogram officer stopping someone selling goods under a crossed out sign while writing a citation, law book, barrier tape, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -26899,8 +26899,8 @@
    ],
    "sense": "(타국에서) 이주해 오다, 이주시키다",
    "sense_from": "m3-154",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright arrival hall, a small slim white pictogram traveler stepping across a border line with suitcases toward a welcome desk while a passport is stamped, map, arrow inward",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -26941,8 +26941,8 @@
    ],
    "sense": "면역의, 영향을 받지 않는",
    "sense_from": "m3-51",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright clinic, a small slim white pictogram patient standing unaffected behind a shield outline while germ shapes bounce off after a vaccination, chart of defence cells, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -27299,8 +27299,8 @@
    ],
    "sense": "인상, 감명",
    "sense_from": "m3-113",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright doorway, a small slim white pictogram guest leaving while the host holds a strong thought shape of that first meeting above the head, footprint pressed into soft ground",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -28846,8 +28846,8 @@
    ],
    "sense": "다치게 하다, 상처를 입히다",
    "sense_from": "m3-59",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright sports field, a small slim white pictogram player falling and clutching a knee after a tackle while a trainer runs in with a kit, pain burst mark, stretcher, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -29463,8 +29463,8 @@
    ],
    "sense": "지능, 이해력",
    "sense_from": "m3-321",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright study, a small slim white pictogram thinker solving several puzzles at once while a head diagram of gears turns on the wall, chess board, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -29812,8 +29812,8 @@
    ],
    "sense": "교차로",
    "sense_from": "m3-234",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright road crossing, a small slim white pictogram traffic officer standing where two streets cross directing cars from each direction, signals, crosswalk stripes, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -30320,8 +30320,8 @@
    ],
    "sense": "섬",
    "sense_from": "m3-81",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright sea view, a small slim white pictogram explorer standing on a small patch of land ringed by water with one palm tree while a boat approaches, waves, shore lines, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -30555,8 +30555,8 @@
    ],
    "sense": "언론, 저널리즘",
    "sense_from": "m3-102",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright newsroom, a small slim white pictogram reporter typing fast at a desk while another holds a microphone and a press badge, printing press, headline board, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -30628,8 +30628,8 @@
    ],
    "sense": "배심원단, 심사위원단",
    "sense_from": "m3-283",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright courtroom, a row of small slim white pictogram jurors seated in a box conferring over a verdict card while a judge waits, numbered seats, notepads, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -30759,8 +30759,8 @@
    ],
    "sense": "죽이다, 없애다, 망치다",
    "sense_from": "m3-313",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright garden, a small slim white pictogram gardener swatting a pest off a leaf while a wilted plant lies beside a crossed out mark, spray, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -32036,8 +32036,8 @@
    ],
    "sense": "지역의, 현지의, 주민, 현지인",
    "sense_from": "m3-209",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright neighbourhood shop, a small slim white pictogram resident greeting the shopkeeper by name while a map circles this small area only, regional produce, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -32280,8 +32280,8 @@
    ],
    "sense": "~을 고대하다",
    "sense_from": "m3-216",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright calendar wall, a small slim white pictogram character grinning at a circled future date while packing a bag early, bright thought shape of the trip, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -32306,8 +32306,8 @@
    ],
    "sense": "(정보를) 찾아보다, 올려다보다",
    "sense_from": "m3-305",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright library, a small slim white pictogram student searching a fact in a thick reference volume while also tilting the head back to look at a high shelf, index tabs",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -32570,8 +32570,8 @@
    ],
    "sense": "자석, 자철",
    "sense_from": "m3-254",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright science bench, a small slim white pictogram student holding a bar that pulls a pile of nails through the air toward it, field arc lines, iron filings, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -32724,8 +32724,8 @@
    ],
    "sense": "결정하다",
    "sense_from": "m3-72",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright crossroads, a small slim white pictogram walker stepping firmly onto one of two paths after lowering a pointing hand, discarded map of the other route, arrow chosen",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -33997,8 +33997,8 @@
    ],
    "sense": "현미경",
    "sense_from": "m3-339",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright lab, a small slim white pictogram student bending to an eyepiece while a tiny specimen on a slide appears hugely magnified in a circle inset, focus knob, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -34181,8 +34181,8 @@
    ],
    "sense": "미네랄, 광물",
    "sense_from": "m3-68",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright geology lab, a small slim white pictogram student sorting crystal and ore samples into labelled trays while a chart names each rock, hammer, magnifier, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -34264,8 +34264,8 @@
    ],
    "sense": "소수 민족, 소수",
    "sense_from": "m3-131",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright hall, a small slim white pictogram speaker standing with a small group on one side while a much larger group fills the other, count board, ratio marks, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -34484,8 +34484,8 @@
    ],
    "sense": "혼합물, 혼합",
    "sense_from": "m3-120",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright kitchen, a small slim white pictogram cook stirring two clearly different ingredients together in one bowl until they blend, separate jars beside, swirl arrows, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -34881,8 +34881,8 @@
    ],
    "sense": "무엇보다도",
    "sense_from": "m3-105",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright display shelf, a small slim white pictogram shopper lifting one favourite item high above several others while a top ranking star marks it, arrow to the best, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -35135,8 +35135,8 @@
    ],
    "sense": "살인, 살해, 살해하다",
    "sense_from": "m3-80",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright detective office, a small slim white pictogram investigator studying a case board with an outline shape on the floor plan and a crossed out name, evidence bag, magnifier",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -36823,8 +36823,8 @@
    ],
    "sense": "온라인의, 온라인으로",
    "sense_from": "m3-112",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright desk, a small slim white pictogram user typing at a screen while signal arcs connect to other screens across a wide network diagram, router, cloud outline, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -38288,8 +38288,8 @@
    ],
    "sense": "돌아가시다, 사망하다, 없어지다",
    "sense_from": "m3-87",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright memorial garden, small slim white pictogram mourners laying flowers at a headstone while a framed portrait rests on a stand, candle, quiet bowed heads, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -38301,8 +38301,8 @@
    ],
    "sense": "통과하다, 겪다",
    "sense_from": "m3-262",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright tunnel mouth, a small slim white pictogram traveler walking in one side and out the other while an arrow runs straight through the passage, arch, lamps, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -38595,8 +38595,8 @@
    ],
    "sense": "주의를 기울이다, 주목하다",
    "sense_from": "m3-83",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright classroom, a small slim white pictogram student sitting upright with eyes fixed on the teacher and a pointing finger while a neighbour daydreams, focus lines, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -39049,8 +39049,8 @@
    ],
    "sense": "성격, 인격, 개성",
    "sense_from": "m3-320",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright chart wall, a small slim white pictogram guide pointing at traits like brave and shy listed beside different figures who act them out, mirror, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -40362,8 +40362,8 @@
    ],
    "sense": "빈곤, 가난, 부족",
    "sense_from": "m3-255",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright bare street, a small slim white pictogram family with an empty bowl and worn shoes outside a plain shelter while a help desk stands nearby, thin belongings, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -42513,8 +42513,8 @@
    ],
    "sense": "정화하다, 깨끗이 하다",
    "sense_from": "m3-325",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright water plant, a small slim white pictogram worker pouring cloudy water through a filter tower so clear water comes out below, grit tray, drip marks, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -42615,8 +42615,8 @@
    ],
    "sense": "(~에) 노력을 들이다",
    "sense_from": "m3-231",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright workshop, a small slim white pictogram worker pushing hard on a stubborn press with both arms and strain marks while a progress bar creeps up, sweat drops, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -42908,8 +42908,8 @@
    ],
    "sense": "인종의, 민족의",
    "sense_from": "m3-185",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright community hall, small slim white pictogram people of different features standing together under a banner of equal rights while a fair scale hangs, joined hands, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -43889,8 +43889,8 @@
    ],
    "sense": "정제하다, 깨끗하게 하다, 개선하다",
    "sense_from": "m3-300",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright workshop, a small slim white pictogram craftsman filtering a rough liquid clean and polishing a rough casting into a smooth part, before and after beside, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -44114,8 +44114,8 @@
    ],
    "sense": "~에 상관없이",
    "sense_from": "m3-90",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright street in heavy rain, a small slim white pictogram walker striding on toward the goal despite a storm sign and a broken umbrella, forward arrow crossing obstacles",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -44331,8 +44331,8 @@
    ],
    "sense": "관계",
    "sense_from": "m3-141",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright chart wall, a small slim white pictogram analyst drawing a line linking two boxes to show how they connect while a family tree hangs beside, arrows between, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -44796,8 +44796,8 @@
    "status": "missing"
   },
   "renewable": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/r/renewable.png",
+   "blob": "2943ce6d6ea91182dd023bed620348047cd249e1",
    "courses": [
     "h1",
     "h3"
@@ -44806,8 +44806,8 @@
    "sense_from": "h1-169",
    "scene": "hilltop energy field, a small slim white pictogram engineer climbing a ladder up a tall wind turbine while blades spin fast, solar panels below, circular arrow loop sign, motion lines around blades",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "renounce": {
    "file": null,
@@ -45570,8 +45570,8 @@
    "status": "missing"
   },
   "result": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/r/result.png",
+   "blob": "a06535b8731c90f00263dd24374fae73d9b2971b",
    "courses": [
     "h1",
     "tf"
@@ -45580,8 +45580,8 @@
    "sense_from": "h1-170",
    "scene": "science fair gymnasium, a small slim white pictogram student jumping with both arms raised as a scoreboard flips to show the final outcome of the experiment, spilled beakers, judges table, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "result in": {
    "file": null,
@@ -45592,8 +45592,8 @@
    ],
    "sense": "~을 초래하다, 야기하다",
    "sense_from": "m3-208",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright science bench, a small slim white pictogram student tipping one flask so it causes a reaction in the next, a clear arrow running from cause to outcome, notes, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -45620,8 +45620,8 @@
    ],
    "sense": "소매, 소매의",
    "sense_from": "m3-293",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright shop floor, a small slim white pictogram assistant selling single items to individual customers from shelves while a price tag hangs, till, bags, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -46562,8 +46562,8 @@
    ],
    "sense": "~을 다 써 버리다, ~이 떨어지다",
    "sense_from": "m3-108",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright kitchen, a small slim white pictogram cook shaking a completely empty flour sack upside down while a shopping list is written, empty jars, nothing falls, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -46826,8 +46826,8 @@
    ],
    "sense": "위생의, 위생적인, 깨끗한",
    "sense_from": "m3-296",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright kitchen, a small slim white pictogram worker scrubbing hands at a sink beside a clean covered counter and a hygiene checklist, soap, gloves, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -47449,8 +47449,8 @@
    ],
    "sense": "보안, 안전, 보장, 안전의",
    "sense_from": "m3-289",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright entrance, a small slim white pictogram guard checking a pass at a gate while a camera watches and a lock seals the door, badge, barrier, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -47714,8 +47714,8 @@
    ],
    "sense": "예민한, 민감한, 감수성이 있는",
    "sense_from": "m3-110",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright clinic, a small slim white pictogram patient flinching from a light touch on the arm while a feather is drawn nearby, ripple marks of feeling, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -47994,8 +47994,8 @@
    ],
    "sense": "설치하다, 준비하다",
    "sense_from": "m3-91",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright hall, a small slim white pictogram organizer raising a folding table and clipping a banner into place while chairs are arranged in rows, toolbox, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -48766,8 +48766,8 @@
    ],
    "sense": "관광, 구경, 관광의",
    "sense_from": "m3-326",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright city viewpoint, a small slim white pictogram tourist photographing a famous tower while holding a guide map and a camera strap, bus, landmarks, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -48794,8 +48794,8 @@
    ],
    "sense": "(~에) 가입하다, 신청하다",
    "sense_from": "m3-210",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright registration desk, a small slim white pictogram newcomer writing a name onto a membership list while receiving a badge, poster of the club, pen, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -49374,8 +49374,8 @@
    ],
    "sense": "경사면, 경사지",
    "sense_from": "m3-277",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright hillside, a small slim white pictogram cyclist rolling down a tilted incline while a gradient sign shows the angle, guard rail, slanted ground lines, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -49778,8 +49778,8 @@
    ],
    "sense": "조만간, 머지않아",
    "sense_from": "m3-127",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright calendar wall, a small slim white pictogram character circling a date not far ahead while an hourglass runs and a delayed task file waits, forward arrow, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -52231,8 +52231,8 @@
    ],
    "sense": "고소하다, 소송을 제기하다",
    "sense_from": "m3-201",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright courthouse steps, a small slim white pictogram claimant handing a lawsuit document to a clerk while pointing at the other party, law book, scales, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -53340,8 +53340,8 @@
    ],
    "sense": "~을 이용하다",
    "sense_from": "m3-294",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright market, a small slim white pictogram buyer seizing a rare discount sign and filling a basket quickly while others miss it, opportunity arrow, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -53392,8 +53392,8 @@
    ],
    "sense": "~을 당연시하다, 대수롭지 않게 여기다",
    "sense_from": "m3-263",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright kitchen, a small slim white pictogram character turning a tap without a glance while a thought shape shows how far others carry water, ignored arrow, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -53471,8 +53471,8 @@
    ],
    "sense": "목표, 대상, 표적, 과녁",
    "sense_from": "m3-177",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright archery range, a small slim white pictogram archer loosing an arrow straight at a ringed board while a goal number is circled on a chart, quiver, aim lines, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -53554,8 +53554,8 @@
    ],
    "sense": "기술, 기법",
    "sense_from": "m3-159",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright pottery studio, a small slim white pictogram potter demonstrating a precise hand method on the wheel while a step diagram of the skill hangs beside, tools, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -53567,8 +53567,8 @@
    ],
    "sense": "(과학) 기술",
    "sense_from": "m3-150",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright workshop, a small slim white pictogram engineer assembling a circuit board beside a robot arm and a screen while gear diagrams hang, tools, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -54145,8 +54145,8 @@
    ],
    "sense": "(식물의) 가시, 가시나무, 가시가 있는 식물",
    "sense_from": "m3-50",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright rose garden, a small slim white pictogram gardener snatching a hand back from a sharp spike on a stem while wearing one glove, pruning shears, prick mark, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -55319,8 +55319,8 @@
    ],
    "sense": "치료, 처치, 대우, 처리",
    "sense_from": "m3-220",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright clinic, a small slim white pictogram nurse applying a dressing and handing medicine while a care plan chart hangs, basin, gentle handling, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -55362,8 +55362,8 @@
    ],
    "sense": "유행, 동향, 추세",
    "sense_from": "m3-198",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright shop street, small slim white pictogram shoppers all carrying the same new bag while a rising chart of its popularity hangs in a window, arrow climbing, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -55686,8 +55686,8 @@
    ],
    "sense": "제출하다",
    "sense_from": "m3-74",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright classroom, a small slim white pictogram student placing a finished worksheet into the teacher's collection tray while others still write, due list, pen down, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -55700,8 +55700,8 @@
    ],
    "sense": "~인 것으로 드러나다, (결과적으로) ~이 되다",
    "sense_from": "m3-222",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright workshop, a small slim white pictogram maker lifting a cover to find the finished result is quite different from the sketch, surprise mark, reveal arrow, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -56336,8 +56336,8 @@
    ],
    "sense": "불공평한, 부당한",
    "sense_from": "m3-292",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright playground, a small slim white pictogram child receiving a tiny share while another gets a huge one from the same pot, tilted scale, protest gesture, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -56463,8 +56463,8 @@
    "status": "missing"
   },
   "union": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/u/union.png",
+   "blob": "7e79cbfe7f8a345e4ee201904a1cf8e263188d3c",
    "courses": [
     "m3",
     "h1"
@@ -56473,8 +56473,8 @@
    "sense_from": "m3-5",
    "scene": "town hall plaza under a banner reading UNION, three small slim white pictogram characters leaping into the air together with joined hands raised high in celebration, confetti and flags waving, motion lines, ground line",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "unique": {
    "file": null,
@@ -57642,8 +57642,8 @@
    ],
    "sense": "승리",
    "sense_from": "m3-279",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright arena, a small slim white pictogram winner leaping with both arms raised as a finish tape breaks and a trophy waits, banner, cheering crowd, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -57793,8 +57793,8 @@
    ],
    "sense": "선행, 선",
    "sense_from": "m3-133",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright street, a small slim white pictogram character helping an elder carry bags across a crossing while a good deed board lists kind acts, halo outline, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -58254,8 +58254,8 @@
    ],
    "sense": "웨이브가 있는, 물결 모양의",
    "sense_from": "m3-103",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright beach, a small slim white pictogram character running a hand through hair drawn in curling ripples while the sea beyond rolls in matching wave lines, towel, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },
@@ -59187,8 +59187,8 @@
    ],
    "sense": "주름, 주름을 잡다, 주름지다",
    "sense_from": "m3-178",
-   "scene": null,
-   "scene_source": null,
+   "scene": "bright laundry room, a small slim white pictogram presser running an iron over a creased shirt while an elder's lined face is drawn on a nearby photo, crease lines, motion lines",
+   "scene_source": "scripts/m3_missing_scenes.json",
    "style": null,
    "status": "missing"
   },

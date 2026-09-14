@@ -125,6 +125,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   purpose: require("../../../assets/words/p/purpose.png"),
   pursue: require("../../../assets/words/p/pursue.png"),
   push: require("../../../assets/words/p/push.png"),
+  "put away": require("../../../assets/words/p/put-away.png"),
   "put effort (into)": require("../../../assets/words/p/put-effort-(into).png"),
   puzzle: require("../../../assets/words/p/puzzle.png"),
 };

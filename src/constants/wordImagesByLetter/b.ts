@@ -22,6 +22,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   "be accustomed to": require("../../../assets/words/b/be-accustomed-to.png"),
   "be bound to": require("../../../assets/words/b/be-bound-to.png"),
   "be capable of": require("../../../assets/words/b/be-capable-of.png"),
+  "be characterized by": require("../../../assets/words/b/be-characterized-by.png"),
   beach: require("../../../assets/words/b/beach.png"),
   bean: require("../../../assets/words/b/bean.png"),
   bear: require("../../../assets/words/b/bear.png"),

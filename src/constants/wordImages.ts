@@ -312,6 +312,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   deep: require("../../assets/words/deep.png"),
   deer: require("../../assets/words/deer.png"),
   defeat: require("../../assets/words/defeat.png"),
+  degrade: require("../../assets/words/degrade.png"),
   degree: require("../../assets/words/degree.png"),
   delicious: require("../../assets/words/delicious.png"),
   delight: require("../../assets/words/delight.png"),

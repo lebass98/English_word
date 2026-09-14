@@ -94,6 +94,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   pull: require("../../../assets/words/p/pull.png"),
   pulse: require("../../../assets/words/p/pulse.png"),
   pumpkin: require("../../../assets/words/p/pumpkin.png"),
+  purchase: require("../../../assets/words/p/purchase.png"),
   puritan: require("../../../assets/words/p/puritan.png"),
   purpose: require("../../../assets/words/p/purpose.png"),
   push: require("../../../assets/words/p/push.png"),

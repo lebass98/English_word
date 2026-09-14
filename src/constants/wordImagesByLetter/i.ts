@@ -9,6 +9,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   immigrant: require("../../../assets/words/i/immigrant.png"),
   import: require("../../../assets/words/i/import.png"),
   important: require("../../../assets/words/i/important.png"),
+  improve: require("../../../assets/words/i/improve.png"),
   include: require("../../../assets/words/i/include.png"),
   increase: require("../../../assets/words/i/increase.png"),
   indeed: require("../../../assets/words/i/indeed.png"),

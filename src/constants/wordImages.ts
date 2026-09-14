@@ -1050,6 +1050,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   tremendous: require("../../assets/words/tremendous.png"),
   trick: require("../../assets/words/trick.png"),
   trigger: require("../../assets/words/trigger.png"),
+  trim: require("../../assets/words/trim.png"),
   trip: require("../../assets/words/trip.png"),
   triumph: require("../../assets/words/triumph.png"),
   trouble: require("../../assets/words/trouble.png"),

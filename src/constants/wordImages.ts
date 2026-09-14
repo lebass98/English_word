@@ -61,6 +61,7 @@ export const WORD_IMAGES: Record<string, ImageSourcePropType> = {
   actually: require("../../assets/words/actually.png"),
   adapt: require("../../assets/words/adapt.png"),
   adaptability: require("../../assets/words/adaptability.png"),
+  adaptation: require("../../assets/words/adaptation.png"),
   add: require("../../assets/words/add.png"),
   address: require("../../assets/words/address.png"),
   admiral: require("../../assets/words/admiral.png"),

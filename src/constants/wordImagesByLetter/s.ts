@@ -158,6 +158,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   such: require("../../../assets/words/s/such.png"),
   suck: require("../../../assets/words/s/suck.png"),
   suddenly: require("../../../assets/words/s/suddenly.png"),
+  sue: require("../../../assets/words/s/sue.png"),
   suffer: require("../../../assets/words/s/suffer.png"),
   sugar: require("../../../assets/words/s/sugar.png"),
   suitcase: require("../../../assets/words/s/suitcase.png"),

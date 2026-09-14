@@ -194,6 +194,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   survey: require("../../../assets/words/s/survey.png"),
   survive: require("../../../assets/words/s/survive.png"),
   swallow: require("../../../assets/words/s/swallow.png"),
+  sweep: require("../../../assets/words/s/sweep.png"),
   sweet: require("../../../assets/words/s/sweet.png"),
   swing: require("../../../assets/words/s/swing.png"),
   sword: require("../../../assets/words/s/sword.png"),

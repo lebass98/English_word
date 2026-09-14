@@ -8,6 +8,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   tax: require("../../../assets/words/t/tax.png"),
   tear: require("../../../assets/words/t/tear.png"),
   tease: require("../../../assets/words/t/tease.png"),
+  technique: require("../../../assets/words/t/technique.png"),
   technology: require("../../../assets/words/t/technology.png"),
   teenager: require("../../../assets/words/t/teenager.png"),
   telephone: require("../../../assets/words/t/telephone.png"),

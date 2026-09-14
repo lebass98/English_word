@@ -15,6 +15,7 @@ export const IMAGES_W: Record<string, ImageSourcePropType> = {
   wear: require("../../../assets/words/w/wear.png"),
   weather: require("../../../assets/words/w/weather.png"),
   wedding: require("../../../assets/words/w/wedding.png"),
+  weigh: require("../../../assets/words/w/weigh.png"),
   weight: require("../../../assets/words/w/weight.png"),
   wet: require("../../../assets/words/w/wet.png"),
   whether: require("../../../assets/words/w/whether.png"),

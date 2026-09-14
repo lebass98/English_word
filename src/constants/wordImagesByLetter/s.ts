@@ -33,6 +33,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   secretary: require("../../../assets/words/s/secretary.png"),
   section: require("../../../assets/words/s/section.png"),
   secure: require("../../../assets/words/s/secure.png"),
+  security: require("../../../assets/words/s/security.png"),
   seed: require("../../../assets/words/s/seed.png"),
   seldom: require("../../../assets/words/s/seldom.png"),
   select: require("../../../assets/words/s/select.png"),

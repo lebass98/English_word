@@ -19,6 +19,7 @@ export const IMAGES_U: Record<string, ImageSourcePropType> = {
   universal: require("../../../assets/words/u/universal.png"),
   universe: require("../../../assets/words/u/universe.png"),
   university: require("../../../assets/words/u/university.png"),
+  unknown: require("../../../assets/words/u/unknown.png"),
   unless: require("../../../assets/words/u/unless.png"),
   unlike: require("../../../assets/words/u/unlike.png"),
   "up close": require("../../../assets/words/u/up-close.png"),

@@ -96,6 +96,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   sink: require("../../../assets/words/s/sink.png"),
   site: require("../../../assets/words/s/site.png"),
   situation: require("../../../assets/words/s/situation.png"),
+  skeleton: require("../../../assets/words/s/skeleton.png"),
   skill: require("../../../assets/words/s/skill.png"),
   skin: require("../../../assets/words/s/skin.png"),
   slave: require("../../../assets/words/s/slave.png"),

@@ -236,6 +236,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   countless: require("../../../assets/words/c/countless.png"),
   country: require("../../../assets/words/c/country.png"),
   couple: require("../../../assets/words/c/couple.png"),
+  courageous: require("../../../assets/words/c/courageous.png"),
   course: require("../../../assets/words/c/course.png"),
   cousin: require("../../../assets/words/c/cousin.png"),
   cover: require("../../../assets/words/c/cover.png"),

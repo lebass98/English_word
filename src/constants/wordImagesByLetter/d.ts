@@ -10,6 +10,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   date: require("../../../assets/words/d/date.png"),
   daughter: require("../../../assets/words/d/daughter.png"),
   dawn: require("../../../assets/words/d/dawn.png"),
+  "day and night": require("../../../assets/words/d/day-and-night.png"),
   deadly: require("../../../assets/words/d/deadly.png"),
   deal: require("../../../assets/words/d/deal.png"),
   "deal with": require("../../../assets/words/d/deal-with.png"),

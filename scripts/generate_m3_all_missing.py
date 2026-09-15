@@ -178,7 +178,9 @@ def publish_unit(unit, words):
     has_origin = subprocess.run(["git", "remote", "get-url", "origin"], cwd=PROJECT_ROOT, capture_output=True).returncode == 0
     if has_origin and run(["git", "pull", "--rebase", "--autostash", "origin", "main"], check=False).returncode != 0:
         raise RuntimeError("pull --rebase 충돌 - 자동 해결하지 않고 중단합니다")
+    run(["find", ".", "..", "-name", "._*", "-type", "f", "-delete"], check=False)
     run([sys.executable, SYNC_SCRIPT])
+    run(["find", ".", "..", "-name", "._*", "-type", "f", "-delete"], check=False)
     run(["npm", "run", "lint"])
     run(["find", ".", "..", "-name", "._*", "-type", "f", "-delete"], check=False)
     add_readme_entry(unit, words)

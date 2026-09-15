@@ -180,6 +180,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   arrest: require("../../../assets/words/a/arrest.png"),
   arrive: require("../../../assets/words/a/arrive.png"),
   arrogant: require("../../../assets/words/a/arrogant.png"),
+  arrow: require("../../../assets/words/a/arrow.png"),
   art: require("../../../assets/words/a/art.png"),
   article: require("../../../assets/words/a/article.png"),
   artifact: require("../../../assets/words/a/artifact.png"),

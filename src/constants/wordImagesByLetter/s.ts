@@ -96,6 +96,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   simple: require("../../../assets/words/s/simple.png"),
   simplify: require("../../../assets/words/s/simplify.png"),
   since: require("../../../assets/words/s/since.png"),
+  sincere: require("../../../assets/words/s/sincere.png"),
   sincerely: require("../../../assets/words/s/sincerely.png"),
   single: require("../../../assets/words/s/single.png"),
   sink: require("../../../assets/words/s/sink.png"),
@@ -226,5 +227,6 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   swing: require("../../../assets/words/s/swing.png"),
   sword: require("../../../assets/words/s/sword.png"),
   symbol: require("../../../assets/words/s/symbol.png"),
+  symptom: require("../../../assets/words/s/symptom.png"),
   system: require("../../../assets/words/s/system.png"),
 };

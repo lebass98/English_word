@@ -36,6 +36,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   mayor: require("../../../assets/words/m/mayor.png"),
   meaning: require("../../../assets/words/m/meaning.png"),
   meanwhile: require("../../../assets/words/m/meanwhile.png"),
+  measure: require("../../../assets/words/m/measure.png"),
   meat: require("../../../assets/words/m/meat.png"),
   mechanic: require("../../../assets/words/m/mechanic.png"),
   medical: require("../../../assets/words/m/medical.png"),

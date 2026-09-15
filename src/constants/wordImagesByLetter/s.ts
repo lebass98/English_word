@@ -165,6 +165,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   strange: require("../../../assets/words/s/strange.png"),
   stream: require("../../../assets/words/s/stream.png"),
   stress: require("../../../assets/words/s/stress.png"),
+  strict: require("../../../assets/words/s/strict.png"),
   stripe: require("../../../assets/words/s/stripe.png"),
   structure: require("../../../assets/words/s/structure.png"),
   struggle: require("../../../assets/words/s/struggle.png"),

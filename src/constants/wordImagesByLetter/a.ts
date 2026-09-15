@@ -27,6 +27,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   "accede with": require("../../../assets/words/a/accede-with.png"),
   accelerate: require("../../../assets/words/a/accelerate.png"),
   accept: require("../../../assets/words/a/accept.png"),
+  access: require("../../../assets/words/a/access.png"),
   accessible: require("../../../assets/words/a/accessible.png"),
   accident: require("../../../assets/words/a/accident.png"),
   accidentally: require("../../../assets/words/a/accidentally.png"),

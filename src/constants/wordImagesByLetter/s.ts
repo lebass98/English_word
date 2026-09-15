@@ -59,6 +59,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   settler: require("../../../assets/words/s/settler.png"),
   several: require("../../../assets/words/s/several.png"),
   severe: require("../../../assets/words/s/severe.png"),
+  sew: require("../../../assets/words/s/sew.png"),
   shade: require("../../../assets/words/s/shade.png"),
   shadow: require("../../../assets/words/s/shadow.png"),
   shake: require("../../../assets/words/s/shake.png"),

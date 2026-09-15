@@ -25,6 +25,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   bathroom: require("../../../assets/words/b/bathroom.png"),
   battle: require("../../../assets/words/b/battle.png"),
   bay: require("../../../assets/words/b/bay.png"),
+  "be about to": require("../../../assets/words/b/be-about-to.png"),
   "be accustomed to": require("../../../assets/words/b/be-accustomed-to.png"),
   "be afraid of": require("../../../assets/words/b/be-afraid-of.png"),
   "be based on": require("../../../assets/words/b/be-based-on.png"),

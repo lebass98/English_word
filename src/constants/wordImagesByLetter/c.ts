@@ -168,6 +168,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   compulsory: require("../../../assets/words/c/compulsory.png"),
   conceal: require("../../../assets/words/c/conceal.png"),
   conceive: require("../../../assets/words/c/conceive.png"),
+  concentrate: require("../../../assets/words/c/concentrate.png"),
   "concentrate on": require("../../../assets/words/c/concentrate-on.png"),
   concept: require("../../../assets/words/c/concept.png"),
   conception: require("../../../assets/words/c/conception.png"),

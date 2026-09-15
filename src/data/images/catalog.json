@@ -9800,8 +9800,8 @@
    "status": "missing"
   },
   "come to an end": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/come-to-an-end.png",
+   "blob": "6f06725b6cde81210425577e63f762567692a781",
    "courses": [
     "m3"
    ],
@@ -9809,8 +9809,8 @@
    "sense_from": "m3-543",
    "scene": "bright hall, a small slim white pictogram usher drawing the final curtain as the last audience members leave and a clock reaches the closing hour, motion lines",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "come to mind": {
    "file": "assets/words/c/come-to-mind.png",
@@ -11332,8 +11332,8 @@
    "status": "missing"
   },
   "consistent": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/consistent.png",
+   "blob": "d911ed50a0f231ce18c04a11d45facfcba931e33",
    "courses": [
     "h1",
     "h3",
@@ -11344,8 +11344,8 @@
    "scene": "detective office, two small slim white pictogram witnesses pointing at matching drawings on a board while a detective jumps up with a magnifying glass and a check mark, desk and lamp",
    "scene_source": "scripts/tf_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(h1)이 아니라 tf 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "console": {
    "file": null,
@@ -11393,8 +11393,8 @@
    "status": "ok"
   },
   "constituent": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/constituent.png",
+   "blob": "ebf576cfca989804cd5054387e548e4fe458cb70",
    "courses": [
     "tf"
    ],
@@ -11402,12 +11402,12 @@
    "sense_from": "tf-308",
    "scene": "air science lab, a small slim white pictogram scientist juggling many balloons marked N, O and other letters with the N balloons biggest and most numerous, lab bench and charts",
    "scene_source": "scripts/tf_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "constitute": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/constitute.png",
+   "blob": "e7a443e0e0bcc84d7f1480451a347d38e2c270a9",
    "courses": [
     "tf"
    ],
@@ -11415,8 +11415,8 @@
    "sense_from": "tf-309",
    "scene": "university campus, a crowd of small slim white pictogram students running through a gate while a big pie chart banner shows more than half of the circle highlighted, trees and buildings",
    "scene_source": "scripts/tf_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "constraint": {
    "file": null,
@@ -11473,8 +11473,8 @@
    "status": "missing"
   },
   "consume": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/consume.png",
+   "blob": "32c01c6d5cb74de8f5f1e86778971de17380f743",
    "courses": [
     "h1",
     "tf"
@@ -11484,8 +11484,8 @@
    "scene": "marathon water station, small slim white pictogram runners grabbing water cups mid-stride and gulping them down while volunteers race to refill, track and cheering crowd",
    "scene_source": "scripts/tf_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(h1)이 아니라 tf 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "consumer": {
    "file": "assets/words/c/consumer.png",
@@ -11558,8 +11558,8 @@
    "status": "missing"
   },
   "contemporary": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/contemporary.png",
+   "blob": "b5843bf19be111040773953ff4d152ed9af4d3cd",
    "courses": [
     "h1",
     "h2",
@@ -11570,8 +11570,8 @@
    "scene": "modern art museum, a small slim white pictogram visitor spinning in excitement between strange bold sculptures and abstract paintings, gallery walls and benches",
    "scene_source": "scripts/tf_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(h1)이 아니라 tf 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "contempt": {
    "file": null,
@@ -11662,8 +11662,8 @@
    "status": "review"
   },
   "continual": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/continual.png",
+   "blob": "aa08a7fec144224a54e37fec5cace427a7958572",
    "courses": [
     "tf"
    ],
@@ -11671,8 +11671,8 @@
    "sense_from": "tf-314",
    "scene": "home study room, a small slim white pictogram student throwing up hands as drill sounds come again and again through the wall in repeated bursts, books bouncing on the desk",
    "scene_source": "scripts/tf_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "continually": {
    "file": null,
@@ -20270,8 +20270,8 @@
    "status": "review"
   },
   "expert": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/e/expert.png",
+   "blob": "d143894bc5aa0c3e0dbcb33289f1c52f15a84736",
    "courses": [
     "m3",
     "h1",
@@ -20282,8 +20282,8 @@
    "scene": "bright repair shop, a small slim white pictogram specialist diagnosing a machine at a glance while apprentices watch, framed qualifications on the wall, precise tools, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "expertise": {
    "file": null,
@@ -20804,8 +20804,8 @@
    "status": "review"
   },
   "factor": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/f/factor.png",
+   "blob": "2a01751ed83d1d093646af16a381834cdf34ec6a",
    "courses": [
     "m3",
     "h1"
@@ -20815,8 +20815,8 @@
    "scene": "bright science board, a small slim white pictogram analyst pinning three separate cause cards that all feed by arrows into one result box, formula strip, marker, magnifier, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "factory": {
    "file": "assets/words/f/factory.png",
@@ -24591,8 +24591,8 @@
    "status": "ok"
   },
   "greenhouse": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/g/greenhouse.png",
+   "blob": "1c12a50af8ac7a91ba7b3791ed63f8ecb641ef35",
    "courses": [
     "m3"
    ],
@@ -24600,8 +24600,8 @@
    "sense_from": "m3-544",
    "scene": "bright glass house, a small slim white pictogram gardener watering rows of plants under a clear framed roof while a temperature dial hangs, seed trays, motion lines",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "greet": {
    "file": null,
@@ -34557,8 +34557,8 @@
    "status": "missing"
   },
   "moderate": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/m/moderate.png",
+   "blob": "cc16093fb3125ada652693f65bfa2ab7a0e16571",
    "courses": [
     "m3",
     "h2",
@@ -34569,8 +34569,8 @@
    "sense_from": "m3-546",
    "scene": "bright kitchen, a small slim white pictogram cook setting a dial to the middle mark between low and high while pouring a medium portion, level marks, motion lines",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "modern": {
    "file": "assets/words/m/modern.png",
@@ -41920,8 +41920,8 @@
    "status": "review"
   },
   "property": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/p/property.png",
+   "blob": "8812acc9b70a4a05734da0a6b7d833386801c198",
    "courses": [
     "m3",
     "h1",
@@ -41932,8 +41932,8 @@
    "scene": "bright estate gate, a small slim white pictogram owner holding a deed paper and a key while standing before a house and its fenced land with a name plate, boundary posts, motion lines",
    "scene_source": "scripts/h1_missing_scenes.json",
    "note": "장면이 대표 뜻 과정(m3)이 아니라 h1 것",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "prophecy": {
    "file": null,
@@ -54944,8 +54944,8 @@
    "status": "review"
   },
   "tragedy": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/t/tragedy.png",
+   "blob": "000fd79f3845d3149b2e7ecf6d4e1a14b5f1b450",
    "courses": [
     "m3",
     "h2"
@@ -54954,8 +54954,8 @@
    "sense_from": "m3-551",
    "scene": "bright theatre stage, a small slim white pictogram actor in a sorrowful mask kneeling as a sad tale ends while a drama poster hangs, curtain, motion lines",
    "scene_source": "scripts/m3_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "tragic": {
    "file": null,

@@ -86,6 +86,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   essay: require("../../../assets/words/e/essay.png"),
   essential: require("../../../assets/words/e/essential.png"),
   establish: require("../../../assets/words/e/establish.png"),
+  established: require("../../../assets/words/e/established.png"),
   ethic: require("../../../assets/words/e/ethic.png"),
   event: require("../../../assets/words/e/event.png"),
   evil: require("../../../assets/words/e/evil.png"),

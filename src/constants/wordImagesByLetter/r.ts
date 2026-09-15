@@ -23,6 +23,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   receive: require("../../../assets/words/r/receive.png"),
   recent: require("../../../assets/words/r/recent.png"),
   recently: require("../../../assets/words/r/recently.png"),
+  recognize: require("../../../assets/words/r/recognize.png"),
   recommend: require("../../../assets/words/r/recommend.png"),
   record: require("../../../assets/words/r/record.png"),
   recreation: require("../../../assets/words/r/recreation.png"),

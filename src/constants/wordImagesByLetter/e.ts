@@ -75,6 +75,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   excuse: require("../../../assets/words/e/excuse.png"),
   exercise: require("../../../assets/words/e/exercise.png"),
   exhausted: require("../../../assets/words/e/exhausted.png"),
+  exhibition: require("../../../assets/words/e/exhibition.png"),
   exit: require("../../../assets/words/e/exit.png"),
   expect: require("../../../assets/words/e/expect.png"),
   expensive: require("../../../assets/words/e/expensive.png"),

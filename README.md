@@ -31,6 +31,8 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-16
+- 중3 60단원 빠진 그림 11장 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상: research, relationship, retreat, instead of, enjoyable, confess, prejudice, hold on (to), arctic, pedestrian, collar
 - 중3 59단원 빠진 그림 10장 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
   - 대상: exclaim, driver, serve, galaxy, emigrate, fake, from time to time, ambitious, forehead, gradual
 - 중3 58단원 빠진 그림 13장 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)

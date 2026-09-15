@@ -150,6 +150,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   pumpkin: require("../../../assets/words/p/pumpkin.png"),
   pupil: require("../../../assets/words/p/pupil.png"),
   purchase: require("../../../assets/words/p/purchase.png"),
+  pure: require("../../../assets/words/p/pure.png"),
   purify: require("../../../assets/words/p/purify.png"),
   puritan: require("../../../assets/words/p/puritan.png"),
   purpose: require("../../../assets/words/p/purpose.png"),

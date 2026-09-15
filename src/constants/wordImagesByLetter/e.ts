@@ -75,6 +75,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   entrance: require("../../../assets/words/e/entrance.png"),
   entry: require("../../../assets/words/e/entry.png"),
   envelope: require("../../../assets/words/e/envelope.png"),
+  environment: require("../../../assets/words/e/environment.png"),
   equal: require("../../../assets/words/e/equal.png"),
   eraser: require("../../../assets/words/e/eraser.png"),
   error: require("../../../assets/words/e/error.png"),

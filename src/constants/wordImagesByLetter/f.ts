@@ -8,6 +8,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   factor: require("../../../assets/words/f/factor.png"),
   factory: require("../../../assets/words/f/factory.png"),
   fail: require("../../../assets/words/f/fail.png"),
+  faint: require("../../../assets/words/f/faint.png"),
   fair: require("../../../assets/words/f/fair.png"),
   false: require("../../../assets/words/f/false.png"),
   fame: require("../../../assets/words/f/fame.png"),

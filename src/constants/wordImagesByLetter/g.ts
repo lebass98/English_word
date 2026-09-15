@@ -45,6 +45,7 @@ export const IMAGES_G: Record<string, ImageSourcePropType> = {
   grocery: require("../../../assets/words/g/grocery.png"),
   ground: require("../../../assets/words/g/ground.png"),
   group: require("../../../assets/words/g/group.png"),
+  guarantee: require("../../../assets/words/g/guarantee.png"),
   guard: require("../../../assets/words/g/guard.png"),
   guess: require("../../../assets/words/g/guess.png"),
   guest: require("../../../assets/words/g/guest.png"),

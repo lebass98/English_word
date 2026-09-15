@@ -48,6 +48,7 @@ export const IMAGES_L: Record<string, ImageSourcePropType> = {
   location: require("../../../assets/words/l/location.png"),
   lock: require("../../../assets/words/l/lock.png"),
   log: require("../../../assets/words/l/log.png"),
+  logic: require("../../../assets/words/l/logic.png"),
   lonely: require("../../../assets/words/l/lonely.png"),
   "look for": require("../../../assets/words/l/look-for.png"),
   "look forward to": require("../../../assets/words/l/look-forward-to.png"),

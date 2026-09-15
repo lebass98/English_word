@@ -121,6 +121,22 @@ def pull_rebase():
         for i in range(256):
             os.makedirs(os.path.join(ROOT, ".git/objects", f"{i:02x}"), exist_ok=True)
         sh(["git", "rebase", "--continue"], env={**os.environ, "GIT_EDITOR": "true"})
+    # 여러 컴퓨터가 같은 글자를 그리면 글자별 등록 파일끼리 자주 부딪힌다.
+    # 등록 파일은 폴더의 그림으로 매번 새로 만드는 파일이라, 충돌이 등록 파일뿐이면
+    # 다시 만들어 이어 간다 (2026-09-15 사용자 승인). 그 밖의 충돌은 그대로 멈춘다
+    registry = re.compile(r"src/constants/(wordImagesByLetter/[a-z_]\.ts|wordImages\.ts)")
+    for _ in range(5):
+        files = conflicted()
+        if not (rebasing() and files and all(registry.fullmatch(p) for p in files)):
+            break
+        print(f"등록 파일 충돌({', '.join(files)}) → 다시 만들어 이어 간다", flush=True)
+        for p in files:
+            sh(["git", "checkout", "--theirs", "--", p])
+        if sh(["python3", "scripts/sync_word_images.py"]).returncode != 0:
+            break
+        sh(["git", "add", "--", *files])
+        clear_appledouble()
+        sh(["git", "rebase", "--continue"], env={**os.environ, "GIT_EDITOR": "true"})
     if rebasing():
         files = conflicted()
         sh(["git", "rebase", "--abort"])

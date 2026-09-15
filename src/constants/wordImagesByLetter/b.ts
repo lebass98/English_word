@@ -109,6 +109,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   brain: require("../../../assets/words/b/brain.png"),
   branch: require("../../../assets/words/b/branch.png"),
   break: require("../../../assets/words/b/break.png"),
+  "break out": require("../../../assets/words/b/break-out.png"),
   "break with": require("../../../assets/words/b/break-with.png"),
   breakdown: require("../../../assets/words/b/breakdown.png"),
   breakthrough: require("../../../assets/words/b/breakthrough.png"),

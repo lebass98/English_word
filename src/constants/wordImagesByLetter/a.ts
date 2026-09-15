@@ -183,6 +183,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   "as long as": require("../../../assets/words/a/as-long-as.png"),
   "as well": require("../../../assets/words/a/as-well.png"),
   "as well as": require("../../../assets/words/a/as-well-as.png"),
+  "as ~ as possible": require("../../../assets/words/a/as-~-as-possible.png"),
   ascending: require("../../../assets/words/a/ascending.png"),
   ascertain: require("../../../assets/words/a/ascertain.png"),
   "ascribe A to B": require("../../../assets/words/a/ascribe-A-to-B.png"),

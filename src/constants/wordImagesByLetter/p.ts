@@ -78,6 +78,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   pray: require("../../../assets/words/p/pray.png"),
   precede: require("../../../assets/words/p/precede.png"),
   precious: require("../../../assets/words/p/precious.png"),
+  precise: require("../../../assets/words/p/precise.png"),
   predict: require("../../../assets/words/p/predict.png"),
   prefer: require("../../../assets/words/p/prefer.png"),
   prepare: require("../../../assets/words/p/prepare.png"),

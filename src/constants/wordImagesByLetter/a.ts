@@ -57,6 +57,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   adaptable: require("../../../assets/words/a/adaptable.png"),
   adaptation: require("../../../assets/words/a/adaptation.png"),
   add: require("../../../assets/words/a/add.png"),
+  addict: require("../../../assets/words/a/addict.png"),
   additive: require("../../../assets/words/a/additive.png"),
   address: require("../../../assets/words/a/address.png"),
   adequate: require("../../../assets/words/a/adequate.png"),

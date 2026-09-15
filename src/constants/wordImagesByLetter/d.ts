@@ -120,6 +120,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   dispose: require("../../../assets/words/d/dispose.png"),
   disposition: require("../../../assets/words/d/disposition.png"),
   dispute: require("../../../assets/words/d/dispute.png"),
+  disregard: require("../../../assets/words/d/disregard.png"),
   distance: require("../../../assets/words/d/distance.png"),
   distribute: require("../../../assets/words/d/distribute.png"),
   district: require("../../../assets/words/d/district.png"),

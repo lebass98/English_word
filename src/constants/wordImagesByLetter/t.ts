@@ -9,6 +9,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   tale: require("../../../assets/words/t/tale.png"),
   talent: require("../../../assets/words/t/talent.png"),
   target: require("../../../assets/words/t/target.png"),
+  task: require("../../../assets/words/t/task.png"),
   taste: require("../../../assets/words/t/taste.png"),
   tax: require("../../../assets/words/t/tax.png"),
   tear: require("../../../assets/words/t/tear.png"),

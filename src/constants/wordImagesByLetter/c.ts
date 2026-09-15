@@ -208,6 +208,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   convention: require("../../../assets/words/c/convention.png"),
   conventional: require("../../../assets/words/c/conventional.png"),
   conversation: require("../../../assets/words/c/conversation.png"),
+  conversely: require("../../../assets/words/c/conversely.png"),
   convert: require("../../../assets/words/c/convert.png"),
   convince: require("../../../assets/words/c/convince.png"),
   cookie: require("../../../assets/words/c/cookie.png"),

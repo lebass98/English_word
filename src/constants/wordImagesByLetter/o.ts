@@ -22,6 +22,7 @@ export const IMAGES_O: Record<string, ImageSourcePropType> = {
   opinion: require("../../../assets/words/o/opinion.png"),
   opponent: require("../../../assets/words/o/opponent.png"),
   opportunity: require("../../../assets/words/o/opportunity.png"),
+  oppose: require("../../../assets/words/o/oppose.png"),
   opposite: require("../../../assets/words/o/opposite.png"),
   orbit: require("../../../assets/words/o/orbit.png"),
   order: require("../../../assets/words/o/order.png"),

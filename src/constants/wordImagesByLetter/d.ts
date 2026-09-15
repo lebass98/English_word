@@ -81,6 +81,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   device: require("../../../assets/words/d/device.png"),
   devil: require("../../../assets/words/d/devil.png"),
   devise: require("../../../assets/words/d/devise.png"),
+  "devote to": require("../../../assets/words/d/devote-to.png"),
   diagnose: require("../../../assets/words/d/diagnose.png"),
   dialogue: require("../../../assets/words/d/dialogue.png"),
   "dialogue between north and south": require("../../../assets/words/d/dialogue-between-north-and-south.png"),

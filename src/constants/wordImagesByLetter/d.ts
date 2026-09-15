@@ -110,6 +110,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   disapprove: require("../../../assets/words/d/disapprove.png"),
   disassemble: require("../../../assets/words/d/disassemble.png"),
   discern: require("../../../assets/words/d/discern.png"),
+  discharge: require("../../../assets/words/d/discharge.png"),
   discuss: require("../../../assets/words/d/discuss.png"),
   dish: require("../../../assets/words/d/dish.png"),
   dismiss: require("../../../assets/words/d/dismiss.png"),

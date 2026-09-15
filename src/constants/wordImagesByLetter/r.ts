@@ -6,6 +6,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   racial: require("../../../assets/words/r/racial.png"),
   raise: require("../../../assets/words/r/raise.png"),
   random: require("../../../assets/words/r/random.png"),
+  range: require("../../../assets/words/r/range.png"),
   rank: require("../../../assets/words/r/rank.png"),
   rapid: require("../../../assets/words/r/rapid.png"),
   rapidly: require("../../../assets/words/r/rapidly.png"),

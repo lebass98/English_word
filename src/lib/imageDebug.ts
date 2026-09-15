@@ -1,4 +1,4 @@
-import { getVocab, type Vocab } from "../constants/words";
+import { getVocab, type Vocab, type Word } from "../constants/words";
 import { gradesOf } from "../constants/grades";
 import { STUDY_LANGS, type StudyLangId } from "../constants/languages";
 import { translate } from "../i18n";
@@ -6,9 +6,9 @@ import type { UiLangId } from "../i18n/strings";
 import { WORD_IMAGES } from "../constants/wordImages";
 
 /**
- * 연상 그림이 아직 없는 단어를 세는 임시 도구.
+ * 연상 그림이 아직 없는 낱말을 세는 임시 도구.
  *
- * 그림을 다 그릴 때까지만 홈 코스 카드에 "300개 미완료"처럼 띄워 둔다.
+ * 그림을 다 그릴 때까지만 홈 코스 카드와 그림 현황판에 띄워 둔다.
  * 그림이 다 채워지면 이 파일과 쓰는 곳을 함께 지운다.
  *
  * 등록표(WORD_IMAGES)를 그 자리에서 세므로, 그림을 새로 등록하면
@@ -65,13 +65,13 @@ export function imageCoverageAll(vocab: Vocab): ImageCoverage {
 
 /* ── 현황판용 집계 ─────────────────────────────────────────────
    지금 고른 학습 언어만 보는 위 함수들과 달리, 아래는 모든 학습 언어의
-   모든 코스를 한 번에 훑는다. 그림 현황판(app/image-status.tsx) 전용이다.
-   그림을 다 채우면 이 파일과 현황판을 함께 지운다. */
+   모든 코스를 한 번에 훑는다. 그림 현황판(app/image-status.tsx) 전용이다. */
 
 /** 유닛 하나의 현황. words 는 아직 그리지 않은 낱말들이다 */
 export interface BoardUnit {
   no: number;
   total: number;
+  made: number;
   missing: number;
   words: string[];
 }
@@ -82,15 +82,53 @@ export interface BoardCourse {
   key: string;
   langId: StudyLangId;
   langName: string;
+  /** 좁은 자리에 쓰는 짧은 이름 (고1) */
+  short: string;
   label: string;
   total: number;
   made: number;
   missing: number;
+  /** 그림을 다 채운 유닛 수 */
+  doneUnits: number;
   units: BoardUnit[];
 }
 
-export interface ImageBoard extends ImageCoverage {
+/** 한두 장만 그리면 끝나는 유닛. 현황판에서 먼저 보여준다 */
+export interface QuickWin {
+  courseKey: string;
+  /** "영어 토플" */
+  title: string;
+  unitNo: number;
+  missing: number;
+  words: string[];
+}
+
+export interface ImageBoard {
+  /** 코스에 들어 있는 낱말 자리 전체 (같은 낱말이 여러 코스에 있으면 따로 센다) */
+  slots: number;
+  /** 그림이 붙은 자리 */
+  filledSlots: number;
+  /** 그림이 없는 자리 */
+  emptySlots: number;
+  /**
+   * 앞으로 새로 그려야 할 그림 수.
+   *
+   * 그림은 낱말이 아니라 뜻(conceptId)에 붙어서, 같은 뜻을 가리키는 낱말은
+   * 여러 코스에 흩어져 있어도 그림 한 장을 함께 쓴다. 그래서 빈 자리 수보다
+   * 실제로 그릴 그림이 적다.
+   */
+  toDraw: number;
+  /** 지금까지 등록된 그림 파일 수 */
+  drawn: number;
+  /** 채움 비율 0~1 */
+  fill: number;
   courses: BoardCourse[];
+  quickWins: QuickWin[];
+}
+
+/** 이 낱말의 그림이 놓일 자리 이름. 그림 한 장을 함께 쓰는 낱말끼리 같은 값이 된다 */
+function conceptKeyOf(w: Word): string {
+  return w.conceptId || w.word;
 }
 
 /**
@@ -102,8 +140,11 @@ export interface ImageBoard extends ImageCoverage {
  */
 export function imageBoard(uiLang: UiLangId): ImageBoard {
   const courses: BoardCourse[] = [];
-  let total = 0;
-  let made = 0;
+  const quickWins: QuickWin[] = [];
+  /** 아직 그리지 않은 뜻. 코스가 달라도 같은 뜻이면 한 번만 센다 */
+  const missingConcepts = new Set<string>();
+  let slots = 0;
+  let filledSlots = 0;
 
   for (const langId of STUDY_LANGS) {
     const vocab = getVocab(langId, uiLang);
@@ -114,28 +155,59 @@ export function imageBoard(uiLang: UiLangId): ImageBoard {
       const cover = imageCoverageOf(vocab, grade.id);
       if (cover.total === 0) continue;
 
+      let doneUnits = 0;
       const units = vocab.unitsOf(grade.id).map((unit) => {
         const missingWords = unit.words.filter((w) => !hasImage(w));
-        return {
+        for (const w of missingWords) missingConcepts.add(conceptKeyOf(w));
+        if (missingWords.length === 0) doneUnits += 1;
+
+        const u: BoardUnit = {
           no: unit.unitNo,
           total: unit.words.length,
+          made: unit.words.length - missingWords.length,
           missing: missingWords.length,
           words: missingWords.map((w) => w.word),
         };
+
+        // 세 장 안쪽이면 금방 끝나는 유닛으로 따로 모아 둔다
+        if (u.missing > 0 && u.missing <= 3) {
+          quickWins.push({
+            courseKey: `${langId}:${grade.id}`,
+            title: `${langName} ${grade.short}`,
+            unitNo: u.no,
+            missing: u.missing,
+            words: u.words,
+          });
+        }
+        return u;
       });
 
       courses.push({
         key: `${langId}:${grade.id}`,
         langId,
         langName,
+        short: grade.short,
         label: grade.label,
         ...cover,
+        doneUnits,
         units,
       });
-      total += cover.total;
-      made += cover.made;
+      slots += cover.total;
+      filledSlots += cover.made;
     }
   }
 
-  return { total, made, missing: total - made, courses };
+  // 적게 남은 유닛부터. 같으면 코스 순서를 지킨다
+  quickWins.sort((a, b) => a.missing - b.missing);
+
+  return {
+    slots,
+    filledSlots,
+    emptySlots: slots - filledSlots,
+    toDraw: missingConcepts.size,
+    drawn: registeredImageCount(),
+    fill: slots > 0 ? filledSlots / slots : 0,
+    courses,
+    quickWins: quickWins.slice(0, 6),
+  };
 }

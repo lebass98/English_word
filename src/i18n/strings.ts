@@ -32,6 +32,7 @@ const ko = {
   // 아래 탭
   "nav.home": "홈",
   "nav.wordbook": "단어장",
+  "nav.imageStatus": "현황",
   "nav.settings": "설정",
 
   // 홈
@@ -190,6 +191,7 @@ const ja: Partial<Record<StringKey, string>> = {
 
   "nav.home": "ホーム",
   "nav.wordbook": "単語帳",
+  "nav.imageStatus": "状況",
   "nav.settings": "設定",
 
   "home.myCourse": "マイコース",

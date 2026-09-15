@@ -50,6 +50,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   flow: require("../../../assets/words/f/flow.png"),
   fluent: require("../../../assets/words/f/fluent.png"),
   flute: require("../../../assets/words/f/flute.png"),
+  focus: require("../../../assets/words/f/focus.png"),
   fog: require("../../../assets/words/f/fog.png"),
   folk: require("../../../assets/words/f/folk.png"),
   follow: require("../../../assets/words/f/follow.png"),

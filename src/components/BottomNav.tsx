@@ -75,7 +75,7 @@ export function BottomNav() {
       }
     >
       <View
-        className="w-full self-center bg-canvas px-6 pb-6 pt-2"
+        className="w-full self-center px-6 pb-6 pt-2"
         style={{ maxWidth: MAX_CONTENT_WIDTH }}
       >
         <View className="flex-row items-center gap-1 rounded-full bg-surface px-2 py-2 shadow-neu-card">

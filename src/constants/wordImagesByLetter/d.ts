@@ -129,6 +129,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   dissimilar: require("../../../assets/words/d/dissimilar.png"),
   dissuade: require("../../../assets/words/d/dissuade.png"),
   distance: require("../../../assets/words/d/distance.png"),
+  distant: require("../../../assets/words/d/distant.png"),
   distribute: require("../../../assets/words/d/distribute.png"),
   district: require("../../../assets/words/d/district.png"),
   ditch: require("../../../assets/words/d/ditch.png"),

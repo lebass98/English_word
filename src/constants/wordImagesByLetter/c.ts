@@ -230,6 +230,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   council: require("../../../assets/words/c/council.png"),
   count: require("../../../assets/words/c/count.png"),
   counter: require("../../../assets/words/c/counter.png"),
+  "counter to": require("../../../assets/words/c/counter-to.png"),
   counterpart: require("../../../assets/words/c/counterpart.png"),
   couple: require("../../../assets/words/c/couple.png"),
   course: require("../../../assets/words/c/course.png"),

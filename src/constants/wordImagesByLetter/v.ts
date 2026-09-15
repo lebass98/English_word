@@ -30,6 +30,7 @@ export const IMAGES_V: Record<string, ImageSourcePropType> = {
   visual: require("../../../assets/words/v/visual.png"),
   vital: require("../../../assets/words/v/vital.png"),
   vivid: require("../../../assets/words/v/vivid.png"),
+  vocation: require("../../../assets/words/v/vocation.png"),
   voice: require("../../../assets/words/v/voice.png"),
   volcano: require("../../../assets/words/v/volcano.png"),
   volume: require("../../../assets/words/v/volume.png"),

@@ -28,6 +28,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   decorate: require("../../../assets/words/d/decorate.png"),
   decrease: require("../../../assets/words/d/decrease.png"),
   deed: require("../../../assets/words/d/deed.png"),
+  deem: require("../../../assets/words/d/deem.png"),
   deep: require("../../../assets/words/d/deep.png"),
   deer: require("../../../assets/words/d/deer.png"),
   defeat: require("../../../assets/words/d/defeat.png"),

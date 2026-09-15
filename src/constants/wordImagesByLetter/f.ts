@@ -38,6 +38,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   feed: require("../../../assets/words/f/feed.png"),
   fence: require("../../../assets/words/f/fence.png"),
   fever: require("../../../assets/words/f/fever.png"),
+  fiber: require("../../../assets/words/f/fiber.png"),
   fiction: require("../../../assets/words/f/fiction.png"),
   fierce: require("../../../assets/words/f/fierce.png"),
   fight: require("../../../assets/words/f/fight.png"),

@@ -77,6 +77,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   "dining room": require("../../../assets/words/d/dining-room.png"),
   "dinning room": require("../../../assets/words/d/dinning-room.png"),
   direction: require("../../../assets/words/d/direction.png"),
+  director: require("../../../assets/words/d/director.png"),
   dirty: require("../../../assets/words/d/dirty.png"),
   disappear: require("../../../assets/words/d/disappear.png"),
   disappoint: require("../../../assets/words/d/disappoint.png"),

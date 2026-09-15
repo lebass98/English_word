@@ -4,9 +4,8 @@ import type { PropsWithChildren } from "react";
 /**
  * 웹에서만 쓰는 HTML 뼈대.
  *
- * 여기서 일본어 글꼴(Noto Sans JP)을 불러온다. 한글은 이 글꼴에 없으므로
- * 글꼴 목록 뒤쪽의 한글 글꼴로 자동으로 넘어간다. 덕분에 한 벌의 목록으로
- * 일본어는 Noto Sans JP, 한국어는 기존 글꼴로 나온다.
+ * 글꼴은 프로젝트 안(public/fonts)에 둔 파일을 쓴다. 바깥 CDN 을 타지 않는다.
+ * 일본어 화면은 Noto Sans JP 만, 한국어·영어 화면은 프리텐다드 GOV 를 쓴다.
  */
 export default function Root({ children }: PropsWithChildren) {
   return (
@@ -17,18 +16,6 @@ export default function Root({ children }: PropsWithChildren) {
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
-
-        {/* 일본어 글꼴 */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin=""
-        />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
         />
 
         {/* 스크롤 동작을 앱과 맞추는 expo-router 기본 리셋 */}
@@ -50,11 +37,39 @@ export default function Root({ children }: PropsWithChildren) {
  * 일본어는 Noto Sans JP, 한글은 그다음 한글 글꼴로 자연스럽게 갈린다.
  */
 const FONT_STACK = `
-:root {
-  --app-font: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR",
-    Helvetica, Arial, sans-serif;
+/* 프로젝트에 설치한 글꼴. 가변 글꼴 한 벌로 모든 굵기를 낸다 */
+@font-face {
+  font-family: "PretendardGOV";
+  src: url("/fonts/PretendardGOVVariable.woff2") format("woff2-variations");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
 }
+@font-face {
+  font-family: "NotoSansJP";
+  src: url("/fonts/NotoSansJP-Variable.woff2") format("woff2-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*
+ * 한국어·영어 화면은 프리텐다드 GOV.
+ * 뒤에 Noto Sans JP 를 두는 까닭은, 한국어 화면에서 일본어 단어를 볼 때
+ * 프리텐다드에 없는 가나가 시스템 글꼴로 튀지 않게 하기 위해서다.
+ * 브라우저는 글자마다 목록 앞에서부터 그 글자를 가진 글꼴을 고른다.
+ */
+:root {
+  --app-font: "PretendardGOV", "NotoSansJP", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* 일본어 화면은 Noto Sans JP 만 쓴다 */
+:root[data-uilang="ja"] {
+  --app-font: "NotoSansJP", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+}
+
 html, body, #root { font-family: var(--app-font); }
 
 /*

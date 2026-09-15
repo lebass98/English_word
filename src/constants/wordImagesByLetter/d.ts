@@ -88,6 +88,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   diary: require("../../../assets/words/d/diary.png"),
   dictionary: require("../../../assets/words/d/dictionary.png"),
   "die of": require("../../../assets/words/d/die-of.png"),
+  differ: require("../../../assets/words/d/differ.png"),
   different: require("../../../assets/words/d/different.png"),
   differentiate: require("../../../assets/words/d/differentiate.png"),
   difficult: require("../../../assets/words/d/difficult.png"),

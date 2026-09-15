@@ -36,6 +36,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   emerge: require("../../../assets/words/e/emerge.png"),
   emergency: require("../../../assets/words/e/emergency.png"),
   eminence: require("../../../assets/words/e/eminence.png"),
+  eminently: require("../../../assets/words/e/eminently.png"),
   emotion: require("../../../assets/words/e/emotion.png"),
   empathy: require("../../../assets/words/e/empathy.png"),
   emphasize: require("../../../assets/words/e/emphasize.png"),

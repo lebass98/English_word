@@ -60,6 +60,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   mistake: require("../../../assets/words/m/mistake.png"),
   mixture: require("../../../assets/words/m/mixture.png"),
   mobile: require("../../../assets/words/m/mobile.png"),
+  moderate: require("../../../assets/words/m/moderate.png"),
   modern: require("../../../assets/words/m/modern.png"),
   moisture: require("../../../assets/words/m/moisture.png"),
   moment: require("../../../assets/words/m/moment.png"),

@@ -13,6 +13,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   edible: require("../../../assets/words/e/edible.png"),
   education: require("../../../assets/words/e/education.png"),
   effect: require("../../../assets/words/e/effect.png"),
+  efficiency: require("../../../assets/words/e/efficiency.png"),
   effort: require("../../../assets/words/e/effort.png"),
   either: require("../../../assets/words/e/either.png"),
   elder: require("../../../assets/words/e/elder.png"),

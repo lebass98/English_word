@@ -171,5 +171,6 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   duration: require("../../../assets/words/d/duration.png"),
   "dwell in": require("../../../assets/words/d/dwell-in.png"),
   dye: require("../../../assets/words/d/dye.png"),
+  dynamic: require("../../../assets/words/d/dynamic.png"),
   dynasty: require("../../../assets/words/d/dynasty.png"),
 };

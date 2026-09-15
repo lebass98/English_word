@@ -139,6 +139,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   disturb: require("../../../assets/words/d/disturb.png"),
   ditch: require("../../../assets/words/d/ditch.png"),
   dive: require("../../../assets/words/d/dive.png"),
+  diverse: require("../../../assets/words/d/diverse.png"),
   document: require("../../../assets/words/d/document.png"),
   doll: require("../../../assets/words/d/doll.png"),
   dollar: require("../../../assets/words/d/dollar.png"),

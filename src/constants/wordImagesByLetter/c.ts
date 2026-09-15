@@ -275,4 +275,5 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   customarily: require("../../../assets/words/c/customarily.png"),
   customary: require("../../../assets/words/c/customary.png"),
   "cut off": require("../../../assets/words/c/cut-off.png"),
+  cycle: require("../../../assets/words/c/cycle.png"),
 };

@@ -30,6 +30,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   empire: require("../../../assets/words/e/empire.png"),
   employ: require("../../../assets/words/e/employ.png"),
   empty: require("../../../assets/words/e/empty.png"),
+  enable: require("../../../assets/words/e/enable.png"),
   encounter: require("../../../assets/words/e/encounter.png"),
   encourage: require("../../../assets/words/e/encourage.png"),
   "end up": require("../../../assets/words/e/end-up.png"),

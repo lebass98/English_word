@@ -97,6 +97,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   ritual: require("../../../assets/words/r/ritual.png"),
   roar: require("../../../assets/words/r/roar.png"),
   robber: require("../../../assets/words/r/robber.png"),
+  robbery: require("../../../assets/words/r/robbery.png"),
   roll: require("../../../assets/words/r/roll.png"),
   rope: require("../../../assets/words/r/rope.png"),
   rotten: require("../../../assets/words/r/rotten.png"),

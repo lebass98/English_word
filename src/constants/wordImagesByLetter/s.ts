@@ -122,6 +122,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   sound: require("../../../assets/words/s/sound.png"),
   source: require("../../../assets/words/s/source.png"),
   southern: require("../../../assets/words/s/southern.png"),
+  souvenir: require("../../../assets/words/s/souvenir.png"),
   sow: require("../../../assets/words/s/sow.png"),
   space: require("../../../assets/words/s/space.png"),
   spade: require("../../../assets/words/s/spade.png"),

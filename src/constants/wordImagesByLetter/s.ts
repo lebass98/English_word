@@ -179,6 +179,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   step: require("../../../assets/words/s/step.png"),
   stethoscope: require("../../../assets/words/s/stethoscope.png"),
   "stick to": require("../../../assets/words/s/stick-to.png"),
+  stimulate: require("../../../assets/words/s/stimulate.png"),
   stir: require("../../../assets/words/s/stir.png"),
   stomach: require("../../../assets/words/s/stomach.png"),
   stone: require("../../../assets/words/s/stone.png"),

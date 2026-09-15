@@ -39,6 +39,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   measure: require("../../../assets/words/m/measure.png"),
   meat: require("../../../assets/words/m/meat.png"),
   mechanic: require("../../../assets/words/m/mechanic.png"),
+  mechanical: require("../../../assets/words/m/mechanical.png"),
   medical: require("../../../assets/words/m/medical.png"),
   medicine: require("../../../assets/words/m/medicine.png"),
   medium: require("../../../assets/words/m/medium.png"),

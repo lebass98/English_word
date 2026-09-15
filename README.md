@@ -31,6 +31,8 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-16
+- 중3 57단원 빠진 그림 14장 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상: doubt, wing, pole, consist, postpone, anniversary, luxury, mechanical, counsel, aisle, leftover, at last, platform, visual
 - 중3 56단원 빠진 그림 15장 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
   - 대상: bullet, hire, refund, unusual, outfit, apologize, break down, roast, nutrition, recall, agency, extinct, cast, statistics, attention
 - 중3 55단원 빠진 그림 14장 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)

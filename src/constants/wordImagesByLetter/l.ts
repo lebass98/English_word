@@ -22,6 +22,7 @@ export const IMAGES_L: Record<string, ImageSourcePropType> = {
   leap: require("../../../assets/words/l/leap.png"),
   least: require("../../../assets/words/l/least.png"),
   lecture: require("../../../assets/words/l/lecture.png"),
+  leftover: require("../../../assets/words/l/leftover.png"),
   legend: require("../../../assets/words/l/legend.png"),
   legislation: require("../../../assets/words/l/legislation.png"),
   leisure: require("../../../assets/words/l/leisure.png"),
@@ -64,4 +65,5 @@ export const IMAGES_L: Record<string, ImageSourcePropType> = {
   low: require("../../../assets/words/l/low.png"),
   loyal: require("../../../assets/words/l/loyal.png"),
   luck: require("../../../assets/words/l/luck.png"),
+  luxury: require("../../../assets/words/l/luxury.png"),
 };

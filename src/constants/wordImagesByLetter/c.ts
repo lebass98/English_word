@@ -272,5 +272,6 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   currency: require("../../../assets/words/c/currency.png"),
   curve: require("../../../assets/words/c/curve.png"),
   custom: require("../../../assets/words/c/custom.png"),
+  customarily: require("../../../assets/words/c/customarily.png"),
   "cut off": require("../../../assets/words/c/cut-off.png"),
 };

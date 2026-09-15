@@ -429,3 +429,86 @@ export function GearIcon({
     </Svg>
   );
 }
+
+/* ── 하단 독의 꽉 찬 아이콘 ───────────────────────────────────
+   활성 탭에만 쓴다. 액자·톱니처럼 안이 뚫린 모양은 뚫린 자리를
+   바탕색으로 덮어 그린다. 그래서 바탕색을 받는다 (활성 탭은 bg-canvas) */
+
+export interface FilledIconProps extends IconProps {
+  /** 뚫린 자리를 덮을 바탕색 */
+  bg?: string;
+}
+
+/** 홈 (활성) */
+export function HomeFilledIcon({
+  size = 20,
+  color = "#006C4C",
+}: FilledIconProps) {
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Path
+        d="M11.36 3.2a1 1 0 0 1 1.28 0l8.5 7.13a1 1 0 0 1-.64 1.77H19.5v7.4A1.5 1.5 0 0 1 18 21h-3.25v-5.2h-5.5V21H6a1.5 1.5 0 0 1-1.5-1.5v-7.4H3.5a1 1 0 0 1-.64-1.77l8.5-7.13Z"
+        fill={color}
+      />
+    </Svg>
+  );
+}
+
+/** 단어장 (활성) */
+export function BookFilledIcon({
+  size = 20,
+  color = "#006C4C",
+}: FilledIconProps) {
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Path
+        d="M4 5.5A1.5 1.5 0 0 1 5.5 4H10a2 2 0 0 1 2 2v13a2 2 0 0 0-2-2H5.5A1.5 1.5 0 0 1 4 15.5V5.5Z"
+        fill={color}
+      />
+      <Path
+        d="M20 5.5A1.5 1.5 0 0 0 18.5 4H14a2 2 0 0 0-2 2v13a2 2 0 0 1 2-2h4.5a1.5 1.5 0 0 0 1.5-1.5V5.5Z"
+        fill={color}
+      />
+    </Svg>
+  );
+}
+
+/** 그림 현황 (활성) */
+export function PictureFilledIcon({
+  size = 20,
+  color = "#006C4C",
+  bg = "#ecedf1",
+}: FilledIconProps) {
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Rect x={3} y={4.5} width={18} height={15} rx={3} fill={color} />
+      {/* 해와 언덕을 바탕색으로 파낸다 */}
+      <Circle cx={8.75} cy={9.75} r={1.9} fill={bg} />
+      <Path
+        d="M3 19.5v-2.6l5-4.5a2 2 0 0 1 2.7 0L14 15.4l1.7-1.4a2 2 0 0 1 2.6 0l2.7 2.3v3.2H3Z"
+        fill={bg}
+      />
+    </Svg>
+  );
+}
+
+/** 설정 (활성) */
+export function GearFilledIcon({
+  size = 20,
+  color = "#006C4C",
+  bg = "#ecedf1",
+}: FilledIconProps) {
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      {/* 톱니를 굵은 선으로 돌려 놓고 가운데를 원으로 채운다 */}
+      <Path
+        d="M12 2.4v3.2M12 18.4v3.2M21.6 12h-3.2M5.6 12H2.4M18.8 5.2l-2.3 2.3M7.5 16.5l-2.3 2.3M18.8 18.8l-2.3-2.3M7.5 7.5 5.2 5.2"
+        stroke={color}
+        strokeWidth={3.4}
+        strokeLinecap="round"
+      />
+      <Circle cx={12} cy={12} r={6.2} fill={color} />
+      <Circle cx={12} cy={12} r={2.5} fill={bg} />
+    </Svg>
+  );
+}

@@ -1,10 +1,19 @@
 import { usePathname, useRouter } from "expo-router";
 import { Platform, Pressable, Text, View } from "react-native";
-import { BookIcon, GearIcon, HomeIcon, PictureIcon } from "./icons";
+import {
+  BookFilledIcon,
+  BookIcon,
+  GearFilledIcon,
+  GearIcon,
+  HomeFilledIcon,
+  HomeIcon,
+  PictureFilledIcon,
+  PictureIcon,
+} from "./icons";
 import { MAX_CONTENT_WIDTH } from "./Screen";
 import { useT, type StringKey } from "../i18n";
 
-/** 독 탭 하나. 아이콘은 색을 받아 활성 여부에 따라 달라진다 */
+/** 독 탭 하나. 기본은 선 아이콘, 활성 탭은 꽉 찬 아이콘을 쓴다 */
 interface Tab {
   href: string;
   labelKey: StringKey;
@@ -13,14 +22,30 @@ interface Tab {
     color?: string;
     strokeWidth?: number;
   }) => React.ReactElement;
+  IconFilled: (props: { size?: number; color?: string }) => React.ReactElement;
 }
 
 const TABS: Tab[] = [
-  { href: "/", labelKey: "nav.home", Icon: HomeIcon },
-  { href: "/wordbook", labelKey: "nav.wordbook", Icon: BookIcon },
+  { href: "/", labelKey: "nav.home", Icon: HomeIcon, IconFilled: HomeFilledIcon },
+  {
+    href: "/wordbook",
+    labelKey: "nav.wordbook",
+    Icon: BookIcon,
+    IconFilled: BookFilledIcon,
+  },
   // 그림 제작 현황(임시). 그림을 전부 채우면 이 줄과 현황판을 함께 지운다
-  { href: "/image-status", labelKey: "nav.imageStatus", Icon: PictureIcon },
-  { href: "/settings", labelKey: "nav.settings", Icon: GearIcon },
+  {
+    href: "/image-status",
+    labelKey: "nav.imageStatus",
+    Icon: PictureIcon,
+    IconFilled: PictureFilledIcon,
+  },
+  {
+    href: "/settings",
+    labelKey: "nav.settings",
+    Icon: GearIcon,
+    IconFilled: GearFilledIcon,
+  },
 ];
 
 /**
@@ -72,11 +97,11 @@ export function BottomNav() {
                   active ? "bg-canvas shadow-neu-inset" : "active:opacity-60"
                 }`}
               >
-                <tab.Icon
-                  size={34}
-                  color={active ? "#006C4C" : "#94a3b8"}
-                  strokeWidth={0.55}
-                />
+                {active ? (
+                  <tab.IconFilled size={34} color="#006C4C" />
+                ) : (
+                  <tab.Icon size={34} color="#94a3b8" strokeWidth={0.55} />
+                )}
                 <Text
                   numberOfLines={1}
                   className={`text-[11px] ${

@@ -28,6 +28,7 @@ export const IMAGES_O: Record<string, ImageSourcePropType> = {
   orbit: require("../../../assets/words/o/orbit.png"),
   order: require("../../../assets/words/o/order.png"),
   organism: require("../../../assets/words/o/organism.png"),
+  organization: require("../../../assets/words/o/organization.png"),
   organize: require("../../../assets/words/o/organize.png"),
   origin: require("../../../assets/words/o/origin.png"),
   orphan: require("../../../assets/words/o/orphan.png"),

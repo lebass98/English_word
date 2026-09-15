@@ -2,6 +2,7 @@ import { ImageSourcePropType } from "react-native";
 
 // "s" 로 시작하는 단어 그림. scripts/sync_word_images.py 가 만든다 (손으로 고치지 않는다)
 export const IMAGES_S: Record<string, ImageSourcePropType> = {
+  sacred: require("../../../assets/words/s/sacred.png"),
   sacrifice: require("../../../assets/words/s/sacrifice.png"),
   sad: require("../../../assets/words/s/sad.png"),
   safely: require("../../../assets/words/s/safely.png"),

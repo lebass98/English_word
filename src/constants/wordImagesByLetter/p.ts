@@ -3,6 +3,7 @@ import { ImageSourcePropType } from "react-native";
 // "p" 로 시작하는 단어 그림. scripts/sync_word_images.py 가 만든다 (손으로 고치지 않는다)
 export const IMAGES_P: Record<string, ImageSourcePropType> = {
   pace: require("../../../assets/words/p/pace.png"),
+  Pacific: require("../../../assets/words/p/Pacific.png"),
   pack: require("../../../assets/words/p/pack.png"),
   paint: require("../../../assets/words/p/paint.png"),
   pair: require("../../../assets/words/p/pair.png"),

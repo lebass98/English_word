@@ -38,6 +38,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   degrade: require("../../../assets/words/d/degrade.png"),
   degree: require("../../../assets/words/d/degree.png"),
   delay: require("../../../assets/words/d/delay.png"),
+  deliberate: require("../../../assets/words/d/deliberate.png"),
   delicious: require("../../../assets/words/d/delicious.png"),
   delight: require("../../../assets/words/d/delight.png"),
   delighted: require("../../../assets/words/d/delighted.png"),

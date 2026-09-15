@@ -122,6 +122,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   combined: require("../../../assets/words/c/combined.png"),
   "come to an end": require("../../../assets/words/c/come-to-an-end.png"),
   "come to mind": require("../../../assets/words/c/come-to-mind.png"),
+  "come up with": require("../../../assets/words/c/come-up-with.png"),
   comedy: require("../../../assets/words/c/comedy.png"),
   comfort: require("../../../assets/words/c/comfort.png"),
   comic: require("../../../assets/words/c/comic.png"),

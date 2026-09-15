@@ -484,7 +484,7 @@ function StudyCard({
                           fontSize: wordFontSize,
                           lineHeight: Math.round(wordFontSize * 1.15),
                         }}
-                        className="font-black tracking-wider text-slate-900"
+                        className="font-black tracking-normal text-slate-900"
                       >
                         {word.word}
                       </Text>

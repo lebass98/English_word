@@ -4,6 +4,7 @@ import { Image, Pressable, ScrollView, Text, View } from "react-native";
 import { BottomNav } from "../src/components/BottomNav";
 import { ContinueCard } from "../src/components/ContinueCard";
 import { GradeCard } from "../src/components/GradeCard";
+import { ImageStatusFab } from "../src/components/ImageStatusFab";
 import { imageCoverageOf, registeredImageCount } from "../src/lib/imageDebug";
 import { LanguageFlag } from "../src/components/flags";
 import { PillButton } from "../src/components/PillButton";
@@ -286,6 +287,8 @@ export default function HomeScreen() {
         </View>
       </ScrollView>
 
+      {/* 그림 제작 현황(임시). 그림을 전부 채우면 이 줄을 지운다 */}
+      <ImageStatusFab />
       <BottomNav />
     </Screen>
   );

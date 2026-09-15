@@ -1,4 +1,8 @@
-import type { Vocab } from "../constants/words";
+import { getVocab, type Vocab } from "../constants/words";
+import { gradesOf } from "../constants/grades";
+import { STUDY_LANGS, type StudyLangId } from "../constants/languages";
+import { translate } from "../i18n";
+import type { UiLangId } from "../i18n/strings";
 import { WORD_IMAGES } from "../constants/wordImages";
 
 /**
@@ -57,4 +61,81 @@ export function imageCoverageAll(vocab: Vocab): ImageCoverage {
     made += c.made;
   }
   return { total, made, missing: total - made };
+}
+
+/* ── 현황판용 집계 ─────────────────────────────────────────────
+   지금 고른 학습 언어만 보는 위 함수들과 달리, 아래는 모든 학습 언어의
+   모든 코스를 한 번에 훑는다. 그림 현황판(app/image-status.tsx) 전용이다.
+   그림을 다 채우면 이 파일과 현황판을 함께 지운다. */
+
+/** 유닛 하나의 현황. words 는 아직 그리지 않은 낱말들이다 */
+export interface BoardUnit {
+  no: number;
+  total: number;
+  missing: number;
+  words: string[];
+}
+
+/** 코스 하나의 현황 */
+export interface BoardCourse {
+  /** 코스를 가리키는 고유 키 (en:high-1). 화면에서 펼침 상태를 기억하는 데 쓴다 */
+  key: string;
+  langId: StudyLangId;
+  langName: string;
+  label: string;
+  total: number;
+  made: number;
+  missing: number;
+  units: BoardUnit[];
+}
+
+export interface ImageBoard extends ImageCoverage {
+  courses: BoardCourse[];
+}
+
+/**
+ * 모든 학습 언어 × 모든 코스의 그림 현황.
+ *
+ * 단어 수천 개를 훑으므로 화면에서는 useMemo 로 감싸고,
+ * 등록된 그림 수(registeredImageCount)를 조건에 넣어 새 그림이 등록되면
+ * 다시 세도록 한다.
+ */
+export function imageBoard(uiLang: UiLangId): ImageBoard {
+  const courses: BoardCourse[] = [];
+  let total = 0;
+  let made = 0;
+
+  for (const langId of STUDY_LANGS) {
+    const vocab = getVocab(langId, uiLang);
+    const langName = translate(uiLang, `studyLang.${langId}` as never) || langId;
+
+    for (const grade of gradesOf(langId, uiLang)) {
+      // 아직 단어를 안 넣은 코스는 현황판에 빈 줄로 남기지 않는다
+      const cover = imageCoverageOf(vocab, grade.id);
+      if (cover.total === 0) continue;
+
+      const units = vocab.unitsOf(grade.id).map((unit) => {
+        const missingWords = unit.words.filter((w) => !hasImage(w));
+        return {
+          no: unit.unitNo,
+          total: unit.words.length,
+          missing: missingWords.length,
+          words: missingWords.map((w) => w.word),
+        };
+      });
+
+      courses.push({
+        key: `${langId}:${grade.id}`,
+        langId,
+        langName,
+        label: grade.label,
+        ...cover,
+        units,
+      });
+      total += cover.total;
+      made += cover.made;
+    }
+  }
+
+  return { total, made, missing: total - made, courses };
 }

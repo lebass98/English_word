@@ -3,6 +3,7 @@ import { ImageSourcePropType } from "react-native";
 // "m" 로 시작하는 단어 그림. scripts/sync_word_images.py 가 만든다 (손으로 고치지 않는다)
 export const IMAGES_M: Record<string, ImageSourcePropType> = {
   machine: require("../../../assets/words/m/machine.png"),
+  "made up of": require("../../../assets/words/m/made-up-of.png"),
   magazine: require("../../../assets/words/m/magazine.png"),
   magnet: require("../../../assets/words/m/magnet.png"),
   mail: require("../../../assets/words/m/mail.png"),

@@ -48,6 +48,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   tool: require("../../../assets/words/t/tool.png"),
   tooth: require("../../../assets/words/t/tooth.png"),
   torch: require("../../../assets/words/t/torch.png"),
+  total: require("../../../assets/words/t/total.png"),
   touch: require("../../../assets/words/t/touch.png"),
   tough: require("../../../assets/words/t/tough.png"),
   tourist: require("../../../assets/words/t/tourist.png"),

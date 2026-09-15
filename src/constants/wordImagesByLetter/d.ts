@@ -21,6 +21,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   decade: require("../../../assets/words/d/decade.png"),
   deceive: require("../../../assets/words/d/deceive.png"),
   decide: require("../../../assets/words/d/decide.png"),
+  decisive: require("../../../assets/words/d/decisive.png"),
   deck: require("../../../assets/words/d/deck.png"),
   declare: require("../../../assets/words/d/declare.png"),
   decline: require("../../../assets/words/d/decline.png"),

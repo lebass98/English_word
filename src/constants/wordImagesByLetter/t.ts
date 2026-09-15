@@ -98,5 +98,6 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   turtle: require("../../../assets/words/t/turtle.png"),
   twice: require("../../../assets/words/t/twice.png"),
   twin: require("../../../assets/words/t/twin.png"),
+  twist: require("../../../assets/words/t/twist.png"),
   type: require("../../../assets/words/t/type.png"),
 };

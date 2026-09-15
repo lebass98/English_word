@@ -106,6 +106,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   profound: require("../../../assets/words/p/profound.png"),
   project: require("../../../assets/words/p/project.png"),
   promise: require("../../../assets/words/p/promise.png"),
+  pronounce: require("../../../assets/words/p/pronounce.png"),
   pronunciation: require("../../../assets/words/p/pronunciation.png"),
   properly: require("../../../assets/words/p/properly.png"),
   property: require("../../../assets/words/p/property.png"),

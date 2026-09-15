@@ -205,6 +205,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   contribute: require("../../../assets/words/c/contribute.png"),
   control: require("../../../assets/words/c/control.png"),
   convenient: require("../../../assets/words/c/convenient.png"),
+  convention: require("../../../assets/words/c/convention.png"),
   conversation: require("../../../assets/words/c/conversation.png"),
   convert: require("../../../assets/words/c/convert.png"),
   convince: require("../../../assets/words/c/convince.png"),

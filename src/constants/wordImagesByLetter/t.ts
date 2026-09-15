@@ -42,6 +42,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   tie: require("../../../assets/words/t/tie.png"),
   tightly: require("../../../assets/words/t/tightly.png"),
   tiny: require("../../../assets/words/t/tiny.png"),
+  tip: require("../../../assets/words/t/tip.png"),
   tissue: require("../../../assets/words/t/tissue.png"),
   title: require("../../../assets/words/t/title.png"),
   together: require("../../../assets/words/t/together.png"),

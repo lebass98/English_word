@@ -58,6 +58,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   chart: require("../../../assets/words/c/chart.png"),
   charting: require("../../../assets/words/c/charting.png"),
   chase: require("../../../assets/words/c/chase.png"),
+  chat: require("../../../assets/words/c/chat.png"),
   cheap: require("../../../assets/words/c/cheap.png"),
   check: require("../../../assets/words/c/check.png"),
   "check out": require("../../../assets/words/c/check-out.png"),

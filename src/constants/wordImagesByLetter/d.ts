@@ -68,6 +68,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   designate: require("../../../assets/words/d/designate.png"),
   designed: require("../../../assets/words/d/designed.png"),
   desire: require("../../../assets/words/d/desire.png"),
+  desperate: require("../../../assets/words/d/desperate.png"),
   destroy: require("../../../assets/words/d/destroy.png"),
   detective: require("../../../assets/words/d/detective.png"),
   detergent: require("../../../assets/words/d/detergent.png"),

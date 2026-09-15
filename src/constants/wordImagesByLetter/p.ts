@@ -106,6 +106,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   price: require("../../../assets/words/p/price.png"),
   priceless: require("../../../assets/words/p/priceless.png"),
   pride: require("../../../assets/words/p/pride.png"),
+  priest: require("../../../assets/words/p/priest.png"),
   primary: require("../../../assets/words/p/primary.png"),
   prince: require("../../../assets/words/p/prince.png"),
   principal: require("../../../assets/words/p/principal.png"),

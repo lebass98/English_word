@@ -111,6 +111,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   produce: require("../../../assets/words/p/produce.png"),
   profession: require("../../../assets/words/p/profession.png"),
   professor: require("../../../assets/words/p/professor.png"),
+  profile: require("../../../assets/words/p/profile.png"),
   profound: require("../../../assets/words/p/profound.png"),
   progress: require("../../../assets/words/p/progress.png"),
   project: require("../../../assets/words/p/project.png"),

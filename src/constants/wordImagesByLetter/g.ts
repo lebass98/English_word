@@ -22,6 +22,7 @@ export const IMAGES_G: Record<string, ImageSourcePropType> = {
   "give off": require("../../../assets/words/g/give-off.png"),
   "give up": require("../../../assets/words/g/give-up.png"),
   glory: require("../../../assets/words/g/glory.png"),
+  "go by": require("../../../assets/words/g/go-by.png"),
   "go out with": require("../../../assets/words/g/go-out-with.png"),
   "go over": require("../../../assets/words/g/go-over.png"),
   goal: require("../../../assets/words/g/goal.png"),

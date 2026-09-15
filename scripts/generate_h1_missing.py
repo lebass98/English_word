@@ -120,7 +120,7 @@ def main():
             break
 
         # 다른 컴퓨터가 먼저 올렸을 수 있으니 매번 최신을 받고 목록을 다시 센다
-        run(["git", "pull", "--rebase", "origin", "main"])
+        run(["git", "pull", "--rebase", "--autostash", "origin", "main"])
         queue = build_queue(levels)
         if not queue:
             print("그릴 단어가 없다", flush=True)
@@ -161,7 +161,7 @@ def main():
             failed += 1
             continue
 
-        run(["git", "pull", "--rebase", "origin", "main"])
+        run(["git", "pull", "--rebase", "--autostash", "origin", "main"])
         p = run(["git", "push", "origin", "main"])
         if p.returncode != 0:
             print(f"[경고] {word} 올리기 실패 (커밋은 로컬에 있음): {p.stderr[-200:]}", flush=True)

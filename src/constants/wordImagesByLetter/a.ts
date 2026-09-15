@@ -178,6 +178,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   artisan: require("../../../assets/words/a/artisan.png"),
   artwork: require("../../../assets/words/a/artwork.png"),
   "as a result": require("../../../assets/words/a/as-a-result.png"),
+  "as long as": require("../../../assets/words/a/as-long-as.png"),
   "as well": require("../../../assets/words/a/as-well.png"),
   "as well as": require("../../../assets/words/a/as-well-as.png"),
   ascending: require("../../../assets/words/a/ascending.png"),

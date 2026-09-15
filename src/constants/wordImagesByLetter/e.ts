@@ -23,6 +23,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   efficient: require("../../../assets/words/e/efficient.png"),
   effort: require("../../../assets/words/e/effort.png"),
   either: require("../../../assets/words/e/either.png"),
+  elaborate: require("../../../assets/words/e/elaborate.png"),
   elder: require("../../../assets/words/e/elder.png"),
   election: require("../../../assets/words/e/election.png"),
   electric: require("../../../assets/words/e/electric.png"),

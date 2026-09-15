@@ -84,6 +84,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   riddle: require("../../../assets/words/r/riddle.png"),
   ride: require("../../../assets/words/r/ride.png"),
   ripe: require("../../../assets/words/r/ripe.png"),
+  risk: require("../../../assets/words/r/risk.png"),
   ritual: require("../../../assets/words/r/ritual.png"),
   roar: require("../../../assets/words/r/roar.png"),
   robber: require("../../../assets/words/r/robber.png"),

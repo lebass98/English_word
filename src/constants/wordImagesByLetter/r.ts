@@ -10,6 +10,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   rank: require("../../../assets/words/r/rank.png"),
   rapid: require("../../../assets/words/r/rapid.png"),
   rapidly: require("../../../assets/words/r/rapidly.png"),
+  rare: require("../../../assets/words/r/rare.png"),
   rat: require("../../../assets/words/r/rat.png"),
   rate: require("../../../assets/words/r/rate.png"),
   rather: require("../../../assets/words/r/rather.png"),

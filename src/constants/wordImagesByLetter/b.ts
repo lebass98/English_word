@@ -20,6 +20,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   barter: require("../../../assets/words/b/barter.png"),
   base: require("../../../assets/words/b/base.png"),
   basement: require("../../../assets/words/b/basement.png"),
+  basis: require("../../../assets/words/b/basis.png"),
   bathroom: require("../../../assets/words/b/bathroom.png"),
   battle: require("../../../assets/words/b/battle.png"),
   bay: require("../../../assets/words/b/bay.png"),

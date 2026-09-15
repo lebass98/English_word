@@ -215,6 +215,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   cookie: require("../../../assets/words/c/cookie.png"),
   cool: require("../../../assets/words/c/cool.png"),
   cooperate: require("../../../assets/words/c/cooperate.png"),
+  "cope with": require("../../../assets/words/c/cope-with.png"),
   copyright: require("../../../assets/words/c/copyright.png"),
   core: require("../../../assets/words/c/core.png"),
   corn: require("../../../assets/words/c/corn.png"),

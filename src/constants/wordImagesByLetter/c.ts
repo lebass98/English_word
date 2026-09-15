@@ -234,6 +234,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   counteract: require("../../../assets/words/c/counteract.png"),
   counterpart: require("../../../assets/words/c/counterpart.png"),
   countless: require("../../../assets/words/c/countless.png"),
+  country: require("../../../assets/words/c/country.png"),
   couple: require("../../../assets/words/c/couple.png"),
   course: require("../../../assets/words/c/course.png"),
   cousin: require("../../../assets/words/c/cousin.png"),

@@ -22,6 +22,7 @@ export const IMAGES_W: Record<string, ImageSourcePropType> = {
   weigh: require("../../../assets/words/w/weigh.png"),
   weight: require("../../../assets/words/w/weight.png"),
   wet: require("../../../assets/words/w/wet.png"),
+  "when it comes to": require("../../../assets/words/w/when-it-comes-to.png"),
   whether: require("../../../assets/words/w/whether.png"),
   while: require("../../../assets/words/w/while.png"),
   whisker: require("../../../assets/words/w/whisker.png"),

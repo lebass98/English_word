@@ -149,6 +149,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   "applicable to": require("../../../assets/words/a/applicable-to.png"),
   application: require("../../../assets/words/a/application.png"),
   apply: require("../../../assets/words/a/apply.png"),
+  appoint: require("../../../assets/words/a/appoint.png"),
   appointment: require("../../../assets/words/a/appointment.png"),
   appreciable: require("../../../assets/words/a/appreciable.png"),
   appreciate: require("../../../assets/words/a/appreciate.png"),

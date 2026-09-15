@@ -55,6 +55,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   pill: require("../../../assets/words/p/pill.png"),
   pilot: require("../../../assets/words/p/pilot.png"),
   pitch: require("../../../assets/words/p/pitch.png"),
+  plain: require("../../../assets/words/p/plain.png"),
   plane: require("../../../assets/words/p/plane.png"),
   planet: require("../../../assets/words/p/planet.png"),
   plant: require("../../../assets/words/p/plant.png"),

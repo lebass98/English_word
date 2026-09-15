@@ -180,6 +180,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   construction: require("../../../assets/words/c/construction.png"),
   consumer: require("../../../assets/words/c/consumer.png"),
   contact: require("../../../assets/words/c/contact.png"),
+  contain: require("../../../assets/words/c/contain.png"),
   contest: require("../../../assets/words/c/contest.png"),
   continent: require("../../../assets/words/c/continent.png"),
   continue: require("../../../assets/words/c/continue.png"),

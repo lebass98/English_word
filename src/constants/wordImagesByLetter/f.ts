@@ -72,6 +72,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   fortune: require("../../../assets/words/f/fortune.png"),
   forward: require("../../../assets/words/f/forward.png"),
   foster: require("../../../assets/words/f/foster.png"),
+  foul: require("../../../assets/words/f/foul.png"),
   foundation: require("../../../assets/words/f/foundation.png"),
   "fountain-pen": require("../../../assets/words/f/fountain-pen.png"),
   frankly: require("../../../assets/words/f/frankly.png"),

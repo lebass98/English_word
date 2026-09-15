@@ -146,5 +146,6 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   busy: require("../../../assets/words/b/busy.png"),
   butterfly: require("../../../assets/words/b/butterfly.png"),
   "by chance": require("../../../assets/words/b/by-chance.png"),
+  "by oneself": require("../../../assets/words/b/by-oneself.png"),
   bystander: require("../../../assets/words/b/bystander.png"),
 };

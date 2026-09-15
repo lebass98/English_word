@@ -64,6 +64,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   enlarge: require("../../../assets/words/e/enlarge.png"),
   enormous: require("../../../assets/words/e/enormous.png"),
   enough: require("../../../assets/words/e/enough.png"),
+  enrich: require("../../../assets/words/e/enrich.png"),
   ensure: require("../../../assets/words/e/ensure.png"),
   enthusiasm: require("../../../assets/words/e/enthusiasm.png"),
   entire: require("../../../assets/words/e/entire.png"),

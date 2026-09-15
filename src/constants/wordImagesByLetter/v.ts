@@ -3,6 +3,7 @@ import { ImageSourcePropType } from "react-native";
 // "v" 로 시작하는 단어 그림. scripts/sync_word_images.py 가 만든다 (손으로 고치지 않는다)
 export const IMAGES_V: Record<string, ImageSourcePropType> = {
   vacation: require("../../../assets/words/v/vacation.png"),
+  vacuum: require("../../../assets/words/v/vacuum.png"),
   vain: require("../../../assets/words/v/vain.png"),
   valid: require("../../../assets/words/v/valid.png"),
   valley: require("../../../assets/words/v/valley.png"),

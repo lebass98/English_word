@@ -31,6 +31,7 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-15
+- 일본어 JLPT N5 Unit 1 단어 선형그래픽 이미지 제작 및 등록 (私, あなた, 人, 男, 女 외 15개)
 - 현황판에 일자별 제작 수 추가 (최근 14일 막대 + 하루 평균)
   - `scripts/image_daily_counts.py` 가 git 기록에서 세어 `src/data/images/dailyCounts.json` 에 적어 둔다
   - 글자별 폴더로 다시 묶으며 옮겨진 그림은 옮긴 날이 아니라 처음 그린 날로 센다 (rename 추적)

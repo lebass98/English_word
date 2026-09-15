@@ -11319,8 +11319,8 @@
    "status": "missing"
   },
   "consist of": {
-   "file": null,
-   "blob": null,
+   "file": "assets/words/c/consist-of.png",
+   "blob": "b7f322ea3bf73c3f1bc0d71f82f20d00a16b987c",
    "courses": [
     "tf"
    ],
@@ -11328,8 +11328,8 @@
    "sense_from": "tf-305",
    "scene": "school committee, five small slim white pictogram teachers, three parents and two students jumping into a group photo around a big round table, name cards and a banner",
    "scene_source": "scripts/tf_missing_scenes.json",
-   "style": null,
-   "status": "missing"
+   "style": "v3",
+   "status": "ok"
   },
   "consistent": {
    "file": "assets/words/c/consistent.png",

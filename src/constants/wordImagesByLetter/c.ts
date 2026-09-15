@@ -181,7 +181,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   consider: require("../../../assets/words/c/consider.png"),
   considerable: require("../../../assets/words/c/considerable.png"),
   considerably: require("../../../assets/words/c/considerably.png"),
-  "consist of": require("../../../assets/words/c/consist of.png"),
+  "consist of": require("../../../assets/words/c/consist-of.png"),
   consistent: require("../../../assets/words/c/consistent.png"),
   constant: require("../../../assets/words/c/constant.png"),
   constituent: require("../../../assets/words/c/constituent.png"),

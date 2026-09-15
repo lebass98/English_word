@@ -48,6 +48,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   democracy: require("../../../assets/words/d/democracy.png"),
   demolish: require("../../../assets/words/d/demolish.png"),
   demolition: require("../../../assets/words/d/demolition.png"),
+  demonstration: require("../../../assets/words/d/demonstration.png"),
   department: require("../../../assets/words/d/department.png"),
   depend: require("../../../assets/words/d/depend.png"),
   depressed: require("../../../assets/words/d/depressed.png"),

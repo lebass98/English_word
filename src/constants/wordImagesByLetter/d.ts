@@ -96,6 +96,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   digest: require("../../../assets/words/d/digest.png"),
   diligent: require("../../../assets/words/d/diligent.png"),
   dimension: require("../../../assets/words/d/dimension.png"),
+  diminish: require("../../../assets/words/d/diminish.png"),
   "dining room": require("../../../assets/words/d/dining-room.png"),
   "dinning room": require("../../../assets/words/d/dinning-room.png"),
   direction: require("../../../assets/words/d/direction.png"),

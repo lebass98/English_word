@@ -136,6 +136,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   distinguish: require("../../../assets/words/d/distinguish.png"),
   distribute: require("../../../assets/words/d/distribute.png"),
   district: require("../../../assets/words/d/district.png"),
+  disturb: require("../../../assets/words/d/disturb.png"),
   ditch: require("../../../assets/words/d/ditch.png"),
   dive: require("../../../assets/words/d/dive.png"),
   document: require("../../../assets/words/d/document.png"),

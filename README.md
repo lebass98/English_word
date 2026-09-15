@@ -31,6 +31,8 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-16
+- 중3 56단원 빠진 그림 15장 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상: bullet, hire, refund, unusual, outfit, apologize, break down, roast, nutrition, recall, agency, extinct, cast, statistics, attention
 - 중3 55단원 빠진 그림 14장 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
   - 대상: formal, settle, content, oral, silence, peninsula, cliff, hang out, scold, mine, medicine, depart, directly, physical
 - 중3 54단원 빠진 그림 15장 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)

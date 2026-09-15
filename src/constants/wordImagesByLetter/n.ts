@@ -40,4 +40,5 @@ export const IMAGES_N: Record<string, ImageSourcePropType> = {
   numerous: require("../../../assets/words/n/numerous.png"),
   nurse: require("../../../assets/words/n/nurse.png"),
   nurture: require("../../../assets/words/n/nurture.png"),
+  nutrition: require("../../../assets/words/n/nutrition.png"),
 };

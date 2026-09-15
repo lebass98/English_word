@@ -169,6 +169,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   dump: require("../../../assets/words/d/dump.png"),
   durable: require("../../../assets/words/d/durable.png"),
   duration: require("../../../assets/words/d/duration.png"),
+  "dwell in": require("../../../assets/words/d/dwell-in.png"),
   dye: require("../../../assets/words/d/dye.png"),
   dynasty: require("../../../assets/words/d/dynasty.png"),
 };

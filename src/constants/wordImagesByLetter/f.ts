@@ -85,6 +85,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   fun: require("../../../assets/words/f/fun.png"),
   function: require("../../../assets/words/f/function.png"),
   fund: require("../../../assets/words/f/fund.png"),
+  fundamental: require("../../../assets/words/f/fundamental.png"),
   funeral: require("../../../assets/words/f/funeral.png"),
   fur: require("../../../assets/words/f/fur.png"),
   furniture: require("../../../assets/words/f/furniture.png"),

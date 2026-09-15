@@ -15,6 +15,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   "deal with": require("../../../assets/words/d/deal-with.png"),
   dear: require("../../../assets/words/d/dear.png"),
   death: require("../../../assets/words/d/death.png"),
+  debatable: require("../../../assets/words/d/debatable.png"),
   debate: require("../../../assets/words/d/debate.png"),
   debt: require("../../../assets/words/d/debt.png"),
   decade: require("../../../assets/words/d/decade.png"),

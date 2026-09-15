@@ -76,6 +76,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   mouse: require("../../../assets/words/m/mouse.png"),
   multiple: require("../../../assets/words/m/multiple.png"),
   murder: require("../../../assets/words/m/murder.png"),
+  muscle: require("../../../assets/words/m/muscle.png"),
   museum: require("../../../assets/words/m/museum.png"),
   musician: require("../../../assets/words/m/musician.png"),
   mutual: require("../../../assets/words/m/mutual.png"),

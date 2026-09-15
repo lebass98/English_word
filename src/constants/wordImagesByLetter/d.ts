@@ -150,6 +150,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   dominant: require("../../../assets/words/d/dominant.png"),
   dominate: require("../../../assets/words/d/dominate.png"),
   donate: require("../../../assets/words/d/donate.png"),
+  dormitory: require("../../../assets/words/d/dormitory.png"),
   double: require("../../../assets/words/d/double.png"),
   downtown: require("../../../assets/words/d/downtown.png"),
   drag: require("../../../assets/words/d/drag.png"),

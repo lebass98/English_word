@@ -59,6 +59,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   detergent: require("../../../assets/words/d/detergent.png"),
   determine: require("../../../assets/words/d/determine.png"),
   develop: require("../../../assets/words/d/develop.png"),
+  device: require("../../../assets/words/d/device.png"),
   devil: require("../../../assets/words/d/devil.png"),
   diagnose: require("../../../assets/words/d/diagnose.png"),
   dialogue: require("../../../assets/words/d/dialogue.png"),

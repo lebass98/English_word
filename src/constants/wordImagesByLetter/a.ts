@@ -233,6 +233,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   automatic: require("../../../assets/words/a/automatic.png"),
   available: require("../../../assets/words/a/available.png"),
   avoid: require("../../../assets/words/a/avoid.png"),
+  awake: require("../../../assets/words/a/awake.png"),
   awaken: require("../../../assets/words/a/awaken.png"),
   award: require("../../../assets/words/a/award.png"),
   aware: require("../../../assets/words/a/aware.png"),

@@ -151,6 +151,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   stack: require("../../../assets/words/s/stack.png"),
   stadium: require("../../../assets/words/s/stadium.png"),
   stage: require("../../../assets/words/s/stage.png"),
+  stain: require("../../../assets/words/s/stain.png"),
   stair: require("../../../assets/words/s/stair.png"),
   "stand for": require("../../../assets/words/s/stand-for.png"),
   "stand out": require("../../../assets/words/s/stand-out.png"),

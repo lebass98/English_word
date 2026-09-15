@@ -31,6 +31,8 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-16
+- 중3 54단원 빠진 그림 15장 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상: impossible, frequently, participate, stain, positive, motivate, over and over, ethnic, typical, auction, fairy, confident, entertain, belong to, waist
 - 중3 53단원 빠진 그림 12장 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
   - 대상: in fact, generous, equipment, focus on, arrow, symptom, measure, tropical, sincere, context, destination, transfer
 - 중3 52단원 빠진 그림 11장 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)

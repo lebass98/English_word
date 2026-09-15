@@ -231,6 +231,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   attract: require("../../../assets/words/a/attract.png"),
   attractive: require("../../../assets/words/a/attractive.png"),
   attribute: require("../../../assets/words/a/attribute.png"),
+  auction: require("../../../assets/words/a/auction.png"),
   audience: require("../../../assets/words/a/audience.png"),
   auditorium: require("../../../assets/words/a/auditorium.png"),
   authenticity: require("../../../assets/words/a/authenticity.png"),

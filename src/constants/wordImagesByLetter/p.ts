@@ -82,6 +82,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   possible: require("../../../assets/words/p/possible.png"),
   post: require("../../../assets/words/p/post.png"),
   potato: require("../../../assets/words/p/potato.png"),
+  potential: require("../../../assets/words/p/potential.png"),
   pour: require("../../../assets/words/p/pour.png"),
   poverty: require("../../../assets/words/p/poverty.png"),
   powder: require("../../../assets/words/p/powder.png"),

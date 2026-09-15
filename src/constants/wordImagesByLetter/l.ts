@@ -51,6 +51,7 @@ export const IMAGES_L: Record<string, ImageSourcePropType> = {
   log: require("../../../assets/words/l/log.png"),
   logic: require("../../../assets/words/l/logic.png"),
   lonely: require("../../../assets/words/l/lonely.png"),
+  "look back on": require("../../../assets/words/l/look-back-on.png"),
   "look for": require("../../../assets/words/l/look-for.png"),
   "look forward to": require("../../../assets/words/l/look-forward-to.png"),
   "look up": require("../../../assets/words/l/look-up.png"),

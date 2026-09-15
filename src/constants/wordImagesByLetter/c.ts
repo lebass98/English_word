@@ -146,6 +146,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   comparison: require("../../../assets/words/c/comparison.png"),
   compassion: require("../../../assets/words/c/compassion.png"),
   compel: require("../../../assets/words/c/compel.png"),
+  compete: require("../../../assets/words/c/compete.png"),
   competent: require("../../../assets/words/c/competent.png"),
   competition: require("../../../assets/words/c/competition.png"),
   compile: require("../../../assets/words/c/compile.png"),
@@ -183,6 +184,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   confidence: require("../../../assets/words/c/confidence.png"),
   confine: require("../../../assets/words/c/confine.png"),
   confirm: require("../../../assets/words/c/confirm.png"),
+  conflict: require("../../../assets/words/c/conflict.png"),
   conflicting: require("../../../assets/words/c/conflicting.png"),
   confront: require("../../../assets/words/c/confront.png"),
   congratulation: require("../../../assets/words/c/congratulation.png"),
@@ -295,6 +297,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   custom: require("../../../assets/words/c/custom.png"),
   customarily: require("../../../assets/words/c/customarily.png"),
   customary: require("../../../assets/words/c/customary.png"),
+  "cut down": require("../../../assets/words/c/cut-down.png"),
   "cut off": require("../../../assets/words/c/cut-off.png"),
   cycle: require("../../../assets/words/c/cycle.png"),
 };

@@ -194,6 +194,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   contemporary: require("../../../assets/words/c/contemporary.png"),
   contest: require("../../../assets/words/c/contest.png"),
   continent: require("../../../assets/words/c/continent.png"),
+  continual: require("../../../assets/words/c/continual.png"),
   continue: require("../../../assets/words/c/continue.png"),
   continuous: require("../../../assets/words/c/continuous.png"),
   contract: require("../../../assets/words/c/contract.png"),

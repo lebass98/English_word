@@ -5,6 +5,7 @@ export const IMAGES_O: Record<string, ImageSourcePropType> = {
   oath: require("../../../assets/words/o/oath.png"),
   obey: require("../../../assets/words/o/obey.png"),
   object: require("../../../assets/words/o/object.png"),
+  observe: require("../../../assets/words/o/observe.png"),
   obsess: require("../../../assets/words/o/obsess.png"),
   obstacle: require("../../../assets/words/o/obstacle.png"),
   obtain: require("../../../assets/words/o/obtain.png"),

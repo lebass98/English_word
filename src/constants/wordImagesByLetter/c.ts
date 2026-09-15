@@ -241,6 +241,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   cousin: require("../../../assets/words/c/cousin.png"),
   cover: require("../../../assets/words/c/cover.png"),
   crack: require("../../../assets/words/c/crack.png"),
+  craft: require("../../../assets/words/c/craft.png"),
   crane: require("../../../assets/words/c/crane.png"),
   crash: require("../../../assets/words/c/crash.png"),
   crazy: require("../../../assets/words/c/crazy.png"),

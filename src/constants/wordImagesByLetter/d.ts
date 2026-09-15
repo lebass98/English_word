@@ -55,6 +55,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   department: require("../../../assets/words/d/department.png"),
   depend: require("../../../assets/words/d/depend.png"),
   dependable: require("../../../assets/words/d/dependable.png"),
+  depict: require("../../../assets/words/d/depict.png"),
   depressed: require("../../../assets/words/d/depressed.png"),
   deprived: require("../../../assets/words/d/deprived.png"),
   describe: require("../../../assets/words/d/describe.png"),

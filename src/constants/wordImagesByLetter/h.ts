@@ -60,6 +60,7 @@ export const IMAGES_H: Record<string, ImageSourcePropType> = {
   household: require("../../../assets/words/h/household.png"),
   however: require("../../../assets/words/h/however.png"),
   howl: require("../../../assets/words/h/howl.png"),
+  hug: require("../../../assets/words/h/hug.png"),
   huge: require("../../../assets/words/h/huge.png"),
   humble: require("../../../assets/words/h/humble.png"),
   humor: require("../../../assets/words/h/humor.png"),

@@ -8,6 +8,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   pair: require("../../../assets/words/p/pair.png"),
   pal: require("../../../assets/words/p/pal.png"),
   palace: require("../../../assets/words/p/palace.png"),
+  panic: require("../../../assets/words/p/panic.png"),
   parade: require("../../../assets/words/p/parade.png"),
   pardon: require("../../../assets/words/p/pardon.png"),
   particle: require("../../../assets/words/p/particle.png"),

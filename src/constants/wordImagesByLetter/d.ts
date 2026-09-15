@@ -2,6 +2,7 @@ import { ImageSourcePropType } from "react-native";
 
 // "d" 로 시작하는 단어 그림. scripts/sync_word_images.py 가 만든다 (손으로 고치지 않는다)
 export const IMAGES_D: Record<string, ImageSourcePropType> = {
+  dairy: require("../../../assets/words/d/dairy.png"),
   damage: require("../../../assets/words/d/damage.png"),
   danger: require("../../../assets/words/d/danger.png"),
   daring: require("../../../assets/words/d/daring.png"),

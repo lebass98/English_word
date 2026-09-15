@@ -9,6 +9,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   ignorant: require("../../../assets/words/i/ignorant.png"),
   ignore: require("../../../assets/words/i/ignore.png"),
   illegal: require("../../../assets/words/i/illegal.png"),
+  illustrate: require("../../../assets/words/i/illustrate.png"),
   imagine: require("../../../assets/words/i/imagine.png"),
   imitate: require("../../../assets/words/i/imitate.png"),
   immediately: require("../../../assets/words/i/immediately.png"),

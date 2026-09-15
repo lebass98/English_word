@@ -31,6 +31,8 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-15
+- 중3 49단원 빠진 그림 15장 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
+  - 대상: prior, represent, eager, on one’s feet, extreme, balloon, retire, particular, budget, wreck, northern, urgent, proper, illustrate, detail
 - 설정에 가로 게이지 막대 추가 (`GaugeBar` 컴포넌트, 누르거나 끌어서 조절)
   - 자동 넘김 간격을 5~15초 사이 1초 단위로 설정 (저장되며 학습 화면 타이머에 반영)
   - 발음 소리 크기를 5단계 막대에서 10단계 가로 게이지로 변경 (0 = 음소거)

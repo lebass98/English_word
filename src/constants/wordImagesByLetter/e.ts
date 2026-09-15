@@ -2,6 +2,7 @@ import { ImageSourcePropType } from "react-native";
 
 // "e" 로 시작하는 단어 그림. scripts/sync_word_images.py 가 만든다 (손으로 고치지 않는다)
 export const IMAGES_E: Record<string, ImageSourcePropType> = {
+  eager: require("../../../assets/words/e/eager.png"),
   early: require("../../../assets/words/e/early.png"),
   earn: require("../../../assets/words/e/earn.png"),
   earnest: require("../../../assets/words/e/earnest.png"),
@@ -124,4 +125,5 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   extend: require("../../../assets/words/e/extend.png"),
   extensive: require("../../../assets/words/e/extensive.png"),
   external: require("../../../assets/words/e/external.png"),
+  extreme: require("../../../assets/words/e/extreme.png"),
 };

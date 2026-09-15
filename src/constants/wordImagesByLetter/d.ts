@@ -4,6 +4,7 @@ import { ImageSourcePropType } from "react-native";
 export const IMAGES_D: Record<string, ImageSourcePropType> = {
   damage: require("../../../assets/words/d/damage.png"),
   danger: require("../../../assets/words/d/danger.png"),
+  daring: require("../../../assets/words/d/daring.png"),
   dark: require("../../../assets/words/d/dark.png"),
   data: require("../../../assets/words/d/data.png"),
   date: require("../../../assets/words/d/date.png"),

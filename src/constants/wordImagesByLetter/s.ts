@@ -39,6 +39,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   security: require("../../../assets/words/s/security.png"),
   seed: require("../../../assets/words/s/seed.png"),
   seek: require("../../../assets/words/s/seek.png"),
+  seem: require("../../../assets/words/s/seem.png"),
   seldom: require("../../../assets/words/s/seldom.png"),
   select: require("../../../assets/words/s/select.png"),
   semester: require("../../../assets/words/s/semester.png"),

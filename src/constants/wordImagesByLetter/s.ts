@@ -64,6 +64,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   sharp: require("../../../assets/words/s/sharp.png"),
   sheep: require("../../../assets/words/s/sheep.png"),
   sheet: require("../../../assets/words/s/sheet.png"),
+  shelf: require("../../../assets/words/s/shelf.png"),
   shell: require("../../../assets/words/s/shell.png"),
   shelter: require("../../../assets/words/s/shelter.png"),
   shine: require("../../../assets/words/s/shine.png"),

@@ -20,6 +20,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   temporary: require("../../../assets/words/t/temporary.png"),
   tend: require("../../../assets/words/t/tend.png"),
   tension: require("../../../assets/words/t/tension.png"),
+  term: require("../../../assets/words/t/term.png"),
   terrible: require("../../../assets/words/t/terrible.png"),
   territory: require("../../../assets/words/t/territory.png"),
   theater: require("../../../assets/words/t/theater.png"),

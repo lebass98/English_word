@@ -19,6 +19,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   import: require("../../../assets/words/i/import.png"),
   importance: require("../../../assets/words/i/importance.png"),
   important: require("../../../assets/words/i/important.png"),
+  impress: require("../../../assets/words/i/impress.png"),
   impression: require("../../../assets/words/i/impression.png"),
   improve: require("../../../assets/words/i/improve.png"),
   "in advance": require("../../../assets/words/i/in-advance.png"),

@@ -29,20 +29,17 @@ import { useAppStore } from "../src/stores/useAppStore";
  * 좁은 칸이라 좌우 여백만 카드 기본값(24px)보다 작게 둔다.
  */
 function TodayStat({
-  emoji,
   value,
   unit,
   label,
 }: {
-  emoji: string;
   value: number;
   unit?: string;
   label: string;
 }) {
   return (
     <View className="flex-1 items-center rounded-3xl bg-surface px-2 py-6 shadow-neu-card">
-      <Text className="text-[18px]">{emoji}</Text>
-      <View className="mt-2 flex-row items-baseline gap-0.5">
+      <View className="flex-row items-baseline gap-0.5">
         <Text className="text-[22px] font-bold text-ink">{value}</Text>
         {unit && (
           <Text className="text-[12px] font-semibold text-slate-500">
@@ -120,7 +117,6 @@ export default function HomeScreen() {
           </Text>
           {streak > 0 && (
             <View className="flex-row items-center gap-1 rounded-full bg-surface px-4 py-2 shadow-neu-sm">
-              <Text className="text-[13px]">🔥</Text>
               <Text className="text-[13px] font-bold text-mint-dark">
                 {streak}일
               </Text>
@@ -205,7 +201,7 @@ export default function HomeScreen() {
                             style={{ width: "100%", height: "100%" }}
                           />
                         ) : (
-                          <Text className="text-[26px]">🖼️</Text>
+                          <Text className="text-[11px] text-slate-400">준비 중</Text>
                         )}
                       </View>
                       <Text
@@ -234,17 +230,14 @@ export default function HomeScreen() {
           ) : (
             <View className="mt-4 flex-row gap-4">
               <TodayStat
-                emoji="👀"
                 value={today.seen}
                 label={t("home.seenToday")}
               />
               <TodayStat
-                emoji="✅"
                 value={today.known}
                 label={t("home.knownToday")}
               />
               <TodayStat
-                emoji="🔥"
                 value={streak}
                 unit={t("home.days")}
                 label={t("home.streak")}

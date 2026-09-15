@@ -78,7 +78,7 @@ export function GradeCard({
               missingImages > 0 ? "text-amber-600" : "text-mint-dark"
             }`}
           >
-            {missingImages > 0 ? `🖼 ${missingImages}개 미완료` : "🖼 그림 완료"}
+            {missingImages > 0 ? `${missingImages}개 미완료` : "그림 완료"}
           </Text>
         </View>
       )}

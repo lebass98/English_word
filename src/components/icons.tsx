@@ -379,3 +379,53 @@ export function HomeIcon({
     </Svg>
   );
 }
+
+/** 🖼 그림 현황 (하단 독) */
+export function PictureIcon({
+  size = 20,
+  color = "#334155",
+  strokeWidth = 2.2,
+}: IconProps) {
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Rect
+        x={3}
+        y={4.5}
+        width={18}
+        height={15}
+        rx={3}
+        stroke={color}
+        strokeWidth={strokeWidth}
+      />
+      {/* 해와 언덕. 액자 안에 그림이 들어 있음을 알린다 */}
+      <Circle cx={8.75} cy={9.75} r={1.6} stroke={color} strokeWidth={strokeWidth} />
+      <Path
+        d="M4 16.5l4.2-3.8a2 2 0 0 1 2.7 0L14 15.5l1.7-1.4a2 2 0 0 1 2.6 0L20 15.6"
+        stroke={color}
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </Svg>
+  );
+}
+
+/** ⚙ 설정 (하단 독) */
+export function GearIcon({
+  size = 20,
+  color = "#334155",
+  strokeWidth = 2.2,
+}: IconProps) {
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Circle cx={12} cy={12} r={3.2} stroke={color} strokeWidth={strokeWidth} />
+      {/* 톱니 여덟 개를 짧은 선으로 돌려 놓는다 */}
+      <Path
+        d="M12 2.8v2.4M12 18.8v2.4M21.2 12h-2.4M5.2 12H2.8M18.5 5.5l-1.7 1.7M7.2 16.8l-1.7 1.7M18.5 18.5l-1.7-1.7M7.2 7.2 5.5 5.5"
+        stroke={color}
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+      />
+    </Svg>
+  );
+}

@@ -1,23 +1,30 @@
 import { usePathname, useRouter } from "expo-router";
 import { Platform, Pressable, Text, View } from "react-native";
+import { BookIcon, GearIcon, HomeIcon, PictureIcon } from "./icons";
 import { MAX_CONTENT_WIDTH } from "./Screen";
 import { useT, type StringKey } from "../i18n";
 
+/** 독 탭 하나. 아이콘은 색을 받아 활성 여부에 따라 달라진다 */
 interface Tab {
   href: string;
   labelKey: StringKey;
+  Icon: (props: {
+    size?: number;
+    color?: string;
+    strokeWidth?: number;
+  }) => React.ReactElement;
 }
 
 const TABS: Tab[] = [
-  { href: "/", labelKey: "nav.home" },
-  { href: "/wordbook", labelKey: "nav.wordbook" },
+  { href: "/", labelKey: "nav.home", Icon: HomeIcon },
+  { href: "/wordbook", labelKey: "nav.wordbook", Icon: BookIcon },
   // 그림 제작 현황(임시). 그림을 전부 채우면 이 줄과 현황판을 함께 지운다
-  { href: "/image-status", labelKey: "nav.imageStatus" },
-  { href: "/settings", labelKey: "nav.settings" },
+  { href: "/image-status", labelKey: "nav.imageStatus", Icon: PictureIcon },
+  { href: "/settings", labelKey: "nav.settings", Icon: GearIcon },
 ];
 
 /**
- * 홈 · 단어장 · 현황 · 설정 독바. 아이콘 없이 제목만 둔다.
+ * 홈 · 단어장 · 현황 · 설정 독바. 아이콘을 위에, 제목을 아래에 둔다.
  * 활성 탭은 현재 경로에서 직접 계산해 화면마다 따로 알려줄 필요가 없다.
  *
  * 웹에서는 position:fixed 로 창 아래에 붙여 둔다. absolute 로 두면 모바일
@@ -60,15 +67,20 @@ export function BottomNav() {
                 onPress={() => {
                   if (!active) router.push(tab.href as any);
                 }}
-                // 제목만 둔다. 높이는 유닛 뷰 화면의 상단 버튼과 같은 48px(h-12)
-                className={`h-12 flex-1 items-center justify-center rounded-full px-1 ${
+                // 아이콘을 위, 제목을 아래에 둔다
+                className={`h-[64px] flex-1 items-center justify-center gap-1 rounded-2xl px-1 ${
                   active ? "bg-canvas shadow-neu-inset" : "active:opacity-60"
                 }`}
               >
+                <tab.Icon
+                  size={34}
+                  color={active ? "#006C4C" : "#94a3b8"}
+                  strokeWidth={0.55}
+                />
                 <Text
                   numberOfLines={1}
-                  className={`text-[13px] ${
-                    active ? "font-bold text-mint-dark" : "text-slate-400"
+                  className={`text-[11px] ${
+                    active ? "font-bold text-mint-dark" : "font-semibold text-slate-400"
                   }`}
                 >
                   {t(tab.labelKey)}

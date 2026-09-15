@@ -133,7 +133,7 @@ export default function GradeScreen() {
                       noImage > 0 ? "text-amber-600" : "text-mint-dark"
                     }`}
                   >
-                    {noImage > 0 ? `🖼 ${noImage}개 미완료` : "🖼 그림 완료"}
+                    {noImage > 0 ? `${noImage}개 미완료` : "그림 완료"}
                   </Text>
                 </View>
               </Pressable>

@@ -80,6 +80,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   foundation: require("../../../assets/words/f/foundation.png"),
   "fountain-pen": require("../../../assets/words/f/fountain-pen.png"),
   frankly: require("../../../assets/words/f/frankly.png"),
+  "free from": require("../../../assets/words/f/free-from.png"),
   freeze: require("../../../assets/words/f/freeze.png"),
   french: require("../../../assets/words/f/french.png"),
   fresh: require("../../../assets/words/f/fresh.png"),

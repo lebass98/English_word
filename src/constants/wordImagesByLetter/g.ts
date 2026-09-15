@@ -15,6 +15,7 @@ export const IMAGES_G: Record<string, ImageSourcePropType> = {
   geography: require("../../../assets/words/g/geography.png"),
   german: require("../../../assets/words/g/german.png"),
   gesture: require("../../../assets/words/g/gesture.png"),
+  "get together": require("../../../assets/words/g/get-together.png"),
   ghost: require("../../../assets/words/g/ghost.png"),
   giant: require("../../../assets/words/g/giant.png"),
   gift: require("../../../assets/words/g/gift.png"),

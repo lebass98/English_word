@@ -32,6 +32,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   include: require("../../../assets/words/i/include.png"),
   increase: require("../../../assets/words/i/increase.png"),
   indeed: require("../../../assets/words/i/indeed.png"),
+  independence: require("../../../assets/words/i/independence.png"),
   independent: require("../../../assets/words/i/independent.png"),
   indicate: require("../../../assets/words/i/indicate.png"),
   indifferent: require("../../../assets/words/i/indifferent.png"),

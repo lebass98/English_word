@@ -102,6 +102,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   pretend: require("../../../assets/words/p/pretend.png"),
   pretty: require("../../../assets/words/p/pretty.png"),
   prevent: require("../../../assets/words/p/prevent.png"),
+  previous: require("../../../assets/words/p/previous.png"),
   price: require("../../../assets/words/p/price.png"),
   priceless: require("../../../assets/words/p/priceless.png"),
   pride: require("../../../assets/words/p/pride.png"),

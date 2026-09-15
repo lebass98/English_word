@@ -175,6 +175,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   consciously: require("../../../assets/words/c/consciously.png"),
   consensus: require("../../../assets/words/c/consensus.png"),
   consequence: require("../../../assets/words/c/consequence.png"),
+  conserve: require("../../../assets/words/c/conserve.png"),
   constant: require("../../../assets/words/c/constant.png"),
   construct: require("../../../assets/words/c/construct.png"),
   construction: require("../../../assets/words/c/construction.png"),

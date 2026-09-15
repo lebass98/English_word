@@ -31,6 +31,9 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-15
+- 현황판에 일자별 제작 수 추가 (최근 14일 막대 + 하루 평균)
+  - `scripts/image_daily_counts.py` 가 git 기록에서 세어 `src/data/images/dailyCounts.json` 에 적어 둔다
+  - 글자별 폴더로 다시 묶으며 옮겨진 그림은 옮긴 날이 아니라 처음 그린 날로 센다 (rename 추적)
 - 하단 독 아이콘을 기본은 선, 활성 탭은 꽉 찬 모양으로 나눔 (채움 아이콘 4종 추가)
 - 하단 독을 아이콘 위·제목 아래 구조로 바꿈. 제목은 조금 굵게(semibold), 아이콘은 34px 가는 선(0.55)
   - 이모지 대신 SVG 아이콘을 쓴다. 그림 현황·설정 아이콘(`PictureIcon`, `GearIcon`)을 새로 만듦

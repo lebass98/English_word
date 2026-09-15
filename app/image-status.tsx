@@ -10,6 +10,7 @@ import {
   type QuickWin,
 } from "../src/lib/imageDebug";
 import { useAppStore } from "../src/stores/useAppStore";
+import dailyCounts from "../src/data/images/dailyCounts.json";
 
 /**
  * 단어 연상 그림 현황판 (임시).
@@ -47,6 +48,9 @@ export default function ImageStatusScreen() {
       {/* 하단 독바에 가리지 않게 넉넉히 띄운다 */}
       <ScrollView className="flex-1" contentContainerClassName="px-6 pb-32 pt-6">
         <SummaryCard board={board} />
+
+        <SectionTitle>일자별 제작</SectionTitle>
+        <DailyCard />
 
         {board.quickWins.length > 0 && (
           <>
@@ -273,6 +277,76 @@ function CourseCard({ course }: { course: BoardCourse }) {
           )}
         </View>
       )}
+    </View>
+  );
+}
+
+const WEEKDAYS = ["일", "월", "화", "수", "목", "금", "토"];
+
+/**
+ * 날짜별로 그림을 몇 장 만들었는지.
+ *
+ * 앱은 번들 안에서 돌아가 git 기록을 볼 수 없으므로, scripts/image_daily_counts.py
+ * 가 미리 세어 둔 값을 읽는다. 그림을 새로 만든 뒤 숫자를 갱신하려면
+ * 그 스크립트를 다시 돌린다.
+ */
+function DailyCard() {
+  const days = dailyCounts.days;
+  // 최근 것이 위로 오게 뒤집는다
+  const recent = [...days].slice(-14).reverse();
+  const most = Math.max(1, ...recent.map((d) => d.count));
+  const average = days.length
+    ? Math.round(days.reduce((sum, d) => sum + d.count, 0) / days.length)
+    : 0;
+
+  return (
+    <View className="rounded-3xl bg-surface p-6 shadow-neu-card">
+      <View className="flex-row items-end justify-between">
+        <View>
+          <Text className="text-[12px] font-bold text-slate-400">
+            하루 평균
+          </Text>
+          <View className="mt-1 flex-row items-baseline gap-1">
+            <Text className="text-[26px] font-bold leading-[32px] text-ink">
+              {average.toLocaleString()}
+            </Text>
+            <Text className="text-[13px] font-semibold text-slate-500">장</Text>
+          </View>
+        </View>
+        <Text className="text-[11px] text-slate-400">
+          {days.length}일 · 모두 {dailyCounts.total.toLocaleString()}장
+        </Text>
+      </View>
+
+      <View className="mt-4 gap-2">
+        {recent.map((d) => {
+          const [, month, day] = d.date.split("-");
+          const weekday = WEEKDAYS[new Date(`${d.date}T00:00:00`).getDay()];
+
+          return (
+            <View key={d.date} className="flex-row items-center gap-3">
+              <Text className="w-[54px] text-[11px] text-slate-500">
+                {month}/{day} ({weekday})
+              </Text>
+              {/* 가장 많이 그린 날을 꽉 찬 길이로 두고 견준다 */}
+              <View className="h-2.5 flex-1 overflow-hidden rounded-full bg-canvas shadow-neu-inset">
+                <View
+                  className="h-full rounded-full bg-mint"
+                  style={{ width: `${Math.round((d.count / most) * 100)}%` }}
+                />
+              </View>
+              <Text className="w-[38px] text-right text-[12px] font-bold text-slate-600">
+                {d.count}
+              </Text>
+            </View>
+          );
+        })}
+      </View>
+
+      {/* 미리 세어 둔 값이라 언제 센 것인지 밝혀 둔다 */}
+      <Text className="mt-4 text-[11px] text-slate-400">
+        {dailyCounts.generatedAt} 기준 · 그림 커밋 기록에서 셈
+      </Text>
     </View>
   );
 }

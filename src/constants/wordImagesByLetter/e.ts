@@ -59,6 +59,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   engineer: require("../../../assets/words/e/engineer.png"),
   enhance: require("../../../assets/words/e/enhance.png"),
   enjoy: require("../../../assets/words/e/enjoy.png"),
+  enlarge: require("../../../assets/words/e/enlarge.png"),
   enormous: require("../../../assets/words/e/enormous.png"),
   enough: require("../../../assets/words/e/enough.png"),
   ensure: require("../../../assets/words/e/ensure.png"),

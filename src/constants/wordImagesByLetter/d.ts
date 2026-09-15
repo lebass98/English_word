@@ -175,6 +175,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   draw: require("../../../assets/words/d/draw.png"),
   dream: require("../../../assets/words/d/dream.png"),
   drive: require("../../../assets/words/d/drive.png"),
+  driver: require("../../../assets/words/d/driver.png"),
   drop: require("../../../assets/words/d/drop.png"),
   "drop out": require("../../../assets/words/d/drop-out.png"),
   drought: require("../../../assets/words/d/drought.png"),

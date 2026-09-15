@@ -3,6 +3,7 @@ import { ImageSourcePropType } from "react-native";
 // "g" 로 시작하는 단어 그림. scripts/sync_word_images.py 가 만든다 (손으로 고치지 않는다)
 export const IMAGES_G: Record<string, ImageSourcePropType> = {
   gain: require("../../../assets/words/g/gain.png"),
+  galaxy: require("../../../assets/words/g/galaxy.png"),
   gallery: require("../../../assets/words/g/gallery.png"),
   gap: require("../../../assets/words/g/gap.png"),
   garage: require("../../../assets/words/g/garage.png"),
@@ -36,6 +37,7 @@ export const IMAGES_G: Record<string, ImageSourcePropType> = {
   government: require("../../../assets/words/g/government.png"),
   grab: require("../../../assets/words/g/grab.png"),
   grade: require("../../../assets/words/g/grade.png"),
+  gradual: require("../../../assets/words/g/gradual.png"),
   gradually: require("../../../assets/words/g/gradually.png"),
   graduate: require("../../../assets/words/g/graduate.png"),
   grain: require("../../../assets/words/g/grain.png"),

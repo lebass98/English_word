@@ -53,6 +53,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   equal: require("../../../assets/words/e/equal.png"),
   eraser: require("../../../assets/words/e/eraser.png"),
   error: require("../../../assets/words/e/error.png"),
+  erupt: require("../../../assets/words/e/erupt.png"),
   especially: require("../../../assets/words/e/especially.png"),
   essay: require("../../../assets/words/e/essay.png"),
   ethic: require("../../../assets/words/e/ethic.png"),

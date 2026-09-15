@@ -264,6 +264,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   crucial: require("../../../assets/words/c/crucial.png"),
   crude: require("../../../assets/words/c/crude.png"),
   cultivate: require("../../../assets/words/c/cultivate.png"),
+  cultivator: require("../../../assets/words/c/cultivator.png"),
   cultural: require("../../../assets/words/c/cultural.png"),
   culture: require("../../../assets/words/c/culture.png"),
   curious: require("../../../assets/words/c/curious.png"),

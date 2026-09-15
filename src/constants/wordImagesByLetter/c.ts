@@ -224,6 +224,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   correspond: require("../../../assets/words/c/correspond.png"),
   correspondence: require("../../../assets/words/c/correspondence.png"),
   cost: require("../../../assets/words/c/cost.png"),
+  costly: require("../../../assets/words/c/costly.png"),
   cotton: require("../../../assets/words/c/cotton.png"),
   cough: require("../../../assets/words/c/cough.png"),
   council: require("../../../assets/words/c/council.png"),

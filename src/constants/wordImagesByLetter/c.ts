@@ -13,6 +13,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   candidate: require("../../../assets/words/c/candidate.png"),
   candle: require("../../../assets/words/c/candle.png"),
   capable: require("../../../assets/words/c/capable.png"),
+  "capable of": require("../../../assets/words/c/capable-of.png"),
   capacity: require("../../../assets/words/c/capacity.png"),
   capital: require("../../../assets/words/c/capital.png"),
   captain: require("../../../assets/words/c/captain.png"),

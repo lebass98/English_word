@@ -22,6 +22,7 @@ export const IMAGES_L: Record<string, ImageSourcePropType> = {
   lecture: require("../../../assets/words/l/lecture.png"),
   legend: require("../../../assets/words/l/legend.png"),
   legislation: require("../../../assets/words/l/legislation.png"),
+  leisure: require("../../../assets/words/l/leisure.png"),
   lend: require("../../../assets/words/l/lend.png"),
   lesson: require("../../../assets/words/l/lesson.png"),
   letter: require("../../../assets/words/l/letter.png"),

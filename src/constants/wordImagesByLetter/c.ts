@@ -180,6 +180,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   considerable: require("../../../assets/words/c/considerable.png"),
   considerably: require("../../../assets/words/c/considerably.png"),
   "consist of": require("../../../assets/words/c/consist of.png"),
+  consistent: require("../../../assets/words/c/consistent.png"),
   constant: require("../../../assets/words/c/constant.png"),
   construct: require("../../../assets/words/c/construct.png"),
   construction: require("../../../assets/words/c/construction.png"),

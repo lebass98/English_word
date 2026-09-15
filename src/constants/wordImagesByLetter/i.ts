@@ -72,6 +72,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   intellectual: require("../../../assets/words/i/intellectual.png"),
   intelligence: require("../../../assets/words/i/intelligence.png"),
   intend: require("../../../assets/words/i/intend.png"),
+  intention: require("../../../assets/words/i/intention.png"),
   interact: require("../../../assets/words/i/interact.png"),
   interest: require("../../../assets/words/i/interest.png"),
   interesting: require("../../../assets/words/i/interesting.png"),

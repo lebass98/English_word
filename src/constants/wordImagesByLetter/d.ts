@@ -143,6 +143,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   document: require("../../../assets/words/d/document.png"),
   doll: require("../../../assets/words/d/doll.png"),
   dollar: require("../../../assets/words/d/dollar.png"),
+  domain: require("../../../assets/words/d/domain.png"),
   domestic: require("../../../assets/words/d/domestic.png"),
   dominate: require("../../../assets/words/d/dominate.png"),
   downtown: require("../../../assets/words/d/downtown.png"),

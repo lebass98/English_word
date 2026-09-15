@@ -71,6 +71,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   desperate: require("../../../assets/words/d/desperate.png"),
   despite: require("../../../assets/words/d/despite.png"),
   destroy: require("../../../assets/words/d/destroy.png"),
+  detach: require("../../../assets/words/d/detach.png"),
   detective: require("../../../assets/words/d/detective.png"),
   detergent: require("../../../assets/words/d/detergent.png"),
   determine: require("../../../assets/words/d/determine.png"),

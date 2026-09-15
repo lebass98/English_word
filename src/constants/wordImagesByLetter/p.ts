@@ -40,6 +40,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   pet: require("../../../assets/words/p/pet.png"),
   petal: require("../../../assets/words/p/petal.png"),
   photographer: require("../../../assets/words/p/photographer.png"),
+  phrase: require("../../../assets/words/p/phrase.png"),
   physician: require("../../../assets/words/p/physician.png"),
   pick: require("../../../assets/words/p/pick.png"),
   piece: require("../../../assets/words/p/piece.png"),

@@ -61,6 +61,10 @@ export interface DailyStat {
 /** 일별 기록 보관 기간. 스트릭 계산에 필요한 만큼만 남긴다 */
 const DAILY_LOG_KEEP_DAYS = 60;
 
+/** 자동 넘김 간격으로 고를 수 있는 범위 (초) */
+export const AUTO_ADVANCE_MIN_SEC = 5;
+export const AUTO_ADVANCE_MAX_SEC = 15;
+
 /** 기기 로컬 자정 기준 날짜 키 (YYYY-MM-DD) */
 export function dateKey(d: Date = new Date()): string {
   const y = d.getFullYear();
@@ -99,6 +103,10 @@ interface AppState {
   /** 자동 넘김 사용 여부 (학습 화면 전역 설정) */
   autoAdvance: boolean;
   setAutoAdvance: (on: boolean) => void;
+
+  /** 자동 넘김 간격 (초, 5~15) */
+  autoAdvanceSec: number;
+  setAutoAdvanceSec: (sec: number) => void;
 
   /** 발음 소리 크기 (0 = 음소거 … 1 = 최대). 학습 화면 스피커에 쓴다 */
   speechVolume: number;
@@ -154,6 +162,15 @@ export const useAppStore = create<AppState>()(
 
       autoAdvance: true,
       setAutoAdvance: (on) => set({ autoAdvance: on }),
+
+      autoAdvanceSec: AUTO_ADVANCE_MAX_SEC,
+      setAutoAdvanceSec: (sec) =>
+        set({
+          autoAdvanceSec: Math.min(
+            AUTO_ADVANCE_MAX_SEC,
+            Math.max(AUTO_ADVANCE_MIN_SEC, Math.round(sec)),
+          ),
+        }),
 
       speechVolume: 1,
       // 0~1 을 벗어난 값이 들어와도 저장소가 망가지지 않게 잘라 둔다
@@ -234,6 +251,7 @@ export const useAppStore = create<AppState>()(
         uiLang: s.uiLang,
         studyLang: s.studyLang,
         autoAdvance: s.autoAdvance,
+        autoAdvanceSec: s.autoAdvanceSec,
         speechVolume: s.speechVolume,
         activeGradeId: s.activeGradeId,
         entries: s.entries,

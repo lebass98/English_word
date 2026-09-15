@@ -10,6 +10,7 @@ import {
 } from "react-native";
 import { BackButton } from "../src/components/BackButton";
 import { BottomNav } from "../src/components/BottomNav";
+import { GaugeBar } from "../src/components/GaugeBar";
 import { PillButton } from "../src/components/PillButton";
 import { Screen, ScreenHeader } from "../src/components/Screen";
 import {
@@ -19,24 +20,21 @@ import {
   SlidersIcon,
   SpeakerIcon,
 } from "../src/components/icons";
-import {
-  studyLanguageOf,
-  type StudyLangId,
-} from "../src/constants/languages";
+import { studyLanguageOf, type StudyLangId } from "../src/constants/languages";
 import { speakWord } from "../src/lib/speech";
 import { useT } from "../src/i18n";
 import { UI_LANGS, UI_LANG_NAMES } from "../src/i18n/strings";
-import { useAppStore } from "../src/stores/useAppStore";
+import {
+  AUTO_ADVANCE_MAX_SEC,
+  AUTO_ADVANCE_MIN_SEC,
+  useAppStore,
+} from "../src/stores/useAppStore";
 
 /** 웹 2단계 확인이 눌린 채로 남아 있지 않도록 되돌리는 시간 (ms) */
 const CONFIRM_TIMEOUT_MS = 4000;
 
-/**
- * 발음 소리 크기 단계.
- * 슬라이더 라이브러리를 새로 들이지 않고, 앱의 다른 칸과 같은 뉴모피즘
- * 막대로 만든다. 맨 왼쪽은 음소거다.
- */
-const VOLUME_STEPS = [0, 0.25, 0.5, 0.75, 1];
+/** 발음 소리 크기 단계 수. 0 은 음소거, 10 은 최대 */
+const VOLUME_LEVELS = 10;
 
 /** 크기를 바꿀 때 바로 들려줄 짧은 견본. 학습 언어의 말로 읽어야 자연스럽다 */
 const VOLUME_SAMPLE: Record<StudyLangId, string> = {
@@ -63,6 +61,10 @@ export default function SettingsScreen() {
   const setAutoAdvance = useAppStore((s) => s.setAutoAdvance);
   const speechVolume = useAppStore((s) => s.speechVolume);
   const setSpeechVolume = useAppStore((s) => s.setSpeechVolume);
+  // 예전 25% 단위로 저장된 값도 가장 가까운 10% 단계로 보여준다
+  const volumeStep = Math.round(speechVolume * VOLUME_LEVELS);
+  const autoAdvanceSec = useAppStore((s) => s.autoAdvanceSec);
+  const setAutoAdvanceSec = useAppStore((s) => s.setAutoAdvanceSec);
   const studyLang = useAppStore((s) => s.studyLang);
 
   /** 고른 크기로 짧은 견본을 들려준다. 음소거면 들려줄 것이 없다 */
@@ -210,6 +212,40 @@ export default function SettingsScreen() {
             </Pressable>
           </View>
 
+          {/* ── 자동 넘김 간격 (5~15초) ─────────────────────── */}
+          <View className={`mt-4 ${autoAdvance ? "" : "opacity-50"}`}>
+            <View className="flex-row items-center justify-between">
+              <Text className="text-[13px] text-slate-500">
+                {t("settings.autoAdvanceSec")}
+              </Text>
+              <Text className="text-[13px] font-bold text-mint-dark">
+                {t("settings.autoAdvanceSecValue", { sec: autoAdvanceSec })}
+              </Text>
+            </View>
+            <GaugeBar
+              value={autoAdvanceSec}
+              min={AUTO_ADVANCE_MIN_SEC}
+              max={AUTO_ADVANCE_MAX_SEC}
+              onChange={setAutoAdvanceSec}
+              accessibilityLabel={t("settings.autoAdvanceSec")}
+              accessibilityValueText={t("settings.autoAdvanceSecValue", {
+                sec: autoAdvanceSec,
+              })}
+            />
+            <View className="flex-row justify-between">
+              <Text className="text-[11px] text-slate-400">
+                {t("settings.autoAdvanceSecValue", {
+                  sec: AUTO_ADVANCE_MIN_SEC,
+                })}
+              </Text>
+              <Text className="text-[11px] text-slate-400">
+                {t("settings.autoAdvanceSecValue", {
+                  sec: AUTO_ADVANCE_MAX_SEC,
+                })}
+              </Text>
+            </View>
+          </View>
+
           {/* ── 발음 소리 크기 ─────────────────────────────── */}
           <View className="mt-5 border-t border-slate-200/70 pt-5">
             <View className="flex-row items-center justify-between gap-4">
@@ -232,56 +268,37 @@ export default function SettingsScreen() {
               </Text>
             </View>
 
-            {/* 단계를 누르면 바뀐 크기로 바로 한 번 들려준다.
-                막대 자체는 낮은 단계일수록 짧아 누르기 어려우므로, 누르는
-                자리는 막대 높이와 상관없이 48px 로 잡고 그 안에 막대를 그린다 */}
-            <View className="mt-3 flex-row items-end gap-2">
+            {/* 끌거나 눌러 크기를 바꾸고, 손을 떼면 바뀐 크기로 한 번 들려준다 */}
+            <View className="mt-2 flex-row items-center gap-3">
               <Pressable
                 onPress={() => playSample(speechVolume)}
                 accessibilityRole="button"
                 accessibilityLabel={t("settings.speechVolume")}
-                className="h-12 justify-center pr-1 active:opacity-60"
+                className="h-11 justify-center active:opacity-60"
               >
                 <SpeakerIcon
                   size={18}
                   color={speechVolume === 0 ? "#94a3b8" : "#0eb582"}
                 />
               </Pressable>
-              {VOLUME_STEPS.map((step, i) => {
-                const on = speechVolume >= step && step > 0;
-                return (
-                  <Pressable
-                    key={step}
-                    accessibilityRole="button"
-                    accessibilityState={{ selected: speechVolume === step }}
-                    accessibilityLabel={
-                      step === 0
-                        ? t("settings.speechMuted")
-                        : t("settings.speechVolumeLevel", {
-                            percent: Math.round(step * 100),
-                          })
-                    }
-                    onPress={() => {
-                      setSpeechVolume(step);
-                      playSample(step);
-                    }}
-                    style={{ flex: 1 }}
-                    className="h-12 justify-end active:opacity-70"
-                  >
-                    <View
-                      style={{ height: 12 + i * 8 }}
-                      className={`rounded-lg ${
-                        on
-                          ? "bg-mint"
-                          : // 음소거를 고른 상태도 눌린 티가 나야 한다
-                            step === 0 && speechVolume === 0
-                            ? "bg-slate-300"
-                            : "bg-canvas shadow-neu-inset"
-                      }`}
-                    />
-                  </Pressable>
-                );
-              })}
+              <View className="flex-1">
+                <GaugeBar
+                  value={volumeStep}
+                  min={0}
+                  max={VOLUME_LEVELS}
+                  dimmed={volumeStep === 0}
+                  onChange={(step) => setSpeechVolume(step / VOLUME_LEVELS)}
+                  onRelease={(step) => playSample(step / VOLUME_LEVELS)}
+                  accessibilityLabel={t("settings.speechVolume")}
+                  accessibilityValueText={
+                    volumeStep === 0
+                      ? t("settings.speechMuted")
+                      : t("settings.speechVolumeLevel", {
+                          percent: volumeStep * 10,
+                        })
+                  }
+                />
+              </View>
             </View>
           </View>
         </View>

@@ -57,9 +57,6 @@ import { WORD_IMAGES } from "../../src/constants/wordImages";
 import { speakWord, stopSpeaking } from "../../src/lib/speech";
 import { useAppStore, type WordStatus } from "../../src/stores/useAppStore";
 
-/** 자동 넘김 간격 (초) */
-const AUTO_ADVANCE_SEC = 15;
-
 /** 앱 기본 초록 (tailwind 의 mint). Animated.View 처럼 className 이 안 먹는 곳에 쓴다 */
 const MINT = "#0EB582";
 
@@ -181,6 +178,7 @@ function StudyCard({
   const nextId = next?.id;
   const autoAdvance = useAppStore((s) => s.autoAdvance);
   const setAutoAdvance = useAppStore((s) => s.setAutoAdvance);
+  const autoAdvanceSec = useAppStore((s) => s.autoAdvanceSec);
   const recordStudy = useAppStore((s) => s.recordStudy);
   const markSeen = useAppStore((s) => s.markSeen);
   const toggleSaved = useAppStore((s) => s.toggleSaved);
@@ -263,7 +261,7 @@ function StudyCard({
 
   // 자동 넘김 타이머.
   // 예전에는 200ms마다 상태를 바꿔 바를 다시 그렸는데, 그 간격만큼 계단처럼 끊겨 보였다.
-  // 지금은 15초 동안 0에서 1까지 일정한 속도로 흐르는 애니메이션 하나로 처리해
+  // 지금은 설정한 간격(5~15초) 동안 0에서 1까지 일정한 속도로 흐르는 애니메이션 하나로 처리해
   // 왼쪽에서 오른쪽으로 끊김 없이 채워진다.
   useEffect(() => {
     progress.setValue(0);
@@ -271,7 +269,7 @@ function StudyCard({
 
     const animation = Animated.timing(progress, {
       toValue: 1,
-      duration: AUTO_ADVANCE_SEC * 1000,
+      duration: autoAdvanceSec * 1000,
       easing: Easing.linear,
       // 너비는 레이아웃 속성이라 네이티브 드라이버를 쓸 수 없다
       useNativeDriver: false,
@@ -281,7 +279,7 @@ function StudyCard({
     });
 
     return () => animation.stop();
-  }, [autoAdvance, advance, progress]);
+  }, [autoAdvance, autoAdvanceSec, advance, progress]);
 
   // 단어가 바뀌면 발음을 자동으로 한 번 들려준다.
   // (단어가 바뀔 때마다 정확히 한 번 실행된다)

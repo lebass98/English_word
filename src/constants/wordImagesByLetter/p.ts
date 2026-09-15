@@ -143,5 +143,6 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   push: require("../../../assets/words/p/push.png"),
   "put away": require("../../../assets/words/p/put-away.png"),
   "put effort (into)": require("../../../assets/words/p/put-effort-(into).png"),
+  "put out": require("../../../assets/words/p/put-out.png"),
   puzzle: require("../../../assets/words/p/puzzle.png"),
 };

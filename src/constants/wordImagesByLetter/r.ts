@@ -142,6 +142,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   reportedly: require("../../../assets/words/r/reportedly.png"),
   represent: require("../../../assets/words/r/represent.png"),
   representative: require("../../../assets/words/r/representative.png"),
+  repress: require("../../../assets/words/r/repress.png"),
   reproduce: require("../../../assets/words/r/reproduce.png"),
   republic: require("../../../assets/words/r/republic.png"),
   reputation: require("../../../assets/words/r/reputation.png"),

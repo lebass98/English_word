@@ -215,6 +215,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   invite: require("../../../assets/words/i/invite.png"),
   involve: require("../../../assets/words/i/involve.png"),
   iron: require("../../../assets/words/i/iron.png"),
+  irreparable: require("../../../assets/words/i/irreparable.png"),
   island: require("../../../assets/words/i/island.png"),
   isolate: require("../../../assets/words/i/isolate.png"),
   isolated: require("../../../assets/words/i/isolated.png"),

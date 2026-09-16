@@ -261,6 +261,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   subsequent: require("../../../assets/words/s/subsequent.png"),
   subsequently: require("../../../assets/words/s/subsequently.png"),
   substance: require("../../../assets/words/s/substance.png"),
+  substantial: require("../../../assets/words/s/substantial.png"),
   substitute: require("../../../assets/words/s/substitute.png"),
   suburb: require("../../../assets/words/s/suburb.png"),
   subway: require("../../../assets/words/s/subway.png"),

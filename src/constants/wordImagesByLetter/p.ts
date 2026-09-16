@@ -281,6 +281,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   prosper: require("../../../assets/words/p/prosper.png"),
   prosperity: require("../../../assets/words/p/prosperity.png"),
   prosperous: require("../../../assets/words/p/prosperous.png"),
+  protagonist: require("../../../assets/words/p/protagonist.png"),
   protect: require("../../../assets/words/p/protect.png"),
   protein: require("../../../assets/words/p/protein.png"),
   protest: require("../../../assets/words/p/protest.png"),

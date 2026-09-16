@@ -89,6 +89,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   beyond: require("../../../assets/words/b/beyond.png"),
   bias: require("../../../assets/words/b/bias.png"),
   bike: require("../../../assets/words/b/bike.png"),
+  bilateral: require("../../../assets/words/b/bilateral.png"),
   bilingual: require("../../../assets/words/b/bilingual.png"),
   bill: require("../../../assets/words/b/bill.png"),
   bind: require("../../../assets/words/b/bind.png"),

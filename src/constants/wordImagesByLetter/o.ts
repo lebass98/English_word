@@ -24,6 +24,7 @@ export const IMAGES_O: Record<string, ImageSourcePropType> = {
   occur: require("../../../assets/words/o/occur.png"),
   ocean: require("../../../assets/words/o/ocean.png"),
   odd: require("../../../assets/words/o/odd.png"),
+  "of high priority": require("../../../assets/words/o/of-high-priority.png"),
   offend: require("../../../assets/words/o/offend.png"),
   offense: require("../../../assets/words/o/offense.png"),
   offer: require("../../../assets/words/o/offer.png"),

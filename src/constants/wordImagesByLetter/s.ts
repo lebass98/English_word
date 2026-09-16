@@ -214,6 +214,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   sturdy: require("../../../assets/words/s/sturdy.png"),
   style: require("../../../assets/words/s/style.png"),
   subject: require("../../../assets/words/s/subject.png"),
+  submit: require("../../../assets/words/s/submit.png"),
   substance: require("../../../assets/words/s/substance.png"),
   suburb: require("../../../assets/words/s/suburb.png"),
   subway: require("../../../assets/words/s/subway.png"),

@@ -309,6 +309,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   attempt: require("../../../assets/words/a/attempt.png"),
   attend: require("../../../assets/words/a/attend.png"),
   attendant: require("../../../assets/words/a/attendant.png"),
+  attendee: require("../../../assets/words/a/attendee.png"),
   attention: require("../../../assets/words/a/attention.png"),
   attentive: require("../../../assets/words/a/attentive.png"),
   attest: require("../../../assets/words/a/attest.png"),

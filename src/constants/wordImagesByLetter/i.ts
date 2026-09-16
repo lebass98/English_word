@@ -62,6 +62,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   insight: require("../../../assets/words/i/insight.png"),
   insist: require("../../../assets/words/i/insist.png"),
   inspire: require("../../../assets/words/i/inspire.png"),
+  install: require("../../../assets/words/i/install.png"),
   instance: require("../../../assets/words/i/instance.png"),
   instant: require("../../../assets/words/i/instant.png"),
   instantly: require("../../../assets/words/i/instantly.png"),

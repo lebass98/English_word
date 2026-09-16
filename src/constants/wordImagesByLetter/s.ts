@@ -50,6 +50,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   selfish: require("../../../assets/words/s/selfish.png"),
   semester: require("../../../assets/words/s/semester.png"),
   senior: require("../../../assets/words/s/senior.png"),
+  sensation: require("../../../assets/words/s/sensation.png"),
   sense: require("../../../assets/words/s/sense.png"),
   sensitive: require("../../../assets/words/s/sensitive.png"),
   sentence: require("../../../assets/words/s/sentence.png"),

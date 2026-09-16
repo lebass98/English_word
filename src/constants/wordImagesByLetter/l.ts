@@ -23,6 +23,7 @@ export const IMAGES_L: Record<string, ImageSourcePropType> = {
   layer: require("../../../assets/words/l/layer.png"),
   lead: require("../../../assets/words/l/lead.png"),
   "lead to": require("../../../assets/words/l/lead-to.png"),
+  leading: require("../../../assets/words/l/leading.png"),
   league: require("../../../assets/words/l/league.png"),
   leak: require("../../../assets/words/l/leak.png"),
   lean: require("../../../assets/words/l/lean.png"),

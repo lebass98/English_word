@@ -109,6 +109,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   severe: require("../../../assets/words/s/severe.png"),
   severely: require("../../../assets/words/s/severely.png"),
   sew: require("../../../assets/words/s/sew.png"),
+  sewage: require("../../../assets/words/s/sewage.png"),
   shade: require("../../../assets/words/s/shade.png"),
   shadow: require("../../../assets/words/s/shadow.png"),
   shake: require("../../../assets/words/s/shake.png"),

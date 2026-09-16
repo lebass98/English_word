@@ -6,6 +6,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   racial: require("../../../assets/words/r/racial.png"),
   radical: require("../../../assets/words/r/radical.png"),
   radically: require("../../../assets/words/r/radically.png"),
+  radioactive: require("../../../assets/words/r/radioactive.png"),
   rage: require("../../../assets/words/r/rage.png"),
   rainforest: require("../../../assets/words/r/rainforest.png"),
   raise: require("../../../assets/words/r/raise.png"),

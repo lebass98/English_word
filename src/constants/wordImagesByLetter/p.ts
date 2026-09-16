@@ -206,6 +206,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   prehistoric: require("../../../assets/words/p/prehistoric.png"),
   prejudice: require("../../../assets/words/p/prejudice.png"),
   preliminary: require("../../../assets/words/p/preliminary.png"),
+  premature: require("../../../assets/words/p/premature.png"),
   premises: require("../../../assets/words/p/premises.png"),
   prepare: require("../../../assets/words/p/prepare.png"),
   preparing: require("../../../assets/words/p/preparing.png"),

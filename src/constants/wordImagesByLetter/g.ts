@@ -47,6 +47,7 @@ export const IMAGES_G: Record<string, ImageSourcePropType> = {
   "go over": require("../../../assets/words/g/go-over.png"),
   goal: require("../../../assets/words/g/goal.png"),
   god: require("../../../assets/words/g/god.png"),
+  "golden age": require("../../../assets/words/g/golden-age.png"),
   govern: require("../../../assets/words/g/govern.png"),
   government: require("../../../assets/words/g/government.png"),
   grab: require("../../../assets/words/g/grab.png"),

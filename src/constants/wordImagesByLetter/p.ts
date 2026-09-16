@@ -123,6 +123,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   pioneer: require("../../../assets/words/p/pioneer.png"),
   pitch: require("../../../assets/words/p/pitch.png"),
   pitfall: require("../../../assets/words/p/pitfall.png"),
+  place: require("../../../assets/words/p/place.png"),
   plague: require("../../../assets/words/p/plague.png"),
   plain: require("../../../assets/words/p/plain.png"),
   plane: require("../../../assets/words/p/plane.png"),

@@ -162,6 +162,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   instruct: require("../../../assets/words/i/instruct.png"),
   instruction: require("../../../assets/words/i/instruction.png"),
   instrument: require("../../../assets/words/i/instrument.png"),
+  insufficient: require("../../../assets/words/i/insufficient.png"),
   insult: require("../../../assets/words/i/insult.png"),
   insurance: require("../../../assets/words/i/insurance.png"),
   intake: require("../../../assets/words/i/intake.png"),

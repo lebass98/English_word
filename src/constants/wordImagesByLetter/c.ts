@@ -292,6 +292,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   continue: require("../../../assets/words/c/continue.png"),
   continuous: require("../../../assets/words/c/continuous.png"),
   continuously: require("../../../assets/words/c/continuously.png"),
+  continuum: require("../../../assets/words/c/continuum.png"),
   contour: require("../../../assets/words/c/contour.png"),
   contract: require("../../../assets/words/c/contract.png"),
   contractor: require("../../../assets/words/c/contractor.png"),

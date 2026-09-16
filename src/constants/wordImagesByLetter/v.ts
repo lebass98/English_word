@@ -52,6 +52,7 @@ export const IMAGES_V: Record<string, ImageSourcePropType> = {
   vigorously: require("../../../assets/words/v/vigorously.png"),
   village: require("../../../assets/words/v/village.png"),
   violate: require("../../../assets/words/v/violate.png"),
+  violation: require("../../../assets/words/v/violation.png"),
   violence: require("../../../assets/words/v/violence.png"),
   violent: require("../../../assets/words/v/violent.png"),
   virtual: require("../../../assets/words/v/virtual.png"),

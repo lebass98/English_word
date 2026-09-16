@@ -15,4 +15,5 @@ export const IMAGES_Q: Record<string, ImageSourcePropType> = {
   quiet: require("../../../assets/words/q/quiet.png"),
   quit: require("../../../assets/words/q/quit.png"),
   quite: require("../../../assets/words/q/quite.png"),
+  quote: require("../../../assets/words/q/quote.png"),
 };

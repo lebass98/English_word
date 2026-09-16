@@ -206,6 +206,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   retreat: require("../../../assets/words/r/retreat.png"),
   retrospect: require("../../../assets/words/r/retrospect.png"),
   return: require("../../../assets/words/r/return.png"),
+  reunion: require("../../../assets/words/r/reunion.png"),
   reveal: require("../../../assets/words/r/reveal.png"),
   revenge: require("../../../assets/words/r/revenge.png"),
   revenue: require("../../../assets/words/r/revenue.png"),

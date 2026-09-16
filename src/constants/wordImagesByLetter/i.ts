@@ -221,6 +221,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   inventory: require("../../../assets/words/i/inventory.png"),
   invest: require("../../../assets/words/i/invest.png"),
   investigate: require("../../../assets/words/i/investigate.png"),
+  investment: require("../../../assets/words/i/investment.png"),
   invisible: require("../../../assets/words/i/invisible.png"),
   invitation: require("../../../assets/words/i/invitation.png"),
   invite: require("../../../assets/words/i/invite.png"),

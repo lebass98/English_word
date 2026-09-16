@@ -71,6 +71,9 @@ npm run lint     # ESLint
   - `sync()` 가 빈 커밋은 건너뛰고 겹친 그림은 원격 쪽을 남겨 정리한다. 정리 못 하면 되돌리고 멈춘다
   - 올리기는 1회 재시도한다
 - `scripts/push_watchdog.sh` 추가 — 올라가지 못하고 로컬에 남은 커밋을 주기적으로 대신 올린다
+- `scripts/update_dashboard.py` 추가 — 상위 폴더의 현황판(`LIVE_DASHBOARD.md`, `dashboard.html`)을
+  과정·유닛별 완료 표시로 다시 쓴다 (앱 안의 현황판 화면은 등록표를 그 자리에서 세므로 손대지 않는다)
+- `src/data/images/dailyCounts.json` 갱신 — 앱 현황판의 일자별 제작 카드가 읽는 파일
 
 ### 2026-09-15
 - 중3 50단원 빠진 그림 12장 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)

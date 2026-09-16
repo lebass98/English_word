@@ -67,6 +67,7 @@ export const IMAGES_W: Record<string, ImageSourcePropType> = {
   worse: require("../../../assets/words/w/worse.png"),
   worship: require("../../../assets/words/w/worship.png"),
   worth: require("../../../assets/words/w/worth.png"),
+  worthwhile: require("../../../assets/words/w/worthwhile.png"),
   wound: require("../../../assets/words/w/wound.png"),
   wrap: require("../../../assets/words/w/wrap.png"),
   wreck: require("../../../assets/words/w/wreck.png"),

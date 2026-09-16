@@ -20,6 +20,7 @@ export const IMAGES_U: Record<string, ImageSourcePropType> = {
   uncover: require("../../../assets/words/u/uncover.png"),
   undergo: require("../../../assets/words/u/undergo.png"),
   underground: require("../../../assets/words/u/underground.png"),
+  underlying: require("../../../assets/words/u/underlying.png"),
   understand: require("../../../assets/words/u/understand.png"),
   undertake: require("../../../assets/words/u/undertake.png"),
   underwater: require("../../../assets/words/u/underwater.png"),

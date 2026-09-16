@@ -123,6 +123,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   trade: require("../../../assets/words/t/trade.png"),
   tradition: require("../../../assets/words/t/tradition.png"),
   traditional: require("../../../assets/words/t/traditional.png"),
+  traditionally: require("../../../assets/words/t/traditionally.png"),
   traffic: require("../../../assets/words/t/traffic.png"),
   tragedy: require("../../../assets/words/t/tragedy.png"),
   tragic: require("../../../assets/words/t/tragic.png"),

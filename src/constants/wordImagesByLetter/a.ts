@@ -139,6 +139,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   amateur: require("../../../assets/words/a/amateur.png"),
   amazed: require("../../../assets/words/a/amazed.png"),
   amazing: require("../../../assets/words/a/amazing.png"),
+  ambiguity: require("../../../assets/words/a/ambiguity.png"),
   ambiguous: require("../../../assets/words/a/ambiguous.png"),
   ambition: require("../../../assets/words/a/ambition.png"),
   ambitious: require("../../../assets/words/a/ambitious.png"),

@@ -264,6 +264,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   contract: require("../../../assets/words/c/contract.png"),
   contractor: require("../../../assets/words/c/contractor.png"),
   contradict: require("../../../assets/words/c/contradict.png"),
+  contradiction: require("../../../assets/words/c/contradiction.png"),
   contrary: require("../../../assets/words/c/contrary.png"),
   contrast: require("../../../assets/words/c/contrast.png"),
   contribute: require("../../../assets/words/c/contribute.png"),

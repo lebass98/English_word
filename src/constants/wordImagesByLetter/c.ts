@@ -204,6 +204,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   confess: require("../../../assets/words/c/confess.png"),
   confidence: require("../../../assets/words/c/confidence.png"),
   confident: require("../../../assets/words/c/confident.png"),
+  confidential: require("../../../assets/words/c/confidential.png"),
   confine: require("../../../assets/words/c/confine.png"),
   confirm: require("../../../assets/words/c/confirm.png"),
   conflict: require("../../../assets/words/c/conflict.png"),

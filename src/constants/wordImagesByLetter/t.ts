@@ -92,6 +92,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   track: require("../../../assets/words/t/track.png"),
   trade: require("../../../assets/words/t/trade.png"),
   tradition: require("../../../assets/words/t/tradition.png"),
+  traditional: require("../../../assets/words/t/traditional.png"),
   traffic: require("../../../assets/words/t/traffic.png"),
   tragedy: require("../../../assets/words/t/tragedy.png"),
   tragic: require("../../../assets/words/t/tragic.png"),

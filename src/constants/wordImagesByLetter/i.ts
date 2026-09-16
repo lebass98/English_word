@@ -144,6 +144,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   inquire: require("../../../assets/words/i/inquire.png"),
   insect: require("../../../assets/words/i/insect.png"),
   insight: require("../../../assets/words/i/insight.png"),
+  insignificant: require("../../../assets/words/i/insignificant.png"),
   insist: require("../../../assets/words/i/insist.png"),
   inspire: require("../../../assets/words/i/inspire.png"),
   install: require("../../../assets/words/i/install.png"),

@@ -210,6 +210,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   expand: require("../../../assets/words/e/expand.png"),
   expanse: require("../../../assets/words/e/expanse.png"),
   expect: require("../../../assets/words/e/expect.png"),
+  expedite: require("../../../assets/words/e/expedite.png"),
   expedition: require("../../../assets/words/e/expedition.png"),
   expel: require("../../../assets/words/e/expel.png"),
   expend: require("../../../assets/words/e/expend.png"),

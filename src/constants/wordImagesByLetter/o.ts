@@ -90,6 +90,7 @@ export const IMAGES_O: Record<string, ImageSourcePropType> = {
   overlook: require("../../../assets/words/o/overlook.png"),
   overnight: require("../../../assets/words/o/overnight.png"),
   overseas: require("../../../assets/words/o/overseas.png"),
+  oversee: require("../../../assets/words/o/oversee.png"),
   owe: require("../../../assets/words/o/owe.png"),
   owl: require("../../../assets/words/o/owl.png"),
   own: require("../../../assets/words/o/own.png"),

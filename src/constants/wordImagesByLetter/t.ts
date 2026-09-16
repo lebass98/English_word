@@ -101,6 +101,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   transaction: require("../../../assets/words/t/transaction.png"),
   transfer: require("../../../assets/words/t/transfer.png"),
   transform: require("../../../assets/words/t/transform.png"),
+  transition: require("../../../assets/words/t/transition.png"),
   translate: require("../../../assets/words/t/translate.png"),
   translation: require("../../../assets/words/t/translation.png"),
   transplant: require("../../../assets/words/t/transplant.png"),

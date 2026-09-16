@@ -226,6 +226,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   riddle: require("../../../assets/words/r/riddle.png"),
   ride: require("../../../assets/words/r/ride.png"),
   ridiculous: require("../../../assets/words/r/ridiculous.png"),
+  righteous: require("../../../assets/words/r/righteous.png"),
   rigid: require("../../../assets/words/r/rigid.png"),
   rigidly: require("../../../assets/words/r/rigidly.png"),
   rigorous: require("../../../assets/words/r/rigorous.png"),

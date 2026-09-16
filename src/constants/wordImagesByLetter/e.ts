@@ -117,6 +117,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   eradicate: require("../../../assets/words/e/eradicate.png"),
   erase: require("../../../assets/words/e/erase.png"),
   eraser: require("../../../assets/words/e/eraser.png"),
+  erode: require("../../../assets/words/e/erode.png"),
   errand: require("../../../assets/words/e/errand.png"),
   error: require("../../../assets/words/e/error.png"),
   erupt: require("../../../assets/words/e/erupt.png"),

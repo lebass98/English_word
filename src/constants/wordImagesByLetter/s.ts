@@ -183,6 +183,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   slaughter: require("../../../assets/words/s/slaughter.png"),
   slave: require("../../../assets/words/s/slave.png"),
   sleep: require("../../../assets/words/s/sleep.png"),
+  slender: require("../../../assets/words/s/slender.png"),
   slice: require("../../../assets/words/s/slice.png"),
   slide: require("../../../assets/words/s/slide.png"),
   slight: require("../../../assets/words/s/slight.png"),

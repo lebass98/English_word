@@ -96,6 +96,7 @@ export const IMAGES_O: Record<string, ImageSourcePropType> = {
   overwhelming: require("../../../assets/words/o/overwhelming.png"),
   overwhelmingly: require("../../../assets/words/o/overwhelmingly.png"),
   owe: require("../../../assets/words/o/owe.png"),
+  "owing to": require("../../../assets/words/o/owing-to.png"),
   owl: require("../../../assets/words/o/owl.png"),
   own: require("../../../assets/words/o/own.png"),
   ownership: require("../../../assets/words/o/ownership.png"),

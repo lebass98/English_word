@@ -190,6 +190,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   split: require("../../../assets/words/s/split.png"),
   spoil: require("../../../assets/words/s/spoil.png"),
   sponsor: require("../../../assets/words/s/sponsor.png"),
+  spontaneous: require("../../../assets/words/s/spontaneous.png"),
   spot: require("../../../assets/words/s/spot.png"),
   spouse: require("../../../assets/words/s/spouse.png"),
   sprain: require("../../../assets/words/s/sprain.png"),

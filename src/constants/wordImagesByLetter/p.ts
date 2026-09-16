@@ -196,6 +196,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   predominant: require("../../../assets/words/p/predominant.png"),
   predominantly: require("../../../assets/words/p/predominantly.png"),
   preeminent: require("../../../assets/words/p/preeminent.png"),
+  preface: require("../../../assets/words/p/preface.png"),
   prefer: require("../../../assets/words/p/prefer.png"),
   preference: require("../../../assets/words/p/preference.png"),
   pregnant: require("../../../assets/words/p/pregnant.png"),

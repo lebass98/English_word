@@ -16,6 +16,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   ecological: require("../../../assets/words/e/ecological.png"),
   ecology: require("../../../assets/words/e/ecology.png"),
   economic: require("../../../assets/words/e/economic.png"),
+  economy: require("../../../assets/words/e/economy.png"),
   ecosystem: require("../../../assets/words/e/ecosystem.png"),
   edge: require("../../../assets/words/e/edge.png"),
   edible: require("../../../assets/words/e/edible.png"),

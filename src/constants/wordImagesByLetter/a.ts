@@ -251,6 +251,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   automatic: require("../../../assets/words/a/automatic.png"),
   available: require("../../../assets/words/a/available.png"),
   avenue: require("../../../assets/words/a/avenue.png"),
+  average: require("../../../assets/words/a/average.png"),
   avoid: require("../../../assets/words/a/avoid.png"),
   awake: require("../../../assets/words/a/awake.png"),
   awaken: require("../../../assets/words/a/awaken.png"),

@@ -19,6 +19,7 @@ export const IMAGES_N: Record<string, ImageSourcePropType> = {
   neat: require("../../../assets/words/n/neat.png"),
   necessary: require("../../../assets/words/n/necessary.png"),
   necessity: require("../../../assets/words/n/necessity.png"),
+  nectar: require("../../../assets/words/n/nectar.png"),
   need: require("../../../assets/words/n/need.png"),
   needle: require("../../../assets/words/n/needle.png"),
   "needless to say": require("../../../assets/words/n/needless-to-say.png"),

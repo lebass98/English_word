@@ -41,6 +41,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   eliminate: require("../../../assets/words/e/eliminate.png"),
   else: require("../../../assets/words/e/else.png"),
   embarrassed: require("../../../assets/words/e/embarrassed.png"),
+  embed: require("../../../assets/words/e/embed.png"),
   emerge: require("../../../assets/words/e/emerge.png"),
   emergency: require("../../../assets/words/e/emergency.png"),
   emigrate: require("../../../assets/words/e/emigrate.png"),

@@ -32,6 +32,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   tentative: require("../../../assets/words/t/tentative.png"),
   tenure: require("../../../assets/words/t/tenure.png"),
   term: require("../../../assets/words/t/term.png"),
+  terminate: require("../../../assets/words/t/terminate.png"),
   terrible: require("../../../assets/words/t/terrible.png"),
   terrific: require("../../../assets/words/t/terrific.png"),
   terrifying: require("../../../assets/words/t/terrifying.png"),

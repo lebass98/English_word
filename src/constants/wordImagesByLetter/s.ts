@@ -434,4 +434,5 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   symptom: require("../../../assets/words/s/symptom.png"),
   synthetic: require("../../../assets/words/s/synthetic.png"),
   system: require("../../../assets/words/s/system.png"),
+  systematic: require("../../../assets/words/s/systematic.png"),
 };

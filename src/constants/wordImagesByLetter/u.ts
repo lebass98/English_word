@@ -15,6 +15,7 @@ export const IMAGES_U: Record<string, ImageSourcePropType> = {
   uniform: require("../../../assets/words/u/uniform.png"),
   unify: require("../../../assets/words/u/unify.png"),
   union: require("../../../assets/words/u/union.png"),
+  unique: require("../../../assets/words/u/unique.png"),
   unite: require("../../../assets/words/u/unite.png"),
   unity: require("../../../assets/words/u/unity.png"),
   universal: require("../../../assets/words/u/universal.png"),

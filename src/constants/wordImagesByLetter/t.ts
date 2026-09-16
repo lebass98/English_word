@@ -133,6 +133,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   transcribe: require("../../../assets/words/t/transcribe.png"),
   transfer: require("../../../assets/words/t/transfer.png"),
   transform: require("../../../assets/words/t/transform.png"),
+  transfusion: require("../../../assets/words/t/transfusion.png"),
   transition: require("../../../assets/words/t/transition.png"),
   translate: require("../../../assets/words/t/translate.png"),
   translation: require("../../../assets/words/t/translation.png"),

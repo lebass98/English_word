@@ -31,6 +31,8 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-17
+- 토익(TOEIC) 코스 신규 단어 66종 선형그래픽 이미지 등록 및 동기화
+  - 대상: accountant, accrue, allergic, compensation, complication, manuscript, pertinent, signal, spicy 등
 - 토플 코스 1,495단어 그림을 모두 채움 (이번 실행에서 597장 생성, 실패 0)
   - 512x512 로 낮춘 뒤 한 장 60~90초로 1024 때보다 3~4배 빨라짐
   - 등록 파일 충돌은 스크립트가 등록 파일을 다시 만들어 자동으로 이어 감

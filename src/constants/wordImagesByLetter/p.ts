@@ -265,6 +265,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   proper: require("../../../assets/words/p/proper.png"),
   properly: require("../../../assets/words/p/properly.png"),
   property: require("../../../assets/words/p/property.png"),
+  proponent: require("../../../assets/words/p/proponent.png"),
   proportion: require("../../../assets/words/p/proportion.png"),
   proposal: require("../../../assets/words/p/proposal.png"),
   prospect: require("../../../assets/words/p/prospect.png"),

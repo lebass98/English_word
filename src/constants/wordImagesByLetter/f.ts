@@ -93,6 +93,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   "for a while": require("../../../assets/words/f/for-a-while.png"),
   "for instance": require("../../../assets/words/f/for-instance.png"),
   "for oneself": require("../../../assets/words/f/for-oneself.png"),
+  forage: require("../../../assets/words/f/forage.png"),
   forbid: require("../../../assets/words/f/forbid.png"),
   force: require("../../../assets/words/f/force.png"),
   forecast: require("../../../assets/words/f/forecast.png"),

@@ -310,6 +310,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   contest: require("../../../assets/words/c/contest.png"),
   context: require("../../../assets/words/c/context.png"),
   continent: require("../../../assets/words/c/continent.png"),
+  contingent: require("../../../assets/words/c/contingent.png"),
   continual: require("../../../assets/words/c/continual.png"),
   continually: require("../../../assets/words/c/continually.png"),
   continue: require("../../../assets/words/c/continue.png"),

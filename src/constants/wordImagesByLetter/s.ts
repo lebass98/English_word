@@ -204,6 +204,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   slip: require("../../../assets/words/s/slip.png"),
   slope: require("../../../assets/words/s/slope.png"),
   "slow down": require("../../../assets/words/s/slow-down.png"),
+  slowdown: require("../../../assets/words/s/slowdown.png"),
   smart: require("../../../assets/words/s/smart.png"),
   smell: require("../../../assets/words/s/smell.png"),
   smoke: require("../../../assets/words/s/smoke.png"),

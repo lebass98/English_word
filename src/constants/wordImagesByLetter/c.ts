@@ -412,6 +412,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   cuisine: require("../../../assets/words/c/cuisine.png"),
   culinary: require("../../../assets/words/c/culinary.png"),
   cultivate: require("../../../assets/words/c/cultivate.png"),
+  cultivation: require("../../../assets/words/c/cultivation.png"),
   cultivator: require("../../../assets/words/c/cultivator.png"),
   cultural: require("../../../assets/words/c/cultural.png"),
   culture: require("../../../assets/words/c/culture.png"),

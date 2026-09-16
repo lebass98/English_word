@@ -112,6 +112,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   envy: require("../../../assets/words/e/envy.png"),
   epidemic: require("../../../assets/words/e/epidemic.png"),
   equal: require("../../../assets/words/e/equal.png"),
+  equate: require("../../../assets/words/e/equate.png"),
   equilibrium: require("../../../assets/words/e/equilibrium.png"),
   equip: require("../../../assets/words/e/equip.png"),
   equipment: require("../../../assets/words/e/equipment.png"),

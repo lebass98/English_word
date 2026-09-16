@@ -19,6 +19,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   rapidly: require("../../../assets/words/r/rapidly.png"),
   rare: require("../../../assets/words/r/rare.png"),
   rarely: require("../../../assets/words/r/rarely.png"),
+  rash: require("../../../assets/words/r/rash.png"),
   rat: require("../../../assets/words/r/rat.png"),
   rate: require("../../../assets/words/r/rate.png"),
   rather: require("../../../assets/words/r/rather.png"),

@@ -15,6 +15,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   illumination: require("../../../assets/words/i/illumination.png"),
   illusion: require("../../../assets/words/i/illusion.png"),
   illustrate: require("../../../assets/words/i/illustrate.png"),
+  imaginable: require("../../../assets/words/i/imaginable.png"),
   imagine: require("../../../assets/words/i/imagine.png"),
   imitate: require("../../../assets/words/i/imitate.png"),
   immediate: require("../../../assets/words/i/immediate.png"),

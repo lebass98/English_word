@@ -130,6 +130,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   digest: require("../../../assets/words/d/digest.png"),
   dilemma: require("../../../assets/words/d/dilemma.png"),
   diligent: require("../../../assets/words/d/diligent.png"),
+  dilute: require("../../../assets/words/d/dilute.png"),
   dimension: require("../../../assets/words/d/dimension.png"),
   diminish: require("../../../assets/words/d/diminish.png"),
   diminutive: require("../../../assets/words/d/diminutive.png"),

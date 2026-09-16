@@ -260,6 +260,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   configuration: require("../../../assets/words/c/configuration.png"),
   confine: require("../../../assets/words/c/confine.png"),
   confirm: require("../../../assets/words/c/confirm.png"),
+  confiscate: require("../../../assets/words/c/confiscate.png"),
   conflict: require("../../../assets/words/c/conflict.png"),
   conflicting: require("../../../assets/words/c/conflicting.png"),
   conform: require("../../../assets/words/c/conform.png"),

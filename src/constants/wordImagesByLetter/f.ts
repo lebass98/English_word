@@ -47,6 +47,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   faucet: require("../../../assets/words/f/faucet.png"),
   fault: require("../../../assets/words/f/fault.png"),
   favor: require("../../../assets/words/f/favor.png"),
+  favorable: require("../../../assets/words/f/favorable.png"),
   favorite: require("../../../assets/words/f/favorite.png"),
   fear: require("../../../assets/words/f/fear.png"),
   fearful: require("../../../assets/words/f/fearful.png"),

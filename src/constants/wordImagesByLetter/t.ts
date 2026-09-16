@@ -111,6 +111,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   true: require("../../../assets/words/t/true.png"),
   trumpet: require("../../../assets/words/t/trumpet.png"),
   trust: require("../../../assets/words/t/trust.png"),
+  truth: require("../../../assets/words/t/truth.png"),
   tune: require("../../../assets/words/t/tune.png"),
   turkey: require("../../../assets/words/t/turkey.png"),
   turn: require("../../../assets/words/t/turn.png"),

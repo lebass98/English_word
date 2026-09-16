@@ -93,6 +93,7 @@ export const IMAGES_G: Record<string, ImageSourcePropType> = {
   greeting: require("../../../assets/words/g/greeting.png"),
   grip: require("../../../assets/words/g/grip.png"),
   grocery: require("../../../assets/words/g/grocery.png"),
+  gross: require("../../../assets/words/g/gross.png"),
   ground: require("../../../assets/words/g/ground.png"),
   groundless: require("../../../assets/words/g/groundless.png"),
   group: require("../../../assets/words/g/group.png"),

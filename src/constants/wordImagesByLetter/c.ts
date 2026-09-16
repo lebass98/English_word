@@ -337,6 +337,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   "counter to": require("../../../assets/words/c/counter-to.png"),
   counteract: require("../../../assets/words/c/counteract.png"),
   counterpart: require("../../../assets/words/c/counterpart.png"),
+  counterproductive: require("../../../assets/words/c/counterproductive.png"),
   countless: require("../../../assets/words/c/countless.png"),
   country: require("../../../assets/words/c/country.png"),
   couple: require("../../../assets/words/c/couple.png"),

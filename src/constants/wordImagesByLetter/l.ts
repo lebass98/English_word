@@ -28,6 +28,7 @@ export const IMAGES_L: Record<string, ImageSourcePropType> = {
   leak: require("../../../assets/words/l/leak.png"),
   lean: require("../../../assets/words/l/lean.png"),
   leap: require("../../../assets/words/l/leap.png"),
+  lease: require("../../../assets/words/l/lease.png"),
   least: require("../../../assets/words/l/least.png"),
   lecture: require("../../../assets/words/l/lecture.png"),
   leftover: require("../../../assets/words/l/leftover.png"),

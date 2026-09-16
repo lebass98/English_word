@@ -256,6 +256,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   conform: require("../../../assets/words/c/conform.png"),
   confront: require("../../../assets/words/c/confront.png"),
   confuse: require("../../../assets/words/c/confuse.png"),
+  confusion: require("../../../assets/words/c/confusion.png"),
   congestion: require("../../../assets/words/c/congestion.png"),
   congratulation: require("../../../assets/words/c/congratulation.png"),
   congress: require("../../../assets/words/c/congress.png"),

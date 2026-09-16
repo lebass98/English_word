@@ -110,6 +110,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   restriction: require("../../../assets/words/r/restriction.png"),
   result: require("../../../assets/words/r/result.png"),
   "result in": require("../../../assets/words/r/result-in.png"),
+  resume: require("../../../assets/words/r/resume.png"),
   retail: require("../../../assets/words/r/retail.png"),
   retire: require("../../../assets/words/r/retire.png"),
   retreat: require("../../../assets/words/r/retreat.png"),

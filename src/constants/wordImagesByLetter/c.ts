@@ -5,6 +5,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   cabin: require("../../../assets/words/c/cabin.png"),
   cage: require("../../../assets/words/c/cage.png"),
   calculate: require("../../../assets/words/c/calculate.png"),
+  calculation: require("../../../assets/words/c/calculation.png"),
   "call for": require("../../../assets/words/c/call-for.png"),
   "call on": require("../../../assets/words/c/call-on.png"),
   calm: require("../../../assets/words/c/calm.png"),

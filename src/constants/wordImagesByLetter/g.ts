@@ -99,6 +99,7 @@ export const IMAGES_G: Record<string, ImageSourcePropType> = {
   "grown-up": require("../../../assets/words/g/grown-up.png"),
   guarantee: require("../../../assets/words/g/guarantee.png"),
   guard: require("../../../assets/words/g/guard.png"),
+  guardian: require("../../../assets/words/g/guardian.png"),
   guess: require("../../../assets/words/g/guess.png"),
   guest: require("../../../assets/words/g/guest.png"),
   guide: require("../../../assets/words/g/guide.png"),

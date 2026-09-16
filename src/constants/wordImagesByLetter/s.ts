@@ -283,6 +283,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   superb: require("../../../assets/words/s/superb.png"),
   superior: require("../../../assets/words/s/superior.png"),
   superstition: require("../../../assets/words/s/superstition.png"),
+  supervise: require("../../../assets/words/s/supervise.png"),
   supplement: require("../../../assets/words/s/supplement.png"),
   supply: require("../../../assets/words/s/supply.png"),
   support: require("../../../assets/words/s/support.png"),

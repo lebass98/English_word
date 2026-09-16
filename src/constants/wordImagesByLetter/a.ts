@@ -134,6 +134,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   alert: require("../../../assets/words/a/alert.png"),
   alienate: require("../../../assets/words/a/alienate.png"),
   alienation: require("../../../assets/words/a/alienation.png"),
+  align: require("../../../assets/words/a/align.png"),
   alike: require("../../../assets/words/a/alike.png"),
   alive: require("../../../assets/words/a/alive.png"),
   allergy: require("../../../assets/words/a/allergy.png"),

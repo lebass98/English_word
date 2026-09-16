@@ -128,6 +128,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   diffusion: require("../../../assets/words/d/diffusion.png"),
   dig: require("../../../assets/words/d/dig.png"),
   digest: require("../../../assets/words/d/digest.png"),
+  dignity: require("../../../assets/words/d/dignity.png"),
   dilemma: require("../../../assets/words/d/dilemma.png"),
   diligent: require("../../../assets/words/d/diligent.png"),
   dilute: require("../../../assets/words/d/dilute.png"),

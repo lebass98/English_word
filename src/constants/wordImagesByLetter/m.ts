@@ -59,6 +59,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   maximum: require("../../../assets/words/m/maximum.png"),
   maybe: require("../../../assets/words/m/maybe.png"),
   mayor: require("../../../assets/words/m/mayor.png"),
+  meadow: require("../../../assets/words/m/meadow.png"),
   mean: require("../../../assets/words/m/mean.png"),
   meaning: require("../../../assets/words/m/meaning.png"),
   meaningful: require("../../../assets/words/m/meaningful.png"),

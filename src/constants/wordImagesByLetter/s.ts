@@ -28,6 +28,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   scan: require("../../../assets/words/s/scan.png"),
   scar: require("../../../assets/words/s/scar.png"),
   scarce: require("../../../assets/words/s/scarce.png"),
+  scarcity: require("../../../assets/words/s/scarcity.png"),
   scare: require("../../../assets/words/s/scare.png"),
   scatter: require("../../../assets/words/s/scatter.png"),
   scene: require("../../../assets/words/s/scene.png"),

@@ -37,6 +37,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   cast: require("../../../assets/words/c/cast.png"),
   castle: require("../../../assets/words/c/castle.png"),
   casual: require("../../../assets/words/c/casual.png"),
+  catastrophe: require("../../../assets/words/c/catastrophe.png"),
   "catch up": require("../../../assets/words/c/catch-up.png"),
   category: require("../../../assets/words/c/category.png"),
   caterpillar: require("../../../assets/words/c/caterpillar.png"),

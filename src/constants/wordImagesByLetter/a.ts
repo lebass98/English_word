@@ -186,6 +186,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   aquarium: require("../../../assets/words/a/aquarium.png"),
   archaeologist: require("../../../assets/words/a/archaeologist.png"),
   architect: require("../../../assets/words/a/architect.png"),
+  architecture: require("../../../assets/words/a/architecture.png"),
   arctic: require("../../../assets/words/a/arctic.png"),
   area: require("../../../assets/words/a/area.png"),
   argue: require("../../../assets/words/a/argue.png"),

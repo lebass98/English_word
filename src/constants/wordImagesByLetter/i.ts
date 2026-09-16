@@ -7,6 +7,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   ideal: require("../../../assets/words/i/ideal.png"),
   identical: require("../../../assets/words/i/identical.png"),
   identify: require("../../../assets/words/i/identify.png"),
+  identity: require("../../../assets/words/i/identity.png"),
   ignorant: require("../../../assets/words/i/ignorant.png"),
   ignore: require("../../../assets/words/i/ignore.png"),
   illegal: require("../../../assets/words/i/illegal.png"),

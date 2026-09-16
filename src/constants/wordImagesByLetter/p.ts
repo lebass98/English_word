@@ -56,6 +56,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   pedestrian: require("../../../assets/words/p/pedestrian.png"),
   peer: require("../../../assets/words/p/peer.png"),
   penalty: require("../../../assets/words/p/penalty.png"),
+  penetrate: require("../../../assets/words/p/penetrate.png"),
   peninsula: require("../../../assets/words/p/peninsula.png"),
   pension: require("../../../assets/words/p/pension.png"),
   pepper: require("../../../assets/words/p/pepper.png"),

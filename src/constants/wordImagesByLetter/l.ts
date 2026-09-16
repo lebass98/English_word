@@ -65,6 +65,7 @@ export const IMAGES_L: Record<string, ImageSourcePropType> = {
   "living room": require("../../../assets/words/l/living-room.png"),
   load: require("../../../assets/words/l/load.png"),
   loaf: require("../../../assets/words/l/loaf.png"),
+  loan: require("../../../assets/words/l/loan.png"),
   local: require("../../../assets/words/l/local.png"),
   locale: require("../../../assets/words/l/locale.png"),
   locality: require("../../../assets/words/l/locality.png"),

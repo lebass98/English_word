@@ -209,6 +209,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   apart: require("../../../assets/words/a/apart.png"),
   "apart from": require("../../../assets/words/a/apart-from.png"),
   apologize: require("../../../assets/words/a/apologize.png"),
+  apparel: require("../../../assets/words/a/apparel.png"),
   apparent: require("../../../assets/words/a/apparent.png"),
   apparently: require("../../../assets/words/a/apparently.png"),
   appeal: require("../../../assets/words/a/appeal.png"),

@@ -17,6 +17,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   sanction: require("../../../assets/words/s/sanction.png"),
   sand: require("../../../assets/words/s/sand.png"),
   sanitary: require("../../../assets/words/s/sanitary.png"),
+  sank: require("../../../assets/words/s/sank.png"),
   satellite: require("../../../assets/words/s/satellite.png"),
   satisfy: require("../../../assets/words/s/satisfy.png"),
   save: require("../../../assets/words/s/save.png"),

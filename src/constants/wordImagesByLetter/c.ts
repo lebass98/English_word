@@ -271,6 +271,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   conglomerate: require("../../../assets/words/c/conglomerate.png"),
   congratulation: require("../../../assets/words/c/congratulation.png"),
   congress: require("../../../assets/words/c/congress.png"),
+  conjunction: require("../../../assets/words/c/conjunction.png"),
   connect: require("../../../assets/words/c/connect.png"),
   connection: require("../../../assets/words/c/connection.png"),
   connoisseur: require("../../../assets/words/c/connoisseur.png"),

@@ -231,6 +231,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   intersection: require("../../../assets/words/i/intersection.png"),
   interval: require("../../../assets/words/i/interval.png"),
   intervene: require("../../../assets/words/i/intervene.png"),
+  intervention: require("../../../assets/words/i/intervention.png"),
   intimate: require("../../../assets/words/i/intimate.png"),
   intimately: require("../../../assets/words/i/intimately.png"),
   intimation: require("../../../assets/words/i/intimation.png"),

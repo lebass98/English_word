@@ -27,6 +27,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   immediate: require("../../../assets/words/i/immediate.png"),
   immediately: require("../../../assets/words/i/immediately.png"),
   immense: require("../../../assets/words/i/immense.png"),
+  immerse: require("../../../assets/words/i/immerse.png"),
   immigrant: require("../../../assets/words/i/immigrant.png"),
   immigrate: require("../../../assets/words/i/immigrate.png"),
   immoral: require("../../../assets/words/i/immoral.png"),

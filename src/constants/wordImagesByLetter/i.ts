@@ -132,6 +132,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   individual: require("../../../assets/words/i/individual.png"),
   individuality: require("../../../assets/words/i/individuality.png"),
   induce: require("../../../assets/words/i/induce.png"),
+  indulge: require("../../../assets/words/i/indulge.png"),
   industrial: require("../../../assets/words/i/industrial.png"),
   industry: require("../../../assets/words/i/industry.png"),
   ineffective: require("../../../assets/words/i/ineffective.png"),

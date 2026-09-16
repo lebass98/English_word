@@ -31,6 +31,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   manner: require("../../../assets/words/m/manner.png"),
   manual: require("../../../assets/words/m/manual.png"),
   manufacture: require("../../../assets/words/m/manufacture.png"),
+  manufactured: require("../../../assets/words/m/manufactured.png"),
   marble: require("../../../assets/words/m/marble.png"),
   march: require("../../../assets/words/m/march.png"),
   marine: require("../../../assets/words/m/marine.png"),

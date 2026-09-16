@@ -43,6 +43,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   receptive: require("../../../assets/words/r/receptive.png"),
   recession: require("../../../assets/words/r/recession.png"),
   recipe: require("../../../assets/words/r/recipe.png"),
+  reciprocate: require("../../../assets/words/r/reciprocate.png"),
   recite: require("../../../assets/words/r/recite.png"),
   recognition: require("../../../assets/words/r/recognition.png"),
   recognize: require("../../../assets/words/r/recognize.png"),

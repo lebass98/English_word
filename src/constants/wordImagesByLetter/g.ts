@@ -93,6 +93,7 @@ export const IMAGES_G: Record<string, ImageSourcePropType> = {
   guess: require("../../../assets/words/g/guess.png"),
   guest: require("../../../assets/words/g/guest.png"),
   guide: require("../../../assets/words/g/guide.png"),
+  guilt: require("../../../assets/words/g/guilt.png"),
   guilty: require("../../../assets/words/g/guilty.png"),
   gun: require("../../../assets/words/g/gun.png"),
 };

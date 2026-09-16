@@ -77,6 +77,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   meditation: require("../../../assets/words/m/meditation.png"),
   medium: require("../../../assets/words/m/medium.png"),
   melt: require("../../../assets/words/m/melt.png"),
+  memorable: require("../../../assets/words/m/memorable.png"),
   memorize: require("../../../assets/words/m/memorize.png"),
   memory: require("../../../assets/words/m/memory.png"),
   mental: require("../../../assets/words/m/mental.png"),

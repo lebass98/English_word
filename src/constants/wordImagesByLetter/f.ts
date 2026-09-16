@@ -18,6 +18,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   fairly: require("../../../assets/words/f/fairly.png"),
   fairy: require("../../../assets/words/f/fairy.png"),
   faith: require("../../../assets/words/f/faith.png"),
+  faithful: require("../../../assets/words/f/faithful.png"),
   fake: require("../../../assets/words/f/fake.png"),
   "fall off": require("../../../assets/words/f/fall-off.png"),
   false: require("../../../assets/words/f/false.png"),

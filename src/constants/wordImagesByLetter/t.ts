@@ -53,6 +53,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   theme: require("../../../assets/words/t/theme.png"),
   theory: require("../../../assets/words/t/theory.png"),
   therapy: require("../../../assets/words/t/therapy.png"),
+  therefore: require("../../../assets/words/t/therefore.png"),
   thermometer: require("../../../assets/words/t/thermometer.png"),
   thief: require("../../../assets/words/t/thief.png"),
   thin: require("../../../assets/words/t/thin.png"),

@@ -94,6 +94,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   advice: require("../../../assets/words/a/advice.png"),
   advisor: require("../../../assets/words/a/advisor.png"),
   advocate: require("../../../assets/words/a/advocate.png"),
+  aesthetic: require("../../../assets/words/a/aesthetic.png"),
   affair: require("../../../assets/words/a/affair.png"),
   affect: require("../../../assets/words/a/affect.png"),
   affection: require("../../../assets/words/a/affection.png"),

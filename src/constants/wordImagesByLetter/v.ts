@@ -11,6 +11,7 @@ export const IMAGES_V: Record<string, ImageSourcePropType> = {
   valley: require("../../../assets/words/v/valley.png"),
   valuable: require("../../../assets/words/v/valuable.png"),
   value: require("../../../assets/words/v/value.png"),
+  valued: require("../../../assets/words/v/valued.png"),
   vanish: require("../../../assets/words/v/vanish.png"),
   vanished: require("../../../assets/words/v/vanished.png"),
   vapor: require("../../../assets/words/v/vapor.png"),

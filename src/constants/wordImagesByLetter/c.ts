@@ -343,6 +343,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   crawl: require("../../../assets/words/c/crawl.png"),
   crazy: require("../../../assets/words/c/crazy.png"),
   create: require("../../../assets/words/c/create.png"),
+  creation: require("../../../assets/words/c/creation.png"),
   creative: require("../../../assets/words/c/creative.png"),
   creature: require("../../../assets/words/c/creature.png"),
   credibility: require("../../../assets/words/c/credibility.png"),

@@ -168,6 +168,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   intact: require("../../../assets/words/i/intact.png"),
   intake: require("../../../assets/words/i/intake.png"),
   integral: require("../../../assets/words/i/integral.png"),
+  integrate: require("../../../assets/words/i/integrate.png"),
   intellectual: require("../../../assets/words/i/intellectual.png"),
   intelligence: require("../../../assets/words/i/intelligence.png"),
   intelligent: require("../../../assets/words/i/intelligent.png"),

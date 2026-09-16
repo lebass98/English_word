@@ -175,6 +175,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   reserve: require("../../../assets/words/r/reserve.png"),
   reservoir: require("../../../assets/words/r/reservoir.png"),
   reside: require("../../../assets/words/r/reside.png"),
+  residence: require("../../../assets/words/r/residence.png"),
   resident: require("../../../assets/words/r/resident.png"),
   resign: require("../../../assets/words/r/resign.png"),
   resignation: require("../../../assets/words/r/resignation.png"),

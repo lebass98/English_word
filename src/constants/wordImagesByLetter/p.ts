@@ -122,6 +122,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   possible: require("../../../assets/words/p/possible.png"),
   post: require("../../../assets/words/p/post.png"),
   postpone: require("../../../assets/words/p/postpone.png"),
+  posture: require("../../../assets/words/p/posture.png"),
   pot: require("../../../assets/words/p/pot.png"),
   potato: require("../../../assets/words/p/potato.png"),
   potential: require("../../../assets/words/p/potential.png"),

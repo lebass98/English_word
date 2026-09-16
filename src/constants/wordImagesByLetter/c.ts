@@ -434,6 +434,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   current: require("../../../assets/words/c/current.png"),
   curriculum: require("../../../assets/words/c/curriculum.png"),
   curse: require("../../../assets/words/c/curse.png"),
+  curtail: require("../../../assets/words/c/curtail.png"),
   curve: require("../../../assets/words/c/curve.png"),
   curved: require("../../../assets/words/c/curved.png"),
   custody: require("../../../assets/words/c/custody.png"),

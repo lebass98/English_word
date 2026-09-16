@@ -211,6 +211,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   "sooner or later": require("../../../assets/words/s/sooner-or-later.png"),
   sophomore: require("../../../assets/words/s/sophomore.png"),
   sore: require("../../../assets/words/s/sore.png"),
+  sorrowful: require("../../../assets/words/s/sorrowful.png"),
   sort: require("../../../assets/words/s/sort.png"),
   sound: require("../../../assets/words/s/sound.png"),
   source: require("../../../assets/words/s/source.png"),

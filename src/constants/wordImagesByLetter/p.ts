@@ -79,6 +79,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   perfume: require("../../../assets/words/p/perfume.png"),
   perhaps: require("../../../assets/words/p/perhaps.png"),
   period: require("../../../assets/words/p/period.png"),
+  periodical: require("../../../assets/words/p/periodical.png"),
   periodically: require("../../../assets/words/p/periodically.png"),
   perish: require("../../../assets/words/p/perish.png"),
   permanent: require("../../../assets/words/p/permanent.png"),

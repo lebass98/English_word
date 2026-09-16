@@ -75,6 +75,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   inaccessible: require("../../../assets/words/i/inaccessible.png"),
   inadequate: require("../../../assets/words/i/inadequate.png"),
   inappropriate: require("../../../assets/words/i/inappropriate.png"),
+  inborn: require("../../../assets/words/i/inborn.png"),
   incentive: require("../../../assets/words/i/incentive.png"),
   incident: require("../../../assets/words/i/incident.png"),
   include: require("../../../assets/words/i/include.png"),

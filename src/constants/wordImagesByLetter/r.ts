@@ -8,6 +8,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   radically: require("../../../assets/words/r/radically.png"),
   radioactive: require("../../../assets/words/r/radioactive.png"),
   rage: require("../../../assets/words/r/rage.png"),
+  raid: require("../../../assets/words/r/raid.png"),
   rainforest: require("../../../assets/words/r/rainforest.png"),
   raise: require("../../../assets/words/r/raise.png"),
   rally: require("../../../assets/words/r/rally.png"),

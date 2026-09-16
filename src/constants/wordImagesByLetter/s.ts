@@ -362,6 +362,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   suburb: require("../../../assets/words/s/suburb.png"),
   subway: require("../../../assets/words/s/subway.png"),
   succeed: require("../../../assets/words/s/succeed.png"),
+  succeeding: require("../../../assets/words/s/succeeding.png"),
   successful: require("../../../assets/words/s/successful.png"),
   such: require("../../../assets/words/s/such.png"),
   suck: require("../../../assets/words/s/suck.png"),

@@ -71,6 +71,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   fix: require("../../../assets/words/f/fix.png"),
   flag: require("../../../assets/words/f/flag.png"),
   flame: require("../../../assets/words/f/flame.png"),
+  flash: require("../../../assets/words/f/flash.png"),
   flashlight: require("../../../assets/words/f/flashlight.png"),
   flat: require("../../../assets/words/f/flat.png"),
   flavor: require("../../../assets/words/f/flavor.png"),

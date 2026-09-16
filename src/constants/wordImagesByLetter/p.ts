@@ -81,6 +81,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   perspective: require("../../../assets/words/p/perspective.png"),
   persuade: require("../../../assets/words/p/persuade.png"),
   "pertain to": require("../../../assets/words/p/pertain-to.png"),
+  pertinent: require("../../../assets/words/p/pertinent.png"),
   pesticide: require("../../../assets/words/p/pesticide.png"),
   pet: require("../../../assets/words/p/pet.png"),
   petal: require("../../../assets/words/p/petal.png"),

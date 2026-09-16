@@ -89,6 +89,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   affluence: require("../../../assets/words/a/affluence.png"),
   affluent: require("../../../assets/words/a/affluent.png"),
   afford: require("../../../assets/words/a/afford.png"),
+  affordable: require("../../../assets/words/a/affordable.png"),
   afraid: require("../../../assets/words/a/afraid.png"),
   "after all": require("../../../assets/words/a/after-all.png"),
   afterward: require("../../../assets/words/a/afterward.png"),

@@ -4,6 +4,7 @@ import { ImageSourcePropType } from "react-native";
 export const IMAGES_H: Record<string, ImageSourcePropType> = {
   habit: require("../../../assets/words/h/habit.png"),
   habitat: require("../../../assets/words/h/habitat.png"),
+  habitation: require("../../../assets/words/h/habitation.png"),
   half: require("../../../assets/words/h/half.png"),
   halt: require("../../../assets/words/h/halt.png"),
   hand: require("../../../assets/words/h/hand.png"),

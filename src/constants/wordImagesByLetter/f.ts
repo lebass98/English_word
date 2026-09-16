@@ -28,6 +28,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   far: require("../../../assets/words/f/far.png"),
   "far-reaching": require("../../../assets/words/f/far-reaching.png"),
   fare: require("../../../assets/words/f/fare.png"),
+  fascinate: require("../../../assets/words/f/fascinate.png"),
   fashion: require("../../../assets/words/f/fashion.png"),
   fashionable: require("../../../assets/words/f/fashionable.png"),
   fasten: require("../../../assets/words/f/fasten.png"),

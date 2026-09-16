@@ -128,6 +128,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   "coincide with": require("../../../assets/words/c/coincide-with.png"),
   coincidence: require("../../../assets/words/c/coincidence.png"),
   collaborate: require("../../../assets/words/c/collaborate.png"),
+  collaboration: require("../../../assets/words/c/collaboration.png"),
   collapse: require("../../../assets/words/c/collapse.png"),
   collar: require("../../../assets/words/c/collar.png"),
   colleague: require("../../../assets/words/c/colleague.png"),

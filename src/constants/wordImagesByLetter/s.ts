@@ -242,6 +242,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   stupid: require("../../../assets/words/s/stupid.png"),
   sturdy: require("../../../assets/words/s/sturdy.png"),
   style: require("../../../assets/words/s/style.png"),
+  subconscious: require("../../../assets/words/s/subconscious.png"),
   subject: require("../../../assets/words/s/subject.png"),
   submit: require("../../../assets/words/s/submit.png"),
   subsequently: require("../../../assets/words/s/subsequently.png"),

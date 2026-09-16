@@ -34,6 +34,7 @@ export const IMAGES_O: Record<string, ImageSourcePropType> = {
   office: require("../../../assets/words/o/office.png"),
   officer: require("../../../assets/words/o/officer.png"),
   official: require("../../../assets/words/o/official.png"),
+  offset: require("../../../assets/words/o/offset.png"),
   offspring: require("../../../assets/words/o/offspring.png"),
   "on occasion": require("../../../assets/words/o/on-occasion.png"),
   "on one’s feet": require("../../../assets/words/o/on-one’s-feet.png"),

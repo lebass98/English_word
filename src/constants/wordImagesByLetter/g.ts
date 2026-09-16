@@ -11,6 +11,7 @@ export const IMAGES_G: Record<string, ImageSourcePropType> = {
   gather: require("../../../assets/words/g/gather.png"),
   gay: require("../../../assets/words/g/gay.png"),
   gaze: require("../../../assets/words/g/gaze.png"),
+  gear: require("../../../assets/words/g/gear.png"),
   gender: require("../../../assets/words/g/gender.png"),
   gene: require("../../../assets/words/g/gene.png"),
   general: require("../../../assets/words/g/general.png"),

@@ -59,6 +59,7 @@ export const IMAGES_N: Record<string, ImageSourcePropType> = {
   notwithstanding: require("../../../assets/words/n/notwithstanding.png"),
   nourish: require("../../../assets/words/n/nourish.png"),
   novel: require("../../../assets/words/n/novel.png"),
+  novelty: require("../../../assets/words/n/novelty.png"),
   "now that": require("../../../assets/words/n/now-that.png"),
   nuclear: require("../../../assets/words/n/nuclear.png"),
   numerous: require("../../../assets/words/n/numerous.png"),

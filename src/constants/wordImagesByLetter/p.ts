@@ -309,6 +309,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   pulse: require("../../../assets/words/p/pulse.png"),
   pumpkin: require("../../../assets/words/p/pumpkin.png"),
   punctual: require("../../../assets/words/p/punctual.png"),
+  punctuate: require("../../../assets/words/p/punctuate.png"),
   punish: require("../../../assets/words/p/punish.png"),
   pupil: require("../../../assets/words/p/pupil.png"),
   purchase: require("../../../assets/words/p/purchase.png"),

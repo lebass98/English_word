@@ -53,6 +53,7 @@ export const IMAGES_H: Record<string, ImageSourcePropType> = {
   highway: require("../../../assets/words/h/highway.png"),
   hike: require("../../../assets/words/h/hike.png"),
   hind: require("../../../assets/words/h/hind.png"),
+  hinder: require("../../../assets/words/h/hinder.png"),
   hire: require("../../../assets/words/h/hire.png"),
   history: require("../../../assets/words/h/history.png"),
   hit: require("../../../assets/words/h/hit.png"),

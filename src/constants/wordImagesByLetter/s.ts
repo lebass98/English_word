@@ -237,6 +237,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   stock: require("../../../assets/words/s/stock.png"),
   stomach: require("../../../assets/words/s/stomach.png"),
   stone: require("../../../assets/words/s/stone.png"),
+  storage: require("../../../assets/words/s/storage.png"),
   store: require("../../../assets/words/s/store.png"),
   storm: require("../../../assets/words/s/storm.png"),
   stormy: require("../../../assets/words/s/stormy.png"),

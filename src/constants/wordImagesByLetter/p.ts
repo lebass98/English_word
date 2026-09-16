@@ -58,6 +58,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   "pay off": require("../../../assets/words/p/pay-off.png"),
   payable: require("../../../assets/words/p/payable.png"),
   payment: require("../../../assets/words/p/payment.png"),
+  payroll: require("../../../assets/words/p/payroll.png"),
   peaceful: require("../../../assets/words/p/peaceful.png"),
   peak: require("../../../assets/words/p/peak.png"),
   peasant: require("../../../assets/words/p/peasant.png"),

@@ -164,6 +164,8 @@ const ko = {
   "level.high-2.short": "고2",
   "level.high-3.label": "고등 3학년",
   "level.high-3.short": "고3",
+  "level.toeic.label": "TOEIC 필수",
+  "level.toeic.short": "TOEIC",
   "level.toefl.label": "TOEFL 필수",
   "level.toefl.short": "TOEFL",
 
@@ -313,6 +315,8 @@ const ja: Partial<Record<StringKey, string>> = {
   "level.high-2.short": "高2",
   "level.high-3.label": "高校3年",
   "level.high-3.short": "高3",
+  "level.toeic.label": "TOEIC 必須",
+  "level.toeic.short": "TOEIC",
   "level.toefl.label": "TOEFL 必須",
   "level.toefl.short": "TOEFL",
 

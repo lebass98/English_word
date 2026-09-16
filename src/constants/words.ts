@@ -13,6 +13,7 @@ import enLevelMiddle3 from "../data/en/levels/middle-3.json";
 import enLevelHigh1 from "../data/en/levels/high-1.json";
 import enLevelHigh2 from "../data/en/levels/high-2.json";
 import enLevelHigh3 from "../data/en/levels/high-3.json";
+import enLevelToeic from "../data/en/levels/toeic.json";
 import enLevelToefl from "../data/en/levels/toefl.json";
 import enExtrasJa from "../data/en/extras/ja.json";
 import enExtrasKo from "../data/en/extras/ko.json";
@@ -136,6 +137,7 @@ const DATA: Record<StudyLangId, LanguageData> = {
       "high-1": enLevelHigh1 as string[],
       "high-2": enLevelHigh2 as string[],
       "high-3": enLevelHigh3 as string[],
+      toeic: enLevelToeic as string[],
       toefl: enLevelToefl as string[],
     },
     words: enWords as Record<string, NeutralEntry>,

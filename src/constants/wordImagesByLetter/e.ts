@@ -154,6 +154,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   expect: require("../../../assets/words/e/expect.png"),
   expedition: require("../../../assets/words/e/expedition.png"),
   expend: require("../../../assets/words/e/expend.png"),
+  expense: require("../../../assets/words/e/expense.png"),
   expensive: require("../../../assets/words/e/expensive.png"),
   experience: require("../../../assets/words/e/experience.png"),
   experiment: require("../../../assets/words/e/experiment.png"),

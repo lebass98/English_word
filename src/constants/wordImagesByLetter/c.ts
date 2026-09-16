@@ -380,4 +380,5 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   "cut down": require("../../../assets/words/c/cut-down.png"),
   "cut off": require("../../../assets/words/c/cut-off.png"),
   cycle: require("../../../assets/words/c/cycle.png"),
+  cynical: require("../../../assets/words/c/cynical.png"),
 };

@@ -153,6 +153,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   informed: require("../../../assets/words/i/informed.png"),
   infrastructure: require("../../../assets/words/i/infrastructure.png"),
   infrequent: require("../../../assets/words/i/infrequent.png"),
+  infuse: require("../../../assets/words/i/infuse.png"),
   ingenious: require("../../../assets/words/i/ingenious.png"),
   ingenuity: require("../../../assets/words/i/ingenuity.png"),
   ingest: require("../../../assets/words/i/ingest.png"),

@@ -92,6 +92,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   flavor: require("../../../assets/words/f/flavor.png"),
   flaw: require("../../../assets/words/f/flaw.png"),
   flawless: require("../../../assets/words/f/flawless.png"),
+  flee: require("../../../assets/words/f/flee.png"),
   flesh: require("../../../assets/words/f/flesh.png"),
   flexible: require("../../../assets/words/f/flexible.png"),
   flight: require("../../../assets/words/f/flight.png"),

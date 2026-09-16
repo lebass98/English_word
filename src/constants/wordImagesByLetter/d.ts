@@ -88,6 +88,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   depict: require("../../../assets/words/d/depict.png"),
   deplete: require("../../../assets/words/d/deplete.png"),
   deposit: require("../../../assets/words/d/deposit.png"),
+  depot: require("../../../assets/words/d/depot.png"),
   depress: require("../../../assets/words/d/depress.png"),
   depressed: require("../../../assets/words/d/depressed.png"),
   deprive: require("../../../assets/words/d/deprive.png"),

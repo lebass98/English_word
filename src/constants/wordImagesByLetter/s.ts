@@ -446,6 +446,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   sword: require("../../../assets/words/s/sword.png"),
   symbol: require("../../../assets/words/s/symbol.png"),
   symbolic: require("../../../assets/words/s/symbolic.png"),
+  symbolize: require("../../../assets/words/s/symbolize.png"),
   sympathy: require("../../../assets/words/s/sympathy.png"),
   symphony: require("../../../assets/words/s/symphony.png"),
   symptom: require("../../../assets/words/s/symptom.png"),

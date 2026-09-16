@@ -68,5 +68,6 @@ export const IMAGES_O: Record<string, ImageSourcePropType> = {
   owe: require("../../../assets/words/o/owe.png"),
   owl: require("../../../assets/words/o/owl.png"),
   own: require("../../../assets/words/o/own.png"),
+  ownership: require("../../../assets/words/o/ownership.png"),
   oxygen: require("../../../assets/words/o/oxygen.png"),
 };

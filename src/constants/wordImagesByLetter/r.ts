@@ -227,6 +227,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   rub: require("../../../assets/words/r/rub.png"),
   rude: require("../../../assets/words/r/rude.png"),
   rudely: require("../../../assets/words/r/rudely.png"),
+  rudimentary: require("../../../assets/words/r/rudimentary.png"),
   ruin: require("../../../assets/words/r/ruin.png"),
   rule: require("../../../assets/words/r/rule.png"),
   rumor: require("../../../assets/words/r/rumor.png"),

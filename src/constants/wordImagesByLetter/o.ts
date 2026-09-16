@@ -49,6 +49,7 @@ export const IMAGES_O: Record<string, ImageSourcePropType> = {
   outfit: require("../../../assets/words/o/outfit.png"),
   outlet: require("../../../assets/words/o/outlet.png"),
   outline: require("../../../assets/words/o/outline.png"),
+  output: require("../../../assets/words/o/output.png"),
   outstanding: require("../../../assets/words/o/outstanding.png"),
   "over and over": require("../../../assets/words/o/over-and-over.png"),
   overall: require("../../../assets/words/o/overall.png"),

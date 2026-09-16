@@ -65,6 +65,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   seize: require("../../../assets/words/s/seize.png"),
   seldom: require("../../../assets/words/s/seldom.png"),
   select: require("../../../assets/words/s/select.png"),
+  selected: require("../../../assets/words/s/selected.png"),
   "self-esteem": require("../../../assets/words/s/self-esteem.png"),
   selfish: require("../../../assets/words/s/selfish.png"),
   semester: require("../../../assets/words/s/semester.png"),

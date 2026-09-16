@@ -106,6 +106,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   induce: require("../../../assets/words/i/induce.png"),
   industrial: require("../../../assets/words/i/industrial.png"),
   industry: require("../../../assets/words/i/industry.png"),
+  inevitable: require("../../../assets/words/i/inevitable.png"),
   infection: require("../../../assets/words/i/infection.png"),
   inferior: require("../../../assets/words/i/inferior.png"),
   influence: require("../../../assets/words/i/influence.png"),

@@ -325,6 +325,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   public: require("../../../assets/words/p/public.png"),
   publication: require("../../../assets/words/p/publication.png"),
   publicity: require("../../../assets/words/p/publicity.png"),
+  publicize: require("../../../assets/words/p/publicize.png"),
   publish: require("../../../assets/words/p/publish.png"),
   pull: require("../../../assets/words/p/pull.png"),
   pulse: require("../../../assets/words/p/pulse.png"),

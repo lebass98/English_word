@@ -39,5 +39,6 @@ export const IMAGES_V: Record<string, ImageSourcePropType> = {
   volume: require("../../../assets/words/v/volume.png"),
   volunteer: require("../../../assets/words/v/volunteer.png"),
   vote: require("../../../assets/words/v/vote.png"),
+  voucher: require("../../../assets/words/v/voucher.png"),
   voyage: require("../../../assets/words/v/voyage.png"),
 };

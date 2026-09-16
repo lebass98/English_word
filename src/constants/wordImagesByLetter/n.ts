@@ -47,6 +47,7 @@ export const IMAGES_N: Record<string, ImageSourcePropType> = {
   norm: require("../../../assets/words/n/norm.png"),
   normal: require("../../../assets/words/n/normal.png"),
   northern: require("../../../assets/words/n/northern.png"),
+  notable: require("../../../assets/words/n/notable.png"),
   notice: require("../../../assets/words/n/notice.png"),
   notion: require("../../../assets/words/n/notion.png"),
   nourish: require("../../../assets/words/n/nourish.png"),

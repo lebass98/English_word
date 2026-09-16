@@ -21,6 +21,7 @@ export const IMAGES_V: Record<string, ImageSourcePropType> = {
   verify: require("../../../assets/words/v/verify.png"),
   versatile: require("../../../assets/words/v/versatile.png"),
   version: require("../../../assets/words/v/version.png"),
+  vertical: require("../../../assets/words/v/vertical.png"),
   vessel: require("../../../assets/words/v/vessel.png"),
   via: require("../../../assets/words/v/via.png"),
   vibration: require("../../../assets/words/v/vibration.png"),

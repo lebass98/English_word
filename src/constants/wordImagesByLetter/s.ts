@@ -315,6 +315,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   string: require("../../../assets/words/s/string.png"),
   stripe: require("../../../assets/words/s/stripe.png"),
   striped: require("../../../assets/words/s/striped.png"),
+  strive: require("../../../assets/words/s/strive.png"),
   structure: require("../../../assets/words/s/structure.png"),
   struggle: require("../../../assets/words/s/struggle.png"),
   stuff: require("../../../assets/words/s/stuff.png"),

@@ -12,6 +12,7 @@ export const IMAGES_U: Record<string, ImageSourcePropType> = {
   unbearable: require("../../../assets/words/u/unbearable.png"),
   unbearably: require("../../../assets/words/u/unbearably.png"),
   unbelievable: require("../../../assets/words/u/unbelievable.png"),
+  unbroken: require("../../../assets/words/u/unbroken.png"),
   uncertain: require("../../../assets/words/u/uncertain.png"),
   unconsciously: require("../../../assets/words/u/unconsciously.png"),
   uncover: require("../../../assets/words/u/uncover.png"),

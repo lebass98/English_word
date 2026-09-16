@@ -36,6 +36,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   incident: require("../../../assets/words/i/incident.png"),
   include: require("../../../assets/words/i/include.png"),
   increase: require("../../../assets/words/i/increase.png"),
+  incredible: require("../../../assets/words/i/incredible.png"),
   indeed: require("../../../assets/words/i/indeed.png"),
   independence: require("../../../assets/words/i/independence.png"),
   independent: require("../../../assets/words/i/independent.png"),

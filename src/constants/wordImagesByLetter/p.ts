@@ -162,6 +162,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   practical: require("../../../assets/words/p/practical.png"),
   practically: require("../../../assets/words/p/practically.png"),
   practice: require("../../../assets/words/p/practice.png"),
+  pragmatic: require("../../../assets/words/p/pragmatic.png"),
   prairie: require("../../../assets/words/p/prairie.png"),
   praise: require("../../../assets/words/p/praise.png"),
   pray: require("../../../assets/words/p/pray.png"),

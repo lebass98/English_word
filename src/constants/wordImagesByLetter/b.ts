@@ -69,6 +69,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   beings: require("../../../assets/words/b/beings.png"),
   belief: require("../../../assets/words/b/belief.png"),
   believe: require("../../../assets/words/b/believe.png"),
+  belly: require("../../../assets/words/b/belly.png"),
   belong: require("../../../assets/words/b/belong.png"),
   "belong to": require("../../../assets/words/b/belong-to.png"),
   below: require("../../../assets/words/b/below.png"),

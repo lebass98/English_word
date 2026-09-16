@@ -11,6 +11,7 @@ export const IMAGES_G: Record<string, ImageSourcePropType> = {
   garbage: require("../../../assets/words/g/garbage.png"),
   garment: require("../../../assets/words/g/garment.png"),
   gather: require("../../../assets/words/g/gather.png"),
+  gauge: require("../../../assets/words/g/gauge.png"),
   gay: require("../../../assets/words/g/gay.png"),
   gaze: require("../../../assets/words/g/gaze.png"),
   gear: require("../../../assets/words/g/gear.png"),

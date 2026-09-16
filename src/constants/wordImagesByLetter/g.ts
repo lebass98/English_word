@@ -40,6 +40,7 @@ export const IMAGES_G: Record<string, ImageSourcePropType> = {
   "give off": require("../../../assets/words/g/give-off.png"),
   "give up": require("../../../assets/words/g/give-up.png"),
   given: require("../../../assets/words/g/given.png"),
+  glacier: require("../../../assets/words/g/glacier.png"),
   glance: require("../../../assets/words/g/glance.png"),
   glorify: require("../../../assets/words/g/glorify.png"),
   glory: require("../../../assets/words/g/glory.png"),

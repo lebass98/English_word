@@ -113,6 +113,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   induce: require("../../../assets/words/i/induce.png"),
   industrial: require("../../../assets/words/i/industrial.png"),
   industry: require("../../../assets/words/i/industry.png"),
+  inequality: require("../../../assets/words/i/inequality.png"),
   inevitable: require("../../../assets/words/i/inevitable.png"),
   inevitably: require("../../../assets/words/i/inevitably.png"),
   inexpertly: require("../../../assets/words/i/inexpertly.png"),

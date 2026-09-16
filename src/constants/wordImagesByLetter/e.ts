@@ -128,6 +128,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   ethic: require("../../../assets/words/e/ethic.png"),
   ethical: require("../../../assets/words/e/ethical.png"),
   ethnic: require("../../../assets/words/e/ethnic.png"),
+  evacuation: require("../../../assets/words/e/evacuation.png"),
   evaluate: require("../../../assets/words/e/evaluate.png"),
   evaporate: require("../../../assets/words/e/evaporate.png"),
   even: require("../../../assets/words/e/even.png"),

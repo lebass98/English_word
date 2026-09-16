@@ -26,6 +26,7 @@ export const IMAGES_G: Record<string, ImageSourcePropType> = {
   genuine: require("../../../assets/words/g/genuine.png"),
   genuinely: require("../../../assets/words/g/genuinely.png"),
   geography: require("../../../assets/words/g/geography.png"),
+  geology: require("../../../assets/words/g/geology.png"),
   geometry: require("../../../assets/words/g/geometry.png"),
   german: require("../../../assets/words/g/german.png"),
   gesture: require("../../../assets/words/g/gesture.png"),

@@ -52,6 +52,7 @@ export const IMAGES_N: Record<string, ImageSourcePropType> = {
   notably: require("../../../assets/words/n/notably.png"),
   note: require("../../../assets/words/n/note.png"),
   noted: require("../../../assets/words/n/noted.png"),
+  noteworthy: require("../../../assets/words/n/noteworthy.png"),
   notice: require("../../../assets/words/n/notice.png"),
   notion: require("../../../assets/words/n/notion.png"),
   nourish: require("../../../assets/words/n/nourish.png"),

@@ -9,6 +9,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   magnet: require("../../../assets/words/m/magnet.png"),
   magnificence: require("../../../assets/words/m/magnificence.png"),
   magnificent: require("../../../assets/words/m/magnificent.png"),
+  magnify: require("../../../assets/words/m/magnify.png"),
   mail: require("../../../assets/words/m/mail.png"),
   main: require("../../../assets/words/m/main.png"),
   maintain: require("../../../assets/words/m/maintain.png"),

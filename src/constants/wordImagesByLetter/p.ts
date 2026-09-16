@@ -84,6 +84,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   pleased: require("../../../assets/words/p/pleased.png"),
   pleasure: require("../../../assets/words/p/pleasure.png"),
   plenty: require("../../../assets/words/p/plenty.png"),
+  plot: require("../../../assets/words/p/plot.png"),
   poet: require("../../../assets/words/p/poet.png"),
   poetry: require("../../../assets/words/p/poetry.png"),
   poison: require("../../../assets/words/p/poison.png"),

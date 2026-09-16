@@ -171,6 +171,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   promote: require("../../../assets/words/p/promote.png"),
   pronounce: require("../../../assets/words/p/pronounce.png"),
   pronunciation: require("../../../assets/words/p/pronunciation.png"),
+  proof: require("../../../assets/words/p/proof.png"),
   proper: require("../../../assets/words/p/proper.png"),
   properly: require("../../../assets/words/p/properly.png"),
   property: require("../../../assets/words/p/property.png"),

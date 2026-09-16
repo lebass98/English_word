@@ -218,6 +218,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   "drop out": require("../../../assets/words/d/drop-out.png"),
   drought: require("../../../assets/words/d/drought.png"),
   drown: require("../../../assets/words/d/drown.png"),
+  drug: require("../../../assets/words/d/drug.png"),
   drugstore: require("../../../assets/words/d/drugstore.png"),
   drum: require("../../../assets/words/d/drum.png"),
   dry: require("../../../assets/words/d/dry.png"),

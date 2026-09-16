@@ -136,6 +136,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   mixture: require("../../../assets/words/m/mixture.png"),
   mobile: require("../../../assets/words/m/mobile.png"),
   mobility: require("../../../assets/words/m/mobility.png"),
+  mobilize: require("../../../assets/words/m/mobilize.png"),
   mode: require("../../../assets/words/m/mode.png"),
   model: require("../../../assets/words/m/model.png"),
   moderate: require("../../../assets/words/m/moderate.png"),

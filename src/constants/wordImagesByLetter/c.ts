@@ -189,6 +189,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   compose: require("../../../assets/words/c/compose.png"),
   composer: require("../../../assets/words/c/composer.png"),
   composition: require("../../../assets/words/c/composition.png"),
+  compound: require("../../../assets/words/c/compound.png"),
   comprehend: require("../../../assets/words/c/comprehend.png"),
   comprehensive: require("../../../assets/words/c/comprehensive.png"),
   comprise: require("../../../assets/words/c/comprise.png"),

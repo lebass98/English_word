@@ -94,6 +94,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   increasing: require("../../../assets/words/i/increasing.png"),
   incredible: require("../../../assets/words/i/incredible.png"),
   indeed: require("../../../assets/words/i/indeed.png"),
+  indefinitely: require("../../../assets/words/i/indefinitely.png"),
   independence: require("../../../assets/words/i/independence.png"),
   independent: require("../../../assets/words/i/independent.png"),
   indicate: require("../../../assets/words/i/indicate.png"),

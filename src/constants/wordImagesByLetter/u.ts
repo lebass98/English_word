@@ -6,6 +6,7 @@ export const IMAGES_U: Record<string, ImageSourcePropType> = {
   ultimately: require("../../../assets/words/u/ultimately.png"),
   umbrella: require("../../../assets/words/u/umbrella.png"),
   unambiguous: require("../../../assets/words/u/unambiguous.png"),
+  unanimous: require("../../../assets/words/u/unanimous.png"),
   unavoidable: require("../../../assets/words/u/unavoidable.png"),
   unavoidably: require("../../../assets/words/u/unavoidably.png"),
   unbalanced: require("../../../assets/words/u/unbalanced.png"),

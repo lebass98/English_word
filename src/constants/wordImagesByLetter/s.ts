@@ -416,6 +416,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   suspend: require("../../../assets/words/s/suspend.png"),
   suspicion: require("../../../assets/words/s/suspicion.png"),
   sustain: require("../../../assets/words/s/sustain.png"),
+  sustainable: require("../../../assets/words/s/sustainable.png"),
   swallow: require("../../../assets/words/s/swallow.png"),
   swamp: require("../../../assets/words/s/swamp.png"),
   sweep: require("../../../assets/words/s/sweep.png"),

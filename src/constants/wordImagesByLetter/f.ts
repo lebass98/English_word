@@ -150,6 +150,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   foundation: require("../../../assets/words/f/foundation.png"),
   founding: require("../../../assets/words/f/founding.png"),
   "fountain-pen": require("../../../assets/words/f/fountain-pen.png"),
+  fraction: require("../../../assets/words/f/fraction.png"),
   fragile: require("../../../assets/words/f/fragile.png"),
   fragment: require("../../../assets/words/f/fragment.png"),
   fragmentary: require("../../../assets/words/f/fragmentary.png"),

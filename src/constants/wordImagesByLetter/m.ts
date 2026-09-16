@@ -16,6 +16,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   mainly: require("../../../assets/words/m/mainly.png"),
   maintain: require("../../../assets/words/m/maintain.png"),
   major: require("../../../assets/words/m/major.png"),
+  majority: require("../../../assets/words/m/majority.png"),
   "make a decision": require("../../../assets/words/m/make-a-decision.png"),
   "make sense": require("../../../assets/words/m/make-sense.png"),
   "make sure": require("../../../assets/words/m/make-sure.png"),

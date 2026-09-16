@@ -88,6 +88,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   mercy: require("../../../assets/words/m/mercy.png"),
   mere: require("../../../assets/words/m/mere.png"),
   merely: require("../../../assets/words/m/merely.png"),
+  merge: require("../../../assets/words/m/merge.png"),
   merger: require("../../../assets/words/m/merger.png"),
   merit: require("../../../assets/words/m/merit.png"),
   merry: require("../../../assets/words/m/merry.png"),

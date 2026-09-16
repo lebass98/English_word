@@ -54,6 +54,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   federal: require("../../../assets/words/f/federal.png"),
   fee: require("../../../assets/words/f/fee.png"),
   feed: require("../../../assets/words/f/feed.png"),
+  fellow: require("../../../assets/words/f/fellow.png"),
   fence: require("../../../assets/words/f/fence.png"),
   fertile: require("../../../assets/words/f/fertile.png"),
   festive: require("../../../assets/words/f/festive.png"),

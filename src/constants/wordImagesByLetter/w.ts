@@ -51,6 +51,7 @@ export const IMAGES_W: Record<string, ImageSourcePropType> = {
   wholesaler: require("../../../assets/words/w/wholesaler.png"),
   wicked: require("../../../assets/words/w/wicked.png"),
   wide: require("../../../assets/words/w/wide.png"),
+  widely: require("../../../assets/words/w/widely.png"),
   widespread: require("../../../assets/words/w/widespread.png"),
   wild: require("../../../assets/words/w/wild.png"),
   wilderness: require("../../../assets/words/w/wilderness.png"),

@@ -75,6 +75,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   mechanic: require("../../../assets/words/m/mechanic.png"),
   mechanical: require("../../../assets/words/m/mechanical.png"),
   mechanism: require("../../../assets/words/m/mechanism.png"),
+  mediate: require("../../../assets/words/m/mediate.png"),
   mediation: require("../../../assets/words/m/mediation.png"),
   medical: require("../../../assets/words/m/medical.png"),
   medicine: require("../../../assets/words/m/medicine.png"),

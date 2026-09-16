@@ -236,6 +236,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   prevailing: require("../../../assets/words/p/prevailing.png"),
   prevalent: require("../../../assets/words/p/prevalent.png"),
   prevent: require("../../../assets/words/p/prevent.png"),
+  prevention: require("../../../assets/words/p/prevention.png"),
   previous: require("../../../assets/words/p/previous.png"),
   prey: require("../../../assets/words/p/prey.png"),
   price: require("../../../assets/words/p/price.png"),

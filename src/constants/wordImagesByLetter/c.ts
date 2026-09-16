@@ -305,6 +305,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   corporate: require("../../../assets/words/c/corporate.png"),
   correct: require("../../../assets/words/c/correct.png"),
   correctly: require("../../../assets/words/c/correctly.png"),
+  correlation: require("../../../assets/words/c/correlation.png"),
   correspond: require("../../../assets/words/c/correspond.png"),
   correspondence: require("../../../assets/words/c/correspondence.png"),
   cost: require("../../../assets/words/c/cost.png"),

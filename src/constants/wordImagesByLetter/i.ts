@@ -123,6 +123,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   inform: require("../../../assets/words/i/inform.png"),
   informally: require("../../../assets/words/i/informally.png"),
   information: require("../../../assets/words/i/information.png"),
+  informed: require("../../../assets/words/i/informed.png"),
   infrastructure: require("../../../assets/words/i/infrastructure.png"),
   infrequent: require("../../../assets/words/i/infrequent.png"),
   ingenious: require("../../../assets/words/i/ingenious.png"),

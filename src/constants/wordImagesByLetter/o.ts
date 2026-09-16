@@ -67,6 +67,7 @@ export const IMAGES_O: Record<string, ImageSourcePropType> = {
   ornament: require("../../../assets/words/o/ornament.png"),
   orphan: require("../../../assets/words/o/orphan.png"),
   ostrich: require("../../../assets/words/o/ostrich.png"),
+  "other than": require("../../../assets/words/o/other-than.png"),
   otherwise: require("../../../assets/words/o/otherwise.png"),
   outcome: require("../../../assets/words/o/outcome.png"),
   outdated: require("../../../assets/words/o/outdated.png"),

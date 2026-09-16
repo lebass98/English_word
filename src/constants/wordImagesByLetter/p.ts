@@ -317,6 +317,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   psychological: require("../../../assets/words/p/psychological.png"),
   psychology: require("../../../assets/words/p/psychology.png"),
   public: require("../../../assets/words/p/public.png"),
+  publication: require("../../../assets/words/p/publication.png"),
   publicity: require("../../../assets/words/p/publicity.png"),
   publish: require("../../../assets/words/p/publish.png"),
   pull: require("../../../assets/words/p/pull.png"),

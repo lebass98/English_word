@@ -41,6 +41,7 @@ export const IMAGES_L: Record<string, ImageSourcePropType> = {
   leisure: require("../../../assets/words/l/leisure.png"),
   leisurely: require("../../../assets/words/l/leisurely.png"),
   lend: require("../../../assets/words/l/lend.png"),
+  lessen: require("../../../assets/words/l/lessen.png"),
   lesson: require("../../../assets/words/l/lesson.png"),
   letter: require("../../../assets/words/l/letter.png"),
   level: require("../../../assets/words/l/level.png"),

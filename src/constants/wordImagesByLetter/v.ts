@@ -30,6 +30,7 @@ export const IMAGES_V: Record<string, ImageSourcePropType> = {
   vendor: require("../../../assets/words/v/vendor.png"),
   venture: require("../../../assets/words/v/venture.png"),
   verbal: require("../../../assets/words/v/verbal.png"),
+  verdict: require("../../../assets/words/v/verdict.png"),
   verge: require("../../../assets/words/v/verge.png"),
   verify: require("../../../assets/words/v/verify.png"),
   versatile: require("../../../assets/words/v/versatile.png"),

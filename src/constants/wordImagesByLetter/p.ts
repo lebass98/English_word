@@ -82,6 +82,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   perish: require("../../../assets/words/p/perish.png"),
   permanent: require("../../../assets/words/p/permanent.png"),
   permit: require("../../../assets/words/p/permit.png"),
+  perplex: require("../../../assets/words/p/perplex.png"),
   persevere: require("../../../assets/words/p/persevere.png"),
   persist: require("../../../assets/words/p/persist.png"),
   persistence: require("../../../assets/words/p/persistence.png"),

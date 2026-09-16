@@ -73,6 +73,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   semester: require("../../../assets/words/s/semester.png"),
   senior: require("../../../assets/words/s/senior.png"),
   sensation: require("../../../assets/words/s/sensation.png"),
+  sensational: require("../../../assets/words/s/sensational.png"),
   sense: require("../../../assets/words/s/sense.png"),
   sensitive: require("../../../assets/words/s/sensitive.png"),
   sensory: require("../../../assets/words/s/sensory.png"),

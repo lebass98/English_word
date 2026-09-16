@@ -159,6 +159,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   evergreen: require("../../../assets/words/e/evergreen.png"),
   evidence: require("../../../assets/words/e/evidence.png"),
   evident: require("../../../assets/words/e/evident.png"),
+  evidently: require("../../../assets/words/e/evidently.png"),
   evil: require("../../../assets/words/e/evil.png"),
   evoke: require("../../../assets/words/e/evoke.png"),
   evolution: require("../../../assets/words/e/evolution.png"),

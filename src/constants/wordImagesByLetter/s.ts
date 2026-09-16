@@ -151,6 +151,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   spin: require("../../../assets/words/s/spin.png"),
   spine: require("../../../assets/words/s/spine.png"),
   spirit: require("../../../assets/words/s/spirit.png"),
+  split: require("../../../assets/words/s/split.png"),
   spot: require("../../../assets/words/s/spot.png"),
   spread: require("../../../assets/words/s/spread.png"),
   square: require("../../../assets/words/s/square.png"),

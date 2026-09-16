@@ -165,6 +165,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   simplicity: require("../../../assets/words/s/simplicity.png"),
   simplify: require("../../../assets/words/s/simplify.png"),
   simply: require("../../../assets/words/s/simply.png"),
+  simulate: require("../../../assets/words/s/simulate.png"),
   simultaneously: require("../../../assets/words/s/simultaneously.png"),
   since: require("../../../assets/words/s/since.png"),
   sincere: require("../../../assets/words/s/sincere.png"),

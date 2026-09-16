@@ -8,6 +8,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   dare: require("../../../assets/words/d/dare.png"),
   daring: require("../../../assets/words/d/daring.png"),
   dark: require("../../../assets/words/d/dark.png"),
+  dash: require("../../../assets/words/d/dash.png"),
   data: require("../../../assets/words/d/data.png"),
   date: require("../../../assets/words/d/date.png"),
   daughter: require("../../../assets/words/d/daughter.png"),

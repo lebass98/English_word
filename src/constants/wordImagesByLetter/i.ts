@@ -66,6 +66,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   "in order to": require("../../../assets/words/i/in-order-to.png"),
   "in place": require("../../../assets/words/i/in-place.png"),
   "in place of": require("../../../assets/words/i/in-place-of.png"),
+  "in progress": require("../../../assets/words/i/in-progress.png"),
   "in response to": require("../../../assets/words/i/in-response-to.png"),
   incentive: require("../../../assets/words/i/incentive.png"),
   incident: require("../../../assets/words/i/incident.png"),

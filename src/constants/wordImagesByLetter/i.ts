@@ -215,6 +215,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   insubordinate: require("../../../assets/words/i/insubordinate.png"),
   insufficient: require("../../../assets/words/i/insufficient.png"),
   insulate: require("../../../assets/words/i/insulate.png"),
+  insulation: require("../../../assets/words/i/insulation.png"),
   insult: require("../../../assets/words/i/insult.png"),
   insurance: require("../../../assets/words/i/insurance.png"),
   insure: require("../../../assets/words/i/insure.png"),

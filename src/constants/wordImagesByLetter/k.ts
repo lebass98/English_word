@@ -8,6 +8,7 @@ export const IMAGES_K: Record<string, ImageSourcePropType> = {
   kettle: require("../../../assets/words/k/kettle.png"),
   key: require("../../../assets/words/k/key.png"),
   kill: require("../../../assets/words/k/kill.png"),
+  kin: require("../../../assets/words/k/kin.png"),
   kind: require("../../../assets/words/k/kind.png"),
   kindergarten: require("../../../assets/words/k/kindergarten.png"),
   knee: require("../../../assets/words/k/knee.png"),

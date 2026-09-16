@@ -221,6 +221,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   drag: require("../../../assets/words/d/drag.png"),
   drain: require("../../../assets/words/d/drain.png"),
   dramatic: require("../../../assets/words/d/dramatic.png"),
+  drastic: require("../../../assets/words/d/drastic.png"),
   draw: require("../../../assets/words/d/draw.png"),
   drawback: require("../../../assets/words/d/drawback.png"),
   dream: require("../../../assets/words/d/dream.png"),

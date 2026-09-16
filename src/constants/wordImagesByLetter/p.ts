@@ -138,6 +138,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   "point out": require("../../../assets/words/p/point-out.png"),
   poison: require("../../../assets/words/p/poison.png"),
   polar: require("../../../assets/words/p/polar.png"),
+  polarize: require("../../../assets/words/p/polarize.png"),
   pole: require("../../../assets/words/p/pole.png"),
   policy: require("../../../assets/words/p/policy.png"),
   polish: require("../../../assets/words/p/polish.png"),

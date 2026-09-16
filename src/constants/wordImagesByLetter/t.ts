@@ -127,6 +127,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   translate: require("../../../assets/words/t/translate.png"),
   translation: require("../../../assets/words/t/translation.png"),
   transmit: require("../../../assets/words/t/transmit.png"),
+  transparent: require("../../../assets/words/t/transparent.png"),
   transplant: require("../../../assets/words/t/transplant.png"),
   transport: require("../../../assets/words/t/transport.png"),
   transportation: require("../../../assets/words/t/transportation.png"),

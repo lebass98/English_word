@@ -68,6 +68,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   selected: require("../../../assets/words/s/selected.png"),
   "self-confident": require("../../../assets/words/s/self-confident.png"),
   "self-esteem": require("../../../assets/words/s/self-esteem.png"),
+  "self-sufficient": require("../../../assets/words/s/self-sufficient.png"),
   selfish: require("../../../assets/words/s/selfish.png"),
   semester: require("../../../assets/words/s/semester.png"),
   senior: require("../../../assets/words/s/senior.png"),

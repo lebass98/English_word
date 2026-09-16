@@ -28,6 +28,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   real: require("../../../assets/words/r/real.png"),
   realistic: require("../../../assets/words/r/realistic.png"),
   reality: require("../../../assets/words/r/reality.png"),
+  realize: require("../../../assets/words/r/realize.png"),
   realm: require("../../../assets/words/r/realm.png"),
   rear: require("../../../assets/words/r/rear.png"),
   reason: require("../../../assets/words/r/reason.png"),

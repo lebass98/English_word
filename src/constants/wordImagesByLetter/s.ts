@@ -305,6 +305,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   "stick to": require("../../../assets/words/s/stick-to.png"),
   still: require("../../../assets/words/s/still.png"),
   stimulate: require("../../../assets/words/s/stimulate.png"),
+  stimulus: require("../../../assets/words/s/stimulus.png"),
   sting: require("../../../assets/words/s/sting.png"),
   stir: require("../../../assets/words/s/stir.png"),
   stock: require("../../../assets/words/s/stock.png"),

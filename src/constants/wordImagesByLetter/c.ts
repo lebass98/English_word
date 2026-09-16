@@ -112,6 +112,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   circulate: require("../../../assets/words/c/circulate.png"),
   circumscribe: require("../../../assets/words/c/circumscribe.png"),
   circumstance: require("../../../assets/words/c/circumstance.png"),
+  cite: require("../../../assets/words/c/cite.png"),
   civil: require("../../../assets/words/c/civil.png"),
   civilization: require("../../../assets/words/c/civilization.png"),
   claim: require("../../../assets/words/c/claim.png"),

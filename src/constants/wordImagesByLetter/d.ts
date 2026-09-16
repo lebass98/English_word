@@ -109,6 +109,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   devote: require("../../../assets/words/d/devote.png"),
   "devote to": require("../../../assets/words/d/devote-to.png"),
   devoted: require("../../../assets/words/d/devoted.png"),
+  diabetes: require("../../../assets/words/d/diabetes.png"),
   diagnose: require("../../../assets/words/d/diagnose.png"),
   diagnosis: require("../../../assets/words/d/diagnosis.png"),
   dialect: require("../../../assets/words/d/dialect.png"),

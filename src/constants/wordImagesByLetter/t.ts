@@ -99,6 +99,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   toss: require("../../../assets/words/t/toss.png"),
   total: require("../../../assets/words/t/total.png"),
   touch: require("../../../assets/words/t/touch.png"),
+  touching: require("../../../assets/words/t/touching.png"),
   tough: require("../../../assets/words/t/tough.png"),
   tourist: require("../../../assets/words/t/tourist.png"),
   tournament: require("../../../assets/words/t/tournament.png"),

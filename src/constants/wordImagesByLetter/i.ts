@@ -238,6 +238,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   irreparable: require("../../../assets/words/i/irreparable.png"),
   irresistible: require("../../../assets/words/i/irresistible.png"),
   irreversible: require("../../../assets/words/i/irreversible.png"),
+  irrigation: require("../../../assets/words/i/irrigation.png"),
   island: require("../../../assets/words/i/island.png"),
   isolate: require("../../../assets/words/i/isolate.png"),
   isolated: require("../../../assets/words/i/isolated.png"),

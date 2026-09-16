@@ -218,6 +218,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   extinction: require("../../../assets/words/e/extinction.png"),
   extinguish: require("../../../assets/words/e/extinguish.png"),
   extract: require("../../../assets/words/e/extract.png"),
+  extracurricular: require("../../../assets/words/e/extracurricular.png"),
   extraordinary: require("../../../assets/words/e/extraordinary.png"),
   extreme: require("../../../assets/words/e/extreme.png"),
   extrinsic: require("../../../assets/words/e/extrinsic.png"),

@@ -59,6 +59,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   thin: require("../../../assets/words/t/thin.png"),
   thirsty: require("../../../assets/words/t/thirsty.png"),
   thorn: require("../../../assets/words/t/thorn.png"),
+  thoroughly: require("../../../assets/words/t/thoroughly.png"),
   though: require("../../../assets/words/t/though.png"),
   thoughtful: require("../../../assets/words/t/thoughtful.png"),
   thread: require("../../../assets/words/t/thread.png"),

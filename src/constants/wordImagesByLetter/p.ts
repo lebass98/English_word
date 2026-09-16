@@ -210,6 +210,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   priceless: require("../../../assets/words/p/priceless.png"),
   pride: require("../../../assets/words/p/pride.png"),
   priest: require("../../../assets/words/p/priest.png"),
+  primarily: require("../../../assets/words/p/primarily.png"),
   primary: require("../../../assets/words/p/primary.png"),
   primitive: require("../../../assets/words/p/primitive.png"),
   prince: require("../../../assets/words/p/prince.png"),

@@ -111,6 +111,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   alert: require("../../../assets/words/a/alert.png"),
   alike: require("../../../assets/words/a/alike.png"),
   alive: require("../../../assets/words/a/alive.png"),
+  alleviate: require("../../../assets/words/a/alleviate.png"),
   allocate: require("../../../assets/words/a/allocate.png"),
   allow: require("../../../assets/words/a/allow.png"),
   allowance: require("../../../assets/words/a/allowance.png"),

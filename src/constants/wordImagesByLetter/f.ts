@@ -84,6 +84,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   flourish: require("../../../assets/words/f/flourish.png"),
   flow: require("../../../assets/words/f/flow.png"),
   fluent: require("../../../assets/words/f/fluent.png"),
+  fluid: require("../../../assets/words/f/fluid.png"),
   flute: require("../../../assets/words/f/flute.png"),
   focus: require("../../../assets/words/f/focus.png"),
   "focus on": require("../../../assets/words/f/focus-on.png"),

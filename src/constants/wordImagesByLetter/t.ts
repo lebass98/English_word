@@ -180,6 +180,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   "turn in": require("../../../assets/words/t/turn-in.png"),
   "turn out": require("../../../assets/words/t/turn-out.png"),
   "turn over": require("../../../assets/words/t/turn-over.png"),
+  turnover: require("../../../assets/words/t/turnover.png"),
   turtle: require("../../../assets/words/t/turtle.png"),
   twice: require("../../../assets/words/t/twice.png"),
   twin: require("../../../assets/words/t/twin.png"),

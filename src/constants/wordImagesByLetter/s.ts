@@ -408,6 +408,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   successful: require("../../../assets/words/s/successful.png"),
   succession: require("../../../assets/words/s/succession.png"),
   successive: require("../../../assets/words/s/successive.png"),
+  succinct: require("../../../assets/words/s/succinct.png"),
   such: require("../../../assets/words/s/such.png"),
   suck: require("../../../assets/words/s/suck.png"),
   sudden: require("../../../assets/words/s/sudden.png"),

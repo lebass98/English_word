@@ -21,6 +21,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   rather: require("../../../assets/words/r/rather.png"),
   "rather than": require("../../../assets/words/r/rather-than.png"),
   rational: require("../../../assets/words/r/rational.png"),
+  rationale: require("../../../assets/words/r/rationale.png"),
   raw: require("../../../assets/words/r/raw.png"),
   reach: require("../../../assets/words/r/reach.png"),
   react: require("../../../assets/words/r/react.png"),

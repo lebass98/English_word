@@ -61,6 +61,7 @@ export const IMAGES_H: Record<string, ImageSourcePropType> = {
   hobby: require("../../../assets/words/h/hobby.png"),
   hold: require("../../../assets/words/h/hold.png"),
   "hold on (to)": require("../../../assets/words/h/hold-on-(to).png"),
+  "hold up": require("../../../assets/words/h/hold-up.png"),
   hole: require("../../../assets/words/h/hole.png"),
   holiday: require("../../../assets/words/h/holiday.png"),
   hollow: require("../../../assets/words/h/hollow.png"),

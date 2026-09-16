@@ -35,6 +35,7 @@ export const IMAGES_O: Record<string, ImageSourcePropType> = {
   offspring: require("../../../assets/words/o/offspring.png"),
   "on occasion": require("../../../assets/words/o/on-occasion.png"),
   "on one’s feet": require("../../../assets/words/o/on-one’s-feet.png"),
+  "on the contrary": require("../../../assets/words/o/on-the-contrary.png"),
   once: require("../../../assets/words/o/once.png"),
   online: require("../../../assets/words/o/online.png"),
   operate: require("../../../assets/words/o/operate.png"),

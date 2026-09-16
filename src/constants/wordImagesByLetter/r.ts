@@ -55,6 +55,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   recurrent: require("../../../assets/words/r/recurrent.png"),
   recurring: require("../../../assets/words/r/recurring.png"),
   reduce: require("../../../assets/words/r/reduce.png"),
+  reexamine: require("../../../assets/words/r/reexamine.png"),
   refer: require("../../../assets/words/r/refer.png"),
   referee: require("../../../assets/words/r/referee.png"),
   refine: require("../../../assets/words/r/refine.png"),

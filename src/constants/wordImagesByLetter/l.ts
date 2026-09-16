@@ -19,6 +19,7 @@ export const IMAGES_L: Record<string, ImageSourcePropType> = {
   laundry: require("../../../assets/words/l/laundry.png"),
   law: require("../../../assets/words/l/law.png"),
   lay: require("../../../assets/words/l/lay.png"),
+  "lay down": require("../../../assets/words/l/lay-down.png"),
   layer: require("../../../assets/words/l/layer.png"),
   lead: require("../../../assets/words/l/lead.png"),
   "lead to": require("../../../assets/words/l/lead-to.png"),

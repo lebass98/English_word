@@ -357,6 +357,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   coverage: require("../../../assets/words/c/coverage.png"),
   cowardly: require("../../../assets/words/c/cowardly.png"),
   crack: require("../../../assets/words/c/crack.png"),
+  cradle: require("../../../assets/words/c/cradle.png"),
   craft: require("../../../assets/words/c/craft.png"),
   crane: require("../../../assets/words/c/crane.png"),
   crash: require("../../../assets/words/c/crash.png"),

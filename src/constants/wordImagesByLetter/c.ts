@@ -130,6 +130,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   closet: require("../../../assets/words/c/closet.png"),
   cloth: require("../../../assets/words/c/cloth.png"),
   cloudy: require("../../../assets/words/c/cloudy.png"),
+  clout: require("../../../assets/words/c/clout.png"),
   clue: require("../../../assets/words/c/clue.png"),
   clumsy: require("../../../assets/words/c/clumsy.png"),
   coach: require("../../../assets/words/c/coach.png"),

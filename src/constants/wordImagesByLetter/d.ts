@@ -144,6 +144,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   dimension: require("../../../assets/words/d/dimension.png"),
   diminish: require("../../../assets/words/d/diminish.png"),
   diminutive: require("../../../assets/words/d/diminutive.png"),
+  dine: require("../../../assets/words/d/dine.png"),
   "dining room": require("../../../assets/words/d/dining-room.png"),
   "dinning room": require("../../../assets/words/d/dinning-room.png"),
   direct: require("../../../assets/words/d/direct.png"),

@@ -257,6 +257,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   sunglasses: require("../../../assets/words/s/sunglasses.png"),
   sunrise: require("../../../assets/words/s/sunrise.png"),
   sunshine: require("../../../assets/words/s/sunshine.png"),
+  superb: require("../../../assets/words/s/superb.png"),
   superior: require("../../../assets/words/s/superior.png"),
   superstition: require("../../../assets/words/s/superstition.png"),
   supplement: require("../../../assets/words/s/supplement.png"),

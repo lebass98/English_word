@@ -46,6 +46,7 @@ export const IMAGES_H: Record<string, ImageSourcePropType> = {
   hemisphere: require("../../../assets/words/h/hemisphere.png"),
   hence: require("../../../assets/words/h/hence.png"),
   herd: require("../../../assets/words/h/herd.png"),
+  heredity: require("../../../assets/words/h/heredity.png"),
   heritage: require("../../../assets/words/h/heritage.png"),
   hero: require("../../../assets/words/h/hero.png"),
   hesitancy: require("../../../assets/words/h/hesitancy.png"),

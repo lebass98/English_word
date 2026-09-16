@@ -99,6 +99,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   ethnic: require("../../../assets/words/e/ethnic.png"),
   evaluate: require("../../../assets/words/e/evaluate.png"),
   evaporate: require("../../../assets/words/e/evaporate.png"),
+  even: require("../../../assets/words/e/even.png"),
   event: require("../../../assets/words/e/event.png"),
   evidence: require("../../../assets/words/e/evidence.png"),
   evil: require("../../../assets/words/e/evil.png"),

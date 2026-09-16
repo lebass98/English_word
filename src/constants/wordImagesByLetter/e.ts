@@ -102,6 +102,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   even: require("../../../assets/words/e/even.png"),
   event: require("../../../assets/words/e/event.png"),
   eventual: require("../../../assets/words/e/eventual.png"),
+  eventually: require("../../../assets/words/e/eventually.png"),
   evidence: require("../../../assets/words/e/evidence.png"),
   evil: require("../../../assets/words/e/evil.png"),
   exact: require("../../../assets/words/e/exact.png"),

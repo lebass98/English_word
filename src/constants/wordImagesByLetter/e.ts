@@ -151,6 +151,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   export: require("../../../assets/words/e/export.png"),
   expose: require("../../../assets/words/e/expose.png"),
   exposition: require("../../../assets/words/e/exposition.png"),
+  exposure: require("../../../assets/words/e/exposure.png"),
   express: require("../../../assets/words/e/express.png"),
   expressway: require("../../../assets/words/e/expressway.png"),
   extend: require("../../../assets/words/e/extend.png"),

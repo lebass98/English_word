@@ -175,6 +175,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   anticipate: require("../../../assets/words/a/anticipate.png"),
   antique: require("../../../assets/words/a/antique.png"),
   antiquity: require("../../../assets/words/a/antiquity.png"),
+  anxiety: require("../../../assets/words/a/anxiety.png"),
   anxious: require("../../../assets/words/a/anxious.png"),
   anyway: require("../../../assets/words/a/anyway.png"),
   apart: require("../../../assets/words/a/apart.png"),

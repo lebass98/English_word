@@ -126,6 +126,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   collective: require("../../../assets/words/c/collective.png"),
   college: require("../../../assets/words/c/college.png"),
   collide: require("../../../assets/words/c/collide.png"),
+  collision: require("../../../assets/words/c/collision.png"),
   colonize: require("../../../assets/words/c/colonize.png"),
   colony: require("../../../assets/words/c/colony.png"),
   color: require("../../../assets/words/c/color.png"),

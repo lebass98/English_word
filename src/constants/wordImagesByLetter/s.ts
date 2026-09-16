@@ -127,6 +127,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   short: require("../../../assets/words/s/short.png"),
   shortage: require("../../../assets/words/s/shortage.png"),
   shortcut: require("../../../assets/words/s/shortcut.png"),
+  shorten: require("../../../assets/words/s/shorten.png"),
   shoulder: require("../../../assets/words/s/shoulder.png"),
   shout: require("../../../assets/words/s/shout.png"),
   shovel: require("../../../assets/words/s/shovel.png"),

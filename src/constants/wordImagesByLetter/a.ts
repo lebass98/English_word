@@ -8,6 +8,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   "a variety of": require("../../../assets/words/a/a-variety-of.png"),
   "a wide range of": require("../../../assets/words/a/a-wide-range-of.png"),
   abandon: require("../../../assets/words/a/abandon.png"),
+  abate: require("../../../assets/words/a/abate.png"),
   able: require("../../../assets/words/a/able.png"),
   abnormal: require("../../../assets/words/a/abnormal.png"),
   abnormally: require("../../../assets/words/a/abnormally.png"),

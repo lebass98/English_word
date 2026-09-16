@@ -12,6 +12,7 @@ export const IMAGES_U: Record<string, ImageSourcePropType> = {
   understand: require("../../../assets/words/u/understand.png"),
   undertake: require("../../../assets/words/u/undertake.png"),
   underwater: require("../../../assets/words/u/underwater.png"),
+  undoubtedly: require("../../../assets/words/u/undoubtedly.png"),
   unemployment: require("../../../assets/words/u/unemployment.png"),
   unexpected: require("../../../assets/words/u/unexpected.png"),
   unfair: require("../../../assets/words/u/unfair.png"),

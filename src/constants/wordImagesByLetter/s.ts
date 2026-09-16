@@ -156,6 +156,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   space: require("../../../assets/words/s/space.png"),
   spade: require("../../../assets/words/s/spade.png"),
   spare: require("../../../assets/words/s/spare.png"),
+  spear: require("../../../assets/words/s/spear.png"),
   special: require("../../../assets/words/s/special.png"),
   species: require("../../../assets/words/s/species.png"),
   specific: require("../../../assets/words/s/specific.png"),

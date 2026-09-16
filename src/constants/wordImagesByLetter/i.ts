@@ -113,6 +113,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   infection: require("../../../assets/words/i/infection.png"),
   inferior: require("../../../assets/words/i/inferior.png"),
   infinite: require("../../../assets/words/i/infinite.png"),
+  infirm: require("../../../assets/words/i/infirm.png"),
   influence: require("../../../assets/words/i/influence.png"),
   inform: require("../../../assets/words/i/inform.png"),
   information: require("../../../assets/words/i/information.png"),

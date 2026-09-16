@@ -27,6 +27,7 @@ export const IMAGES_H: Record<string, ImageSourcePropType> = {
   "have ~ in common": require("../../../assets/words/h/have-~-in-common.png"),
   hawk: require("../../../assets/words/h/hawk.png"),
   hay: require("../../../assets/words/h/hay.png"),
+  hazard: require("../../../assets/words/h/hazard.png"),
   headquarters: require("../../../assets/words/h/headquarters.png"),
   heal: require("../../../assets/words/h/heal.png"),
   health: require("../../../assets/words/h/health.png"),

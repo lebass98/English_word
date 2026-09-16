@@ -152,6 +152,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   motif: require("../../../assets/words/m/motif.png"),
   motion: require("../../../assets/words/m/motion.png"),
   motivate: require("../../../assets/words/m/motivate.png"),
+  motivation: require("../../../assets/words/m/motivation.png"),
   mount: require("../../../assets/words/m/mount.png"),
   mouse: require("../../../assets/words/m/mouse.png"),
   "move on": require("../../../assets/words/m/move-on.png"),

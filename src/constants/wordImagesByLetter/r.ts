@@ -128,6 +128,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   remedy: require("../../../assets/words/r/remedy.png"),
   remember: require("../../../assets/words/r/remember.png"),
   remind: require("../../../assets/words/r/remind.png"),
+  remnant: require("../../../assets/words/r/remnant.png"),
   remote: require("../../../assets/words/r/remote.png"),
   remove: require("../../../assets/words/r/remove.png"),
   render: require("../../../assets/words/r/render.png"),

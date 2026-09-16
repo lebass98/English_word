@@ -156,6 +156,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   fragile: require("../../../assets/words/f/fragile.png"),
   fragment: require("../../../assets/words/f/fragment.png"),
   fragmentary: require("../../../assets/words/f/fragmentary.png"),
+  frame: require("../../../assets/words/f/frame.png"),
   frankly: require("../../../assets/words/f/frankly.png"),
   fraud: require("../../../assets/words/f/fraud.png"),
   "free from": require("../../../assets/words/f/free-from.png"),

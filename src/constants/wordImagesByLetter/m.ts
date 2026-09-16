@@ -46,6 +46,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   marriage: require("../../../assets/words/m/marriage.png"),
   marry: require("../../../assets/words/m/marry.png"),
   mars: require("../../../assets/words/m/mars.png"),
+  martial: require("../../../assets/words/m/martial.png"),
   marvel: require("../../../assets/words/m/marvel.png"),
   mask: require("../../../assets/words/m/mask.png"),
   mass: require("../../../assets/words/m/mass.png"),

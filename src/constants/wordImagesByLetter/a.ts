@@ -213,6 +213,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   arrogant: require("../../../assets/words/a/arrogant.png"),
   arrow: require("../../../assets/words/a/arrow.png"),
   art: require("../../../assets/words/a/art.png"),
+  artery: require("../../../assets/words/a/artery.png"),
   article: require("../../../assets/words/a/article.png"),
   artifact: require("../../../assets/words/a/artifact.png"),
   artificial: require("../../../assets/words/a/artificial.png"),

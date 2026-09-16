@@ -44,6 +44,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   impossible: require("../../../assets/words/i/impossible.png"),
   imprecise: require("../../../assets/words/i/imprecise.png"),
   impress: require("../../../assets/words/i/impress.png"),
+  impressed: require("../../../assets/words/i/impressed.png"),
   impression: require("../../../assets/words/i/impression.png"),
   impressive: require("../../../assets/words/i/impressive.png"),
   improve: require("../../../assets/words/i/improve.png"),

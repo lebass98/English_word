@@ -172,6 +172,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   population: require("../../../assets/words/p/population.png"),
   port: require("../../../assets/words/p/port.png"),
   portable: require("../../../assets/words/p/portable.png"),
+  portfolio: require("../../../assets/words/p/portfolio.png"),
   portion: require("../../../assets/words/p/portion.png"),
   portrait: require("../../../assets/words/p/portrait.png"),
   portray: require("../../../assets/words/p/portray.png"),

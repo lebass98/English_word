@@ -36,6 +36,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   electronic: require("../../../assets/words/e/electronic.png"),
   element: require("../../../assets/words/e/element.png"),
   elementary: require("../../../assets/words/e/elementary.png"),
+  elevate: require("../../../assets/words/e/elevate.png"),
   eligible: require("../../../assets/words/e/eligible.png"),
   eliminate: require("../../../assets/words/e/eliminate.png"),
   else: require("../../../assets/words/e/else.png"),

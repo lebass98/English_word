@@ -204,6 +204,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   invade: require("../../../assets/words/i/invade.png"),
   invader: require("../../../assets/words/i/invader.png"),
   invaluable: require("../../../assets/words/i/invaluable.png"),
+  invariably: require("../../../assets/words/i/invariably.png"),
   invent: require("../../../assets/words/i/invent.png"),
   invention: require("../../../assets/words/i/invention.png"),
   inventory: require("../../../assets/words/i/inventory.png"),

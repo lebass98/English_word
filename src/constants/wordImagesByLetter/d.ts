@@ -105,6 +105,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   "devote to": require("../../../assets/words/d/devote-to.png"),
   devoted: require("../../../assets/words/d/devoted.png"),
   diagnose: require("../../../assets/words/d/diagnose.png"),
+  diagnosis: require("../../../assets/words/d/diagnosis.png"),
   dialogue: require("../../../assets/words/d/dialogue.png"),
   "dialogue between north and south": require("../../../assets/words/d/dialogue-between-north-and-south.png"),
   diameter: require("../../../assets/words/d/diameter.png"),

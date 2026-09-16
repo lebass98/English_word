@@ -310,4 +310,5 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   "put together": require("../../../assets/words/p/put-together.png"),
   "put up with": require("../../../assets/words/p/put-up-with.png"),
   puzzle: require("../../../assets/words/p/puzzle.png"),
+  "puzzle over": require("../../../assets/words/p/puzzle-over.png"),
 };

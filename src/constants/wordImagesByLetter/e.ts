@@ -170,6 +170,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   explain: require("../../../assets/words/e/explain.png"),
   explanation: require("../../../assets/words/e/explanation.png"),
   explicit: require("../../../assets/words/e/explicit.png"),
+  explicitly: require("../../../assets/words/e/explicitly.png"),
   explode: require("../../../assets/words/e/explode.png"),
   explore: require("../../../assets/words/e/explore.png"),
   explosion: require("../../../assets/words/e/explosion.png"),

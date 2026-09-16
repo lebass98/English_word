@@ -254,6 +254,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   drastic: require("../../../assets/words/d/drastic.png"),
   draw: require("../../../assets/words/d/draw.png"),
   drawback: require("../../../assets/words/d/drawback.png"),
+  dread: require("../../../assets/words/d/dread.png"),
   dream: require("../../../assets/words/d/dream.png"),
   drift: require("../../../assets/words/d/drift.png"),
   drive: require("../../../assets/words/d/drive.png"),

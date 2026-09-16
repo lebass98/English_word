@@ -13,6 +13,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   balloon: require("../../../assets/words/b/balloon.png"),
   ban: require("../../../assets/words/b/ban.png"),
   band: require("../../../assets/words/b/band.png"),
+  bankrupt: require("../../../assets/words/b/bankrupt.png"),
   banquet: require("../../../assets/words/b/banquet.png"),
   bar: require("../../../assets/words/b/bar.png"),
   barbarous: require("../../../assets/words/b/barbarous.png"),

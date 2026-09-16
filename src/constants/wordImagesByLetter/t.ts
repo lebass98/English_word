@@ -33,6 +33,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   tempting: require("../../../assets/words/t/tempting.png"),
   tenant: require("../../../assets/words/t/tenant.png"),
   tend: require("../../../assets/words/t/tend.png"),
+  "tend to": require("../../../assets/words/t/tend-to.png"),
   tender: require("../../../assets/words/t/tender.png"),
   tension: require("../../../assets/words/t/tension.png"),
   tentative: require("../../../assets/words/t/tentative.png"),

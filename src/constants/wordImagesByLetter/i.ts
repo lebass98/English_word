@@ -81,6 +81,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   incessantly: require("../../../assets/words/i/incessantly.png"),
   incident: require("../../../assets/words/i/incident.png"),
   incidental: require("../../../assets/words/i/incidental.png"),
+  incite: require("../../../assets/words/i/incite.png"),
   include: require("../../../assets/words/i/include.png"),
   income: require("../../../assets/words/i/income.png"),
   increase: require("../../../assets/words/i/increase.png"),

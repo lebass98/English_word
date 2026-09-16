@@ -145,6 +145,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   modify: require("../../../assets/words/m/modify.png"),
   moist: require("../../../assets/words/m/moist.png"),
   moisture: require("../../../assets/words/m/moisture.png"),
+  mole: require("../../../assets/words/m/mole.png"),
   moment: require("../../../assets/words/m/moment.png"),
   monetary: require("../../../assets/words/m/monetary.png"),
   monitor: require("../../../assets/words/m/monitor.png"),

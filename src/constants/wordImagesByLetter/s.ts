@@ -362,6 +362,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   subconscious: require("../../../assets/words/s/subconscious.png"),
   subject: require("../../../assets/words/s/subject.png"),
   subjective: require("../../../assets/words/s/subjective.png"),
+  submerge: require("../../../assets/words/s/submerge.png"),
   submit: require("../../../assets/words/s/submit.png"),
   subordinate: require("../../../assets/words/s/subordinate.png"),
   subscribe: require("../../../assets/words/s/subscribe.png"),

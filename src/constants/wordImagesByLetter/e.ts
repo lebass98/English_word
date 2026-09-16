@@ -204,6 +204,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   exhibit: require("../../../assets/words/e/exhibit.png"),
   exhibition: require("../../../assets/words/e/exhibition.png"),
   exist: require("../../../assets/words/e/exist.png"),
+  existing: require("../../../assets/words/e/existing.png"),
   exit: require("../../../assets/words/e/exit.png"),
   exotic: require("../../../assets/words/e/exotic.png"),
   expand: require("../../../assets/words/e/expand.png"),

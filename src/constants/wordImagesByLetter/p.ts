@@ -296,6 +296,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   pupil: require("../../../assets/words/p/pupil.png"),
   purchase: require("../../../assets/words/p/purchase.png"),
   pure: require("../../../assets/words/p/pure.png"),
+  purified: require("../../../assets/words/p/purified.png"),
   purify: require("../../../assets/words/p/purify.png"),
   puritan: require("../../../assets/words/p/puritan.png"),
   purpose: require("../../../assets/words/p/purpose.png"),

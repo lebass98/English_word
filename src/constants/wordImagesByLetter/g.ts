@@ -69,6 +69,7 @@ export const IMAGES_G: Record<string, ImageSourcePropType> = {
   grave: require("../../../assets/words/g/grave.png"),
   gravity: require("../../../assets/words/g/gravity.png"),
   gray: require("../../../assets/words/g/gray.png"),
+  graze: require("../../../assets/words/g/graze.png"),
   greedy: require("../../../assets/words/g/greedy.png"),
   greenhouse: require("../../../assets/words/g/greenhouse.png"),
   greet: require("../../../assets/words/g/greet.png"),

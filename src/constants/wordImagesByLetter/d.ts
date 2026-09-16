@@ -135,6 +135,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   discard: require("../../../assets/words/d/discard.png"),
   discern: require("../../../assets/words/d/discern.png"),
   discharge: require("../../../assets/words/d/discharge.png"),
+  discipline: require("../../../assets/words/d/discipline.png"),
   disclose: require("../../../assets/words/d/disclose.png"),
   discouraged: require("../../../assets/words/d/discouraged.png"),
   discriminate: require("../../../assets/words/d/discriminate.png"),

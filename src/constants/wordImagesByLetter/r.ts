@@ -221,6 +221,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   ritual: require("../../../assets/words/r/ritual.png"),
   rival: require("../../../assets/words/r/rival.png"),
   rivalry: require("../../../assets/words/r/rivalry.png"),
+  roam: require("../../../assets/words/r/roam.png"),
   roar: require("../../../assets/words/r/roar.png"),
   roast: require("../../../assets/words/r/roast.png"),
   robber: require("../../../assets/words/r/robber.png"),

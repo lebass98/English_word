@@ -175,6 +175,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   intend: require("../../../assets/words/i/intend.png"),
   intense: require("../../../assets/words/i/intense.png"),
   intensify: require("../../../assets/words/i/intensify.png"),
+  intent: require("../../../assets/words/i/intent.png"),
   intention: require("../../../assets/words/i/intention.png"),
   interact: require("../../../assets/words/i/interact.png"),
   interest: require("../../../assets/words/i/interest.png"),

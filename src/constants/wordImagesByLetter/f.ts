@@ -124,6 +124,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   "free from": require("../../../assets/words/f/free-from.png"),
   freeze: require("../../../assets/words/f/freeze.png"),
   french: require("../../../assets/words/f/french.png"),
+  frequent: require("../../../assets/words/f/frequent.png"),
   frequently: require("../../../assets/words/f/frequently.png"),
   fresh: require("../../../assets/words/f/fresh.png"),
   frighten: require("../../../assets/words/f/frighten.png"),

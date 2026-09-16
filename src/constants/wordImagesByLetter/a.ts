@@ -96,6 +96,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   afterward: require("../../../assets/words/a/afterward.png"),
   "again and again": require("../../../assets/words/a/again-and-again.png"),
   agency: require("../../../assets/words/a/agency.png"),
+  agenda: require("../../../assets/words/a/agenda.png"),
   agent: require("../../../assets/words/a/agent.png"),
   aggression: require("../../../assets/words/a/aggression.png"),
   aggressive: require("../../../assets/words/a/aggressive.png"),

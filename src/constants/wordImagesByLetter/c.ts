@@ -56,6 +56,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   ceramic: require("../../../assets/words/c/ceramic.png"),
   ceremony: require("../../../assets/words/c/ceremony.png"),
   certain: require("../../../assets/words/c/certain.png"),
+  certainty: require("../../../assets/words/c/certainty.png"),
   chain: require("../../../assets/words/c/chain.png"),
   challenge: require("../../../assets/words/c/challenge.png"),
   chamber: require("../../../assets/words/c/chamber.png"),

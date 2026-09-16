@@ -282,6 +282,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   proven: require("../../../assets/words/p/proven.png"),
   proverb: require("../../../assets/words/p/proverb.png"),
   provide: require("../../../assets/words/p/provide.png"),
+  provided: require("../../../assets/words/p/provided.png"),
   provoke: require("../../../assets/words/p/provoke.png"),
   psychology: require("../../../assets/words/p/psychology.png"),
   public: require("../../../assets/words/p/public.png"),

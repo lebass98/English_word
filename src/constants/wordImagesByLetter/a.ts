@@ -192,6 +192,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   annoy: require("../../../assets/words/a/annoy.png"),
   annoying: require("../../../assets/words/a/annoying.png"),
   annual: require("../../../assets/words/a/annual.png"),
+  annulment: require("../../../assets/words/a/annulment.png"),
   answer: require("../../../assets/words/a/answer.png"),
   antecedent: require("../../../assets/words/a/antecedent.png"),
   anthropologist: require("../../../assets/words/a/anthropologist.png"),

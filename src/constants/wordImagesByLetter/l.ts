@@ -70,6 +70,7 @@ export const IMAGES_L: Record<string, ImageSourcePropType> = {
   likewise: require("../../../assets/words/l/likewise.png"),
   limit: require("../../../assets/words/l/limit.png"),
   linear: require("../../../assets/words/l/linear.png"),
+  linger: require("../../../assets/words/l/linger.png"),
   linguistic: require("../../../assets/words/l/linguistic.png"),
   link: require("../../../assets/words/l/link.png"),
   liquid: require("../../../assets/words/l/liquid.png"),

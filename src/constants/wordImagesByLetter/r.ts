@@ -85,6 +85,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   refuge: require("../../../assets/words/r/refuge.png"),
   refund: require("../../../assets/words/r/refund.png"),
   refuse: require("../../../assets/words/r/refuse.png"),
+  refute: require("../../../assets/words/r/refute.png"),
   regain: require("../../../assets/words/r/regain.png"),
   regard: require("../../../assets/words/r/regard.png"),
   "regard for": require("../../../assets/words/r/regard-for.png"),

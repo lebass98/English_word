@@ -31,6 +31,7 @@ export const IMAGES_G: Record<string, ImageSourcePropType> = {
   geometry: require("../../../assets/words/g/geometry.png"),
   germ: require("../../../assets/words/g/germ.png"),
   german: require("../../../assets/words/g/german.png"),
+  germinate: require("../../../assets/words/g/germinate.png"),
   gesture: require("../../../assets/words/g/gesture.png"),
   "get along": require("../../../assets/words/g/get-along.png"),
   "get in the way of": require("../../../assets/words/g/get-in-the-way-of.png"),

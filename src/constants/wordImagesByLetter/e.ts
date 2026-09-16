@@ -127,6 +127,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   except: require("../../../assets/words/e/except.png"),
   exceptional: require("../../../assets/words/e/exceptional.png"),
   exceptionally: require("../../../assets/words/e/exceptionally.png"),
+  excess: require("../../../assets/words/e/excess.png"),
   excessive: require("../../../assets/words/e/excessive.png"),
   exchange: require("../../../assets/words/e/exchange.png"),
   excited: require("../../../assets/words/e/excited.png"),

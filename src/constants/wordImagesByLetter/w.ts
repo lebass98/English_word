@@ -50,6 +50,7 @@ export const IMAGES_W: Record<string, ImageSourcePropType> = {
   wild: require("../../../assets/words/w/wild.png"),
   wilderness: require("../../../assets/words/w/wilderness.png"),
   willing: require("../../../assets/words/w/willing.png"),
+  willingly: require("../../../assets/words/w/willingly.png"),
   win: require("../../../assets/words/w/win.png"),
   wing: require("../../../assets/words/w/wing.png"),
   wink: require("../../../assets/words/w/wink.png"),

@@ -53,6 +53,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   center: require("../../../assets/words/c/center.png"),
   central: require("../../../assets/words/c/central.png"),
   century: require("../../../assets/words/c/century.png"),
+  ceramic: require("../../../assets/words/c/ceramic.png"),
   ceremony: require("../../../assets/words/c/ceremony.png"),
   certain: require("../../../assets/words/c/certain.png"),
   chain: require("../../../assets/words/c/chain.png"),

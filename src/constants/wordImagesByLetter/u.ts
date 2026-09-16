@@ -18,6 +18,7 @@ export const IMAGES_U: Record<string, ImageSourcePropType> = {
   unconventional: require("../../../assets/words/u/unconventional.png"),
   unconvincing: require("../../../assets/words/u/unconvincing.png"),
   uncover: require("../../../assets/words/u/uncover.png"),
+  underestimate: require("../../../assets/words/u/underestimate.png"),
   undergo: require("../../../assets/words/u/undergo.png"),
   underground: require("../../../assets/words/u/underground.png"),
   underlie: require("../../../assets/words/u/underlie.png"),

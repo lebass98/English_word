@@ -66,6 +66,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   refresh: require("../../../assets/words/r/refresh.png"),
   refreshing: require("../../../assets/words/r/refreshing.png"),
   refrigerator: require("../../../assets/words/r/refrigerator.png"),
+  refuge: require("../../../assets/words/r/refuge.png"),
   refund: require("../../../assets/words/r/refund.png"),
   refuse: require("../../../assets/words/r/refuse.png"),
   regain: require("../../../assets/words/r/regain.png"),

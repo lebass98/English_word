@@ -43,6 +43,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   deer: require("../../../assets/words/d/deer.png"),
   defeat: require("../../../assets/words/d/defeat.png"),
   defend: require("../../../assets/words/d/defend.png"),
+  deference: require("../../../assets/words/d/deference.png"),
   deficiency: require("../../../assets/words/d/deficiency.png"),
   deficit: require("../../../assets/words/d/deficit.png"),
   define: require("../../../assets/words/d/define.png"),

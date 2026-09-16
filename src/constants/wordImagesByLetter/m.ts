@@ -149,6 +149,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   moreover: require("../../../assets/words/m/moreover.png"),
   "most of all": require("../../../assets/words/m/most-of-all.png"),
   mostly: require("../../../assets/words/m/mostly.png"),
+  motif: require("../../../assets/words/m/motif.png"),
   motivate: require("../../../assets/words/m/motivate.png"),
   mount: require("../../../assets/words/m/mount.png"),
   mouse: require("../../../assets/words/m/mouse.png"),

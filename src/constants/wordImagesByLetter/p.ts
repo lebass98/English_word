@@ -177,6 +177,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   prospect: require("../../../assets/words/p/prospect.png"),
   protect: require("../../../assets/words/p/protect.png"),
   protein: require("../../../assets/words/p/protein.png"),
+  protest: require("../../../assets/words/p/protest.png"),
   proud: require("../../../assets/words/p/proud.png"),
   prove: require("../../../assets/words/p/prove.png"),
   proverb: require("../../../assets/words/p/proverb.png"),

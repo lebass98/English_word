@@ -66,6 +66,7 @@ export const IMAGES_U: Record<string, ImageSourcePropType> = {
   unquestionable: require("../../../assets/words/u/unquestionable.png"),
   unrestricted: require("../../../assets/words/u/unrestricted.png"),
   unshakable: require("../../../assets/words/u/unshakable.png"),
+  unstable: require("../../../assets/words/u/unstable.png"),
   unusual: require("../../../assets/words/u/unusual.png"),
   unwanted: require("../../../assets/words/u/unwanted.png"),
   "up close": require("../../../assets/words/u/up-close.png"),

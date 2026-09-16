@@ -113,6 +113,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   coal: require("../../../assets/words/c/coal.png"),
   coast: require("../../../assets/words/c/coast.png"),
   coeducation: require("../../../assets/words/c/coeducation.png"),
+  coexist: require("../../../assets/words/c/coexist.png"),
   cognitive: require("../../../assets/words/c/cognitive.png"),
   coherent: require("../../../assets/words/c/coherent.png"),
   coil: require("../../../assets/words/c/coil.png"),

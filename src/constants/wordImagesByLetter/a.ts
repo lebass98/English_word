@@ -203,6 +203,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   apt: require("../../../assets/words/a/apt.png"),
   aptly: require("../../../assets/words/a/aptly.png"),
   aquarium: require("../../../assets/words/a/aquarium.png"),
+  arbitrary: require("../../../assets/words/a/arbitrary.png"),
   archaeologist: require("../../../assets/words/a/archaeologist.png"),
   architect: require("../../../assets/words/a/architect.png"),
   architecture: require("../../../assets/words/a/architecture.png"),

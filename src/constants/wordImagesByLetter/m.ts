@@ -166,6 +166,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   monetary: require("../../../assets/words/m/monetary.png"),
   monitor: require("../../../assets/words/m/monitor.png"),
   monk: require("../../../assets/words/m/monk.png"),
+  monopoly: require("../../../assets/words/m/monopoly.png"),
   monotonous: require("../../../assets/words/m/monotonous.png"),
   monument: require("../../../assets/words/m/monument.png"),
   mop: require("../../../assets/words/m/mop.png"),

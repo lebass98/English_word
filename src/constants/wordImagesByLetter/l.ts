@@ -66,6 +66,7 @@ export const IMAGES_L: Record<string, ImageSourcePropType> = {
   load: require("../../../assets/words/l/load.png"),
   loaf: require("../../../assets/words/l/loaf.png"),
   local: require("../../../assets/words/l/local.png"),
+  locale: require("../../../assets/words/l/locale.png"),
   locate: require("../../../assets/words/l/locate.png"),
   location: require("../../../assets/words/l/location.png"),
   lock: require("../../../assets/words/l/lock.png"),

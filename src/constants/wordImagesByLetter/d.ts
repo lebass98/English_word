@@ -111,6 +111,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   different: require("../../../assets/words/d/different.png"),
   differentiate: require("../../../assets/words/d/differentiate.png"),
   difficult: require("../../../assets/words/d/difficult.png"),
+  diffusion: require("../../../assets/words/d/diffusion.png"),
   dig: require("../../../assets/words/d/dig.png"),
   digest: require("../../../assets/words/d/digest.png"),
   diligent: require("../../../assets/words/d/diligent.png"),

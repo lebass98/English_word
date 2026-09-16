@@ -282,6 +282,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   authorize: require("../../../assets/words/a/authorize.png"),
   autograph: require("../../../assets/words/a/autograph.png"),
   automatic: require("../../../assets/words/a/automatic.png"),
+  automatically: require("../../../assets/words/a/automatically.png"),
   automobile: require("../../../assets/words/a/automobile.png"),
   available: require("../../../assets/words/a/available.png"),
   avenue: require("../../../assets/words/a/avenue.png"),

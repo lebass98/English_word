@@ -41,6 +41,7 @@ export const IMAGES_W: Record<string, ImageSourcePropType> = {
   whereas: require("../../../assets/words/w/whereas.png"),
   whether: require("../../../assets/words/w/whether.png"),
   while: require("../../../assets/words/w/while.png"),
+  whirl: require("../../../assets/words/w/whirl.png"),
   whisker: require("../../../assets/words/w/whisker.png"),
   whisper: require("../../../assets/words/w/whisper.png"),
   whistle: require("../../../assets/words/w/whistle.png"),

@@ -3,6 +3,7 @@ import { ImageSourcePropType } from "react-native";
 // "h" 로 시작하는 단어 그림. scripts/sync_word_images.py 가 만든다 (손으로 고치지 않는다)
 export const IMAGES_H: Record<string, ImageSourcePropType> = {
   habit: require("../../../assets/words/h/habit.png"),
+  half: require("../../../assets/words/h/half.png"),
   halt: require("../../../assets/words/h/halt.png"),
   hand: require("../../../assets/words/h/hand.png"),
   handle: require("../../../assets/words/h/handle.png"),

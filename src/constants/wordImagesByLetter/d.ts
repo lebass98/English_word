@@ -32,6 +32,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   deck: require("../../../assets/words/d/deck.png"),
   declare: require("../../../assets/words/d/declare.png"),
   decline: require("../../../assets/words/d/decline.png"),
+  decode: require("../../../assets/words/d/decode.png"),
   decorate: require("../../../assets/words/d/decorate.png"),
   decrease: require("../../../assets/words/d/decrease.png"),
   dedicate: require("../../../assets/words/d/dedicate.png"),

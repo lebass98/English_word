@@ -70,6 +70,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   character: require("../../../assets/words/c/character.png"),
   characteristics: require("../../../assets/words/c/characteristics.png"),
   charge: require("../../../assets/words/c/charge.png"),
+  charitable: require("../../../assets/words/c/charitable.png"),
   charity: require("../../../assets/words/c/charity.png"),
   charm: require("../../../assets/words/c/charm.png"),
   charming: require("../../../assets/words/c/charming.png"),

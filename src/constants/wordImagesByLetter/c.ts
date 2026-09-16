@@ -258,6 +258,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   cost: require("../../../assets/words/c/cost.png"),
   costly: require("../../../assets/words/c/costly.png"),
   costume: require("../../../assets/words/c/costume.png"),
+  cottage: require("../../../assets/words/c/cottage.png"),
   cotton: require("../../../assets/words/c/cotton.png"),
   cough: require("../../../assets/words/c/cough.png"),
   council: require("../../../assets/words/c/council.png"),

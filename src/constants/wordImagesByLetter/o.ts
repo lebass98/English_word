@@ -59,6 +59,7 @@ export const IMAGES_O: Record<string, ImageSourcePropType> = {
   oral: require("../../../assets/words/o/oral.png"),
   orbit: require("../../../assets/words/o/orbit.png"),
   orchard: require("../../../assets/words/o/orchard.png"),
+  ordeal: require("../../../assets/words/o/ordeal.png"),
   order: require("../../../assets/words/o/order.png"),
   ordinarily: require("../../../assets/words/o/ordinarily.png"),
   ordinary: require("../../../assets/words/o/ordinary.png"),

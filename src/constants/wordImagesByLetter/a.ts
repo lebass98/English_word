@@ -283,6 +283,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   "at the expense of": require("../../../assets/words/a/at-the-expense-of.png"),
   "at the same time": require("../../../assets/words/a/at-the-same-time.png"),
   athlete: require("../../../assets/words/a/athlete.png"),
+  athletic: require("../../../assets/words/a/athletic.png"),
   atmosphere: require("../../../assets/words/a/atmosphere.png"),
   atom: require("../../../assets/words/a/atom.png"),
   attach: require("../../../assets/words/a/attach.png"),

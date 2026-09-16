@@ -215,6 +215,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   assert: require("../../../assets/words/a/assert.png"),
   assertion: require("../../../assets/words/a/assertion.png"),
   assign: require("../../../assets/words/a/assign.png"),
+  assignment: require("../../../assets/words/a/assignment.png"),
   assist: require("../../../assets/words/a/assist.png"),
   associate: require("../../../assets/words/a/associate.png"),
   associated: require("../../../assets/words/a/associated.png"),

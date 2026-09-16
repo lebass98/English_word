@@ -181,4 +181,5 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   extract: require("../../../assets/words/e/extract.png"),
   extraordinary: require("../../../assets/words/e/extraordinary.png"),
   extreme: require("../../../assets/words/e/extreme.png"),
+  extrovert: require("../../../assets/words/e/extrovert.png"),
 };

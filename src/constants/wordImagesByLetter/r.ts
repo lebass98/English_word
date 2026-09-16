@@ -206,6 +206,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   review: require("../../../assets/words/r/review.png"),
   revise: require("../../../assets/words/r/revise.png"),
   revival: require("../../../assets/words/r/revival.png"),
+  revive: require("../../../assets/words/r/revive.png"),
   revolution: require("../../../assets/words/r/revolution.png"),
   revolutionize: require("../../../assets/words/r/revolutionize.png"),
   revolve: require("../../../assets/words/r/revolve.png"),

@@ -397,6 +397,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   suppose: require("../../../assets/words/s/suppose.png"),
   supposedly: require("../../../assets/words/s/supposedly.png"),
   suppress: require("../../../assets/words/s/suppress.png"),
+  supremacy: require("../../../assets/words/s/supremacy.png"),
   supreme: require("../../../assets/words/s/supreme.png"),
   surface: require("../../../assets/words/s/surface.png"),
   surgery: require("../../../assets/words/s/surgery.png"),

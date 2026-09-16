@@ -69,6 +69,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   pension: require("../../../assets/words/p/pension.png"),
   pepper: require("../../../assets/words/p/pepper.png"),
   perceive: require("../../../assets/words/p/perceive.png"),
+  percentage: require("../../../assets/words/p/percentage.png"),
   perceptible: require("../../../assets/words/p/perceptible.png"),
   perception: require("../../../assets/words/p/perception.png"),
   perceptual: require("../../../assets/words/p/perceptual.png"),

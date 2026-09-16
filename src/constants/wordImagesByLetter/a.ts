@@ -233,6 +233,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   approve: require("../../../assets/words/a/approve.png"),
   approximately: require("../../../assets/words/a/approximately.png"),
   apt: require("../../../assets/words/a/apt.png"),
+  aptitude: require("../../../assets/words/a/aptitude.png"),
   aptly: require("../../../assets/words/a/aptly.png"),
   aquarium: require("../../../assets/words/a/aquarium.png"),
   arbitrary: require("../../../assets/words/a/arbitrary.png"),

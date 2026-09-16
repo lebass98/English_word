@@ -78,6 +78,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   advantage: require("../../../assets/words/a/advantage.png"),
   advent: require("../../../assets/words/a/advent.png"),
   adventure: require("../../../assets/words/a/adventure.png"),
+  adventurous: require("../../../assets/words/a/adventurous.png"),
   adversary: require("../../../assets/words/a/adversary.png"),
   advertise: require("../../../assets/words/a/advertise.png"),
   advice: require("../../../assets/words/a/advice.png"),

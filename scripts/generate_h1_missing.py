@@ -35,6 +35,45 @@ def run(cmd, **kw):
     return subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True, **kw)
 
 
+def rebase_in_progress():
+    return os.path.isdir(os.path.join(ROOT, ".git/rebase-merge")) or \
+        os.path.isdir(os.path.join(ROOT, ".git/rebase-apply"))
+
+
+def sync():
+    """최신을 받아 내 커밋 위에 얹는다. 리베이스가 멈춘 채로 두지 않는다.
+
+    멈춘 리베이스를 그대로 두면 저장소가 분리(detached) 상태가 되어
+    방금 만든 그림이 작업 폴더에서 사라지고, 올리기는 "behind its remote" 로
+    실패하며, 다음 회차가 같은 단어를 또 그린다. 그래서 여기서 끝까지 정리한다.
+      - 이미 올라와 내용이 비어 버린 커밋은 건너뛴다
+      - 같은 단어 그림이 겹치면 원격 쪽을 남긴다 (사용자 결정)
+    정리하지 못하면 리베이스를 되돌리고 False 를 돌려준다.
+    """
+    env = dict(os.environ, GIT_EDITOR="true")
+    run(["git", "pull", "--rebase", "--autostash", "origin", "main"], env=env)
+
+    for _ in range(200):
+        if not rebase_in_progress():
+            break
+        conflicts = [f for f in run(["git", "diff", "--name-only",
+                                     "--diff-filter=U"]).stdout.split("\n") if f]
+        if conflicts:
+            # 리베이스 중에는 --ours 가 원격(받은) 쪽이다
+            run(["git", "checkout", "--ours", "--"] + conflicts)
+            run(["git", "add", "--"] + conflicts)
+            if run(["git", "rebase", "--continue"], env=env).returncode != 0:
+                run(["git", "rebase", "--skip"], env=env)
+        else:
+            run(["git", "rebase", "--skip"], env=env)
+
+    if rebase_in_progress():
+        run(["git", "rebase", "--abort"], env=env)
+        print("[경고] 리베이스를 정리하지 못해 되돌렸다", flush=True)
+        return False
+    return True
+
+
 def registered_keys():
     """등록표에 이미 올라온 열쇠"""
     keys = set()
@@ -119,8 +158,11 @@ def main():
         if args.limit and done >= args.limit:
             break
 
-        # 다른 컴퓨터가 먼저 올렸을 수 있으니 매번 최신을 받고 목록을 다시 센다
-        run(["git", "pull", "--rebase", "--autostash", "origin", "main"])
+        # 다른 컴퓨터가 먼저 올렸을 수 있으니 매번 최신을 받고 목록을 다시 센다.
+        # 받아 오지 못한 채로 가면 목록이 어긋나 같은 단어를 또 그리게 되므로 멈춘다
+        if not sync():
+            print("최신을 받아 오지 못해 멈춘다", flush=True)
+            break
         queue = build_queue(levels)
         if not queue:
             print("그릴 단어가 없다", flush=True)
@@ -161,10 +203,18 @@ def main():
             failed += 1
             continue
 
-        run(["git", "pull", "--rebase", "--autostash", "origin", "main"])
-        p = run(["git", "push", "origin", "main"])
-        if p.returncode != 0:
-            print(f"[경고] {word} 올리기 실패 (커밋은 로컬에 있음): {p.stderr[-200:]}", flush=True)
+        # 올릴 때도 먼저 최신을 받아 얹는다. 한 번 실패하면 다시 받아 한 번 더 해 본다
+        for attempt in range(2):
+            if not sync():
+                break
+            p = run(["git", "push", "origin", "main"])
+            if p.returncode == 0:
+                break
+            if attempt == 1:
+                print(f"[경고] {word} 올리기 실패 (커밋은 로컬에 있음): "
+                      f"{p.stderr[-200:]}", flush=True)
+            else:
+                time.sleep(3)
 
         done += 1
         print(f"[완료 {done}] {it['level']} U{it['unit']} {word} "

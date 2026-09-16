@@ -60,6 +60,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   delinquent: require("../../../assets/words/d/delinquent.png"),
   deliver: require("../../../assets/words/d/deliver.png"),
   delivery: require("../../../assets/words/d/delivery.png"),
+  delusion: require("../../../assets/words/d/delusion.png"),
   demand: require("../../../assets/words/d/demand.png"),
   democracy: require("../../../assets/words/d/democracy.png"),
   demolish: require("../../../assets/words/d/demolish.png"),

@@ -49,6 +49,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   "accustomed to": require("../../../assets/words/a/accustomed-to.png"),
   ache: require("../../../assets/words/a/ache.png"),
   achieve: require("../../../assets/words/a/achieve.png"),
+  acknowledge: require("../../../assets/words/a/acknowledge.png"),
   acquire: require("../../../assets/words/a/acquire.png"),
   acquisition: require("../../../assets/words/a/acquisition.png"),
   active: require("../../../assets/words/a/active.png"),

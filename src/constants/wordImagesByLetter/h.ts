@@ -103,4 +103,5 @@ export const IMAGES_H: Record<string, ImageSourcePropType> = {
   hut: require("../../../assets/words/h/hut.png"),
   hybrid: require("../../../assets/words/h/hybrid.png"),
   hydrogen: require("../../../assets/words/h/hydrogen.png"),
+  hygiene: require("../../../assets/words/h/hygiene.png"),
 };

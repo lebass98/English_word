@@ -294,6 +294,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   provided: require("../../../assets/words/p/provided.png"),
   provocation: require("../../../assets/words/p/provocation.png"),
   provoke: require("../../../assets/words/p/provoke.png"),
+  psychological: require("../../../assets/words/p/psychological.png"),
   psychology: require("../../../assets/words/p/psychology.png"),
   public: require("../../../assets/words/p/public.png"),
   publicity: require("../../../assets/words/p/publicity.png"),

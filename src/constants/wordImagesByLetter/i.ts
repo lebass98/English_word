@@ -30,6 +30,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   immoral: require("../../../assets/words/i/immoral.png"),
   immune: require("../../../assets/words/i/immune.png"),
   impact: require("../../../assets/words/i/impact.png"),
+  impart: require("../../../assets/words/i/impart.png"),
   impartial: require("../../../assets/words/i/impartial.png"),
   impartially: require("../../../assets/words/i/impartially.png"),
   impede: require("../../../assets/words/i/impede.png"),

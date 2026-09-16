@@ -92,6 +92,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   tissue: require("../../../assets/words/t/tissue.png"),
   title: require("../../../assets/words/t/title.png"),
   together: require("../../../assets/words/t/together.png"),
+  tolerance: require("../../../assets/words/t/tolerance.png"),
   tolerate: require("../../../assets/words/t/tolerate.png"),
   toll: require("../../../assets/words/t/toll.png"),
   tomb: require("../../../assets/words/t/tomb.png"),

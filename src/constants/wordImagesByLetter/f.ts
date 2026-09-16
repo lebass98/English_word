@@ -62,6 +62,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   filter: require("../../../assets/words/f/filter.png"),
   finally: require("../../../assets/words/f/finally.png"),
   finance: require("../../../assets/words/f/finance.png"),
+  fine: require("../../../assets/words/f/fine.png"),
   firm: require("../../../assets/words/f/firm.png"),
   fit: require("../../../assets/words/f/fit.png"),
   flag: require("../../../assets/words/f/flag.png"),

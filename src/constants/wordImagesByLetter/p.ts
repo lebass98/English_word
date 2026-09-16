@@ -198,6 +198,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   presumably: require("../../../assets/words/p/presumably.png"),
   pretend: require("../../../assets/words/p/pretend.png"),
   pretty: require("../../../assets/words/p/pretty.png"),
+  prevail: require("../../../assets/words/p/prevail.png"),
   prevent: require("../../../assets/words/p/prevent.png"),
   previous: require("../../../assets/words/p/previous.png"),
   prey: require("../../../assets/words/p/prey.png"),

@@ -92,6 +92,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   "set aside": require("../../../assets/words/s/set-aside.png"),
   "set in motion": require("../../../assets/words/s/set-in-motion.png"),
   "set off": require("../../../assets/words/s/set-off.png"),
+  "set out": require("../../../assets/words/s/set-out.png"),
   "set up": require("../../../assets/words/s/set-up.png"),
   setback: require("../../../assets/words/s/setback.png"),
   settle: require("../../../assets/words/s/settle.png"),

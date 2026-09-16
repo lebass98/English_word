@@ -52,6 +52,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   regret: require("../../../assets/words/r/regret.png"),
   regular: require("../../../assets/words/r/regular.png"),
   regulate: require("../../../assets/words/r/regulate.png"),
+  reimbursement: require("../../../assets/words/r/reimbursement.png"),
   rein: require("../../../assets/words/r/rein.png"),
   reinforce: require("../../../assets/words/r/reinforce.png"),
   reject: require("../../../assets/words/r/reject.png"),

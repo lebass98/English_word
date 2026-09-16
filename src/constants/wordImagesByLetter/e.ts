@@ -86,6 +86,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   enrich: require("../../../assets/words/e/enrich.png"),
   ensue: require("../../../assets/words/e/ensue.png"),
   ensure: require("../../../assets/words/e/ensure.png"),
+  entail: require("../../../assets/words/e/entail.png"),
   enter: require("../../../assets/words/e/enter.png"),
   enterprise: require("../../../assets/words/e/enterprise.png"),
   entertain: require("../../../assets/words/e/entertain.png"),

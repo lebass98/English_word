@@ -141,6 +141,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   excited: require("../../../assets/words/e/excited.png"),
   exclaim: require("../../../assets/words/e/exclaim.png"),
   exclude: require("../../../assets/words/e/exclude.png"),
+  exclusively: require("../../../assets/words/e/exclusively.png"),
   excuse: require("../../../assets/words/e/excuse.png"),
   execute: require("../../../assets/words/e/execute.png"),
   executive: require("../../../assets/words/e/executive.png"),

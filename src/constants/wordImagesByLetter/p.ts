@@ -187,6 +187,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   presence: require("../../../assets/words/p/presence.png"),
   present: require("../../../assets/words/p/present.png"),
   presentation: require("../../../assets/words/p/presentation.png"),
+  presently: require("../../../assets/words/p/presently.png"),
   preserve: require("../../../assets/words/p/preserve.png"),
   president: require("../../../assets/words/p/president.png"),
   press: require("../../../assets/words/p/press.png"),

@@ -33,6 +33,7 @@ export const IMAGES_V: Record<string, ImageSourcePropType> = {
   versatile: require("../../../assets/words/v/versatile.png"),
   version: require("../../../assets/words/v/version.png"),
   vertical: require("../../../assets/words/v/vertical.png"),
+  very: require("../../../assets/words/v/very.png"),
   vessel: require("../../../assets/words/v/vessel.png"),
   via: require("../../../assets/words/v/via.png"),
   vibrate: require("../../../assets/words/v/vibrate.png"),

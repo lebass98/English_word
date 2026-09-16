@@ -51,6 +51,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   employ: require("../../../assets/words/e/employ.png"),
   empty: require("../../../assets/words/e/empty.png"),
   enable: require("../../../assets/words/e/enable.png"),
+  enact: require("../../../assets/words/e/enact.png"),
   enclose: require("../../../assets/words/e/enclose.png"),
   encounter: require("../../../assets/words/e/encounter.png"),
   encourage: require("../../../assets/words/e/encourage.png"),

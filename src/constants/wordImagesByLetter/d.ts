@@ -48,6 +48,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   definite: require("../../../assets/words/d/definite.png"),
   definitely: require("../../../assets/words/d/definitely.png"),
   deflate: require("../../../assets/words/d/deflate.png"),
+  deflect: require("../../../assets/words/d/deflect.png"),
   deforestation: require("../../../assets/words/d/deforestation.png"),
   degrade: require("../../../assets/words/d/degrade.png"),
   degree: require("../../../assets/words/d/degree.png"),

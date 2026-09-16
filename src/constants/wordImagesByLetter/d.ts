@@ -225,6 +225,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   donor: require("../../../assets/words/d/donor.png"),
   doom: require("../../../assets/words/d/doom.png"),
   dormitory: require("../../../assets/words/d/dormitory.png"),
+  dose: require("../../../assets/words/d/dose.png"),
   double: require("../../../assets/words/d/double.png"),
   doubt: require("../../../assets/words/d/doubt.png"),
   downtown: require("../../../assets/words/d/downtown.png"),

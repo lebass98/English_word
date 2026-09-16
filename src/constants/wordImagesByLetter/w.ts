@@ -5,6 +5,7 @@ export const IMAGES_W: Record<string, ImageSourcePropType> = {
   wage: require("../../../assets/words/w/wage.png"),
   wagon: require("../../../assets/words/w/wagon.png"),
   waist: require("../../../assets/words/w/waist.png"),
+  waive: require("../../../assets/words/w/waive.png"),
   wake: require("../../../assets/words/w/wake.png"),
   wallet: require("../../../assets/words/w/wallet.png"),
   wander: require("../../../assets/words/w/wander.png"),

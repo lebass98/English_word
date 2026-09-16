@@ -47,6 +47,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   embargo: require("../../../assets/words/e/embargo.png"),
   embark: require("../../../assets/words/e/embark.png"),
   embarrassed: require("../../../assets/words/e/embarrassed.png"),
+  embassy: require("../../../assets/words/e/embassy.png"),
   embed: require("../../../assets/words/e/embed.png"),
   embody: require("../../../assets/words/e/embody.png"),
   embrace: require("../../../assets/words/e/embrace.png"),

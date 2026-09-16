@@ -134,6 +134,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   skill: require("../../../assets/words/s/skill.png"),
   skin: require("../../../assets/words/s/skin.png"),
   skip: require("../../../assets/words/s/skip.png"),
+  slaughter: require("../../../assets/words/s/slaughter.png"),
   slave: require("../../../assets/words/s/slave.png"),
   sleep: require("../../../assets/words/s/sleep.png"),
   slice: require("../../../assets/words/s/slice.png"),

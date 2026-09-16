@@ -9,6 +9,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   facilitate: require("../../../assets/words/f/facilitate.png"),
   facility: require("../../../assets/words/f/facility.png"),
   fact: require("../../../assets/words/f/fact.png"),
+  faction: require("../../../assets/words/f/faction.png"),
   factor: require("../../../assets/words/f/factor.png"),
   factory: require("../../../assets/words/f/factory.png"),
   factual: require("../../../assets/words/f/factual.png"),

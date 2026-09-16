@@ -181,6 +181,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   progress: require("../../../assets/words/p/progress.png"),
   prohibit: require("../../../assets/words/p/prohibit.png"),
   project: require("../../../assets/words/p/project.png"),
+  projection: require("../../../assets/words/p/projection.png"),
   promise: require("../../../assets/words/p/promise.png"),
   promote: require("../../../assets/words/p/promote.png"),
   promptly: require("../../../assets/words/p/promptly.png"),

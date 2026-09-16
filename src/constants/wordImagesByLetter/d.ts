@@ -121,6 +121,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   detergent: require("../../../assets/words/d/detergent.png"),
   deterioration: require("../../../assets/words/d/deterioration.png"),
   determine: require("../../../assets/words/d/determine.png"),
+  detour: require("../../../assets/words/d/detour.png"),
   detract: require("../../../assets/words/d/detract.png"),
   devastate: require("../../../assets/words/d/devastate.png"),
   develop: require("../../../assets/words/d/develop.png"),

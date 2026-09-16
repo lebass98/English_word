@@ -47,6 +47,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   defeat: require("../../../assets/words/d/defeat.png"),
   defect: require("../../../assets/words/d/defect.png"),
   defend: require("../../../assets/words/d/defend.png"),
+  defer: require("../../../assets/words/d/defer.png"),
   deference: require("../../../assets/words/d/deference.png"),
   deficiency: require("../../../assets/words/d/deficiency.png"),
   deficit: require("../../../assets/words/d/deficit.png"),

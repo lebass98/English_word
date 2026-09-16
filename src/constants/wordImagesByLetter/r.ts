@@ -108,6 +108,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   respective: require("../../../assets/words/r/respective.png"),
   respond: require("../../../assets/words/r/respond.png"),
   response: require("../../../assets/words/r/response.png"),
+  responsibility: require("../../../assets/words/r/responsibility.png"),
   responsible: require("../../../assets/words/r/responsible.png"),
   rest: require("../../../assets/words/r/rest.png"),
   restaurant: require("../../../assets/words/r/restaurant.png"),

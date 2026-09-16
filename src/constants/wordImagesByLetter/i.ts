@@ -195,6 +195,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   intimate: require("../../../assets/words/i/intimate.png"),
   intimately: require("../../../assets/words/i/intimately.png"),
   intimation: require("../../../assets/words/i/intimation.png"),
+  intricate: require("../../../assets/words/i/intricate.png"),
   introduce: require("../../../assets/words/i/introduce.png"),
   introduction: require("../../../assets/words/i/introduction.png"),
   intuition: require("../../../assets/words/i/intuition.png"),

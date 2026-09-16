@@ -101,6 +101,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   indicate: require("../../../assets/words/i/indicate.png"),
   indication: require("../../../assets/words/i/indication.png"),
   indifferent: require("../../../assets/words/i/indifferent.png"),
+  indispensable: require("../../../assets/words/i/indispensable.png"),
   individual: require("../../../assets/words/i/individual.png"),
   industrial: require("../../../assets/words/i/industrial.png"),
   industry: require("../../../assets/words/i/industry.png"),

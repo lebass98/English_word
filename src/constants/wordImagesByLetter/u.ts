@@ -27,6 +27,7 @@ export const IMAGES_U: Record<string, ImageSourcePropType> = {
   undermine: require("../../../assets/words/u/undermine.png"),
   underscore: require("../../../assets/words/u/underscore.png"),
   understand: require("../../../assets/words/u/understand.png"),
+  understanding: require("../../../assets/words/u/understanding.png"),
   understood: require("../../../assets/words/u/understood.png"),
   undertake: require("../../../assets/words/u/undertake.png"),
   undertaking: require("../../../assets/words/u/undertaking.png"),

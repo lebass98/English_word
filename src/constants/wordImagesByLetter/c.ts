@@ -18,6 +18,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   capital: require("../../../assets/words/c/capital.png"),
   captain: require("../../../assets/words/c/captain.png"),
   capture: require("../../../assets/words/c/capture.png"),
+  carbon: require("../../../assets/words/c/carbon.png"),
   care: require("../../../assets/words/c/care.png"),
   "care about": require("../../../assets/words/c/care-about.png"),
   career: require("../../../assets/words/c/career.png"),

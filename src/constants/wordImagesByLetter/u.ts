@@ -17,6 +17,7 @@ export const IMAGES_U: Record<string, ImageSourcePropType> = {
   unemployment: require("../../../assets/words/u/unemployment.png"),
   unexpected: require("../../../assets/words/u/unexpected.png"),
   unfair: require("../../../assets/words/u/unfair.png"),
+  unforgettable: require("../../../assets/words/u/unforgettable.png"),
   unfortunately: require("../../../assets/words/u/unfortunately.png"),
   unification: require("../../../assets/words/u/unification.png"),
   uniform: require("../../../assets/words/u/uniform.png"),

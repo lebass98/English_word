@@ -55,6 +55,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   chance: require("../../../assets/words/c/chance.png"),
   change: require("../../../assets/words/c/change.png"),
   channel: require("../../../assets/words/c/channel.png"),
+  character: require("../../../assets/words/c/character.png"),
   characteristics: require("../../../assets/words/c/characteristics.png"),
   charge: require("../../../assets/words/c/charge.png"),
   charm: require("../../../assets/words/c/charm.png"),

@@ -9,6 +9,7 @@ export const IMAGES_H: Record<string, ImageSourcePropType> = {
   halt: require("../../../assets/words/h/halt.png"),
   hand: require("../../../assets/words/h/hand.png"),
   handle: require("../../../assets/words/h/handle.png"),
+  "hands-on": require("../../../assets/words/h/hands-on.png"),
   handshake: require("../../../assets/words/h/handshake.png"),
   handsome: require("../../../assets/words/h/handsome.png"),
   hang: require("../../../assets/words/h/hang.png"),

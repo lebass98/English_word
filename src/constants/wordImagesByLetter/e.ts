@@ -155,6 +155,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   evident: require("../../../assets/words/e/evident.png"),
   evil: require("../../../assets/words/e/evil.png"),
   evoke: require("../../../assets/words/e/evoke.png"),
+  evolution: require("../../../assets/words/e/evolution.png"),
   evolve: require("../../../assets/words/e/evolve.png"),
   exact: require("../../../assets/words/e/exact.png"),
   exactly: require("../../../assets/words/e/exactly.png"),

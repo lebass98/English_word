@@ -52,6 +52,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   recruiting: require("../../../assets/words/r/recruiting.png"),
   rectangular: require("../../../assets/words/r/rectangular.png"),
   recur: require("../../../assets/words/r/recur.png"),
+  recurrent: require("../../../assets/words/r/recurrent.png"),
   reduce: require("../../../assets/words/r/reduce.png"),
   refer: require("../../../assets/words/r/refer.png"),
   referee: require("../../../assets/words/r/referee.png"),

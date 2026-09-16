@@ -49,6 +49,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   deforestation: require("../../../assets/words/d/deforestation.png"),
   degrade: require("../../../assets/words/d/degrade.png"),
   degree: require("../../../assets/words/d/degree.png"),
+  dehydrate: require("../../../assets/words/d/dehydrate.png"),
   delay: require("../../../assets/words/d/delay.png"),
   deliberate: require("../../../assets/words/d/deliberate.png"),
   deliberately: require("../../../assets/words/d/deliberately.png"),

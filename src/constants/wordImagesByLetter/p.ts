@@ -195,6 +195,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   press: require("../../../assets/words/p/press.png"),
   pressure: require("../../../assets/words/p/pressure.png"),
   prestigious: require("../../../assets/words/p/prestigious.png"),
+  presumably: require("../../../assets/words/p/presumably.png"),
   pretend: require("../../../assets/words/p/pretend.png"),
   pretty: require("../../../assets/words/p/pretty.png"),
   prevent: require("../../../assets/words/p/prevent.png"),

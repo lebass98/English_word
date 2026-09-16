@@ -109,6 +109,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   rescue: require("../../../assets/words/r/rescue.png"),
   research: require("../../../assets/words/r/research.png"),
   resemble: require("../../../assets/words/r/resemble.png"),
+  resent: require("../../../assets/words/r/resent.png"),
   resentment: require("../../../assets/words/r/resentment.png"),
   reservation: require("../../../assets/words/r/reservation.png"),
   reserve: require("../../../assets/words/r/reserve.png"),

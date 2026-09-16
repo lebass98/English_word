@@ -115,6 +115,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   rendering: require("../../../assets/words/r/rendering.png"),
   renew: require("../../../assets/words/r/renew.png"),
   renewable: require("../../../assets/words/r/renewable.png"),
+  renounce: require("../../../assets/words/r/renounce.png"),
   renovate: require("../../../assets/words/r/renovate.png"),
   renowned: require("../../../assets/words/r/renowned.png"),
   rent: require("../../../assets/words/r/rent.png"),

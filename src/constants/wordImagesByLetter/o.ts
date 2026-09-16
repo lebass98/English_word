@@ -21,6 +21,7 @@ export const IMAGES_O: Record<string, ImageSourcePropType> = {
   obvious: require("../../../assets/words/o/obvious.png"),
   occasion: require("../../../assets/words/o/occasion.png"),
   occasional: require("../../../assets/words/o/occasional.png"),
+  occasionally: require("../../../assets/words/o/occasionally.png"),
   occupation: require("../../../assets/words/o/occupation.png"),
   occupy: require("../../../assets/words/o/occupy.png"),
   occur: require("../../../assets/words/o/occur.png"),

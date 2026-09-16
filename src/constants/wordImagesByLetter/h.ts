@@ -42,6 +42,7 @@ export const IMAGES_H: Record<string, ImageSourcePropType> = {
   height: require("../../../assets/words/h/height.png"),
   heighten: require("../../../assets/words/h/heighten.png"),
   helpless: require("../../../assets/words/h/helpless.png"),
+  hemisphere: require("../../../assets/words/h/hemisphere.png"),
   hence: require("../../../assets/words/h/hence.png"),
   herd: require("../../../assets/words/h/herd.png"),
   heritage: require("../../../assets/words/h/heritage.png"),

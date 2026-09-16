@@ -91,6 +91,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   relative: require("../../../assets/words/r/relative.png"),
   relatively: require("../../../assets/words/r/relatively.png"),
   relax: require("../../../assets/words/r/relax.png"),
+  relaxation: require("../../../assets/words/r/relaxation.png"),
   relay: require("../../../assets/words/r/relay.png"),
   release: require("../../../assets/words/r/release.png"),
   relevance: require("../../../assets/words/r/relevance.png"),

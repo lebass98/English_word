@@ -93,6 +93,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   serene: require("../../../assets/words/s/serene.png"),
   series: require("../../../assets/words/s/series.png"),
   serious: require("../../../assets/words/s/serious.png"),
+  seriously: require("../../../assets/words/s/seriously.png"),
   seriousness: require("../../../assets/words/s/seriousness.png"),
   sermon: require("../../../assets/words/s/sermon.png"),
   servant: require("../../../assets/words/s/servant.png"),

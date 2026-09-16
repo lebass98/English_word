@@ -5,6 +5,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   "B as well as A": require("../../../assets/words/b/B-as-well-as-A.png"),
   "back and forth": require("../../../assets/words/b/back-and-forth.png"),
   backbone: require("../../../assets/words/b/backbone.png"),
+  backfire: require("../../../assets/words/b/backfire.png"),
   background: require("../../../assets/words/b/background.png"),
   badly: require("../../../assets/words/b/badly.png"),
   baggage: require("../../../assets/words/b/baggage.png"),

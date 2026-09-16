@@ -128,6 +128,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   inhabitant: require("../../../assets/words/i/inhabitant.png"),
   inherent: require("../../../assets/words/i/inherent.png"),
   inherently: require("../../../assets/words/i/inherently.png"),
+  inhibit: require("../../../assets/words/i/inhibit.png"),
   initial: require("../../../assets/words/i/initial.png"),
   injure: require("../../../assets/words/i/injure.png"),
   inner: require("../../../assets/words/i/inner.png"),

@@ -278,6 +278,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   attentive: require("../../../assets/words/a/attentive.png"),
   attire: require("../../../assets/words/a/attire.png"),
   attitude: require("../../../assets/words/a/attitude.png"),
+  attorney: require("../../../assets/words/a/attorney.png"),
   attract: require("../../../assets/words/a/attract.png"),
   attractive: require("../../../assets/words/a/attractive.png"),
   attribute: require("../../../assets/words/a/attribute.png"),

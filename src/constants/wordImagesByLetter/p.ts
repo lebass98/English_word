@@ -185,6 +185,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   property: require("../../../assets/words/p/property.png"),
   proportion: require("../../../assets/words/p/proportion.png"),
   prospect: require("../../../assets/words/p/prospect.png"),
+  prosperous: require("../../../assets/words/p/prosperous.png"),
   protect: require("../../../assets/words/p/protect.png"),
   protein: require("../../../assets/words/p/protein.png"),
   protest: require("../../../assets/words/p/protest.png"),

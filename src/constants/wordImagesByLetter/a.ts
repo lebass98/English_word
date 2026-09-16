@@ -121,6 +121,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   allocate: require("../../../assets/words/a/allocate.png"),
   allow: require("../../../assets/words/a/allow.png"),
   allowance: require("../../../assets/words/a/allowance.png"),
+  ally: require("../../../assets/words/a/ally.png"),
   almost: require("../../../assets/words/a/almost.png"),
   alone: require("../../../assets/words/a/alone.png"),
   along: require("../../../assets/words/a/along.png"),

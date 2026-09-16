@@ -47,6 +47,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   throat: require("../../../assets/words/t/throat.png"),
   throw: require("../../../assets/words/t/throw.png"),
   thumb: require("../../../assets/words/t/thumb.png"),
+  thus: require("../../../assets/words/t/thus.png"),
   ticket: require("../../../assets/words/t/ticket.png"),
   tide: require("../../../assets/words/t/tide.png"),
   tidy: require("../../../assets/words/t/tidy.png"),

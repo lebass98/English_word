@@ -63,6 +63,15 @@ npm run lint     # ESLint
 - 중3 51단원 빠진 그림 10장 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
   - 대상: concentrate, look after, fill out, invest, depth, illness, be about to, sew, examine, poison
 
+### 2026-09-16
+- 고1 빠진 그림 170장 생성·등록 완료 (512x512, 장당 약 52초, 실패 0)
+- 그림 작업이 멈춘 리베이스를 스스로 정리하도록 `generate_h1_missing.py` 수정
+  - `pull --rebase` 결과를 확인하지 않아 저장소가 분리 상태로 남으면, 방금 만든 그림이
+    작업 폴더에서 사라지고 올리기가 실패하며 다음 회차가 같은 단어를 또 그렸다 (`prey` 3회)
+  - `sync()` 가 빈 커밋은 건너뛰고 겹친 그림은 원격 쪽을 남겨 정리한다. 정리 못 하면 되돌리고 멈춘다
+  - 올리기는 1회 재시도한다
+- `scripts/push_watchdog.sh` 추가 — 올라가지 못하고 로컬에 남은 커밋을 주기적으로 대신 올린다
+
 ### 2026-09-15
 - 중3 50단원 빠진 그림 12장 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
   - 대상: potential, relieve, compete, talent, cut down, waterproof, conflict, look back on, auditorium, ash, quantity, script

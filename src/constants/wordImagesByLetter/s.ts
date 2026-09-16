@@ -235,6 +235,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   spade: require("../../../assets/words/s/spade.png"),
   spare: require("../../../assets/words/s/spare.png"),
   spark: require("../../../assets/words/s/spark.png"),
+  spatial: require("../../../assets/words/s/spatial.png"),
   spear: require("../../../assets/words/s/spear.png"),
   special: require("../../../assets/words/s/special.png"),
   specialize: require("../../../assets/words/s/specialize.png"),

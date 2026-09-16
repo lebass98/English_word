@@ -189,6 +189,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   execute: require("../../../assets/words/e/execute.png"),
   executive: require("../../../assets/words/e/executive.png"),
   exemplary: require("../../../assets/words/e/exemplary.png"),
+  exemplify: require("../../../assets/words/e/exemplify.png"),
   exercise: require("../../../assets/words/e/exercise.png"),
   exhausted: require("../../../assets/words/e/exhausted.png"),
   exhaustively: require("../../../assets/words/e/exhaustively.png"),

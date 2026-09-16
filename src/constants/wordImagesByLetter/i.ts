@@ -52,6 +52,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   imprint: require("../../../assets/words/i/imprint.png"),
   improve: require("../../../assets/words/i/improve.png"),
   improvise: require("../../../assets/words/i/improvise.png"),
+  impulse: require("../../../assets/words/i/impulse.png"),
   "in a respect": require("../../../assets/words/i/in-a-respect.png"),
   "in addition to": require("../../../assets/words/i/in-addition-to.png"),
   "in advance": require("../../../assets/words/i/in-advance.png"),

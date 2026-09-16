@@ -60,6 +60,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   sensitive: require("../../../assets/words/s/sensitive.png"),
   sensory: require("../../../assets/words/s/sensory.png"),
   sentence: require("../../../assets/words/s/sentence.png"),
+  sentiment: require("../../../assets/words/s/sentiment.png"),
   separate: require("../../../assets/words/s/separate.png"),
   sequence: require("../../../assets/words/s/sequence.png"),
   series: require("../../../assets/words/s/series.png"),

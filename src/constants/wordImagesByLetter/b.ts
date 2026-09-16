@@ -94,6 +94,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   bite: require("../../../assets/words/b/bite.png"),
   bitter: require("../../../assets/words/b/bitter.png"),
   blame: require("../../../assets/words/b/blame.png"),
+  blank: require("../../../assets/words/b/blank.png"),
   blanket: require("../../../assets/words/b/blanket.png"),
   bleed: require("../../../assets/words/b/bleed.png"),
   blend: require("../../../assets/words/b/blend.png"),

@@ -48,6 +48,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   industrial: require("../../../assets/words/i/industrial.png"),
   industry: require("../../../assets/words/i/industry.png"),
   infection: require("../../../assets/words/i/infection.png"),
+  inferior: require("../../../assets/words/i/inferior.png"),
   influence: require("../../../assets/words/i/influence.png"),
   inform: require("../../../assets/words/i/inform.png"),
   information: require("../../../assets/words/i/information.png"),

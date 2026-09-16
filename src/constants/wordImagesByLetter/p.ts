@@ -220,6 +220,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   principally: require("../../../assets/words/p/principally.png"),
   principle: require("../../../assets/words/p/principle.png"),
   prior: require("../../../assets/words/p/prior.png"),
+  "prior to": require("../../../assets/words/p/prior-to.png"),
   prison: require("../../../assets/words/p/prison.png"),
   private: require("../../../assets/words/p/private.png"),
   privilege: require("../../../assets/words/p/privilege.png"),

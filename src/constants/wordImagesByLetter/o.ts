@@ -7,6 +7,7 @@ export const IMAGES_O: Record<string, ImageSourcePropType> = {
   obey: require("../../../assets/words/o/obey.png"),
   object: require("../../../assets/words/o/object.png"),
   objective: require("../../../assets/words/o/objective.png"),
+  obligation: require("../../../assets/words/o/obligation.png"),
   obliged: require("../../../assets/words/o/obliged.png"),
   obscure: require("../../../assets/words/o/obscure.png"),
   observably: require("../../../assets/words/o/observably.png"),

@@ -253,6 +253,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   invitation: require("../../../assets/words/i/invitation.png"),
   invite: require("../../../assets/words/i/invite.png"),
   invoice: require("../../../assets/words/i/invoice.png"),
+  involuntary: require("../../../assets/words/i/involuntary.png"),
   involve: require("../../../assets/words/i/involve.png"),
   iron: require("../../../assets/words/i/iron.png"),
   irreparable: require("../../../assets/words/i/irreparable.png"),

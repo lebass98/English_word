@@ -191,6 +191,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   dominant: require("../../../assets/words/d/dominant.png"),
   dominate: require("../../../assets/words/d/dominate.png"),
   donate: require("../../../assets/words/d/donate.png"),
+  donor: require("../../../assets/words/d/donor.png"),
   doom: require("../../../assets/words/d/doom.png"),
   dormitory: require("../../../assets/words/d/dormitory.png"),
   double: require("../../../assets/words/d/double.png"),

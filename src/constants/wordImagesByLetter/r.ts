@@ -124,6 +124,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   rely: require("../../../assets/words/r/rely.png"),
   "rely on": require("../../../assets/words/r/rely-on.png"),
   remain: require("../../../assets/words/r/remain.png"),
+  remainder: require("../../../assets/words/r/remainder.png"),
   remains: require("../../../assets/words/r/remains.png"),
   remark: require("../../../assets/words/r/remark.png"),
   remarkable: require("../../../assets/words/r/remarkable.png"),

@@ -217,6 +217,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   "ascribe A to B": require("../../../assets/words/a/ascribe-A-to-B.png"),
   ash: require("../../../assets/words/a/ash.png"),
   ashamed: require("../../../assets/words/a/ashamed.png"),
+  aside: require("../../../assets/words/a/aside.png"),
   "ask for": require("../../../assets/words/a/ask-for.png"),
   aspect: require("../../../assets/words/a/aspect.png"),
   aspiration: require("../../../assets/words/a/aspiration.png"),

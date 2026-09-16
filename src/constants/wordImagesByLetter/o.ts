@@ -94,6 +94,7 @@ export const IMAGES_O: Record<string, ImageSourcePropType> = {
   oversee: require("../../../assets/words/o/oversee.png"),
   overstate: require("../../../assets/words/o/overstate.png"),
   overtake: require("../../../assets/words/o/overtake.png"),
+  overwhelm: require("../../../assets/words/o/overwhelm.png"),
   overwhelming: require("../../../assets/words/o/overwhelming.png"),
   overwhelmingly: require("../../../assets/words/o/overwhelmingly.png"),
   owe: require("../../../assets/words/o/owe.png"),

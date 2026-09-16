@@ -258,6 +258,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   promptly: require("../../../assets/words/p/promptly.png"),
   prone: require("../../../assets/words/p/prone.png"),
   pronounce: require("../../../assets/words/p/pronounce.png"),
+  pronounced: require("../../../assets/words/p/pronounced.png"),
   pronunciation: require("../../../assets/words/p/pronunciation.png"),
   proof: require("../../../assets/words/p/proof.png"),
   proper: require("../../../assets/words/p/proper.png"),

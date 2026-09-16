@@ -154,6 +154,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   "an array of": require("../../../assets/words/a/an-array-of.png"),
   analogy: require("../../../assets/words/a/analogy.png"),
   analyze: require("../../../assets/words/a/analyze.png"),
+  anatomy: require("../../../assets/words/a/anatomy.png"),
   ancestor: require("../../../assets/words/a/ancestor.png"),
   ancient: require("../../../assets/words/a/ancient.png"),
   angle: require("../../../assets/words/a/angle.png"),

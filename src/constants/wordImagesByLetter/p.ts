@@ -185,6 +185,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   prepare: require("../../../assets/words/p/prepare.png"),
   preparing: require("../../../assets/words/p/preparing.png"),
   prescribe: require("../../../assets/words/p/prescribe.png"),
+  prescription: require("../../../assets/words/p/prescription.png"),
   presence: require("../../../assets/words/p/presence.png"),
   present: require("../../../assets/words/p/present.png"),
   presentation: require("../../../assets/words/p/presentation.png"),

@@ -70,6 +70,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   title: require("../../../assets/words/t/title.png"),
   together: require("../../../assets/words/t/together.png"),
   tomb: require("../../../assets/words/t/tomb.png"),
+  tone: require("../../../assets/words/t/tone.png"),
   tongue: require("../../../assets/words/t/tongue.png"),
   tool: require("../../../assets/words/t/tool.png"),
   tooth: require("../../../assets/words/t/tooth.png"),

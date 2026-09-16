@@ -105,6 +105,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   remain: require("../../../assets/words/r/remain.png"),
   remains: require("../../../assets/words/r/remains.png"),
   remark: require("../../../assets/words/r/remark.png"),
+  remarkable: require("../../../assets/words/r/remarkable.png"),
   remember: require("../../../assets/words/r/remember.png"),
   remind: require("../../../assets/words/r/remind.png"),
   remote: require("../../../assets/words/r/remote.png"),

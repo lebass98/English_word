@@ -173,6 +173,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   bunch: require("../../../assets/words/b/bunch.png"),
   burden: require("../../../assets/words/b/burden.png"),
   burn: require("../../../assets/words/b/burn.png"),
+  burrow: require("../../../assets/words/b/burrow.png"),
   burst: require("../../../assets/words/b/burst.png"),
   bury: require("../../../assets/words/b/bury.png"),
   bush: require("../../../assets/words/b/bush.png"),

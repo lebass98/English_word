@@ -59,6 +59,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   thrive: require("../../../assets/words/t/thrive.png"),
   throat: require("../../../assets/words/t/throat.png"),
   throw: require("../../../assets/words/t/throw.png"),
+  thrust: require("../../../assets/words/t/thrust.png"),
   thumb: require("../../../assets/words/t/thumb.png"),
   thus: require("../../../assets/words/t/thus.png"),
   ticket: require("../../../assets/words/t/ticket.png"),

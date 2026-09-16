@@ -277,6 +277,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   "stand for": require("../../../assets/words/s/stand-for.png"),
   "stand out": require("../../../assets/words/s/stand-out.png"),
   standard: require("../../../assets/words/s/standard.png"),
+  standardized: require("../../../assets/words/s/standardized.png"),
   staple: require("../../../assets/words/s/staple.png"),
   stare: require("../../../assets/words/s/stare.png"),
   starve: require("../../../assets/words/s/starve.png"),

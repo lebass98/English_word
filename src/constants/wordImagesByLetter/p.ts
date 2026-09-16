@@ -248,6 +248,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   progress: require("../../../assets/words/p/progress.png"),
   progressive: require("../../../assets/words/p/progressive.png"),
   prohibit: require("../../../assets/words/p/prohibit.png"),
+  prohibitively: require("../../../assets/words/p/prohibitively.png"),
   project: require("../../../assets/words/p/project.png"),
   projection: require("../../../assets/words/p/projection.png"),
   promise: require("../../../assets/words/p/promise.png"),

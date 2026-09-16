@@ -333,6 +333,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   striking: require("../../../assets/words/s/striking.png"),
   strikingly: require("../../../assets/words/s/strikingly.png"),
   string: require("../../../assets/words/s/string.png"),
+  strip: require("../../../assets/words/s/strip.png"),
   stripe: require("../../../assets/words/s/stripe.png"),
   striped: require("../../../assets/words/s/striped.png"),
   strive: require("../../../assets/words/s/strive.png"),

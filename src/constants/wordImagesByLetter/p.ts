@@ -293,6 +293,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   proposal: require("../../../assets/words/p/proposal.png"),
   propose: require("../../../assets/words/p/propose.png"),
   proposition: require("../../../assets/words/p/proposition.png"),
+  prose: require("../../../assets/words/p/prose.png"),
   prosecute: require("../../../assets/words/p/prosecute.png"),
   prospect: require("../../../assets/words/p/prospect.png"),
   prospective: require("../../../assets/words/p/prospective.png"),

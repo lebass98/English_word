@@ -85,6 +85,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   bike: require("../../../assets/words/b/bike.png"),
   bilingual: require("../../../assets/words/b/bilingual.png"),
   bill: require("../../../assets/words/b/bill.png"),
+  bind: require("../../../assets/words/b/bind.png"),
   biodiversity: require("../../../assets/words/b/biodiversity.png"),
   biography: require("../../../assets/words/b/biography.png"),
   biological: require("../../../assets/words/b/biological.png"),

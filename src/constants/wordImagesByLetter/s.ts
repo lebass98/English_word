@@ -161,6 +161,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   souvenir: require("../../../assets/words/s/souvenir.png"),
   sow: require("../../../assets/words/s/sow.png"),
   space: require("../../../assets/words/s/space.png"),
+  spacious: require("../../../assets/words/s/spacious.png"),
   spade: require("../../../assets/words/s/spade.png"),
   spare: require("../../../assets/words/s/spare.png"),
   spear: require("../../../assets/words/s/spear.png"),

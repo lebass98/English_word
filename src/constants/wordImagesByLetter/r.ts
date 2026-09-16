@@ -126,6 +126,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   resentment: require("../../../assets/words/r/resentment.png"),
   reservation: require("../../../assets/words/r/reservation.png"),
   reserve: require("../../../assets/words/r/reserve.png"),
+  reservoir: require("../../../assets/words/r/reservoir.png"),
   reside: require("../../../assets/words/r/reside.png"),
   resident: require("../../../assets/words/r/resident.png"),
   resist: require("../../../assets/words/r/resist.png"),

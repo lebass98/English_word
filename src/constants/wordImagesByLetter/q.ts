@@ -7,6 +7,7 @@ export const IMAGES_Q: Record<string, ImageSourcePropType> = {
   quarrel: require("../../../assets/words/q/quarrel.png"),
   quarter: require("../../../assets/words/q/quarter.png"),
   quarterly: require("../../../assets/words/q/quarterly.png"),
+  quest: require("../../../assets/words/q/quest.png"),
   questionnaire: require("../../../assets/words/q/questionnaire.png"),
   quick: require("../../../assets/words/q/quick.png"),
   quiet: require("../../../assets/words/q/quiet.png"),

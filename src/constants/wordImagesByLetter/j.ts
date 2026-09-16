@@ -16,4 +16,5 @@ export const IMAGES_J: Record<string, ImageSourcePropType> = {
   judge: require("../../../assets/words/j/judge.png"),
   junior: require("../../../assets/words/j/junior.png"),
   jury: require("../../../assets/words/j/jury.png"),
+  just: require("../../../assets/words/j/just.png"),
 };

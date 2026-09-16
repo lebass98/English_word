@@ -35,6 +35,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   pat: require("../../../assets/words/p/pat.png"),
   path: require("../../../assets/words/p/path.png"),
   patient: require("../../../assets/words/p/patient.png"),
+  patron: require("../../../assets/words/p/patron.png"),
   pause: require("../../../assets/words/p/pause.png"),
   pave: require("../../../assets/words/p/pave.png"),
   "pay attention": require("../../../assets/words/p/pay-attention.png"),

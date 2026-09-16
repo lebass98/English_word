@@ -81,6 +81,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   "best fit": require("../../../assets/words/b/best-fit.png"),
   bet: require("../../../assets/words/b/bet.png"),
   beverage: require("../../../assets/words/b/beverage.png"),
+  bewilder: require("../../../assets/words/b/bewilder.png"),
   beyond: require("../../../assets/words/b/beyond.png"),
   bias: require("../../../assets/words/b/bias.png"),
   bike: require("../../../assets/words/b/bike.png"),

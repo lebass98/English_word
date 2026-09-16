@@ -36,6 +36,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   incentive: require("../../../assets/words/i/incentive.png"),
   incident: require("../../../assets/words/i/incident.png"),
   include: require("../../../assets/words/i/include.png"),
+  income: require("../../../assets/words/i/income.png"),
   increase: require("../../../assets/words/i/increase.png"),
   incredible: require("../../../assets/words/i/incredible.png"),
   indeed: require("../../../assets/words/i/indeed.png"),

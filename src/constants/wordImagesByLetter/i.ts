@@ -54,6 +54,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   impose: require("../../../assets/words/i/impose.png"),
   imposing: require("../../../assets/words/i/imposing.png"),
   impossible: require("../../../assets/words/i/impossible.png"),
+  impoverish: require("../../../assets/words/i/impoverish.png"),
   impractical: require("../../../assets/words/i/impractical.png"),
   imprecise: require("../../../assets/words/i/imprecise.png"),
   impress: require("../../../assets/words/i/impress.png"),

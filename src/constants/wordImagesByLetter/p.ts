@@ -131,6 +131,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   plentiful: require("../../../assets/words/p/plentiful.png"),
   plenty: require("../../../assets/words/p/plenty.png"),
   plot: require("../../../assets/words/p/plot.png"),
+  plow: require("../../../assets/words/p/plow.png"),
   plumber: require("../../../assets/words/p/plumber.png"),
   plunge: require("../../../assets/words/p/plunge.png"),
   poet: require("../../../assets/words/p/poet.png"),

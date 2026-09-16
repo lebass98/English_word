@@ -16,6 +16,7 @@ export const IMAGES_V: Record<string, ImageSourcePropType> = {
   vapor: require("../../../assets/words/v/vapor.png"),
   variability: require("../../../assets/words/v/variability.png"),
   variable: require("../../../assets/words/v/variable.png"),
+  variation: require("../../../assets/words/v/variation.png"),
   variety: require("../../../assets/words/v/variety.png"),
   various: require("../../../assets/words/v/various.png"),
   vary: require("../../../assets/words/v/vary.png"),

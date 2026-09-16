@@ -61,6 +61,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   fellow: require("../../../assets/words/f/fellow.png"),
   feminine: require("../../../assets/words/f/feminine.png"),
   fence: require("../../../assets/words/f/fence.png"),
+  ferment: require("../../../assets/words/f/ferment.png"),
   fertile: require("../../../assets/words/f/fertile.png"),
   festive: require("../../../assets/words/f/festive.png"),
   fever: require("../../../assets/words/f/fever.png"),

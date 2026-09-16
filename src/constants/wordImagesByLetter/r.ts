@@ -218,6 +218,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   rotate: require("../../../assets/words/r/rotate.png"),
   rotten: require("../../../assets/words/r/rotten.png"),
   rough: require("../../../assets/words/r/rough.png"),
+  roughly: require("../../../assets/words/r/roughly.png"),
   route: require("../../../assets/words/r/route.png"),
   routine: require("../../../assets/words/r/routine.png"),
   row: require("../../../assets/words/r/row.png"),

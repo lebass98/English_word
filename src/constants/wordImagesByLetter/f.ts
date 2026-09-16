@@ -100,6 +100,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   flight: require("../../../assets/words/f/flight.png"),
   flip: require("../../../assets/words/f/flip.png"),
   float: require("../../../assets/words/f/float.png"),
+  flock: require("../../../assets/words/f/flock.png"),
   flood: require("../../../assets/words/f/flood.png"),
   flourish: require("../../../assets/words/f/flourish.png"),
   flow: require("../../../assets/words/f/flow.png"),

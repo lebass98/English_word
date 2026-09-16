@@ -19,6 +19,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   sanitary: require("../../../assets/words/s/sanitary.png"),
   sank: require("../../../assets/words/s/sank.png"),
   satellite: require("../../../assets/words/s/satellite.png"),
+  "satisfied by": require("../../../assets/words/s/satisfied-by.png"),
   satisfy: require("../../../assets/words/s/satisfy.png"),
   save: require("../../../assets/words/s/save.png"),
   saw: require("../../../assets/words/s/saw.png"),

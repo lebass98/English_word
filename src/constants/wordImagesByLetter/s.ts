@@ -298,6 +298,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   steep: require("../../../assets/words/s/steep.png"),
   steer: require("../../../assets/words/s/steer.png"),
   stem: require("../../../assets/words/s/stem.png"),
+  "stem from": require("../../../assets/words/s/stem-from.png"),
   step: require("../../../assets/words/s/step.png"),
   stethoscope: require("../../../assets/words/s/stethoscope.png"),
   stick: require("../../../assets/words/s/stick.png"),

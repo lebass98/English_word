@@ -93,6 +93,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   pertinent: require("../../../assets/words/p/pertinent.png"),
   pervade: require("../../../assets/words/p/pervade.png"),
   pervasive: require("../../../assets/words/p/pervasive.png"),
+  pessimism: require("../../../assets/words/p/pessimism.png"),
   pest: require("../../../assets/words/p/pest.png"),
   pesticide: require("../../../assets/words/p/pesticide.png"),
   pet: require("../../../assets/words/p/pet.png"),

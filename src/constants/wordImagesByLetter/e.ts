@@ -96,6 +96,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   established: require("../../../assets/words/e/established.png"),
   estimate: require("../../../assets/words/e/estimate.png"),
   ethic: require("../../../assets/words/e/ethic.png"),
+  ethical: require("../../../assets/words/e/ethical.png"),
   ethnic: require("../../../assets/words/e/ethnic.png"),
   evaluate: require("../../../assets/words/e/evaluate.png"),
   evaporate: require("../../../assets/words/e/evaporate.png"),

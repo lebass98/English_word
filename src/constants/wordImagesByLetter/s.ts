@@ -90,6 +90,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   serve: require("../../../assets/words/s/serve.png"),
   session: require("../../../assets/words/s/session.png"),
   "set aside": require("../../../assets/words/s/set-aside.png"),
+  "set in motion": require("../../../assets/words/s/set-in-motion.png"),
   "set off": require("../../../assets/words/s/set-off.png"),
   "set up": require("../../../assets/words/s/set-up.png"),
   setback: require("../../../assets/words/s/setback.png"),

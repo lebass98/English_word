@@ -18,6 +18,7 @@ export const IMAGES_V: Record<string, ImageSourcePropType> = {
   vegetarian: require("../../../assets/words/v/vegetarian.png"),
   vehicle: require("../../../assets/words/v/vehicle.png"),
   verbal: require("../../../assets/words/v/verbal.png"),
+  verify: require("../../../assets/words/v/verify.png"),
   versatile: require("../../../assets/words/v/versatile.png"),
   version: require("../../../assets/words/v/version.png"),
   vessel: require("../../../assets/words/v/vessel.png"),

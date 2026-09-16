@@ -2,6 +2,7 @@ import { ImageSourcePropType } from "react-native";
 
 // "t" 로 시작하는 단어 그림. scripts/sync_word_images.py 가 만든다 (손으로 고치지 않는다)
 export const IMAGES_T: Record<string, ImageSourcePropType> = {
+  taboo: require("../../../assets/words/t/taboo.png"),
   tactics: require("../../../assets/words/t/tactics.png"),
   tail: require("../../../assets/words/t/tail.png"),
   "take advantage of": require("../../../assets/words/t/take-advantage-of.png"),

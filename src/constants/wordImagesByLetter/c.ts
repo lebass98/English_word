@@ -135,6 +135,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   commence: require("../../../assets/words/c/commence.png"),
   comment: require("../../../assets/words/c/comment.png"),
   commerce: require("../../../assets/words/c/commerce.png"),
+  commercial: require("../../../assets/words/c/commercial.png"),
   commit: require("../../../assets/words/c/commit.png"),
   commitment: require("../../../assets/words/c/commitment.png"),
   committee: require("../../../assets/words/c/committee.png"),

@@ -155,6 +155,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   prize: require("../../../assets/words/p/prize.png"),
   probably: require("../../../assets/words/p/probably.png"),
   problem: require("../../../assets/words/p/problem.png"),
+  proceed: require("../../../assets/words/p/proceed.png"),
   process: require("../../../assets/words/p/process.png"),
   produce: require("../../../assets/words/p/produce.png"),
   profession: require("../../../assets/words/p/profession.png"),

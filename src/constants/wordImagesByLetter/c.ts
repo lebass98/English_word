@@ -436,6 +436,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   custom: require("../../../assets/words/c/custom.png"),
   customarily: require("../../../assets/words/c/customarily.png"),
   customary: require("../../../assets/words/c/customary.png"),
+  customize: require("../../../assets/words/c/customize.png"),
   "cut down": require("../../../assets/words/c/cut-down.png"),
   "cut off": require("../../../assets/words/c/cut-off.png"),
   cycle: require("../../../assets/words/c/cycle.png"),

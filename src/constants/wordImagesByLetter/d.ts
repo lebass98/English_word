@@ -23,6 +23,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   death: require("../../../assets/words/d/death.png"),
   debatable: require("../../../assets/words/d/debatable.png"),
   debate: require("../../../assets/words/d/debate.png"),
+  debris: require("../../../assets/words/d/debris.png"),
   debt: require("../../../assets/words/d/debt.png"),
   decade: require("../../../assets/words/d/decade.png"),
   deceive: require("../../../assets/words/d/deceive.png"),

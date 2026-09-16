@@ -193,6 +193,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   prior: require("../../../assets/words/p/prior.png"),
   prison: require("../../../assets/words/p/prison.png"),
   private: require("../../../assets/words/p/private.png"),
+  privilege: require("../../../assets/words/p/privilege.png"),
   prize: require("../../../assets/words/p/prize.png"),
   probably: require("../../../assets/words/p/probably.png"),
   probe: require("../../../assets/words/p/probe.png"),

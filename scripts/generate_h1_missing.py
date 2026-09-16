@@ -121,7 +121,18 @@ def auto_scene(word, info):
             f"clearly illustrating the concept of {clean_w}, rich wall decor, furniture and floor line")
 
 
-def build_queue(levels, auto=False):
+def extra_scenes(paths):
+    """--scenes 로 준 {단어: 장면} 파일들. 카탈로그를 다시 만들기 전에도 바로 쓴다"""
+    out = {}
+    for p in paths:
+        try:
+            out.update(json.load(open(os.path.join(ROOT, p), encoding="utf-8")))
+        except (OSError, json.JSONDecodeError):
+            pass  # 아직 쓰는 중인 파일은 다음 회차에 다시 읽는다
+    return out
+
+
+def build_queue(levels, auto=False, reverse=False, scene_files=()):
     """과정 순서대로, 그림 없고 장면 있는 단어.
 
     한 장 그릴 때마다 다시 부른다. 그래야 도중에 새로 써 넣은 장면도 집어가고,
@@ -140,17 +151,22 @@ def build_queue(levels, auto=False):
             time.sleep(2)
     words = json.load(open(os.path.join(ROOT, "src/data/en/words.json"), encoding="utf-8"))
 
+    extra = extra_scenes(scene_files)
     queue, seen = [], set()
     for level in levels:
         path = os.path.join(ROOT, f"src/data/en/levels/{level}.json")
         if not os.path.exists(path):
             continue
-        for i, sp in enumerate(json.load(open(path, encoding="utf-8"))):
+        items = list(enumerate(json.load(open(path, encoding="utf-8"))))
+        # 다른 컴퓨터가 앞에서부터 그릴 때 겹치지 않게 뒤에서부터 갈 수 있다
+        if reverse:
+            items.reverse()
+        for i, sp in items:
             cid = (words.get(sp) or {}).get("conceptId") or sp
             if cid in keys or sp in keys or cid in seen:
                 continue
             entry = cat.get(cid) or cat.get(sp) or {}
-            scene = entry.get("scene")
+            scene = entry.get("scene") or extra.get(cid) or extra.get(sp)
             if not scene and auto:
                 scene = auto_scene(sp, words.get(sp))
             if not scene:
@@ -168,6 +184,10 @@ def main():
                     help="그릴 과정 순서 (쉼표로 구분)")
     ap.add_argument("--auto-scene", action="store_true",
                     help="장면 묘사가 없는 단어는 예문으로 장면을 만들어 그린다 (토익 등)")
+    ap.add_argument("--reverse", action="store_true",
+                    help="과정 안에서 뒤 단원부터 거꾸로 그린다")
+    ap.add_argument("--scenes", default="",
+                    help="카탈로그 외에 읽을 {단어: 장면} 파일 (쉼표로 구분, 저장소 기준 경로)")
     args = ap.parse_args()
     levels = [x.strip() for x in args.levels.split(",") if x.strip()]
 
@@ -187,7 +207,8 @@ def main():
         if not sync():
             print("최신을 받아 오지 못해 멈춘다", flush=True)
             break
-        queue = build_queue(levels, auto=args.auto_scene)
+        queue = build_queue(levels, auto=args.auto_scene, reverse=args.reverse,
+                            scene_files=[s for s in args.scenes.split(",") if s])
         if not queue:
             print("그릴 단어가 없다", flush=True)
             break

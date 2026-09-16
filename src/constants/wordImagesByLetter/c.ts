@@ -102,6 +102,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   chronological: require("../../../assets/words/c/chronological.png"),
   circle: require("../../../assets/words/c/circle.png"),
   circuit: require("../../../assets/words/c/circuit.png"),
+  circulate: require("../../../assets/words/c/circulate.png"),
   circumstance: require("../../../assets/words/c/circumstance.png"),
   civil: require("../../../assets/words/c/civil.png"),
   civilization: require("../../../assets/words/c/civilization.png"),

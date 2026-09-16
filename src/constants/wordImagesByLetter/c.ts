@@ -320,6 +320,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   contrary: require("../../../assets/words/c/contrary.png"),
   contrast: require("../../../assets/words/c/contrast.png"),
   contribute: require("../../../assets/words/c/contribute.png"),
+  contributor: require("../../../assets/words/c/contributor.png"),
   control: require("../../../assets/words/c/control.png"),
   controversial: require("../../../assets/words/c/controversial.png"),
   convenient: require("../../../assets/words/c/convenient.png"),

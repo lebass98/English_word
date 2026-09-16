@@ -421,6 +421,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   sustenance: require("../../../assets/words/s/sustenance.png"),
   swallow: require("../../../assets/words/s/swallow.png"),
   swamp: require("../../../assets/words/s/swamp.png"),
+  sweat: require("../../../assets/words/s/sweat.png"),
   sweep: require("../../../assets/words/s/sweep.png"),
   sweet: require("../../../assets/words/s/sweet.png"),
   swell: require("../../../assets/words/s/swell.png"),

@@ -99,6 +99,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   powder: require("../../../assets/words/p/powder.png"),
   practice: require("../../../assets/words/p/practice.png"),
   prairie: require("../../../assets/words/p/prairie.png"),
+  praise: require("../../../assets/words/p/praise.png"),
   pray: require("../../../assets/words/p/pray.png"),
   precede: require("../../../assets/words/p/precede.png"),
   precious: require("../../../assets/words/p/precious.png"),

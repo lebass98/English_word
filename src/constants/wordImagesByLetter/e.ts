@@ -21,6 +21,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   educate: require("../../../assets/words/e/educate.png"),
   education: require("../../../assets/words/e/education.png"),
   effect: require("../../../assets/words/e/effect.png"),
+  effective: require("../../../assets/words/e/effective.png"),
   efficiency: require("../../../assets/words/e/efficiency.png"),
   efficient: require("../../../assets/words/e/efficient.png"),
   effort: require("../../../assets/words/e/effort.png"),

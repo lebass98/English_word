@@ -45,6 +45,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   mask: require("../../../assets/words/m/mask.png"),
   mass: require("../../../assets/words/m/mass.png"),
   "mass communication": require("../../../assets/words/m/mass-communication.png"),
+  massive: require("../../../assets/words/m/massive.png"),
   master: require("../../../assets/words/m/master.png"),
   masterpiece: require("../../../assets/words/m/masterpiece.png"),
   match: require("../../../assets/words/m/match.png"),

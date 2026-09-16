@@ -36,6 +36,7 @@ export const IMAGES_L: Record<string, ImageSourcePropType> = {
   legally: require("../../../assets/words/l/legally.png"),
   legend: require("../../../assets/words/l/legend.png"),
   legislation: require("../../../assets/words/l/legislation.png"),
+  legitimacy: require("../../../assets/words/l/legitimacy.png"),
   legitimate: require("../../../assets/words/l/legitimate.png"),
   leisure: require("../../../assets/words/l/leisure.png"),
   lend: require("../../../assets/words/l/lend.png"),

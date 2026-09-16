@@ -410,6 +410,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   surround: require("../../../assets/words/s/surround.png"),
   surrounding: require("../../../assets/words/s/surrounding.png"),
   survey: require("../../../assets/words/s/survey.png"),
+  survival: require("../../../assets/words/s/survival.png"),
   survive: require("../../../assets/words/s/survive.png"),
   suspect: require("../../../assets/words/s/suspect.png"),
   suspend: require("../../../assets/words/s/suspend.png"),

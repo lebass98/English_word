@@ -54,6 +54,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   achieve: require("../../../assets/words/a/achieve.png"),
   acid: require("../../../assets/words/a/acid.png"),
   acknowledge: require("../../../assets/words/a/acknowledge.png"),
+  acoustic: require("../../../assets/words/a/acoustic.png"),
   acquire: require("../../../assets/words/a/acquire.png"),
   acquisition: require("../../../assets/words/a/acquisition.png"),
   active: require("../../../assets/words/a/active.png"),

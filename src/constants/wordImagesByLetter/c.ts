@@ -258,6 +258,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   consume: require("../../../assets/words/c/consume.png"),
   consumer: require("../../../assets/words/c/consumer.png"),
   contact: require("../../../assets/words/c/contact.png"),
+  contagious: require("../../../assets/words/c/contagious.png"),
   contain: require("../../../assets/words/c/contain.png"),
   contemplate: require("../../../assets/words/c/contemplate.png"),
   contemporary: require("../../../assets/words/c/contemporary.png"),

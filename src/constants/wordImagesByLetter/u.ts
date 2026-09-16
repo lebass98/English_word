@@ -4,6 +4,7 @@ import { ImageSourcePropType } from "react-native";
 export const IMAGES_U: Record<string, ImageSourcePropType> = {
   ultimate: require("../../../assets/words/u/ultimate.png"),
   umbrella: require("../../../assets/words/u/umbrella.png"),
+  unavoidable: require("../../../assets/words/u/unavoidable.png"),
   unbelievable: require("../../../assets/words/u/unbelievable.png"),
   unconsciously: require("../../../assets/words/u/unconsciously.png"),
   uncover: require("../../../assets/words/u/uncover.png"),

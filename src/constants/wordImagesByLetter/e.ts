@@ -116,6 +116,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   envious: require("../../../assets/words/e/envious.png"),
   environment: require("../../../assets/words/e/environment.png"),
   envy: require("../../../assets/words/e/envy.png"),
+  epic: require("../../../assets/words/e/epic.png"),
   epidemic: require("../../../assets/words/e/epidemic.png"),
   equal: require("../../../assets/words/e/equal.png"),
   equality: require("../../../assets/words/e/equality.png"),

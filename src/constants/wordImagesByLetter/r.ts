@@ -91,6 +91,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   rent: require("../../../assets/words/r/rent.png"),
   repair: require("../../../assets/words/r/repair.png"),
   repeat: require("../../../assets/words/r/repeat.png"),
+  repeated: require("../../../assets/words/r/repeated.png"),
   replace: require("../../../assets/words/r/replace.png"),
   reply: require("../../../assets/words/r/reply.png"),
   report: require("../../../assets/words/r/report.png"),

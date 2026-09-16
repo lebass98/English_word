@@ -53,6 +53,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   recess: require("../../../assets/words/r/recess.png"),
   recession: require("../../../assets/words/r/recession.png"),
   recipe: require("../../../assets/words/r/recipe.png"),
+  reciprocal: require("../../../assets/words/r/reciprocal.png"),
   reciprocate: require("../../../assets/words/r/reciprocate.png"),
   recite: require("../../../assets/words/r/recite.png"),
   reckless: require("../../../assets/words/r/reckless.png"),

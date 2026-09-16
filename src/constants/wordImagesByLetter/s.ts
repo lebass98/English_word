@@ -240,6 +240,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   specifically: require("../../../assets/words/s/specifically.png"),
   specified: require("../../../assets/words/s/specified.png"),
   spectacular: require("../../../assets/words/s/spectacular.png"),
+  spectator: require("../../../assets/words/s/spectator.png"),
   speech: require("../../../assets/words/s/speech.png"),
   spell: require("../../../assets/words/s/spell.png"),
   spend: require("../../../assets/words/s/spend.png"),

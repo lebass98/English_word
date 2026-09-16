@@ -124,6 +124,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   color: require("../../../assets/words/c/color.png"),
   colorful: require("../../../assets/words/c/colorful.png"),
   comb: require("../../../assets/words/c/comb.png"),
+  combat: require("../../../assets/words/c/combat.png"),
   combination: require("../../../assets/words/c/combination.png"),
   combine: require("../../../assets/words/c/combine.png"),
   combined: require("../../../assets/words/c/combined.png"),

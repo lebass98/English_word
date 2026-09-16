@@ -83,6 +83,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   endangered: require("../../../assets/words/e/endangered.png"),
   endeavor: require("../../../assets/words/e/endeavor.png"),
   endless: require("../../../assets/words/e/endless.png"),
+  endorse: require("../../../assets/words/e/endorse.png"),
   endow: require("../../../assets/words/e/endow.png"),
   endure: require("../../../assets/words/e/endure.png"),
   enduring: require("../../../assets/words/e/enduring.png"),

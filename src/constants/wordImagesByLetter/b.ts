@@ -121,6 +121,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   bothersome: require("../../../assets/words/b/bothersome.png"),
   bottle: require("../../../assets/words/b/bottle.png"),
   bottom: require("../../../assets/words/b/bottom.png"),
+  bounce: require("../../../assets/words/b/bounce.png"),
   bound: require("../../../assets/words/b/bound.png"),
   boundary: require("../../../assets/words/b/boundary.png"),
   bow: require("../../../assets/words/b/bow.png"),

@@ -42,6 +42,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   impede: require("../../../assets/words/i/impede.png"),
   impediment: require("../../../assets/words/i/impediment.png"),
   impel: require("../../../assets/words/i/impel.png"),
+  impending: require("../../../assets/words/i/impending.png"),
   imperative: require("../../../assets/words/i/imperative.png"),
   imperceptibly: require("../../../assets/words/i/imperceptibly.png"),
   implausible: require("../../../assets/words/i/implausible.png"),

@@ -35,6 +35,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   scent: require("../../../assets/words/s/scent.png"),
   schedule: require("../../../assets/words/s/schedule.png"),
   scholar: require("../../../assets/words/s/scholar.png"),
+  scholarly: require("../../../assets/words/s/scholarly.png"),
   science: require("../../../assets/words/s/science.png"),
   scientific: require("../../../assets/words/s/scientific.png"),
   scold: require("../../../assets/words/s/scold.png"),

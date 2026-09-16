@@ -297,6 +297,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   coordinate: require("../../../assets/words/c/coordinate.png"),
   "cope with": require("../../../assets/words/c/cope-with.png"),
   copyright: require("../../../assets/words/c/copyright.png"),
+  coral: require("../../../assets/words/c/coral.png"),
   core: require("../../../assets/words/c/core.png"),
   corn: require("../../../assets/words/c/corn.png"),
   corporate: require("../../../assets/words/c/corporate.png"),

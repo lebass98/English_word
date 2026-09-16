@@ -45,6 +45,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   peer: require("../../../assets/words/p/peer.png"),
   penalty: require("../../../assets/words/p/penalty.png"),
   peninsula: require("../../../assets/words/p/peninsula.png"),
+  pension: require("../../../assets/words/p/pension.png"),
   pepper: require("../../../assets/words/p/pepper.png"),
   perceive: require("../../../assets/words/p/perceive.png"),
   perform: require("../../../assets/words/p/perform.png"),

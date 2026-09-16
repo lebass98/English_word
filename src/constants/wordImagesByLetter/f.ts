@@ -155,6 +155,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   front: require("../../../assets/words/f/front.png"),
   fruit: require("../../../assets/words/f/fruit.png"),
   fruitlessly: require("../../../assets/words/f/fruitlessly.png"),
+  frustrate: require("../../../assets/words/f/frustrate.png"),
   frustrated: require("../../../assets/words/f/frustrated.png"),
   fuel: require("../../../assets/words/f/fuel.png"),
   fulfill: require("../../../assets/words/f/fulfill.png"),

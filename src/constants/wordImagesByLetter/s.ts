@@ -192,6 +192,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   spot: require("../../../assets/words/s/spot.png"),
   spouse: require("../../../assets/words/s/spouse.png"),
   spread: require("../../../assets/words/s/spread.png"),
+  sprint: require("../../../assets/words/s/sprint.png"),
   square: require("../../../assets/words/s/square.png"),
   squeeze: require("../../../assets/words/s/squeeze.png"),
   squirrel: require("../../../assets/words/s/squirrel.png"),

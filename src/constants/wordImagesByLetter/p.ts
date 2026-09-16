@@ -165,6 +165,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   pragmatic: require("../../../assets/words/p/pragmatic.png"),
   prairie: require("../../../assets/words/p/prairie.png"),
   praise: require("../../../assets/words/p/praise.png"),
+  praiseworthy: require("../../../assets/words/p/praiseworthy.png"),
   pray: require("../../../assets/words/p/pray.png"),
   precede: require("../../../assets/words/p/precede.png"),
   precious: require("../../../assets/words/p/precious.png"),

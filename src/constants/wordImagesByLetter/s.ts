@@ -49,6 +49,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   sculpture: require("../../../assets/words/s/sculpture.png"),
   seal: require("../../../assets/words/s/seal.png"),
   search: require("../../../assets/words/s/search.png"),
+  seashore: require("../../../assets/words/s/seashore.png"),
   seat: require("../../../assets/words/s/seat.png"),
   secretary: require("../../../assets/words/s/secretary.png"),
   section: require("../../../assets/words/s/section.png"),

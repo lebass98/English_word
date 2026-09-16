@@ -77,6 +77,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   derive: require("../../../assets/words/d/derive.png"),
   descent: require("../../../assets/words/d/descent.png"),
   describe: require("../../../assets/words/d/describe.png"),
+  description: require("../../../assets/words/d/description.png"),
   desert: require("../../../assets/words/d/desert.png"),
   deserve: require("../../../assets/words/d/deserve.png"),
   design: require("../../../assets/words/d/design.png"),

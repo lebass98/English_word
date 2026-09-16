@@ -411,6 +411,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   sum: require("../../../assets/words/s/sum.png"),
   summarize: require("../../../assets/words/s/summarize.png"),
   summit: require("../../../assets/words/s/summit.png"),
+  summon: require("../../../assets/words/s/summon.png"),
   sunglasses: require("../../../assets/words/s/sunglasses.png"),
   sunrise: require("../../../assets/words/s/sunrise.png"),
   sunshine: require("../../../assets/words/s/sunshine.png"),

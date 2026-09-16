@@ -267,6 +267,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   consistent: require("../../../assets/words/c/consistent.png"),
   consistently: require("../../../assets/words/c/consistently.png"),
   console: require("../../../assets/words/c/console.png"),
+  consolidate: require("../../../assets/words/c/consolidate.png"),
   constant: require("../../../assets/words/c/constant.png"),
   constituent: require("../../../assets/words/c/constituent.png"),
   constitute: require("../../../assets/words/c/constitute.png"),

@@ -40,6 +40,7 @@ export const IMAGES_V: Record<string, ImageSourcePropType> = {
   vibrate: require("../../../assets/words/v/vibrate.png"),
   vibration: require("../../../assets/words/v/vibration.png"),
   vice: require("../../../assets/words/v/vice.png"),
+  vicious: require("../../../assets/words/v/vicious.png"),
   victim: require("../../../assets/words/v/victim.png"),
   victory: require("../../../assets/words/v/victory.png"),
   view: require("../../../assets/words/v/view.png"),

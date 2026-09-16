@@ -8,6 +8,7 @@ export const IMAGES_L: Record<string, ImageSourcePropType> = {
   lack: require("../../../assets/words/l/lack.png"),
   lacking: require("../../../assets/words/l/lacking.png"),
   lamb: require("../../../assets/words/l/lamb.png"),
+  lament: require("../../../assets/words/l/lament.png"),
   landscape: require("../../../assets/words/l/landscape.png"),
   language: require("../../../assets/words/l/language.png"),
   lantern: require("../../../assets/words/l/lantern.png"),

@@ -246,6 +246,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   conclusively: require("../../../assets/words/c/conclusively.png"),
   concrete: require("../../../assets/words/c/concrete.png"),
   concur: require("../../../assets/words/c/concur.png"),
+  concurrently: require("../../../assets/words/c/concurrently.png"),
   condense: require("../../../assets/words/c/condense.png"),
   condition: require("../../../assets/words/c/condition.png"),
   conditional: require("../../../assets/words/c/conditional.png"),

@@ -57,6 +57,7 @@ export const IMAGES_H: Record<string, ImageSourcePropType> = {
   hinder: require("../../../assets/words/h/hinder.png"),
   hire: require("../../../assets/words/h/hire.png"),
   hiring: require("../../../assets/words/h/hiring.png"),
+  historian: require("../../../assets/words/h/historian.png"),
   historical: require("../../../assets/words/h/historical.png"),
   history: require("../../../assets/words/h/history.png"),
   hit: require("../../../assets/words/h/hit.png"),

@@ -298,6 +298,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   state: require("../../../assets/words/s/state.png"),
   statement: require("../../../assets/words/s/statement.png"),
   station: require("../../../assets/words/s/station.png"),
+  stationary: require("../../../assets/words/s/stationary.png"),
   stationery: require("../../../assets/words/s/stationery.png"),
   statistic: require("../../../assets/words/s/statistic.png"),
   statistics: require("../../../assets/words/s/statistics.png"),

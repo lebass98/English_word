@@ -158,6 +158,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   private: require("../../../assets/words/p/private.png"),
   prize: require("../../../assets/words/p/prize.png"),
   probably: require("../../../assets/words/p/probably.png"),
+  probe: require("../../../assets/words/p/probe.png"),
   problem: require("../../../assets/words/p/problem.png"),
   proceed: require("../../../assets/words/p/proceed.png"),
   process: require("../../../assets/words/p/process.png"),

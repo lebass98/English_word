@@ -82,6 +82,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   entrance: require("../../../assets/words/e/entrance.png"),
   entry: require("../../../assets/words/e/entry.png"),
   envelope: require("../../../assets/words/e/envelope.png"),
+  envious: require("../../../assets/words/e/envious.png"),
   environment: require("../../../assets/words/e/environment.png"),
   envy: require("../../../assets/words/e/envy.png"),
   equal: require("../../../assets/words/e/equal.png"),

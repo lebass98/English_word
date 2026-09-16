@@ -71,6 +71,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   perhaps: require("../../../assets/words/p/perhaps.png"),
   period: require("../../../assets/words/p/period.png"),
   periodically: require("../../../assets/words/p/periodically.png"),
+  perish: require("../../../assets/words/p/perish.png"),
   permanent: require("../../../assets/words/p/permanent.png"),
   permit: require("../../../assets/words/p/permit.png"),
   persist: require("../../../assets/words/p/persist.png"),

@@ -190,6 +190,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   presentation: require("../../../assets/words/p/presentation.png"),
   presently: require("../../../assets/words/p/presently.png"),
   preserve: require("../../../assets/words/p/preserve.png"),
+  "preside over": require("../../../assets/words/p/preside-over.png"),
   president: require("../../../assets/words/p/president.png"),
   press: require("../../../assets/words/p/press.png"),
   pressure: require("../../../assets/words/p/pressure.png"),

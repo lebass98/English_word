@@ -74,6 +74,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   shake: require("../../../assets/words/s/shake.png"),
   shallow: require("../../../assets/words/s/shallow.png"),
   shape: require("../../../assets/words/s/shape.png"),
+  share: require("../../../assets/words/s/share.png"),
   sharp: require("../../../assets/words/s/sharp.png"),
   sheep: require("../../../assets/words/s/sheep.png"),
   sheet: require("../../../assets/words/s/sheet.png"),

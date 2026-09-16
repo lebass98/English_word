@@ -257,4 +257,5 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   award: require("../../../assets/words/a/award.png"),
   aware: require("../../../assets/words/a/aware.png"),
   awareness: require("../../../assets/words/a/awareness.png"),
+  awkward: require("../../../assets/words/a/awkward.png"),
 };

@@ -56,6 +56,7 @@ export const IMAGES_L: Record<string, ImageSourcePropType> = {
   lock: require("../../../assets/words/l/lock.png"),
   log: require("../../../assets/words/l/log.png"),
   logic: require("../../../assets/words/l/logic.png"),
+  logical: require("../../../assets/words/l/logical.png"),
   lonely: require("../../../assets/words/l/lonely.png"),
   "look after": require("../../../assets/words/l/look-after.png"),
   "look back on": require("../../../assets/words/l/look-back-on.png"),

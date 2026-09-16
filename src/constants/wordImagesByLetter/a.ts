@@ -65,6 +65,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   additive: require("../../../assets/words/a/additive.png"),
   address: require("../../../assets/words/a/address.png"),
   adequate: require("../../../assets/words/a/adequate.png"),
+  adhere: require("../../../assets/words/a/adhere.png"),
   adjust: require("../../../assets/words/a/adjust.png"),
   administer: require("../../../assets/words/a/administer.png"),
   administered: require("../../../assets/words/a/administered.png"),

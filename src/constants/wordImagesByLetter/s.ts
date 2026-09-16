@@ -206,6 +206,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   sole: require("../../../assets/words/s/sole.png"),
   solicit: require("../../../assets/words/s/solicit.png"),
   solid: require("../../../assets/words/s/solid.png"),
+  solidify: require("../../../assets/words/s/solidify.png"),
   solitary: require("../../../assets/words/s/solitary.png"),
   solitude: require("../../../assets/words/s/solitude.png"),
   solution: require("../../../assets/words/s/solution.png"),

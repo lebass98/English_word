@@ -131,6 +131,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   inhibit: require("../../../assets/words/i/inhibit.png"),
   initial: require("../../../assets/words/i/initial.png"),
   initially: require("../../../assets/words/i/initially.png"),
+  initiate: require("../../../assets/words/i/initiate.png"),
   injure: require("../../../assets/words/i/injure.png"),
   inner: require("../../../assets/words/i/inner.png"),
   inning: require("../../../assets/words/i/inning.png"),

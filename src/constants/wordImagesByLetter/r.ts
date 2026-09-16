@@ -160,6 +160,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   rod: require("../../../assets/words/r/rod.png"),
   role: require("../../../assets/words/r/role.png"),
   roll: require("../../../assets/words/r/roll.png"),
+  root: require("../../../assets/words/r/root.png"),
   rope: require("../../../assets/words/r/rope.png"),
   rot: require("../../../assets/words/r/rot.png"),
   rotten: require("../../../assets/words/r/rotten.png"),

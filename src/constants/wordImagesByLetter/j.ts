@@ -21,4 +21,5 @@ export const IMAGES_J: Record<string, ImageSourcePropType> = {
   just: require("../../../assets/words/j/just.png"),
   justify: require("../../../assets/words/j/justify.png"),
   justly: require("../../../assets/words/j/justly.png"),
+  juvenile: require("../../../assets/words/j/juvenile.png"),
 };

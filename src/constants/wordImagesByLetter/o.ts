@@ -3,6 +3,7 @@ import { ImageSourcePropType } from "react-native";
 // "o" 로 시작하는 단어 그림. scripts/sync_word_images.py 가 만든다 (손으로 고치지 않는다)
 export const IMAGES_O: Record<string, ImageSourcePropType> = {
   oath: require("../../../assets/words/o/oath.png"),
+  obedient: require("../../../assets/words/o/obedient.png"),
   obey: require("../../../assets/words/o/obey.png"),
   object: require("../../../assets/words/o/object.png"),
   objective: require("../../../assets/words/o/objective.png"),

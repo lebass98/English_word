@@ -80,6 +80,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   admire: require("../../../assets/words/a/admire.png"),
   admit: require("../../../assets/words/a/admit.png"),
   adopt: require("../../../assets/words/a/adopt.png"),
+  adorn: require("../../../assets/words/a/adorn.png"),
   adult: require("../../../assets/words/a/adult.png"),
   advance: require("../../../assets/words/a/advance.png"),
   advancement: require("../../../assets/words/a/advancement.png"),

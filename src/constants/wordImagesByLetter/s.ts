@@ -271,6 +271,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   stagnant: require("../../../assets/words/s/stagnant.png"),
   stain: require("../../../assets/words/s/stain.png"),
   stair: require("../../../assets/words/s/stair.png"),
+  stamina: require("../../../assets/words/s/stamina.png"),
   stamp: require("../../../assets/words/s/stamp.png"),
   stance: require("../../../assets/words/s/stance.png"),
   "stand for": require("../../../assets/words/s/stand-for.png"),

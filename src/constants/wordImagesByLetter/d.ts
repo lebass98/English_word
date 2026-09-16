@@ -230,6 +230,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   donate: require("../../../assets/words/d/donate.png"),
   donor: require("../../../assets/words/d/donor.png"),
   doom: require("../../../assets/words/d/doom.png"),
+  dormant: require("../../../assets/words/d/dormant.png"),
   dormitory: require("../../../assets/words/d/dormitory.png"),
   dose: require("../../../assets/words/d/dose.png"),
   double: require("../../../assets/words/d/double.png"),

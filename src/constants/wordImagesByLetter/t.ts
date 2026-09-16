@@ -132,6 +132,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   transport: require("../../../assets/words/t/transport.png"),
   transportation: require("../../../assets/words/t/transportation.png"),
   trap: require("../../../assets/words/t/trap.png"),
+  trapped: require("../../../assets/words/t/trapped.png"),
   travel: require("../../../assets/words/t/travel.png"),
   tray: require("../../../assets/words/t/tray.png"),
   treasure: require("../../../assets/words/t/treasure.png"),

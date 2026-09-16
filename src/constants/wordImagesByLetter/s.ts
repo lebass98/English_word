@@ -292,6 +292,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   standpoint: require("../../../assets/words/s/standpoint.png"),
   staple: require("../../../assets/words/s/staple.png"),
   stare: require("../../../assets/words/s/stare.png"),
+  startle: require("../../../assets/words/s/startle.png"),
   starve: require("../../../assets/words/s/starve.png"),
   state: require("../../../assets/words/s/state.png"),
   statement: require("../../../assets/words/s/statement.png"),

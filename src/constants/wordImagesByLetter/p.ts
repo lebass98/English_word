@@ -68,6 +68,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   pilgrim: require("../../../assets/words/p/pilgrim.png"),
   pill: require("../../../assets/words/p/pill.png"),
   pilot: require("../../../assets/words/p/pilot.png"),
+  pioneer: require("../../../assets/words/p/pioneer.png"),
   pitch: require("../../../assets/words/p/pitch.png"),
   plain: require("../../../assets/words/p/plain.png"),
   plane: require("../../../assets/words/p/plane.png"),

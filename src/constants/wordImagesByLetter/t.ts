@@ -69,6 +69,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   towel: require("../../../assets/words/t/towel.png"),
   tower: require("../../../assets/words/t/tower.png"),
   town: require("../../../assets/words/t/town.png"),
+  toxic: require("../../../assets/words/t/toxic.png"),
   trace: require("../../../assets/words/t/trace.png"),
   track: require("../../../assets/words/t/track.png"),
   trade: require("../../../assets/words/t/trade.png"),

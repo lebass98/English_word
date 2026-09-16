@@ -12,6 +12,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   palace: require("../../../assets/words/p/palace.png"),
   pale: require("../../../assets/words/p/pale.png"),
   palm: require("../../../assets/words/p/palm.png"),
+  panel: require("../../../assets/words/p/panel.png"),
   panic: require("../../../assets/words/p/panic.png"),
   parade: require("../../../assets/words/p/parade.png"),
   paradox: require("../../../assets/words/p/paradox.png"),

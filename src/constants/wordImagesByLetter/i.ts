@@ -49,6 +49,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   impressed: require("../../../assets/words/i/impressed.png"),
   impression: require("../../../assets/words/i/impression.png"),
   impressive: require("../../../assets/words/i/impressive.png"),
+  imprint: require("../../../assets/words/i/imprint.png"),
   improve: require("../../../assets/words/i/improve.png"),
   "in a respect": require("../../../assets/words/i/in-a-respect.png"),
   "in addition to": require("../../../assets/words/i/in-addition-to.png"),

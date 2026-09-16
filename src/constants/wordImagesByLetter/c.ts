@@ -147,6 +147,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   communicate: require("../../../assets/words/c/communicate.png"),
   communication: require("../../../assets/words/c/communication.png"),
   community: require("../../../assets/words/c/community.png"),
+  commute: require("../../../assets/words/c/commute.png"),
   compact: require("../../../assets/words/c/compact.png"),
   companion: require("../../../assets/words/c/companion.png"),
   company: require("../../../assets/words/c/company.png"),

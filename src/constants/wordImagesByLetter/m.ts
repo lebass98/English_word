@@ -9,6 +9,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   mail: require("../../../assets/words/m/mail.png"),
   main: require("../../../assets/words/m/main.png"),
   maintain: require("../../../assets/words/m/maintain.png"),
+  major: require("../../../assets/words/m/major.png"),
   "make a decision": require("../../../assets/words/m/make-a-decision.png"),
   "make sure": require("../../../assets/words/m/make-sure.png"),
   "make up for": require("../../../assets/words/m/make-up-for.png"),

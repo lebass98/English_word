@@ -221,6 +221,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   conscious: require("../../../assets/words/c/conscious.png"),
   consciously: require("../../../assets/words/c/consciously.png"),
   consensus: require("../../../assets/words/c/consensus.png"),
+  consent: require("../../../assets/words/c/consent.png"),
   consequence: require("../../../assets/words/c/consequence.png"),
   conservative: require("../../../assets/words/c/conservative.png"),
   conserve: require("../../../assets/words/c/conserve.png"),

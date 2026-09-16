@@ -134,6 +134,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   excel: require("../../../assets/words/e/excel.png"),
   excellent: require("../../../assets/words/e/excellent.png"),
   except: require("../../../assets/words/e/except.png"),
+  exception: require("../../../assets/words/e/exception.png"),
   exceptional: require("../../../assets/words/e/exceptional.png"),
   exceptionally: require("../../../assets/words/e/exceptionally.png"),
   excess: require("../../../assets/words/e/excess.png"),

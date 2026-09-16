@@ -124,6 +124,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   inferior: require("../../../assets/words/i/inferior.png"),
   infinite: require("../../../assets/words/i/infinite.png"),
   infirm: require("../../../assets/words/i/infirm.png"),
+  inflation: require("../../../assets/words/i/inflation.png"),
   influence: require("../../../assets/words/i/influence.png"),
   influential: require("../../../assets/words/i/influential.png"),
   inform: require("../../../assets/words/i/inform.png"),

@@ -29,6 +29,7 @@ export const IMAGES_G: Record<string, ImageSourcePropType> = {
   geography: require("../../../assets/words/g/geography.png"),
   geology: require("../../../assets/words/g/geology.png"),
   geometry: require("../../../assets/words/g/geometry.png"),
+  geothermal: require("../../../assets/words/g/geothermal.png"),
   germ: require("../../../assets/words/g/germ.png"),
   german: require("../../../assets/words/g/german.png"),
   germinate: require("../../../assets/words/g/germinate.png"),

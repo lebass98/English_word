@@ -302,6 +302,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   puritan: require("../../../assets/words/p/puritan.png"),
   purpose: require("../../../assets/words/p/purpose.png"),
   pursue: require("../../../assets/words/p/pursue.png"),
+  pursuit: require("../../../assets/words/p/pursuit.png"),
   push: require("../../../assets/words/p/push.png"),
   "put away": require("../../../assets/words/p/put-away.png"),
   "put effort (into)": require("../../../assets/words/p/put-effort-(into).png"),

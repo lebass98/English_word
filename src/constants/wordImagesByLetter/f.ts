@@ -190,5 +190,6 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   furniture: require("../../../assets/words/f/furniture.png"),
   further: require("../../../assets/words/f/further.png"),
   furthermore: require("../../../assets/words/f/furthermore.png"),
+  fuse: require("../../../assets/words/f/fuse.png"),
   future: require("../../../assets/words/f/future.png"),
 };

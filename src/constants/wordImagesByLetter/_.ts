@@ -20,4 +20,5 @@ export const IMAGES_OTHER: Record<string, ImageSourcePropType> = {
   父: require("../../../assets/words/_/父.png"),
   男: require("../../../assets/words/_/男.png"),
   私: require("../../../assets/words/_/私.png"),
+  覚える: require("../../../assets/words/_/覚える.png"),
 };

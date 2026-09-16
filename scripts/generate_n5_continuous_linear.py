@@ -2,6 +2,7 @@
 """
 Draw Things '선형그래픽' 스킬 기반 일본어 JLPT N5 단어 자동 연속 생성 및 유닛별 Git 동기화 스크립트
 - 대상: JLPT N5 단어 (총 556개, 유닛당 20개씩 총 28개 유닛)
+- 유닛에서 멈추지 않고 다음 유닛으로 자동 연속 진행
 - 최신 선형그래픽 조형 6대 원칙 + 2026-09-13/14 개정 완벽 준수:
   1. 1024x1024 해상도 네이티브 렌더링
   2. 0.05mm 초극세 바늘선 (thinnest possible 0.05mm ultra-delicate needle-thin hairline ink stroke)
@@ -17,6 +18,7 @@ Draw Things '선형그래픽' 스킬 기반 일본어 JLPT N5 단어 자동 연�
   3. README.md에 일별 작업 내역 기록
   4. Git commit (한글 메시지)
   5. Git pull --rebase origin main && git push origin main 동기화
+  6. 다음 유닛으로 멈추지 않고 자동 계속 진행
 """
 
 import os
@@ -37,53 +39,15 @@ PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
 ASSETS_DIR = os.path.join(PROJECT_ROOT, "assets", "words")
 SYNC_SCRIPT = os.path.join(PROJECT_ROOT, "scripts", "sync_word_images.py")
 README_FILE = os.path.join(PROJECT_ROOT, "README.md")
+SCENES_FILE = os.path.join(SCRIPT_DIR, "n5_scenes.json")
 
-# 일본어 N5 단어별 고품질 영문 씬 콘셉트 사전 (100% 순수 영문 전용)
-N5_SCENE_PRESETS = {
-    # Unit 1 (n5-1 ~ n5-20)
-    "私": "energetic character jumping happily and proudly pointing to oneself with thumbs up on a sunlit balcony with flowering planters and city skyline view, motion lines",
-    "あなた": "cozy sunny art studio, one joyful character leaping and pointing excitedly with both hands toward the viewer with an inviting warm smile, easel with canvas, art stool, motion marks",
-    "人": "bustling open city pedestrian plaza, active character sprinting happily across wide stone pavement lined with benches, street lamps, distant cafe terrace, motion lines",
-    "男": "modern active gym room, strong energetic male character triumphantly lifting a barbell with a happy grin, exercise equipment, mirror on wall, dumbbell racks",
-    "女": "sunny outdoor botanical garden path, graceful energetic female character happily jogging along stone trail waving cheerfully, flower beds, garden archway and trees",
-    "子供": "colorful lively playground, playful little child character energetically jumping off a swing set into the air with arms outstretched in joy, slide, sandbox, fence",
-    "大人": "stylish contemporary library cafe, confident adult character striding with coffee tumbler, sleek wooden bookshelves, armchair, laptop on work desk",
-    "家族": "warm cozy home living room, happy family characters joyfully hugging and cheering together around a coffee table, comfortable sofa, framed pictures on wall, rug",
-    "父": "backyard lawn patio, proud energetic father character tossing a baseball playfully in the air with his glove, garden bench, picket fence, barbecue grill",
-    "母": "bright cheerful kitchen, loving energetic mother character joyfully taking a steaming fresh batch of cookies from the oven, kitchen counter, spice jars, apron",
-    "兄": "neighborhood basketball court, athletic older brother character jumping high to shoot a basketball into the hoop, chain link fence, sports bench, basketball rack",
-    "姉": "bright study music room, cheerful energetic older sister character playing an upbeat tune on an acoustic guitar with notes floating, music stand, bookshelf",
-    "弟": "playful room floor, energetic little brother character happily zooming a toy race car across the wooden floor, toy building blocks, low table, toy chest",
-    "妹": "sunny grassy garden, enthusiastic little sister character joyfully chasing colorful fluttering butterflies with a little net, flowers, birdhouse, stone path",
-    "友達": "scenic hilltop trail, two best friend characters joyfully jumping together giving a high-five against a panoramic mountain view, backpacks, hiking trail",
-    "先生": "bright energetic classroom, inspiring smiling teacher character standing before a large chalkboard pointing to an exciting star diagram with a wooden pointer, student desks, globe",
-    "学生": "school courtyard walkway, enthusiastic student character with a backpack leaping forward clutching a textbook happily heading to class, school entrance gate, trees",
-    "会社員": "modern high-rise business office, active office worker character striding briskly holding a briefcase and coffee cup with a cheerful confident smile, desks, computer monitors",
-    "医者": "clean bright clinic consultation room, kind smiling doctor character with stethoscope around neck giving a reassuring thumbs up, examination table, medical chart on wall",
-    "名前": "festive registration greeting desk, enthusiastic character proudly stamping an official name tag badge on desk with clear bold letters NAME, welcome banner, podium, balloons",
+def load_scenes_db():
+    if os.path.exists(SCENES_FILE):
+        with open(SCENES_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {}
 
-    # Unit 2 (n5-21 ~ n5-40)
-    "国": "international cultural hall, cheerful character standing proudly before an array of diverse national flags and a large globe map on an exhibition wall, travel brochures",
-    "今": "vibrant city clock tower square, excited character pointing urgently to an active wall clock showing present time NOW, stone fountain, pavement benches",
-    "今日": "bright morning bedroom with wide window, joyful character tearing off yesterday page from a wall calendar revealing exciting TODAY with sun rays streaming in",
-    "明日": "scenic hilltop campsite at dawn, character looking forward enthusiastically through telescope toward tomorrow rising sun on the horizon, tent, campfire pit",
-    "昨日": "cozy library study nook, nostalgic character happily smiling while flipping through yesterday journal diary scrapbook filled with fun photos on a desk lamp table",
-    "毎日": "sunny home jogging path, energetic character running with athletic stride on a daily morning route past green park trees, fitness tracker, sunrise glow",
-    "朝": "bright sunny kitchen dining nook, cheerful character stretching arms wide welcoming morning sunshine beside a breakfast table with toast and steaming mug, open curtains",
-    "昼": "bustling park picnic lawn at midday, hungry happy character sitting on checkered blanket opening a bento lunchbox under bright noon sun, trees, bicycle parked",
-    "夜": "peaceful rooftop terrace under a starlit night sky with glowing crescent moon, relaxed character looking through stargazing telescope, cozy lanterns on railing",
-    "午後": "cozy sunlit tea cafe patio, relaxed character enjoying peaceful afternoon tea time with teapot and slice of cake on round table, garden plants, gentle breeze",
-    "時間": "antique clockmaker workshop, focused character admiring a variety of vintage pendulums, hourglasses and ticking wall clocks showing passage of time, workbench tools",
-    "来週": "bright organized home office, excited character marking an energetic red circle around next week dates on a large wall planner calendar, desk, pinboard",
-    "来年": "festive New Year countdown party room, joyful character raising a party horn beneath a banner celebrating the coming new year, streamers, confetti, clock",
-    "春": "vibrant springtime park meadow, delighted character leaping among blooming cherry blossom trees and dancing flower petals in gentle spring breeze, picnic bench",
-    "夏": "tropical summer beach resort, energetic character in swim shorts running excitedly toward ocean waves with a colorful beach ball, palm trees, beach umbrella",
-    "秋": "serene mountain forest pathway, cheerful character joyfully tossing golden autumn fallen leaves into the crisp air, maple trees, wooden trail fence",
-    "冬": "sparkling snowy winter wonderland, happy character building a smiling snowman with a carrot nose and scarf, falling snowflakes, pine trees with snow",
-    "誕生日": "colorful birthday party room, thrilled character blowing out candles on a tall decorated birthday cake surrounded by cheering friends, party hats, gift boxes",
-    "休み": "tropical seaside hammock, completely relaxed character swaying gently between two palm trees holding a coconut drink with umbrella straw, ocean waves",
-    "家": "charming suburban front yard, proud character welcoming guests with open arms in front of a lovely two-story cottage house with chimney, flower garden, stone path",
-}
+N5_SCENES = load_scenes_db()
 
 def clean_english_only(text: str) -> str:
     """비영문 문자를 철저히 제거하고 공백을 정돈하여 100% 영문 텍스트만 남김"""
@@ -106,7 +70,6 @@ def get_registered_image_keys():
 
 def get_asset_path(word: str, concept_id: str):
     """단어 또는 conceptId에 따른 에셋 저장 경로 판정"""
-    # conceptId가 영문이면 영문 첫 글자 폴더 우선
     target = concept_id if (concept_id and concept_id != word and "a" <= concept_id[:1].lower() <= "z") else word
     first = target[:1].lower()
     letter = first if "a" <= first <= "z" else "_"
@@ -143,20 +106,23 @@ def generate_image_for_word(item: dict, registered_keys: set):
     """단어 1개에 대해 선형그래픽 이미지 생성"""
     word = item["word"]
     cid = item["conceptId"]
-    meaning = item["meaning"]
     out_path, letter, key = get_asset_path(word, cid)
 
-    # 이미 파일이 존재하거나 등록되어 있으면 건너뜀
+    # 이미 파일이 존재하거나 키가 등록되어 있으면 건너뜀
     if os.path.exists(out_path) and os.path.getsize(out_path) > 1000:
         return True, "already_exists"
+    if word in registered_keys or cid in registered_keys:
+        return True, "already_registered"
 
-    # 프리셋 씬 가져오기 또는 기본 동작 씬 구성
-    scene = N5_SCENE_PRESETS.get(word) or N5_SCENE_PRESETS.get(cid)
+    # 영문 씬 가져오기
+    scene = N5_SCENES.get(word) or N5_SCENES.get(cid)
     if not scene:
-        # 안전한 기본 영문 동작 씬
-        scene = f"energetic lively scene representing the concept of {clean_english_only(cid or word)}, character actively engaging in dynamic movement with motion lines, well-furnished room or outdoor background with rich details"
+        en_hint = clean_english_only(cid) if (cid and cid != word) else "daily life action"
+        scene = f"bright lively scene illustrating {en_hint}, energetic character in dynamic action pose with motion lines, rich background details, furniture and floor line"
 
     clean_scene = clean_english_only(scene)
+    if not clean_scene:
+        clean_scene = "active character engaging in an exciting energetic movement with motion lines in a well-furnished room with floor line"
 
     prompt = (
         f"linear graphic illustration, complete richly detailed scene of {clean_scene}, "
@@ -188,7 +154,7 @@ def generate_image_for_word(item: dict, registered_keys: set):
         "non-English text, non-English characters, Korean text, Hangul, Korean letters, Chinese characters, Hanzi, Kanji, Japanese text, Kana, foreign script, pseudo-Hangul, weird Asian glyphs, oriental symbols, non-Latin alphabet, foreign writing"
     )
 
-    seed = 2000 + item["idx"] * 13
+    seed = 3000 + item["idx"] * 19
     payload = {
         "prompt": prompt,
         "negative_prompt": negative_prompt,
@@ -247,11 +213,9 @@ def sync_and_commit(unit_num: int, words_summary: str):
             content = f.read()
 
         if header_today in content:
-            # 해당 날짜 섹션 아래에 추가
             parts = content.split(header_today)
             new_content = parts[0] + header_today + "\n" + entry_line + parts[1]
         else:
-            # 작업 내역 섹션 바로 아래에 날짜 신규 생성
             marker = "## 작업 내역\n"
             if marker in content:
                 parts = content.split(marker)
@@ -278,18 +242,19 @@ def sync_and_commit(unit_num: int, words_summary: str):
 
 def main():
     parser = argparse.ArgumentParser(description="JLPT N5 단어 선형그래픽 자동 연속 생성 도구")
-    parser.add_argument("--unit", "-u", type=int, default=1, help="시작할 유닛 번호 (기본: 1)")
-    parser.add_argument("--end-unit", "-e", type=int, default=1, help="종료 유닛 번호 (기본: 1)")
+    parser.add_argument("--unit", "-u", type=int, default=2, help="시작할 유닛 번호 (기본: 2)")
+    parser.add_argument("--end-unit", "-e", type=int, default=28, help="종료 유닛 번호 (기본: 28)")
     args = parser.parse_args()
 
     items = load_n5_words()
-    registered_keys = get_registered_image_keys()
 
     for u in range(args.unit, args.end_unit + 1):
         unit_words = [item for item in items if item["unit"] == u]
         if not unit_words:
             print(f"[Unit {u}] 대상 단어가 없습니다.")
             continue
+
+        registered_keys = get_registered_image_keys()
 
         print(f"\n==================================================", flush=True)
         print(f"JLPT N5 Unit {u} 선형그래픽 생성 시작 ({len(unit_words)}단어)", flush=True)
@@ -300,15 +265,18 @@ def main():
             ok, status = generate_image_for_word(item, registered_keys)
             if status == "generated":
                 generated_list.append(item["word"])
+            elif status == "failed":
+                print(f"[경고] 단어 '{item['word']}' 생성 실패, 다음 단어로 계속 진행합니다.")
 
         # 해당 유닛 단어 요약
         words_summary = ", ".join([w["word"] for w in unit_words[:5]]) + f" 외 {len(unit_words)-5}개"
         if generated_list:
             sync_and_commit(u, words_summary)
+            print(f"[Unit {u}] 완료! 자동으로 다음 유닛으로 이동합니다...\n", flush=True)
         else:
-            print(f"[Unit {u}] 이미 모든 이미지가 생성되어 동기화를 건너뜁니다.")
+            print(f"[Unit {u}] 이미 모든 이미지가 준비되어 있어 바로 다음 유닛으로 이동합니다.\n", flush=True)
 
-    print("\n모든 지정 유닛 작업이 완료되었습니다.", flush=True)
+    print("\n모든 지정 유닛 작업(Unit 2~28)이 완료되었습니다!", flush=True)
 
 if __name__ == "__main__":
     main()

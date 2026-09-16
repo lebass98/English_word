@@ -105,6 +105,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   bloom: require("../../../assets/words/b/bloom.png"),
   blossom: require("../../../assets/words/b/blossom.png"),
   blow: require("../../../assets/words/b/blow.png"),
+  blur: require("../../../assets/words/b/blur.png"),
   board: require("../../../assets/words/b/board.png"),
   body: require("../../../assets/words/b/body.png"),
   bold: require("../../../assets/words/b/bold.png"),

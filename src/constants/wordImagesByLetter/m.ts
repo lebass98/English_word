@@ -97,6 +97,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   mount: require("../../../assets/words/m/mount.png"),
   mouse: require("../../../assets/words/m/mouse.png"),
   "move on": require("../../../assets/words/m/move-on.png"),
+  movement: require("../../../assets/words/m/movement.png"),
   multiple: require("../../../assets/words/m/multiple.png"),
   murder: require("../../../assets/words/m/murder.png"),
   muscle: require("../../../assets/words/m/muscle.png"),

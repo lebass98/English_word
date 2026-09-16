@@ -222,6 +222,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   dive: require("../../../assets/words/d/dive.png"),
   diverse: require("../../../assets/words/d/diverse.png"),
   diversify: require("../../../assets/words/d/diversify.png"),
+  divert: require("../../../assets/words/d/divert.png"),
   divide: require("../../../assets/words/d/divide.png"),
   divorce: require("../../../assets/words/d/divorce.png"),
   document: require("../../../assets/words/d/document.png"),

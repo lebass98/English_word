@@ -50,6 +50,7 @@ export const IMAGES_N: Record<string, ImageSourcePropType> = {
   northern: require("../../../assets/words/n/northern.png"),
   notable: require("../../../assets/words/n/notable.png"),
   notably: require("../../../assets/words/n/notably.png"),
+  note: require("../../../assets/words/n/note.png"),
   notice: require("../../../assets/words/n/notice.png"),
   notion: require("../../../assets/words/n/notion.png"),
   nourish: require("../../../assets/words/n/nourish.png"),

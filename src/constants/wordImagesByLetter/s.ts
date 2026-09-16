@@ -149,6 +149,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   sign: require("../../../assets/words/s/sign.png"),
   "sign up (for)": require("../../../assets/words/s/sign-up-(for).png"),
   signal: require("../../../assets/words/s/signal.png"),
+  signally: require("../../../assets/words/s/signally.png"),
   significant: require("../../../assets/words/s/significant.png"),
   significantly: require("../../../assets/words/s/significantly.png"),
   silence: require("../../../assets/words/s/silence.png"),

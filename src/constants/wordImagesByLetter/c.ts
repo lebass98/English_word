@@ -117,6 +117,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   collaborate: require("../../../assets/words/c/collaborate.png"),
   collapse: require("../../../assets/words/c/collapse.png"),
   collar: require("../../../assets/words/c/collar.png"),
+  colleague: require("../../../assets/words/c/colleague.png"),
   collect: require("../../../assets/words/c/collect.png"),
   collective: require("../../../assets/words/c/collective.png"),
   college: require("../../../assets/words/c/college.png"),

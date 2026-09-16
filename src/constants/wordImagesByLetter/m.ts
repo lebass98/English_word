@@ -109,6 +109,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   minimize: require("../../../assets/words/m/minimize.png"),
   minimum: require("../../../assets/words/m/minimum.png"),
   minister: require("../../../assets/words/m/minister.png"),
+  minor: require("../../../assets/words/m/minor.png"),
   minority: require("../../../assets/words/m/minority.png"),
   minute: require("../../../assets/words/m/minute.png"),
   miracle: require("../../../assets/words/m/miracle.png"),

@@ -43,6 +43,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   ceiling: require("../../../assets/words/c/ceiling.png"),
   celebrate: require("../../../assets/words/c/celebrate.png"),
   celebrated: require("../../../assets/words/c/celebrated.png"),
+  celebration: require("../../../assets/words/c/celebration.png"),
   celebrity: require("../../../assets/words/c/celebrity.png"),
   cell: require("../../../assets/words/c/cell.png"),
   cemetery: require("../../../assets/words/c/cemetery.png"),

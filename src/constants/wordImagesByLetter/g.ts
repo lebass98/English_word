@@ -64,6 +64,7 @@ export const IMAGES_G: Record<string, ImageSourcePropType> = {
   grasp: require("../../../assets/words/g/grasp.png"),
   grass: require("../../../assets/words/g/grass.png"),
   grateful: require("../../../assets/words/g/grateful.png"),
+  gratify: require("../../../assets/words/g/gratify.png"),
   gratitude: require("../../../assets/words/g/gratitude.png"),
   grave: require("../../../assets/words/g/grave.png"),
   gravity: require("../../../assets/words/g/gravity.png"),

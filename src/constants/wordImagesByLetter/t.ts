@@ -119,6 +119,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   trail: require("../../../assets/words/t/trail.png"),
   trait: require("../../../assets/words/t/trait.png"),
   transaction: require("../../../assets/words/t/transaction.png"),
+  transcend: require("../../../assets/words/t/transcend.png"),
   transcribe: require("../../../assets/words/t/transcribe.png"),
   transfer: require("../../../assets/words/t/transfer.png"),
   transform: require("../../../assets/words/t/transform.png"),

@@ -28,6 +28,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   manage: require("../../../assets/words/m/manage.png"),
   manageable: require("../../../assets/words/m/manageable.png"),
   mandatory: require("../../../assets/words/m/mandatory.png"),
+  maneuver: require("../../../assets/words/m/maneuver.png"),
   manifest: require("../../../assets/words/m/manifest.png"),
   manipulate: require("../../../assets/words/m/manipulate.png"),
   manipulation: require("../../../assets/words/m/manipulation.png"),

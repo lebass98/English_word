@@ -27,6 +27,7 @@ export const IMAGES_U: Record<string, ImageSourcePropType> = {
   unlike: require("../../../assets/words/u/unlike.png"),
   unusual: require("../../../assets/words/u/unusual.png"),
   "up close": require("../../../assets/words/u/up-close.png"),
+  uphold: require("../../../assets/words/u/uphold.png"),
   upset: require("../../../assets/words/u/upset.png"),
   "upside down": require("../../../assets/words/u/upside-down.png"),
   urban: require("../../../assets/words/u/urban.png"),

@@ -96,6 +96,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   forage: require("../../../assets/words/f/forage.png"),
   forbid: require("../../../assets/words/f/forbid.png"),
   force: require("../../../assets/words/f/force.png"),
+  forcible: require("../../../assets/words/f/forcible.png"),
   forecast: require("../../../assets/words/f/forecast.png"),
   forehead: require("../../../assets/words/f/forehead.png"),
   foreign: require("../../../assets/words/f/foreign.png"),

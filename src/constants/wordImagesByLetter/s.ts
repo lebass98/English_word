@@ -221,6 +221,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   sorrowful: require("../../../assets/words/s/sorrowful.png"),
   sort: require("../../../assets/words/s/sort.png"),
   sound: require("../../../assets/words/s/sound.png"),
+  soundproof: require("../../../assets/words/s/soundproof.png"),
   source: require("../../../assets/words/s/source.png"),
   southern: require("../../../assets/words/s/southern.png"),
   souvenir: require("../../../assets/words/s/souvenir.png"),

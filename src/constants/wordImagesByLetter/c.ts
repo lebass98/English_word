@@ -201,6 +201,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   complete: require("../../../assets/words/c/complete.png"),
   completely: require("../../../assets/words/c/completely.png"),
   complex: require("../../../assets/words/c/complex.png"),
+  compliance: require("../../../assets/words/c/compliance.png"),
   complicated: require("../../../assets/words/c/complicated.png"),
   compliment: require("../../../assets/words/c/compliment.png"),
   complimentary: require("../../../assets/words/c/complimentary.png"),

@@ -184,6 +184,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   revise: require("../../../assets/words/r/revise.png"),
   revival: require("../../../assets/words/r/revival.png"),
   revolution: require("../../../assets/words/r/revolution.png"),
+  revolutionize: require("../../../assets/words/r/revolutionize.png"),
   reward: require("../../../assets/words/r/reward.png"),
   rhyme: require("../../../assets/words/r/rhyme.png"),
   rid: require("../../../assets/words/r/rid.png"),

@@ -270,6 +270,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   involuntary: require("../../../assets/words/i/involuntary.png"),
   involve: require("../../../assets/words/i/involve.png"),
   iron: require("../../../assets/words/i/iron.png"),
+  irrational: require("../../../assets/words/i/irrational.png"),
   irreparable: require("../../../assets/words/i/irreparable.png"),
   irresistible: require("../../../assets/words/i/irresistible.png"),
   irreversible: require("../../../assets/words/i/irreversible.png"),

@@ -172,6 +172,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   situate: require("../../../assets/words/s/situate.png"),
   situation: require("../../../assets/words/s/situation.png"),
   sizable: require("../../../assets/words/s/sizable.png"),
+  size: require("../../../assets/words/s/size.png"),
   skeleton: require("../../../assets/words/s/skeleton.png"),
   skeptical: require("../../../assets/words/s/skeptical.png"),
   skill: require("../../../assets/words/s/skill.png"),

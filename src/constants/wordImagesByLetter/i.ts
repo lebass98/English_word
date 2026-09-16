@@ -111,6 +111,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   include: require("../../../assets/words/i/include.png"),
   income: require("../../../assets/words/i/income.png"),
   incompatible: require("../../../assets/words/i/incompatible.png"),
+  incompetent: require("../../../assets/words/i/incompetent.png"),
   incompletely: require("../../../assets/words/i/incompletely.png"),
   inconceivable: require("../../../assets/words/i/inconceivable.png"),
   inconsequential: require("../../../assets/words/i/inconsequential.png"),

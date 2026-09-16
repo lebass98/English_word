@@ -29,6 +29,7 @@ export const IMAGES_W: Record<string, ImageSourcePropType> = {
   weird: require("../../../assets/words/w/weird.png"),
   welfare: require("../../../assets/words/w/welfare.png"),
   wet: require("../../../assets/words/w/wet.png"),
+  wetland: require("../../../assets/words/w/wetland.png"),
   wheat: require("../../../assets/words/w/wheat.png"),
   "when it comes to": require("../../../assets/words/w/when-it-comes-to.png"),
   whether: require("../../../assets/words/w/whether.png"),

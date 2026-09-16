@@ -226,6 +226,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   appreciable: require("../../../assets/words/a/appreciable.png"),
   appreciate: require("../../../assets/words/a/appreciate.png"),
   apprehend: require("../../../assets/words/a/apprehend.png"),
+  apprehensive: require("../../../assets/words/a/apprehensive.png"),
   approach: require("../../../assets/words/a/approach.png"),
   appropriate: require("../../../assets/words/a/appropriate.png"),
   approve: require("../../../assets/words/a/approve.png"),

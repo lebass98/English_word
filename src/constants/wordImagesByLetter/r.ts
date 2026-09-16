@@ -98,6 +98,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   relieve: require("../../../assets/words/r/relieve.png"),
   religion: require("../../../assets/words/r/religion.png"),
   religious: require("../../../assets/words/r/religious.png"),
+  relinquish: require("../../../assets/words/r/relinquish.png"),
   rely: require("../../../assets/words/r/rely.png"),
   remain: require("../../../assets/words/r/remain.png"),
   remains: require("../../../assets/words/r/remains.png"),

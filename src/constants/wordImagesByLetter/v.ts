@@ -23,6 +23,7 @@ export const IMAGES_V: Record<string, ImageSourcePropType> = {
   version: require("../../../assets/words/v/version.png"),
   vessel: require("../../../assets/words/v/vessel.png"),
   via: require("../../../assets/words/v/via.png"),
+  vibration: require("../../../assets/words/v/vibration.png"),
   vice: require("../../../assets/words/v/vice.png"),
   victim: require("../../../assets/words/v/victim.png"),
   victory: require("../../../assets/words/v/victory.png"),

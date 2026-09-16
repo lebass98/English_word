@@ -98,11 +98,30 @@ def letter_of(stem):
 
 
 LEVEL_LABEL = {"high-1": "고1", "middle-3": "중3", "high-2": "고2",
-               "high-3": "고3", "toefl": "토플", "middle-1": "중1", "middle-2": "중2"}
+               "high-3": "고3", "toefl": "토플", "toeic": "토익",
+               "middle-1": "중1", "middle-2": "중2"}
 DEFAULT_LEVELS = ["high-1", "middle-3", "high-2", "high-3", "toefl"]
 
 
-def build_queue(levels):
+def auto_scene(word, info):
+    """장면 묘사가 없는 단어에 예문으로 장면을 만든다.
+
+    generate_toeic_continuous_linear.py 와 같은 규칙이라, 그 스크립트로
+    먼저 그린 토익 그림과 그림체가 맞는다.
+    """
+    clean_w = re.sub(r"[^\x00-\x7F]+", " ", word).strip()
+    ex = re.sub(r"[^\x00-\x7F]+", " ", (info or {}).get("example", "")).strip()
+    ex = ex.replace('"', "").replace("'", "")
+    if ex:
+        if len(ex) > 140:
+            ex = ex[:140].rsplit(" ", 1)[0]
+        return (f"bright detailed scene of {clean_w}, small slim white pictogram character "
+                f"acting out: {ex}, rich background furniture, props and floor line")
+    return (f"bright detailed indoor scene of {clean_w}, small slim white pictogram character "
+            f"clearly illustrating the concept of {clean_w}, rich wall decor, furniture and floor line")
+
+
+def build_queue(levels, auto=False):
     """과정 순서대로, 그림 없고 장면 있는 단어.
 
     한 장 그릴 때마다 다시 부른다. 그래야 도중에 새로 써 넣은 장면도 집어가고,
@@ -131,11 +150,14 @@ def build_queue(levels):
             if cid in keys or sp in keys or cid in seen:
                 continue
             entry = cat.get(cid) or cat.get(sp) or {}
-            if not entry.get("scene"):
+            scene = entry.get("scene")
+            if not scene and auto:
+                scene = auto_scene(sp, words.get(sp))
+            if not scene:
                 continue
             seen.add(cid)
             queue.append({"level": LEVEL_LABEL.get(level, level),
-                          "unit": i // 20 + 1, "word": cid, "scene": entry["scene"]})
+                          "unit": i // 20 + 1, "word": cid, "scene": scene})
     return queue
 
 
@@ -144,6 +166,8 @@ def main():
     ap.add_argument("--limit", type=int, default=0, help="이만큼만 그린다 (0 이면 끝까지)")
     ap.add_argument("--levels", default=",".join(DEFAULT_LEVELS),
                     help="그릴 과정 순서 (쉼표로 구분)")
+    ap.add_argument("--auto-scene", action="store_true",
+                    help="장면 묘사가 없는 단어는 예문으로 장면을 만들어 그린다 (토익 등)")
     args = ap.parse_args()
     levels = [x.strip() for x in args.levels.split(",") if x.strip()]
 
@@ -163,7 +187,7 @@ def main():
         if not sync():
             print("최신을 받아 오지 못해 멈춘다", flush=True)
             break
-        queue = build_queue(levels)
+        queue = build_queue(levels, auto=args.auto_scene)
         if not queue:
             print("그릴 단어가 없다", flush=True)
             break

@@ -5,5 +5,6 @@ export const IMAGES_Y: Record<string, ImageSourcePropType> = {
   yard: require("../../../assets/words/y/yard.png"),
   yawn: require("../../../assets/words/y/yawn.png"),
   yell: require("../../../assets/words/y/yell.png"),
+  yet: require("../../../assets/words/y/yet.png"),
   yield: require("../../../assets/words/y/yield.png"),
 };

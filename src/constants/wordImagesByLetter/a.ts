@@ -178,6 +178,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   antecedent: require("../../../assets/words/a/antecedent.png"),
   anthropologist: require("../../../assets/words/a/anthropologist.png"),
   antibiotic: require("../../../assets/words/a/antibiotic.png"),
+  antibody: require("../../../assets/words/a/antibody.png"),
   anticipate: require("../../../assets/words/a/anticipate.png"),
   antique: require("../../../assets/words/a/antique.png"),
   antiquity: require("../../../assets/words/a/antiquity.png"),

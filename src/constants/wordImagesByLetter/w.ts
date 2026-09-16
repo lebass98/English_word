@@ -46,6 +46,7 @@ export const IMAGES_W: Record<string, ImageSourcePropType> = {
   without: require("../../../assets/words/w/without.png"),
   witness: require("../../../assets/words/w/witness.png"),
   wolf: require("../../../assets/words/w/wolf.png"),
+  wonder: require("../../../assets/words/w/wonder.png"),
   wonderful: require("../../../assets/words/w/wonderful.png"),
   wood: require("../../../assets/words/w/wood.png"),
   wool: require("../../../assets/words/w/wool.png"),

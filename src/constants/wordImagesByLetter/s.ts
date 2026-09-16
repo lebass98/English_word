@@ -262,6 +262,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   spill: require("../../../assets/words/s/spill.png"),
   spin: require("../../../assets/words/s/spin.png"),
   spine: require("../../../assets/words/s/spine.png"),
+  spiral: require("../../../assets/words/s/spiral.png"),
   spirit: require("../../../assets/words/s/spirit.png"),
   splash: require("../../../assets/words/s/splash.png"),
   split: require("../../../assets/words/s/split.png"),

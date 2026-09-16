@@ -287,6 +287,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   constraint: require("../../../assets/words/c/constraint.png"),
   construct: require("../../../assets/words/c/construct.png"),
   construction: require("../../../assets/words/c/construction.png"),
+  constructive: require("../../../assets/words/c/constructive.png"),
   consult: require("../../../assets/words/c/consult.png"),
   consume: require("../../../assets/words/c/consume.png"),
   consumer: require("../../../assets/words/c/consumer.png"),

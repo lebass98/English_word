@@ -188,6 +188,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   revolve: require("../../../assets/words/r/revolve.png"),
   reward: require("../../../assets/words/r/reward.png"),
   rhyme: require("../../../assets/words/r/rhyme.png"),
+  rich: require("../../../assets/words/r/rich.png"),
   rid: require("../../../assets/words/r/rid.png"),
   riddle: require("../../../assets/words/r/riddle.png"),
   ride: require("../../../assets/words/r/ride.png"),

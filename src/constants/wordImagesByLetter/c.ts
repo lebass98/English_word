@@ -236,6 +236,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   contact: require("../../../assets/words/c/contact.png"),
   contain: require("../../../assets/words/c/contain.png"),
   contemporary: require("../../../assets/words/c/contemporary.png"),
+  contempt: require("../../../assets/words/c/contempt.png"),
   content: require("../../../assets/words/c/content.png"),
   contest: require("../../../assets/words/c/contest.png"),
   context: require("../../../assets/words/c/context.png"),

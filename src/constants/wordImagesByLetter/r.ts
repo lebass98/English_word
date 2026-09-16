@@ -154,6 +154,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   role: require("../../../assets/words/r/role.png"),
   roll: require("../../../assets/words/r/roll.png"),
   rope: require("../../../assets/words/r/rope.png"),
+  rot: require("../../../assets/words/r/rot.png"),
   rotten: require("../../../assets/words/r/rotten.png"),
   rough: require("../../../assets/words/r/rough.png"),
   route: require("../../../assets/words/r/route.png"),

@@ -190,6 +190,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   intention: require("../../../assets/words/i/intention.png"),
   intentionally: require("../../../assets/words/i/intentionally.png"),
   interact: require("../../../assets/words/i/interact.png"),
+  interaction: require("../../../assets/words/i/interaction.png"),
   interest: require("../../../assets/words/i/interest.png"),
   interesting: require("../../../assets/words/i/interesting.png"),
   interfere: require("../../../assets/words/i/interfere.png"),

@@ -145,6 +145,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   expert: require("../../../assets/words/e/expert.png"),
   expertise: require("../../../assets/words/e/expertise.png"),
   explain: require("../../../assets/words/e/explain.png"),
+  explicit: require("../../../assets/words/e/explicit.png"),
   explode: require("../../../assets/words/e/explode.png"),
   explore: require("../../../assets/words/e/explore.png"),
   export: require("../../../assets/words/e/export.png"),

@@ -81,6 +81,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   admiral: require("../../../assets/words/a/admiral.png"),
   admire: require("../../../assets/words/a/admire.png"),
   admit: require("../../../assets/words/a/admit.png"),
+  adolescent: require("../../../assets/words/a/adolescent.png"),
   adopt: require("../../../assets/words/a/adopt.png"),
   adorn: require("../../../assets/words/a/adorn.png"),
   adult: require("../../../assets/words/a/adult.png"),

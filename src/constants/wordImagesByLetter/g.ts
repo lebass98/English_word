@@ -20,6 +20,7 @@ export const IMAGES_G: Record<string, ImageSourcePropType> = {
   generous: require("../../../assets/words/g/generous.png"),
   genetic: require("../../../assets/words/g/genetic.png"),
   genius: require("../../../assets/words/g/genius.png"),
+  genre: require("../../../assets/words/g/genre.png"),
   genuinely: require("../../../assets/words/g/genuinely.png"),
   geography: require("../../../assets/words/g/geography.png"),
   german: require("../../../assets/words/g/german.png"),

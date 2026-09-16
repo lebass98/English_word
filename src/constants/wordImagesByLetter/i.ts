@@ -193,6 +193,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   interval: require("../../../assets/words/i/interval.png"),
   intervene: require("../../../assets/words/i/intervene.png"),
   intimate: require("../../../assets/words/i/intimate.png"),
+  intimately: require("../../../assets/words/i/intimately.png"),
   introduce: require("../../../assets/words/i/introduce.png"),
   introduction: require("../../../assets/words/i/introduction.png"),
   intuition: require("../../../assets/words/i/intuition.png"),

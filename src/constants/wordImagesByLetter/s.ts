@@ -328,6 +328,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   strict: require("../../../assets/words/s/strict.png"),
   stride: require("../../../assets/words/s/stride.png"),
   strike: require("../../../assets/words/s/strike.png"),
+  striking: require("../../../assets/words/s/striking.png"),
   string: require("../../../assets/words/s/string.png"),
   stripe: require("../../../assets/words/s/stripe.png"),
   striped: require("../../../assets/words/s/striped.png"),

@@ -120,6 +120,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   cliff: require("../../../assets/words/c/cliff.png"),
   climate: require("../../../assets/words/c/climate.png"),
   climb: require("../../../assets/words/c/climb.png"),
+  cling: require("../../../assets/words/c/cling.png"),
   close: require("../../../assets/words/c/close.png"),
   closet: require("../../../assets/words/c/closet.png"),
   cloth: require("../../../assets/words/c/cloth.png"),

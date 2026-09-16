@@ -31,6 +31,10 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-16
+- 토익(TOEIC) 코스 신설 — 단어 2,108개 등록, 106유닛, 코스 순서는 고3 → TOEIC → TOEFL
+  - 원본 `scripts/data/toeic_words.tsv`, 단어 목록 `src/data/en/levels/toeic.json`, 뜻은 `tr/ko.json`의 `tc-N`
+  - 기존 코스에 있던 단어 1,188개는 철자 그대로 재사용(그림·예문·어원 자동 공유), 신규 920개 등록
+  - 메뉴·홈 내 코스·학습 뷰페이지는 기존 코스와 동일한 폼으로 자동 반영
 - 고1 16~49단원 빠진 그림 212장 선형그래픽으로 생성 및 등록 (단어 단위 커밋/푸시 자동화)
 - TOEFL 단어 그림 117장 생성 및 등록 (evaporate ~ in a respect 구간)
 - 이미지 총계 갱신: `assets/words` PNG 2,760장 / `wordImagesByLetter` 매핑 2,558개

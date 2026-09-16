@@ -60,6 +60,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   beef: require("../../../assets/words/b/beef.png"),
   beer: require("../../../assets/words/b/beer.png"),
   "before long": require("../../../assets/words/b/before-long.png"),
+  beforehand: require("../../../assets/words/b/beforehand.png"),
   beg: require("../../../assets/words/b/beg.png"),
   beggar: require("../../../assets/words/b/beggar.png"),
   behalf: require("../../../assets/words/b/behalf.png"),

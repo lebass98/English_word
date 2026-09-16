@@ -60,6 +60,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   referee: require("../../../assets/words/r/referee.png"),
   refine: require("../../../assets/words/r/refine.png"),
   reflect: require("../../../assets/words/r/reflect.png"),
+  reflection: require("../../../assets/words/r/reflection.png"),
   reform: require("../../../assets/words/r/reform.png"),
   refresh: require("../../../assets/words/r/refresh.png"),
   refreshing: require("../../../assets/words/r/refreshing.png"),

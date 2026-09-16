@@ -59,6 +59,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   "in effect": require("../../../assets/words/i/in-effect.png"),
   "in essence": require("../../../assets/words/i/in-essence.png"),
   "in fact": require("../../../assets/words/i/in-fact.png"),
+  "in general": require("../../../assets/words/i/in-general.png"),
   "in order to": require("../../../assets/words/i/in-order-to.png"),
   "in place": require("../../../assets/words/i/in-place.png"),
   "in response to": require("../../../assets/words/i/in-response-to.png"),

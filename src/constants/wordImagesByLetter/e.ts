@@ -50,6 +50,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   emit: require("../../../assets/words/e/emit.png"),
   emotion: require("../../../assets/words/e/emotion.png"),
   empathy: require("../../../assets/words/e/empathy.png"),
+  emperor: require("../../../assets/words/e/emperor.png"),
   emphasize: require("../../../assets/words/e/emphasize.png"),
   empire: require("../../../assets/words/e/empire.png"),
   employ: require("../../../assets/words/e/employ.png"),

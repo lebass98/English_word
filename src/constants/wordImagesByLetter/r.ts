@@ -131,4 +131,5 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   rule: require("../../../assets/words/r/rule.png"),
   rumor: require("../../../assets/words/r/rumor.png"),
   "run out of": require("../../../assets/words/r/run-out-of.png"),
+  rural: require("../../../assets/words/r/rural.png"),
 };

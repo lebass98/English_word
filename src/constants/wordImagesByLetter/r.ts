@@ -77,6 +77,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   remind: require("../../../assets/words/r/remind.png"),
   remote: require("../../../assets/words/r/remote.png"),
   remove: require("../../../assets/words/r/remove.png"),
+  renew: require("../../../assets/words/r/renew.png"),
   renewable: require("../../../assets/words/r/renewable.png"),
   renovate: require("../../../assets/words/r/renovate.png"),
   renowned: require("../../../assets/words/r/renowned.png"),

@@ -106,6 +106,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   bomb: require("../../../assets/words/b/bomb.png"),
   bond: require("../../../assets/words/b/bond.png"),
   bone: require("../../../assets/words/b/bone.png"),
+  book: require("../../../assets/words/b/book.png"),
   bookstore: require("../../../assets/words/b/bookstore.png"),
   boom: require("../../../assets/words/b/boom.png"),
   booth: require("../../../assets/words/b/booth.png"),

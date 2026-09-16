@@ -62,6 +62,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   employment: require("../../../assets/words/e/employment.png"),
   empower: require("../../../assets/words/e/empower.png"),
   empty: require("../../../assets/words/e/empty.png"),
+  emulate: require("../../../assets/words/e/emulate.png"),
   enable: require("../../../assets/words/e/enable.png"),
   enact: require("../../../assets/words/e/enact.png"),
   enchant: require("../../../assets/words/e/enchant.png"),

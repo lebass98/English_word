@@ -30,6 +30,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   tender: require("../../../assets/words/t/tender.png"),
   tension: require("../../../assets/words/t/tension.png"),
   tentative: require("../../../assets/words/t/tentative.png"),
+  tenure: require("../../../assets/words/t/tenure.png"),
   term: require("../../../assets/words/t/term.png"),
   terrible: require("../../../assets/words/t/terrible.png"),
   terrific: require("../../../assets/words/t/terrific.png"),

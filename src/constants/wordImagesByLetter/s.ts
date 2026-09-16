@@ -56,6 +56,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   search: require("../../../assets/words/s/search.png"),
   seashore: require("../../../assets/words/s/seashore.png"),
   seat: require("../../../assets/words/s/seat.png"),
+  seating: require("../../../assets/words/s/seating.png"),
   secondhand: require("../../../assets/words/s/secondhand.png"),
   secretary: require("../../../assets/words/s/secretary.png"),
   section: require("../../../assets/words/s/section.png"),

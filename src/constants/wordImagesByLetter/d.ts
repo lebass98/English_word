@@ -242,6 +242,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   duty: require("../../../assets/words/d/duty.png"),
   dwell: require("../../../assets/words/d/dwell.png"),
   "dwell in": require("../../../assets/words/d/dwell-in.png"),
+  dwelling: require("../../../assets/words/d/dwelling.png"),
   dye: require("../../../assets/words/d/dye.png"),
   dynamic: require("../../../assets/words/d/dynamic.png"),
   dynasty: require("../../../assets/words/d/dynasty.png"),

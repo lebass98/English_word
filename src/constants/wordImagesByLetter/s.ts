@@ -322,6 +322,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   strategy: require("../../../assets/words/s/strategy.png"),
   stream: require("../../../assets/words/s/stream.png"),
   streamline: require("../../../assets/words/s/streamline.png"),
+  strength: require("../../../assets/words/s/strength.png"),
   strengthen: require("../../../assets/words/s/strengthen.png"),
   stress: require("../../../assets/words/s/stress.png"),
   stretch: require("../../../assets/words/s/stretch.png"),

@@ -418,6 +418,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   sustain: require("../../../assets/words/s/sustain.png"),
   sustainable: require("../../../assets/words/s/sustainable.png"),
   sustained: require("../../../assets/words/s/sustained.png"),
+  sustenance: require("../../../assets/words/s/sustenance.png"),
   swallow: require("../../../assets/words/s/swallow.png"),
   swamp: require("../../../assets/words/s/swamp.png"),
   sweep: require("../../../assets/words/s/sweep.png"),

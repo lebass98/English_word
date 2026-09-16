@@ -259,6 +259,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   rumor: require("../../../assets/words/r/rumor.png"),
   run: require("../../../assets/words/r/run.png"),
   "run out of": require("../../../assets/words/r/run-out-of.png"),
+  runaway: require("../../../assets/words/r/runaway.png"),
   rural: require("../../../assets/words/r/rural.png"),
   rush: require("../../../assets/words/r/rush.png"),
   rushing: require("../../../assets/words/r/rushing.png"),

@@ -118,6 +118,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   retail: require("../../../assets/words/r/retail.png"),
   retire: require("../../../assets/words/r/retire.png"),
   retreat: require("../../../assets/words/r/retreat.png"),
+  retrospect: require("../../../assets/words/r/retrospect.png"),
   return: require("../../../assets/words/r/return.png"),
   reveal: require("../../../assets/words/r/reveal.png"),
   revenue: require("../../../assets/words/r/revenue.png"),

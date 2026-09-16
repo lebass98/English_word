@@ -177,6 +177,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   disruption: require("../../../assets/words/d/disruption.png"),
   "dissent from": require("../../../assets/words/d/dissent-from.png"),
   dissimilar: require("../../../assets/words/d/dissimilar.png"),
+  dissolve: require("../../../assets/words/d/dissolve.png"),
   dissuade: require("../../../assets/words/d/dissuade.png"),
   distance: require("../../../assets/words/d/distance.png"),
   distant: require("../../../assets/words/d/distant.png"),

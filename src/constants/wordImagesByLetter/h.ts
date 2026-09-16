@@ -83,6 +83,7 @@ export const IMAGES_H: Record<string, ImageSourcePropType> = {
   honour: require("../../../assets/words/h/honour.png"),
   hop: require("../../../assets/words/h/hop.png"),
   horizon: require("../../../assets/words/h/horizon.png"),
+  horizontal: require("../../../assets/words/h/horizontal.png"),
   horn: require("../../../assets/words/h/horn.png"),
   hospital: require("../../../assets/words/h/hospital.png"),
   hospitality: require("../../../assets/words/h/hospitality.png"),

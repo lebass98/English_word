@@ -116,6 +116,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   aggregate: require("../../../assets/words/a/aggregate.png"),
   aggression: require("../../../assets/words/a/aggression.png"),
   aggressive: require("../../../assets/words/a/aggressive.png"),
+  agonize: require("../../../assets/words/a/agonize.png"),
   agree: require("../../../assets/words/a/agree.png"),
   agriculture: require("../../../assets/words/a/agriculture.png"),
   ahead: require("../../../assets/words/a/ahead.png"),

@@ -155,6 +155,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   ingredient: require("../../../assets/words/i/ingredient.png"),
   inhabit: require("../../../assets/words/i/inhabit.png"),
   inhabitant: require("../../../assets/words/i/inhabitant.png"),
+  inhale: require("../../../assets/words/i/inhale.png"),
   inherent: require("../../../assets/words/i/inherent.png"),
   inherently: require("../../../assets/words/i/inherently.png"),
   inherit: require("../../../assets/words/i/inherit.png"),

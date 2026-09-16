@@ -41,6 +41,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   scientific: require("../../../assets/words/s/scientific.png"),
   scold: require("../../../assets/words/s/scold.png"),
   score: require("../../../assets/words/s/score.png"),
+  scorn: require("../../../assets/words/s/scorn.png"),
   scrap: require("../../../assets/words/s/scrap.png"),
   scratch: require("../../../assets/words/s/scratch.png"),
   scream: require("../../../assets/words/s/scream.png"),

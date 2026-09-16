@@ -77,7 +77,7 @@
    - 로컬 API (`http://127.0.0.1:7860/sdapi/v1/txt2img`), Protocol: **HTTP**
 
 2. **선형그래픽 조형 6대 원칙**:
-   - `1024x1024` 네이티브 해상도, 0.05mm 초극세 바늘선 (`thinnest possible 0.05mm ultra-delicate needle-thin hairline ink stroke`)
+   - `512x512` 해상도 (2026-09-16 변경: 생성 시간을 줄이려고 1024 에서 낮춤), 0.05mm 초극세 바늘선 (`thinnest possible 0.05mm ultra-delicate needle-thin hairline ink stroke`)
    - 목 없는(No-Neck) 머리-몸통 직결 원형 머리 스틱맨 캐릭터
    - 뉴모피즘 캔버스 테마 `#f5f6f8` 배경 + `#030203` 딥 차콜 블랙 선
    - 풍성한 배경 씬(바닥선, 가구, 소품 등 내러티브 묘사)

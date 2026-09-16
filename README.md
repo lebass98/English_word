@@ -31,6 +31,11 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-16
+- 선형그래픽 그림 크기를 1024x1024 에서 512x512 로 낮춤 (생성 시간 단축, 사용자 요청)
+  - 스킬 스크립트(Python·JS) 기본값과 SKILL.md·CLAUDE.md·AGENTS.md 표기를 512 로 맞춤. 다른 컴퓨터는 `git pull` 로 적용
+  - `generate_images.py` 는 `IMAGE_SIZE` 환경변수로 크기를 바꿀 수 있음 (기본 512)
+
+### 2026-09-16
 - 일본어 JLPT N5 단어 선형그래픽 연속 생성 환경 및 씬 데이터베이스(`n5_scenes.json`) 구축
 - 중3 60단원 빠진 그림 11장 선형그래픽으로 생성 및 등록 (머리·몸통 분리 개정 스킬 적용)
   - 대상: research, relationship, retreat, instead of, enjoyable, confess, prejudice, hold on (to), arctic, pedestrian, collar

@@ -7,7 +7,7 @@ Draw Things 로컬 API 기반 '선형그래픽' 이미지 자동 생성 엔진 (
   2. 배경 색상코드: #f5f6f8 (소프트 라이트그레이 캔버스)
   3. 선 색상코드: #030203 (딥 차콜 블랙 잉크)
   4. 내용: 풍성한 씬 (배경 가구, 장식, 소품, 상호작용하는 귀여운 스틱맨들)
-  5. 후처리: 인위적인 필터/임계값 수정 없이 1024x1024 순수 렌더링 원본 보존
+  5. 후처리: 인위적인 필터/임계값 수정 없이 512x512 순수 렌더링 원본 보존
 """
 
 import sys
@@ -25,8 +25,8 @@ def generate_linear_image(
     output_path: str,
     api_url: str = DEFAULT_API_URL,
     seed: int = 42,
-    width: int = 1024,
-    height: int = 1024,
+    width: int = 512,
+    height: int = 512,
     steps: int = 8
 ):
     # 영문 외 문자 엄격 차단 및 정제 (비영문/비ASCII 문자 전면 제거)
@@ -114,8 +114,8 @@ def main():
     parser.add_argument("--output", "-o", type=str, required=True, help="저장할 파일 경로 (.png)")
     parser.add_argument("--url", "-u", type=str, default=DEFAULT_API_URL, help="Draw Things API URL (기본: http://127.0.0.1:7860/sdapi/v1/txt2img)")
     parser.add_argument("--seed", "-s", type=int, default=42, help="랜덤 시드 번호 (기본: 42)")
-    parser.add_argument("--width", "-w", type=int, default=1024, help="가로 해상도 (기본: 1024)")
-    parser.add_argument("--height", "-H", type=int, default=1024, help="세로 해상도 (기본: 1024)")
+    parser.add_argument("--width", "-w", type=int, default=512, help="가로 해상도 (기본: 512)")
+    parser.add_argument("--height", "-H", type=int, default=512, help="세로 해상도 (기본: 512)")
     parser.add_argument("--steps", type=int, default=8, help="생성 스텝 수 (기본: 8)")
     args = parser.parse_args()
 

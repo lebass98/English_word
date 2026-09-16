@@ -278,7 +278,11 @@ def main():
         os.makedirs(os.path.join(ROOT, os.path.dirname(path)), exist_ok=True)
         t0 = time.time()
         try:
-            generate_linear_image(f"{word}, {character_scene(it['scene'])}", os.path.join(ROOT, path), seed=42)
+            # 그림 크기는 IMAGE_SIZE 로 바꿀 수 있다 (기본 512). 크게 하면 느려지지만
+            # 배경 소품·글자와 가는 선이 더 또렷해진다
+            size = int(os.environ.get("IMAGE_SIZE", "512"))
+            generate_linear_image(f"{word}, {character_scene(it['scene'])}", os.path.join(ROOT, path),
+                                  seed=42, width=size, height=size)
             ok = os.path.getsize(os.path.join(ROOT, path)) > 10000
         except Exception as e:  # Draw Things 오류가 나도 다음 단어로 넘어간다
             print("생성 실패", word, e, flush=True)

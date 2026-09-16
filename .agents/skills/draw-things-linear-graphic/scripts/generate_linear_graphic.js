@@ -7,7 +7,7 @@
  *   2. 배경 색상코드: #f5f6f8 (소프트 라이트그레이 캔버스)
  *   3. 선 색상코드: #030203 (딥 차콜 블랙 잉크)
  *   4. 내용: 풍성한 씬 (배경 가구, 장식, 소품, 상호작용하는 귀여운 스틱맨들)
- *   5. 후처리: 인위적인 필터/임계값 수정 없이 1024x1024 순수 렌더링 원본 보존
+ *   5. 후처리: 인위적인 필터/임계값 수정 없이 512x512 순수 렌더링 원본 보존
  */
 
 const fs = require('fs');
@@ -20,8 +20,8 @@ async function generateLinearImage({
   outputPath,
   apiUrl = DEFAULT_API_URL,
   seed = 42,
-  width = 1024,
-  height = 1024,
+  width = 512,
+  height = 512,
   steps = 8
 }) {
   // 영문 외 문자 엄격 차단 및 정제 (한글, 한자, 일본어 등 비영문 문자 원천 제거)
@@ -114,8 +114,8 @@ function parseArgs() {
   let outputPath = '';
   let apiUrl = DEFAULT_API_URL;
   let seed = 42;
-  let width = 1024;
-  let height = 1024;
+  let width = 512;
+  let height = 512;
   let steps = 8;
 
   for (let i = 0; i < args.length; i++) {

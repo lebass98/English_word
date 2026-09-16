@@ -57,6 +57,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   relation: require("../../../assets/words/r/relation.png"),
   relationship: require("../../../assets/words/r/relationship.png"),
   relative: require("../../../assets/words/r/relative.png"),
+  relax: require("../../../assets/words/r/relax.png"),
   relay: require("../../../assets/words/r/relay.png"),
   release: require("../../../assets/words/r/release.png"),
   relieve: require("../../../assets/words/r/relieve.png"),

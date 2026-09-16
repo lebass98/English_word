@@ -59,6 +59,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   empirical: require("../../../assets/words/e/empirical.png"),
   employ: require("../../../assets/words/e/employ.png"),
   employment: require("../../../assets/words/e/employment.png"),
+  empower: require("../../../assets/words/e/empower.png"),
   empty: require("../../../assets/words/e/empty.png"),
   enable: require("../../../assets/words/e/enable.png"),
   enact: require("../../../assets/words/e/enact.png"),

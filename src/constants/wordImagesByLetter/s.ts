@@ -207,6 +207,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   smooth: require("../../../assets/words/s/smooth.png"),
   snake: require("../../../assets/words/s/snake.png"),
   snap: require("../../../assets/words/s/snap.png"),
+  snatch: require("../../../assets/words/s/snatch.png"),
   sniff: require("../../../assets/words/s/sniff.png"),
   "so far": require("../../../assets/words/s/so-far.png"),
   soak: require("../../../assets/words/s/soak.png"),

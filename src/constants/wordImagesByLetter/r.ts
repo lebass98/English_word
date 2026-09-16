@@ -136,6 +136,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   reputedly: require("../../../assets/words/r/reputedly.png"),
   request: require("../../../assets/words/r/request.png"),
   require: require("../../../assets/words/r/require.png"),
+  required: require("../../../assets/words/r/required.png"),
   rescue: require("../../../assets/words/r/rescue.png"),
   research: require("../../../assets/words/r/research.png"),
   resemble: require("../../../assets/words/r/resemble.png"),

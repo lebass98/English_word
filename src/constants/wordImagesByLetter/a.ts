@@ -111,6 +111,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   agency: require("../../../assets/words/a/agency.png"),
   agenda: require("../../../assets/words/a/agenda.png"),
   agent: require("../../../assets/words/a/agent.png"),
+  aggregate: require("../../../assets/words/a/aggregate.png"),
   aggression: require("../../../assets/words/a/aggression.png"),
   aggressive: require("../../../assets/words/a/aggressive.png"),
   agree: require("../../../assets/words/a/agree.png"),

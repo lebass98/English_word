@@ -134,6 +134,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   initiate: require("../../../assets/words/i/initiate.png"),
   injure: require("../../../assets/words/i/injure.png"),
   injurious: require("../../../assets/words/i/injurious.png"),
+  innate: require("../../../assets/words/i/innate.png"),
   inner: require("../../../assets/words/i/inner.png"),
   inning: require("../../../assets/words/i/inning.png"),
   innocent: require("../../../assets/words/i/innocent.png"),

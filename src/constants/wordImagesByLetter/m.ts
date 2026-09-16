@@ -155,6 +155,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   moral: require("../../../assets/words/m/moral.png"),
   "more or less": require("../../../assets/words/m/more-or-less.png"),
   moreover: require("../../../assets/words/m/moreover.png"),
+  mortgage: require("../../../assets/words/m/mortgage.png"),
   "most of all": require("../../../assets/words/m/most-of-all.png"),
   mostly: require("../../../assets/words/m/mostly.png"),
   motif: require("../../../assets/words/m/motif.png"),

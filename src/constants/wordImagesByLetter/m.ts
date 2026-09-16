@@ -23,6 +23,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   "make up": require("../../../assets/words/m/make-up.png"),
   "make up for": require("../../../assets/words/m/make-up-for.png"),
   male: require("../../../assets/words/m/male.png"),
+  malfunction: require("../../../assets/words/m/malfunction.png"),
   mammal: require("../../../assets/words/m/mammal.png"),
   manage: require("../../../assets/words/m/manage.png"),
   manageable: require("../../../assets/words/m/manageable.png"),

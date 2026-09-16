@@ -287,6 +287,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   professional: require("../../../assets/words/p/professional.png"),
   professor: require("../../../assets/words/p/professor.png"),
   proficiency: require("../../../assets/words/p/proficiency.png"),
+  proficient: require("../../../assets/words/p/proficient.png"),
   profile: require("../../../assets/words/p/profile.png"),
   profit: require("../../../assets/words/p/profit.png"),
   profitable: require("../../../assets/words/p/profitable.png"),

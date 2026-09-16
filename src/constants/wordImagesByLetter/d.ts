@@ -99,6 +99,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   despise: require("../../../assets/words/d/despise.png"),
   despite: require("../../../assets/words/d/despite.png"),
   destination: require("../../../assets/words/d/destination.png"),
+  destiny: require("../../../assets/words/d/destiny.png"),
   destroy: require("../../../assets/words/d/destroy.png"),
   destruction: require("../../../assets/words/d/destruction.png"),
   detach: require("../../../assets/words/d/detach.png"),

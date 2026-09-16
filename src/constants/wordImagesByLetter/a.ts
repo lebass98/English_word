@@ -103,6 +103,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   ahead: require("../../../assets/words/a/ahead.png"),
   aid: require("../../../assets/words/a/aid.png"),
   aim: require("../../../assets/words/a/aim.png"),
+  aircraft: require("../../../assets/words/a/aircraft.png"),
   airport: require("../../../assets/words/a/airport.png"),
   aisle: require("../../../assets/words/a/aisle.png"),
   alarm: require("../../../assets/words/a/alarm.png"),

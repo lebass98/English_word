@@ -246,6 +246,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   profuse: require("../../../assets/words/p/profuse.png"),
   profusion: require("../../../assets/words/p/profusion.png"),
   progress: require("../../../assets/words/p/progress.png"),
+  progressive: require("../../../assets/words/p/progressive.png"),
   prohibit: require("../../../assets/words/p/prohibit.png"),
   project: require("../../../assets/words/p/project.png"),
   projection: require("../../../assets/words/p/projection.png"),

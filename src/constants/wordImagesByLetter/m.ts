@@ -117,6 +117,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   miracle: require("../../../assets/words/m/miracle.png"),
   miraculous: require("../../../assets/words/m/miraculous.png"),
   mirror: require("../../../assets/words/m/mirror.png"),
+  misconception: require("../../../assets/words/m/misconception.png"),
   miserable: require("../../../assets/words/m/miserable.png"),
   miss: require("../../../assets/words/m/miss.png"),
   missionary: require("../../../assets/words/m/missionary.png"),

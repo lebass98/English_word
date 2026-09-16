@@ -291,5 +291,6 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   isolated: require("../../../assets/words/i/isolated.png"),
   isolation: require("../../../assets/words/i/isolation.png"),
   issue: require("../../../assets/words/i/issue.png"),
+  itinerary: require("../../../assets/words/i/itinerary.png"),
   ivy: require("../../../assets/words/i/ivy.png"),
 };

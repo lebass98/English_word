@@ -106,6 +106,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   pesticide: require("../../../assets/words/p/pesticide.png"),
   pet: require("../../../assets/words/p/pet.png"),
   petal: require("../../../assets/words/p/petal.png"),
+  petition: require("../../../assets/words/p/petition.png"),
   pharmacy: require("../../../assets/words/p/pharmacy.png"),
   phase: require("../../../assets/words/p/phase.png"),
   phenomenon: require("../../../assets/words/p/phenomenon.png"),

@@ -4,6 +4,7 @@ import { ImageSourcePropType } from "react-native";
 export const IMAGES_R: Record<string, ImageSourcePropType> = {
   race: require("../../../assets/words/r/race.png"),
   racial: require("../../../assets/words/r/racial.png"),
+  rage: require("../../../assets/words/r/rage.png"),
   raise: require("../../../assets/words/r/raise.png"),
   random: require("../../../assets/words/r/random.png"),
   range: require("../../../assets/words/r/range.png"),

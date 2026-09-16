@@ -278,6 +278,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   copyright: require("../../../assets/words/c/copyright.png"),
   core: require("../../../assets/words/c/core.png"),
   corn: require("../../../assets/words/c/corn.png"),
+  corporate: require("../../../assets/words/c/corporate.png"),
   correct: require("../../../assets/words/c/correct.png"),
   correctly: require("../../../assets/words/c/correctly.png"),
   correspond: require("../../../assets/words/c/correspond.png"),

@@ -39,6 +39,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   referee: require("../../../assets/words/r/referee.png"),
   refine: require("../../../assets/words/r/refine.png"),
   reflect: require("../../../assets/words/r/reflect.png"),
+  refreshing: require("../../../assets/words/r/refreshing.png"),
   refrigerator: require("../../../assets/words/r/refrigerator.png"),
   refund: require("../../../assets/words/r/refund.png"),
   refuse: require("../../../assets/words/r/refuse.png"),

@@ -314,6 +314,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   stimulate: require("../../../assets/words/s/stimulate.png"),
   stimulus: require("../../../assets/words/s/stimulus.png"),
   sting: require("../../../assets/words/s/sting.png"),
+  stink: require("../../../assets/words/s/stink.png"),
   stir: require("../../../assets/words/s/stir.png"),
   stock: require("../../../assets/words/s/stock.png"),
   stomach: require("../../../assets/words/s/stomach.png"),

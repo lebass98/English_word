@@ -326,5 +326,6 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   symbolic: require("../../../assets/words/s/symbolic.png"),
   sympathy: require("../../../assets/words/s/sympathy.png"),
   symptom: require("../../../assets/words/s/symptom.png"),
+  synthetic: require("../../../assets/words/s/synthetic.png"),
   system: require("../../../assets/words/s/system.png"),
 };

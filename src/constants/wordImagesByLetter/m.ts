@@ -97,6 +97,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   microscope: require("../../../assets/words/m/microscope.png"),
   might: require("../../../assets/words/m/might.png"),
   migrate: require("../../../assets/words/m/migrate.png"),
+  migration: require("../../../assets/words/m/migration.png"),
   mild: require("../../../assets/words/m/mild.png"),
   mile: require("../../../assets/words/m/mile.png"),
   military: require("../../../assets/words/m/military.png"),

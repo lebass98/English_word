@@ -133,6 +133,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   initial: require("../../../assets/words/i/initial.png"),
   initially: require("../../../assets/words/i/initially.png"),
   initiate: require("../../../assets/words/i/initiate.png"),
+  initiative: require("../../../assets/words/i/initiative.png"),
   injure: require("../../../assets/words/i/injure.png"),
   injurious: require("../../../assets/words/i/injurious.png"),
   innate: require("../../../assets/words/i/innate.png"),

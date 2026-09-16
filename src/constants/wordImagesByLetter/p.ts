@@ -21,6 +21,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   paramount: require("../../../assets/words/p/paramount.png"),
   pardon: require("../../../assets/words/p/pardon.png"),
   parental: require("../../../assets/words/p/parental.png"),
+  partially: require("../../../assets/words/p/partially.png"),
   participate: require("../../../assets/words/p/participate.png"),
   particle: require("../../../assets/words/p/particle.png"),
   particular: require("../../../assets/words/p/particular.png"),

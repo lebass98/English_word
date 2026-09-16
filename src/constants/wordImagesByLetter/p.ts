@@ -46,6 +46,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   pepper: require("../../../assets/words/p/pepper.png"),
   perceive: require("../../../assets/words/p/perceive.png"),
   perform: require("../../../assets/words/p/perform.png"),
+  performance: require("../../../assets/words/p/performance.png"),
   perhaps: require("../../../assets/words/p/perhaps.png"),
   period: require("../../../assets/words/p/period.png"),
   permanent: require("../../../assets/words/p/permanent.png"),

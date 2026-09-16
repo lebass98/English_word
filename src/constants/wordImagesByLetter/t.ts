@@ -130,6 +130,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   trim: require("../../../assets/words/t/trim.png"),
   trip: require("../../../assets/words/t/trip.png"),
   triumph: require("../../../assets/words/t/triumph.png"),
+  triumphantly: require("../../../assets/words/t/triumphantly.png"),
   troop: require("../../../assets/words/t/troop.png"),
   tropical: require("../../../assets/words/t/tropical.png"),
   trouble: require("../../../assets/words/t/trouble.png"),

@@ -91,6 +91,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   civil: require("../../../assets/words/c/civil.png"),
   civilization: require("../../../assets/words/c/civilization.png"),
   claim: require("../../../assets/words/c/claim.png"),
+  clan: require("../../../assets/words/c/clan.png"),
   clap: require("../../../assets/words/c/clap.png"),
   clarify: require("../../../assets/words/c/clarify.png"),
   classic: require("../../../assets/words/c/classic.png"),

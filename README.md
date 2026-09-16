@@ -31,6 +31,11 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-16
+- 고1 16~49단원 빠진 그림 212장 선형그래픽으로 생성 및 등록 (단어 단위 커밋/푸시 자동화)
+- TOEFL 단어 그림 117장 생성 및 등록 (evaporate ~ in a respect 구간)
+- 이미지 총계 갱신: `assets/words` PNG 2,760장 / `wordImagesByLetter` 매핑 2,558개
+- 그림 작업 중 중단된 리베이스를 스스로 정리하도록 생성 스크립트 수정
+- 이미지 카탈로그를 최신 그림 기준으로 갱신
 - 선형그래픽 그림 크기를 1024x1024 에서 512x512 로 낮춤 (생성 시간 단축, 사용자 요청)
   - 스킬 스크립트(Python·JS) 기본값과 SKILL.md·CLAUDE.md·AGENTS.md 표기를 512 로 맞춤. 다른 컴퓨터는 `git pull` 로 적용
   - `generate_images.py` 는 `IMAGE_SIZE` 환경변수로 크기를 바꿀 수 있음 (기본 512)

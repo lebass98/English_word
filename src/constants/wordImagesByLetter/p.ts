@@ -146,6 +146,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   politics: require("../../../assets/words/p/politics.png"),
   poll: require("../../../assets/words/p/poll.png"),
   pollen: require("../../../assets/words/p/pollen.png"),
+  pollinate: require("../../../assets/words/p/pollinate.png"),
   pollution: require("../../../assets/words/p/pollution.png"),
   pop: require("../../../assets/words/p/pop.png"),
   popular: require("../../../assets/words/p/popular.png"),

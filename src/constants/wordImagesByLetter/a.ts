@@ -206,6 +206,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   arrange: require("../../../assets/words/a/arrange.png"),
   array: require("../../../assets/words/a/array.png"),
   arrest: require("../../../assets/words/a/arrest.png"),
+  arrival: require("../../../assets/words/a/arrival.png"),
   arrive: require("../../../assets/words/a/arrive.png"),
   arrogant: require("../../../assets/words/a/arrogant.png"),
   arrow: require("../../../assets/words/a/arrow.png"),

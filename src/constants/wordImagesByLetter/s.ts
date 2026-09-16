@@ -153,6 +153,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   "show off": require("../../../assets/words/s/show-off.png"),
   shower: require("../../../assets/words/s/shower.png"),
   showy: require("../../../assets/words/s/showy.png"),
+  shrink: require("../../../assets/words/s/shrink.png"),
   shrug: require("../../../assets/words/s/shrug.png"),
   shut: require("../../../assets/words/s/shut.png"),
   shy: require("../../../assets/words/s/shy.png"),

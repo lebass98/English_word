@@ -50,6 +50,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   "in a respect": require("../../../assets/words/i/in-a-respect.png"),
   "in addition to": require("../../../assets/words/i/in-addition-to.png"),
   "in advance": require("../../../assets/words/i/in-advance.png"),
+  "in any case": require("../../../assets/words/i/in-any-case.png"),
   "in balance": require("../../../assets/words/i/in-balance.png"),
   "in detail": require("../../../assets/words/i/in-detail.png"),
   "in fact": require("../../../assets/words/i/in-fact.png"),

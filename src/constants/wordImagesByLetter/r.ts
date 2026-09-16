@@ -48,6 +48,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   reciprocate: require("../../../assets/words/r/reciprocate.png"),
   recite: require("../../../assets/words/r/recite.png"),
   reckless: require("../../../assets/words/r/reckless.png"),
+  reclaim: require("../../../assets/words/r/reclaim.png"),
   recognition: require("../../../assets/words/r/recognition.png"),
   recognize: require("../../../assets/words/r/recognize.png"),
   recommend: require("../../../assets/words/r/recommend.png"),

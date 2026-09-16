@@ -263,6 +263,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   swing: require("../../../assets/words/s/swing.png"),
   sword: require("../../../assets/words/s/sword.png"),
   symbol: require("../../../assets/words/s/symbol.png"),
+  sympathy: require("../../../assets/words/s/sympathy.png"),
   symptom: require("../../../assets/words/s/symptom.png"),
   system: require("../../../assets/words/s/system.png"),
 };

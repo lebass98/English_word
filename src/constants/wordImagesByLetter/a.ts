@@ -258,6 +258,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   aspect: require("../../../assets/words/a/aspect.png"),
   aspiration: require("../../../assets/words/a/aspiration.png"),
   aspire: require("../../../assets/words/a/aspire.png"),
+  assault: require("../../../assets/words/a/assault.png"),
   assemble: require("../../../assets/words/a/assemble.png"),
   assembly: require("../../../assets/words/a/assembly.png"),
   assert: require("../../../assets/words/a/assert.png"),

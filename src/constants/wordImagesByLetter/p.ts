@@ -173,6 +173,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   predator: require("../../../assets/words/p/predator.png"),
   predecessor: require("../../../assets/words/p/predecessor.png"),
   predict: require("../../../assets/words/p/predict.png"),
+  predominant: require("../../../assets/words/p/predominant.png"),
   prefer: require("../../../assets/words/p/prefer.png"),
   pregnant: require("../../../assets/words/p/pregnant.png"),
   prejudice: require("../../../assets/words/p/prejudice.png"),

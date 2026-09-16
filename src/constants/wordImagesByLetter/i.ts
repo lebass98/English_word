@@ -120,6 +120,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   informally: require("../../../assets/words/i/informally.png"),
   information: require("../../../assets/words/i/information.png"),
   infrastructure: require("../../../assets/words/i/infrastructure.png"),
+  infrequent: require("../../../assets/words/i/infrequent.png"),
   ingredient: require("../../../assets/words/i/ingredient.png"),
   initial: require("../../../assets/words/i/initial.png"),
   injure: require("../../../assets/words/i/injure.png"),

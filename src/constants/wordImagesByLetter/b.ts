@@ -47,6 +47,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   bean: require("../../../assets/words/b/bean.png"),
   bear: require("../../../assets/words/b/bear.png"),
   "bear in mind": require("../../../assets/words/b/bear-in-mind.png"),
+  beard: require("../../../assets/words/b/beard.png"),
   beast: require("../../../assets/words/b/beast.png"),
   beat: require("../../../assets/words/b/beat.png"),
   beauty: require("../../../assets/words/b/beauty.png"),

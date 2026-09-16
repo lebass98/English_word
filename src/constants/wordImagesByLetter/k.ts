@@ -5,6 +5,7 @@ export const IMAGES_K: Record<string, ImageSourcePropType> = {
   "keep in mind": require("../../../assets/words/k/keep-in-mind.png"),
   "keep in touch": require("../../../assets/words/k/keep-in-touch.png"),
   kettle: require("../../../assets/words/k/kettle.png"),
+  key: require("../../../assets/words/k/key.png"),
   kill: require("../../../assets/words/k/kill.png"),
   kind: require("../../../assets/words/k/kind.png"),
   kindergarten: require("../../../assets/words/k/kindergarten.png"),

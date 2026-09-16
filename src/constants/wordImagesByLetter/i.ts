@@ -200,6 +200,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   insult: require("../../../assets/words/i/insult.png"),
   insurance: require("../../../assets/words/i/insurance.png"),
   insure: require("../../../assets/words/i/insure.png"),
+  insurmountable: require("../../../assets/words/i/insurmountable.png"),
   intact: require("../../../assets/words/i/intact.png"),
   intake: require("../../../assets/words/i/intake.png"),
   integral: require("../../../assets/words/i/integral.png"),

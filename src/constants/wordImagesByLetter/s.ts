@@ -160,6 +160,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   spirit: require("../../../assets/words/s/spirit.png"),
   split: require("../../../assets/words/s/split.png"),
   spot: require("../../../assets/words/s/spot.png"),
+  spouse: require("../../../assets/words/s/spouse.png"),
   spread: require("../../../assets/words/s/spread.png"),
   square: require("../../../assets/words/s/square.png"),
   squeeze: require("../../../assets/words/s/squeeze.png"),

@@ -327,6 +327,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   avalanche: require("../../../assets/words/a/avalanche.png"),
   avenue: require("../../../assets/words/a/avenue.png"),
   average: require("../../../assets/words/a/average.png"),
+  aversion: require("../../../assets/words/a/aversion.png"),
   avoid: require("../../../assets/words/a/avoid.png"),
   awake: require("../../../assets/words/a/awake.png"),
   awaken: require("../../../assets/words/a/awaken.png"),

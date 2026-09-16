@@ -275,6 +275,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   asset: require("../../../assets/words/a/asset.png"),
   assign: require("../../../assets/words/a/assign.png"),
   assignment: require("../../../assets/words/a/assignment.png"),
+  assimilation: require("../../../assets/words/a/assimilation.png"),
   assist: require("../../../assets/words/a/assist.png"),
   associate: require("../../../assets/words/a/associate.png"),
   associated: require("../../../assets/words/a/associated.png"),

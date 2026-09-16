@@ -110,6 +110,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   instantly: require("../../../assets/words/i/instantly.png"),
   instead: require("../../../assets/words/i/instead.png"),
   "instead of": require("../../../assets/words/i/instead-of.png"),
+  instinct: require("../../../assets/words/i/instinct.png"),
   institution: require("../../../assets/words/i/institution.png"),
   instruct: require("../../../assets/words/i/instruct.png"),
   instruction: require("../../../assets/words/i/instruction.png"),

@@ -91,6 +91,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   inconsequential: require("../../../assets/words/i/inconsequential.png"),
   incorporate: require("../../../assets/words/i/incorporate.png"),
   increase: require("../../../assets/words/i/increase.png"),
+  increasing: require("../../../assets/words/i/increasing.png"),
   incredible: require("../../../assets/words/i/incredible.png"),
   indeed: require("../../../assets/words/i/indeed.png"),
   independence: require("../../../assets/words/i/independence.png"),

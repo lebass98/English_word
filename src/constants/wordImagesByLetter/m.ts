@@ -128,6 +128,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   mobile: require("../../../assets/words/m/mobile.png"),
   mobility: require("../../../assets/words/m/mobility.png"),
   mode: require("../../../assets/words/m/mode.png"),
+  model: require("../../../assets/words/m/model.png"),
   moderate: require("../../../assets/words/m/moderate.png"),
   modern: require("../../../assets/words/m/modern.png"),
   modest: require("../../../assets/words/m/modest.png"),

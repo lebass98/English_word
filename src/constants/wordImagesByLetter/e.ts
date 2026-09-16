@@ -113,6 +113,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   equivalent: require("../../../assets/words/e/equivalent.png"),
   equivocally: require("../../../assets/words/e/equivocally.png"),
   era: require("../../../assets/words/e/era.png"),
+  eradicate: require("../../../assets/words/e/eradicate.png"),
   erase: require("../../../assets/words/e/erase.png"),
   eraser: require("../../../assets/words/e/eraser.png"),
   error: require("../../../assets/words/e/error.png"),

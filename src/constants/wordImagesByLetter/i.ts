@@ -13,6 +13,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   illustrate: require("../../../assets/words/i/illustrate.png"),
   imagine: require("../../../assets/words/i/imagine.png"),
   imitate: require("../../../assets/words/i/imitate.png"),
+  immediate: require("../../../assets/words/i/immediate.png"),
   immediately: require("../../../assets/words/i/immediately.png"),
   immigrant: require("../../../assets/words/i/immigrant.png"),
   immigrate: require("../../../assets/words/i/immigrate.png"),

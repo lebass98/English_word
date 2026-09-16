@@ -174,6 +174,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   resign: require("../../../assets/words/r/resign.png"),
   resist: require("../../../assets/words/r/resist.png"),
   resolve: require("../../../assets/words/r/resolve.png"),
+  resonance: require("../../../assets/words/r/resonance.png"),
   resort: require("../../../assets/words/r/resort.png"),
   resource: require("../../../assets/words/r/resource.png"),
   resources: require("../../../assets/words/r/resources.png"),

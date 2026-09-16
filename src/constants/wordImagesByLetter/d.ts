@@ -154,6 +154,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   distinction: require("../../../assets/words/d/distinction.png"),
   distinctive: require("../../../assets/words/d/distinctive.png"),
   distinguish: require("../../../assets/words/d/distinguish.png"),
+  distract: require("../../../assets/words/d/distract.png"),
   distribute: require("../../../assets/words/d/distribute.png"),
   district: require("../../../assets/words/d/district.png"),
   disturb: require("../../../assets/words/d/disturb.png"),

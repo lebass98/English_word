@@ -303,6 +303,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   contrast: require("../../../assets/words/c/contrast.png"),
   contribute: require("../../../assets/words/c/contribute.png"),
   control: require("../../../assets/words/c/control.png"),
+  controversial: require("../../../assets/words/c/controversial.png"),
   convenient: require("../../../assets/words/c/convenient.png"),
   convention: require("../../../assets/words/c/convention.png"),
   conventional: require("../../../assets/words/c/conventional.png"),

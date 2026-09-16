@@ -34,6 +34,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   receive: require("../../../assets/words/r/receive.png"),
   recent: require("../../../assets/words/r/recent.png"),
   recently: require("../../../assets/words/r/recently.png"),
+  receptive: require("../../../assets/words/r/receptive.png"),
   recession: require("../../../assets/words/r/recession.png"),
   recipe: require("../../../assets/words/r/recipe.png"),
   recognition: require("../../../assets/words/r/recognition.png"),

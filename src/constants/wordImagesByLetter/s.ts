@@ -259,6 +259,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   sprain: require("../../../assets/words/s/sprain.png"),
   spread: require("../../../assets/words/s/spread.png"),
   "spread out": require("../../../assets/words/s/spread-out.png"),
+  "spring up": require("../../../assets/words/s/spring-up.png"),
   sprint: require("../../../assets/words/s/sprint.png"),
   square: require("../../../assets/words/s/square.png"),
   squeeze: require("../../../assets/words/s/squeeze.png"),

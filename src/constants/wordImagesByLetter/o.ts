@@ -69,6 +69,7 @@ export const IMAGES_O: Record<string, ImageSourcePropType> = {
   ostrich: require("../../../assets/words/o/ostrich.png"),
   "other than": require("../../../assets/words/o/other-than.png"),
   otherwise: require("../../../assets/words/o/otherwise.png"),
+  outbreak: require("../../../assets/words/o/outbreak.png"),
   outcome: require("../../../assets/words/o/outcome.png"),
   outdated: require("../../../assets/words/o/outdated.png"),
   outfit: require("../../../assets/words/o/outfit.png"),

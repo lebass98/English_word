@@ -115,6 +115,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   minute: require("../../../assets/words/m/minute.png"),
   minutely: require("../../../assets/words/m/minutely.png"),
   miracle: require("../../../assets/words/m/miracle.png"),
+  miraculous: require("../../../assets/words/m/miraculous.png"),
   miserable: require("../../../assets/words/m/miserable.png"),
   miss: require("../../../assets/words/m/miss.png"),
   missionary: require("../../../assets/words/m/missionary.png"),

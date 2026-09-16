@@ -141,6 +141,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   exhaustively: require("../../../assets/words/e/exhaustively.png"),
   exhibit: require("../../../assets/words/e/exhibit.png"),
   exhibition: require("../../../assets/words/e/exhibition.png"),
+  exist: require("../../../assets/words/e/exist.png"),
   exit: require("../../../assets/words/e/exit.png"),
   exotic: require("../../../assets/words/e/exotic.png"),
   expand: require("../../../assets/words/e/expand.png"),

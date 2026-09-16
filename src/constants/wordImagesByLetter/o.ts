@@ -49,6 +49,7 @@ export const IMAGES_O: Record<string, ImageSourcePropType> = {
   outline: require("../../../assets/words/o/outline.png"),
   outstanding: require("../../../assets/words/o/outstanding.png"),
   "over and over": require("../../../assets/words/o/over-and-over.png"),
+  overall: require("../../../assets/words/o/overall.png"),
   overcome: require("../../../assets/words/o/overcome.png"),
   overestimate: require("../../../assets/words/o/overestimate.png"),
   overhear: require("../../../assets/words/o/overhear.png"),

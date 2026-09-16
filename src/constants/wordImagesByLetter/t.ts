@@ -25,6 +25,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   teenager: require("../../../assets/words/t/teenager.png"),
   telephone: require("../../../assets/words/t/telephone.png"),
   temper: require("../../../assets/words/t/temper.png"),
+  temperament: require("../../../assets/words/t/temperament.png"),
   temperature: require("../../../assets/words/t/temperature.png"),
   temple: require("../../../assets/words/t/temple.png"),
   temporarily: require("../../../assets/words/t/temporarily.png"),

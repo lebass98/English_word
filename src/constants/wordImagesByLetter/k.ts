@@ -10,4 +10,5 @@ export const IMAGES_K: Record<string, ImageSourcePropType> = {
   kindergarten: require("../../../assets/words/k/kindergarten.png"),
   knee: require("../../../assets/words/k/knee.png"),
   knowledge: require("../../../assets/words/k/knowledge.png"),
+  knowledgeable: require("../../../assets/words/k/knowledgeable.png"),
 };

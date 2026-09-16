@@ -80,6 +80,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   memorable: require("../../../assets/words/m/memorable.png"),
   memorize: require("../../../assets/words/m/memorize.png"),
   memory: require("../../../assets/words/m/memory.png"),
+  mend: require("../../../assets/words/m/mend.png"),
   mental: require("../../../assets/words/m/mental.png"),
   mention: require("../../../assets/words/m/mention.png"),
   merchandise: require("../../../assets/words/m/merchandise.png"),

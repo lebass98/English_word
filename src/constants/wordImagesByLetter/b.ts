@@ -77,6 +77,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   benediction: require("../../../assets/words/b/benediction.png"),
   beneficial: require("../../../assets/words/b/beneficial.png"),
   benefit: require("../../../assets/words/b/benefit.png"),
+  benevolent: require("../../../assets/words/b/benevolent.png"),
   besides: require("../../../assets/words/b/besides.png"),
   "best fit": require("../../../assets/words/b/best-fit.png"),
   bet: require("../../../assets/words/b/bet.png"),

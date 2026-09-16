@@ -81,6 +81,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   "in the course of": require("../../../assets/words/i/in-the-course-of.png"),
   "in time": require("../../../assets/words/i/in-time.png"),
   inaccessible: require("../../../assets/words/i/inaccessible.png"),
+  inactive: require("../../../assets/words/i/inactive.png"),
   inadequate: require("../../../assets/words/i/inadequate.png"),
   inappropriate: require("../../../assets/words/i/inappropriate.png"),
   inborn: require("../../../assets/words/i/inborn.png"),

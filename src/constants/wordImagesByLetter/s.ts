@@ -325,6 +325,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   stem: require("../../../assets/words/s/stem.png"),
   "stem from": require("../../../assets/words/s/stem-from.png"),
   step: require("../../../assets/words/s/step.png"),
+  stereotype: require("../../../assets/words/s/stereotype.png"),
   stethoscope: require("../../../assets/words/s/stethoscope.png"),
   stick: require("../../../assets/words/s/stick.png"),
   "stick to": require("../../../assets/words/s/stick-to.png"),

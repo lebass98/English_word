@@ -67,6 +67,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   refrigerator: require("../../../assets/words/r/refrigerator.png"),
   refund: require("../../../assets/words/r/refund.png"),
   refuse: require("../../../assets/words/r/refuse.png"),
+  regain: require("../../../assets/words/r/regain.png"),
   regard: require("../../../assets/words/r/regard.png"),
   regardless: require("../../../assets/words/r/regardless.png"),
   "regardless of": require("../../../assets/words/r/regardless-of.png"),

@@ -268,6 +268,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   context: require("../../../assets/words/c/context.png"),
   continent: require("../../../assets/words/c/continent.png"),
   continual: require("../../../assets/words/c/continual.png"),
+  continually: require("../../../assets/words/c/continually.png"),
   continue: require("../../../assets/words/c/continue.png"),
   continuous: require("../../../assets/words/c/continuous.png"),
   continuously: require("../../../assets/words/c/continuously.png"),

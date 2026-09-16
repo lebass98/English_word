@@ -126,6 +126,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   poet: require("../../../assets/words/p/poet.png"),
   poetry: require("../../../assets/words/p/poetry.png"),
   point: require("../../../assets/words/p/point.png"),
+  "point out": require("../../../assets/words/p/point-out.png"),
   poison: require("../../../assets/words/p/poison.png"),
   polar: require("../../../assets/words/p/polar.png"),
   pole: require("../../../assets/words/p/pole.png"),

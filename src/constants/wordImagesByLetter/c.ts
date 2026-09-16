@@ -36,6 +36,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   casual: require("../../../assets/words/c/casual.png"),
   "catch up": require("../../../assets/words/c/catch-up.png"),
   category: require("../../../assets/words/c/category.png"),
+  caterpillar: require("../../../assets/words/c/caterpillar.png"),
   cattle: require("../../../assets/words/c/cattle.png"),
   cause: require("../../../assets/words/c/cause.png"),
   caution: require("../../../assets/words/c/caution.png"),

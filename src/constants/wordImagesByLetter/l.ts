@@ -86,6 +86,7 @@ export const IMAGES_L: Record<string, ImageSourcePropType> = {
   "look up": require("../../../assets/words/l/look-up.png"),
   loose: require("../../../assets/words/l/loose.png"),
   lose: require("../../../assets/words/l/lose.png"),
+  "lose sight of": require("../../../assets/words/l/lose-sight-of.png"),
   loss: require("../../../assets/words/l/loss.png"),
   loud: require("../../../assets/words/l/loud.png"),
   low: require("../../../assets/words/l/low.png"),

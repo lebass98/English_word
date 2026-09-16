@@ -10,6 +10,7 @@ export const IMAGES_W: Record<string, ImageSourcePropType> = {
   wander: require("../../../assets/words/w/wander.png"),
   war: require("../../../assets/words/w/war.png"),
   ware: require("../../../assets/words/w/ware.png"),
+  warehouse: require("../../../assets/words/w/warehouse.png"),
   warmth: require("../../../assets/words/w/warmth.png"),
   warn: require("../../../assets/words/w/warn.png"),
   warranty: require("../../../assets/words/w/warranty.png"),

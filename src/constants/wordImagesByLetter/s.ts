@@ -265,6 +265,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   spectator: require("../../../assets/words/s/spectator.png"),
   spectrum: require("../../../assets/words/s/spectrum.png"),
   speculate: require("../../../assets/words/s/speculate.png"),
+  speculation: require("../../../assets/words/s/speculation.png"),
   speech: require("../../../assets/words/s/speech.png"),
   spell: require("../../../assets/words/s/spell.png"),
   spend: require("../../../assets/words/s/spend.png"),

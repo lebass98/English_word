@@ -242,6 +242,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   confirm: require("../../../assets/words/c/confirm.png"),
   conflict: require("../../../assets/words/c/conflict.png"),
   conflicting: require("../../../assets/words/c/conflicting.png"),
+  conform: require("../../../assets/words/c/conform.png"),
   confront: require("../../../assets/words/c/confront.png"),
   confuse: require("../../../assets/words/c/confuse.png"),
   congestion: require("../../../assets/words/c/congestion.png"),

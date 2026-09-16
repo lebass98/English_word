@@ -90,6 +90,7 @@ export const IMAGES_H: Record<string, ImageSourcePropType> = {
   huge: require("../../../assets/words/h/huge.png"),
   humble: require("../../../assets/words/h/humble.png"),
   humor: require("../../../assets/words/h/humor.png"),
+  humorous: require("../../../assets/words/h/humorous.png"),
   hunger: require("../../../assets/words/h/hunger.png"),
   hunter: require("../../../assets/words/h/hunter.png"),
   hurray: require("../../../assets/words/h/hurray.png"),

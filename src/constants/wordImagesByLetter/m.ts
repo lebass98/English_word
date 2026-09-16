@@ -160,6 +160,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   movement: require("../../../assets/words/m/movement.png"),
   multiple: require("../../../assets/words/m/multiple.png"),
   multiplicity: require("../../../assets/words/m/multiplicity.png"),
+  multiply: require("../../../assets/words/m/multiply.png"),
   murder: require("../../../assets/words/m/murder.png"),
   muscle: require("../../../assets/words/m/muscle.png"),
   museum: require("../../../assets/words/m/museum.png"),

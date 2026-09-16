@@ -30,6 +30,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   match: require("../../../assets/words/m/match.png"),
   material: require("../../../assets/words/m/material.png"),
   math: require("../../../assets/words/m/math.png"),
+  mathematics: require("../../../assets/words/m/mathematics.png"),
   matter: require("../../../assets/words/m/matter.png"),
   mature: require("../../../assets/words/m/mature.png"),
   maybe: require("../../../assets/words/m/maybe.png"),

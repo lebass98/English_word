@@ -57,6 +57,7 @@ export const IMAGES_L: Record<string, ImageSourcePropType> = {
   likeness: require("../../../assets/words/l/likeness.png"),
   likewise: require("../../../assets/words/l/likewise.png"),
   limit: require("../../../assets/words/l/limit.png"),
+  link: require("../../../assets/words/l/link.png"),
   liquid: require("../../../assets/words/l/liquid.png"),
   list: require("../../../assets/words/l/list.png"),
   literature: require("../../../assets/words/l/literature.png"),

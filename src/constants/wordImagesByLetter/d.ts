@@ -90,6 +90,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   despite: require("../../../assets/words/d/despite.png"),
   destination: require("../../../assets/words/d/destination.png"),
   destroy: require("../../../assets/words/d/destroy.png"),
+  destruction: require("../../../assets/words/d/destruction.png"),
   detach: require("../../../assets/words/d/detach.png"),
   detail: require("../../../assets/words/d/detail.png"),
   detect: require("../../../assets/words/d/detect.png"),

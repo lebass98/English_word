@@ -19,6 +19,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   "make a decision": require("../../../assets/words/m/make-a-decision.png"),
   "make sense": require("../../../assets/words/m/make-sense.png"),
   "make sure": require("../../../assets/words/m/make-sure.png"),
+  "make up": require("../../../assets/words/m/make-up.png"),
   "make up for": require("../../../assets/words/m/make-up-for.png"),
   male: require("../../../assets/words/m/male.png"),
   mammal: require("../../../assets/words/m/mammal.png"),

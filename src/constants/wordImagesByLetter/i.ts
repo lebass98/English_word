@@ -72,6 +72,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   "in terms of": require("../../../assets/words/i/in-terms-of.png"),
   "in the course of": require("../../../assets/words/i/in-the-course-of.png"),
   "in time": require("../../../assets/words/i/in-time.png"),
+  inaccessible: require("../../../assets/words/i/inaccessible.png"),
   incentive: require("../../../assets/words/i/incentive.png"),
   incident: require("../../../assets/words/i/incident.png"),
   include: require("../../../assets/words/i/include.png"),

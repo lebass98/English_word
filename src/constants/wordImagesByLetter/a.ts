@@ -168,6 +168,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   anarchy: require("../../../assets/words/a/anarchy.png"),
   anatomy: require("../../../assets/words/a/anatomy.png"),
   ancestor: require("../../../assets/words/a/ancestor.png"),
+  anchor: require("../../../assets/words/a/anchor.png"),
   ancient: require("../../../assets/words/a/ancient.png"),
   anecdote: require("../../../assets/words/a/anecdote.png"),
   angle: require("../../../assets/words/a/angle.png"),

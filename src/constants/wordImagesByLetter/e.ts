@@ -93,6 +93,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   enter: require("../../../assets/words/e/enter.png"),
   enterprise: require("../../../assets/words/e/enterprise.png"),
   entertain: require("../../../assets/words/e/entertain.png"),
+  entertainment: require("../../../assets/words/e/entertainment.png"),
   enthusiasm: require("../../../assets/words/e/enthusiasm.png"),
   enthusiastic: require("../../../assets/words/e/enthusiastic.png"),
   entire: require("../../../assets/words/e/entire.png"),

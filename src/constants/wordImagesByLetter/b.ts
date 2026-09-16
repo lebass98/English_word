@@ -116,6 +116,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   border: require("../../../assets/words/b/border.png"),
   boring: require("../../../assets/words/b/boring.png"),
   borrow: require("../../../assets/words/b/borrow.png"),
+  botanical: require("../../../assets/words/b/botanical.png"),
   bother: require("../../../assets/words/b/bother.png"),
   bothersome: require("../../../assets/words/b/bothersome.png"),
   bottle: require("../../../assets/words/b/bottle.png"),

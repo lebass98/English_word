@@ -86,6 +86,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   separate: require("../../../assets/words/s/separate.png"),
   sequence: require("../../../assets/words/s/sequence.png"),
   sequent: require("../../../assets/words/s/sequent.png"),
+  serene: require("../../../assets/words/s/serene.png"),
   series: require("../../../assets/words/s/series.png"),
   serious: require("../../../assets/words/s/serious.png"),
   seriousness: require("../../../assets/words/s/seriousness.png"),

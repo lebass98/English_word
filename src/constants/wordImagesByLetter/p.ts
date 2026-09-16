@@ -45,6 +45,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   pattern: require("../../../assets/words/p/pattern.png"),
   pause: require("../../../assets/words/p/pause.png"),
   pave: require("../../../assets/words/p/pave.png"),
+  paw: require("../../../assets/words/p/paw.png"),
   "pay attention": require("../../../assets/words/p/pay-attention.png"),
   "pay off": require("../../../assets/words/p/pay-off.png"),
   payment: require("../../../assets/words/p/payment.png"),

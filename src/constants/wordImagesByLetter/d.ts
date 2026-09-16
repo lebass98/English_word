@@ -215,6 +215,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   downtown: require("../../../assets/words/d/downtown.png"),
   draft: require("../../../assets/words/d/draft.png"),
   drag: require("../../../assets/words/d/drag.png"),
+  drain: require("../../../assets/words/d/drain.png"),
   dramatic: require("../../../assets/words/d/dramatic.png"),
   draw: require("../../../assets/words/d/draw.png"),
   drawback: require("../../../assets/words/d/drawback.png"),

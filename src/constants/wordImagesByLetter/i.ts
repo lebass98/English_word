@@ -157,6 +157,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   instead: require("../../../assets/words/i/instead.png"),
   "instead of": require("../../../assets/words/i/instead-of.png"),
   instinct: require("../../../assets/words/i/instinct.png"),
+  institute: require("../../../assets/words/i/institute.png"),
   institution: require("../../../assets/words/i/institution.png"),
   instruct: require("../../../assets/words/i/instruct.png"),
   instruction: require("../../../assets/words/i/instruction.png"),

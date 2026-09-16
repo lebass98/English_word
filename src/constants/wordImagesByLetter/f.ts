@@ -138,6 +138,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   fulfill: require("../../../assets/words/f/fulfill.png"),
   fun: require("../../../assets/words/f/fun.png"),
   function: require("../../../assets/words/f/function.png"),
+  "function as": require("../../../assets/words/f/function-as.png"),
   fund: require("../../../assets/words/f/fund.png"),
   fundamental: require("../../../assets/words/f/fundamental.png"),
   funeral: require("../../../assets/words/f/funeral.png"),

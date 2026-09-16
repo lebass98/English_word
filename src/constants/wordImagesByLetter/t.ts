@@ -120,6 +120,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   tragic: require("../../../assets/words/t/tragic.png"),
   trail: require("../../../assets/words/t/trail.png"),
   trait: require("../../../assets/words/t/trait.png"),
+  traitor: require("../../../assets/words/t/traitor.png"),
   transaction: require("../../../assets/words/t/transaction.png"),
   transcend: require("../../../assets/words/t/transcend.png"),
   transcribe: require("../../../assets/words/t/transcribe.png"),

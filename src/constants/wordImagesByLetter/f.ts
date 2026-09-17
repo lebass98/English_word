@@ -183,6 +183,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   frequent: require("../../../assets/words/f/frequent.png"),
   frequently: require("../../../assets/words/f/frequently.png"),
   fresh: require("../../../assets/words/f/fresh.png"),
+  freshman: require("../../../assets/words/f/freshman.png"),
   freshness: require("../../../assets/words/f/freshness.png"),
   friendly: require("../../../assets/words/f/friendly.png"),
   fright: require("../../../assets/words/f/fright.png"),

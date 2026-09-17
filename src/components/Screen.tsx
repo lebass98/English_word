@@ -23,15 +23,21 @@ export const GRID_GAP = 16;
 export function Screen({
   children,
   className = "",
+  maxWidth = MAX_CONTENT_WIDTH,
 }: {
   children: ReactNode;
   className?: string;
+  /**
+   * 내용 최대 폭. 기본은 폰 폭이다.
+   * 퀴즈처럼 넓은 화면에서 좌우로 펼쳐야 하는 화면만 더 큰 값을 넘긴다.
+   */
+  maxWidth?: number;
 }) {
   return (
     <SafeAreaView className="flex-1 bg-canvas">
       <View
         className={`w-full flex-1 self-center ${className}`}
-        style={{ maxWidth: MAX_CONTENT_WIDTH }}
+        style={{ maxWidth }}
       >
         {children}
       </View>

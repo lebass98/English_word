@@ -1,5 +1,12 @@
 import { useLocalSearchParams, useRouter } from "expo-router";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import {
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+  type ReactNode,
+} from "react";
 import {
   Animated,
   Easing,
@@ -46,15 +53,24 @@ const CELL_PAD = 6;
 /** 보기 그림 사이 간격. 좌우·세로를 같은 값으로 둔다 */
 const GRID_GAP = 12;
 
-/** 머리줄·진행바·안내문·아래 여백이 쓰는 세로 자리 (px) */
-const CHROME_H = 200;
-
 /** 보기 네 줄이 쓰는 세로 자리 (버튼 52 + 사이 간격 10) */
 const CHOICE_LIST_H = 52 * 4 + 10 * 3;
 
-/** 그림 열 너비의 최소·최대. 작은 폰에서 그림이 뭉개지거나 태블릿에서 커지는 걸 막는다 */
-const MIN_COLUMN = 260;
-const MAX_COLUMN = 400;
+/** 안내 문구 한 줄과 위아래 간격 */
+const PROMPT_H = 42;
+
+/** 제시부와 보기 사이 간격 (gap-6) */
+const SECTION_GAP = 24;
+
+/** 좌우로 나눠 놓을 만큼 넓은지 보는 기준 (px) */
+const TWO_PANE_MIN = 600;
+
+/** 넓은 화면에서 쓰는 내용 최대 폭 */
+const WIDE_MAX_WIDTH = 960;
+
+/** 그림 열 너비의 최소·최대. 작은 폰에서 뭉개지거나 큰 화면에서 과해지는 걸 막는다 */
+const MIN_COLUMN = 200;
+const MAX_COLUMN = 460;
 
 /** 정답·오답을 보여 주고 다음 문제로 넘어가기까지 기다리는 시간 (ms) */
 const REVEAL_MS = 900;
@@ -71,6 +87,15 @@ export default function QuizScreen() {
   const { gradeId: raw } = useLocalSearchParams<{ gradeId: string }>();
   const gradeId = raw ?? "";
   const t = useT();
+  const { width: screenWidth } = useWindowDimensions();
+  /*
+   * 좁은 화면은 다른 화면과 같은 폰 폭을 쓰고,
+   * 좌우로 나눠 놓을 만큼 넓을 때만 내용 폭을 키운다.
+   */
+  const screenMaxWidth =
+    screenWidth >= TWO_PANE_MIN + SCREEN_PADDING_X * 2
+      ? WIDE_MAX_WIDTH
+      : MAX_CONTENT_WIDTH;
   const vocab = useVocab();
   const grade = useGrade(gradeId);
 
@@ -189,7 +214,7 @@ export default function QuizScreen() {
   };
 
   return (
-    <Screen>
+    <Screen maxWidth={screenMaxWidth}>
       <ScreenHeader>
         <BackButton fallbackHref={`/grade/${gradeId}`} />
         <View className="flex-1">
@@ -303,24 +328,35 @@ function QuizBody({
    * 학습 화면처럼 정사각형으로 두되, 높이가 화면을 넘지 않게 잘라 준다.
    * 폭에만 맞추면 작은 폰에서 그림이 화면을 다 먹어 보기 버튼이 안 보인다.
    */
-  const contentWidth =
-    Math.min(screenWidth, MAX_CONTENT_WIDTH) - SCREEN_PADDING_X * 2;
+  /*
+   * 문제 영역의 실제 크기를 재서 배치를 정한다.
+   *
+   * 화면 높이에서 머리줄 높이를 어림잡아 빼면 가로 모드나 창 크기를 줄인
+   * 웹에서 어긋난다. 그래서 스크롤 영역이 실제로 차지한 자리를 받아 쓴다.
+   * 아직 못 쟀을 때만 화면 크기로 어림한다.
+   */
+  const [box, setBox] = useState({ width: 0, height: 0 });
+  const availWidth =
+    (box.width || Math.min(screenWidth, WIDE_MAX_WIDTH)) - SCREEN_PADDING_X * 2;
+  const availHeight = box.height || screenHeight * 0.72;
+
+  /** 넓으면 제시부와 보기를 좌우로 나눈다. 가로 모드에서 세로로 쌓으면 다 안 들어간다 */
+  const twoPane = availWidth >= TWO_PANE_MIN;
 
   /*
-   * 문제 영역의 열 너비.
+   * 그림 열 너비.
    *
-   * 제시 카드와 보기가 모두 이 너비를 쓴다. 카드마다 따로 계산하면 좌우 끝이 어긋난다.
-   *
-   * 그림은 열을 좌우 여백 없이 꽉 채운다. 그림이 정사각형이라 열 너비가 곧 그림 높이가
-   * 되는데, 보기 그림 2x2 도 두 줄 합치면 같은 높이가 나온다. 그래서 한 값만 정하면
-   * 두 배치가 같이 맞는다. 화면 높이에서 머리줄·보기 자리를 뺀 만큼으로 잘라 준다.
+   * 그림은 정사각형이라 열 너비가 곧 높이가 되고, 보기 그림 2x2 도 두 줄을 합치면
+   * 같은 높이가 나온다. 그래서 한 값만 정하면 두 배치가 같이 맞는다.
    */
-  const visualBudget = screenHeight - CHROME_H - CHOICE_LIST_H;
+  const paneWidth = twoPane
+    ? Math.floor((availWidth - SECTION_GAP) / 2)
+    : availWidth;
+  const heightBudget = twoPane
+    ? availHeight - PROMPT_H
+    : availHeight - PROMPT_H - SECTION_GAP - CHOICE_LIST_H;
   const columnWidth = Math.round(
-    Math.max(
-      MIN_COLUMN,
-      Math.min(contentWidth, visualBudget, MAX_COLUMN),
-    ),
+    Math.max(MIN_COLUMN, Math.min(paneWidth, heightBudget, MAX_COLUMN)),
   );
 
   /** 문제 그림 한 장. 카드 좌우 여백 없이 열을 그대로 채운다 */
@@ -331,7 +367,7 @@ function QuizBody({
 
   /** 철자 맞추기의 힌트 그림은 자판이 들어갈 자리를 남겨야 해서 더 작다 */
   const hintSize = Math.round(
-    Math.min(columnWidth - CARD_PAD * 2, screenHeight * 0.2, 170),
+    Math.min(columnWidth - CARD_PAD * 2, availHeight * 0.3, 200),
   );
 
   const speak = useCallback(() => {
@@ -403,124 +439,151 @@ function QuizBody({
     </View>
   );
 
+  /** 유형별 제시부(위/왼쪽)와 보기부(아래/오른쪽) */
+  let prompt: ReactNode = null;
+  let answers: ReactNode = null;
+
+  switch (kind) {
+    case "imageToWord":
+      prompt = <HeroImage word={answer} size={heroSize} />;
+      answers = wordChoices;
+      break;
+
+    case "wordToImage":
+      prompt = <WordPrompt word={answer} onSpeak={speak} />;
+      answers = (
+        <View style={{ gap: GRID_GAP }} className="flex-row flex-wrap">
+          {choices.map((choice) => (
+            <ImageChoice
+              key={choice.id}
+              choice={choice}
+              answer={answer}
+              picked={picked}
+              revealed={revealed}
+              size={cellSize}
+              onPress={() => pick(choice)}
+            />
+          ))}
+        </View>
+      );
+      break;
+
+    case "wordToMeaning":
+      prompt = <WordPrompt word={answer} onSpeak={speak} />;
+      answers = meaningChoices;
+      break;
+
+    case "meaningToWord":
+      prompt = (
+        <View className="items-center rounded-3xl bg-surface px-5 py-5 shadow-neu-card">
+          <Text className="text-center text-[20px] font-bold text-slate-800">
+            {answer.meaning}
+          </Text>
+        </View>
+      );
+      answers = wordChoices;
+      break;
+
+    case "listenToWord":
+      // 소리만으로 푸는 문제라 단어는 숨긴다
+      prompt = (
+        <View className="items-center gap-3 rounded-3xl bg-surface px-5 py-8 shadow-neu-card">
+          <Pressable
+            onPress={speak}
+            className="h-20 w-20 items-center justify-center rounded-full bg-[#dcf2ea] shadow-neu-sm active:opacity-70"
+            accessibilityRole="button"
+            accessibilityLabel={t("quiz.replay")}
+          >
+            <SpeakerIcon size={34} color="#0EB582" />
+          </Pressable>
+          <Text className="text-[12px] text-slate-400">{t("quiz.replay")}</Text>
+        </View>
+      );
+      answers = wordChoices;
+      break;
+
+    case "cloze":
+      prompt = question.cloze ? (
+        <View className="rounded-3xl bg-surface px-5 py-6 shadow-neu-card">
+          <Text className="text-[17px] leading-[28px] text-slate-800">
+            {question.cloze.before}
+            <Text className="font-black text-mint">
+              {revealed ? question.cloze.surface : "______"}
+            </Text>
+            {question.cloze.after}
+          </Text>
+          {/* 해석은 정답이 드러난 뒤에만. 먼저 보이면 답이 새어 나간다 */}
+          {revealed && answer.exampleTr ? (
+            <Text className="mt-2 text-[13px] text-slate-500">
+              {answer.exampleTr}
+            </Text>
+          ) : null}
+        </View>
+      ) : null;
+      answers = wordChoices;
+      break;
+
+    case "spelling":
+      // 힌트와 글자판이 한 덩어리라 좌우로 나누지 않는다
+      prompt = (
+        <SpellingBoard
+          key={answer.id}
+          answer={answer}
+          revealed={revealed}
+          hintSize={hintSize}
+          onSpeak={speak}
+          onDone={(correct) => onSubmit(null, correct)}
+        />
+      );
+      break;
+  }
+
+  // 철자 맞추기는 한 덩어리라 좌우로 나누지 않는다
+  const splitPanes = twoPane && answers !== null;
+
   return (
     <ScrollView
+      onLayout={(e) => {
+        const { width, height } = e.nativeEvent.layout;
+        setBox((prev) =>
+          prev.width === width && prev.height === height
+            ? prev
+            : { width, height },
+        );
+      }}
       contentContainerClassName="gap-4 px-6 pb-8 pt-4"
       keyboardShouldPersistTaps="handled"
     >
       <Text
-        style={{ width: columnWidth }}
+        style={{ width: splitPanes ? availWidth : columnWidth }}
         className="self-center text-center text-[13px] text-slate-500"
       >
         {t(PROMPT_KEY[kind])}
       </Text>
 
       <Animated.View
-        style={[style, { width: columnWidth }]}
-        className="gap-6 self-center"
+        style={[
+          style,
+          splitPanes
+            ? { width: availWidth, gap: SECTION_GAP }
+            : { width: columnWidth, gap: SECTION_GAP },
+        ]}
+        className={`self-center ${splitPanes ? "flex-row items-start" : ""}`}
       >
-        {kind === "imageToWord" && (
-          <>
-            <HeroImage word={answer} size={heroSize} />
-            {wordChoices}
-          </>
-        )}
-
-        {kind === "wordToImage" && (
-          <>
-            <WordPrompt word={answer} onSpeak={speak} />
-            <View style={{ gap: GRID_GAP }} className="flex-row flex-wrap">
-              {choices.map((choice) => (
-                <ImageChoice
-                  key={choice.id}
-                  choice={choice}
-                  answer={answer}
-                  picked={picked}
-                  revealed={revealed}
-                  size={cellSize}
-                  onPress={() => pick(choice)}
-                />
-              ))}
-            </View>
-          </>
-        )}
-
-        {kind === "wordToMeaning" && (
-          <>
-            <WordPrompt word={answer} onSpeak={speak} />
-            {meaningChoices}
-          </>
-        )}
-
-        {kind === "meaningToWord" && (
-          <>
-            <View className="items-center rounded-3xl bg-surface px-5 py-5 shadow-neu-card">
-              <Text className="text-center text-[20px] font-bold text-slate-800">
-                {answer.meaning}
-              </Text>
-            </View>
-            {wordChoices}
-          </>
-        )}
-
-        {kind === "listenToWord" && (
-          <>
-            {/* 소리만으로 푸는 문제라 단어는 숨긴다 */}
-            <View className="items-center gap-3 rounded-3xl bg-surface px-5 py-8 shadow-neu-card">
-              <Pressable
-                onPress={speak}
-                className="h-20 w-20 items-center justify-center rounded-full bg-[#dcf2ea] shadow-neu-sm active:opacity-70"
-                accessibilityRole="button"
-                accessibilityLabel={t("quiz.replay")}
-              >
-                <SpeakerIcon size={34} color="#0EB582" />
-              </Pressable>
-              <Text className="text-[12px] text-slate-400">
-                {t("quiz.replay")}
-              </Text>
-            </View>
-            {wordChoices}
-          </>
-        )}
-
-        {kind === "cloze" && question.cloze && (
-          <>
-            <View className="rounded-3xl bg-surface px-5 py-6 shadow-neu-card">
-              <Text className="text-[17px] leading-[28px] text-slate-800">
-                {question.cloze.before}
-                <Text className="font-black text-mint">
-                  {revealed ? question.cloze.surface : "______"}
-                </Text>
-                {question.cloze.after}
-              </Text>
-              {/* 해석은 정답이 드러난 뒤에만. 먼저 보이면 답이 새어 나간다 */}
-              {revealed && answer.exampleTr ? (
-                <Text className="mt-2 text-[13px] text-slate-500">
-                  {answer.exampleTr}
-                </Text>
-              ) : null}
-            </View>
-            {wordChoices}
-          </>
-        )}
-
-        {kind === "spelling" && (
-          <SpellingBoard
-            key={answer.id}
-            answer={answer}
-            revealed={revealed}
-            hintSize={hintSize}
-            onSpeak={speak}
-            onDone={(correct) => onSubmit(null, correct)}
-          />
+        <View style={{ width: columnWidth }}>{prompt}</View>
+        {answers && (
+          <View style={splitPanes ? { flex: 1 } : { width: columnWidth }}>
+            {answers}
+          </View>
         )}
       </Animated.View>
 
       {/* 정답이 드러난 뒤에만 뜻을 보여 준다. 먼저 보이면 문제가 안 된다 */}
       {revealed && (
         <View
-          style={{ width: columnWidth }}
-          className="items-center gap-0.5 self-center rounded-2xl bg-surface px-4 py-2.5 shadow-neu-sm">
+          style={{ width: splitPanes ? availWidth : columnWidth }}
+          className="items-center gap-0.5 self-center rounded-2xl bg-surface px-4 py-2.5 shadow-neu-sm"
+        >
           <Text className="text-[15px] font-bold text-slate-800">
             {answer.word}
           </Text>

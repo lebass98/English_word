@@ -173,6 +173,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   colony: require("../../../assets/words/c/colony.png"),
   color: require("../../../assets/words/c/color.png"),
   colorful: require("../../../assets/words/c/colorful.png"),
+  column: require("../../../assets/words/c/column.png"),
   comb: require("../../../assets/words/c/comb.png"),
   combat: require("../../../assets/words/c/combat.png"),
   combination: require("../../../assets/words/c/combination.png"),

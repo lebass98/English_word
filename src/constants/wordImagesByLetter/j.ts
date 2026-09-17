@@ -16,6 +16,7 @@ export const IMAGES_J: Record<string, ImageSourcePropType> = {
   journey: require("../../../assets/words/j/journey.png"),
   joy: require("../../../assets/words/j/joy.png"),
   judge: require("../../../assets/words/j/judge.png"),
+  judgment: require("../../../assets/words/j/judgment.png"),
   junior: require("../../../assets/words/j/junior.png"),
   jury: require("../../../assets/words/j/jury.png"),
   just: require("../../../assets/words/j/just.png"),

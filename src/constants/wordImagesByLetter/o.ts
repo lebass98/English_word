@@ -98,6 +98,7 @@ export const IMAGES_O: Record<string, ImageSourcePropType> = {
   output: require("../../../assets/words/o/output.png"),
   outrage: require("../../../assets/words/o/outrage.png"),
   outrun: require("../../../assets/words/o/outrun.png"),
+  outsell: require("../../../assets/words/o/outsell.png"),
   outspoken: require("../../../assets/words/o/outspoken.png"),
   outstanding: require("../../../assets/words/o/outstanding.png"),
   outward: require("../../../assets/words/o/outward.png"),

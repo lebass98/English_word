@@ -94,6 +94,7 @@ export const IMAGES_H: Record<string, ImageSourcePropType> = {
   horizon: require("../../../assets/words/h/horizon.png"),
   horizontal: require("../../../assets/words/h/horizontal.png"),
   horn: require("../../../assets/words/h/horn.png"),
+  horrendous: require("../../../assets/words/h/horrendous.png"),
   hospitable: require("../../../assets/words/h/hospitable.png"),
   hospital: require("../../../assets/words/h/hospital.png"),
   hospitality: require("../../../assets/words/h/hospitality.png"),

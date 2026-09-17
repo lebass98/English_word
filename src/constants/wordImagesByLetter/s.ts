@@ -230,6 +230,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   skewed: require("../../../assets/words/s/skewed.png"),
   skill: require("../../../assets/words/s/skill.png"),
   skilled: require("../../../assets/words/s/skilled.png"),
+  skillful: require("../../../assets/words/s/skillful.png"),
   skin: require("../../../assets/words/s/skin.png"),
   skip: require("../../../assets/words/s/skip.png"),
   sky: require("../../../assets/words/s/sky.png"),

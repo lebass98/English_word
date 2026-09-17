@@ -31,6 +31,7 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-17
+- 일본어 N5 13단원 5장(嫌い, 上手, 下手, 暇, 開ける) 생성 후 사용자 요청으로 생성 중단 (누적 245/556장, 다시 그릴 후보: 医者·春·寝る·有名)
 - 토익 35단원 빠진 그림 16장 선형그래픽으로 생성 및 등록
   - 대상: unrivaled, accommodations, frozen, courtyard, canceled, landmark, nightly, holder, resounding, worldwide, theatrical, proudly, theatergoer, appraise, discretionary, unease
 - 앱 아이콘 전체를 구글 Material Symbols 원본 SVG 로 교체

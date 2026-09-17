@@ -28,6 +28,7 @@ export const IMAGES_N: Record<string, ImageSourcePropType> = {
   negotiate: require("../../../assets/words/n/negotiate.png"),
   negotiation: require("../../../assets/words/n/negotiation.png"),
   neighbor: require("../../../assets/words/n/neighbor.png"),
+  neighborhood: require("../../../assets/words/n/neighborhood.png"),
   neighboring: require("../../../assets/words/n/neighboring.png"),
   neither: require("../../../assets/words/n/neither.png"),
   nephew: require("../../../assets/words/n/nephew.png"),

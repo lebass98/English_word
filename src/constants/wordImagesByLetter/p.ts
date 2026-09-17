@@ -335,6 +335,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   proposition: require("../../../assets/words/p/proposition.png"),
   prose: require("../../../assets/words/p/prose.png"),
   prosecute: require("../../../assets/words/p/prosecute.png"),
+  prosecution: require("../../../assets/words/p/prosecution.png"),
   prospect: require("../../../assets/words/p/prospect.png"),
   prospective: require("../../../assets/words/p/prospective.png"),
   prosper: require("../../../assets/words/p/prosper.png"),

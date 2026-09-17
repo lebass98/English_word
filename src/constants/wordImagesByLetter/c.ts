@@ -125,6 +125,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   clarify: require("../../../assets/words/c/clarify.png"),
   clarity: require("../../../assets/words/c/clarity.png"),
   classic: require("../../../assets/words/c/classic.png"),
+  classical: require("../../../assets/words/c/classical.png"),
   classification: require("../../../assets/words/c/classification.png"),
   classify: require("../../../assets/words/c/classify.png"),
   clean: require("../../../assets/words/c/clean.png"),

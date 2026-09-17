@@ -120,6 +120,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   focus: require("../../../assets/words/f/focus.png"),
   "focus on": require("../../../assets/words/f/focus-on.png"),
   fog: require("../../../assets/words/f/fog.png"),
+  fold: require("../../../assets/words/f/fold.png"),
   folk: require("../../../assets/words/f/folk.png"),
   follow: require("../../../assets/words/f/follow.png"),
   following: require("../../../assets/words/f/following.png"),

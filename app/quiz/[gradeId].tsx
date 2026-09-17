@@ -18,11 +18,7 @@ import {
   View,
 } from "react-native";
 import { BackButton } from "../../src/components/BackButton";
-import {
-  CheckIcon,
-  ChevronRightIcon,
-  SpeakerIcon,
-} from "../../src/components/icons";
+import { CheckIcon, SpeakerIcon } from "../../src/components/icons";
 import { PillButton } from "../../src/components/PillButton";
 import {
   MAX_CONTENT_WIDTH,
@@ -58,6 +54,9 @@ const CELL_PAD = 6;
 
 /** 보기 그림 사이 간격. 좌우·세로를 같은 값으로 둔다 */
 const GRID_GAP = 12;
+
+/** 유형 선택 카드 2열 간격. 학년 화면의 유닛 카드와 같은 값 */
+const GRID_GAP_LG = 16;
 
 /** 보기 네 줄이 쓰는 세로 자리 (버튼 52 + 사이 간격 10) */
 const CHOICE_LIST_H = 52 * 4 + 10 * 3;
@@ -359,57 +358,71 @@ function KindPicker({
   const t = useT();
   const router = useRouter();
   const records = useAppStore((s) => s.quizRecords);
+  const { width: screenWidth } = useWindowDimensions();
+
+  // 학년 화면의 유닛 카드와 같은 2열·16px 간격으로 맞춘다
+  const contentWidth =
+    Math.min(screenWidth, MAX_CONTENT_WIDTH) - SCREEN_PADDING_X * 2;
+  const cardWidth = Math.floor((contentWidth - GRID_GAP_LG) / 2);
 
   return (
     <Screen>
       <ScreenHeader>
         <BackButton fallbackHref={`/grade/${gradeId}`} />
         <View className="flex-1">
-          <Text className="text-2xl font-bold text-ink">
-            {t("quiz.title")}
-          </Text>
+          <Text className="text-2xl font-bold text-ink">{t("quiz.title")}</Text>
           <Text className="mt-0.5 text-[13px] text-slate-500">{gradeLabel}</Text>
         </View>
       </ScreenHeader>
 
-      <ScrollView contentContainerClassName="gap-3 px-6 pb-10 pt-6">
+      <ScrollView contentContainerClassName="gap-4 px-6 pb-10 pt-6">
         <Text className="text-[13px] text-slate-500">
           {t("quiz.chooseKind")}
         </Text>
 
-        {KIND_OPTIONS.map(({ value, emoji }) => {
-          // 섞어서는 예전 기록을 그대로 쓰고, 유형별은 따로 쌓는다
-          const best =
-            records[value === "mix" ? gradeId : `${gradeId}:k-${value}`]?.best;
-          return (
-            <Pressable
-              key={value}
-              onPress={() => router.push(`/quiz/${gradeId}?kind=${value}`)}
-              accessibilityRole="button"
-              className="flex-row items-center gap-4 rounded-3xl bg-surface px-5 py-4 shadow-neu-card active:shadow-neu-pressed"
-            >
-              <View className="h-11 w-11 items-center justify-center rounded-2xl bg-canvas shadow-neu-inset">
-                <Text className="text-[20px]">{emoji}</Text>
-              </View>
-              <View className="flex-1">
-                <Text className="text-[15px] font-bold text-ink">
+        <View
+          style={{ gap: GRID_GAP_LG }}
+          className="flex-row flex-wrap justify-center"
+        >
+          {KIND_OPTIONS.map(({ value, emoji }) => {
+            // 섞어서는 예전 기록을 그대로 쓰고, 유형별은 따로 쌓는다
+            const best =
+              records[value === "mix" ? gradeId : `${gradeId}:k-${value}`]?.best;
+            return (
+              <Pressable
+                key={value}
+                onPress={() => router.push(`/quiz/${gradeId}?kind=${value}`)}
+                accessibilityRole="button"
+                style={{ width: cardWidth }}
+                className="items-center gap-1.5 rounded-3xl bg-surface px-3 py-5 shadow-neu-card active:shadow-neu-pressed"
+              >
+                <View className="h-12 w-12 items-center justify-center rounded-2xl bg-canvas shadow-neu-inset">
+                  <Text className="text-[22px]">{emoji}</Text>
+                </View>
+                <Text
+                  numberOfLines={1}
+                  className="mt-1 text-[14px] font-bold text-ink"
+                >
                   {t(`quiz.kind.${value}` as StringKey)}
                 </Text>
-                <Text className="mt-0.5 text-[12px] text-slate-500">
+                <Text
+                  numberOfLines={2}
+                  className="text-center text-[11px] leading-[15px] text-slate-500"
+                >
                   {t(`quiz.kind.${value}Desc` as StringKey)}
                 </Text>
-              </View>
-              {/* 한 번이라도 풀었으면 최고점을 보여 준다 */}
-              {best ? (
-                <Text className="text-[12px] font-bold text-mint">
-                  {t("quiz.best", { score: best })}
+                {/* 한 번이라도 풀었으면 최고점을 보여 준다. 자리를 늘 차지해 카드 높이가 흔들리지 않는다 */}
+                <Text
+                  className={`mt-0.5 text-[11px] font-bold ${
+                    best ? "text-mint" : "text-transparent"
+                  }`}
+                >
+                  {best ? t("quiz.best", { score: best }) : "-"}
                 </Text>
-              ) : (
-                <ChevronRightIcon size={16} color="#cbd5e1" />
-              )}
-            </Pressable>
-          );
-        })}
+              </Pressable>
+            );
+          })}
+        </View>
       </ScrollView>
     </Screen>
   );

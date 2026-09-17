@@ -396,7 +396,8 @@ function KindPicker({
                 style={{ width: cardWidth }}
                 className="items-center gap-1.5 rounded-3xl bg-surface px-3 py-5 shadow-neu-card active:shadow-neu-pressed"
               >
-                <View className="h-12 w-12 items-center justify-center rounded-2xl bg-canvas shadow-neu-inset">
+                {/* 아이콘 자리는 그림자 없이 둔다. 카드 자체 그림자만 남긴다 */}
+                <View className="h-12 w-12 items-center justify-center">
                   <Text className="text-[22px]">{emoji}</Text>
                 </View>
                 <Text

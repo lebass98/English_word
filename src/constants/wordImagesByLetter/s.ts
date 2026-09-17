@@ -69,6 +69,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   securely: require("../../../assets/words/s/securely.png"),
   security: require("../../../assets/words/s/security.png"),
   sediment: require("../../../assets/words/s/sediment.png"),
+  seductive: require("../../../assets/words/s/seductive.png"),
   seed: require("../../../assets/words/s/seed.png"),
   seek: require("../../../assets/words/s/seek.png"),
   seem: require("../../../assets/words/s/seem.png"),

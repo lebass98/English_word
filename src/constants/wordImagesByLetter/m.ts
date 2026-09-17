@@ -145,6 +145,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   mislead: require("../../../assets/words/m/mislead.png"),
   misleading: require("../../../assets/words/m/misleading.png"),
   miss: require("../../../assets/words/m/miss.png"),
+  missing: require("../../../assets/words/m/missing.png"),
   missionary: require("../../../assets/words/m/missionary.png"),
   mistake: require("../../../assets/words/m/mistake.png"),
   mistakenly: require("../../../assets/words/m/mistakenly.png"),

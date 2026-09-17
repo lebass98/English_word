@@ -180,6 +180,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   diminish: require("../../../assets/words/d/diminish.png"),
   diminutive: require("../../../assets/words/d/diminutive.png"),
   dine: require("../../../assets/words/d/dine.png"),
+  diner: require("../../../assets/words/d/diner.png"),
   "dining room": require("../../../assets/words/d/dining-room.png"),
   "dinning room": require("../../../assets/words/d/dinning-room.png"),
   diplomacy: require("../../../assets/words/d/diplomacy.png"),

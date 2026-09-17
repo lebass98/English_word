@@ -450,6 +450,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   supervise: require("../../../assets/words/s/supervise.png"),
   supervisor: require("../../../assets/words/s/supervisor.png"),
   supplement: require("../../../assets/words/s/supplement.png"),
+  supplier: require("../../../assets/words/s/supplier.png"),
   supply: require("../../../assets/words/s/supply.png"),
   support: require("../../../assets/words/s/support.png"),
   suppose: require("../../../assets/words/s/suppose.png"),

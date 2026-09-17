@@ -50,6 +50,7 @@ export const IMAGES_O: Record<string, ImageSourcePropType> = {
   "once in a while": require("../../../assets/words/o/once-in-a-while.png"),
   online: require("../../../assets/words/o/online.png"),
   onset: require("../../../assets/words/o/onset.png"),
+  openness: require("../../../assets/words/o/openness.png"),
   operate: require("../../../assets/words/o/operate.png"),
   operation: require("../../../assets/words/o/operation.png"),
   operator: require("../../../assets/words/o/operator.png"),

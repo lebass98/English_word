@@ -239,6 +239,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   disposition: require("../../../assets/words/d/disposition.png"),
   dispute: require("../../../assets/words/d/dispute.png"),
   disregard: require("../../../assets/words/d/disregard.png"),
+  disreputable: require("../../../assets/words/d/disreputable.png"),
   disrupt: require("../../../assets/words/d/disrupt.png"),
   disruption: require("../../../assets/words/d/disruption.png"),
   dissent: require("../../../assets/words/d/dissent.png"),

@@ -7,12 +7,18 @@ import {
   Pressable,
   ScrollView,
   Text,
+  useWindowDimensions,
   View,
 } from "react-native";
 import { BackButton } from "../../src/components/BackButton";
 import { CheckIcon, SpeakerIcon } from "../../src/components/icons";
 import { PillButton } from "../../src/components/PillButton";
-import { Screen, ScreenHeader } from "../../src/components/Screen";
+import {
+  MAX_CONTENT_WIDTH,
+  SCREEN_PADDING_X,
+  Screen,
+  ScreenHeader,
+} from "../../src/components/Screen";
 import { useGrade } from "../../src/constants/grades";
 import { studyLanguageOf, studyLangOfWordId } from "../../src/constants/languages";
 import { useVocab, type Word } from "../../src/constants/words";
@@ -246,6 +252,24 @@ function QuizBody({
 }) {
   const t = useT();
   const { answer, choices, kind } = question;
+  const { width: screenWidth, height: screenHeight } = useWindowDimensions();
+
+  /**
+   * 그림 칸 크기.
+   *
+   * 학습 화면처럼 정사각형으로 두되, 높이가 화면을 넘지 않게 잘라 준다.
+   * 폭에만 맞추면 작은 폰에서 그림이 화면을 다 먹어 보기 버튼이 안 보인다.
+   */
+  const contentWidth =
+    Math.min(screenWidth, MAX_CONTENT_WIDTH) - SCREEN_PADDING_X * 2;
+  // 문제 그림 한 장 (보기 단어 4줄이 함께 들어가야 한다)
+  const heroSize = Math.round(
+    Math.min(contentWidth - 24, screenHeight * 0.3, 280),
+  );
+  // 보기 그림 네 장 (2열). gap-3(12px) 과 카드 안쪽 여백(8px)을 뺀다
+  const cellSize = Math.round(
+    Math.min((contentWidth - 12) / 2 - 8, screenHeight * 0.19, 150),
+  );
 
   // 문제가 바뀔 때 살짝 떠오르게 한다
   const [enter] = useState(() => new Animated.Value(0));
@@ -273,24 +297,29 @@ function QuizBody({
 
   return (
     <ScrollView
-      contentContainerClassName="gap-5 px-6 pb-10 pt-6"
+      contentContainerClassName="gap-4 px-6 pb-8 pt-4"
       keyboardShouldPersistTaps="handled"
     >
       <Text className="text-center text-[13px] text-slate-500">
         {kind === "imageToWord" ? t("quiz.pickWord") : t("quiz.pickImage")}
       </Text>
 
-      <Animated.View style={style} className="gap-5">
+      <Animated.View style={style} className="gap-4">
         {kind === "imageToWord" ? (
           <>
-            <View className="items-center justify-center rounded-3xl bg-surface p-4 shadow-neu-card">
-              <Image
-                source={imageOf(answer)}
-                resizeMode="contain"
-                className="h-56 w-full"
-              />
+            <View className="items-center rounded-3xl bg-surface p-3 shadow-neu-card">
+              <View
+                style={{ width: heroSize, height: heroSize }}
+                className="overflow-hidden rounded-2xl bg-canvas shadow-neu-inset"
+              >
+                <Image
+                  source={imageOf(answer)}
+                  resizeMode="cover"
+                  style={{ width: "100%", height: "100%" }}
+                />
+              </View>
             </View>
-            <View className="gap-3">
+            <View className="gap-2.5">
               {choices.map((choice) => (
                 <WordChoice
                   key={choice.id}
@@ -304,8 +333,8 @@ function QuizBody({
           </>
         ) : (
           <>
-            <View className="items-center gap-2 rounded-3xl bg-surface px-4 py-6 shadow-neu-card">
-              <Text className="text-[30px] font-black text-slate-900">
+            <View className="items-center gap-2 rounded-3xl bg-surface px-4 py-5 shadow-neu-card">
+              <Text className="text-[28px] font-black text-slate-900">
                 {answer.word}
               </Text>
               <Pressable
@@ -322,13 +351,14 @@ function QuizBody({
                 <SpeakerIcon size={18} color="#64748b" />
               </Pressable>
             </View>
-            <View className="flex-row flex-wrap gap-3">
+            <View className="flex-row flex-wrap justify-center gap-3">
               {choices.map((choice) => (
                 <ImageChoice
                   key={choice.id}
                   choice={choice}
                   answer={answer}
                   picked={picked}
+                  size={cellSize}
                   onPress={() => onPick(choice)}
                 />
               ))}
@@ -339,7 +369,7 @@ function QuizBody({
 
       {/* 정답이 드러난 뒤에만 뜻을 보여 준다. 먼저 보이면 문제가 안 된다 */}
       {picked && (
-        <View className="items-center gap-1 rounded-2xl bg-surface px-4 py-3 shadow-neu-sm">
+        <View className="items-center gap-0.5 rounded-2xl bg-surface px-4 py-2.5 shadow-neu-sm">
           <Text className="text-[15px] font-bold text-slate-800">
             {answer.word}
           </Text>
@@ -390,7 +420,7 @@ function WordChoice({
     <Pressable
       onPress={onPress}
       disabled={Boolean(picked)}
-      className={`flex-row items-center justify-between rounded-2xl ${tone} px-5 py-4 shadow-neu-sm active:opacity-80`}
+      className={`flex-row items-center justify-between rounded-2xl ${tone} px-5 py-3.5 shadow-neu-sm active:opacity-80`}
       accessibilityRole="button"
       accessibilityLabel={choice.word}
     >
@@ -417,11 +447,14 @@ function ImageChoice({
   choice,
   answer,
   picked,
+  size,
   onPress,
 }: {
   choice: Word;
   answer: Word;
   picked: Word | null;
+  /** 그림 한 변의 길이 (px). 화면 크기에 맞춰 위에서 정한다 */
+  size: number;
   onPress: () => void;
 }) {
   const mark = markOf(choice, answer, picked);
@@ -436,17 +469,20 @@ function ImageChoice({
     <Pressable
       onPress={onPress}
       disabled={Boolean(picked)}
-      // 2열로 놓는다. gap-3(12px) 을 뺀 절반 폭
-      style={{ width: "48%" }}
-      className={`items-center rounded-2xl ${tone} p-2 shadow-neu-sm active:opacity-80`}
+      className={`rounded-2xl ${tone} p-1.5 shadow-neu-sm active:opacity-80`}
       accessibilityRole="button"
       accessibilityLabel={choice.word}
     >
-      <Image
-        source={imageOf(choice)}
-        resizeMode="contain"
-        className="h-32 w-full"
-      />
+      <View
+        style={{ width: size, height: size }}
+        className="overflow-hidden rounded-xl bg-canvas shadow-neu-inset"
+      >
+        <Image
+          source={imageOf(choice)}
+          resizeMode="cover"
+          style={{ width: "100%", height: "100%" }}
+        />
+      </View>
       {mark === "correct" && (
         <View className="absolute right-2 top-2">
           <CheckIcon size={18} color={MINT} />

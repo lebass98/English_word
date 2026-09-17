@@ -297,6 +297,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   consider: require("../../../assets/words/c/consider.png"),
   considerable: require("../../../assets/words/c/considerable.png"),
   considerably: require("../../../assets/words/c/considerably.png"),
+  considerate: require("../../../assets/words/c/considerate.png"),
   consist: require("../../../assets/words/c/consist.png"),
   "consist of": require("../../../assets/words/c/consist-of.png"),
   consistency: require("../../../assets/words/c/consistency.png"),

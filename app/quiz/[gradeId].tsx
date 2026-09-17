@@ -22,12 +22,14 @@ import {
 import { useGrade } from "../../src/constants/grades";
 import { studyLanguageOf, studyLangOfWordId } from "../../src/constants/languages";
 import { useVocab, type Word } from "../../src/constants/words";
-import { useT } from "../../src/i18n";
+import { useT, type StringKey } from "../../src/i18n";
 import {
   buildQuiz,
   imageOf,
   QUIZ_SIZE,
   scoreOf,
+  SPELLING_LIVES,
+  type QuizKind,
   type QuizQuestion,
 } from "../../src/lib/quiz";
 import { speakWord, stopSpeaking } from "../../src/lib/speech";
@@ -73,6 +75,8 @@ export default function QuizScreen() {
 
   const [index, setIndex] = useState(0);
   const [picked, setPicked] = useState<Word | null>(null);
+  /** 정답이 공개됐는지. 철자 맞추기처럼 보기를 안 고르는 유형도 있어 따로 둔다 */
+  const [revealed, setRevealed] = useState(false);
   const [log, setLog] = useState<Answered[]>([]);
 
   const question = questions[index];
@@ -94,6 +98,7 @@ export default function QuizScreen() {
     setQuestions(buildQuiz(words, useAppStore.getState().entries, QUIZ_SIZE));
     setIndex(0);
     setPicked(null);
+    setRevealed(false);
     setLog([]);
     setRound((r) => r + 1);
   }, [words]);
@@ -138,11 +143,15 @@ export default function QuizScreen() {
   const correctCount = log.filter((a) => a.correct).length;
   const combo = comboOf(log);
 
-  const pick = (choice: Word) => {
+  /**
+   * 한 문제를 채점한다.
+   * 보기를 고르는 유형은 고른 단어가 들어오고, 철자 맞추기는 null 이 들어온다.
+   */
+  const submit = (choice: Word | null, correct: boolean) => {
     // 정답이 드러난 동안 두 번째로 누른 건 무시한다
-    if (picked) return;
-    const correct = choice.conceptId === question.answer.conceptId;
+    if (revealed) return;
     setPicked(choice);
+    setRevealed(true);
 
     // 맞히면 외운 것으로, 틀리면 헷갈리는 것으로 기록한다.
     // 이 기록이 다음 판의 출제 가중치가 된다
@@ -155,6 +164,7 @@ export default function QuizScreen() {
     setTimeout(() => {
       setLog((prev) => [...prev, { question, picked: choice, correct }]);
       setPicked(null);
+      setRevealed(false);
       setIndex((i) => i + 1);
     }, REVEAL_MS);
   };
@@ -192,7 +202,8 @@ export default function QuizScreen() {
         key={`${round}-${index}`}
         question={question}
         picked={picked}
-        onPick={pick}
+        revealed={revealed}
+        onSubmit={submit}
         speechCode={speechCode}
         speechVolume={speechVolume}
       />
@@ -233,20 +244,33 @@ function ProgressBar({ current, total }: { current: number; total: number }) {
   );
 }
 
+/** 문제 유형별 안내 문구 */
+const PROMPT_KEY: Record<QuizKind, StringKey> = {
+  imageToWord: "quiz.pickWord",
+  wordToImage: "quiz.pickImage",
+  wordToMeaning: "quiz.pickMeaning",
+  meaningToWord: "quiz.pickWordByMeaning",
+  listenToWord: "quiz.listen",
+  cloze: "quiz.cloze",
+  spelling: "quiz.spell",
+};
+
 /**
  * 문제 본문.
- * 그림을 보고 단어를 고르거나, 단어를 보고 그림을 고른다.
+ * 일곱 가지 유형을 한 자리에서 그린다. 제시부(위)와 보기부(아래)만 유형에 따라 갈린다.
  */
 function QuizBody({
   question,
   picked,
-  onPick,
+  revealed,
+  onSubmit,
   speechCode,
   speechVolume,
 }: {
   question: QuizQuestion;
   picked: Word | null;
-  onPick: (w: Word) => void;
+  revealed: boolean;
+  onSubmit: (choice: Word | null, correct: boolean) => void;
   speechCode: string;
   speechVolume: number;
 }) {
@@ -262,7 +286,7 @@ function QuizBody({
    */
   const contentWidth =
     Math.min(screenWidth, MAX_CONTENT_WIDTH) - SCREEN_PADDING_X * 2;
-  // 문제 그림 한 장 (보기 단어 4줄이 함께 들어가야 한다)
+  // 문제 그림 한 장 (보기 네 줄이 함께 들어가야 한다)
   const heroSize = Math.round(
     Math.min(contentWidth - 24, screenHeight * 0.3, 280),
   );
@@ -270,6 +294,19 @@ function QuizBody({
   const cellSize = Math.round(
     Math.min((contentWidth - 12) / 2 - 8, screenHeight * 0.19, 150),
   );
+  // 철자 맞추기의 힌트 그림은 자판이 들어갈 자리를 남겨야 해서 더 작다
+  const hintSize = Math.round(
+    Math.min(contentWidth - 24, screenHeight * 0.2, 170),
+  );
+
+  const speak = useCallback(() => {
+    speakWord(answer.word, { lang: speechCode, volume: speechVolume });
+  }, [answer.word, speechCode, speechVolume]);
+
+  // 듣기 문제는 화면에 뜨자마자 한 번 읽어 준다
+  useEffect(() => {
+    if (kind === "listenToWord") speak();
+  }, [kind, speak]);
 
   // 문제가 바뀔 때 살짝 떠오르게 한다
   const [enter] = useState(() => new Animated.Value(0));
@@ -295,62 +332,62 @@ function QuizBody({
     ],
   };
 
+  /** 보기를 골랐을 때. 뜻이 같으면 정답으로 본다 */
+  const pick = (choice: Word) =>
+    onSubmit(choice, choice.conceptId === answer.conceptId);
+
+  /** 단어 네 개를 세로로 늘어놓는 보기부. 여러 유형이 함께 쓴다 */
+  const wordChoices = (
+    <View className="gap-2.5">
+      {choices.map((choice) => (
+        <WordChoice
+          key={choice.id}
+          choice={choice}
+          answer={answer}
+          picked={picked}
+          revealed={revealed}
+          onPress={() => pick(choice)}
+        />
+      ))}
+    </View>
+  );
+
+  /** 뜻 네 개를 세로로 늘어놓는 보기부 */
+  const meaningChoices = (
+    <View className="gap-2.5">
+      {choices.map((choice) => (
+        <MeaningChoice
+          key={choice.id}
+          choice={choice}
+          answer={answer}
+          picked={picked}
+          revealed={revealed}
+          onPress={() => pick(choice)}
+        />
+      ))}
+    </View>
+  );
+
   return (
     <ScrollView
       contentContainerClassName="gap-4 px-6 pb-8 pt-4"
       keyboardShouldPersistTaps="handled"
     >
       <Text className="text-center text-[13px] text-slate-500">
-        {kind === "imageToWord" ? t("quiz.pickWord") : t("quiz.pickImage")}
+        {t(PROMPT_KEY[kind])}
       </Text>
 
       <Animated.View style={style} className="gap-4">
-        {kind === "imageToWord" ? (
+        {kind === "imageToWord" && (
           <>
-            <View className="items-center rounded-3xl bg-surface p-3 shadow-neu-card">
-              <View
-                style={{ width: heroSize, height: heroSize }}
-                className="overflow-hidden rounded-2xl bg-canvas shadow-neu-inset"
-              >
-                <Image
-                  source={imageOf(answer)}
-                  resizeMode="cover"
-                  style={{ width: "100%", height: "100%" }}
-                />
-              </View>
-            </View>
-            <View className="gap-2.5">
-              {choices.map((choice) => (
-                <WordChoice
-                  key={choice.id}
-                  choice={choice}
-                  answer={answer}
-                  picked={picked}
-                  onPress={() => onPick(choice)}
-                />
-              ))}
-            </View>
+            <HeroImage word={answer} size={heroSize} />
+            {wordChoices}
           </>
-        ) : (
+        )}
+
+        {kind === "wordToImage" && (
           <>
-            <View className="items-center gap-2 rounded-3xl bg-surface px-4 py-5 shadow-neu-card">
-              <Text className="text-[28px] font-black text-slate-900">
-                {answer.word}
-              </Text>
-              <Pressable
-                onPress={() =>
-                  speakWord(answer.word, {
-                    lang: speechCode,
-                    volume: speechVolume,
-                  })
-                }
-                className="rounded-full bg-canvas p-2.5 shadow-neu-sm active:opacity-70"
-                accessibilityRole="button"
-                accessibilityLabel={answer.word}
-              >
-                <SpeakerIcon size={18} color="#64748b" />
-              </Pressable>
-            </View>
+            <WordPrompt word={answer} onSpeak={speak} />
             <View className="flex-row flex-wrap justify-center gap-3">
               {choices.map((choice) => (
                 <ImageChoice
@@ -358,17 +395,88 @@ function QuizBody({
                   choice={choice}
                   answer={answer}
                   picked={picked}
+                  revealed={revealed}
                   size={cellSize}
-                  onPress={() => onPick(choice)}
+                  onPress={() => pick(choice)}
                 />
               ))}
             </View>
           </>
         )}
+
+        {kind === "wordToMeaning" && (
+          <>
+            <WordPrompt word={answer} onSpeak={speak} />
+            {meaningChoices}
+          </>
+        )}
+
+        {kind === "meaningToWord" && (
+          <>
+            <View className="items-center rounded-3xl bg-surface px-5 py-6 shadow-neu-card">
+              <Text className="text-center text-[20px] font-bold text-slate-800">
+                {answer.meaning}
+              </Text>
+            </View>
+            {wordChoices}
+          </>
+        )}
+
+        {kind === "listenToWord" && (
+          <>
+            {/* 소리만으로 푸는 문제라 단어는 숨긴다 */}
+            <View className="items-center gap-3 rounded-3xl bg-surface px-5 py-8 shadow-neu-card">
+              <Pressable
+                onPress={speak}
+                className="h-20 w-20 items-center justify-center rounded-full bg-[#dcf2ea] shadow-neu-sm active:opacity-70"
+                accessibilityRole="button"
+                accessibilityLabel={t("quiz.replay")}
+              >
+                <SpeakerIcon size={34} color="#0EB582" />
+              </Pressable>
+              <Text className="text-[12px] text-slate-400">
+                {t("quiz.replay")}
+              </Text>
+            </View>
+            {wordChoices}
+          </>
+        )}
+
+        {kind === "cloze" && question.cloze && (
+          <>
+            <View className="rounded-3xl bg-surface px-5 py-6 shadow-neu-card">
+              <Text className="text-[17px] leading-[28px] text-slate-800">
+                {question.cloze.before}
+                <Text className="font-black text-mint">
+                  {revealed ? question.cloze.surface : "______"}
+                </Text>
+                {question.cloze.after}
+              </Text>
+              {/* 해석은 정답이 드러난 뒤에만. 먼저 보이면 답이 새어 나간다 */}
+              {revealed && answer.exampleTr ? (
+                <Text className="mt-2 text-[13px] text-slate-500">
+                  {answer.exampleTr}
+                </Text>
+              ) : null}
+            </View>
+            {wordChoices}
+          </>
+        )}
+
+        {kind === "spelling" && (
+          <SpellingBoard
+            key={answer.id}
+            answer={answer}
+            revealed={revealed}
+            hintSize={hintSize}
+            onSpeak={speak}
+            onDone={(correct) => onSubmit(null, correct)}
+          />
+        )}
       </Animated.View>
 
       {/* 정답이 드러난 뒤에만 뜻을 보여 준다. 먼저 보이면 문제가 안 된다 */}
-      {picked && (
+      {revealed && (
         <View className="items-center gap-0.5 rounded-2xl bg-surface px-4 py-2.5 shadow-neu-sm">
           <Text className="text-[15px] font-bold text-slate-800">
             {answer.word}
@@ -382,6 +490,201 @@ function QuizBody({
   );
 }
 
+/** 문제로 내는 큰 그림 한 장 */
+function HeroImage({ word, size }: { word: Word; size: number }) {
+  return (
+    <View className="items-center rounded-3xl bg-surface p-3 shadow-neu-card">
+      <View
+        style={{ width: size, height: size }}
+        className="overflow-hidden rounded-2xl bg-canvas shadow-neu-inset"
+      >
+        <Image
+          source={imageOf(word)}
+          resizeMode="cover"
+          style={{ width: "100%", height: "100%" }}
+        />
+      </View>
+    </View>
+  );
+}
+
+/** 단어를 크게 보여 주는 제시부. 발음도 들을 수 있다 */
+function WordPrompt({ word, onSpeak }: { word: Word; onSpeak: () => void }) {
+  return (
+    <View className="items-center gap-2 rounded-3xl bg-surface px-4 py-5 shadow-neu-card">
+      <Text className="text-[28px] font-black text-slate-900">{word.word}</Text>
+      <Pressable
+        onPress={onSpeak}
+        className="rounded-full bg-canvas p-2.5 shadow-neu-sm active:opacity-70"
+        accessibilityRole="button"
+        accessibilityLabel={word.word}
+      >
+        <SpeakerIcon size={18} color="#64748b" />
+      </Pressable>
+    </View>
+  );
+}
+
+/**
+ * 철자 맞추기.
+ *
+ * 그림과 뜻을 힌트로 주고 글자를 하나씩 고른다.
+ * 틀릴 수 있는 횟수는 하트로 보여 준다. 다 쓰면 정답을 펼쳐 보여 주고 넘어간다.
+ */
+function SpellingBoard({
+  answer,
+  revealed,
+  hintSize,
+  onSpeak,
+  onDone,
+}: {
+  answer: Word;
+  revealed: boolean;
+  hintSize: number;
+  onSpeak: () => void;
+  onDone: (correct: boolean) => void;
+}) {
+  const t = useT();
+  const target = answer.word.toUpperCase();
+  const letters = useMemo(() => new Set(target.split("")), [target]);
+
+  const [tried, setTried] = useState<Set<string>>(() => new Set());
+  const misses = useMemo(
+    () => [...tried].filter((c) => !letters.has(c)).length,
+    [tried, letters],
+  );
+  const lives = SPELLING_LIVES - misses;
+  const solved = useMemo(
+    () => [...letters].every((c) => tried.has(c)),
+    [letters, tried],
+  );
+
+  // 다 맞히거나 하트를 다 쓰면 한 번만 넘긴다
+  const finished = useRef(false);
+  useEffect(() => {
+    if (finished.current) return;
+    if (solved || lives <= 0) {
+      finished.current = true;
+      onDone(solved);
+    }
+  }, [solved, lives, onDone]);
+
+  const tap = (letter: string) => {
+    if (revealed || finished.current) return;
+    setTried((prev) => new Set(prev).add(letter));
+  };
+
+  return (
+    <View className="gap-4">
+      <View className="items-center gap-3 rounded-3xl bg-surface p-3 shadow-neu-card">
+        {/* 그림이 있으면 그림을, 없으면 뜻만 힌트로 준다 */}
+        {imageOf(answer) ? (
+          <View
+            style={{ width: hintSize, height: hintSize }}
+            className="overflow-hidden rounded-2xl bg-canvas shadow-neu-inset"
+          >
+            <Image
+              source={imageOf(answer)}
+              resizeMode="cover"
+              style={{ width: "100%", height: "100%" }}
+            />
+          </View>
+        ) : null}
+        <Text className="px-3 text-center text-[15px] font-bold text-slate-700">
+          {answer.meaning}
+        </Text>
+
+        {/* 남은 기회 */}
+        <View className="flex-row gap-1.5">
+          {Array.from({ length: SPELLING_LIVES }).map((_, i) => (
+            <Text
+              key={i}
+              className={`text-[15px] ${i < lives ? "" : "opacity-25"}`}
+            >
+              {i < lives ? "💚" : "🤍"}
+            </Text>
+          ))}
+        </View>
+      </View>
+
+      {/* 빈칸. 맞힌 글자만 채워진다 */}
+      <View className="flex-row flex-wrap justify-center gap-1.5">
+        {target.split("").map((ch, i) => {
+          const open = tried.has(ch) || revealed || lives <= 0;
+          return (
+            <View
+              key={`${ch}-${i}`}
+              className={`h-11 w-8 items-center justify-center rounded-lg ${
+                open ? "bg-[#dcf2ea]" : "bg-canvas shadow-neu-inset"
+              }`}
+            >
+              <Text
+                className={`text-[19px] font-black ${
+                  open ? "text-mint-dark" : "text-transparent"
+                }`}
+              >
+                {ch}
+              </Text>
+            </View>
+          );
+        })}
+      </View>
+
+      <View className="flex-row items-center justify-center gap-2">
+        <Text className="text-[12px] text-slate-400">{t("quiz.spellHint")}</Text>
+        <Pressable
+          onPress={onSpeak}
+          className="rounded-full bg-surface p-2 shadow-neu-sm active:opacity-70"
+          accessibilityRole="button"
+          accessibilityLabel={t("quiz.replay")}
+        >
+          <SpeakerIcon size={15} color="#64748b" />
+        </Pressable>
+      </View>
+
+      {/* 글자판 */}
+      <View className="flex-row flex-wrap justify-center gap-1.5">
+        {ALPHABET.map((ch) => {
+          const used = tried.has(ch);
+          const good = used && letters.has(ch);
+          return (
+            <Pressable
+              key={ch}
+              onPress={() => tap(ch)}
+              disabled={used || revealed}
+              className={`h-9 w-9 items-center justify-center rounded-lg ${
+                !used
+                  ? "bg-surface shadow-neu-sm active:opacity-70"
+                  : good
+                    ? "bg-[#dcf2ea]"
+                    : "bg-canvas shadow-neu-inset"
+              }`}
+              accessibilityRole="button"
+              accessibilityLabel={ch}
+            >
+              <Text
+                className={`text-[14px] font-bold ${
+                  !used
+                    ? "text-slate-700"
+                    : good
+                      ? "text-mint-dark"
+                      : "text-slate-300"
+                }`}
+              >
+                {ch}
+              </Text>
+            </Pressable>
+          );
+        })}
+      </View>
+    </View>
+  );
+}
+
+/** 글자판에 쓰는 알파벳 */
+const ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+
+
 /**
  * 고른 보기의 표시 상태.
  * 아직 안 골랐으면 기본, 고른 뒤에는 정답을 초록으로, 내가 틀리게 고른 것만 빨갛게 한다.
@@ -390,25 +693,29 @@ function markOf(
   choice: Word,
   answer: Word,
   picked: Word | null,
+  revealed: boolean,
 ): "idle" | "correct" | "wrong" {
-  if (!picked) return "idle";
+  if (!revealed) return "idle";
   if (choice.conceptId === answer.conceptId) return "correct";
-  if (choice.id === picked.id) return "wrong";
+  if (picked && choice.id === picked.id) return "wrong";
   return "idle";
 }
 
-function WordChoice({
+/** 뜻을 보기로 늘어놓는다. 단어 보기와 표시 규칙은 같다 */
+function MeaningChoice({
   choice,
   answer,
   picked,
+  revealed,
   onPress,
 }: {
   choice: Word;
   answer: Word;
   picked: Word | null;
+  revealed: boolean;
   onPress: () => void;
 }) {
-  const mark = markOf(choice, answer, picked);
+  const mark = markOf(choice, answer, picked, revealed);
   const tone =
     mark === "correct"
       ? "bg-[#dcf2ea]"
@@ -419,7 +726,55 @@ function WordChoice({
   return (
     <Pressable
       onPress={onPress}
-      disabled={Boolean(picked)}
+      disabled={revealed}
+      className={`flex-row items-center justify-between gap-3 rounded-2xl ${tone} px-5 py-3.5 shadow-neu-sm active:opacity-80`}
+      accessibilityRole="button"
+      accessibilityLabel={choice.meaning}
+    >
+      <Text
+        className={`flex-1 text-[15px] font-bold ${
+          mark === "correct"
+            ? "text-mint-dark"
+            : mark === "wrong"
+              ? "text-red-600"
+              : "text-slate-800"
+        }`}
+      >
+        {choice.meaning}
+      </Text>
+      {mark === "correct" && <CheckIcon size={18} color={MINT} />}
+      {mark === "wrong" && (
+        <Text className="text-[16px] font-bold text-red-500">✕</Text>
+      )}
+    </Pressable>
+  );
+}
+
+function WordChoice({
+  choice,
+  answer,
+  picked,
+  revealed,
+  onPress,
+}: {
+  choice: Word;
+  answer: Word;
+  picked: Word | null;
+  revealed: boolean;
+  onPress: () => void;
+}) {
+  const mark = markOf(choice, answer, picked, revealed);
+  const tone =
+    mark === "correct"
+      ? "bg-[#dcf2ea]"
+      : mark === "wrong"
+        ? "bg-[#fde8e8]"
+        : "bg-surface";
+
+  return (
+    <Pressable
+      onPress={onPress}
+      disabled={revealed}
       className={`flex-row items-center justify-between rounded-2xl ${tone} px-5 py-3.5 shadow-neu-sm active:opacity-80`}
       accessibilityRole="button"
       accessibilityLabel={choice.word}
@@ -447,17 +802,19 @@ function ImageChoice({
   choice,
   answer,
   picked,
+  revealed,
   size,
   onPress,
 }: {
   choice: Word;
   answer: Word;
   picked: Word | null;
+  revealed: boolean;
   /** 그림 한 변의 길이 (px). 화면 크기에 맞춰 위에서 정한다 */
   size: number;
   onPress: () => void;
 }) {
-  const mark = markOf(choice, answer, picked);
+  const mark = markOf(choice, answer, picked, revealed);
   const tone =
     mark === "correct"
       ? "bg-[#dcf2ea]"
@@ -468,7 +825,7 @@ function ImageChoice({
   return (
     <Pressable
       onPress={onPress}
-      disabled={Boolean(picked)}
+      disabled={revealed}
       className={`rounded-2xl ${tone} p-1.5 shadow-neu-sm active:opacity-80`}
       accessibilityRole="button"
       accessibilityLabel={choice.word}

@@ -67,6 +67,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   sector: require("../../../assets/words/s/sector.png"),
   secure: require("../../../assets/words/s/secure.png"),
   securely: require("../../../assets/words/s/securely.png"),
+  securities: require("../../../assets/words/s/securities.png"),
   security: require("../../../assets/words/s/security.png"),
   sediment: require("../../../assets/words/s/sediment.png"),
   seductive: require("../../../assets/words/s/seductive.png"),

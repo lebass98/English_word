@@ -325,6 +325,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   assortment: require("../../../assets/words/a/assortment.png"),
   assume: require("../../../assets/words/a/assume.png"),
   assumption: require("../../../assets/words/a/assumption.png"),
+  assurance: require("../../../assets/words/a/assurance.png"),
   assure: require("../../../assets/words/a/assure.png"),
   assuredly: require("../../../assets/words/a/assuredly.png"),
   asthma: require("../../../assets/words/a/asthma.png"),

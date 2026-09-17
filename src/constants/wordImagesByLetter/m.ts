@@ -13,6 +13,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   magnify: require("../../../assets/words/m/magnify.png"),
   magnitude: require("../../../assets/words/m/magnitude.png"),
   mail: require("../../../assets/words/m/mail.png"),
+  mailer: require("../../../assets/words/m/mailer.png"),
   main: require("../../../assets/words/m/main.png"),
   mainly: require("../../../assets/words/m/mainly.png"),
   maintain: require("../../../assets/words/m/maintain.png"),

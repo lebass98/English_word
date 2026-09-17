@@ -148,6 +148,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   align: require("../../../assets/words/a/align.png"),
   alike: require("../../../assets/words/a/alike.png"),
   alive: require("../../../assets/words/a/alive.png"),
+  allege: require("../../../assets/words/a/allege.png"),
   allergic: require("../../../assets/words/a/allergic.png"),
   allergy: require("../../../assets/words/a/allergy.png"),
   alleviate: require("../../../assets/words/a/alleviate.png"),

@@ -35,6 +35,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   temporarily: require("../../../assets/words/t/temporarily.png"),
   temporary: require("../../../assets/words/t/temporary.png"),
   tempt: require("../../../assets/words/t/tempt.png"),
+  temptation: require("../../../assets/words/t/temptation.png"),
   tempting: require("../../../assets/words/t/tempting.png"),
   tenant: require("../../../assets/words/t/tenant.png"),
   tend: require("../../../assets/words/t/tend.png"),

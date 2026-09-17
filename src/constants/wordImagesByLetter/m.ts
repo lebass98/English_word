@@ -6,6 +6,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   machinery: require("../../../assets/words/m/machinery.png"),
   "made up of": require("../../../assets/words/m/made-up-of.png"),
   magazine: require("../../../assets/words/m/magazine.png"),
+  magistrate: require("../../../assets/words/m/magistrate.png"),
   magnet: require("../../../assets/words/m/magnet.png"),
   magnificence: require("../../../assets/words/m/magnificence.png"),
   magnificent: require("../../../assets/words/m/magnificent.png"),

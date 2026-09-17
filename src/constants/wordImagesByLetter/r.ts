@@ -207,6 +207,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   responsible: require("../../../assets/words/r/responsible.png"),
   rest: require("../../../assets/words/r/rest.png"),
   restaurant: require("../../../assets/words/r/restaurant.png"),
+  restless: require("../../../assets/words/r/restless.png"),
   restore: require("../../../assets/words/r/restore.png"),
   restrain: require("../../../assets/words/r/restrain.png"),
   restrict: require("../../../assets/words/r/restrict.png"),

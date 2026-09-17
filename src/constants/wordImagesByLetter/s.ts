@@ -436,6 +436,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   subsistence: require("../../../assets/words/s/subsistence.png"),
   substance: require("../../../assets/words/s/substance.png"),
   substantial: require("../../../assets/words/s/substantial.png"),
+  substantiate: require("../../../assets/words/s/substantiate.png"),
   substitute: require("../../../assets/words/s/substitute.png"),
   subtle: require("../../../assets/words/s/subtle.png"),
   subtotal: require("../../../assets/words/s/subtotal.png"),

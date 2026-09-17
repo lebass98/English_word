@@ -55,6 +55,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   accumulation: require("../../../assets/words/a/accumulation.png"),
   accuracy: require("../../../assets/words/a/accuracy.png"),
   accurate: require("../../../assets/words/a/accurate.png"),
+  accusation: require("../../../assets/words/a/accusation.png"),
   accuse: require("../../../assets/words/a/accuse.png"),
   accustomed: require("../../../assets/words/a/accustomed.png"),
   "accustomed to": require("../../../assets/words/a/accustomed-to.png"),

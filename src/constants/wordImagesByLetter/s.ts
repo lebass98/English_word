@@ -484,6 +484,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   susceptible: require("../../../assets/words/s/susceptible.png"),
   suspect: require("../../../assets/words/s/suspect.png"),
   suspend: require("../../../assets/words/s/suspend.png"),
+  suspense: require("../../../assets/words/s/suspense.png"),
   suspicion: require("../../../assets/words/s/suspicion.png"),
   sustain: require("../../../assets/words/s/sustain.png"),
   sustainable: require("../../../assets/words/s/sustainable.png"),

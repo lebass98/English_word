@@ -71,6 +71,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   recreational: require("../../../assets/words/r/recreational.png"),
   recruit: require("../../../assets/words/r/recruit.png"),
   recruiting: require("../../../assets/words/r/recruiting.png"),
+  rectangle: require("../../../assets/words/r/rectangle.png"),
   rectangular: require("../../../assets/words/r/rectangular.png"),
   rectify: require("../../../assets/words/r/rectify.png"),
   recur: require("../../../assets/words/r/recur.png"),

@@ -187,6 +187,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   amplify: require("../../../assets/words/a/amplify.png"),
   amuse: require("../../../assets/words/a/amuse.png"),
   amusement: require("../../../assets/words/a/amusement.png"),
+  amusing: require("../../../assets/words/a/amusing.png"),
   "an array of": require("../../../assets/words/a/an-array-of.png"),
   analogy: require("../../../assets/words/a/analogy.png"),
   analyze: require("../../../assets/words/a/analyze.png"),

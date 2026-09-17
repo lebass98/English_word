@@ -50,6 +50,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   patriot: require("../../../assets/words/p/patriot.png"),
   patrol: require("../../../assets/words/p/patrol.png"),
   patron: require("../../../assets/words/p/patron.png"),
+  patronage: require("../../../assets/words/p/patronage.png"),
   pattern: require("../../../assets/words/p/pattern.png"),
   pause: require("../../../assets/words/p/pause.png"),
   pave: require("../../../assets/words/p/pave.png"),

@@ -87,6 +87,7 @@ export const IMAGES_W: Record<string, ImageSourcePropType> = {
   word: require("../../../assets/words/w/word.png"),
   "work out": require("../../../assets/words/w/work-out.png"),
   workout: require("../../../assets/words/w/workout.png"),
+  "world-renowned": require("../../../assets/words/w/world-renowned.png"),
   worry: require("../../../assets/words/w/worry.png"),
   worse: require("../../../assets/words/w/worse.png"),
   worship: require("../../../assets/words/w/worship.png"),

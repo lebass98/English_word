@@ -137,6 +137,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   shield: require("../../../assets/words/s/shield.png"),
   shift: require("../../../assets/words/s/shift.png"),
   shine: require("../../../assets/words/s/shine.png"),
+  shipment: require("../../../assets/words/s/shipment.png"),
   shock: require("../../../assets/words/s/shock.png"),
   shoot: require("../../../assets/words/s/shoot.png"),
   shore: require("../../../assets/words/s/shore.png"),

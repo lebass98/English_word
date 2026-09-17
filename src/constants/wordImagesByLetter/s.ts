@@ -28,6 +28,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   saying: require("../../../assets/words/s/saying.png"),
   scale: require("../../../assets/words/s/scale.png"),
   scan: require("../../../assets/words/s/scan.png"),
+  scandal: require("../../../assets/words/s/scandal.png"),
   scar: require("../../../assets/words/s/scar.png"),
   scarce: require("../../../assets/words/s/scarce.png"),
   scarcity: require("../../../assets/words/s/scarcity.png"),

@@ -5,7 +5,11 @@ import { BackButton } from "../src/components/BackButton";
 import { BottomNav } from "../src/components/BottomNav";
 import { PillButton } from "../src/components/PillButton";
 import { Screen, ScreenHeader } from "../src/components/Screen";
-import { StarIcon } from "../src/components/icons";
+import {
+  BookIcon,
+  PictureIcon,
+  StarIcon,
+} from "../src/components/icons";
 import { useVocab, type Word } from "../src/constants/words";
 import { WORD_IMAGES } from "../src/constants/wordImages";
 import { useT, type StringKey } from "../src/i18n";
@@ -138,7 +142,7 @@ export default function WordbookScreen() {
             ) : (
               // 다른 화면의 카드와 같은 폭·여백을 쓴다
               <View className="w-full items-center rounded-3xl bg-surface p-6 shadow-neu-card">
-                <Text className="text-[32px]">📖</Text>
+                <BookIcon size={32} color="#cbd5e1" />
                 <Text className="mt-3 text-[15px] font-bold text-ink">
                   {t("wordbook.emptyTitle")}
                 </Text>
@@ -182,7 +186,7 @@ function WordRow({ row, onPress }: { row: Row; onPress: () => void }) {
             style={{ width: "100%", height: "100%" }}
           />
         ) : (
-          <Text className="text-[20px]">🖼️</Text>
+          <PictureIcon size={20} color="#cbd5e1" />
         )}
       </View>
 

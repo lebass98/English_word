@@ -70,6 +70,7 @@ export const IMAGES_W: Record<string, ImageSourcePropType> = {
   wisdom: require("../../../assets/words/w/wisdom.png"),
   wise: require("../../../assets/words/w/wise.png"),
   wish: require("../../../assets/words/w/wish.png"),
+  wit: require("../../../assets/words/w/wit.png"),
   "with little regard to": require("../../../assets/words/w/with-little-regard-to.png"),
   "with respect to": require("../../../assets/words/w/with-respect-to.png"),
   withdraw: require("../../../assets/words/w/withdraw.png"),

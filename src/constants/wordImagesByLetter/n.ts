@@ -10,6 +10,7 @@ export const IMAGES_N: Record<string, ImageSourcePropType> = {
   nasty: require("../../../assets/words/n/nasty.png"),
   natal: require("../../../assets/words/n/natal.png"),
   nation: require("../../../assets/words/n/nation.png"),
+  nationality: require("../../../assets/words/n/nationality.png"),
   native: require("../../../assets/words/n/native.png"),
   natural: require("../../../assets/words/n/natural.png"),
   nature: require("../../../assets/words/n/nature.png"),

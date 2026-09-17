@@ -243,6 +243,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   distract: require("../../../assets/words/d/distract.png"),
   distress: require("../../../assets/words/d/distress.png"),
   distribute: require("../../../assets/words/d/distribute.png"),
+  distributed: require("../../../assets/words/d/distributed.png"),
   distribution: require("../../../assets/words/d/distribution.png"),
   district: require("../../../assets/words/d/district.png"),
   disturb: require("../../../assets/words/d/disturb.png"),

@@ -35,6 +35,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   accessible: require("../../../assets/words/a/accessible.png"),
   accident: require("../../../assets/words/a/accident.png"),
   accidentally: require("../../../assets/words/a/accidentally.png"),
+  acclaim: require("../../../assets/words/a/acclaim.png"),
   accommodate: require("../../../assets/words/a/accommodate.png"),
   accommodation: require("../../../assets/words/a/accommodation.png"),
   "accompanied by": require("../../../assets/words/a/accompanied-by.png"),

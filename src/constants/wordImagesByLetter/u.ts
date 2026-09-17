@@ -85,6 +85,7 @@ export const IMAGES_U: Record<string, ImageSourcePropType> = {
   upcoming: require("../../../assets/words/u/upcoming.png"),
   upgrade: require("../../../assets/words/u/upgrade.png"),
   uphold: require("../../../assets/words/u/uphold.png"),
+  upright: require("../../../assets/words/u/upright.png"),
   upset: require("../../../assets/words/u/upset.png"),
   "upside down": require("../../../assets/words/u/upside-down.png"),
   urban: require("../../../assets/words/u/urban.png"),

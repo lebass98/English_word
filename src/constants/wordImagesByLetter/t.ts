@@ -6,6 +6,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   tackle: require("../../../assets/words/t/tackle.png"),
   tactic: require("../../../assets/words/t/tactic.png"),
   tactics: require("../../../assets/words/t/tactics.png"),
+  tad: require("../../../assets/words/t/tad.png"),
   tail: require("../../../assets/words/t/tail.png"),
   "take advantage of": require("../../../assets/words/t/take-advantage-of.png"),
   "take it for granted": require("../../../assets/words/t/take-it-for-granted.png"),

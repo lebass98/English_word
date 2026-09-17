@@ -242,6 +242,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   reveal: require("../../../assets/words/r/reveal.png"),
   revenge: require("../../../assets/words/r/revenge.png"),
   revenue: require("../../../assets/words/r/revenue.png"),
+  reverend: require("../../../assets/words/r/reverend.png"),
   reverse: require("../../../assets/words/r/reverse.png"),
   review: require("../../../assets/words/r/review.png"),
   revise: require("../../../assets/words/r/revise.png"),

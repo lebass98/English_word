@@ -179,6 +179,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   coin: require("../../../assets/words/c/coin.png"),
   "coincide with": require("../../../assets/words/c/coincide-with.png"),
   coincidence: require("../../../assets/words/c/coincidence.png"),
+  cold: require("../../../assets/words/c/cold.png"),
   "cold weather": require("../../../assets/words/c/cold-weather.png"),
   collaborate: require("../../../assets/words/c/collaborate.png"),
   collaboration: require("../../../assets/words/c/collaboration.png"),

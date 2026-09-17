@@ -19,6 +19,7 @@ export const IMAGES_N: Record<string, ImageSourcePropType> = {
   naughty: require("../../../assets/words/n/naughty.png"),
   navigate: require("../../../assets/words/n/navigate.png"),
   navy: require("../../../assets/words/n/navy.png"),
+  near: require("../../../assets/words/n/near.png"),
   nearby: require("../../../assets/words/n/nearby.png"),
   nearly: require("../../../assets/words/n/nearly.png"),
   neat: require("../../../assets/words/n/neat.png"),

@@ -111,6 +111,7 @@ export const IMAGES_H: Record<string, ImageSourcePropType> = {
   hospitality: require("../../../assets/words/h/hospitality.png"),
   host: require("../../../assets/words/h/host.png"),
   hostile: require("../../../assets/words/h/hostile.png"),
+  hot: require("../../../assets/words/h/hot.png"),
   "hot weather": require("../../../assets/words/h/hot-weather.png"),
   house: require("../../../assets/words/h/house.png"),
   household: require("../../../assets/words/h/household.png"),

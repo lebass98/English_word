@@ -47,6 +47,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   fascinating: require("../../../assets/words/f/fascinating.png"),
   fashion: require("../../../assets/words/f/fashion.png"),
   fashionable: require("../../../assets/words/f/fashionable.png"),
+  fast: require("../../../assets/words/f/fast.png"),
   fasten: require("../../../assets/words/f/fasten.png"),
   fat: require("../../../assets/words/f/fat.png"),
   fatal: require("../../../assets/words/f/fatal.png"),

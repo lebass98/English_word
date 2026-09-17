@@ -45,6 +45,7 @@ export const IMAGES_W: Record<string, ImageSourcePropType> = {
   wetland: require("../../../assets/words/w/wetland.png"),
   wheat: require("../../../assets/words/w/wheat.png"),
   "when it comes to": require("../../../assets/words/w/when-it-comes-to.png"),
+  whereabouts: require("../../../assets/words/w/whereabouts.png"),
   whereas: require("../../../assets/words/w/whereas.png"),
   whether: require("../../../assets/words/w/whether.png"),
   while: require("../../../assets/words/w/while.png"),

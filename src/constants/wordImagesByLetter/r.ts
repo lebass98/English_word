@@ -98,6 +98,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   regain: require("../../../assets/words/r/regain.png"),
   regard: require("../../../assets/words/r/regard.png"),
   "regard for": require("../../../assets/words/r/regard-for.png"),
+  regarding: require("../../../assets/words/r/regarding.png"),
   regardless: require("../../../assets/words/r/regardless.png"),
   "regardless of": require("../../../assets/words/r/regardless-of.png"),
   regime: require("../../../assets/words/r/regime.png"),

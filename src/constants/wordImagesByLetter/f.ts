@@ -118,6 +118,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   flourish: require("../../../assets/words/f/flourish.png"),
   flow: require("../../../assets/words/f/flow.png"),
   fluctuate: require("../../../assets/words/f/fluctuate.png"),
+  fluctuation: require("../../../assets/words/f/fluctuation.png"),
   fluent: require("../../../assets/words/f/fluent.png"),
   fluid: require("../../../assets/words/f/fluid.png"),
   flush: require("../../../assets/words/f/flush.png"),

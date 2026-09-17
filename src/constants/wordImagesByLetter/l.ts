@@ -110,6 +110,7 @@ export const IMAGES_L: Record<string, ImageSourcePropType> = {
   logical: require("../../../assets/words/l/logical.png"),
   lonely: require("../../../assets/words/l/lonely.png"),
   long: require("../../../assets/words/l/long.png"),
+  "long-standing": require("../../../assets/words/l/long-standing.png"),
   longevity: require("../../../assets/words/l/longevity.png"),
   longing: require("../../../assets/words/l/longing.png"),
   look: require("../../../assets/words/l/look.png"),

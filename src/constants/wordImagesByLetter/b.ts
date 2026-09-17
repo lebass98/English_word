@@ -122,6 +122,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   "blue-chip": require("../../../assets/words/b/blue-chip.png"),
   blur: require("../../../assets/words/b/blur.png"),
   board: require("../../../assets/words/b/board.png"),
+  boardroom: require("../../../assets/words/b/boardroom.png"),
   boast: require("../../../assets/words/b/boast.png"),
   body: require("../../../assets/words/b/body.png"),
   bold: require("../../../assets/words/b/bold.png"),

@@ -102,6 +102,7 @@ export const IMAGES_O: Record<string, ImageSourcePropType> = {
   outward: require("../../../assets/words/o/outward.png"),
   outweigh: require("../../../assets/words/o/outweigh.png"),
   oval: require("../../../assets/words/o/oval.png"),
+  oven: require("../../../assets/words/o/oven.png"),
   "over and over": require("../../../assets/words/o/over-and-over.png"),
   overall: require("../../../assets/words/o/overall.png"),
   overcharge: require("../../../assets/words/o/overcharge.png"),

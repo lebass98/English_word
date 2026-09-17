@@ -33,6 +33,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   decent: require("../../../assets/words/d/decent.png"),
   decide: require("../../../assets/words/d/decide.png"),
   decision: require("../../../assets/words/d/decision.png"),
+  "decision-maker": require("../../../assets/words/d/decision-maker.png"),
   decisive: require("../../../assets/words/d/decisive.png"),
   deck: require("../../../assets/words/d/deck.png"),
   declare: require("../../../assets/words/d/declare.png"),

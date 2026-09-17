@@ -19,6 +19,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   deadline: require("../../../assets/words/d/deadline.png"),
   deadlock: require("../../../assets/words/d/deadlock.png"),
   deadly: require("../../../assets/words/d/deadly.png"),
+  deaf: require("../../../assets/words/d/deaf.png"),
   deal: require("../../../assets/words/d/deal.png"),
   "deal with": require("../../../assets/words/d/deal-with.png"),
   dear: require("../../../assets/words/d/dear.png"),

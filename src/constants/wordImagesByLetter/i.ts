@@ -210,6 +210,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   inspection: require("../../../assets/words/i/inspection.png"),
   inspiration: require("../../../assets/words/i/inspiration.png"),
   inspire: require("../../../assets/words/i/inspire.png"),
+  inspiring: require("../../../assets/words/i/inspiring.png"),
   install: require("../../../assets/words/i/install.png"),
   installment: require("../../../assets/words/i/installment.png"),
   instance: require("../../../assets/words/i/instance.png"),

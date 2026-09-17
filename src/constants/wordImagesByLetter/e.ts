@@ -227,6 +227,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   experiment: require("../../../assets/words/e/experiment.png"),
   expert: require("../../../assets/words/e/expert.png"),
   expertise: require("../../../assets/words/e/expertise.png"),
+  expiration: require("../../../assets/words/e/expiration.png"),
   expire: require("../../../assets/words/e/expire.png"),
   explain: require("../../../assets/words/e/explain.png"),
   explanation: require("../../../assets/words/e/explanation.png"),

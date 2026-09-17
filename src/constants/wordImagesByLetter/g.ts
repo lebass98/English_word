@@ -4,6 +4,7 @@ import { ImageSourcePropType } from "react-native";
 export const IMAGES_G: Record<string, ImageSourcePropType> = {
   gain: require("../../../assets/words/g/gain.png"),
   gainful: require("../../../assets/words/g/gainful.png"),
+  gala: require("../../../assets/words/g/gala.png"),
   galaxy: require("../../../assets/words/g/galaxy.png"),
   gallery: require("../../../assets/words/g/gallery.png"),
   gap: require("../../../assets/words/g/gap.png"),

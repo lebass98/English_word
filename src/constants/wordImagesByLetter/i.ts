@@ -143,6 +143,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   indifferent: require("../../../assets/words/i/indifferent.png"),
   indigenous: require("../../../assets/words/i/indigenous.png"),
   indispensable: require("../../../assets/words/i/indispensable.png"),
+  indistinctly: require("../../../assets/words/i/indistinctly.png"),
   individual: require("../../../assets/words/i/individual.png"),
   individuality: require("../../../assets/words/i/individuality.png"),
   induce: require("../../../assets/words/i/induce.png"),

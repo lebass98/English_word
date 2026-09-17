@@ -7,4 +7,5 @@ export const IMAGES_Y: Record<string, ImageSourcePropType> = {
   yell: require("../../../assets/words/y/yell.png"),
   yet: require("../../../assets/words/y/yet.png"),
   yield: require("../../../assets/words/y/yield.png"),
+  youth: require("../../../assets/words/y/youth.png"),
 };

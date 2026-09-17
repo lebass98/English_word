@@ -73,6 +73,7 @@ export const IMAGES_H: Record<string, ImageSourcePropType> = {
   historical: require("../../../assets/words/h/historical.png"),
   history: require("../../../assets/words/h/history.png"),
   hit: require("../../../assets/words/h/hit.png"),
+  hoarse: require("../../../assets/words/h/hoarse.png"),
   hobby: require("../../../assets/words/h/hobby.png"),
   hold: require("../../../assets/words/h/hold.png"),
   "hold on (to)": require("../../../assets/words/h/hold-on-(to).png"),

@@ -73,6 +73,7 @@ export const IMAGES_L: Record<string, ImageSourcePropType> = {
   likely: require("../../../assets/words/l/likely.png"),
   likeness: require("../../../assets/words/l/likeness.png"),
   likewise: require("../../../assets/words/l/likewise.png"),
+  limb: require("../../../assets/words/l/limb.png"),
   limit: require("../../../assets/words/l/limit.png"),
   limited: require("../../../assets/words/l/limited.png"),
   linear: require("../../../assets/words/l/linear.png"),

@@ -181,6 +181,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   report: require("../../../assets/words/r/report.png"),
   reportedly: require("../../../assets/words/r/reportedly.png"),
   represent: require("../../../assets/words/r/represent.png"),
+  representation: require("../../../assets/words/r/representation.png"),
   representative: require("../../../assets/words/r/representative.png"),
   repress: require("../../../assets/words/r/repress.png"),
   reproduce: require("../../../assets/words/r/reproduce.png"),

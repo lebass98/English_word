@@ -170,6 +170,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   rent: require("../../../assets/words/r/rent.png"),
   reorganize: require("../../../assets/words/r/reorganize.png"),
   repair: require("../../../assets/words/r/repair.png"),
+  repay: require("../../../assets/words/r/repay.png"),
   repeat: require("../../../assets/words/r/repeat.png"),
   repeated: require("../../../assets/words/r/repeated.png"),
   repel: require("../../../assets/words/r/repel.png"),

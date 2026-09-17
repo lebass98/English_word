@@ -291,6 +291,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   introduction: require("../../../assets/words/i/introduction.png"),
   introspective: require("../../../assets/words/i/introspective.png"),
   introvert: require("../../../assets/words/i/introvert.png"),
+  intrusive: require("../../../assets/words/i/intrusive.png"),
   intuition: require("../../../assets/words/i/intuition.png"),
   invade: require("../../../assets/words/i/invade.png"),
   invader: require("../../../assets/words/i/invader.png"),

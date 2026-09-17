@@ -242,6 +242,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   exploit: require("../../../assets/words/e/exploit.png"),
   explore: require("../../../assets/words/e/explore.png"),
   explosion: require("../../../assets/words/e/explosion.png"),
+  exponentially: require("../../../assets/words/e/exponentially.png"),
   export: require("../../../assets/words/e/export.png"),
   expose: require("../../../assets/words/e/expose.png"),
   exposition: require("../../../assets/words/e/exposition.png"),

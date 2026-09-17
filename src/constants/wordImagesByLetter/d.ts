@@ -290,6 +290,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   dose: require("../../../assets/words/d/dose.png"),
   double: require("../../../assets/words/d/double.png"),
   doubt: require("../../../assets/words/d/doubt.png"),
+  downplay: require("../../../assets/words/d/downplay.png"),
   downtown: require("../../../assets/words/d/downtown.png"),
   draft: require("../../../assets/words/d/draft.png"),
   drag: require("../../../assets/words/d/drag.png"),

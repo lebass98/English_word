@@ -156,6 +156,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   "break down": require("../../../assets/words/b/break-down.png"),
   "break out": require("../../../assets/words/b/break-out.png"),
   "break with": require("../../../assets/words/b/break-with.png"),
+  breakable: require("../../../assets/words/b/breakable.png"),
   breakdown: require("../../../assets/words/b/breakdown.png"),
   breakthrough: require("../../../assets/words/b/breakthrough.png"),
   breathe: require("../../../assets/words/b/breathe.png"),

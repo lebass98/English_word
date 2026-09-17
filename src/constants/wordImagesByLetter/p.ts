@@ -185,6 +185,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   position: require("../../../assets/words/p/position.png"),
   positive: require("../../../assets/words/p/positive.png"),
   possess: require("../../../assets/words/p/possess.png"),
+  possession: require("../../../assets/words/p/possession.png"),
   possible: require("../../../assets/words/p/possible.png"),
   post: require("../../../assets/words/p/post.png"),
   postpone: require("../../../assets/words/p/postpone.png"),

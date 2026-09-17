@@ -410,7 +410,8 @@ function KindPicker({
                 key={value}
                 onPress={() => router.push(`/quiz/${gradeId}?kind=${value}`)}
                 accessibilityRole="button"
-                style={{ width: cardWidth }}
+                // 섞어서는 한 줄을 통째로 쓰고, 나머지 여섯 개가 2열 3줄로 맞아떨어진다
+                style={{ width: value === "mix" ? contentWidth : cardWidth }}
                 className="items-center gap-1.5 rounded-3xl bg-surface px-3 py-5 shadow-neu-card active:shadow-neu-pressed"
               >
                 {/* 아이콘 자리는 그림자 없이 둔다. 카드 자체 그림자만 남긴다 */}

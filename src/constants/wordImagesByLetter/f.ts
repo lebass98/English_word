@@ -169,6 +169,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   fraud: require("../../../assets/words/f/fraud.png"),
   "free from": require("../../../assets/words/f/free-from.png"),
   freelance: require("../../../assets/words/f/freelance.png"),
+  freeway: require("../../../assets/words/f/freeway.png"),
   freeze: require("../../../assets/words/f/freeze.png"),
   freight: require("../../../assets/words/f/freight.png"),
   french: require("../../../assets/words/f/french.png"),

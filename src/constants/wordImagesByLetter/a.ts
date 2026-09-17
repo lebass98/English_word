@@ -280,6 +280,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   artifact: require("../../../assets/words/a/artifact.png"),
   artificial: require("../../../assets/words/a/artificial.png"),
   artisan: require("../../../assets/words/a/artisan.png"),
+  artistic: require("../../../assets/words/a/artistic.png"),
   artwork: require("../../../assets/words/a/artwork.png"),
   "as a result": require("../../../assets/words/a/as-a-result.png"),
   "as long as": require("../../../assets/words/a/as-long-as.png"),

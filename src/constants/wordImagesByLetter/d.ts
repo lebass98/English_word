@@ -323,5 +323,6 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   dwindle: require("../../../assets/words/d/dwindle.png"),
   dye: require("../../../assets/words/d/dye.png"),
   dynamic: require("../../../assets/words/d/dynamic.png"),
+  dynamite: require("../../../assets/words/d/dynamite.png"),
   dynasty: require("../../../assets/words/d/dynasty.png"),
 };

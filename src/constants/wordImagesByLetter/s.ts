@@ -222,6 +222,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   slope: require("../../../assets/words/s/slope.png"),
   "slow down": require("../../../assets/words/s/slow-down.png"),
   slowdown: require("../../../assets/words/s/slowdown.png"),
+  slowing: require("../../../assets/words/s/slowing.png"),
   smart: require("../../../assets/words/s/smart.png"),
   smash: require("../../../assets/words/s/smash.png"),
   smell: require("../../../assets/words/s/smell.png"),

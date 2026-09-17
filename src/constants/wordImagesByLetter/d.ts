@@ -246,6 +246,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   divide: require("../../../assets/words/d/divide.png"),
   dividend: require("../../../assets/words/d/dividend.png"),
   divine: require("../../../assets/words/d/divine.png"),
+  division: require("../../../assets/words/d/division.png"),
   divorce: require("../../../assets/words/d/divorce.png"),
   document: require("../../../assets/words/d/document.png"),
   documentation: require("../../../assets/words/d/documentation.png"),

@@ -86,6 +86,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   encompass: require("../../../assets/words/e/encompass.png"),
   encounter: require("../../../assets/words/e/encounter.png"),
   encourage: require("../../../assets/words/e/encourage.png"),
+  encrusted: require("../../../assets/words/e/encrusted.png"),
   encyclopedia: require("../../../assets/words/e/encyclopedia.png"),
   end: require("../../../assets/words/e/end.png"),
   "end up": require("../../../assets/words/e/end-up.png"),

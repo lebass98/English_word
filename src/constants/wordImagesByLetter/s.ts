@@ -441,6 +441,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   suit: require("../../../assets/words/s/suit.png"),
   suitable: require("../../../assets/words/s/suitable.png"),
   suitcase: require("../../../assets/words/s/suitcase.png"),
+  suited: require("../../../assets/words/s/suited.png"),
   sum: require("../../../assets/words/s/sum.png"),
   summarize: require("../../../assets/words/s/summarize.png"),
   summary: require("../../../assets/words/s/summary.png"),

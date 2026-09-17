@@ -374,6 +374,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   convey: require("../../../assets/words/c/convey.png"),
   conviction: require("../../../assets/words/c/conviction.png"),
   convince: require("../../../assets/words/c/convince.png"),
+  COO: require("../../../assets/words/c/COO.png"),
   cook: require("../../../assets/words/c/cook.png"),
   cookie: require("../../../assets/words/c/cookie.png"),
   cool: require("../../../assets/words/c/cool.png"),

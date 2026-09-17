@@ -221,6 +221,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   restrict: require("../../../assets/words/r/restrict.png"),
   restricted: require("../../../assets/words/r/restricted.png"),
   restriction: require("../../../assets/words/r/restriction.png"),
+  restroom: require("../../../assets/words/r/restroom.png"),
   result: require("../../../assets/words/r/result.png"),
   "result in": require("../../../assets/words/r/result-in.png"),
   resume: require("../../../assets/words/r/resume.png"),

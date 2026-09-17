@@ -408,6 +408,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   stubborn: require("../../../assets/words/s/stubborn.png"),
   stuff: require("../../../assets/words/s/stuff.png"),
   stumble: require("../../../assets/words/s/stumble.png"),
+  stunning: require("../../../assets/words/s/stunning.png"),
   stupid: require("../../../assets/words/s/stupid.png"),
   sturdy: require("../../../assets/words/s/sturdy.png"),
   style: require("../../../assets/words/s/style.png"),

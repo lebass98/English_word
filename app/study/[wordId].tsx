@@ -486,11 +486,17 @@ function StudyCard({
                       >
                         {word.word}
                       </Text>
-                      {(word.phonetic || word.pos?.length) && (
+                      {(word.phonetic || word.reading || word.pos?.length) && (
                         <View className="mt-1 flex-row flex-wrap items-center gap-2">
                           {word.phonetic && (
                             <Text className="text-[13px] tracking-wide text-slate-500">
                               {word.phonetic}
+                            </Text>
+                          )}
+                          {/* 가나 옆에 한국어로 읽는 법을 붙인다 (わたし 와타시) */}
+                          {word.reading && (
+                            <Text className="text-[13px] tracking-wide text-mint">
+                              {word.reading}
                             </Text>
                           )}
                           {/* 품사 표시. 뜻이 여럿이면 여러 개가 붙는다 */}

@@ -46,6 +46,8 @@ export interface Word {
   conceptId: string;
   /** 읽는 법. 영어는 발음기호, 일본어는 가나 */
   phonetic?: string;
+  /** 표시 언어로 옮긴 발음. 일본어 가나를 한국어로 읽어 준다 (わたし → 와타시) */
+  reading?: string;
   /**
    * 품사 코드 (noun, verb, i-adj …). 뜻이 여러 개면 여럿이 온다.
    * 화면에 보일 이름은 표시 언어에 따라 달라지므로 i18n 의
@@ -108,7 +110,13 @@ interface TranslationFile {
   /** 낱말 기준. 예문 해석·어원·유의어 뜻은 낱말 자체의 속성이다 */
   details: Record<
     string,
-    { exampleTr?: string; etymology?: string; synonymMeanings?: string[] }
+    {
+      exampleTr?: string;
+      etymology?: string;
+      synonymMeanings?: string[];
+      /** 표시 언어로 적은 발음 (일본어 → 한국어) */
+      readingKo?: string;
+    }
   >;
 }
 
@@ -216,6 +224,7 @@ function buildVocab(studyLang: StudyLangId, uiLang: UiLangId): Vocab {
         // 개념을 따로 안 적어 둔 낱말은 낱말 자신을 개념으로 본다
         conceptId: neutral.conceptId ?? spelling,
         phonetic: neutral.phonetic,
+        reading: detail.readingKo,
         pos: neutral.pos,
         example: neutral.example,
         meaning: tr.meanings[localId] ?? fallback.meanings[localId] ?? spelling,

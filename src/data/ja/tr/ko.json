@@ -559,1672 +559,2228 @@
 },
 "details": {
 "私": {
-"exampleTr": "저는 학생입니다."
+"exampleTr": "저는 학생입니다.",
+"readingKo": "와타시"
 },
 "あなた": {
-"exampleTr": "당신은 선생님입니까?"
+"exampleTr": "당신은 선생님입니까?",
+"readingKo": "아나타"
 },
 "人": {
-"exampleTr": "가게에 사람이 많습니다."
+"exampleTr": "가게에 사람이 많습니다.",
+"readingKo": "히토"
 },
 "男": {
-"exampleTr": "저 남자는 아버지입니다."
+"exampleTr": "저 남자는 아버지입니다.",
+"readingKo": "오토코"
 },
 "女": {
-"exampleTr": "여자가 세 명 있습니다."
+"exampleTr": "여자가 세 명 있습니다.",
+"readingKo": "온나"
 },
 "子供": {
-"exampleTr": "아이가 공원에서 놉니다."
+"exampleTr": "아이가 공원에서 놉니다.",
+"readingKo": "고도모"
 },
 "大人": {
-"exampleTr": "어른은 여기에 앉습니다."
+"exampleTr": "어른은 여기에 앉습니다.",
+"readingKo": "오토나"
 },
 "家族": {
-"exampleTr": "가족과 여행합니다."
+"exampleTr": "가족과 여행합니다.",
+"readingKo": "가조쿠"
 },
 "父": {
-"exampleTr": "아버지는 회사원입니다."
+"exampleTr": "아버지는 회사원입니다.",
+"readingKo": "지치"
 },
 "母": {
-"exampleTr": "어머니는 요리를 잘합니다."
+"exampleTr": "어머니는 요리를 잘합니다.",
+"readingKo": "하하"
 },
 "兄": {
-"exampleTr": "형은 대학생입니다."
+"exampleTr": "형은 대학생입니다.",
+"readingKo": "아니"
 },
 "姉": {
-"exampleTr": "언니는 도쿄에 있습니다."
+"exampleTr": "언니는 도쿄에 있습니다.",
+"readingKo": "아네"
 },
 "弟": {
-"exampleTr": "남동생은 키가 큽니다."
+"exampleTr": "남동생은 키가 큽니다.",
+"readingKo": "오토토"
 },
 "妹": {
-"exampleTr": "여동생은 아직 어립니다."
+"exampleTr": "여동생은 아직 어립니다.",
+"readingKo": "이모토"
 },
 "友達": {
-"exampleTr": "친구와 영화를 봅니다."
+"exampleTr": "친구와 영화를 봅니다.",
+"readingKo": "도모다치"
 },
 "先生": {
-"exampleTr": "선생님은 자상합니다."
+"exampleTr": "선생님은 자상합니다.",
+"readingKo": "센세이"
 },
 "学生": {
-"exampleTr": "학생이 교실에 있습니다."
+"exampleTr": "학생이 교실에 있습니다.",
+"readingKo": "가쿠세이"
 },
 "会社員": {
-"exampleTr": "언니는 회사원입니다."
+"exampleTr": "언니는 회사원입니다.",
+"readingKo": "가이샤인"
 },
 "医者": {
-"exampleTr": "형은 의사입니다."
+"exampleTr": "형은 의사입니다.",
+"readingKo": "이샤"
 },
 "名前": {
-"exampleTr": "여기에 이름을 씁니다."
+"exampleTr": "여기에 이름을 씁니다.",
+"readingKo": "나마에"
 },
 "国": {
-"exampleTr": "당신의 나라는 어디입니까?"
+"exampleTr": "당신의 나라는 어디입니까?",
+"readingKo": "구니"
 },
 "今": {
-"exampleTr": "지금 몇 시입니까?"
+"exampleTr": "지금 몇 시입니까?",
+"readingKo": "이마"
 },
 "今日": {
-"exampleTr": "오늘은 춥습니다."
+"exampleTr": "오늘은 춥습니다.",
+"readingKo": "교"
 },
 "明日": {
-"exampleTr": "내일 학교에 갑니다."
+"exampleTr": "내일 학교에 갑니다.",
+"readingKo": "아시타"
 },
 "昨日": {
-"exampleTr": "어제는 비가 왔습니다."
+"exampleTr": "어제는 비가 왔습니다.",
+"readingKo": "기노"
 },
 "毎日": {
-"exampleTr": "매일 일본어를 공부합니다."
+"exampleTr": "매일 일본어를 공부합니다.",
+"readingKo": "마이니치"
 },
 "朝": {
-"exampleTr": "아침에 빵을 먹습니다."
+"exampleTr": "아침에 빵을 먹습니다.",
+"readingKo": "아사"
 },
 "昼": {
-"exampleTr": "점심에 밥을 먹습니다."
+"exampleTr": "점심에 밥을 먹습니다.",
+"readingKo": "히루"
 },
 "夜": {
-"exampleTr": "밤은 조용합니다."
+"exampleTr": "밤은 조용합니다.",
+"readingKo": "요루"
 },
 "午後": {
-"exampleTr": "오후부터 비가 옵니다."
+"exampleTr": "오후부터 비가 옵니다.",
+"readingKo": "고고"
 },
 "時間": {
-"exampleTr": "시간이 없습니다."
+"exampleTr": "시간이 없습니다.",
+"readingKo": "지칸"
 },
 "来週": {
-"exampleTr": "다음 주에 친구를 만납니다."
+"exampleTr": "다음 주에 친구를 만납니다.",
+"readingKo": "라이슈"
 },
 "来年": {
-"exampleTr": "내년에 대학에 들어갑니다."
+"exampleTr": "내년에 대학에 들어갑니다.",
+"readingKo": "라이넨"
 },
 "春": {
-"exampleTr": "봄에 꽃이 핍니다."
+"exampleTr": "봄에 꽃이 핍니다.",
+"readingKo": "하루"
 },
 "夏": {
-"exampleTr": "여름에는 바다에 갑니다."
+"exampleTr": "여름에는 바다에 갑니다.",
+"readingKo": "나쓰"
 },
 "秋": {
-"exampleTr": "가을은 시원합니다."
+"exampleTr": "가을은 시원합니다.",
+"readingKo": "아키"
 },
 "冬": {
-"exampleTr": "겨울에는 눈이 내립니다."
+"exampleTr": "겨울에는 눈이 내립니다.",
+"readingKo": "후유"
 },
 "誕生日": {
-"exampleTr": "내일은 여동생의 생일입니다."
+"exampleTr": "내일은 여동생의 생일입니다.",
+"readingKo": "단조비"
 },
 "休み": {
-"exampleTr": "내일은 쉬는 날입니다."
+"exampleTr": "내일은 쉬는 날입니다.",
+"readingKo": "야스미"
 },
 "家": {
-"exampleTr": "집에서 책을 읽습니다."
+"exampleTr": "집에서 책을 읽습니다.",
+"readingKo": "이에"
 },
 "学校": {
-"exampleTr": "학교까지 걷습니다."
+"exampleTr": "학교까지 걷습니다.",
+"readingKo": "갓코"
 },
 "教室": {
-"exampleTr": "교실은 넓습니다."
+"exampleTr": "교실은 넓습니다.",
+"readingKo": "교시쓰"
 },
 "部屋": {
-"exampleTr": "방을 청소합니다."
+"exampleTr": "방을 청소합니다.",
+"readingKo": "헤야"
 },
 "店": {
-"exampleTr": "저 가게는 쌉니다."
+"exampleTr": "저 가게는 쌉니다.",
+"readingKo": "미세"
 },
 "銀行": {
-"exampleTr": "은행은 역 앞입니다."
+"exampleTr": "은행은 역 앞입니다.",
+"readingKo": "긴코"
 },
 "病院": {
-"exampleTr": "오후에 병원에 갑니다."
+"exampleTr": "오후에 병원에 갑니다.",
+"readingKo": "뵤인"
 },
 "図書館": {
-"exampleTr": "도서관에서 책을 빌립니다."
+"exampleTr": "도서관에서 책을 빌립니다.",
+"readingKo": "도쇼칸"
 },
 "会社": {
-"exampleTr": "아버지는 회사에 갔습니다."
+"exampleTr": "아버지는 회사에 갔습니다.",
+"readingKo": "가이샤"
 },
 "駅": {
-"exampleTr": "역에서 친구를 기다립니다."
+"exampleTr": "역에서 친구를 기다립니다.",
+"readingKo": "에키"
 },
 "空港": {
-"exampleTr": "공항까지 차로 갑니다."
+"exampleTr": "공항까지 차로 갑니다.",
+"readingKo": "구코"
 },
 "公園": {
-"exampleTr": "공원을 산책합니다."
+"exampleTr": "공원을 산책합니다.",
+"readingKo": "고엔"
 },
 "山": {
-"exampleTr": "저 산은 높습니다."
+"exampleTr": "저 산은 높습니다.",
+"readingKo": "야마"
 },
 "川": {
-"exampleTr": "강물은 깨끗합니다."
+"exampleTr": "강물은 깨끗합니다.",
+"readingKo": "가와"
 },
 "海": {
-"exampleTr": "여름에 바다에서 헤엄칩니다."
+"exampleTr": "여름에 바다에서 헤엄칩니다.",
+"readingKo": "우미"
 },
 "町": {
-"exampleTr": "이 동네는 조용합니다."
+"exampleTr": "이 동네는 조용합니다.",
+"readingKo": "마치"
 },
 "道": {
-"exampleTr": "이 길을 곧장 갑니다."
+"exampleTr": "이 길을 곧장 갑니다.",
+"readingKo": "미치"
 },
 "外": {
-"exampleTr": "밖은 춥습니다."
+"exampleTr": "밖은 춥습니다.",
+"readingKo": "소토"
 },
 "中": {
-"exampleTr": "가방 안에 책이 있습니다."
+"exampleTr": "가방 안에 책이 있습니다.",
+"readingKo": "나카"
 },
 "隣": {
-"exampleTr": "옆방은 조용합니다."
+"exampleTr": "옆방은 조용합니다.",
+"readingKo": "도나리"
 },
 "階段": {
-"exampleTr": "계단을 올라갑니다."
+"exampleTr": "계단을 올라갑니다.",
+"readingKo": "가이단"
 },
 "ご飯": {
-"exampleTr": "아침에는 밥을 먹습니다."
+"exampleTr": "아침에는 밥을 먹습니다.",
+"readingKo": "고한"
 },
 "水": {
-"exampleTr": "물을 마십니다."
+"exampleTr": "물을 마십니다.",
+"readingKo": "미즈"
 },
 "お茶": {
-"exampleTr": "차를 끓입니다."
+"exampleTr": "차를 끓입니다.",
+"readingKo": "오차"
 },
 "牛乳": {
-"exampleTr": "매일 아침 우유를 마십니다."
+"exampleTr": "매일 아침 우유를 마십니다.",
+"readingKo": "규뉴"
 },
 "パン": {
-"exampleTr": "가게에서 빵을 샀습니다."
+"exampleTr": "가게에서 빵을 샀습니다.",
+"readingKo": "판"
 },
 "肉": {
-"exampleTr": "남동생은 고기를 좋아합니다."
+"exampleTr": "남동생은 고기를 좋아합니다.",
+"readingKo": "니쿠"
 },
 "魚": {
-"exampleTr": "오늘은 생선을 먹습니다."
+"exampleTr": "오늘은 생선을 먹습니다.",
+"readingKo": "사카나"
 },
 "野菜": {
-"exampleTr": "채소는 몸에 좋습니다."
+"exampleTr": "채소는 몸에 좋습니다.",
+"readingKo": "야사이"
 },
 "果物": {
-"exampleTr": "과일을 좋아합니다."
+"exampleTr": "과일을 좋아합니다.",
+"readingKo": "구다모노"
 },
 "卵": {
-"exampleTr": "달걀을 두 개 삽니다."
+"exampleTr": "달걀을 두 개 삽니다.",
+"readingKo": "다마고"
 },
 "塩": {
-"exampleTr": "소금을 조금 넣습니다."
+"exampleTr": "소금을 조금 넣습니다.",
+"readingKo": "시오"
 },
 "料理": {
-"exampleTr": "어머니의 요리는 맛있습니다."
+"exampleTr": "어머니의 요리는 맛있습니다.",
+"readingKo": "료리"
 },
 "お酒": {
-"exampleTr": "아버지는 술을 마십니다."
+"exampleTr": "아버지는 술을 마십니다.",
+"readingKo": "오사케"
 },
 "コーヒー": {
-"exampleTr": "아침에 커피를 마십니다."
+"exampleTr": "아침에 커피를 마십니다.",
+"readingKo": "고히"
 },
 "本": {
-"exampleTr": "책을 읽습니다."
+"exampleTr": "책을 읽습니다.",
+"readingKo": "혼"
 },
 "雑誌": {
-"exampleTr": "역에서 잡지를 샀습니다."
+"exampleTr": "역에서 잡지를 샀습니다.",
+"readingKo": "잣시"
 },
 "新聞": {
-"exampleTr": "매일 아침 신문을 읽습니다."
+"exampleTr": "매일 아침 신문을 읽습니다.",
+"readingKo": "신분"
 },
 "辞書": {
-"exampleTr": "사전을 사용합니다."
+"exampleTr": "사전을 사용합니다.",
+"readingKo": "지쇼"
 },
 "紙": {
-"exampleTr": "종이에 이름을 씁니다."
+"exampleTr": "종이에 이름을 씁니다.",
+"readingKo": "가미"
 },
 "手紙": {
-"exampleTr": "친구에게 편지를 씁니다."
+"exampleTr": "친구에게 편지를 씁니다.",
+"readingKo": "데가미"
 },
 "封筒": {
-"exampleTr": "봉투에 편지를 넣습니다."
+"exampleTr": "봉투에 편지를 넣습니다.",
+"readingKo": "후토"
 },
 "鉛筆": {
-"exampleTr": "연필로 씁니다."
+"exampleTr": "연필로 씁니다.",
+"readingKo": "엔피쓰"
 },
 "机": {
-"exampleTr": "책상 위에 책이 있습니다."
+"exampleTr": "책상 위에 책이 있습니다.",
+"readingKo": "쓰쿠에"
 },
 "椅子": {
-"exampleTr": "의자에 앉습니다."
+"exampleTr": "의자에 앉습니다.",
+"readingKo": "이스"
 },
 "窓": {
-"exampleTr": "창문을 엽니다."
+"exampleTr": "창문을 엽니다.",
+"readingKo": "마도"
 },
 "電話": {
-"exampleTr": "친구에게 전화합니다."
+"exampleTr": "친구에게 전화합니다.",
+"readingKo": "덴와"
 },
 "電気": {
-"exampleTr": "불을 끕니다."
+"exampleTr": "불을 끕니다.",
+"readingKo": "덴키"
 },
 "時計": {
-"exampleTr": "이 시계는 비쌉니다."
+"exampleTr": "이 시계는 비쌉니다.",
+"readingKo": "도케이"
 },
 "車": {
-"exampleTr": "차로 회사에 갑니다."
+"exampleTr": "차로 회사에 갑니다.",
+"readingKo": "구루마"
 },
 "自転車": {
-"exampleTr": "자전거를 탑니다."
+"exampleTr": "자전거를 탑니다.",
+"readingKo": "지텐샤"
 },
 "電車": {
-"exampleTr": "전철로 학교에 갑니다."
+"exampleTr": "전철로 학교에 갑니다.",
+"readingKo": "덴샤"
 },
 "飛行機": {
-"exampleTr": "비행기는 빠릅니다."
+"exampleTr": "비행기는 빠릅니다.",
+"readingKo": "히코키"
 },
 "服": {
-"exampleTr": "새 옷을 샀습니다."
+"exampleTr": "새 옷을 샀습니다.",
+"readingKo": "후쿠"
 },
 "靴": {
-"exampleTr": "신발을 신습니다."
+"exampleTr": "신발을 신습니다.",
+"readingKo": "구쓰"
 },
 "帽子": {
-"exampleTr": "모자를 씁니다."
+"exampleTr": "모자를 씁니다.",
+"readingKo": "보시"
 },
 "傘": {
-"exampleTr": "비가 오니까 우산을 듭니다."
+"exampleTr": "비가 오니까 우산을 듭니다.",
+"readingKo": "가사"
 },
 "かばん": {
-"exampleTr": "가방이 무겁습니다."
+"exampleTr": "가방이 무겁습니다.",
+"readingKo": "가반"
 },
 "お金": {
-"exampleTr": "오늘은 돈이 없습니다."
+"exampleTr": "오늘은 돈이 없습니다.",
+"readingKo": "오카네"
 },
 "写真": {
-"exampleTr": "공원에서 사진을 찍습니다."
+"exampleTr": "공원에서 사진을 찍습니다.",
+"readingKo": "샤신"
 },
 "テレビ": {
-"exampleTr": "밤에 텔레비전을 봅니다."
+"exampleTr": "밤에 텔레비전을 봅니다.",
+"readingKo": "데레비"
 },
 "冷蔵庫": {
-"exampleTr": "냉장고에 달걀이 있습니다."
+"exampleTr": "냉장고에 달걀이 있습니다.",
+"readingKo": "레이조코"
 },
 "洗濯": {
-"exampleTr": "오늘은 빨래를 합니다."
+"exampleTr": "오늘은 빨래를 합니다.",
+"readingKo": "센타쿠"
 },
 "体": {
-"exampleTr": "몸을 소중히 합니다."
+"exampleTr": "몸을 소중히 합니다.",
+"readingKo": "가라다"
 },
 "頭": {
-"exampleTr": "머리가 아픕니다."
+"exampleTr": "머리가 아픕니다.",
+"readingKo": "아타마"
 },
 "目": {
-"exampleTr": "여동생은 눈이 큽니다."
+"exampleTr": "여동생은 눈이 큽니다.",
+"readingKo": "메"
 },
 "耳": {
-"exampleTr": "개는 귀가 밝습니다."
+"exampleTr": "개는 귀가 밝습니다.",
+"readingKo": "미미"
 },
 "口": {
-"exampleTr": "입을 벌려 주세요."
+"exampleTr": "입을 벌려 주세요.",
+"readingKo": "구치"
 },
 "手": {
-"exampleTr": "손을 씻습니다."
+"exampleTr": "손을 씻습니다.",
+"readingKo": "데"
 },
 "足": {
-"exampleTr": "다리가 피곤합니다."
+"exampleTr": "다리가 피곤합니다.",
+"readingKo": "아시"
 },
 "声": {
-"exampleTr": "선생님의 목소리는 큽니다."
+"exampleTr": "선생님의 목소리는 큽니다.",
+"readingKo": "고에"
 },
 "病気": {
-"exampleTr": "아파서 학교를 쉽니다."
+"exampleTr": "아파서 학교를 쉽니다.",
+"readingKo": "뵤키"
 },
 "薬": {
-"exampleTr": "약을 먹습니다."
+"exampleTr": "약을 먹습니다.",
+"readingKo": "구스리"
 },
 "元気": {
-"exampleTr": "어머니는 아주 건강합니다."
+"exampleTr": "어머니는 아주 건강합니다.",
+"readingKo": "겐키"
 },
 "犬": {
-"exampleTr": "개와 산책합니다."
+"exampleTr": "개와 산책합니다.",
+"readingKo": "이누"
 },
 "猫": {
-"exampleTr": "고양이가 자고 있습니다."
+"exampleTr": "고양이가 자고 있습니다.",
+"readingKo": "네코"
 },
 "鳥": {
-"exampleTr": "새가 하늘을 납니다."
+"exampleTr": "새가 하늘을 납니다.",
+"readingKo": "도리"
 },
 "花": {
-"exampleTr": "마당에 꽃이 핍니다."
+"exampleTr": "마당에 꽃이 핍니다.",
+"readingKo": "하나"
 },
 "木": {
-"exampleTr": "큰 나무가 있습니다."
+"exampleTr": "큰 나무가 있습니다.",
+"readingKo": "기"
 },
 "天気": {
-"exampleTr": "오늘은 좋은 날씨입니다."
+"exampleTr": "오늘은 좋은 날씨입니다.",
+"readingKo": "덴키"
 },
 "雨": {
-"exampleTr": "아침부터 비가 내립니다."
+"exampleTr": "아침부터 비가 내립니다.",
+"readingKo": "아메"
 },
 "雪": {
-"exampleTr": "눈이 내리고 있습니다."
+"exampleTr": "눈이 내리고 있습니다.",
+"readingKo": "유키"
 },
 "風": {
-"exampleTr": "오늘은 바람이 셉니다."
+"exampleTr": "오늘은 바람이 셉니다.",
+"readingKo": "가제"
 },
 "空": {
-"exampleTr": "하늘이 파랗습니다."
+"exampleTr": "하늘이 파랗습니다.",
+"readingKo": "소라"
 },
 "音楽": {
-"exampleTr": "음악을 듣습니다."
+"exampleTr": "음악을 듣습니다.",
+"readingKo": "온가쿠"
 },
 "映画": {
-"exampleTr": "영화를 보러 갑니다."
+"exampleTr": "영화를 보러 갑니다.",
+"readingKo": "에이가"
 },
 "旅行": {
-"exampleTr": "내년에 여행합니다."
+"exampleTr": "내년에 여행합니다.",
+"readingKo": "료코"
 },
 "趣味": {
-"exampleTr": "제 취미는 음악입니다."
+"exampleTr": "제 취미는 음악입니다.",
+"readingKo": "슈미"
 },
 "練習": {
-"exampleTr": "매일 연습합니다."
+"exampleTr": "매일 연습합니다.",
+"readingKo": "렌슈"
 },
 "問題": {
-"exampleTr": "이 문제는 어렵습니다."
+"exampleTr": "이 문제는 어렵습니다.",
+"readingKo": "몬다이"
 },
 "約束": {
-"exampleTr": "친구와 약속이 있습니다."
+"exampleTr": "친구와 약속이 있습니다.",
+"readingKo": "야쿠소쿠"
 },
 "準備": {
-"exampleTr": "여행 준비를 합니다."
+"exampleTr": "여행 준비를 합니다.",
+"readingKo": "준비"
 },
 "心配": {
-"exampleTr": "걱정하지 마세요."
+"exampleTr": "걱정하지 마세요.",
+"readingKo": "신파이"
 },
 "結婚": {
-"exampleTr": "언니는 내년에 결혼합니다."
+"exampleTr": "언니는 내년에 결혼합니다.",
+"readingKo": "겟콘"
 },
 "言葉": {
-"exampleTr": "새로운 말을 외웁니다."
+"exampleTr": "새로운 말을 외웁니다.",
+"readingKo": "고토바"
 },
 "仕事": {
-"exampleTr": "오늘은 일이 많습니다."
+"exampleTr": "오늘은 일이 많습니다.",
+"readingKo": "시고토"
 },
 "食べる": {
-"exampleTr": "밥을 먹습니다."
+"exampleTr": "밥을 먹습니다.",
+"readingKo": "다베루"
 },
 "飲む": {
-"exampleTr": "차를 마십니다."
+"exampleTr": "차를 마십니다.",
+"readingKo": "노무"
 },
 "行く": {
-"exampleTr": "학교에 갑니다."
+"exampleTr": "학교에 갑니다.",
+"readingKo": "이쿠"
 },
 "来る": {
-"exampleTr": "친구가 집에 옵니다."
+"exampleTr": "친구가 집에 옵니다.",
+"readingKo": "구루"
 },
 "帰る": {
-"exampleTr": "여섯 시에 집에 돌아갑니다."
+"exampleTr": "여섯 시에 집에 돌아갑니다.",
+"readingKo": "가에루"
 },
 "見る": {
-"exampleTr": "영화를 봅니다."
+"exampleTr": "영화를 봅니다.",
+"readingKo": "미루"
 },
 "聞く": {
-"exampleTr": "선생님께 묻습니다."
+"exampleTr": "선생님께 묻습니다.",
+"readingKo": "기쿠"
 },
 "話す": {
-"exampleTr": "친구와 이야기합니다."
+"exampleTr": "친구와 이야기합니다.",
+"readingKo": "하나스"
 },
 "言う": {
-"exampleTr": "선생님께 이름을 말합니다."
+"exampleTr": "선생님께 이름을 말합니다.",
+"readingKo": "이우"
 },
 "読む": {
-"exampleTr": "신문을 읽습니다."
+"exampleTr": "신문을 읽습니다.",
+"readingKo": "요무"
 },
 "書く": {
-"exampleTr": "편지를 씁니다."
+"exampleTr": "편지를 씁니다.",
+"readingKo": "가쿠"
 },
 "買う": {
-"exampleTr": "가게에서 빵을 삽니다."
+"exampleTr": "가게에서 빵을 삽니다.",
+"readingKo": "가우"
 },
 "売る": {
-"exampleTr": "저 가게는 채소를 팝니다."
+"exampleTr": "저 가게는 채소를 팝니다.",
+"readingKo": "우루"
 },
 "作る": {
-"exampleTr": "어머니가 요리를 만듭니다."
+"exampleTr": "어머니가 요리를 만듭니다.",
+"readingKo": "쓰쿠루"
 },
 "会う": {
-"exampleTr": "역에서 친구를 만납니다."
+"exampleTr": "역에서 친구를 만납니다.",
+"readingKo": "아우"
 },
 "待つ": {
-"exampleTr": "여기서 기다립니다."
+"exampleTr": "여기서 기다립니다.",
+"readingKo": "마쓰"
 },
 "使う": {
-"exampleTr": "연필을 사용합니다."
+"exampleTr": "연필을 사용합니다.",
+"readingKo": "쓰카우"
 },
 "立つ": {
-"exampleTr": "모두 앞에 섭니다."
+"exampleTr": "모두 앞에 섭니다.",
+"readingKo": "다쓰"
 },
 "座る": {
-"exampleTr": "의자에 앉아 주세요."
+"exampleTr": "의자에 앉아 주세요.",
+"readingKo": "스와루"
 },
 "歩く": {
-"exampleTr": "역까지 걷습니다."
+"exampleTr": "역까지 걷습니다.",
+"readingKo": "아루쿠"
 },
 "走る": {
-"exampleTr": "공원을 달립니다."
+"exampleTr": "공원을 달립니다.",
+"readingKo": "하시루"
 },
 "泳ぐ": {
-"exampleTr": "바다에서 헤엄칩니다."
+"exampleTr": "바다에서 헤엄칩니다.",
+"readingKo": "오요구"
 },
 "起きる": {
-"exampleTr": "매일 아침 일찍 일어납니다."
+"exampleTr": "매일 아침 일찍 일어납니다.",
+"readingKo": "오키루"
 },
 "寝る": {
-"exampleTr": "밤에 일찍 잡니다."
+"exampleTr": "밤에 일찍 잡니다.",
+"readingKo": "네루"
 },
 "働く": {
-"exampleTr": "아버지는 은행에서 일합니다."
+"exampleTr": "아버지는 은행에서 일합니다.",
+"readingKo": "하타라쿠"
 },
 "休む": {
-"exampleTr": "오늘은 집에서 쉽니다."
+"exampleTr": "오늘은 집에서 쉽니다.",
+"readingKo": "야스무"
 },
 "遊ぶ": {
-"exampleTr": "공원에서 놉니다."
+"exampleTr": "공원에서 놉니다.",
+"readingKo": "아소부"
 },
 "歌う": {
-"exampleTr": "다 같이 노래합니다."
+"exampleTr": "다 같이 노래합니다.",
+"readingKo": "우타우"
 },
 "笑う": {
-"exampleTr": "아이가 웃고 있습니다."
+"exampleTr": "아이가 웃고 있습니다.",
+"readingKo": "와라우"
 },
 "泣く": {
-"exampleTr": "여동생이 울고 있습니다."
+"exampleTr": "여동생이 울고 있습니다.",
+"readingKo": "나쿠"
 },
 "教える": {
-"exampleTr": "일본어를 가르칩니다."
+"exampleTr": "일본어를 가르칩니다.",
+"readingKo": "오시에루"
 },
 "習う": {
-"exampleTr": "학교에서 영어를 배웁니다."
+"exampleTr": "학교에서 영어를 배웁니다.",
+"readingKo": "나라우"
 },
 "覚える": {
-"exampleTr": "단어를 외웁니다."
+"exampleTr": "단어를 외웁니다.",
+"readingKo": "오보에루"
 },
 "忘れる": {
-"exampleTr": "약속을 잊었습니다."
+"exampleTr": "약속을 잊었습니다.",
+"readingKo": "와스레루"
 },
 "分かる": {
-"exampleTr": "뜻을 모르겠습니다."
+"exampleTr": "뜻을 모르겠습니다.",
+"readingKo": "와카루"
 },
 "借りる": {
-"exampleTr": "도서관에서 책을 빌립니다."
+"exampleTr": "도서관에서 책을 빌립니다.",
+"readingKo": "가리루"
 },
 "探す": {
-"exampleTr": "가방을 찾습니다."
+"exampleTr": "가방을 찾습니다.",
+"readingKo": "사가스"
 },
 "押す": {
-"exampleTr": "버튼을 누릅니다."
+"exampleTr": "버튼을 누릅니다.",
+"readingKo": "오스"
 },
 "急ぐ": {
-"exampleTr": "시간이 없어서 서두릅니다."
+"exampleTr": "시간이 없어서 서두릅니다.",
+"readingKo": "이소구"
 },
 "止まる": {
-"exampleTr": "전철이 역에 섭니다."
+"exampleTr": "전철이 역에 섭니다.",
+"readingKo": "도마루"
 },
 "大きい": {
-"exampleTr": "이 개는 큽니다."
+"exampleTr": "이 개는 큽니다.",
+"readingKo": "오오키이"
 },
 "小さい": {
-"exampleTr": "방이 작습니다."
+"exampleTr": "방이 작습니다.",
+"readingKo": "지이사이"
 },
 "新しい": {
-"exampleTr": "새 신발을 샀습니다."
+"exampleTr": "새 신발을 샀습니다.",
+"readingKo": "아타라시이"
 },
 "古い": {
-"exampleTr": "이 시계는 오래되었습니다."
+"exampleTr": "이 시계는 오래되었습니다.",
+"readingKo": "후루이"
 },
 "高い": {
-"exampleTr": "이 옷은 비쌉니다."
+"exampleTr": "이 옷은 비쌉니다.",
+"readingKo": "다카이"
 },
 "安い": {
-"exampleTr": "이 가게는 쌉니다."
+"exampleTr": "이 가게는 쌉니다.",
+"readingKo": "야스이"
 },
 "長い": {
-"exampleTr": "언니는 머리가 깁니다."
+"exampleTr": "언니는 머리가 깁니다.",
+"readingKo": "나가이"
 },
 "短い": {
-"exampleTr": "이 연필은 짧습니다."
+"exampleTr": "이 연필은 짧습니다.",
+"readingKo": "미지카이"
 },
 "暑い": {
-"exampleTr": "여름은 아주 덥습니다."
+"exampleTr": "여름은 아주 덥습니다.",
+"readingKo": "아쓰이"
 },
 "寒い": {
-"exampleTr": "겨울은 춥습니다."
+"exampleTr": "겨울은 춥습니다.",
+"readingKo": "사무이"
 },
 "涼しい": {
-"exampleTr": "오늘은 시원합니다."
+"exampleTr": "오늘은 시원합니다.",
+"readingKo": "스즈시이"
 },
 "面白い": {
-"exampleTr": "이 책은 재미있습니다."
+"exampleTr": "이 책은 재미있습니다.",
+"readingKo": "오모시로이"
 },
 "難しい": {
-"exampleTr": "일본어는 어렵습니다."
+"exampleTr": "일본어는 어렵습니다.",
+"readingKo": "무즈카시이"
 },
 "簡単": {
-"exampleTr": "이 문제는 간단합니다."
+"exampleTr": "이 문제는 간단합니다.",
+"readingKo": "간탄"
 },
 "忙しい": {
-"exampleTr": "아버지는 매일 바쁩니다."
+"exampleTr": "아버지는 매일 바쁩니다.",
+"readingKo": "이소가시이"
 },
 "暗い": {
-"exampleTr": "방이 어둡습니다."
+"exampleTr": "방이 어둡습니다.",
+"readingKo": "구라이"
 },
 "嬉しい": {
-"exampleTr": "만나서 아주 기쁩니다."
+"exampleTr": "만나서 아주 기쁩니다.",
+"readingKo": "우레시이"
 },
 "危ない": {
-"exampleTr": "이 길은 위험합니다."
+"exampleTr": "이 길은 위험합니다.",
+"readingKo": "아부나이"
 },
 "きれい": {
-"exampleTr": "꽃이 예쁩니다."
+"exampleTr": "꽃이 예쁩니다.",
+"readingKo": "기레이"
 },
 "親切": {
-"exampleTr": "선생님은 친절합니다."
+"exampleTr": "선생님은 친절합니다.",
+"readingKo": "신세쓰"
 },
 "同じ": {
-"exampleTr": "형과 같은 학교입니다."
+"exampleTr": "형과 같은 학교입니다.",
+"readingKo": "오나지"
 },
 "違う": {
-"exampleTr": "답이 다릅니다."
+"exampleTr": "답이 다릅니다.",
+"readingKo": "지가우"
 },
 "低い": {
-"exampleTr": "이 책상은 낮습니다."
+"exampleTr": "이 책상은 낮습니다.",
+"readingKo": "히쿠이"
 },
 "好き": {
-"exampleTr": "과일을 좋아합니다."
+"exampleTr": "과일을 좋아합니다.",
+"readingKo": "스키"
 },
 "静か": {
-"exampleTr": "도서관은 조용합니다."
+"exampleTr": "도서관은 조용합니다.",
+"readingKo": "시즈카"
 },
 "多い": {
-"exampleTr": "이 동네는 사람이 많습니다."
+"exampleTr": "이 동네는 사람이 많습니다.",
+"readingKo": "오오이"
 },
 "少ない": {
-"exampleTr": "오늘은 숙제가 적습니다."
+"exampleTr": "오늘은 숙제가 적습니다.",
+"readingKo": "스쿠나이"
 },
 "重い": {
-"exampleTr": "이 가방은 무겁습니다."
+"exampleTr": "이 가방은 무겁습니다.",
+"readingKo": "오모이"
 },
 "軽い": {
-"exampleTr": "이 컴퓨터는 가볍습니다."
+"exampleTr": "이 컴퓨터는 가볍습니다.",
+"readingKo": "가루이"
 },
 "強い": {
-"exampleTr": "오늘은 바람이 셉니다."
+"exampleTr": "오늘은 바람이 셉니다.",
+"readingKo": "쓰요이"
 },
 "弱い": {
-"exampleTr": "저는 술에 약합니다."
+"exampleTr": "저는 술에 약합니다.",
+"readingKo": "요와이"
 },
 "速い": {
-"exampleTr": "이 전철은 매우 빠릅니다."
+"exampleTr": "이 전철은 매우 빠릅니다.",
+"readingKo": "하야이"
 },
 "遅い": {
-"exampleTr": "이제 늦었으니까 돌아가겠습니다."
+"exampleTr": "이제 늦었으니까 돌아가겠습니다.",
+"readingKo": "오소이"
 },
 "早い": {
-"exampleTr": "오늘 아침은 일찍 일어났습니다."
+"exampleTr": "오늘 아침은 일찍 일어났습니다.",
+"readingKo": "하야이"
 },
 "近い": {
-"exampleTr": "역은 집에서 가깝습니다."
+"exampleTr": "역은 집에서 가깝습니다.",
+"readingKo": "지카이"
 },
 "遠い": {
-"exampleTr": "학교는 조금 멉니다."
+"exampleTr": "학교는 조금 멉니다.",
+"readingKo": "도오이"
 },
 "広い": {
-"exampleTr": "이 공원은 넓습니다."
+"exampleTr": "이 공원은 넓습니다.",
+"readingKo": "히로이"
 },
 "狭い": {
-"exampleTr": "제 방은 좁습니다."
+"exampleTr": "제 방은 좁습니다.",
+"readingKo": "세마이"
 },
 "太い": {
-"exampleTr": "굵은 펜으로 썼습니다."
+"exampleTr": "굵은 펜으로 썼습니다.",
+"readingKo": "후토이"
 },
 "細い": {
-"exampleTr": "좁은 길을 걸었습니다."
+"exampleTr": "좁은 길을 걸었습니다.",
+"readingKo": "호소이"
 },
 "明るい": {
-"exampleTr": "이 방은 밝습니다."
+"exampleTr": "이 방은 밝습니다.",
+"readingKo": "아카루이"
 },
 "熱い": {
-"exampleTr": "차가 뜨겁습니다."
+"exampleTr": "차가 뜨겁습니다.",
+"readingKo": "아쓰이"
 },
 "冷たい": {
-"exampleTr": "차가운 물을 마셨습니다."
+"exampleTr": "차가운 물을 마셨습니다.",
+"readingKo": "쓰메타이"
 },
 "暖かい": {
-"exampleTr": "봄은 따뜻합니다."
+"exampleTr": "봄은 따뜻합니다.",
+"readingKo": "아타타카이"
 },
 "甘い": {
-"exampleTr": "이 케이크는 답니다."
+"exampleTr": "이 케이크는 답니다.",
+"readingKo": "아마이"
 },
 "辛い": {
-"exampleTr": "이 카레는 맵습니다."
+"exampleTr": "이 카레는 맵습니다.",
+"readingKo": "가라이"
 },
 "苦い": {
-"exampleTr": "이 약은 씁니다."
+"exampleTr": "이 약은 씁니다.",
+"readingKo": "니가이"
 },
 "楽しい": {
-"exampleTr": "여행은 매우 즐거웠습니다."
+"exampleTr": "여행은 매우 즐거웠습니다.",
+"readingKo": "다노시이"
 },
 "悲しい": {
-"exampleTr": "그 이야기는 슬픕니다."
+"exampleTr": "그 이야기는 슬픕니다.",
+"readingKo": "가나시이"
 },
 "つまらない": {
-"exampleTr": "이 책은 재미없습니다."
+"exampleTr": "이 책은 재미없습니다.",
+"readingKo": "쓰마라나이"
 },
 "易しい": {
-"exampleTr": "오늘 문제는 쉽습니다."
+"exampleTr": "오늘 문제는 쉽습니다.",
+"readingKo": "야사시이"
 },
 "汚い": {
-"exampleTr": "방이 더럽네요."
+"exampleTr": "방이 더럽네요.",
+"readingKo": "기타나이"
 },
 "若い": {
-"exampleTr": "저 선생님은 아직 젊습니다."
+"exampleTr": "저 선생님은 아직 젊습니다.",
+"readingKo": "와카이"
 },
 "眠い": {
-"exampleTr": "아침에는 항상 졸립니다."
+"exampleTr": "아침에는 항상 졸립니다.",
+"readingKo": "네무이"
 },
 "痛い": {
-"exampleTr": "머리가 매우 아픕니다."
+"exampleTr": "머리가 매우 아픕니다.",
+"readingKo": "이타이"
 },
 "欲しい": {
-"exampleTr": "새 신발을 갖고 싶습니다."
+"exampleTr": "새 신발을 갖고 싶습니다.",
+"readingKo": "호시이"
 },
 "怖い": {
-"exampleTr": "저는 개가 무섭습니다."
+"exampleTr": "저는 개가 무섭습니다.",
+"readingKo": "고와이"
 },
 "寂しい": {
-"exampleTr": "혼자 살고 있어서 외롭습니다."
+"exampleTr": "혼자 살고 있어서 외롭습니다.",
+"readingKo": "사비시이"
 },
 "丸い": {
-"exampleTr": "둥근 테이블을 샀습니다."
+"exampleTr": "둥근 테이블을 샀습니다.",
+"readingKo": "마루이"
 },
 "にぎやか": {
-"exampleTr": "이 동네는 번화합니다."
+"exampleTr": "이 동네는 번화합니다.",
+"readingKo": "니기야카"
 },
 "有名": {
-"exampleTr": "이 가게는 매우 유명합니다."
+"exampleTr": "이 가게는 매우 유명합니다.",
+"readingKo": "유메이"
 },
 "便利": {
-"exampleTr": "이 도구는 매우 편리합니다."
+"exampleTr": "이 도구는 매우 편리합니다.",
+"readingKo": "벤리"
 },
 "不便": {
-"exampleTr": "역이 멀어서 불편합니다."
+"exampleTr": "역이 멀어서 불편합니다.",
+"readingKo": "후벤"
 },
 "大丈夫": {
-"exampleTr": "혼자서도 괜찮습니다."
+"exampleTr": "혼자서도 괜찮습니다.",
+"readingKo": "다이조부"
 },
 "大切": {
-"exampleTr": "가족은 매우 소중합니다."
+"exampleTr": "가족은 매우 소중합니다.",
+"readingKo": "다이세쓰"
 },
 "嫌い": {
-"exampleTr": "남동생은 야채를 싫어합니다."
+"exampleTr": "남동생은 야채를 싫어합니다.",
+"readingKo": "기라이"
 },
 "上手": {
-"exampleTr": "언니는 요리를 잘합니다."
+"exampleTr": "언니는 요리를 잘합니다.",
+"readingKo": "조즈"
 },
 "下手": {
-"exampleTr": "저는 노래를 못합니다."
+"exampleTr": "저는 노래를 못합니다.",
+"readingKo": "헤타"
 },
 "暇": {
-"exampleTr": "오늘 오후는 한가합니다."
+"exampleTr": "오늘 오후는 한가합니다.",
+"readingKo": "히마"
 },
 "開ける": {
-"exampleTr": "창문을 열어 주세요."
+"exampleTr": "창문을 열어 주세요.",
+"readingKo": "아케루"
 },
 "閉める": {
-"exampleTr": "추워서 문을 닫았습니다."
+"exampleTr": "추워서 문을 닫았습니다.",
+"readingKo": "시메루"
 },
 "洗う": {
-"exampleTr": "밥 먹기 전에 손을 씻습니다."
+"exampleTr": "밥 먹기 전에 손을 씻습니다.",
+"readingKo": "아라우"
 },
 "持つ": {
-"exampleTr": "가방을 들어 드릴까요?"
+"exampleTr": "가방을 들어 드릴까요?",
+"readingKo": "모쓰"
 },
 "取る": {
-"exampleTr": "그 책을 집어 주세요."
+"exampleTr": "그 책을 집어 주세요.",
+"readingKo": "도루"
 },
 "置く": {
-"exampleTr": "책상 위에 책을 놓습니다."
+"exampleTr": "책상 위에 책을 놓습니다.",
+"readingKo": "오쿠"
 },
 "消す": {
-"exampleTr": "자기 전에 불을 끕니다."
+"exampleTr": "자기 전에 불을 끕니다.",
+"readingKo": "게스"
 },
 "つける": {
-"exampleTr": "더워서 에어컨을 켰습니다."
+"exampleTr": "더워서 에어컨을 켰습니다.",
+"readingKo": "쓰케루"
 },
 "始める": {
-"exampleTr": "오늘부터 일본어 공부를 시작합니다."
+"exampleTr": "오늘부터 일본어 공부를 시작합니다.",
+"readingKo": "하지메루"
 },
 "終わる": {
-"exampleTr": "일은 벌써 끝났습니다."
+"exampleTr": "일은 벌써 끝났습니다.",
+"readingKo": "오와루"
 },
 "入る": {
-"exampleTr": "방에 들어가도 됩니까?"
+"exampleTr": "방에 들어가도 됩니까?",
+"readingKo": "하이루"
 },
 "出る": {
-"exampleTr": "이제 슬슬 집을 나갈 시간입니다."
+"exampleTr": "이제 슬슬 집을 나갈 시간입니다.",
+"readingKo": "데루"
 },
 "着る": {
-"exampleTr": "오늘은 흰 셔츠를 입습니다."
+"exampleTr": "오늘은 흰 셔츠를 입습니다.",
+"readingKo": "기루"
 },
 "脱ぐ": {
-"exampleTr": "여기서 신발을 벗어 주세요."
+"exampleTr": "여기서 신발을 벗어 주세요.",
+"readingKo": "누구"
 },
 "履く": {
-"exampleTr": "새 신발을 신었습니다."
+"exampleTr": "새 신발을 신었습니다.",
+"readingKo": "하쿠"
 },
 "かぶる": {
-"exampleTr": "모자를 쓰고 나갑니다."
+"exampleTr": "모자를 쓰고 나갑니다.",
+"readingKo": "가부루"
 },
 "住む": {
-"exampleTr": "저는 도쿄에 살고 있습니다."
+"exampleTr": "저는 도쿄에 살고 있습니다.",
+"readingKo": "스무"
 },
 "踊る": {
-"exampleTr": "다 같이 춤춥시다."
+"exampleTr": "다 같이 춤춥시다.",
+"readingKo": "오도루"
 },
 "怒る": {
-"exampleTr": "아버지가 큰 소리로 화냈습니다."
+"exampleTr": "아버지가 큰 소리로 화냈습니다.",
+"readingKo": "오코루"
 },
 "困る": {
-"exampleTr": "돈이 없어서 곤란합니다."
+"exampleTr": "돈이 없어서 곤란합니다.",
+"readingKo": "고마루"
 },
 "渡る": {
-"exampleTr": "저 다리를 건너 주세요."
+"exampleTr": "저 다리를 건너 주세요.",
+"readingKo": "와타루"
 },
 "曲がる": {
-"exampleTr": "다음 모퉁이에서 오른쪽으로 돕니다."
+"exampleTr": "다음 모퉁이에서 오른쪽으로 돕니다.",
+"readingKo": "마가루"
 },
 "乗る": {
-"exampleTr": "매일 아침 버스를 탑니다."
+"exampleTr": "매일 아침 버스를 탑니다.",
+"readingKo": "노루"
 },
 "降りる": {
-"exampleTr": "다음 역에서 내립니다."
+"exampleTr": "다음 역에서 내립니다.",
+"readingKo": "오리루"
 },
 "運ぶ": {
-"exampleTr": "이 책상을 옮겨 주세요."
+"exampleTr": "이 책상을 옮겨 주세요.",
+"readingKo": "하코부"
 },
 "送る": {
-"exampleTr": "친구에게 편지를 보냈습니다."
+"exampleTr": "친구에게 편지를 보냈습니다.",
+"readingKo": "오쿠루"
 },
 "返す": {
-"exampleTr": "책을 도서관에 반납합니다."
+"exampleTr": "책을 도서관에 반납합니다.",
+"readingKo": "가에스"
 },
 "貸す": {
-"exampleTr": "펜을 빌려주세요."
+"exampleTr": "펜을 빌려주세요.",
+"readingKo": "가스"
 },
 "払う": {
-"exampleTr": "돈은 여기서 지불합니다."
+"exampleTr": "돈은 여기서 지불합니다.",
+"readingKo": "하라우"
 },
 "選ぶ": {
-"exampleTr": "좋아하는 색을 골라 주세요."
+"exampleTr": "좋아하는 색을 골라 주세요.",
+"readingKo": "에라부"
 },
 "集める": {
-"exampleTr": "저는 우표를 모으고 있습니다."
+"exampleTr": "저는 우표를 모으고 있습니다.",
+"readingKo": "아쓰메루"
 },
 "呼ぶ": {
-"exampleTr": "택시를 부를까요?"
+"exampleTr": "택시를 부를까요?",
+"readingKo": "요부"
 },
 "引く": {
-"exampleTr": "이 문은 당겨서 엽니다."
+"exampleTr": "이 문은 당겨서 엽니다.",
+"readingKo": "히쿠"
 },
 "切る": {
-"exampleTr": "칼로 야채를 자릅니다."
+"exampleTr": "칼로 야채를 자릅니다.",
+"readingKo": "기루"
 },
 "消える": {
-"exampleTr": "방의 불이 꺼졌습니다."
+"exampleTr": "방의 불이 꺼졌습니다.",
+"readingKo": "기에루"
 },
 "落ちる": {
-"exampleTr": "가방이 의자에서 떨어졌습니다."
+"exampleTr": "가방이 의자에서 떨어졌습니다.",
+"readingKo": "오치루"
 },
 "晴れる": {
-"exampleTr": "내일은 맑아지겠지요."
+"exampleTr": "내일은 맑아지겠지요.",
+"readingKo": "하레루"
 },
 "曇る": {
-"exampleTr": "오후부터 하늘이 흐려졌습니다."
+"exampleTr": "오후부터 하늘이 흐려졌습니다.",
+"readingKo": "구모루"
 },
 "降る": {
-"exampleTr": "아침부터 비가 내리고 있습니다."
+"exampleTr": "아침부터 비가 내리고 있습니다.",
+"readingKo": "후루"
 },
 "吹く": {
-"exampleTr": "강한 바람이 불고 있습니다."
+"exampleTr": "강한 바람이 불고 있습니다.",
+"readingKo": "후쿠"
 },
 "咲く": {
-"exampleTr": "정원에 꽃이 피었습니다."
+"exampleTr": "정원에 꽃이 피었습니다.",
+"readingKo": "사쿠"
 },
 "並ぶ": {
-"exampleTr": "가게 앞에 사람들이 줄을 서 있습니다."
+"exampleTr": "가게 앞에 사람들이 줄을 서 있습니다.",
+"readingKo": "나라부"
 },
 "答える": {
-"exampleTr": "선생님의 질문에 대답했습니다."
+"exampleTr": "선생님의 질문에 대답했습니다.",
+"readingKo": "고타에루"
 },
 "生まれる": {
-"exampleTr": "저는 오사카에서 태어났습니다."
+"exampleTr": "저는 오사카에서 태어났습니다.",
+"readingKo": "우마레루"
 },
 "疲れる": {
-"exampleTr": "오늘은 매우 피곤했습니다."
+"exampleTr": "오늘은 매우 피곤했습니다.",
+"readingKo": "쓰카레루"
 },
 "始まる": {
-"exampleTr": "영화는 곧 시작됩니다."
+"exampleTr": "영화는 곧 시작됩니다.",
+"readingKo": "하지마루"
 },
 "手伝う": {
-"exampleTr": "어머니의 일을 돕습니다."
+"exampleTr": "어머니의 일을 돕습니다.",
+"readingKo": "데쓰다우"
 },
 "掃除": {
-"exampleTr": "토요일에 방을 청소합니다."
+"exampleTr": "토요일에 방을 청소합니다.",
+"readingKo": "소지"
 },
 "買い物": {
-"exampleTr": "어머니와 슈퍼에서 장을 봅니다."
+"exampleTr": "어머니와 슈퍼에서 장을 봅니다.",
+"readingKo": "가이모노"
 },
 "散歩": {
-"exampleTr": "매일 아침 공원을 산책합니다."
+"exampleTr": "매일 아침 공원을 산책합니다.",
+"readingKo": "산포"
 },
 "卒業": {
-"exampleTr": "오빠는 대학을 졸업했습니다."
+"exampleTr": "오빠는 대학을 졸업했습니다.",
+"readingKo": "소쓰교"
 },
 "紹介": {
-"exampleTr": "친구를 소개하겠습니다."
+"exampleTr": "친구를 소개하겠습니다.",
+"readingKo": "쇼카이"
 },
 "質問": {
-"exampleTr": "선생님에게 질문을 했습니다."
+"exampleTr": "선생님에게 질문을 했습니다.",
+"readingKo": "시쓰몬"
 },
 "運動": {
-"exampleTr": "매일 아침 공원에서 운동을 합니다."
+"exampleTr": "매일 아침 공원에서 운동을 합니다.",
+"readingKo": "운도"
 },
 "宿題": {
-"exampleTr": "숙제는 벌써 끝났습니다."
+"exampleTr": "숙제는 벌써 끝났습니다.",
+"readingKo": "슈쿠다이"
 },
 "試験": {
-"exampleTr": "다음 주에 일본어 시험이 있습니다."
+"exampleTr": "다음 주에 일본어 시험이 있습니다.",
+"readingKo": "시켄"
 },
 "授業": {
-"exampleTr": "수업은 아침 아홉 시에 시작됩니다."
+"exampleTr": "수업은 아침 아홉 시에 시작됩니다.",
+"readingKo": "주교"
 },
 "博物館": {
-"exampleTr": "일요일에 박물관에 갔습니다."
+"exampleTr": "일요일에 박물관에 갔습니다.",
+"readingKo": "하쿠부쓰칸"
 },
 "住所": {
-"exampleTr": "여기에 주소를 써 주세요."
+"exampleTr": "여기에 주소를 써 주세요.",
+"readingKo": "주쇼"
 },
 "出口": {
-"exampleTr": "출구는 저쪽입니다."
+"exampleTr": "출구는 저쪽입니다.",
+"readingKo": "데구치"
 },
 "入口": {
-"exampleTr": "입구에서 신발을 벗습니다."
+"exampleTr": "입구에서 신발을 벗습니다.",
+"readingKo": "이리구치"
 },
 "虫": {
-"exampleTr": "정원에 벌레가 많이 있습니다."
+"exampleTr": "정원에 벌레가 많이 있습니다.",
+"readingKo": "무시"
 },
 "心": {
-"exampleTr": "그는 마음이 따뜻한 사람입니다."
+"exampleTr": "그는 마음이 따뜻한 사람입니다.",
+"readingKo": "고코로"
 },
 "のど": {
-"exampleTr": "감기 때문에 목이 아픕니다."
+"exampleTr": "감기 때문에 목이 아픕니다.",
+"readingKo": "노도"
 },
 "茶色": {
-"exampleTr": "갈색 가방을 샀습니다."
+"exampleTr": "갈색 가방을 샀습니다.",
+"readingKo": "자이로"
 },
 "客": {
-"exampleTr": "오늘은 가게에 손님이 많습니다."
+"exampleTr": "오늘은 가게에 손님이 많습니다.",
+"readingKo": "갸쿠"
 },
 "警察": {
-"exampleTr": "경찰에게 길을 물었습니다."
+"exampleTr": "경찰에게 길을 물었습니다.",
+"readingKo": "게이사쓰"
 },
 "工場": {
-"exampleTr": "삼촌은 공장에서 일하고 있습니다."
+"exampleTr": "삼촌은 공장에서 일하고 있습니다.",
+"readingKo": "고조"
 },
 "荷物": {
-"exampleTr": "짐이 매우 무겁습니다."
+"exampleTr": "짐이 매우 무겁습니다.",
+"readingKo": "니모쓰"
 },
 "文化": {
-"exampleTr": "일본 문화에 관심이 있습니다."
+"exampleTr": "일본 문화에 관심이 있습니다.",
+"readingKo": "분카"
 },
 "事故": {
-"exampleTr": "역 앞에서 사고가 있었습니다."
+"exampleTr": "역 앞에서 사고가 있었습니다.",
+"readingKo": "지코"
 },
 "財布": {
-"exampleTr": "지갑을 집에 두고 왔습니다."
+"exampleTr": "지갑을 집에 두고 왔습니다.",
+"readingKo": "사이후"
 },
 "鍵": {
-"exampleTr": "문 열쇠를 잃어버렸습니다."
+"exampleTr": "문 열쇠를 잃어버렸습니다.",
+"readingKo": "가기"
 },
 "ほとんど": {
-"exampleTr": "숙제는 거의 끝났습니다."
+"exampleTr": "숙제는 거의 끝났습니다.",
+"readingKo": "호톤도"
 },
 "すぐに": {
-"exampleTr": "수업이 끝나면 바로 돌아갑니다."
+"exampleTr": "수업이 끝나면 바로 돌아갑니다.",
+"readingKo": "스구니"
 },
 "一緒に": {
-"exampleTr": "친구와 같이 영화를 봤습니다."
+"exampleTr": "친구와 같이 영화를 봤습니다.",
+"readingKo": "잇쇼니"
 },
 "たぶん": {
-"exampleTr": "내일은 아마 비가 올 겁니다."
+"exampleTr": "내일은 아마 비가 올 겁니다.",
+"readingKo": "다분"
 },
 "たいてい": {
-"exampleTr": "아침에는 보통 빵을 먹습니다."
+"exampleTr": "아침에는 보통 빵을 먹습니다.",
+"readingKo": "다이테이"
 },
 "一度": {
-"exampleTr": "교토에는 한 번 갔습니다."
+"exampleTr": "교토에는 한 번 갔습니다.",
+"readingKo": "이치도"
 },
 "とても": {
-"exampleTr": "이 카레는 매우 맛있습니다."
+"exampleTr": "이 카레는 매우 맛있습니다.",
+"readingKo": "도테모"
 },
 "特に": {
-"exampleTr": "과일 중에서 특히 사과를 좋아합니다."
+"exampleTr": "과일 중에서 특히 사과를 좋아합니다.",
+"readingKo": "도쿠니"
 },
 "しかし": {
-"exampleTr": "비가 내렸습니다. 하지만 외출했습니다."
+"exampleTr": "비가 내렸습니다. 하지만 외출했습니다.",
+"readingKo": "시카시"
 },
 "最近": {
-"exampleTr": "요즘 새 일을 시작했습니다."
+"exampleTr": "요즘 새 일을 시작했습니다.",
+"readingKo": "사이킨"
 },
 "右": {
-"exampleTr": "은행은 역 오른쪽에 있습니다."
+"exampleTr": "은행은 역 오른쪽에 있습니다.",
+"readingKo": "미기"
 },
 "左": {
-"exampleTr": "왼손을 들어 주세요."
+"exampleTr": "왼손을 들어 주세요.",
+"readingKo": "히다리"
 },
 "上": {
-"exampleTr": "책상 위에 고양이가 있습니다."
+"exampleTr": "책상 위에 고양이가 있습니다.",
+"readingKo": "우에"
 },
 "下": {
-"exampleTr": "가방은 의자 밑에 있습니다."
+"exampleTr": "가방은 의자 밑에 있습니다.",
+"readingKo": "시타"
 },
 "前": {
-"exampleTr": "집 앞에 차가 서 있습니다."
+"exampleTr": "집 앞에 차가 서 있습니다.",
+"readingKo": "마에"
 },
 "後ろ": {
-"exampleTr": "학교 뒤에 공원이 있습니다."
+"exampleTr": "학교 뒤에 공원이 있습니다.",
+"readingKo": "우시로"
 },
 "顔": {
-"exampleTr": "아침에 일어나서 얼굴을 씻습니다."
+"exampleTr": "아침에 일어나서 얼굴을 씻습니다.",
+"readingKo": "가오"
 },
 "鼻": {
-"exampleTr": "코끼리는 코가 매우 깁니다."
+"exampleTr": "코끼리는 코가 매우 깁니다.",
+"readingKo": "하나"
 },
 "歯": {
-"exampleTr": "식사 후에 이를 닦습니다."
+"exampleTr": "식사 후에 이를 닦습니다.",
+"readingKo": "하"
 },
 "首": {
-"exampleTr": "추워서 목에 목도리를 합니다."
+"exampleTr": "추워서 목에 목도리를 합니다.",
+"readingKo": "구비"
 },
 "喉": {
-"exampleTr": "감기로 목구멍이 아픕니다."
+"exampleTr": "감기로 목구멍이 아픕니다.",
+"readingKo": "노도"
 },
 "肩": {
-"exampleTr": "아버지의 어깨를 두드렸습니다."
+"exampleTr": "아버지의 어깨를 두드렸습니다.",
+"readingKo": "가타"
 },
 "腕": {
-"exampleTr": "아이가 내 팔을 잡아당겼습니다."
+"exampleTr": "아이가 내 팔을 잡아당겼습니다.",
+"readingKo": "우데"
 },
 "指": {
-"exampleTr": "손가락으로 지도를 가리켰습니다."
+"exampleTr": "손가락으로 지도를 가리켰습니다.",
+"readingKo": "유비"
 },
 "胸": {
-"exampleTr": "달린 후에 가슴이 두근거립니다."
+"exampleTr": "달린 후에 가슴이 두근거립니다.",
+"readingKo": "무네"
 },
 "髪": {
-"exampleTr": "여동생은 머리카락이 깁니다."
+"exampleTr": "여동생은 머리카락이 깁니다.",
+"readingKo": "가미"
 },
 "怪我": {
-"exampleTr": "넘어져서 다리에 부상을 입었습니다."
+"exampleTr": "넘어져서 다리에 부상을 입었습니다.",
+"readingKo": "게가"
 },
 "健康": {
-"exampleTr": "채소는 건강에 좋습니다."
+"exampleTr": "채소는 건강에 좋습니다.",
+"readingKo": "겐코"
 },
 "看護師": {
-"exampleTr": "간호사가 약을 가져왔습니다."
+"exampleTr": "간호사가 약을 가져왔습니다.",
+"readingKo": "간고시"
 },
 "お客さん": {
-"exampleTr": "오늘은 손님이 많습니다."
+"exampleTr": "오늘은 손님이 많습니다.",
+"readingKo": "오캬쿠산"
 },
 "着物": {
-"exampleTr": "언니는 기모노를 입고 있습니다."
+"exampleTr": "언니는 기모노를 입고 있습니다.",
+"readingKo": "기모노"
 },
 "シャツ": {
-"exampleTr": "하얀 셔츠를 입습니다."
+"exampleTr": "하얀 셔츠를 입습니다.",
+"readingKo": "샤쓰"
 },
 "コート": {
-"exampleTr": "추워서 코트를 입었습니다."
+"exampleTr": "추워서 코트를 입었습니다.",
+"readingKo": "고토"
 },
 "セーター": {
-"exampleTr": "어머니가 스웨터를 만들었습니다."
+"exampleTr": "어머니가 스웨터를 만들었습니다.",
+"readingKo": "세타"
 },
 "ズボン": {
-"exampleTr": "이 바지는 조금 깁니다."
+"exampleTr": "이 바지는 조금 깁니다.",
+"readingKo": "즈본"
 },
 "スカート": {
-"exampleTr": "빨간 치마를 갖고 싶습니다."
+"exampleTr": "빨간 치마를 갖고 싶습니다.",
+"readingKo": "스카토"
 },
 "靴下": {
-"exampleTr": "새 양말을 신었습니다."
+"exampleTr": "새 양말을 신었습니다.",
+"readingKo": "구쓰시타"
 },
 "ネクタイ": {
-"exampleTr": "아버지는 파란 넥타이를 하고 있습니다."
+"exampleTr": "아버지는 파란 넥타이를 하고 있습니다.",
+"readingKo": "네쿠타이"
 },
 "眼鏡": {
-"exampleTr": "책을 읽을 때 안경을 씁니다."
+"exampleTr": "책을 읽을 때 안경을 씁니다.",
+"readingKo": "메가네"
 },
 "色": {
-"exampleTr": "좋아하는 색은 파랑입니다."
+"exampleTr": "좋아하는 색은 파랑입니다.",
+"readingKo": "이로"
 },
 "赤": {
-"exampleTr": "신호가 빨강으로 바뀌었습니다."
+"exampleTr": "신호가 빨강으로 바뀌었습니다.",
+"readingKo": "아카"
 },
 "青": {
-"exampleTr": "바다의 파랑이 아름답습니다."
+"exampleTr": "바다의 파랑이 아름답습니다.",
+"readingKo": "아오"
 },
 "白": {
-"exampleTr": "흰색 셔츠를 골랐습니다."
+"exampleTr": "흰색 셔츠를 골랐습니다.",
+"readingKo": "시로"
 },
 "黒": {
-"exampleTr": "검은색 가방을 쓰고 있습니다."
+"exampleTr": "검은색 가방을 쓰고 있습니다.",
+"readingKo": "구로"
 },
 "黄色": {
-"exampleTr": "정원에 노란색 꽃이 피었습니다."
+"exampleTr": "정원에 노란색 꽃이 피었습니다.",
+"readingKo": "기이로"
 },
 "緑": {
-"exampleTr": "봄이 되어 산이 초록이 됩니다."
+"exampleTr": "봄이 되어 산이 초록이 됩니다.",
+"readingKo": "미도리"
 },
 "動物": {
-"exampleTr": "동물원에서 동물을 보았습니다."
+"exampleTr": "동물원에서 동물을 보았습니다.",
+"readingKo": "도부쓰"
 },
 "馬": {
-"exampleTr": "말이 들판을 달리고 있습니다."
+"exampleTr": "말이 들판을 달리고 있습니다.",
+"readingKo": "우마"
 },
 "牛": {
-"exampleTr": "목장에 소가 열 마리 있습니다."
+"exampleTr": "목장에 소가 열 마리 있습니다.",
+"readingKo": "우시"
 },
 "豚": {
-"exampleTr": "돼지고기를 샀습니다."
+"exampleTr": "돼지고기를 샀습니다.",
+"readingKo": "부타"
 },
 "池": {
-"exampleTr": "공원의 연못에 물고기가 있습니다."
+"exampleTr": "공원의 연못에 물고기가 있습니다.",
+"readingKo": "이케"
 },
 "森": {
-"exampleTr": "숲 속은 매우 조용합니다."
+"exampleTr": "숲 속은 매우 조용합니다.",
+"readingKo": "모리"
 },
 "草": {
-"exampleTr": "소가 풀을 먹고 있습니다."
+"exampleTr": "소가 풀을 먹고 있습니다.",
+"readingKo": "구사"
 },
 "石": {
-"exampleTr": "강에서 둥근 돌을 주웠습니다."
+"exampleTr": "강에서 둥근 돌을 주웠습니다.",
+"readingKo": "이시"
 },
 "島": {
-"exampleTr": "배로 작은 섬에 갑니다."
+"exampleTr": "배로 작은 섬에 갑니다.",
+"readingKo": "시마"
 },
 "星": {
-"exampleTr": "오늘 밤은 별이 잘 보입니다."
+"exampleTr": "오늘 밤은 별이 잘 보입니다.",
+"readingKo": "호시"
 },
 "月": {
-"exampleTr": "오늘의 달은 매우 밝습니다."
+"exampleTr": "오늘의 달은 매우 밝습니다.",
+"readingKo": "쓰키"
 },
 "太陽": {
-"exampleTr": "아침에 태양이 떴습니다."
+"exampleTr": "아침에 태양이 떴습니다.",
+"readingKo": "다이요"
 },
 "米": {
-"exampleTr": "일본인은 쌀을 자주 먹습니다."
+"exampleTr": "일본인은 쌀을 자주 먹습니다.",
+"readingKo": "고메"
 },
 "砂糖": {
-"exampleTr": "커피에 설탕을 넣지 않습니다."
+"exampleTr": "커피에 설탕을 넣지 않습니다.",
+"readingKo": "사토"
 },
 "ケーキ": {
-"exampleTr": "생일에 케이크를 만들었습니다."
+"exampleTr": "생일에 케이크를 만들었습니다.",
+"readingKo": "게키"
 },
 "アイスクリーム": {
-"exampleTr": "더워서 아이스크림을 먹습니다."
+"exampleTr": "더워서 아이스크림을 먹습니다.",
+"readingKo": "아이스쿠리무"
 },
 "紅茶": {
-"exampleTr": "홍차와 케이크를 주세요."
+"exampleTr": "홍차와 케이크를 주세요.",
+"readingKo": "고차"
 },
 "ビール": {
-"exampleTr": "아버지는 밤에 맥주를 마십니다."
+"exampleTr": "아버지는 밤에 맥주를 마십니다.",
+"readingKo": "비루"
 },
 "家具": {
-"exampleTr": "새 가구를 샀습니다."
+"exampleTr": "새 가구를 샀습니다.",
+"readingKo": "가구"
 },
 "ベッド": {
-"exampleTr": "아이는 이미 침대에서 자고 있습니다."
+"exampleTr": "아이는 이미 침대에서 자고 있습니다.",
+"readingKo": "벳도"
 },
 "布団": {
-"exampleTr": "매일 아침 이불을 갭니다."
+"exampleTr": "매일 아침 이불을 갭니다.",
+"readingKo": "후톤"
 },
 "カーテン": {
-"exampleTr": "아침에 커튼을 엽니다."
+"exampleTr": "아침에 커튼을 엽니다.",
+"readingKo": "가텐"
 },
 "壁": {
-"exampleTr": "벽에 그림을 걸었습니다."
+"exampleTr": "벽에 그림을 걸었습니다.",
+"readingKo": "가베"
 },
 "台所": {
-"exampleTr": "어머니는 부엌에서 요리를 하고 있습니다."
+"exampleTr": "어머니는 부엌에서 요리를 하고 있습니다.",
+"readingKo": "다이도코로"
 },
 "風呂": {
-"exampleTr": "밤에 목욕을 합니다."
+"exampleTr": "밤에 목욕을 합니다.",
+"readingKo": "후로"
 },
 "トイレ": {
-"exampleTr": "화장실은 어디입니까?"
+"exampleTr": "화장실은 어디입니까?",
+"readingKo": "도이레"
 },
 "ラジオ": {
-"exampleTr": "차 안에서 라디오를 듣습니다."
+"exampleTr": "차 안에서 라디오를 듣습니다.",
+"readingKo": "라지오"
 },
 "鏡": {
-"exampleTr": "거울로 얼굴을 봅니다."
+"exampleTr": "거울로 얼굴을 봅니다.",
+"readingKo": "가가미"
 },
 "石鹸": {
-"exampleTr": "비누로 손을 씻읍시다."
+"exampleTr": "비누로 손을 씻읍시다.",
+"readingKo": "셋켄"
 },
 "皿": {
-"exampleTr": "접시를 다섯 장 늘어놓았습니다."
+"exampleTr": "접시를 다섯 장 늘어놓았습니다.",
+"readingKo": "사라"
 },
 "コップ": {
-"exampleTr": "컵에 물을 넣습니다."
+"exampleTr": "컵에 물을 넣습니다.",
+"readingKo": "곳푸"
 },
 "箸": {
-"exampleTr": "젓가락으로 밥을 먹습니다."
+"exampleTr": "젓가락으로 밥을 먹습니다.",
+"readingKo": "하시"
 },
 "スプーン": {
-"exampleTr": "숟가락으로 수프를 먹습니다."
+"exampleTr": "숟가락으로 수프를 먹습니다.",
+"readingKo": "스푼"
 },
 "箱": {
-"exampleTr": "이 상자는 무겁습니다."
+"exampleTr": "이 상자는 무겁습니다.",
+"readingKo": "하코"
 },
 "切手": {
-"exampleTr": "우체국에서 우표를 샀습니다."
+"exampleTr": "우체국에서 우표를 샀습니다.",
+"readingKo": "깃테"
 },
 "葉書": {
-"exampleTr": "친구에게 엽서를 보냈습니다."
+"exampleTr": "친구에게 엽서를 보냈습니다.",
+"readingKo": "하가키"
 },
 "地図": {
-"exampleTr": "지도를 보고 길을 찾습니다."
+"exampleTr": "지도를 보고 길을 찾습니다.",
+"readingKo": "지즈"
 },
 "八百屋": {
-"exampleTr": "채소 가게에서 채소를 삽니다."
+"exampleTr": "채소 가게에서 채소를 삽니다.",
+"readingKo": "야오야"
 },
 "本屋": {
-"exampleTr": "역 앞에 서점이 있습니다."
+"exampleTr": "역 앞에 서점이 있습니다.",
+"readingKo": "혼야"
 },
 "薬局": {
-"exampleTr": "약국에서 약을 받았습니다."
+"exampleTr": "약국에서 약을 받았습니다.",
+"readingKo": "얏쿄쿠"
 },
 "郵便局": {
-"exampleTr": "우체국은 은행 옆입니다."
+"exampleTr": "우체국은 은행 옆입니다.",
+"readingKo": "유빈쿄쿠"
 },
 "映画館": {
-"exampleTr": "일요일에 영화관에 갑니다."
+"exampleTr": "일요일에 영화관에 갑니다.",
+"readingKo": "에이가칸"
 },
 "デパート": {
-"exampleTr": "백화점에서 쇼핑을 합니다."
+"exampleTr": "백화점에서 쇼핑을 합니다.",
+"readingKo": "데파토"
 },
 "シャワー": {
-"exampleTr": "운동 후에 샤워를 합니다."
+"exampleTr": "운동 후에 샤워를 합니다.",
+"readingKo": "샤와"
 },
 "プール": {
-"exampleTr": "여름 방학에 수영장에서 헤엄칩니다."
+"exampleTr": "여름 방학에 수영장에서 헤엄칩니다.",
+"readingKo": "푸루"
 },
 "スポーツ": {
-"exampleTr": "어떤 스포츠를 좋아합니까?"
+"exampleTr": "어떤 스포츠를 좋아합니까?",
+"readingKo": "스포쓰"
 },
 "テニス": {
-"exampleTr": "토요일에 친구와 테니스를 칩니다."
+"exampleTr": "토요일에 친구와 테니스를 칩니다.",
+"readingKo": "데니스"
 },
 "ギター": {
-"exampleTr": "형은 기타를 잘 칩니다."
+"exampleTr": "형은 기타를 잘 칩니다.",
+"readingKo": "기타"
 },
 "ピアノ": {
-"exampleTr": "매일 피아노를 연습합니다."
+"exampleTr": "매일 피아노를 연습합니다.",
+"readingKo": "피아노"
 },
 "カメラ": {
-"exampleTr": "새 카메라를 갖고 싶습니다."
+"exampleTr": "새 카메라를 갖고 싶습니다.",
+"readingKo": "가메라"
 },
 "ニュース": {
-"exampleTr": "일곱 시 뉴스를 봅니다."
+"exampleTr": "일곱 시 뉴스를 봅니다.",
+"readingKo": "뉴스"
 },
 "力": {
-"exampleTr": "이 상자는 힘이 없으면 들 수 없습니다."
+"exampleTr": "이 상자는 힘이 없으면 들 수 없습니다.",
+"readingKo": "지카라"
 },
 "場所": {
-"exampleTr": "만날 장소를 정합시다."
+"exampleTr": "만날 장소를 정합시다.",
+"readingKo": "바쇼"
 },
 "会話": {
-"exampleTr": "영어로 대화를 했습니다."
+"exampleTr": "영어로 대화를 했습니다.",
+"readingKo": "가이와"
 },
 "自由": {
-"exampleTr": "오후는 자유로운 시간입니다."
+"exampleTr": "오후는 자유로운 시간입니다.",
+"readingKo": "지유"
 },
 "値段": {
-"exampleTr": "이 가게는 값이 쌉니다."
+"exampleTr": "이 가게는 값이 쌉니다.",
+"readingKo": "네단"
 },
 "続ける": {
-"exampleTr": "십 년 동안 일본어 공부를 계속하고 있습니다."
+"exampleTr": "십 년 동안 일본어 공부를 계속하고 있습니다.",
+"readingKo": "쓰즈케루"
 },
 "壊す": {
-"exampleTr": "남동생이 시계를 망가뜨렸습니다."
+"exampleTr": "남동생이 시계를 망가뜨렸습니다.",
+"readingKo": "고와스"
 },
 "捨てる": {
-"exampleTr": "오래된 잡지를 버렸습니다."
+"exampleTr": "오래된 잡지를 버렸습니다.",
+"readingKo": "스테루"
 },
 "叫ぶ": {
-"exampleTr": "남자가 큰 소리로 외쳤습니다."
+"exampleTr": "남자가 큰 소리로 외쳤습니다.",
+"readingKo": "사케부"
 },
 "急に": {
-"exampleTr": "갑자기 비가 내리기 시작했습니다."
+"exampleTr": "갑자기 비가 내리기 시작했습니다.",
+"readingKo": "규니"
 },
 "普通": {
-"exampleTr": "보통 아침 일곱 시에 일어납니다."
+"exampleTr": "보통 아침 일곱 시에 일어납니다.",
+"readingKo": "후쓰"
 },
 "磨く": {
-"exampleTr": "매일 밤 이를 닦습니다."
+"exampleTr": "매일 밤 이를 닦습니다.",
+"readingKo": "미가쿠"
 },
 "片付ける": {
-"exampleTr": "방을 정리했습니다."
+"exampleTr": "방을 정리했습니다.",
+"readingKo": "가타즈케루"
 },
 "直す": {
-"exampleTr": "고장 난 시계를 고쳤습니다."
+"exampleTr": "고장 난 시계를 고쳤습니다.",
+"readingKo": "나오스"
 },
 "並べる": {
-"exampleTr": "책상 위에 책을 늘어놓습니다."
+"exampleTr": "책상 위에 책을 늘어놓습니다.",
+"readingKo": "나라베루"
 },
 "決める": {
-"exampleTr": "여행 날짜를 정했습니다."
+"exampleTr": "여행 날짜를 정했습니다.",
+"readingKo": "기메루"
 },
 "比べる": {
-"exampleTr": "두 가게의 가격을 비교했습니다."
+"exampleTr": "두 가게의 가격을 비교했습니다.",
+"readingKo": "구라베루"
 },
 "落とす": {
-"exampleTr": "역에서 표를 떨어뜨렸습니다."
+"exampleTr": "역에서 표를 떨어뜨렸습니다.",
+"readingKo": "오토스"
 },
 "頼む": {
-"exampleTr": "점원에게 커피를 부탁했습니다."
+"exampleTr": "점원에게 커피를 부탁했습니다.",
+"readingKo": "다노무"
 },
 "約束する": {
-"exampleTr": "친구와 만날 시간을 약속했습니다."
+"exampleTr": "친구와 만날 시간을 약속했습니다.",
+"readingKo": "야쿠소쿠스루"
 },
 "練習する": {
-"exampleTr": "매일 피아노를 연습합니다."
+"exampleTr": "매일 피아노를 연습합니다.",
+"readingKo": "렌슈스루"
 },
 "準備する": {
-"exampleTr": "여행 짐을 준비합니다."
+"exampleTr": "여행 짐을 준비합니다.",
+"readingKo": "준비스루"
 },
 "心配する": {
-"exampleTr": "어머니가 저를 걱정하고 있습니다."
+"exampleTr": "어머니가 저를 걱정하고 있습니다.",
+"readingKo": "신파이스루"
 },
 "出席する": {
-"exampleTr": "내일 회의에 참석합니다."
+"exampleTr": "내일 회의에 참석합니다.",
+"readingKo": "슛세키스루"
 },
 "欠席する": {
-"exampleTr": "아파서 학교를 결석했습니다."
+"exampleTr": "아파서 학교를 결석했습니다.",
+"readingKo": "겟세키스루"
 },
 "遅れる": {
-"exampleTr": "버스가 십 분 늦었습니다."
+"exampleTr": "버스가 십 분 늦었습니다.",
+"readingKo": "오쿠레루"
 },
 "間に合う": {
-"exampleTr": "서두르면 전철 시간에 댈 수 있습니다."
+"exampleTr": "서두르면 전철 시간에 댈 수 있습니다.",
+"readingKo": "마니아우"
 },
 "泊まる": {
-"exampleTr": "친구 집에 묵었습니다."
+"exampleTr": "친구 집에 묵었습니다.",
+"readingKo": "도마루"
 },
 "込む": {
-"exampleTr": "아침 전철은 아주 붐빕니다."
+"exampleTr": "아침 전철은 아주 붐빕니다.",
+"readingKo": "고무"
 },
 "登る": {
-"exampleTr": "여름에 산에 오릅니다."
+"exampleTr": "여름에 산에 오릅니다.",
+"readingKo": "노보루"
 },
 "飛ぶ": {
-"exampleTr": "새가 하늘을 날고 있습니다."
+"exampleTr": "새가 하늘을 날고 있습니다.",
+"readingKo": "도부"
 },
 "足りる": {
-"exampleTr": "돈이 충분하지 않습니다."
+"exampleTr": "돈이 충분하지 않습니다.",
+"readingKo": "다리루"
 },
 "掛ける": {
-"exampleTr": "벽에 그림을 걸었습니다."
+"exampleTr": "벽에 그림을 걸었습니다.",
+"readingKo": "가케루"
 },
 "卒業する": {
-"exampleTr": "작년에 대학을 졸업했습니다."
+"exampleTr": "작년에 대학을 졸업했습니다.",
+"readingKo": "소쓰교스루"
 },
 "旅行する": {
-"exampleTr": "가족과 일본을 여행했습니다."
+"exampleTr": "가족과 일본을 여행했습니다.",
+"readingKo": "료코스루"
 },
 "散歩する": {
-"exampleTr": "매일 아침 공원을 산책합니다."
+"exampleTr": "매일 아침 공원을 산책합니다.",
+"readingKo": "산포스루"
 },
 "運動する": {
-"exampleTr": "건강을 위해 운동합니다."
+"exampleTr": "건강을 위해 운동합니다.",
+"readingKo": "운도스루"
 },
 "洗濯する": {
-"exampleTr": "일요일에 빨래합니다."
+"exampleTr": "일요일에 빨래합니다.",
+"readingKo": "센타쿠스루"
 },
 "掃除する": {
-"exampleTr": "방을 깨끗이 청소했습니다."
+"exampleTr": "방을 깨끗이 청소했습니다.",
+"readingKo": "소지스루"
 },
 "結婚する": {
-"exampleTr": "형은 작년에 결혼했습니다."
+"exampleTr": "형은 작년에 결혼했습니다.",
+"readingKo": "겟콘스루"
 },
 "紹介する": {
-"exampleTr": "친구를 가족에게 소개했습니다."
+"exampleTr": "친구를 가족에게 소개했습니다.",
+"readingKo": "쇼카이스루"
 },
 "着く": {
-"exampleTr": "역에 도착하면 전화하겠습니다."
+"exampleTr": "역에 도착하면 전화하겠습니다.",
+"readingKo": "쓰쿠"
 },
 "注意する": {
-"exampleTr": "길에서 차를 조심해 주세요."
+"exampleTr": "길에서 차를 조심해 주세요.",
+"readingKo": "주이스루"
 },
 "役に立つ": {
-"exampleTr": "이 사전은 매우 도움이 됩니다."
+"exampleTr": "이 사전은 매우 도움이 됩니다.",
+"readingKo": "야쿠니타쓰"
 },
 "気を付ける": {
-"exampleTr": "몸조심하세요."
+"exampleTr": "몸조심하세요.",
+"readingKo": "기오쓰케루"
 },
 "深い": {
-"exampleTr": "이 강은 깊습니다."
+"exampleTr": "이 강은 깊습니다.",
+"readingKo": "후카이"
 },
 "柔らかい": {
-"exampleTr": "이 빵은 부드럽습니다."
+"exampleTr": "이 빵은 부드럽습니다.",
+"readingKo": "야와라카이"
 },
 "四角い": {
-"exampleTr": "네모난 테이블을 샀습니다."
+"exampleTr": "네모난 테이블을 샀습니다.",
+"readingKo": "시카쿠이"
 },
 "正しい": {
-"exampleTr": "올바른 답을 골라 주세요."
+"exampleTr": "올바른 답을 골라 주세요.",
+"readingKo": "다다시이"
 },
 "安全な": {
-"exampleTr": "이 마을은 매우 안전합니다."
+"exampleTr": "이 마을은 매우 안전합니다.",
+"readingKo": "안젠나"
 },
 "簡単な": {
-"exampleTr": "이 문제는 간단합니다."
+"exampleTr": "이 문제는 간단합니다.",
+"readingKo": "간탄나"
 },
 "大切な": {
-"exampleTr": "가족은 저에게 소중한 사람입니다."
+"exampleTr": "가족은 저에게 소중한 사람입니다.",
+"readingKo": "다이세쓰나"
 },
 "大事な": {
-"exampleTr": "중요한 이야기가 있습니다."
+"exampleTr": "중요한 이야기가 있습니다.",
+"readingKo": "다이지나"
 },
 "必要な": {
-"exampleTr": "여행에는 여권이 필요합니다."
+"exampleTr": "여행에는 여권이 필요합니다.",
+"readingKo": "히쓰요나"
 },
 "便利な": {
-"exampleTr": "이 가방은 매우 편리합니다."
+"exampleTr": "이 가방은 매우 편리합니다.",
+"readingKo": "벤리나"
 },
 "不便な": {
-"exampleTr": "역이 멀어서 불편합니다."
+"exampleTr": "역이 멀어서 불편합니다.",
+"readingKo": "후벤나"
 },
 "親切な": {
-"exampleTr": "가게 사람은 매우 친절했습니다."
+"exampleTr": "가게 사람은 매우 친절했습니다.",
+"readingKo": "신세쓰나"
 },
 "丁寧な": {
-"exampleTr": "선생님은 정중하게 가르쳐 줍니다."
+"exampleTr": "선생님은 정중하게 가르쳐 줍니다.",
+"readingKo": "데이네이나"
 },
 "失礼な": {
-"exampleTr": "무례한 말을 해서 죄송합니다."
+"exampleTr": "무례한 말을 해서 죄송합니다.",
+"readingKo": "시쓰레이나"
 },
 "立派な": {
-"exampleTr": "훌륭한 건물이 보입니다."
+"exampleTr": "훌륭한 건물이 보입니다.",
+"readingKo": "릿파나"
 },
 "賑やかな": {
-"exampleTr": "이 마을은 아주 북적입니다."
+"exampleTr": "이 마을은 아주 북적입니다.",
+"readingKo": "니기야카나"
 },
 "暇な": {
-"exampleTr": "일요일은 한가합니다."
+"exampleTr": "일요일은 한가합니다.",
+"readingKo": "히마나"
 },
 "色々な": {
-"exampleTr": "가게에 여러 가지 물건이 있습니다."
+"exampleTr": "가게에 여러 가지 물건이 있습니다.",
+"readingKo": "이로이로나"
 },
 "特別な": {
-"exampleTr": "오늘은 특별한 날입니다."
+"exampleTr": "오늘은 특별한 날입니다.",
+"readingKo": "도쿠베쓰나"
 },
 "大変な": {
-"exampleTr": "이사는 힘들었습니다."
+"exampleTr": "이사는 힘들었습니다.",
+"readingKo": "다이헨나"
 },
 "必ず": {
-"exampleTr": "내일은 반드시 와 주세요."
+"exampleTr": "내일은 반드시 와 주세요.",
+"readingKo": "가나라즈"
 },
 "もちろん": {
-"exampleTr": "물론 돕겠습니다."
+"exampleTr": "물론 돕겠습니다.",
+"readingKo": "모치론"
 },
 "だいたい": {
-"exampleTr": "뜻은 대체로 알았습니다."
+"exampleTr": "뜻은 대체로 알았습니다.",
+"readingKo": "다이타이"
 },
 "全然": {
-"exampleTr": "술은 전혀 마시지 않습니다."
+"exampleTr": "술은 전혀 마시지 않습니다.",
+"readingKo": "젠젠"
 },
 "あまり": {
-"exampleTr": "이 요리는 별로 좋아하지 않습니다."
+"exampleTr": "이 요리는 별로 좋아하지 않습니다.",
+"readingKo": "아마리"
 },
 "いつか": {
-"exampleTr": "언젠가 일본에 가고 싶습니다."
+"exampleTr": "언젠가 일본에 가고 싶습니다.",
+"readingKo": "이쓰카"
 },
 "もうすぐ": {
-"exampleTr": "이제 곧 봄이 됩니다."
+"exampleTr": "이제 곧 봄이 됩니다.",
+"readingKo": "모스구"
 },
 "後で": {
-"exampleTr": "나중에 전화하겠습니다."
+"exampleTr": "나중에 전화하겠습니다.",
+"readingKo": "아토데"
 },
 "先に": {
-"exampleTr": "먼저 돌아가도 됩니까?"
+"exampleTr": "먼저 돌아가도 됩니까?",
+"readingKo": "사키니"
 },
 "初めて": {
-"exampleTr": "처음으로 일본 요리를 먹었습니다."
+"exampleTr": "처음으로 일본 요리를 먹었습니다.",
+"readingKo": "하지메테"
 },
 "もう一度": {
-"exampleTr": "한 번 더 말해 주세요."
+"exampleTr": "한 번 더 말해 주세요.",
+"readingKo": "모이치도"
 },
 "ずっと": {
-"exampleTr": "아침부터 계속 비가 옵니다."
+"exampleTr": "아침부터 계속 비가 옵니다.",
+"readingKo": "즛토"
 },
 "ゆっくり": {
-"exampleTr": "천천히 말해 주세요."
+"exampleTr": "천천히 말해 주세요.",
+"readingKo": "윳쿠리"
 },
 "本当に": {
-"exampleTr": "정말로 감사합니다."
+"exampleTr": "정말로 감사합니다.",
+"readingKo": "혼토니"
 },
 "全部": {
-"exampleTr": "요리를 전부 먹었습니다."
+"exampleTr": "요리를 전부 먹었습니다.",
+"readingKo": "젠부"
 },
 "一番": {
-"exampleTr": "겨울을 가장 좋아합니다."
+"exampleTr": "겨울을 가장 좋아합니다.",
+"readingKo": "이치반"
 },
 "もっと": {
-"exampleTr": "더 천천히 말해 주세요."
+"exampleTr": "더 천천히 말해 주세요.",
+"readingKo": "못토"
 },
 "一生懸命": {
-"exampleTr": "열심히 공부합니다."
+"exampleTr": "열심히 공부합니다.",
+"readingKo": "잇쇼켄메이"
 },
 "ちょうど": {
-"exampleTr": "정확히 열 시에 도착했습니다."
+"exampleTr": "정확히 열 시에 도착했습니다.",
+"readingKo": "조도"
 },
 "一人で": {
-"exampleTr": "혼자서 여행했습니다."
+"exampleTr": "혼자서 여행했습니다.",
+"readingKo": "히토리데"
 },
 "また": {
-"exampleTr": "또 내일 만납시다."
+"exampleTr": "또 내일 만납시다.",
+"readingKo": "마타"
 },
 "お父さん": {
-"exampleTr": "아버지는 회사원입니다."
+"exampleTr": "아버지는 회사원입니다.",
+"readingKo": "오토산"
 },
 "お母さん": {
-"exampleTr": "어머니는 요리를 잘합니다."
+"exampleTr": "어머니는 요리를 잘합니다.",
+"readingKo": "오카아산"
 },
 "お兄さん": {
-"exampleTr": "형은 대학생입니까?"
+"exampleTr": "형은 대학생입니까?",
+"readingKo": "오니이산"
 },
 "お姉さん": {
-"exampleTr": "언니는 피아노를 잘 칩니다."
+"exampleTr": "언니는 피아노를 잘 칩니다.",
+"readingKo": "오네에산"
 },
 "両親": {
-"exampleTr": "부모님은 시골에 살고 있습니다."
+"exampleTr": "부모님은 시골에 살고 있습니다.",
+"readingKo": "료신"
 },
 "兄弟": {
-"exampleTr": "형제가 세 명 있습니다."
+"exampleTr": "형제가 세 명 있습니다.",
+"readingKo": "교다이"
 },
 "息子": {
-"exampleTr": "아들은 올해 다섯 살입니다."
+"exampleTr": "아들은 올해 다섯 살입니다.",
+"readingKo": "무스코"
 },
 "娘": {
-"exampleTr": "딸은 학교를 좋아합니다."
+"exampleTr": "딸은 학교를 좋아합니다.",
+"readingKo": "무스메"
 },
 "おじいさん": {
-"exampleTr": "할아버지는 신문을 읽고 있습니다."
+"exampleTr": "할아버지는 신문을 읽고 있습니다.",
+"readingKo": "오지이산"
 },
 "おばあさん": {
-"exampleTr": "할머니는 아주 건강하십니다."
+"exampleTr": "할머니는 아주 건강하십니다.",
+"readingKo": "오바아산"
 },
 "おじさん": {
-"exampleTr": "삼촌 집에 갔습니다."
+"exampleTr": "삼촌 집에 갔습니다.",
+"readingKo": "오지산"
 },
 "おばさん": {
-"exampleTr": "이모가 과자를 주었습니다."
+"exampleTr": "이모가 과자를 주었습니다.",
+"readingKo": "오바산"
 },
 "親戚": {
-"exampleTr": "설에 친척이 모입니다."
+"exampleTr": "설에 친척이 모입니다.",
+"readingKo": "신세키"
 },
 "美術館": {
-"exampleTr": "일요일에 미술관에 갔습니다."
+"exampleTr": "일요일에 미술관에 갔습니다.",
+"readingKo": "비주쓰칸"
 },
 "建物": {
-"exampleTr": "저 하얀 건물은 병원입니다."
+"exampleTr": "저 하얀 건물은 병원입니다.",
+"readingKo": "다테모노"
 },
 "交差点": {
-"exampleTr": "교차로에서 오른쪽으로 도세요."
+"exampleTr": "교차로에서 오른쪽으로 도세요.",
+"readingKo": "고사텐"
 },
 "橋": {
-"exampleTr": "다리 위에서 강이 보입니다."
+"exampleTr": "다리 위에서 강이 보입니다.",
+"readingKo": "하시"
 },
 "田舎": {
-"exampleTr": "여름 방학에 시골에 갑니다."
+"exampleTr": "여름 방학에 시골에 갑니다.",
+"readingKo": "이나카"
 },
 "玄関": {
-"exampleTr": "현관에서 신발을 벗습니다."
+"exampleTr": "현관에서 신발을 벗습니다.",
+"readingKo": "겐칸"
 },
 "地下": {
-"exampleTr": "음식은 지하에서 팔고 있습니다."
+"exampleTr": "음식은 지하에서 팔고 있습니다.",
+"readingKo": "지카"
 },
 "近所": {
-"exampleTr": "근처에 새 가게가 생겼습니다."
+"exampleTr": "근처에 새 가게가 생겼습니다.",
+"readingKo": "긴조"
 },
 "昔": {
-"exampleTr": "옛날 여기에 큰 나무가 있었습니다."
+"exampleTr": "옛날 여기에 큰 나무가 있었습니다.",
+"readingKo": "무카시"
 },
 "今度": {
-"exampleTr": "다음번에 함께 갑시다."
+"exampleTr": "다음번에 함께 갑시다.",
+"readingKo": "곤도"
 },
 "今夜": {
-"exampleTr": "오늘 밤은 일찍 잡니다."
+"exampleTr": "오늘 밤은 일찍 잡니다.",
+"readingKo": "곤야"
 },
 "明後日": {
-"exampleTr": "모레 시험이 있습니다."
+"exampleTr": "모레 시험이 있습니다.",
+"readingKo": "아삿테"
 },
 "一昨日": {
-"exampleTr": "그저께 친구를 만났습니다."
+"exampleTr": "그저께 친구를 만났습니다.",
+"readingKo": "오토토이"
 },
 "週末": {
-"exampleTr": "주말에는 집에 있습니다."
+"exampleTr": "주말에는 집에 있습니다.",
+"readingKo": "슈마쓰"
 },
 "夏休み": {
-"exampleTr": "여름 방학에 바다에 갑니다."
+"exampleTr": "여름 방학에 바다에 갑니다.",
+"readingKo": "나쓰야스미"
 },
 "最後": {
-"exampleTr": "마지막으로 한 번 더 설명하겠습니다."
+"exampleTr": "마지막으로 한 번 더 설명하겠습니다.",
+"readingKo": "사이고"
 },
 "途中": {
-"exampleTr": "학교에 가는 도중에 비가 내렸습니다."
+"exampleTr": "학교에 가는 도중에 비가 내렸습니다.",
+"readingKo": "도추"
 },
 "気温": {
-"exampleTr": "오늘은 기온이 높습니다."
+"exampleTr": "오늘은 기온이 높습니다.",
+"readingKo": "기온"
 },
 "意見": {
-"exampleTr": "모두의 의견을 듣습니다."
+"exampleTr": "모두의 의견을 듣습니다.",
+"readingKo": "이켄"
 },
 "理由": {
-"exampleTr": "늦은 이유를 말해 주세요."
+"exampleTr": "늦은 이유를 말해 주세요.",
+"readingKo": "리유"
 },
 "方法": {
-"exampleTr": "좋은 방법을 가르쳐 주세요."
+"exampleTr": "좋은 방법을 가르쳐 주세요.",
+"readingKo": "호호"
 },
 "経験": {
-"exampleTr": "좋은 경험이 되었습니다."
+"exampleTr": "좋은 경험이 되었습니다.",
+"readingKo": "게이켄"
 },
 "興味": {
-"exampleTr": "일본 문화에 흥미가 있습니다."
+"exampleTr": "일본 문화에 흥미가 있습니다.",
+"readingKo": "교미"
 },
 "形": {
-"exampleTr": "이 돌은 재미있는 모양입니다."
+"exampleTr": "이 돌은 재미있는 모양입니다.",
+"readingKo": "가타치"
 },
 "気持ち": {
-"exampleTr": "오늘은 기분이 좋습니다."
+"exampleTr": "오늘은 기분이 좋습니다.",
+"readingKo": "기모치"
 },
 "先輩": {
-"exampleTr": "선배에게 일을 배웁니다."
+"exampleTr": "선배에게 일을 배웁니다.",
+"readingKo": "센파이"
 },
 "後輩": {
-"exampleTr": "후배와 함께 점심을 먹었습니다."
+"exampleTr": "후배와 함께 점심을 먹었습니다.",
+"readingKo": "고하이"
 },
 "道具": {
-"exampleTr": "요리 도구를 샀습니다."
+"exampleTr": "요리 도구를 샀습니다.",
+"readingKo": "도구"
 },
 "発音": {
-"exampleTr": "발음을 연습합시다."
+"exampleTr": "발음을 연습합시다.",
+"readingKo": "하쓰온"
 },
 "おはようございます": {
-"exampleTr": "선생님, 안녕하세요."
+"exampleTr": "선생님, 안녕하세요.",
+"readingKo": "오하요고자이마스"
 },
 "こんにちは": {
-"exampleTr": "안녕하세요, 날씨가 좋네요."
+"exampleTr": "안녕하세요, 날씨가 좋네요.",
+"readingKo": "곤니치하"
 },
 "こんばんは": {
-"exampleTr": "안녕하세요, 지금 돌아왔습니다."
+"exampleTr": "안녕하세요, 지금 돌아왔습니다.",
+"readingKo": "곤반하"
 },
 "さようなら": {
-"exampleTr": "안녕히 가세요, 내일 또 봐요."
+"exampleTr": "안녕히 가세요, 내일 또 봐요.",
+"readingKo": "사요나라"
 },
 "ありがとうございます": {
-"exampleTr": "도와주셔서 감사합니다."
+"exampleTr": "도와주셔서 감사합니다.",
+"readingKo": "아리가토고자이마스"
 },
 "すみません": {
-"exampleTr": "실례합니다, 물 좀 주세요."
+"exampleTr": "실례합니다, 물 좀 주세요.",
+"readingKo": "스미마센"
 },
 "いただきます": {
-"exampleTr": "그럼, 잘 먹겠습니다."
+"exampleTr": "그럼, 잘 먹겠습니다.",
+"readingKo": "이타다키마스"
 },
 "ごちそうさまでした": {
-"exampleTr": "잘 먹었습니다, 맛있었습니다."
+"exampleTr": "잘 먹었습니다, 맛있었습니다.",
+"readingKo": "고치소사마데시타"
 },
 "いってきます": {
-"exampleTr": "엄마, 다녀오겠습니다."
+"exampleTr": "엄마, 다녀오겠습니다.",
+"readingKo": "잇테키마스"
 },
 "ただいま": {
-"exampleTr": "다녀왔습니다, 지금 돌아왔습니다."
+"exampleTr": "다녀왔습니다, 지금 돌아왔습니다.",
+"readingKo": "다다이마"
 },
 "おやすみなさい": {
-"exampleTr": "이미 늦었으니 안녕히 주무세요."
+"exampleTr": "이미 늦었으니 안녕히 주무세요.",
+"readingKo": "오야스미나사이"
 },
 "はじめまして": {
-"exampleTr": "처음 뵙겠습니다, 김이라고 합니다."
+"exampleTr": "처음 뵙겠습니다, 김이라고 합니다.",
+"readingKo": "하지메마시테"
 },
 "よろしくお願いします": {
-"exampleTr": "앞으로 잘 부탁드립니다."
+"exampleTr": "앞으로 잘 부탁드립니다.",
+"readingKo": "요로시쿠오네가이시마스"
 },
 "おめでとうございます": {
-"exampleTr": "졸업 축하합니다."
+"exampleTr": "졸업 축하합니다.",
+"readingKo": "오메데토고자이마스"
 }
 }
 }

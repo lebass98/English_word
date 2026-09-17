@@ -68,6 +68,7 @@ export const IMAGES_L: Record<string, ImageSourcePropType> = {
   license: require("../../../assets/words/l/license.png"),
   lie: require("../../../assets/words/l/lie.png"),
   life: require("../../../assets/words/l/life.png"),
+  lifetime: require("../../../assets/words/l/lifetime.png"),
   lift: require("../../../assets/words/l/lift.png"),
   lighthouse: require("../../../assets/words/l/lighthouse.png"),
   likelihood: require("../../../assets/words/l/likelihood.png"),

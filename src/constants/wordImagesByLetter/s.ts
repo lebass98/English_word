@@ -287,6 +287,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   splash: require("../../../assets/words/s/splash.png"),
   split: require("../../../assets/words/s/split.png"),
   spoil: require("../../../assets/words/s/spoil.png"),
+  spokesperson: require("../../../assets/words/s/spokesperson.png"),
   sponsor: require("../../../assets/words/s/sponsor.png"),
   spontaneous: require("../../../assets/words/s/spontaneous.png"),
   spot: require("../../../assets/words/s/spot.png"),

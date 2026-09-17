@@ -148,15 +148,61 @@ def generate_image_for_word(item: dict, registered_keys: set):
 
     return False, "failed"
 
+def resolve_readme_conflict():
+    """README 충돌은 같은 날짜에 양쪽이 줄을 넣은 것뿐이라 두 쪽을 모두 남긴다 (2026-09-13 사용자 승인)"""
+    with open(README_FILE, encoding="utf-8") as f:
+        s = f.read()
+    s2, n = re.subn(r"<<<<<<< [^\n]*\n(.*?)=======\n(.*?)>>>>>>> [^\n]*\n",
+                    lambda m: m.group(1).rstrip("\n") + "\n" + m.group(2).rstrip("\n") + "\n", s, flags=re.S)
+    if re.search(r"^(<<<<<<<|=======|>>>>>>>)", s2, re.M):
+        return False
+    with open(README_FILE, "w", encoding="utf-8") as f:
+        f.write(s2)
+    subprocess.run(["git", "add", "--", "README.md"], cwd=PROJECT_ROOT)
+    return n > 0
+
+
+def git(*args, check=False):
+    return subprocess.run(["git", *args], cwd=PROJECT_ROOT, check=check, capture_output=True, text=True)
+
+
+def rebasing():
+    d = git("rev-parse", "--git-dir").stdout.strip()
+    return bool(d) and (os.path.isdir(os.path.join(PROJECT_ROOT, d, "rebase-merge")) or os.path.isdir(os.path.join(PROJECT_ROOT, d, "rebase-apply")))
+
+
+def pull_rebase():
+    """받아서 rebase. README 만 충돌하면 두 쪽을 남기고 이어 간다. 성공이면 True"""
+    subprocess.run(["find", ".", "-name", "._*", "-type", "f", "-not", "-path", "./node_modules/*", "-delete"], cwd=PROJECT_ROOT)
+    git("pull", "--rebase", "--autostash", "origin", "main")
+    for _ in range(5):
+        if not rebasing():
+            return True
+        files = [x for x in git("diff", "--name-only", "--diff-filter=U").stdout.splitlines() if x]
+        if files != ["README.md"] or not resolve_readme_conflict():
+            break
+        git("-c", "core.editor=true", "rebase", "--continue")
+    if rebasing():
+        files = git("diff", "--name-only", "--diff-filter=U").stdout.split()
+        git("rebase", "--abort")
+        print(f"[Git] 충돌로 중단 ({', '.join(files) or '원인 불명'}). 커밋은 로컬에 남아 있음", file=sys.stderr, flush=True)
+        return False
+    return True
+
+
 def sync_and_commit(unit_num: int, words_summary: str):
     """단어 등록, 린트, README 기록, 커밋 및 푸시 동기화"""
     print(f"\n[유닛 {unit_num} 동기화 시작]", flush=True)
+
+    # 0. 다른 컴퓨터도 같은 날짜 README 에 줄을 넣으므로, README 를 고치기 전에 먼저 받는다
+    if not pull_rebase():
+        return
 
     # 1. sync_word_images.py 실행
     subprocess.run([sys.executable, SYNC_SCRIPT], check=True)
 
     # 2. macOS 임시파일 제거
-    subprocess.run(["find", ".", "-name", "._*", "-type", "f", "-delete"], cwd=PROJECT_ROOT)
+    subprocess.run(["find", ".", "-name", "._*", "-type", "f", "-not", "-path", "./node_modules/*", "-delete"], cwd=PROJECT_ROOT)
 
     # 3. README.md 작업 내역 추가
     today_str = datetime.now().strftime("%Y-%m-%d")
@@ -166,18 +212,16 @@ def sync_and_commit(unit_num: int, words_summary: str):
     if os.path.exists(README_FILE):
         with open(README_FILE, "r", encoding="utf-8") as f:
             content = f.read()
-
         if header_today in content:
-            parts = content.split(header_today)
+            parts = content.split(header_today, 1)
             new_content = parts[0] + header_today + "\n" + entry_line + parts[1]
         else:
             marker = "## 작업 내역\n"
             if marker in content:
-                parts = content.split(marker)
+                parts = content.split(marker, 1)
                 new_content = parts[0] + marker + "\n" + header_today + "\n" + entry_line + "\n" + parts[1]
             else:
                 new_content = content + f"\n\n## 작업 내역\n\n{header_today}\n{entry_line}\n"
-
         with open(README_FILE, "w", encoding="utf-8") as f:
             f.write(new_content)
 
@@ -187,13 +231,15 @@ def sync_and_commit(unit_num: int, words_summary: str):
     res = subprocess.run(["git", "commit", "-m", commit_msg], cwd=PROJECT_ROOT, capture_output=True, text=True)
     print(res.stdout)
 
-    # 5. Git pull --rebase & push
-    try:
-        subprocess.run(["git", "pull", "--rebase", "origin", "main"], cwd=PROJECT_ROOT, check=True)
-        subprocess.run(["git", "push", "origin", "main"], cwd=PROJECT_ROOT, check=True)
-        print(f"[유닛 {unit_num}] Git 푸시 동기화 완료!", flush=True)
-    except subprocess.CalledProcessError as e:
-        print(f"[유닛 {unit_num}] Git 동기화 중 오류 발생: {e}", file=sys.stderr)
+    # 5. push, 거절되면 다시 받아서 올린다
+    for attempt in range(3):
+        if git("push", "origin", "main").returncode == 0:
+            print(f"[유닛 {unit_num}] Git 푸시 동기화 완료!", flush=True)
+            return
+        print(f"[유닛 {unit_num}] push 거절 ({attempt + 1}/3), 다시 받아서 올린다", flush=True)
+        if not pull_rebase():
+            return
+    print(f"[유닛 {unit_num}] Git 동기화 중 오류 발생: push 가 3번 거절됨", file=sys.stderr, flush=True)
 
 def main():
     parser = argparse.ArgumentParser(description="JLPT N5 단어 선형그래픽 자동 연속 생성 도구")

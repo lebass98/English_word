@@ -29,6 +29,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   carelessly: require("../../../assets/words/c/carelessly.png"),
   cargo: require("../../../assets/words/c/cargo.png"),
   carnival: require("../../../assets/words/c/carnival.png"),
+  carpenter: require("../../../assets/words/c/carpenter.png"),
   carry: require("../../../assets/words/c/carry.png"),
   "carry out": require("../../../assets/words/c/carry-out.png"),
   carton: require("../../../assets/words/c/carton.png"),

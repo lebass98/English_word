@@ -17,6 +17,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   banquet: require("../../../assets/words/b/banquet.png"),
   bar: require("../../../assets/words/b/bar.png"),
   barbarous: require("../../../assets/words/b/barbarous.png"),
+  barbershop: require("../../../assets/words/b/barbershop.png"),
   bare: require("../../../assets/words/b/bare.png"),
   barely: require("../../../assets/words/b/barely.png"),
   bargain: require("../../../assets/words/b/bargain.png"),

@@ -131,6 +131,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   incur: require("../../../assets/words/i/incur.png"),
   indeed: require("../../../assets/words/i/indeed.png"),
   indefinitely: require("../../../assets/words/i/indefinitely.png"),
+  indentation: require("../../../assets/words/i/indentation.png"),
   independence: require("../../../assets/words/i/independence.png"),
   independent: require("../../../assets/words/i/independent.png"),
   independently: require("../../../assets/words/i/independently.png"),

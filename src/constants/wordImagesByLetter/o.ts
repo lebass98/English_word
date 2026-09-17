@@ -129,4 +129,5 @@ export const IMAGES_O: Record<string, ImageSourcePropType> = {
   own: require("../../../assets/words/o/own.png"),
   ownership: require("../../../assets/words/o/ownership.png"),
   oxygen: require("../../../assets/words/o/oxygen.png"),
+  oyster: require("../../../assets/words/o/oyster.png"),
 };

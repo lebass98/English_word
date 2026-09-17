@@ -164,6 +164,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   shy: require("../../../assets/words/s/shy.png"),
   sibling: require("../../../assets/words/s/sibling.png"),
   sick: require("../../../assets/words/s/sick.png"),
+  siege: require("../../../assets/words/s/siege.png"),
   sigh: require("../../../assets/words/s/sigh.png"),
   sight: require("../../../assets/words/s/sight.png"),
   sightseeing: require("../../../assets/words/s/sightseeing.png"),

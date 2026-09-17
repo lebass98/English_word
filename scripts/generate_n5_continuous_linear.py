@@ -4,7 +4,7 @@ Draw Things '선형그래픽' 스킬 기반 일본어 JLPT N5 단어 자동 연�
 - 대상: JLPT N5 단어 (총 556개, 유닛당 20개씩 총 28개 유닛)
 - 유닛에서 멈추지 않고 다음 유닛으로 자동 연속 진행
 - 최신 선형그래픽 조형 6대 원칙 + 2026-09-13/14 개정 완벽 준수:
-  1. 1024x1024 해상도 네이티브 렌더링
+  1. 스킬 기본 해상도(현재 512x512, IMAGE_SIZE 로 변경 가능)
   2. 0.05mm 초극세 바늘선 (thinnest possible 0.05mm ultra-delicate needle-thin hairline ink stroke)
   3. 목 없는(No-Neck) 머리-몸통 분리 원형 머리 순백 픽토그램 (턱 밑 좁은 한 점에서 만남, 좁고 긴 직사각형 몸통, 선 두 줄 튜브 팔다리)
   4. 배경 #f5f6f8, 선색 #030203
@@ -40,6 +40,10 @@ ASSETS_DIR = os.path.join(PROJECT_ROOT, "assets", "words")
 SYNC_SCRIPT = os.path.join(PROJECT_ROOT, "scripts", "sync_word_images.py")
 README_FILE = os.path.join(PROJECT_ROOT, "README.md")
 SCENES_FILE = os.path.join(SCRIPT_DIR, "n5_scenes.json")
+# 프롬프트는 여기서 따로 들고 있지 않고 스킬 스크립트를 그대로 쓴다 (스킬이 바뀌면 자동 반영)
+sys.path.insert(0, os.path.join(PROJECT_ROOT, ".agents", "skills", "draw-things-linear-graphic", "scripts"))
+from generate_linear_graphic import generate_linear_image  # noqa: E402
+REGENERATE = False  # --regenerate 로 켜면 이미 있는 그림도 다시 그린다
 
 def load_scenes_db():
     if os.path.exists(SCENES_FILE):
@@ -109,10 +113,11 @@ def generate_image_for_word(item: dict, registered_keys: set):
     out_path, letter, key = get_asset_path(word, cid)
 
     # 이미 파일이 존재하거나 키가 등록되어 있으면 건너뜀
-    if os.path.exists(out_path) and os.path.getsize(out_path) > 1000:
-        return True, "already_exists"
-    if word in registered_keys or cid in registered_keys:
-        return True, "already_registered"
+    if not REGENERATE:
+        if os.path.exists(out_path) and os.path.getsize(out_path) > 1000:
+            return True, "already_exists"
+        if word in registered_keys or cid in registered_keys:
+            return True, "already_registered"
 
     # 영문 씬 가져오기
     scene = N5_SCENES.get(word) or N5_SCENES.get(cid)
@@ -124,66 +129,16 @@ def generate_image_for_word(item: dict, registered_keys: set):
     if not clean_scene:
         clean_scene = "active character engaging in an exciting energetic movement with motion lines in a well-furnished room with floor line"
 
-    prompt = (
-        f"linear graphic illustration, complete richly detailed scene of {clean_scene}, "
-        "thinnest possible 0.05mm ultra-delicate needle-thin hairline ink stroke, extremely fine crisp outlines drawn in dark charcoal ink color #030203, "
-        "flat smooth light gray canvas background color #f5f6f8, "
-        "simple white pictogram characters, two small dot eyes and a small smile line, plain white face, "
-        "the round bald head is drawn as its own complete closed circle outline, and directly below it the narrow torso starts with its own separate small rounded top edge, "
-        "head and body are two clearly separate shapes that touch only at one small narrow point under the chin, no thick neck, "
-        "very narrow slim torso only about half as wide as the head, tall soft rounded rectangle body with a flat bottom edge, the whole figure is narrow and about three times taller than it is wide, "
-        "short slim rounded tube arms drawn with two close parallel outlines ending in small round mitten nubs, "
-        "short slim rounded tube legs drawn with two close parallel outlines ending in small rounded feet, limbs are narrow but still have visible width and are never a single line, "
-        "the characters are caught in the middle of an exciting energetic activity, dynamic action pose full of movement such as running, jumping, leaping, reaching, throwing or climbing, "
-        "arms and legs move freely with the action while keeping the same slim tube shape, playful adventurous mood, small motion lines and action marks showing speed and excitement, lively storytelling moment, "
-        "small character in a wide scene, modest compact character scale, standing small figure occupying approximately one third of frame height around 30 to 35 percent of canvas height, placed comfortably on bottom floor line, spacious upper and middle frame filled with rich environmental details, balanced wide scene composition, plenty of breathing room, full body visible without crowding, "
-        "abundant rich background details, furniture, wall decor, floor line, ambient props, "
-        "strictly flat 2d linear graphic, no shading, no gradients, no solid black fills, empty background, "
-        "strictly English text only if any letters appear, absolutely no non-English characters, 100% pure English alphabet A-Z only, completely no Korean characters, strictly no Hangul, strictly no Chinese characters, completely non-Asian script, zero foreign glyphs"
-    )
-
-    negative_prompt = (
-        "stick figure, stickman, matchstick limbs, single-line arms, single-line legs, thin wire limbs, long thin legs, "
-        "fat body, chubby, plump, round belly, wide bulky torso, blush, rosy cheeks, pink cheeks, cheek marks, "
-        "thick neck, wide neck, head merged into body, head and torso as one continuous blob, head outline flowing into shoulders, "
-        "long neck, throat, collar, detailed neck anatomy, "
-        "oversized character, giant figure, tall figure, frame-filling character, character taking up entire screen, close-up, extreme close-up, cropped body, zoomed in, crowding the frame, suffocating composition, character head near top of frame, dominating figure, "
-        "realistic human anatomy, realistic face, facial details, nose, eyebrows, eyelashes, eyelids, lips, teeth, ears, hair, hairstyle, muscles, realistic fingers, individual finger joints, fingernails, toes, shoes, clothing, clothes, shirt, pants, wrinkles, folds, "
-        "thick lines, bold outlines, heavy brush strokes, chunky lines, fat strokes, "
-        "pure white #ffffff background, dark background, black background, 3d, 3d render, realistic, shadow, shading, color, gradients, photo, blur, watermark, text, signature, messy, "
-        "non-English text, non-English characters, Korean text, Hangul, Korean letters, Chinese characters, Hanzi, Kanji, Japanese text, Kana, foreign script, pseudo-Hangul, weird Asian glyphs, oriental symbols, non-Latin alphabet, foreign writing"
-    )
-
     seed = 3000 + item["idx"] * 19
-    payload = {
-        "prompt": prompt,
-        "negative_prompt": negative_prompt,
-        "steps": 8,
-        "width": 1024,
-        "height": 1024,
-        "seed": seed
-    }
-
+    size = int(os.environ.get("IMAGE_SIZE", "512"))
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
 
     for attempt in range(1, 4):
         try:
             t0 = time.time()
-            req = urllib.request.Request(
-                API_URL,
-                data=json.dumps(payload).encode("utf-8"),
-                headers={"Content-Type": "application/json"}
-            )
-            with urllib.request.urlopen(req, timeout=300) as resp:
-                data = json.loads(resp.read().decode("utf-8"))
-                images = data.get("images", [])
-                if not images:
-                    raise RuntimeError("No image returned")
-                raw_bytes = base64.b64decode(images[0])
-
-            with open(out_path, "wb") as f:
-                f.write(raw_bytes)
-
+            generate_linear_image(clean_scene, out_path, seed=seed, width=size, height=size)
+            if os.path.getsize(out_path) < 1000:
+                raise RuntimeError("파일이 너무 작음")
             elapsed = time.time() - t0
             print(f"[{word}] 생성 완료 ({elapsed:.1f}초) -> {out_path}", flush=True)
             return True, "generated"
@@ -244,7 +199,10 @@ def main():
     parser = argparse.ArgumentParser(description="JLPT N5 단어 선형그래픽 자동 연속 생성 도구")
     parser.add_argument("--unit", "-u", type=int, default=2, help="시작할 유닛 번호 (기본: 2)")
     parser.add_argument("--end-unit", "-e", type=int, default=28, help="종료 유닛 번호 (기본: 28)")
+    parser.add_argument("--regenerate", action="store_true", help="이미 있는 그림도 새 장면으로 다시 그린다")
     args = parser.parse_args()
+    global REGENERATE
+    REGENERATE = args.regenerate
 
     items = load_n5_words()
 

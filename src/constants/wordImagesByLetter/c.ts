@@ -208,6 +208,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   committee: require("../../../assets/words/c/committee.png"),
   commodity: require("../../../assets/words/c/commodity.png"),
   common: require("../../../assets/words/c/common.png"),
+  communal: require("../../../assets/words/c/communal.png"),
   communicate: require("../../../assets/words/c/communicate.png"),
   communication: require("../../../assets/words/c/communication.png"),
   community: require("../../../assets/words/c/community.png"),

@@ -115,6 +115,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   meticulous: require("../../../assets/words/m/meticulous.png"),
   microbe: require("../../../assets/words/m/microbe.png"),
   microscope: require("../../../assets/words/m/microscope.png"),
+  midday: require("../../../assets/words/m/midday.png"),
   might: require("../../../assets/words/m/might.png"),
   migrate: require("../../../assets/words/m/migrate.png"),
   migration: require("../../../assets/words/m/migration.png"),

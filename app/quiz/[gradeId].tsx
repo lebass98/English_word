@@ -37,6 +37,15 @@ import { useAppStore } from "../../src/stores/useAppStore";
 
 const MINT = "#0EB582";
 
+/** 그림 카드 안쪽 여백 (p-3). 프레임이 그림에 딱 붙도록 계산에 쓴다 */
+const CARD_PAD = 12;
+
+/** 보기 그림 한 칸의 테두리 여백 (p-1.5) */
+const CELL_PAD = 6;
+
+/** 보기 그림 사이 간격. 좌우·세로를 같은 값으로 둔다 */
+const GRID_GAP = 12;
+
 /** 정답·오답을 보여 주고 다음 문제로 넘어가기까지 기다리는 시간 (ms) */
 const REVEAL_MS = 900;
 
@@ -286,17 +295,32 @@ function QuizBody({
    */
   const contentWidth =
     Math.min(screenWidth, MAX_CONTENT_WIDTH) - SCREEN_PADDING_X * 2;
-  // 문제 그림 한 장 (보기 네 줄이 함께 들어가야 한다)
+
+  // 문제 그림 한 장. 카드 안쪽 여백(p-3 = 12px) 을 뺀 만큼이 그림이 된다
   const heroSize = Math.round(
-    Math.min(contentWidth - 24, screenHeight * 0.3, 280),
+    Math.min(contentWidth - CARD_PAD * 2, screenHeight * 0.3, 280),
   );
-  // 보기 그림 네 장 (2열). gap-3(12px) 과 카드 안쪽 여백(8px)을 뺀다
+
+  /*
+   * 보기 그림 네 장 (2열 2행).
+   *
+   * 칸 하나의 바깥 너비는 그림 + 테두리 여백(p-1.5 = 6px)이다.
+   * 두 칸과 사이 간격을 더한 값을 그리드 너비로 못 박아야
+   * 좌우 간격과 세로 간격이 똑같이 떨어진다.
+   */
   const cellSize = Math.round(
-    Math.min((contentWidth - 12) / 2 - 8, screenHeight * 0.19, 150),
+    Math.min(
+      (contentWidth - GRID_GAP) / 2 - CELL_PAD * 2,
+      screenHeight * 0.19,
+      150,
+    ),
   );
+  const cellOuter = cellSize + CELL_PAD * 2;
+  const gridWidth = cellOuter * 2 + GRID_GAP;
+
   // 철자 맞추기의 힌트 그림은 자판이 들어갈 자리를 남겨야 해서 더 작다
   const hintSize = Math.round(
-    Math.min(contentWidth - 24, screenHeight * 0.2, 170),
+    Math.min(contentWidth - CARD_PAD * 2, screenHeight * 0.2, 170),
   );
 
   const speak = useCallback(() => {
@@ -388,7 +412,10 @@ function QuizBody({
         {kind === "wordToImage" && (
           <>
             <WordPrompt word={answer} onSpeak={speak} />
-            <View className="flex-row flex-wrap justify-center gap-3">
+            <View
+              style={{ width: gridWidth, gap: GRID_GAP }}
+              className="flex-row flex-wrap self-center"
+            >
               {choices.map((choice) => (
                 <ImageChoice
                   key={choice.id}
@@ -493,7 +520,11 @@ function QuizBody({
 /** 문제로 내는 큰 그림 한 장 */
 function HeroImage({ word, size }: { word: Word; size: number }) {
   return (
-    <View className="items-center rounded-3xl bg-surface p-3 shadow-neu-card">
+    // 카드 폭을 그림에 맞춰 못 박는다. 전체 폭으로 두면 그림 양옆에 빈 자리가 남는다
+    <View
+      style={{ width: size + CARD_PAD * 2, padding: CARD_PAD }}
+      className="self-center rounded-3xl bg-surface shadow-neu-card"
+    >
       <View
         style={{ width: size, height: size }}
         className="overflow-hidden rounded-2xl bg-canvas shadow-neu-inset"
@@ -576,7 +607,10 @@ function SpellingBoard({
 
   return (
     <View className="gap-4">
-      <View className="items-center gap-3 rounded-3xl bg-surface p-3 shadow-neu-card">
+      <View
+        style={{ padding: CARD_PAD }}
+        className="items-center gap-3 rounded-3xl bg-surface shadow-neu-card"
+      >
         {/* 그림이 있으면 그림을, 없으면 뜻만 힌트로 준다 */}
         {imageOf(answer) ? (
           <View
@@ -826,7 +860,8 @@ function ImageChoice({
     <Pressable
       onPress={onPress}
       disabled={revealed}
-      className={`rounded-2xl ${tone} p-1.5 shadow-neu-sm active:opacity-80`}
+      style={{ width: size + CELL_PAD * 2, padding: CELL_PAD }}
+      className={`rounded-2xl ${tone} shadow-neu-sm active:opacity-80`}
       accessibilityRole="button"
       accessibilityLabel={choice.word}
     >

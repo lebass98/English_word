@@ -21,6 +21,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   parade: require("../../../assets/words/p/parade.png"),
   paradox: require("../../../assets/words/p/paradox.png"),
   paradoxical: require("../../../assets/words/p/paradoxical.png"),
+  paralegal: require("../../../assets/words/p/paralegal.png"),
   parallel: require("../../../assets/words/p/parallel.png"),
   paralyze: require("../../../assets/words/p/paralyze.png"),
   paramount: require("../../../assets/words/p/paramount.png"),

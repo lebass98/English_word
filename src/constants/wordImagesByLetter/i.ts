@@ -151,6 +151,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   ineffective: require("../../../assets/words/i/ineffective.png"),
   inefficient: require("../../../assets/words/i/inefficient.png"),
   inequality: require("../../../assets/words/i/inequality.png"),
+  inevitability: require("../../../assets/words/i/inevitability.png"),
   inevitable: require("../../../assets/words/i/inevitable.png"),
   inevitably: require("../../../assets/words/i/inevitably.png"),
   inexpensive: require("../../../assets/words/i/inexpensive.png"),

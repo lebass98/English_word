@@ -135,6 +135,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   follow: require("../../../assets/words/f/follow.png"),
   following: require("../../../assets/words/f/following.png"),
   foolish: require("../../../assets/words/f/foolish.png"),
+  foothill: require("../../../assets/words/f/foothill.png"),
   "for a while": require("../../../assets/words/f/for-a-while.png"),
   "for instance": require("../../../assets/words/f/for-instance.png"),
   "for oneself": require("../../../assets/words/f/for-oneself.png"),

@@ -174,6 +174,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   repeat: require("../../../assets/words/r/repeat.png"),
   repeated: require("../../../assets/words/r/repeated.png"),
   repel: require("../../../assets/words/r/repel.png"),
+  repetition: require("../../../assets/words/r/repetition.png"),
   replace: require("../../../assets/words/r/replace.png"),
   replacement: require("../../../assets/words/r/replacement.png"),
   replicate: require("../../../assets/words/r/replicate.png"),

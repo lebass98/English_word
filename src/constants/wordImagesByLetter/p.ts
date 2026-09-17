@@ -185,6 +185,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   ponder: require("../../../assets/words/p/ponder.png"),
   pop: require("../../../assets/words/p/pop.png"),
   popular: require("../../../assets/words/p/popular.png"),
+  popularity: require("../../../assets/words/p/popularity.png"),
   population: require("../../../assets/words/p/population.png"),
   port: require("../../../assets/words/p/port.png"),
   portable: require("../../../assets/words/p/portable.png"),

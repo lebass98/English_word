@@ -41,6 +41,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   "far-reaching": require("../../../assets/words/f/far-reaching.png"),
   fare: require("../../../assets/words/f/fare.png"),
   farewell: require("../../../assets/words/f/farewell.png"),
+  farm: require("../../../assets/words/f/farm.png"),
   fascinate: require("../../../assets/words/f/fascinate.png"),
   fascinating: require("../../../assets/words/f/fascinating.png"),
   fashion: require("../../../assets/words/f/fashion.png"),

@@ -21,6 +21,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   task: require("../../../assets/words/t/task.png"),
   taste: require("../../../assets/words/t/taste.png"),
   tax: require("../../../assets/words/t/tax.png"),
+  teambuilding: require("../../../assets/words/t/teambuilding.png"),
   tear: require("../../../assets/words/t/tear.png"),
   tease: require("../../../assets/words/t/tease.png"),
   technique: require("../../../assets/words/t/technique.png"),

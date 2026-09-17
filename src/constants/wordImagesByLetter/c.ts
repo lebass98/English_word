@@ -458,6 +458,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   crucial: require("../../../assets/words/c/crucial.png"),
   crude: require("../../../assets/words/c/crude.png"),
   cruel: require("../../../assets/words/c/cruel.png"),
+  crush: require("../../../assets/words/c/crush.png"),
   cue: require("../../../assets/words/c/cue.png"),
   cuisine: require("../../../assets/words/c/cuisine.png"),
   culinary: require("../../../assets/words/c/culinary.png"),

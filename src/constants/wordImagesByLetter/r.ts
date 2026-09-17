@@ -284,6 +284,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   root: require("../../../assets/words/r/root.png"),
   "root up": require("../../../assets/words/r/root-up.png"),
   rope: require("../../../assets/words/r/rope.png"),
+  roster: require("../../../assets/words/r/roster.png"),
   rot: require("../../../assets/words/r/rot.png"),
   rotate: require("../../../assets/words/r/rotate.png"),
   rotten: require("../../../assets/words/r/rotten.png"),

@@ -146,6 +146,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   coach: require("../../../assets/words/c/coach.png"),
   coal: require("../../../assets/words/c/coal.png"),
   coast: require("../../../assets/words/c/coast.png"),
+  coastal: require("../../../assets/words/c/coastal.png"),
   coeducation: require("../../../assets/words/c/coeducation.png"),
   coexist: require("../../../assets/words/c/coexist.png"),
   cognitive: require("../../../assets/words/c/cognitive.png"),

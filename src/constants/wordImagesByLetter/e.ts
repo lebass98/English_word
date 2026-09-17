@@ -34,6 +34,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   elaborate: require("../../../assets/words/e/elaborate.png"),
   elder: require("../../../assets/words/e/elder.png"),
   elderly: require("../../../assets/words/e/elderly.png"),
+  elect: require("../../../assets/words/e/elect.png"),
   election: require("../../../assets/words/e/election.png"),
   electric: require("../../../assets/words/e/electric.png"),
   electricity: require("../../../assets/words/e/electricity.png"),

@@ -112,6 +112,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   regularly: require("../../../assets/words/r/regularly.png"),
   regulate: require("../../../assets/words/r/regulate.png"),
   regulation: require("../../../assets/words/r/regulation.png"),
+  regulatory: require("../../../assets/words/r/regulatory.png"),
   rehabilitate: require("../../../assets/words/r/rehabilitate.png"),
   reimburse: require("../../../assets/words/r/reimburse.png"),
   reimbursement: require("../../../assets/words/r/reimbursement.png"),

@@ -11,6 +11,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   idle: require("../../../assets/words/i/idle.png"),
   ignorant: require("../../../assets/words/i/ignorant.png"),
   ignore: require("../../../assets/words/i/ignore.png"),
+  "ill-equipped": require("../../../assets/words/i/ill-equipped.png"),
   illegal: require("../../../assets/words/i/illegal.png"),
   illegible: require("../../../assets/words/i/illegible.png"),
   illiterate: require("../../../assets/words/i/illiterate.png"),

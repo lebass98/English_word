@@ -48,6 +48,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   pasture: require("../../../assets/words/p/pasture.png"),
   pat: require("../../../assets/words/p/pat.png"),
   patent: require("../../../assets/words/p/patent.png"),
+  patented: require("../../../assets/words/p/patented.png"),
   path: require("../../../assets/words/p/path.png"),
   patience: require("../../../assets/words/p/patience.png"),
   patient: require("../../../assets/words/p/patient.png"),

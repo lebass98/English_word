@@ -4,6 +4,7 @@ import { ImageSourcePropType } from "react-native";
 export const IMAGES_Y: Record<string, ImageSourcePropType> = {
   yard: require("../../../assets/words/y/yard.png"),
   yawn: require("../../../assets/words/y/yawn.png"),
+  yearn: require("../../../assets/words/y/yearn.png"),
   yell: require("../../../assets/words/y/yell.png"),
   yet: require("../../../assets/words/y/yet.png"),
   yield: require("../../../assets/words/y/yield.png"),

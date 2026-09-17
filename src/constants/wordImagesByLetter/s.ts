@@ -164,6 +164,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   shrink: require("../../../assets/words/s/shrink.png"),
   shrug: require("../../../assets/words/s/shrug.png"),
   shut: require("../../../assets/words/s/shut.png"),
+  shutter: require("../../../assets/words/s/shutter.png"),
   shy: require("../../../assets/words/s/shy.png"),
   sibling: require("../../../assets/words/s/sibling.png"),
   sick: require("../../../assets/words/s/sick.png"),

@@ -20,6 +20,7 @@ export const IMAGES_G: Record<string, ImageSourcePropType> = {
   gender: require("../../../assets/words/g/gender.png"),
   gene: require("../../../assets/words/g/gene.png"),
   general: require("../../../assets/words/g/general.png"),
+  generalize: require("../../../assets/words/g/generalize.png"),
   generally: require("../../../assets/words/g/generally.png"),
   generate: require("../../../assets/words/g/generate.png"),
   generation: require("../../../assets/words/g/generation.png"),

@@ -12,6 +12,7 @@ export const IMAGES_K: Record<string, ImageSourcePropType> = {
   kin: require("../../../assets/words/k/kin.png"),
   kind: require("../../../assets/words/k/kind.png"),
   kindergarten: require("../../../assets/words/k/kindergarten.png"),
+  kiosk: require("../../../assets/words/k/kiosk.png"),
   knee: require("../../../assets/words/k/knee.png"),
   knob: require("../../../assets/words/k/knob.png"),
   knot: require("../../../assets/words/k/knot.png"),

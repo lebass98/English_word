@@ -137,6 +137,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   equal: require("../../../assets/words/e/equal.png"),
   equality: require("../../../assets/words/e/equality.png"),
   equate: require("../../../assets/words/e/equate.png"),
+  equator: require("../../../assets/words/e/equator.png"),
   equilibrium: require("../../../assets/words/e/equilibrium.png"),
   equip: require("../../../assets/words/e/equip.png"),
   equipment: require("../../../assets/words/e/equipment.png"),

@@ -40,6 +40,7 @@ export const IMAGES_N: Record<string, ImageSourcePropType> = {
   network: require("../../../assets/words/n/network.png"),
   neutral: require("../../../assets/words/n/neutral.png"),
   nevertheless: require("../../../assets/words/n/nevertheless.png"),
+  newsletter: require("../../../assets/words/n/newsletter.png"),
   niche: require("../../../assets/words/n/niche.png"),
   nickname: require("../../../assets/words/n/nickname.png"),
   niece: require("../../../assets/words/n/niece.png"),

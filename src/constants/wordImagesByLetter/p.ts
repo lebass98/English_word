@@ -284,6 +284,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   problem: require("../../../assets/words/p/problem.png"),
   procedure: require("../../../assets/words/p/procedure.png"),
   proceed: require("../../../assets/words/p/proceed.png"),
+  proceedings: require("../../../assets/words/p/proceedings.png"),
   process: require("../../../assets/words/p/process.png"),
   proclaim: require("../../../assets/words/p/proclaim.png"),
   procrastinate: require("../../../assets/words/p/procrastinate.png"),

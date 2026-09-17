@@ -127,6 +127,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   inconsequential: require("../../../assets/words/i/inconsequential.png"),
   inconsistency: require("../../../assets/words/i/inconsistency.png"),
   inconvenience: require("../../../assets/words/i/inconvenience.png"),
+  inconvenient: require("../../../assets/words/i/inconvenient.png"),
   incorporate: require("../../../assets/words/i/incorporate.png"),
   increase: require("../../../assets/words/i/increase.png"),
   increasing: require("../../../assets/words/i/increasing.png"),

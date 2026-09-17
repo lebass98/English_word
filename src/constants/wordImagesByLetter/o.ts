@@ -42,6 +42,7 @@ export const IMAGES_O: Record<string, ImageSourcePropType> = {
   official: require("../../../assets/words/o/official.png"),
   offset: require("../../../assets/words/o/offset.png"),
   offspring: require("../../../assets/words/o/offspring.png"),
+  okay: require("../../../assets/words/o/okay.png"),
   old: require("../../../assets/words/o/old.png"),
   "older brother": require("../../../assets/words/o/older-brother.png"),
   "older sister": require("../../../assets/words/o/older-sister.png"),

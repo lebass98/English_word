@@ -13,6 +13,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   earthquake: require("../../../assets/words/e/earthquake.png"),
   ease: require("../../../assets/words/e/ease.png"),
   eastern: require("../../../assets/words/e/eastern.png"),
+  easy: require("../../../assets/words/e/easy.png"),
   eat: require("../../../assets/words/e/eat.png"),
   eccentricity: require("../../../assets/words/e/eccentricity.png"),
   eclipse: require("../../../assets/words/e/eclipse.png"),

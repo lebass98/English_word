@@ -70,6 +70,7 @@ export const IMAGES_N: Record<string, ImageSourcePropType> = {
   notice: require("../../../assets/words/n/notice.png"),
   noticeable: require("../../../assets/words/n/noticeable.png"),
   notification: require("../../../assets/words/n/notification.png"),
+  notify: require("../../../assets/words/n/notify.png"),
   notion: require("../../../assets/words/n/notion.png"),
   notwithstanding: require("../../../assets/words/n/notwithstanding.png"),
   nourish: require("../../../assets/words/n/nourish.png"),

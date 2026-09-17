@@ -25,6 +25,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   tease: require("../../../assets/words/t/tease.png"),
   technique: require("../../../assets/words/t/technique.png"),
   technology: require("../../../assets/words/t/technology.png"),
+  teenage: require("../../../assets/words/t/teenage.png"),
   teenager: require("../../../assets/words/t/teenager.png"),
   telegraph: require("../../../assets/words/t/telegraph.png"),
   telephone: require("../../../assets/words/t/telephone.png"),

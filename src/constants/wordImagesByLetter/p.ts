@@ -6,6 +6,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   Pacific: require("../../../assets/words/p/Pacific.png"),
   pack: require("../../../assets/words/p/pack.png"),
   paddle: require("../../../assets/words/p/paddle.png"),
+  painful: require("../../../assets/words/p/painful.png"),
   paint: require("../../../assets/words/p/paint.png"),
   pair: require("../../../assets/words/p/pair.png"),
   pal: require("../../../assets/words/p/pal.png"),

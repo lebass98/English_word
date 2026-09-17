@@ -314,6 +314,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   stamina: require("../../../assets/words/s/stamina.png"),
   stamp: require("../../../assets/words/s/stamp.png"),
   stance: require("../../../assets/words/s/stance.png"),
+  stand: require("../../../assets/words/s/stand.png"),
   "stand for": require("../../../assets/words/s/stand-for.png"),
   "stand out": require("../../../assets/words/s/stand-out.png"),
   standard: require("../../../assets/words/s/standard.png"),

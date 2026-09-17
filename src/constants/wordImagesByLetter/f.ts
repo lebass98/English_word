@@ -204,6 +204,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   fundamental: require("../../../assets/words/f/fundamental.png"),
   fundraising: require("../../../assets/words/f/fundraising.png"),
   funeral: require("../../../assets/words/f/funeral.png"),
+  funny: require("../../../assets/words/f/funny.png"),
   fur: require("../../../assets/words/f/fur.png"),
   furious: require("../../../assets/words/f/furious.png"),
   furnish: require("../../../assets/words/f/furnish.png"),

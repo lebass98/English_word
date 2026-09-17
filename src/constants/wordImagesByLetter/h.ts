@@ -83,6 +83,7 @@ export const IMAGES_H: Record<string, ImageSourcePropType> = {
   hollow: require("../../../assets/words/h/hollow.png"),
   holy: require("../../../assets/words/h/holy.png"),
   homeless: require("../../../assets/words/h/homeless.png"),
+  homemade: require("../../../assets/words/h/homemade.png"),
   homesick: require("../../../assets/words/h/homesick.png"),
   hometown: require("../../../assets/words/h/hometown.png"),
   homogeneous: require("../../../assets/words/h/homogeneous.png"),

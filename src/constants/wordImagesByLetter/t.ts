@@ -135,6 +135,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   tragedy: require("../../../assets/words/t/tragedy.png"),
   tragic: require("../../../assets/words/t/tragic.png"),
   trail: require("../../../assets/words/t/trail.png"),
+  trailer: require("../../../assets/words/t/trailer.png"),
   trait: require("../../../assets/words/t/trait.png"),
   traitor: require("../../../assets/words/t/traitor.png"),
   transaction: require("../../../assets/words/t/transaction.png"),

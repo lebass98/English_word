@@ -5,6 +5,9 @@ import type { StudyEntry, WordStatus } from "../stores/useAppStore";
 /** 한 판에 푸는 문제 수 */
 export const QUIZ_SIZE = 20;
 
+/** 유닛 하나를 끝냈을 때 바로 이어지는 확인 퀴즈의 문제 수 */
+export const UNIT_QUIZ_SIZE = 8;
+
 /** 한 문제에 주는 보기 수 */
 export const CHOICE_COUNT = 4;
 
@@ -233,10 +236,21 @@ export function buildQuiz(
   entries: Record<string, StudyEntry>,
   size: number = QUIZ_SIZE,
   kinds: readonly QuizKind[] = QUIZ_KINDS,
+  /**
+   * 오답 보기를 가져올 단어 목록. 없으면 문제로 낼 단어와 같은 목록을 쓴다.
+   *
+   * 유닛 하나(20단어)만으로 문제를 내면 보기가 늘 같은 얼굴이라 금방 외워진다.
+   * 그래서 문제는 유닛에서 내되 오답은 학년 전체에서 가져온다.
+   */
+  choicePool: Word[] = words,
 ): QuizQuestion[] {
   // 어떤 유형으로도 낼 수 없는 단어는 애초에 뽑지 않는다
   const pool = words.filter((w) => kinds.some((k) => supports(w, k)));
-  if (pool.length < CHOICE_COUNT) return [];
+  if (pool.length === 0) return [];
+  const choices = choicePool.filter((w) =>
+    kinds.some((k) => supports(w, k)),
+  );
+  if (choices.length < CHOICE_COUNT) return [];
 
   const answers = pickWeighted(pool, entries, Math.min(size, pool.length));
   // 유형 순서를 판마다 섞어 같은 차례로 반복되지 않게 한다
@@ -262,7 +276,7 @@ export function buildQuiz(
      * 뜻을 다루는 유형에서 이런 짝이 보기에 같이 들어가면 답이 둘이 되므로 뺀다.
      */
     const meaningKind = kind === "wordToMeaning" || kind === "meaningToWord";
-    const others = pool.filter(
+    const others = choices.filter(
       (w) =>
         w.conceptId !== answer.conceptId &&
         usableAsChoice(w, kind) &&

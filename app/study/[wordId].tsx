@@ -48,6 +48,7 @@ import {
   useVocabForWordId,
   type Word,
 } from "../../src/constants/words";
+import { UNIT_QUIZ_SIZE } from "../../src/lib/quiz";
 import {
   studyLangOfWordId,
   studyLanguageOf,
@@ -106,6 +107,14 @@ export default function StudyScreen() {
         prev={words[index - 1]}
         next={words[index + 1]}
         onNavigate={goTo}
+        onUnitEnd={() => {
+          // 유닛 마지막 단어를 넘기면 그 유닛만 놓고 확인 퀴즈를 낸다.
+          // replace 를 쓰면 퀴즈에서 뒤로 갈 때 방금 푼 단어로 돌아오지 않는다
+          const unitNo = Math.floor(index / UNIT_SIZE) + 1;
+          router.replace(
+            `/quiz/${gradeId}?unit=${unitNo}&size=${UNIT_QUIZ_SIZE}`,
+          );
+        }}
         onBack={() => {
           // 주소로 바로 들어오거나 새로고침한 경우엔 되돌아갈 기록이 없다.
           // 그때는 해당 학년의 유닛 목록으로 보낸다.
@@ -161,6 +170,8 @@ interface StudyCardProps {
   prev?: Word;
   next?: Word;
   onNavigate: (id?: string) => void;
+  /** 유닛 마지막 단어에서 다음으로 넘어갈 때 부른다 */
+  onUnitEnd: () => void;
   onBack: () => void;
 }
 
@@ -172,10 +183,13 @@ function StudyCard({
   prev,
   next,
   onNavigate,
+  onUnitEnd,
   onBack,
 }: StudyCardProps) {
   const prevId = prev?.id;
   const nextId = next?.id;
+  /** 이 단어가 유닛의 마지막인지. 학년 마지막 단어도 유닛의 끝이다 */
+  const isUnitEnd = index % UNIT_SIZE === UNIT_SIZE - 1 || index === total - 1;
   const autoAdvance = useAppStore((s) => s.autoAdvance);
   const setAutoAdvance = useAppStore((s) => s.setAutoAdvance);
   const autoAdvanceSec = useAppStore((s) => s.autoAdvanceSec);
@@ -202,7 +216,15 @@ function StudyCard({
       한 번만 만들어 두고 계속 같은 값을 쓴다 */
   const [progress] = useState(() => new Animated.Value(0));
 
-  const advance = useCallback(() => onNavigate(nextId), [onNavigate, nextId]);
+  /**
+   * 다음으로 넘어간다.
+   * 유닛의 마지막 단어였다면 다음 단어 대신 확인 퀴즈로 간다.
+   * 자동 넘김·판정·스와이프·다음 버튼이 모두 이 길을 쓴다.
+   */
+  const advance = useCallback(() => {
+    if (isUnitEnd) onUnitEnd();
+    else onNavigate(nextId);
+  }, [isUnitEnd, onUnitEnd, onNavigate, nextId]);
 
   /** 이미지를 좌우로 밀어서 단어를 넘기는 스와이프.
       그림만 손가락을 따라 흐르고, 충분히 밀면 옆 그림이 자리를 넘겨받으며 단어가 바뀐다 */
@@ -240,7 +262,9 @@ function StudyCard({
         // 패널 너비의 4분의 1쯤 밀었거나 빠르게 튕겼으면 넘긴다
         const enough =
           Math.abs(g.dx) > (panelW || 200) * 0.26 || Math.abs(g.vx) > 0.35;
-        const target = g.dx < 0 ? nextId : prevId;
+        const forward = g.dx < 0;
+        // 유닛 마지막 단어에서는 다음 단어가 아니라 확인 퀴즈로 간다
+        const target = forward ? (isUnitEnd ? word.id : nextId) : prevId;
         if (!enough || !target) return springBack();
 
         // 옆 그림이 자리를 다 채운 다음에 단어를 바꾼다.
@@ -251,13 +275,15 @@ function StudyCard({
           easing: Easing.out(Easing.quad),
           useNativeDriver,
         }).start(({ finished }) => {
-          if (finished) onNavigate(target);
-          else springBack();
+          if (finished) {
+            if (forward) advance();
+            else onNavigate(target);
+          } else springBack();
         });
       },
       onPanResponderTerminate: springBack,
     });
-  }, [dragX, panelW, prevId, nextId, onNavigate]);
+  }, [dragX, panelW, prevId, nextId, onNavigate, advance, isUnitEnd, word.id]);
 
   // 자동 넘김 타이머.
   // 예전에는 200ms마다 상태를 바꿔 바를 다시 그렸는데, 그 간격만큼 계단처럼 끊겨 보였다.
@@ -338,7 +364,7 @@ function StudyCard({
 
   const decide = (next: WordStatus) => {
     recordStudy(word.id, next);
-    onNavigate(nextId);
+    advance();
   };
 
   return (
@@ -577,11 +603,11 @@ function StudyCard({
             {/* 다음 단어 */}
             <Pressable
               accessibilityLabel={t("study.nextWord")}
-              disabled={!nextId}
-              onPress={() => onNavigate(nextId)}
+              disabled={!nextId && !isUnitEnd}
+              onPress={advance}
               style={{ top: "50%", marginTop: -18, right: -16 }}
               className={`absolute h-9 w-9 items-center justify-center rounded-full bg-surface shadow-neu-sm active:scale-95 active:shadow-neu-pressed ${
-                nextId ? "" : "opacity-40"
+                nextId || isUnitEnd ? "" : "opacity-40"
               }`}
             >
               <ChevronRightIcon size={14} />

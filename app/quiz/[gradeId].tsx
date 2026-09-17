@@ -33,6 +33,7 @@ import { useT, type StringKey } from "../../src/i18n";
 import {
   buildQuiz,
   imageOf,
+  QUIZ_KINDS,
   QUIZ_SIZE,
   scoreOf,
   SPELLING_LIVES,
@@ -84,8 +85,15 @@ interface Answered {
 }
 
 export default function QuizScreen() {
-  const { gradeId: raw } = useLocalSearchParams<{ gradeId: string }>();
+  const {
+    gradeId: raw,
+    unit,
+    size,
+  } = useLocalSearchParams<{ gradeId: string; unit?: string; size?: string }>();
   const gradeId = raw ?? "";
+  /** 유닛을 끝내고 바로 들어온 확인 퀴즈면 그 유닛 번호가 들어온다 */
+  const unitNo = unit ? Number(unit) : null;
+  const quizSize = size ? Number(size) : QUIZ_SIZE;
   const t = useT();
   const { width: screenWidth } = useWindowDimensions();
   /*
@@ -102,10 +110,23 @@ export default function QuizScreen() {
   const recordStudy = useAppStore((s) => s.recordStudy);
   const recordQuiz = useAppStore((s) => s.recordQuiz);
   const speechVolume = useAppStore((s) => s.speechVolume);
-  const best = useAppStore((s) => s.quizRecords[gradeId]?.best ?? 0);
+  /** 유닛 확인 퀴즈는 8문제짜리라 학년 전체 기록과 섞지 않는다 */
+  const recordKey = unitNo ? `${gradeId}:u${unitNo}` : gradeId;
+  const best = useAppStore((s) => s.quizRecords[recordKey]?.best ?? 0);
 
   // 학년 단어 목록. 없는 학년이면 빈 배열이 매번 새로 생기므로 메모해 둔다
-  const words = useMemo(() => vocab.byLevel[gradeId] ?? [], [vocab, gradeId]);
+  const gradeWords = useMemo(
+    () => vocab.byLevel[gradeId] ?? [],
+    [vocab, gradeId],
+  );
+  // 유닛 확인 퀴즈는 그 유닛 단어에서만 낸다. 오답 보기는 학년 전체에서 가져온다
+  const words = useMemo(
+    () =>
+      unitNo
+        ? (vocab.unitsOf(gradeId)[unitNo - 1]?.words ?? [])
+        : gradeWords,
+    [vocab, gradeId, unitNo, gradeWords],
+  );
 
   /**
    * 한 판은 시작할 때 한 번만 만든다.
@@ -114,7 +135,13 @@ export default function QuizScreen() {
    */
   const [round, setRound] = useState(0);
   const [questions, setQuestions] = useState<QuizQuestion[]>(() =>
-    buildQuiz(words, useAppStore.getState().entries, QUIZ_SIZE),
+    buildQuiz(
+      words,
+      useAppStore.getState().entries,
+      quizSize,
+      QUIZ_KINDS,
+      gradeWords,
+    ),
   );
 
   const [index, setIndex] = useState(0);
@@ -139,19 +166,28 @@ export default function QuizScreen() {
 
   /** 새 판을 뽑는다. 기록이 쌓였으면 헷갈린 단어가 더 자주 나온다 */
   const restart = useCallback(() => {
-    setQuestions(buildQuiz(words, useAppStore.getState().entries, QUIZ_SIZE));
+    setQuestions(
+      buildQuiz(
+        words,
+        useAppStore.getState().entries,
+        quizSize,
+        QUIZ_KINDS,
+        gradeWords,
+      ),
+    );
     setIndex(0);
     setPicked(null);
     setRevealed(false);
     setLog([]);
     setRound((r) => r + 1);
-  }, [words]);
+  }, [words, gradeWords, quizSize]);
 
   // 학년을 바꿔 들어오면 판을 다시 뽑는다.
   // effect 가 아니라 렌더 중에 맞춰야 이전 학년 문제가 한 번 스쳐 지나가지 않는다
-  const [builtFor, setBuiltFor] = useState(gradeId);
-  if (builtFor !== gradeId) {
-    setBuiltFor(gradeId);
+  const scope = `${gradeId}:${unitNo ?? "all"}`;
+  const [builtFor, setBuiltFor] = useState(scope);
+  if (builtFor !== scope) {
+    setBuiltFor(scope);
     restart();
   }
 
@@ -175,6 +211,7 @@ export default function QuizScreen() {
     return (
       <QuizResult
         gradeId={gradeId}
+        recordKey={recordKey}
         gradeLabel={grade?.label ?? ""}
         log={log}
         previousBest={best}
@@ -219,7 +256,9 @@ export default function QuizScreen() {
         <BackButton fallbackHref={`/grade/${gradeId}`} />
         <View className="flex-1">
           <Text className="text-[15px] font-bold text-ink">
-            {grade?.label ?? t("quiz.title")}
+            {unitNo
+              ? t("quiz.unitTitle", { unit: unitNo })
+              : (grade?.label ?? t("quiz.title"))}
           </Text>
           <Text className="mt-0.5 text-[12px] text-slate-500">
             {index + 1} / {questions.length}
@@ -966,6 +1005,7 @@ function ImageChoice({
 /** 한 판이 끝나고 보여 주는 점수 화면 */
 function QuizResult({
   gradeId,
+  recordKey,
   gradeLabel,
   log,
   previousBest,
@@ -973,11 +1013,13 @@ function QuizResult({
   onRecord,
 }: {
   gradeId: string;
+  /** 최고 기록을 남길 열쇠. 유닛 확인 퀴즈는 학년 기록과 따로 쌓는다 */
+  recordKey: string;
   gradeLabel: string;
   log: Answered[];
   previousBest: number;
   onRestart: () => void;
-  onRecord: (gradeId: string, score: number, combo: number) => void;
+  onRecord: (key: string, score: number, combo: number) => void;
 }) {
   const t = useT();
   const router = useRouter();
@@ -994,8 +1036,8 @@ function QuizResult({
   useEffect(() => {
     if (saved.current) return;
     saved.current = true;
-    onRecord(gradeId, score, combo);
-  }, [gradeId, score, combo, onRecord]);
+    onRecord(recordKey, score, combo);
+  }, [recordKey, score, combo, onRecord]);
 
   const praise =
     score === 100

@@ -141,6 +141,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   shipment: require("../../../assets/words/s/shipment.png"),
   shock: require("../../../assets/words/s/shock.png"),
   shoot: require("../../../assets/words/s/shoot.png"),
+  shopper: require("../../../assets/words/s/shopper.png"),
   shore: require("../../../assets/words/s/shore.png"),
   short: require("../../../assets/words/s/short.png"),
   "short-cut": require("../../../assets/words/s/short-cut.png"),

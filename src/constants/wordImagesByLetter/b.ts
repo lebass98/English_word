@@ -151,6 +151,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   bowl: require("../../../assets/words/b/bowl.png"),
   brag: require("../../../assets/words/b/brag.png"),
   brain: require("../../../assets/words/b/brain.png"),
+  brake: require("../../../assets/words/b/brake.png"),
   branch: require("../../../assets/words/b/branch.png"),
   break: require("../../../assets/words/b/break.png"),
   "break down": require("../../../assets/words/b/break-down.png"),

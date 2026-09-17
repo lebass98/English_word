@@ -286,6 +286,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   connoisseur: require("../../../assets/words/c/connoisseur.png"),
   connotation: require("../../../assets/words/c/connotation.png"),
   conquer: require("../../../assets/words/c/conquer.png"),
+  conquest: require("../../../assets/words/c/conquest.png"),
   conscious: require("../../../assets/words/c/conscious.png"),
   consciously: require("../../../assets/words/c/consciously.png"),
   consensus: require("../../../assets/words/c/consensus.png"),

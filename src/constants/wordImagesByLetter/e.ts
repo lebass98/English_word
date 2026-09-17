@@ -184,6 +184,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   exact: require("../../../assets/words/e/exact.png"),
   exactly: require("../../../assets/words/e/exactly.png"),
   exaggerate: require("../../../assets/words/e/exaggerate.png"),
+  exam: require("../../../assets/words/e/exam.png"),
   examination: require("../../../assets/words/e/examination.png"),
   examine: require("../../../assets/words/e/examine.png"),
   example: require("../../../assets/words/e/example.png"),

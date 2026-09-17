@@ -96,6 +96,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   persistent: require("../../../assets/words/p/persistent.png"),
   personal: require("../../../assets/words/p/personal.png"),
   personality: require("../../../assets/words/p/personality.png"),
+  personally: require("../../../assets/words/p/personally.png"),
   personnel: require("../../../assets/words/p/personnel.png"),
   perspective: require("../../../assets/words/p/perspective.png"),
   persuade: require("../../../assets/words/p/persuade.png"),

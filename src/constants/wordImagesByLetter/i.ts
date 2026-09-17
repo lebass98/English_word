@@ -53,6 +53,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   imperceptibly: require("../../../assets/words/i/imperceptibly.png"),
   implausible: require("../../../assets/words/i/implausible.png"),
   implement: require("../../../assets/words/i/implement.png"),
+  implicate: require("../../../assets/words/i/implicate.png"),
   implication: require("../../../assets/words/i/implication.png"),
   imply: require("../../../assets/words/i/imply.png"),
   import: require("../../../assets/words/i/import.png"),

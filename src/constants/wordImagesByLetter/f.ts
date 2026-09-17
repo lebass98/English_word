@@ -153,6 +153,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   forgive: require("../../../assets/words/f/forgive.png"),
   form: require("../../../assets/words/f/form.png"),
   formal: require("../../../assets/words/f/formal.png"),
+  formality: require("../../../assets/words/f/formality.png"),
   formation: require("../../../assets/words/f/formation.png"),
   former: require("../../../assets/words/f/former.png"),
   formidable: require("../../../assets/words/f/formidable.png"),

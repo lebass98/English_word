@@ -127,6 +127,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   philosophy: require("../../../assets/words/p/philosophy.png"),
   photograph: require("../../../assets/words/p/photograph.png"),
   photographer: require("../../../assets/words/p/photographer.png"),
+  photography: require("../../../assets/words/p/photography.png"),
   phrase: require("../../../assets/words/p/phrase.png"),
   physical: require("../../../assets/words/p/physical.png"),
   physician: require("../../../assets/words/p/physician.png"),

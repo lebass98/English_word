@@ -341,6 +341,60 @@ export function StarIcon({ size = 10, color = "#fbbf24" }: IconProps) {
   );
 }
 
+/** ❓ 퀴즈 (아래 탭). 말풍선 안의 물음표 */
+export function QuizIcon({
+  size = 22,
+  color = "#94a3b8",
+  strokeWidth = 1.8,
+}: IconProps) {
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Path
+        d="M21 12a8 8 0 01-8 8H8l-4 3v-4.2A8 8 0 1121 12z"
+        stroke={color}
+        strokeWidth={strokeWidth}
+        strokeLinejoin="round"
+      />
+      <Path
+        d="M10 9.2a2.5 2.5 0 113.2 2.4c-.7.25-1.2.9-1.2 1.65v.25"
+        stroke={color}
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+      />
+      <Path
+        d="M12 16.4h.01"
+        stroke={color}
+        strokeWidth={strokeWidth + 0.4}
+        strokeLinecap="round"
+      />
+    </Svg>
+  );
+}
+
+/** 퀴즈 탭 활성 상태 */
+export function QuizFilledIcon({ size = 22, color = "#0EB582" }: IconProps) {
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Path
+        d="M21 12a8 8 0 01-8 8H8l-4 3v-4.2A8 8 0 1121 12z"
+        fill={color}
+      />
+      <Path
+        d="M10 9.2a2.5 2.5 0 113.2 2.4c-.7.25-1.2.9-1.2 1.65v.25"
+        stroke="#ffffff"
+        strokeWidth={1.9}
+        strokeLinecap="round"
+      />
+      <Path
+        d="M12 16.4h.01"
+        stroke="#ffffff"
+        strokeWidth={2.3}
+        strokeLinecap="round"
+      />
+    </Svg>
+  );
+}
+
 /** 🔖 단어장에 담기 (학습 화면 저장 버튼) */
 export function BookmarkIcon({
   size = 16,

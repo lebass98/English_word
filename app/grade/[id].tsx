@@ -2,7 +2,11 @@ import { useLocalSearchParams, useRouter } from "expo-router";
 import { useMemo } from "react";
 import { FlatList, Pressable, Text, View } from "react-native";
 import { BackButton } from "../../src/components/BackButton";
-import { CheckIcon } from "../../src/components/icons";
+import {
+  CheckIcon,
+  ChevronRightIcon,
+  QuizFilledIcon,
+} from "../../src/components/icons";
 import { Screen, ScreenHeader } from "../../src/components/Screen";
 import { useGrade } from "../../src/constants/grades";
 import { useVocab } from "../../src/constants/words";
@@ -25,6 +29,7 @@ export default function GradeScreen() {
   const units = vocab.unitsOf(gradeId);
 
   const entries = useAppStore((s) => s.entries);
+  const quizRecord = useAppStore((s) => s.quizRecords[gradeId]);
   // 학년 전체 단어(수백~수천 개)를 세므로 기록이 바뀔 때만 다시 센다
   const gradeKnown = useMemo(
     () => knownCountByGrade(entries, vocab, gradeId),
@@ -53,6 +58,30 @@ export default function GradeScreen() {
           ) : null}
         </View>
       </ScreenHeader>
+
+      {/* 유닛과 별개로 학년 전체에서 20문제를 뽑아 푸는 한 판 */}
+      {units.length > 0 && (
+        <Pressable
+          onPress={() => router.push(`/quiz/${gradeId}`)}
+          accessibilityRole="button"
+          className="mx-6 mt-6 flex-row items-center gap-4 rounded-3xl bg-surface px-5 py-4 shadow-neu-card active:shadow-neu-pressed"
+        >
+          <View className="h-11 w-11 items-center justify-center rounded-2xl bg-[#dcf2ea] shadow-neu-sm">
+            <QuizFilledIcon size={22} color="#0EB582" />
+          </View>
+          <View className="flex-1">
+            <Text className="text-[15px] font-bold text-ink">
+              {t("quiz.title")}
+            </Text>
+            <Text className="mt-0.5 text-[12px] text-slate-500">
+              {quizRecord
+                ? `${t("quiz.best", { score: quizRecord.best })} · ${t("quiz.plays", { count: quizRecord.plays })}`
+                : t("quiz.start")}
+            </Text>
+          </View>
+          <ChevronRightIcon size={18} color="#94a3b8" />
+        </Pressable>
+      )}
 
       {units.length === 0 ? (
         <View className="flex-1 items-center justify-center px-6">

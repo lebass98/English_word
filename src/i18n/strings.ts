@@ -32,6 +32,7 @@ const ko = {
   // 아래 탭
   "nav.home": "홈",
   "nav.wordbook": "단어장",
+  "nav.quiz": "퀴즈",
   "nav.imageStatus": "현황",
   "nav.settings": "설정",
 
@@ -170,6 +171,29 @@ const ko = {
   "level.toefl.short": "TOEFL",
 
   // 일본어 코스 단계 (JLPT)
+  // 퀴즈
+  "quiz.title": "단어 퀴즈",
+  "quiz.start": "퀴즈 시작",
+  "quiz.startAgain": "한 판 더",
+  "quiz.pickWord": "그림에 맞는 단어는?",
+  "quiz.pickImage": "이 단어의 그림은?",
+  "quiz.combo": "{count}연속!",
+  "quiz.exit": "그만하기",
+  "quiz.notEnough": "그림이 있는 단어가 모자라 아직 퀴즈를 낼 수 없어요",
+  "quiz.best": "최고 {score}점",
+  "quiz.plays": "{count}판",
+  "quiz.result.title": "한 판 끝!",
+  "quiz.result.correct": "{correct} / {total} 맞힘",
+  "quiz.result.newBest": "최고 기록 경신!",
+  "quiz.result.bestCombo": "최고 연속 {count}개",
+  "quiz.result.perfect": "전부 맞혔어요!",
+  "quiz.result.great": "잘했어요!",
+  "quiz.result.good": "좋아요, 조금만 더!",
+  "quiz.result.keep": "다시 해볼까요?",
+  "quiz.result.wrongTitle": "틀린 단어",
+  "quiz.result.wrongHint": "눌러서 다시 공부하기",
+  "quiz.result.home": "홈으로",
+
   "level.jlpt-n5.label": "JLPT N5",
   "level.jlpt-n5.short": "N5",
   "level.jlpt-n4.label": "JLPT N4",
@@ -195,6 +219,7 @@ const ja: Partial<Record<StringKey, string>> = {
 
   "nav.home": "ホーム",
   "nav.wordbook": "単語帳",
+  "nav.quiz": "クイズ",
   "nav.imageStatus": "状況",
   "nav.settings": "設定",
 
@@ -319,6 +344,29 @@ const ja: Partial<Record<StringKey, string>> = {
   "level.toeic.short": "TOEIC",
   "level.toefl.label": "TOEFL 必須",
   "level.toefl.short": "TOEFL",
+
+  // クイズ
+  "quiz.title": "単語クイズ",
+  "quiz.start": "クイズ開始",
+  "quiz.startAgain": "もう一回",
+  "quiz.pickWord": "絵に合う単語は?",
+  "quiz.pickImage": "この単語の絵は?",
+  "quiz.combo": "{count}連続!",
+  "quiz.exit": "やめる",
+  "quiz.notEnough": "絵のある単語が足りず、まだクイズを出せません",
+  "quiz.best": "最高 {score}点",
+  "quiz.plays": "{count}回",
+  "quiz.result.title": "おしまい!",
+  "quiz.result.correct": "{correct} / {total} 正解",
+  "quiz.result.newBest": "自己ベスト更新!",
+  "quiz.result.bestCombo": "最高連続 {count}個",
+  "quiz.result.perfect": "全部正解!",
+  "quiz.result.great": "よくできました!",
+  "quiz.result.good": "いいね、あと少し!",
+  "quiz.result.keep": "もう一度どうぞ",
+  "quiz.result.wrongTitle": "まちがえた単語",
+  "quiz.result.wrongHint": "タップして復習",
+  "quiz.result.home": "ホームへ",
 
   "level.jlpt-n5.label": "JLPT N5",
   "level.jlpt-n5.short": "N5",

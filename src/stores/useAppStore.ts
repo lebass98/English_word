@@ -43,6 +43,17 @@ export interface StudyEntry {
   updatedAt: string;
 }
 
+/** 퀴즈 한 판의 최고 기록 */
+export interface QuizRecord {
+  /** 100점 만점 점수 */
+  best: number;
+  /** 한 판에서 이어 맞힌 최대 개수 */
+  bestCombo: number;
+  /** 지금까지 푼 판 수 */
+  plays: number;
+  updatedAt: string;
+}
+
 /** 이어하기 지점 */
 export interface LastStudied {
   wordId: string;
@@ -127,6 +138,11 @@ interface AppState {
   /** 사용자가 정한 이름 (설정 화면에서 변경) */
   nickname: string;
 
+  /** 학년 id → 퀴즈 최고 기록 */
+  quizRecords: Record<string, QuizRecord>;
+  /** 한 판을 끝냈을 때 기록을 남긴다. 최고점·최고 콤보만 갱신된다 */
+  recordQuiz: (gradeId: string, score: number, combo: number) => void;
+
   /**
    * 학습 화면에 단어가 떴을 때 호출한다.
    * 이어하기 지점을 갱신하고 "오늘 본 단어"를 센다.
@@ -182,6 +198,7 @@ export const useAppStore = create<AppState>()(
       lastStudied: null,
       dailyLog: {},
       nickname: "",
+      quizRecords: {},
 
       markSeen: (wordId, gradeId) =>
         set((s) => {
@@ -235,10 +252,32 @@ export const useAppStore = create<AppState>()(
           return { saved: next };
         }),
 
+      recordQuiz: (gradeId, score, combo) =>
+        set((s) => {
+          const prev = s.quizRecords[gradeId];
+          return {
+            quizRecords: {
+              ...s.quizRecords,
+              [gradeId]: {
+                best: Math.max(prev?.best ?? 0, score),
+                bestCombo: Math.max(prev?.bestCombo ?? 0, combo),
+                plays: (prev?.plays ?? 0) + 1,
+                updatedAt: new Date().toISOString(),
+              },
+            },
+          };
+        }),
+
       setNickname: (name) => set({ nickname: name }),
 
       resetProgress: () =>
-        set({ entries: {}, saved: {}, lastStudied: null, dailyLog: {} }),
+        set({
+          entries: {},
+          saved: {},
+          lastStudied: null,
+          dailyLog: {},
+          quizRecords: {},
+        }),
     }),
     {
       name: "wordpic-store",
@@ -259,6 +298,7 @@ export const useAppStore = create<AppState>()(
         lastStudied: s.lastStudied,
         dailyLog: s.dailyLog,
         nickname: s.nickname,
+        quizRecords: s.quizRecords,
       }),
       // 다국어로 넘어오면서 단어 id 앞에 학습 언어가 붙었다 (m1-1 → en-m1-1).
       // 예전에 저장된 기록도 같은 규칙으로 바꿔 줘야 학습 내역이 살아남는다.

@@ -9,12 +9,16 @@ import {
   HomeIcon,
   PictureFilledIcon,
   PictureIcon,
+  QuizFilledIcon,
+  QuizIcon,
 } from "./icons";
 import { MAX_CONTENT_WIDTH } from "./Screen";
 import { useT, type StringKey } from "../i18n";
+import { useAppStore } from "../stores/useAppStore";
 
 /** 독 탭 하나. 기본은 선 아이콘, 활성 탭은 꽉 찬 아이콘을 쓴다 */
 interface Tab {
+  /** 고정 경로. 퀴즈처럼 학년에 따라 달라지는 탭은 비워 두고 아래에서 정한다 */
   href: string;
   labelKey: StringKey;
   Icon: (props: {
@@ -32,6 +36,12 @@ const TABS: Tab[] = [
     labelKey: "nav.wordbook",
     Icon: BookIcon,
     IconFilled: BookFilledIcon,
+  },
+  {
+    href: "/quiz",
+    labelKey: "nav.quiz",
+    Icon: QuizIcon,
+    IconFilled: QuizFilledIcon,
   },
   // 그림 제작 현황(임시). 그림을 전부 채우면 이 줄과 현황판을 함께 지운다
   {
@@ -61,6 +71,15 @@ export function BottomNav() {
   const pathname = usePathname();
   const router = useRouter();
   const t = useT();
+  // 퀴즈는 학년마다 다른 화면이다. 고른 학년이 없으면 홈에서 먼저 고르게 한다
+  const activeGradeId = useAppStore((s) => s.activeGradeId);
+
+  const hrefOf = (tab: Tab) =>
+    tab.href === "/quiz"
+      ? activeGradeId
+        ? `/quiz/${activeGradeId}`
+        : "/"
+      : tab.href;
 
   const web = Platform.OS === "web";
 
@@ -80,7 +99,12 @@ export function BottomNav() {
       >
         <View className="flex-row items-center gap-1 rounded-full bg-surface px-2 py-2 shadow-neu-card">
           {TABS.map((tab) => {
-            const active = pathname === tab.href;
+            const href = hrefOf(tab);
+            // 퀴즈 탭은 어느 학년이든 /quiz 로 시작하면 켜진 것으로 본다
+            const active =
+              tab.href === "/quiz"
+                ? pathname.startsWith("/quiz")
+                : pathname === tab.href;
 
             return (
               <Pressable
@@ -90,7 +114,7 @@ export function BottomNav() {
                 accessibilityState={{ selected: active }}
                 // 같은 탭을 다시 누르면 스택만 쌓이므로 아무것도 하지 않는다
                 onPress={() => {
-                  if (!active) router.push(tab.href as any);
+                  if (!active) router.push(href as any);
                 }}
                 // 아이콘을 위, 제목을 아래에 둔다
                 className={`h-[64px] flex-1 items-center justify-center gap-1 rounded-2xl px-1 ${

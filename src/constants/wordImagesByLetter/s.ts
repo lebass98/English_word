@@ -87,6 +87,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   sensational: require("../../../assets/words/s/sensational.png"),
   sense: require("../../../assets/words/s/sense.png"),
   sensitive: require("../../../assets/words/s/sensitive.png"),
+  sensor: require("../../../assets/words/s/sensor.png"),
   sensory: require("../../../assets/words/s/sensory.png"),
   sentence: require("../../../assets/words/s/sentence.png"),
   sentiment: require("../../../assets/words/s/sentiment.png"),

@@ -293,6 +293,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   spicy: require("../../../assets/words/s/spicy.png"),
   spill: require("../../../assets/words/s/spill.png"),
   spin: require("../../../assets/words/s/spin.png"),
+  "spin-off": require("../../../assets/words/s/spin-off.png"),
   spine: require("../../../assets/words/s/spine.png"),
   spiral: require("../../../assets/words/s/spiral.png"),
   spirit: require("../../../assets/words/s/spirit.png"),

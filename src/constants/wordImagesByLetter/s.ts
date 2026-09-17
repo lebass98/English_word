@@ -304,6 +304,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   spot: require("../../../assets/words/s/spot.png"),
   spouse: require("../../../assets/words/s/spouse.png"),
   sprain: require("../../../assets/words/s/sprain.png"),
+  spray: require("../../../assets/words/s/spray.png"),
   spread: require("../../../assets/words/s/spread.png"),
   "spread out": require("../../../assets/words/s/spread-out.png"),
   "spring up": require("../../../assets/words/s/spring-up.png"),

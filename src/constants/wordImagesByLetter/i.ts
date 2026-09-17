@@ -196,6 +196,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   initiative: require("../../../assets/words/i/initiative.png"),
   injure: require("../../../assets/words/i/injure.png"),
   injurious: require("../../../assets/words/i/injurious.png"),
+  inland: require("../../../assets/words/i/inland.png"),
   innate: require("../../../assets/words/i/innate.png"),
   inner: require("../../../assets/words/i/inner.png"),
   inning: require("../../../assets/words/i/inning.png"),

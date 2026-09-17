@@ -230,6 +230,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   precipitation: require("../../../assets/words/p/precipitation.png"),
   precise: require("../../../assets/words/p/precise.png"),
   precisely: require("../../../assets/words/p/precisely.png"),
+  preconditioned: require("../../../assets/words/p/preconditioned.png"),
   predator: require("../../../assets/words/p/predator.png"),
   predecessor: require("../../../assets/words/p/predecessor.png"),
   predict: require("../../../assets/words/p/predict.png"),

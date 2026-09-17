@@ -432,6 +432,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   crack: require("../../../assets/words/c/crack.png"),
   cradle: require("../../../assets/words/c/cradle.png"),
   craft: require("../../../assets/words/c/craft.png"),
+  cramped: require("../../../assets/words/c/cramped.png"),
   crane: require("../../../assets/words/c/crane.png"),
   crash: require("../../../assets/words/c/crash.png"),
   crawl: require("../../../assets/words/c/crawl.png"),

@@ -130,6 +130,7 @@ export const IMAGES_L: Record<string, ImageSourcePropType> = {
   low: require("../../../assets/words/l/low.png"),
   lower: require("../../../assets/words/l/lower.png"),
   loyal: require("../../../assets/words/l/loyal.png"),
+  loyalty: require("../../../assets/words/l/loyalty.png"),
   luck: require("../../../assets/words/l/luck.png"),
   lucrative: require("../../../assets/words/l/lucrative.png"),
   lure: require("../../../assets/words/l/lure.png"),

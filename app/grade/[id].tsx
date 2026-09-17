@@ -11,7 +11,10 @@ import { Screen, ScreenHeader } from "../../src/components/Screen";
 import { useGrade } from "../../src/constants/grades";
 import { useVocab } from "../../src/constants/words";
 import { useT } from "../../src/i18n";
-import { imageCoverageOfWords, registeredImageCount } from "../../src/lib/imageDebug";
+import {
+  imageCoverageOfWords,
+  registeredImageCount,
+} from "../../src/lib/imageDebug";
 import {
   knownCountByGrade,
   knownCountInWords,
@@ -59,30 +62,6 @@ export default function GradeScreen() {
         </View>
       </ScreenHeader>
 
-      {/* 유닛과 별개로 학년 전체에서 20문제를 뽑아 푸는 한 판 */}
-      {units.length > 0 && (
-        <Pressable
-          onPress={() => router.push(`/quiz/${gradeId}`)}
-          accessibilityRole="button"
-          className="mx-6 mt-6 flex-row items-center gap-4 rounded-3xl bg-surface px-5 py-4 shadow-neu-card active:shadow-neu-pressed"
-        >
-          <View className="h-11 w-11 items-center justify-center rounded-2xl bg-[#dcf2ea] shadow-neu-sm">
-            <QuizFilledIcon size={22} color="#0EB582" />
-          </View>
-          <View className="flex-1">
-            <Text className="text-[15px] font-bold text-ink">
-              {t("quiz.title")}
-            </Text>
-            <Text className="mt-0.5 text-[12px] text-slate-500">
-              {quizRecord
-                ? `${t("quiz.best", { score: quizRecord.best })} · ${t("quiz.plays", { count: quizRecord.plays })}`
-                : t("quiz.start")}
-            </Text>
-          </View>
-          <ChevronRightIcon size={18} color="#94a3b8" />
-        </Pressable>
-      )}
-
       {units.length === 0 ? (
         <View className="flex-1 items-center justify-center px-6">
           <Text className="text-[13px] text-slate-400">
@@ -100,6 +79,30 @@ export default function GradeScreen() {
           // 2열 카드 간격은 홈 코스 카드와 같은 16px
           columnWrapperClassName="gap-4"
           contentContainerClassName="gap-4 px-6 pb-10 pt-6"
+          // 유닛과 별개로 학년 전체에서 20문제를 뽑아 푸는 한 판.
+          // 위에 고정하지 않고 유닛 목록과 함께 스크롤된다
+          ListHeaderComponent={
+            <Pressable
+              onPress={() => router.push(`/quiz/${gradeId}`)}
+              accessibilityRole="button"
+              className="flex-row items-center gap-4 rounded-3xl bg-surface px-5 py-4 shadow-neu-card active:shadow-neu-pressed"
+            >
+              <View className="h-11 w-11 items-center justify-center rounded-2xl bg-[#dcf2ea] shadow-neu-sm">
+                <QuizFilledIcon size={22} color="#0EB582" />
+              </View>
+              <View className="flex-1">
+                <Text className="text-[15px] font-bold text-ink">
+                  {t("quiz.title")}
+                </Text>
+                <Text className="mt-0.5 text-[12px] text-slate-500">
+                  {quizRecord
+                    ? `${t("quiz.best", { score: quizRecord.best })} · ${t("quiz.plays", { count: quizRecord.plays })}`
+                    : t("quiz.start")}
+                </Text>
+              </View>
+              <ChevronRightIcon size={18} color="#94a3b8" />
+            </Pressable>
+          }
           renderItem={({ item }) => {
             const total = item.words.length;
             const known = knownCountInWords(entries, item.words);
@@ -111,7 +114,11 @@ export default function GradeScreen() {
               <Pressable
                 onPress={() => router.push(`/study/${item.words[0].id}`)}
                 accessibilityRole="button"
-                accessibilityLabel={t("a11y.unitProgress", { unit: item.unitNo, total, known })}
+                accessibilityLabel={t("a11y.unitProgress", {
+                  unit: item.unitNo,
+                  total,
+                  known,
+                })}
                 className="flex-1 rounded-3xl bg-surface p-6 shadow-neu-card active:shadow-neu-pressed"
               >
                 <View className="flex-row items-start justify-between">
@@ -145,10 +152,7 @@ export default function GradeScreen() {
                   >
                     {known}
                   </Text>
-                  <Text className="text-[13px] text-slate-500">
-                    {" "}
-                    / {total}
-                  </Text>
+                  <Text className="text-[13px] text-slate-500"> / {total}</Text>
                 </View>
 
                 {/* 그림 제작 현황(임시). 다 그린 유닛은 초록 표시로 바뀐다 */}

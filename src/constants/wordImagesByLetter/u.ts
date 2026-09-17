@@ -101,6 +101,7 @@ export const IMAGES_U: Record<string, ImageSourcePropType> = {
   urge: require("../../../assets/words/u/urge.png"),
   urgent: require("../../../assets/words/u/urgent.png"),
   usage: require("../../../assets/words/u/usage.png"),
+  use: require("../../../assets/words/u/use.png"),
   useful: require("../../../assets/words/u/useful.png"),
   useless: require("../../../assets/words/u/useless.png"),
   usual: require("../../../assets/words/u/usual.png"),

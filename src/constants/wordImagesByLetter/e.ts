@@ -3,6 +3,7 @@ import { ImageSourcePropType } from "react-native";
 // "e" 로 시작하는 단어 그림. scripts/sync_word_images.py 가 만든다 (손으로 고치지 않는다)
 export const IMAGES_E: Record<string, ImageSourcePropType> = {
   eager: require("../../../assets/words/e/eager.png"),
+  ear: require("../../../assets/words/e/ear.png"),
   early: require("../../../assets/words/e/early.png"),
   earn: require("../../../assets/words/e/earn.png"),
   earnest: require("../../../assets/words/e/earnest.png"),
@@ -12,6 +13,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   earthquake: require("../../../assets/words/e/earthquake.png"),
   ease: require("../../../assets/words/e/ease.png"),
   eastern: require("../../../assets/words/e/eastern.png"),
+  eat: require("../../../assets/words/e/eat.png"),
   eccentricity: require("../../../assets/words/e/eccentricity.png"),
   eclipse: require("../../../assets/words/e/eclipse.png"),
   "eco-friendly": require("../../../assets/words/e/eco-friendly.png"),
@@ -32,6 +34,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   efficient: require("../../../assets/words/e/efficient.png"),
   efficiently: require("../../../assets/words/e/efficiently.png"),
   effort: require("../../../assets/words/e/effort.png"),
+  egg: require("../../../assets/words/e/egg.png"),
   either: require("../../../assets/words/e/either.png"),
   elaborate: require("../../../assets/words/e/elaborate.png"),
   elder: require("../../../assets/words/e/elder.png"),
@@ -189,6 +192,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   eventual: require("../../../assets/words/e/eventual.png"),
   eventually: require("../../../assets/words/e/eventually.png"),
   evergreen: require("../../../assets/words/e/evergreen.png"),
+  "every day": require("../../../assets/words/e/every-day.png"),
   evidence: require("../../../assets/words/e/evidence.png"),
   evident: require("../../../assets/words/e/evident.png"),
   evidently: require("../../../assets/words/e/evidently.png"),
@@ -284,4 +288,5 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   extrovert: require("../../../assets/words/e/extrovert.png"),
   extroverted: require("../../../assets/words/e/extroverted.png"),
   exude: require("../../../assets/words/e/exude.png"),
+  eye: require("../../../assets/words/e/eye.png"),
 };

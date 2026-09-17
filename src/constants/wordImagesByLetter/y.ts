@@ -6,7 +6,11 @@ export const IMAGES_Y: Record<string, ImageSourcePropType> = {
   yawn: require("../../../assets/words/y/yawn.png"),
   yearn: require("../../../assets/words/y/yearn.png"),
   yell: require("../../../assets/words/y/yell.png"),
+  yesterday: require("../../../assets/words/y/yesterday.png"),
   yet: require("../../../assets/words/y/yet.png"),
   yield: require("../../../assets/words/y/yield.png"),
+  you: require("../../../assets/words/y/you.png"),
+  "younger brother": require("../../../assets/words/y/younger-brother.png"),
+  "younger sister": require("../../../assets/words/y/younger-sister.png"),
   youth: require("../../../assets/words/y/youth.png"),
 };

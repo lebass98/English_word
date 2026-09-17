@@ -22,7 +22,9 @@ import {
 import { BlurView } from "expo-blur";
 import {
   AgainIcon,
+  BookmarkFilledIcon,
   BookmarkIcon,
+  PictureIcon,
   CheckIcon,
   HomeIcon,
   ChevronDownIcon,
@@ -151,7 +153,7 @@ function WordImage({ word, offset = 0 }: { word: Word; offset?: number }) {
         />
       ) : (
         <View className="flex-1 items-center justify-center gap-3 bg-canvas">
-          <Text className="text-[40px]">🖼️</Text>
+          <PictureIcon size={40} color="#cbd5e1" />
           <Text className="text-[13px] text-slate-400">
             {t("study.imagePreparing")}
           </Text>
@@ -801,11 +803,11 @@ function StudyCard({
               : "bg-surface shadow-neu-sm active:shadow-neu-pressed"
           }`}
         >
-          <BookmarkIcon
-            size={16}
-            filled={isSaved}
-            color={isSaved ? MINT : "#94a3b8"}
-          />
+          {isSaved ? (
+            <BookmarkFilledIcon size={16} color={MINT} />
+          ) : (
+            <BookmarkIcon size={16} color="#94a3b8" />
+          )}
           <Text
             numberOfLines={1}
             className={`text-[14px] font-extrabold tracking-tight ${

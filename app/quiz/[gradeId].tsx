@@ -18,7 +18,19 @@ import {
   View,
 } from "react-native";
 import { BackButton } from "../../src/components/BackButton";
-import { CheckIcon, SpeakerIcon } from "../../src/components/icons";
+import {
+  BookIcon,
+  CheckIcon,
+  CloseIcon,
+  EditNoteIcon,
+  HeadphonesIcon,
+  LightbulbIcon,
+  ShuffleIcon,
+  SpeakerIcon,
+  SpellcheckIcon,
+  TextFieldsIcon,
+  type IconProps,
+} from "../../src/components/icons";
 import { PillButton } from "../../src/components/PillButton";
 import {
   MAX_CONTENT_WIDTH,
@@ -48,6 +60,8 @@ import { speakWord, stopSpeaking } from "../../src/lib/speech";
 import { useAppStore } from "../../src/stores/useAppStore";
 
 const MINT = "#0EB582";
+/** 오답 표시에 쓰는 빨강 */
+const CORAL = "#ef4444";
 
 /** 보기 그림 한 칸의 테두리 여백 (p-1.5) */
 const CELL_PAD = 6;
@@ -330,14 +344,17 @@ export default function QuizScreen() {
 }
 
 /** 고를 수 있는 문제 유형. "섞어서"가 맨 앞이다 */
-const KIND_OPTIONS: { value: QuizKind | "mix"; emoji: string }[] = [
-  { value: "mix", emoji: "🎲" },
-  { value: "wordToImage", emoji: "🔤" },
-  { value: "wordToMeaning", emoji: "📖" },
-  { value: "meaningToWord", emoji: "💡" },
-  { value: "listenToWord", emoji: "🎧" },
-  { value: "cloze", emoji: "📝" },
-  { value: "spelling", emoji: "✏️" },
+const KIND_OPTIONS: {
+  value: QuizKind | "mix";
+  Icon: (props: IconProps) => React.ReactElement;
+}[] = [
+  { value: "mix", Icon: ShuffleIcon },
+  { value: "wordToImage", Icon: TextFieldsIcon },
+  { value: "wordToMeaning", Icon: BookIcon },
+  { value: "meaningToWord", Icon: LightbulbIcon },
+  { value: "listenToWord", Icon: HeadphonesIcon },
+  { value: "cloze", Icon: EditNoteIcon },
+  { value: "spelling", Icon: SpellcheckIcon },
 ];
 
 /**
@@ -383,7 +400,7 @@ function KindPicker({
           style={{ gap: GRID_GAP_LG }}
           className="flex-row flex-wrap justify-center"
         >
-          {KIND_OPTIONS.map(({ value, emoji }) => {
+          {KIND_OPTIONS.map(({ value, Icon }) => {
             // 섞어서는 예전 기록을 그대로 쓰고, 유형별은 따로 쌓는다
             const best =
               records[value === "mix" ? gradeId : `${gradeId}:k-${value}`]
@@ -398,7 +415,7 @@ function KindPicker({
               >
                 {/* 아이콘 자리는 그림자 없이 둔다. 카드 자체 그림자만 남긴다 */}
                 <View className="h-12 w-12 items-center justify-center">
-                  <Text className="text-[22px]">{emoji}</Text>
+                  <Icon size={28} color="#0EB582" />
                 </View>
                 <Text
                   numberOfLines={1}
@@ -916,7 +933,10 @@ function SpellingBoard({
                 : "bg-[#e9e6f8] shadow-neu-sm active:opacity-70"
             }`}
           >
-            <Text className="text-[12px]">💡</Text>
+            <LightbulbIcon
+              size={14}
+              color={hintUsed || revealed ? "#cbd5e1" : "#4338ca"}
+            />
             <Text
               className={`text-[12px] font-bold ${
                 hintUsed || revealed ? "text-slate-300" : "text-indigo-700"
@@ -1094,9 +1114,7 @@ function MeaningChoice({
         {choice.meaning}
       </Text>
       {mark === "correct" && <CheckIcon size={18} color={MINT} />}
-      {mark === "wrong" && (
-        <Text className="text-[16px] font-bold text-red-500">✕</Text>
-      )}
+      {mark === "wrong" && <CloseIcon size={18} color={CORAL} />}
     </Pressable>
   );
 }
@@ -1142,9 +1160,7 @@ function WordChoice({
         {choice.word}
       </Text>
       {mark === "correct" && <CheckIcon size={18} color={MINT} />}
-      {mark === "wrong" && (
-        <Text className="text-[16px] font-bold text-red-500">✕</Text>
-      )}
+      {mark === "wrong" && <CloseIcon size={18} color={CORAL} />}
     </Pressable>
   );
 }
@@ -1198,9 +1214,9 @@ function ImageChoice({
         </View>
       )}
       {mark === "wrong" && (
-        <Text className="absolute right-2 top-1 text-[16px] font-bold text-red-500">
-          ✕
-        </Text>
+        <View className="absolute right-2 top-2">
+          <CloseIcon size={18} color={CORAL} />
+        </View>
       )}
     </Pressable>
   );

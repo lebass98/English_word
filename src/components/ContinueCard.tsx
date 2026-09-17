@@ -12,6 +12,7 @@ import {
   knownCountInWords,
 } from "../stores/selectors";
 import { useAppStore } from "../stores/useAppStore";
+import { PictureIcon, RocketIcon } from "./icons";
 
 /** 스켈레톤과 실제 카드의 높이를 맞춰 저장소 로드 직후 화면이 밀리지 않게 한다 */
 const CARD_MIN_HEIGHT = "min-h-[224px]";
@@ -91,7 +92,7 @@ export function ContinueCard() {
           className="flex-row items-center gap-4 active:opacity-70"
         >
           <Thumb>
-            <Text className="text-[32px]">🚀</Text>
+            <RocketIcon size={32} color="#0EB582" />
           </Thumb>
           <View className="flex-1">
             <Text className="text-[12px] font-bold text-mint">
@@ -144,7 +145,7 @@ export function ContinueCard() {
               style={{ width: "100%", height: "100%" }}
             />
           ) : (
-            <Text className="text-[28px]">🖼️</Text>
+            <PictureIcon size={28} color="#cbd5e1" />
           )}
         </Thumb>
         <View className="flex-1">

@@ -222,6 +222,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   resolve: require("../../../assets/words/r/resolve.png"),
   resonance: require("../../../assets/words/r/resonance.png"),
   resort: require("../../../assets/words/r/resort.png"),
+  resounding: require("../../../assets/words/r/resounding.png"),
   resource: require("../../../assets/words/r/resource.png"),
   resources: require("../../../assets/words/r/resources.png"),
   respect: require("../../../assets/words/r/respect.png"),

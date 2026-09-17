@@ -31,6 +31,8 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-17
+- 토익 35단원 빠진 그림 16장 선형그래픽으로 생성 및 등록
+  - 대상: unrivaled, accommodations, frozen, courtyard, canceled, landmark, nightly, holder, resounding, worldwide, theatrical, proudly, theatergoer, appraise, discretionary, unease
 - 퀴즈 유형 선택 카드를 2열 그리드로 배치 (학년 화면 유닛 카드와 같은 16px 간격)
 - 일본어 JLPT N5 Unit 12 단어 선형그래픽 이미지 제작 및 등록 (辛い, 苦い, 楽しい, 悲しい, つまらない 외 15개)
 - 토익 34단원 빠진 그림 1장 선형그래픽으로 생성 및 등록

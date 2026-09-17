@@ -229,6 +229,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   discrepancy: require("../../../assets/words/d/discrepancy.png"),
   discrete: require("../../../assets/words/d/discrete.png"),
   discretion: require("../../../assets/words/d/discretion.png"),
+  discretionary: require("../../../assets/words/d/discretionary.png"),
   discriminate: require("../../../assets/words/d/discriminate.png"),
   discuss: require("../../../assets/words/d/discuss.png"),
   discussion: require("../../../assets/words/d/discussion.png"),

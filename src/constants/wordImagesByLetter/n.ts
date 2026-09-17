@@ -56,6 +56,7 @@ export const IMAGES_N: Record<string, ImageSourcePropType> = {
   nickname: require("../../../assets/words/n/nickname.png"),
   niece: require("../../../assets/words/n/niece.png"),
   night: require("../../../assets/words/n/night.png"),
+  nightly: require("../../../assets/words/n/nightly.png"),
   "no longer": require("../../../assets/words/n/no-longer.png"),
   "no smoking section": require("../../../assets/words/n/no-smoking-section.png"),
   noble: require("../../../assets/words/n/noble.png"),

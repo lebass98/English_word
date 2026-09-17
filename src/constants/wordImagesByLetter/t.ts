@@ -69,6 +69,8 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   texture: require("../../../assets/words/t/texture.png"),
   "thanks to": require("../../../assets/words/t/thanks-to.png"),
   theater: require("../../../assets/words/t/theater.png"),
+  theatergoer: require("../../../assets/words/t/theatergoer.png"),
+  theatrical: require("../../../assets/words/t/theatrical.png"),
   theft: require("../../../assets/words/t/theft.png"),
   theme: require("../../../assets/words/t/theme.png"),
   theory: require("../../../assets/words/t/theory.png"),

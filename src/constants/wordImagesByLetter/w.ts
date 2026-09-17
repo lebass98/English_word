@@ -102,6 +102,7 @@ export const IMAGES_W: Record<string, ImageSourcePropType> = {
   workforce: require("../../../assets/words/w/workforce.png"),
   workout: require("../../../assets/words/w/workout.png"),
   "world-renowned": require("../../../assets/words/w/world-renowned.png"),
+  worldwide: require("../../../assets/words/w/worldwide.png"),
   worry: require("../../../assets/words/w/worry.png"),
   worse: require("../../../assets/words/w/worse.png"),
   worship: require("../../../assets/words/w/worship.png"),

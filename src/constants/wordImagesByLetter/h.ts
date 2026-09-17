@@ -36,6 +36,7 @@ export const IMAGES_H: Record<string, ImageSourcePropType> = {
   hay: require("../../../assets/words/h/hay.png"),
   hazard: require("../../../assets/words/h/hazard.png"),
   hazardous: require("../../../assets/words/h/hazardous.png"),
+  headhunting: require("../../../assets/words/h/headhunting.png"),
   headquarters: require("../../../assets/words/h/headquarters.png"),
   heal: require("../../../assets/words/h/heal.png"),
   health: require("../../../assets/words/h/health.png"),

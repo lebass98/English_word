@@ -31,6 +31,11 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-17
+- 토익 과정을 그림 카탈로그에 추가하고 27단원부터 그림 생성 시작 (그림 없는 단어 633개)
+  - `image_catalog.py` 의 과정 목록에 toeic(tc) 추가. 토익 단어는 예문이 없어 뜻을 보고 영문 장면을 새로 작성
+  - 27~33단원 60단어 장면을 `scripts/tc_scenes.json` 에 작성, 나머지는 같은 철자의 기존 장면을 사용
+
+### 2026-09-17
 - 토익(TOEIC) 코스 신규 단어 66종 선형그래픽 이미지 등록 및 동기화
   - 대상: accountant, accrue, allergic, compensation, complication, manuscript, pertinent, signal, spicy 등
 - 토플 코스 1,495단어 그림을 모두 채움 (이번 실행에서 597장 생성, 실패 0)

@@ -42,7 +42,7 @@ ASSETS = os.path.join(ROOT, "assets/words")
 # 학습 과정 이름 → 단어 id 앞머리, 그리고 대표 뜻을 정할 때의 우선순위 (낮을수록 먼저)
 COURSES = [
     ("middle-1", "m1"), ("middle-2", "m2"), ("middle-3", "m3"),
-    ("high-1", "h1"), ("high-2", "h2"), ("high-3", "h3"), ("toefl", "tf"),
+    ("high-1", "h1"), ("high-2", "h2"), ("high-3", "h3"), ("toefl", "tf"), ("toeic", "tc"),
 ]
 RANK = {code: i for i, (_, code) in enumerate(COURSES)}
 
@@ -87,7 +87,7 @@ def load_courses():
 def course_of(word_id, source_path):
     """장면 한 건이 어느 과정 것인지. id 가 있으면 id 로, 없으면 파일 이름으로"""
     for text in (word_id or "", os.path.basename(source_path)):
-        m = re.search(r"\b(m[123]|h[123]|tf)(?:[-_]|$)", text) or re.search(r"(m[123]|h[123]|tf)_", text)
+        m = re.search(r"\b(m[123]|h[123]|tf|tc)(?:[-_]|$)", text) or re.search(r"(m[123]|h[123]|tf|tc)_", text)
         if m:
             return m.group(1)
     return None

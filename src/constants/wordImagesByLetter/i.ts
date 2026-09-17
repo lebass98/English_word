@@ -131,6 +131,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   indefinitely: require("../../../assets/words/i/indefinitely.png"),
   independence: require("../../../assets/words/i/independence.png"),
   independent: require("../../../assets/words/i/independent.png"),
+  independently: require("../../../assets/words/i/independently.png"),
   index: require("../../../assets/words/i/index.png"),
   indicate: require("../../../assets/words/i/indicate.png"),
   indication: require("../../../assets/words/i/indication.png"),

@@ -13,6 +13,7 @@ export const IMAGES_Q: Record<string, ImageSourcePropType> = {
   questionable: require("../../../assets/words/q/questionable.png"),
   questionnaire: require("../../../assets/words/q/questionnaire.png"),
   quick: require("../../../assets/words/q/quick.png"),
+  quicken: require("../../../assets/words/q/quicken.png"),
   quiet: require("../../../assets/words/q/quiet.png"),
   quit: require("../../../assets/words/q/quit.png"),
   quite: require("../../../assets/words/q/quite.png"),

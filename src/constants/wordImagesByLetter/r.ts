@@ -178,6 +178,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   request: require("../../../assets/words/r/request.png"),
   require: require("../../../assets/words/r/require.png"),
   required: require("../../../assets/words/r/required.png"),
+  requisition: require("../../../assets/words/r/requisition.png"),
   rescue: require("../../../assets/words/r/rescue.png"),
   research: require("../../../assets/words/r/research.png"),
   resemble: require("../../../assets/words/r/resemble.png"),

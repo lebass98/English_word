@@ -18,7 +18,11 @@ import {
   View,
 } from "react-native";
 import { BackButton } from "../../src/components/BackButton";
-import { CheckIcon, SpeakerIcon } from "../../src/components/icons";
+import {
+  CheckIcon,
+  ChevronRightIcon,
+  SpeakerIcon,
+} from "../../src/components/icons";
 import { PillButton } from "../../src/components/PillButton";
 import {
   MAX_CONTENT_WIDTH,
@@ -33,6 +37,7 @@ import { useT, type StringKey } from "../../src/i18n";
 import {
   buildQuiz,
   imageOf,
+  isQuizKind,
   QUIZ_KINDS,
   QUIZ_SIZE,
   scoreOf,
@@ -89,11 +94,31 @@ export default function QuizScreen() {
     gradeId: raw,
     unit,
     size,
-  } = useLocalSearchParams<{ gradeId: string; unit?: string; size?: string }>();
+    kind: kindParam,
+  } = useLocalSearchParams<{
+    gradeId: string;
+    unit?: string;
+    size?: string;
+    kind?: string;
+  }>();
   const gradeId = raw ?? "";
   /** 유닛을 끝내고 바로 들어온 확인 퀴즈면 그 유닛 번호가 들어온다 */
   const unitNo = unit ? Number(unit) : null;
   const quizSize = size ? Number(size) : QUIZ_SIZE;
+
+  /*
+   * 낼 문제 유형.
+   *
+   * 유닛 확인 퀴즈는 고르는 자리 없이 바로 시작하므로 늘 섞어서 낸다.
+   * 단어 퀴즈로 들어오면 먼저 유형을 고르게 하고, 고른 값이 주소에 실려 돌아온다.
+   */
+  const chosen = isQuizKind(kindParam) ? kindParam : null;
+  const kinds: readonly QuizKind[] = useMemo(
+    () => (chosen ? [chosen] : QUIZ_KINDS),
+    [chosen],
+  );
+  /** 유닛 퀴즈가 아니고 유형도 안 골랐으면 고르는 화면을 먼저 보여 준다 */
+  const needsKind = !unitNo && !chosen && kindParam !== "mix";
   const t = useT();
   const { width: screenWidth } = useWindowDimensions();
   /*
@@ -111,7 +136,11 @@ export default function QuizScreen() {
   const recordQuiz = useAppStore((s) => s.recordQuiz);
   const speechVolume = useAppStore((s) => s.speechVolume);
   /** 유닛 확인 퀴즈는 8문제짜리라 학년 전체 기록과 섞지 않는다 */
-  const recordKey = unitNo ? `${gradeId}:u${unitNo}` : gradeId;
+  const recordKey = unitNo
+    ? `${gradeId}:u${unitNo}`
+    : chosen
+      ? `${gradeId}:k-${chosen}`
+      : gradeId;
   const best = useAppStore((s) => s.quizRecords[recordKey]?.best ?? 0);
 
   // 학년 단어 목록. 없는 학년이면 빈 배열이 매번 새로 생기므로 메모해 둔다
@@ -139,7 +168,7 @@ export default function QuizScreen() {
       words,
       useAppStore.getState().entries,
       quizSize,
-      QUIZ_KINDS,
+      kinds,
       gradeWords,
     ),
   );
@@ -171,7 +200,7 @@ export default function QuizScreen() {
         words,
         useAppStore.getState().entries,
         quizSize,
-        QUIZ_KINDS,
+        kinds,
         gradeWords,
       ),
     );
@@ -180,15 +209,24 @@ export default function QuizScreen() {
     setRevealed(false);
     setLog([]);
     setRound((r) => r + 1);
-  }, [words, gradeWords, quizSize]);
+  }, [words, gradeWords, quizSize, kinds]);
 
   // 학년을 바꿔 들어오면 판을 다시 뽑는다.
   // effect 가 아니라 렌더 중에 맞춰야 이전 학년 문제가 한 번 스쳐 지나가지 않는다
-  const scope = `${gradeId}:${unitNo ?? "all"}`;
+  const scope = `${gradeId}:${unitNo ?? "all"}:${chosen ?? "mix"}`;
   const [builtFor, setBuiltFor] = useState(scope);
   if (builtFor !== scope) {
     setBuiltFor(scope);
     restart();
+  }
+
+  if (needsKind) {
+    return (
+      <KindPicker
+        gradeId={gradeId}
+        gradeLabel={grade?.label ?? t("quiz.title")}
+      />
+    );
   }
 
   if (questions.length === 0) {
@@ -290,6 +328,89 @@ export default function QuizScreen() {
         speechCode={speechCode}
         speechVolume={speechVolume}
       />
+    </Screen>
+  );
+}
+
+/** 고를 수 있는 문제 유형. "섞어서"가 맨 앞이다 */
+const KIND_OPTIONS: { value: QuizKind | "mix"; emoji: string }[] = [
+  { value: "mix", emoji: "🎲" },
+  { value: "imageToWord", emoji: "🖼️" },
+  { value: "wordToImage", emoji: "🔤" },
+  { value: "wordToMeaning", emoji: "📖" },
+  { value: "meaningToWord", emoji: "💡" },
+  { value: "listenToWord", emoji: "🎧" },
+  { value: "cloze", emoji: "📝" },
+  { value: "spelling", emoji: "✏️" },
+];
+
+/**
+ * 문제 유형 고르는 화면.
+ * 단어 퀴즈로 들어오면 먼저 이 화면이 뜬다.
+ * 유닛을 끝내고 자동으로 이어지는 확인 퀴즈는 이 화면 없이 섞어서 바로 시작한다.
+ */
+function KindPicker({
+  gradeId,
+  gradeLabel,
+}: {
+  gradeId: string;
+  gradeLabel: string;
+}) {
+  const t = useT();
+  const router = useRouter();
+  const records = useAppStore((s) => s.quizRecords);
+
+  return (
+    <Screen>
+      <ScreenHeader>
+        <BackButton fallbackHref={`/grade/${gradeId}`} />
+        <View className="flex-1">
+          <Text className="text-2xl font-bold text-ink">
+            {t("quiz.title")}
+          </Text>
+          <Text className="mt-0.5 text-[13px] text-slate-500">{gradeLabel}</Text>
+        </View>
+      </ScreenHeader>
+
+      <ScrollView contentContainerClassName="gap-3 px-6 pb-10 pt-6">
+        <Text className="text-[13px] text-slate-500">
+          {t("quiz.chooseKind")}
+        </Text>
+
+        {KIND_OPTIONS.map(({ value, emoji }) => {
+          // 섞어서는 예전 기록을 그대로 쓰고, 유형별은 따로 쌓는다
+          const best =
+            records[value === "mix" ? gradeId : `${gradeId}:k-${value}`]?.best;
+          return (
+            <Pressable
+              key={value}
+              onPress={() => router.push(`/quiz/${gradeId}?kind=${value}`)}
+              accessibilityRole="button"
+              className="flex-row items-center gap-4 rounded-3xl bg-surface px-5 py-4 shadow-neu-card active:shadow-neu-pressed"
+            >
+              <View className="h-11 w-11 items-center justify-center rounded-2xl bg-canvas shadow-neu-inset">
+                <Text className="text-[20px]">{emoji}</Text>
+              </View>
+              <View className="flex-1">
+                <Text className="text-[15px] font-bold text-ink">
+                  {t(`quiz.kind.${value}` as StringKey)}
+                </Text>
+                <Text className="mt-0.5 text-[12px] text-slate-500">
+                  {t(`quiz.kind.${value}Desc` as StringKey)}
+                </Text>
+              </View>
+              {/* 한 번이라도 풀었으면 최고점을 보여 준다 */}
+              {best ? (
+                <Text className="text-[12px] font-bold text-mint">
+                  {t("quiz.best", { score: best })}
+                </Text>
+              ) : (
+                <ChevronRightIcon size={16} color="#cbd5e1" />
+              )}
+            </Pressable>
+          );
+        })}
+      </ScrollView>
     </Screen>
   );
 }
@@ -693,6 +814,8 @@ function SpellingBoard({
   const letters = useMemo(() => new Set(target.split("")), [target]);
 
   const [tried, setTried] = useState<Set<string>>(() => new Set());
+  /** 힌트는 한 문제에 한 번, 글자 하나만 알려 준다 */
+  const [hintUsed, setHintUsed] = useState(false);
   const misses = useMemo(
     () => [...tried].filter((c) => !letters.has(c)).length,
     [tried, letters],
@@ -716,6 +839,16 @@ function SpellingBoard({
   const tap = (letter: string) => {
     if (revealed || finished.current) return;
     setTried((prev) => new Set(prev).add(letter));
+  };
+
+  /** 아직 안 나온 글자 중 하나를 채워 준다 */
+  const useHint = () => {
+    if (hintUsed || revealed || finished.current) return;
+    const left = [...letters].filter((c) => !tried.has(c));
+    if (left.length === 0) return;
+    const pickOne = left[Math.floor(Math.random() * left.length)];
+    setHintUsed(true);
+    setTried((prev) => new Set(prev).add(pickOne));
   };
 
   return (
@@ -786,6 +919,27 @@ function SpellingBoard({
           accessibilityLabel={t("quiz.replay")}
         >
           <SpeakerIcon size={15} color="#64748b" />
+        </Pressable>
+        {/* 힌트는 한 번만. 다 쓰면 눌리지 않는다 */}
+        <Pressable
+          onPress={useHint}
+          disabled={hintUsed || revealed}
+          accessibilityRole="button"
+          accessibilityLabel={t("quiz.hint")}
+          className={`flex-row items-center gap-1 rounded-full px-3 py-1.5 ${
+            hintUsed || revealed
+              ? "bg-canvas shadow-neu-inset"
+              : "bg-[#e9e6f8] shadow-neu-sm active:opacity-70"
+          }`}
+        >
+          <Text className="text-[12px]">💡</Text>
+          <Text
+            className={`text-[12px] font-bold ${
+              hintUsed || revealed ? "text-slate-300" : "text-indigo-700"
+            }`}
+          >
+            {t("quiz.hint")}
+          </Text>
         </Pressable>
       </View>
 

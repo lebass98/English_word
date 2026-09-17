@@ -39,6 +39,13 @@ export const QUIZ_KINDS = [
 
 export type QuizKind = (typeof QUIZ_KINDS)[number];
 
+/** 주소에 실려 온 값이 아는 유형인지 가려낸다 */
+export function isQuizKind(value: unknown): value is QuizKind {
+  return (
+    typeof value === "string" && (QUIZ_KINDS as readonly string[]).includes(value)
+  );
+}
+
 /** 예문에서 정답 단어를 빈칸으로 바꾼 조각 */
 export interface Cloze {
   before: string;

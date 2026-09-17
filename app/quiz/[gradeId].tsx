@@ -724,12 +724,15 @@ function QuizBody({
       contentContainerClassName="gap-4 px-6 pb-8 pt-4"
       keyboardShouldPersistTaps="handled"
     >
-      <Text
-        style={{ width: splitPanes ? availWidth : singleWidth }}
-        className="self-center text-center text-[13px] text-slate-500"
-      >
-        {t(PROMPT_KEY[kind])}
-      </Text>
+      {/* 철자 맞추기는 그림과 뜻만으로 충분해 안내 문구를 뺀다 */}
+      {kind !== "spelling" && (
+        <Text
+          style={{ width: splitPanes ? availWidth : singleWidth }}
+          className="self-center text-center text-[13px] text-slate-500"
+        >
+          {t(PROMPT_KEY[kind])}
+        </Text>
+      )}
 
       <Animated.View
         style={[
@@ -888,22 +891,40 @@ function SpellingBoard({
             />
           </View>
         ) : null}
-        <View className="items-center gap-2 px-4 py-3">
-          <Text className="text-center text-[15px] font-bold text-slate-700">
+        {/* 뜻 옆에 발음 듣기와 힌트 버튼을 나란히 둔다 */}
+        <View className="flex-row flex-wrap items-center justify-center gap-2 px-4 py-3">
+          <Text className="shrink text-center text-[15px] font-bold text-slate-700">
             {answer.meaning}
           </Text>
-
-          {/* 남은 기회 */}
-          <View className="flex-row gap-1.5">
-            {Array.from({ length: SPELLING_LIVES }).map((_, i) => (
-              <Text
-                key={i}
-                className={`text-[15px] ${i < lives ? "" : "opacity-25"}`}
-              >
-                {i < lives ? "💚" : "🤍"}
-              </Text>
-            ))}
-          </View>
+          <Pressable
+            onPress={onSpeak}
+            className="rounded-full bg-surface p-2 shadow-neu-sm active:opacity-70"
+            accessibilityRole="button"
+            accessibilityLabel={t("quiz.replay")}
+          >
+            <SpeakerIcon size={15} color="#64748b" />
+          </Pressable>
+          {/* 힌트는 한 번만. 다 쓰면 눌리지 않는다 */}
+          <Pressable
+            onPress={useHint}
+            disabled={hintUsed || revealed}
+            accessibilityRole="button"
+            accessibilityLabel={t("quiz.hint")}
+            className={`flex-row items-center gap-1 rounded-full px-3 py-1.5 ${
+              hintUsed || revealed
+                ? "bg-canvas shadow-neu-inset"
+                : "bg-[#e9e6f8] shadow-neu-sm active:opacity-70"
+            }`}
+          >
+            <Text className="text-[12px]">💡</Text>
+            <Text
+              className={`text-[12px] font-bold ${
+                hintUsed || revealed ? "text-slate-300" : "text-indigo-700"
+              }`}
+            >
+              {t("quiz.hint")}
+            </Text>
+          </Pressable>
         </View>
       </View>
 
@@ -939,41 +960,6 @@ function SpellingBoard({
             </View>
           );
         })}
-      </View>
-
-      <View className="flex-row items-center justify-center gap-2">
-        <Text className="text-[12px] text-slate-400">
-          {t("quiz.spellHint")}
-        </Text>
-        <Pressable
-          onPress={onSpeak}
-          className="rounded-full bg-surface p-2 shadow-neu-sm active:opacity-70"
-          accessibilityRole="button"
-          accessibilityLabel={t("quiz.replay")}
-        >
-          <SpeakerIcon size={15} color="#64748b" />
-        </Pressable>
-        {/* 힌트는 한 번만. 다 쓰면 눌리지 않는다 */}
-        <Pressable
-          onPress={useHint}
-          disabled={hintUsed || revealed}
-          accessibilityRole="button"
-          accessibilityLabel={t("quiz.hint")}
-          className={`flex-row items-center gap-1 rounded-full px-3 py-1.5 ${
-            hintUsed || revealed
-              ? "bg-canvas shadow-neu-inset"
-              : "bg-[#e9e6f8] shadow-neu-sm active:opacity-70"
-          }`}
-        >
-          <Text className="text-[12px]">💡</Text>
-          <Text
-            className={`text-[12px] font-bold ${
-              hintUsed || revealed ? "text-slate-300" : "text-indigo-700"
-            }`}
-          >
-            {t("quiz.hint")}
-          </Text>
-        </Pressable>
       </View>
 
       {/* 키보드 자판 (QWERTY). 줄마다 가운데 정렬해 실제 자판처럼 엇갈리게 둔다 */}

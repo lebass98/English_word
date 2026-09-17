@@ -69,6 +69,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   thermometer: require("../../../assets/words/t/thermometer.png"),
   thesis: require("../../../assets/words/t/thesis.png"),
   thief: require("../../../assets/words/t/thief.png"),
+  thigh: require("../../../assets/words/t/thigh.png"),
   thin: require("../../../assets/words/t/thin.png"),
   thirsty: require("../../../assets/words/t/thirsty.png"),
   thorn: require("../../../assets/words/t/thorn.png"),

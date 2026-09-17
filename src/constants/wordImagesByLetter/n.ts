@@ -53,6 +53,7 @@ export const IMAGES_N: Record<string, ImageSourcePropType> = {
   noise: require("../../../assets/words/n/noise.png"),
   nomadic: require("../../../assets/words/n/nomadic.png"),
   nominate: require("../../../assets/words/n/nominate.png"),
+  "non-committal": require("../../../assets/words/n/non-committal.png"),
   none: require("../../../assets/words/n/none.png"),
   nonetheless: require("../../../assets/words/n/nonetheless.png"),
   norm: require("../../../assets/words/n/norm.png"),

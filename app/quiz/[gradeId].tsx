@@ -27,7 +27,10 @@ import {
   ScreenHeader,
 } from "../../src/components/Screen";
 import { useGrade } from "../../src/constants/grades";
-import { studyLanguageOf, studyLangOfWordId } from "../../src/constants/languages";
+import {
+  studyLanguageOf,
+  studyLangOfWordId,
+} from "../../src/constants/languages";
 import { useVocab, type Word } from "../../src/constants/words";
 import { useT, type StringKey } from "../../src/i18n";
 import {
@@ -45,9 +48,6 @@ import { speakWord, stopSpeaking } from "../../src/lib/speech";
 import { useAppStore } from "../../src/stores/useAppStore";
 
 const MINT = "#0EB582";
-
-/** 그림 카드 안쪽 여백 (p-3). 프레임이 그림에 딱 붙도록 계산에 쓴다 */
-const CARD_PAD = 12;
 
 /** 보기 그림 한 칸의 테두리 여백 (p-1.5) */
 const CELL_PAD = 6;
@@ -150,9 +150,7 @@ export default function QuizScreen() {
   // 유닛 확인 퀴즈는 그 유닛 단어에서만 낸다. 오답 보기는 학년 전체에서 가져온다
   const words = useMemo(
     () =>
-      unitNo
-        ? (vocab.unitsOf(gradeId)[unitNo - 1]?.words ?? [])
-        : gradeWords,
+      unitNo ? (vocab.unitsOf(gradeId)[unitNo - 1]?.words ?? []) : gradeWords,
     [vocab, gradeId, unitNo, gradeWords],
   );
 
@@ -334,7 +332,6 @@ export default function QuizScreen() {
 /** 고를 수 있는 문제 유형. "섞어서"가 맨 앞이다 */
 const KIND_OPTIONS: { value: QuizKind | "mix"; emoji: string }[] = [
   { value: "mix", emoji: "🎲" },
-  { value: "imageToWord", emoji: "🖼️" },
   { value: "wordToImage", emoji: "🔤" },
   { value: "wordToMeaning", emoji: "📖" },
   { value: "meaningToWord", emoji: "💡" },
@@ -371,7 +368,9 @@ function KindPicker({
         <BackButton fallbackHref={`/grade/${gradeId}`} />
         <View className="flex-1">
           <Text className="text-2xl font-bold text-ink">{t("quiz.title")}</Text>
-          <Text className="mt-0.5 text-[13px] text-slate-500">{gradeLabel}</Text>
+          <Text className="mt-0.5 text-[13px] text-slate-500">
+            {gradeLabel}
+          </Text>
         </View>
       </ScreenHeader>
 
@@ -387,7 +386,8 @@ function KindPicker({
           {KIND_OPTIONS.map(({ value, emoji }) => {
             // 섞어서는 예전 기록을 그대로 쓰고, 유형별은 따로 쌓는다
             const best =
-              records[value === "mix" ? gradeId : `${gradeId}:k-${value}`]?.best;
+              records[value === "mix" ? gradeId : `${gradeId}:k-${value}`]
+                ?.best;
             return (
               <Pressable
                 key={value}
@@ -464,7 +464,6 @@ function ProgressBar({ current, total }: { current: number; total: number }) {
 
 /** 문제 유형별 안내 문구 */
 const PROMPT_KEY: Record<QuizKind, StringKey> = {
-  imageToWord: "quiz.pickWord",
   wordToImage: "quiz.pickImage",
   wordToMeaning: "quiz.pickMeaning",
   meaningToWord: "quiz.pickWordByMeaning",
@@ -475,7 +474,7 @@ const PROMPT_KEY: Record<QuizKind, StringKey> = {
 
 /**
  * 문제 본문.
- * 일곱 가지 유형을 한 자리에서 그린다. 제시부(위)와 보기부(아래)만 유형에 따라 갈린다.
+ * 여섯 가지 유형을 한 자리에서 그린다. 제시부(위)와 보기부(아래)만 유형에 따라 갈린다.
  */
 function QuizBody({
   question,
@@ -533,15 +532,15 @@ function QuizBody({
     Math.max(MIN_COLUMN, Math.min(paneWidth, heightBudget, MAX_COLUMN)),
   );
 
-  /** 문제 그림 한 장. 카드 좌우 여백 없이 열을 그대로 채운다 */
-  const heroSize = columnWidth;
-
   /** 보기 그림 한 변. 열 너비에서 간격과 테두리 여백을 빼면 딱 떨어진다 */
   const cellSize = Math.floor((columnWidth - GRID_GAP) / 2) - CELL_PAD * 2;
 
-  /** 철자 맞추기의 힌트 그림은 자판이 들어갈 자리를 남겨야 해서 더 작다 */
-  const hintSize = Math.round(
-    Math.min(columnWidth - CARD_PAD * 2, availHeight * 0.3, 200),
+  /**
+   * 철자 맞추기는 보기 목록이 없으니 높이 예산에 묶지 않고 폭을 그대로 쓴다.
+   * 그림이 카드 좌우를 꽉 채우고, 자판은 아래로 스크롤해 닿는다.
+   */
+  const spellWidth = Math.round(
+    Math.max(MIN_COLUMN, Math.min(availWidth, MAX_COLUMN)),
   );
 
   const speak = useCallback(() => {
@@ -618,11 +617,6 @@ function QuizBody({
   let answers: ReactNode = null;
 
   switch (kind) {
-    case "imageToWord":
-      prompt = <HeroImage word={answer} size={heroSize} />;
-      answers = wordChoices;
-      break;
-
     case "wordToImage":
       prompt = <WordPrompt word={answer} onSpeak={speak} />;
       answers = (
@@ -704,7 +698,7 @@ function QuizBody({
           key={answer.id}
           answer={answer}
           revealed={revealed}
-          hintSize={hintSize}
+          width={spellWidth}
           onSpeak={speak}
           onDone={(correct) => onSubmit(null, correct)}
         />
@@ -714,6 +708,8 @@ function QuizBody({
 
   // 철자 맞추기는 한 덩어리라 좌우로 나누지 않는다
   const splitPanes = twoPane && answers !== null;
+  /** 좌우로 나누지 않을 때 한 줄의 폭 */
+  const singleWidth = kind === "spelling" ? spellWidth : columnWidth;
 
   return (
     <ScrollView
@@ -729,7 +725,7 @@ function QuizBody({
       keyboardShouldPersistTaps="handled"
     >
       <Text
-        style={{ width: splitPanes ? availWidth : columnWidth }}
+        style={{ width: splitPanes ? availWidth : singleWidth }}
         className="self-center text-center text-[13px] text-slate-500"
       >
         {t(PROMPT_KEY[kind])}
@@ -740,11 +736,11 @@ function QuizBody({
           style,
           splitPanes
             ? { width: availWidth, gap: SECTION_GAP }
-            : { width: columnWidth, gap: SECTION_GAP },
+            : { width: singleWidth, gap: SECTION_GAP },
         ]}
         className={`self-center ${splitPanes ? "flex-row items-start" : ""}`}
       >
-        <View style={{ width: columnWidth }}>{prompt}</View>
+        <View style={{ width: singleWidth }}>{prompt}</View>
         {answers && (
           <View style={splitPanes ? { flex: 1 } : { width: columnWidth }}>
             {answers}
@@ -755,7 +751,7 @@ function QuizBody({
       {/* 정답이 드러난 뒤에만 뜻을 보여 준다. 먼저 보이면 문제가 안 된다 */}
       {revealed && (
         <View
-          style={{ width: splitPanes ? availWidth : columnWidth }}
+          style={{ width: splitPanes ? availWidth : singleWidth }}
           className="items-center gap-0.5 self-center rounded-2xl bg-surface px-4 py-2.5 shadow-neu-sm"
         >
           <Text className="text-[15px] font-bold text-slate-800">
@@ -767,23 +763,6 @@ function QuizBody({
         </View>
       )}
     </ScrollView>
-  );
-}
-
-/** 문제로 내는 큰 그림 한 장 */
-function HeroImage({ word, size }: { word: Word; size: number }) {
-  return (
-    // 좌우 여백 없이 그림이 카드를 그대로 채운다
-    <View
-      style={{ width: size, height: size }}
-      className="overflow-hidden rounded-3xl bg-canvas shadow-neu-card"
-    >
-      <Image
-        source={imageOf(word)}
-        resizeMode="cover"
-        style={{ width: "100%", height: "100%" }}
-      />
-    </View>
   );
 }
 
@@ -808,31 +787,44 @@ function WordPrompt({ word, onSpeak }: { word: Word; onSpeak: () => void }) {
  * 철자 맞추기.
  *
  * 그림과 뜻을 힌트로 주고 글자를 하나씩 고른다.
+ * 처음부터 전부 비우면 너무 어려워서 약 30%는 채워 둔 채 시작한다.
  * 틀릴 수 있는 횟수는 하트로 보여 준다. 다 쓰면 정답을 펼쳐 보여 주고 넘어간다.
  */
 function SpellingBoard({
   answer,
   revealed,
-  hintSize,
+  width,
   onSpeak,
   onDone,
 }: {
   answer: Word;
   revealed: boolean;
-  hintSize: number;
+  /** 보드 전체 폭 (px). 그림과 자판이 이 폭을 꽉 채운다 */
+  width: number;
   onSpeak: () => void;
   onDone: (correct: boolean) => void;
 }) {
   const t = useT();
   const target = answer.word.toUpperCase();
-  const letters = useMemo(() => new Set(target.split("")), [target]);
+  const chars = useMemo(() => target.split(""), [target]);
+
+  /** 미리 채워 둔 칸 번호. 문제마다 한 번만 뽑는다 */
+  const [given] = useState(() => givenSlotsOf(chars.length));
+
+  /** 사용자가 맞혀야 하는 글자 (비워 둔 칸의 글자) */
+  const letters = useMemo(
+    () => new Set(chars.filter((_, i) => !given.has(i))),
+    [chars, given],
+  );
+  /** 판에 들어 있는 모든 글자. 오답 판정에 쓴다 */
+  const inWord = useMemo(() => new Set(chars), [chars]);
 
   const [tried, setTried] = useState<Set<string>>(() => new Set());
   /** 힌트는 한 문제에 한 번, 글자 하나만 알려 준다 */
   const [hintUsed, setHintUsed] = useState(false);
   const misses = useMemo(
-    () => [...tried].filter((c) => !letters.has(c)).length,
-    [tried, letters],
+    () => [...tried].filter((c) => !inWord.has(c)).length,
+    [tried, inWord],
   );
   const lives = SPELLING_LIVES - misses;
   const solved = useMemo(
@@ -865,56 +857,81 @@ function SpellingBoard({
     setTried((prev) => new Set(prev).add(pickOne));
   };
 
+  /*
+   * 빈칸 크기. 긴 단어(10자)도 한 줄에 들어가도록 폭에서 계산한다.
+   * 줄이 바뀌면 단어가 중간에 끊겨 보여서 읽기 어렵다.
+   */
+  const slotGap = 6;
+  const slotW = Math.min(
+    40,
+    Math.floor((width - slotGap * (chars.length - 1)) / chars.length),
+  );
+
+  /** 자판 한 칸 폭. 가장 긴 첫 줄(10칸)이 폭을 꽉 채운다 */
+  const keyW = Math.floor(
+    (width - KEY_GAP * (KEY_ROWS[0].length - 1)) / KEY_ROWS[0].length,
+  );
+  const keyH = Math.round(Math.min(52, keyW * 1.35));
+
+  const image = imageOf(answer);
+
   return (
-    <View className="gap-4">
-      <View
-        style={{ padding: CARD_PAD }}
-        className="items-center gap-3 rounded-3xl bg-surface shadow-neu-card"
-      >
-        {/* 그림이 있으면 그림을, 없으면 뜻만 힌트로 준다 */}
-        {imageOf(answer) ? (
-          <View
-            style={{ width: hintSize, height: hintSize }}
-            className="overflow-hidden rounded-2xl bg-canvas shadow-neu-inset"
-          >
+    <View style={{ width }} className="gap-4">
+      <View className="overflow-hidden rounded-3xl bg-surface shadow-neu-card">
+        {/* 그림이 있으면 카드 좌우를 꽉 채워 보여 주고, 없으면 뜻만 힌트로 준다 */}
+        {image ? (
+          <View style={{ width, aspectRatio: 1 }} className="bg-canvas">
             <Image
-              source={imageOf(answer)}
+              source={image}
               resizeMode="cover"
               style={{ width: "100%", height: "100%" }}
             />
           </View>
         ) : null}
-        <Text className="px-3 text-center text-[15px] font-bold text-slate-700">
-          {answer.meaning}
-        </Text>
+        <View className="items-center gap-2 px-4 py-3">
+          <Text className="text-center text-[15px] font-bold text-slate-700">
+            {answer.meaning}
+          </Text>
 
-        {/* 남은 기회 */}
-        <View className="flex-row gap-1.5">
-          {Array.from({ length: SPELLING_LIVES }).map((_, i) => (
-            <Text
-              key={i}
-              className={`text-[15px] ${i < lives ? "" : "opacity-25"}`}
-            >
-              {i < lives ? "💚" : "🤍"}
-            </Text>
-          ))}
+          {/* 남은 기회 */}
+          <View className="flex-row gap-1.5">
+            {Array.from({ length: SPELLING_LIVES }).map((_, i) => (
+              <Text
+                key={i}
+                className={`text-[15px] ${i < lives ? "" : "opacity-25"}`}
+              >
+                {i < lives ? "💚" : "🤍"}
+              </Text>
+            ))}
+          </View>
         </View>
       </View>
 
-      {/* 빈칸. 맞힌 글자만 채워진다 */}
-      <View className="flex-row flex-wrap justify-center gap-1.5">
-        {target.split("").map((ch, i) => {
-          const open = tried.has(ch) || revealed || lives <= 0;
+      {/* 빈칸. 미리 준 칸과 맞힌 글자만 채워진다 */}
+      <View style={{ gap: slotGap }} className="flex-row justify-center">
+        {chars.map((ch, i) => {
+          const pre = given.has(i);
+          const open = pre || tried.has(ch) || revealed || lives <= 0;
           return (
             <View
               key={`${ch}-${i}`}
-              className={`h-11 w-8 items-center justify-center rounded-lg ${
-                open ? "bg-[#dcf2ea]" : "bg-canvas shadow-neu-inset"
+              style={{ width: slotW, height: Math.round(slotW * 1.3) }}
+              className={`items-center justify-center rounded-lg ${
+                pre
+                  ? "bg-surface shadow-neu-sm"
+                  : open
+                    ? "bg-[#dcf2ea]"
+                    : "bg-canvas shadow-neu-inset"
               }`}
             >
               <Text
-                className={`text-[19px] font-black ${
-                  open ? "text-mint-dark" : "text-transparent"
+                style={{ fontSize: Math.min(20, Math.round(slotW * 0.55)) }}
+                className={`font-black ${
+                  !open
+                    ? "text-transparent"
+                    : pre
+                      ? "text-slate-500"
+                      : "text-mint-dark"
                 }`}
               >
                 {ch}
@@ -925,7 +942,9 @@ function SpellingBoard({
       </View>
 
       <View className="flex-row items-center justify-center gap-2">
-        <Text className="text-[12px] text-slate-400">{t("quiz.spellHint")}</Text>
+        <Text className="text-[12px] text-slate-400">
+          {t("quiz.spellHint")}
+        </Text>
         <Pressable
           onPress={onSpeak}
           className="rounded-full bg-surface p-2 shadow-neu-sm active:opacity-70"
@@ -957,48 +976,79 @@ function SpellingBoard({
         </Pressable>
       </View>
 
-      {/* 글자판 */}
-      <View className="flex-row flex-wrap justify-center gap-1.5">
-        {ALPHABET.map((ch) => {
-          const used = tried.has(ch);
-          const good = used && letters.has(ch);
-          return (
-            <Pressable
-              key={ch}
-              onPress={() => tap(ch)}
-              disabled={used || revealed}
-              className={`h-9 w-9 items-center justify-center rounded-lg ${
-                !used
-                  ? "bg-surface shadow-neu-sm active:opacity-70"
-                  : good
-                    ? "bg-[#dcf2ea]"
-                    : "bg-canvas shadow-neu-inset"
-              }`}
-              accessibilityRole="button"
-              accessibilityLabel={ch}
-            >
-              <Text
-                className={`text-[14px] font-bold ${
-                  !used
-                    ? "text-slate-700"
-                    : good
-                      ? "text-mint-dark"
-                      : "text-slate-300"
-                }`}
-              >
-                {ch}
-              </Text>
-            </Pressable>
-          );
-        })}
+      {/* 키보드 자판 (QWERTY). 줄마다 가운데 정렬해 실제 자판처럼 엇갈리게 둔다 */}
+      <View style={{ gap: KEY_GAP }}>
+        {KEY_ROWS.map((row) => (
+          <View
+            key={row.join("")}
+            style={{ gap: KEY_GAP }}
+            className="flex-row justify-center"
+          >
+            {row.map((ch) => {
+              const used = tried.has(ch);
+              const good = used && inWord.has(ch);
+              return (
+                <Pressable
+                  key={ch}
+                  onPress={() => tap(ch)}
+                  disabled={used || revealed}
+                  style={{ width: keyW, height: keyH }}
+                  className={`items-center justify-center rounded-lg ${
+                    !used
+                      ? "bg-surface shadow-neu-sm active:opacity-70"
+                      : good
+                        ? "bg-[#dcf2ea]"
+                        : "bg-canvas shadow-neu-inset"
+                  }`}
+                  accessibilityRole="button"
+                  accessibilityLabel={ch}
+                >
+                  <Text
+                    className={`text-[15px] font-bold ${
+                      !used
+                        ? "text-slate-700"
+                        : good
+                          ? "text-mint-dark"
+                          : "text-slate-300"
+                    }`}
+                  >
+                    {ch}
+                  </Text>
+                </Pressable>
+              );
+            })}
+          </View>
+        ))}
       </View>
     </View>
   );
 }
 
-/** 글자판에 쓰는 알파벳 */
-const ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+/** 자판 배열 (QWERTY) */
+const KEY_ROWS = ["QWERTYUIOP", "ASDFGHJKL", "ZXCVBNM"].map((r) => r.split(""));
 
+/** 자판 칸 사이 간격 */
+const KEY_GAP = 5;
+
+/** 처음부터 채워 두는 칸의 비율. 나머지 70%를 사용자가 채운다 */
+const GIVEN_RATIO = 0.3;
+
+/**
+ * 미리 채워 둘 칸 번호를 뽑는다.
+ * 최소 한 칸은 채우고, 최소 두 칸은 비워 둬서 풀 거리가 남게 한다.
+ */
+function givenSlotsOf(length: number): Set<number> {
+  const count = Math.min(
+    Math.max(1, Math.round(length * GIVEN_RATIO)),
+    Math.max(0, length - 2),
+  );
+  const slots = Array.from({ length }, (_, i) => i);
+  for (let i = slots.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [slots[i], slots[j]] = [slots[j], slots[i]];
+  }
+  return new Set(slots.slice(0, count));
+}
 
 /**
  * 고른 보기의 표시 상태.
@@ -1231,21 +1281,26 @@ function QuizResult({
     <Screen>
       <ScreenHeader>
         <BackButton fallbackHref={`/grade/${gradeId}`} />
-        <Text className="flex-1 text-2xl font-bold text-ink">
+        <Text numberOfLines={1} className="flex-1 text-2xl font-bold text-ink">
           {t("quiz.result.title")}
         </Text>
       </ScreenHeader>
 
-      <ScrollView contentContainerClassName="gap-5 px-6 pb-10 pt-6">
+      <ScrollView
+        className="flex-1"
+        contentContainerClassName="gap-5 px-6 pb-10 pt-6"
+      >
         <Animated.View
           style={{ transform: [{ scale: pop }] }}
-          className="items-center gap-2 rounded-3xl bg-surface px-6 py-8 shadow-neu-card"
+          className="w-full items-center gap-2 rounded-3xl bg-surface px-6 py-8 shadow-neu-card"
         >
-          <Text className="text-[52px] font-black text-mint">{score}</Text>
-          <Text className="text-[14px] text-slate-500">
+          <Text className="text-center text-[52px] font-black leading-[60px] text-mint">
+            {score}
+          </Text>
+          <Text className="text-center text-[14px] text-slate-500">
             {t("quiz.result.correct", { correct, total })}
           </Text>
-          <Text className="mt-1 text-[15px] font-bold text-slate-700">
+          <Text className="mt-1 text-center text-[15px] font-bold text-slate-700">
             {praise}
           </Text>
           {beat && (
@@ -1256,13 +1311,13 @@ function QuizResult({
             </View>
           )}
           {combo >= 3 && (
-            <Text className="mt-1 text-[12px] text-slate-400">
+            <Text className="mt-1 text-center text-[12px] text-slate-400">
               {t("quiz.result.bestCombo", { count: combo })}
             </Text>
           )}
         </Animated.View>
 
-        <View className="flex-row gap-3">
+        <View className="w-full flex-row items-stretch gap-3">
           <PillButton
             label={t("quiz.startAgain")}
             variant="primary"
@@ -1280,44 +1335,62 @@ function QuizResult({
 
         {wrong.length > 0 && (
           <View className="gap-3">
-            <View className="flex-row items-baseline gap-2">
+            <View className="flex-row flex-wrap items-baseline gap-x-2 gap-y-0.5">
               <Text className="text-[15px] font-bold text-ink">
                 {t("quiz.result.wrongTitle")}
               </Text>
-              <Text className="text-[12px] text-slate-400">
+              <Text className="shrink text-[12px] text-slate-400">
                 {t("quiz.result.wrongHint")}
               </Text>
             </View>
-            {wrong.map((a) => (
-              <Pressable
-                key={a.question.answer.id}
-                onPress={() => router.push(`/study/${a.question.answer.id}`)}
-                className="flex-row items-center gap-3 rounded-2xl bg-surface px-4 py-3 shadow-neu-sm active:opacity-80"
-              >
-                <Image
-                  source={imageOf(a.question.answer)}
-                  resizeMode="contain"
-                  className="h-12 w-12"
-                />
-                <View className="flex-1">
-                  <Text className="text-[15px] font-bold text-slate-800">
-                    {a.question.answer.word}
-                  </Text>
-                  <Text
-                    numberOfLines={1}
-                    className="text-[12px] text-slate-500"
+            {wrong.map((a, i) => {
+              const image = imageOf(a.question.answer);
+              return (
+                <Pressable
+                  key={`${a.question.answer.id}-${i}`}
+                  onPress={() => router.push(`/study/${a.question.answer.id}`)}
+                  className="w-full flex-row items-center gap-3 rounded-2xl bg-surface px-4 py-3 shadow-neu-sm active:opacity-80"
+                >
+                  {/* 그림이 없는 단어도 같은 자리를 차지해 글자 줄이 어긋나지 않게 한다 */}
+                  <View
+                    style={{ width: 48, height: 48 }}
+                    className="overflow-hidden rounded-xl bg-canvas"
                   >
-                    {a.question.answer.meaning}
-                  </Text>
-                </View>
-                {/* 내가 잘못 고른 단어도 같이 보여 줘야 왜 틀렸는지 안다 */}
-                {a.picked && (
-                  <Text className="text-[12px] text-red-400">
-                    {a.picked.word}
-                  </Text>
-                )}
-              </Pressable>
-            ))}
+                    {image ? (
+                      <Image
+                        source={image}
+                        resizeMode="cover"
+                        style={{ width: 48, height: 48 }}
+                      />
+                    ) : null}
+                  </View>
+                  <View className="min-w-0 flex-1">
+                    <Text
+                      numberOfLines={1}
+                      className="text-[15px] font-bold text-slate-800"
+                    >
+                      {a.question.answer.word}
+                    </Text>
+                    <Text
+                      numberOfLines={1}
+                      className="text-[12px] text-slate-500"
+                    >
+                      {a.question.answer.meaning}
+                    </Text>
+                  </View>
+                  {/* 내가 잘못 고른 단어도 같이 보여 줘야 왜 틀렸는지 안다 */}
+                  {a.picked && (
+                    <Text
+                      numberOfLines={1}
+                      style={{ maxWidth: 110 }}
+                      className="shrink-0 text-right text-[12px] text-red-400 line-through"
+                    >
+                      {a.picked.word}
+                    </Text>
+                  )}
+                </Pressable>
+              );
+            })}
           </View>
         )}
 

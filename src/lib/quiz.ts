@@ -21,8 +21,6 @@ export const SPELLING_LIVES = 6;
  * 한 판에 여러 유형이 번갈아 나오면 다음 문제를 예측할 수 없어 덜 지루하다.
  */
 export const QUIZ_KINDS = [
-  /** 그림을 보고 단어 고르기 */
-  "imageToWord",
   /** 단어를 보고 그림 고르기 */
   "wordToImage",
   /** 단어를 보고 뜻 고르기 */
@@ -153,7 +151,6 @@ export function clozeOf(word: Word): Cloze | null {
 /** 그 유형으로 이 단어를 낼 수 있는지 */
 function supports(word: Word, kind: QuizKind): boolean {
   switch (kind) {
-    case "imageToWord":
     case "wordToImage":
       return hasImage(word);
     case "wordToMeaning":
@@ -171,7 +168,6 @@ function supports(word: Word, kind: QuizKind): boolean {
 /** 그 유형의 보기로 쓸 수 있는지. 정답과 조건이 다를 수 있다 */
 function usableAsChoice(word: Word, kind: QuizKind): boolean {
   switch (kind) {
-    case "imageToWord":
     case "wordToImage":
       return hasImage(word);
     case "wordToMeaning":

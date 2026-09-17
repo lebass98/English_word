@@ -31,6 +31,10 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-17
+- 퀴즈 개선
+  - '그림 보고 단어' 유형 삭제 (섞어서 모드도 여섯 가지로)
+  - 철자 맞추기: 그림을 카드 좌우 꽉 차게 정사각 비율로 확대, 글자 약 30%를 미리 채워 70%만 비움, 글자판을 QWERTY 자판 배열로 변경
+  - 결과 화면: 오답 목록 그림 자리 고정(그림 없는 단어도 줄 맞춤), 긴 단어 말줄임, 점수판·버튼 정렬 정리
 - 토익 35단원 빠진 그림 16장 선형그래픽으로 생성 및 등록
   - 대상: unrivaled, accommodations, frozen, courtyard, canceled, landmark, nightly, holder, resounding, worldwide, theatrical, proudly, theatergoer, appraise, discretionary, unease
 - 퀴즈 유형 선택 카드를 2열 그리드로 배치 (학년 화면 유닛 카드와 같은 16px 간격)

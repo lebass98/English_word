@@ -37,6 +37,7 @@ export const IMAGES_W: Record<string, ImageSourcePropType> = {
   weigh: require("../../../assets/words/w/weigh.png"),
   weight: require("../../../assets/words/w/weight.png"),
   weird: require("../../../assets/words/w/weird.png"),
+  welcome: require("../../../assets/words/w/welcome.png"),
   welfare: require("../../../assets/words/w/welfare.png"),
   "well-being": require("../../../assets/words/w/well-being.png"),
   wet: require("../../../assets/words/w/wet.png"),

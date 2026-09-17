@@ -164,6 +164,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   estate: require("../../../assets/words/e/estate.png"),
   esteem: require("../../../assets/words/e/esteem.png"),
   estimate: require("../../../assets/words/e/estimate.png"),
+  estimation: require("../../../assets/words/e/estimation.png"),
   eternal: require("../../../assets/words/e/eternal.png"),
   ethic: require("../../../assets/words/e/ethic.png"),
   ethical: require("../../../assets/words/e/ethical.png"),

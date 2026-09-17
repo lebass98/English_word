@@ -18,6 +18,7 @@ a~z 가 아닌 글자로 시작하면 "_" 폴더에 둔다.
 import json
 import os
 import sys
+import unicodedata
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ASSETS = os.path.join(ROOT, "assets/words")
@@ -65,8 +66,10 @@ def known_keys():
             continue
         with open(path, encoding="utf-8") as f:
             for spelling, entry in json.load(f).items():
-                keys.add(spelling)
-                keys.add(entry.get("conceptId") or spelling)
+                s_norm = unicodedata.normalize("NFC", spelling)
+                c_norm = unicodedata.normalize("NFC", entry.get("conceptId") or spelling)
+                keys.add(s_norm)
+                keys.add(c_norm)
     return keys
 
 
@@ -98,7 +101,7 @@ def main():
         for name in sorted(os.listdir(folder)):
             if not name.endswith(".png") or name.startswith("._"):
                 continue
-            stem = name[:-4]
+            stem = unicodedata.normalize("NFC", name[:-4])
             if letter_of(stem) != letter:
                 misplaced.append(f"{letter}/{name}")
                 continue

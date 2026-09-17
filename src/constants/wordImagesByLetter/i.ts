@@ -167,6 +167,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   influence: require("../../../assets/words/i/influence.png"),
   influential: require("../../../assets/words/i/influential.png"),
   inform: require("../../../assets/words/i/inform.png"),
+  informal: require("../../../assets/words/i/informal.png"),
   informally: require("../../../assets/words/i/informally.png"),
   information: require("../../../assets/words/i/information.png"),
   informed: require("../../../assets/words/i/informed.png"),

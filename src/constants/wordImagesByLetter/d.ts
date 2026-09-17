@@ -178,6 +178,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   direction: require("../../../assets/words/d/direction.png"),
   directly: require("../../../assets/words/d/directly.png"),
   director: require("../../../assets/words/d/director.png"),
+  directory: require("../../../assets/words/d/directory.png"),
   dirty: require("../../../assets/words/d/dirty.png"),
   disabled: require("../../../assets/words/d/disabled.png"),
   disappear: require("../../../assets/words/d/disappear.png"),

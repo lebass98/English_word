@@ -105,6 +105,7 @@ export const IMAGES_L: Record<string, ImageSourcePropType> = {
   locate: require("../../../assets/words/l/locate.png"),
   location: require("../../../assets/words/l/location.png"),
   lock: require("../../../assets/words/l/lock.png"),
+  lodging: require("../../../assets/words/l/lodging.png"),
   log: require("../../../assets/words/l/log.png"),
   logic: require("../../../assets/words/l/logic.png"),
   logical: require("../../../assets/words/l/logical.png"),

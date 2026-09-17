@@ -291,4 +291,5 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   rural: require("../../../assets/words/r/rural.png"),
   rush: require("../../../assets/words/r/rush.png"),
   rushing: require("../../../assets/words/r/rushing.png"),
+  rust: require("../../../assets/words/r/rust.png"),
 };

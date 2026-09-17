@@ -227,6 +227,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   complication: require("../../../assets/words/c/complication.png"),
   compliment: require("../../../assets/words/c/compliment.png"),
   complimentary: require("../../../assets/words/c/complimentary.png"),
+  comply: require("../../../assets/words/c/comply.png"),
   component: require("../../../assets/words/c/component.png"),
   compose: require("../../../assets/words/c/compose.png"),
   composer: require("../../../assets/words/c/composer.png"),

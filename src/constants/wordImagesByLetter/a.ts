@@ -31,6 +31,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   accelerate: require("../../../assets/words/a/accelerate.png"),
   accent: require("../../../assets/words/a/accent.png"),
   accept: require("../../../assets/words/a/accept.png"),
+  acceptable: require("../../../assets/words/a/acceptable.png"),
   access: require("../../../assets/words/a/access.png"),
   accessible: require("../../../assets/words/a/accessible.png"),
   accident: require("../../../assets/words/a/accident.png"),

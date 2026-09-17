@@ -350,6 +350,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   steadily: require("../../../assets/words/s/steadily.png"),
   steady: require("../../../assets/words/s/steady.png"),
   steal: require("../../../assets/words/s/steal.png"),
+  steel: require("../../../assets/words/s/steel.png"),
   steep: require("../../../assets/words/s/steep.png"),
   steer: require("../../../assets/words/s/steer.png"),
   stem: require("../../../assets/words/s/stem.png"),

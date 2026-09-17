@@ -201,5 +201,6 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   further: require("../../../assets/words/f/further.png"),
   furthermore: require("../../../assets/words/f/furthermore.png"),
   fuse: require("../../../assets/words/f/fuse.png"),
+  fuss: require("../../../assets/words/f/fuss.png"),
   future: require("../../../assets/words/f/future.png"),
 };

@@ -13,6 +13,7 @@ export const IMAGES_H: Record<string, ImageSourcePropType> = {
   "hands-on": require("../../../assets/words/h/hands-on.png"),
   handshake: require("../../../assets/words/h/handshake.png"),
   handsome: require("../../../assets/words/h/handsome.png"),
+  handy: require("../../../assets/words/h/handy.png"),
   hang: require("../../../assets/words/h/hang.png"),
   "hang out": require("../../../assets/words/h/hang-out.png"),
   happen: require("../../../assets/words/h/happen.png"),

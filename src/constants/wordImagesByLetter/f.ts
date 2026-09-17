@@ -104,6 +104,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   flee: require("../../../assets/words/f/flee.png"),
   flesh: require("../../../assets/words/f/flesh.png"),
   flexible: require("../../../assets/words/f/flexible.png"),
+  flier: require("../../../assets/words/f/flier.png"),
   flight: require("../../../assets/words/f/flight.png"),
   fling: require("../../../assets/words/f/fling.png"),
   flip: require("../../../assets/words/f/flip.png"),

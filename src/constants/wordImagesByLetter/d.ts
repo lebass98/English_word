@@ -31,6 +31,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   debut: require("../../../assets/words/d/debut.png"),
   decade: require("../../../assets/words/d/decade.png"),
   decay: require("../../../assets/words/d/decay.png"),
+  deceased: require("../../../assets/words/d/deceased.png"),
   deceive: require("../../../assets/words/d/deceive.png"),
   decent: require("../../../assets/words/d/decent.png"),
   decide: require("../../../assets/words/d/decide.png"),

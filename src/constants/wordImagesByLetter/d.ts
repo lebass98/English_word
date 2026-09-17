@@ -248,6 +248,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   distinguish: require("../../../assets/words/d/distinguish.png"),
   distort: require("../../../assets/words/d/distort.png"),
   distract: require("../../../assets/words/d/distract.png"),
+  distraught: require("../../../assets/words/d/distraught.png"),
   distress: require("../../../assets/words/d/distress.png"),
   distribute: require("../../../assets/words/d/distribute.png"),
   distributed: require("../../../assets/words/d/distributed.png"),

@@ -329,6 +329,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   atmosphere: require("../../../assets/words/a/atmosphere.png"),
   atom: require("../../../assets/words/a/atom.png"),
   attach: require("../../../assets/words/a/attach.png"),
+  attachment: require("../../../assets/words/a/attachment.png"),
   "attachment to": require("../../../assets/words/a/attachment-to.png"),
   attain: require("../../../assets/words/a/attain.png"),
   attempt: require("../../../assets/words/a/attempt.png"),

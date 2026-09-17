@@ -145,6 +145,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   planet: require("../../../assets/words/p/planet.png"),
   plant: require("../../../assets/words/p/plant.png"),
   plaster: require("../../../assets/words/p/plaster.png"),
+  plastic: require("../../../assets/words/p/plastic.png"),
   plate: require("../../../assets/words/p/plate.png"),
   platform: require("../../../assets/words/p/platform.png"),
   plausible: require("../../../assets/words/p/plausible.png"),

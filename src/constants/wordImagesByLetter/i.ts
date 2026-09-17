@@ -249,6 +249,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   intelligent: require("../../../assets/words/i/intelligent.png"),
   intend: require("../../../assets/words/i/intend.png"),
   intense: require("../../../assets/words/i/intense.png"),
+  intensely: require("../../../assets/words/i/intensely.png"),
   intensify: require("../../../assets/words/i/intensify.png"),
   intensive: require("../../../assets/words/i/intensive.png"),
   intent: require("../../../assets/words/i/intent.png"),

@@ -46,6 +46,16 @@ const CELL_PAD = 6;
 /** 보기 그림 사이 간격. 좌우·세로를 같은 값으로 둔다 */
 const GRID_GAP = 12;
 
+/** 머리줄·진행바·안내문·아래 여백이 쓰는 세로 자리 (px) */
+const CHROME_H = 200;
+
+/** 보기 네 줄이 쓰는 세로 자리 (버튼 52 + 사이 간격 10) */
+const CHOICE_LIST_H = 52 * 4 + 10 * 3;
+
+/** 그림 열 너비의 최소·최대. 작은 폰에서 그림이 뭉개지거나 태블릿에서 커지는 걸 막는다 */
+const MIN_COLUMN = 260;
+const MAX_COLUMN = 400;
+
 /** 정답·오답을 보여 주고 다음 문제로 넘어가기까지 기다리는 시간 (ms) */
 const REVEAL_MS = 900;
 
@@ -296,31 +306,32 @@ function QuizBody({
   const contentWidth =
     Math.min(screenWidth, MAX_CONTENT_WIDTH) - SCREEN_PADDING_X * 2;
 
-  // 문제 그림 한 장. 카드 안쪽 여백(p-3 = 12px) 을 뺀 만큼이 그림이 된다
-  const heroSize = Math.round(
-    Math.min(contentWidth - CARD_PAD * 2, screenHeight * 0.3, 280),
-  );
-
   /*
-   * 보기 그림 네 장 (2열 2행).
+   * 문제 영역의 열 너비.
    *
-   * 칸 하나의 바깥 너비는 그림 + 테두리 여백(p-1.5 = 6px)이다.
-   * 두 칸과 사이 간격을 더한 값을 그리드 너비로 못 박아야
-   * 좌우 간격과 세로 간격이 똑같이 떨어진다.
+   * 제시 카드와 보기가 모두 이 너비를 쓴다. 카드마다 따로 계산하면 좌우 끝이 어긋난다.
+   *
+   * 그림은 열을 좌우 여백 없이 꽉 채운다. 그림이 정사각형이라 열 너비가 곧 그림 높이가
+   * 되는데, 보기 그림 2x2 도 두 줄 합치면 같은 높이가 나온다. 그래서 한 값만 정하면
+   * 두 배치가 같이 맞는다. 화면 높이에서 머리줄·보기 자리를 뺀 만큼으로 잘라 준다.
    */
-  const cellSize = Math.round(
-    Math.min(
-      (contentWidth - GRID_GAP) / 2 - CELL_PAD * 2,
-      screenHeight * 0.19,
-      150,
+  const visualBudget = screenHeight - CHROME_H - CHOICE_LIST_H;
+  const columnWidth = Math.round(
+    Math.max(
+      MIN_COLUMN,
+      Math.min(contentWidth, visualBudget, MAX_COLUMN),
     ),
   );
-  const cellOuter = cellSize + CELL_PAD * 2;
-  const gridWidth = cellOuter * 2 + GRID_GAP;
 
-  // 철자 맞추기의 힌트 그림은 자판이 들어갈 자리를 남겨야 해서 더 작다
+  /** 문제 그림 한 장. 카드 좌우 여백 없이 열을 그대로 채운다 */
+  const heroSize = columnWidth;
+
+  /** 보기 그림 한 변. 열 너비에서 간격과 테두리 여백을 빼면 딱 떨어진다 */
+  const cellSize = Math.floor((columnWidth - GRID_GAP) / 2) - CELL_PAD * 2;
+
+  /** 철자 맞추기의 힌트 그림은 자판이 들어갈 자리를 남겨야 해서 더 작다 */
   const hintSize = Math.round(
-    Math.min(contentWidth - CARD_PAD * 2, screenHeight * 0.2, 170),
+    Math.min(columnWidth - CARD_PAD * 2, screenHeight * 0.2, 170),
   );
 
   const speak = useCallback(() => {
@@ -397,11 +408,17 @@ function QuizBody({
       contentContainerClassName="gap-4 px-6 pb-8 pt-4"
       keyboardShouldPersistTaps="handled"
     >
-      <Text className="text-center text-[13px] text-slate-500">
+      <Text
+        style={{ width: columnWidth }}
+        className="self-center text-center text-[13px] text-slate-500"
+      >
         {t(PROMPT_KEY[kind])}
       </Text>
 
-      <Animated.View style={style} className="gap-4">
+      <Animated.View
+        style={[style, { width: columnWidth }]}
+        className="gap-6 self-center"
+      >
         {kind === "imageToWord" && (
           <>
             <HeroImage word={answer} size={heroSize} />
@@ -412,10 +429,7 @@ function QuizBody({
         {kind === "wordToImage" && (
           <>
             <WordPrompt word={answer} onSpeak={speak} />
-            <View
-              style={{ width: gridWidth, gap: GRID_GAP }}
-              className="flex-row flex-wrap self-center"
-            >
+            <View style={{ gap: GRID_GAP }} className="flex-row flex-wrap">
               {choices.map((choice) => (
                 <ImageChoice
                   key={choice.id}
@@ -440,7 +454,7 @@ function QuizBody({
 
         {kind === "meaningToWord" && (
           <>
-            <View className="items-center rounded-3xl bg-surface px-5 py-6 shadow-neu-card">
+            <View className="items-center rounded-3xl bg-surface px-5 py-5 shadow-neu-card">
               <Text className="text-center text-[20px] font-bold text-slate-800">
                 {answer.meaning}
               </Text>
@@ -504,7 +518,9 @@ function QuizBody({
 
       {/* 정답이 드러난 뒤에만 뜻을 보여 준다. 먼저 보이면 문제가 안 된다 */}
       {revealed && (
-        <View className="items-center gap-0.5 rounded-2xl bg-surface px-4 py-2.5 shadow-neu-sm">
+        <View
+          style={{ width: columnWidth }}
+          className="items-center gap-0.5 self-center rounded-2xl bg-surface px-4 py-2.5 shadow-neu-sm">
           <Text className="text-[15px] font-bold text-slate-800">
             {answer.word}
           </Text>
@@ -520,21 +536,16 @@ function QuizBody({
 /** 문제로 내는 큰 그림 한 장 */
 function HeroImage({ word, size }: { word: Word; size: number }) {
   return (
-    // 카드 폭을 그림에 맞춰 못 박는다. 전체 폭으로 두면 그림 양옆에 빈 자리가 남는다
+    // 좌우 여백 없이 그림이 카드를 그대로 채운다
     <View
-      style={{ width: size + CARD_PAD * 2, padding: CARD_PAD }}
-      className="self-center rounded-3xl bg-surface shadow-neu-card"
+      style={{ width: size, height: size }}
+      className="overflow-hidden rounded-3xl bg-canvas shadow-neu-card"
     >
-      <View
-        style={{ width: size, height: size }}
-        className="overflow-hidden rounded-2xl bg-canvas shadow-neu-inset"
-      >
-        <Image
-          source={imageOf(word)}
-          resizeMode="cover"
-          style={{ width: "100%", height: "100%" }}
-        />
-      </View>
+      <Image
+        source={imageOf(word)}
+        resizeMode="cover"
+        style={{ width: "100%", height: "100%" }}
+      />
     </View>
   );
 }
@@ -542,8 +553,8 @@ function HeroImage({ word, size }: { word: Word; size: number }) {
 /** 단어를 크게 보여 주는 제시부. 발음도 들을 수 있다 */
 function WordPrompt({ word, onSpeak }: { word: Word; onSpeak: () => void }) {
   return (
-    <View className="items-center gap-2 rounded-3xl bg-surface px-4 py-5 shadow-neu-card">
-      <Text className="text-[28px] font-black text-slate-900">{word.word}</Text>
+    <View className="items-center gap-1.5 rounded-3xl bg-surface px-4 py-4 shadow-neu-card">
+      <Text className="text-[26px] font-black text-slate-900">{word.word}</Text>
       <Pressable
         onPress={onSpeak}
         className="rounded-full bg-canvas p-2.5 shadow-neu-sm active:opacity-70"

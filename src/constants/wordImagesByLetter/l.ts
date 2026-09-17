@@ -81,6 +81,7 @@ export const IMAGES_L: Record<string, ImageSourcePropType> = {
   liquidate: require("../../../assets/words/l/liquidate.png"),
   list: require("../../../assets/words/l/list.png"),
   literacy: require("../../../assets/words/l/literacy.png"),
+  literally: require("../../../assets/words/l/literally.png"),
   literature: require("../../../assets/words/l/literature.png"),
   litigation: require("../../../assets/words/l/litigation.png"),
   "little by little": require("../../../assets/words/l/little-by-little.png"),

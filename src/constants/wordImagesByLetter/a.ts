@@ -44,6 +44,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   accomplished: require("../../../assets/words/a/accomplished.png"),
   accord: require("../../../assets/words/a/accord.png"),
   "according to": require("../../../assets/words/a/according-to.png"),
+  accordingly: require("../../../assets/words/a/accordingly.png"),
   account: require("../../../assets/words/a/account.png"),
   "account for": require("../../../assets/words/a/account-for.png"),
   accountable: require("../../../assets/words/a/accountable.png"),

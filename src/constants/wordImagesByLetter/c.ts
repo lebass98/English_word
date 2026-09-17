@@ -259,6 +259,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   condition: require("../../../assets/words/c/condition.png"),
   conditional: require("../../../assets/words/c/conditional.png"),
   conduct: require("../../../assets/words/c/conduct.png"),
+  conductor: require("../../../assets/words/c/conductor.png"),
   conference: require("../../../assets/words/c/conference.png"),
   confess: require("../../../assets/words/c/confess.png"),
   confidence: require("../../../assets/words/c/confidence.png"),

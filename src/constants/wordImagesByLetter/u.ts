@@ -102,4 +102,5 @@ export const IMAGES_U: Record<string, ImageSourcePropType> = {
   utility: require("../../../assets/words/u/utility.png"),
   utilize: require("../../../assets/words/u/utilize.png"),
   utmost: require("../../../assets/words/u/utmost.png"),
+  utter: require("../../../assets/words/u/utter.png"),
 };

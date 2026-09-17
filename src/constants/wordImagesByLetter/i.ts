@@ -98,6 +98,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   inactive: require("../../../assets/words/i/inactive.png"),
   inadequate: require("../../../assets/words/i/inadequate.png"),
   inappropriate: require("../../../assets/words/i/inappropriate.png"),
+  inaugural: require("../../../assets/words/i/inaugural.png"),
   inaugurate: require("../../../assets/words/i/inaugurate.png"),
   inborn: require("../../../assets/words/i/inborn.png"),
   incentive: require("../../../assets/words/i/incentive.png"),

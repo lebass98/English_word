@@ -65,6 +65,7 @@ export const IMAGES_H: Record<string, ImageSourcePropType> = {
   hierarchy: require("../../../assets/words/h/hierarchy.png"),
   high: require("../../../assets/words/h/high.png"),
   "high priority": require("../../../assets/words/h/high-priority.png"),
+  "high-rise": require("../../../assets/words/h/high-rise.png"),
   highlight: require("../../../assets/words/h/highlight.png"),
   highway: require("../../../assets/words/h/highway.png"),
   hike: require("../../../assets/words/h/hike.png"),

@@ -148,6 +148,7 @@ export const IMAGES_I: Record<string, ImageSourcePropType> = {
   indistinctly: require("../../../assets/words/i/indistinctly.png"),
   individual: require("../../../assets/words/i/individual.png"),
   individuality: require("../../../assets/words/i/individuality.png"),
+  individually: require("../../../assets/words/i/individually.png"),
   induce: require("../../../assets/words/i/induce.png"),
   indulge: require("../../../assets/words/i/indulge.png"),
   industrial: require("../../../assets/words/i/industrial.png"),

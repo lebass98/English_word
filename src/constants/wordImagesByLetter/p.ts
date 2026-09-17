@@ -135,6 +135,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   pilgrim: require("../../../assets/words/p/pilgrim.png"),
   pill: require("../../../assets/words/p/pill.png"),
   pillar: require("../../../assets/words/p/pillar.png"),
+  pillow: require("../../../assets/words/p/pillow.png"),
   pilot: require("../../../assets/words/p/pilot.png"),
   pioneer: require("../../../assets/words/p/pioneer.png"),
   pitch: require("../../../assets/words/p/pitch.png"),

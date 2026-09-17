@@ -71,6 +71,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   empire: require("../../../assets/words/e/empire.png"),
   empirical: require("../../../assets/words/e/empirical.png"),
   employ: require("../../../assets/words/e/employ.png"),
+  employer: require("../../../assets/words/e/employer.png"),
   employment: require("../../../assets/words/e/employment.png"),
   empower: require("../../../assets/words/e/empower.png"),
   empty: require("../../../assets/words/e/empty.png"),

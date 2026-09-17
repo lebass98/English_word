@@ -193,6 +193,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   amend: require("../../../assets/words/a/amend.png"),
   amendment: require("../../../assets/words/a/amendment.png"),
   amenities: require("../../../assets/words/a/amenities.png"),
+  amid: require("../../../assets/words/a/amid.png"),
   amount: require("../../../assets/words/a/amount.png"),
   ample: require("../../../assets/words/a/ample.png"),
   amplify: require("../../../assets/words/a/amplify.png"),

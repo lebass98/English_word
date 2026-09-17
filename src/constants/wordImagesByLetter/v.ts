@@ -4,6 +4,7 @@ import { ImageSourcePropType } from "react-native";
 export const IMAGES_V: Record<string, ImageSourcePropType> = {
   vacant: require("../../../assets/words/v/vacant.png"),
   vacation: require("../../../assets/words/v/vacation.png"),
+  vaccinate: require("../../../assets/words/v/vaccinate.png"),
   vacuum: require("../../../assets/words/v/vacuum.png"),
   vague: require("../../../assets/words/v/vague.png"),
   vain: require("../../../assets/words/v/vain.png"),

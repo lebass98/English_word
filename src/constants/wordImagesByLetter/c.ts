@@ -439,6 +439,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   critique: require("../../../assets/words/c/critique.png"),
   crop: require("../../../assets/words/c/crop.png"),
   cross: require("../../../assets/words/c/cross.png"),
+  crossing: require("../../../assets/words/c/crossing.png"),
   crosswalk: require("../../../assets/words/c/crosswalk.png"),
   crowd: require("../../../assets/words/c/crowd.png"),
   crowded: require("../../../assets/words/c/crowded.png"),

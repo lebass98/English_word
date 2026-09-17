@@ -208,6 +208,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   museum: require("../../../assets/words/m/museum.png"),
   musician: require("../../../assets/words/m/musician.png"),
   mutual: require("../../../assets/words/m/mutual.png"),
+  mutually: require("../../../assets/words/m/mutually.png"),
   myriad: require("../../../assets/words/m/myriad.png"),
   mystery: require("../../../assets/words/m/mystery.png"),
   myth: require("../../../assets/words/m/myth.png"),

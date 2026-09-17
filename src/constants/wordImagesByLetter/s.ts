@@ -121,6 +121,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   "settle down": require("../../../assets/words/s/settle-down.png"),
   settlement: require("../../../assets/words/s/settlement.png"),
   settler: require("../../../assets/words/s/settler.png"),
+  sever: require("../../../assets/words/s/sever.png"),
   several: require("../../../assets/words/s/several.png"),
   severe: require("../../../assets/words/s/severe.png"),
   severely: require("../../../assets/words/s/severely.png"),

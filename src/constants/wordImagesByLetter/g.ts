@@ -58,6 +58,7 @@ export const IMAGES_G: Record<string, ImageSourcePropType> = {
   glorify: require("../../../assets/words/g/glorify.png"),
   glory: require("../../../assets/words/g/glory.png"),
   glow: require("../../../assets/words/g/glow.png"),
+  glue: require("../../../assets/words/g/glue.png"),
   "go by": require("../../../assets/words/g/go-by.png"),
   "go into": require("../../../assets/words/g/go-into.png"),
   "go out with": require("../../../assets/words/g/go-out-with.png"),

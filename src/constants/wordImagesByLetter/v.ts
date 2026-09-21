@@ -76,6 +76,7 @@ export const IMAGES_V: Record<string, ImageSourcePropType> = {
   vocation: require("../../../assets/words/v/vocation.png"),
   voice: require("../../../assets/words/v/voice.png"),
   void: require("../../../assets/words/v/void.png"),
+  volatile: require("../../../assets/words/v/volatile.png"),
   volcano: require("../../../assets/words/v/volcano.png"),
   volume: require("../../../assets/words/v/volume.png"),
   voluntary: require("../../../assets/words/v/voluntary.png"),

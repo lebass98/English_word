@@ -353,6 +353,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   prominent: require("../../../assets/words/p/prominent.png"),
   prominently: require("../../../assets/words/p/prominently.png"),
   promise: require("../../../assets/words/p/promise.png"),
+  promising: require("../../../assets/words/p/promising.png"),
   promote: require("../../../assets/words/p/promote.png"),
   promotion: require("../../../assets/words/p/promotion.png"),
   promotional: require("../../../assets/words/p/promotional.png"),

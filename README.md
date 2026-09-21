@@ -31,6 +31,8 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-21
+- 토익 41단원 빠진 그림 4장 선형그래픽으로 생성 및 등록
+  - 대상: affiliate, collateral, promising, volatile
 - 토익 40단원 빠진 그림 4장 선형그래픽으로 생성 및 등록
   - 대상: delegate, admission, attendance, defy
 - 토익 39단원 빠진 그림 2장 선형그래픽으로 생성 및 등록

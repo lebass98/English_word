@@ -143,6 +143,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   physician: require("../../../assets/words/p/physician.png"),
   pick: require("../../../assets/words/p/pick.png"),
   piece: require("../../../assets/words/p/piece.png"),
+  pier: require("../../../assets/words/p/pier.png"),
   pigeon: require("../../../assets/words/p/pigeon.png"),
   pile: require("../../../assets/words/p/pile.png"),
   "pile up": require("../../../assets/words/p/pile-up.png"),

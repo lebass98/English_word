@@ -31,6 +31,8 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-21
+- 토익 46단원 빠진 그림 5장 선형그래픽으로 생성 및 등록
+  - 대상: blueprint, qualified, distributor, restructure, pier
 - 토익 45단원 빠진 그림 4장 선형그래픽으로 생성 및 등록
   - 대상: interoffice, absurd, pose, layout
 - 토익 44단원 빠진 그림 12장 선형그래픽으로 생성 및 등록

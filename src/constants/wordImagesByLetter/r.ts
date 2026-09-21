@@ -245,6 +245,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   restricted: require("../../../assets/words/r/restricted.png"),
   restriction: require("../../../assets/words/r/restriction.png"),
   restroom: require("../../../assets/words/r/restroom.png"),
+  restructure: require("../../../assets/words/r/restructure.png"),
   restructuring: require("../../../assets/words/r/restructuring.png"),
   result: require("../../../assets/words/r/result.png"),
   "result in": require("../../../assets/words/r/result-in.png"),

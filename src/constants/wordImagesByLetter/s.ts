@@ -396,6 +396,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   statue: require("../../../assets/words/s/statue.png"),
   status: require("../../../assets/words/s/status.png"),
   stay: require("../../../assets/words/s/stay.png"),
+  "stay over": require("../../../assets/words/s/stay-over.png"),
   steadily: require("../../../assets/words/s/steadily.png"),
   steady: require("../../../assets/words/s/steady.png"),
   steal: require("../../../assets/words/s/steal.png"),

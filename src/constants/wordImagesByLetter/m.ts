@@ -195,6 +195,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   monument: require("../../../assets/words/m/monument.png"),
   mop: require("../../../assets/words/m/mop.png"),
   moral: require("../../../assets/words/m/moral.png"),
+  morale: require("../../../assets/words/m/morale.png"),
   "more or less": require("../../../assets/words/m/more-or-less.png"),
   moreover: require("../../../assets/words/m/moreover.png"),
   morning: require("../../../assets/words/m/morning.png"),

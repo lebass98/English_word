@@ -13,6 +13,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   "take part in": require("../../../assets/words/t/take-part-in.png"),
   "take place": require("../../../assets/words/t/take-place.png"),
   "take ~ for granted": require("../../../assets/words/t/take-~-for-granted.png"),
+  takeover: require("../../../assets/words/t/takeover.png"),
   tale: require("../../../assets/words/t/tale.png"),
   talent: require("../../../assets/words/t/talent.png"),
   talk: require("../../../assets/words/t/talk.png"),

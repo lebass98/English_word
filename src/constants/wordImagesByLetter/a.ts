@@ -94,6 +94,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   adjacent: require("../../../assets/words/a/adjacent.png"),
   adjourn: require("../../../assets/words/a/adjourn.png"),
   adjust: require("../../../assets/words/a/adjust.png"),
+  adjustable: require("../../../assets/words/a/adjustable.png"),
   adjustment: require("../../../assets/words/a/adjustment.png"),
   administer: require("../../../assets/words/a/administer.png"),
   administered: require("../../../assets/words/a/administered.png"),

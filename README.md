@@ -31,6 +31,8 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-21
+- 토익 38단원 빠진 그림 6장 선형그래픽으로 생성 및 등록
+  - 대상: uncomfortably, convinced, infrequently, story, adjustable, screw
 - 토익 37단원 빠진 그림 10장 선형그래픽으로 생성 및 등록
   - 대상: strategically, autobiography, inaccuracy, affiliation, capability, casually, conservation, splendor, flooding, breathtakingly
 - 토익 36단원 빠진 그림 13장 선형그래픽으로 생성 및 등록

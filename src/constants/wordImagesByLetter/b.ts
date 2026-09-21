@@ -176,6 +176,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   breathe: require("../../../assets/words/b/breathe.png"),
   breathing: require("../../../assets/words/b/breathing.png"),
   breathtaking: require("../../../assets/words/b/breathtaking.png"),
+  breathtakingly: require("../../../assets/words/b/breathtakingly.png"),
   breed: require("../../../assets/words/b/breed.png"),
   brevity: require("../../../assets/words/b/brevity.png"),
   bribe: require("../../../assets/words/b/bribe.png"),

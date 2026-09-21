@@ -132,6 +132,7 @@ export const IMAGES_O: Record<string, ImageSourcePropType> = {
   overlap: require("../../../assets/words/o/overlap.png"),
   overlook: require("../../../assets/words/o/overlook.png"),
   overnight: require("../../../assets/words/o/overnight.png"),
+  overprice: require("../../../assets/words/o/overprice.png"),
   override: require("../../../assets/words/o/override.png"),
   overseas: require("../../../assets/words/o/overseas.png"),
   oversee: require("../../../assets/words/o/oversee.png"),

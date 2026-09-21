@@ -67,6 +67,7 @@ export const IMAGES_L: Record<string, ImageSourcePropType> = {
   letterhead: require("../../../assets/words/l/letterhead.png"),
   level: require("../../../assets/words/l/level.png"),
   liability: require("../../../assets/words/l/liability.png"),
+  liable: require("../../../assets/words/l/liable.png"),
   liberal: require("../../../assets/words/l/liberal.png"),
   liberate: require("../../../assets/words/l/liberate.png"),
   liberty: require("../../../assets/words/l/liberty.png"),

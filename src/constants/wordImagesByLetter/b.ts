@@ -71,6 +71,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   beforehand: require("../../../assets/words/b/beforehand.png"),
   beg: require("../../../assets/words/b/beg.png"),
   beggar: require("../../../assets/words/b/beggar.png"),
+  begin: require("../../../assets/words/b/begin.png"),
   behalf: require("../../../assets/words/b/behalf.png"),
   behave: require("../../../assets/words/b/behave.png"),
   behavior: require("../../../assets/words/b/behavior.png"),

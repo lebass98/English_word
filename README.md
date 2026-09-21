@@ -31,6 +31,7 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-21
+- 일본어 JLPT N5 Unit 13 단어 선형그래픽 이미지 제작 및 등록 (嫌い, 上手, 下手, 暇, 開ける 외 15개)
 - 토익 46단원 빠진 그림 5장 선형그래픽으로 생성 및 등록
   - 대상: blueprint, qualified, distributor, restructure, pier
 - 토익 45단원 빠진 그림 4장 선형그래픽으로 생성 및 등록

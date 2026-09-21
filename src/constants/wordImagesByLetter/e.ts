@@ -188,6 +188,7 @@ export const IMAGES_E: Record<string, ImageSourcePropType> = {
   ethnic: require("../../../assets/words/e/ethnic.png"),
   evacuation: require("../../../assets/words/e/evacuation.png"),
   evaluate: require("../../../assets/words/e/evaluate.png"),
+  evaluation: require("../../../assets/words/e/evaluation.png"),
   evaporate: require("../../../assets/words/e/evaporate.png"),
   even: require("../../../assets/words/e/even.png"),
   evenly: require("../../../assets/words/e/evenly.png"),

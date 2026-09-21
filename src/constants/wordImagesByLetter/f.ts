@@ -5,6 +5,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   fable: require("../../../assets/words/f/fable.png"),
   fabric: require("../../../assets/words/f/fabric.png"),
   fabricate: require("../../../assets/words/f/fabricate.png"),
+  fabulous: require("../../../assets/words/f/fabulous.png"),
   face: require("../../../assets/words/f/face.png"),
   facial: require("../../../assets/words/f/facial.png"),
   facilitate: require("../../../assets/words/f/facilitate.png"),

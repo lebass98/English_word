@@ -93,6 +93,8 @@ export const IMAGES_G: Record<string, ImageSourcePropType> = {
   grain: require("../../../assets/words/g/grain.png"),
   grammar: require("../../../assets/words/g/grammar.png"),
   grand: require("../../../assets/words/g/grand.png"),
+  grandfather: require("../../../assets/words/g/grandfather.png"),
+  grandmother: require("../../../assets/words/g/grandmother.png"),
   grant: require("../../../assets/words/g/grant.png"),
   grasp: require("../../../assets/words/g/grasp.png"),
   grass: require("../../../assets/words/g/grass.png"),

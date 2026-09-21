@@ -462,6 +462,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   counterproductive: require("../../../assets/words/c/counterproductive.png"),
   countless: require("../../../assets/words/c/countless.png"),
   country: require("../../../assets/words/c/country.png"),
+  countryside: require("../../../assets/words/c/countryside.png"),
   county: require("../../../assets/words/c/county.png"),
   couple: require("../../../assets/words/c/couple.png"),
   courage: require("../../../assets/words/c/courage.png"),

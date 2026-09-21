@@ -408,6 +408,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   audit: require("../../../assets/words/a/audit.png"),
   auditorium: require("../../../assets/words/a/auditorium.png"),
   auditory: require("../../../assets/words/a/auditory.png"),
+  aunt: require("../../../assets/words/a/aunt.png"),
   aural: require("../../../assets/words/a/aural.png"),
   authentic: require("../../../assets/words/a/authentic.png"),
   authenticity: require("../../../assets/words/a/authenticity.png"),

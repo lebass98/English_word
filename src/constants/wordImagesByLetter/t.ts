@@ -73,6 +73,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   textile: require("../../../assets/words/t/textile.png"),
   texture: require("../../../assets/words/t/texture.png"),
   "thanks to": require("../../../assets/words/t/thanks-to.png"),
+  "the best": require("../../../assets/words/t/the-best.png"),
   theater: require("../../../assets/words/t/theater.png"),
   theatergoer: require("../../../assets/words/t/theatergoer.png"),
   theatrical: require("../../../assets/words/t/theatrical.png"),

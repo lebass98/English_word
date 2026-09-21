@@ -100,6 +100,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   fire: require("../../../assets/words/f/fire.png"),
   firecracker: require("../../../assets/words/f/firecracker.png"),
   firm: require("../../../assets/words/f/firm.png"),
+  "first time": require("../../../assets/words/f/first-time.png"),
   "first-hand": require("../../../assets/words/f/first-hand.png"),
   fiscal: require("../../../assets/words/f/fiscal.png"),
   fish: require("../../../assets/words/f/fish.png"),

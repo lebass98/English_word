@@ -76,6 +76,8 @@ export const IMAGES_N: Record<string, ImageSourcePropType> = {
   normally: require("../../../assets/words/n/normally.png"),
   northern: require("../../../assets/words/n/northern.png"),
   nose: require("../../../assets/words/n/nose.png"),
+  "not at all": require("../../../assets/words/n/not-at-all.png"),
+  "not much": require("../../../assets/words/n/not-much.png"),
   notable: require("../../../assets/words/n/notable.png"),
   notably: require("../../../assets/words/n/notably.png"),
   notation: require("../../../assets/words/n/notation.png"),

@@ -16,6 +16,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   abolish: require("../../../assets/words/a/abolish.png"),
   aboriginal: require("../../../assets/words/a/aboriginal.png"),
   "abound in": require("../../../assets/words/a/abound-in.png"),
+  above: require("../../../assets/words/a/above.png"),
   abridge: require("../../../assets/words/a/abridge.png"),
   abroad: require("../../../assets/words/a/abroad.png"),
   abrupt: require("../../../assets/words/a/abrupt.png"),

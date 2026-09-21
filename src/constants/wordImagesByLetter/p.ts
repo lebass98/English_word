@@ -214,6 +214,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   portion: require("../../../assets/words/p/portion.png"),
   portrait: require("../../../assets/words/p/portrait.png"),
   portray: require("../../../assets/words/p/portray.png"),
+  pose: require("../../../assets/words/p/pose.png"),
   position: require("../../../assets/words/p/position.png"),
   positive: require("../../../assets/words/p/positive.png"),
   possess: require("../../../assets/words/p/possess.png"),

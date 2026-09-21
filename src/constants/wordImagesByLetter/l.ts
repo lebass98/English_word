@@ -33,6 +33,7 @@ export const IMAGES_L: Record<string, ImageSourcePropType> = {
   lay: require("../../../assets/words/l/lay.png"),
   "lay down": require("../../../assets/words/l/lay-down.png"),
   layer: require("../../../assets/words/l/layer.png"),
+  layout: require("../../../assets/words/l/layout.png"),
   lazy: require("../../../assets/words/l/lazy.png"),
   lead: require("../../../assets/words/l/lead.png"),
   "lead to": require("../../../assets/words/l/lead-to.png"),

@@ -24,6 +24,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   absolute: require("../../../assets/words/a/absolute.png"),
   absorb: require("../../../assets/words/a/absorb.png"),
   abstract: require("../../../assets/words/a/abstract.png"),
+  absurd: require("../../../assets/words/a/absurd.png"),
   abundance: require("../../../assets/words/a/abundance.png"),
   abundant: require("../../../assets/words/a/abundant.png"),
   abuse: require("../../../assets/words/a/abuse.png"),

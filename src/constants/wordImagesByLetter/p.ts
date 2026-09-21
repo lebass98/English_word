@@ -181,6 +181,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   plot: require("../../../assets/words/p/plot.png"),
   plow: require("../../../assets/words/p/plow.png"),
   plumber: require("../../../assets/words/p/plumber.png"),
+  plumbing: require("../../../assets/words/p/plumbing.png"),
   plummet: require("../../../assets/words/p/plummet.png"),
   plunge: require("../../../assets/words/p/plunge.png"),
   poet: require("../../../assets/words/p/poet.png"),

@@ -30,6 +30,10 @@ npm run lint     # ESLint
 
 ## 작업 내역
 
+### 2026-09-21
+- 토익 36단원 빠진 그림 13장 선형그래픽으로 생성 및 등록
+  - 대상: plumbing, daily, coincide, improvement, enrollment, avid, indoor, socialize, culminate, acclaimed, ergonomic, relaxed, richly
+
 ### 2026-09-17
 - 퀴즈 유형 선택 화면의 '섞어서' 카드를 한 줄 전체 폭으로 변경
 - 학년 화면의 단어 퀴즈 카드를 위에 고정하지 않고 유닛 목록과 함께 스크롤되게 변경

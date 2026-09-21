@@ -267,6 +267,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   sober: require("../../../assets/words/s/sober.png"),
   sociable: require("../../../assets/words/s/sociable.png"),
   social: require("../../../assets/words/s/social.png"),
+  socialize: require("../../../assets/words/s/socialize.png"),
   soil: require("../../../assets/words/s/soil.png"),
   solar: require("../../../assets/words/s/solar.png"),
   soldier: require("../../../assets/words/s/soldier.png"),

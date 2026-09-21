@@ -76,80 +76,8 @@ def run(cmd, check=True):
 
 
 def update_dashboards(targets, current_item=None, status_map=None, is_stopped=False):
-    if status_map is None:
-        status_map = {}
+    pass
 
-    total = len(targets)
-    done_count = sum(1 for t in targets if status_map.get(t["word"], {}).get("status") == "done")
-    pct = round((done_count / total * 100), 1) if total > 0 else 0
-    now_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    run_state = "stopped" if is_stopped else ("running" if current_item else "idle")
-
-    filled = int(done_count / total * 20) if total > 0 else 0
-    bar = "█" * filled + "░" * (20 - filled)
-
-    md_lines = [
-        "# 🚀 토익(TOEIC) 빠진 그림 채우기 상황판\n",
-        f"> **단계**: {run_state}  ",
-        f"> **마지막 갱신**: {now_str}  ",
-        f"> **범위**: 토익 전체 2108단어 중 빠진 그림 {total}개  \n",
-        "```",
-        f"[{bar}] {pct}% ({done_count} / {total})",
-        "```\n",
-        "| 번호 | 유닛 | ID | 단어 | 뜻 | 소요 | 상태 |",
-        "| :---: | :---: | :---: | :--- | :--- | :---: | :--- |",
-    ]
-
-    for idx, item in enumerate(targets, 1):
-        info = status_map.get(item["word"], {})
-        st = info.get("status", "waiting")
-        elapsed = info.get("elapsed", "-")
-        size = info.get("size", "")
-
-        if st == "done":
-            st_text = f"✅ 완료 ({size})" if size else "✅ 완료"
-        elif st == "rendering":
-            st_text = "⏳ 렌더링 중"
-        elif st == "failed":
-            st_text = "❌ 실패"
-        else:
-            st_text = "🕒 대기 중"
-
-        md_lines.append(f"| {idx} | U{item['unit']} | {item['id']} | **{item['word']}** | {item['meaning']} | {elapsed} | {st_text} |")
-
-    with open(LIVE_DASHBOARD_MD, "w", encoding="utf-8") as f:
-        f.write("\n".join(md_lines) + "\n")
-
-    tr_html = []
-    for idx, item in enumerate(targets, 1):
-        info = status_map.get(item["word"], {})
-        st = info.get("status", "waiting")
-        elapsed = str(info.get("elapsed", "-"))
-        if st == "done":
-            tr_html.append(f"<tr class='done'><td>{idx}</td><td>U{item['unit']}</td><td>{item['id']}</td><td><b>{item['word']}</b></td><td>{item['meaning']}</td><td>{elapsed}</td><td>✅ 완료</td></tr>")
-        elif st == "rendering":
-            tr_html.append(f"<tr class='rendering'><td>{idx}</td><td>U{item['unit']}</td><td>{item['id']}</td><td><b>{item['word']}</b></td><td>{item['meaning']}</td><td>-</td><td>⏳ 렌더링 중</td></tr>")
-        elif st == "failed":
-            tr_html.append(f"<tr class='failed'><td>{idx}</td><td>U{item['unit']}</td><td>{item['id']}</td><td><b>{item['word']}</b></td><td>{item['meaning']}</td><td>-</td><td>❌ 실패</td></tr>")
-        else:
-            tr_html.append(f"<tr><td>{idx}</td><td>U{item['unit']}</td><td>{item['id']}</td><td><b>{item['word']}</b></td><td>{item['meaning']}</td><td>-</td><td>🕒 대기 중</td></tr>")
-
-    cur_text = f"{current_item['word']} ({current_item['meaning']})" if current_item else "없음"
-    html_content = f"""<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta http-equiv="refresh" content="8">
-<title>토익 그림 채우기</title><style>
-body{{font:14px/1.5 -apple-system,sans-serif;background:#ecedf1;color:#121826;margin:0;padding:24px}}
-.wrap{{max-width:920px;margin:auto}} .meter{{height:10px;background:#dfe1e7;border-radius:99px;overflow:hidden}}
-.meter i{{display:block;height:100%;width:{pct}%;background:#0EB582}} table{{width:100%;border-collapse:collapse;margin-top:16px;background:#f1f2f6;border-radius:16px;overflow:hidden}}
-td,th{{padding:8px 10px;text-align:left;border-bottom:1px solid #e3e5ea}} tr.rendering{{background:#dcf2ea}} tr.failed{{background:#fde8e8}}
-.now{{background:#f1f2f6;padding:10px 14px;border-radius:12px;margin:12px 0}} small{{color:#64748b}}
-</style></head><body><div class="wrap"><h1>토익 빠진 그림 채우기</h1>
-<p>{run_state} · <b>{done_count} / {total} ({pct}%)</b> · <small>갱신 {now_str} (8초마다 새로고침)</small></p>
-<div class="meter"><i></i></div>
-<div class="now">현재 작업: <b>{cur_text}</b></div>
-<table><tr><th>#</th><th>유닛</th><th>ID</th><th>단어</th><th>뜻</th><th>초</th><th>상태</th></tr>{''.join(tr_html)}</table></div></body></html>"""
-
-    with open(LIVE_DASHBOARD_HTML, "w", encoding="utf-8") as f:
-        f.write(html_content)
 
 
 def deploy_unit(unit_num, unit_words):
@@ -190,8 +118,7 @@ def deploy_unit(unit_num, unit_words):
     run(["git", "add", "-A"])
     commit_msg = (
         f"feat: 토익 {unit_num}단원 빠진 그림 {len(unit_words)}장 생성 및 등록\n\n"
-        f"대상: {', '.join(w['word'] for w in unit_words)}\n\n"
-        f"{COAUTHOR}"
+        f"대상: {', '.join(w['word'] for w in unit_words)}"
     )
     run(["git", "commit", "-m", commit_msg])
     run(["git", "push", "origin", "main"])
@@ -306,8 +233,8 @@ def main():
                     concept=scene,
                     output_path=out_path,
                     seed=seed,
-                    width=1024,
-                    height=1024,
+                    width=512,
+                    height=512,
                     steps=8
                 )
                 elapsed = time.time() - t0

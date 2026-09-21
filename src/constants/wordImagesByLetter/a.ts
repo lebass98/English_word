@@ -204,6 +204,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   altruism: require("../../../assets/words/a/altruism.png"),
   alumni: require("../../../assets/words/a/alumni.png"),
   alumnus: require("../../../assets/words/a/alumnus.png"),
+  always: require("../../../assets/words/a/always.png"),
   amateur: require("../../../assets/words/a/amateur.png"),
   amazed: require("../../../assets/words/a/amazed.png"),
   amazing: require("../../../assets/words/a/amazing.png"),

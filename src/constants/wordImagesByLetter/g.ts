@@ -108,6 +108,7 @@ export const IMAGES_G: Record<string, ImageSourcePropType> = {
   greed: require("../../../assets/words/g/greed.png"),
   greedy: require("../../../assets/words/g/greedy.png"),
   "green color": require("../../../assets/words/g/green-color.png"),
+  greengrocer: require("../../../assets/words/g/greengrocer.png"),
   greenhouse: require("../../../assets/words/g/greenhouse.png"),
   greet: require("../../../assets/words/g/greet.png"),
   greeting: require("../../../assets/words/g/greeting.png"),
@@ -128,5 +129,6 @@ export const IMAGES_G: Record<string, ImageSourcePropType> = {
   guide: require("../../../assets/words/g/guide.png"),
   guilt: require("../../../assets/words/g/guilt.png"),
   guilty: require("../../../assets/words/g/guilty.png"),
+  guitar: require("../../../assets/words/g/guitar.png"),
   gun: require("../../../assets/words/g/gun.png"),
 };

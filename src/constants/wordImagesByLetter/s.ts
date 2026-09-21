@@ -346,6 +346,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   sponsor: require("../../../assets/words/s/sponsor.png"),
   spontaneous: require("../../../assets/words/s/spontaneous.png"),
   spoon: require("../../../assets/words/s/spoon.png"),
+  sports: require("../../../assets/words/s/sports.png"),
   spot: require("../../../assets/words/s/spot.png"),
   spouse: require("../../../assets/words/s/spouse.png"),
   sprain: require("../../../assets/words/s/sprain.png"),

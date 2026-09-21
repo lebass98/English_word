@@ -48,6 +48,7 @@ export const IMAGES_N: Record<string, ImageSourcePropType> = {
   neutral: require("../../../assets/words/n/neutral.png"),
   nevertheless: require("../../../assets/words/n/nevertheless.png"),
   new: require("../../../assets/words/n/new.png"),
+  news: require("../../../assets/words/n/news.png"),
   newsletter: require("../../../assets/words/n/newsletter.png"),
   newspaper: require("../../../assets/words/n/newspaper.png"),
   "next door": require("../../../assets/words/n/next-door.png"),

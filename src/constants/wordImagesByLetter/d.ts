@@ -106,6 +106,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   deny: require("../../../assets/words/d/deny.png"),
   depart: require("../../../assets/words/d/depart.png"),
   department: require("../../../assets/words/d/department.png"),
+  "department store": require("../../../assets/words/d/department-store.png"),
   depend: require("../../../assets/words/d/depend.png"),
   dependable: require("../../../assets/words/d/dependable.png"),
   dependence: require("../../../assets/words/d/dependence.png"),

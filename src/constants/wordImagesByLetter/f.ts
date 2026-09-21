@@ -248,5 +248,6 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   furthermore: require("../../../assets/words/f/furthermore.png"),
   fuse: require("../../../assets/words/f/fuse.png"),
   fuss: require("../../../assets/words/f/fuss.png"),
+  futon: require("../../../assets/words/f/futon.png"),
   future: require("../../../assets/words/f/future.png"),
 };

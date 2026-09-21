@@ -46,6 +46,7 @@ export const IMAGES_M: Record<string, ImageSourcePropType> = {
   manufacturer: require("../../../assets/words/m/manufacturer.png"),
   manuscript: require("../../../assets/words/m/manuscript.png"),
   many: require("../../../assets/words/m/many.png"),
+  map: require("../../../assets/words/m/map.png"),
   marble: require("../../../assets/words/m/marble.png"),
   march: require("../../../assets/words/m/march.png"),
   margin: require("../../../assets/words/m/margin.png"),

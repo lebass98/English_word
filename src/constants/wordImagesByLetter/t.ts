@@ -119,6 +119,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   title: require("../../../assets/words/t/title.png"),
   today: require("../../../assets/words/t/today.png"),
   together: require("../../../assets/words/t/together.png"),
+  toilet: require("../../../assets/words/t/toilet.png"),
   token: require("../../../assets/words/t/token.png"),
   tolerance: require("../../../assets/words/t/tolerance.png"),
   tolerate: require("../../../assets/words/t/tolerate.png"),

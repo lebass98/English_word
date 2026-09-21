@@ -46,6 +46,7 @@ export const IMAGES_O: Record<string, ImageSourcePropType> = {
   old: require("../../../assets/words/o/old.png"),
   "older brother": require("../../../assets/words/o/older-brother.png"),
   "older sister": require("../../../assets/words/o/older-sister.png"),
+  omit: require("../../../assets/words/o/omit.png"),
   "on occasion": require("../../../assets/words/o/on-occasion.png"),
   "on one’s feet": require("../../../assets/words/o/on-one’s-feet.png"),
   "on the contrary": require("../../../assets/words/o/on-the-contrary.png"),

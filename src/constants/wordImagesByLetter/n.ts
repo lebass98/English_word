@@ -55,6 +55,7 @@ export const IMAGES_N: Record<string, ImageSourcePropType> = {
   "next time": require("../../../assets/words/n/next-time.png"),
   "next week": require("../../../assets/words/n/next-week.png"),
   "next year": require("../../../assets/words/n/next-year.png"),
+  "nice to meet you": require("../../../assets/words/n/nice-to-meet-you.png"),
   niche: require("../../../assets/words/n/niche.png"),
   nickel: require("../../../assets/words/n/nickel.png"),
   nickname: require("../../../assets/words/n/nickname.png"),

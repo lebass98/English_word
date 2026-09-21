@@ -179,6 +179,7 @@ export const IMAGES_P: Record<string, ImageSourcePropType> = {
   "play a role in": require("../../../assets/words/p/play-a-role-in.png"),
   plea: require("../../../assets/words/p/plea.png"),
   pleasant: require("../../../assets/words/p/pleasant.png"),
+  "please treat me well": require("../../../assets/words/p/please-treat-me-well.png"),
   pleased: require("../../../assets/words/p/pleased.png"),
   pleasure: require("../../../assets/words/p/pleasure.png"),
   pledge: require("../../../assets/words/p/pledge.png"),

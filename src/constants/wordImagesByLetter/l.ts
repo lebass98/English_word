@@ -65,6 +65,7 @@ export const IMAGES_L: Record<string, ImageSourcePropType> = {
   lessen: require("../../../assets/words/l/lessen.png"),
   lesson: require("../../../assets/words/l/lesson.png"),
   lethal: require("../../../assets/words/l/lethal.png"),
+  "lets eat": require("../../../assets/words/l/lets-eat.png"),
   letter: require("../../../assets/words/l/letter.png"),
   letterhead: require("../../../assets/words/l/letterhead.png"),
   level: require("../../../assets/words/l/level.png"),

@@ -98,6 +98,7 @@ export const IMAGES_S: Record<string, ImageSourcePropType> = {
   sell: require("../../../assets/words/s/sell.png"),
   semester: require("../../../assets/words/s/semester.png"),
   semiconductor: require("../../../assets/words/s/semiconductor.png"),
+  send: require("../../../assets/words/s/send.png"),
   senior: require("../../../assets/words/s/senior.png"),
   sensation: require("../../../assets/words/s/sensation.png"),
   sensational: require("../../../assets/words/s/sensational.png"),

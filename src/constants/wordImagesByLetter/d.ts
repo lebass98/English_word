@@ -7,6 +7,7 @@ export const IMAGES_D: Record<string, ImageSourcePropType> = {
   damage: require("../../../assets/words/d/damage.png"),
   damaged: require("../../../assets/words/d/damaged.png"),
   damages: require("../../../assets/words/d/damages.png"),
+  dance: require("../../../assets/words/d/dance.png"),
   danger: require("../../../assets/words/d/danger.png"),
   dare: require("../../../assets/words/d/dare.png"),
   daring: require("../../../assets/words/d/daring.png"),

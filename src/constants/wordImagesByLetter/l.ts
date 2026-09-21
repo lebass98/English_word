@@ -89,6 +89,7 @@ export const IMAGES_L: Record<string, ImageSourcePropType> = {
   limb: require("../../../assets/words/l/limb.png"),
   limit: require("../../../assets/words/l/limit.png"),
   limited: require("../../../assets/words/l/limited.png"),
+  "line up": require("../../../assets/words/l/line-up.png"),
   linear: require("../../../assets/words/l/linear.png"),
   linger: require("../../../assets/words/l/linger.png"),
   linguistic: require("../../../assets/words/l/linguistic.png"),

@@ -45,6 +45,7 @@ export const IMAGES_G: Record<string, ImageSourcePropType> = {
   "get in the way of": require("../../../assets/words/g/get-in-the-way-of.png"),
   "get off": require("../../../assets/words/g/get-off.png"),
   "get rid of": require("../../../assets/words/g/get-rid-of.png"),
+  "get tired": require("../../../assets/words/g/get-tired.png"),
   "get together": require("../../../assets/words/g/get-together.png"),
   "get used to": require("../../../assets/words/g/get-used-to.png"),
   getaway: require("../../../assets/words/g/getaway.png"),

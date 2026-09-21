@@ -27,6 +27,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   faithful: require("../../../assets/words/f/faithful.png"),
   fake: require("../../../assets/words/f/fake.png"),
   fall: require("../../../assets/words/f/fall.png"),
+  "fall down": require("../../../assets/words/f/fall-down.png"),
   "fall off": require("../../../assets/words/f/fall-off.png"),
   fallacy: require("../../../assets/words/f/fallacy.png"),
   false: require("../../../assets/words/f/false.png"),

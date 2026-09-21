@@ -4,6 +4,7 @@ import { ImageSourcePropType } from "react-native";
 export const IMAGES_C: Record<string, ImageSourcePropType> = {
   cabin: require("../../../assets/words/c/cabin.png"),
   cage: require("../../../assets/words/c/cage.png"),
+  cake: require("../../../assets/words/c/cake.png"),
   calculate: require("../../../assets/words/c/calculate.png"),
   calculation: require("../../../assets/words/c/calculation.png"),
   call: require("../../../assets/words/c/call.png"),
@@ -470,6 +471,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   cousin: require("../../../assets/words/c/cousin.png"),
   cover: require("../../../assets/words/c/cover.png"),
   coverage: require("../../../assets/words/c/coverage.png"),
+  cow: require("../../../assets/words/c/cow.png"),
   coward: require("../../../assets/words/c/coward.png"),
   cowardly: require("../../../assets/words/c/cowardly.png"),
   cozy: require("../../../assets/words/c/cozy.png"),

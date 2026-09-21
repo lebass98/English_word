@@ -2,6 +2,7 @@ import { ImageSourcePropType } from "react-native";
 
 // "i" 로 시작하는 단어 그림. scripts/sync_word_images.py 가 만든다 (손으로 고치지 않는다)
 export const IMAGES_I: Record<string, ImageSourcePropType> = {
+  "ice cream": require("../../../assets/words/i/ice-cream.png"),
   iceberg: require("../../../assets/words/i/iceberg.png"),
   idea: require("../../../assets/words/i/idea.png"),
   ideal: require("../../../assets/words/i/ideal.png"),

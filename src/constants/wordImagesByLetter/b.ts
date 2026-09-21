@@ -120,6 +120,8 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   bit: require("../../../assets/words/b/bit.png"),
   bite: require("../../../assets/words/b/bite.png"),
   bitter: require("../../../assets/words/b/bitter.png"),
+  "black color": require("../../../assets/words/b/black-color.png"),
+  "black tea": require("../../../assets/words/b/black-tea.png"),
   blame: require("../../../assets/words/b/blame.png"),
   blank: require("../../../assets/words/b/blank.png"),
   blanket: require("../../../assets/words/b/blanket.png"),

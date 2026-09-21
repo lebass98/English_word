@@ -279,6 +279,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   reward: require("../../../assets/words/r/reward.png"),
   rhetorical: require("../../../assets/words/r/rhetorical.png"),
   rhyme: require("../../../assets/words/r/rhyme.png"),
+  rice: require("../../../assets/words/r/rice.png"),
   "rice meal": require("../../../assets/words/r/rice-meal.png"),
   rich: require("../../../assets/words/r/rich.png"),
   richly: require("../../../assets/words/r/richly.png"),

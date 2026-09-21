@@ -236,6 +236,7 @@ export const IMAGES_A: Record<string, ImageSourcePropType> = {
   anecdote: require("../../../assets/words/a/anecdote.png"),
   angle: require("../../../assets/words/a/angle.png"),
   angry: require("../../../assets/words/a/angry.png"),
+  animal: require("../../../assets/words/a/animal.png"),
   ankle: require("../../../assets/words/a/ankle.png"),
   anniversary: require("../../../assets/words/a/anniversary.png"),
   announce: require("../../../assets/words/a/announce.png"),

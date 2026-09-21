@@ -6,6 +6,7 @@ export const IMAGES_Y: Record<string, ImageSourcePropType> = {
   yawn: require("../../../assets/words/y/yawn.png"),
   yearn: require("../../../assets/words/y/yearn.png"),
   yell: require("../../../assets/words/y/yell.png"),
+  "yellow color": require("../../../assets/words/y/yellow-color.png"),
   yesterday: require("../../../assets/words/y/yesterday.png"),
   yet: require("../../../assets/words/y/yet.png"),
   yield: require("../../../assets/words/y/yield.png"),

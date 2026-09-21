@@ -95,6 +95,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   financing: require("../../../assets/words/f/financing.png"),
   fine: require("../../../assets/words/f/fine.png"),
   finely: require("../../../assets/words/f/finely.png"),
+  finger: require("../../../assets/words/f/finger.png"),
   finish: require("../../../assets/words/f/finish.png"),
   fire: require("../../../assets/words/f/fire.png"),
   firecracker: require("../../../assets/words/f/firecracker.png"),

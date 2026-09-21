@@ -179,6 +179,7 @@ export const IMAGES_C: Record<string, ImageSourcePropType> = {
   coalition: require("../../../assets/words/c/coalition.png"),
   coast: require("../../../assets/words/c/coast.png"),
   coastal: require("../../../assets/words/c/coastal.png"),
+  coat: require("../../../assets/words/c/coat.png"),
   coeducation: require("../../../assets/words/c/coeducation.png"),
   coexist: require("../../../assets/words/c/coexist.png"),
   coffee: require("../../../assets/words/c/coffee.png"),

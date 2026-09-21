@@ -135,6 +135,7 @@ export const IMAGES_B: Record<string, ImageSourcePropType> = {
   bloom: require("../../../assets/words/b/bloom.png"),
   blossom: require("../../../assets/words/b/blossom.png"),
   blow: require("../../../assets/words/b/blow.png"),
+  "blue color": require("../../../assets/words/b/blue-color.png"),
   "blue-chip": require("../../../assets/words/b/blue-chip.png"),
   blueprint: require("../../../assets/words/b/blueprint.png"),
   blur: require("../../../assets/words/b/blur.png"),

@@ -86,6 +86,7 @@ export const IMAGES_R: Record<string, ImageSourcePropType> = {
   recur: require("../../../assets/words/r/recur.png"),
   recurrent: require("../../../assets/words/r/recurrent.png"),
   recurring: require("../../../assets/words/r/recurring.png"),
+  "red color": require("../../../assets/words/r/red-color.png"),
   reduce: require("../../../assets/words/r/reduce.png"),
   reduced: require("../../../assets/words/r/reduced.png"),
   redundant: require("../../../assets/words/r/redundant.png"),

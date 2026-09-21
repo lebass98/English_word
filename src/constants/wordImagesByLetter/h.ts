@@ -6,6 +6,7 @@ export const IMAGES_H: Record<string, ImageSourcePropType> = {
   habitat: require("../../../assets/words/h/habitat.png"),
   habitation: require("../../../assets/words/h/habitation.png"),
   habitual: require("../../../assets/words/h/habitual.png"),
+  hair: require("../../../assets/words/h/hair.png"),
   half: require("../../../assets/words/h/half.png"),
   halt: require("../../../assets/words/h/halt.png"),
   hand: require("../../../assets/words/h/hand.png"),

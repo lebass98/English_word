@@ -61,6 +61,7 @@ export const IMAGES_G: Record<string, ImageSourcePropType> = {
   glacier: require("../../../assets/words/g/glacier.png"),
   glance: require("../../../assets/words/g/glance.png"),
   glare: require("../../../assets/words/g/glare.png"),
+  glasses: require("../../../assets/words/g/glasses.png"),
   gleaming: require("../../../assets/words/g/gleaming.png"),
   glide: require("../../../assets/words/g/glide.png"),
   glimpse: require("../../../assets/words/g/glimpse.png"),

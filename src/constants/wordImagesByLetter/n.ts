@@ -52,6 +52,7 @@ export const IMAGES_N: Record<string, ImageSourcePropType> = {
   newsletter: require("../../../assets/words/n/newsletter.png"),
   newspaper: require("../../../assets/words/n/newspaper.png"),
   "next door": require("../../../assets/words/n/next-door.png"),
+  "next time": require("../../../assets/words/n/next-time.png"),
   "next week": require("../../../assets/words/n/next-week.png"),
   "next year": require("../../../assets/words/n/next-year.png"),
   niche: require("../../../assets/words/n/niche.png"),

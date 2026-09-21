@@ -71,6 +71,7 @@ export const IMAGES_F: Record<string, ImageSourcePropType> = {
   federal: require("../../../assets/words/f/federal.png"),
   fee: require("../../../assets/words/f/fee.png"),
   feed: require("../../../assets/words/f/feed.png"),
+  feeling: require("../../../assets/words/f/feeling.png"),
   fellow: require("../../../assets/words/f/fellow.png"),
   feminine: require("../../../assets/words/f/feminine.png"),
   fence: require("../../../assets/words/f/fence.png"),

@@ -133,6 +133,7 @@ export const IMAGES_T: Record<string, ImageSourcePropType> = {
   tomorrow: require("../../../assets/words/t/tomorrow.png"),
   tone: require("../../../assets/words/t/tone.png"),
   tongue: require("../../../assets/words/t/tongue.png"),
+  tonight: require("../../../assets/words/t/tonight.png"),
   tool: require("../../../assets/words/t/tool.png"),
   tooth: require("../../../assets/words/t/tooth.png"),
   torch: require("../../../assets/words/t/torch.png"),

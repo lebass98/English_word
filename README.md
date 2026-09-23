@@ -37,6 +37,14 @@ npm run lint     # ESLint
   - 외장하드 마운트명이 한글(`외장하드`)이라 macOS 유니코드 정규화(NFD/NFC) 불일치로 Metro 가 JS 엔트리 경로를 해석하지 못함 → `~/build/English_word`(ASCII 경로)로 복사해 빌드하는 방식으로 우회
   - Kotlin classpath 스냅샷 변환 오류는 `kotlin.incremental.useClasspathSnapshot=false` 로 해결
   - Android 16(API 36) 에뮬레이터에서 설치·실행·홈/학습/퀴즈 화면 렌더링 및 이미지 로딩 정상 확인 (크래시 없음)
+- 단어 이미지 전수 점검 및 결함 216장 재생성
+  - 점검: 규격·파손·중복 전수 검사(이상 0), macOS Vision OCR 로 5,406장 그림 속 글자 전수 추출
+  - 결함: 영문 깨짐 97장, 한글 삽입 91장, 영문 오타 24장, 화풍 이탈 11장, 먹칠·부실 2장
+  - 원인: 장면 대본이 간판·현수막·명단에 글자를 쓰라고 지시하고 있었음 (모델은 긴 문장을 제대로 못 씀)
+  - 조치: 원본 장면의 글자 소품을 치환(34개 규칙)하고, 치환으로 부족한 90개는 장면을 새로 작성
+  - 검증: 재생성 216장 OCR 재검사 결과 글자 잔존 0장, 규격 512x512 전수 통과
+  - 단어 이미지 재압축 (314.6MB → 235.8MB). 반복 압축으로 색이 깎이지 않도록 팔레트 이미지는 10% 이상 줄어들 때만 교체하도록 보호 장치 추가
+  - 점검 도구 추가: audit_word_images.py, ocr_word_images.py, check_image_text.py, build_contact_sheets.py, regenerate_flawed_images.py
 
 ### 2026-09-21
 - 단어 이미지 5,406장 PNG 재압축 (1,258.5MB → 278.6MB, 77.9% 절감)

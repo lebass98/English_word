@@ -1,11 +1,16 @@
 import { useRouter } from "expo-router";
 import { ReactNode, useMemo } from "react";
-import { Image, Pressable, Text, View } from "react-native";
+import {
+  Pressable,
+  Text,
+  View,
+} from "react-native";
+import { Image } from "expo-image";
 import { PillButton } from "./PillButton";
 import { useGrades } from "../constants/grades";
 import { useVocab } from "../constants/words";
 import { useT } from "../i18n";
-import { WORD_IMAGES } from "../constants/wordImages";
+import { wordImageSource } from "../constants/wordImages";
 import {
   availableGrades,
   continuePoint,
@@ -120,7 +125,7 @@ export function ContinueCard() {
 
   const ratio = point.unitLen > 0 ? unitKnown / point.unitLen : 0;
   const source =
-    WORD_IMAGES[point.word.conceptId] ?? WORD_IMAGES[point.word.word];
+    wordImageSource(point.word);
 
   const resume = () => {
     setActiveGradeId(point.gradeId);
@@ -141,7 +146,7 @@ export function ContinueCard() {
           {source ? (
             <Image
               source={source}
-              resizeMode="cover"
+              contentFit="cover"
               style={{ width: "100%", height: "100%" }}
             />
           ) : (

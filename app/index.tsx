@@ -1,6 +1,12 @@
 import { useRouter } from "expo-router";
 import { useMemo } from "react";
-import { Image, Pressable, ScrollView, Text, View } from "react-native";
+import {
+  Pressable,
+  ScrollView,
+  Text,
+  View,
+} from "react-native";
+import { Image } from "expo-image";
 import { BottomNav } from "../src/components/BottomNav";
 import { ContinueCard } from "../src/components/ContinueCard";
 import { GradeCard } from "../src/components/GradeCard";
@@ -11,7 +17,7 @@ import { Screen, ScreenHeader } from "../src/components/Screen";
 import { useGrades } from "../src/constants/grades";
 import { STUDY_LANGS } from "../src/constants/languages";
 import { useVocab } from "../src/constants/words";
-import { WORD_IMAGES } from "../src/constants/wordImages";
+import { wordImageSource } from "../src/constants/wordImages";
 import { useT } from "../src/i18n";
 import {
   availableGrades,
@@ -184,7 +190,7 @@ export default function HomeScreen() {
               >
                 {unsure.map((w) => {
                   const source =
-                    WORD_IMAGES[w.conceptId] ?? WORD_IMAGES[w.word];
+                    wordImageSource(w);
                   return (
                     <Pressable
                       key={w.id}
@@ -197,7 +203,7 @@ export default function HomeScreen() {
                         {source ? (
                           <Image
                             source={source}
-                            resizeMode="cover"
+                            contentFit="cover"
                             style={{ width: "100%", height: "100%" }}
                           />
                         ) : (

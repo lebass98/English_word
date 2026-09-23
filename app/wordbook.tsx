@@ -1,6 +1,12 @@
 import { useRouter } from "expo-router";
 import { useMemo, useState } from "react";
-import { FlatList, Image, Pressable, Text, View } from "react-native";
+import {
+  FlatList,
+  Pressable,
+  Text,
+  View,
+} from "react-native";
+import { Image } from "expo-image";
 import { BackButton } from "../src/components/BackButton";
 import { BottomNav } from "../src/components/BottomNav";
 import { PillButton } from "../src/components/PillButton";
@@ -11,7 +17,7 @@ import {
   StarIcon,
 } from "../src/components/icons";
 import { useVocab, type Word } from "../src/constants/words";
-import { WORD_IMAGES } from "../src/constants/wordImages";
+import { wordImageSource } from "../src/constants/wordImages";
 import { useT, type StringKey } from "../src/i18n";
 import {
   STARS_BY_STATUS,
@@ -168,7 +174,7 @@ export default function WordbookScreen() {
 function WordRow({ row, onPress }: { row: Row; onPress: () => void }) {
   const t = useT();
   const { word, status } = row;
-  const source = WORD_IMAGES[word.conceptId] ?? WORD_IMAGES[word.word];
+  const source = wordImageSource(word);
   const filled = STARS_BY_STATUS[status];
 
   return (
@@ -182,7 +188,7 @@ function WordRow({ row, onPress }: { row: Row; onPress: () => void }) {
         {source ? (
           <Image
             source={source}
-            resizeMode="cover"
+            contentFit="cover"
             style={{ width: "100%", height: "100%" }}
           />
         ) : (

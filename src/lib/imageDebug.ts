@@ -3,7 +3,7 @@ import { gradesOf } from "../constants/grades";
 import { STUDY_LANGS, type StudyLangId } from "../constants/languages";
 import { translate } from "../i18n";
 import type { UiLangId } from "../i18n/strings";
-import { WORD_IMAGES } from "../constants/wordImages";
+import { hasWordImage, wordImageCount } from "../constants/wordImages";
 
 /**
  * 연상 그림이 아직 없는 낱말을 세는 임시 도구.
@@ -11,7 +11,7 @@ import { WORD_IMAGES } from "../constants/wordImages";
  * 그림을 다 그릴 때까지만 홈 코스 카드와 그림 현황판에 띄워 둔다.
  * 그림이 다 채워지면 이 파일과 쓰는 곳을 함께 지운다.
  *
- * 등록표(WORD_IMAGES)를 그 자리에서 세므로, 그림을 새로 등록하면
+ * 등록 목록을 그 자리에서 세므로, 그림을 새로 등록하면
  * Fast Refresh 로 화면의 숫자가 곧바로 줄어든다.
  */
 
@@ -20,12 +20,12 @@ import { WORD_IMAGES } from "../constants/wordImages";
  * 그림이 새로 등록되면 이 값이 바뀌어서 붙잡아 둔 개수도 다시 센다
  */
 export function registeredImageCount(): number {
-  return Object.keys(WORD_IMAGES).length;
+  return wordImageCount();
 }
 
 /** 그림 조회 규칙은 학습 화면과 같아야 한다 */
 function hasImage(word: { id: string; word: string; conceptId: string }) {
-  return Boolean(WORD_IMAGES[word.conceptId] ?? WORD_IMAGES[word.word]);
+  return hasWordImage(word);
 }
 
 export interface ImageCoverage {

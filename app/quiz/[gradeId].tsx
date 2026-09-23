@@ -10,13 +10,13 @@ import {
 import {
   Animated,
   Easing,
-  Image,
   Pressable,
   ScrollView,
   Text,
   useWindowDimensions,
   View,
 } from "react-native";
+import { Image } from "expo-image";
 import { BackButton } from "../../src/components/BackButton";
 import {
   BookIcon,
@@ -904,7 +904,7 @@ function SpellingBoard({
           <View style={{ width, aspectRatio: 1 }} className="bg-canvas">
             <Image
               source={image}
-              resizeMode="cover"
+              contentFit="cover"
               style={{ width: "100%", height: "100%" }}
             />
           </View>
@@ -1205,7 +1205,7 @@ function ImageChoice({
       >
         <Image
           source={imageOf(choice)}
-          resizeMode="cover"
+          contentFit="cover"
           style={{ width: "100%", height: "100%" }}
         />
       </View>
@@ -1362,7 +1362,7 @@ function QuizResult({
                     {image ? (
                       <Image
                         source={image}
-                        resizeMode="cover"
+                        contentFit="cover"
                         style={{ width: 48, height: 48 }}
                       />
                     ) : null}

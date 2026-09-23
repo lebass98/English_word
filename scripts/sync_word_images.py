@@ -1,13 +1,10 @@
 #!/usr/bin/env python3
-"""assets/words/<글자>/<철자>.png 를 글자별 등록 파일에 다시 적는다.
+"""assets/words/<글자>/<철자>.png 를 훑어 "그림이 있는 낱말" 목록을 적는다.
 
-- src/constants/wordImagesByLetter/<글자>.ts : 그 글자로 시작하는 그림만 require 한다
-- src/constants/wordImages.ts                : 글자별 파일을 합쳐 WORD_IMAGES 로 내보낸다
-                                               (화면은 이것만 쓴다)
+그림은 앱에 넣지 않고 CDN 에서 받아 온다 (src/constants/wordImages.ts 참고).
+그래서 여기서는 파일을 require 하지 않고, 어떤 낱말에 그림이 있는지만 적는다.
 
-글자별로 나눈 이유: 여러 컴퓨터가 알파벳 범위를 나눠 그림을 그리므로 각자 자기
-글자 파일만 바꾸게 되어, 올릴 때 등록 파일끼리 충돌하지 않는다.
-내용이 같으면 파일을 다시 쓰지 않는다.
+- src/constants/wordImageKeys.ts : 그림이 있는 낱말의 열쇠 목록
 
 화면은 그림을 단어 번호가 아니라 conceptId(= 뜻)와 철자로 찾으므로 열쇠는 철자다.
 띄어쓰기가 있는 낱말은 파일 이름에서 빈칸을 붙임표로 바꾼다 (living room → l/living-room.png).
@@ -22,30 +19,21 @@ import unicodedata
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ASSETS = os.path.join(ROOT, "assets/words")
-BY_LETTER_DIR = os.path.join(ROOT, "src/constants/wordImagesByLetter")
-INDEX = os.path.join(ROOT, "src/constants/wordImages.ts")
+KEYS_FILE = os.path.join(ROOT, "src/constants/wordImageKeys.ts")
+OLD_BY_LETTER_DIR = os.path.join(ROOT, "src/constants/wordImagesByLetter")
 LETTERS = [chr(c) for c in range(ord("a"), ord("z") + 1)] + ["_"]
 
-LETTER_HEADER = '''import { ImageSourcePropType } from "react-native";
-
-// "{letter}" 로 시작하는 단어 그림. scripts/sync_word_images.py 가 만든다 (손으로 고치지 않는다)
-'''
-
-INDEX_HEADER = '''import { ImageSourcePropType } from "react-native";
-
-/**
- * 단어별 연상 이미지 모음.
+KEYS_HEADER = """/**
+ * 연상 그림이 있는 낱말 목록.
  *
- * 열쇠는 단어의 철자(= 뜻을 가리키는 conceptId)다. 그림은 철자 하나에 한 장이고,
- * 학년·코스는 철자 목록만 가지므로 같은 철자는 어느 과정에서든 같은 그림을 쓴다.
+ * 그림 파일은 앱에 넣지 않고 CDN 에서 받아 온다. 그래서 여기에는 파일이 아니라
+ * "이 낱말에는 그림이 있다"는 사실만 적는다. 실제 주소를 만드는 일은
+ * wordImages.ts 가 한다.
  *
- * 그림은 assets/words/<첫 글자>/<철자>.png 에 두고, 등록은 글자별 파일
- * (wordImagesByLetter/<글자>.ts) 에 나눠 적는다. 여러 컴퓨터가 알파벳 범위를
- * 나눠 그림을 그려도 등록 파일끼리 충돌하지 않게 하려는 것이다.
- *
- * 이 파일과 글자별 파일은 scripts/sync_word_images.py 가 만든다. 손으로 고치지 않는다.
+ * 이 파일은 scripts/sync_word_images.py 가 만든다. 손으로 고치지 않는다.
  */
-'''
+export const WORD_IMAGE_KEYS: readonly string[] = [
+"""
 
 
 def letter_of(stem):
@@ -128,33 +116,18 @@ def main():
                 return 1
             seen[key] = f"{letter}/{name}"
 
+    keys = sorted(seen, key=lambda k: k.lower())
+    body = "".join(f"  {json.dumps(k, ensure_ascii=False)},\n" for k in keys)
     changed = []
-    for letter in LETTERS:
-        body = "".join(
-            (f'  {k}: require("../../../assets/words/{letter}/{n}"),\n' if k.isidentifier()
-             else f'  {json.dumps(k, ensure_ascii=False)}: require("../../../assets/words/{letter}/{n}"),\n')
-            for k, n in rows[letter]
-        )
-        text = (
-            LETTER_HEADER.replace("{letter}", letter)
-            + f"export const {ident(letter)}: Record<string, ImageSourcePropType> = {{\n"
-            + body
-            + "};\n"
-        )
-        if write_if_changed(os.path.join(BY_LETTER_DIR, f"{letter}.ts"), text):
-            changed.append(letter)
+    if write_if_changed(KEYS_FILE, KEYS_HEADER + body + "];\n"):
+        changed.append("wordImageKeys.ts")
 
-    imports = "".join(f'import {{ {ident(l)} }} from "./wordImagesByLetter/{l}";\n' for l in LETTERS)
-    spread = "".join(f"  ...{ident(l)},\n" for l in LETTERS)
-    index = (
-        INDEX_HEADER
-        + imports
-        + "\nexport const WORD_IMAGES: Record<string, ImageSourcePropType> = {\n"
-        + spread
-        + "};\n"
-    )
-    if write_if_changed(INDEX, index):
-        changed.append("wordImages.ts")
+    # 예전에 쓰던 글자별 require 파일이 남아 있으면 지운다 (이제 CDN 에서 받는다)
+    if os.path.isdir(OLD_BY_LETTER_DIR):
+        import shutil
+
+        shutil.rmtree(OLD_BY_LETTER_DIR)
+        changed.append("wordImagesByLetter/ 제거")
 
     print(f"그림 {len(seen)}개 등록 | 바뀐 등록 파일: {', '.join(changed) or '없음'}")
     if orphans:

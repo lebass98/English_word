@@ -30,6 +30,17 @@ npm run lint     # ESLint
 
 ## 작업 내역
 
+### 2026-09-24
+- 단어 그림을 앱에서 분리해 CDN 에서 받아 오도록 전환
+  - PNG 512px 5,406장(235.8MB) → WebP 384px(67.4MB) 변환. 앱이 그림을 띄우는 크기가 최대 400px 이라 384px 로 충분
+  - 그림 전용 저장소 분리: https://github.com/lebass98/word-images (공개)
+  - `require()` 5,406개를 걷어내고 낱말 열쇠 목록(72KB)만 앱에 남김. `wordImageSource()` 가 주소를 만든다
+  - `expo-image` 도입. 받아 온 그림을 디스크에 담아 두므로 한 번 본 그림은 인터넷 없이도 다시 뜬다
+  - 배포처는 jsDelivr 대신 GitHub Pages. jsDelivr 는 저장소가 50MB 를 넘으면 서빙을 거부한다 (우리 그림 67MB)
+  - 파일 이름의 대소문자를 보존해야 한다 (COO, Pacific). 서버가 대소문자를 가리므로 소문자로 바꾸면 404
+  - 검증: 무작위 150장 전부 200 응답, 웹 번들 14.2MB → 12.2MB
+  - `assets/words/` 는 원본 보관용이라 앱 저장소에서 추적 해제 (.gitignore)
+
 ### 2026-09-23
 - 안드로이드 릴리스 APK 최초 빌드 및 에뮬레이터 실동작 검증 완료
   - `app.json`에 `android.package`(`com.dongbookro.englishword`) 추가

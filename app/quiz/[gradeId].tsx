@@ -28,6 +28,7 @@ import {
   ShuffleIcon,
   SpeakerIcon,
   SpellcheckIcon,
+  StarIcon,
   TextFieldsIcon,
   type IconProps,
 } from "../../src/components/icons";
@@ -48,6 +49,7 @@ import { useT, type StringKey } from "../../src/i18n";
 import {
   buildQuiz,
   imageOf,
+  imageUrlsOf,
   isQuizKind,
   QUIZ_KINDS,
   QUIZ_SIZE,
@@ -91,8 +93,11 @@ const WIDE_MAX_WIDTH = 960;
 const MIN_COLUMN = 200;
 const MAX_COLUMN = 460;
 
-/** 정답·오답을 보여 주고 다음 문제로 넘어가기까지 기다리는 시간 (ms) */
-const REVEAL_MS = 900;
+/** 정답을 맞혔을 때 다음 문제로 넘어가기까지 기다리는 시간 (ms) */
+const REVEAL_MS = 700;
+
+/** 틀렸을 때는 정답을 확인할 시간이 필요해 더 오래 보여 준다 */
+const REVEAL_WRONG_MS = 1500;
 
 /** 한 문제의 채점 결과 */
 interface Answered {
@@ -204,6 +209,17 @@ export default function QuizScreen() {
   // 판이 끝나면 소리를 멈춘다. 결과 화면에서 발음이 이어 나오면 어수선하다
   useEffect(() => stopSpeaking, []);
 
+  /*
+   * 다음 두 문제의 그림을 미리 받아 둔다.
+   * 그림은 CDN 에서 오므로 미리 받지 않으면 문제를 넘길 때마다 빈 칸을 보게 된다.
+   */
+  useEffect(() => {
+    const urls = questions
+      .slice(index, index + 3)
+      .flatMap((q) => imageUrlsOf(q));
+    if (urls.length) Image.prefetch(urls, { cachePolicy: "disk" });
+  }, [questions, index]);
+
   /** 새 판을 뽑는다. 기록이 쌓였으면 헷갈린 단어가 더 자주 나온다 */
   const restart = useCallback(() => {
     setQuestions(
@@ -291,12 +307,15 @@ export default function QuizScreen() {
       volume: speechVolume,
     });
 
-    setTimeout(() => {
-      setLog((prev) => [...prev, { question, picked: choice, correct }]);
-      setPicked(null);
-      setRevealed(false);
-      setIndex((i) => i + 1);
-    }, REVEAL_MS);
+    setTimeout(
+      () => {
+        setLog((prev) => [...prev, { question, picked: choice, correct }]);
+        setPicked(null);
+        setRevealed(false);
+        setIndex((i) => i + 1);
+      },
+      correct ? REVEAL_MS : REVEAL_WRONG_MS,
+    );
   };
 
   return (
@@ -314,13 +333,7 @@ export default function QuizScreen() {
           </Text>
         </View>
         {/* 연속 정답은 3개부터 보여 준다. 1~2개에 띄우면 늘 켜져 있어 밋밋해진다 */}
-        {combo >= 3 && (
-          <View className="rounded-full bg-[#dcf2ea] px-3 py-1 shadow-neu-sm">
-            <Text className="text-[12px] font-bold text-mint-dark">
-              {t("quiz.combo", { count: combo })}
-            </Text>
-          </View>
-        )}
+        {combo >= 3 && <ComboBadge label={t("quiz.combo", { count: combo })} />}
         <View className="rounded-full bg-surface px-3 py-1 shadow-neu-sm">
           <Text className="text-[12px] font-bold text-slate-600">
             {correctCount}
@@ -468,13 +481,133 @@ function bestComboOf(log: Answered[]): number {
   return best;
 }
 
+/**
+ * 듣기 문제의 스피커 버튼.
+ * 문제를 푸는 동안 은은하게 고동쳐서 "여길 눌러 다시 들으라"는 신호를 준다.
+ */
+function PulseButton({
+  onPress,
+  label,
+  active,
+}: {
+  onPress: () => void;
+  label: string;
+  active: boolean;
+}) {
+  const [ring] = useState(() => new Animated.Value(0));
+  useEffect(() => {
+    if (!active) {
+      ring.stopAnimation();
+      ring.setValue(0);
+      return;
+    }
+    const loop = Animated.loop(
+      Animated.sequence([
+        Animated.timing(ring, {
+          toValue: 1,
+          duration: 1400,
+          easing: Easing.out(Easing.quad),
+          useNativeDriver: true,
+        }),
+        Animated.timing(ring, {
+          toValue: 0,
+          duration: 0,
+          useNativeDriver: true,
+        }),
+      ]),
+    );
+    loop.start();
+    return () => loop.stop();
+  }, [active, ring]);
+
+  return (
+    <View className="items-center justify-center">
+      {/* 버튼 뒤에서 퍼져 나가는 물결 */}
+      <Animated.View
+        pointerEvents="none"
+        style={{
+          position: "absolute",
+          width: 80,
+          height: 80,
+          borderRadius: 40,
+          backgroundColor: "#0EB582",
+          opacity: ring.interpolate({
+            inputRange: [0, 1],
+            outputRange: [0.25, 0],
+          }),
+          transform: [
+            {
+              scale: ring.interpolate({
+                inputRange: [0, 1],
+                outputRange: [1, 1.55],
+              }),
+            },
+          ],
+        }}
+      />
+      <Pressable
+        onPress={onPress}
+        className="h-20 w-20 items-center justify-center rounded-full bg-[#dcf2ea] shadow-neu-sm active:shadow-neu-pressed"
+        accessibilityRole="button"
+        accessibilityLabel={label}
+      >
+        <SpeakerIcon size={34} color="#0EB582" />
+      </Pressable>
+    </View>
+  );
+}
+
+/**
+ * 연속 정답 배지.
+ * 개수가 늘 때마다 통통 튀어야 "이어지고 있다"는 느낌이 산다.
+ */
+function ComboBadge({ label }: { label: string }) {
+  const [pop] = useState(() => new Animated.Value(0.4));
+  useEffect(() => {
+    pop.setValue(0.55);
+    Animated.spring(pop, {
+      toValue: 1,
+      friction: 4,
+      tension: 260,
+      useNativeDriver: true,
+    }).start();
+    // label 이 바뀔 때(콤보가 늘 때)마다 다시 튄다
+  }, [label, pop]);
+
+  return (
+    <Animated.View
+      style={{ transform: [{ scale: pop }] }}
+      className="rounded-full bg-[#dcf2ea] px-3 py-1 shadow-neu-sm"
+    >
+      <Text className="text-[12px] font-bold text-mint-dark">{label}</Text>
+    </Animated.View>
+  );
+}
+
 function ProgressBar({ current, total }: { current: number; total: number }) {
   const ratio = total > 0 ? current / total : 0;
+  // 문제를 넘길 때 눈금이 뚝 뛰지 않고 스르륵 차오르게 한다
+  const [anim] = useState(() => new Animated.Value(ratio));
+  useEffect(() => {
+    Animated.timing(anim, {
+      toValue: ratio,
+      duration: 350,
+      easing: Easing.out(Easing.cubic),
+      // 너비는 레이아웃 속성이라 네이티브 드라이버를 쓸 수 없다
+      useNativeDriver: false,
+    }).start();
+  }, [ratio, anim]);
+
   return (
     <View className="mx-6 mt-4 h-2 overflow-hidden rounded-full bg-canvas shadow-neu-inset">
-      <View
+      <Animated.View
         className="h-full rounded-full bg-mint"
-        style={{ width: `${Math.round(ratio * 100)}%` }}
+        style={{
+          width: anim.interpolate({
+            inputRange: [0, 1],
+            outputRange: ["0%", "100%"],
+          }),
+        }}
       />
     </View>
   );
@@ -674,14 +807,11 @@ function QuizBody({
       // 소리만으로 푸는 문제라 단어는 숨긴다
       prompt = (
         <View className="items-center gap-3 rounded-3xl bg-surface px-5 py-8 shadow-neu-card">
-          <Pressable
+          <PulseButton
             onPress={speak}
-            className="h-20 w-20 items-center justify-center rounded-full bg-[#dcf2ea] shadow-neu-sm active:opacity-70"
-            accessibilityRole="button"
-            accessibilityLabel={t("quiz.replay")}
-          >
-            <SpeakerIcon size={34} color="#0EB582" />
-          </Pressable>
+            label={t("quiz.replay")}
+            active={!revealed}
+          />
           <Text className="text-[12px] text-slate-400">{t("quiz.replay")}</Text>
         </View>
       );
@@ -905,6 +1035,8 @@ function SpellingBoard({
             <Image
               source={image}
               contentFit="cover"
+              transition={150}
+              cachePolicy="disk"
               style={{ width: "100%", height: "100%" }}
             />
           </View>
@@ -1058,6 +1190,51 @@ function givenSlotsOf(length: number): Set<number> {
 }
 
 /**
+ * 채점 순간의 몸짓.
+ * 정답 보기는 살짝 부풀었다 돌아오고, 잘못 고른 보기는 좌우로 떨린다.
+ * 색만 바뀌면 아이 눈에 안 들어와서 움직임을 함께 준다.
+ */
+function useMarkFeedback(mark: "idle" | "correct" | "wrong") {
+  const [scale] = useState(() => new Animated.Value(1));
+  const [shake] = useState(() => new Animated.Value(0));
+
+  useEffect(() => {
+    if (mark === "correct") {
+      Animated.sequence([
+        Animated.spring(scale, {
+          toValue: 1.06,
+          friction: 4,
+          tension: 220,
+          useNativeDriver: true,
+        }),
+        Animated.spring(scale, {
+          toValue: 1,
+          friction: 5,
+          tension: 160,
+          useNativeDriver: true,
+        }),
+      ]).start();
+    } else if (mark === "wrong") {
+      Animated.sequence(
+        [10, -8, 6, -4, 0].map((x) =>
+          Animated.timing(shake, {
+            toValue: x,
+            duration: 55,
+            easing: Easing.linear,
+            useNativeDriver: true,
+          }),
+        ),
+      ).start();
+    } else {
+      scale.setValue(1);
+      shake.setValue(0);
+    }
+  }, [mark, scale, shake]);
+
+  return { transform: [{ scale }, { translateX: shake }] };
+}
+
+/**
  * 고른 보기의 표시 상태.
  * 아직 안 골랐으면 기본, 고른 뒤에는 정답을 초록으로, 내가 틀리게 고른 것만 빨갛게 한다.
  */
@@ -1088,6 +1265,7 @@ function MeaningChoice({
   onPress: () => void;
 }) {
   const mark = markOf(choice, answer, picked, revealed);
+  const feedback = useMarkFeedback(mark);
   const tone =
     mark === "correct"
       ? "bg-[#dcf2ea]"
@@ -1096,10 +1274,11 @@ function MeaningChoice({
         : "bg-surface";
 
   return (
+    <Animated.View style={feedback}>
     <Pressable
       onPress={onPress}
       disabled={revealed}
-      className={`flex-row items-center justify-between gap-3 rounded-2xl ${tone} px-5 py-3.5 shadow-neu-sm active:opacity-80`}
+      className={`flex-row items-center justify-between gap-3 rounded-2xl ${tone} px-5 py-3.5 shadow-neu-sm active:shadow-neu-pressed`}
       accessibilityRole="button"
       accessibilityLabel={choice.meaning}
     >
@@ -1117,6 +1296,7 @@ function MeaningChoice({
       {mark === "correct" && <CheckIcon size={18} color={MINT} />}
       {mark === "wrong" && <CloseIcon size={18} color={CORAL} />}
     </Pressable>
+    </Animated.View>
   );
 }
 
@@ -1134,6 +1314,7 @@ function WordChoice({
   onPress: () => void;
 }) {
   const mark = markOf(choice, answer, picked, revealed);
+  const feedback = useMarkFeedback(mark);
   const tone =
     mark === "correct"
       ? "bg-[#dcf2ea]"
@@ -1142,10 +1323,11 @@ function WordChoice({
         : "bg-surface";
 
   return (
+    <Animated.View style={feedback}>
     <Pressable
       onPress={onPress}
       disabled={revealed}
-      className={`flex-row items-center justify-between rounded-2xl ${tone} px-5 py-3.5 shadow-neu-sm active:opacity-80`}
+      className={`flex-row items-center justify-between rounded-2xl ${tone} px-5 py-3.5 shadow-neu-sm active:shadow-neu-pressed`}
       accessibilityRole="button"
       accessibilityLabel={choice.word}
     >
@@ -1163,6 +1345,7 @@ function WordChoice({
       {mark === "correct" && <CheckIcon size={18} color={MINT} />}
       {mark === "wrong" && <CloseIcon size={18} color={CORAL} />}
     </Pressable>
+    </Animated.View>
   );
 }
 
@@ -1183,6 +1366,7 @@ function ImageChoice({
   onPress: () => void;
 }) {
   const mark = markOf(choice, answer, picked, revealed);
+  const feedback = useMarkFeedback(mark);
   const tone =
     mark === "correct"
       ? "bg-[#dcf2ea]"
@@ -1191,11 +1375,12 @@ function ImageChoice({
         : "bg-surface";
 
   return (
+    <Animated.View style={feedback}>
     <Pressable
       onPress={onPress}
       disabled={revealed}
       style={{ width: size + CELL_PAD * 2, padding: CELL_PAD }}
-      className={`rounded-2xl ${tone} shadow-neu-sm active:opacity-80`}
+      className={`rounded-2xl ${tone} shadow-neu-sm active:shadow-neu-pressed`}
       accessibilityRole="button"
       accessibilityLabel={choice.word}
     >
@@ -1206,6 +1391,8 @@ function ImageChoice({
         <Image
           source={imageOf(choice)}
           contentFit="cover"
+          transition={150}
+          cachePolicy="disk"
           style={{ width: "100%", height: "100%" }}
         />
       </View>
@@ -1220,6 +1407,7 @@ function ImageChoice({
         </View>
       )}
     </Pressable>
+    </Animated.View>
   );
 }
 
@@ -1280,6 +1468,30 @@ function QuizResult({
     }).start();
   }, [pop]);
 
+  /*
+   * 점수는 0에서 차오르며 보여 준다.
+   * 아이에게는 "결과가 계산되는" 짧은 기다림이 점수 자체보다 재미있다.
+   */
+  const [shown, setShown] = useState(0);
+  useEffect(() => {
+    if (score <= 0) return;
+    const start = Date.now();
+    const tick = setInterval(() => {
+      const gone = (Date.now() - start) / 900;
+      if (gone >= 1) {
+        setShown(score);
+        clearInterval(tick);
+      } else {
+        // 끝에 갈수록 느려지게 (easeOut)
+        setShown(Math.round(score * (1 - Math.pow(1 - gone, 3))));
+      }
+    }, 40);
+    return () => clearInterval(tick);
+  }, [score]);
+
+  /** 점수를 별 셋으로 요약한다. 숫자보다 별이 한눈에 들어온다 */
+  const stars = score >= 90 ? 3 : score >= 60 ? 2 : score >= 30 ? 1 : 0;
+
   return (
     <Screen>
       <ScreenHeader>
@@ -1297,8 +1509,18 @@ function QuizResult({
           style={{ transform: [{ scale: pop }] }}
           className="w-full items-center gap-2 rounded-3xl bg-surface px-6 py-8 shadow-neu-card"
         >
+          {/* 별 셋: 채워진 별과 빈 별로 이번 판을 한눈에 보여 준다 */}
+          <View className="flex-row gap-1.5">
+            {[0, 1, 2].map((i) => (
+              <StarIcon
+                key={i}
+                size={26}
+                color={i < stars ? "#fbbf24" : "#e2e8f0"}
+              />
+            ))}
+          </View>
           <Text className="text-center text-[52px] font-black leading-[60px] text-mint">
-            {score}
+            {shown}
           </Text>
           <Text className="text-center text-[14px] text-slate-500">
             {t("quiz.result.correct", { correct, total })}
@@ -1361,6 +1583,8 @@ function QuizResult({
                   >
                     {image ? (
                       <Image
+                        transition={150}
+                        cachePolicy="disk"
                         source={image}
                         contentFit="cover"
                         style={{ width: 48, height: 48 }}

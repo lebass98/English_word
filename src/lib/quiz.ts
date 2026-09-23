@@ -82,6 +82,27 @@ export function imageOf(word: Word) {
   return wordImageSource(word) ?? undefined;
 }
 
+/**
+ * 한 문제가 쓰는 그림 주소 전부.
+ *
+ * 그림은 CDN 에서 받아 오므로, 다음 문제의 그림을 미리 받아 두지 않으면
+ * 문제를 넘길 때마다 빈 칸을 보게 된다. 미리 받기(prefetch)에 쓴다.
+ */
+export function imageUrlsOf(question: QuizQuestion): string[] {
+  const words: Word[] =
+    question.kind === "spelling"
+      ? [question.answer]
+      : question.kind === "wordToImage"
+        ? question.choices
+        : [];
+  const urls: string[] = [];
+  for (const w of words) {
+    const src = wordImageSource(w);
+    if (src) urls.push(src.uri);
+  }
+  return urls;
+}
+
 /** 그림이 있는 단어만 그림 문제로 낼 수 있다 */
 export function hasImage(word: Word): boolean {
   return hasWordImage(word);

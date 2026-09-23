@@ -30,6 +30,14 @@ npm run lint     # ESLint
 
 ## 작업 내역
 
+### 2026-09-23
+- 안드로이드 릴리스 APK 최초 빌드 및 에뮬레이터 실동작 검증 완료
+  - `app.json`에 `android.package`(`com.dongbookro.englishword`) 추가
+  - 로컬 빌드 환경 구축: Temurin JDK 17, Android SDK 36(build-tools 36.0.0, NDK 27) 를 `~/devtools`에 sudo 없이 설치
+  - 외장하드 마운트명이 한글(`외장하드`)이라 macOS 유니코드 정규화(NFD/NFC) 불일치로 Metro 가 JS 엔트리 경로를 해석하지 못함 → `~/build/English_word`(ASCII 경로)로 복사해 빌드하는 방식으로 우회
+  - Kotlin classpath 스냅샷 변환 오류는 `kotlin.incremental.useClasspathSnapshot=false` 로 해결
+  - Android 16(API 36) 에뮬레이터에서 설치·실행·홈/학습/퀴즈 화면 렌더링 및 이미지 로딩 정상 확인 (크래시 없음)
+
 ### 2026-09-21
 - 단어 이미지 5,406장 PNG 재압축 (1,258.5MB → 278.6MB, 77.9% 절감)
   - pngquant 로 8비트 팔레트화 후 oxipng 로 무손실 재압축 및 메타데이터 제거

@@ -1,5 +1,5 @@
 import type { Word } from "../constants/words";
-import { WORD_IMAGES } from "../constants/wordImages";
+import { hasWordImage, wordImageSource } from "../constants/wordImages";
 import type { StudyEntry, WordStatus } from "../stores/useAppStore";
 
 /** 한 판에 푸는 문제 수 */
@@ -79,12 +79,33 @@ const SPELLING_MAX = 10;
 
 /** 학습 화면과 같은 규칙으로 그림을 찾는다 */
 export function imageOf(word: Word) {
-  return WORD_IMAGES[word.conceptId] ?? WORD_IMAGES[word.word];
+  return wordImageSource(word) ?? undefined;
+}
+
+/**
+ * 한 문제가 쓰는 그림 주소 전부.
+ *
+ * 그림은 CDN 에서 받아 오므로, 다음 문제의 그림을 미리 받아 두지 않으면
+ * 문제를 넘길 때마다 빈 칸을 보게 된다. 미리 받기(prefetch)에 쓴다.
+ */
+export function imageUrlsOf(question: QuizQuestion): string[] {
+  const words: Word[] =
+    question.kind === "spelling"
+      ? [question.answer]
+      : question.kind === "wordToImage"
+        ? question.choices
+        : [];
+  const urls: string[] = [];
+  for (const w of words) {
+    const src = wordImageSource(w);
+    if (src) urls.push(src.uri);
+  }
+  return urls;
 }
 
 /** 그림이 있는 단어만 그림 문제로 낼 수 있다 */
 export function hasImage(word: Word): boolean {
-  return Boolean(imageOf(word));
+  return hasWordImage(word);
 }
 
 /** 뜻이 단어 철자 그대로면(= 번역이 아직 없으면) 뜻 문제로 쓸 수 없다 */

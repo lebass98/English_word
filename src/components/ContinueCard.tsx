@@ -1,6 +1,7 @@
 import { useRouter } from "expo-router";
 import { ReactNode, useEffect, useMemo, useState } from "react";
-import { Animated, Easing, Image, Text, View } from "react-native";
+import { Animated, Easing, Text, View } from "react-native";
+import { Image } from "expo-image";
 import Svg, { Defs, LinearGradient, Rect, Stop } from "react-native-svg";
 import { PillButton } from "./PillButton";
 import { SectionLabel } from "./SectionLabel";
@@ -10,7 +11,7 @@ import { useGrades } from "../constants/grades";
 import { studyLanguageOf, studyLangOfWordId } from "../constants/languages";
 import { useVocab } from "../constants/words";
 import { useT } from "../i18n";
-import { WORD_IMAGES } from "../constants/wordImages";
+import { wordImageSource } from "../constants/wordImages";
 import { speakWord } from "../lib/speech";
 import {
   availableGrades,
@@ -284,7 +285,7 @@ export function ContinueCard() {
   }
 
   const { word } = point;
-  const source = WORD_IMAGES[word.conceptId] ?? WORD_IMAGES[word.word];
+  const source = wordImageSource(word);
 
   const open = (wordId: string) => {
     setActiveGradeId(point.gradeId);
@@ -338,7 +339,7 @@ export function ContinueCard() {
           {source ? (
             <Image
               source={source}
-              resizeMode="cover"
+              contentFit="cover"
               style={{ width: "100%", height: "100%" }}
             />
           ) : (

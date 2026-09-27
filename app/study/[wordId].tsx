@@ -10,7 +10,6 @@ import {
 import {
   Animated,
   Easing,
-  Image,
   PanResponder,
   Pressable,
   ScrollView,
@@ -19,6 +18,7 @@ import {
   View,
   Platform,
 } from "react-native";
+import { Image } from "expo-image";
 import { BlurView } from "expo-blur";
 import {
   AgainIcon,
@@ -56,7 +56,7 @@ import {
   studyLanguageOf,
 } from "../../src/constants/languages";
 import { useT } from "../../src/i18n";
-import { WORD_IMAGES } from "../../src/constants/wordImages";
+import { wordImageSource } from "../../src/constants/wordImages";
 import { speakWord, stopSpeaking } from "../../src/lib/speech";
 import { useAppStore, type WordStatus } from "../../src/stores/useAppStore";
 
@@ -134,7 +134,7 @@ export default function StudyScreen() {
  */
 function WordImage({ word, offset = 0 }: { word: Word; offset?: number }) {
   const t = useT();
-  const source = WORD_IMAGES[word.conceptId] ?? WORD_IMAGES[word.word];
+  const source = wordImageSource(word);
   return (
     <View
       style={{
@@ -148,7 +148,7 @@ function WordImage({ word, offset = 0 }: { word: Word; offset?: number }) {
       {source ? (
         <Image
           source={source}
-          resizeMode="cover"
+          contentFit="cover"
           style={{ width: "100%", height: "100%" }}
         />
       ) : (

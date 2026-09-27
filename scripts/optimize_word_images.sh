@@ -50,7 +50,18 @@ try:
 except Exception:
     print(0)" "$tmp" 2>/dev/null || echo 0)
 
-  if [ "$ok" = "1" ] && [ "$after" -gt 0 ] && [ "$after" -lt "$before" ]; then
+  # 이미 팔레트로 줄여 둔 그림을 또 줄이면 색이 조금씩 깎인다.
+  # 그래서 이미 팔레트인 그림은 10% 넘게 작아질 때만 바꾼다.
+  palette=$(python3 -c "
+import struct,sys
+d=open(sys.argv[1],'rb').read(26)
+print(1 if d[25]==3 else 0)" "$f" 2>/dev/null || echo 0)
+  limit=$before
+  if [ "$palette" = "1" ]; then
+    limit=$(( before * 90 / 100 ))
+  fi
+
+  if [ "$ok" = "1" ] && [ "$after" -gt 0 ] && [ "$after" -lt "$limit" ]; then
     mv "$tmp" "$f"
   else
     rm -f "$tmp"

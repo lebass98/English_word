@@ -1,7 +1,8 @@
-import { Image, Text, View } from "react-native";
+import { Image } from "expo-image";
+import { Text, View } from "react-native";
 import { PressableScale } from "./motion";
 import type { Word } from "../constants/words";
-import { WORD_IMAGES } from "../constants/wordImages";
+import { wordImageSource } from "../constants/wordImages";
 import { useT } from "../i18n";
 import { PictureIcon } from "./icons";
 
@@ -17,7 +18,7 @@ export function TodayWordCard({
   onPress: () => void;
 }) {
   const t = useT();
-  const source = WORD_IMAGES[word.conceptId] ?? WORD_IMAGES[word.word];
+  const source = wordImageSource(word);
   const pos = word.pos?.[0];
 
   return (
@@ -33,7 +34,7 @@ export function TodayWordCard({
           {source ? (
             <Image
               source={source}
-              resizeMode="cover"
+              contentFit="cover"
               style={{ width: "100%", height: "100%" }}
             />
           ) : (

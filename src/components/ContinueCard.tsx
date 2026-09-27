@@ -1,21 +1,47 @@
 import { useRouter } from "expo-router";
 import { ReactNode, useMemo } from "react";
 import { Image, Pressable, Text, View } from "react-native";
+import Svg, { Defs, LinearGradient, Rect, Stop } from "react-native-svg";
 import { PillButton } from "./PillButton";
+import { SectionLabel } from "./SectionLabel";
+import { GAUGE_FILL_STOPS } from "./GaugeBar";
 import { useGrades } from "../constants/grades";
+import { studyLanguageOf, studyLangOfWordId } from "../constants/languages";
 import { useVocab } from "../constants/words";
 import { useT } from "../i18n";
 import { WORD_IMAGES } from "../constants/wordImages";
+import { speakWord } from "../lib/speech";
 import {
   availableGrades,
   continuePoint,
   knownCountInWords,
 } from "../stores/selectors";
 import { useAppStore } from "../stores/useAppStore";
-import { PictureIcon, RocketIcon } from "./icons";
+import {
+  ChevronLeftIcon,
+  ChevronRightIcon,
+  PictureIcon,
+  PlayIcon,
+  RocketIcon,
+  ShuffleIcon,
+  SpeakerIcon,
+} from "./icons";
 
 /** 스켈레톤과 실제 카드의 높이를 맞춰 저장소 로드 직후 화면이 밀리지 않게 한다 */
-const CARD_MIN_HEIGHT = "min-h-[224px]";
+const CARD_MIN_HEIGHT = "min-h-[272px]";
+
+/** 파형 카드 높이와 왼쪽 그림 폭 (px) */
+const WAVE_H = 92;
+const WAVE_IMG_W = 130;
+/** 카드 서피스 색. 그림이 이 색으로 흐려지며 사라진다 */
+const SURFACE = "#f1f2f6";
+
+/** 낱말마다 늘 같은 높이가 나오게 철자로 막대 높이(14~44px)를 정한다 */
+function barHeight(seed: string): number {
+  let h = 0;
+  for (const ch of seed) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
+  return 14 + (h % 31);
+}
 
 function Thumb({ children }: { children: ReactNode }) {
   return (
@@ -25,15 +51,44 @@ function Thumb({ children }: { children: ReactNode }) {
   );
 }
 
+/** 볼록한 원형 버튼. 누르면 안으로 파인다 */
+function RoundButton({
+  children,
+  onPress,
+  label,
+  size = 52,
+}: {
+  children: ReactNode;
+  onPress: () => void;
+  label: string;
+  size?: number;
+}) {
+  return (
+    <Pressable
+      onPress={onPress}
+      accessibilityRole="button"
+      accessibilityLabel={label}
+      style={{ width: size, height: size }}
+      className="items-center justify-center rounded-full bg-surface shadow-neu-sm active:bg-canvas active:shadow-neu-inset"
+    >
+      {children}
+    </Pressable>
+  );
+}
+
 /**
- * 홈 화면의 주인공 카드.
- * 마지막으로 보던 단어가 있으면 그 자리로, 없으면 첫 단어로 보낸다.
+ * 홈 화면의 이어하기 칸.
+ * 음악 플레이어처럼 두 층으로 그린다.
+ * - 위: 단어 그림이 흐려지는 파형 카드. 막대 하나가 유닛의 단어 하나이고 외운 단어는 민트로 찬다
+ * - 아래: 이전 단어 · 발음 듣기 · 다음 단어 · 유닛에서 아무 단어
+ * 마지막으로 보던 단어가 없으면 첫 단어부터 시작하는 카드를 보여준다.
  */
 export function ContinueCard() {
   const router = useRouter();
   const hydrated = useAppStore((s) => s.hydrated);
   const lastStudied = useAppStore((s) => s.lastStudied);
   const entries = useAppStore((s) => s.entries);
+  const speechVolume = useAppStore((s) => s.speechVolume);
   const setActiveGradeId = useAppStore((s) => s.setActiveGradeId);
   const vocab = useVocab();
   const grades = useGrades();
@@ -54,25 +109,32 @@ export function ContinueCard() {
     return grade && first ? { grade, first } : null;
   }, [grades, vocab]);
 
-  // selectors의 continuePoint는 unitKnown을 0으로 주므로 여기서 직접 센다
-  const unitKnown = useMemo(() => {
-    if (!point) return 0;
+  /** 이어할 단어가 든 유닛의 단어들과, 학년 전체에서 앞뒤 단어 */
+  const around = useMemo(() => {
+    if (!point) return null;
     const unitWords =
       vocab.unitsOf(point.gradeId).find((u) => u.unitNo === point.unitNo)
         ?.words ?? [];
-    return knownCountInWords(entries, unitWords);
-  }, [entries, point, vocab]);
+    const found = vocab.find(point.word.id);
+    return {
+      unitWords,
+      prev: found ? found.words[found.index - 1] : undefined,
+      next: found ? found.words[found.index + 1] : undefined,
+    };
+  }, [point, vocab]);
+
+  // selectors의 continuePoint는 unitKnown을 0으로 주므로 여기서 직접 센다
+  const unitKnown = useMemo(
+    () => (around ? knownCountInWords(entries, around.unitWords) : 0),
+    [entries, around],
+  );
 
   // 저장소를 읽기 전에 "시작" 카드를 잠깐 보여주면 이어하기 카드로 바뀌며 깜빡인다
   if (!hydrated) {
-    return (
-      <View
-        className={`${CARD_MIN_HEIGHT} rounded-3xl bg-surface shadow-neu-card`}
-      />
-    );
+    return <View className={CARD_MIN_HEIGHT} />;
   }
 
-  if (!point) {
+  if (!point || !around) {
     if (!startPoint) return null;
     const { grade, first } = startPoint;
 
@@ -82,62 +144,93 @@ export function ContinueCard() {
     };
 
     return (
-      <View
-        className={`${CARD_MIN_HEIGHT} justify-center rounded-3xl bg-surface p-6 shadow-neu-card`}
-      >
-        <Pressable
-          onPress={start}
-          accessibilityRole="button"
-          accessibilityLabel={`${grade.short} UNIT 1 ${t("continue.start")}`}
-          className="flex-row items-center gap-4 active:opacity-70"
-        >
-          <Thumb>
-            <RocketIcon size={32} color="#0EB582" />
-          </Thumb>
-          <View className="flex-1">
-            <Text className="text-[12px] font-bold text-mint">
-              {t("continue.start")}
-            </Text>
-            <Text className="mt-1 text-[20px] font-bold text-ink">
-              {grade.short} UNIT 1
-            </Text>
-            <Text className="mt-1 text-[14px] text-slate-500">
-              {first.word}
-            </Text>
-          </View>
-        </Pressable>
+      <View>
+        <SectionLabel label="START" sub={`${grade.short} · UNIT 1`} />
+        <View className="mt-4 rounded-3xl bg-surface p-6 shadow-neu-card">
+          <Pressable
+            onPress={start}
+            accessibilityRole="button"
+            accessibilityLabel={`${grade.short} UNIT 1 ${t("continue.start")}`}
+            className="flex-row items-center gap-4 active:opacity-70"
+          >
+            <Thumb>
+              <RocketIcon size={32} color="#0EB582" />
+            </Thumb>
+            <View className="flex-1">
+              <Text className="text-[12px] font-bold text-mint">
+                {t("continue.start")}
+              </Text>
+              <Text className="mt-1 text-[20px] font-bold text-ink">
+                {grade.short} UNIT 1
+              </Text>
+              <Text className="mt-1 text-[14px] text-slate-500">
+                {first.word}
+              </Text>
+            </View>
+          </Pressable>
 
-        <PillButton
-          className="mt-6"
-          label={t("continue.start")}
-          variant="primary"
-          size="lg"
-          onPress={start}
-        />
+          <PillButton
+            className="mt-6"
+            label={t("continue.start")}
+            variant="primary"
+            size="lg"
+            onPress={start}
+          />
+        </View>
       </View>
     );
   }
 
-  const ratio = point.unitLen > 0 ? unitKnown / point.unitLen : 0;
-  const source =
-    WORD_IMAGES[point.word.conceptId] ?? WORD_IMAGES[point.word.word];
+  const { word } = point;
+  const source = WORD_IMAGES[word.conceptId] ?? WORD_IMAGES[word.word];
 
-  const resume = () => {
+  const open = (wordId: string) => {
     setActiveGradeId(point.gradeId);
-    router.push(`/study/${point.word.id}`);
+    router.push(`/study/${wordId}`);
+  };
+  const resume = () => open(word.id);
+  const speak = () =>
+    speakWord(word.word, {
+      lang: studyLanguageOf(studyLangOfWordId(word.id)).speechCode,
+      volume: speechVolume,
+    });
+  const shuffle = () => {
+    const others = around.unitWords.filter((w) => w.id !== word.id);
+    const pool = others.length > 0 ? others : around.unitWords;
+    open(pool[Math.floor(Math.random() * pool.length)].id);
   };
 
   return (
-    <View
-      className={`${CARD_MIN_HEIGHT} rounded-3xl bg-surface p-6 shadow-neu-card`}
-    >
+    <View>
+      <SectionLabel
+        label="CONTINUE"
+        sub={t("home.continueSub", {
+          grade: point.gradeShort,
+          unit: point.unitNo,
+        })}
+        right={
+          <RoundButton onPress={resume} label={t("continue.resume")}>
+            <PlayIcon size={22} color="#0EB582" />
+          </RoundButton>
+        }
+      />
+
+      {/* 파형 카드: 그림이 오른쪽으로 흐려지고, 그 옆에 유닛 진행 막대가 선다 */}
       <Pressable
         onPress={resume}
         accessibilityRole="button"
-        accessibilityLabel={`${point.gradeShort} UNIT ${point.unitNo}, ${point.word.word} ${t("continue.resume")}`}
-        className="flex-row items-center gap-4 active:opacity-70"
+        accessibilityLabel={t("a11y.unitProgress", {
+          unit: point.unitNo,
+          total: point.unitLen,
+          known: unitKnown,
+        })}
+        style={{ height: WAVE_H }}
+        className="mt-4 flex-row items-center overflow-hidden rounded-3xl bg-surface shadow-neu-card active:shadow-neu-pressed"
       >
-        <Thumb>
+        <View
+          style={{ width: WAVE_IMG_W, height: WAVE_H }}
+          className="absolute left-0 top-0 items-center justify-center"
+        >
           {source ? (
             <Image
               source={source}
@@ -147,39 +240,121 @@ export function ContinueCard() {
           ) : (
             <PictureIcon size={28} color="#cbd5e1" />
           )}
-        </Thumb>
-        <View className="flex-1">
-          <Text className="text-[12px] font-bold text-mint">
-            {t("continue.resume")}
+          <Svg
+            width={WAVE_IMG_W}
+            height={WAVE_H}
+            style={{ position: "absolute", left: 0, top: 0 }}
+          >
+            <Defs>
+              <LinearGradient id="continueFade" x1="0" y1="0" x2="1" y2="0">
+                <Stop offset="0.3" stopColor={SURFACE} stopOpacity={0} />
+                <Stop offset="1" stopColor={SURFACE} stopOpacity={1} />
+              </LinearGradient>
+            </Defs>
+            <Rect width={WAVE_IMG_W} height={WAVE_H} fill="url(#continueFade)" />
+          </Svg>
+        </View>
+
+        <View
+          style={{ marginLeft: WAVE_IMG_W - 20 }}
+          className="flex-1 flex-row items-center gap-2 pr-4"
+        >
+          <Text className="text-[12px] font-bold text-slate-500">
+            {unitKnown}
           </Text>
-          <Text className="mt-1 text-[20px] font-bold text-ink">
-            {point.gradeShort} UNIT {point.unitNo}
-          </Text>
-          <Text numberOfLines={1} className="mt-1 text-[14px] text-slate-500">
-            {point.word.word}
+          <View className="flex-1 flex-row items-center justify-center gap-[3px]">
+            {around.unitWords.map((w) => {
+              const current = w.id === word.id;
+              const known = entries[w.id]?.status === "known";
+              return (
+                <View
+                  key={w.id}
+                  style={{ height: barHeight(w.word) }}
+                  className={`w-[3px] rounded-full ${
+                    current
+                      ? "bg-mint-dark"
+                      : known
+                        ? "bg-mint"
+                        : "bg-[#cfd3dc]"
+                  }`}
+                />
+              );
+            })}
+          </View>
+          <Text className="text-[12px] font-bold text-slate-500">
+            {point.unitLen}
           </Text>
         </View>
       </Pressable>
 
-      <View className="mt-5 flex-row items-center gap-3">
-        <View className="h-2 flex-1 overflow-hidden rounded-full bg-canvas shadow-neu-inset">
-          <View
-            className="h-full rounded-full bg-mint"
-            style={{ width: `${Math.round(ratio * 100)}%` }}
-          />
+      {/* 플레이어 카드 */}
+      <View className="mt-4 flex-row items-center justify-between gap-3 rounded-3xl bg-surface py-4 pl-5 pr-4 shadow-neu-card">
+        <View className="flex-1">
+          <Text numberOfLines={1} className="text-[17px] font-extrabold text-ink">
+            {word.word}
+          </Text>
+          <Text numberOfLines={1} className="text-[12px] text-slate-500">
+            {word.meaning}
+          </Text>
         </View>
-        <Text className="text-[13px] font-bold text-slate-500">
-          {unitKnown}/{point.unitLen}
-        </Text>
+        <View className="flex-row items-center gap-1">
+          <Pressable
+            onPress={() => around.prev && open(around.prev.id)}
+            disabled={!around.prev}
+            accessibilityRole="button"
+            accessibilityLabel={t("study.prevWord")}
+            className="h-11 w-9 items-center justify-center active:opacity-50"
+          >
+            <ChevronLeftIcon
+              size={26}
+              color={around.prev ? "#94a3b8" : "#dde1e8"}
+            />
+          </Pressable>
+          <Pressable
+            onPress={speak}
+            accessibilityRole="button"
+            accessibilityLabel={t("study.speak", { word: word.word })}
+            className="h-14 w-14 items-center justify-center rounded-full bg-surface shadow-neu-sm active:shadow-neu-inset"
+          >
+            <View className="h-10 w-10 items-center justify-center overflow-hidden rounded-full">
+              <Svg width={40} height={40} style={{ position: "absolute" }}>
+                <Defs>
+                  <LinearGradient id="continuePlay" x1="0" y1="0" x2="1" y2="1">
+                    {GAUGE_FILL_STOPS.slice(0, 2).map((s) => (
+                      <Stop key={s.offset} offset={s.offset} stopColor={s.color} />
+                    ))}
+                  </LinearGradient>
+                </Defs>
+                <Rect width={40} height={40} fill="url(#continuePlay)" />
+              </Svg>
+              {/* 웹에서 absolute 인 그라데이션이 정적 배치된 svg 아이콘을 덮지 않게 View 로 감싼다 */}
+              <View>
+                <SpeakerIcon size={20} color="#ffffff" />
+              </View>
+            </View>
+          </Pressable>
+          <Pressable
+            onPress={() => around.next && open(around.next.id)}
+            disabled={!around.next}
+            accessibilityRole="button"
+            accessibilityLabel={t("study.nextWord")}
+            className="h-11 w-9 items-center justify-center active:opacity-50"
+          >
+            <ChevronRightIcon
+              size={26}
+              color={around.next ? "#94a3b8" : "#dde1e8"}
+            />
+          </Pressable>
+          <Pressable
+            onPress={shuffle}
+            accessibilityRole="button"
+            accessibilityLabel={t("home.randomWord")}
+            className="h-11 w-9 items-center justify-center active:opacity-50"
+          >
+            <ShuffleIcon size={20} color="#94a3b8" />
+          </Pressable>
+        </View>
       </View>
-
-      <PillButton
-        className="mt-5"
-        label={t("continue.title")}
-        variant="primary"
-        size="lg"
-        onPress={resume}
-      />
     </View>
   );
 }

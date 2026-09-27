@@ -222,27 +222,23 @@ export default function SettingsScreen() {
                 {t("settings.autoAdvanceSecValue", { sec: autoAdvanceSec })}
               </Text>
             </View>
-            <GaugeBar
-              value={autoAdvanceSec}
-              min={AUTO_ADVANCE_MIN_SEC}
-              max={AUTO_ADVANCE_MAX_SEC}
-              onChange={setAutoAdvanceSec}
-              accessibilityLabel={t("settings.autoAdvanceSec")}
-              accessibilityValueText={t("settings.autoAdvanceSecValue", {
-                sec: autoAdvanceSec,
-              })}
-            />
-            <View className="flex-row justify-between">
-              <Text className="text-[11px] text-slate-400">
-                {t("settings.autoAdvanceSecValue", {
-                  sec: AUTO_ADVANCE_MIN_SEC,
+            <View className="mt-3">
+              <GaugeBar
+                value={autoAdvanceSec}
+                min={AUTO_ADVANCE_MIN_SEC}
+                max={AUTO_ADVANCE_MAX_SEC}
+                onChange={setAutoAdvanceSec}
+                valueLabel={t("settings.autoAdvanceSecValue", {
+                  sec: autoAdvanceSec,
                 })}
-              </Text>
-              <Text className="text-[11px] text-slate-400">
-                {t("settings.autoAdvanceSecValue", {
+                maxLabel={t("settings.autoAdvanceSecValue", {
                   sec: AUTO_ADVANCE_MAX_SEC,
                 })}
-              </Text>
+                accessibilityLabel={t("settings.autoAdvanceSec")}
+                accessibilityValueText={t("settings.autoAdvanceSecValue", {
+                  sec: autoAdvanceSec,
+                })}
+              />
             </View>
           </View>
 
@@ -269,12 +265,12 @@ export default function SettingsScreen() {
             </View>
 
             {/* 끌거나 눌러 크기를 바꾸고, 손을 떼면 바뀐 크기로 한 번 들려준다 */}
-            <View className="mt-2 flex-row items-center gap-3">
+            <View className="mt-3 flex-row items-center gap-3">
               <Pressable
                 onPress={() => playSample(speechVolume)}
                 accessibilityRole="button"
                 accessibilityLabel={t("settings.speechVolume")}
-                className="h-11 justify-center active:opacity-60"
+                className="h-11 w-11 items-center justify-center rounded-full bg-surface shadow-neu-sm active:shadow-neu-inset"
               >
                 <SpeakerIcon
                   size={18}
@@ -287,6 +283,8 @@ export default function SettingsScreen() {
                   min={0}
                   max={VOLUME_LEVELS}
                   dimmed={volumeStep === 0}
+                  valueLabel={`${volumeStep * 10}%`}
+                  maxLabel="100%"
                   onChange={(step) => setSpeechVolume(step / VOLUME_LEVELS)}
                   onRelease={(step) => playSample(step / VOLUME_LEVELS)}
                   accessibilityLabel={t("settings.speechVolume")}

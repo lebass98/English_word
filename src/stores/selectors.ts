@@ -48,6 +48,26 @@ export function unsureWords(
   return out;
 }
 
+/** 하루 목표로 볼 단어 수. 유닛 하나(20단어)를 하루치로 잡는다 */
+export const DAILY_GOAL = UNIT_SIZE;
+
+/**
+ * 오늘의 단어. 날짜로 고르므로 하루 동안은 같은 단어가 나오고 날이 바뀌면 바뀐다.
+ * 그림이 있는 단어만 쓰려면 호출부에서 hasImage 로 거른다.
+ */
+export function todayWord(
+  words: Word[],
+  hasImage: (w: Word) => boolean,
+): Word | null {
+  const pool = words.filter(hasImage);
+  const list = pool.length > 0 ? pool : words;
+  if (list.length === 0) return null;
+  // 날짜 문자열을 간단한 해시로 바꿔 순서대로 고르지 않게 한다
+  let h = 0;
+  for (const ch of dateKey()) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
+  return list[h % list.length];
+}
+
 /** 오늘 집계 */
 export function todayStats(dailyLog: DailyLog): DailyStat {
   return dailyLog[dateKey()] ?? { seen: 0, known: 0 };

@@ -1,10 +1,11 @@
 import { useRouter } from "expo-router";
-import { ReactNode, useMemo } from "react";
-import { Image, Pressable, Text, View } from "react-native";
+import { ReactNode, useEffect, useMemo, useState } from "react";
+import { Animated, Easing, Image, Text, View } from "react-native";
 import Svg, { Defs, LinearGradient, Rect, Stop } from "react-native-svg";
 import { PillButton } from "./PillButton";
 import { SectionLabel } from "./SectionLabel";
 import { GAUGE_FILL_STOPS } from "./GaugeBar";
+import { EASE_OUT, NATIVE_DRIVER, PressableScale } from "./motion";
 import { useGrades } from "../constants/grades";
 import { studyLanguageOf, studyLangOfWordId } from "../constants/languages";
 import { useVocab } from "../constants/words";
@@ -51,7 +52,7 @@ function Thumb({ children }: { children: ReactNode }) {
   );
 }
 
-/** 볼록한 원형 버튼. 누르면 안으로 파인다 */
+/** 볼록한 원형 버튼. 누르면 쏙 작아졌다 튕겨 돌아온다 */
 function RoundButton({
   children,
   onPress,
@@ -64,15 +65,114 @@ function RoundButton({
   size?: number;
 }) {
   return (
-    <Pressable
+    <PressableScale
       onPress={onPress}
       accessibilityRole="button"
       accessibilityLabel={label}
+      scaleTo={0.88}
       style={{ width: size, height: size }}
-      className="items-center justify-center rounded-full bg-surface shadow-neu-sm active:bg-canvas active:shadow-neu-inset"
+      className="items-center justify-center rounded-full bg-surface shadow-neu-sm"
     >
       {children}
-    </Pressable>
+    </PressableScale>
+  );
+}
+
+/**
+ * 유닛 진행 막대들. 처음 뜰 때 왼쪽부터 차례로 솟아오르고,
+ * 외운 단어가 늘어 색이 바뀌면 그 막대만 스르르 물든다.
+ */
+function WaveBars({
+  words,
+  currentId,
+  knownIds,
+}: {
+  words: { id: string; word: string }[];
+  currentId: string;
+  knownIds: Set<string>;
+}) {
+  const [rise] = useState(() => new Animated.Value(0));
+  useEffect(() => {
+    Animated.timing(rise, {
+      toValue: 1,
+      duration: 900,
+      delay: 200,
+      easing: EASE_OUT,
+      useNativeDriver: NATIVE_DRIVER,
+    }).start();
+  }, [rise]);
+  const n = words.length;
+  // 막대마다 조금씩 늦게 출발하도록 입력 구간을 밀어 둔다
+  const lag = 6;
+  return (
+    <View className="flex-1 flex-row items-center justify-center gap-[3px]">
+      {words.map((w, i) => {
+        const current = w.id === currentId;
+        const known = knownIds.has(w.id);
+        return (
+          <Animated.View
+            key={w.id}
+            style={{
+              height: barHeight(w.word),
+              transform: [
+                {
+                  scaleY: rise.interpolate({
+                    inputRange: [i / (n + lag), (i + lag) / (n + lag)],
+                    outputRange: [0.15, 1],
+                    extrapolate: "clamp",
+                  }),
+                },
+              ],
+            }}
+          >
+            <View
+              className={`h-full w-[3px] rounded-full ${
+                current ? "bg-mint-dark" : known ? "bg-mint" : "bg-[#cfd3dc]"
+              }`}
+            />
+          </Animated.View>
+        );
+      })}
+    </View>
+  );
+}
+
+/** 발음이 나오는 동안 버튼 둘레로 퍼져 나가는 물결 */
+function SpeakPulse({ active }: { active: boolean }) {
+  const [v] = useState(() => new Animated.Value(0));
+  useEffect(() => {
+    if (!active) {
+      v.stopAnimation();
+      v.setValue(0);
+      return;
+    }
+    const loop = Animated.loop(
+      Animated.timing(v, {
+        toValue: 1,
+        duration: 900,
+        easing: Easing.out(Easing.quad),
+        useNativeDriver: NATIVE_DRIVER,
+      }),
+    );
+    loop.start();
+    return () => loop.stop();
+  }, [active, v]);
+  return (
+    <Animated.View
+      pointerEvents="none"
+      style={{
+        position: "absolute",
+        width: 56,
+        height: 56,
+        borderRadius: 28,
+        borderWidth: 2,
+        borderColor: "#5fd6e8",
+        opacity: v.interpolate({ inputRange: [0, 1], outputRange: [active ? 0.7 : 0, 0] }),
+        transform: [
+          { scale: v.interpolate({ inputRange: [0, 1], outputRange: [1, 1.45] }) },
+        ],
+      }}
+    />
   );
 }
 
@@ -93,6 +193,8 @@ export function ContinueCard() {
   const vocab = useVocab();
   const grades = useGrades();
   const t = useT();
+  /** 지금 발음이 나오는 중인지. 버튼 둘레 물결을 그린다 */
+  const [speaking, setSpeaking] = useState(false);
 
   // 아래 계산들은 훅이라 hydrated 분기보다 먼저, 그리고 항상 실행되어야 한다.
 
@@ -147,11 +249,11 @@ export function ContinueCard() {
       <View>
         <SectionLabel label="START" sub={`${grade.short} · UNIT 1`} />
         <View className="mt-4 rounded-3xl bg-surface p-6 shadow-neu-card">
-          <Pressable
+          <PressableScale
             onPress={start}
             accessibilityRole="button"
             accessibilityLabel={`${grade.short} UNIT 1 ${t("continue.start")}`}
-            className="flex-row items-center gap-4 active:opacity-70"
+            className="flex-row items-center gap-4"
           >
             <Thumb>
               <RocketIcon size={32} color="#0EB582" />
@@ -167,7 +269,7 @@ export function ContinueCard() {
                 {first.word}
               </Text>
             </View>
-          </Pressable>
+          </PressableScale>
 
           <PillButton
             className="mt-6"
@@ -193,6 +295,8 @@ export function ContinueCard() {
     speakWord(word.word, {
       lang: studyLanguageOf(studyLangOfWordId(word.id)).speechCode,
       volume: speechVolume,
+      onStart: () => setSpeaking(true),
+      onDone: () => setSpeaking(false),
     });
   const shuffle = () => {
     const others = around.unitWords.filter((w) => w.id !== word.id);
@@ -216,7 +320,7 @@ export function ContinueCard() {
       />
 
       {/* 파형 카드: 그림이 오른쪽으로 흐려지고, 그 옆에 유닛 진행 막대가 선다 */}
-      <Pressable
+      <PressableScale
         onPress={resume}
         accessibilityRole="button"
         accessibilityLabel={t("a11y.unitProgress", {
@@ -225,7 +329,7 @@ export function ContinueCard() {
           known: unitKnown,
         })}
         style={{ height: WAVE_H }}
-        className="mt-4 flex-row items-center overflow-hidden rounded-3xl bg-surface shadow-neu-card active:shadow-neu-pressed"
+        className="mt-4 flex-row items-center overflow-hidden rounded-3xl bg-surface shadow-neu-card"
       >
         <View
           style={{ width: WAVE_IMG_W, height: WAVE_H }}
@@ -262,30 +366,22 @@ export function ContinueCard() {
           <Text className="text-[12px] font-bold text-slate-500">
             {unitKnown}
           </Text>
-          <View className="flex-1 flex-row items-center justify-center gap-[3px]">
-            {around.unitWords.map((w) => {
-              const current = w.id === word.id;
-              const known = entries[w.id]?.status === "known";
-              return (
-                <View
-                  key={w.id}
-                  style={{ height: barHeight(w.word) }}
-                  className={`w-[3px] rounded-full ${
-                    current
-                      ? "bg-mint-dark"
-                      : known
-                        ? "bg-mint"
-                        : "bg-[#cfd3dc]"
-                  }`}
-                />
-              );
-            })}
-          </View>
+          <WaveBars
+            words={around.unitWords}
+            currentId={word.id}
+            knownIds={
+              new Set(
+                around.unitWords
+                  .filter((w) => entries[w.id]?.status === "known")
+                  .map((w) => w.id),
+              )
+            }
+          />
           <Text className="text-[12px] font-bold text-slate-500">
             {point.unitLen}
           </Text>
         </View>
-      </Pressable>
+      </PressableScale>
 
       {/* 플레이어 카드 */}
       <View className="mt-4 flex-row items-center justify-between gap-3 rounded-3xl bg-surface py-4 pl-5 pr-4 shadow-neu-card">
@@ -298,24 +394,26 @@ export function ContinueCard() {
           </Text>
         </View>
         <View className="flex-row items-center gap-1">
-          <Pressable
+          <PressableScale
             onPress={() => around.prev && open(around.prev.id)}
             disabled={!around.prev}
             accessibilityRole="button"
             accessibilityLabel={t("study.prevWord")}
-            className="h-11 w-9 items-center justify-center active:opacity-50"
+            className="h-11 w-9 items-center justify-center"
           >
             <ChevronLeftIcon
               size={26}
               color={around.prev ? "#94a3b8" : "#dde1e8"}
             />
-          </Pressable>
-          <Pressable
+          </PressableScale>
+          <PressableScale
             onPress={speak}
             accessibilityRole="button"
             accessibilityLabel={t("study.speak", { word: word.word })}
-            className="h-14 w-14 items-center justify-center rounded-full bg-surface shadow-neu-sm active:shadow-neu-inset"
+            scaleTo={0.9}
+            className="h-14 w-14 items-center justify-center rounded-full bg-surface shadow-neu-sm"
           >
+            <SpeakPulse active={speaking} />
             <View className="h-10 w-10 items-center justify-center overflow-hidden rounded-full">
               <Svg width={40} height={40} style={{ position: "absolute" }}>
                 <Defs>
@@ -332,27 +430,27 @@ export function ContinueCard() {
                 <SpeakerIcon size={20} color="#ffffff" />
               </View>
             </View>
-          </Pressable>
-          <Pressable
+          </PressableScale>
+          <PressableScale
             onPress={() => around.next && open(around.next.id)}
             disabled={!around.next}
             accessibilityRole="button"
             accessibilityLabel={t("study.nextWord")}
-            className="h-11 w-9 items-center justify-center active:opacity-50"
+            className="h-11 w-9 items-center justify-center"
           >
             <ChevronRightIcon
               size={26}
               color={around.next ? "#94a3b8" : "#dde1e8"}
             />
-          </Pressable>
-          <Pressable
+          </PressableScale>
+          <PressableScale
             onPress={shuffle}
             accessibilityRole="button"
             accessibilityLabel={t("home.randomWord")}
-            className="h-11 w-9 items-center justify-center active:opacity-50"
+            className="h-11 w-9 items-center justify-center"
           >
             <ShuffleIcon size={20} color="#94a3b8" />
-          </Pressable>
+          </PressableScale>
         </View>
       </View>
     </View>

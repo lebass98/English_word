@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useState, type ReactNode } from "react";
 import {
   Alert,
+  Animated,
   Platform,
-  Pressable,
   ScrollView,
   Text,
   TextInput,
@@ -12,6 +12,12 @@ import { BackButton } from "../src/components/BackButton";
 import { BottomNav } from "../src/components/BottomNav";
 import { GaugeBar } from "../src/components/GaugeBar";
 import { LanguageFlag } from "../src/components/flags";
+import {
+  NeuStateLayer,
+  PressableScale,
+  useSmooth,
+} from "../src/components/motion";
+import { SegmentButton } from "../src/components/SegmentButton";
 import { PillButton } from "../src/components/PillButton";
 import { Screen, ScreenHeader } from "../src/components/Screen";
 import {
@@ -60,6 +66,7 @@ export default function SettingsScreen() {
   const setNickname = useAppStore((s) => s.setNickname);
   const autoAdvance = useAppStore((s) => s.autoAdvance);
   const setAutoAdvance = useAppStore((s) => s.setAutoAdvance);
+  const advanceDim = useSmooth(autoAdvance ? 1 : 0.5, { native: true });
   const speechVolume = useAppStore((s) => s.speechVolume);
   const setSpeechVolume = useAppStore((s) => s.setSpeechVolume);
   // 예전 25% 단위로 저장된 값도 가장 가까운 10% 단계로 보여준다
@@ -166,32 +173,15 @@ export default function SettingsScreen() {
           </Text>
           {/* 홈의 학습 언어 고르기와 같은 모양: 국기 + 이름, 고른 쪽이 안으로 파인다 */}
           <View className="mt-3 flex-row gap-3">
-            {UI_LANGS.map((id) => {
-              const on = uiLang === id;
-              return (
-                <Pressable
-                  key={id}
-                  onPress={() => setUiLang(id)}
-                  accessibilityRole="button"
-                  accessibilityState={{ selected: on }}
-                  accessibilityLabel={UI_LANG_NAMES[id]}
-                  style={{ flex: 1 }}
-                  className={`flex-row items-center gap-2.5 rounded-2xl px-3 py-3 active:scale-[0.98] ${
-                    on ? "bg-canvas shadow-neu-inset" : "bg-surface shadow-neu-sm"
-                  }`}
-                >
-                  <LanguageFlag lang={id} size={26} />
-                  <Text
-                    numberOfLines={1}
-                    className={`text-[14px] font-bold ${
-                      on ? "text-mint-dark" : "text-slate-500"
-                    }`}
-                  >
-                    {UI_LANG_NAMES[id]}
-                  </Text>
-                </Pressable>
-              );
-            })}
+            {UI_LANGS.map((id) => (
+              <SegmentButton
+                key={id}
+                selected={uiLang === id}
+                onPress={() => setUiLang(id)}
+                label={UI_LANG_NAMES[id]}
+                left={<LanguageFlag lang={id} size={26} />}
+              />
+            ))}
           </View>
         </View>
 
@@ -210,17 +200,14 @@ export default function SettingsScreen() {
               </Text>
             </View>
             {/* 앱 전체에서 파인 모양은 "켜짐·선택됨"을 뜻한다 */}
-            <Pressable
+            <PressableScale
               accessibilityRole="switch"
               accessibilityLabel={t("settings.autoAdvance")}
               accessibilityState={{ checked: autoAdvance }}
               onPress={() => setAutoAdvance(!autoAdvance)}
-              className={`rounded-full px-4 py-2 active:opacity-70 ${
-                autoAdvance
-                  ? "bg-canvas shadow-neu-inset"
-                  : "bg-surface shadow-neu-sm"
-              }`}
+              className="px-4 py-2"
             >
+              <NeuStateLayer active={autoAdvance} radiusClass="rounded-full" />
               <Text
                 className={`text-[13px] font-bold ${
                   autoAdvance ? "text-mint-dark" : "text-slate-400"
@@ -228,11 +215,12 @@ export default function SettingsScreen() {
               >
                 {autoAdvance ? t("common.on") : t("common.off")}
               </Text>
-            </Pressable>
+            </PressableScale>
           </View>
 
           {/* ── 자동 넘김 간격 (5~15초) ─────────────────────── */}
-          <View className={`mt-4 ${autoAdvance ? "" : "opacity-50"}`}>
+          {/* 자동 넘김을 끄면 간격 게이지가 서서히 흐려진다 */}
+          <Animated.View style={{ marginTop: 16, opacity: advanceDim }}>
             <View className="flex-row items-center justify-between">
               <Text className="text-[13px] text-slate-500">
                 {t("settings.autoAdvanceSec")}
@@ -259,7 +247,7 @@ export default function SettingsScreen() {
                 })}
               />
             </View>
-          </View>
+          </Animated.View>
 
           {/* ── 발음 소리 크기 ─────────────────────────────── */}
           <View className="mt-5 border-t border-slate-200/70 pt-5">
@@ -285,17 +273,18 @@ export default function SettingsScreen() {
 
             {/* 끌거나 눌러 크기를 바꾸고, 손을 떼면 바뀐 크기로 한 번 들려준다 */}
             <View className="mt-3 flex-row items-center gap-3">
-              <Pressable
+              <PressableScale
                 onPress={() => playSample(speechVolume)}
                 accessibilityRole="button"
                 accessibilityLabel={t("settings.speechVolume")}
-                className="h-11 w-11 items-center justify-center rounded-full bg-surface shadow-neu-sm active:shadow-neu-inset"
+                scaleTo={0.9}
+                className="h-11 w-11 items-center justify-center rounded-full bg-surface shadow-neu-sm"
               >
                 <SpeakerIcon
                   size={18}
                   color={speechVolume === 0 ? "#94a3b8" : "#0eb582"}
                 />
-              </Pressable>
+              </PressableScale>
               <View className="flex-1">
                 <GaugeBar
                   value={volumeStep}

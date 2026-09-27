@@ -1,6 +1,6 @@
 import { useRouter } from "expo-router";
-import { type ReactNode, useMemo } from "react";
-import { Image, Pressable, ScrollView, Text, View } from "react-native";
+import { type ReactNode, useMemo, useState } from "react";
+import { Image, ScrollView, Text, View } from "react-native";
 import { BottomNav } from "../src/components/BottomNav";
 import { ContinueCard } from "../src/components/ContinueCard";
 import { GaugeBar } from "../src/components/GaugeBar";
@@ -9,6 +9,13 @@ import { LanguageFlag } from "../src/components/flags";
 import { PillButton } from "../src/components/PillButton";
 import { Screen, ScreenHeader } from "../src/components/Screen";
 import { SectionLabel } from "../src/components/SectionLabel";
+import { SegmentButton } from "../src/components/SegmentButton";
+import {
+  DURATION,
+  NeuStateLayer,
+  PressableScale,
+  Stagger,
+} from "../src/components/motion";
 import { TodayWordCard } from "../src/components/TodayWordCard";
 import { ToggleCard } from "../src/components/ToggleCard";
 import {
@@ -57,7 +64,7 @@ function MiniStat({ label, value }: { label: string; value: string }) {
   );
 }
 
-/** 원형 빠른 실행 버튼. 누르면 안으로 파인다 */
+/** 원형 빠른 실행 버튼. 누르면 작아지며 안으로 스르르 파인다 */
 function QuickButton({
   icon,
   label,
@@ -67,26 +74,27 @@ function QuickButton({
   label: string;
   onPress: () => void;
 }) {
+  const [pressed, setPressed] = useState(false);
   return (
-    <Pressable
+    <PressableScale
       onPress={onPress}
+      onPressIn={() => setPressed(true)}
+      onPressOut={() => setPressed(false)}
       accessibilityRole="button"
       accessibilityLabel={label}
+      scaleTo={0.92}
       className="items-center gap-2"
     >
-      {({ pressed }) => (
-        <>
-          <View
-            className={`h-[60px] w-[60px] items-center justify-center rounded-full ${
-              pressed ? "bg-canvas shadow-neu-inset" : "bg-surface shadow-neu-sm"
-            }`}
-          >
-            {icon}
-          </View>
-          <Text className="text-[11px] font-bold text-slate-500">{label}</Text>
-        </>
-      )}
-    </Pressable>
+      <View className="h-[60px] w-[60px] items-center justify-center">
+        <NeuStateLayer
+          active={pressed}
+          radiusClass="rounded-full"
+          duration={DURATION.fast}
+        />
+        {icon}
+      </View>
+      <Text className="text-[11px] font-bold text-slate-500">{label}</Text>
+    </PressableScale>
   );
 }
 
@@ -209,34 +217,19 @@ export default function HomeScreen() {
         </ScreenHeader>
 
         <View className="px-6 pt-6">
+          {/* 칸들이 위에서부터 차례로 떠오른다 */}
+          <Stagger>
           {/* 학습 언어 고르기. 무엇을 배울지가 화면의 출발점이라 맨 위에 둔다 */}
           <View className="flex-row gap-3">
-            {STUDY_LANGS.map((id) => {
-              const on = studyLang === id;
-              return (
-                <Pressable
-                  key={id}
-                  onPress={() => setStudyLang(id)}
-                  accessibilityRole="button"
-                  accessibilityState={{ selected: on }}
-                  accessibilityLabel={t(`studyLang.${id}` as never)}
-                  style={{ flex: 1 }}
-                  className={`flex-row items-center gap-2.5 rounded-2xl px-3 py-3 active:scale-[0.98] ${
-                    on ? "bg-canvas shadow-neu-inset" : "bg-surface shadow-neu-sm"
-                  }`}
-                >
-                  <LanguageFlag lang={id} size={26} />
-                  <Text
-                    numberOfLines={1}
-                    className={`text-[14px] font-bold ${
-                      on ? "text-mint-dark" : "text-slate-500"
-                    }`}
-                  >
-                    {t(`studyLang.${id}` as never)}
-                  </Text>
-                </Pressable>
-              );
-            })}
+            {STUDY_LANGS.map((id) => (
+              <SegmentButton
+                key={id}
+                selected={studyLang === id}
+                onPress={() => setStudyLang(id)}
+                label={t(`studyLang.${id}` as never)}
+                left={<LanguageFlag lang={id} size={26} />}
+              />
+            ))}
           </View>
 
           {/* 오늘 목표: 오늘 본 단어로 하루치(20단어)를 채운다 */}
@@ -341,12 +334,12 @@ export default function HomeScreen() {
                   const source =
                     WORD_IMAGES[w.conceptId] ?? WORD_IMAGES[w.word];
                   return (
-                    <Pressable
+                    <PressableScale
                       key={w.id}
                       onPress={() => router.push(`/study/${w.id}`)}
                       accessibilityRole="button"
                       accessibilityLabel={t("a11y.reviewWord", { word: w.word })}
-                      className="w-[88px] active:opacity-70"
+                      className="w-[88px]"
                     >
                       <View className="h-[88px] w-[88px] items-center justify-center overflow-hidden rounded-2xl bg-canvas shadow-neu-inset">
                         {source ? (
@@ -365,7 +358,7 @@ export default function HomeScreen() {
                       >
                         {w.word}
                       </Text>
-                    </Pressable>
+                    </PressableScale>
                   );
                 })}
               </ScrollView>
@@ -431,6 +424,7 @@ export default function HomeScreen() {
               {upcomingLabel} · {t("level.preparing")}
             </Text>
           )}
+          </Stagger>
         </View>
       </ScrollView>
 

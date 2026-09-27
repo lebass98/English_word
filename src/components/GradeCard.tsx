@@ -1,5 +1,7 @@
-import { Pressable, Text, View } from "react-native";
+import { useEffect, useState } from "react";
+import { Animated, Text, View } from "react-native";
 import Svg, { Circle } from "react-native-svg";
+import { EASE_OUT, PressableScale } from "./motion";
 import { useT } from "../i18n";
 import { ChevronRightIcon } from "./icons";
 
@@ -14,10 +16,30 @@ interface GradeCardProps {
 const RING = 44;
 const RING_STROKE = 6;
 
-/** 외운 비율만큼 민트로 차는 원형 고리 */
+/** 외운 비율만큼 민트로 차는 원형 고리. 처음 뜰 때 0 에서 빙 돌며 차오른다 */
 function ProgressRing({ progress }: { progress: number }) {
   const r = (RING - RING_STROKE) / 2;
   const circumference = 2 * Math.PI * r;
+  // 1% 처럼 아주 작아도 점 하나는 보이게 최소 길이를 둔다
+  const target = progress > 0 ? Math.max(progress, 0.02) : 0;
+  const [shown] = useState(() => new Animated.Value(0));
+  /** 지금 그려진 비율. Animated 로 SVG 를 직접 움직이면 웹에서 쓸모없는 속성이
+      DOM 에 새어 경고가 나서, 값이 흐를 때마다 상태로 옮겨 다시 그린다 */
+  const [drawn, setDrawn] = useState(0);
+  useEffect(() => {
+    const id = shown.addListener(({ value }) => setDrawn(value));
+    return () => shown.removeListener(id);
+  }, [shown]);
+  useEffect(() => {
+    Animated.timing(shown, {
+      toValue: target,
+      duration: 900,
+      delay: 250,
+      easing: EASE_OUT,
+      // SVG 속성은 네이티브 드라이버로 움직일 수 없다
+      useNativeDriver: false,
+    }).start();
+  }, [target, shown]);
   return (
     <Svg width={RING} height={RING}>
       <Circle
@@ -28,7 +50,7 @@ function ProgressRing({ progress }: { progress: number }) {
         stroke="#e1e3ea"
         strokeWidth={RING_STROKE}
       />
-      {progress > 0 && (
+      {drawn > 0 && (
         <Circle
           cx={RING / 2}
           cy={RING / 2}
@@ -38,8 +60,7 @@ function ProgressRing({ progress }: { progress: number }) {
           strokeWidth={RING_STROKE}
           strokeLinecap="round"
           strokeDasharray={`${circumference} ${circumference}`}
-          // 1% 처럼 아주 작아도 점 하나는 보이게 최소 길이를 둔다
-          strokeDashoffset={circumference * (1 - Math.max(progress, 0.02))}
+          strokeDashoffset={circumference * (1 - drawn)}
           // 12시 방향에서 시작한다
           transform={`rotate(-90 ${RING / 2} ${RING / 2})`}
         />
@@ -59,7 +80,7 @@ export function GradeCard({
   const started = learnedWords > 0;
 
   return (
-    <Pressable
+    <PressableScale
       onPress={onPress}
       accessibilityRole="button"
       accessibilityLabel={
@@ -67,7 +88,7 @@ export function GradeCard({
           ? t("a11y.courseProgress", { label, total: totalWords, known: learnedWords })
           : t("a11y.courseNotStarted", { label })
       }
-      className="rounded-3xl bg-surface p-5 shadow-neu-card active:shadow-neu-pressed"
+      className="rounded-3xl bg-surface p-5 shadow-neu-card"
     >
       <Text
         className={`text-[11px] font-bold ${
@@ -105,6 +126,6 @@ export function GradeCard({
         </View>
       </View>
 
-    </Pressable>
+    </PressableScale>
   );
 }

@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
-import { ActivityIndicator, Pressable, Text } from "react-native";
+import { ActivityIndicator, Text } from "react-native";
+import { PressableScale } from "./motion";
 
 export type PillButtonVariant = "default" | "primary" | "accent" | "inset";
 
@@ -65,14 +66,16 @@ export function PillButton({
   const s = SIZE[size];
 
   return (
-    <Pressable
+    // 누르면 살짝 작아졌다가 튕기며 돌아온다 (motion.tsx)
+    <PressableScale
       onPress={onPress}
       disabled={loading}
-      className={`flex-row items-center justify-center gap-2 rounded-full ${v.bg} ${v.shadow} ${s.pad} active:shadow-neu-pressed active:scale-[0.97] ${className}`}
+      scaleTo={0.95}
+      className={`flex-row items-center justify-center gap-2 rounded-full ${v.bg} ${v.shadow} ${s.pad} active:shadow-neu-pressed ${className}`}
     >
       {left}
       <Text className={`font-bold ${s.text} ${v.text}`}>{label}</Text>
       {loading ? <ActivityIndicator size="small" color="#0eb582" /> : right}
-    </Pressable>
+    </PressableScale>
   );
 }

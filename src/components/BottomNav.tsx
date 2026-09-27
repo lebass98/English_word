@@ -1,5 +1,6 @@
 import { usePathname, useRouter } from "expo-router";
-import { Platform, Pressable, Text, View } from "react-native";
+import { useEffect, useState } from "react";
+import { Animated, Platform, Text, View } from "react-native";
 import {
   BookFilledIcon,
   BookIcon,
@@ -11,6 +12,12 @@ import {
   QuizIcon,
 } from "./icons";
 import { MAX_CONTENT_WIDTH } from "./Screen";
+import {
+  DURATION,
+  NATIVE_DRIVER,
+  NeuStateLayer,
+  PressableScale,
+} from "./motion";
 import { useT, type StringKey } from "../i18n";
 import { useAppStore } from "../stores/useAppStore";
 
@@ -48,6 +55,69 @@ const TABS: Tab[] = [
     IconFilled: GearFilledIcon,
   },
 ];
+
+/**
+ * 독 탭 하나. 화면마다 독바를 새로 그리므로, 화면을 옮기면 켜진 탭의 파인 자리가
+ * 스르르 나타나고 꽉 찬 아이콘이 톡 튀어 오른다. 누르면 살짝 눌렸다 돌아온다.
+ */
+function TabItem({
+  tab,
+  active,
+  label,
+  onPress,
+}: {
+  tab: Tab;
+  active: boolean;
+  label: string;
+  onPress: () => void;
+}) {
+  const [pop] = useState(() => new Animated.Value(active ? 0.7 : 1));
+  useEffect(() => {
+    if (!active) return;
+    Animated.spring(pop, {
+      toValue: 1,
+      speed: 14,
+      bounciness: 12,
+      useNativeDriver: NATIVE_DRIVER,
+    }).start();
+  }, [active, pop]);
+
+  return (
+    <PressableScale
+      accessibilityRole="button"
+      accessibilityLabel={label}
+      accessibilityState={{ selected: active }}
+      onPress={onPress}
+      scaleTo={0.9}
+      containerStyle={{ flex: 1 }}
+      // 아이콘을 위, 제목을 아래에 둔다
+      className="h-[64px] items-center justify-center gap-1 px-1"
+    >
+      <NeuStateLayer
+        active={active}
+        appear
+        radiusClass="rounded-2xl"
+        idleClass="bg-transparent"
+        duration={DURATION.slow}
+      />
+      <Animated.View style={{ transform: [{ scale: pop }] }}>
+        {active ? (
+          <tab.IconFilled size={34} color="#006C4C" />
+        ) : (
+          <tab.Icon size={34} color="#94a3b8" strokeWidth={0.55} />
+        )}
+      </Animated.View>
+      <Text
+        numberOfLines={1}
+        className={`text-[11px] ${
+          active ? "font-bold text-mint-dark" : "font-semibold text-slate-400"
+        }`}
+      >
+        {label}
+      </Text>
+    </PressableScale>
+  );
+}
 
 /**
  * 홈 · 단어장 · 퀴즈 · 설정 독바. 아이콘을 위에, 제목을 아래에 둔다.
@@ -98,34 +168,16 @@ export function BottomNav() {
                 : pathname === tab.href;
 
             return (
-              <Pressable
+              <TabItem
                 key={tab.href}
-                accessibilityRole="button"
-                accessibilityLabel={t(tab.labelKey)}
-                accessibilityState={{ selected: active }}
+                tab={tab}
+                active={active}
+                label={t(tab.labelKey)}
                 // 같은 탭을 다시 누르면 스택만 쌓이므로 아무것도 하지 않는다
                 onPress={() => {
                   if (!active) router.push(href as any);
                 }}
-                // 아이콘을 위, 제목을 아래에 둔다
-                className={`h-[64px] flex-1 items-center justify-center gap-1 rounded-2xl px-1 ${
-                  active ? "bg-canvas shadow-neu-inset" : "active:opacity-60"
-                }`}
-              >
-                {active ? (
-                  <tab.IconFilled size={34} color="#006C4C" />
-                ) : (
-                  <tab.Icon size={34} color="#94a3b8" strokeWidth={0.55} />
-                )}
-                <Text
-                  numberOfLines={1}
-                  className={`text-[11px] ${
-                    active ? "font-bold text-mint-dark" : "font-semibold text-slate-400"
-                  }`}
-                >
-                  {t(tab.labelKey)}
-                </Text>
-              </Pressable>
+              />
             );
           })}
         </View>

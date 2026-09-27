@@ -1,4 +1,5 @@
-import { Image, Pressable, Text, View } from "react-native";
+import { Image, Text, View } from "react-native";
+import { PressableScale } from "./motion";
 import type { Word } from "../constants/words";
 import { WORD_IMAGES } from "../constants/wordImages";
 import { useT } from "../i18n";
@@ -20,11 +21,12 @@ export function TodayWordCard({
   const pos = word.pos?.[0];
 
   return (
-    <Pressable
+    <PressableScale
       onPress={onPress}
       accessibilityRole="button"
       accessibilityLabel={t("a11y.studyWord", { word: word.word })}
-      className="flex-1 items-center justify-center rounded-3xl bg-surface px-4 py-5 shadow-neu-card active:shadow-neu-pressed"
+      containerStyle={{ flex: 1 }}
+      className="flex-1 items-center justify-center rounded-3xl bg-surface px-4 py-5 shadow-neu-card"
     >
       <View className="h-[108px] w-[108px] rounded-full bg-surface p-2 shadow-neu-sm">
         <View className="flex-1 items-center justify-center overflow-hidden rounded-full bg-[#f5f6f8] shadow-neu-inset">
@@ -53,6 +55,6 @@ export function TodayWordCard({
         {word.meaning}
         {pos ? ` · ${t(`pos.${pos}` as never)}` : ""}
       </Text>
-    </Pressable>
+    </PressableScale>
   );
 }

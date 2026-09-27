@@ -91,7 +91,8 @@ function QuickButton({
           radiusClass="rounded-full"
           duration={DURATION.fast}
         />
-        {icon}
+        {/* 웹에서는 absolute 인 모양 층이 그냥 놓인 svg 아이콘을 덮는다. View 로 감싸 위로 올린다 */}
+        <View>{icon}</View>
       </View>
       <Text className="text-[11px] font-bold text-slate-500">{label}</Text>
     </PressableScale>

@@ -5,7 +5,6 @@ import { BottomNav } from "../src/components/BottomNav";
 import { ContinueCard } from "../src/components/ContinueCard";
 import { GaugeBar } from "../src/components/GaugeBar";
 import { GradeCard } from "../src/components/GradeCard";
-import { imageCoverageOf, registeredImageCount } from "../src/lib/imageDebug";
 import { LanguageFlag } from "../src/components/flags";
 import { PillButton } from "../src/components/PillButton";
 import { Screen, ScreenHeader } from "../src/components/Screen";
@@ -140,19 +139,13 @@ export default function HomeScreen() {
       ),
     [vocab, baseGradeId],
   );
-  const imageCount = registeredImageCount();
   const knownByGrade = useMemo(
     () =>
       availableList.map((grade) => ({
         grade,
         known: knownCountByGrade(entries, vocab, grade.id),
-        // 그림 제작 현황(임시). 등록표를 그 자리에서 세므로 그림을 새로
-        // 등록하면 화면의 숫자가 곧바로 줄어든다
-        missingImages: imageCoverageOf(vocab, grade.id).missing,
       })),
-    // 등록된 그림 수가 바뀌면 미완료 개수를 다시 센다 (memo 가 옛 숫자를 붙잡지 않게)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [entries, vocab, availableList, imageCount],
+    [entries, vocab, availableList],
   );
 
   // 코스 카드는 한 줄에 두 개. 창 폭으로 카드 폭을 계산하면 웹에서 처음 그릴 때
@@ -415,13 +408,12 @@ export default function HomeScreen() {
           <View className="mt-4 gap-4">
             {courseRows.map((row) => (
               <View key={row[0].grade.id} className="flex-row gap-4">
-                {row.map(({ grade, known, missingImages }) => (
+                {row.map(({ grade, known }) => (
                   <View key={grade.id} className="flex-1">
                     <GradeCard
                       label={grade.label}
                       learnedWords={known}
                       totalWords={grade.totalWords}
-                      missingImages={missingImages}
                       onPress={() => {
                         setActiveGradeId(grade.id);
                         router.push(`/grade/${grade.id}`);

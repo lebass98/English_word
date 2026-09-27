@@ -7,8 +7,6 @@ interface GradeCardProps {
   label: string;
   learnedWords: number;
   totalWords: number;
-  /** 연상 그림이 아직 없는 단어 수. 그림을 다 그릴 때까지만 띄우는 임시 표시 */
-  missingImages?: number;
   onPress: () => void;
 }
 
@@ -54,7 +52,6 @@ export function GradeCard({
   label,
   learnedWords,
   totalWords,
-  missingImages,
   onPress,
 }: GradeCardProps) {
   const t = useT();
@@ -108,23 +105,6 @@ export function GradeCard({
         </View>
       </View>
 
-      {/* 그림 제작 현황(임시). 카드가 좁아 단어 수와 한 줄에 두면 줄이 접혀서
-          아래 줄에 따로 둔다. 그림을 전부 채우면 이 블록과 missingImages prop 을 지운다 */}
-      {missingImages !== undefined && (
-        <View
-          className={`mt-2 self-start rounded-full px-2 py-0.5 ${
-            missingImages > 0 ? "bg-canvas shadow-neu-inset" : "bg-[#dcf2ea]"
-          }`}
-        >
-          <Text
-            className={`text-[10px] font-bold ${
-              missingImages > 0 ? "text-amber-600" : "text-mint-dark"
-            }`}
-          >
-            {missingImages > 0 ? `${missingImages}개 미완료` : "그림 완료"}
-          </Text>
-        </View>
-      )}
     </Pressable>
   );
 }

@@ -11,6 +11,7 @@ import {
 import { BackButton } from "../src/components/BackButton";
 import { BottomNav } from "../src/components/BottomNav";
 import { GaugeBar } from "../src/components/GaugeBar";
+import { LanguageFlag } from "../src/components/flags";
 import { PillButton } from "../src/components/PillButton";
 import { Screen, ScreenHeader } from "../src/components/Screen";
 import {
@@ -163,16 +164,34 @@ export default function SettingsScreen() {
           <Text className="mt-1 text-[13px] text-slate-400">
             {t("settings.uiLangDesc")}
           </Text>
-          <View className="mt-3 flex-row flex-wrap gap-2">
-            {UI_LANGS.map((id) => (
-              <PillButton
-                key={id}
-                size="sm"
-                label={UI_LANG_NAMES[id]}
-                variant={uiLang === id ? "inset" : "default"}
-                onPress={() => setUiLang(id)}
-              />
-            ))}
+          {/* 홈의 학습 언어 고르기와 같은 모양: 국기 + 이름, 고른 쪽이 안으로 파인다 */}
+          <View className="mt-3 flex-row gap-3">
+            {UI_LANGS.map((id) => {
+              const on = uiLang === id;
+              return (
+                <Pressable
+                  key={id}
+                  onPress={() => setUiLang(id)}
+                  accessibilityRole="button"
+                  accessibilityState={{ selected: on }}
+                  accessibilityLabel={UI_LANG_NAMES[id]}
+                  style={{ flex: 1 }}
+                  className={`flex-row items-center gap-2.5 rounded-2xl px-3 py-3 active:scale-[0.98] ${
+                    on ? "bg-canvas shadow-neu-inset" : "bg-surface shadow-neu-sm"
+                  }`}
+                >
+                  <LanguageFlag lang={id} size={26} />
+                  <Text
+                    numberOfLines={1}
+                    className={`text-[14px] font-bold ${
+                      on ? "text-mint-dark" : "text-slate-500"
+                    }`}
+                  >
+                    {UI_LANG_NAMES[id]}
+                  </Text>
+                </Pressable>
+              );
+            })}
           </View>
         </View>
 

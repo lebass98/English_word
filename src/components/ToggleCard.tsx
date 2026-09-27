@@ -42,7 +42,9 @@ function NeuSwitch({ on }: { on: boolean }) {
           top: (SW_H - SW_THUMB) / 2,
           left: on ? SW_W - SW_THUMB - 3 : 3,
         }}
-        className="absolute rounded-full bg-surface shadow-neu-sm"
+        className={`absolute rounded-full shadow-neu-sm ${
+          on ? "bg-white" : "bg-[#dfe2e8]"
+        }`}
       />
     </View>
   );
@@ -51,6 +53,8 @@ function NeuSwitch({ on }: { on: boolean }) {
 /**
  * 홈의 작은 설정 카드. 제목·설명 아래 오른쪽에 켜짐/꺼짐 스위치가 있다.
  * 설정 화면과 같은 값을 바로 켜고 끈다.
+ * 켜지면 제목은 진하게, 켜짐 글씨는 민트로, 스위치는 그라데이션으로 차고
+ * 꺼지면 제목·글씨·손잡이가 모두 회색으로 가라앉아 한눈에 구분된다.
  */
 export function ToggleCard({
   title,
@@ -73,7 +77,12 @@ export function ToggleCard({
       className="flex-1 justify-between rounded-3xl bg-surface p-4 shadow-neu-card active:shadow-neu-pressed"
     >
       <View>
-        <Text numberOfLines={1} className="text-[15px] font-extrabold text-ink">
+        <Text
+          numberOfLines={1}
+          className={`text-[15px] font-extrabold ${
+            on ? "text-ink" : "text-slate-400"
+          }`}
+        >
           {title}
         </Text>
         <Text numberOfLines={2} className="mt-0.5 text-[11px] text-slate-400">
@@ -81,7 +90,11 @@ export function ToggleCard({
         </Text>
       </View>
       <View className="mt-3 flex-row items-center justify-end gap-2">
-        <Text className="text-[12px] text-slate-400">
+        <Text
+          className={`text-[12px] ${
+            on ? "font-bold text-mint-dark" : "text-slate-400"
+          }`}
+        >
           {on ? t("common.on") : t("common.off")}
         </Text>
         <NeuSwitch on={on} />

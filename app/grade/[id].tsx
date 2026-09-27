@@ -12,10 +12,6 @@ import { useGrade } from "../../src/constants/grades";
 import { useVocab } from "../../src/constants/words";
 import { useT } from "../../src/i18n";
 import {
-  imageCoverageOfWords,
-  registeredImageCount,
-} from "../../src/lib/imageDebug";
-import {
   knownCountByGrade,
   knownCountInWords,
 } from "../../src/stores/selectors";
@@ -74,8 +70,7 @@ export default function GradeScreen() {
           keyExtractor={(u) => String(u.unitNo)}
           numColumns={2}
           // 학습 기록이 바뀌면 셀을 다시 그려야 개수·진행바가 따라간다
-          // 등록된 그림 수가 바뀌어도 셀을 다시 그려야 그림 미완료 배지가 따라간다
-          extraData={[entries, registeredImageCount()]}
+          extraData={entries}
           // 2열 카드 간격은 홈 코스 카드와 같은 16px
           columnWrapperClassName="gap-4"
           contentContainerClassName="gap-4 px-6 pb-10 pt-6"
@@ -107,8 +102,6 @@ export default function GradeScreen() {
             const total = item.words.length;
             const known = knownCountInWords(entries, item.words);
             const done = total > 0 && known === total;
-            // 그림 제작 현황(임시). 그림을 전부 채우면 이 줄과 아래 배지를 지운다
-            const noImage = imageCoverageOfWords(item.words).missing;
 
             return (
               <Pressable
@@ -155,20 +148,6 @@ export default function GradeScreen() {
                   <Text className="text-[13px] text-slate-500"> / {total}</Text>
                 </View>
 
-                {/* 그림 제작 현황(임시). 다 그린 유닛은 초록 표시로 바뀐다 */}
-                <View
-                  className={`mt-1.5 self-start rounded-full px-2 py-0.5 ${
-                    noImage > 0 ? "bg-canvas shadow-neu-inset" : "bg-[#dcf2ea]"
-                  }`}
-                >
-                  <Text
-                    className={`text-[10px] font-bold ${
-                      noImage > 0 ? "text-amber-600" : "text-mint-dark"
-                    }`}
-                  >
-                    {noImage > 0 ? `${noImage}개 미완료` : "그림 완료"}
-                  </Text>
-                </View>
               </Pressable>
             );
           }}

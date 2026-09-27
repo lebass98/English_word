@@ -7,8 +7,6 @@ import {
   GearIcon,
   HomeFilledIcon,
   HomeIcon,
-  PictureFilledIcon,
-  PictureIcon,
   QuizFilledIcon,
   QuizIcon,
 } from "./icons";
@@ -43,13 +41,6 @@ const TABS: Tab[] = [
     Icon: QuizIcon,
     IconFilled: QuizFilledIcon,
   },
-  // 그림 제작 현황(임시). 그림을 전부 채우면 이 줄과 현황판을 함께 지운다
-  {
-    href: "/image-status",
-    labelKey: "nav.imageStatus",
-    Icon: PictureIcon,
-    IconFilled: PictureFilledIcon,
-  },
   {
     href: "/settings",
     labelKey: "nav.settings",
@@ -59,7 +50,7 @@ const TABS: Tab[] = [
 ];
 
 /**
- * 홈 · 단어장 · 현황 · 설정 독바. 아이콘을 위에, 제목을 아래에 둔다.
+ * 홈 · 단어장 · 퀴즈 · 설정 독바. 아이콘을 위에, 제목을 아래에 둔다.
  * 활성 탭은 현재 경로에서 직접 계산해 화면마다 따로 알려줄 필요가 없다.
  *
  * 웹에서는 position:fixed 로 창 아래에 붙여 둔다. absolute 로 두면 모바일

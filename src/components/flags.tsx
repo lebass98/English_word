@@ -1,5 +1,6 @@
 import Svg, { Circle, Defs, G, Path, Rect, ClipPath } from "react-native-svg";
 import type { StudyLangId } from "../constants/languages";
+import type { UiLangId } from "../i18n/strings";
 
 /**
  * 학습 언어를 나타내는 국기.
@@ -100,6 +101,85 @@ export function FlagJA({ size = 28 }: FlagProps) {
   );
 }
 
+/** 태극기 괘 하나. 가운데를 원점으로 가로 막대 셋을 그린다 (true = 이어진 막대) */
+function Trigram({
+  bars,
+  size,
+  x,
+  y,
+  angle,
+}: {
+  bars: [boolean, boolean, boolean];
+  size: number;
+  x: number;
+  y: number;
+  angle: number;
+}) {
+  const len = size * 0.2;
+  const thick = size * 0.042;
+  const step = size * 0.066;
+  const piece = len * 0.43;
+  return (
+    <G transform={`translate(${x} ${y}) rotate(${angle})`}>
+      {bars.map((solid, i) => {
+        const cy = (i - 1) * step - thick / 2;
+        return solid ? (
+          <Rect key={i} x={-len / 2} y={cy} width={len} height={thick} fill="#000000" />
+        ) : (
+          <G key={i}>
+            <Rect x={-len / 2} y={cy} width={piece} height={thick} fill="#000000" />
+            <Rect x={len / 2 - piece} y={cy} width={piece} height={thick} fill="#000000" />
+          </G>
+        );
+      })}
+    </G>
+  );
+}
+
+/** 태극기 (한국어). 작은 크기에서도 알아보게 괘를 대각선 네 귀퉁이에 둔다 */
+export function FlagKO({ size = 28 }: FlagProps) {
+  const h = size;
+  const w = size;
+  const c = size / 2;
+  const r = size * 0.24;
+  // 괘는 가운데에서 대각선으로 이만큼 떨어져 선다
+  const d = size * 0.36 * Math.SQRT1_2;
+  return (
+    <Svg width={w} height={h} viewBox={`0 0 ${w} ${h}`}>
+      <Defs>
+        <ClipPath id="flagKoClip">
+          <Rect x={0} y={0} width={w} height={h} rx={h * 0.22} />
+        </ClipPath>
+      </Defs>
+      <G clipPath="url(#flagKoClip)">
+        <Rect x={0} y={0} width={w} height={h} fill="#ffffff" />
+        {/* 태극: 파란 원 위에 붉은 반쪽을 S 자로 얹고 비스듬히 돌린다 */}
+        <G transform={`translate(${c} ${c}) rotate(33.69)`}>
+          <Circle cx={0} cy={0} r={r} fill="#0047a0" />
+          <Path
+            d={`M${-r} 0A${r} ${r} 0 0 1 ${r} 0A${r / 2} ${r / 2} 0 0 1 0 0A${r / 2} ${r / 2} 0 0 0 ${-r} 0Z`}
+            fill="#cd2e3a"
+          />
+        </G>
+        <Trigram bars={[true, true, true]} size={size} x={c - d} y={c - d} angle={-45} />
+        <Trigram bars={[false, true, false]} size={size} x={c + d} y={c - d} angle={45} />
+        <Trigram bars={[true, false, true]} size={size} x={c - d} y={c + d} angle={45} />
+        <Trigram bars={[false, false, false]} size={size} x={c + d} y={c + d} angle={-45} />
+      </G>
+      <Rect
+        x={0.5}
+        y={0.5}
+        width={w - 1}
+        height={h - 1}
+        rx={h * 0.22}
+        fill="none"
+        stroke="rgba(15,23,42,0.12)"
+        strokeWidth={1}
+      />
+    </Svg>
+  );
+}
+
 /** 아직 국기를 안 그린 언어를 위한 자리 */
 function FlagUnknown({ size = 28 }: FlagProps) {
   return (
@@ -124,17 +204,21 @@ function FlagUnknown({ size = 28 }: FlagProps) {
   );
 }
 
-const FLAGS: Record<StudyLangId, (p: FlagProps) => React.JSX.Element> = {
+const FLAGS: Record<
+  StudyLangId | UiLangId,
+  (p: FlagProps) => React.JSX.Element
+> = {
   en: FlagEN,
   ja: FlagJA,
+  ko: FlagKO,
 };
 
-/** 학습 언어에 맞는 국기를 그린다 */
+/** 학습 언어·표시 언어에 맞는 국기를 그린다 */
 export function LanguageFlag({
   lang,
   size = 28,
 }: {
-  lang: StudyLangId;
+  lang: StudyLangId | UiLangId;
   size?: number;
 }) {
   const Flag = FLAGS[lang] ?? FlagUnknown;

@@ -14,7 +14,7 @@ import urllib.request
 
 BASE = (
     "https://raw.githubusercontent.com/google/material-design-icons/master"
-    "/symbols/web/{name}/materialsymbolsoutlined/{file}.svg"
+    "/symbols/web/{name}/materialsymbolsrounded/{file}.svg"
 )
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -89,7 +89,7 @@ HEADER = '''import Svg, { Path } from "react-native-svg";
 /**
  * 화면에서 쓰는 아이콘 모음.
  *
- * 모양은 구글 Material Symbols(Outlined) 원본을 그대로 쓴다.
+ * 모양은 구글 Material Symbols(Rounded) 원본을 그대로 쓴다.
  * 이 파일은 scripts/fetch_material_icons.py 가 만든다. 손으로 고치지 않는다.
  * 아이콘을 바꾸거나 더할 때는 그 스크립트의 ICONS 표를 고치고 다시 돌린다.
  *

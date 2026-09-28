@@ -31,6 +31,7 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-28
+- 최신 UI/에셋 반영 안드로이드 릴리스 APK 빌드 완료: 새 로고/스플래시 화면, Material Symbols Rounded 39종 아이콘, 독메뉴 슬림화가 적용된 릴리스 패키징 자동화 스크립트(`scripts/build_apk.sh`) 추가 및 빌드 성공 (`~/build/WordPic-20260928.apk`, 405MB)
 - 이미지 용량 다이어트 및 AVIF 최적화 파이프라인 구축: 384px 리사이징 + 8-bit 팔레트 양자화 + AVIF 변환 일괄 처리 스크립트(`scripts/export_avif_images.py`) 제작 및 검증(샘플 단어 이미지 70% 용량 절감 달성), 앱 내부 번들 에셋(`assets/*.png`) 8-bit 양자화 적용으로 40~93% 용량 경량화 완료
 - 하단 독메뉴(BottomNav) 슬림화 및 뉴모피즘 디자인 개선: 지나치게 컸던 아이콘 크기(34px → 24px)를 모바일 표준에 맞게 축소하고, 높이(64px → 54px) 및 여백 최적화, 활성 탭 인디케이터를 `rounded-full` 알약 형태로 일치시켜 세련된 비주얼 완성
 - 앱 전체 아이콘을 Google Fonts 공식 Material Symbols Rounded(둥근 모서리) SVG 코드로 전면 갱신: 뉴모피즘 UI 곡선과 부드럽게 어우러지도록 `scripts/fetch_material_icons.py` 파이프라인을 Rounded 스타일로 전환하고 [src/components/icons.tsx](file:///Volumes/외장하드/App/eng_word/English_word/src/components/icons.tsx) 내 39종 아이콘 인라인 SVG 코드 일괄 업데이트

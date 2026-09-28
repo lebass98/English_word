@@ -31,6 +31,7 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-28
+- 단어 학습 화면 하단 버튼 바 UI 개선: 홈·헷갈려요·저장·외웠어요 버튼의 아이콘을 제거하고 텍스트 라벨(13px, font-bold)로 통일하여 시각적 답답함 해소 및 정갈한 레이아웃 구성
 - 홈 개편 브랜치를 main 에 병합: 원격의 CDN 그림(`wordImageSource`)·`expo-image` 전환에 맞춰 홈·이어하기·오늘의 단어 카드의 그림 코드를 바꾸고, 현황판 삭제에 따라 `imageDebug` 제거
 - 홈 개편·애니메이션 반영 릴리스 APK 빌드 및 에뮬레이터 실동작 검증
   - `~/build/English_word`(ASCII 경로) 복사 빌드, 결과물 `~/build/WordPic-20260927.apk` (419MB, 디버그 키 서명)

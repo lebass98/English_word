@@ -21,12 +21,7 @@ import {
 import { Image } from "expo-image";
 import { BlurView } from "expo-blur";
 import {
-  AgainIcon,
-  BookmarkFilledIcon,
-  BookmarkIcon,
   PictureIcon,
-  CheckIcon,
-  HomeIcon,
   ChevronDownIcon,
   ChevronLeftIcon,
   ChevronRightIcon,
@@ -759,32 +754,30 @@ function StudyCard({
 
       {/* ── 학습 평가 버튼 (가운데는 단어장에 담기) ────────── */}
       <View className="mx-6 flex-row items-stretch gap-2 pb-4 pt-3">
-        {/* 홈으로. 유닛을 거쳐 들어온 화면이라 뒤로가기만으로는 여러 번 눌러야
-            한다. 글자 없이 아이콘만 둔다.
-            가로·세로를 같은 값으로 못 박고 self-center 로 늘어남을 끊는다.
-            aspect-square 로 높이에서 너비를 끌어오면 네이티브에서 계산이
-            어긋나 원이 일그러진다. 52px 은 옆 버튼 높이(위아래 16 + 내용 20) */}
+        {/* 홈으로 이동 버튼 */}
         <Pressable
           onPress={() => router.replace("/")}
           accessibilityRole="button"
           accessibilityLabel={t("nav.home")}
           className="h-[52px] w-[52px] shrink-0 self-center items-center justify-center rounded-full bg-surface shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
         >
-          <HomeIcon size={20} color="#64748b" />
+          <Text
+            numberOfLines={1}
+            className="text-[13px] font-bold tracking-tight text-slate-600"
+          >
+            {t("nav.home")}
+          </Text>
         </Pressable>
 
         {/* 판정 버튼 둘이 남는 자리를 똑같이 나눠 가진다 */}
         <Pressable
           onPress={() => decide("unsure")}
           style={{ flex: 1 }}
-          className="flex-row items-center justify-center gap-1 rounded-full bg-surface px-1 py-4 shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
+          className="flex-row items-center justify-center rounded-full bg-surface px-1 py-4 shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
         >
-          <View className="h-5 w-5 items-center justify-center rounded-lg bg-slate-300">
-            <AgainIcon />
-          </View>
           <Text
             numberOfLines={1}
-            className="text-[14px] font-extrabold tracking-tight text-slate-800"
+            className="text-[13px] font-bold tracking-tight text-slate-800"
           >
             {t("study.unsure")}
           </Text>
@@ -797,20 +790,15 @@ function StudyCard({
           accessibilityRole="button"
           accessibilityState={{ selected: isSaved }}
           accessibilityLabel={t("study.saveToggle")}
-          className={`w-[72px] shrink-0 flex-row items-center justify-center gap-1 rounded-full px-1 active:scale-[0.98] ${
+          className={`w-[64px] shrink-0 flex-row items-center justify-center rounded-full px-1 active:scale-[0.98] ${
             isSaved
               ? "bg-canvas shadow-neu-inset"
               : "bg-surface shadow-neu-sm active:shadow-neu-pressed"
           }`}
         >
-          {isSaved ? (
-            <BookmarkFilledIcon size={16} color={MINT} />
-          ) : (
-            <BookmarkIcon size={16} color="#94a3b8" />
-          )}
           <Text
             numberOfLines={1}
-            className={`text-[14px] font-extrabold tracking-tight ${
+            className={`text-[13px] font-bold tracking-tight ${
               isSaved ? "text-mint-dark" : "text-slate-500"
             }`}
           >
@@ -822,14 +810,11 @@ function StudyCard({
         <Pressable
           onPress={() => decide("known")}
           style={{ flex: 1 }}
-          className="flex-row items-center justify-center gap-1 rounded-full bg-[#dcf2ea] px-1 py-4 shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
+          className="flex-row items-center justify-center rounded-full bg-[#dcf2ea] px-1 py-4 shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
         >
-          <View className="h-5 w-5 items-center justify-center rounded-md bg-mint">
-            <CheckIcon />
-          </View>
           <Text
             numberOfLines={1}
-            className="text-[14px] font-black tracking-tight text-mint-dark"
+            className="text-[13px] font-bold tracking-tight text-mint-dark"
           >
             {t("study.known")}
           </Text>

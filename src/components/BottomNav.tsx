@@ -71,13 +71,13 @@ function TabItem({
   label: string;
   onPress: () => void;
 }) {
-  const [pop] = useState(() => new Animated.Value(active ? 0.7 : 1));
+  const [pop] = useState(() => new Animated.Value(active ? 0.85 : 1));
   useEffect(() => {
     if (!active) return;
     Animated.spring(pop, {
       toValue: 1,
-      speed: 14,
-      bounciness: 12,
+      speed: 16,
+      bounciness: 10,
       useNativeDriver: NATIVE_DRIVER,
     }).start();
   }, [active, pop]);
@@ -88,29 +88,29 @@ function TabItem({
       accessibilityLabel={label}
       accessibilityState={{ selected: active }}
       onPress={onPress}
-      scaleTo={0.9}
+      scaleTo={0.92}
       containerStyle={{ flex: 1 }}
-      // 아이콘을 위, 제목을 아래에 둔다
-      className="h-[64px] items-center justify-center gap-1 px-1"
+      // 아이콘을 위, 제목을 아래에 둔다 (슬림한 54px 높이)
+      className="h-[54px] items-center justify-center gap-0.5 px-1"
     >
       <NeuStateLayer
         active={active}
         appear
-        radiusClass="rounded-2xl"
+        radiusClass="rounded-full"
         idleClass="bg-transparent"
         duration={DURATION.slow}
       />
       <Animated.View style={{ transform: [{ scale: pop }] }}>
         {active ? (
-          <tab.IconFilled size={34} color="#006C4C" />
+          <tab.IconFilled size={24} color="#006C4C" />
         ) : (
-          <tab.Icon size={34} color="#94a3b8" strokeWidth={0.55} />
+          <tab.Icon size={24} color="#94a3b8" />
         )}
       </Animated.View>
       <Text
         numberOfLines={1}
-        className={`text-[11px] ${
-          active ? "font-bold text-mint-dark" : "font-semibold text-slate-400"
+        className={`text-[11px] tracking-tight ${
+          active ? "font-bold text-mint-dark" : "font-medium text-slate-400"
         }`}
       >
         {label}
@@ -155,10 +155,10 @@ export function BottomNav() {
       }
     >
       <View
-        className="w-full self-center px-6 pb-6 pt-2"
+        className="w-full self-center px-6 pb-5 pt-1"
         style={{ maxWidth: MAX_CONTENT_WIDTH }}
       >
-        <View className="flex-row items-center gap-1 rounded-full bg-surface px-2 py-2 shadow-neu-card">
+        <View className="flex-row items-center gap-1 rounded-full bg-surface px-2 py-1.5 shadow-neu-card">
           {TABS.map((tab) => {
             const href = hrefOf(tab);
             // 퀴즈 탭은 어느 학년이든 /quiz 로 시작하면 켜진 것으로 본다

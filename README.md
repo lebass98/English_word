@@ -31,6 +31,7 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-28
+- 하단 독메뉴(BottomNav) 슬림화 및 뉴모피즘 디자인 개선: 지나치게 컸던 아이콘 크기(34px → 24px)를 모바일 표준에 맞게 축소하고, 높이(64px → 54px) 및 여백 최적화, 활성 탭 인디케이터를 `rounded-full` 알약 형태로 일치시켜 세련된 비주얼 완성
 - 앱 전체 아이콘을 Google Fonts 공식 Material Symbols Rounded(둥근 모서리) SVG 코드로 전면 갱신: 뉴모피즘 UI 곡선과 부드럽게 어우러지도록 `scripts/fetch_material_icons.py` 파이프라인을 Rounded 스타일로 전환하고 [src/components/icons.tsx](file:///Volumes/외장하드/App/eng_word/English_word/src/components/icons.tsx) 내 39종 아이콘 인라인 SVG 코드 일괄 업데이트
 - 앱 브랜드 로고 및 스플래시 화면 이미지 제작 및 적용: 책 속에서 단어 카드를 들고 있는 뉴모피즘 픽토그램 마스코트 로고(`icon.png`, `android-icon-foreground.png`, `android-icon-background.png`, `android-icon-monochrome.png`, `favicon.png`) 및 정갈한 풀스크린/센터형 스플래시 이미지(`splash.png`, `splash-icon.png`) 제작, `app.json` 스플래시 및 적응형 아이콘 설정 반영
 - 단어 학습 화면 하단 버튼 바 UI 개선: 홈·헷갈려요·저장·외웠어요 버튼의 아이콘을 제거하고 텍스트 라벨(13px, font-bold)로 통일하여 시각적 답답함 해소 및 정갈한 레이아웃 구성

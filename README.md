@@ -31,6 +31,7 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-09-28
+- 앱 브랜드 로고 및 스플래시 화면 이미지 제작 및 적용: 책 속에서 단어 카드를 들고 있는 뉴모피즘 픽토그램 마스코트 로고(`icon.png`, `android-icon-foreground.png`, `android-icon-background.png`, `android-icon-monochrome.png`, `favicon.png`) 및 정갈한 풀스크린/센터형 스플래시 이미지(`splash.png`, `splash-icon.png`) 제작, `app.json` 스플래시 및 적응형 아이콘 설정 반영
 - 단어 학습 화면 하단 버튼 바 UI 개선: 홈·헷갈려요·저장·외웠어요 버튼의 아이콘을 제거하고 텍스트 라벨(13px, font-bold)로 통일하여 시각적 답답함 해소 및 정갈한 레이아웃 구성
 - 홈 개편 브랜치를 main 에 병합: 원격의 CDN 그림(`wordImageSource`)·`expo-image` 전환에 맞춰 홈·이어하기·오늘의 단어 카드의 그림 코드를 바꾸고, 현황판 삭제에 따라 `imageDebug` 제거
 - 홈 개편·애니메이션 반영 릴리스 APK 빌드 및 에뮬레이터 실동작 검증

@@ -30,6 +30,9 @@ npm run lint     # ESLint
 
 ## 작업 내역
 
+### 2026-10-04
+- 중학 1학년 1유닛 `beyond` 단어 이미지 새로 생성: Draw Things 로컬 API 기반 '선형그래픽' 스킬 규칙(512x512, 0.05mm 초극세선, 좁고 긴 몸통/튜브 팔다리/머리-몸통 분리 캐릭터, 캔버스 #f5f6f8, 딥 차콜 #030203 선화) 준수하여 `assets/words/beyond.png` 생성 완료
+
 ### 2026-09-28
 - 최신 UI/에셋 반영 안드로이드 릴리스 APK 빌드 완료: 새 로고/스플래시 화면, Material Symbols Rounded 39종 아이콘, 독메뉴 슬림화가 적용된 릴리스 패키징 자동화 스크립트(`scripts/build_apk.sh`) 추가 및 빌드 성공 (`~/build/WordPic-20260928.apk`, 405MB)
 - 이미지 용량 다이어트 및 AVIF 최적화 파이프라인 구축: 384px 리사이징 + 8-bit 팔레트 양자화 + AVIF 변환 일괄 처리 스크립트(`scripts/export_avif_images.py`) 제작 및 검증(샘플 단어 이미지 70% 용량 절감 달성), 앱 내부 번들 에셋(`assets/*.png`) 8-bit 양자화 적용으로 40~93% 용량 경량화 완료

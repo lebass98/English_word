@@ -31,6 +31,7 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-10-04
+- 중학 `toward` 단어 선형그래픽 이미지 새로 생성 및 용량 비교용 샘플 SVG 추출: Draw Things 로컬 API 기반 '선형그래픽' 스킬 규칙 준수하여 `assets/words/t/toward.png` 생성, CDN 호스팅(WebP 10.5KB) 배포 및 `replaced.json`(22장) 갱신 완료. 사용자의 용량 확인을 위해 적용 전 독립형 SVG 샘플 파일(`assets/words/toward_sample.svg`, 13.8KB) 별도 생성
 - 중학 9개 단어(`price`, `cheap`, `unlike`, `deal`, `hardly`, `beggar`, `anxious`, `hang`, `step`) 선형그래픽 이미지 새로 생성: Draw Things 로컬 API 기반 '선형그래픽' 스킬 규칙 준수(512x512, 공중 부양 배제 바닥선 착지 구도, 캔버스 #f5f6f8, 딥 차콜 #030203 선화)하여 생성, CDN 웹 호스팅 저장소 푸시 및 제작 현황표(`replaced.json` 21장)에 교체 상태 반영 완료
 - 현황 화면 교체 표시 자동화: 화면을 열 때마다 그림 저장소(GitHub) 커밋 기록을 직접 읽어(`src/lib/liveReplaced.ts`) 교체한 그림에 `교체됨 · 날짜`를 붙임. 스크립트를 돌리지 않아도 반영되며, 확인한 커밋은 기기에 저장해 새 커밋만 읽음 (GitHub API 시간당 60회 한도 고려)
   - 다른 곳에서 교체한 `neither`·10개 단어가 표시되지 않던 문제 해결, `replaced.json` 12장으로 갱신, `._` 메타데이터 파일 제외

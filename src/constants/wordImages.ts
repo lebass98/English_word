@@ -42,6 +42,18 @@ function letterOf(key: string): string {
 export function wordImageUrl(key: string | undefined): string | null {
   if (!key || !KEYS.has(key)) return null;
   const slug = key.trim().replace(/\s+/g, "-");
+
+  // 개발 환경(localhost, 127.0.0.1 등)에서 새로 생성된 local assets PNG 이미지를 즉시 확인할 수 있도록 우선 참조
+  if (
+    typeof window !== "undefined" &&
+    (window.location.hostname === "localhost" ||
+      window.location.hostname === "127.0.0.1" ||
+      window.location.hostname === "::1" ||
+      window.location.hostname.startsWith("192.168."))
+  ) {
+    return `/assets/words/${encodeURIComponent(slug)}.png`;
+  }
+
   return `${IMAGE_BASE_URL}/${letterOf(slug)}/${encodeURIComponent(slug)}.webp`;
 }
 

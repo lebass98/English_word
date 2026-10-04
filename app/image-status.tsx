@@ -19,6 +19,7 @@ import {
   wordImageSource,
 } from "../src/constants/wordImages";
 import { buildSlides, type Slide } from "../src/lib/imageSlides";
+import { storage } from "../src/lib/storage";
 import replacedData from "../src/data/images/replaced.json";
 import { useAppStore } from "../src/stores/useAppStore";
 
@@ -47,7 +48,10 @@ const MODES: { id: Mode; label: string }[] = [
 /** 자동 넘김 간격 (초) */
 const SPEEDS = [0.7, 1.5, 3];
 
-/** 다른 탭에 다녀와도 보던 자리에서 이어 보게 화면 밖에 기억해 둔다 */
+/**
+ * 보던 자리. 다른 탭에 다녀와도 이어 보게 화면 밖에 두고, 새로고침이나 앱을
+ * 다시 켜도 그 그림부터 보도록 저장소에도 적어 둔다
+ */
 const memory = {
   tab: "viewer" as Tab,
   scope: "all",
@@ -55,6 +59,10 @@ const memory = {
   slideId: "",
   speed: 1.5,
 };
+type Memory = typeof memory;
+const MEMORY_KEY = "imageStatus.position";
+/** 저장소에서 한 번 읽어 왔는지. 화면을 다시 열 때는 다시 읽지 않는다 */
+let memoryLoaded = false;
 
 export default function ImageStatusScreen() {
   const uiLang = useAppStore((s) => s.uiLang);
@@ -104,7 +112,39 @@ export default function ImageStatusScreen() {
   const index = Math.max(0, sameImage);
   const slide = list[index];
 
+  /**
+   * 저장해 둔 자리를 불러왔는지. 웹은 서버에서 먼저 그린 화면과 맞춰야 해서
+   * 처음 그릴 때 바로 읽지 못하고 화면이 뜬 뒤에 읽는다. 그동안 첫 그림이
+   * 비치지 않게 그림 칸을 비워 둔다
+   */
+  const [ready, setReady] = useState(memoryLoaded);
   useEffect(() => {
+    if (memoryLoaded) return;
+    let alive = true;
+    storage
+      .get<Partial<Memory>>(MEMORY_KEY)
+      .catch(() => null)
+      .then((saved) => {
+        memoryLoaded = true;
+        if (!alive) return;
+        if (saved) {
+          Object.assign(memory, saved);
+          setTab(memory.tab);
+          setScope(memory.scope);
+          setMode(memory.mode);
+          setSpeed(memory.speed);
+          setSlideId(memory.slideId);
+        }
+        setReady(true);
+      });
+    return () => {
+      alive = false;
+    };
+  }, []);
+
+  useEffect(() => {
+    // 불러오기 전에 적으면 저장해 둔 자리를 첫 그림으로 덮어쓴다
+    if (!ready) return;
     Object.assign(memory, {
       tab,
       scope,
@@ -112,7 +152,8 @@ export default function ImageStatusScreen() {
       speed,
       slideId: slide?.id ?? "",
     });
-  }, [tab, scope, mode, speed, slide]);
+    storage.set(MEMORY_KEY, memory).catch(() => {});
+  }, [ready, tab, scope, mode, speed, slide]);
 
   /** n 칸 옮긴다. 끝을 넘으면 반대쪽 끝에서 이어진다 */
   const step = (n: number) => {
@@ -262,7 +303,14 @@ export default function ImageStatusScreen() {
             </View>
 
             {slide ? (
-              <SlideCard slide={slide} />
+              ready ? (
+                <SlideCard slide={slide} />
+              ) : (
+                <View
+                  className="mt-5 rounded-3xl bg-surface shadow-neu-card"
+                  style={{ width: "100%", aspectRatio: 0.8 }}
+                />
+              )
             ) : (
               <View className="mt-5 items-center rounded-3xl bg-surface p-10 shadow-neu-card">
                 <Text className="text-[13px] text-slate-400">
@@ -360,7 +408,17 @@ export default function ImageStatusScreen() {
 
 /** 그림 한 장과 낱말·뜻 */
 function SlideCard({ slide }: { slide: Slide }) {
-  const source = wordImageSource(slide.word);
+  /**
+   * "새로 받기"를 누른 시각. 주소 끝에 붙여 디스크·브라우저에 담아 둔 그림 대신
+   * 서버의 지금 그림을 받는다. 그림을 교체한 뒤 그 자리에서 확인할 때 쓴다
+   */
+  const [fresh, setFresh] = useState<{ id: string; t: number } | null>(null);
+  const base = wordImageSource(slide.word);
+  const t = fresh?.id === slide.id ? fresh.t : 0;
+  const source =
+    base && t
+      ? { uri: `${base.uri}${base.uri.includes("?") ? "&" : "?"}t=${t}` }
+      : base;
   const { word, replaced } = slide;
 
   return (
@@ -381,6 +439,29 @@ function SlideCard({ slide }: { slide: Slide }) {
               그림 없음
             </Text>
           </View>
+        )}
+
+        {base && (
+          <Pressable
+            onPress={() => setFresh({ id: slide.id, t: Date.now() })}
+            accessibilityRole="button"
+            accessibilityLabel="그림 새로 받기"
+            className="active:opacity-60"
+            style={{
+              position: "absolute",
+              right: 12,
+              top: 12,
+              height: 28,
+              justifyContent: "center",
+              backgroundColor: "rgba(255,255,255,0.9)",
+              borderRadius: 999,
+              paddingHorizontal: 12,
+            }}
+          >
+            <Text style={{ color: "#006C4C", fontSize: 12, fontWeight: "700" }}>
+              {t ? "받음 ✓" : "새로 받기"}
+            </Text>
+          </Pressable>
         )}
 
         {/* 교체한 그림 표시 */}

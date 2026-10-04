@@ -40,7 +40,8 @@ export type QuizKind = (typeof QUIZ_KINDS)[number];
 /** 주소에 실려 온 값이 아는 유형인지 가려낸다 */
 export function isQuizKind(value: unknown): value is QuizKind {
   return (
-    typeof value === "string" && (QUIZ_KINDS as readonly string[]).includes(value)
+    typeof value === "string" &&
+    (QUIZ_KINDS as readonly string[]).includes(value)
   );
 }
 
@@ -118,7 +119,9 @@ export function hasMeaning(word: Word): boolean {
 export function spellable(word: Word): boolean {
   const w = word.word;
   return (
-    /^[a-zA-Z]+$/.test(w) && w.length >= SPELLING_MIN && w.length <= SPELLING_MAX
+    /^[a-zA-Z]+$/.test(w) &&
+    w.length >= SPELLING_MIN &&
+    w.length <= SPELLING_MAX
   );
 }
 
@@ -271,9 +274,7 @@ export function buildQuiz(
   // 어떤 유형으로도 낼 수 없는 단어는 애초에 뽑지 않는다
   const pool = words.filter((w) => kinds.some((k) => supports(w, k)));
   if (pool.length === 0) return [];
-  const choices = choicePool.filter((w) =>
-    kinds.some((k) => supports(w, k)),
-  );
+  const choices = choicePool.filter((w) => kinds.some((k) => supports(w, k)));
   if (choices.length < CHOICE_COUNT) return [];
 
   const answers = pickWeighted(pool, entries, Math.min(size, pool.length));

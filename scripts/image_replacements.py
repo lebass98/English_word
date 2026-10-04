@@ -51,6 +51,9 @@ def replaced() -> dict[str, dict]:
             continue
         path = line.split("\t")[-1]
         slug = os.path.splitext(os.path.basename(path))[0]
+        # macOS 가 외장하드에 만드는 ._ 메타데이터 파일은 그림이 아니다
+        if slug.startswith("._"):
+            continue
         key = keys.get(slug, slug.replace("-", " "))
         prev = out.get(key, {"count": 0})
         out[key] = {"date": date, "rev": rev, "count": prev["count"] + 1}

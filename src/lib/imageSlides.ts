@@ -1,6 +1,7 @@
 import { gradesOf } from "../constants/grades";
 import { STUDY_LANGS, type StudyLangId } from "../constants/languages";
 import {
+  REPLACED_IMAGES,
   hasWordImage,
   replacedImageOf,
   type ReplacedImage,
@@ -42,7 +43,11 @@ export interface SlideCourse {
 }
 
 /** 모든 학습 언어 × 모든 코스의 낱말을 코스 → 유닛 → 낱말 순서로 늘어놓는다 */
-export function buildSlides(uiLang: UiLangId) {
+export function buildSlides(
+  uiLang: UiLangId,
+  /** 교체 기록. 현황 화면은 그림 저장소에서 바로 읽어 온 기록을 넘긴다 */
+  replacedMap: Record<string, ReplacedImage> = REPLACED_IMAGES,
+) {
   const slides: Slide[] = [];
   const courses: SlideCourse[] = [];
 
@@ -66,7 +71,7 @@ export function buildSlides(uiLang: UiLangId) {
             noInUnit: i + 1,
             unitSize: unit.words.length,
             has: hasWordImage(word),
-            replaced: replacedImageOf(word),
+            replaced: replacedImageOf(word, replacedMap),
           });
         });
       }

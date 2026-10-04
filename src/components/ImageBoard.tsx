@@ -5,7 +5,7 @@ import { PictureIcon } from "./icons";
 import { wordImageCount, wordImageSource } from "../constants/wordImages";
 import type { Slide, SlideCourse } from "../lib/imageSlides";
 import dailyCounts from "../data/images/dailyCounts.json";
-import replacedData from "../data/images/replaced.json";
+import type { LiveReplaced } from "../lib/liveReplaced";
 
 /**
  * 그림 제작 현황표 (디버그용). 예전 그림 현황판을 다시 살린 것이다.
@@ -87,10 +87,13 @@ function buildBoard(slides: Slide[], courses: SlideCourse[]) {
 export function ImageBoard({
   slides,
   courses,
+  live,
   onOpen,
 }: {
   slides: Slide[];
   courses: SlideCourse[];
+  /** 교체 기록. 화면을 열 때마다 그림 저장소에서 다시 확인한다 */
+  live: LiveReplaced;
   /** 그림 하나를 순차 보기로 연다 */
   onOpen: (slide: Slide) => void;
 }) {
@@ -108,7 +111,7 @@ export function ImageBoard({
 
   return (
     <View>
-      <SummaryCard board={board} />
+      <SummaryCard board={board} replacedCount={Object.keys(live.map).length} />
       <Legend />
 
       <SectionTitle>교체한 그림 {replacedSlides.length}장</SectionTitle>
@@ -127,13 +130,16 @@ export function ImageBoard({
           </ScrollView>
         )}
         <Text className="mt-3 text-[11px] text-slate-400">
-          {replacedData.generatedAt} 기준 · 교체 후
-          scripts/image_replacements.py 로 갱신
+          {live.status === "loading"
+            ? "그림 저장소에서 교체 기록 확인 중…"
+            : live.status === "live"
+              ? `${live.checkedAt} 그림 저장소에서 확인`
+              : `${live.checkedAt} 기록 · 지금은 저장소를 확인하지 못함`}
         </Text>
       </View>
 
       <SectionTitle>일자별 제작</SectionTitle>
-      <DailyCard />
+      <DailyCard replaced={live.map} />
 
       <SectionTitle>코스별 현황</SectionTitle>
       <View className="gap-4">
@@ -197,7 +203,13 @@ function StackBar({
   );
 }
 
-function SummaryCard({ board }: { board: ReturnType<typeof buildBoard> }) {
+function SummaryCard({
+  board,
+  replacedCount,
+}: {
+  board: ReturnType<typeof buildBoard>;
+  replacedCount: number;
+}) {
   const fill = board.slots > 0 ? board.filledSlots / board.slots : 0;
   return (
     <View className="mt-5 rounded-3xl bg-surface p-6 shadow-neu-card">
@@ -224,7 +236,7 @@ function SummaryCard({ board }: { board: ReturnType<typeof buildBoard> }) {
       <View className="mt-5 flex-row flex-wrap gap-3">
         <MiniStat
           label="교체한 그림"
-          value={`${replacedData.total.toLocaleString()}장`}
+          value={`${replacedCount.toLocaleString()}장`}
           color={REPLACED}
         />
         <MiniStat
@@ -274,7 +286,12 @@ function Thumb({
   size: number;
   onPress: (slide: Slide) => void;
 }) {
-  const source = wordImageSource(slide.word);
+  const source = wordImageSource(
+    slide.word,
+    slide.replaced
+      ? { [slide.imageKey]: slide.replaced, [slide.word.word]: slide.replaced }
+      : {},
+  );
   const border = slide.replaced ? REPLACED : slide.has ? "transparent" : EMPTY;
   return (
     <Pressable
@@ -468,9 +485,9 @@ const WEEKDAYS = ["일", "월", "화", "수", "목", "금", "토"];
  * 만든 수는 scripts/image_daily_counts.py, 교체 수는 scripts/image_replacements.py
  * 가 센다.
  */
-function DailyCard() {
+function DailyCard({ replaced }: { replaced: LiveReplaced["map"] }) {
   const replacedByDay = new Map<string, number>();
-  for (const r of Object.values(replacedData.items) as { date: string }[]) {
+  for (const r of Object.values(replaced)) {
     replacedByDay.set(r.date, (replacedByDay.get(r.date) ?? 0) + 1);
   }
   const byDay = new Map<string, number>(

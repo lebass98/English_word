@@ -54,12 +54,15 @@ function letterOf(key: string): string {
  * (living room → living-room). 대문자도 그대로다 (COO, Pacific).
  * 서버는 대소문자를 가리므로 여기서 소문자로 바꾸면 안 된다.
  */
-export function wordImageUrl(key: string | undefined): string | null {
+export function wordImageUrl(
+  key: string | undefined,
+  replacedMap: Record<string, ReplacedImage> = REPLACED_IMAGES,
+): string | null {
   if (!key || !KEYS.has(key)) return null;
   const slug = key.trim().replace(/\s+/g, "-");
   const url = `${IMAGE_BASE_URL}/${letterOf(slug)}/${encodeURIComponent(slug)}.webp`;
   // 교체한 그림은 주소를 바꿔 둔다. 주소가 같으면 디스크에 담아 둔 옛 그림이 뜬다
-  const replaced = REPLACED_IMAGES[key];
+  const replaced = replacedMap[key];
   return replaced ? `${url}?v=${replaced.rev}` : url;
 }
 
@@ -71,9 +74,13 @@ export function wordImageUrl(key: string | undefined): string | null {
  */
 export function wordImageSource(
   word: { conceptId?: string; word: string } | undefined,
+  /** 교체 기록. 현황 화면은 그림 저장소에서 바로 읽어 온 기록을 넘긴다 */
+  replacedMap: Record<string, ReplacedImage> = REPLACED_IMAGES,
 ): { uri: string } | null {
   if (!word) return null;
-  const url = wordImageUrl(word.conceptId) ?? wordImageUrl(word.word);
+  const url =
+    wordImageUrl(word.conceptId, replacedMap) ??
+    wordImageUrl(word.word, replacedMap);
   return url ? { uri: url } : null;
 }
 
@@ -86,13 +93,24 @@ export function hasWordImage(word: {
 }
 
 /** 이 낱말의 그림을 교체한 기록. 교체한 적이 없으면 null */
-export function replacedImageOf(word: {
-  conceptId?: string;
-  word: string;
-}): ReplacedImage | null {
+export function replacedImageOf(
+  word: { conceptId?: string; word: string },
+  replacedMap: Record<string, ReplacedImage> = REPLACED_IMAGES,
+): ReplacedImage | null {
   // 그림을 찾는 순서(뜻 → 철자)와 맞춘다
   const key = KEYS.has(word.conceptId ?? "") ? word.conceptId! : word.word;
-  return REPLACED_IMAGES[key] ?? null;
+  return replacedMap[key] ?? null;
+}
+
+/** 그림 파일 이름(living-room) → 열쇠(living room). 없는 이름이면 undefined */
+let slugMap: Map<string, string> | null = null;
+export function keyOfImageSlug(slug: string): string | undefined {
+  if (!slugMap) {
+    slugMap = new Map(
+      WORD_IMAGE_KEYS.map((k) => [k.trim().replace(/\s+/g, "-"), k]),
+    );
+  }
+  return slugMap.get(slug);
 }
 
 /** 등록된 그림 수 */

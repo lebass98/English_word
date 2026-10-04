@@ -14,13 +14,13 @@ import { Screen, ScreenHeader } from "../src/components/Screen";
 import { ImageBoard } from "../src/components/ImageBoard";
 import { SegmentButton } from "../src/components/SegmentButton";
 import {
-  REPLACED_IMAGES,
   wordImageCount,
   wordImageSource,
+  type ReplacedImage,
 } from "../src/constants/wordImages";
 import { buildSlides, type Slide } from "../src/lib/imageSlides";
 import { storage } from "../src/lib/storage";
-import replacedData from "../src/data/images/replaced.json";
+import { useLiveReplaced, type LiveReplaced } from "../src/lib/liveReplaced";
 import { useAppStore } from "../src/stores/useAppStore";
 
 /**
@@ -33,7 +33,8 @@ import { useAppStore } from "../src/stores/useAppStore";
  * 유닛이 끝나도 멈추지 않고 다음 유닛·다음 코스로 이어지며, 끝에 닿으면
  * 처음으로 돌아간다. 교체한 그림에는 "교체됨" 표시가 붙는다.
  *
- * 교체 기록은 scripts/image_replacements.py 가 그림 저장소 기록에서 세어 둔다.
+ * 교체 기록은 화면을 열 때마다 그림 저장소(GitHub) 커밋 기록에서 바로 읽는다
+ * (src/lib/liveReplaced.ts). 확인하지 못하면 앱에 든 기록(replaced.json)을 쓴다.
  */
 
 type Tab = "viewer" | "board";
@@ -66,12 +67,14 @@ let memoryLoaded = false;
 
 export default function ImageStatusScreen() {
   const uiLang = useAppStore((s) => s.uiLang);
+  // 교체 기록. 화면을 열 때마다 그림 저장소에서 다시 확인한다
+  const live = useLiveReplaced();
   // 그림 등록표가 바뀌면(Fast Refresh) 다시 센다
   const imageCount = wordImageCount();
   const { slides, courses } = useMemo(
-    () => buildSlides(uiLang),
+    () => buildSlides(uiLang, live.map),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [uiLang, imageCount],
+    [uiLang, imageCount, live.map],
   );
 
   const [tab, setTab] = useState<Tab>(memory.tab);
@@ -195,10 +198,10 @@ export default function ImageStatusScreen() {
   useEffect(() => {
     const urls = [1, 2, 3]
       .map((n) => list[(index + n) % Math.max(1, list.length)])
-      .map((s) => s && wordImageSource(s.word)?.uri)
+      .map((s) => s && wordImageSource(s.word, live.map)?.uri)
       .filter((u): u is string => Boolean(u));
     if (urls.length) Image.prefetch(urls, { cachePolicy: "disk" });
-  }, [index, list]);
+  }, [index, list, live.map]);
 
   // 웹에서는 ← → 로 넘기고, 스페이스로 자동 넘김을 켜고 끈다
   useEffect(() => {
@@ -229,8 +232,8 @@ export default function ImageStatusScreen() {
           <Text className="text-xl font-bold text-ink">그림 현황</Text>
           <Text className="mt-1 text-[12px] text-slate-500">
             그림 {imageCount.toLocaleString()}장 · 없음{" "}
-            {missingCount.toLocaleString()} · 교체 {replacedData.total}장 ·{" "}
-            {replacedData.generatedAt} 기준
+            {missingCount.toLocaleString()} · 교체{" "}
+            {Object.keys(live.map).length}장 · {liveLabel(live)}
           </Text>
         </View>
       </ScreenHeader>
@@ -258,6 +261,7 @@ export default function ImageStatusScreen() {
           <ImageBoard
             slides={slides}
             courses={courses}
+            live={live}
             onOpen={(target) => {
               // 누른 그림을 그 코스 안에서 이어 볼 수 있게 연다
               setMode("all");
@@ -304,7 +308,7 @@ export default function ImageStatusScreen() {
 
             {slide ? (
               ready ? (
-                <SlideCard slide={slide} />
+                <SlideCard slide={slide} replacedMap={live.map} />
               ) : (
                 <View
                   className="mt-5 rounded-3xl bg-surface shadow-neu-card"
@@ -388,6 +392,7 @@ export default function ImageStatusScreen() {
             )}
 
             <ReplacedList
+              live={live}
               onPick={(key) => {
                 const target = slides.find((s) => s.imageKey === key);
                 if (!target) return;
@@ -406,14 +411,27 @@ export default function ImageStatusScreen() {
   );
 }
 
+/** 교체 기록을 언제 어떻게 확인했는지 */
+function liveLabel(live: LiveReplaced) {
+  if (live.status === "loading") return "교체 기록 확인 중…";
+  if (live.status === "live") return `${live.checkedAt} 저장소 확인`;
+  return `${live.checkedAt} 기록 (지금은 확인 못 함)`;
+}
+
 /** 그림 한 장과 낱말·뜻 */
-function SlideCard({ slide }: { slide: Slide }) {
+function SlideCard({
+  slide,
+  replacedMap,
+}: {
+  slide: Slide;
+  replacedMap: Record<string, ReplacedImage>;
+}) {
   /**
    * "새로 받기"를 누른 시각. 주소 끝에 붙여 디스크·브라우저에 담아 둔 그림 대신
    * 서버의 지금 그림을 받는다. 그림을 교체한 뒤 그 자리에서 확인할 때 쓴다
    */
   const [fresh, setFresh] = useState<{ id: string; t: number } | null>(null);
-  const base = wordImageSource(slide.word);
+  const base = wordImageSource(slide.word, replacedMap);
   const t = fresh?.id === slide.id ? fresh.t : 0;
   const source =
     base && t
@@ -517,8 +535,17 @@ function SlideCard({ slide }: { slide: Slide }) {
 }
 
 /** 교체한 그림 목록. 누르면 그 그림으로 간다 */
-function ReplacedList({ onPick }: { onPick: (key: string) => void }) {
-  const items = Object.entries(REPLACED_IMAGES);
+function ReplacedList({
+  live,
+  onPick,
+}: {
+  live: LiveReplaced;
+  onPick: (key: string) => void;
+}) {
+  // 최근에 교체한 것부터
+  const items = Object.entries(live.map).sort((a, b) =>
+    b[1].date.localeCompare(a[1].date),
+  );
 
   return (
     <View className="mt-8 rounded-3xl bg-surface p-5 shadow-neu-card">
@@ -548,7 +575,7 @@ function ReplacedList({ onPick }: { onPick: (key: string) => void }) {
         </View>
       )}
       <Text className="mt-3 text-[11px] text-slate-400">
-        그림 저장소 기록에서 셈 · 교체 후 scripts/image_replacements.py 로 갱신
+        {liveLabel(live)} · 그림 저장소 커밋 기록에서 셈
       </Text>
     </View>
   );

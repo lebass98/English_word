@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-10-04 21:19",
- "total": 12,
+ "generatedAt": "2026-10-04 21:26",
+ "total": 21,
  "items": {
   "beyond": {
    "date": "2026-10-04",
@@ -60,6 +60,51 @@
   "without": {
    "date": "2026-10-04",
    "rev": "a4ab34f",
+   "count": 1
+  },
+  "price": {
+   "date": "2026-10-04",
+   "rev": "bc1ac97",
+   "count": 1
+  },
+  "cheap": {
+   "date": "2026-10-04",
+   "rev": "bc1ac97",
+   "count": 1
+  },
+  "unlike": {
+   "date": "2026-10-04",
+   "rev": "bc1ac97",
+   "count": 1
+  },
+  "deal": {
+   "date": "2026-10-04",
+   "rev": "bc1ac97",
+   "count": 1
+  },
+  "hardly": {
+   "date": "2026-10-04",
+   "rev": "bc1ac97",
+   "count": 1
+  },
+  "beggar": {
+   "date": "2026-10-04",
+   "rev": "bc1ac97",
+   "count": 1
+  },
+  "anxious": {
+   "date": "2026-10-04",
+   "rev": "bc1ac97",
+   "count": 1
+  },
+  "hang": {
+   "date": "2026-10-04",
+   "rev": "bc1ac97",
+   "count": 1
+  },
+  "step": {
+   "date": "2026-10-04",
+   "rev": "bc1ac97",
    "count": 1
   }
  }

@@ -1,5 +1,5 @@
 import { Image } from "expo-image";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Platform, Pressable, ScrollView, Text, View } from "react-native";
 import { BottomNav } from "../src/components/BottomNav";
 import {
@@ -11,22 +11,22 @@ import {
 } from "../src/components/icons";
 import { PressableScale } from "../src/components/motion";
 import { Screen, ScreenHeader } from "../src/components/Screen";
-import { gradesOf } from "../src/constants/grades";
-import { STUDY_LANGS, type StudyLangId } from "../src/constants/languages";
+import { ImageBoard } from "../src/components/ImageBoard";
+import { SegmentButton } from "../src/components/SegmentButton";
 import {
   REPLACED_IMAGES,
-  hasWordImage,
-  replacedImageOf,
   wordImageCount,
   wordImageSource,
-  type ReplacedImage,
 } from "../src/constants/wordImages";
-import { getVocab, type Word } from "../src/constants/words";
+import { buildSlides, type Slide } from "../src/lib/imageSlides";
 import replacedData from "../src/data/images/replaced.json";
 import { useAppStore } from "../src/stores/useAppStore";
 
 /**
- * 그림 현황 (디버그용).
+ * 그림 현황 (디버그용). 탭 두 개로 나뉜다.
+ *
+ * - 순차 보기: 아래 설명
+ * - 제작 현황표: 코스·유닛별로 어디까지 그렸는지 한눈에 본다 (ImageBoard)
  *
  * 모든 코스의 단어 그림을 뜻과 함께 하나씩 차례로 넘겨 본다. 퀴즈·학습과 달리
  * 유닛이 끝나도 멈추지 않고 다음 유닛·다음 코스로 이어지며, 끝에 닿으면
@@ -35,29 +35,7 @@ import { useAppStore } from "../src/stores/useAppStore";
  * 교체 기록은 scripts/image_replacements.py 가 그림 저장소 기록에서 세어 둔다.
  */
 
-/** 넘겨 볼 칸 하나 */
-interface Slide {
-  /** 화면 안에서 칸을 가리키는 고유 키 */
-  id: string;
-  word: Word;
-  /** 그림 한 장을 함께 쓰는 낱말끼리 같은 값 */
-  imageKey: string;
-  courseKey: string;
-  /** 고1, N5 같은 짧은 코스 이름 */
-  course: string;
-  unitNo: number;
-  /** 유닛 안에서 몇 번째인지 (1부터) */
-  noInUnit: number;
-  unitSize: number;
-  has: boolean;
-  replaced: ReplacedImage | null;
-}
-
-interface Course {
-  key: string;
-  label: string;
-}
-
+type Tab = "viewer" | "board";
 type Mode = "all" | "replaced" | "missing";
 
 const MODES: { id: Mode; label: string }[] = [
@@ -71,45 +49,12 @@ const SPEEDS = [0.7, 1.5, 3];
 
 /** 다른 탭에 다녀와도 보던 자리에서 이어 보게 화면 밖에 기억해 둔다 */
 const memory = {
+  tab: "viewer" as Tab,
   scope: "all",
   mode: "all" as Mode,
   slideId: "",
   speed: 1.5,
 };
-
-/** 모든 학습 언어 × 모든 코스의 낱말을 코스 → 유닛 → 낱말 순서로 늘어놓는다 */
-function buildSlides(uiLang: Parameters<typeof getVocab>[1]) {
-  const slides: Slide[] = [];
-  const courses: Course[] = [];
-
-  for (const langId of STUDY_LANGS as readonly StudyLangId[]) {
-    const vocab = getVocab(langId, uiLang);
-    for (const grade of gradesOf(langId, uiLang)) {
-      const units = vocab.unitsOf(grade.id);
-      if (units.length === 0) continue;
-      const key = `${langId}:${grade.id}`;
-      courses.push({ key, label: grade.short });
-
-      for (const unit of units) {
-        unit.words.forEach((word, i) => {
-          slides.push({
-            id: `${key}:${word.id}`,
-            word,
-            imageKey: word.conceptId || word.word,
-            courseKey: key,
-            course: grade.short,
-            unitNo: unit.unitNo,
-            noInUnit: i + 1,
-            unitSize: unit.words.length,
-            has: hasWordImage(word),
-            replaced: replacedImageOf(word),
-          });
-        });
-      }
-    }
-  }
-  return { slides, courses };
-}
 
 export default function ImageStatusScreen() {
   const uiLang = useAppStore((s) => s.uiLang);
@@ -121,6 +66,8 @@ export default function ImageStatusScreen() {
     [uiLang, imageCount],
   );
 
+  const [tab, setTab] = useState<Tab>(memory.tab);
+  const scrollRef = useRef<ScrollView>(null);
   const [scope, setScope] = useState(memory.scope);
   const [mode, setMode] = useState<Mode>(memory.mode);
   const [speed, setSpeed] = useState(memory.speed);
@@ -158,8 +105,14 @@ export default function ImageStatusScreen() {
   const slide = list[index];
 
   useEffect(() => {
-    Object.assign(memory, { scope, mode, speed, slideId: slide?.id ?? "" });
-  }, [scope, mode, speed, slide]);
+    Object.assign(memory, {
+      tab,
+      scope,
+      mode,
+      speed,
+      slideId: slide?.id ?? "",
+    });
+  }, [tab, scope, mode, speed, slide]);
 
   /** n 칸 옮긴다. 끝을 넘으면 반대쪽 끝에서 이어진다 */
   const step = (n: number) => {
@@ -191,11 +144,11 @@ export default function ImageStatusScreen() {
 
   // 자동 넘김. 끝에 닿아도 처음으로 돌아가 멈추지 않는다
   useEffect(() => {
-    if (!playing || list.length === 0) return;
+    if (!playing || tab !== "viewer" || list.length === 0) return;
     const timer = setTimeout(() => step(1), speed * 1000);
     return () => clearTimeout(timer);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [playing, speed, slide, list]);
+  }, [playing, tab, speed, slide, list]);
 
   // 다음 몇 장을 미리 받아 둬서 넘길 때 빈 칸이 뜨지 않게 한다
   useEffect(() => {
@@ -209,6 +162,7 @@ export default function ImageStatusScreen() {
   // 웹에서는 ← → 로 넘기고, 스페이스로 자동 넘김을 켜고 끈다
   useEffect(() => {
     if (Platform.OS !== "web" || typeof window === "undefined") return;
+    if (tab !== "viewer") return;
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "ArrowRight") step(1);
       else if (e.key === "ArrowLeft") step(-1);
@@ -241,122 +195,162 @@ export default function ImageStatusScreen() {
       </ScreenHeader>
 
       {/* 하단 독바에 가리지 않게 넉넉히 띄운다 */}
-      <ScrollView className="flex-1" contentContainerClassName="px-6 pb-32 pt-5">
-        {/* 범위: 전체 또는 코스 하나 */}
-        <ScrollView
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          contentContainerClassName="gap-2 px-1 py-2"
-        >
-          <Chip
-            label="전체"
-            active={scope === "all"}
-            onPress={() => setScope("all")}
+      <ScrollView
+        ref={scrollRef}
+        className="flex-1"
+        contentContainerClassName="px-6 pb-32 pt-5"
+      >
+        <View className="flex-row gap-3">
+          <SegmentButton
+            label="순차 보기"
+            selected={tab === "viewer"}
+            onPress={() => setTab("viewer")}
           />
-          {courses.map((c) => (
-            <Chip
-              key={c.key}
-              label={c.label}
-              active={scope === c.key}
-              onPress={() => setScope(c.key)}
-            />
-          ))}
-        </ScrollView>
-
-        <View className="mt-1 flex-row gap-2 px-1">
-          {MODES.map((m) => (
-            <Chip
-              key={m.id}
-              label={m.label}
-              active={mode === m.id}
-              onPress={() => setMode(m.id)}
-            />
-          ))}
+          <SegmentButton
+            label="제작 현황표"
+            selected={tab === "board"}
+            onPress={() => setTab("board")}
+          />
         </View>
 
-        {slide ? (
-          <SlideCard slide={slide} />
-        ) : (
-          <View className="mt-5 items-center rounded-3xl bg-surface p-10 shadow-neu-card">
-            <Text className="text-[13px] text-slate-400">
-              보여 줄 그림이 없다
-            </Text>
-          </View>
-        )}
-
-        {/* 넘김 조작 */}
-        <View className="mt-5 flex-row items-center justify-between">
-          <RoundButton label="이전 유닛" onPress={() => stepUnit(-1)}>
-            <Text style={{ fontSize: 12, fontWeight: "700", color: "#64748b" }}>
-              U-
-            </Text>
-          </RoundButton>
-          <RoundButton label="이전" onPress={() => step(-1)}>
-            <ChevronLeftIcon size={26} color="#475569" />
-          </RoundButton>
-          <RoundButton
-            label={playing ? "멈춤" : "자동 넘김"}
-            big
-            active={playing}
-            onPress={() => setPlaying((p) => !p)}
-          >
-            {playing ? (
-              <PauseIcon size={26} color="#006C4C" />
-            ) : (
-              <PlayIcon size={26} color="#006C4C" />
-            )}
-          </RoundButton>
-          <RoundButton label="다음" onPress={() => step(1)}>
-            <ChevronRightIcon size={26} color="#475569" />
-          </RoundButton>
-          <RoundButton label="다음 유닛" onPress={() => stepUnit(1)}>
-            <Text style={{ fontSize: 12, fontWeight: "700", color: "#64748b" }}>
-              U+
-            </Text>
-          </RoundButton>
-        </View>
-
-        <View className="mt-4 flex-row items-center justify-between px-1">
-          <Text className="text-[12px] font-bold text-slate-500">
-            {list.length ? index + 1 : 0} / {list.length.toLocaleString()}
-          </Text>
-          <View className="flex-row gap-2">
-            {SPEEDS.map((s) => (
-              <Chip
-                key={s}
-                label={`${s}초`}
-                active={speed === s}
-                onPress={() => setSpeed(s)}
-              />
-            ))}
-          </View>
-        </View>
-
-        {/* 전체 중 어디쯤인지 */}
-        <View className="mt-3 h-2 overflow-hidden rounded-full bg-canvas shadow-neu-inset">
-          <View
-            className="h-full rounded-full bg-mint"
-            style={{
-              width: `${list.length ? ((index + 1) / list.length) * 100 : 0}%`,
+        {tab === "board" ? (
+          <ImageBoard
+            slides={slides}
+            courses={courses}
+            onOpen={(target) => {
+              // 누른 그림을 그 코스 안에서 이어 볼 수 있게 연다
+              setMode("all");
+              setScope(target.courseKey);
+              setSlideId(target.id);
+              setPlaying(false);
+              setTab("viewer");
+              scrollRef.current?.scrollTo({ y: 0, animated: false });
             }}
           />
-        </View>
+        ) : (
+          <>
+            {/* 범위: 전체 또는 코스 하나 */}
+            <ScrollView
+              horizontal
+              showsHorizontalScrollIndicator={false}
+              contentContainerClassName="gap-2 px-1 py-2"
+            >
+              <Chip
+                label="전체"
+                active={scope === "all"}
+                onPress={() => setScope("all")}
+              />
+              {courses.map((c) => (
+                <Chip
+                  key={c.key}
+                  label={c.label}
+                  active={scope === c.key}
+                  onPress={() => setScope(c.key)}
+                />
+              ))}
+            </ScrollView>
 
-        {Platform.OS === "web" && (
-          <Text className="mt-2 text-[11px] text-slate-400">
-            ← → 넘김 · ↑ ↓ 유닛 이동 · 스페이스 자동 넘김
-          </Text>
+            <View className="mt-1 flex-row gap-2 px-1">
+              {MODES.map((m) => (
+                <Chip
+                  key={m.id}
+                  label={m.label}
+                  active={mode === m.id}
+                  onPress={() => setMode(m.id)}
+                />
+              ))}
+            </View>
+
+            {slide ? (
+              <SlideCard slide={slide} />
+            ) : (
+              <View className="mt-5 items-center rounded-3xl bg-surface p-10 shadow-neu-card">
+                <Text className="text-[13px] text-slate-400">
+                  보여 줄 그림이 없다
+                </Text>
+              </View>
+            )}
+
+            {/* 넘김 조작 */}
+            <View className="mt-5 flex-row items-center justify-between">
+              <RoundButton label="이전 유닛" onPress={() => stepUnit(-1)}>
+                <Text
+                  style={{ fontSize: 12, fontWeight: "700", color: "#64748b" }}
+                >
+                  U-
+                </Text>
+              </RoundButton>
+              <RoundButton label="이전" onPress={() => step(-1)}>
+                <ChevronLeftIcon size={26} color="#475569" />
+              </RoundButton>
+              <RoundButton
+                label={playing ? "멈춤" : "자동 넘김"}
+                big
+                active={playing}
+                onPress={() => setPlaying((p) => !p)}
+              >
+                {playing ? (
+                  <PauseIcon size={26} color="#006C4C" />
+                ) : (
+                  <PlayIcon size={26} color="#006C4C" />
+                )}
+              </RoundButton>
+              <RoundButton label="다음" onPress={() => step(1)}>
+                <ChevronRightIcon size={26} color="#475569" />
+              </RoundButton>
+              <RoundButton label="다음 유닛" onPress={() => stepUnit(1)}>
+                <Text
+                  style={{ fontSize: 12, fontWeight: "700", color: "#64748b" }}
+                >
+                  U+
+                </Text>
+              </RoundButton>
+            </View>
+
+            <View className="mt-4 flex-row items-center justify-between px-1">
+              <Text className="text-[12px] font-bold text-slate-500">
+                {list.length ? index + 1 : 0} / {list.length.toLocaleString()}
+              </Text>
+              <View className="flex-row gap-2">
+                {SPEEDS.map((s) => (
+                  <Chip
+                    key={s}
+                    label={`${s}초`}
+                    active={speed === s}
+                    onPress={() => setSpeed(s)}
+                  />
+                ))}
+              </View>
+            </View>
+
+            {/* 전체 중 어디쯤인지 */}
+            <View className="mt-3 h-2 overflow-hidden rounded-full bg-canvas shadow-neu-inset">
+              <View
+                className="h-full rounded-full bg-mint"
+                style={{
+                  width: `${list.length ? ((index + 1) / list.length) * 100 : 0}%`,
+                }}
+              />
+            </View>
+
+            {Platform.OS === "web" && (
+              <Text className="mt-2 text-[11px] text-slate-400">
+                ← → 넘김 · ↑ ↓ 유닛 이동 · 스페이스 자동 넘김
+              </Text>
+            )}
+
+            <ReplacedList
+              onPick={(key) => {
+                const target = slides.find((s) => s.imageKey === key);
+                if (!target) return;
+                setMode("replaced");
+                if (scope !== "all" && scope !== target.courseKey)
+                  setScope("all");
+                setSlideId(target.id);
+              }}
+            />
+          </>
         )}
-
-        <ReplacedList
-          onPick={(key) => {
-            const target = slides.find((s) => s.imageKey === key);
-            if (!target) return;
-            setMode("replaced");
-            if (scope !== "all" && scope !== target.courseKey) setScope("all");
-            setSlideId(target.id);
-          }}
-        />
       </ScrollView>
 
       <BottomNav />

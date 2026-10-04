@@ -1,4 +1,5 @@
 import { WORD_IMAGE_KEYS } from "./wordImageKeys";
+import replacedData from "../data/images/replaced.json";
 
 /**
  * 단어별 연상 이미지.
@@ -26,6 +27,20 @@ export const IMAGE_BASE_URL = "https://lebass98.github.io/word-images";
 /** 그림이 있는 낱말. 있는지 확인할 일이 잦아 집합으로 만들어 둔다 */
 const KEYS = new Set(WORD_IMAGE_KEYS);
 
+/** 교체한 그림 하나. scripts/image_replacements.py 가 그림 저장소 기록에서 센다 */
+export interface ReplacedImage {
+  /** 마지막으로 교체한 날 (YYYY-MM-DD) */
+  date: string;
+  /** 그 그림 저장소 커밋 */
+  rev: string;
+  /** 교체한 횟수 */
+  count: number;
+}
+
+/** 열쇠 → 교체 기록 */
+export const REPLACED_IMAGES: Record<string, ReplacedImage> =
+  replacedData.items;
+
 /** 파일이 놓인 글자 폴더. a~z 가 아니면 "_" 에 둔다 */
 function letterOf(key: string): string {
   const first = key.slice(0, 1).toLowerCase();
@@ -42,7 +57,10 @@ function letterOf(key: string): string {
 export function wordImageUrl(key: string | undefined): string | null {
   if (!key || !KEYS.has(key)) return null;
   const slug = key.trim().replace(/\s+/g, "-");
-  return `${IMAGE_BASE_URL}/${letterOf(slug)}/${encodeURIComponent(slug)}.webp`;
+  const url = `${IMAGE_BASE_URL}/${letterOf(slug)}/${encodeURIComponent(slug)}.webp`;
+  // 교체한 그림은 주소를 바꿔 둔다. 주소가 같으면 디스크에 담아 둔 옛 그림이 뜬다
+  const replaced = REPLACED_IMAGES[key];
+  return replaced ? `${url}?v=${replaced.rev}` : url;
 }
 
 /**
@@ -65,6 +83,16 @@ export function hasWordImage(word: {
   word: string;
 }): boolean {
   return KEYS.has(word.conceptId ?? "") || KEYS.has(word.word);
+}
+
+/** 이 낱말의 그림을 교체한 기록. 교체한 적이 없으면 null */
+export function replacedImageOf(word: {
+  conceptId?: string;
+  word: string;
+}): ReplacedImage | null {
+  // 그림을 찾는 순서(뜻 → 철자)와 맞춘다
+  const key = KEYS.has(word.conceptId ?? "") ? word.conceptId! : word.word;
+  return REPLACED_IMAGES[key] ?? null;
 }
 
 /** 등록된 그림 수 */

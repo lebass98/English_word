@@ -31,6 +31,9 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-10-12
+- 배포 사이트에서 그림 현황(디버그) 탭을 운영자 계정으로 로그인했을 때만 보이게 함
+  - 운영자 판별은 이메일 SHA-256 해시로 비교해 공개 코드에 이메일을 적지 않는다 (`src/lib/admin.ts`)
+  - 독바 탭을 감추고, 주소로 바로 들어와도 홈으로 돌려보낸다. 개발 서버에서는 늘 보인다
 - 웹 공유 미리보기 추가: 페이지 제목과 OG·트위터 카드 태그(`app/+html.tsx`), 1200x630 공유 이미지(`public/og-image.png`)
   - 이미지는 `scripts/make_og_image.py` 가 앱 아이콘과 프리텐다드 GOV 글꼴로 만든다. 배포 주소는 `EXPO_PUBLIC_SITE_URL` 로 바꿀 수 있다 (기본 `https://wordpic-ten.vercel.app`)
 - Firestore 학습 기록 동기화 추가 (Firebase 프로젝트 `wordpic-ceaa2`, 서울 리전 `asia-northeast3`)

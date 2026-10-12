@@ -21,6 +21,7 @@ import {
   PressableScale,
 } from "./motion";
 import { useT, type StringKey } from "../i18n";
+import { useImageStatusVisible } from "../lib/admin";
 import { useAppStore } from "../stores/useAppStore";
 
 /** 독 탭 하나. 기본은 선 아이콘, 활성 탭은 꽉 찬 아이콘을 쓴다 */
@@ -143,6 +144,11 @@ export function BottomNav() {
   const t = useT();
   // 퀴즈는 학년마다 다른 화면이다. 고른 학년이 없으면 홈에서 먼저 고르게 한다
   const activeGradeId = useAppStore((s) => s.activeGradeId);
+  // 그림 현황 탭은 개발 서버이거나 운영자로 로그인했을 때만 보인다
+  const showImageStatus = useImageStatusVisible();
+  const tabs = showImageStatus
+    ? TABS
+    : TABS.filter((tab) => tab.href !== "/image-status");
 
   const hrefOf = (tab: Tab) =>
     tab.href === "/quiz"
@@ -168,7 +174,7 @@ export function BottomNav() {
         style={{ maxWidth: MAX_CONTENT_WIDTH }}
       >
         <View className="flex-row items-center gap-1 rounded-full bg-surface px-2 py-1.5 shadow-neu-card">
-          {TABS.map((tab) => {
+          {tabs.map((tab) => {
             const href = hrefOf(tab);
             // 퀴즈 탭은 어느 학년이든 /quiz 로 시작하면 켜진 것으로 본다
             const active =

@@ -1,4 +1,5 @@
 import { Image } from "expo-image";
+import { Redirect } from "expo-router";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Platform, Pressable, ScrollView, Text, View } from "react-native";
 import { BottomNav } from "../src/components/BottomNav";
@@ -21,7 +22,9 @@ import {
 import { buildSlides, type Slide } from "../src/lib/imageSlides";
 import { storage } from "../src/lib/storage";
 import { useLiveReplaced, type LiveReplaced } from "../src/lib/liveReplaced";
+import { useImageStatusVisible } from "../src/lib/admin";
 import { useAppStore } from "../src/stores/useAppStore";
+import { useAuthStore } from "../src/stores/useAuthStore";
 
 /**
  * 그림 현황 (디버그용). 탭 두 개로 나뉜다.
@@ -65,7 +68,20 @@ const MEMORY_KEY = "imageStatus.position";
 /** 저장소에서 한 번 읽어 왔는지. 화면을 다시 열 때는 다시 읽지 않는다 */
 let memoryLoaded = false;
 
-export default function ImageStatusScreen() {
+/**
+ * 배포본에서는 운영자로 로그인했을 때만 연다. 주소를 직접 쳐서 들어와도 홈으로 돌려보낸다.
+ * 로그인 상태를 확인하는 동안에는 잠깐 비워 둔다.
+ */
+export default function ImageStatusGate() {
+  const visible = useImageStatusVisible();
+  const checking = useAuthStore((s) => s.checking || s.adminChecking);
+  if (visible) return <ImageStatusScreen />;
+  // 로그인 확인이나 운영자 판별(해시 계산)이 끝나기 전에는 기다린다
+  if (checking) return null;
+  return <Redirect href="/" />;
+}
+
+function ImageStatusScreen() {
   const uiLang = useAppStore((s) => s.uiLang);
   // 교체 기록. 화면을 열 때마다 그림 저장소에서 다시 확인한다
   const live = useLiveReplaced();

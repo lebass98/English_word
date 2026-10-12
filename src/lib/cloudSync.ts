@@ -20,6 +20,7 @@ import {
   type StudyEntry,
 } from "../stores/useAppStore";
 import { useAuthStore } from "../stores/useAuthStore";
+import { isAdminEmail } from "./admin";
 import { firebase } from "./firebase";
 import { storage } from "./storage";
 
@@ -303,13 +304,26 @@ export function startCloudSync(): () => void {
   const unsubAuth = onAuthStateChanged(fb.auth, async (user) => {
     stopAccount();
     if (!user) {
-      useAuthStore.setState({ checking: false, user: null, sync: "off" });
+      useAuthStore.setState({
+        checking: false,
+        user: null,
+        isAdmin: false,
+        adminChecking: false,
+        sync: "off",
+      });
       return;
     }
     useAuthStore.setState({
       checking: false,
       user: { uid: user.uid, email: user.email, name: user.displayName },
+      isAdmin: false,
+      adminChecking: true,
       sync: "syncing",
+    });
+    void isAdminEmail(user.email).then((isAdmin) => {
+      if (fb.auth.currentUser?.uid === user.uid) {
+        useAuthStore.setState({ isAdmin, adminChecking: false });
+      }
     });
     try {
       await Promise.all([waitHydrated(), metaReady]);

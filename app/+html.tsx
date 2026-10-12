@@ -2,6 +2,19 @@ import { ScrollViewStyleReset } from "expo-router/html";
 import type { PropsWithChildren } from "react";
 
 /**
+ * 배포 주소. 공유 미리보기 이미지는 전체 주소여야 해서 필요하다.
+ * 도메인을 바꾸면 EXPO_PUBLIC_SITE_URL 로 덮어쓴다.
+ */
+const SITE_URL = (
+  process.env.EXPO_PUBLIC_SITE_URL || "https://wordpic-ten.vercel.app"
+).replace(/\/$/, "");
+const SITE_TITLE = "WordPic - 그림으로 외우는 영어 단어";
+const SITE_DESCRIPTION =
+  "중학·고등·토익·토플 영어 단어를 그림과 함께 외우는 단어장. 퀴즈와 단어장으로 복습하고, 구글 로그인으로 기록을 이어 보세요.";
+/** scripts/make_og_image.py 가 만든 1200x630 카드 (public/og-image.png) */
+const OG_IMAGE = `${SITE_URL}/og-image.png`;
+
+/**
  * 웹에서만 쓰는 HTML 뼈대.
  *
  * 글꼴은 프로젝트 안(public/fonts)에 둔 파일을 쓴다. 바깥 CDN 을 타지 않는다.
@@ -17,6 +30,24 @@ export default function Root({ children }: PropsWithChildren) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+
+        {/* 페이지 제목과 링크 공유 미리보기 (카카오톡·슬랙·페이스북·X) */}
+        <title>{SITE_TITLE}</title>
+        <meta name="description" content={SITE_DESCRIPTION} />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="WordPic" />
+        <meta property="og:locale" content="ko_KR" />
+        <meta property="og:url" content={SITE_URL} />
+        <meta property="og:title" content={SITE_TITLE} />
+        <meta property="og:description" content={SITE_DESCRIPTION} />
+        <meta property="og:image" content={OG_IMAGE} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content={SITE_TITLE} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={SITE_TITLE} />
+        <meta name="twitter:description" content={SITE_DESCRIPTION} />
+        <meta name="twitter:image" content={OG_IMAGE} />
 
         {/* 스크롤 동작을 앱과 맞추는 expo-router 기본 리셋 */}
         <ScrollViewStyleReset />

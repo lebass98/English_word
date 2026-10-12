@@ -31,6 +31,8 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-10-12
+- 웹 공유 미리보기 추가: 페이지 제목과 OG·트위터 카드 태그(`app/+html.tsx`), 1200x630 공유 이미지(`public/og-image.png`)
+  - 이미지는 `scripts/make_og_image.py` 가 앱 아이콘과 프리텐다드 GOV 글꼴로 만든다. 배포 주소는 `EXPO_PUBLIC_SITE_URL` 로 바꿀 수 있다 (기본 `https://wordpic-ten.vercel.app`)
 - Firestore 학습 기록 동기화 추가 (Firebase 프로젝트 `wordpic-ceaa2`, 서울 리전 `asia-northeast3`)
   - 설정 화면에 계정 칸 추가: 구글로 로그인하면 외운 단어·단어장·퀴즈·일별 집계·이어하기·이름을 `users/{uid}` 문서 하나에 JSON 으로 저장한다 (웹 전용)
   - 처음 로그인하면 기기 기록과 클라우드 기록을 합치고, 그 뒤로는 바뀔 때마다 올리고 다른 기기가 올린 것을 바로 받는다

@@ -48,6 +48,9 @@ echo "==> [3/4] Gradle 빌드 설정 검증 중..."
 
 # kotlin.incremental.useClasspathSnapshot=false 설정 보장
 if ! grep -q "kotlin.incremental.useClasspathSnapshot" "$BUILD_DIR/android/gradle.properties"; then
+  # prebuild 가 만든 파일은 마지막 줄바꿈이 없을 수 있다. 그대로 덧붙이면
+  # 앞 줄 값 뒤에 붙어 버려(…=[]kotlin.incremental…) Gradle 의 node 호출이 실패한다
+  [ -n "$(tail -c1 "$BUILD_DIR/android/gradle.properties")" ] && echo >> "$BUILD_DIR/android/gradle.properties"
   echo "kotlin.incremental.useClasspathSnapshot=false" >> "$BUILD_DIR/android/gradle.properties"
 fi
 

@@ -6,6 +6,7 @@ import {
   useMemo,
   useRef,
   useState,
+  useSyncExternalStore,
 } from "react";
 import {
   Animated,
@@ -26,6 +27,8 @@ import {
   ChevronLeftIcon,
   ChevronRightIcon,
   ChevronUpIcon,
+  CloseIcon,
+  MicIcon,
   PauseIcon,
   PlayIcon,
   SpeakerIcon,
@@ -53,10 +56,28 @@ import {
 import { useT } from "../../src/i18n";
 import { wordImageSource } from "../../src/constants/wordImages";
 import { speakWord, stopSpeaking } from "../../src/lib/speech";
+import {
+  isListenSupported,
+  judge,
+  listenOnce,
+  watchMicLevel,
+  type ListenError,
+  type Verdict,
+} from "../../src/lib/listen";
 import { useAppStore, type WordStatus } from "../../src/stores/useAppStore";
 
 /** 앱 기본 초록 (tailwind 의 mint). Animated.View 처럼 className 이 안 먹는 곳에 쓴다 */
 const MINT = "#0EB582";
+
+/** 따라 말하기 진행 상태. 단어 id 를 붙여 두어 넘어가면 이전 결과가 남지 않는다 */
+type ListenState = { wordId: string } & (
+  | { phase: "listening" }
+  | { phase: "result"; verdict: Verdict; heard: string }
+  | { phase: "error"; error: ListenError }
+);
+
+/** 음성 인식 지원 여부는 바뀌지 않으므로 구독할 것이 없다 */
+const subscribeNothing = () => () => {};
 
 export default function StudyScreen() {
   const { wordId } = useLocalSearchParams<{ wordId: string }>();
@@ -209,6 +230,54 @@ function StudyCard({
   /** 발음 중인 단어. 넘어가면 이전 단어의 재생 표시가 남지 않는다 */
   const [speakingFor, setSpeakingFor] = useState<string | null>(null);
   const speaking = speakingFor === word.id;
+
+  /** 따라 말하기. 웹 정적 빌드는 서버에서 먼저 그려지므로
+      지원 여부는 브라우저에서만 확인하고 서버에서는 없는 것으로 친다 */
+  const canListen = useSyncExternalStore(
+    subscribeNothing,
+    isListenSupported,
+    () => false,
+  );
+  const [listen, setListen] = useState<ListenState | null>(null);
+  const listenNow = listen?.wordId === word.id ? listen : null;
+  const listening = listenNow?.phase === "listening";
+  /** 듣기를 그만두는 함수. 단어를 넘기거나 화면을 떠나면 부른다 */
+  const stopListenRef = useRef<(() => void) | null>(null);
+  /** 발음 재생 순번. 새로 읽거나 듣기를 시작하면 올라가서
+      이전 재생의 "끝났다" 알림이 엉뚱하게 듣기를 켜지 않는다 */
+  const speakSeq = useRef(0);
+  const followTimer = useRef<ReturnType<typeof setTimeout>>(undefined);
+  /** 렌더마다 새로 만들어지는 startListen 을 재생 콜백에서 최신 것으로 부르려고 담아 둔다 */
+  const startListenRef = useRef<() => void>(() => {});
+
+  /**
+   * 단어 발음을 들려준다. 소리가 실제로 나고 끝까지 재생되면
+   * (설정에서 켜 둔 경우) 바로 마이크를 켜서 따라 말한 것을 듣는다.
+   * 음소거·자동 재생 차단으로 소리가 안 났으면 마이크를 켜지 않는다.
+   */
+  const playWord = () => {
+    const seq = ++speakSeq.current;
+    const id = word.id;
+    let played = false;
+    clearTimeout(followTimer.current);
+    speakWord(word.word, {
+      lang: speechCode,
+      volume: speechVolume,
+      onStart: () => {
+        played = true;
+        setSpeakingFor(id);
+      },
+      onDone: () => {
+        setSpeakingFor((cur) => (cur === id ? null : cur));
+        if (!played || seq !== speakSeq.current) return;
+        if (!useAppStore.getState().autoListen || !isListenSupported()) return;
+        // 스피커 소리의 꼬리가 마이크에 섞이지 않게 아주 잠깐 쉬고 켠다
+        followTimer.current = setTimeout(() => {
+          if (seq === speakSeq.current) startListenRef.current();
+        }, 250);
+      },
+    });
+  };
   /** 자동 넘김 진행도 0 → 1. 애니메이션 값이라 매 프레임 부드럽게 움직인다.
       한 번만 만들어 두고 계속 같은 값을 쓴다 */
   const [progress] = useState(() => new Animated.Value(0));
@@ -288,7 +357,8 @@ function StudyCard({
   // 왼쪽에서 오른쪽으로 끊김 없이 채워진다.
   useEffect(() => {
     progress.setValue(0);
-    if (!autoAdvance) return;
+    // 말하는 도중에 다음 단어로 넘어가 버리지 않게 듣는 동안은 멈춘다
+    if (!autoAdvance || listening) return;
 
     const animation = Animated.timing(progress, {
       toValue: 1,
@@ -302,22 +372,33 @@ function StudyCard({
     });
 
     return () => animation.stop();
-  }, [autoAdvance, autoAdvanceSec, advance, progress]);
+  }, [autoAdvance, autoAdvanceSec, advance, progress, listening]);
 
   // 단어가 바뀌면 발음을 자동으로 한 번 들려준다.
   // (단어가 바뀔 때마다 정확히 한 번 실행된다)
   // 화면을 벗어날 때는 재생 중인 음성을 멈춘다.
   useEffect(() => {
-    speakWord(word.word, {
-      lang: speechCode,
-      volume: speechVolume,
-      onStart: () => setSpeakingFor(word.id),
-      onDone: () => setSpeakingFor((cur) => (cur === word.id ? null : cur)),
-    });
-    return stopSpeaking;
+    playWord();
+    return () => {
+      // 멈추면서 오는 "끝났다" 알림이 따라 말하기를 켜지 않게 순번을 올린다.
+      // 화면 요소가 아니라 숫자 세는 ref 라 지금 값을 올리는 게 맞다
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+      speakSeq.current++;
+      clearTimeout(followTimer.current);
+      stopSpeaking();
+    };
     // 소리 크기를 바꿨다고 발음을 다시 들려줄 필요는 없어 의존성에서 뺀다
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [word.word, speechCode]);
+
+  // 단어를 넘기거나 화면을 떠나면 듣던 것을 그만둔다
+  useEffect(
+    () => () => {
+      stopListenRef.current?.();
+      stopListenRef.current = null;
+    },
+    [word.id],
+  );
 
   // 이어하기 지점과 "오늘 본 단어"는 화면에 뜬 시점에 기록한다.
   // 판정 버튼에서 기록하면 보다 만 단어와 자동 넘김으로 지나간 단어가 빠진다.
@@ -341,8 +422,12 @@ function StudyCard({
   // 화면 내용은 최대 480px 로 모이므로 넓은 창에서도 그 폭을 기준으로 잡는다.
   // 화면 좌우 여백(48) + 카드 안쪽 여백(48) + 겹침 영역 좌우 여백(32)
   //   + 스피커 버튼(44) + 버튼과의 간격(12)
+  //   + 마이크 버튼(44) + 버튼 사이 간격(8) (따라 말하기를 쓸 수 있을 때만)
   const contentWidth = Math.min(screenWidth, MAX_CONTENT_WIDTH);
-  const wordAreaWidth = Math.max(110, contentWidth - 184);
+  const wordAreaWidth = Math.max(
+    110,
+    contentWidth - 184 - (canListen ? 52 : 0),
+  );
   // 굵은 글씨는 한 글자가 글자 크기의 약 0.58배 너비를 차지한다
   // 최대 크기는 25px (31px 이 너무 커서 20% 줄였다)
   const wordFontSize = Math.max(
@@ -350,13 +435,56 @@ function StudyCard({
     Math.min(25, Math.floor(wordAreaWidth / (word.word.length * 0.58))),
   );
 
-  const handleSpeak = () => {
-    speakWord(word.word, {
-      lang: speechCode,
-      volume: speechVolume,
-      onStart: () => setSpeakingFor(word.id),
-      onDone: () => setSpeakingFor((cur) => (cur === word.id ? null : cur)),
+  /** 듣기를 그만두고 패널도 닫는다 */
+  const stopListen = () => {
+    stopListenRef.current?.();
+    stopListenRef.current = null;
+    setListen(null);
+  };
+
+  /** 마이크를 켜고 한 번 듣는다. 끝나면 판정 결과를 패널에 보여 준다 */
+  const startListen = () => {
+    stopListenRef.current?.();
+    // 앱이 읽어 주는 소리가 마이크로 들어가 정답으로 잡히지 않게 먼저 끈다.
+    // 순번을 올려 두어야 멈추면서 오는 "끝났다" 알림이 듣기를 다시 켜지 않는다
+    speakSeq.current++;
+    clearTimeout(followTimer.current);
+    stopSpeaking();
+    const id = word.id;
+    // 일본어는 엔진이 한자로 적을지 가나로 적을지 몰라 읽기 가나도 정답으로 친다.
+    // 영어의 phonetic 은 발음기호라 견주지 않는다
+    const targets =
+      studyLangOfWordId(id) === "ja"
+        ? [word.word, word.phonetic ?? ""]
+        : [word.word];
+    setListen({ wordId: id, phase: "listening" });
+    stopListenRef.current = listenOnce(speechCode, {
+      onResult: (alternatives) => {
+        stopListenRef.current = null;
+        setListen({
+          wordId: id,
+          phase: "result",
+          ...judge(targets, alternatives),
+        });
+      },
+      onError: (error) => {
+        stopListenRef.current = null;
+        setListen({ wordId: id, phase: "error", error });
+      },
     });
+  };
+
+  // 렌더 중에는 ref 를 바꿀 수 없어 그린 뒤에 최신 함수로 바꿔 둔다
+  useEffect(() => {
+    startListenRef.current = startListen;
+  });
+
+  /** 마이크 버튼. 듣는 중이면 그만두고, 아니면 듣기 시작한다 */
+  const handleListen = () => (listening ? stopListen() : startListen());
+
+  const handleSpeak = () => {
+    if (listening) stopListen();
+    playWord();
   };
 
   const decide = (next: WordStatus) => {
@@ -427,6 +555,8 @@ function StudyCard({
         ref={scrollRef}
         className="flex-1"
         contentContainerClassName="px-6 pb-10 pt-6"
+        // 따라 말하기 패널이 떠 있으면 마지막 내용이 그 밑에 가리지 않게 띄운다
+        contentContainerStyle={listenNow ? { paddingBottom: 120 } : undefined}
         showsVerticalScrollIndicator={false}
       >
         <View className="rounded-3xl bg-surface p-6 shadow-neu-card">
@@ -536,33 +666,54 @@ function StudyCard({
                         </View>
                       )}
                     </View>
-                    {/* 설정에서 음소거해 두면 눌러도 소리가 안 난다.
+                    <View className="flex-row gap-2">
+                      {/* 따라 말하기: 단어를 말하면 맞게 들렸는지 알려 준다 */}
+                      {canListen && (
+                        <Pressable
+                          accessibilityLabel={
+                            listening
+                              ? t("study.listenStop")
+                              : t("study.listen")
+                          }
+                          accessibilityState={{ busy: listening }}
+                          onPress={handleListen}
+                          className={`h-11 w-11 items-center justify-center rounded-full active:scale-95 ${
+                            listening
+                              ? "bg-canvas shadow-neu-inset"
+                              : "bg-surface shadow-neu-sm"
+                          }`}
+                        >
+                          <MicIcon color={listening ? MINT : "#334155"} />
+                        </Pressable>
+                      )}
+                      {/* 설정에서 음소거해 두면 눌러도 소리가 안 난다.
                         왜 조용한지 알 수 있게 버튼을 흐리게 보여 준다 */}
-                    <Pressable
-                      accessibilityLabel={
-                        speechVolume === 0
-                          ? t("settings.speechMuted")
-                          : t("study.speak", { word: word.word })
-                      }
-                      onPress={handleSpeak}
-                      className={`h-11 w-11 items-center justify-center rounded-full active:scale-95 ${
-                        speechVolume === 0
-                          ? "bg-surface opacity-40 shadow-neu-sm"
-                          : speaking
-                            ? "bg-canvas shadow-neu-inset"
-                            : "bg-surface shadow-neu-sm"
-                      }`}
-                    >
-                      <SpeakerIcon
-                        color={
+                      <Pressable
+                        accessibilityLabel={
                           speechVolume === 0
-                            ? "#94a3b8"
-                            : speaking
-                              ? MINT
-                              : "#334155"
+                            ? t("settings.speechMuted")
+                            : t("study.speak", { word: word.word })
                         }
-                      />
-                    </Pressable>
+                        onPress={handleSpeak}
+                        className={`h-11 w-11 items-center justify-center rounded-full active:scale-95 ${
+                          speechVolume === 0
+                            ? "bg-surface opacity-40 shadow-neu-sm"
+                            : speaking
+                              ? "bg-canvas shadow-neu-inset"
+                              : "bg-surface shadow-neu-sm"
+                        }`}
+                      >
+                        <SpeakerIcon
+                          color={
+                            speechVolume === 0
+                              ? "#94a3b8"
+                              : speaking
+                                ? MINT
+                                : "#334155"
+                          }
+                        />
+                      </Pressable>
+                    </View>
                   </View>
                 </BlurView>
               </View>
@@ -653,173 +804,350 @@ function StudyCard({
                 word.senseFlow ||
                 word.family ||
                 word.compare) && (
-              <View className="mt-4 gap-5 border-t border-slate-200 pt-4">
-                {word.example && (
-                  <LabeledSection label={t("study.example")}>
-                    <Text className="text-[15px] font-semibold leading-snug text-slate-800">
-                      {word.example}
-                    </Text>
-                    {word.exampleTr && (
-                      <Text className="mt-1 text-[14px] font-medium leading-snug text-slate-500">
-                        {word.exampleTr}
+                <View className="mt-4 gap-5 border-t border-slate-200 pt-4">
+                  {word.example && (
+                    <LabeledSection label={t("study.example")}>
+                      <Text className="text-[15px] font-semibold leading-snug text-slate-800">
+                        {word.example}
                       </Text>
-                    )}
-                  </LabeledSection>
-                )}
+                      {word.exampleTr && (
+                        <Text className="mt-1 text-[14px] font-medium leading-snug text-slate-500">
+                          {word.exampleTr}
+                        </Text>
+                      )}
+                    </LabeledSection>
+                  )}
 
-                {hasSynonyms && (
-                  <LabeledSection label={t("study.synonyms")}>
-                    <SynonymList items={word.synonyms!} />
-                  </LabeledSection>
-                )}
+                  {hasSynonyms && (
+                    <LabeledSection label={t("study.synonyms")}>
+                      <SynonymList items={word.synonyms!} />
+                    </LabeledSection>
+                  )}
 
-                {word.antonyms && (
-                  <LabeledSection label={t("study.antonyms")}>
-                    <SynonymList items={word.antonyms} />
-                  </LabeledSection>
-                )}
+                  {word.antonyms && (
+                    <LabeledSection label={t("study.antonyms")}>
+                      <SynonymList items={word.antonyms} />
+                    </LabeledSection>
+                  )}
 
-                {word.etymology && (
-                  <LabeledSection label={t("study.etymology")}>
-                    <Text className="text-[14px] leading-relaxed text-slate-600">
-                      {word.etymology}
-                    </Text>
-                  </LabeledSection>
-                )}
+                  {word.etymology && (
+                    <LabeledSection label={t("study.etymology")}>
+                      <Text className="text-[14px] leading-relaxed text-slate-600">
+                        {word.etymology}
+                      </Text>
+                    </LabeledSection>
+                  )}
 
-                {/* 어근 공식 아래에 글자 그대로의 뜻부터 지금 뜻까지 이어 보여 준다.
+                  {/* 어근 공식 아래에 글자 그대로의 뜻부터 지금 뜻까지 이어 보여 준다.
                     어근 공식이 없는 낱말은 뜻이 넓어진 순서만 보여 준다 */}
-                {(word.roots || word.senseFlow) && (
-                  <LabeledSection label={t("study.roots")}>
-                    {word.roots && (
-                      <Text className="mb-1 text-[15px] font-semibold leading-snug text-lavender">
-                        {word.roots.formula}
+                  {(word.roots || word.senseFlow) && (
+                    <LabeledSection label={t("study.roots")}>
+                      {word.roots && (
+                        <Text className="mb-1 text-[15px] font-semibold leading-snug text-lavender">
+                          {word.roots.formula}
+                        </Text>
+                      )}
+                      <Text className="text-[14px] leading-relaxed text-slate-600">
+                        {[
+                          ...(word.roots ? [`“${word.roots.literal}”`] : []),
+                          ...(word.senseFlow ?? []),
+                        ].join(" → ")}
                       </Text>
-                    )}
-                    <Text className="text-[14px] leading-relaxed text-slate-600">
-                      {[
-                        ...(word.roots ? [`“${word.roots.literal}”`] : []),
-                        ...(word.senseFlow ?? []),
-                      ].join(" → ")}
-                    </Text>
-                  </LabeledSection>
-                )}
+                    </LabeledSection>
+                  )}
 
-                {/* 같은 어근 단어는 풀이가 길어 한 줄에 한 단어씩 두고 줄바꿈되게 한다 */}
-                {word.family && (
-                  <LabeledSection label={t("study.family")}>
-                    <View className="gap-1.5">
-                      {word.family.map((item) => (
-                        <Text
-                          key={item.word}
-                          className="text-[14px] leading-snug text-slate-600"
-                        >
-                          <Text className="text-[15px] font-semibold text-lavender">
-                            {item.word}
+                  {/* 같은 어근 단어는 풀이가 길어 한 줄에 한 단어씩 두고 줄바꿈되게 한다 */}
+                  {word.family && (
+                    <LabeledSection label={t("study.family")}>
+                      <View className="gap-1.5">
+                        {word.family.map((item) => (
+                          <Text
+                            key={item.word}
+                            className="text-[14px] leading-snug text-slate-600"
+                          >
+                            <Text className="text-[15px] font-semibold text-lavender">
+                              {item.word}
+                            </Text>
+                            {"  "}
+                            {item.meaning}
                           </Text>
-                          {"  "}
-                          {item.meaning}
-                        </Text>
-                      ))}
-                    </View>
-                  </LabeledSection>
-                )}
+                        ))}
+                      </View>
+                    </LabeledSection>
+                  )}
 
-                {word.compare && (
-                  <LabeledSection label={t("study.compare")}>
-                    <Text className="text-[13px] font-bold text-slate-500">
-                      {word.compare.title}
-                    </Text>
-                    <View className="mt-1.5 gap-1.5">
-                      {word.compare.items.map((item) => (
-                        <Text
-                          key={item.word}
-                          className="text-[14px] leading-snug text-slate-600"
-                        >
-                          <Text className="font-semibold text-lavender">
-                            {item.word}
+                  {word.compare && (
+                    <LabeledSection label={t("study.compare")}>
+                      <Text className="text-[13px] font-bold text-slate-500">
+                        {word.compare.title}
+                      </Text>
+                      <View className="mt-1.5 gap-1.5">
+                        {word.compare.items.map((item) => (
+                          <Text
+                            key={item.word}
+                            className="text-[14px] leading-snug text-slate-600"
+                          >
+                            <Text className="font-semibold text-lavender">
+                              {item.word}
+                            </Text>
+                            {"  "}
+                            {item.note}
                           </Text>
-                          {"  "}
-                          {item.note}
-                        </Text>
-                      ))}
-                    </View>
-                  </LabeledSection>
-                )}
-              </View>
-            )}
+                        ))}
+                      </View>
+                    </LabeledSection>
+                  )}
+                </View>
+              )}
           </View>
         </View>
       </ScrollView>
 
       {/* ── 학습 평가 버튼 (가운데는 단어장에 담기) ────────── */}
-      <View className="mx-6 flex-row items-stretch gap-2 pb-4 pt-3">
-        {/* 홈으로 이동 버튼 */}
-        <Pressable
-          onPress={() => router.replace("/")}
-          accessibilityRole="button"
-          accessibilityLabel={t("nav.home")}
-          className="h-[52px] w-[52px] shrink-0 self-center items-center justify-center rounded-full bg-surface shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
-        >
-          <Text
-            numberOfLines={1}
-            className="text-[13px] font-bold tracking-tight text-slate-600"
+      <View className="relative">
+        {/* 따라 말하기 패널: 독 바로 위에 떠서 파형과 판정을 보여 준다 */}
+        {listenNow && (
+          <FollowAlongDock
+            state={listenNow}
+            onMic={handleListen}
+            onClose={stopListen}
+          />
+        )}
+        <View className="mx-6 flex-row items-stretch gap-2 pb-4 pt-3">
+          {/* 홈으로 이동 버튼 */}
+          <Pressable
+            onPress={() => router.replace("/")}
+            accessibilityRole="button"
+            accessibilityLabel={t("nav.home")}
+            className="h-[52px] w-[52px] shrink-0 self-center items-center justify-center rounded-full bg-surface shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
           >
-            {t("nav.home")}
-          </Text>
-        </Pressable>
+            <Text
+              numberOfLines={1}
+              className="text-[13px] font-bold tracking-tight text-slate-600"
+            >
+              {t("nav.home")}
+            </Text>
+          </Pressable>
 
-        {/* 판정 버튼 둘이 남는 자리를 똑같이 나눠 가진다 */}
-        <Pressable
-          onPress={() => decide("unsure")}
-          style={{ flex: 1 }}
-          className="flex-row items-center justify-center rounded-full bg-surface px-1 py-4 shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
-        >
-          <Text
-            numberOfLines={1}
-            className="text-[13px] font-bold tracking-tight text-slate-800"
+          {/* 판정 버튼 둘이 남는 자리를 똑같이 나눠 가진다 */}
+          <Pressable
+            onPress={() => decide("unsure")}
+            style={{ flex: 1 }}
+            className="flex-row items-center justify-center rounded-full bg-surface px-1 py-4 shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
           >
-            {t("study.unsure")}
-          </Text>
-        </Pressable>
+            <Text
+              numberOfLines={1}
+              className="text-[13px] font-bold tracking-tight text-slate-800"
+            >
+              {t("study.unsure")}
+            </Text>
+          </Pressable>
 
-        {/* 저장 버튼도 가로는 글씨('저장됨')에 맞춰 못 박는다(shrink-0).
+          {/* 저장 버튼도 가로는 글씨('저장됨')에 맞춰 못 박는다(shrink-0).
             늘었다 줄었다 하는 것은 '헷갈려요'·'외웠어요' 둘뿐이다 */}
-        <Pressable
-          onPress={() => toggleSaved(word.id)}
-          accessibilityRole="button"
-          accessibilityState={{ selected: isSaved }}
-          accessibilityLabel={t("study.saveToggle")}
-          className={`w-[64px] shrink-0 flex-row items-center justify-center rounded-full px-1 active:scale-[0.98] ${
-            isSaved
-              ? "bg-canvas shadow-neu-inset"
-              : "bg-surface shadow-neu-sm active:shadow-neu-pressed"
-          }`}
-        >
-          <Text
-            numberOfLines={1}
-            className={`text-[13px] font-bold tracking-tight ${
-              isSaved ? "text-mint-dark" : "text-slate-500"
+          <Pressable
+            onPress={() => toggleSaved(word.id)}
+            accessibilityRole="button"
+            accessibilityState={{ selected: isSaved }}
+            accessibilityLabel={t("study.saveToggle")}
+            className={`w-[64px] shrink-0 flex-row items-center justify-center rounded-full px-1 active:scale-[0.98] ${
+              isSaved
+                ? "bg-canvas shadow-neu-inset"
+                : "bg-surface shadow-neu-sm active:shadow-neu-pressed"
             }`}
           >
-            {t(isSaved ? "study.saved" : "study.save")}
-          </Text>
-        </Pressable>
+            <Text
+              numberOfLines={1}
+              className={`text-[13px] font-bold tracking-tight ${
+                isSaved ? "text-mint-dark" : "text-slate-500"
+              }`}
+            >
+              {t(isSaved ? "study.saved" : "study.save")}
+            </Text>
+          </Pressable>
 
-        {/* 외웠어요는 앱의 주요 동작 버튼(PillButton primary)과 같은 연민트 */}
-        <Pressable
-          onPress={() => decide("known")}
-          style={{ flex: 1 }}
-          className="flex-row items-center justify-center rounded-full bg-[#dcf2ea] px-1 py-4 shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
-        >
-          <Text
-            numberOfLines={1}
-            className="text-[13px] font-bold tracking-tight text-mint-dark"
+          {/* 외웠어요는 앱의 주요 동작 버튼(PillButton primary)과 같은 연민트 */}
+          <Pressable
+            onPress={() => decide("known")}
+            style={{ flex: 1 }}
+            className="flex-row items-center justify-center rounded-full bg-[#dcf2ea] px-1 py-4 shadow-neu-sm active:scale-[0.98] active:shadow-neu-pressed"
           >
-            {t("study.known")}
-          </Text>
-        </Pressable>
+            <Text
+              numberOfLines={1}
+              className="text-[13px] font-bold tracking-tight text-mint-dark"
+            >
+              {t("study.known")}
+            </Text>
+          </Pressable>
+        </View>
       </View>
     </>
+  );
+}
+
+/** 파형 막대 개수. 오른쪽에서 새 값이 들어오고 왼쪽으로 흘러간다 */
+const WAVE_BARS = 28;
+/** 막대 하나가 쌓이는 간격 (ms) */
+const WAVE_STEP_MS = 60;
+
+/**
+ * 마이크로 들어오는 내 목소리 크기를 막대 파형으로 그린다.
+ * 마이크 크기를 읽지 못하는 환경이면 잔잔하게 출렁이는 모양으로 대신한다.
+ */
+function Waveform() {
+  const [bars, setBars] = useState<number[]>(() => Array(WAVE_BARS).fill(0));
+
+  useEffect(() => {
+    let peak = 0;
+    let fake = false;
+    const stop = watchMicLevel(
+      (level) => {
+        peak = Math.max(peak, level);
+      },
+      () => {
+        fake = true;
+      },
+    );
+    let n = 0;
+    const timer = setInterval(() => {
+      n++;
+      const value = fake ? 0.25 + 0.2 * Math.abs(Math.sin(n / 3)) : peak;
+      peak = 0;
+      setBars((prev) => [...prev.slice(1), value]);
+    }, WAVE_STEP_MS);
+    return () => {
+      clearInterval(timer);
+      stop();
+    };
+  }, []);
+
+  return (
+    <View className="h-9 flex-1 flex-row items-center justify-between">
+      {bars.map((v, i) => (
+        <View
+          key={i}
+          style={{
+            width: 3,
+            height: 4 + v * 32,
+            borderRadius: 2,
+            backgroundColor: MINT,
+            opacity: 0.35 + v * 0.65,
+          }}
+        />
+      ))}
+    </View>
+  );
+}
+
+/**
+ * 따라 말하기 패널. 하단 독 바로 위에 떠 있다.
+ * 듣는 동안은 내 목소리 파형을, 끝나면 판정과 들린 말을 보여 준다.
+ */
+function FollowAlongDock({
+  state,
+  onMic,
+  onClose,
+}: {
+  state: ListenState;
+  onMic: () => void;
+  onClose: () => void;
+}) {
+  const t = useT();
+  const listening = state.phase === "listening";
+
+  const look =
+    state.phase === "result"
+      ? {
+          correct: {
+            box: "bg-[#dcf2ea]",
+            title: "text-mint-dark",
+            label: `✓ ${t("study.listenCorrect")}`,
+          },
+          close: {
+            box: "bg-amber-50",
+            title: "text-amber-700",
+            label: t("study.listenAlmost"),
+          },
+          wrong: {
+            box: "bg-rose-50",
+            title: "text-rose-600",
+            label: t("study.listenWrong"),
+          },
+        }[state.verdict]
+      : null;
+
+  const errorMessage =
+    state.phase === "error"
+      ? {
+          "no-speech": t("study.listenNoSpeech"),
+          "not-allowed": t("study.listenDenied"),
+          unsupported: t("study.listenUnsupported"),
+          failed: t("study.listenFailed"),
+        }[state.error]
+      : null;
+
+  return (
+    <View
+      accessibilityLiveRegion="polite"
+      style={{
+        position: "absolute",
+        left: 24,
+        right: 24,
+        bottom: "100%",
+        zIndex: 10,
+      }}
+      className={`mb-1 flex-row items-center gap-3 rounded-3xl px-3 py-3 shadow-neu ${
+        look?.box ?? "bg-surface"
+      }`}
+    >
+      {/* 마이크: 듣는 중이면 눌러서 멈추고, 끝났으면 눌러서 다시 말한다 */}
+      <Pressable
+        accessibilityLabel={
+          listening ? t("study.listenStop") : t("study.listen")
+        }
+        onPress={onMic}
+        className={`h-11 w-11 items-center justify-center rounded-full active:scale-95 ${
+          listening ? "bg-mint" : "bg-surface shadow-neu-sm"
+        }`}
+      >
+        <MicIcon color={listening ? "#ffffff" : "#334155"} />
+      </Pressable>
+
+      <View className="flex-1">
+        {listening ? (
+          <>
+            <Text className="mb-1 text-[12px] font-bold text-mint-dark">
+              {t("study.listening")}
+            </Text>
+            <Waveform />
+          </>
+        ) : look && state.phase === "result" ? (
+          <>
+            <Text className={`text-[16px] font-black ${look.title}`}>
+              {look.label}
+            </Text>
+            <Text
+              numberOfLines={1}
+              className="mt-0.5 text-[13px] font-medium text-slate-500"
+            >
+              {t("study.listenHeard", { text: state.heard })}
+            </Text>
+          </>
+        ) : (
+          <Text className="text-[13px] font-semibold text-slate-500">
+            {errorMessage}
+          </Text>
+        )}
+      </View>
+
+      <Pressable
+        accessibilityLabel={t("study.listenClose")}
+        onPress={onClose}
+        hitSlop={8}
+        className="h-8 w-8 items-center justify-center rounded-full active:opacity-60"
+      >
+        <CloseIcon size={18} />
+      </Pressable>
+    </View>
   );
 }

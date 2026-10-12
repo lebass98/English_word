@@ -123,6 +123,10 @@ interface AppState {
   speechVolume: number;
   setSpeechVolume: (v: number) => void;
 
+  /** 발음을 들려준 뒤 바로 마이크를 켜서 따라 말한 발음을 확인할지 */
+  autoListen: boolean;
+  setAutoListen: (on: boolean) => void;
+
   /** 단어 id → 학습 기록 */
   entries: Record<string, StudyEntry>;
   /**
@@ -192,6 +196,9 @@ export const useAppStore = create<AppState>()(
       // 0~1 을 벗어난 값이 들어와도 저장소가 망가지지 않게 잘라 둔다
       setSpeechVolume: (v) =>
         set({ speechVolume: Math.min(1, Math.max(0, v)) }),
+
+      autoListen: true,
+      setAutoListen: (on) => set({ autoListen: on }),
 
       entries: {},
       saved: {},
@@ -292,6 +299,7 @@ export const useAppStore = create<AppState>()(
         autoAdvance: s.autoAdvance,
         autoAdvanceSec: s.autoAdvanceSec,
         speechVolume: s.speechVolume,
+        autoListen: s.autoListen,
         activeGradeId: s.activeGradeId,
         entries: s.entries,
         saved: s.saved,

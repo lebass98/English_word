@@ -64,6 +64,8 @@ ICONS = {
     # 철자 맞추기의 남은 기회
     "HeartIcon": ("favorite", True),
     "HeartEmptyIcon": ("favorite", False),
+    # 학습 화면의 발음 따라 말하기
+    "MicIcon": ("mic", False),
 }
 
 # 기본 색. 화면에서 color 를 넘기지 않았을 때 쓴다

@@ -37,6 +37,7 @@ import { studyLanguageOf, type StudyLangId } from "../src/constants/languages";
 import { signInWithGoogle, signOutCloud } from "../src/lib/cloudSync";
 import { cloudAvailable } from "../src/lib/firebase";
 import { speakWord } from "../src/lib/speech";
+import { isListenSupported } from "../src/lib/listen";
 import { useT } from "../src/i18n";
 import { UI_LANGS, UI_LANG_NAMES } from "../src/i18n/strings";
 import {
@@ -168,6 +169,14 @@ export default function SettingsScreen() {
   const autoAdvance = useAppStore((s) => s.autoAdvance);
   const setAutoAdvance = useAppStore((s) => s.setAutoAdvance);
   const advanceDim = useSmooth(autoAdvance ? 1 : 0.5, { native: true });
+  const autoListen = useAppStore((s) => s.autoListen);
+  const setAutoListen = useAppStore((s) => s.setAutoListen);
+  // 따라 말하기는 음성 인식이 되는 브라우저에서만 보여 준다 (서버에서 그릴 때는 없는 것으로)
+  const canListen = useSyncExternalStore(
+    noopSubscribe,
+    isListenSupported,
+    () => false,
+  );
   const speechVolume = useAppStore((s) => s.speechVolume);
   const setSpeechVolume = useAppStore((s) => s.setSpeechVolume);
   // 예전 25% 단위로 저장된 값도 가장 가까운 10% 단계로 보여준다
@@ -358,6 +367,36 @@ export default function SettingsScreen() {
               />
             </View>
           </Animated.View>
+
+          {/* ── 듣고 따라 말하기 ───────────────────────────── */}
+          {canListen && (
+            <View className="mt-5 flex-row items-center justify-between gap-4 border-t border-slate-200/70 pt-5">
+              <View className="flex-1">
+                <Text className="text-[15px] text-slate-700">
+                  {t("settings.autoListen")}
+                </Text>
+                <Text className="mt-1 text-[13px] text-slate-400">
+                  {t("settings.autoListenDesc")}
+                </Text>
+              </View>
+              <PressableScale
+                accessibilityRole="switch"
+                accessibilityLabel={t("settings.autoListen")}
+                accessibilityState={{ checked: autoListen }}
+                onPress={() => setAutoListen(!autoListen)}
+                className="px-4 py-2"
+              >
+                <NeuStateLayer active={autoListen} radiusClass="rounded-full" />
+                <Text
+                  className={`text-[13px] font-bold ${
+                    autoListen ? "text-mint-dark" : "text-slate-400"
+                  }`}
+                >
+                  {autoListen ? t("common.on") : t("common.off")}
+                </Text>
+              </PressableScale>
+            </View>
+          )}
 
           {/* ── 발음 소리 크기 ─────────────────────────────── */}
           <View className="mt-5 border-t border-slate-200/70 pt-5">

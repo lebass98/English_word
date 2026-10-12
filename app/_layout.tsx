@@ -5,6 +5,7 @@ import { StatusBar } from "expo-status-bar";
 import { useEffect } from "react";
 import { Platform } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
+import { startCloudSync } from "../src/lib/cloudSync";
 import {
   NATIVE_FONTS,
   installAppFont,
@@ -35,6 +36,9 @@ export default function RootLayout() {
   useEffect(() => {
     setAppFontFamily(uiLang);
   }, [uiLang]);
+
+  // 로그인하면 학습 기록을 Firestore 와 맞춘다 (웹 전용, 로그인 전에는 아무것도 안 한다)
+  useEffect(() => startCloudSync(), []);
 
   // 글꼴을 불러오는 동안 화면을 비워 둔다. 시스템 글꼴로 먼저 그렸다가
   // 글꼴이 바뀌면 글자 크기가 한 번 출렁인다

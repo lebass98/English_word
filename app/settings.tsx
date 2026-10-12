@@ -1,4 +1,10 @@
-import { useEffect, useMemo, useState, type ReactNode } from "react";
+import {
+  useEffect,
+  useMemo,
+  useState,
+  useSyncExternalStore,
+  type ReactNode,
+} from "react";
 import {
   Alert,
   Animated,
@@ -28,6 +34,8 @@ import {
   SpeakerIcon,
 } from "../src/components/icons";
 import { studyLanguageOf, type StudyLangId } from "../src/constants/languages";
+import { signInWithGoogle, signOutCloud } from "../src/lib/cloudSync";
+import { cloudAvailable } from "../src/lib/firebase";
 import { speakWord } from "../src/lib/speech";
 import { useT } from "../src/i18n";
 import { UI_LANGS, UI_LANG_NAMES } from "../src/i18n/strings";
@@ -36,9 +44,13 @@ import {
   AUTO_ADVANCE_MIN_SEC,
   useAppStore,
 } from "../src/stores/useAppStore";
+import { useAuthStore } from "../src/stores/useAuthStore";
 
 /** 웹 2단계 확인이 눌린 채로 남아 있지 않도록 되돌리는 시간 (ms) */
 const CONFIRM_TIMEOUT_MS = 4000;
+
+/** 바뀔 일이 없는 값을 useSyncExternalStore 로 읽을 때 쓰는 빈 구독 */
+const noopSubscribe = () => () => {};
 
 /** 발음 소리 크기 단계 수. 0 은 음소거, 10 은 최대 */
 const VOLUME_LEVELS = 10;
@@ -57,6 +69,95 @@ function SectionTitle({ icon, label }: { icon: ReactNode; label: string }) {
         {icon}
       </View>
       <Text className="text-[15px] font-bold text-ink">{label}</Text>
+    </View>
+  );
+}
+
+/** 구글 로그인과 클라우드 동기화 상태 (웹 전용) */
+function AccountCard() {
+  const t = useT();
+  const checking = useAuthStore((s) => s.checking);
+  const user = useAuthStore((s) => s.user);
+  const sync = useAuthStore((s) => s.sync);
+  const [busy, setBusy] = useState(false);
+  const [failed, setFailed] = useState(false);
+
+  const run = async (action: () => Promise<void>) => {
+    setBusy(true);
+    setFailed(false);
+    try {
+      await action();
+    } catch (e) {
+      // 사용자가 팝업을 닫은 것은 실패로 보지 않는다
+      const code = (e as { code?: string })?.code ?? "";
+      if (!code.includes("popup-closed") && !code.includes("cancelled")) {
+        console.warn("[account]", e);
+        setFailed(true);
+      }
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  const syncLabel =
+    sync === "syncing"
+      ? t("account.syncing")
+      : sync === "error"
+        ? t("account.syncError")
+        : t("account.synced");
+
+  return (
+    <View className="rounded-3xl bg-surface p-6 shadow-neu-card">
+      <SectionTitle icon={<PersonIcon />} label={t("account.title")} />
+      {checking ? (
+        <Text className="mt-3 text-[13px] text-slate-400">
+          {t("account.checking")}
+        </Text>
+      ) : user ? (
+        <>
+          <View className="mt-3 flex-row items-center justify-between gap-3">
+            <Text
+              className="flex-1 text-[15px] text-slate-700"
+              numberOfLines={1}
+            >
+              {user.email ?? user.name ?? ""}
+            </Text>
+            <Text
+              className={`text-[13px] font-bold ${
+                sync === "error" ? "text-rose-500" : "text-mint-dark"
+              }`}
+            >
+              {syncLabel}
+            </Text>
+          </View>
+          <PillButton
+            className="mt-5 self-start"
+            size="sm"
+            label={t("account.signOut")}
+            loading={busy}
+            onPress={() => run(signOutCloud)}
+          />
+        </>
+      ) : (
+        <>
+          <Text className="mt-3 text-[13px] text-slate-400">
+            {t("account.desc")}
+          </Text>
+          <PillButton
+            className="mt-5 self-start"
+            size="sm"
+            variant="primary"
+            label={t("account.signIn")}
+            loading={busy}
+            onPress={() => run(signInWithGoogle)}
+          />
+        </>
+      )}
+      {failed ? (
+        <Text className="mt-3 text-[13px] text-rose-500">
+          {t("account.signInFailed")}
+        </Text>
+      ) : null}
     </View>
   );
 }
@@ -88,6 +189,13 @@ export default function SettingsScreen() {
   const uiLang = useAppStore((s) => s.uiLang);
   const setUiLang = useAppStore((s) => s.setUiLang);
   const t = useT();
+
+  // 웹 화면을 미리 그릴 때(SSR)는 클라우드를 못 쓰므로, 브라우저에서 다시 그린 뒤에 계정 칸을 띄운다
+  const showAccount = useSyncExternalStore(
+    noopSubscribe,
+    () => cloudAvailable,
+    () => false,
+  );
 
   /** 웹에는 Alert이 없어 버튼을 두 번 눌러 확인받는다 */
   const [confirming, setConfirming] = useState(false);
@@ -148,6 +256,8 @@ export default function SettingsScreen() {
         showsVerticalScrollIndicator={false}
         keyboardShouldPersistTaps="handled"
       >
+        {showAccount ? <AccountCard /> : null}
+
         <View className="rounded-3xl bg-surface p-6 shadow-neu-card">
           <SectionTitle icon={<PersonIcon />} label={t("settings.myName")} />
           <TextInput

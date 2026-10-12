@@ -53,3 +53,5 @@ __pycache__/
 #   https://github.com/lebass98/word-images  (384px WebP)
 # 원본은 그림을 다시 뽑거나 크기를 바꿀 때만 쓰므로 앱 저장소에 넣지 않는다.
 assets/words/
+.vercel
+.env*

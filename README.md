@@ -30,6 +30,13 @@ npm run lint     # ESLint
 
 ## 작업 내역
 
+### 2026-10-12
+- Firestore 학습 기록 동기화 추가 (Firebase 프로젝트 `wordpic-ceaa2`, 서울 리전 `asia-northeast3`)
+  - 설정 화면에 계정 칸 추가: 구글로 로그인하면 외운 단어·단어장·퀴즈·일별 집계·이어하기·이름을 `users/{uid}` 문서 하나에 JSON 으로 저장한다 (웹 전용)
+  - 처음 로그인하면 기기 기록과 클라우드 기록을 합치고, 그 뒤로는 바뀔 때마다 올리고 다른 기기가 올린 것을 바로 받는다
+  - 보안 규칙(`firestore.rules`)은 본인 문서만 읽고 쓰게 막았다. 설정값은 공개용이라 `.env` 와 Vercel 환경변수에 둔다
+- 웹 배포를 GitHub Pages 에서 Vercel 로 전환 (`vercel.json`, Vercel 프로젝트 `wordpic`, GitHub 저장소 연결로 main 푸시마다 자동 배포). `deploy.yml` 삭제
+
 ### 2026-10-04
 - 중학 `toward` 단어 선형그래픽 이미지 새로 생성 및 용량 비교용 샘플 SVG 추출: Draw Things 로컬 API 기반 '선형그래픽' 스킬 규칙 준수하여 `assets/words/t/toward.png` 생성, CDN 호스팅(WebP 10.5KB) 배포 및 `replaced.json`(22장) 갱신 완료. 사용자의 용량 확인을 위해 적용 전 독립형 SVG 샘플 파일(`assets/words/toward_sample.svg`, 13.8KB) 별도 생성
 - 중학 9개 단어(`price`, `cheap`, `unlike`, `deal`, `hardly`, `beggar`, `anxious`, `hang`, `step`) 선형그래픽 이미지 새로 생성: Draw Things 로컬 API 기반 '선형그래픽' 스킬 규칙 준수(512x512, 공중 부양 배제 바닥선 착지 구도, 캔버스 #f5f6f8, 딥 차콜 #030203 선화)하여 생성, CDN 웹 호스팅 저장소 푸시 및 제작 현황표(`replaced.json` 21장)에 교체 상태 반영 완료

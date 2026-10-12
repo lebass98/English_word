@@ -136,6 +136,17 @@ const ko = {
   "settings.uiLang": "표시 언어",
   "settings.uiLangDesc": "앱 화면에 쓰는 말이에요",
 
+  // 계정 · 클라우드 동기화
+  "account.title": "계정",
+  "account.desc": "구글로 로그인하면 학습 기록이 클라우드에 저장돼 다른 기기에서도 이어서 볼 수 있어요",
+  "account.signIn": "구글로 로그인",
+  "account.signOut": "로그아웃",
+  "account.checking": "로그인 상태를 확인하고 있어요",
+  "account.signInFailed": "로그인하지 못했어요. 잠시 뒤 다시 시도해 주세요",
+  "account.syncing": "동기화 중",
+  "account.synced": "동기화됨",
+  "account.syncError": "동기화 실패",
+
   // 학습 언어 이름
   "studyLang.en": "영어 단어",
   "studyLang.ja": "일본어 단어",
@@ -348,6 +359,16 @@ const ja: Partial<Record<StringKey, string>> = {
   "settings.language": "言語",
   "settings.uiLang": "表示言語",
   "settings.uiLangDesc": "アプリの画面に使う言語です",
+
+  "account.title": "アカウント",
+  "account.desc": "Googleでログインすると学習記録がクラウドに保存され、ほかの端末でも続きから学べます",
+  "account.signIn": "Googleでログイン",
+  "account.signOut": "ログアウト",
+  "account.checking": "ログイン状態を確認しています",
+  "account.signInFailed": "ログインできませんでした。しばらくしてからもう一度お試しください",
+  "account.syncing": "同期中",
+  "account.synced": "同期済み",
+  "account.syncError": "同期に失敗しました",
   "settings.studyLang": "学習言語",
   "settings.studyLangDesc": "何を学ぶか選んでください。絵はそのままで単語だけ変わります",
 

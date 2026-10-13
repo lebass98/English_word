@@ -43,7 +43,10 @@ import { UI_LANGS, UI_LANG_NAMES } from "../src/i18n/strings";
 import {
   AUTO_ADVANCE_MAX_SEC,
   AUTO_ADVANCE_MIN_SEC,
+  SPEECH_PITCH_MAX,
+  SPEECH_PITCH_MIN,
   useAppStore,
+  type VoiceGender,
 } from "../src/stores/useAppStore";
 import { useAuthStore } from "../src/stores/useAuthStore";
 
@@ -61,6 +64,18 @@ const VOLUME_SAMPLE: Record<StudyLangId, string> = {
   en: "Hello",
   ja: "こんにちは",
 };
+
+/** 음높이 게이지는 0.1 단위 정수 단계로 다룬다 */
+const PITCH_STEP = 10;
+
+const VOICE_GENDERS: {
+  id: VoiceGender;
+  key: "settings.voiceDefault" | "settings.voiceFemale" | "settings.voiceMale";
+}[] = [
+  { id: "default", key: "settings.voiceDefault" },
+  { id: "female", key: "settings.voiceFemale" },
+  { id: "male", key: "settings.voiceMale" },
+];
 
 /** 설정 칸의 제목 줄. 왼쪽에 아이콘이 붙는다 */
 function SectionTitle({ icon, label }: { icon: ReactNode; label: string }) {
@@ -181,6 +196,11 @@ export default function SettingsScreen() {
   const setSpeechVolume = useAppStore((s) => s.setSpeechVolume);
   // 예전 25% 단위로 저장된 값도 가장 가까운 10% 단계로 보여준다
   const volumeStep = Math.round(speechVolume * VOLUME_LEVELS);
+  const voiceGender = useAppStore((s) => s.voiceGender);
+  const setVoiceGender = useAppStore((s) => s.setVoiceGender);
+  const speechPitch = useAppStore((s) => s.speechPitch);
+  const setSpeechPitch = useAppStore((s) => s.setSpeechPitch);
+  const pitchStep = Math.round(speechPitch * PITCH_STEP);
   const autoAdvanceSec = useAppStore((s) => s.autoAdvanceSec);
   const setAutoAdvanceSec = useAppStore((s) => s.setAutoAdvanceSec);
   const studyLang = useAppStore((s) => s.studyLang);
@@ -454,6 +474,58 @@ export default function SettingsScreen() {
                   }
                 />
               </View>
+            </View>
+          </View>
+          {/* ── 목소리 성별 ─────────────────────────────── */}
+          <View className="mt-5 border-t border-slate-200/70 pt-5">
+            <Text className="text-[15px] text-slate-700">
+              {t("settings.voiceGender")}
+            </Text>
+            <Text className="mt-1 text-[13px] text-slate-400">
+              {t("settings.voiceGenderDesc")}
+            </Text>
+            <View className="mt-3 flex-row gap-3">
+              {VOICE_GENDERS.map(({ id, key }) => (
+                <SegmentButton
+                  key={id}
+                  selected={voiceGender === id}
+                  onPress={() => {
+                    setVoiceGender(id);
+                    playSample(speechVolume || 1);
+                  }}
+                  label={t(key)}
+                />
+              ))}
+            </View>
+          </View>
+
+          {/* ── 음높이 ─────────────────────────────────── */}
+          <View className="mt-5 border-t border-slate-200/70 pt-5">
+            <View className="flex-row items-center justify-between gap-4">
+              <View className="flex-1">
+                <Text className="text-[15px] text-slate-700">
+                  {t("settings.speechPitch")}
+                </Text>
+                <Text className="mt-1 text-[13px] text-slate-400">
+                  {t("settings.speechPitchDesc")}
+                </Text>
+              </View>
+              <Text className="text-[13px] font-bold text-mint-dark">
+                {`×${speechPitch.toFixed(1)}`}
+              </Text>
+            </View>
+            <View className="mt-3">
+              <GaugeBar
+                value={pitchStep}
+                min={SPEECH_PITCH_MIN * PITCH_STEP}
+                max={SPEECH_PITCH_MAX * PITCH_STEP}
+                valueLabel={`×${speechPitch.toFixed(1)}`}
+                maxLabel={`×${SPEECH_PITCH_MAX.toFixed(1)}`}
+                onChange={(step) => setSpeechPitch(step / PITCH_STEP)}
+                onRelease={() => playSample(speechVolume || 1)}
+                accessibilityLabel={t("settings.speechPitch")}
+                accessibilityValueText={`${speechPitch.toFixed(1)}`}
+              />
             </View>
           </View>
         </View>

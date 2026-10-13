@@ -73,6 +73,12 @@ export interface DailyStat {
 const DAILY_LOG_KEEP_DAYS = 60;
 
 /** 자동 넘김 간격으로 고를 수 있는 범위 (초) */
+export type VoiceGender = "default" | "female" | "male";
+
+/** 발음 음높이 범위 */
+export const SPEECH_PITCH_MIN = 0.5;
+export const SPEECH_PITCH_MAX = 2;
+
 export const AUTO_ADVANCE_MIN_SEC = 5;
 export const AUTO_ADVANCE_MAX_SEC = 15;
 
@@ -122,6 +128,14 @@ interface AppState {
   /** 발음 소리 크기 (0 = 음소거 … 1 = 최대). 학습 화면 스피커에 쓴다 */
   speechVolume: number;
   setSpeechVolume: (v: number) => void;
+
+  /** 발음 목소리 성별. 기기에 그 성별 목소리가 없으면 기본 목소리로 읽는다 */
+  voiceGender: VoiceGender;
+  setVoiceGender: (g: VoiceGender) => void;
+
+  /** 발음 음높이 (0.5 낮게 … 2 높게, 1 = 보통) */
+  speechPitch: number;
+  setSpeechPitch: (p: number) => void;
 
   /** 발음을 들려준 뒤 바로 마이크를 켜서 따라 말한 발음을 확인할지 */
   autoListen: boolean;
@@ -196,6 +210,18 @@ export const useAppStore = create<AppState>()(
       // 0~1 을 벗어난 값이 들어와도 저장소가 망가지지 않게 잘라 둔다
       setSpeechVolume: (v) =>
         set({ speechVolume: Math.min(1, Math.max(0, v)) }),
+
+      voiceGender: "default",
+      setVoiceGender: (g) => set({ voiceGender: g }),
+
+      speechPitch: 1,
+      setSpeechPitch: (p) =>
+        set({
+          speechPitch: Math.min(
+            SPEECH_PITCH_MAX,
+            Math.max(SPEECH_PITCH_MIN, p),
+          ),
+        }),
 
       autoListen: true,
       setAutoListen: (on) => set({ autoListen: on }),
@@ -299,6 +325,8 @@ export const useAppStore = create<AppState>()(
         autoAdvance: s.autoAdvance,
         autoAdvanceSec: s.autoAdvanceSec,
         speechVolume: s.speechVolume,
+        voiceGender: s.voiceGender,
+        speechPitch: s.speechPitch,
         autoListen: s.autoListen,
         activeGradeId: s.activeGradeId,
         entries: s.entries,

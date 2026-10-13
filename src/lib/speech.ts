@@ -1,4 +1,5 @@
 import * as Speech from "expo-speech";
+import { useAppStore, type VoiceGender } from "../stores/useAppStore";
 
 interface SpeakCallbacks {
   /** 읽어 줄 언어 코드 (예: en-US, ja-JP). 없으면 영어로 읽는다 */
@@ -38,6 +39,118 @@ function checkOnce(lang: string) {
     .catch((e) => debug("목소리 목록을 못 읽었다", e));
 }
 
+/*
+ * ── 목소리 성별 고르기 ─────────────────────────────────────
+ * 음성 엔진은 목소리의 성별을 알려 주지 않는다. 그래서 잘 알려진 목소리
+ * 이름(iOS·macOS, 크롬, 윈도우, 안드로이드 구글 TTS)으로 짐작한다.
+ * iOS 사파리는 누른 순간 바로 speak() 해야 하므로 목록은 미리 받아 둔다.
+ */
+const MALE_HINTS = [
+  "male",
+  "alex",
+  "daniel",
+  "fred",
+  "aaron",
+  "arthur",
+  "gordon",
+  "oliver",
+  "rishi",
+  "tom",
+  "ralph",
+  "albert",
+  "david",
+  "mark",
+  "guy",
+  "ryan",
+  "eric",
+  "otoya",
+  "hattori",
+  "ichiro",
+  "keita",
+  // 안드로이드 구글 TTS 남성 목소리
+  "x-iom",
+  "x-iol",
+  "x-tpd",
+  "x-gbd",
+  "x-rjs",
+  "x-gbg",
+  "jab",
+  "jad",
+];
+const FEMALE_HINTS = [
+  "female",
+  "samantha",
+  "karen",
+  "moira",
+  "tessa",
+  "victoria",
+  "allison",
+  "ava",
+  "susan",
+  "zira",
+  "kate",
+  "serena",
+  "fiona",
+  "nicky",
+  "catherine",
+  "martha",
+  "aria",
+  "jenny",
+  "kyoko",
+  "o-ren",
+  "haruka",
+  "ayumi",
+  "nanami",
+  "google us english",
+  "google 日本語",
+  "x-sfg",
+  "x-tpc",
+  "x-tpf",
+  "x-iob",
+  "x-iog",
+  "x-fis",
+  "x-gba",
+  "jaa",
+  "jac",
+];
+
+function genderOf(v: Speech.Voice): VoiceGender | null {
+  const key = `${v.name} ${v.identifier}`.toLowerCase();
+  // "female" 안에 "male" 이 들어 있으므로 여성 쪽을 먼저 본다
+  if (FEMALE_HINTS.some((h) => key.includes(h))) return "female";
+  if (MALE_HINTS.some((h) => key.includes(h))) return "male";
+  return null;
+}
+
+let voices: Speech.Voice[] = [];
+function loadVoices() {
+  Speech.getAvailableVoicesAsync()
+    .then((list) => {
+      if (list.length) voices = list;
+    })
+    .catch(() => {});
+}
+loadVoices();
+// 웹은 첫 목록이 비어 있다가 나중에 채워지므로 한 번 더 받는다
+setTimeout(loadVoices, 1500);
+
+/** 언어와 성별에 맞는 목소리 id. 없으면 undefined (기기 기본 목소리) */
+function pickVoice(lang: string, gender: VoiceGender): string | undefined {
+  if (gender === "default") return undefined;
+  if (!voices.length) loadVoices();
+  const norm = (l?: string) => (l ?? "").replace("_", "-").toLowerCase();
+  const want = norm(lang);
+  const head = want.split("-")[0];
+  const same = voices.filter((v) => norm(v.language).startsWith(head));
+  const match = same.filter((v) => genderOf(v) === gender);
+  // 같은 지역(en-US) → 고음질 → 아무거나 순서
+  const best =
+    match.find((v) => norm(v.language) === want && v.quality === "Enhanced") ??
+    match.find((v) => norm(v.language) === want) ??
+    match[0];
+  return best?.identifier;
+}
+
 /**
  * 영어 단어 발음 재생 (TTS).
  * - 네이티브: expo-speech가 OS 음성 엔진 사용
@@ -59,12 +172,15 @@ export function speakWord(word: string, cb: SpeakCallbacks = {}) {
   }
   const lang = cb.lang ?? "en-US";
   checkOnce(lang);
+  const { voiceGender, speechPitch } = useAppStore.getState();
+  const voice = pickVoice(lang, voiceGender);
   try {
     Speech.stop();
     Speech.speak(word, {
       language: lang,
       rate: 0.85,
-      pitch: 1.0,
+      pitch: speechPitch,
+      voice,
       volume: cb.volume ?? 1,
       onStart: cb.onStart,
       onDone: cb.onDone,

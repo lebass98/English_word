@@ -55,6 +55,7 @@ import {
 } from "../../src/constants/languages";
 import { useT } from "../../src/i18n";
 import { wordImageSource } from "../../src/constants/wordImages";
+import { playFeedback } from "../../src/lib/feedbackSound";
 import { speakWord, stopSpeaking } from "../../src/lib/speech";
 import {
   isListenSupported,
@@ -351,28 +352,44 @@ function StudyCard({
     });
   }, [dragX, panelW, prevId, nextId, onNavigate, advance, isUnitEnd, word.id]);
 
+  /** 자동 넘김 바가 지금 어느 단어의 것인지. 단어가 바뀔 때만 처음부터 다시 채운다 */
+  const progressWord = useRef(word.id);
+
   // 자동 넘김 타이머.
   // 예전에는 200ms마다 상태를 바꿔 바를 다시 그렸는데, 그 간격만큼 계단처럼 끊겨 보였다.
   // 지금은 설정한 간격(5~15초) 동안 0에서 1까지 일정한 속도로 흐르는 애니메이션 하나로 처리해
   // 왼쪽에서 오른쪽으로 끊김 없이 채워진다.
   useEffect(() => {
-    progress.setValue(0);
-    // 말하는 도중에 다음 단어로 넘어가 버리지 않게 듣는 동안은 멈춘다
-    if (!autoAdvance || listening) return;
+    if (progressWord.current !== word.id) {
+      progressWord.current = word.id;
+      progress.setValue(0);
+    }
+    if (!autoAdvance) {
+      progress.setValue(0);
+      return;
+    }
+    // 말하는 도중에 다음 단어로 넘어가 버리지 않게 듣는 동안은 멈춘다.
+    // 바는 멈춘 자리에 그대로 두고, 듣기가 끝나면 거기서부터 남은 시간만큼 이어 간다
+    if (listening) return;
 
-    const animation = Animated.timing(progress, {
-      toValue: 1,
-      duration: autoAdvanceSec * 1000,
-      easing: Easing.linear,
-      // 너비는 레이아웃 속성이라 네이티브 드라이버를 쓸 수 없다
-      useNativeDriver: false,
-    });
-    animation.start(({ finished }) => {
-      if (finished) advance();
+    let animation: Animated.CompositeAnimation | undefined;
+    progress.stopAnimation((value) => {
+      const from = value >= 1 ? 0 : value;
+      progress.setValue(from);
+      animation = Animated.timing(progress, {
+        toValue: 1,
+        duration: (1 - from) * autoAdvanceSec * 1000,
+        easing: Easing.linear,
+        // 너비는 레이아웃 속성이라 네이티브 드라이버를 쓸 수 없다
+        useNativeDriver: false,
+      });
+      animation.start(({ finished }) => {
+        if (finished) advance();
+      });
     });
 
-    return () => animation.stop();
-  }, [autoAdvance, autoAdvanceSec, advance, progress, listening]);
+    return () => animation?.stop();
+  }, [word.id, autoAdvance, autoAdvanceSec, advance, progress, listening]);
 
   // 단어가 바뀌면 발음을 자동으로 한 번 들려준다.
   // (단어가 바뀔 때마다 정확히 한 번 실행된다)
@@ -461,11 +478,13 @@ function StudyCard({
     stopListenRef.current = listenOnce(speechCode, {
       onResult: (alternatives) => {
         stopListenRef.current = null;
-        setListen({
-          wordId: id,
-          phase: "result",
-          ...judge(targets, alternatives),
-        });
+        const result = judge(targets, alternatives);
+        // 똑같이 말했으면 "띵동", 아니면 틀렸다는 소리를 낸다 (발음 소리 크기를 따른다)
+        playFeedback(
+          result.verdict === "correct" ? "correct" : "wrong",
+          useAppStore.getState().speechVolume,
+        );
+        setListen({ wordId: id, phase: "result", ...result });
       },
       onError: (error) => {
         stopListenRef.current = null;
@@ -908,6 +927,7 @@ function StudyCard({
         {/* 따라 말하기 패널: 독 바로 위에 떠서 파형과 판정을 보여 준다 */}
         {listenNow && (
           <FollowAlongDock
+            word={word.word}
             state={listenNow}
             onMic={handleListen}
             onClose={stopListen}
@@ -985,17 +1005,36 @@ function StudyCard({
   );
 }
 
-/** 파형 막대 개수. 오른쪽에서 새 값이 들어오고 왼쪽으로 흘러간다 */
-const WAVE_BARS = 28;
+/** 파형 칸 수. 왼쪽부터 막대가 쌓이고, 다 차면 왼쪽으로 밀려난다 */
+const WAVE_SLOTS = 44;
 /** 막대 하나가 쌓이는 간격 (ms) */
-const WAVE_STEP_MS = 60;
+const WAVE_STEP_MS = 100;
+/** 녹음 카드의 글자. 숫자 폭이 같아야 시간이 흔들리지 않는다 */
+const MONO = Platform.select({
+  ios: "Menlo",
+  android: "monospace",
+  default: "ui-monospace, SFMono-Regular, Menlo, monospace",
+});
+const WAVE_INK = "#2b2b2b";
+const WAVE_CURSOR = "#ef4136";
+
+/** 0:07 처럼 흐른 시간을 "00:07" 로 */
+function formatElapsed(ms: number) {
+  const sec = Math.floor(ms / 1000);
+  const mm = String(Math.floor(sec / 60)).padStart(2, "0");
+  const ss = String(sec % 60).padStart(2, "0");
+  return `${mm}:${ss}`;
+}
 
 /**
- * 마이크로 들어오는 내 목소리 크기를 막대 파형으로 그린다.
+ * 녹음기 화면처럼 내 목소리를 그린다.
+ * 위아래로 대칭인 검은 막대가 왼쪽부터 쌓이고, 지금 위치에 빨간 세로선,
+ * 그 오른쪽 남은 자리는 점선으로 보여 준다.
  * 마이크 크기를 읽지 못하는 환경이면 잔잔하게 출렁이는 모양으로 대신한다.
  */
-function Waveform() {
-  const [bars, setBars] = useState<number[]>(() => Array(WAVE_BARS).fill(0));
+function Waveform({ word }: { word: string }) {
+  const [bars, setBars] = useState<number[]>([]);
+  const [elapsed, setElapsed] = useState(0);
 
   useEffect(() => {
     let peak = 0;
@@ -1008,12 +1047,14 @@ function Waveform() {
         fake = true;
       },
     );
+    const startedAt = Date.now();
     let n = 0;
     const timer = setInterval(() => {
       n++;
-      const value = fake ? 0.25 + 0.2 * Math.abs(Math.sin(n / 3)) : peak;
+      const value = fake ? 0.3 + 0.35 * Math.abs(Math.sin(n / 2.5)) : peak;
       peak = 0;
-      setBars((prev) => [...prev.slice(1), value]);
+      setBars((prev) => [...prev, value].slice(-WAVE_SLOTS));
+      setElapsed(Date.now() - startedAt);
     }, WAVE_STEP_MS);
     return () => {
       clearInterval(timer);
@@ -1021,20 +1062,66 @@ function Waveform() {
     };
   }, []);
 
+  const dots = Math.max(0, WAVE_SLOTS - bars.length);
+
   return (
-    <View className="h-9 flex-1 flex-row items-center justify-between">
-      {bars.map((v, i) => (
+    <View>
+      {/* 오른쪽 위 닫기 버튼과 겹치지 않게 시간 옆을 비워 둔다 */}
+      <View className="flex-row items-center justify-between pr-6">
+        <Text
+          numberOfLines={1}
+          style={{ fontFamily: MONO, letterSpacing: 0.5 }}
+          className="flex-1 text-[12px] text-slate-400"
+        >
+          LISTENING #{word.toUpperCase()}
+        </Text>
+        <Text
+          style={{ fontFamily: MONO }}
+          className="ml-2 text-[12px] text-slate-400"
+        >
+          {formatElapsed(elapsed)}
+        </Text>
+      </View>
+      <View className="mt-2 h-14 flex-row items-center">
+        {bars.map((v, i) => (
+          <View
+            key={i}
+            style={{
+              flex: 1,
+              alignItems: "center",
+            }}
+          >
+            <View
+              style={{
+                width: 2.5,
+                height: 4 + Math.min(1, v) * 48,
+                backgroundColor: WAVE_INK,
+              }}
+            />
+          </View>
+        ))}
+        {/* 지금 듣고 있는 자리 */}
         <View
-          key={i}
           style={{
-            width: 3,
-            height: 4 + v * 32,
-            borderRadius: 2,
-            backgroundColor: MINT,
-            opacity: 0.35 + v * 0.65,
+            width: 2,
+            height: 56,
+            marginHorizontal: 3,
+            backgroundColor: WAVE_CURSOR,
           }}
         />
-      ))}
+        {Array.from({ length: dots }, (_, i) => (
+          <View key={`dot-${i}`} style={{ flex: 1, alignItems: "center" }}>
+            <View
+              style={{
+                width: 2,
+                height: 2,
+                borderRadius: 1,
+                backgroundColor: "#cbd5e1",
+              }}
+            />
+          </View>
+        ))}
+      </View>
     </View>
   );
 }
@@ -1044,10 +1131,12 @@ function Waveform() {
  * 듣는 동안은 내 목소리 파형을, 끝나면 판정과 들린 말을 보여 준다.
  */
 function FollowAlongDock({
+  word,
   state,
   onMic,
   onClose,
 }: {
+  word: string;
   state: ListenState;
   onMic: () => void;
   onClose: () => void;
@@ -1086,6 +1175,36 @@ function FollowAlongDock({
         }[state.error]
       : null;
 
+  if (listening) {
+    return (
+      <View
+        accessibilityLiveRegion="polite"
+        accessibilityLabel={t("study.listening")}
+        style={{
+          position: "absolute",
+          left: 24,
+          right: 24,
+          bottom: "100%",
+          zIndex: 10,
+          backgroundColor: "#f7f7f7",
+        }}
+        className="mb-1 rounded-3xl px-5 pb-4 pt-4 shadow-neu"
+      >
+        <Waveform word={word} />
+        {/* 듣기 멈추기 */}
+        <Pressable
+          accessibilityLabel={t("study.listenStop")}
+          onPress={onClose}
+          hitSlop={8}
+          style={{ position: "absolute", top: 6, right: 6 }}
+          className="h-7 w-7 items-center justify-center rounded-full active:opacity-60"
+        >
+          <CloseIcon size={14} />
+        </Pressable>
+      </View>
+    );
+  }
+
   return (
     <View
       accessibilityLiveRegion="polite"
@@ -1100,28 +1219,17 @@ function FollowAlongDock({
         look?.box ?? "bg-surface"
       }`}
     >
-      {/* 마이크: 듣는 중이면 눌러서 멈추고, 끝났으면 눌러서 다시 말한다 */}
+      {/* 마이크: 눌러서 다시 말한다 */}
       <Pressable
-        accessibilityLabel={
-          listening ? t("study.listenStop") : t("study.listen")
-        }
+        accessibilityLabel={t("study.listen")}
         onPress={onMic}
-        className={`h-11 w-11 items-center justify-center rounded-full active:scale-95 ${
-          listening ? "bg-mint" : "bg-surface shadow-neu-sm"
-        }`}
+        className="h-11 w-11 items-center justify-center rounded-full bg-surface shadow-neu-sm active:scale-95"
       >
-        <MicIcon color={listening ? "#ffffff" : "#334155"} />
+        <MicIcon color="#334155" />
       </Pressable>
 
       <View className="flex-1">
-        {listening ? (
-          <>
-            <Text className="mb-1 text-[12px] font-bold text-mint-dark">
-              {t("study.listening")}
-            </Text>
-            <Waveform />
-          </>
-        ) : look && state.phase === "result" ? (
+        {look && state.phase === "result" ? (
           <>
             <Text className={`text-[16px] font-black ${look.title}`}>
               {look.label}

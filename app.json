@@ -2,7 +2,7 @@
   "expo": {
     "name": "English_word",
     "slug": "English_word",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -23,7 +23,7 @@
       },
       "predictiveBackGestureEnabled": false,
       "package": "com.dongbookro.englishword",
-      "versionCode": 2
+      "versionCode": 3
     },
     "scheme": "englishword",
     "web": {

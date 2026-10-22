@@ -1,5 +1,6 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { useFonts } from "expo-font";
+import { useKeepAwake } from "expo-keep-awake";
 import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { useEffect } from "react";
@@ -30,6 +31,10 @@ installAppFont();
 
 export default function RootLayout() {
   const uiLang = useAppStore((s) => s.uiLang);
+
+  // 앱을 쓰는 동안은 화면이 꺼지거나 잠기지 않게 한다.
+  // 앱을 닫거나 다른 앱으로 가면 기기 설정대로 다시 꺼진다
+  useKeepAwake();
 
   // 웹은 @font-face 로 이미 걸려 있어 따로 불러올 게 없다
   const [fontsLoaded] = useFonts(Platform.OS === "web" ? {} : NATIVE_FONTS);

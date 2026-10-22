@@ -168,6 +168,17 @@ const ko = {
   "account.synced": "동기화됨",
   "account.syncError": "동기화 실패",
 
+  // 앱 업데이트 (안드로이드)
+  "update.title": "앱 업데이트",
+  "update.current": "지금 버전 {version}",
+  "update.check": "새 버전 확인",
+  "update.latest": "최신 버전을 쓰고 있어요",
+  "update.failed": "확인하지 못했어요. 인터넷 연결을 확인해 주세요",
+  "update.found": "새 버전 {version}이 나왔어요",
+  "update.download": "내려받기",
+  "update.later": "나중에",
+  "update.installHint": "내려받은 파일을 열면 설치돼요. 학습 기록은 그대로 남아요",
+
   // 학습 언어 이름
   "studyLang.en": "영어 단어",
   "studyLang.ja": "일본어 단어",
@@ -411,6 +422,17 @@ const ja: Partial<Record<StringKey, string>> = {
   "account.syncing": "同期中",
   "account.synced": "同期済み",
   "account.syncError": "同期に失敗しました",
+
+  // アプリのアップデート (Android)
+  "update.title": "アプリのアップデート",
+  "update.current": "現在のバージョン {version}",
+  "update.check": "新しいバージョンを確認",
+  "update.latest": "最新バージョンです",
+  "update.failed": "確認できませんでした。インターネット接続を確認してください",
+  "update.found": "新しいバージョン {version} があります",
+  "update.download": "ダウンロード",
+  "update.later": "あとで",
+  "update.installHint": "ダウンロードしたファイルを開くとインストールされます。学習記録はそのまま残ります",
   "settings.studyLang": "学習言語",
   "settings.studyLangDesc": "何を学ぶか選んでください。絵はそのままで単語だけ変わります",
 

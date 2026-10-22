@@ -30,10 +30,18 @@ import {
   ChartIcon,
   GlobeIcon,
   PersonIcon,
+  RocketIcon,
   SlidersIcon,
   SpeakerIcon,
 } from "../src/components/icons";
 import { studyLanguageOf, type StudyLangId } from "../src/constants/languages";
+import {
+  checkForUpdate,
+  currentVersion,
+  openUpdate,
+  updateAvailable,
+  type LatestRelease,
+} from "../src/lib/appUpdate";
 import { signInWithGoogle, signOutCloud } from "../src/lib/cloudSync";
 import { cloudAvailable } from "../src/lib/firebase";
 import { speakWord } from "../src/lib/speech";
@@ -174,6 +182,77 @@ function AccountCard() {
           {t("account.signInFailed")}
         </Text>
       ) : null}
+    </View>
+  );
+}
+
+/** 새 버전 확인 (안드로이드 APK 전용) */
+function UpdateCard() {
+  const t = useT();
+  const [checking, setChecking] = useState(false);
+  const [result, setResult] = useState<
+    | { kind: "found"; release: LatestRelease }
+    | { kind: "latest" | "failed" }
+    | null
+  >(null);
+
+  const check = async () => {
+    setChecking(true);
+    setResult(null);
+    try {
+      const release = await checkForUpdate();
+      setResult(release ? { kind: "found", release } : { kind: "latest" });
+    } catch {
+      setResult({ kind: "failed" });
+    } finally {
+      setChecking(false);
+    }
+  };
+
+  return (
+    <View className="rounded-3xl bg-surface p-6 shadow-neu-card">
+      <SectionTitle icon={<RocketIcon />} label={t("update.title")} />
+      <Text className="mt-3 text-[13px] text-slate-400">
+        {t("update.current", { version: currentVersion })}
+      </Text>
+      {result?.kind === "found" ? (
+        <>
+          <Text className="mt-3 text-[15px] font-bold text-mint-dark">
+            {t("update.found", { version: result.release.version })}
+          </Text>
+          <Text className="mt-1 text-[13px] text-slate-400">
+            {t("update.installHint")}
+          </Text>
+          <PillButton
+            className="mt-5 self-start"
+            size="sm"
+            variant="primary"
+            label={t("update.download")}
+            onPress={() => openUpdate(result.release)}
+          />
+        </>
+      ) : (
+        <>
+          {result ? (
+            <Text
+              className={`mt-3 text-[13px] ${
+                result.kind === "failed" ? "text-rose-500" : "text-slate-700"
+              }`}
+            >
+              {result.kind === "failed"
+                ? t("update.failed")
+                : t("update.latest")}
+            </Text>
+          ) : null}
+          <PillButton
+            className="mt-5 self-start"
+            size="sm"
+            label={t("update.check")}
+            loading={checking}
+            onPress={check}
+          />
+        </>
+      )}
     </View>
   );
 }
@@ -558,6 +637,8 @@ export default function SettingsScreen() {
             </Text>
           )}
         </View>
+
+        {updateAvailable ? <UpdateCard /> : null}
       </ScrollView>
 
       <BottomNav />

@@ -2,7 +2,7 @@
   "expo": {
     "name": "English_word",
     "slug": "English_word",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -22,7 +22,8 @@
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false,
-      "package": "com.dongbookro.englishword"
+      "package": "com.dongbookro.englishword",
+      "versionCode": 2
     },
     "scheme": "englishword",
     "web": {
@@ -38,7 +39,9 @@
         {
           "microphonePermission": "단어를 따라 말하면 발음이 맞는지 확인하려고 마이크를 사용해요.",
           "speechRecognitionPermission": "따라 말한 단어를 알아듣기 위해 음성 인식을 사용해요.",
-          "androidSpeechServicePackages": ["com.google.android.googlequicksearchbox"]
+          "androidSpeechServicePackages": [
+            "com.google.android.googlequicksearchbox"
+          ]
         }
       ]
     ]

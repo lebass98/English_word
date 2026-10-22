@@ -38,9 +38,9 @@ import { studyLanguageOf, type StudyLangId } from "../src/constants/languages";
 import {
   checkForUpdate,
   currentVersion,
-  openUpdate,
+  setUpdateDialogOpen,
   updateAvailable,
-  type LatestRelease,
+  useUpdateStore,
 } from "../src/lib/appUpdate";
 import { signInWithGoogle, signOutCloud } from "../src/lib/cloudSync";
 import { cloudAvailable } from "../src/lib/firebase";
@@ -186,28 +186,34 @@ function AccountCard() {
   );
 }
 
-/** 새 버전 확인 (안드로이드 APK 전용) */
+/** 새 버전 확인 (안드로이드 APK 전용). 받기와 설치는 업데이트 창에서 한다 */
 function UpdateCard() {
   const t = useT();
-  const [checking, setChecking] = useState(false);
-  const [result, setResult] = useState<
-    | { kind: "found"; release: LatestRelease }
-    | { kind: "latest" | "failed" }
-    | null
-  >(null);
+  const phase = useUpdateStore((s) => s.phase);
+  const release = useUpdateStore((s) => s.release);
+  const progress = useUpdateStore((s) => s.progress);
 
-  const check = async () => {
-    setChecking(true);
-    setResult(null);
-    try {
-      const release = await checkForUpdate();
-      setResult(release ? { kind: "found", release } : { kind: "latest" });
-    } catch {
-      setResult({ kind: "failed" });
-    } finally {
-      setChecking(false);
-    }
-  };
+  const status =
+    phase === "latest"
+      ? { text: t("update.latest"), tone: "text-slate-700" }
+      : phase === "error"
+        ? { text: t("update.failed"), tone: "text-rose-500" }
+        : phase === "available" || phase === "ready"
+          ? {
+              text: t("update.found", { version: release?.version ?? "" }),
+              tone: "font-bold text-mint-dark",
+            }
+          : phase === "downloading"
+            ? {
+                text: t("update.downloading", {
+                  percent: Math.round(progress * 100),
+                }),
+                tone: "font-bold text-mint-dark",
+              }
+            : null;
+  // 새 버전이 있으면 창을 다시 열고, 아니면 확인부터 한다
+  const hasUpdate =
+    phase === "available" || phase === "downloading" || phase === "ready";
 
   return (
     <View className="rounded-3xl bg-surface p-6 shadow-neu-card">
@@ -215,44 +221,19 @@ function UpdateCard() {
       <Text className="mt-3 text-[13px] text-slate-400">
         {t("update.current", { version: currentVersion })}
       </Text>
-      {result?.kind === "found" ? (
-        <>
-          <Text className="mt-3 text-[15px] font-bold text-mint-dark">
-            {t("update.found", { version: result.release.version })}
-          </Text>
-          <Text className="mt-1 text-[13px] text-slate-400">
-            {t("update.installHint")}
-          </Text>
-          <PillButton
-            className="mt-5 self-start"
-            size="sm"
-            variant="primary"
-            label={t("update.download")}
-            onPress={() => openUpdate(result.release)}
-          />
-        </>
-      ) : (
-        <>
-          {result ? (
-            <Text
-              className={`mt-3 text-[13px] ${
-                result.kind === "failed" ? "text-rose-500" : "text-slate-700"
-              }`}
-            >
-              {result.kind === "failed"
-                ? t("update.failed")
-                : t("update.latest")}
-            </Text>
-          ) : null}
-          <PillButton
-            className="mt-5 self-start"
-            size="sm"
-            label={t("update.check")}
-            loading={checking}
-            onPress={check}
-          />
-        </>
-      )}
+      {status ? (
+        <Text className={`mt-3 text-[13px] ${status.tone}`}>{status.text}</Text>
+      ) : null}
+      <PillButton
+        className="mt-5 self-start"
+        size="sm"
+        variant={hasUpdate ? "primary" : "default"}
+        label={hasUpdate ? t("update.open") : t("update.check")}
+        loading={phase === "checking"}
+        onPress={() =>
+          hasUpdate ? setUpdateDialogOpen(true) : checkForUpdate()
+        }
+      />
     </View>
   );
 }

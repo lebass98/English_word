@@ -31,6 +31,12 @@ npm run lint     # ESLint
 ## 작업 내역
 
 ### 2026-10-22
+- 앱 업데이트를 브라우저 대신 앱 안에서 하도록 변경, 버전 1.3.0 (versionCode 4)
+  - 새 버전이 있으면 업데이트 창(`src/components/UpdateDialog.tsx`)이 뜨고, "지금 업데이트"를 누르면 앱이 직접 APK 를 내려받으며 진행률을 보여 준다
+  - 다 받으면 안드로이드 설치 화면을 바로 연다 (`expo-file-system` 내려받기 + `expo-intent-launcher`, 권한 `REQUEST_INSTALL_PACKAGES`)
+  - 스토어 밖 앱이라 마지막 "설치" 확인은 안드로이드가 묻고, 처음 한 번은 "이 앱에서 설치 허용"을 켜야 한다
+  - 창을 닫아도 내려받기는 계속되고, 설정의 "앱 업데이트" 칸에서 다시 열 수 있다
+  - 화면 켜짐 유지를 `useKeepAwake` 대신 켜기·끄기 실패를 무시하는 방식으로 바꿈
 - 학습 화면 개선, 버전 1.2.0 (versionCode 3)
   - 앱을 쓰는 동안 화면이 꺼지거나 잠기지 않게 함 (`expo-keep-awake`)
   - 따라 말하기 판정 효과음: 맞으면 "띵동", 틀리면 부드러운 두 음 내림 소리 (`src/lib/feedbackSound.ts`, `assets/sounds/`, `expo-audio`)
